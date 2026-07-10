@@ -25,6 +25,7 @@
 #include "fsearch_database_exclude_manager.h"
 #include "fsearch_database_include_manager.h"
 #include "fsearch_filter_manager.h"
+#include "fsearch_query_flags.h"
 
 typedef struct _FsearchConfig FsearchConfig;
 
@@ -128,6 +129,9 @@ config_load_default(FsearchConfig *config);
 
 bool
 config_save(FsearchConfig *config);
+
+FsearchQueryFlags
+config_get_search_query_flags(const FsearchConfig *config);
 
 void
 config_build_dir(char *path, size_t len);

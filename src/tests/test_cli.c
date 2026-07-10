@@ -206,6 +206,66 @@ test_search_rebuilds_missing_index_before_printing_results(void) {
     g_rmdir(tmp_dir);
 }
 
+static void
+test_search_uses_shared_match_case_setting(void) {
+    g_autofree char *tmp_dir = g_dir_make_tmp("fsearch-test-cli-shared-flags-XXXXXX", NULL);
+    g_assert_nonnull(tmp_dir);
+    g_autofree char *config_dir = g_build_filename(tmp_dir, "config", NULL);
+    g_autofree char *data_dir = g_build_filename(tmp_dir, "data", NULL);
+    g_autofree char *indexed_file = g_build_filename(tmp_dir, "Needle.txt", NULL);
+    g_assert_true(g_file_set_contents(indexed_file, "", 0, NULL));
+    g_assert_true(g_mkdir_with_parents(config_dir, 0700) == 0);
+    g_assert_true(g_mkdir_with_parents(data_dir, 0700) == 0);
+    g_setenv("XDG_CONFIG_HOME", config_dir, TRUE);
+    g_setenv("XDG_DATA_HOME", data_dir, TRUE);
+
+    FsearchConfig *config = g_new0(FsearchConfig, 1);
+    g_assert_true(config_load_default(config));
+    config->match_case = true;
+    config->auto_match_case = false;
+    g_clear_object(&config->includes);
+    config->includes = fsearch_database_include_manager_new();
+    g_autoptr(FsearchDatabaseInclude) include = fsearch_database_include_new(tmp_dir, TRUE, FALSE, FALSE, FALSE, 0);
+    fsearch_database_include_manager_add(config->includes, include);
+    g_assert_true(config_make_dir());
+    g_assert_true(config_save(config));
+    config->sort_by = NULL;
+    config_free(config);
+
+    g_autofree char *database_dir = g_build_filename(data_dir, "fsearch", NULL);
+    g_assert_true(g_mkdir_with_parents(database_dir, 0700) == 0);
+
+    captured_stdout = g_string_new(NULL);
+    captured_stderr = g_string_new(NULL);
+    GPrintFunc old_stdout_handler = g_set_print_handler(capture_stdout);
+    GPrintFunc old_stderr_handler = g_set_printerr_handler(capture_stderr);
+
+    char *argv[] = {"fsearch", "--cli", "--global", "--search", "needle", NULL};
+    g_assert_cmpint(fsearch_cli_run(5, argv), ==, EXIT_SUCCESS);
+
+    g_set_print_handler(old_stdout_handler);
+    g_set_printerr_handler(old_stderr_handler);
+    g_assert_null(g_strstr_len(captured_stdout->str, -1, indexed_file));
+    g_assert_cmpstr(captured_stderr->str,
+                    ==,
+                    "\x1b[3;37mUpdating FSearch index before searching...\x1b[0m\n"
+                    "\x1b[3;37m0 matches.\x1b[0m\n");
+    g_string_free(g_steal_pointer(&captured_stdout), TRUE);
+    g_string_free(g_steal_pointer(&captured_stderr), TRUE);
+
+    g_autofree char *database_path = g_build_filename(database_dir, "fsearch.db", NULL);
+    g_unlink(database_path);
+    g_rmdir(database_dir);
+    g_unlink(indexed_file);
+    g_rmdir(data_dir);
+    g_autofree char *saved_config_dir = g_build_filename(config_dir, "fsearch", NULL);
+    g_autofree char *saved_config_path = g_build_filename(saved_config_dir, "fsearch.conf", NULL);
+    g_unlink(saved_config_path);
+    g_rmdir(saved_config_dir);
+    g_rmdir(config_dir);
+    g_rmdir(tmp_dir);
+}
+
 int
 main(int argc, char **argv) {
     g_test_init(&argc, &argv, NULL);
@@ -220,6 +280,7 @@ main(int argc, char **argv) {
 #endif
     g_test_add_func("/FSearch/cli/search_rebuilds_missing_index_before_printing_results",
                     test_search_rebuilds_missing_index_before_printing_results);
+    g_test_add_func("/FSearch/cli/search_uses_shared_match_case_setting", test_search_uses_shared_match_case_setting);
 
     return g_test_run();
 }

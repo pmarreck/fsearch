@@ -127,24 +127,7 @@ get_active_filter(FsearchApplicationWindow *win) {
 static FsearchQueryFlags
 get_query_flags() {
     FsearchApplication *app = FSEARCH_APPLICATION_DEFAULT;
-    FsearchConfig *config = fsearch_application_get_config(app);
-    FsearchQueryFlags flags = 0;
-    if (config->match_case) {
-        flags |= QUERY_FLAG_MATCH_CASE;
-    }
-    if (config->auto_match_case) {
-        flags |= QUERY_FLAG_AUTO_MATCH_CASE;
-    }
-    if (config->enable_regex) {
-        flags |= QUERY_FLAG_REGEX;
-    }
-    if (config->search_in_path) {
-        flags |= QUERY_FLAG_SEARCH_IN_PATH;
-    }
-    if (config->auto_search_in_path) {
-        flags |= QUERY_FLAG_AUTO_SEARCH_IN_PATH;
-    }
-    return flags;
+    return config_get_search_query_flags(fsearch_application_get_config(app));
 }
 
 static const char *

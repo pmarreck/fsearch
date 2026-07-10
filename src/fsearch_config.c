@@ -821,6 +821,29 @@ config_save(FsearchConfig *config) {
     return result;
 }
 
+FsearchQueryFlags
+config_get_search_query_flags(const FsearchConfig *config) {
+    g_return_val_if_fail(config, 0);
+
+    FsearchQueryFlags flags = 0;
+    if (config->match_case) {
+        flags |= QUERY_FLAG_MATCH_CASE;
+    }
+    if (config->auto_match_case) {
+        flags |= QUERY_FLAG_AUTO_MATCH_CASE;
+    }
+    if (config->enable_regex) {
+        flags |= QUERY_FLAG_REGEX;
+    }
+    if (config->search_in_path) {
+        flags |= QUERY_FLAG_SEARCH_IN_PATH;
+    }
+    if (config->auto_search_in_path) {
+        flags |= QUERY_FLAG_AUTO_SEARCH_IN_PATH;
+    }
+    return flags;
+}
+
 FsearchConfigCompareResult
 config_cmp(FsearchConfig *c1, FsearchConfig *c2) {
     FsearchConfigCompareResult result = {};

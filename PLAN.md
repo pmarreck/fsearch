@@ -38,3 +38,12 @@
 
 - [ ] Profile and reduce `./test` wall time without weakening its independent unit, CLI, package, or static-analysis controls.
   Curiosity poke: avoid paying separately for local Meson compilation, release-package compilation, and whole-project analysis when a shared build database or a Nix check can supply the same evidence.
+
+# Shared CLI configuration (2026-07-10)
+
+- [x] Make CLI search derive the same query flags as the GUI from the shared configuration. Completed 2026-07-10 10:21 EDT.
+  `config_get_search_query_flags()` is the shared resolver; an end-to-end CLI regression verifies case-sensitive GUI configuration affects CLI search.
+- [ ] Add a GTK-free configuration command API for scalar settings and database roots/exclusions.
+  Curiosity poke: write only fully validated configuration and make index-invalidating mutations explicit.
+- [ ] Add CLI configuration commands for saved filters, help, JSON output, and integration coverage.
+  Curiosity poke: collection selectors must remain stable and non-destructive across GUI edits.

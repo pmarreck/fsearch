@@ -257,7 +257,7 @@ queue_search(FsearchCliRun *run) {
     g_autoptr(FsearchQuery) query = fsearch_query_new(run->search_term,
                                                        NULL,
                                                        run->config->filters,
-                                                       0,
+                                                       config_get_search_query_flags(run->config),
                                                        "cli");
     g_autoptr(FsearchDatabaseWork) search_work = fsearch_database_work_new_search(FSEARCH_CLI_VIEW_ID,
                                                                                     query,
