@@ -900,5 +900,8 @@ fsearch_application_new(void) {
                                             G_APPLICATION_HANDLES_COMMAND_LINE,
                                             NULL);
     fsearch_application_add_option_entries(self);
+    g_application_set_option_context_summary(G_APPLICATION(self),
+                                             _("For command-line search help, run: fsearch --cli --help\n"
+                                               "For shared configuration help, run: fsearch config --help"));
     return self;
 }

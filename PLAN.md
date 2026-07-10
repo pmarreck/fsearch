@@ -48,3 +48,5 @@
 - [x] Add CLI configuration commands for saved filters, help, JSON output, and integration coverage. Completed 2026-07-10 11:35 EDT.
   Curiosity poke: collection selectors must remain stable and non-destructive across GUI edits.
   The isolated adapter covers every persisted scalar plus roots, exclusions, hidden-file policy, and saved filters; option ordering, invalid input, JSON, GUI concurrency, 64-bit persistence, stale-index warnings, immediate rescans, and first-run data directories have regressions. Main help points to the detailed config help, and the man page documents every command family.
+- [x] Make GUI-default help disclose the CLI and configuration help entry points. Completed 2026-07-10 13:44 EDT.
+  Bare `fsearch --help` retains GTK options while pointing to `fsearch --cli --help` and `fsearch config --help`; release CLI coverage prevents the discoverability regression.

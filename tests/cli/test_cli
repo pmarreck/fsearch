@@ -66,6 +66,8 @@ assert_valid_json() {
 }
 
 assert_success_contains 'CLI help' 'Usage: fsearch --cli' "$binary" --cli --help
+assert_success_contains 'default help points to CLI help' 'fsearch --cli --help' "$binary" --help
+assert_success_contains 'default help points to config help' 'fsearch config --help' "$binary" --help
 assert_success_contains 'CLI help examples' 'Examples:' "$binary" --cli --help
 assert_success_contains 'CLI help regex example' 'file:regex:".+\.pdf$"' "$binary" --cli --help
 assert_success_contains 'CLI help case-sensitive example' "case:AGENTS" "$binary" --cli --help
