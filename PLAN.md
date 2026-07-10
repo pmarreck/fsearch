@@ -10,4 +10,6 @@
   CLI mode owns load/search sequencing and bounded path output in `fsearch_cli.c`; the GTK application only dispatches and strips selector flags.
 - [x] Add integration coverage for help, about, and environment precedence. Completed 2026-07-09 21:01 EDT.
   Remaining query-result fixture coverage belongs with a future database-fixture harness rather than real user index data.
+- [x] Make a failed configured index root leave the database searchable and saveable. Completed 2026-07-09 21:39 EDT.
+  Regression coverage builds one available root plus one unavailable root, verifies the available match remains searchable, and disposes the database to exercise the save path.
 - [ ] Run the full suite, benchmark suite, inspect the final tree, and commit each green unit.

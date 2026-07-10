@@ -533,7 +533,7 @@ on_selection_changed(FsearchDatabase *db, guint id, FsearchDatabaseSearchInfo *i
 // Detects a finished signal from a search that was already superseded by a newer one.
 static bool
 search_info_matches_tracked_work(FsearchApplicationWindow *win, FsearchDatabaseSearchInfo *info) {
-    if (!win->work_search) {
+    if (!win->work_search || !info) {
         return false;
     }
     g_autoptr(FsearchQuery) tracked_query = fsearch_database_work_search_get_query(win->work_search);

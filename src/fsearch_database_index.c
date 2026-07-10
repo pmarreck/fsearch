@@ -1096,6 +1096,28 @@ scan_status_cb(const char *path, gpointer user_data) {
     self->event_func(self, event, self->event_func_data);
 }
 
+static void
+index_set_scanned_entries(FsearchDatabaseIndex *self,
+                          DynamicArray *files,
+                          DynamicArray *folders,
+                          GCancellable *cancellable) {
+    self->file_chunks = fsearch_database_chunked_array_new(files,
+                                                           FALSE,
+                                                           fsearch_database_sort_order_chain_for_property(
+                                                               DATABASE_INDEX_PROPERTY_PATH),
+                                                           DATABASE_ENTRY_TYPE_FILE,
+                                                           cancellable,
+                                                           (GDestroyNotify)db_entry_free_no_unparent);
+    self->folder_chunks = fsearch_database_chunked_array_new(folders,
+                                                             FALSE,
+                                                             fsearch_database_sort_order_chain_for_property(
+                                                                 DATABASE_INDEX_PROPERTY_PATH),
+                                                             DATABASE_ENTRY_TYPE_FOLDER,
+                                                             cancellable,
+                                                             (GDestroyNotify)db_entry_free_no_unparent);
+    g_atomic_int_set(&self->initialized, 1);
+}
+
 bool
 fsearch_database_index_scan(FsearchDatabaseIndex *self, GCancellable *cancellable) {
     g_return_val_if_fail(self, false);
@@ -1129,27 +1151,14 @@ fsearch_database_index_scan(FsearchDatabaseIndex *self, GCancellable *cancellabl
         // A cancelled scan isn't a sign the root went away -- don't schedule reappear polling for it.
         if (!g_cancellable_is_cancelled(cancellable)) {
             self->needs_root_reappear_poll = true;
+            // Keep an unavailable root as an empty initialized index. The index store still needs
+            // valid chunk arrays while it waits for the root-reappearance poll to request a rescan.
+            index_set_scanned_entries(self, files, folders, NULL);
         }
         return false;
     }
 
-    // Sorted by PATH, matching what a database load produces, so a scanned and a loaded index are
-    // ordered identically. Both orders keep a folder's descendants in one contiguous chunk, which is
-    // what the removal path relies on
-    self->file_chunks = fsearch_database_chunked_array_new(files,
-                                                           FALSE,
-                                                           fsearch_database_sort_order_chain_for_property(
-                                                               DATABASE_INDEX_PROPERTY_PATH),
-                                                           DATABASE_ENTRY_TYPE_FILE,
-                                                           cancellable,
-                                                           (GDestroyNotify)db_entry_free_no_unparent);
-    self->folder_chunks = fsearch_database_chunked_array_new(folders,
-                                                             FALSE,
-                                                             fsearch_database_sort_order_chain_for_property(
-                                                                 DATABASE_INDEX_PROPERTY_PATH),
-                                                             DATABASE_ENTRY_TYPE_FOLDER,
-                                                             cancellable,
-                                                             (GDestroyNotify)db_entry_free_no_unparent);
+    index_set_scanned_entries(self, files, folders, cancellable);
 
     const int64_t scan_time = g_get_real_time() / G_USEC_PER_SEC;
     fsearch_database_include_set_last_scan_time(self->include, scan_time);
@@ -1162,8 +1171,6 @@ fsearch_database_index_scan(FsearchDatabaseIndex *self, GCancellable *cancellabl
 
     const uint32_t scan_folder_count = folders ? darray_get_num_items(folders) : 0;
     fsearch_database_include_set_last_scanned_folder_count(self->include, scan_folder_count);
-
-    g_atomic_int_set(&self->initialized, 1);
 
     return true;
 }

@@ -186,12 +186,62 @@ test_get_item_info_for_stale_index_still_signals(void) {
     g_rmdir(tmp_dir);
 }
 
+static void
+test_rescan_with_unavailable_root_keeps_database_searchable(void) {
+    g_autofree char *tmp_dir = g_dir_make_tmp("fsearch-test-database-XXXXXX", NULL);
+    g_assert_nonnull(tmp_dir);
+    g_autofree char *missing_root = g_build_filename(tmp_dir, "unavailable-root", NULL);
+    g_autofree char *available_path = g_build_filename(tmp_dir, "available.txt", NULL);
+    g_assert_true(g_file_set_contents(available_path, "", 0, NULL));
+
+    g_autoptr(FsearchDatabaseIncludeManager) include_manager = fsearch_database_include_manager_new();
+    g_autoptr(FsearchDatabaseInclude) available_include =
+        fsearch_database_include_new(tmp_dir, TRUE, FALSE, FALSE, FALSE, 0);
+    g_autoptr(FsearchDatabaseInclude) unavailable_include =
+        fsearch_database_include_new(missing_root, TRUE, FALSE, FALSE, FALSE, 0);
+    fsearch_database_include_manager_add(include_manager, available_include);
+    fsearch_database_include_manager_add(include_manager, unavailable_include);
+    g_autoptr(FsearchDatabaseExcludeManager) exclude_manager = fsearch_database_exclude_manager_new();
+
+    g_autofree char *db_path = g_build_filename(tmp_dir, "fsearch-test.db", NULL);
+    g_autoptr(GFile) db_file = g_file_new_for_path(db_path);
+    FsearchDatabase *db = fsearch_database_new(g_steal_pointer(&db_file), include_manager, exclude_manager);
+
+    g_test_expect_message("fsearch-database-scan", G_LOG_LEVEL_WARNING, "*doesn't exist");
+    g_assert_cmpint(fsearch_database_rescan_blocking(db), ==, FSEARCH_RESULT_SUCCESS);
+    g_test_assert_expected_messages();
+
+    FsearchFilterManager *filters = fsearch_filter_manager_new_with_defaults();
+    g_autoptr(FsearchQuery) query = fsearch_query_new("available", NULL, filters, 0, "test");
+    WaitCtx ctx = {};
+    gulong search_finished_handler = g_signal_connect(db, "search-finished", G_CALLBACK(on_search_finished), &ctx);
+    g_autoptr(FsearchDatabaseWork) search_work = fsearch_database_work_new_search(1,
+                                                                                  query,
+                                                                                  DATABASE_INDEX_PROPERTY_NAME,
+                                                                                  GTK_SORT_ASCENDING);
+    fsearch_database_queue_work(db, search_work);
+    wait_for_signal(&ctx);
+    g_signal_handler_disconnect(db, search_finished_handler);
+
+    g_assert_nonnull(ctx.search_info);
+    g_assert_cmpuint(fsearch_database_search_info_get_num_files(ctx.search_info), ==, 1);
+    wait_ctx_clear(&ctx);
+    fsearch_filter_manager_unref(filters);
+
+    g_object_unref(db);
+    g_unlink(available_path);
+    g_unlink(db_path);
+    g_rmdir(tmp_dir);
+}
+
 int
 main(int argc, char **argv) {
     g_test_init(&argc, &argv, NULL);
 
     g_test_add_func("/FSearch/database/get_item_info_for_stale_index_still_signals",
                     test_get_item_info_for_stale_index_still_signals);
+    g_test_add_func("/FSearch/database/rescan_with_unavailable_root_keeps_database_searchable",
+                    test_rescan_with_unavailable_root_keeps_database_searchable);
 
     return g_test_run();
 }
