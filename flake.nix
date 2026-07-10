@@ -22,6 +22,7 @@
               meson
               ninja
               pkg-config
+              cppcheck
             ];
 
             buildInputs = with pkgs; [
@@ -34,6 +35,12 @@
             mesonFlags = [ "--buildtype=release" ];
             mesonBuildDir = "builddir";
             doCheck = true;
+            checkPhase = ''
+              runHook preCheck
+              meson test --print-errorlogs
+              bash $src/tests/static-analysis .. .
+              runHook postCheck
+            '';
           };
         in
         {

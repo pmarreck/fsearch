@@ -33,5 +33,8 @@
 
 # Static analysis follow-up (2026-07-10)
 
-- [ ] Triage and fix Cppcheck findings without blanket suppression, then add a blocking flake check for serious findings.
-  Curiosity poke: `g_assert` is not an OOM recovery mechanism in release builds, so allocator warnings need real handling or a deliberate fatal allocator.
+- [x] Add modeled Cppcheck analysis as a blocking release-build check. Completed 2026-07-10 09:19 EDT.
+  `tests/static-analysis` uses Cppcheck's GTK/GLib model and exact inline suppressions only for intentional token/index pointer storage; Meson compilation independently catches the model's external-header parse noise.
+
+- [ ] Profile and reduce `./test` wall time without weakening its independent unit, CLI, package, or static-analysis controls.
+  Curiosity poke: avoid paying separately for local Meson compilation, release-package compilation, and whole-project analysis when a shared build database or a Nix check can supply the same evidence.

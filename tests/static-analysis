@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+
+set -u
+
+source_root=$(realpath "${1:-.}")
+build_root=$(realpath "${2:-builddir}")
+cppcheck_bin=$(command -v cppcheck)
+cppcheck_root=$(dirname "$(dirname "$cppcheck_bin")")
+gtk_model="$cppcheck_root/share/cppcheck/cfg/gtk.cfg"
+
+if [ ! -r "$build_root/compile_commands.json" ]; then
+	printf 'static-analysis: missing Meson compilation database: %s/compile_commands.json\n' "$build_root" >&2
+	exit 2
+fi
+
+if [ ! -r "$gtk_model" ]; then
+	printf 'static-analysis: missing Cppcheck GTK/GLib model: %s\n' "$gtk_model" >&2
+	exit 2
+fi
+
+cd "$source_root"
+
+# gtk.cfg models GLib's fatal allocators. Its parser has known false syntax errors in the
+# external GLib headers; Meson's real compiler build independently rejects source syntax errors.
+exec cppcheck \
+	--quiet \
+	--project="$build_root/compile_commands.json" \
+	--library="$gtk_model" \
+	--enable=warning,performance,portability \
+	--error-exitcode=1 \
+	--inline-suppr \
+	--suppress=missingIncludeSystem \
+	--suppress=syntaxError
