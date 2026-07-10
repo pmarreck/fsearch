@@ -27,7 +27,7 @@ typedef struct DatabaseWalkContext {
     GTimer *timer;
     GMutex *monitor_lock;
     GCancellable *cancellable;
-    void (*status_cb)(const char *, gpointer);
+    void (*status_cb)(const char *, uint32_t, uint32_t, gpointer);
     gpointer status_cb_data;
     ssize_t file_handle_payload;
     dev_t root_device_id;
@@ -149,7 +149,10 @@ db_folder_scan_recursive(DatabaseWalkContext *walk_context, FsearchDatabaseEntry
     const double elapsed_seconds = g_timer_elapsed(walk_context->timer, NULL);
     if (elapsed_seconds > 0.1) {
         if (walk_context->status_cb) {
-            walk_context->status_cb(path->str, walk_context->status_cb_data);
+            walk_context->status_cb(path->str,
+                                    darray_get_num_items(walk_context->files),
+                                    darray_get_num_items(walk_context->folders),
+                                    walk_context->status_cb_data);
         }
         g_timer_start(walk_context->timer);
     }
@@ -250,7 +253,7 @@ db_scan_folder(const char *path,
                FsearchFolderMonitorInotify *inotify_monitor,
                bool one_file_system,
                GCancellable *cancellable,
-               void (*status_cb)(const char *, gpointer),
+               void (*status_cb)(const char *, uint32_t, uint32_t, gpointer),
                gpointer status_cb_data) {
     g_assert(g_path_is_absolute(path));
     g_debug("[db_scan] scan path: %s", path);

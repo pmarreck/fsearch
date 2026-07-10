@@ -15,11 +15,24 @@
 
 #include <errno.h>
 #include <limits.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
+#ifdef G_OS_WIN32
+#include <io.h>
+#define fsearch_cli_isatty _isatty
+#define fsearch_cli_fileno _fileno
+#else
+#include <unistd.h>
+#define fsearch_cli_isatty isatty
+#define fsearch_cli_fileno fileno
+#endif
+
 #define FSEARCH_CLI_DEFAULT_RESULT_LIMIT 100
 #define FSEARCH_CLI_VIEW_ID 1
+#define FSEARCH_CLI_ITALIC_LIGHT_GREY "\x1b[3;37m"
+#define FSEARCH_CLI_ANSI_RESET "\x1b[0m"
 
 typedef struct {
     GMainLoop *loop;
@@ -31,6 +44,7 @@ typedef struct {
     gboolean wait_for_index_update;
     gboolean search_queued;
     gboolean index_update_notice_printed;
+    gboolean index_progress_visible;
     int exit_code;
 } FsearchCliRun;
 
@@ -87,15 +101,35 @@ fsearch_cli_resolve_result_limit(const char *environment_limit, const char *argu
 /// Renders the cap notice as a deterministic ANSI-styled line for terminal consumers.
 char *
 fsearch_cli_format_cap_notice(guint limit) {
-    return g_strdup_printf("\x1b[3;90mResults capped at %u. Use --unlimit to get them all, or provide a custom --limit, "
-                           "or set FSEARCH_RESULT_LIMIT.\x1b[0m",
+    return g_strdup_printf(FSEARCH_CLI_ITALIC_LIGHT_GREY
+                           "Results capped at %u. Use --unlimit or --unlimited to get them all, or provide a custom --limit, "
+                           "or set FSEARCH_RESULT_LIMIT."
+                           FSEARCH_CLI_ANSI_RESET,
                            limit);
+}
+
+/// Renders the complete result count as a muted status line for stderr.
+char *
+fsearch_cli_format_result_count_notice(guint total) {
+    return g_strdup_printf(FSEARCH_CLI_ITALIC_LIGHT_GREY "%u match%s." FSEARCH_CLI_ANSI_RESET,
+                           total,
+                           total == 1 ? "" : "es");
 }
 
 /// Renders the index-rebuild status line for stderr without mixing it into path output.
 char *
 fsearch_cli_format_index_update_notice(void) {
-    return g_strdup("\x1b[3mUpdating FSearch index before searching...\x1b[0m");
+    return g_strdup(FSEARCH_CLI_ITALIC_LIGHT_GREY "Updating FSearch index before searching..." FSEARCH_CLI_ANSI_RESET);
+}
+
+/// Renders an in-place, indeterminate scan status using observed entries rather than a fabricated percentage.
+char *
+fsearch_cli_format_index_progress(const char *status) {
+    g_return_val_if_fail(status != NULL, NULL);
+    return g_strdup_printf("\r\x1b[2K" FSEARCH_CLI_ITALIC_LIGHT_GREY
+                           "Indexing: %s"
+                           FSEARCH_CLI_ANSI_RESET,
+                           status);
 }
 
 /// Builds a path-constrained query while escaping the path as one literal FSearch term.
@@ -132,7 +166,7 @@ print_help(void) {
             "      --path DIRECTORY        Search recursively below DIRECTORY (default: current directory)\n"
             "      --global                Search every indexed location\n"
             "      --limit COUNT          Print at most COUNT results\n"
-            "      --unlimit              Print every result\n"
+            "      --unlimit, --unlimited Print every result\n"
             "  -u, --update-database      Rescan the configured index and exit\n"
             "      --about                Print one-line build information\n"
             "  -h, --help                 Show this help\n\n"
@@ -143,7 +177,9 @@ print_help(void) {
             "  fsearch --cli --search 'file:size:>20mb'\n"
             "  fsearch --cli --search 'ext:jpg;png'\n"
             "  fsearch --cli --search 'path:projects report'\n"
-            "  fsearch --cli --search 'file:regex:\".+\\.pdf$\"'\n\n"
+            "  fsearch --cli --search 'file:regex:\".+\\.pdf$\"'\n"
+            "  fsearch --cli --search 'case:AGENTS'        # case-sensitive\n"
+            "  fsearch --cli --search 'case:regex:\"^AGENTS\\.md$\"'\n\n"
             "Examples use space as AND. Try file:, folder:, path:, ext:, size:, dm:, case:, and regex:.\n");
 }
 
@@ -178,6 +214,11 @@ static void
 finish(FsearchCliRun *run, int exit_code) {
     run->exit_code = exit_code;
     g_main_loop_quit(run->loop);
+}
+
+static gboolean
+stderr_is_terminal(void) {
+    return fsearch_cli_isatty(fsearch_cli_fileno(stderr)) != 0;
 }
 
 static gboolean
@@ -227,6 +268,11 @@ on_search_finished(FsearchDatabase *database, guint id, FsearchDatabaseSearchInf
     const guint total = fsearch_database_search_info_get_num_entries(info);
     const guint output_count = run->limit == 0 ? total : MIN(total, run->limit);
 
+    if (run->index_progress_visible) {
+        g_printerr("\r\x1b[2K");
+        run->index_progress_visible = FALSE;
+    }
+
     for (guint i = 0; i < output_count; i++) {
         g_autoptr(FsearchDatabaseEntryInfo) entry_info = NULL;
         if (fsearch_database_try_get_item_info(database,
@@ -248,6 +294,11 @@ on_search_finished(FsearchDatabase *database, guint id, FsearchDatabaseSearchInf
     if (run->limit > 0 && total > run->limit) {
         g_autofree char *notice = fsearch_cli_format_cap_notice(run->limit);
         g_print("%s\n", notice);
+    }
+    else {
+        fflush(stdout);
+        g_autofree char *notice = fsearch_cli_format_result_count_notice(total);
+        g_printerr("%s\n", notice);
     }
 
     finish(run, EXIT_SUCCESS);
@@ -287,6 +338,18 @@ on_database_scan_finished(FsearchDatabase *database, FsearchDatabaseInfo *info, 
     }
 }
 
+static void
+on_database_progress(FsearchDatabase *database, char *text, gpointer user_data) {
+    FsearchCliRun *run = user_data;
+    if (run->update_database || !run->wait_for_index_update || !stderr_is_terminal()) {
+        return;
+    }
+
+    g_autofree char *progress = fsearch_cli_format_index_progress(text);
+    g_printerr("%s", progress);
+    run->index_progress_visible = TRUE;
+}
+
 int
 fsearch_cli_run(int argc, char *argv[]) {
     const char *search_term = "";
@@ -312,7 +375,7 @@ fsearch_cli_run(int argc, char *argv[]) {
             g_print("FSearch %s\n", PACKAGE_VERSION);
             return EXIT_SUCCESS;
         }
-        if (g_strcmp0(argv[i], "--unlimit") == 0) {
+        if (g_strcmp0(argv[i], "--unlimit") == 0 || g_strcmp0(argv[i], "--unlimited") == 0) {
             unlimit = TRUE;
             argument_limit = NULL;
             continue;
@@ -368,6 +431,7 @@ fsearch_cli_run(int argc, char *argv[]) {
     g_signal_connect(run.database, "load-finished", G_CALLBACK(on_database_loaded), &run);
     g_signal_connect(run.database, "scan-started", G_CALLBACK(on_database_scan_started), &run);
     g_signal_connect(run.database, "scan-finished", G_CALLBACK(on_database_scan_finished), &run);
+    g_signal_connect(run.database, "database-progress", G_CALLBACK(on_database_progress), &run);
     g_signal_connect(run.database, "search-finished", G_CALLBACK(on_search_finished), &run);
 
     g_autoptr(FsearchDatabaseWork) load_work = fsearch_database_work_new_load();

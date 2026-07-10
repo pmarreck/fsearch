@@ -50,6 +50,7 @@ struct _FsearchDatabaseIndex {
     gpointer event_func_data;
 
     bool needs_root_reappear_poll;
+    gint64 scan_started_us;
 
     volatile gint monitor;
     volatile gint initialized;
@@ -1082,15 +1083,22 @@ fsearch_database_index_unlock(FsearchDatabaseIndex *self) {
 }
 
 static void
-scan_status_cb(const char *path, gpointer user_data) {
+scan_status_cb(const char *path, uint32_t num_files, uint32_t num_folders, gpointer user_data) {
     FsearchDatabaseIndex *self = user_data;
     if (!self->event_func) {
         return;
     }
+    const guint64 entries = (guint64)num_files + num_folders;
+    const gint64 elapsed_us = MAX(g_get_monotonic_time() - self->scan_started_us, 1);
+    const guint64 entries_per_second = entries * G_USEC_PER_SEC / elapsed_us;
+    g_autofree char *status = g_strdup_printf("%" G_GUINT64_FORMAT " entries, %" G_GUINT64_FORMAT "/s  %s",
+                                              entries,
+                                              entries_per_second,
+                                              path);
     g_autoptr(FsearchDatabaseIndexEvent) event = fsearch_database_index_event_new(FSEARCH_DATABASE_INDEX_EVENT_SCANNING,
                                                                                   NULL,
                                                                                   NULL,
-                                                                                  path,
+                                                                                  status,
                                                                                   DATABASE_INDEX_PROPERTY_FLAG_NONE,
                                                                                   false);
     self->event_func(self, event, self->event_func_data);
@@ -1134,6 +1142,7 @@ fsearch_database_index_scan(FsearchDatabaseIndex *self, GCancellable *cancellabl
     g_autoptr(DynamicArray) folders = darray_new(4096);
 
     self->needs_root_reappear_poll = false;
+    self->scan_started_us = g_get_monotonic_time();
 
     g_autoptr(GTimer) scan_timer = g_timer_new();
 

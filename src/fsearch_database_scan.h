@@ -14,5 +14,5 @@ db_scan_folder(const char *path,
                FsearchFolderMonitorInotify *inotify_monitor,
                bool one_file_system,
                GCancellable *cancellable,
-               void (*status_cb)(const char *, gpointer),
+               void (*status_cb)(const char *, uint32_t, uint32_t, gpointer),
                gpointer status_cb_data);

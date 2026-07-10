@@ -62,8 +62,20 @@ test_cap_notice(void) {
     g_autofree char *notice = fsearch_cli_format_cap_notice(100);
     g_assert_cmpstr(notice,
                     ==,
-                    "\x1b[3;90mResults capped at 100. Use --unlimit to get them all, or provide a custom --limit, "
+                    "\x1b[3;37mResults capped at 100. Use --unlimit or --unlimited to get them all, or provide a custom --limit, "
                     "or set FSEARCH_RESULT_LIMIT.\x1b[0m");
+}
+
+static void
+test_result_and_index_progress_notices(void) {
+    g_autofree char *one_match = fsearch_cli_format_result_count_notice(1);
+    g_assert_cmpstr(one_match, ==, "\x1b[3;37m1 match.\x1b[0m");
+
+    g_autofree char *many_matches = fsearch_cli_format_result_count_notice(42);
+    g_assert_cmpstr(many_matches, ==, "\x1b[3;37m42 matches.\x1b[0m");
+
+    g_autofree char *progress = fsearch_cli_format_index_progress("18402 entries, 7150/s  /work/current/src");
+    g_assert_cmpstr(progress, ==, "\r\x1b[2K\x1b[3;37mIndexing: 18402 entries, 7150/s  /work/current/src\x1b[0m");
 }
 
 static void
@@ -118,7 +130,10 @@ test_search_rebuilds_missing_index_before_printing_results(void) {
     g_set_printerr_handler(old_stderr_handler);
     g_autofree char *expected_stdout = g_strdup_printf("%s\n", indexed_file);
     g_assert_nonnull(g_strstr_len(captured_stdout->str, -1, expected_stdout));
-    g_assert_cmpstr(captured_stderr->str, ==, "\x1b[3mUpdating FSearch index before searching...\x1b[0m\n");
+    g_assert_cmpstr(captured_stderr->str,
+                    ==,
+                    "\x1b[3;37mUpdating FSearch index before searching...\x1b[0m\n"
+                    "\x1b[3;37m1 match.\x1b[0m\n");
     g_string_free(g_steal_pointer(&captured_stdout), TRUE);
     g_string_free(g_steal_pointer(&captured_stderr), TRUE);
 
@@ -142,6 +157,7 @@ main(int argc, char **argv) {
     g_test_add_func("/FSearch/cli/frontend_selection", test_frontend_selection);
     g_test_add_func("/FSearch/cli/result_limit_precedence", test_result_limit_precedence);
     g_test_add_func("/FSearch/cli/cap_notice", test_cap_notice);
+    g_test_add_func("/FSearch/cli/result_and_index_progress_notices", test_result_and_index_progress_notices);
     g_test_add_func("/FSearch/cli/scoped_query", test_scoped_query);
     g_test_add_func("/FSearch/cli/search_rebuilds_missing_index_before_printing_results",
                     test_search_rebuilds_missing_index_before_printing_results);
