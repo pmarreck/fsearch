@@ -11,6 +11,7 @@ test_database_index_store = executable('test_database_index_store', 'test_databa
 test_database = executable('test_database', 'test_database.c', dependencies : libfsearch_dep)
 test_database_file = executable('test_database_file', 'test_database_file.c', dependencies : libfsearch_dep)
 test_cli = executable('test_cli', 'test_cli.c', dependencies : libfsearch_dep)
+benchmark_glob = executable('benchmark_glob', 'benchmark_glob.c', dependencies : libfsearch_dep)
 
 test('test_database',
      test_database,

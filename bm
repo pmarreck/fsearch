@@ -2,48 +2,166 @@
 
 set -u
 
-baseline_file=tests/benchmark/cli-help.tsv
-result_file="${TMPDIR:-/tmp}/fsearch-cli-help.json"
+benchmark_file=tests/benchmark/glob-scaling.tsv
+complexity_calculator=tests/benchmark/complexity.awk
+complexity_test=tests/benchmark/test_complexity
+build_dir=benchmark-build
+benchmark_binary="$build_dir/src/tests/benchmark_glob"
+result_file="${TMPDIR:-/tmp}/fsearch-glob-scaling.json"
+timing_file="${TMPDIR:-/tmp}/fsearch-glob-scaling-times.tsv"
+sample_file="${TMPDIR:-/tmp}/fsearch-glob-scaling-samples.tsv"
 timestamp=$(date -u +%Y-%m-%dT%H:%M:%SZ)
 commit=$(git rev-parse HEAD)
+max_linear_exponent=1.20
+max_exponent_change_percent=20
 
-nix build .#default
-if result/bin/fsearch --cli --help 2>&1 | grep -q 'DEBUG BUILD'; then
-	printf 'Benchmark requires a release build, but the binary announced DEBUG BUILD.\n' >&2
+sanitize_field() {
+	printf '%s' "$1" | tr '\t\r\n' '   '
+}
+
+value_or_unknown() {
+	if [ -n "${1-}" ]; then
+		sanitize_field "$1"
+	else
+		printf 'unknown'
+	fi
+}
+
+machine_os=$(uname -s 2>/dev/null || printf unknown)
+machine_architecture=$(uname -m 2>/dev/null || printf unknown)
+os_version=unknown
+cpu_model=unknown
+cpu_mhz=unknown
+cpu_cores=$(getconf _NPROCESSORS_ONLN 2>/dev/null || printf unknown)
+total_memory_bytes=unknown
+
+case "$machine_os" in
+	Linux)
+		os_version=$(awk -F= '/^PRETTY_NAME=/ { gsub(/^"|"$/, "", $2); print $2; exit }' /etc/os-release 2>/dev/null)
+		cpu_model=$(awk -F ': *' '/^model name/ { print $2; exit }' /proc/cpuinfo 2>/dev/null)
+		cpu_mhz=$(awk -F ': *' '/^cpu MHz/ { print $2; exit }' /proc/cpuinfo 2>/dev/null)
+		total_memory_bytes=$(awk '/^MemTotal:/ { printf "%.0f", $2 * 1024; exit }' /proc/meminfo 2>/dev/null)
+		;;
+	Darwin)
+		os_version=$(sw_vers -productVersion 2>/dev/null)
+		cpu_model=$(sysctl -n machdep.cpu.brand_string 2>/dev/null)
+		cpu_mhz=$(sysctl -n hw.cpufrequency 2>/dev/null)
+		total_memory_bytes=$(sysctl -n hw.memsize 2>/dev/null)
+		;;
+	MINGW*|MSYS*|CYGWIN*)
+		os_version=$(cmd.exe /c ver 2>/dev/null)
+		cpu_model=$(powershell.exe -NoProfile -Command '(Get-CimInstance Win32_Processor | Select-Object -First 1 -ExpandProperty Name)' 2>/dev/null)
+		cpu_mhz=$(powershell.exe -NoProfile -Command '(Get-CimInstance Win32_Processor | Select-Object -First 1 -ExpandProperty MaxClockSpeed)' 2>/dev/null)
+		cpu_cores=$(powershell.exe -NoProfile -Command '(Get-CimInstance Win32_ComputerSystem).NumberOfLogicalProcessors' 2>/dev/null)
+		total_memory_bytes=$(powershell.exe -NoProfile -Command '(Get-CimInstance Win32_ComputerSystem).TotalPhysicalMemory' 2>/dev/null)
+		;;
+esac
+
+machine_os=$(value_or_unknown "$machine_os")
+machine_architecture=$(value_or_unknown "$machine_architecture")
+os_version=$(value_or_unknown "$os_version")
+cpu_model=$(value_or_unknown "$cpu_model")
+cpu_mhz=$(value_or_unknown "$cpu_mhz")
+cpu_cores=$(value_or_unknown "$cpu_cores")
+total_memory_bytes=$(value_or_unknown "$total_memory_bytes")
+
+if ! "$complexity_test"; then
+	printf 'Benchmark complexity oracle failed.\n' >&2
 	exit 1
 fi
-nix develop -c hyperfine --warmup 3 --runs 12 --export-json "$result_file" 'result/bin/fsearch --cli --help >/dev/null'
+if ! nix build .#default; then
+	exit 1
+fi
+if [ -f "$build_dir/build.ninja" ]; then
+	if ! nix develop -c meson setup "$build_dir" --reconfigure --buildtype=release; then
+		exit 1
+	fi
+elif ! nix develop -c meson setup "$build_dir" --buildtype=release; then
+	exit 1
+fi
+if ! nix develop -c ninja -C "$build_dir" src/tests/benchmark_glob; then
+	exit 1
+fi
 
-wall_seconds=$(nix develop -c jq -r '.results[0].mean' "$result_file")
-user_seconds=$(nix develop -c jq -r '.results[0].user' "$result_file")
-system_seconds=$(nix develop -c jq -r '.results[0].system' "$result_file")
-cpu_seconds=$(awk -v user_time="$user_seconds" -v system_time="$system_seconds" 'BEGIN { print user_time + system_time }')
+metadata=$("$benchmark_binary" 1 --metadata)
+metadata_rc=$?
+if [ "$metadata_rc" -ne 0 ]; then
+	printf 'Could not obtain glob benchmark metadata.\n' >&2
+	exit 1
+fi
+base_input_bytes=$(printf '%s\n' "$metadata" | awk -F '\t' 'NF == 2 { print $1 }')
+conversions_per_sample=$(printf '%s\n' "$metadata" | awk -F '\t' 'NF == 2 { print $2 }')
+case "$base_input_bytes" in
+	*[!0-9]*|'') printf 'Invalid glob benchmark metadata: %s\n' "$metadata" >&2; exit 1 ;;
+esac
+case "$conversions_per_sample" in
+	*[!0-9]*|'') printf 'Invalid glob benchmark metadata: %s\n' "$metadata" >&2; exit 1 ;;
+esac
+
+if ! nix develop -c hyperfine --warmup 3 --runs 12 --export-json "$result_file" \
+	--command-name glob-1x "$benchmark_binary 1" \
+	--command-name glob-2x "$benchmark_binary 2" \
+	--command-name glob-4x "$benchmark_binary 4" \
+	--command-name glob-8x "$benchmark_binary 8"; then
+	exit 1
+fi
+
+if ! nix develop -c jq -r '.results[] | [.mean, .user, .system] | @tsv' "$result_file" > "$timing_file"; then
+	exit 1
+fi
+if [ "$(wc -l < "$timing_file")" -ne 4 ]; then
+	printf 'Expected four glob benchmark timing samples.\n' >&2
+	exit 1
+fi
+awk -F '\t' 'NR == 1 { print "1\t" $1 } NR == 2 { print "2\t" $1 } NR == 3 { print "4\t" $1 } NR == 4 { print "8\t" $1 }' "$timing_file" > "$sample_file"
+scaling_exponent=$(awk -f "$complexity_calculator" "$sample_file")
+if [ $? -ne 0 ]; then
+	printf 'Could not calculate the glob scaling exponent.\n' >&2
+	exit 1
+fi
+
+wall_1x=$(awk -F '\t' 'NR == 1 { print $1 }' "$timing_file")
+user_1x=$(awk -F '\t' 'NR == 1 { print $2 }' "$timing_file")
+system_1x=$(awk -F '\t' 'NR == 1 { print $3 }' "$timing_file")
+wall_2x=$(awk -F '\t' 'NR == 2 { print $1 }' "$timing_file")
+user_2x=$(awk -F '\t' 'NR == 2 { print $2 }' "$timing_file")
+system_2x=$(awk -F '\t' 'NR == 2 { print $3 }' "$timing_file")
+wall_4x=$(awk -F '\t' 'NR == 3 { print $1 }' "$timing_file")
+user_4x=$(awk -F '\t' 'NR == 3 { print $2 }' "$timing_file")
+system_4x=$(awk -F '\t' 'NR == 3 { print $3 }' "$timing_file")
+wall_8x=$(awk -F '\t' 'NR == 4 { print $1 }' "$timing_file")
+user_8x=$(awk -F '\t' 'NR == 4 { print $2 }' "$timing_file")
+system_8x=$(awk -F '\t' 'NR == 4 { print $3 }' "$timing_file")
 
 mkdir -p tests/benchmark
-if [ ! -f "$baseline_file" ] || [ "$(sed -n '1p' "$baseline_file")" != $'timestamp_utc\tcommit\twall_seconds\tuser_seconds\tsystem_seconds' ]; then
-	{
-		printf 'timestamp_utc\tcommit\twall_seconds\tuser_seconds\tsystem_seconds\n'
-		if [ -f "$baseline_file" ]; then
-			awk 'NR > 1 { printf "unknown\\tunknown\\t%s\\tunknown\\tunknown\\n", $1 }' "$baseline_file"
-		fi
-	} > "$baseline_file.new"
-	mv "$baseline_file.new" "$baseline_file"
+header=$'timestamp_utc\tcommit\tos\tos_version\tarchitecture\tcpu_model\tcpu_mhz\tcpu_logical_cores\ttotal_memory_bytes\tbase_input_bytes\tconversions_per_sample\twall_1x_seconds\tuser_1x_seconds\tsystem_1x_seconds\twall_2x_seconds\tuser_2x_seconds\tsystem_2x_seconds\twall_4x_seconds\tuser_4x_seconds\tsystem_4x_seconds\twall_8x_seconds\tuser_8x_seconds\tsystem_8x_seconds\tscaling_exponent'
+if [ ! -f "$benchmark_file" ]; then
+	printf '%s\n' "$header" > "$benchmark_file"
 fi
-
-previous=$(awk -F '\t' '$1 != "unknown" { row = $0 } END { print row }' "$baseline_file")
-printf '%s\t%s\t%s\t%s\t%s\n' "$timestamp" "$commit" "$wall_seconds" "$user_seconds" "$system_seconds" >> "$baseline_file"
-
-if [ -z "$previous" ]; then
-	printf 'Benchmark recorded: wall=%ss cpu=%ss (%s, %s) at %s\n' "$wall_seconds" "$cpu_seconds" "$commit" "$timestamp"
-	exit 0
-fi
-
-previous_wall=$(printf '%s\n' "$previous" | awk -F '\t' '{ print $3 }')
-previous_cpu=$(printf '%s\n' "$previous" | awk -F '\t' '{ print $4 + $5 }')
-wall_change=$(awk -v previous="$previous_wall" -v current="$wall_seconds" 'BEGIN { print ((current - previous) / previous) * 100 }')
-cpu_change=$(awk -v previous="$previous_cpu" -v current="$cpu_seconds" 'BEGIN { print ((current - previous) / previous) * 100 }')
-printf 'CLI help benchmark: wall=%ss (%+.2f%%), cpu=%ss (%+.2f%%) from previous run\n' "$wall_seconds" "$wall_change" "$cpu_seconds" "$cpu_change"
-if awk -v wall_change="$wall_change" -v cpu_change="$cpu_change" 'BEGIN { exit (wall_change > 20 || wall_change < -20 || cpu_change > 20 || cpu_change < -20) ? 0 : 1 }'; then
-	printf 'Benchmark changed by more than 20%%. Rerun ./bm to accept the new baseline.\n' >&2
+if [ "$(sed -n '1p' "$benchmark_file")" != "$header" ]; then
+	printf 'Unexpected benchmark log schema in %s.\n' "$benchmark_file" >&2
 	exit 1
+fi
+
+previous_exponent=$(awk -F '\t' 'NR > 1 { exponent = $24 } END { print exponent }' "$benchmark_file")
+printf '%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\n' \
+	"$timestamp" "$commit" "$machine_os" "$os_version" "$machine_architecture" "$cpu_model" "$cpu_mhz" "$cpu_cores" "$total_memory_bytes" \
+	"$base_input_bytes" "$conversions_per_sample" "$wall_1x" "$user_1x" "$system_1x" "$wall_2x" "$user_2x" "$system_2x" \
+	"$wall_4x" "$user_4x" "$system_4x" "$wall_8x" "$user_8x" "$system_8x" "$scaling_exponent" >> "$benchmark_file"
+
+printf 'Glob scaling exponent: %s (1x=%ss, 2x=%ss, 4x=%ss, 8x=%ss)\n' \
+	"$scaling_exponent" "$wall_1x" "$wall_2x" "$wall_4x" "$wall_8x"
+if awk -v exponent="$scaling_exponent" -v maximum="$max_linear_exponent" 'BEGIN { exit exponent > maximum ? 0 : 1 }'; then
+	printf 'Glob benchmark exceeded the linear complexity limit of %s.\n' "$max_linear_exponent" >&2
+	exit 1
+fi
+
+if [ -n "$previous_exponent" ]; then
+	exponent_change_percent=$(awk -v previous="$previous_exponent" -v current="$scaling_exponent" 'BEGIN { print ((current - previous) / previous) * 100 }')
+	printf 'Scaling exponent change from previous run: %+.2f%% (%s -> %s)\n' "$exponent_change_percent" "$previous_exponent" "$scaling_exponent"
+	if awk -v change="$exponent_change_percent" -v maximum="$max_exponent_change_percent" 'BEGIN { exit (change > maximum || change < -maximum) ? 0 : 1 }'; then
+		printf '\033[1;31mALERT: Glob scaling exponent changed by %+.2f%%, exceeding the +/- %s%% limit. Rerun ./bm to accept the new baseline.\033[0m\n' \
+			"$exponent_change_percent" "$max_exponent_change_percent" >&2
+		exit 1
+	fi
 fi

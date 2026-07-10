@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+set -u
+
+source "$HOME/dotfiles/bin/src/capture.bash"
+
+calculator=tests/benchmark/complexity.awk
+failures=0
+
+assert_exponent() {
+	local description=$1
+	local samples=$2
+	local expected=$3
+	local out='' err='' rc=0
+
+	capture awk -f "$calculator" "$samples"
+	if [ "$rc" -ne 0 ]; then
+		printf 'FAIL: %s returned %s: %s\n' "$description" "$rc" "$err" >&2
+		failures=$((failures + 1))
+	elif [ "$out" != "$expected" ]; then
+		printf 'FAIL: %s expected %s, got %s\n' "$description" "$expected" "$out" >&2
+		failures=$((failures + 1))
+	fi
+}
+
+assert_exponent 'linear scaling exponent' tests/benchmark/linear-samples.tsv 1.000000
+assert_exponent 'quadratic scaling exponent' tests/benchmark/quadratic-samples.tsv 2.000000
+
+exit "$failures"

@@ -25,3 +25,13 @@
   `*`, `**/`, `?`, character ranges, brace alternatives, bounded numeric ranges, and escapes are covered as query classifiers.
 - [x] Make `./build`, `./test`, and `./bm` fulfill the documented build, aggregate-test, and performance-log contracts. Completed 2026-07-10 08:45 EDT.
   The benchmark history records UTC timestamp, commit, wall time, and CPU time.
+
+# Benchmark scaling follow-up (2026-07-10)
+
+- [x] Record a CPU-independent O(n) scaling exponent from 1x, 2x, 4x, and 8x glob workloads. Completed 2026-07-10 08:57 EDT.
+  Raw wall, user, and system timings include OS/version, CPU model/MHz/cores, memory, and architecture; the independent log-log slope is the cross-machine comparison field.
+
+# Static analysis follow-up (2026-07-10)
+
+- [ ] Triage and fix Cppcheck findings without blanket suppression, then add a blocking flake check for serious findings.
+  Curiosity poke: `g_assert` is not an OOM recovery mechanism in release builds, so allocator warnings need real handling or a deliberate fatal allocator.
