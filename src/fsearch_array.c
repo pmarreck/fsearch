@@ -235,14 +235,12 @@ merge_thread(gpointer data, gpointer user_data) {
 
 DynamicArray *
 darray_new(size_t num_items) {
-    DynamicArray *new = calloc(1, sizeof(DynamicArray));
-    g_assert(new);
+    DynamicArray *new = g_new0(DynamicArray, 1);
 
     new->max_items = num_items;
     new->num_items = 0;
 
-    new->data = calloc(num_items, sizeof(void *));
-    g_assert(new->data);
+    new->data = g_new0(void *, MAX(num_items, 1));
 
     new->ref_count = 1;
 
@@ -755,14 +753,12 @@ darray_copy_borrowed(DynamicArray *array) {
     if (!array) {
         return NULL;
     }
-    DynamicArray *new = calloc(1, sizeof(DynamicArray));
-    g_assert(new);
+    DynamicArray *new = g_new0(DynamicArray, 1);
 
     new->max_items = array->max_items;
     new->num_items = array->num_items;
 
-    new->data = calloc(new->max_items, sizeof(void *));
-    g_assert(new->data);
+    new->data = g_new0(void *, MAX(new->max_items, 1));
 
     new->item_free_func = NULL;
 
@@ -789,14 +785,12 @@ darray_copy(DynamicArray *array) {
     if (!array) {
         return NULL;
     }
-    DynamicArray *new = calloc(1, sizeof(DynamicArray));
-    g_assert(new);
+    DynamicArray *new = g_new0(DynamicArray, 1);
 
     new->max_items = array->max_items;
     new->num_items = array->num_items;
 
-    new->data = calloc(new->max_items, sizeof(void *));
-    g_assert(new->data);
+    new->data = g_new0(void *, MAX(new->max_items, 1));
 
     new->item_free_func = array->item_free_func;
 
