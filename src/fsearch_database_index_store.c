@@ -15,6 +15,7 @@
 #include "fsearch_database_search_info.h"
 #include "fsearch_database_search_view.h"
 #include "fsearch_database_sort.h"
+#include "fsearch_limits.h"
 #include "fsearch_query.h"
 #include "fsearch_query_match_data.h"
 #include "fsearch_selection_type.h"
@@ -754,7 +755,11 @@ fsearch_database_index_store_new(FsearchDatabaseIncludeManager *include_manager,
     store->event_func = event_func;
     store->event_func_data = event_func_data;
 
-    store->worker_pool = g_thread_pool_new(index_store_worker_pool_func, store, g_get_num_processors(), TRUE, NULL);
+    store->worker_pool = g_thread_pool_new(index_store_worker_pool_func,
+                                           store,
+                                           MIN(g_get_num_processors(), FSEARCH_THREAD_LIMIT),
+                                           TRUE,
+                                           NULL);
     store->worker_pool_collect_queue = g_async_queue_new();
 
     store->monitor.ctx = g_main_context_new();

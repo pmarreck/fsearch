@@ -24,6 +24,9 @@ fsearch_database_queue_work(FsearchDatabase *self, FsearchDatabaseWork *work);
 void
 fsearch_database_cancel_scan(FsearchDatabase *self);
 
+void
+fsearch_database_cancel(FsearchDatabase *self);
+
 FsearchResult
 fsearch_database_try_get_search_info(FsearchDatabase *self, uint32_t view_id, FsearchDatabaseSearchInfo **info_out);
 

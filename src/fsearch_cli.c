@@ -24,6 +24,8 @@
 #define fsearch_cli_isatty _isatty
 #define fsearch_cli_fileno _fileno
 #else
+#include <glib-unix.h>
+#include <signal.h>
 #include <unistd.h>
 #define fsearch_cli_isatty isatty
 #define fsearch_cli_fileno fileno
@@ -37,6 +39,7 @@
 typedef struct {
     GMainLoop *loop;
     FsearchDatabase *database;
+    FsearchDatabaseWork *search_work;
     FsearchConfig *config;
     const char *search_term;
     guint limit;
@@ -45,6 +48,7 @@ typedef struct {
     gboolean search_queued;
     gboolean index_update_notice_printed;
     gboolean index_progress_visible;
+    guint interrupt_source;
     int exit_code;
 } FsearchCliRun;
 
@@ -251,8 +255,30 @@ queue_search(FsearchCliRun *run) {
                                                                                     DATABASE_INDEX_PROPERTY_NAME,
                                                                                     GTK_SORT_ASCENDING);
     run->search_queued = TRUE;
+    g_clear_pointer(&run->search_work, fsearch_database_work_unref);
+    run->search_work = fsearch_database_work_ref(search_work);
     fsearch_database_queue_work(run->database, search_work);
 }
+
+#ifndef G_OS_WIN32
+static gboolean
+on_interrupt(gpointer user_data) {
+    FsearchCliRun *run = user_data;
+    run->interrupt_source = 0;
+
+    if (run->index_progress_visible) {
+        g_printerr("\r\x1b[2K");
+        run->index_progress_visible = FALSE;
+    }
+    if (run->search_work) {
+        fsearch_database_work_cancel(run->search_work);
+    }
+    fsearch_database_cancel(run->database);
+    g_printerr("fsearch: interrupted\n");
+    finish(run, 130);
+    return G_SOURCE_REMOVE;
+}
+#endif
 
 static void
 on_search_finished(FsearchDatabase *database, guint id, FsearchDatabaseSearchInfo *info, gpointer user_data) {
@@ -260,6 +286,7 @@ on_search_finished(FsearchDatabase *database, guint id, FsearchDatabaseSearchInf
     if (id != FSEARCH_CLI_VIEW_ID) {
         return;
     }
+    g_clear_pointer(&run->search_work, fsearch_database_work_unref);
     if (!info) {
         g_printerr("fsearch: search could not run because the index is unavailable\n");
         finish(run, EXIT_FAILURE);
@@ -434,10 +461,18 @@ fsearch_cli_run(int argc, char *argv[]) {
     g_signal_connect(run.database, "database-progress", G_CALLBACK(on_database_progress), &run);
     g_signal_connect(run.database, "search-finished", G_CALLBACK(on_search_finished), &run);
 
+#ifndef G_OS_WIN32
+    run.interrupt_source = g_unix_signal_add(SIGINT, on_interrupt, &run);
+#endif
+
     g_autoptr(FsearchDatabaseWork) load_work = fsearch_database_work_new_load();
     fsearch_database_queue_work(run.database, load_work);
     g_main_loop_run(run.loop);
 
+    if (run.interrupt_source != 0) {
+        g_source_remove(run.interrupt_source);
+    }
+    g_clear_pointer(&run.search_work, fsearch_database_work_unref);
     g_clear_object(&run.database);
     config_free(run.config);
     g_main_loop_unref(run.loop);

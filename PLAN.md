@@ -16,4 +16,6 @@
   An isolated CLI integration test starts with a missing index, requires the italic stderr status line, waits for rebuild completion, and verifies the expected path result.
 - [x] Add live CLI index status, result summaries, and query-syntax discoverability. Completed 2026-07-10 08:10 EDT.
   Indexing reports observed entry count, rate, and current path without inventing a percentage; uncapped searches report their total to stderr; help covers both unlimited aliases, `case:`, and case-sensitive regex.
+- [x] Bound parallel regex workers and support CLI interruption. Completed 2026-07-10 08:19 EDT.
+  Regex match data has 32 per-thread slots, so index-store workers are capped to that invariant; regressions cover a 1,024-entry parallel regex search and a `SIGINT` exit with status 130.
 - [ ] Run the full suite, benchmark suite, inspect the final tree, and commit each green unit.

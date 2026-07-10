@@ -1392,6 +1392,12 @@ fsearch_database_cancel_scan(FsearchDatabase *self) {
     }
 }
 
+void
+fsearch_database_cancel(FsearchDatabase *self) {
+    g_return_if_fail(self);
+    g_cancellable_cancel(self->cancellable);
+}
+
 FsearchResult
 fsearch_database_try_get_search_info(FsearchDatabase *self, uint32_t view_id, FsearchDatabaseSearchInfo **info_out) {
     g_return_val_if_fail(self, FSEARCH_RESULT_FAILED);

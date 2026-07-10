@@ -131,12 +131,55 @@ test_cancelled_search_keeps_partial_results_marked_incomplete(void) {
     fsearch_filter_manager_unref(filters);
 }
 
+static void
+test_parallel_regex_search_uses_only_supported_worker_ids(void) {
+    g_autoptr(FsearchDatabaseIncludeManager) include_manager = fsearch_database_include_manager_new();
+    g_autoptr(FsearchDatabaseExcludeManager) exclude_manager = fsearch_database_exclude_manager_new();
+    FsearchFilterManager *filters = fsearch_filter_manager_new_with_defaults();
+
+    DynamicArray *files = make_named_files("AGENTS", 1024);
+    g_autoptr(DynamicArray) folders = darray_new(0);
+    DynamicArray *files_by_property[NUM_DATABASE_INDEX_PROPERTIES] = {0};
+    DynamicArray *folders_by_property[NUM_DATABASE_INDEX_PROPERTIES] = {0};
+    files_by_property[DATABASE_INDEX_PROPERTY_NAME] = files;
+    folders_by_property[DATABASE_INDEX_PROPERTY_NAME] = folders;
+
+    g_autoptr(GPtrArray) indices = g_ptr_array_new();
+    g_autoptr(FsearchDatabaseIndexStore) store = fsearch_database_index_store_new_with_content(
+        indices,
+        files_by_property,
+        folders_by_property,
+        include_manager,
+        exclude_manager,
+        DATABASE_INDEX_PROPERTY_FLAG_NAME,
+        NULL,
+        NULL);
+
+    g_autoptr(FsearchQuery) query = make_query(filters, "case:regex:\"AGENTS_[0-9]+\"");
+    g_autoptr(GCancellable) cancellable = g_cancellable_new();
+    g_assert_true(fsearch_database_index_store_search(store,
+                                                      1,
+                                                      query,
+                                                      DATABASE_INDEX_PROPERTY_NAME,
+                                                      GTK_SORT_ASCENDING,
+                                                      cancellable));
+
+    g_autoptr(FsearchDatabaseSearchInfo) info = fsearch_database_index_store_get_search_info(store, 1);
+    g_assert_nonnull(info);
+    g_assert_cmpuint(fsearch_database_search_info_get_num_files(info), ==, 1024);
+
+    free_entries(files);
+    fsearch_filter_manager_unref(filters);
+}
+
 int
 main(int argc, char **argv) {
     g_test_init(&argc, &argv, NULL);
 
     g_test_add_func("/FSearch/database/index_store/cancelled_search_keeps_partial_results_marked_incomplete",
                     test_cancelled_search_keeps_partial_results_marked_incomplete);
+    g_test_add_func("/FSearch/database/index_store/parallel_regex_search_uses_only_supported_worker_ids",
+                    test_parallel_regex_search_uses_only_supported_worker_ids);
 
     return g_test_run();
 }

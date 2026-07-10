@@ -6,6 +6,10 @@
 #include <glib.h>
 #include <glib/gstdio.h>
 
+#ifndef G_OS_WIN32
+#include <signal.h>
+#endif
+
 static GString *captured_stdout;
 static GString *captured_stderr;
 static GMutex capture_mutex;
@@ -90,6 +94,27 @@ test_scoped_query(void) {
     g_assert_cmpstr(escaped_scope, ==, "path:\"/work/\\\"quoted/\"");
 }
 
+#ifndef G_OS_WIN32
+static gboolean
+raise_sigint(gpointer user_data) {
+    raise(SIGINT);
+    return G_SOURCE_REMOVE;
+}
+
+static void
+test_sigint_cancels_cli_run(void) {
+    if (g_test_subprocess()) {
+        g_idle_add(raise_sigint, NULL);
+        char *argv[] = {"fsearch", "--cli", "--global", "--search", "needle", NULL};
+        g_assert_cmpint(fsearch_cli_run(5, argv), ==, 130);
+        return;
+    }
+
+    g_test_trap_subprocess(NULL, 0, G_TEST_SUBPROCESS_DEFAULT);
+    g_test_trap_assert_passed();
+}
+#endif
+
 static void
 test_search_rebuilds_missing_index_before_printing_results(void) {
     g_autofree char *tmp_dir = g_dir_make_tmp("fsearch-test-cli-XXXXXX", NULL);
@@ -159,6 +184,9 @@ main(int argc, char **argv) {
     g_test_add_func("/FSearch/cli/cap_notice", test_cap_notice);
     g_test_add_func("/FSearch/cli/result_and_index_progress_notices", test_result_and_index_progress_notices);
     g_test_add_func("/FSearch/cli/scoped_query", test_scoped_query);
+#ifndef G_OS_WIN32
+    g_test_add_func("/FSearch/cli/sigint_cancels_cli_run", test_sigint_cancels_cli_run);
+#endif
     g_test_add_func("/FSearch/cli/search_rebuilds_missing_index_before_printing_results",
                     test_search_rebuilds_missing_index_before_printing_results);
 
