@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+set -u
+
+case "${1-}" in
+  ""|--release)
+    nix build .#default
+    ;;
+  --debug|--test)
+    nix develop -c meson setup builddir --wipe --buildtype=debug
+    nix develop -c ninja -C builddir
+    ;;
+  -h|--help)
+    printf 'usage: ./build [--release|--debug|--test]\n'
+    ;;
+  *)
+    printf 'build: unknown option: %s\n' "$1" >&2
+    exit 2
+    ;;
+esac
