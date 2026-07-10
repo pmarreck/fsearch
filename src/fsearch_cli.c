@@ -7,6 +7,7 @@
 #include "fsearch_config.h"
 #include "fsearch_database.h"
 #include "fsearch_database_entry_info.h"
+#include "fsearch_database_file.h"
 #include "fsearch_database_index_properties.h"
 #include "fsearch_database_search_info.h"
 #include "fsearch_database_work.h"
@@ -27,6 +28,9 @@ typedef struct {
     const char *search_term;
     guint limit;
     gboolean update_database;
+    gboolean wait_for_index_update;
+    gboolean search_queued;
+    gboolean index_update_notice_printed;
     int exit_code;
 } FsearchCliRun;
 
@@ -86,6 +90,12 @@ fsearch_cli_format_cap_notice(guint limit) {
     return g_strdup_printf("\x1b[3;90mResults capped at %u. Use --unlimit to get them all, or provide a custom --limit, "
                            "or set FSEARCH_RESULT_LIMIT.\x1b[0m",
                            limit);
+}
+
+/// Renders the index-rebuild status line for stderr without mixing it into path output.
+char *
+fsearch_cli_format_index_update_notice(void) {
+    return g_strdup("\x1b[3mUpdating FSearch index before searching...\x1b[0m");
 }
 
 /// Builds a path-constrained query while escaping the path as one literal FSearch term.
@@ -170,9 +180,50 @@ finish(FsearchCliRun *run, int exit_code) {
     g_main_loop_quit(run->loop);
 }
 
+static gboolean
+database_requires_index_update(const char *database_path, FsearchConfig *config) {
+    g_autoptr(FsearchDatabaseIncludeManager) indexed_includes = NULL;
+    g_autoptr(FsearchDatabaseExcludeManager) indexed_excludes = NULL;
+    FsearchDatabaseIndexPropertyFlags flags = DATABASE_INDEX_PROPERTY_FLAG_NONE;
+
+    if (!fsearch_database_file_load_config(database_path, &indexed_includes, &indexed_excludes, &flags)) {
+        return TRUE;
+    }
+
+    return !fsearch_database_include_manager_equal(indexed_includes, config->includes)
+        || !fsearch_database_exclude_manager_equal(indexed_excludes, config->excludes);
+}
+
 static void
-on_search_finished(FsearchDatabase *database, FsearchDatabaseSearchInfo *info, gpointer user_data) {
+queue_search(FsearchCliRun *run) {
+    if (run->search_queued) {
+        return;
+    }
+
+    g_autoptr(FsearchQuery) query = fsearch_query_new(run->search_term,
+                                                       NULL,
+                                                       run->config->filters,
+                                                       0,
+                                                       "cli");
+    g_autoptr(FsearchDatabaseWork) search_work = fsearch_database_work_new_search(FSEARCH_CLI_VIEW_ID,
+                                                                                    query,
+                                                                                    DATABASE_INDEX_PROPERTY_NAME,
+                                                                                    GTK_SORT_ASCENDING);
+    run->search_queued = TRUE;
+    fsearch_database_queue_work(run->database, search_work);
+}
+
+static void
+on_search_finished(FsearchDatabase *database, guint id, FsearchDatabaseSearchInfo *info, gpointer user_data) {
     FsearchCliRun *run = user_data;
+    if (id != FSEARCH_CLI_VIEW_ID) {
+        return;
+    }
+    if (!info) {
+        g_printerr("fsearch: search could not run because the index is unavailable\n");
+        finish(run, EXIT_FAILURE);
+        return;
+    }
     const guint total = fsearch_database_search_info_get_num_entries(info);
     const guint output_count = run->limit == 0 ? total : MIN(total, run->limit);
 
@@ -210,16 +261,30 @@ on_database_loaded(FsearchDatabase *database, FsearchDatabaseInfo *info, gpointe
         return;
     }
 
-    g_autoptr(FsearchQuery) query = fsearch_query_new(run->search_term,
-                                                       NULL,
-                                                       run->config->filters,
-                                                       0,
-                                                       "cli");
-    g_autoptr(FsearchDatabaseWork) search_work = fsearch_database_work_new_search(FSEARCH_CLI_VIEW_ID,
-                                                                                    query,
-                                                                                    DATABASE_INDEX_PROPERTY_NAME,
-                                                                                    GTK_SORT_ASCENDING);
-    fsearch_database_queue_work(database, search_work);
+    if (!run->wait_for_index_update) {
+        queue_search(run);
+    }
+}
+
+static void
+on_database_scan_started(FsearchDatabase *database, gpointer user_data) {
+    FsearchCliRun *run = user_data;
+    if (run->update_database || run->index_update_notice_printed) {
+        return;
+    }
+
+    run->wait_for_index_update = TRUE;
+    run->index_update_notice_printed = TRUE;
+    g_autofree char *notice = fsearch_cli_format_index_update_notice();
+    g_printerr("%s\n", notice);
+}
+
+static void
+on_database_scan_finished(FsearchDatabase *database, FsearchDatabaseInfo *info, gpointer user_data) {
+    FsearchCliRun *run = user_data;
+    if (!run->update_database && run->wait_for_index_update) {
+        queue_search(run);
+    }
 }
 
 int
@@ -299,7 +364,10 @@ fsearch_cli_run(int argc, char *argv[]) {
     g_autofree char *database_path = g_build_filename(g_get_user_data_dir(), "fsearch", "fsearch.db", NULL);
     g_autoptr(GFile) database_file = g_file_new_for_path(database_path);
     run.database = fsearch_database_new(g_steal_pointer(&database_file), run.config->includes, run.config->excludes);
+    run.wait_for_index_update = database_requires_index_update(database_path, run.config);
     g_signal_connect(run.database, "load-finished", G_CALLBACK(on_database_loaded), &run);
+    g_signal_connect(run.database, "scan-started", G_CALLBACK(on_database_scan_started), &run);
+    g_signal_connect(run.database, "scan-finished", G_CALLBACK(on_database_scan_finished), &run);
     g_signal_connect(run.database, "search-finished", G_CALLBACK(on_search_finished), &run);
 
     g_autoptr(FsearchDatabaseWork) load_work = fsearch_database_work_new_load();

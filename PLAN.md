@@ -12,4 +12,6 @@
   Remaining query-result fixture coverage belongs with a future database-fixture harness rather than real user index data.
 - [x] Make a failed configured index root leave the database searchable and saveable. Completed 2026-07-09 21:39 EDT.
   Regression coverage builds one available root plus one unavailable root, verifies the available match remains searchable, and disposes the database to exercise the save path.
+- [x] Make CLI searches rebuild an unavailable index before querying it. Completed 2026-07-09 22:28 EDT.
+  An isolated CLI integration test starts with a missing index, requires the italic stderr status line, waits for rebuild completion, and verifies the expected path result.
 - [ ] Run the full suite, benchmark suite, inspect the final tree, and commit each green unit.

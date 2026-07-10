@@ -19,6 +19,9 @@ char *
 fsearch_cli_format_cap_notice(guint limit);
 
 char *
+fsearch_cli_format_index_update_notice(void);
+
+char *
 fsearch_cli_build_scoped_query(const char *query, const char *scope_path, gboolean global);
 
 int
