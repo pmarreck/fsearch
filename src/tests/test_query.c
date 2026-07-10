@@ -210,7 +210,7 @@ test_main(void) {
 
             {"regex:suffix$", "suffix prefix", false, 0, 0, false},
             {"regex:suffix$", "prefix suffix", false, 0, 0, true},
-            // glob: uses shell-style path semantics rather than the legacy wildcard mode.
+            // glob: searches paths by default; file:glob: searches file names only.
             {"glob:*.png", "photo.png", false, 0, 0, true},
             {"glob:*.png", "photo.png.bak", false, 0, 0, false},
             {"glob:file?.png", "file7.png", false, 0, 0, true},
@@ -231,6 +231,14 @@ test_main(void) {
             {"glob:AGENTS.md", "agents.md", false, 0, 0, true},
             {"case:glob:AGENTS.md", "AGENTS.md", false, 0, 0, true},
             {"case:glob:AGENTS.md", "agents.md", false, 0, 0, false},
+            {"case:glob:\"**/Vaults/**/{AGENTS,CLAUDE}.md\"",
+             "/home/example/Code/Vaults/Example Person/AGENTS.md",
+             false,
+             0,
+             0,
+             true},
+            {"glob:\"**/src/*.c\"", "/repo/src/fsearch.c", false, 0, 0, true},
+            {"file:glob:\"**/src/*.c\"", "/repo/src/fsearch.c", false, 0, 0, false},
             {"path:glob:**/AGENTS.md", "/repo/AGENTS.md", false, 0, 0, true},
             {"path:glob:**/AGENTS.md", "/repo/docs/AGENTS.md", false, 0, 0, true},
             {"path:glob:**/AGENTS.md", "/repo/AGENTS.md.bak", false, 0, 0, false},

@@ -29,9 +29,10 @@ assert_success_contains 'CLI help examples' 'Examples:' "$binary" --cli --help
 assert_success_contains 'CLI help regex example' 'file:regex:".+\.pdf$"' "$binary" --cli --help
 assert_success_contains 'CLI help case-sensitive example' "case:AGENTS" "$binary" --cli --help
 assert_success_contains 'CLI help case-sensitive regex example' 'case:regex:"^AGENTS\.md$"' "$binary" --cli --help
-assert_success_contains 'CLI help glob example' 'glob:*.png' "$binary" --cli --help
+assert_success_contains 'CLI help glob example' 'glob:**/*.png' "$binary" --cli --help
 assert_success_contains 'CLI help case-sensitive glob example' 'case:glob:AGENTS.md' "$binary" --cli --help
 assert_success_contains 'CLI help glob syntax' 'Glob syntax:' "$binary" --cli --help
+assert_success_contains 'CLI help glob path default' 'Glob searches paths by default; use **/ for any depth; file:glob: searches file names.' "$binary" --cli --help
 assert_success_contains 'CLI help glob escaping' '\* matches a literal *' "$binary" --cli --help
 assert_success_contains 'CLI help explicit boolean syntax' 'Boolean syntax: AND or &&; OR or ||; NOT or !.' "$binary" --cli --help
 assert_success_contains 'CLI help unlimited alias' '--unlimit, --unlimited' "$binary" --cli --help

@@ -186,12 +186,13 @@ print_help(void) {
             "  fsearch --cli --search 'file:regex:\".+\\.pdf$\"'\n"
             "  fsearch --cli --search 'case:AGENTS'        # case-sensitive\n"
             "  fsearch --cli --search 'case:regex:\"^AGENTS\\.md$\"'\n"
-            "  fsearch --cli --search 'glob:*.png'\n"
+            "  fsearch --cli --search 'glob:**/*.png'\n"
             "  fsearch --cli --search 'path:glob:**/AGENTS.md'\n"
             "  fsearch --cli --search 'case:glob:AGENTS.md' # case-sensitive glob\n\n"
             "Examples use space as AND. Try file:, folder:, path:, ext:, size:, dm:, case:, regex:, and glob:.\n"
             "Boolean syntax: AND or &&; OR or ||; NOT or !. Parentheses group terms.\n"
             "Glob syntax: * excludes /; ** spans directories; ? matches one character; [a-c] is a range;\n"
+            "Glob searches paths by default; use **/ for any depth; file:glob: searches file names.\n"
             "{png,jpg} selects alternatives; {01..12} is an inclusive numeric range; \\* matches a literal *.\n");
 }
 
