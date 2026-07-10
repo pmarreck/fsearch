@@ -18,4 +18,7 @@ fsearch_cli_resolve_result_limit(const char *environment_limit, const char *argu
 char *
 fsearch_cli_format_cap_notice(guint limit);
 
+int
+fsearch_cli_run(int argc, char *argv[]);
+
 G_END_DECLS

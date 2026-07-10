@@ -21,6 +21,7 @@
 #endif
 
 #include "fsearch.h"
+#include "fsearch_cli.h"
 #include <glib/gi18n.h>
 #include <gtk/gtk.h>
 #include <locale.h>
@@ -35,5 +36,18 @@ main(int argc, char *argv[]) {
     g_set_application_name(_("FSearch"));
     g_set_prgname("io.github.cboxdoerfer.FSearch");
 
-    return g_application_run(G_APPLICATION(fsearch_application_new()), argc, argv);
+    if (fsearch_cli_select_frontend(argc, (const char *const *)argv, g_getenv("FSEARCH_UI")) == FSEARCH_CLI_FRONTEND_CLI) {
+        return fsearch_cli_run(argc, argv);
+    }
+
+    char **gui_argv = g_new0(char *, argc + 1);
+    int gui_argc = 0;
+    for (int i = 0; i < argc; i++) {
+        if (g_strcmp0(argv[i], "--cli") != 0 && g_strcmp0(argv[i], "--gui") != 0) {
+            gui_argv[gui_argc++] = argv[i];
+        }
+    }
+    const int result = g_application_run(G_APPLICATION(fsearch_application_new()), gui_argc, gui_argv);
+    g_free(gui_argv);
+    return result;
 }
