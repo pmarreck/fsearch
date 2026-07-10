@@ -61,8 +61,7 @@ db_entry_compare_context_free(FsearchDatabaseEntryCompareContext *ctx) {
 
 FsearchDatabaseEntryCompareContext *
 db_entry_compare_context_new(FsearchDatabaseSortOrderChain chain) {
-    FsearchDatabaseEntryCompareContext *ctx = calloc(1, sizeof(FsearchDatabaseEntryCompareContext));
-    g_assert(ctx);
+    FsearchDatabaseEntryCompareContext *ctx = g_new0(FsearchDatabaseEntryCompareContext, 1);
 
     ctx->file_type_table = g_hash_table_new_full(g_str_hash, g_str_equal, g_free, NULL);
     ctx->entry_to_file_type_table = g_hash_table_new(NULL, NULL);
@@ -269,8 +268,7 @@ db_entry_get_deep_copy(FsearchDatabaseEntry *entry) {
     const char *name = db_entry_get_name_raw(entry);
     const size_t entry_size = entry_get_size_for_flags(entry->attribute_flags, name, strlen(name));
 
-    FsearchDatabaseEntry *copy = calloc(1, entry_size);
-    g_assert_nonnull(copy);
+    FsearchDatabaseEntry *copy = g_malloc0(entry_size);
 
     memcpy(copy, entry, entry_size);
 
@@ -859,8 +857,7 @@ db_entry_new(FsearchDatabaseIndexPropertyFlags attribute_flags,
     }
     const size_t name_len = name ? strlen(name) : 0;
     const size_t entry_size = entry_get_size_for_flags(attribute_flags, name, name_len);
-    FsearchDatabaseEntry *entry = calloc(1, entry_size);
-    g_assert_nonnull(entry);
+    FsearchDatabaseEntry *entry = g_malloc0(entry_size);
 
     if (type == DATABASE_ENTRY_TYPE_FOLDER) {
         entry->flags |= FSEARCH_DATABASE_ENTRY_FLAG_TYPE_FOLDER;
@@ -965,7 +962,7 @@ db_entry_get_attribute_name(FsearchDatabaseEntry *entry, const char **name) {
 
 const char *
 db_entry_get_attribute_name_for_offset(FsearchDatabaseEntry *entry, size_t offset) {
-    g_return_val_if_fail(entry, false);
+    g_return_val_if_fail(entry, NULL);
     return (const char *)(entry->attributes + offset);
 }
 

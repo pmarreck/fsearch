@@ -45,7 +45,9 @@ typedef struct {
 // Safe only because the store's lock is held for the whole save, so nothing else can observe it.
 static inline uint32_t
 db_entry_get_encoded_index(FsearchDatabaseEntry *entry) {
-    return (uint32_t)(uintptr_t)db_entry_get_parent(entry);
+	// cppcheck-suppress CastAddressToIntegerAtReturn
+	// `parent` temporarily holds only values written by GUINT_TO_POINTER below.
+    return GPOINTER_TO_UINT(db_entry_get_parent(entry));
 }
 
 typedef struct {
@@ -61,7 +63,7 @@ database_file_encode_indices(DynamicArray *entries) {
         real_parents[i] = db_entry_get_parent(darray_get_item(entries, i));
     }
     for (uint32_t i = 0; i < num_entries; i++) {
-        db_entry_set_parent_no_update(darray_get_item(entries, i), (FsearchDatabaseEntry *)(uintptr_t)i);
+        db_entry_set_parent_no_update(darray_get_item(entries, i), (FsearchDatabaseEntry *)GUINT_TO_POINTER(i));
     }
     return (EncodedEntryIndices){.entries = entries, .real_parents = real_parents};
 }
@@ -284,8 +286,11 @@ database_file_load_folders(FILE *fp,
                            uint64_t folder_block_size) {
     g_autoptr(GString) previous_entry_name = g_string_sized_new(1024);
 
-    g_autofree uint8_t *folder_block = calloc(folder_block_size + 1, sizeof(uint8_t));
-    g_return_val_if_fail(folder_block, false);
+    if (folder_block_size >= G_MAXSIZE) {
+        g_debug("[db_load] folder block is too large: %" PRIu64, folder_block_size);
+        return false;
+    }
+    g_autofree uint8_t *folder_block = g_malloc0((gsize)folder_block_size + 1);
 
     if (fread(folder_block, sizeof(uint8_t), folder_block_size, fp) != folder_block_size) {
         g_debug("[db_load] failed to read file block");
@@ -349,8 +354,11 @@ database_file_load_files(FILE *fp,
                          uint32_t num_files,
                          uint64_t file_block_size) {
     g_autoptr(GString) previous_entry_name = g_string_sized_new(1024);
-    g_autofree uint8_t *file_block = calloc(file_block_size + 1, sizeof(uint8_t));
-    g_return_val_if_fail(file_block, false);
+    if (file_block_size >= G_MAXSIZE) {
+        g_debug("[db_load] file block is too large: %" PRIu64, file_block_size);
+        return false;
+    }
+    g_autofree uint8_t *file_block = g_malloc0((gsize)file_block_size + 1);
 
     if (fread(file_block, sizeof(uint8_t), file_block_size, fp) != file_block_size) {
         g_debug("[db_load] failed to read file block");
@@ -406,8 +414,7 @@ database_file_load_files(FILE *fp,
 
 static bool
 database_file_load_sorted_entries(FILE *fp, DynamicArray *src, uint32_t num_src_entries, DynamicArray *dest) {
-    g_autofree uint32_t *indexes = calloc(num_src_entries + 1, sizeof(uint32_t));
-    g_assert(indexes);
+    g_autofree uint32_t *indexes = g_new0(uint32_t, (gsize)num_src_entries + 1);
 
     if (fread(indexes, 4, num_src_entries, fp) != num_src_entries) {
         return false;
@@ -480,7 +487,7 @@ database_file_read_string(FILE *fp, size_t max_size, GChecksum *checksum) {
         return NULL;
     }
 
-    g_autofree char *path = calloc(string_len + 1, sizeof(char));
+    g_autofree char *path = g_malloc0((gsize)string_len + 1);
     if (!database_file_read_element(path, string_len, fp, checksum)) {
         return NULL;
     }
@@ -735,8 +742,7 @@ build_sorted_entry_index_list(DynamicArray *entries, uint32_t num_entries) {
     if (num_entries < 1) {
         return NULL;
     }
-    uint32_t *indexes = calloc(num_entries + 1, sizeof(uint32_t));
-    g_assert(indexes);
+    uint32_t *indexes = g_new0(uint32_t, num_entries + 1);
 
     for (int i = 0; i < num_entries; i++) {
         FsearchDatabaseEntry *entry = darray_get_item(entries, i);

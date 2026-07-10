@@ -499,6 +499,7 @@ top_query_token(GQueue *stack) {
     if (g_queue_is_empty(stack)) {
         return FSEARCH_QUERY_TOKEN_NONE;
     }
+    // cppcheck-suppress CastAddressToIntegerAtReturn
     return (FsearchQueryToken)GPOINTER_TO_UINT(g_queue_peek_tail(stack));
 }
 
@@ -507,6 +508,7 @@ pop_query_token(GQueue *stack) {
     if (g_queue_is_empty(stack)) {
         return FSEARCH_QUERY_TOKEN_NONE;
     }
+    // cppcheck-suppress CastAddressToIntegerAtReturn
     return (FsearchQueryToken)GPOINTER_TO_UINT(g_queue_pop_tail(stack));
 }
 
