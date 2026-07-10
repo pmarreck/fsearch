@@ -43,7 +43,8 @@
 
 - [x] Make CLI search derive the same query flags as the GUI from the shared configuration. Completed 2026-07-10 10:21 EDT.
   `config_get_search_query_flags()` is the shared resolver; an end-to-end CLI regression verifies case-sensitive GUI configuration affects CLI search.
-- [ ] Add a GTK-free configuration command API for scalar settings and database roots/exclusions.
+- [x] Add a GTK-free configuration command API for scalar settings and database roots/exclusions. Completed 2026-07-10 11:35 EDT.
   Curiosity poke: write only fully validated configuration and make index-invalidating mutations explicit.
-- [ ] Add CLI configuration commands for saved filters, help, JSON output, and integration coverage.
+- [x] Add CLI configuration commands for saved filters, help, JSON output, and integration coverage. Completed 2026-07-10 11:35 EDT.
   Curiosity poke: collection selectors must remain stable and non-destructive across GUI edits.
+  The isolated adapter covers every persisted scalar plus roots, exclusions, hidden-file policy, and saved filters; option ordering, invalid input, JSON, GUI concurrency, 64-bit persistence, stale-index warnings, immediate rescans, and first-run data directories have regressions. Main help points to the detailed config help, and the man page documents every command family.

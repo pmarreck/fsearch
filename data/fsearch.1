@@ -6,6 +6,9 @@ FSearch \- a graphical file search utility
 .SH SYNOPSIS
 .B fsearch
 .RI [ OPTIONS ]
+.br
+.B fsearch config
+.RI COMMAND " [" OPTIONS "]"
 .
 .SH DESCRIPTION
 .B FSearch
@@ -41,6 +44,77 @@ Print version information and exit
 .TP
 .BI "\-\^\-display=" DISPLAY
 X display to use
+.
+.SH CONFIGURATION COMMANDS
+The
+.B config
+subcommand views and modifies the same configuration used by the graphical and command-line interfaces.
+Close the graphical interface before modifying shared settings so its in-memory state cannot overwrite the command-line change.
+Run
+.B fsearch config \-\-help
+for the complete command summary and examples, or append
+.B \-\-help
+to a command family for its specific syntax.
+.TP
+.BR path
+Print the active configuration file path.
+.TP
+.BR show " [" SECTION "] [" \-\-json "]"
+Show typed scalar settings, optionally restricted to a dotted section.
+.TP
+.BR get " " KEY " [" \-\-json "]"
+Print one setting.
+.TP
+.BR set " " KEY " " VALUE
+Set and persist one typed setting.
+.TP
+.BR unset " " KEY
+Restore one setting to its default.
+.TP
+.BR reset " [" KEY | SECTION "] " \-\-yes
+Restore a setting, section, or the complete configuration. Confirmation is mandatory. Add
+.B \-\-rescan
+when resetting roots, database, exclusions, or everything to rebuild the index immediately.
+.TP
+.BR doctor
+Check whether the configuration is readable and agrees with the current index configuration.
+.TP
+.BR roots " " list | add | set | remove
+Manage indexed root directories. Add and set accept
+.BR \-\-active / \-\-inactive ,
+.BR \-\-monitor / \-\-no\-monitor ,
+.BR \-\-one\-file\-system / \-\-no\-one\-file\-system ,
+.BR \-\-scan\-after\-launch / \-\-no\-scan\-after\-launch ,
+and
+.BI \-\-rescan\-every " SECONDS" .
+.TP
+.BR excludes " " list | add | remove | hidden
+Manage exclusions with
+.BI \-\-type " fixed|wildcard|regex" ,
+.BI \-\-scope " full-path|basename" ,
+and
+.BI \-\-target " both|files|folders" .
+.TP
+.BR filters " " list | add | set | remove | reset
+Manage named saved queries and macros with
+.BR \-\-query ,
+.BR \-\-macro ,
+and paired
+.BR \-\-case / \-\-no\-case ,
+.BR \-\-path / \-\-no\-path ,
+and
+.BR \-\-regex / \-\-no\-regex
+flags.
+.PP
+Root and exclusion changes mark the existing index stale. They are applied automatically by the next command-line search; pass
+.B \-\-rescan
+to an index-changing command to rebuild immediately. Collection list commands and scalar
+.B show
+and
+.B get
+support
+.B \-\-json
+for machine-readable output.
 .
 .SH BUGS
 For any bugs or feature requests, please create an issue on GitHub at https://github.com/cboxdoerfer/fsearch/issues

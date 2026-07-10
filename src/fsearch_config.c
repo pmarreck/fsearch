@@ -237,7 +237,7 @@ config_save_key(GKeyFile *key_file,
         g_key_file_set_integer(key_file, key_section, key_name, *(int *)ptr);
         break;
     case TYPE_INT64:
-        g_key_file_set_int64(key_file, key_section, key_name, *(int *)ptr);
+        g_key_file_set_int64(key_file, key_section, key_name, *(int64_t *)ptr);
         break;
     case TYPE_STRING: {
         const char *str = *(const char **)ptr;
@@ -269,9 +269,9 @@ config_load_key(GKeyFile *key_file,
         }
         break;
     case TYPE_INT64:
-        *(int *)ptr = g_key_file_get_int64(key_file, key_section, key_name, &error);
+        *(int64_t *)ptr = g_key_file_get_int64(key_file, key_section, key_name, &error);
         if (error) {
-            *(int *)ptr = key_data->default_val.i64;
+            *(int64_t *)ptr = key_data->default_val.i64;
         }
         break;
     case TYPE_STRING: {
@@ -378,7 +378,7 @@ config_get_section_default(const FsearchKeyData *keys, size_t num_keys, FsearchC
             *(int *)ptr = keys[i].default_val.i;
             break;
         case TYPE_INT64:
-            *(int *)ptr = keys[i].default_val.i64;
+            *(int64_t *)ptr = keys[i].default_val.i64;
             break;
         case TYPE_STRING: {
             char **str_ptr = (char **)ptr;
@@ -805,7 +805,19 @@ config_save(FsearchConfig *config) {
 
     const char *debug_message = NULL;
     g_autoptr(GError) error = NULL;
-    if (g_key_file_save_to_file(key_file, config_path, &error)) {
+    gsize config_length = 0;
+    g_autofree char *config_data = g_key_file_to_data(key_file, &config_length, &error);
+    g_autoptr(GFile) config_file = g_file_new_for_path(config_path);
+    if (config_data
+        && g_file_replace_contents(config_file,
+                                   config_data,
+                                   config_length,
+                                   NULL,
+                                   FALSE,
+                                   G_FILE_CREATE_PRIVATE,
+                                   NULL,
+                                   NULL,
+                                   &error)) {
         debug_message = "[config] saved in %f ms";
         result = true;
     }

@@ -511,12 +511,12 @@ database_modify_selection(FsearchDatabase *self, FsearchDatabaseWork *work) {
     signal_emit_selection_changed(self, info);
 }
 
-static void
+static bool
 database_save(FsearchDatabase *self, gboolean notify) {
     // DB must be locked
-    g_return_if_fail(self);
-    g_return_if_fail(self->file);
-    g_return_if_fail(self->store);
+    g_return_val_if_fail(self, false);
+    g_return_val_if_fail(self->file, false);
+    g_return_val_if_fail(self->store, false);
 
     if (notify) {
         signal_emit0(self, SIGNAL_SAVE_STARTED);
@@ -526,11 +526,12 @@ database_save(FsearchDatabase *self, gboolean notify) {
 
     g_autoptr(GMutexLocker) locker = fsearch_database_index_store_get_locker(self->store);
     g_assert_nonnull(locker);
-    fsearch_database_file_save(self->store, file_path);
+    const bool saved = fsearch_database_file_save(self->store, file_path);
 
     if (notify) {
         signal_emit0(self, SIGNAL_SAVE_FINISHED);
     }
+    return saved;
 }
 
 static void
@@ -1493,7 +1494,7 @@ fsearch_database_rescan_blocking(FsearchDatabase *self) {
                          self->exclude_manager,
                          DATABASE_INDEX_PROPERTY_FLAG_DEFAULT);
 
-    return FSEARCH_RESULT_SUCCESS;
+    return database_save(self, TRUE) ? FSEARCH_RESULT_SUCCESS : FSEARCH_RESULT_FAILED;
 }
 
 typedef struct {

@@ -1,10 +1,12 @@
 #include "fsearch_cli.h"
+#include "fsearch_cli_config.h"
 #include "fsearch_config.h"
 #include "fsearch_database_include.h"
 #include "fsearch_database_include_manager.h"
 
 #include <glib.h>
 #include <glib/gstdio.h>
+#include <gio/gio.h>
 
 #ifndef G_OS_WIN32
 #include <signal.h>
@@ -49,6 +51,78 @@ test_frontend_selection(void) {
     g_assert_cmpint(fsearch_cli_select_frontend(G_N_ELEMENTS(cli_wins_argv), cli_wins_argv, "GUI"),
                     ==,
                     FSEARCH_CLI_FRONTEND_CLI);
+
+    const char *config_argv[] = {"fsearch", "config", "--help"};
+    g_assert_cmpint(fsearch_cli_select_frontend(G_N_ELEMENTS(config_argv), config_argv, NULL),
+                    ==,
+                    FSEARCH_CLI_FRONTEND_CLI);
+
+    const char *config_search_value_argv[] = {"fsearch", "--search", "config"};
+    g_assert_cmpint(fsearch_cli_select_frontend(G_N_ELEMENTS(config_search_value_argv), config_search_value_argv, NULL),
+                    ==,
+                    FSEARCH_CLI_FRONTEND_GUI);
+}
+
+static void
+test_config_detects_running_gui(void) {
+    if (!g_test_subprocess()) {
+        g_test_trap_subprocess(NULL, 0, G_TEST_SUBPROCESS_DEFAULT);
+        g_test_trap_assert_passed();
+        return;
+    }
+
+    g_autoptr(GTestDBus) test_bus = g_test_dbus_new(G_TEST_DBUS_NONE);
+    g_test_dbus_up(test_bus);
+
+    g_autoptr(GError) error = NULL;
+    g_autoptr(GDBusConnection) connection = g_bus_get_sync(G_BUS_TYPE_SESSION, NULL, &error);
+    g_assert_no_error(error);
+    g_assert_nonnull(connection);
+
+    g_autoptr(GVariant) request_result = g_dbus_connection_call_sync(connection,
+                                                                     "org.freedesktop.DBus",
+                                                                     "/org/freedesktop/DBus",
+                                                                     "org.freedesktop.DBus",
+                                                                     "RequestName",
+                                                                     g_variant_new("(su)", "io.github.cboxdoerfer.FSearch", 0),
+                                                                     G_VARIANT_TYPE("(u)"),
+                                                                     G_DBUS_CALL_FLAGS_NONE,
+                                                                     -1,
+                                                                     NULL,
+                                                                     &error);
+    g_assert_no_error(error);
+    g_assert_nonnull(request_result);
+    g_assert_true(fsearch_cli_config_gui_is_running());
+
+    captured_stderr = g_string_new(NULL);
+    GPrintFunc old_stderr_handler = g_set_printerr_handler(capture_stderr);
+    char *config_argv[] = {"config", "set", "search.match-case", "true", NULL};
+    g_assert_cmpint(fsearch_cli_config_run(4, config_argv), ==, 1);
+    g_set_printerr_handler(old_stderr_handler);
+    g_assert_cmpstr(captured_stderr->str,
+                    ==,
+                    "fsearch config: close the running FSearch GUI before changing shared settings\n");
+    g_string_free(g_steal_pointer(&captured_stderr), TRUE);
+
+    g_autoptr(GVariant) release_result = g_dbus_connection_call_sync(connection,
+                                                                     "org.freedesktop.DBus",
+                                                                     "/org/freedesktop/DBus",
+                                                                     "org.freedesktop.DBus",
+                                                                     "ReleaseName",
+                                                                     g_variant_new("(s)", "io.github.cboxdoerfer.FSearch"),
+                                                                     G_VARIANT_TYPE("(u)"),
+                                                                     G_DBUS_CALL_FLAGS_NONE,
+                                                                     -1,
+                                                                     NULL,
+                                                                     &error);
+    g_assert_no_error(error);
+    g_assert_nonnull(release_result);
+    g_assert_false(fsearch_cli_config_gui_is_running());
+
+    g_assert_true(g_dbus_connection_close_sync(connection, NULL, &error));
+    g_assert_no_error(error);
+    g_clear_object(&connection);
+    g_test_dbus_down(test_bus);
 }
 
 static void
@@ -271,6 +345,7 @@ main(int argc, char **argv) {
     g_test_init(&argc, &argv, NULL);
 
     g_test_add_func("/FSearch/cli/frontend_selection", test_frontend_selection);
+    g_test_add_func("/FSearch/cli/config_detects_running_gui", test_config_detects_running_gui);
     g_test_add_func("/FSearch/cli/result_limit_precedence", test_result_limit_precedence);
     g_test_add_func("/FSearch/cli/cap_notice", test_cap_notice);
     g_test_add_func("/FSearch/cli/result_and_index_progress_notices", test_result_and_index_progress_notices);

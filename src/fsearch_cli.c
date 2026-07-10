@@ -1,4 +1,5 @@
 #include "fsearch_cli.h"
+#include "fsearch_cli_config.h"
 
 #ifdef HAVE_CONFIG_H
 #include <config.h>
@@ -74,6 +75,9 @@ FsearchCliFrontend
 fsearch_cli_select_frontend(guint argc, const char *const argv[], const char *ui_environment) {
     FsearchCliFrontend frontend = FSEARCH_CLI_FRONTEND_GUI;
     if (ui_environment && g_ascii_strcasecmp(ui_environment, "CLI") == 0) {
+        frontend = FSEARCH_CLI_FRONTEND_CLI;
+    }
+    if (argc > 1 && g_strcmp0(argv[1], "config") == 0) {
         frontend = FSEARCH_CLI_FRONTEND_CLI;
     }
 
@@ -174,6 +178,7 @@ print_help(void) {
             "  -u, --update-database      Rescan the configured index and exit\n"
             "      --about                Print one-line build information\n"
             "  -h, --help                 Show this help\n\n"
+            "Configuration: fsearch config --help\n\n"
             "Examples:\n"
             "  fsearch --cli --search invoice              # current directory\n"
             "  fsearch --cli --path ~/Documents --search invoice\n"
@@ -388,6 +393,21 @@ on_database_progress(FsearchDatabase *database, char *text, gpointer user_data) 
 
 int
 fsearch_cli_run(int argc, char *argv[]) {
+    for (int i = 1; i < argc; i++) {
+        if (g_strcmp0(argv[i], "--cli") == 0) {
+            continue;
+        }
+        if (g_strcmp0(argv[i], "config") == 0) {
+            const int config_result = fsearch_cli_config_run(argc - i, argv + i);
+            if (config_result != FSEARCH_CLI_CONFIG_RESCAN_REQUESTED) {
+                return config_result;
+            }
+            char *update_argv[] = {argv[0], "--cli", "--update-database", NULL};
+            return fsearch_cli_run(3, update_argv);
+        }
+        break;
+    }
+
     const char *search_term = "";
     const char *argument_limit = NULL;
     const char *argument_path = NULL;
@@ -460,7 +480,14 @@ fsearch_cli_run(int argc, char *argv[]) {
         config_load_default(run.config);
     }
 
-    g_autofree char *database_path = g_build_filename(g_get_user_data_dir(), "fsearch", "fsearch.db", NULL);
+    g_autofree char *database_dir = g_build_filename(g_get_user_data_dir(), "fsearch", NULL);
+    if (g_mkdir_with_parents(database_dir, 0700) != 0) {
+        g_printerr("fsearch: failed to create data directory: %s\n", database_dir);
+        config_free(run.config);
+        g_main_loop_unref(run.loop);
+        return EXIT_FAILURE;
+    }
+    g_autofree char *database_path = g_build_filename(database_dir, "fsearch.db", NULL);
     g_autoptr(GFile) database_file = g_file_new_for_path(database_path);
     run.database = fsearch_database_new(g_steal_pointer(&database_file), run.config->includes, run.config->excludes);
     run.wait_for_index_update = database_requires_index_update(database_path, run.config);

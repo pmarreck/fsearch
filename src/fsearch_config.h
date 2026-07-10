@@ -144,3 +144,5 @@ config_copy(FsearchConfig *config);
 
 void
 config_free(FsearchConfig *config);
+
+G_DEFINE_AUTOPTR_CLEANUP_FUNC(FsearchConfig, config_free)

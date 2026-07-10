@@ -29,5 +29,7 @@ fsearch_filter_copy(FsearchFilter *filter);
 void
 fsearch_filter_unref(FsearchFilter *filter);
 
+G_DEFINE_AUTOPTR_CLEANUP_FUNC(FsearchFilter, fsearch_filter_unref)
+
 GPtrArray *
 fsearch_filter_get_default_filters(void);

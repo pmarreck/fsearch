@@ -24,6 +24,47 @@ assert_success_contains() {
 	fi
 }
 
+assert_failure_contains() {
+	local description=$1
+	local expected=$2
+	shift 2
+	local output rc
+	output=$("$@" 2>&1)
+	rc=$?
+	if [ "$rc" -eq 0 ]; then
+		fail "$description unexpectedly succeeded: $output"
+	elif [[ "$output" != *"$expected"* ]]; then
+		fail "$description did not contain $expected: $output"
+	fi
+}
+
+assert_success_not_contains() {
+	local description=$1
+	local rejected=$2
+	shift 2
+	local output rc
+	output=$("$@" 2>&1)
+	rc=$?
+	if [ "$rc" -ne 0 ]; then
+		fail "$description returned $rc: $output"
+	elif [[ "$output" == *"$rejected"* ]]; then
+		fail "$description unexpectedly contained $rejected: $output"
+	fi
+}
+
+assert_valid_json() {
+	local description=$1
+	shift
+	local output rc
+	output=$("$@" 2>/dev/null)
+	rc=$?
+	if [ "$rc" -ne 0 ]; then
+		fail "$description returned $rc"
+	elif ! printf '%s\n' "$output" | jq -e . >/dev/null 2>&1; then
+		fail "$description returned invalid JSON: $output"
+	fi
+}
+
 assert_success_contains 'CLI help' 'Usage: fsearch --cli' "$binary" --cli --help
 assert_success_contains 'CLI help examples' 'Examples:' "$binary" --cli --help
 assert_success_contains 'CLI help regex example' 'file:regex:".+\.pdf$"' "$binary" --cli --help
@@ -36,10 +77,90 @@ assert_success_contains 'CLI help glob path default' 'Glob searches paths by def
 assert_success_contains 'CLI help glob escaping' '\* matches a literal *' "$binary" --cli --help
 assert_success_contains 'CLI help explicit boolean syntax' 'Boolean syntax: AND or &&; OR or ||; NOT or !.' "$binary" --cli --help
 assert_success_contains 'CLI help unlimited alias' '--unlimit, --unlimited' "$binary" --cli --help
+assert_success_contains 'CLI help config command' 'fsearch config --help' "$binary" --cli --help
 assert_success_contains 'CLI unlimited alias parses' '--unlimit, --unlimited' "$binary" --cli --unlimited --help
+assert_success_contains 'config help' 'Configuration commands:' "$binary" config --help
+assert_success_contains 'config help roots' 'roots list|add|set|remove' "$binary" config --help
+assert_success_contains 'config help exclusions' 'excludes list|add|remove|hidden' "$binary" config --help
+assert_success_contains 'config help filters' 'filters list|add|set|remove|reset' "$binary" config --help
+assert_success_contains 'config help key discovery' 'config show' "$binary" config --help
+assert_success_contains 'config path help' 'Usage: fsearch config path' "$binary" config path --help
+assert_success_contains 'config set help' 'Usage: fsearch config set' "$binary" config set --help
+assert_success_contains 'config reset help' 'requires --yes' "$binary" config reset --help
+assert_success_contains 'config roots help' 'Usage: fsearch config roots' "$binary" config roots --help
+assert_success_contains 'config roots help rescan' '--rescan' "$binary" config roots --help
+assert_success_contains 'config exclusions help' 'Usage: fsearch config excludes' "$binary" config excludes --help
+assert_success_contains 'config exclusions help types' 'fixed|wildcard|regex' "$binary" config excludes --help
+assert_success_contains 'config filters help' 'Usage: fsearch config filters' "$binary" config filters --help
+assert_success_contains 'config filters help inverse flags' '--regex, --no-regex' "$binary" config filters --help
 assert_success_contains 'CLI about' 'indexed file search for' "$binary" --cli --about
 assert_success_contains 'CLI version compatibility' 'FSearch 0.3-beta2' "$binary" --cli --version
 assert_success_contains 'environment-selected CLI help' '--unlimit' env FSEARCH_UI=CLI "$binary" --help
 assert_success_contains 'explicit GUI overrides CLI environment' 'FSearch 0.3-beta2' env FSEARCH_UI=CLI "$binary" --gui --version
+
+config_tmp=$(mktemp -d "${TMPDIR:-/tmp}/fsearch-config-cli.XXXXXX")
+config_home="$config_tmp/config"
+data_home="$config_tmp/data"
+root_with_spaces="$config_tmp/Indexed Root"
+mkdir -p "$config_home" "$data_home" "$root_with_spaces"
+
+config_env=(env XDG_CONFIG_HOME="$config_home" XDG_DATA_HOME="$data_home")
+assert_success_contains 'config path' '/fsearch/fsearch.conf' "${config_env[@]}" "$binary" config path
+assert_failure_contains 'config path rejects unknown option' 'unknown option' "${config_env[@]}" "$binary" config path --bogus
+assert_success_contains 'config set boolean' 'search.match-case = true' "${config_env[@]}" "$binary" config set search.match-case true
+assert_success_contains 'config get boolean' 'true' "${config_env[@]}" "$binary" config get search.match-case
+assert_success_contains 'config get accepts option before key' '"search.match-case":true' "${config_env[@]}" "$binary" config get --json search.match-case
+assert_failure_contains 'config rejects invalid boolean' 'invalid value' "${config_env[@]}" "$binary" config set search.match-case perhaps
+assert_success_contains 'config unset boolean' 'search.match-case = false' "${config_env[@]}" "$binary" config unset search.match-case
+assert_success_contains 'config set signed integer' 'window.width = 1024' "${config_env[@]}" "$binary" config set window.width 1024
+assert_success_contains 'config set unsigned integer' 'columns.name.width = 320' "${config_env[@]}" "$binary" config set columns.name.width 320
+assert_failure_contains 'config rejects invalid integer' 'invalid value' "${config_env[@]}" "$binary" config set window.width wide
+assert_success_contains 'config set enum' 'ui.after-open = minimize' "${config_env[@]}" "$binary" config set ui.after-open minimize
+assert_failure_contains 'config rejects invalid enum' 'invalid value' "${config_env[@]}" "$binary" config set ui.after-open disappear
+folder_command='open "quoted"\folder'
+assert_success_contains 'config set string with escapes' "$folder_command" "${config_env[@]}" "$binary" config set application.folder-open-command "$folder_command"
+assert_success_contains 'config roots add path with spaces' "$root_with_spaces" "${config_env[@]}" "$binary" config roots add --monitor --rescan-every 4294967296 "$root_with_spaces"
+assert_success_contains 'config roots persist' "$root_with_spaces" "${config_env[@]}" "$binary" config roots list
+assert_success_contains 'config roots preserve 64-bit rescan interval' 'rescan-after=4294967296' "${config_env[@]}" "$binary" config roots list
+assert_success_contains 'config roots use later toggle' 'active=true' "${config_env[@]}" "$binary" config roots set --inactive --active "$root_with_spaces"
+assert_success_contains 'config roots set' 'active=false' "${config_env[@]}" "$binary" config roots set "$root_with_spaces" --inactive
+assert_success_contains 'config root mutation warns about stale index' 'next CLI search will rebuild it' "${config_env[@]}" "$binary" config roots set "$root_with_spaces" --inactive
+assert_success_contains 'config excludes add' '*.tmp' "${config_env[@]}" "$binary" config excludes add --type wildcard --scope basename --target files '*.tmp'
+assert_success_contains 'config excludes persist' '*.tmp' "${config_env[@]}" "$binary" config excludes list
+assert_success_contains 'config excludes hidden set' 'exclude-hidden = true' "${config_env[@]}" "$binary" config excludes hidden true
+assert_success_contains 'config excludes hidden persist' 'true' "${config_env[@]}" "$binary" config excludes hidden
+assert_success_contains 'config filters add' 'My PDFs' "${config_env[@]}" "$binary" config filters add --query 'ext:pdf' --macro docs --case --no-case 'My PDFs'
+assert_success_contains 'config filters persist' 'My PDFs' "${config_env[@]}" "$binary" config filters list
+assert_success_contains 'config filters use later toggle' 'case=false' "${config_env[@]}" "$binary" config filters list
+assert_success_contains 'config filters set' 'ext:pdf size:>1mb' "${config_env[@]}" "$binary" config filters set --no-case --case 'My PDFs' --query 'ext:pdf size:>1mb'
+assert_success_contains 'config filter later toggle persists' 'case=true' "${config_env[@]}" "$binary" config filters list
+assert_success_contains 'config show JSON' '"search.match-case":false' "${config_env[@]}" "$binary" config show --json
+assert_success_not_contains 'config show accepts section after option' '"ui.' "${config_env[@]}" "$binary" config show --json search
+assert_failure_contains 'config show rejects unknown section' 'unknown section' "${config_env[@]}" "$binary" config show nonexistent
+assert_valid_json 'config show valid JSON' "${config_env[@]}" "$binary" config show --json
+assert_success_contains 'config string JSON escaping' '"application.folder-open-command":"open \"quoted\"\\folder"' "${config_env[@]}" "$binary" config show application --json
+assert_valid_json 'config roots valid JSON' "${config_env[@]}" "$binary" config roots list --json
+assert_valid_json 'config exclusions valid JSON' "${config_env[@]}" "$binary" config excludes list --json
+assert_valid_json 'config filters valid JSON' "${config_env[@]}" "$binary" config filters list --json
+assert_failure_contains 'config get rejects unknown option' 'unknown option' "${config_env[@]}" "$binary" config get search.match-case --bogus
+assert_failure_contains 'config roots reject unknown option' 'unknown option' "${config_env[@]}" "$binary" config roots list --bogus
+assert_failure_contains 'config exclusions reject unknown option' 'unknown option' "${config_env[@]}" "$binary" config excludes list --bogus
+assert_failure_contains 'config filters reject unknown option' 'unknown option' "${config_env[@]}" "$binary" config filters list --bogus
+assert_failure_contains 'config doctor rejects unknown option' 'unknown option' "${config_env[@]}" "$binary" config doctor --bogus
+assert_failure_contains 'config doctor reports missing index' 'index: missing or unreadable' "${config_env[@]}" "$binary" config doctor
+assert_success_contains 'config mutation can rescan immediately' "$root_with_spaces" "${config_env[@]}" "$binary" config roots set --rescan "$root_with_spaces"
+assert_success_contains 'config doctor reports current index' 'index: current' "${config_env[@]}" "$binary" config doctor
+assert_failure_contains 'config reset requires confirmation' 'requires --yes' "${config_env[@]}" "$binary" config reset search
+assert_success_contains 'config reset section' 'search settings reset' "${config_env[@]}" "$binary" config reset --yes search
+assert_success_contains 'config roots remove' "$root_with_spaces" "${config_env[@]}" "$binary" config roots remove "$root_with_spaces"
+assert_success_not_contains 'config root removal persists' "$root_with_spaces" "${config_env[@]}" "$binary" config roots list
+assert_success_contains 'config excludes remove' '*.tmp' "${config_env[@]}" "$binary" config excludes remove '*.tmp' --type wildcard --scope basename --target files
+assert_success_not_contains 'config exclusion removal persists' '*.tmp' "${config_env[@]}" "$binary" config excludes list
+assert_success_contains 'config filters remove' 'My PDFs' "${config_env[@]}" "$binary" config filters remove 'My PDFs'
+assert_success_not_contains 'config filter removal persists' 'My PDFs' "${config_env[@]}" "$binary" config filters list
+assert_success_contains 'config filters reset' 'filters reset' "${config_env[@]}" "$binary" config filters reset
+assert_success_contains 'config default filters restored' 'Documents' "${config_env[@]}" "$binary" config filters list
+
+rm -rf "$config_tmp"
 
 exit "$failures"
