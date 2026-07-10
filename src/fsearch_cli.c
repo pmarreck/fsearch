@@ -97,7 +97,14 @@ print_help(void) {
             "      --unlimit              Print every result\n"
             "  -u, --update-database      Rescan the configured index and exit\n"
             "      --about                Print one-line build information\n"
-            "  -h, --help                 Show this help\n");
+            "  -h, --help                 Show this help\n\n"
+            "Examples:\n"
+            "  fsearch --cli --search invoice\n"
+            "  fsearch --cli --search 'file:size:>20mb'\n"
+            "  fsearch --cli --search 'ext:jpg;png'\n"
+            "  fsearch --cli --search 'path:projects report'\n"
+            "  fsearch --cli --search 'file:regex:\".+\\\\.pdf$\"'\n\n"
+            "Examples use space as AND. Try file:, folder:, path:, ext:, size:, dm:, case:, and regex:.\n");
 }
 
 static const char *
