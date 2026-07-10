@@ -18,4 +18,10 @@
   Indexing reports observed entry count, rate, and current path without inventing a percentage; uncapped searches report their total to stderr; help covers both unlimited aliases, `case:`, and case-sensitive regex.
 - [x] Bound parallel regex workers and support CLI interruption. Completed 2026-07-10 08:19 EDT.
   Regex match data has 32 per-thread slots, so index-store workers are capped to that invariant; regressions cover a 1,024-entry parallel regex search and a `SIGINT` exit with status 130.
-- [ ] Run the full suite, benchmark suite, inspect the final tree, and commit each green unit.
+- [x] Run the full suite, benchmark suite, inspect the final tree, and commit each green unit. Completed 2026-07-10 08:45 EDT.
+# CLI and glob follow-up (2026-07-10)
+
+- [x] Add a first-class `glob:` query modifier backed by an enhanced PCRE2 conversion. Completed 2026-07-10 08:45 EDT.
+  `*`, `**/`, `?`, character ranges, brace alternatives, bounded numeric ranges, and escapes are covered as query classifiers.
+- [x] Make `./build`, `./test`, and `./bm` fulfill the documented build, aggregate-test, and performance-log contracts. Completed 2026-07-10 08:45 EDT.
+  The benchmark history records UTC timestamp, commit, wall time, and CPU time.

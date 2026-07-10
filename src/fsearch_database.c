@@ -968,7 +968,9 @@ handle_work_in_worker_thread_cb(gpointer user_data) {
 
     switch (fsearch_database_work_get_kind(work)) {
     case FSEARCH_DATABASE_WORK_QUIT:
-        database_save(self, FALSE);
+        if (!g_cancellable_is_cancelled(self->cancellable)) {
+            database_save(self, FALSE);
+        }
         quit = true;
         break;
     case FSEARCH_DATABASE_WORK_SAVE_TO_FILE:

@@ -105,6 +105,8 @@ FsearchTokenModifier supported_modifiers[] = {
     {"nopath", QUERY_FLAG_SEARCH_IN_PATH, REMOVE_FLAG},
     {"regex", QUERY_FLAG_REGEX, ADD_FLAG},
     {"noregex", QUERY_FLAG_REGEX, REMOVE_FLAG},
+    {"glob", QUERY_FLAG_GLOB, ADD_FLAG},
+    {"noglob", QUERY_FLAG_GLOB, REMOVE_FLAG},
 };
 
 FsearchTokenFunction supported_functions[] = {

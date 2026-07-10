@@ -40,6 +40,7 @@ libfsearch_sources = [
     'fsearch_file_utils.c',
     'fsearch_filter.c',
     'fsearch_filter_editor.c',
+    'fsearch_glob.c',
     'fsearch_filter_manager.c',
     'fsearch_filter_preferences_widget.c',
     'fsearch_folder_monitor_event.c',

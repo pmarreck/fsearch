@@ -110,8 +110,39 @@ test_sigint_cancels_cli_run(void) {
         return;
     }
 
+    g_autofree char *tmp_dir = g_dir_make_tmp("fsearch-test-cli-sigint-XXXXXX", NULL);
+    g_assert_nonnull(tmp_dir);
+    g_autofree char *config_dir = g_build_filename(tmp_dir, "config", NULL);
+    g_autofree char *data_dir = g_build_filename(tmp_dir, "data", NULL);
+    g_autofree char *database_dir = g_build_filename(data_dir, "fsearch", NULL);
+    g_assert_true(g_mkdir_with_parents(config_dir, 0700) == 0);
+    g_assert_true(g_mkdir_with_parents(database_dir, 0700) == 0);
+
+    g_autofree char *old_config_home = g_strdup(g_getenv("XDG_CONFIG_HOME"));
+    g_autofree char *old_data_home = g_strdup(g_getenv("XDG_DATA_HOME"));
+    g_setenv("XDG_CONFIG_HOME", config_dir, TRUE);
+    g_setenv("XDG_DATA_HOME", data_dir, TRUE);
     g_test_trap_subprocess(NULL, 0, G_TEST_SUBPROCESS_DEFAULT);
+    if (old_config_home) {
+        g_setenv("XDG_CONFIG_HOME", old_config_home, TRUE);
+    }
+    else {
+        g_unsetenv("XDG_CONFIG_HOME");
+    }
+    if (old_data_home) {
+        g_setenv("XDG_DATA_HOME", old_data_home, TRUE);
+    }
+    else {
+        g_unsetenv("XDG_DATA_HOME");
+    }
     g_test_trap_assert_passed();
+
+    g_autofree char *database_path = g_build_filename(database_dir, "fsearch.db", NULL);
+    g_unlink(database_path);
+    g_rmdir(database_dir);
+    g_rmdir(data_dir);
+    g_rmdir(config_dir);
+    g_rmdir(tmp_dir);
 }
 #endif
 

@@ -1,6 +1,7 @@
 #define G_LOG_DOMAIN "fsearch-query-node"
 
 #include "fsearch_query_node.h"
+#include "fsearch_glob.h"
 #include "fsearch_limits.h"
 #include "fsearch_query_matchers.h"
 #include "fsearch_string_utils.h"
@@ -394,7 +395,11 @@ query_node_new_string_comparison(const char *search_term, FsearchQueryFlags flag
 FsearchQueryNode *
 fsearch_query_node_new_contenttype(const char *search_term, FsearchQueryFlags flags) {
     FsearchQueryNode *res = NULL;
-    if (flags & QUERY_FLAG_REGEX) {
+    if (flags & QUERY_FLAG_GLOB) {
+        g_autofree char *regex_search_term = fsearch_glob_to_regex(search_term);
+        res = fsearch_query_node_new_regex(regex_search_term, flags);
+    }
+    else if (flags & QUERY_FLAG_REGEX) {
         res = fsearch_query_node_new_regex(search_term, flags);
     }
     else if (fsearch_string_has_wildcards(search_term)) {
@@ -431,7 +436,11 @@ fsearch_query_node_new(const char *search_term, FsearchQueryFlags flags) {
     }
 
     FsearchQueryNode *res = NULL;
-    if (flags & QUERY_FLAG_REGEX) {
+    if (flags & QUERY_FLAG_GLOB) {
+        g_autofree char *regex_search_term = fsearch_glob_to_regex(search_term);
+        res = fsearch_query_node_new_regex(regex_search_term, flags);
+    }
+    else if (flags & QUERY_FLAG_REGEX) {
         res = fsearch_query_node_new_regex(search_term, flags);
     }
     else if (fsearch_string_has_wildcards(search_term)) {

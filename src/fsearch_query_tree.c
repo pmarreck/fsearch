@@ -90,6 +90,10 @@ query_flags_to_string_expressive(FsearchQueryFlags flags) {
         g_string_append_printf(flag_string, "%sRegex", num_flags ? sep : "");
         num_flags++;
     }
+    if (flags & QUERY_FLAG_GLOB) {
+        g_string_append_printf(flag_string, "%sGlob", num_flags ? sep : "");
+        num_flags++;
+    }
     if (flags & QUERY_FLAG_FOLDERS_ONLY) {
         g_string_append_printf(flag_string, "%sFolders only", num_flags ? sep : "");
         num_flags++;
@@ -121,6 +125,9 @@ query_flags_to_string(FsearchQueryFlags flags) {
     }
     if (flags & QUERY_FLAG_REGEX) {
         g_string_append_c(flag_string, 'r');
+    }
+    if (flags & QUERY_FLAG_GLOB) {
+        g_string_append_c(flag_string, 'g');
     }
     if (flags & QUERY_FLAG_FOLDERS_ONLY) {
         g_string_append_c(flag_string, 'F');

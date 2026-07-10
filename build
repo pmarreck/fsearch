@@ -6,12 +6,18 @@ case "${1-}" in
   ""|--release)
     nix build .#default
     ;;
-  --debug|--test)
+  --debug)
     nix develop -c meson setup builddir --wipe --buildtype=debug
     nix develop -c ninja -C builddir
     ;;
+  --test)
+    ./test
+    ;;
   -h|--help)
-    printf 'usage: ./build [--release|--debug|--test]\n'
+    printf 'usage: ./build [--release|--debug|--test]\n\n'
+    printf '  --release  Build the reproducible optimized package (default).\n'
+    printf '  --debug    Build every Meson target with debug symbols.\n'
+    printf '  --test     Run the complete test suite.\n'
     ;;
   *)
     printf 'build: unknown option: %s\n' "$1" >&2

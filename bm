@@ -3,28 +3,47 @@
 set -u
 
 baseline_file=tests/benchmark/cli-help.tsv
-result_file="$TMPDIR/fsearch-cli-help.json"
+result_file="${TMPDIR:-/tmp}/fsearch-cli-help.json"
+timestamp=$(date -u +%Y-%m-%dT%H:%M:%SZ)
+commit=$(git rev-parse HEAD)
 
 nix build .#default
+if result/bin/fsearch --cli --help 2>&1 | grep -q 'DEBUG BUILD'; then
+	printf 'Benchmark requires a release build, but the binary announced DEBUG BUILD.\n' >&2
+	exit 1
+fi
 nix develop -c hyperfine --warmup 3 --runs 12 --export-json "$result_file" 'result/bin/fsearch --cli --help >/dev/null'
 
-current=$(nix develop -c jq -r '.results[0].mean' "$result_file")
-previous=
-if [ -f "$baseline_file" ]; then
-	previous=$(awk 'NR == 2 { print $1 }' "$baseline_file")
-fi
+wall_seconds=$(nix develop -c jq -r '.results[0].mean' "$result_file")
+user_seconds=$(nix develop -c jq -r '.results[0].user' "$result_file")
+system_seconds=$(nix develop -c jq -r '.results[0].system' "$result_file")
+cpu_seconds=$(awk -v user_time="$user_seconds" -v system_time="$system_seconds" 'BEGIN { print user_time + system_time }')
 
 mkdir -p tests/benchmark
-printf 'mean_seconds\n%s\n' "$current" > "$baseline_file"
+if [ ! -f "$baseline_file" ] || [ "$(sed -n '1p' "$baseline_file")" != $'timestamp_utc\tcommit\twall_seconds\tuser_seconds\tsystem_seconds' ]; then
+	{
+		printf 'timestamp_utc\tcommit\twall_seconds\tuser_seconds\tsystem_seconds\n'
+		if [ -f "$baseline_file" ]; then
+			awk 'NR > 1 { printf "unknown\\tunknown\\t%s\\tunknown\\tunknown\\n", $1 }' "$baseline_file"
+		fi
+	} > "$baseline_file.new"
+	mv "$baseline_file.new" "$baseline_file"
+fi
+
+previous=$(awk -F '\t' '$1 != "unknown" { row = $0 } END { print row }' "$baseline_file")
+printf '%s\t%s\t%s\t%s\t%s\n' "$timestamp" "$commit" "$wall_seconds" "$user_seconds" "$system_seconds" >> "$baseline_file"
 
 if [ -z "$previous" ]; then
-	printf 'Benchmark baseline recorded: %s seconds\n' "$current"
+	printf 'Benchmark recorded: wall=%ss cpu=%ss (%s, %s) at %s\n' "$wall_seconds" "$cpu_seconds" "$commit" "$timestamp"
 	exit 0
 fi
 
-change=$(awk -v previous="$previous" -v current="$current" 'BEGIN { print ((current - previous) / previous) * 100 }')
-printf 'CLI help benchmark: %s seconds (%+.2f%% from previous baseline)\n' "$current" "$change"
-if awk -v change="$change" 'BEGIN { exit (change > 20 || change < -20) ? 0 : 1 }'; then
+previous_wall=$(printf '%s\n' "$previous" | awk -F '\t' '{ print $3 }')
+previous_cpu=$(printf '%s\n' "$previous" | awk -F '\t' '{ print $4 + $5 }')
+wall_change=$(awk -v previous="$previous_wall" -v current="$wall_seconds" 'BEGIN { print ((current - previous) / previous) * 100 }')
+cpu_change=$(awk -v previous="$previous_cpu" -v current="$cpu_seconds" 'BEGIN { print ((current - previous) / previous) * 100 }')
+printf 'CLI help benchmark: wall=%ss (%+.2f%%), cpu=%ss (%+.2f%%) from previous run\n' "$wall_seconds" "$wall_change" "$cpu_seconds" "$cpu_change"
+if awk -v wall_change="$wall_change" -v cpu_change="$cpu_change" 'BEGIN { exit (wall_change > 20 || wall_change < -20 || cpu_change > 20 || cpu_change < -20) ? 0 : 1 }'; then
 	printf 'Benchmark changed by more than 20%%. Rerun ./bm to accept the new baseline.\n' >&2
 	exit 1
 fi

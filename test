@@ -2,4 +2,47 @@
 
 set -u
 
-nix flake check
+source "$HOME/dotfiles/bin/src/capture.bash"
+
+failures=0
+
+run_suite() {
+	local name=$1
+	shift
+	local out='' err='' rc=0 reported_failures=1
+
+	capture "$@"
+	if [ "$rc" -eq 0 ]; then
+		printf 'PASS: %s\n' "$name"
+		return 0
+	fi
+
+	if [ "$name" = 'Meson tests' ]; then
+		reported_failures=$(printf '%s\n%s\n' "$out" "$err" | awk '/^Fail:[[:space:]]+[0-9]+/ { count = $2 } END { print count ? count : 1 }')
+	fi
+	case "$reported_failures" in
+		*[!0-9]*|'') reported_failures=1 ;;
+	esac
+
+	failures=$((failures + reported_failures))
+	printf 'FAIL: %s (%s failure%s)\n' "$name" "$reported_failures" "$([ "$reported_failures" -eq 1 ] || printf 's')" >&2
+	[ -n "$out" ] && printf '%s\n' "$out" >&2
+	[ -n "$err" ] && printf '%s\n' "$err" >&2
+	return 1
+}
+
+if run_suite 'Meson setup' nix develop -c meson setup builddir --reconfigure; then
+	run_suite 'Meson tests' nix develop -c meson test -C builddir --print-errorlogs
+fi
+
+if run_suite 'release build and Meson checks' nix build .#default; then
+	run_suite 'release CLI tests' nix develop -c bash tests/cli/test_cli result/bin/fsearch
+fi
+
+if [ "$failures" -eq 0 ]; then
+	printf 'All tests passed.\n'
+else
+	printf '%s failure%s.\n' "$failures" "$([ "$failures" -eq 1 ] || printf 's')" >&2
+fi
+
+exit "$failures"
