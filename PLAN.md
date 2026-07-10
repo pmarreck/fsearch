@@ -4,8 +4,8 @@
   Verified the sandboxed flake package runs all existing Meson tests.
 - [ ] Add top-level `build`, `test`, and `bm` commands and record benchmark results.
   Curiosity poke: benchmarks must use an optimized build and flag regressions without becoming flaky.
-- [ ] Define and test CLI selection, option precedence, and bounded-result rendering.
-  Curiosity poke: `--gui` must override `FSEARCH_UI=CLI` without changing existing GUI options.
+- [x] Define and test CLI selection, option precedence, and bounded-result rendering. Completed 2026-07-09 20:49 EDT.
+  The pure selector gives later `--gui`/`--cli` flags precedence over `FSEARCH_UI`; limit resolution has default, environment, argument, and unlimited coverage.
 - [ ] Implement the CLI adapter as isolated source modules over the existing database API.
   Curiosity poke: load/search/result iteration must not leak GTK GUI state or emit malformed path output.
 - [ ] Add integration coverage for help, about, limits, environment precedence, and search output.

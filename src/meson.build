@@ -13,6 +13,7 @@ resources += gnome.compile_resources('icon_resources',
 libfsearch_sources = [
     resources,
     'fsearch.c',
+    'fsearch_cli.c',
     'fsearch_array.c',
     'fsearch_clipboard.c',
     'fsearch_config.c',
