@@ -18,6 +18,9 @@ fsearch_cli_resolve_result_limit(const char *environment_limit, const char *argu
 char *
 fsearch_cli_format_cap_notice(guint limit);
 
+char *
+fsearch_cli_build_scoped_query(const char *query, const char *scope_path, gboolean global);
+
 int
 fsearch_cli_run(int argc, char *argv[]);
 

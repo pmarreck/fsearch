@@ -88,22 +88,52 @@ fsearch_cli_format_cap_notice(guint limit) {
                            limit);
 }
 
+/// Builds a path-constrained query while escaping the path as one literal FSearch term.
+char *
+fsearch_cli_build_scoped_query(const char *query, const char *scope_path, gboolean global) {
+    g_return_val_if_fail(query != NULL, NULL);
+    if (global) {
+        return g_strdup(query);
+    }
+
+    g_return_val_if_fail(scope_path != NULL, NULL);
+    g_autoptr(GString) scoped = g_string_new("path:\"");
+    for (const char *c = scope_path; *c; c++) {
+        if (*c == '\\' || *c == '\"') {
+            g_string_append_c(scoped, '\\');
+        }
+        g_string_append_c(scoped, *c);
+    }
+    if (!g_str_has_suffix(scope_path, G_DIR_SEPARATOR_S)) {
+        g_string_append_c(scoped, G_DIR_SEPARATOR);
+    }
+    g_string_append_c(scoped, '\"');
+    if (*query != '\0') {
+        g_string_append_printf(scoped, " AND (%s)", query);
+    }
+    return g_string_free(g_steal_pointer(&scoped), FALSE);
+}
+
 static void
 print_help(void) {
     g_print("Usage: fsearch --cli [OPTIONS]\n\n"
             "Search the existing FSearch index and print matching paths.\n\n"
             "  -s, --search PATTERN       Search with FSearch query syntax\n"
+            "      --path DIRECTORY        Search recursively below DIRECTORY (default: current directory)\n"
+            "      --global                Search every indexed location\n"
             "      --limit COUNT          Print at most COUNT results\n"
             "      --unlimit              Print every result\n"
             "  -u, --update-database      Rescan the configured index and exit\n"
             "      --about                Print one-line build information\n"
             "  -h, --help                 Show this help\n\n"
             "Examples:\n"
-            "  fsearch --cli --search invoice\n"
+            "  fsearch --cli --search invoice              # current directory\n"
+            "  fsearch --cli --path ~/Documents --search invoice\n"
+            "  fsearch --cli --global --search invoice\n"
             "  fsearch --cli --search 'file:size:>20mb'\n"
             "  fsearch --cli --search 'ext:jpg;png'\n"
             "  fsearch --cli --search 'path:projects report'\n"
-            "  fsearch --cli --search 'file:regex:\".+\\\\.pdf$\"'\n\n"
+            "  fsearch --cli --search 'file:regex:\".+\\.pdf$\"'\n\n"
             "Examples use space as AND. Try file:, folder:, path:, ext:, size:, dm:, case:, and regex:.\n");
 }
 
@@ -196,7 +226,9 @@ int
 fsearch_cli_run(int argc, char *argv[]) {
     const char *search_term = "";
     const char *argument_limit = NULL;
+    const char *argument_path = NULL;
     gboolean unlimit = FALSE;
+    gboolean global = FALSE;
     gboolean update_database = FALSE;
 
     for (int i = 1; i < argc; i++) {
@@ -229,6 +261,16 @@ fsearch_cli_run(int argc, char *argv[]) {
             search_term = argv[++i];
             continue;
         }
+        if (g_strcmp0(argv[i], "--path") == 0 && i + 1 < argc) {
+            argument_path = argv[++i];
+            global = FALSE;
+            continue;
+        }
+        if (g_strcmp0(argv[i], "--global") == 0) {
+            argument_path = NULL;
+            global = TRUE;
+            continue;
+        }
         if (g_strcmp0(argv[i], "--update-database") == 0 || g_strcmp0(argv[i], "-u") == 0) {
             update_database = TRUE;
             continue;
@@ -238,10 +280,14 @@ fsearch_cli_run(int argc, char *argv[]) {
         return EXIT_FAILURE;
     }
 
+    g_autofree char *scope_path = global ? NULL : (argument_path ? g_canonicalize_filename(argument_path, NULL)
+                                                                    : g_get_current_dir());
+    g_autofree char *scoped_query = fsearch_cli_build_scoped_query(search_term, scope_path, global);
+
     FsearchCliRun run = {
         .loop = g_main_loop_new(NULL, FALSE),
         .config = g_new0(FsearchConfig, 1),
-        .search_term = search_term,
+        .search_term = scoped_query,
         .limit = fsearch_cli_resolve_result_limit(g_getenv("FSEARCH_RESULT_LIMIT"), argument_limit, unlimit),
         .update_database = update_database,
         .exit_code = EXIT_FAILURE,

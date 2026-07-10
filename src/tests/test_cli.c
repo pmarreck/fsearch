@@ -44,6 +44,18 @@ test_cap_notice(void) {
                     "or set FSEARCH_RESULT_LIMIT.\x1b[0m");
 }
 
+static void
+test_scoped_query(void) {
+    g_autofree char *default_scope = fsearch_cli_build_scoped_query("invoice", "/work/current", FALSE);
+    g_assert_cmpstr(default_scope, ==, "path:\"/work/current/\" AND (invoice)");
+
+    g_autofree char *global_scope = fsearch_cli_build_scoped_query("invoice", "/work/current", TRUE);
+    g_assert_cmpstr(global_scope, ==, "invoice");
+
+    g_autofree char *escaped_scope = fsearch_cli_build_scoped_query("", "/work/\"quoted", FALSE);
+    g_assert_cmpstr(escaped_scope, ==, "path:\"/work/\\\"quoted/\"");
+}
+
 int
 main(int argc, char **argv) {
     g_test_init(&argc, &argv, NULL);
@@ -51,6 +63,7 @@ main(int argc, char **argv) {
     g_test_add_func("/FSearch/cli/frontend_selection", test_frontend_selection);
     g_test_add_func("/FSearch/cli/result_limit_precedence", test_result_limit_precedence);
     g_test_add_func("/FSearch/cli/cap_notice", test_cap_notice);
+    g_test_add_func("/FSearch/cli/scoped_query", test_scoped_query);
 
     return g_test_run();
 }

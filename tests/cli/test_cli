@@ -26,6 +26,7 @@ assert_success_contains() {
 
 assert_success_contains 'CLI help' 'Usage: fsearch --cli' "$binary" --cli --help
 assert_success_contains 'CLI help examples' 'Examples:' "$binary" --cli --help
+assert_success_contains 'CLI help regex example' 'file:regex:".+\.pdf$"' "$binary" --cli --help
 assert_success_contains 'CLI about' 'indexed file search for' "$binary" --cli --about
 assert_success_contains 'CLI version compatibility' 'FSearch 0.3-beta2' "$binary" --cli --version
 assert_success_contains 'environment-selected CLI help' '--unlimit' env FSEARCH_UI=CLI "$binary" --help
