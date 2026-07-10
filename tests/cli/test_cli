@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+
+set -u
+
+binary=${1:?usage: test_cli /path/to/fsearch}
+failures=0
+
+fail() {
+	printf 'FAIL: %s\n' "$1" >&2
+	failures=$((failures + 1))
+}
+
+assert_success_contains() {
+	local description=$1
+	local expected=$2
+	shift 2
+	local output rc
+	output=$("$@" 2>&1)
+	rc=$?
+	if [ "$rc" -ne 0 ]; then
+		fail "$description returned $rc: $output"
+	elif [[ "$output" != *"$expected"* ]]; then
+		fail "$description did not contain $expected: $output"
+	fi
+}
+
+assert_success_contains 'CLI help' 'Usage: fsearch --cli' "$binary" --cli --help
+assert_success_contains 'CLI about' 'indexed file search for' "$binary" --cli --about
+assert_success_contains 'CLI version compatibility' 'FSearch 0.3-beta2' "$binary" --cli --version
+assert_success_contains 'environment-selected CLI help' '--unlimit' env FSEARCH_UI=CLI "$binary" --help
+assert_success_contains 'explicit GUI overrides CLI environment' 'FSearch 0.3-beta2' env FSEARCH_UI=CLI "$binary" --gui --version
+
+exit "$failures"

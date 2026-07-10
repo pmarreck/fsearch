@@ -47,7 +47,12 @@
 
           checks = {
             build = fsearch;
-            test = fsearch;
+            test = pkgs.runCommand "fsearch-test" {
+              nativeBuildInputs = [ pkgs.bash ];
+            } ''
+              bash ${self}/tests/cli/test_cli ${fsearch}/bin/fsearch
+              touch $out
+            '';
           };
 
           devShells.default = pkgs.mkShell {
@@ -56,6 +61,7 @@
               gettext
               hyperfine
               itstool
+              jq
               libxml2
               meson
               ninja

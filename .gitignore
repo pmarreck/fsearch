@@ -4,6 +4,7 @@ Makefile.in
 /build*
 !/build
 /builddir
+/result
 /Makefile
 /data/Makefile
 /data/fsearch.desktop

@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+
+set -u
+
+baseline_file=tests/benchmark/cli-help.tsv
+result_file="$TMPDIR/fsearch-cli-help.json"
+
+nix build .#default
+nix develop -c hyperfine --warmup 3 --runs 12 --export-json "$result_file" 'result/bin/fsearch --cli --help >/dev/null'
+
+current=$(nix develop -c jq -r '.results[0].mean' "$result_file")
+previous=
+if [ -f "$baseline_file" ]; then
+	previous=$(awk 'NR == 2 { print $1 }' "$baseline_file")
+fi
+
+mkdir -p tests/benchmark
+printf 'mean_seconds\n%s\n' "$current" > "$baseline_file"
+
+if [ -z "$previous" ]; then
+	printf 'Benchmark baseline recorded: %s seconds\n' "$current"
+	exit 0
+fi
+
+change=$(awk -v previous="$previous" -v current="$current" 'BEGIN { print ((current - previous) / previous) * 100 }')
+printf 'CLI help benchmark: %s seconds (%+.2f%% from previous baseline)\n' "$current" "$change"
+if awk -v change="$change" 'BEGIN { exit (change > 20 || change < -20) ? 0 : 1 }'; then
+	printf 'Benchmark changed by more than 20%%. Rerun ./bm to accept the new baseline.\n' >&2
+	exit 1
+fi

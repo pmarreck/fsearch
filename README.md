@@ -59,6 +59,15 @@ The **Development** packages are primarily intended for testing and adventurous 
 
 <https://github.com/cboxdoerfer/fsearch/wiki/Build-instructions>
 
+## Nix Development
+
+This fork provides a pinned Nix environment:
+
+- `nix build` builds the optimized package.
+- `nix run . -- --cli --help` runs the CLI frontend.
+- `nix flake check` builds and runs unit plus CLI integration checks.
+- `./build`, `./test`, and `./bm` provide the corresponding project commands. `./bm` records and compares the optimized CLI startup baseline.
+
 ## Localization
 
 The localization of FSearch is managed with Weblate.

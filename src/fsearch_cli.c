@@ -204,6 +204,10 @@ fsearch_cli_run(int argc, char *argv[]) {
             print_about();
             return EXIT_SUCCESS;
         }
+        if (g_strcmp0(argv[i], "--version") == 0 || g_strcmp0(argv[i], "-v") == 0) {
+            g_print("FSearch %s\n", PACKAGE_VERSION);
+            return EXIT_SUCCESS;
+        }
         if (g_strcmp0(argv[i], "--unlimit") == 0) {
             unlimit = TRUE;
             argument_limit = NULL;
