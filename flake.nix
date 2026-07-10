@@ -58,6 +58,7 @@
           devShells.default = pkgs.mkShell {
             packages = with pkgs; [
               appstream
+              cppcheck
               gettext
               hyperfine
               itstool
