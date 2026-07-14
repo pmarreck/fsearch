@@ -1,5 +1,5 @@
-![Build Status](https://github.com/cboxdoerfer/fsearch/actions/workflows/build_test.yml/badge.svg)
-[![Translation status](https://hosted.weblate.org/widgets/fsearch/-/svg-badge.svg)](https://hosted.weblate.org/engage/fsearch/?utm_source=widget)
+[![🤖 Mechatron Prime](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Fthelio-nixos.tail66c90.ts.net%2Fbadges%2Ffsearch.json)](https://thelio-nixos.tail66c90.ts.net/mechatron-prime/)
+[![Localized catalogs](https://img.shields.io/badge/localized%20catalogs-10%2F42-informational?style=for-the-badge)](#localization)
 
 FSearch is a fast file search utility, inspired by Everything Search Engine. It's written in C and based on GTK3.
 This fork also provides a non-interactive command-line interface over the same index, query engine, and configuration as

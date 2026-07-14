@@ -57,10 +57,10 @@
   Curiosity poke: keep examples executable and distinguish path output on stdout from status and diagnostic output.
 - [x] Remove the obsolete recommendation to use other command-line search tools, validate the documented surface against release help, and run the documentation-relevant tests. Completed 2026-07-14 15:57 EDT.
   Curiosity poke: nested configuration help remains the canonical detail source, so the README must be thorough without silently inventing aliases.
-- [ ] Finish the live Mechatron Prime deployment, verify the public badge endpoint, and add the fork-owned build badge.
-  Source policy `46db1db` and NixOS vendor commit `27f431a` register the audited package/build/test targets; activation and exact webhook provisioning remain. Curiosity poke: a README badge is not CI evidence until the exact-name webhook, worker policy, live build, and public JSON route all agree.
+- [x] Finish the live Mechatron Prime deployment, verify the public badge endpoint, and add the fork-owned build badge. Completed 2026-07-14 19:21 EDT.
+  The exact `master` push `32cc35a8` reached GitHub's FSearch-only webhook with HTTP 200 and the public `badges/fsearch.json` endpoint reported `PASSING` for the declared package, build, and test targets.
 - [ ] Replace the upstream translation badge only with an honest fork-owned completeness claim and gate.
-  The inaccurate upstream badge was removed; the current 42 upstream catalogs still contain 6,001 fuzzy or untranslated entries, before extracting CLI/config strings. Curiosity poke: 100% must include newly added CLI/config strings, fuzzy entries, plural forms, and RTL catalogs rather than measuring only the upstream GUI template.
+  The README now has an interim `10/42` checkpoint badge. Update it to a complete-coverage claim only after the strict gate covers every shipped catalog, including newly added CLI/config strings, fuzzy entries, plural forms, and RTL catalogs.
 - [x] Merge the 31 upstream commits added since the fork point without rewriting published history, then rerun `./test`. Completed 2026-07-14 16:32 EDT.
   The three database conflicts preserve upstream scan cancellation/race fixes plus the fork's CLI cancellation and unavailable-root invariants; version assertions now track the upstream 0.3 release.
 
