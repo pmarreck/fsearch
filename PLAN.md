@@ -50,3 +50,16 @@
   The isolated adapter covers every persisted scalar plus roots, exclusions, hidden-file policy, and saved filters; option ordering, invalid input, JSON, GUI concurrency, 64-bit persistence, stale-index warnings, immediate rescans, and first-run data directories have regressions. Main help points to the detailed config help, and the man page documents every command family.
 - [x] Make GUI-default help disclose the CLI and configuration help entry points. Completed 2026-07-10 13:44 EDT.
   Bare `fsearch --help` retains GTK options while pointing to `fsearch --cli --help` and `fsearch config --help`; release CLI coverage prevents the discoverability regression.
+
+# CLI README documentation (2026-07-14)
+
+- [x] Document the complete CLI search, query, output-limit, index, and shared-configuration workflows in `README.md`. Completed 2026-07-14 15:57 EDT.
+  Curiosity poke: keep examples executable and distinguish path output on stdout from status and diagnostic output.
+- [x] Remove the obsolete recommendation to use other command-line search tools, validate the documented surface against release help, and run the documentation-relevant tests. Completed 2026-07-14 15:57 EDT.
+  Curiosity poke: nested configuration help remains the canonical detail source, so the README must be thorough without silently inventing aliases.
+- [ ] Register `pmarreck/fsearch` with Mechatron Prime using its audited Nix package/check targets, verify the public badge endpoint, and replace the upstream build badge.
+  Curiosity poke: a README badge is not CI evidence until the exact-name webhook, worker policy, live build, and public JSON route all agree.
+- [ ] Replace the upstream translation badge only with an honest fork-owned completeness claim and gate.
+  Curiosity poke: 100% must include newly added CLI/config strings, fuzzy entries, plural forms, and RTL catalogs rather than measuring only the upstream GUI template.
+- [ ] Integrate the 31 upstream commits added since the fork point using Peter's chosen history policy, rerun `./test`, then commit and push.
+  Curiosity poke: published fork commits make rebase a force-push decision; a merge avoids rewriting them.
