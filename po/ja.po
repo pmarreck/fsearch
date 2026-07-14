@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FSearch 0.1beta\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-18 13:55+0200\n"
-"PO-Revision-Date: 2026-07-20 00:42+0000\n"
+"POT-Creation-Date: 2026-07-14 17:04-0400\n"
+"PO-Revision-Date: 2026-05-12 09:11+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/fsearch/"
 "translations/ja/>\n"
@@ -17,9 +17,918 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2026.8.dev0\n"
+"X-Generator: Weblate 2026.5-dev\n"
 
-#: data/io.github.cboxdoerfer.FSearch.desktop.in.in:4 src/main.c:35
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:92
+msgid ""
+"DB: Allow included folders to be scheduled and scanned after launch "
+"independently"
+msgstr ""
+"DB: 追加したフォルダーごとに、スケジュール設定と起動後のスキャンを個別に行え"
+"るようにしました"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:93
+msgid "DB: Make rescanning more efficient"
+msgstr "DB: 再スキャンを効率化しました"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:97
+msgid "Reduce memory usage"
+msgstr "メモリ使用量を削減しました"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:98
+msgid "Add contextual help for all preferences"
+msgstr "すべての設定項目にコンテキストヘルプを追加しました"
+
+#: src/fsearch.c:883
+msgid ""
+"For command-line search help, run: fsearch --cli --help\n"
+"For shared configuration help, run: fsearch config --help"
+msgstr ""
+"コマンドライン検索のヘルプを表示するには、次を実行してください: fsearch --"
+"cli --help\n"
+"共有設定のヘルプを表示するには、次を実行してください: fsearch config --help"
+
+#: src/fsearch_cli.c:125
+#, c-format
+msgid ""
+"Results capped at %u. Use --unlimit or --unlimited to get them all, or "
+"provide a custom --limit, or set FSEARCH_RESULT_LIMIT."
+msgstr ""
+"結果は %u 件に制限されています。すべて取得するには --unlimit または --"
+"unlimited を使用するか、--limit で独自の制限を指定するか、"
+"FSEARCH_RESULT_LIMIT を設定してください。"
+
+#: src/fsearch_cli.c:134
+#, c-format
+msgid "%u match."
+msgid_plural "%u matches."
+msgstr[0] "%u 件一致しました。"
+
+#: src/fsearch_cli.c:142
+msgid "Updating FSearch index before searching..."
+msgstr "検索前に FSearch のインデックスを更新しています..."
+
+#: src/fsearch_cli.c:181
+msgid ""
+"Usage: fsearch --cli [OPTIONS]\n"
+"\n"
+"Search the existing FSearch index and print matching paths.\n"
+"\n"
+"  -s, --search PATTERN       Search with FSearch query syntax\n"
+"      --path DIRECTORY        Search recursively below DIRECTORY (default: "
+"current directory)\n"
+"      --global                Search every indexed location\n"
+"      --limit COUNT          Print at most COUNT results\n"
+"      --unlimit, --unlimited Print every result\n"
+"  -u, --update-database      Rescan the configured index and exit\n"
+"      --about                Print one-line build information\n"
+"  -h, --help                 Show this help\n"
+"\n"
+"Configuration: fsearch config --help\n"
+"\n"
+"Examples:\n"
+"  fsearch --cli --search invoice              # current directory\n"
+"  fsearch --cli --path ~/Documents --search invoice\n"
+"  fsearch --cli --global --search invoice\n"
+"  fsearch --cli --search 'file:size:>20mb'\n"
+"  fsearch --cli --search 'ext:jpg;png'\n"
+"  fsearch --cli --search 'path:projects report'\n"
+"  fsearch --cli --search 'report AND ext:pdf'\n"
+"  fsearch --cli --search '(draft OR final) !archive'\n"
+"  fsearch --cli --search 'file:regex:\".+\\.pdf$\"'\n"
+"  fsearch --cli --search 'case:AGENTS'        # case-sensitive\n"
+"  fsearch --cli --search 'case:regex:\"^AGENTS\\.md$\"'\n"
+"  fsearch --cli --search 'glob:**/*.png'\n"
+"  fsearch --cli --search 'path:glob:**/AGENTS.md'\n"
+"  fsearch --cli --search 'case:glob:AGENTS.md' # case-sensitive glob\n"
+"\n"
+"Examples use space as AND. Try file:, folder:, path:, ext:, size:, dm:, "
+"case:, regex:, and glob:.\n"
+"Boolean syntax: AND or &&; OR or ||; NOT or !. Parentheses group terms.\n"
+"Glob syntax: * excludes /; ** spans directories; ? matches one character; [a-"
+"c] is a range;\n"
+"Glob searches paths by default; use **/ for any depth; file:glob: searches "
+"file names.\n"
+"{png,jpg} selects alternatives; {01..12} is an inclusive numeric range; \\* "
+"matches a literal *.\n"
+msgstr ""
+"使用法: fsearch --cli [OPTIONS]\n"
+"\n"
+"既存の FSearch インデックスを検索し、一致するパスを出力します。\n"
+"\n"
+"  -s, --search PATTERN       FSearch のクエリ構文で検索\n"
+"      --path DIRECTORY        DIRECTORY 以下を再帰的に検索 (デフォルト: 現在"
+"のディレクトリ)\n"
+"      --global                インデックスに登録されたすべての場所を検索\n"
+"      --limit COUNT          最大 COUNT 件の結果を出力\n"
+"      --unlimit, --unlimited すべての結果を出力\n"
+"  -u, --update-database      設定済みのインデックスを再スキャンして終了\n"
+"      --about                ビルド情報を 1 行で出力\n"
+"  -h, --help                 このヘルプを表示\n"
+"\n"
+"設定: fsearch config --help\n"
+"\n"
+"例:\n"
+"  fsearch --cli --search invoice              # 現在のディレクトリ\n"
+"  fsearch --cli --path ~/Documents --search invoice\n"
+"  fsearch --cli --global --search invoice\n"
+"  fsearch --cli --search 'file:size:>20mb'\n"
+"  fsearch --cli --search 'ext:jpg;png'\n"
+"  fsearch --cli --search 'path:projects report'\n"
+"  fsearch --cli --search 'report AND ext:pdf'\n"
+"  fsearch --cli --search '(draft OR final) !archive'\n"
+"  fsearch --cli --search 'file:regex:\".+\\.pdf$\"'\n"
+"  fsearch --cli --search 'case:AGENTS'        # 大文字と小文字を区別\n"
+"  fsearch --cli --search 'case:regex:\"^AGENTS\\.md$\"'\n"
+"  fsearch --cli --search 'glob:**/*.png'\n"
+"  fsearch --cli --search 'path:glob:**/AGENTS.md'\n"
+"  fsearch --cli --search 'case:glob:AGENTS.md' # 大文字と小文字を区別する "
+"glob\n"
+"\n"
+"例では空白を AND として使用しています。file:, folder:, path:, ext:, size:, "
+"dm:, case:, regex:, glob: を試してください。\n"
+"論理構文: AND または &&、OR または ||、NOT または !。括弧で項をグループ化しま"
+"す。\n"
+"Glob 構文: * は / を除外し、** はディレクトリをまたぎ、? は 1 文字に一致し、"
+"[a-c] は範囲を表します。\n"
+"Glob はデフォルトでパスを検索します。任意の深さには **/ を使用し、file:glob: "
+"はファイル名を検索します。\n"
+"{png,jpg} は選択肢を指定し、{01..12} は両端を含む数値範囲を指定し、\\* はリテ"
+"ラルの * に一致します。\n"
+
+#: src/fsearch_cli.c:238
+#, c-format
+msgid "FSearch %s - indexed file search for %s %s\n"
+msgstr "FSearch %s - %s %s 用のインデックス型ファイル検索\n"
+
+#: src/fsearch_cli.c:301
+msgid "fsearch: interrupted\n"
+msgstr "fsearch: 中断されました\n"
+
+#: src/fsearch_cli.c:315
+msgid "fsearch: search could not run because the index is unavailable\n"
+msgstr "fsearch: インデックスを利用できないため検索を実行できませんでした\n"
+
+#: src/fsearch_cli.c:352 src/fsearch_cli.c:381 src/fsearch_cli_config.c:774
+#: src/fsearch_cli_config.c:961 src/fsearch_cli_config.c:1147
+#, c-format
+msgid "%s\n"
+msgstr "%s\n"
+
+#: src/fsearch_cli.c:400
+#, c-format
+msgid "%s"
+msgstr "%s"
+
+#: src/fsearch_cli.c:473
+#, c-format
+msgid "fsearch: unknown CLI option: %s\n"
+msgstr "fsearch: 不明な CLI オプションです: %s\n"
+
+#: src/fsearch_cli.c:495
+#, c-format
+msgid "fsearch: failed to create data directory: %s\n"
+msgstr "fsearch: データディレクトリを作成できませんでした: %s\n"
+
+#: src/fsearch_cli_config.c:111
+msgid ""
+"Usage: fsearch config COMMAND [OPTIONS]\n"
+"\n"
+"View and modify the shared FSearch GUI and CLI configuration.\n"
+"\n"
+"Configuration commands:\n"
+"  path                         Print the configuration file path\n"
+"  show [SECTION] [--json]      Show settings\n"
+"  get KEY [--json]             Print one scalar setting\n"
+"  set KEY VALUE                Set one scalar setting\n"
+"  unset KEY                    Restore one scalar setting default\n"
+"  reset [KEY|SECTION] --yes [--rescan]\n"
+"                               Restore defaults\n"
+"  doctor                       Check configuration and index consistency\n"
+"  roots list|add|set|remove    Manage indexed roots\n"
+"  excludes list|add|remove|hidden\n"
+"                               Manage index exclusions\n"
+"  filters list|add|set|remove|reset\n"
+"                               Manage saved search filters\n"
+"\n"
+"Scalar values use true/false, decimal integers, or strings.\n"
+"Run 'fsearch config show' to list every scalar key and current value.\n"
+"Scalar sections: search, application, window, ui, columns, sort, dialogs.\n"
+"Use 'fsearch config roots|excludes|filters --help' for family options.\n"
+"Close the FSearch GUI before changing shared settings.\n"
+"Index changes become searchable on the next CLI search, or immediately with "
+"--rescan.\n"
+"Use --json with show, get, and collection list commands.\n"
+"\n"
+"Examples:\n"
+"  fsearch config show search --json\n"
+"  fsearch config get search.match-case\n"
+"  fsearch config set search.match-case true\n"
+"  fsearch config roots add ~/Code --monitor --one-file-system --rescan\n"
+"  fsearch config excludes add '*.tmp' --type wildcard --scope basename --"
+"target files\n"
+"  fsearch config filters add Documents --query 'ext:pdf' --macro docs\n"
+"  fsearch config reset search --yes\n"
+msgstr ""
+"使用法: fsearch config COMMAND [OPTIONS]\n"
+"\n"
+"FSearch の GUI と CLI で共有される設定を表示および変更します。\n"
+"\n"
+"設定コマンド:\n"
+"  path                         設定ファイルのパスを出力\n"
+"  show [SECTION] [--json]      設定を表示\n"
+"  get KEY [--json]             1 つのスカラー設定を出力\n"
+"  set KEY VALUE                1 つのスカラー設定を設定\n"
+"  unset KEY                    1 つのスカラー設定をデフォルトに戻す\n"
+"  reset [KEY|SECTION] --yes [--rescan]\n"
+"                               デフォルトに戻す\n"
+"  doctor                       設定とインデックスの整合性を確認\n"
+"  roots list|add|set|remove    インデックス対象のルートを管理\n"
+"  excludes list|add|remove|hidden\n"
+"                               インデックスの除外設定を管理\n"
+"  filters list|add|set|remove|reset\n"
+"                               保存済み検索フィルターを管理\n"
+"\n"
+"スカラー値には true/false、10 進整数、または文字列を使用します。\n"
+"すべてのスカラーキーと現在値を一覧表示するには 'fsearch config show' を実行し"
+"てください。\n"
+"スカラーセクション: search, application, window, ui, columns, sort, "
+"dialogs。\n"
+"各系列のオプションについては 'fsearch config roots|excludes|filters --help' "
+"を使用してください。\n"
+"共有設定を変更する前に FSearch の GUI を閉じてください。\n"
+"インデックスの変更は次回の CLI 検索時に検索可能になります。--rescan を指定す"
+"るとすぐに反映されます。\n"
+"show、get、およびコレクションの list コマンドでは --json を使用できます。\n"
+"\n"
+"例:\n"
+"  fsearch config show search --json\n"
+"  fsearch config get search.match-case\n"
+"  fsearch config set search.match-case true\n"
+"  fsearch config roots add ~/Code --monitor --one-file-system --rescan\n"
+"  fsearch config excludes add '*.tmp' --type wildcard --scope basename --"
+"target files\n"
+"  fsearch config filters add Documents --query 'ext:pdf' --macro docs\n"
+"  fsearch config reset search --yes\n"
+
+#: src/fsearch_cli_config.c:152
+msgid ""
+"Usage: fsearch config show [SECTION] [--json]\n"
+"Show all scalar settings or one dotted section.\n"
+msgstr ""
+"使用法: fsearch config show [SECTION] [--json]\n"
+"すべてのスカラー設定、またはドット区切りの 1 つのセクションを表示します。\n"
+
+#: src/fsearch_cli_config.c:154
+msgid ""
+"Usage: fsearch config get KEY [--json]\n"
+"Print one typed scalar value. Discover keys with 'fsearch config show'.\n"
+msgstr ""
+"使用法: fsearch config get KEY [--json]\n"
+"型付きのスカラー値を 1 つ出力します。キーは 'fsearch config show' で確認でき"
+"ます。\n"
+
+#: src/fsearch_cli_config.c:157
+msgid ""
+"Usage: fsearch config set KEY VALUE\n"
+"Set a boolean, integer, string, or enumerated scalar value.\n"
+msgstr ""
+"使用法: fsearch config set KEY VALUE\n"
+"真偽値、整数、文字列、または列挙型のスカラー値を設定します。\n"
+
+#: src/fsearch_cli_config.c:159
+msgid ""
+"Usage: fsearch config unset KEY\n"
+"Restore one scalar setting to its built-in default.\n"
+msgstr ""
+"使用法: fsearch config unset KEY\n"
+"1 つのスカラー設定を組み込みのデフォルト値に戻します。\n"
+
+#: src/fsearch_cli_config.c:161
+msgid ""
+"Usage: fsearch config reset [KEY|SECTION] --yes [--rescan]\n"
+"Reset is destructive and requires --yes. --rescan applies to roots, "
+"database, excludes, or all.\n"
+msgstr ""
+"使用法: fsearch config reset [KEY|SECTION] --yes [--rescan]\n"
+"リセットは破壊的な操作であり、--yes が必要です。--rescan は roots、database、"
+"excludes、または all に適用できます。\n"
+
+#: src/fsearch_cli_config.c:164
+msgid ""
+"Usage: fsearch config doctor\n"
+"Check configuration readability and whether the saved index uses the same "
+"roots and exclusions.\n"
+msgstr ""
+"使用法: fsearch config doctor\n"
+"設定が読み取り可能かどうか、および保存済みインデックスが同じルートと除外設定"
+"を使用しているかどうかを確認します。\n"
+
+#: src/fsearch_cli_config.c:170
+msgid ""
+"Usage: fsearch config roots COMMAND [PATH] [OPTIONS]\n"
+"\n"
+"Commands:\n"
+"  list [--json]                List indexed roots\n"
+"  add PATH [OPTIONS]           Add a root directory\n"
+"  set PATH [OPTIONS]           Change an existing root\n"
+"  remove PATH [--rescan]       Remove an existing root\n"
+"\n"
+"Options for add and set:\n"
+"  --active, --inactive\n"
+"  --monitor, --no-monitor\n"
+"  --one-file-system, --no-one-file-system\n"
+"  --scan-after-launch, --no-scan-after-launch\n"
+"  --rescan-every SECONDS        Set periodic rescan interval; 0 disables it\n"
+"  --rescan                      Rebuild the index immediately after saving\n"
+msgstr ""
+"使用法: fsearch config roots COMMAND [PATH] [OPTIONS]\n"
+"\n"
+"コマンド:\n"
+"  list [--json]                インデックス対象のルートを一覧表示\n"
+"  add PATH [OPTIONS]           ルートディレクトリを追加\n"
+"  set PATH [OPTIONS]           既存のルートを変更\n"
+"  remove PATH [--rescan]       既存のルートを削除\n"
+"\n"
+"add および set のオプション:\n"
+"  --active, --inactive\n"
+"  --monitor, --no-monitor\n"
+"  --one-file-system, --no-one-file-system\n"
+"  --scan-after-launch, --no-scan-after-launch\n"
+"  --rescan-every SECONDS        定期再スキャンの間隔を設定します。0 で無効に"
+"なります\n"
+"  --rescan                      保存直後にインデックスを再構築します\n"
+
+#: src/fsearch_cli_config.c:187
+msgid ""
+"Usage: fsearch config excludes COMMAND [PATTERN|VALUE] [OPTIONS]\n"
+"\n"
+"Commands:\n"
+"  list [--json]                 List exclusions\n"
+"  add PATTERN [OPTIONS]         Add an exclusion\n"
+"  remove PATTERN [OPTIONS]      Remove a matching exclusion\n"
+"  hidden [true|false] [--rescan]\n"
+"                                View or change hidden-file exclusion\n"
+"\n"
+"Options for add and remove:\n"
+"  --type fixed|wildcard|regex   Default: fixed\n"
+"  --scope full-path|basename    Default: full-path\n"
+"  --target both|files|folders   Default: both\n"
+"  --active, --inactive          Add state or removal selector\n"
+"  --rescan                      Rebuild the index immediately after saving\n"
+msgstr ""
+"使用法: fsearch config excludes COMMAND [PATTERN|VALUE] [OPTIONS]\n"
+"\n"
+"コマンド:\n"
+"  list [--json]                 除外設定を一覧表示\n"
+"  add PATTERN [OPTIONS]         除外設定を追加\n"
+"  remove PATTERN [OPTIONS]      一致する除外設定を削除\n"
+"  hidden [true|false] [--rescan]\n"
+"                                隠しファイルの除外設定を表示または変更\n"
+"\n"
+"add および remove のオプション:\n"
+"  --type fixed|wildcard|regex   デフォルト: fixed\n"
+"  --scope full-path|basename    デフォルト: full-path\n"
+"  --target both|files|folders   デフォルト: both\n"
+"  --active, --inactive          追加時の状態または削除時の選択条件\n"
+"  --rescan                      保存直後にインデックスを再構築します\n"
+
+#: src/fsearch_cli_config.c:204
+msgid ""
+"Usage: fsearch config filters COMMAND [NAME] [OPTIONS]\n"
+"\n"
+"Commands:\n"
+"  list [--json]                 List saved filters\n"
+"  add NAME [OPTIONS]            Add a named filter\n"
+"  set NAME [OPTIONS]            Change a named filter\n"
+"  remove NAME                   Remove a named filter\n"
+"  reset                         Restore built-in filters\n"
+"\n"
+"Options for add and set:\n"
+"  --query QUERY                 Saved FSearch query\n"
+"  --macro MACRO                 Query macro name\n"
+"  --case, --no-case             Match case\n"
+"  --path, --no-path             Search full paths\n"
+"  --regex, --no-regex           Treat query as a regular expression\n"
+msgstr ""
+"使用法: fsearch config filters COMMAND [NAME] [OPTIONS]\n"
+"\n"
+"コマンド:\n"
+"  list [--json]                 保存済みフィルターを一覧表示\n"
+"  add NAME [OPTIONS]            名前付きフィルターを追加\n"
+"  set NAME [OPTIONS]            名前付きフィルターを変更\n"
+"  remove NAME                   名前付きフィルターを削除\n"
+"  reset                         組み込みフィルターを復元\n"
+"\n"
+"add および set のオプション:\n"
+"  --query QUERY                 保存する FSearch クエリ\n"
+"  --macro MACRO                 クエリマクロ名\n"
+"  --case, --no-case             大文字と小文字を区別\n"
+"  --path, --no-path             フルパスを検索\n"
+"  --regex, --no-regex           クエリを正規表現として扱う\n"
+
+#: src/fsearch_cli_config.c:265
+msgid ""
+"fsearch config: close the running FSearch GUI before changing shared "
+"settings\n"
+msgstr ""
+"fsearch config: 共有設定を変更する前に、実行中の FSearch GUI を閉じてくださ"
+"い\n"
+
+#: src/fsearch_cli_config.c:269
+msgid "fsearch config: failed to save configuration\n"
+msgstr "fsearch config: 設定を保存できませんでした\n"
+
+#: src/fsearch_cli_config.c:280
+msgid "Index configuration changed; the next CLI search will rebuild it.\n"
+msgstr ""
+"インデックス設定が変更されました。次回の CLI 検索時に再構築されます。\n"
+
+#: src/fsearch_cli_config.c:416
+#, c-format
+msgid "fsearch config %s: unknown option: %s\n"
+msgstr "fsearch config %s: 不明なオプションです: %s\n"
+
+#: src/fsearch_cli_config.c:422
+#, c-format
+msgid "fsearch config %s: unexpected argument: %s\n"
+msgstr "fsearch config %s: 予期しない引数です: %s\n"
+
+#: src/fsearch_cli_config.c:449
+msgid "Usage: fsearch config get KEY [--json]\n"
+msgstr "使用法: fsearch config get KEY [--json]\n"
+
+#: src/fsearch_cli_config.c:454 src/fsearch_cli_config.c:555
+#, c-format
+msgid "fsearch config: unknown setting: %s\n"
+msgstr "fsearch config: 不明な設定です: %s\n"
+
+#: src/fsearch_cli_config.c:502
+#, c-format
+msgid "fsearch config show: unknown section: %s\n"
+msgstr "fsearch config show: 不明なセクションです: %s\n"
+
+#: src/fsearch_cli_config.c:550
+#, c-format
+msgid "Usage: fsearch config %s KEY%s\n"
+msgstr "使用法: fsearch config %s KEY%s\n"
+
+#: src/fsearch_cli_config.c:566
+#, c-format
+msgid "fsearch config: invalid value for %s: %s\n"
+msgstr "fsearch config: %s の値が無効です: %s\n"
+
+#: src/fsearch_cli_config.c:572
+#, c-format
+msgid "%s = %s\n"
+msgstr "%s = %s\n"
+
+#: src/fsearch_cli_config.c:637
+#, c-format
+msgid "fsearch config roots: unknown operation: %s\n"
+msgstr "fsearch config roots: 不明な操作です: %s\n"
+
+#: src/fsearch_cli_config.c:691
+msgid "fsearch config roots: --rescan-every requires SECONDS\n"
+msgstr "fsearch config roots: --rescan-every には SECONDS が必要です\n"
+
+#: src/fsearch_cli_config.c:710
+msgid "fsearch config roots: missing PATH\n"
+msgstr "fsearch config roots: PATH がありません\n"
+
+#: src/fsearch_cli_config.c:717 src/fsearch_cli_config.c:732
+#, c-format
+msgid "fsearch config roots: path not found: %s\n"
+msgstr "fsearch config roots: パスが見つかりません: %s\n"
+
+#: src/fsearch_cli_config.c:724
+#, c-format
+msgid "fsearch config roots: not a directory: %s\n"
+msgstr "fsearch config roots: ディレクトリではありません: %s\n"
+
+#: src/fsearch_cli_config.c:728
+#, c-format
+msgid "fsearch config roots: path already exists: %s\n"
+msgstr "fsearch config roots: パスはすでに存在します: %s\n"
+
+#: src/fsearch_cli_config.c:752
+#, c-format
+msgid "fsearch config roots: invalid rescan duration: %s\n"
+msgstr "fsearch config roots: 再スキャン間隔が無効です: %s\n"
+
+#: src/fsearch_cli_config.c:765
+msgid ""
+"%s\tactive=%s monitor=%s one-file-system=%s scan-after-launch=%s rescan-"
+"after=%"
+msgstr ""
+"%s\tactive=%s monitor=%s one-file-system=%s scan-after-launch=%s rescan-"
+"after=%"
+
+#: src/fsearch_cli_config.c:844
+msgid "fsearch config excludes hidden: expected true or false\n"
+msgstr "fsearch config excludes hidden: true または false を指定してください\n"
+
+#: src/fsearch_cli_config.c:850
+#, c-format
+msgid "exclude-hidden = %s\n"
+msgstr "exclude-hidden = %s\n"
+
+#: src/fsearch_cli_config.c:856
+#, c-format
+msgid "fsearch config excludes: unknown operation: %s\n"
+msgstr "fsearch config excludes: 不明な操作です: %s\n"
+
+#: src/fsearch_cli_config.c:877
+#, c-format
+msgid "fsearch config excludes: %s requires a value\n"
+msgstr "fsearch config excludes: %s には値が必要です\n"
+
+#: src/fsearch_cli_config.c:909
+msgid "fsearch config excludes: missing PATTERN\n"
+msgstr "fsearch config excludes: PATTERN がありません\n"
+
+#: src/fsearch_cli_config.c:914
+#, c-format
+msgid "fsearch config excludes: invalid type: %s\n"
+msgstr "fsearch config excludes: 無効なタイプです: %s\n"
+
+#: src/fsearch_cli_config.c:919
+#, c-format
+msgid "fsearch config excludes: invalid scope: %s\n"
+msgstr "fsearch config excludes: 無効なスコープです: %s\n"
+
+#: src/fsearch_cli_config.c:924
+#, c-format
+msgid "fsearch config excludes: invalid target: %s\n"
+msgstr "fsearch config excludes: 無効な対象です: %s\n"
+
+#: src/fsearch_cli_config.c:954
+#, c-format
+msgid "fsearch config excludes: exclusion not found: %s\n"
+msgstr "fsearch config excludes: 除外設定が見つかりません: %s\n"
+
+#: src/fsearch_cli_config.c:1022
+msgid "filters reset\n"
+msgstr "フィルターをリセットしました\n"
+
+#: src/fsearch_cli_config.c:1029
+#, c-format
+msgid "fsearch config filters: unknown operation: %s\n"
+msgstr "fsearch config filters: 不明な操作です: %s\n"
+
+#: src/fsearch_cli_config.c:1051
+#, c-format
+msgid "fsearch config filters: %s requires a value\n"
+msgstr "fsearch config filters: %s には値が必要です\n"
+
+#: src/fsearch_cli_config.c:1094
+msgid "fsearch config filters: missing NAME\n"
+msgstr "fsearch config filters: NAME がありません\n"
+
+#: src/fsearch_cli_config.c:1100 src/fsearch_cli_config.c:1111
+#, c-format
+msgid "fsearch config filters: name not found: %s\n"
+msgstr "fsearch config filters: 名前が見つかりません: %s\n"
+
+#: src/fsearch_cli_config.c:1107
+#, c-format
+msgid "fsearch config filters: name already exists: %s\n"
+msgstr "fsearch config filters: 名前はすでに存在します: %s\n"
+
+#: src/fsearch_cli_config.c:1145
+#, c-format
+msgid "%s\tmacro=%s query=%s\n"
+msgstr "%s\tmacro=%s query=%s\n"
+
+#: src/fsearch_cli_config.c:1193
+msgid "fsearch config reset requires --yes\n"
+msgstr "fsearch config reset には --yes が必要です\n"
+
+#: src/fsearch_cli_config.c:1201
+msgid ""
+"fsearch config reset: --rescan requires roots, database, excludes, or all\n"
+msgstr ""
+"fsearch config reset: --rescan には roots、database、excludes、または all の"
+"いずれかが必要です\n"
+
+#: src/fsearch_cli_config.c:1241
+#, c-format
+msgid "fsearch config: unknown setting or section: %s\n"
+msgstr "fsearch config: 不明な設定またはセクションです: %s\n"
+
+#: src/fsearch_cli_config.c:1246
+#, c-format
+msgid "%s settings reset\n"
+msgstr "%s の設定をリセットしました\n"
+
+#: src/fsearch_cli_config.c:1253
+msgid ""
+"configuration: missing; defaults active\n"
+"index: unknown\n"
+msgstr ""
+"設定: ありません。デフォルトが有効です\n"
+"インデックス: 不明\n"
+
+#: src/fsearch_cli_config.c:1261
+msgid ""
+"configuration: ok\n"
+"index: missing or unreadable\n"
+msgstr ""
+"設定: 正常\n"
+"インデックス: ないか、読み取れません\n"
+
+#: src/fsearch_cli_config.c:1266
+#, c-format
+msgid ""
+"configuration: ok\n"
+"index: %s\n"
+msgstr ""
+"設定: 正常\n"
+"インデックス: %s\n"
+
+#: src/fsearch_cli_config.c:1266
+msgid "current"
+msgstr "最新"
+
+#: src/fsearch_cli_config.c:1266
+msgid "stale"
+msgstr "古い"
+
+#: src/fsearch_cli_config.c:1278
+msgid ""
+"Usage: fsearch config path\n"
+"Print the active FSearch configuration file path.\n"
+msgstr ""
+"使用法: fsearch config path\n"
+"有効な FSearch 設定ファイルのパスを出力します。\n"
+
+#: src/fsearch_cli_config.c:1321
+#, c-format
+msgid "fsearch config: unknown command: %s\n"
+msgstr "fsearch config: 不明なコマンドです: %s\n"
+
+#: src/fsearch_database_preferences_widget.ui:176
+msgid "Attempt to monitor"
+msgstr "監視を試みる"
+
+#: src/fsearch_database_preferences_widget.ui:191
+msgid "Scan after launch"
+msgstr "起動後にスキャン"
+
+#: src/fsearch_database_preferences_widget.ui:254
+msgid "Hours:"
+msgstr "時間:"
+
+#: src/fsearch_preferences.ui:1241
+msgid ""
+"<b>Add a specific path:</b>\n"
+"\n"
+"Type the full path of a folder here and click the button next to it to "
+"include that folder in the database. This is useful for adding a path "
+"directly without browsing for it."
+msgstr ""
+"<b>特定のパスを追加:</b>\n"
+"\n"
+"ここにフォルダーのフルパスを入力し、その横にあるボタンをクリックすると、その"
+"フォルダーをデータベースに追加できます。参照せずにパスを直接追加する場合に便"
+"利です。"
+
+#: src/fsearch_preferences.ui:1275
+msgid ""
+"<b>Attempt to monitor:</b>\n"
+"\n"
+"If enabled, FSearch watches this folder for changes and keeps the database "
+"up to date automatically, so you don't have to rescan manually.\n"
+"\n"
+"Monitoring isn't supported on every file system and uses a small amount of "
+"system resources per watched folder. For large directory trees with many "
+"files the system may run out of resources to watch them all."
+msgstr ""
+"<b>監視を試みる:</b>\n"
+"\n"
+"有効にすると、FSearch がこのフォルダーの変更を監視してデータベースを自動的に"
+"最新の状態に保つため、手動で再スキャンする必要がなくなります。\n"
+"\n"
+"監視はすべてのファイルシステムでサポートされているわけではなく、監視するフォ"
+"ルダーごとに少量のシステムリソースを使用します。多数のファイルを含む大規模な"
+"ディレクトリツリーでは、すべてを監視するためのリソースが不足する場合がありま"
+"す。"
+
+#: src/fsearch_preferences.ui:1294
+msgid ""
+"<b>Scan after launch:</b>\n"
+"\n"
+"If enabled, this folder is rescanned every time FSearch starts, so the "
+"database reflects any changes made while FSearch wasn't running."
+msgstr ""
+"<b>起動後にスキャン:</b>\n"
+"\n"
+"有効にすると、FSearch の起動時に毎回このフォルダーが再スキャンされるため、"
+"FSearch が実行されていなかった間の変更がデータベースに反映されます。"
+
+#: src/fsearch_preferences.ui:1311
+msgid ""
+"<b>Stay on one file system:</b>\n"
+"\n"
+"If enabled, FSearch won't cross file system boundaries while scanning this "
+"folder. Mounted file systems below it (e.g. external drives or network "
+"shares) are skipped."
+msgstr ""
+"<b>単一のファイルシステム内に留まる:</b>\n"
+"\n"
+"有効にすると、FSearch はこのフォルダーのスキャン中にファイルシステムの境界を"
+"越えません。その下にマウントされたファイルシステム (外部ドライブやネットワー"
+"ク共有など) はスキップされます。"
+
+#: src/fsearch_preferences.ui:1328
+msgid ""
+"<b>Rescan every:</b>\n"
+"\n"
+"If enabled, this folder is rescanned automatically at the given interval. "
+"Use the hours and minutes fields to set how often the rescan happens.\n"
+"\n"
+"This is useful for folders on file systems that can't be monitored for "
+"changes."
+msgstr ""
+"<b>再スキャン間隔:</b>\n"
+"\n"
+"有効にすると、指定した間隔でこのフォルダーが自動的に再スキャンされます。時間"
+"と分の欄を使用して、再スキャンの頻度を設定します。\n"
+"\n"
+"変更を監視できないファイルシステム上のフォルダーに便利です。"
+
+#: src/fsearch_preferences.ui:1347
+msgid ""
+"<b>Exclude rules:</b>\n"
+"\n"
+"This list contains rules for the files and folders you want to exclude from "
+"the database.\n"
+"\n"
+"\t• <b>Active:</b> If enabled, the rule is applied and matching items are "
+"excluded.\n"
+"\t• <b>Pattern:</b> The text matched against each item, interpreted "
+"according to the Type.\n"
+"\t• <b>Type:</b> How the pattern is interpreted — <i>Literal</i> (exact "
+"text), <i>Wildcard</i> (using * and ?) or <i>Regex</i> (a regular "
+"expression).\n"
+"\t• <b>Match:</b> Whether the pattern is matched against the item's <i>Full "
+"Path</i> or only its <i>Basename</i> (the name without the path).\n"
+"\t• <b>Applies To:</b> Whether the rule affects <i>Files</i>, <i>Folders</i> "
+"or both."
+msgstr ""
+"<b>除外ルール:</b>\n"
+"\n"
+"この一覧には、データベースから除外するファイルとフォルダーのルールが含まれて"
+"います。\n"
+"\n"
+"\t• <b>有効:</b> 有効にすると、ルールが適用され、一致する項目が除外されま"
+"す。\n"
+"\t• <b>パターン:</b> 各項目と照合するテキストです。「タイプ」に従って解釈され"
+"ます。\n"
+"\t• <b>タイプ:</b> パターンの解釈方法です — <i>リテラル</i> (完全一致するテキ"
+"スト)、<i>ワイルドカード</i> (* と ? を使用)、または <i>正規表現</i>。\n"
+"\t• <b>照合:</b> パターンを項目の <i>フルパス</i> と照合するか、<i>ベース名</"
+"i> (パスを除いた名前) のみと照合するかを指定します。\n"
+"\t• <b>適用対象:</b> ルールを <i>ファイル</i>、<i>フォルダー</i>、またはその"
+"両方に適用するかを指定します。"
+
+#: src/fsearch_preferences.ui:1370
+msgid ""
+"<b>Add exclude rule:</b>\n"
+"\n"
+"This adds a new, empty rule to the list. Edit its Pattern, Type, Match and "
+"Applies To columns to control what gets excluded from the database."
+msgstr ""
+"<b>除外ルールを追加:</b>\n"
+"\n"
+"新しい空のルールを一覧に追加します。「パターン」、「タイプ」、「照合」、「適"
+"用対象」の各列を編集して、データベースから除外する項目を指定します。"
+
+#: src/fsearch_statusbar.ui:726
+msgid ""
+"The search was cancelled before it finished.\n"
+"<b>These results are incomplete.</b>"
+msgstr ""
+"検索は完了前にキャンセルされました。\n"
+"<b>これらの結果は不完全です。</b>"
+
+#: src/fsearch_statusbar.ui:756
+msgid "PARTIAL"
+msgstr "一部のみ"
+
+#: src/fsearch_welcome_dialog.ui:26
+msgid "What's New in FSearch"
+msgstr "FSearch の新機能"
+
+#: src/fsearch_welcome_dialog.ui:79
+msgid ""
+"<span size=\"xx-large\" weight=\"bold\">What's New in FSearch 0.3</span>"
+msgstr "<span size=\"xx-large\" weight=\"bold\">FSearch 0.3 の新機能</span>"
+
+#: src/fsearch_welcome_dialog.ui:149
+msgid "<big><b>File System Monitoring</b></big>"
+msgstr "<big><b>ファイルシステムの監視</b></big>"
+
+#: src/fsearch_welcome_dialog.ui:163
+msgid ""
+"You can now actively watch individual folders to eliminate frequent rescans. "
+"File changes then appear in your search results immediately.\n"
+"\n"
+"To enable this feature go to the Database section of the Preferences "
+"dialog.\n"
+"\n"
+"See the online documentation for more information:\n"
+"<a href=\"URL\">https://github.com/cboxdoerfer/fsearch/wiki/Database-update</"
+"a>"
+msgstr ""
+"個々のフォルダーを常時監視できるようになり、頻繁な再スキャンが不要になりまし"
+"た。ファイルの変更は検索結果にすぐ反映されます。\n"
+"\n"
+"この機能を有効にするには、設定ダイアログの「データベース」セクションに移動し"
+"てください。\n"
+"\n"
+"詳細については、オンラインドキュメントを参照してください:\n"
+"<a href=\"URL\">https://github.com/cboxdoerfer/fsearch/wiki/Database-update</"
+"a>"
+
+#: src/fsearch_welcome_dialog.ui:232
+msgid "<big><b>Folder-Specific Rescan Schedules</b></big>"
+msgstr "<big><b>フォルダーごとの再スキャンスケジュール</b></big>"
+
+#: src/fsearch_welcome_dialog.ui:246
+msgid ""
+"You can now configure automatic update intervals for individual folders "
+"independently and tailored to each distinct location."
+msgstr ""
+"個々のフォルダーの自動更新間隔を、それぞれの場所に合わせて個別に設定できるよ"
+"うになりました。"
+
+#: src/fsearch_welcome_dialog.ui:309
+msgid "<big><b>Improved Exclude Rules</b></big>"
+msgstr "<big><b>除外ルールの改善</b></big>"
+
+#: src/fsearch_welcome_dialog.ui:323
+msgid ""
+"You can now use wildcards and regular expressions to define more powerful "
+"exclude rules. \n"
+"Rules can be targeted specifically at files, folders, or both, and can be "
+"configured to match against either the basename or the full absolute path."
+msgstr ""
+"ワイルドカードと正規表現を使用して、より強力な除外ルールを定義できるようにな"
+"りました。 \n"
+"ルールの対象をファイル、フォルダー、またはその両方に指定でき、ベース名または"
+"完全な絶対パスのいずれかと照合するよう設定できます。"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:99
+msgid "Numerous bug fixes and stability and performance improvements"
+msgstr "多数のバグ修正と、安定性およびパフォーマンスの改善"
+
+#: src/fsearch.c:330
+msgid "Saving database and config…"
+msgstr "データベースと設定を保存しています…"
+
+#: src/fsearch_cli.c:149
+#, c-format
+msgid "Indexing: %s"
+msgstr "インデックスを作成しています: %s"
+
+#: src/fsearch_database_preferences_widget.ui:206
+msgid "Stay on one file system"
+msgstr "単一のファイルシステム内に留まる"
+
+#: src/fsearch_database_preferences_widget.ui:298
+msgid "Minutes:"
+msgstr "分:"
+
+#: src/fsearch_database_preferences_widget.ui:512
+msgid "Restore default exclude list"
+msgstr "デフォルトの除外リストを復元"
+
+#: src/fsearch_preferences.ui:1387
+msgid ""
+"<b>Remove selected row:</b>\n"
+"\n"
+"This removes the selected rule from the list of exclude rules."
+msgstr ""
+"<b>選択した行を削除:</b>\n"
+"\n"
+"除外ルールの一覧から選択したルールを削除します。"
+
+#: src/fsearch_preferences.ui:1404
+msgid ""
+"<b>Restore default exclude rules:</b>\n"
+"\n"
+"This button restores the default set of exclude rules.\n"
+"\n"
+"⚠ All rules which were created or edited by the user will be lost! ⚠"
+msgstr ""
+"<b>デフォルトの除外ルールを復元:</b>\n"
+"\n"
+"このボタンは、デフォルトの除外ルール一式を復元します。\n"
+"\n"
+"⚠ ユーザーが作成または編集したすべてのルールが失われます! ⚠"
+
+#: data/io.github.cboxdoerfer.FSearch.desktop.in.in:4 src/main.c:36
 msgid "FSearch"
 msgstr "FSearch"
 
@@ -164,18 +1073,6 @@ msgstr ""
 "DB: 固定文字列/ワイルドカード/正規表現に基づいてファイルとフォルダーを除外で"
 "きる機能を追加"
 
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:92
-msgid ""
-"DB: Allow included folders to be scheduled and scanned after launch "
-"independently"
-msgstr ""
-"DB: 配下のフォルダーを個別にスケジュール設定したり起動後にスキャンしたりする"
-"機能を追加"
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:93
-msgid "DB: Make rescanning more efficient"
-msgstr "DB: 再スキャンを高効率化"
-
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:94
 msgid "DB: Store database config in DB file"
 msgstr "DB: データベースの設定を DB ファイルに保存するように修正"
@@ -187,18 +1084,6 @@ msgstr "DB: DB ファイルにチェックサムを追加"
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:96
 msgid "Make icon and file info gathering asynchronous (no UI blocking)"
 msgstr "アイコンとファイル情報の取得を非同期に変更 (UI をブロッキングしない)"
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:97
-msgid "Reduce memory usage"
-msgstr "メモリ使用量を削減"
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:98
-msgid "Add contextual help for all preferences"
-msgstr "すべての設定項目に説明用のヘルプを追加"
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:99
-msgid "Numerous bug fixes and stability and performance improvements"
-msgstr "大量のバグ修正/安定性とパフォーマンスの改善"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:106
 msgid "New search engine"
@@ -320,47 +1205,43 @@ msgstr "Ryo Nakano <ryonakaknock3@gmail.com>"
 msgid "A search utility focusing on performance and advanced features"
 msgstr "パフォーマンスと高度な機能を重視した検索ユーティリティ"
 
-#: src/fsearch.c:330
-msgid "Saving database and config…"
-msgstr "データベースと設定を保存しています…"
-
-#: src/fsearch.c:807
+#: src/fsearch.c:786
 msgid "Open a new application window"
 msgstr "新しいアプリケーションウィンドウを開く"
 
-#: src/fsearch.c:808
+#: src/fsearch.c:787
 msgid "Minimize the application window"
 msgstr "アプリケーションウィンドウを最小化する"
 
-#: src/fsearch.c:809
+#: src/fsearch.c:788
 msgid "Show the application preferences"
 msgstr "アプリケーションの設定を表示する"
 
-#: src/fsearch.c:810
+#: src/fsearch.c:789
 msgid "Set the search pattern"
 msgstr "検索パターンを指定する"
 
-#: src/fsearch.c:811
+#: src/fsearch.c:790
 msgid "Update the database and exit"
 msgstr "データベースを更新して終了する"
 
-#: src/fsearch.c:812
+#: src/fsearch.c:791
 msgid "Print version information and exit"
 msgstr "バージョン情報を表示して終了する"
 
-#: src/fsearch_database.c:794
+#: src/fsearch_database.c:795
 msgid "Index rescan: applying changes…"
 msgstr "インデックスの再スキャン: 変更を適用しています…"
 
-#: src/fsearch_database_file.c:1337
+#: src/fsearch_database_file.c:1343
 msgid "Loading folders…"
 msgstr "フォルダーを読み込んでいます…"
 
-#: src/fsearch_database_file.c:1353
+#: src/fsearch_database_file.c:1359
 msgid "Loading files…"
 msgstr "ファイルを読み込んでいます…"
 
-#: src/fsearch_database_index_store.c:920 src/fsearch_statusbar.c:73
+#: src/fsearch_database_index_store.c:925 src/fsearch_statusbar.c:73
 #: src/fsearch_statusbar.ui:90
 msgid "Sorting…"
 msgstr "ソートしています…"
@@ -422,7 +1303,7 @@ msgstr "有効"
 msgid "Pattern"
 msgstr "パターン"
 
-#: src/fsearch_database_preferences_widget.c:694 src/fsearch_window.c:773
+#: src/fsearch_database_preferences_widget.c:694 src/fsearch_window.c:756
 #: src/menus.ui:275
 msgid "Type"
 msgstr "タイプ"
@@ -435,7 +1316,7 @@ msgstr "一致"
 msgid "Applies To"
 msgstr "適用先"
 
-#: src/fsearch_database_preferences_widget.c:864 src/fsearch_window.c:759
+#: src/fsearch_database_preferences_widget.c:864 src/fsearch_window.c:742
 #: src/menus.ui:219 src/menus.ui:267
 msgid "Path"
 msgstr "パス"
@@ -454,29 +1335,9 @@ msgstr ""
 "データベースに含めるパスを追加\n"
 "                                        "
 
-#: src/fsearch_database_preferences_widget.ui:176
-msgid "Attempt to monitor"
-msgstr "監視対象にする"
-
-#: src/fsearch_database_preferences_widget.ui:191
-msgid "Scan after launch"
-msgstr "起動後にスキャン"
-
-#: src/fsearch_database_preferences_widget.ui:206
-msgid "Stay on one file system"
-msgstr "別ファイルシステムは対象外にする"
-
 #: src/fsearch_database_preferences_widget.ui:221
 msgid "Rescan every"
 msgstr "次の頻度で再スキャン"
-
-#: src/fsearch_database_preferences_widget.ui:254
-msgid "Hours:"
-msgstr "時間:"
-
-#: src/fsearch_database_preferences_widget.ui:298
-msgid "Minutes:"
-msgstr "分:"
 
 #: src/fsearch_database_preferences_widget.ui:310
 msgid "30"
@@ -506,10 +1367,6 @@ msgstr ""
 "選択中のパスを削除\n"
 "                                                "
 
-#: src/fsearch_database_preferences_widget.ui:512
-msgid "Restore default exclude list"
-msgstr "デフォルトの除外リストを復元"
-
 #: src/fsearch_database_preferences_widget.ui:541
 msgid "Exclude hidden files and folders"
 msgstr "隠しファイルと隠しフォルダーを除外"
@@ -518,56 +1375,56 @@ msgstr "隠しファイルと隠しフォルダーを除外"
 msgid "Exclude"
 msgstr "除外"
 
-#: src/fsearch_file_utils.c:163
+#: src/fsearch_file_utils.c:161
 msgctxt "Will be followed by the path of the file."
 msgid "Error when removing file"
 msgstr "以下のファイルの削除中にエラーが発生しました"
 
-#: src/fsearch_file_utils.c:165
+#: src/fsearch_file_utils.c:163
 msgid "Failed to get path"
 msgstr "パスを取得できませんでした"
 
-#: src/fsearch_file_utils.c:269
+#: src/fsearch_file_utils.c:277
 msgctxt "Will be followed by the file path."
 msgid "Error when getting information from file"
 msgstr "以下のファイルの情報取得中にエラーが発生しました"
 
-#: src/fsearch_file_utils.c:271
+#: src/fsearch_file_utils.c:279
 msgid "Failed to get application information"
 msgstr "アプリケーションの情報を取得できませんでした"
 
-#: src/fsearch_file_utils.c:384 src/fsearch_file_utils.c:515
-msgctxt "Will be followed by the file path."
-msgid "Error when opening file"
-msgstr "ファイルを開く際にエラーが発生しました"
+#: src/fsearch_file_utils.c:294
+msgctxt "Will be followed by the content type string."
+msgid "Error when getting information for content type"
+msgstr "以下のメディアタイプの情報取得中にエラーが発生しました"
 
-#: src/fsearch_file_utils.c:386 src/fsearch_file_utils.c:517
+#: src/fsearch_file_utils.c:296
 msgid "No default application registered"
 msgstr "デフォルトのアプリケーションが未登録です"
 
-#: src/fsearch_file_utils.c:536
+#: src/fsearch_file_utils.c:524
 msgctxt "Will be followed by the path of the folder."
 msgid "Error when opening parent folder"
 msgstr "以下の親フォルダーを開く際にエラーが発生しました"
 
-#: src/fsearch_file_utils.c:538
+#: src/fsearch_file_utils.c:526
 msgid "Failed to get parent path"
 msgstr "親のパスを取得できませんでした"
 
-#: src/fsearch_file_utils.c:542
+#: src/fsearch_file_utils.c:530
 msgctxt "Will be followed by the path of the folder."
 msgid "Error while opening folder"
 msgstr "以下のフォルダーを開く際にエラーが発生しました"
 
-#: src/fsearch_file_utils.c:545
+#: src/fsearch_file_utils.c:533
 msgid "Failed to build open command"
 msgstr "open コマンドを構築できませんでした"
 
-#: src/fsearch_file_utils.c:601
+#: src/fsearch_file_utils.c:589
 msgid "Folder"
 msgstr "フォルダー"
 
-#: src/fsearch_file_utils.c:607
+#: src/fsearch_file_utils.c:595
 msgid "Unknown Type"
 msgstr "不明なタイプ"
 
@@ -657,7 +1514,7 @@ msgstr ""
 msgid "Add filter"
 msgstr "フィルターを追加"
 
-#: src/fsearch_filter_preferences_widget.c:315 src/fsearch_window.c:752
+#: src/fsearch_filter_preferences_widget.c:315 src/fsearch_window.c:735
 #: src/menus.ui:215 src/menus.ui:263
 msgid "Name"
 msgstr "名前"
@@ -1207,19 +2064,6 @@ msgstr ""
 "このボタンは、検索用データベースに含めたいフォルダーを選択可能なダイアログを"
 "開きます。"
 
-#: src/fsearch_preferences.ui:1241
-msgid ""
-"<b>Add a specific path:</b>\n"
-"\n"
-"Type the full path of a folder here and click the button next to it to "
-"include that folder in the database. This is useful for adding a path "
-"directly without browsing for it."
-msgstr ""
-"<b>特定のパスを追加:</b>\n"
-"\n"
-"フォルダーをデータベースに含めるには、ここにフルパスを入力して隣のボタンをク"
-"リックしてください。これはパスを開かずに直接追加する場合に便利です。"
-
 #: src/fsearch_preferences.ui:1258
 msgid ""
 "<b>Remove selected row:</b>\n"
@@ -1229,144 +2073,6 @@ msgstr ""
 "<b>選択した行を削除:</b>\n"
 "\n"
 "含まれるフォルダーのリストから選択したフォルダーを削除します。"
-
-#: src/fsearch_preferences.ui:1275
-msgid ""
-"<b>Attempt to monitor:</b>\n"
-"\n"
-"If enabled, FSearch watches this folder for changes and keeps the database "
-"up to date automatically, so you don't have to rescan manually.\n"
-"\n"
-"Monitoring isn't supported on every file system and uses a small amount of "
-"system resources per watched folder. For large directory trees with many "
-"files the system may run out of resources to watch them all."
-msgstr ""
-"<b> 監視対象にする:</b>\n"
-"\n"
-"有効にすると、FSearch はこのフォルダーでの変更を監視し、データベースを自動的"
-"に最新の状態に維持します。これにより、手動で再スキャンする必要がなくなりま"
-"す。\n"
-"\n"
-"監視機能はすべてのファイルシステムには対応しておらず、また監視対象となるフォ"
-"ルダーごとにシステムのリソースを若干消費します。ファイル数が多い大規模なディ"
-"レクトリツリーの場合、そのすべてを監視するとシステムがリソースを使い切ってし"
-"まう可能性があります。"
-
-#: src/fsearch_preferences.ui:1294
-msgid ""
-"<b>Scan after launch:</b>\n"
-"\n"
-"If enabled, this folder is rescanned every time FSearch starts, so the "
-"database reflects any changes made while FSearch wasn't running."
-msgstr ""
-"<b> 起動後にスキャン:</b>\n"
-"\n"
-"有効にすると、FSearch が起動する度にこのフォルダーが再スキャンされるため、"
-"FSearch が起動していない間のすべての変更がデータベースに反映されるようになり"
-"ます。"
-
-#: src/fsearch_preferences.ui:1311
-msgid ""
-"<b>Stay on one file system:</b>\n"
-"\n"
-"If enabled, FSearch won't cross file system boundaries while scanning this "
-"folder. Mounted file systems below it (e.g. external drives or network "
-"shares) are skipped."
-msgstr ""
-"<b>別ファイルシステムは対象外にする</b>\n"
-"\n"
-"有効にすると、FSearch はこのフォルダーをスキャンする際にファイルシステムの境"
-"界を越えません。配下にマウントされたファイルシステム (例: 外部デバイスやネッ"
-"トワーク共有) はスキップされます。"
-
-#: src/fsearch_preferences.ui:1328
-msgid ""
-"<b>Rescan every:</b>\n"
-"\n"
-"If enabled, this folder is rescanned automatically at the given interval. "
-"Use the hours and minutes fields to set how often the rescan happens.\n"
-"\n"
-"This is useful for folders on file systems that can't be monitored for "
-"changes."
-msgstr ""
-"<b>次の頻度で再スキャン:</b> \n"
-"\n"
-"有効にすると、このフォルダーは指定された間隔で自動的に再スキャンされます。再"
-"スキャンが実行される頻度を設定するには、時間と分の入力欄を使用してくださ"
-"い。\n"
-"\n"
-"これは変更を監視できないファイルシステム上のフォルダーの場合に便利です。"
-
-#: src/fsearch_preferences.ui:1347
-msgid ""
-"<b>Exclude rules:</b>\n"
-"\n"
-"This list contains rules for the files and folders you want to exclude from "
-"the database.\n"
-"\n"
-"\t• <b>Active:</b> If enabled, the rule is applied and matching items are "
-"excluded.\n"
-"\t• <b>Pattern:</b> The text matched against each item, interpreted "
-"according to the Type.\n"
-"\t• <b>Type:</b> How the pattern is interpreted — <i>Literal</i> (exact "
-"text), <i>Wildcard</i> (using * and ?) or <i>Regex</i> (a regular "
-"expression).\n"
-"\t• <b>Match:</b> Whether the pattern is matched against the item's <i>Full "
-"Path</i> or only its <i>Basename</i> (the name without the path).\n"
-"\t• <b>Applies To:</b> Whether the rule affects <i>Files</i>, <i>Folders</i> "
-"or both."
-msgstr ""
-"<b>除外ルール:</b>\n"
-"\n"
-"このリストにはデータベースから除外したいファイルとフォルダーのルールが含まれ"
-"ています。\n"
-"\n"
-"\t• <b>有効:</b> 有効にすると、このルールが適用されるようになり、一致する項目"
-"が除外されます。\n"
-"\t• <b>パターン:</b> 各項目に対して一致するテキスト。\"タイプ\"の設定値に応じ"
-"て解釈されます。\n"
-"\t• <b>タイプ:</b> パターンの解釈方法 — <i>文字列</i> (完全一致)、<i>ワイルド"
-"カード</i> (* と ? を使う)、<i>正規表現</i>から選択できます。\n"
-"\t• <b>一致:</b> パターンを項目の<i>フルパス</i>に対して一致させるか、<i>ファ"
-"イル/フォルダー名</i> (パスを含まない名前) のみに対して一致させるか。\n"
-"\t• <b>適用先:</b> ルールが<i>ファイル</i>、<i>フォルダー</i>、あるいはその両"
-"方のいずれに影響するか。"
-
-#: src/fsearch_preferences.ui:1370
-msgid ""
-"<b>Add exclude rule:</b>\n"
-"\n"
-"This adds a new, empty rule to the list. Edit its Pattern, Type, Match and "
-"Applies To columns to control what gets excluded from the database."
-msgstr ""
-"<b>除外ルールを追加:</b>\n"
-"\n"
-"新しい、空のルールをリストに追加します。パターン、タイプ、一致、適用先の列を"
-"編集し、データベースから除外される項目を管理してください。"
-
-#: src/fsearch_preferences.ui:1387
-msgid ""
-"<b>Remove selected row:</b>\n"
-"\n"
-"This removes the selected rule from the list of exclude rules."
-msgstr ""
-"<b>選択した行を削除:</b>\n"
-"\n"
-"除外ルールのリストから選択したルールを削除します。"
-
-#: src/fsearch_preferences.ui:1404
-msgid ""
-"<b>Restore default exclude rules:</b>\n"
-"\n"
-"This button restores the default set of exclude rules.\n"
-"\n"
-"⚠ All rules which were created or edited by the user will be lost! ⚠"
-msgstr ""
-"<b>デフォルトの除外リストを復元:</b>\n"
-"\n"
-"このボタンは、デフォルトの除外ルールを復元します。\n"
-"\n"
-"⚠ ユーザーが作成/編集したすべてのルールを破棄します! ⚠"
 
 #: src/fsearch_preferences.ui:1423
 msgid ""
@@ -1527,7 +2233,7 @@ msgstr "ヘルプ"
 msgid "Database"
 msgstr "データベース"
 
-#: src/fsearch_result_view.c:487
+#: src/fsearch_result_view.c:381
 msgid "Invalid row data"
 msgstr "無効な行データ"
 
@@ -1621,95 +2327,19 @@ msgstr "パス"
 msgid "REGEX"
 msgstr "正規表現"
 
-#: src/fsearch_statusbar.ui:726
-msgid ""
-"The search was cancelled before it finished.\n"
-"<b>These results are incomplete.</b>"
-msgstr ""
-"検索が完了する前にキャンセルされました。\n"
-"<b>これらの結果は不完全です。</b>"
-
-#: src/fsearch_statusbar.ui:756
-msgid "PARTIAL"
-msgstr "不完全"
-
-#: src/fsearch_welcome_dialog.ui:26
-msgid "What's New in FSearch"
-msgstr "FSearch の新機能"
-
-#: src/fsearch_welcome_dialog.ui:79
-msgid ""
-"<span size=\"xx-large\" weight=\"bold\">What's New in FSearch 0.3</span>"
-msgstr "<span size=\"xx-large\" weight=\"bold\">FSearch 0.3 の新機能</span>"
-
-#: src/fsearch_welcome_dialog.ui:149
-msgid "<big><b>File System Monitoring</b></big>"
-msgstr "<big><b>ファイルシステムの監視</b></big>"
-
-#: src/fsearch_welcome_dialog.ui:163
-msgid ""
-"You can now actively watch individual folders to eliminate frequent rescans. "
-"File changes then appear in your search results immediately.\n"
-"\n"
-"To enable this feature go to the Database section of the Preferences "
-"dialog.\n"
-"\n"
-"See the online documentation for more information:\n"
-"<a href=\"URL\">https://github.com/cboxdoerfer/fsearch/wiki/Database-update</"
-"a>"
-msgstr ""
-"個々のフォルダーを能動的に監視することで、頻繁に再スキャンする必要をなくすこ"
-"とができます。これにより、ファイルの変更が瞬時に検索結果に表示されるようにな"
-"ります。\n"
-"\n"
-"この機能を有効にするには、設定ダイアログのデータベースのセクションを開いてく"
-"ださい。\n"
-"\n"
-"詳細はオンラインドキュメンテーションをご確認ください:\n"
-"<a href=\"URL\">https://github.com/cboxdoerfer/fsearch/wiki/Database-update</"
-"a>"
-
-#: src/fsearch_welcome_dialog.ui:232
-msgid "<big><b>Folder-Specific Rescan Schedules</b></big>"
-msgstr "<big><b>フォルダー単位の再スキャンのスケジュール設定</b></big>"
-
-#: src/fsearch_welcome_dialog.ui:246
-msgid ""
-"You can now configure automatic update intervals for individual folders "
-"independently and tailored to each distinct location."
-msgstr ""
-"各フォルダーの自動更新間隔をそれぞれの場所に合わせて個別に設定できるようにな"
-"りました。"
-
-#: src/fsearch_welcome_dialog.ui:309
-msgid "<big><b>Improved Exclude Rules</b></big>"
-msgstr "<big><b>除外ルールの改善</b></big>"
-
-#: src/fsearch_welcome_dialog.ui:323
-msgid ""
-"You can now use wildcards and regular expressions to define more powerful "
-"exclude rules. \n"
-"Rules can be targeted specifically at files, folders, or both, and can be "
-"configured to match against either the basename or the full absolute path."
-msgstr ""
-"ワイルドカードや正規表現を使ったより強力な除外ルールを定義できるようになりま"
-"した。\n"
-"ルールはファイルのみ、フォルダーのみ、あるいはその両方を対象にでき、ファイル/"
-"フォルダー名または絶対パスのいずれかに一致するように設定できます。"
-
-#: src/fsearch_window.c:766 src/menus.ui:279
+#: src/fsearch_window.c:749 src/menus.ui:279
 msgid "Size"
 msgstr "サイズ"
 
-#: src/fsearch_window.c:780 src/menus.ui:271
+#: src/fsearch_window.c:763 src/menus.ui:271
 msgid "Extension"
 msgstr "拡張子"
 
-#: src/fsearch_window.c:787 src/menus.ui:283
+#: src/fsearch_window.c:770 src/menus.ui:283
 msgid "Date Modified"
 msgstr "更新日時"
 
-#: src/fsearch_window.c:801
+#: src/fsearch_window.c:784
 msgid ""
 "Sorting by <b>Type</b> can take a few seconds with many results.\n"
 "\n"
@@ -1914,10 +2544,6 @@ msgstr "パス + 名前"
 #: src/menus.ui:236
 msgid "Move to _Trash"
 msgstr "ゴミ箱に移動(_T)"
-
-#~ msgctxt "Will be followed by the content type string."
-#~ msgid "Error when getting information for content type"
-#~ msgstr "以下のメディアタイプの情報取得中にエラーが発生しました"
 
 #~ msgid ""
 #~ "<b>Excluded folders:</b>\n"

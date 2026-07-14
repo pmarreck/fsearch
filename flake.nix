@@ -18,6 +18,7 @@
               appstream
               gettext
               itstool
+              jq
               libxml2
               meson
               ninja
@@ -39,6 +40,8 @@
               runHook preCheck
               meson test --print-errorlogs
               bash $src/tests/static-analysis .. .
+              bash $src/tests/i18n/test_translate_po $src/tools/translate-po
+              bash $src/tests/i18n/test_catalogs $src
               runHook postCheck
             '';
           };
@@ -55,7 +58,7 @@
           checks = {
             build = fsearch;
             test = pkgs.runCommand "fsearch-test" {
-              nativeBuildInputs = [ pkgs.bash ];
+              nativeBuildInputs = [ pkgs.bash pkgs.jq ];
             } ''
               bash ${self}/tests/cli/test_cli ${fsearch}/bin/fsearch
               touch $out
@@ -66,6 +69,7 @@
             packages = with pkgs; [
               appstream
               cppcheck
+              curl
               gettext
               hyperfine
               itstool

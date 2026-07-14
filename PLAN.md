@@ -57,9 +57,18 @@
   Curiosity poke: keep examples executable and distinguish path output on stdout from status and diagnostic output.
 - [x] Remove the obsolete recommendation to use other command-line search tools, validate the documented surface against release help, and run the documentation-relevant tests. Completed 2026-07-14 15:57 EDT.
   Curiosity poke: nested configuration help remains the canonical detail source, so the README must be thorough without silently inventing aliases.
-- [ ] Register `pmarreck/fsearch` with Mechatron Prime using its audited Nix package/check targets, verify the public badge endpoint, and replace the upstream build badge.
-  Curiosity poke: a README badge is not CI evidence until the exact-name webhook, worker policy, live build, and public JSON route all agree.
+- [ ] Finish the live Mechatron Prime deployment, verify the public badge endpoint, and add the fork-owned build badge.
+  Source policy `46db1db` and NixOS vendor commit `27f431a` register the audited package/build/test targets; activation and exact webhook provisioning remain. Curiosity poke: a README badge is not CI evidence until the exact-name webhook, worker policy, live build, and public JSON route all agree.
 - [ ] Replace the upstream translation badge only with an honest fork-owned completeness claim and gate.
-  Curiosity poke: 100% must include newly added CLI/config strings, fuzzy entries, plural forms, and RTL catalogs rather than measuring only the upstream GUI template.
-- [ ] Integrate the 31 upstream commits added since the fork point using Peter's chosen history policy, rerun `./test`, then commit and push.
-  Curiosity poke: published fork commits make rebase a force-push decision; a merge avoids rewriting them.
+  The inaccurate upstream badge was removed; the current 42 upstream catalogs still contain 6,001 fuzzy or untranslated entries, before extracting CLI/config strings. Curiosity poke: 100% must include newly added CLI/config strings, fuzzy entries, plural forms, and RTL catalogs rather than measuring only the upstream GUI template.
+- [x] Merge the 31 upstream commits added since the fork point without rewriting published history, then rerun `./test`. Completed 2026-07-14 16:32 EDT.
+  The three database conflicts preserve upstream scan cancellation/race fixes plus the fork's CLI cancellation and unavailable-root invariants; version assertions now track the upstream 0.3 release.
+
+# Translation Completion (2026-07-14)
+
+- [x] Establish a build-blocking gettext integrity gate for every currently shipped catalog and the CLI/config extraction surface. Completed 2026-07-14 18:07 EDT.
+  The default gate verifies syntax and current extraction on every catalog; `--complete` adds the final zero-fuzzy and zero-untranslated requirement so incremental translation checkpoints can remain buildable.
+- [x] Extract all human-facing CLI and shared-configuration strings into gettext without translating machine-readable output, query syntax, setting keys, or JSON fields. Completed 2026-07-14 18:07 EDT.
+  Curiosity poke: preserve printf/GLib format placeholders exactly across translations.
+- [ ] Complete and validate translations for every shipped catalog, then make the translation badge reflect the independently checked result.
+  First checkpoint completes `bg`, `de`, `es`, `id`, `it`, `ja`, `nb_NO`, `pt`, `ru`, and `tr`; Basque requires a separately approved retry after an API-side generation stall. Curiosity poke: RTL catalogs and new strings must pass the same gate rather than inheriting an optimistic upstream percentage.

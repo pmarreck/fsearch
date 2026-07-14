@@ -14,8 +14,11 @@
 #include "fsearch_database_work.h"
 #include "fsearch_query.h"
 
+#include <glib/gi18n.h>
+
 #include <errno.h>
 #include <limits.h>
+#include <stdarg.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -52,6 +55,16 @@ typedef struct {
     guint interrupt_source;
     int exit_code;
 } FsearchCliRun;
+
+/// Localizes CLI diagnostics before preserving GLib's stderr-only output contract.
+void
+fsearch_cli_printerr(const char *format, ...) {
+    va_list args;
+    va_start(args, format);
+    g_autofree char *message = g_strdup_vprintf(_(format), args);
+    va_end(args);
+    g_printerr("%s", message);
+}
 
 static gboolean
 parse_result_limit(const char *value, guint *limit_out) {
@@ -109,35 +122,32 @@ fsearch_cli_resolve_result_limit(const char *environment_limit, const char *argu
 /// Renders the cap notice as a deterministic ANSI-styled line for terminal consumers.
 char *
 fsearch_cli_format_cap_notice(guint limit) {
-    return g_strdup_printf(FSEARCH_CLI_ITALIC_LIGHT_GREY
-                           "Results capped at %u. Use --unlimit or --unlimited to get them all, or provide a custom --limit, "
-                           "or set FSEARCH_RESULT_LIMIT."
-                           FSEARCH_CLI_ANSI_RESET,
-                           limit);
+    g_autofree char *message = g_strdup_printf(_("Results capped at %u. Use --unlimit or --unlimited to get them all, "
+                                                  "or provide a custom --limit, or set FSEARCH_RESULT_LIMIT."),
+                                               limit);
+    return g_strdup_printf(FSEARCH_CLI_ITALIC_LIGHT_GREY "%s" FSEARCH_CLI_ANSI_RESET, message);
 }
 
 /// Renders the complete result count as a muted status line for stderr.
 char *
 fsearch_cli_format_result_count_notice(guint total) {
-    return g_strdup_printf(FSEARCH_CLI_ITALIC_LIGHT_GREY "%u match%s." FSEARCH_CLI_ANSI_RESET,
-                           total,
-                           total == 1 ? "" : "es");
+    g_autofree char *message = g_strdup_printf(ngettext("%u match.", "%u matches.", total), total);
+    return g_strdup_printf(FSEARCH_CLI_ITALIC_LIGHT_GREY "%s" FSEARCH_CLI_ANSI_RESET, message);
 }
 
 /// Renders the index-rebuild status line for stderr without mixing it into path output.
 char *
 fsearch_cli_format_index_update_notice(void) {
-    return g_strdup(FSEARCH_CLI_ITALIC_LIGHT_GREY "Updating FSearch index before searching..." FSEARCH_CLI_ANSI_RESET);
+    return g_strdup_printf(FSEARCH_CLI_ITALIC_LIGHT_GREY "%s" FSEARCH_CLI_ANSI_RESET,
+                           _("Updating FSearch index before searching..."));
 }
 
 /// Renders an in-place, indeterminate scan status using observed entries rather than a fabricated percentage.
 char *
 fsearch_cli_format_index_progress(const char *status) {
     g_return_val_if_fail(status != NULL, NULL);
-    return g_strdup_printf("\r\x1b[2K" FSEARCH_CLI_ITALIC_LIGHT_GREY
-                           "Indexing: %s"
-                           FSEARCH_CLI_ANSI_RESET,
-                           status);
+    g_autofree char *message = g_strdup_printf(_("Indexing: %s"), status);
+    return g_strdup_printf("\r\x1b[2K" FSEARCH_CLI_ITALIC_LIGHT_GREY "%s" FSEARCH_CLI_ANSI_RESET, message);
 }
 
 /// Builds a path-constrained query while escaping the path as one literal FSearch term.
@@ -168,7 +178,7 @@ fsearch_cli_build_scoped_query(const char *query, const char *scope_path, gboole
 
 static void
 print_help(void) {
-    g_print("Usage: fsearch --cli [OPTIONS]\n\n"
+    g_print("%s", _("Usage: fsearch --cli [OPTIONS]\n\n"
             "Search the existing FSearch index and print matching paths.\n\n"
             "  -s, --search PATTERN       Search with FSearch query syntax\n"
             "      --path DIRECTORY        Search recursively below DIRECTORY (default: current directory)\n"
@@ -198,7 +208,7 @@ print_help(void) {
             "Boolean syntax: AND or &&; OR or ||; NOT or !. Parentheses group terms.\n"
             "Glob syntax: * excludes /; ** spans directories; ? matches one character; [a-c] is a range;\n"
             "Glob searches paths by default; use **/ for any depth; file:glob: searches file names.\n"
-            "{png,jpg} selects alternatives; {01..12} is an inclusive numeric range; \\* matches a literal *.\n");
+            "{png,jpg} selects alternatives; {01..12} is an inclusive numeric range; \\* matches a literal *.\n"));
 }
 
 static const char *
@@ -225,7 +235,7 @@ architecture_name(void) {
 
 static void
 print_about(void) {
-    g_print("FSearch %s - indexed file search for %s %s\n", PACKAGE_VERSION, platform_name(), architecture_name());
+    g_print(_("FSearch %s - indexed file search for %s %s\n"), PACKAGE_VERSION, platform_name(), architecture_name());
 }
 
 static void
@@ -288,7 +298,7 @@ on_interrupt(gpointer user_data) {
         fsearch_database_work_cancel(run->search_work);
     }
     fsearch_database_cancel(run->database);
-    g_printerr("fsearch: interrupted\n");
+    fsearch_cli_printerr("fsearch: interrupted\n");
     finish(run, 130);
     return G_SOURCE_REMOVE;
 }
@@ -302,7 +312,7 @@ on_search_finished(FsearchDatabase *database, guint id, FsearchDatabaseSearchInf
     }
     g_clear_pointer(&run->search_work, fsearch_database_work_unref);
     if (!info) {
-        g_printerr("fsearch: search could not run because the index is unavailable\n");
+        fsearch_cli_printerr("fsearch: search could not run because the index is unavailable\n");
         finish(run, EXIT_FAILURE);
         return;
     }
@@ -339,7 +349,7 @@ on_search_finished(FsearchDatabase *database, guint id, FsearchDatabaseSearchInf
     else {
         fflush(stdout);
         g_autofree char *notice = fsearch_cli_format_result_count_notice(total);
-        g_printerr("%s\n", notice);
+        fsearch_cli_printerr("%s\n", notice);
     }
 
     finish(run, EXIT_SUCCESS);
@@ -368,7 +378,7 @@ on_database_scan_started(FsearchDatabase *database, gpointer user_data) {
     run->wait_for_index_update = TRUE;
     run->index_update_notice_printed = TRUE;
     g_autofree char *notice = fsearch_cli_format_index_update_notice();
-    g_printerr("%s\n", notice);
+    fsearch_cli_printerr("%s\n", notice);
 }
 
 static void
@@ -387,7 +397,7 @@ on_database_progress(FsearchDatabase *database, char *text, gpointer user_data) 
     }
 
     g_autofree char *progress = fsearch_cli_format_index_progress(text);
-    g_printerr("%s", progress);
+    fsearch_cli_printerr("%s", progress);
     run->index_progress_visible = TRUE;
 }
 
@@ -460,7 +470,7 @@ fsearch_cli_run(int argc, char *argv[]) {
             continue;
         }
 
-        g_printerr("fsearch: unknown CLI option: %s\n", argv[i]);
+        fsearch_cli_printerr("fsearch: unknown CLI option: %s\n", argv[i]);
         return EXIT_FAILURE;
     }
 
@@ -482,7 +492,7 @@ fsearch_cli_run(int argc, char *argv[]) {
 
     g_autofree char *database_dir = g_build_filename(g_get_user_data_dir(), "fsearch", NULL);
     if (g_mkdir_with_parents(database_dir, 0700) != 0) {
-        g_printerr("fsearch: failed to create data directory: %s\n", database_dir);
+        fsearch_cli_printerr("fsearch: failed to create data directory: %s\n", database_dir);
         config_free(run.config);
         g_main_loop_unref(run.loop);
         return EXIT_FAILURE;

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FSearch 0.1beta\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-18 13:55+0200\n"
+"POT-Creation-Date: 2026-07-14 17:04-0400\n"
 "PO-Revision-Date: 2026-04-20 06:13+0000\n"
 "Last-Translator: Arif Budiman <arifpedia@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/fsearch/"
@@ -19,7 +19,931 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 5.17.1-dev\n"
 
-#: data/io.github.cboxdoerfer.FSearch.desktop.in.in:4 src/main.c:35
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:92
+msgid ""
+"DB: Allow included folders to be scheduled and scanned after launch "
+"independently"
+msgstr ""
+"DB: Izinkan folder yang disertakan untuk dijadwalkan dan dipindai setelah "
+"peluncuran secara terpisah"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:93
+msgid "DB: Make rescanning more efficient"
+msgstr "DB: Jadikan pemindaian ulang lebih efisien"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:97
+msgid "Reduce memory usage"
+msgstr "Kurangi penggunaan memori"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:98
+msgid "Add contextual help for all preferences"
+msgstr "Tambahkan bantuan kontekstual untuk semua preferensi"
+
+#: src/fsearch.c:883
+msgid ""
+"For command-line search help, run: fsearch --cli --help\n"
+"For shared configuration help, run: fsearch config --help"
+msgstr ""
+"Untuk bantuan pencarian baris perintah, jalankan: fsearch --cli --help\n"
+"Untuk bantuan konfigurasi bersama, jalankan: fsearch config --help"
+
+#: src/fsearch_cli.c:125
+#, c-format
+msgid ""
+"Results capped at %u. Use --unlimit or --unlimited to get them all, or "
+"provide a custom --limit, or set FSEARCH_RESULT_LIMIT."
+msgstr ""
+"Hasil dibatasi hingga %u. Gunakan --unlimit atau --unlimited untuk "
+"mendapatkan semuanya, berikan --limit khusus, atau tetapkan "
+"FSEARCH_RESULT_LIMIT."
+
+#: src/fsearch_cli.c:134
+#, c-format
+msgid "%u match."
+msgid_plural "%u matches."
+msgstr[0] "%u kecocokan."
+
+#: src/fsearch_cli.c:142
+msgid "Updating FSearch index before searching..."
+msgstr "Memperbarui indeks FSearch sebelum mencari..."
+
+#: src/fsearch_cli.c:181
+msgid ""
+"Usage: fsearch --cli [OPTIONS]\n"
+"\n"
+"Search the existing FSearch index and print matching paths.\n"
+"\n"
+"  -s, --search PATTERN       Search with FSearch query syntax\n"
+"      --path DIRECTORY        Search recursively below DIRECTORY (default: "
+"current directory)\n"
+"      --global                Search every indexed location\n"
+"      --limit COUNT          Print at most COUNT results\n"
+"      --unlimit, --unlimited Print every result\n"
+"  -u, --update-database      Rescan the configured index and exit\n"
+"      --about                Print one-line build information\n"
+"  -h, --help                 Show this help\n"
+"\n"
+"Configuration: fsearch config --help\n"
+"\n"
+"Examples:\n"
+"  fsearch --cli --search invoice              # current directory\n"
+"  fsearch --cli --path ~/Documents --search invoice\n"
+"  fsearch --cli --global --search invoice\n"
+"  fsearch --cli --search 'file:size:>20mb'\n"
+"  fsearch --cli --search 'ext:jpg;png'\n"
+"  fsearch --cli --search 'path:projects report'\n"
+"  fsearch --cli --search 'report AND ext:pdf'\n"
+"  fsearch --cli --search '(draft OR final) !archive'\n"
+"  fsearch --cli --search 'file:regex:\".+\\.pdf$\"'\n"
+"  fsearch --cli --search 'case:AGENTS'        # case-sensitive\n"
+"  fsearch --cli --search 'case:regex:\"^AGENTS\\.md$\"'\n"
+"  fsearch --cli --search 'glob:**/*.png'\n"
+"  fsearch --cli --search 'path:glob:**/AGENTS.md'\n"
+"  fsearch --cli --search 'case:glob:AGENTS.md' # case-sensitive glob\n"
+"\n"
+"Examples use space as AND. Try file:, folder:, path:, ext:, size:, dm:, "
+"case:, regex:, and glob:.\n"
+"Boolean syntax: AND or &&; OR or ||; NOT or !. Parentheses group terms.\n"
+"Glob syntax: * excludes /; ** spans directories; ? matches one character; [a-"
+"c] is a range;\n"
+"Glob searches paths by default; use **/ for any depth; file:glob: searches "
+"file names.\n"
+"{png,jpg} selects alternatives; {01..12} is an inclusive numeric range; \\* "
+"matches a literal *.\n"
+msgstr ""
+"Penggunaan: fsearch --cli [OPTIONS]\n"
+"\n"
+"Cari dalam indeks FSearch yang ada dan cetak path yang cocok.\n"
+"\n"
+"  -s, --search PATTERN       Cari dengan sintaks kueri FSearch\n"
+"      --path DIRECTORY        Cari secara rekursif di bawah DIRECTORY "
+"(bawaan: direktori saat ini)\n"
+"      --global                Cari di setiap lokasi yang diindeks\n"
+"      --limit COUNT          Cetak paling banyak COUNT hasil\n"
+"      --unlimit, --unlimited Cetak setiap hasil\n"
+"  -u, --update-database      Pindai ulang indeks yang dikonfigurasi lalu "
+"keluar\n"
+"      --about                Cetak informasi build satu baris\n"
+"  -h, --help                 Tampilkan bantuan ini\n"
+"\n"
+"Konfigurasi: fsearch config --help\n"
+"\n"
+"Contoh:\n"
+"  fsearch --cli --search invoice              # direktori saat ini\n"
+"  fsearch --cli --path ~/Documents --search invoice\n"
+"  fsearch --cli --global --search invoice\n"
+"  fsearch --cli --search 'file:size:>20mb'\n"
+"  fsearch --cli --search 'ext:jpg;png'\n"
+"  fsearch --cli --search 'path:projects report'\n"
+"  fsearch --cli --search 'report AND ext:pdf'\n"
+"  fsearch --cli --search '(draft OR final) !archive'\n"
+"  fsearch --cli --search 'file:regex:\".+\\.pdf$\"'\n"
+"  fsearch --cli --search 'case:AGENTS'        # peka huruf besar-kecil\n"
+"  fsearch --cli --search 'case:regex:\"^AGENTS\\.md$\"'\n"
+"  fsearch --cli --search 'glob:**/*.png'\n"
+"  fsearch --cli --search 'path:glob:**/AGENTS.md'\n"
+"  fsearch --cli --search 'case:glob:AGENTS.md' # glob peka huruf besar-"
+"kecil\n"
+"\n"
+"Contoh menggunakan spasi sebagai AND. Coba file:, folder:, path:, ext:, "
+"size:, dm:, case:, regex:, dan glob:.\n"
+"Sintaks Boolean: AND atau &&; OR atau ||; NOT atau !. Tanda kurung "
+"mengelompokkan istilah.\n"
+"Sintaks glob: * mengecualikan /; ** mencakup direktori; ? mencocokkan satu "
+"karakter; [a-c] adalah rentang;\n"
+"Glob mencari path secara bawaan; gunakan **/ untuk kedalaman apa pun; "
+"file:glob: mencari nama berkas.\n"
+"{png,jpg} memilih alternatif; {01..12} adalah rentang numerik inklusif; \\* "
+"mencocokkan * literal.\n"
+
+#: src/fsearch_cli.c:238
+#, c-format
+msgid "FSearch %s - indexed file search for %s %s\n"
+msgstr "FSearch %s - pencarian berkas terindeks untuk %s %s\n"
+
+#: src/fsearch_cli.c:301
+msgid "fsearch: interrupted\n"
+msgstr "fsearch: terinterupsi\n"
+
+#: src/fsearch_cli.c:315
+msgid "fsearch: search could not run because the index is unavailable\n"
+msgstr ""
+"fsearch: pencarian tidak dapat dijalankan karena indeks tidak tersedia\n"
+
+#: src/fsearch_cli.c:352 src/fsearch_cli.c:381 src/fsearch_cli_config.c:774
+#: src/fsearch_cli_config.c:961 src/fsearch_cli_config.c:1147
+#, c-format
+msgid "%s\n"
+msgstr "%s\n"
+
+#: src/fsearch_cli.c:400
+#, c-format
+msgid "%s"
+msgstr "%s"
+
+#: src/fsearch_cli.c:473
+#, c-format
+msgid "fsearch: unknown CLI option: %s\n"
+msgstr "fsearch: opsi CLI tidak dikenal: %s\n"
+
+#: src/fsearch_cli.c:495
+#, c-format
+msgid "fsearch: failed to create data directory: %s\n"
+msgstr "fsearch: gagal membuat direktori data: %s\n"
+
+#: src/fsearch_cli_config.c:111
+msgid ""
+"Usage: fsearch config COMMAND [OPTIONS]\n"
+"\n"
+"View and modify the shared FSearch GUI and CLI configuration.\n"
+"\n"
+"Configuration commands:\n"
+"  path                         Print the configuration file path\n"
+"  show [SECTION] [--json]      Show settings\n"
+"  get KEY [--json]             Print one scalar setting\n"
+"  set KEY VALUE                Set one scalar setting\n"
+"  unset KEY                    Restore one scalar setting default\n"
+"  reset [KEY|SECTION] --yes [--rescan]\n"
+"                               Restore defaults\n"
+"  doctor                       Check configuration and index consistency\n"
+"  roots list|add|set|remove    Manage indexed roots\n"
+"  excludes list|add|remove|hidden\n"
+"                               Manage index exclusions\n"
+"  filters list|add|set|remove|reset\n"
+"                               Manage saved search filters\n"
+"\n"
+"Scalar values use true/false, decimal integers, or strings.\n"
+"Run 'fsearch config show' to list every scalar key and current value.\n"
+"Scalar sections: search, application, window, ui, columns, sort, dialogs.\n"
+"Use 'fsearch config roots|excludes|filters --help' for family options.\n"
+"Close the FSearch GUI before changing shared settings.\n"
+"Index changes become searchable on the next CLI search, or immediately with "
+"--rescan.\n"
+"Use --json with show, get, and collection list commands.\n"
+"\n"
+"Examples:\n"
+"  fsearch config show search --json\n"
+"  fsearch config get search.match-case\n"
+"  fsearch config set search.match-case true\n"
+"  fsearch config roots add ~/Code --monitor --one-file-system --rescan\n"
+"  fsearch config excludes add '*.tmp' --type wildcard --scope basename --"
+"target files\n"
+"  fsearch config filters add Documents --query 'ext:pdf' --macro docs\n"
+"  fsearch config reset search --yes\n"
+msgstr ""
+"Penggunaan: fsearch config COMMAND [OPTIONS]\n"
+"\n"
+"Lihat dan ubah konfigurasi GUI serta CLI FSearch bersama.\n"
+"\n"
+"Perintah konfigurasi:\n"
+"  path                         Cetak path berkas konfigurasi\n"
+"  show [SECTION] [--json]      Tampilkan pengaturan\n"
+"  get KEY [--json]             Cetak satu pengaturan skalar\n"
+"  set KEY VALUE                Tetapkan satu pengaturan skalar\n"
+"  unset KEY                    Pulihkan bawaan satu pengaturan skalar\n"
+"  reset [KEY|SECTION] --yes [--rescan]\n"
+"                               Pulihkan nilai bawaan\n"
+"  doctor                       Periksa konsistensi konfigurasi dan indeks\n"
+"  roots list|add|set|remove    Kelola root yang diindeks\n"
+"  excludes list|add|remove|hidden\n"
+"                               Kelola pengecualian indeks\n"
+"  filters list|add|set|remove|reset\n"
+"                               Kelola filter pencarian tersimpan\n"
+"\n"
+"Nilai skalar menggunakan true/false, bilangan bulat desimal, atau string.\n"
+"Jalankan 'fsearch config show' untuk mencantumkan setiap key skalar dan "
+"nilai saat ini.\n"
+"Bagian skalar: search, application, window, ui, columns, sort, dialogs.\n"
+"Gunakan 'fsearch config roots|excludes|filters --help' untuk opsi kelompok.\n"
+"Tutup GUI FSearch sebelum mengubah pengaturan bersama.\n"
+"Perubahan indeks dapat dicari pada pencarian CLI berikutnya, atau segera "
+"dengan --rescan.\n"
+"Gunakan --json dengan perintah show, get, dan list koleksi.\n"
+"\n"
+"Contoh:\n"
+"  fsearch config show search --json\n"
+"  fsearch config get search.match-case\n"
+"  fsearch config set search.match-case true\n"
+"  fsearch config roots add ~/Code --monitor --one-file-system --rescan\n"
+"  fsearch config excludes add '*.tmp' --type wildcard --scope basename --"
+"target files\n"
+"  fsearch config filters add Documents --query 'ext:pdf' --macro docs\n"
+"  fsearch config reset search --yes\n"
+
+#: src/fsearch_cli_config.c:152
+msgid ""
+"Usage: fsearch config show [SECTION] [--json]\n"
+"Show all scalar settings or one dotted section.\n"
+msgstr ""
+"Penggunaan: fsearch config show [SECTION] [--json]\n"
+"Tampilkan semua pengaturan skalar atau satu bagian bertitik.\n"
+
+#: src/fsearch_cli_config.c:154
+msgid ""
+"Usage: fsearch config get KEY [--json]\n"
+"Print one typed scalar value. Discover keys with 'fsearch config show'.\n"
+msgstr ""
+"Penggunaan: fsearch config get KEY [--json]\n"
+"Cetak satu nilai skalar bertipe. Temukan key dengan 'fsearch config show'.\n"
+
+#: src/fsearch_cli_config.c:157
+msgid ""
+"Usage: fsearch config set KEY VALUE\n"
+"Set a boolean, integer, string, or enumerated scalar value.\n"
+msgstr ""
+"Penggunaan: fsearch config set KEY VALUE\n"
+"Tetapkan nilai skalar boolean, bilangan bulat, string, atau enumerasi.\n"
+
+#: src/fsearch_cli_config.c:159
+msgid ""
+"Usage: fsearch config unset KEY\n"
+"Restore one scalar setting to its built-in default.\n"
+msgstr ""
+"Penggunaan: fsearch config unset KEY\n"
+"Pulihkan satu pengaturan skalar ke nilai bawaan bawaannya.\n"
+
+#: src/fsearch_cli_config.c:161
+msgid ""
+"Usage: fsearch config reset [KEY|SECTION] --yes [--rescan]\n"
+"Reset is destructive and requires --yes. --rescan applies to roots, "
+"database, excludes, or all.\n"
+msgstr ""
+"Penggunaan: fsearch config reset [KEY|SECTION] --yes [--rescan]\n"
+"Reset bersifat destruktif dan memerlukan --yes. --rescan berlaku untuk "
+"roots, database, excludes, atau all.\n"
+
+#: src/fsearch_cli_config.c:164
+msgid ""
+"Usage: fsearch config doctor\n"
+"Check configuration readability and whether the saved index uses the same "
+"roots and exclusions.\n"
+msgstr ""
+"Penggunaan: fsearch config doctor\n"
+"Periksa keterbacaan konfigurasi dan apakah indeks tersimpan menggunakan root "
+"serta pengecualian yang sama.\n"
+
+#: src/fsearch_cli_config.c:170
+msgid ""
+"Usage: fsearch config roots COMMAND [PATH] [OPTIONS]\n"
+"\n"
+"Commands:\n"
+"  list [--json]                List indexed roots\n"
+"  add PATH [OPTIONS]           Add a root directory\n"
+"  set PATH [OPTIONS]           Change an existing root\n"
+"  remove PATH [--rescan]       Remove an existing root\n"
+"\n"
+"Options for add and set:\n"
+"  --active, --inactive\n"
+"  --monitor, --no-monitor\n"
+"  --one-file-system, --no-one-file-system\n"
+"  --scan-after-launch, --no-scan-after-launch\n"
+"  --rescan-every SECONDS        Set periodic rescan interval; 0 disables it\n"
+"  --rescan                      Rebuild the index immediately after saving\n"
+msgstr ""
+"Penggunaan: fsearch config roots COMMAND [PATH] [OPTIONS]\n"
+"\n"
+"Perintah:\n"
+"  list [--json]                Cantumkan root yang diindeks\n"
+"  add PATH [OPTIONS]           Tambahkan direktori root\n"
+"  set PATH [OPTIONS]           Ubah root yang ada\n"
+"  remove PATH [--rescan]       Hapus root yang ada\n"
+"\n"
+"Opsi untuk add dan set:\n"
+"  --active, --inactive\n"
+"  --monitor, --no-monitor\n"
+"  --one-file-system, --no-one-file-system\n"
+"  --scan-after-launch, --no-scan-after-launch\n"
+"  --rescan-every SECONDS        Tetapkan interval pemindaian ulang berkala; "
+"0 menonaktifkannya\n"
+"  --rescan                      Bangun ulang indeks segera setelah "
+"menyimpan\n"
+
+#: src/fsearch_cli_config.c:187
+msgid ""
+"Usage: fsearch config excludes COMMAND [PATTERN|VALUE] [OPTIONS]\n"
+"\n"
+"Commands:\n"
+"  list [--json]                 List exclusions\n"
+"  add PATTERN [OPTIONS]         Add an exclusion\n"
+"  remove PATTERN [OPTIONS]      Remove a matching exclusion\n"
+"  hidden [true|false] [--rescan]\n"
+"                                View or change hidden-file exclusion\n"
+"\n"
+"Options for add and remove:\n"
+"  --type fixed|wildcard|regex   Default: fixed\n"
+"  --scope full-path|basename    Default: full-path\n"
+"  --target both|files|folders   Default: both\n"
+"  --active, --inactive          Add state or removal selector\n"
+"  --rescan                      Rebuild the index immediately after saving\n"
+msgstr ""
+"Penggunaan: fsearch config excludes COMMAND [PATTERN|VALUE] [OPTIONS]\n"
+"\n"
+"Perintah:\n"
+"  list [--json]                 Cantumkan pengecualian\n"
+"  add PATTERN [OPTIONS]         Tambahkan pengecualian\n"
+"  remove PATTERN [OPTIONS]      Hapus pengecualian yang cocok\n"
+"  hidden [true|false] [--rescan]\n"
+"                                Lihat atau ubah pengecualian berkas "
+"tersembunyi\n"
+"\n"
+"Opsi untuk add dan remove:\n"
+"  --type fixed|wildcard|regex   Bawaan: fixed\n"
+"  --scope full-path|basename    Bawaan: full-path\n"
+"  --target both|files|folders   Bawaan: both\n"
+"  --active, --inactive          Tambahkan status atau pemilih penghapusan\n"
+"  --rescan                      Bangun ulang indeks segera setelah "
+"menyimpan\n"
+
+#: src/fsearch_cli_config.c:204
+msgid ""
+"Usage: fsearch config filters COMMAND [NAME] [OPTIONS]\n"
+"\n"
+"Commands:\n"
+"  list [--json]                 List saved filters\n"
+"  add NAME [OPTIONS]            Add a named filter\n"
+"  set NAME [OPTIONS]            Change a named filter\n"
+"  remove NAME                   Remove a named filter\n"
+"  reset                         Restore built-in filters\n"
+"\n"
+"Options for add and set:\n"
+"  --query QUERY                 Saved FSearch query\n"
+"  --macro MACRO                 Query macro name\n"
+"  --case, --no-case             Match case\n"
+"  --path, --no-path             Search full paths\n"
+"  --regex, --no-regex           Treat query as a regular expression\n"
+msgstr ""
+"Penggunaan: fsearch config filters COMMAND [NAME] [OPTIONS]\n"
+"\n"
+"Perintah:\n"
+"  list [--json]                 Cantumkan filter tersimpan\n"
+"  add NAME [OPTIONS]            Tambahkan filter bernama\n"
+"  set NAME [OPTIONS]            Ubah filter bernama\n"
+"  remove NAME                   Hapus filter bernama\n"
+"  reset                         Pulihkan filter bawaan\n"
+"\n"
+"Opsi untuk add dan set:\n"
+"  --query QUERY                 Kueri FSearch tersimpan\n"
+"  --macro MACRO                 Nama makro kueri\n"
+"  --case, --no-case             Cocokkan huruf besar-kecil\n"
+"  --path, --no-path             Cari path lengkap\n"
+"  --regex, --no-regex           Perlakukan kueri sebagai ekspresi reguler\n"
+
+#: src/fsearch_cli_config.c:265
+msgid ""
+"fsearch config: close the running FSearch GUI before changing shared "
+"settings\n"
+msgstr ""
+"fsearch config: tutup GUI FSearch yang sedang berjalan sebelum mengubah "
+"pengaturan bersama\n"
+
+#: src/fsearch_cli_config.c:269
+msgid "fsearch config: failed to save configuration\n"
+msgstr "fsearch config: gagal menyimpan konfigurasi\n"
+
+#: src/fsearch_cli_config.c:280
+msgid "Index configuration changed; the next CLI search will rebuild it.\n"
+msgstr ""
+"Konfigurasi indeks berubah; pencarian CLI berikutnya akan membangunnya "
+"ulang.\n"
+
+#: src/fsearch_cli_config.c:416
+#, c-format
+msgid "fsearch config %s: unknown option: %s\n"
+msgstr "fsearch config %s: opsi tidak dikenal: %s\n"
+
+#: src/fsearch_cli_config.c:422
+#, c-format
+msgid "fsearch config %s: unexpected argument: %s\n"
+msgstr "fsearch config %s: argumen tak terduga: %s\n"
+
+#: src/fsearch_cli_config.c:449
+msgid "Usage: fsearch config get KEY [--json]\n"
+msgstr "Penggunaan: fsearch config get KEY [--json]\n"
+
+#: src/fsearch_cli_config.c:454 src/fsearch_cli_config.c:555
+#, c-format
+msgid "fsearch config: unknown setting: %s\n"
+msgstr "fsearch config: pengaturan tidak dikenal: %s\n"
+
+#: src/fsearch_cli_config.c:502
+#, c-format
+msgid "fsearch config show: unknown section: %s\n"
+msgstr "fsearch config show: bagian tidak dikenal: %s\n"
+
+#: src/fsearch_cli_config.c:550
+#, c-format
+msgid "Usage: fsearch config %s KEY%s\n"
+msgstr "Penggunaan: fsearch config %s KEY%s\n"
+
+#: src/fsearch_cli_config.c:566
+#, c-format
+msgid "fsearch config: invalid value for %s: %s\n"
+msgstr "fsearch config: nilai tidak valid untuk %s: %s\n"
+
+#: src/fsearch_cli_config.c:572
+#, c-format
+msgid "%s = %s\n"
+msgstr "%s = %s\n"
+
+#: src/fsearch_cli_config.c:637
+#, c-format
+msgid "fsearch config roots: unknown operation: %s\n"
+msgstr "fsearch config roots: operasi tidak dikenal: %s\n"
+
+#: src/fsearch_cli_config.c:691
+msgid "fsearch config roots: --rescan-every requires SECONDS\n"
+msgstr "fsearch config roots: --rescan-every memerlukan SECONDS\n"
+
+#: src/fsearch_cli_config.c:710
+msgid "fsearch config roots: missing PATH\n"
+msgstr "fsearch config roots: PATH tidak ada\n"
+
+#: src/fsearch_cli_config.c:717 src/fsearch_cli_config.c:732
+#, c-format
+msgid "fsearch config roots: path not found: %s\n"
+msgstr "fsearch config roots: path tidak ditemukan: %s\n"
+
+#: src/fsearch_cli_config.c:724
+#, c-format
+msgid "fsearch config roots: not a directory: %s\n"
+msgstr "fsearch config roots: bukan direktori: %s\n"
+
+#: src/fsearch_cli_config.c:728
+#, c-format
+msgid "fsearch config roots: path already exists: %s\n"
+msgstr "fsearch config roots: path sudah ada: %s\n"
+
+#: src/fsearch_cli_config.c:752
+#, c-format
+msgid "fsearch config roots: invalid rescan duration: %s\n"
+msgstr "fsearch config roots: durasi pemindaian ulang tidak valid: %s\n"
+
+#: src/fsearch_cli_config.c:765
+msgid ""
+"%s\tactive=%s monitor=%s one-file-system=%s scan-after-launch=%s rescan-"
+"after=%"
+msgstr ""
+"%s\tactive=%s monitor=%s one-file-system=%s scan-after-launch=%s rescan-"
+"after=%"
+
+#: src/fsearch_cli_config.c:844
+msgid "fsearch config excludes hidden: expected true or false\n"
+msgstr "fsearch config excludes hidden: diharapkan true atau false\n"
+
+#: src/fsearch_cli_config.c:850
+#, c-format
+msgid "exclude-hidden = %s\n"
+msgstr "exclude-hidden = %s\n"
+
+#: src/fsearch_cli_config.c:856
+#, c-format
+msgid "fsearch config excludes: unknown operation: %s\n"
+msgstr "fsearch config excludes: operasi tidak dikenal: %s\n"
+
+#: src/fsearch_cli_config.c:877
+#, c-format
+msgid "fsearch config excludes: %s requires a value\n"
+msgstr "fsearch config excludes: %s memerlukan nilai\n"
+
+#: src/fsearch_cli_config.c:909
+msgid "fsearch config excludes: missing PATTERN\n"
+msgstr "fsearch config excludes: PATTERN tidak ada\n"
+
+#: src/fsearch_cli_config.c:914
+#, c-format
+msgid "fsearch config excludes: invalid type: %s\n"
+msgstr "fsearch config excludes: tipe tidak valid: %s\n"
+
+#: src/fsearch_cli_config.c:919
+#, c-format
+msgid "fsearch config excludes: invalid scope: %s\n"
+msgstr "fsearch config excludes: cakupan tidak valid: %s\n"
+
+#: src/fsearch_cli_config.c:924
+#, c-format
+msgid "fsearch config excludes: invalid target: %s\n"
+msgstr "fsearch config excludes: target tidak valid: %s\n"
+
+#: src/fsearch_cli_config.c:954
+#, c-format
+msgid "fsearch config excludes: exclusion not found: %s\n"
+msgstr "fsearch config excludes: pengecualian tidak ditemukan: %s\n"
+
+#: src/fsearch_cli_config.c:1022
+msgid "filters reset\n"
+msgstr "filter direset\n"
+
+#: src/fsearch_cli_config.c:1029
+#, c-format
+msgid "fsearch config filters: unknown operation: %s\n"
+msgstr "fsearch config filters: operasi tidak dikenal: %s\n"
+
+#: src/fsearch_cli_config.c:1051
+#, c-format
+msgid "fsearch config filters: %s requires a value\n"
+msgstr "fsearch config filters: %s memerlukan nilai\n"
+
+#: src/fsearch_cli_config.c:1094
+msgid "fsearch config filters: missing NAME\n"
+msgstr "fsearch config filters: NAME tidak ada\n"
+
+#: src/fsearch_cli_config.c:1100 src/fsearch_cli_config.c:1111
+#, c-format
+msgid "fsearch config filters: name not found: %s\n"
+msgstr "fsearch config filters: nama tidak ditemukan: %s\n"
+
+#: src/fsearch_cli_config.c:1107
+#, c-format
+msgid "fsearch config filters: name already exists: %s\n"
+msgstr "fsearch config filters: nama sudah ada: %s\n"
+
+#: src/fsearch_cli_config.c:1145
+#, c-format
+msgid "%s\tmacro=%s query=%s\n"
+msgstr "%s\tmacro=%s query=%s\n"
+
+#: src/fsearch_cli_config.c:1193
+msgid "fsearch config reset requires --yes\n"
+msgstr "fsearch config reset memerlukan --yes\n"
+
+#: src/fsearch_cli_config.c:1201
+msgid ""
+"fsearch config reset: --rescan requires roots, database, excludes, or all\n"
+msgstr ""
+"fsearch config reset: --rescan memerlukan roots, database, excludes, atau "
+"all\n"
+
+#: src/fsearch_cli_config.c:1241
+#, c-format
+msgid "fsearch config: unknown setting or section: %s\n"
+msgstr "fsearch config: pengaturan atau bagian tidak dikenal: %s\n"
+
+#: src/fsearch_cli_config.c:1246
+#, c-format
+msgid "%s settings reset\n"
+msgstr "pengaturan %s direset\n"
+
+#: src/fsearch_cli_config.c:1253
+msgid ""
+"configuration: missing; defaults active\n"
+"index: unknown\n"
+msgstr ""
+"konfigurasi: tidak ada; nilai bawaan aktif\n"
+"indeks: tidak diketahui\n"
+
+#: src/fsearch_cli_config.c:1261
+msgid ""
+"configuration: ok\n"
+"index: missing or unreadable\n"
+msgstr ""
+"konfigurasi: baik\n"
+"indeks: tidak ada atau tidak dapat dibaca\n"
+
+#: src/fsearch_cli_config.c:1266
+#, c-format
+msgid ""
+"configuration: ok\n"
+"index: %s\n"
+msgstr ""
+"konfigurasi: baik\n"
+"indeks: %s\n"
+
+#: src/fsearch_cli_config.c:1266
+msgid "current"
+msgstr "terkini"
+
+#: src/fsearch_cli_config.c:1266
+msgid "stale"
+msgstr "usang"
+
+#: src/fsearch_cli_config.c:1278
+msgid ""
+"Usage: fsearch config path\n"
+"Print the active FSearch configuration file path.\n"
+msgstr ""
+"Penggunaan: fsearch config path\n"
+"Cetak path berkas konfigurasi FSearch yang aktif.\n"
+
+#: src/fsearch_cli_config.c:1321
+#, c-format
+msgid "fsearch config: unknown command: %s\n"
+msgstr "fsearch config: perintah tidak dikenal: %s\n"
+
+#: src/fsearch_database.c:795
+msgid "Index rescan: applying changes…"
+msgstr "Pemindaian ulang indeks: menerapkan perubahan…"
+
+#: src/fsearch_database_preferences_widget.ui:176
+msgid "Attempt to monitor"
+msgstr "Coba pantau"
+
+#: src/fsearch_database_preferences_widget.ui:191
+msgid "Scan after launch"
+msgstr "Pindai setelah peluncuran"
+
+#: src/fsearch_database_preferences_widget.ui:254
+msgid "Hours:"
+msgstr "Jam:"
+
+#: src/fsearch_preferences.ui:1241
+msgid ""
+"<b>Add a specific path:</b>\n"
+"\n"
+"Type the full path of a folder here and click the button next to it to "
+"include that folder in the database. This is useful for adding a path "
+"directly without browsing for it."
+msgstr ""
+"<b>Tambahkan path tertentu:</b>\n"
+"\n"
+"Ketik path lengkap folder di sini dan klik tombol di sebelahnya untuk "
+"menyertakan folder tersebut dalam basis data. Ini berguna untuk menambahkan "
+"path secara langsung tanpa menelusurinya."
+
+#: src/fsearch_preferences.ui:1275
+msgid ""
+"<b>Attempt to monitor:</b>\n"
+"\n"
+"If enabled, FSearch watches this folder for changes and keeps the database "
+"up to date automatically, so you don't have to rescan manually.\n"
+"\n"
+"Monitoring isn't supported on every file system and uses a small amount of "
+"system resources per watched folder. For large directory trees with many "
+"files the system may run out of resources to watch them all."
+msgstr ""
+"<b>Coba pantau:</b>\n"
+"\n"
+"Jika diaktifkan, FSearch memantau perubahan pada folder ini dan secara "
+"otomatis menjaga basis data tetap mutakhir, sehingga Anda tidak perlu "
+"memindai ulang secara manual.\n"
+"\n"
+"Pemantauan tidak didukung pada setiap sistem berkas dan menggunakan sedikit "
+"sumber daya sistem untuk setiap folder yang dipantau. Pada pohon direktori "
+"besar dengan banyak berkas, sistem mungkin kehabisan sumber daya untuk "
+"memantau semuanya."
+
+#: src/fsearch_preferences.ui:1294
+msgid ""
+"<b>Scan after launch:</b>\n"
+"\n"
+"If enabled, this folder is rescanned every time FSearch starts, so the "
+"database reflects any changes made while FSearch wasn't running."
+msgstr ""
+"<b>Pindai setelah peluncuran:</b>\n"
+"\n"
+"Jika diaktifkan, folder ini dipindai ulang setiap kali FSearch dimulai, "
+"sehingga basis data mencerminkan perubahan apa pun yang dibuat saat FSearch "
+"tidak berjalan."
+
+#: src/fsearch_preferences.ui:1311
+msgid ""
+"<b>Stay on one file system:</b>\n"
+"\n"
+"If enabled, FSearch won't cross file system boundaries while scanning this "
+"folder. Mounted file systems below it (e.g. external drives or network "
+"shares) are skipped."
+msgstr ""
+"<b>Tetap pada satu sistem berkas:</b>\n"
+"\n"
+"Jika diaktifkan, FSearch tidak akan melintasi batas sistem berkas saat "
+"memindai folder ini. Sistem berkas yang dikaitkan di bawahnya (misalnya "
+"kandar eksternal atau berbagi jaringan) akan dilewati."
+
+#: src/fsearch_preferences.ui:1328
+msgid ""
+"<b>Rescan every:</b>\n"
+"\n"
+"If enabled, this folder is rescanned automatically at the given interval. "
+"Use the hours and minutes fields to set how often the rescan happens.\n"
+"\n"
+"This is useful for folders on file systems that can't be monitored for "
+"changes."
+msgstr ""
+"<b>Pindai ulang setiap:</b>\n"
+"\n"
+"Jika diaktifkan, folder ini dipindai ulang secara otomatis pada interval "
+"yang diberikan. Gunakan kolom jam dan menit untuk mengatur seberapa sering "
+"pemindaian ulang dilakukan.\n"
+"\n"
+"Ini berguna untuk folder pada sistem berkas yang perubahannya tidak dapat "
+"dipantau."
+
+#: src/fsearch_preferences.ui:1347
+msgid ""
+"<b>Exclude rules:</b>\n"
+"\n"
+"This list contains rules for the files and folders you want to exclude from "
+"the database.\n"
+"\n"
+"\t• <b>Active:</b> If enabled, the rule is applied and matching items are "
+"excluded.\n"
+"\t• <b>Pattern:</b> The text matched against each item, interpreted "
+"according to the Type.\n"
+"\t• <b>Type:</b> How the pattern is interpreted — <i>Literal</i> (exact "
+"text), <i>Wildcard</i> (using * and ?) or <i>Regex</i> (a regular "
+"expression).\n"
+"\t• <b>Match:</b> Whether the pattern is matched against the item's <i>Full "
+"Path</i> or only its <i>Basename</i> (the name without the path).\n"
+"\t• <b>Applies To:</b> Whether the rule affects <i>Files</i>, <i>Folders</i> "
+"or both."
+msgstr ""
+"<b>Aturan pengecualian:</b>\n"
+"\n"
+"Daftar ini berisi aturan untuk berkas dan folder yang ingin Anda kecualikan "
+"dari basis data.\n"
+"\n"
+"\t• <b>Aktif:</b> Jika diaktifkan, aturan diterapkan dan butir yang cocok "
+"dikecualikan.\n"
+"\t• <b>Pola:</b> Teks yang dicocokkan dengan setiap butir, ditafsirkan "
+"sesuai Tipe.\n"
+"\t• <b>Tipe:</b> Cara pola ditafsirkan — <i>Literal</i> (teks persis), "
+"<i>Wildcard</i> (menggunakan * dan ?), atau <i>Regex</i> (ekspresi "
+"reguler).\n"
+"\t• <b>Kecocokan:</b> Apakah pola dicocokkan dengan <i>Path Lengkap</i> "
+"butir atau hanya <i>Nama Dasar</i>-nya (nama tanpa path).\n"
+"\t• <b>Berlaku Untuk:</b> Apakah aturan memengaruhi <i>Berkas</i>, "
+"<i>Folder</i>, atau keduanya."
+
+#: src/fsearch_preferences.ui:1370
+msgid ""
+"<b>Add exclude rule:</b>\n"
+"\n"
+"This adds a new, empty rule to the list. Edit its Pattern, Type, Match and "
+"Applies To columns to control what gets excluded from the database."
+msgstr ""
+"<b>Tambahkan aturan pengecualian:</b>\n"
+"\n"
+"Ini menambahkan aturan baru yang kosong ke daftar. Edit kolom Pola, Tipe, "
+"Kecocokan, dan Berlaku Untuk untuk mengendalikan apa yang dikecualikan dari "
+"basis data."
+
+#: src/fsearch_statusbar.ui:726
+msgid ""
+"The search was cancelled before it finished.\n"
+"<b>These results are incomplete.</b>"
+msgstr ""
+"Pencarian dibatalkan sebelum selesai.\n"
+"<b>Hasil ini tidak lengkap.</b>"
+
+#: src/fsearch_statusbar.ui:756
+msgid "PARTIAL"
+msgstr "SEBAGIAN"
+
+#: src/fsearch_welcome_dialog.ui:26
+msgid "What's New in FSearch"
+msgstr "Yang Baru di FSearch"
+
+#: src/fsearch_welcome_dialog.ui:79
+msgid ""
+"<span size=\"xx-large\" weight=\"bold\">What's New in FSearch 0.3</span>"
+msgstr ""
+"<span size=\"xx-large\" weight=\"bold\">Yang Baru di FSearch 0.3</span>"
+
+#: src/fsearch_welcome_dialog.ui:149
+msgid "<big><b>File System Monitoring</b></big>"
+msgstr "<big><b>Pemantauan Sistem Berkas</b></big>"
+
+#: src/fsearch_welcome_dialog.ui:163
+msgid ""
+"You can now actively watch individual folders to eliminate frequent rescans. "
+"File changes then appear in your search results immediately.\n"
+"\n"
+"To enable this feature go to the Database section of the Preferences "
+"dialog.\n"
+"\n"
+"See the online documentation for more information:\n"
+"<a href=\"URL\">https://github.com/cboxdoerfer/fsearch/wiki/Database-update</"
+"a>"
+msgstr ""
+"Kini Anda dapat memantau setiap folder secara aktif untuk menghilangkan "
+"pemindaian ulang yang sering. Perubahan berkas kemudian langsung muncul "
+"dalam hasil pencarian Anda.\n"
+"\n"
+"Untuk mengaktifkan fitur ini, buka bagian Basis Data pada dialog "
+"Preferensi.\n"
+"\n"
+"Lihat dokumentasi daring untuk informasi lebih lanjut:\n"
+"<a href=\"URL\">https://github.com/cboxdoerfer/fsearch/wiki/Database-update</"
+"a>"
+
+#: src/fsearch_welcome_dialog.ui:232
+msgid "<big><b>Folder-Specific Rescan Schedules</b></big>"
+msgstr "<big><b>Jadwal Pemindaian Ulang Khusus Folder</b></big>"
+
+#: src/fsearch_welcome_dialog.ui:246
+msgid ""
+"You can now configure automatic update intervals for individual folders "
+"independently and tailored to each distinct location."
+msgstr ""
+"Kini Anda dapat mengonfigurasi interval pembaruan otomatis untuk setiap "
+"folder secara terpisah dan menyesuaikannya bagi setiap lokasi yang berbeda."
+
+#: src/fsearch_welcome_dialog.ui:309
+msgid "<big><b>Improved Exclude Rules</b></big>"
+msgstr "<big><b>Aturan Pengecualian yang Disempurnakan</b></big>"
+
+#: src/fsearch_welcome_dialog.ui:323
+msgid ""
+"You can now use wildcards and regular expressions to define more powerful "
+"exclude rules. \n"
+"Rules can be targeted specifically at files, folders, or both, and can be "
+"configured to match against either the basename or the full absolute path."
+msgstr ""
+"Kini Anda dapat menggunakan wildcard dan ekspresi reguler untuk menentukan "
+"aturan pengecualian yang lebih andal. \n"
+"Aturan dapat ditargetkan secara khusus pada berkas, folder, atau keduanya, "
+"serta dapat dikonfigurasi agar cocok dengan nama dasar atau path absolut "
+"lengkap."
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:99
+msgid "Numerous bug fixes and stability and performance improvements"
+msgstr "Berbagai perbaikan bug serta peningkatan stabilitas dan kinerja"
+
+#: src/fsearch.c:330
+msgid "Saving database and config…"
+msgstr "Menyimpan basis data dan konfigurasi…"
+
+#: src/fsearch_cli.c:149
+#, c-format
+msgid "Indexing: %s"
+msgstr "Mengindeks: %s"
+
+#: src/fsearch_database_preferences_widget.ui:206
+msgid "Stay on one file system"
+msgstr "Tetap pada satu sistem berkas"
+
+#: src/fsearch_database_preferences_widget.ui:298
+msgid "Minutes:"
+msgstr "Menit:"
+
+#: src/fsearch_database_preferences_widget.ui:512
+msgid "Restore default exclude list"
+msgstr "Pulihkan daftar pengecualian bawaan"
+
+#: src/fsearch_preferences.ui:1387
+msgid ""
+"<b>Remove selected row:</b>\n"
+"\n"
+"This removes the selected rule from the list of exclude rules."
+msgstr ""
+"<b>Hapus baris yang dipilih:</b>\n"
+"\n"
+"Ini menghapus aturan yang dipilih dari daftar aturan pengecualian."
+
+#: src/fsearch_preferences.ui:1404
+msgid ""
+"<b>Restore default exclude rules:</b>\n"
+"\n"
+"This button restores the default set of exclude rules.\n"
+"\n"
+"⚠ All rules which were created or edited by the user will be lost! ⚠"
+msgstr ""
+"<b>Pulihkan aturan pengecualian bawaan:</b>\n"
+"\n"
+"Tombol ini memulihkan kumpulan aturan pengecualian bawaan.\n"
+"\n"
+"⚠ Semua aturan yang dibuat atau diedit oleh pengguna akan hilang! ⚠"
+
+#: data/io.github.cboxdoerfer.FSearch.desktop.in.in:4 src/main.c:36
 msgid "FSearch"
 msgstr "FSearch"
 
@@ -163,16 +1087,6 @@ msgstr ""
 "DB: Izinkan file dan folder dikecualikan berdasarkan pola tetap, wildcard, "
 "atau ekspresi reguler"
 
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:92
-msgid ""
-"DB: Allow included folders to be scheduled and scanned after launch "
-"independently"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:93
-msgid "DB: Make rescanning more efficient"
-msgstr ""
-
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:94
 msgid "DB: Store database config in DB file"
 msgstr "DB: Simpan konfigurasi basis data di file DB"
@@ -185,21 +1099,6 @@ msgstr "DB: Tambah checksum ke file DB"
 msgid "Make icon and file info gathering asynchronous (no UI blocking)"
 msgstr ""
 "Jadikan pengambilan ikon dan info file asinkronus (tanpa pemblokiran UI)"
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:97
-msgid "Reduce memory usage"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:98
-msgid "Add contextual help for all preferences"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:99
-#, fuzzy
-#| msgid "and tons of bug fixes, translation updates and smaller improvements"
-msgid "Numerous bug fixes and stability and performance improvements"
-msgstr ""
-"dan banyak perbaikan bug, pembaruan terjemahan, dan peningkatan kecil lainnya"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:106
 msgid "New search engine"
@@ -321,49 +1220,39 @@ msgstr ""
 msgid "A search utility focusing on performance and advanced features"
 msgstr "Utilitas pencarian yang berfokus pada performa dan fitur canggih"
 
-#: src/fsearch.c:330
-#, fuzzy
-#| msgid "Loading Database…"
-msgid "Saving database and config…"
-msgstr "Memuat Basis Data…"
-
-#: src/fsearch.c:807
+#: src/fsearch.c:786
 msgid "Open a new application window"
 msgstr "Buka jendela aplikasi baru"
 
-#: src/fsearch.c:808
+#: src/fsearch.c:787
 msgid "Minimize the application window"
 msgstr "Minimalkan jendela aplikasi"
 
-#: src/fsearch.c:809
+#: src/fsearch.c:788
 msgid "Show the application preferences"
 msgstr "Tampilkan preferensi aplikasi"
 
-#: src/fsearch.c:810
+#: src/fsearch.c:789
 msgid "Set the search pattern"
 msgstr "Atur pola pencarian"
 
-#: src/fsearch.c:811
+#: src/fsearch.c:790
 msgid "Update the database and exit"
 msgstr "Perbarui basis data dan keluar"
 
-#: src/fsearch.c:812
+#: src/fsearch.c:791
 msgid "Print version information and exit"
 msgstr "Cetak informasi versi dan keluar"
 
-#: src/fsearch_database.c:794
-msgid "Index rescan: applying changes…"
-msgstr ""
-
-#: src/fsearch_database_file.c:1337
+#: src/fsearch_database_file.c:1343
 msgid "Loading folders…"
 msgstr "Memuat folder…"
 
-#: src/fsearch_database_file.c:1353
+#: src/fsearch_database_file.c:1359
 msgid "Loading files…"
 msgstr "Memuat file…"
 
-#: src/fsearch_database_index_store.c:920 src/fsearch_statusbar.c:73
+#: src/fsearch_database_index_store.c:925 src/fsearch_statusbar.c:73
 #: src/fsearch_statusbar.ui:90
 msgid "Sorting…"
 msgstr "Mengurutkan…"
@@ -425,7 +1314,7 @@ msgstr "Aktif"
 msgid "Pattern"
 msgstr "Pola"
 
-#: src/fsearch_database_preferences_widget.c:694 src/fsearch_window.c:773
+#: src/fsearch_database_preferences_widget.c:694 src/fsearch_window.c:756
 #: src/menus.ui:275
 msgid "Type"
 msgstr "Tipe"
@@ -438,7 +1327,7 @@ msgstr "Cocokkan"
 msgid "Applies To"
 msgstr "Berlaku Untuk"
 
-#: src/fsearch_database_preferences_widget.c:864 src/fsearch_window.c:759
+#: src/fsearch_database_preferences_widget.c:864 src/fsearch_window.c:742
 #: src/menus.ui:219 src/menus.ui:267
 msgid "Path"
 msgstr "Jalur"
@@ -458,31 +1347,9 @@ msgstr ""
 "                                            basis data\n"
 "                                        "
 
-#: src/fsearch_database_preferences_widget.ui:176
-msgid "Attempt to monitor"
-msgstr ""
-
-#: src/fsearch_database_preferences_widget.ui:191
-msgid "Scan after launch"
-msgstr ""
-
-#: src/fsearch_database_preferences_widget.ui:206
-#, fuzzy
-msgid "Stay on one file system"
-msgstr "Satu Sistem Berkas"
-
 #: src/fsearch_database_preferences_widget.ui:221
 msgid "Rescan every"
 msgstr "Pindai ulang setiap"
-
-#: src/fsearch_database_preferences_widget.ui:254
-msgid "Hours:"
-msgstr ""
-
-#: src/fsearch_database_preferences_widget.ui:298
-#, fuzzy
-msgid "Minutes:"
-msgstr "menit"
 
 #: src/fsearch_database_preferences_widget.ui:310
 msgid "30"
@@ -512,12 +1379,6 @@ msgstr ""
 "Hapus jalur yang dipilih\n"
 "                                                "
 
-#: src/fsearch_database_preferences_widget.ui:512
-#, fuzzy
-#| msgid "Restore default filters"
-msgid "Restore default exclude list"
-msgstr "Pulihkan filter bawaan"
-
 #: src/fsearch_database_preferences_widget.ui:541
 msgid "Exclude hidden files and folders"
 msgstr "Kecualikan file dan folder tersembunyi"
@@ -526,59 +1387,56 @@ msgstr "Kecualikan file dan folder tersembunyi"
 msgid "Exclude"
 msgstr "Kecualikan"
 
-#: src/fsearch_file_utils.c:163
+#: src/fsearch_file_utils.c:161
 msgctxt "Will be followed by the path of the file."
 msgid "Error when removing file"
 msgstr "Kesalahan saat menghapus file"
 
-#: src/fsearch_file_utils.c:165
+#: src/fsearch_file_utils.c:163
 msgid "Failed to get path"
 msgstr "Gagal mendapatkan jalur"
 
-#: src/fsearch_file_utils.c:269
+#: src/fsearch_file_utils.c:277
 msgctxt "Will be followed by the file path."
 msgid "Error when getting information from file"
 msgstr "Kesalahan saat mendapatkan informasi dari file"
 
-#: src/fsearch_file_utils.c:271
+#: src/fsearch_file_utils.c:279
 msgid "Failed to get application information"
 msgstr "Gagal mendapatkan informasi aplikasi"
 
-#: src/fsearch_file_utils.c:384 src/fsearch_file_utils.c:515
-#, fuzzy
-#| msgctxt "Will be followed by the path of the folder."
-#| msgid "Error while opening folder"
-msgctxt "Will be followed by the file path."
-msgid "Error when opening file"
-msgstr "Kesalahan saat membuka folder"
+#: src/fsearch_file_utils.c:294
+msgctxt "Will be followed by the content type string."
+msgid "Error when getting information for content type"
+msgstr "Kesalahan saat mendapatkan informasi untuk tipe konten"
 
-#: src/fsearch_file_utils.c:386 src/fsearch_file_utils.c:517
+#: src/fsearch_file_utils.c:296
 msgid "No default application registered"
 msgstr "Tidak ada aplikasi bawaan yang terdaftar"
 
-#: src/fsearch_file_utils.c:536
+#: src/fsearch_file_utils.c:524
 msgctxt "Will be followed by the path of the folder."
 msgid "Error when opening parent folder"
 msgstr "Kesalahan saat membuka folder induk"
 
-#: src/fsearch_file_utils.c:538
+#: src/fsearch_file_utils.c:526
 msgid "Failed to get parent path"
 msgstr "Gagal mendapatkan jalur induk"
 
-#: src/fsearch_file_utils.c:542
+#: src/fsearch_file_utils.c:530
 msgctxt "Will be followed by the path of the folder."
 msgid "Error while opening folder"
 msgstr "Kesalahan saat membuka folder"
 
-#: src/fsearch_file_utils.c:545
+#: src/fsearch_file_utils.c:533
 msgid "Failed to build open command"
 msgstr "Gagal membuat perintah buka"
 
-#: src/fsearch_file_utils.c:601
+#: src/fsearch_file_utils.c:589
 msgid "Folder"
 msgstr "Folder"
 
-#: src/fsearch_file_utils.c:607
+#: src/fsearch_file_utils.c:595
 msgid "Unknown Type"
 msgstr "Tipe Tidak Diketahui"
 
@@ -668,7 +1526,7 @@ msgstr ""
 msgid "Add filter"
 msgstr "Tambah filter"
 
-#: src/fsearch_filter_preferences_widget.c:315 src/fsearch_window.c:752
+#: src/fsearch_filter_preferences_widget.c:315 src/fsearch_window.c:735
 #: src/menus.ui:215 src/menus.ui:263
 msgid "Name"
 msgstr "Nama"
@@ -1224,15 +2082,6 @@ msgstr ""
 "Tombol ini membuka dialog tempat Anda dapat memilih folder yang ingin "
 "disertakan dalam basis data untuk pencarian."
 
-#: src/fsearch_preferences.ui:1241
-msgid ""
-"<b>Add a specific path:</b>\n"
-"\n"
-"Type the full path of a folder here and click the button next to it to "
-"include that folder in the database. This is useful for adding a path "
-"directly without browsing for it."
-msgstr ""
-
 #: src/fsearch_preferences.ui:1258
 msgid ""
 "<b>Remove selected row:</b>\n"
@@ -1242,110 +2091,6 @@ msgstr ""
 "<b>Hapus baris yang dipilih:</b>\n"
 "\n"
 "Ini menghapus folder yang dipilih dari daftar folder yang disertakan."
-
-#: src/fsearch_preferences.ui:1275
-msgid ""
-"<b>Attempt to monitor:</b>\n"
-"\n"
-"If enabled, FSearch watches this folder for changes and keeps the database "
-"up to date automatically, so you don't have to rescan manually.\n"
-"\n"
-"Monitoring isn't supported on every file system and uses a small amount of "
-"system resources per watched folder. For large directory trees with many "
-"files the system may run out of resources to watch them all."
-msgstr ""
-
-#: src/fsearch_preferences.ui:1294
-msgid ""
-"<b>Scan after launch:</b>\n"
-"\n"
-"If enabled, this folder is rescanned every time FSearch starts, so the "
-"database reflects any changes made while FSearch wasn't running."
-msgstr ""
-
-#: src/fsearch_preferences.ui:1311
-msgid ""
-"<b>Stay on one file system:</b>\n"
-"\n"
-"If enabled, FSearch won't cross file system boundaries while scanning this "
-"folder. Mounted file systems below it (e.g. external drives or network "
-"shares) are skipped."
-msgstr ""
-
-#: src/fsearch_preferences.ui:1328
-msgid ""
-"<b>Rescan every:</b>\n"
-"\n"
-"If enabled, this folder is rescanned automatically at the given interval. "
-"Use the hours and minutes fields to set how often the rescan happens.\n"
-"\n"
-"This is useful for folders on file systems that can't be monitored for "
-"changes."
-msgstr ""
-
-#: src/fsearch_preferences.ui:1347
-msgid ""
-"<b>Exclude rules:</b>\n"
-"\n"
-"This list contains rules for the files and folders you want to exclude from "
-"the database.\n"
-"\n"
-"\t• <b>Active:</b> If enabled, the rule is applied and matching items are "
-"excluded.\n"
-"\t• <b>Pattern:</b> The text matched against each item, interpreted "
-"according to the Type.\n"
-"\t• <b>Type:</b> How the pattern is interpreted — <i>Literal</i> (exact "
-"text), <i>Wildcard</i> (using * and ?) or <i>Regex</i> (a regular "
-"expression).\n"
-"\t• <b>Match:</b> Whether the pattern is matched against the item's <i>Full "
-"Path</i> or only its <i>Basename</i> (the name without the path).\n"
-"\t• <b>Applies To:</b> Whether the rule affects <i>Files</i>, <i>Folders</i> "
-"or both."
-msgstr ""
-
-#: src/fsearch_preferences.ui:1370
-msgid ""
-"<b>Add exclude rule:</b>\n"
-"\n"
-"This adds a new, empty rule to the list. Edit its Pattern, Type, Match and "
-"Applies To columns to control what gets excluded from the database."
-msgstr ""
-
-#: src/fsearch_preferences.ui:1387
-#, fuzzy
-#| msgid ""
-#| "<b>Remove selected row:</b>\n"
-#| "\n"
-#| "This removes the selected folder from the list of excluded folders."
-msgid ""
-"<b>Remove selected row:</b>\n"
-"\n"
-"This removes the selected rule from the list of exclude rules."
-msgstr ""
-"<b>Hapus baris yang dipilih:</b>\n"
-"\n"
-"Ini menghapus folder yang dipilih dari daftar folder yang dikecualikan."
-
-#: src/fsearch_preferences.ui:1404
-#, fuzzy
-#| msgid ""
-#| "<b>Restore default filters:</b>\n"
-#| "\n"
-#| "This button restores the default filter configuration.\n"
-#| "\n"
-#| "⚠ All filters which were created or edited by the user will be lost! ⚠"
-msgid ""
-"<b>Restore default exclude rules:</b>\n"
-"\n"
-"This button restores the default set of exclude rules.\n"
-"\n"
-"⚠ All rules which were created or edited by the user will be lost! ⚠"
-msgstr ""
-"<b>Pulihkan filter bawaan:</b>\n"
-"\n"
-"Tombol ini memulihkan konfigurasi filter bawaan.\n"
-"\n"
-"⚠ Semua filter yang dibuat atau diedit oleh pengguna akan hilang! ⚠"
 
 #: src/fsearch_preferences.ui:1423
 msgid ""
@@ -1510,7 +2255,7 @@ msgstr "Bantuan"
 msgid "Database"
 msgstr "Basis Data"
 
-#: src/fsearch_result_view.c:487
+#: src/fsearch_result_view.c:381
 msgid "Invalid row data"
 msgstr "Data baris tidak valid"
 
@@ -1604,77 +2349,19 @@ msgstr "JALUR"
 msgid "REGEX"
 msgstr "REGEX"
 
-#: src/fsearch_statusbar.ui:726
-msgid ""
-"The search was cancelled before it finished.\n"
-"<b>These results are incomplete.</b>"
-msgstr ""
-
-#: src/fsearch_statusbar.ui:756
-msgid "PARTIAL"
-msgstr ""
-
-#: src/fsearch_welcome_dialog.ui:26
-msgid "What's New in FSearch"
-msgstr ""
-
-#: src/fsearch_welcome_dialog.ui:79
-msgid ""
-"<span size=\"xx-large\" weight=\"bold\">What's New in FSearch 0.3</span>"
-msgstr ""
-
-#: src/fsearch_welcome_dialog.ui:149
-msgid "<big><b>File System Monitoring</b></big>"
-msgstr ""
-
-#: src/fsearch_welcome_dialog.ui:163
-msgid ""
-"You can now actively watch individual folders to eliminate frequent rescans. "
-"File changes then appear in your search results immediately.\n"
-"\n"
-"To enable this feature go to the Database section of the Preferences "
-"dialog.\n"
-"\n"
-"See the online documentation for more information:\n"
-"<a href=\"URL\">https://github.com/cboxdoerfer/fsearch/wiki/Database-update</"
-"a>"
-msgstr ""
-
-#: src/fsearch_welcome_dialog.ui:232
-msgid "<big><b>Folder-Specific Rescan Schedules</b></big>"
-msgstr ""
-
-#: src/fsearch_welcome_dialog.ui:246
-msgid ""
-"You can now configure automatic update intervals for individual folders "
-"independently and tailored to each distinct location."
-msgstr ""
-
-#: src/fsearch_welcome_dialog.ui:309
-msgid "<big><b>Improved Exclude Rules</b></big>"
-msgstr ""
-
-#: src/fsearch_welcome_dialog.ui:323
-msgid ""
-"You can now use wildcards and regular expressions to define more powerful "
-"exclude rules. \n"
-"Rules can be targeted specifically at files, folders, or both, and can be "
-"configured to match against either the basename or the full absolute path."
-msgstr ""
-
-#: src/fsearch_window.c:766 src/menus.ui:279
+#: src/fsearch_window.c:749 src/menus.ui:279
 msgid "Size"
 msgstr "Ukuran"
 
-#: src/fsearch_window.c:780 src/menus.ui:271
+#: src/fsearch_window.c:763 src/menus.ui:271
 msgid "Extension"
 msgstr "Ekstensi"
 
-#: src/fsearch_window.c:787 src/menus.ui:283
+#: src/fsearch_window.c:770 src/menus.ui:283
 msgid "Date Modified"
 msgstr "Tanggal Diubah"
 
-#: src/fsearch_window.c:801
+#: src/fsearch_window.c:784
 msgid ""
 "Sorting by <b>Type</b> can take a few seconds with many results.\n"
 "\n"
@@ -1881,10 +2568,6 @@ msgstr "Jalur + Nama"
 #: src/menus.ui:236
 msgid "Move to _Trash"
 msgstr "Pindahkan ke Sampah"
-
-#~ msgctxt "Will be followed by the content type string."
-#~ msgid "Error when getting information for content type"
-#~ msgstr "Kesalahan saat mendapatkan informasi untuk tipe konten"
 
 #~ msgid ""
 #~ "<b>Excluded folders:</b>\n"

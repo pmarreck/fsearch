@@ -17,6 +17,7 @@
    */
 
 #include "fsearch_cli_config.h"
+#include "fsearch_cli.h"
 
 #ifdef HAVE_CONFIG_H
 #include <config.h>
@@ -34,6 +35,7 @@
 
 #include <gio/gio.h>
 #include <glib.h>
+#include <glib/gi18n.h>
 #include <stddef.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -106,7 +108,7 @@ static const ScalarSetting scalar_settings[] = {
 
 static void
 print_help(void) {
-    g_print("Usage: fsearch config COMMAND [OPTIONS]\n\n"
+    g_print("%s", _("Usage: fsearch config COMMAND [OPTIONS]\n\n"
             "View and modify the shared FSearch GUI and CLI configuration.\n\n"
             "Configuration commands:\n"
             "  path                         Print the configuration file path\n"
@@ -136,7 +138,7 @@ print_help(void) {
             "  fsearch config roots add ~/Code --monitor --one-file-system --rescan\n"
             "  fsearch config excludes add '*.tmp' --type wildcard --scope basename --target files\n"
             "  fsearch config filters add Documents --query 'ext:pdf' --macro docs\n"
-            "  fsearch config reset search --yes\n");
+            "  fsearch config reset search --yes\n"));
 }
 
 static gboolean
@@ -147,25 +149,25 @@ command_help_requested(int argc, char *argv[]) {
 static void
 print_scalar_command_help(const char *command) {
     if (strcmp(command, "show") == 0)
-        g_print("Usage: fsearch config show [SECTION] [--json]\nShow all scalar settings or one dotted section.\n");
+        g_print("%s", _("Usage: fsearch config show [SECTION] [--json]\nShow all scalar settings or one dotted section.\n"));
     else if (strcmp(command, "get") == 0)
-        g_print("Usage: fsearch config get KEY [--json]\nPrint one typed scalar value. Discover keys with 'fsearch "
-                "config show'.\n");
+        g_print("%s", _("Usage: fsearch config get KEY [--json]\nPrint one typed scalar value. Discover keys with 'fsearch "
+                        "config show'.\n"));
     else if (strcmp(command, "set") == 0)
-        g_print("Usage: fsearch config set KEY VALUE\nSet a boolean, integer, string, or enumerated scalar value.\n");
+        g_print("%s", _("Usage: fsearch config set KEY VALUE\nSet a boolean, integer, string, or enumerated scalar value.\n"));
     else if (strcmp(command, "unset") == 0)
-        g_print("Usage: fsearch config unset KEY\nRestore one scalar setting to its built-in default.\n");
+        g_print("%s", _("Usage: fsearch config unset KEY\nRestore one scalar setting to its built-in default.\n"));
     else if (strcmp(command, "reset") == 0)
-        g_print("Usage: fsearch config reset [KEY|SECTION] --yes [--rescan]\nReset is destructive and requires --yes. "
-                "--rescan applies to roots, database, excludes, or all.\n");
+        g_print("%s", _("Usage: fsearch config reset [KEY|SECTION] --yes [--rescan]\nReset is destructive and requires --yes. "
+                        "--rescan applies to roots, database, excludes, or all.\n"));
     else if (strcmp(command, "doctor") == 0)
-        g_print("Usage: fsearch config doctor\nCheck configuration readability and whether the saved index uses the "
-                "same roots and exclusions.\n");
+        g_print("%s", _("Usage: fsearch config doctor\nCheck configuration readability and whether the saved index uses the "
+                        "same roots and exclusions.\n"));
 }
 
 static void
 print_roots_help(void) {
-    g_print("Usage: fsearch config roots COMMAND [PATH] [OPTIONS]\n\n"
+    g_print("%s", _("Usage: fsearch config roots COMMAND [PATH] [OPTIONS]\n\n"
             "Commands:\n"
             "  list [--json]                List indexed roots\n"
             "  add PATH [OPTIONS]           Add a root directory\n"
@@ -177,12 +179,12 @@ print_roots_help(void) {
             "  --one-file-system, --no-one-file-system\n"
             "  --scan-after-launch, --no-scan-after-launch\n"
             "  --rescan-every SECONDS        Set periodic rescan interval; 0 disables it\n"
-            "  --rescan                      Rebuild the index immediately after saving\n");
+            "  --rescan                      Rebuild the index immediately after saving\n"));
 }
 
 static void
 print_excludes_help(void) {
-    g_print("Usage: fsearch config excludes COMMAND [PATTERN|VALUE] [OPTIONS]\n\n"
+    g_print("%s", _("Usage: fsearch config excludes COMMAND [PATTERN|VALUE] [OPTIONS]\n\n"
             "Commands:\n"
             "  list [--json]                 List exclusions\n"
             "  add PATTERN [OPTIONS]         Add an exclusion\n"
@@ -194,12 +196,12 @@ print_excludes_help(void) {
             "  --scope full-path|basename    Default: full-path\n"
             "  --target both|files|folders   Default: both\n"
             "  --active, --inactive          Add state or removal selector\n"
-            "  --rescan                      Rebuild the index immediately after saving\n");
+            "  --rescan                      Rebuild the index immediately after saving\n"));
 }
 
 static void
 print_filters_help(void) {
-    g_print("Usage: fsearch config filters COMMAND [NAME] [OPTIONS]\n\n"
+    g_print("%s", _("Usage: fsearch config filters COMMAND [NAME] [OPTIONS]\n\n"
             "Commands:\n"
             "  list [--json]                 List saved filters\n"
             "  add NAME [OPTIONS]            Add a named filter\n"
@@ -211,7 +213,7 @@ print_filters_help(void) {
             "  --macro MACRO                 Query macro name\n"
             "  --case, --no-case             Match case\n"
             "  --path, --no-path             Search full paths\n"
-            "  --regex, --no-regex           Treat query as a regular expression\n");
+            "  --regex, --no-regex           Treat query as a regular expression\n"));
 }
 
 static char *
@@ -260,11 +262,11 @@ fsearch_cli_config_gui_is_running(void) {
 static gboolean
 save_config(FsearchConfig *config) {
     if (fsearch_cli_config_gui_is_running()) {
-        g_printerr("fsearch config: close the running FSearch GUI before changing shared settings\n");
+        fsearch_cli_printerr("fsearch config: close the running FSearch GUI before changing shared settings\n");
         return FALSE;
     }
     if (!config_make_dir() || !config_save(config)) {
-        g_printerr("fsearch config: failed to save configuration\n");
+        fsearch_cli_printerr("fsearch config: failed to save configuration\n");
         return FALSE;
     }
     return TRUE;
@@ -275,7 +277,7 @@ finish_index_mutation(gboolean rescan) {
     if (rescan) {
         return FSEARCH_CLI_CONFIG_RESCAN_REQUESTED;
     }
-    g_printerr("Index configuration changed; the next CLI search will rebuild it.\n");
+    fsearch_cli_printerr("Index configuration changed; the next CLI search will rebuild it.\n");
     return 0;
 }
 
@@ -411,13 +413,13 @@ json_quote(const char *value) {
 
 static int
 unknown_option(const char *command, const char *option) {
-    g_printerr("fsearch config %s: unknown option: %s\n", command, option);
+    fsearch_cli_printerr("fsearch config %s: unknown option: %s\n", command, option);
     return 2;
 }
 
 static int
 unexpected_argument(const char *command, const char *argument) {
-    g_printerr("fsearch config %s: unexpected argument: %s\n", command, argument);
+    fsearch_cli_printerr("fsearch config %s: unexpected argument: %s\n", command, argument);
     return 2;
 }
 
@@ -444,12 +446,12 @@ run_get(FsearchConfig *config, int argc, char *argv[]) {
         }
     }
     if (!key) {
-        g_printerr("Usage: fsearch config get KEY [--json]\n");
+        fsearch_cli_printerr("Usage: fsearch config get KEY [--json]\n");
         return 2;
     }
     const ScalarSetting *setting = find_setting(key);
     if (!setting) {
-        g_printerr("fsearch config: unknown setting: %s\n", key);
+        fsearch_cli_printerr("fsearch config: unknown setting: %s\n", key);
         return 2;
     }
     g_autofree char *value = scalar_value(setting, config);
@@ -497,7 +499,7 @@ run_show(FsearchConfig *config, int argc, char *argv[]) {
             }
         }
         if (!found) {
-            g_printerr("fsearch config show: unknown section: %s\n", section);
+            fsearch_cli_printerr("fsearch config show: unknown section: %s\n", section);
             return 2;
         }
     }
@@ -545,12 +547,12 @@ run_set(FsearchConfig *config, int argc, char *argv[], gboolean reset) {
         }
     }
     if (positional_count != (reset ? 1 : 2)) {
-        g_printerr("Usage: fsearch config %s KEY%s\n", reset ? "unset" : "set", reset ? "" : " VALUE");
+        fsearch_cli_printerr("Usage: fsearch config %s KEY%s\n", reset ? "unset" : "set", reset ? "" : " VALUE");
         return 2;
     }
     const ScalarSetting *setting = find_setting(positionals[0]);
     if (!setting) {
-        g_printerr("fsearch config: unknown setting: %s\n", positionals[0]);
+        fsearch_cli_printerr("fsearch config: unknown setting: %s\n", positionals[0]);
         return 2;
     }
     g_autoptr(FsearchConfig) defaults = NULL;
@@ -561,13 +563,13 @@ run_set(FsearchConfig *config, int argc, char *argv[], gboolean reset) {
         copy_scalar_value(setting, config, defaults);
     }
     if (!reset && !set_scalar_value(setting, config, value)) {
-        g_printerr("fsearch config: invalid value for %s: %s\n", setting->key, value);
+        fsearch_cli_printerr("fsearch config: invalid value for %s: %s\n", setting->key, value);
         return 2;
     }
     if (!save_config(config))
         return 1;
     g_autofree char *saved = scalar_value(setting, config);
-    g_printerr("%s = %s\n", setting->key, saved);
+    fsearch_cli_printerr("%s = %s\n", setting->key, saved);
     return 0;
 }
 
@@ -632,7 +634,7 @@ run_roots(FsearchConfig *config, int argc, char *argv[]) {
     const gboolean set = strcmp(argv[2], "set") == 0;
     const gboolean remove = strcmp(argv[2], "remove") == 0;
     if (!add && !set && !remove) {
-        g_printerr("fsearch config roots: unknown operation: %s\n", argv[2]);
+        fsearch_cli_printerr("fsearch config roots: unknown operation: %s\n", argv[2]);
         return 2;
     }
 
@@ -686,7 +688,7 @@ run_roots(FsearchConfig *config, int argc, char *argv[]) {
         }
         else if (!positional_only && (add || set) && strcmp(argv[i], "--rescan-every") == 0) {
             if (++i >= argc) {
-                g_printerr("fsearch config roots: --rescan-every requires SECONDS\n");
+                fsearch_cli_printerr("fsearch config roots: --rescan-every requires SECONDS\n");
                 return 2;
             }
             rescan_value = argv[i];
@@ -705,29 +707,29 @@ run_roots(FsearchConfig *config, int argc, char *argv[]) {
         }
     }
     if (!path_arg) {
-        g_printerr("fsearch config roots: missing PATH\n");
+        fsearch_cli_printerr("fsearch config roots: missing PATH\n");
         return 2;
     }
     g_autofree char *path = g_canonicalize_filename(path_arg, NULL);
     g_autoptr(FsearchDatabaseInclude) old = find_root(config, path);
     if (remove) {
         if (!old) {
-            g_printerr("fsearch config roots: path not found: %s\n", path);
+            fsearch_cli_printerr("fsearch config roots: path not found: %s\n", path);
             return 2;
         }
         fsearch_database_include_manager_remove(config->includes, old);
     }
     else {
         if (!g_file_test(path, G_FILE_TEST_IS_DIR)) {
-            g_printerr("fsearch config roots: not a directory: %s\n", path);
+            fsearch_cli_printerr("fsearch config roots: not a directory: %s\n", path);
             return 2;
         }
         if (add && old) {
-            g_printerr("fsearch config roots: path already exists: %s\n", path);
+            fsearch_cli_printerr("fsearch config roots: path already exists: %s\n", path);
             return 2;
         }
         if (set && !old) {
-            g_printerr("fsearch config roots: path not found: %s\n", path);
+            fsearch_cli_printerr("fsearch config roots: path not found: %s\n", path);
             return 2;
         }
         gboolean active = old ? fsearch_database_include_get_active(old) : TRUE;
@@ -747,7 +749,7 @@ run_roots(FsearchConfig *config, int argc, char *argv[]) {
             char *end = NULL;
             rescan = g_ascii_strtoll(rescan_value, &end, 10);
             if (!end || *end || rescan < 0) {
-                g_printerr("fsearch config roots: invalid rescan duration: %s\n", rescan_value);
+                fsearch_cli_printerr("fsearch config roots: invalid rescan duration: %s\n", rescan_value);
                 return 2;
             }
         }
@@ -760,7 +762,7 @@ run_roots(FsearchConfig *config, int argc, char *argv[]) {
         return 1;
     g_autoptr(FsearchDatabaseInclude) saved = find_root(config, path);
     if (saved) {
-        g_printerr("%s\tactive=%s monitor=%s one-file-system=%s scan-after-launch=%s rescan-after=%" G_GINT64_FORMAT "\n",
+        fsearch_cli_printerr("%s\tactive=%s monitor=%s one-file-system=%s scan-after-launch=%s rescan-after=%" G_GINT64_FORMAT "\n",
                    path,
                    fsearch_database_include_get_active(saved) ? "true" : "false",
                    fsearch_database_include_get_monitored(saved) ? "true" : "false",
@@ -769,7 +771,7 @@ run_roots(FsearchConfig *config, int argc, char *argv[]) {
                    fsearch_database_include_get_rescan_after(saved));
     }
     else {
-        g_printerr("%s\n", path);
+        fsearch_cli_printerr("%s\n", path);
     }
     return finish_index_mutation(rescan_now);
 }
@@ -839,19 +841,19 @@ run_excludes(FsearchConfig *config, int argc, char *argv[]) {
         }
         bool hidden;
         if (!parse_bool(value, &hidden)) {
-            g_printerr("fsearch config excludes hidden: expected true or false\n");
+            fsearch_cli_printerr("fsearch config excludes hidden: expected true or false\n");
             return 2;
         }
         fsearch_database_exclude_manager_set_exclude_hidden(config->excludes, hidden);
         if (!save_config(config))
             return 1;
-        g_printerr("exclude-hidden = %s\n", hidden ? "true" : "false");
+        fsearch_cli_printerr("exclude-hidden = %s\n", hidden ? "true" : "false");
         return finish_index_mutation(rescan_now);
     }
     const gboolean add = strcmp(argv[2], "add") == 0;
     const gboolean remove = strcmp(argv[2], "remove") == 0;
     if (!add && !remove) {
-        g_printerr("fsearch config excludes: unknown operation: %s\n", argv[2]);
+        fsearch_cli_printerr("fsearch config excludes: unknown operation: %s\n", argv[2]);
         return 2;
     }
 
@@ -872,7 +874,7 @@ run_excludes(FsearchConfig *config, int argc, char *argv[]) {
                      || strcmp(argv[i], "--target") == 0)) {
             const char *option = argv[i];
             if (++i >= argc) {
-                g_printerr("fsearch config excludes: %s requires a value\n", option);
+                fsearch_cli_printerr("fsearch config excludes: %s requires a value\n", option);
                 return 2;
             }
             if (strcmp(option, "--type") == 0)
@@ -904,22 +906,22 @@ run_excludes(FsearchConfig *config, int argc, char *argv[]) {
         }
     }
     if (!pattern) {
-        g_printerr("fsearch config excludes: missing PATTERN\n");
+        fsearch_cli_printerr("fsearch config excludes: missing PATTERN\n");
         return 2;
     }
     if (type_str && strcmp(type_str, "fixed") != 0 && strcmp(type_str, "wildcard") != 0
         && strcmp(type_str, "regex") != 0) {
-        g_printerr("fsearch config excludes: invalid type: %s\n", type_str);
+        fsearch_cli_printerr("fsearch config excludes: invalid type: %s\n", type_str);
         return 2;
     }
     if (scope_str && strcmp(scope_str, "full-path") != 0 && strcmp(scope_str, "full_path") != 0
         && strcmp(scope_str, "basename") != 0) {
-        g_printerr("fsearch config excludes: invalid scope: %s\n", scope_str);
+        fsearch_cli_printerr("fsearch config excludes: invalid scope: %s\n", scope_str);
         return 2;
     }
     if (target_str && strcmp(target_str, "both") != 0 && strcmp(target_str, "files") != 0
         && strcmp(target_str, "folders") != 0) {
-        g_printerr("fsearch config excludes: invalid target: %s\n", target_str);
+        fsearch_cli_printerr("fsearch config excludes: invalid target: %s\n", target_str);
         return 2;
     }
     if (scope_str && strcmp(scope_str, "full-path") == 0)
@@ -949,14 +951,14 @@ run_excludes(FsearchConfig *config, int argc, char *argv[]) {
             }
         }
         if (!found) {
-            g_printerr("fsearch config excludes: exclusion not found: %s\n", pattern);
+            fsearch_cli_printerr("fsearch config excludes: exclusion not found: %s\n", pattern);
             return 2;
         }
         fsearch_database_exclude_manager_remove(config->excludes, found);
     }
     if (!save_config(config))
         return 1;
-    g_printerr("%s\n", pattern);
+    fsearch_cli_printerr("%s\n", pattern);
     return finish_index_mutation(rescan_now);
 }
 
@@ -1017,14 +1019,14 @@ run_filters(FsearchConfig *config, int argc, char *argv[]) {
         config->filters = fsearch_filter_manager_new_with_defaults();
         if (!save_config(config))
             return 1;
-        g_printerr("filters reset\n");
+        fsearch_cli_printerr("filters reset\n");
         return 0;
     }
     const gboolean add = strcmp(argv[2], "add") == 0;
     const gboolean set = strcmp(argv[2], "set") == 0;
     const gboolean remove = strcmp(argv[2], "remove") == 0;
     if (!add && !set && !remove) {
-        g_printerr("fsearch config filters: unknown operation: %s\n", argv[2]);
+        fsearch_cli_printerr("fsearch config filters: unknown operation: %s\n", argv[2]);
         return 2;
     }
 
@@ -1046,7 +1048,7 @@ run_filters(FsearchConfig *config, int argc, char *argv[]) {
                  && (strcmp(argv[i], "--query") == 0 || strcmp(argv[i], "--macro") == 0)) {
             const char *option = argv[i];
             if (++i >= argc) {
-                g_printerr("fsearch config filters: %s requires a value\n", option);
+                fsearch_cli_printerr("fsearch config filters: %s requires a value\n", option);
                 return 2;
             }
             if (strcmp(option, "--query") == 0)
@@ -1089,24 +1091,24 @@ run_filters(FsearchConfig *config, int argc, char *argv[]) {
         }
     }
     if (!name) {
-        g_printerr("fsearch config filters: missing NAME\n");
+        fsearch_cli_printerr("fsearch config filters: missing NAME\n");
         return 2;
     }
     g_autoptr(FsearchFilter) existing = fsearch_filter_manager_get_filter_for_name(config->filters, name);
     if (remove) {
         if (!existing) {
-            g_printerr("fsearch config filters: name not found: %s\n", name);
+            fsearch_cli_printerr("fsearch config filters: name not found: %s\n", name);
             return 2;
         }
         fsearch_filter_manager_remove(config->filters, existing);
     }
     else {
         if (add && existing) {
-            g_printerr("fsearch config filters: name already exists: %s\n", name);
+            fsearch_cli_printerr("fsearch config filters: name already exists: %s\n", name);
             return 2;
         }
         if (set && !existing) {
-            g_printerr("fsearch config filters: name not found: %s\n", name);
+            fsearch_cli_printerr("fsearch config filters: name not found: %s\n", name);
             return 2;
         }
         FsearchQueryFlags flags = 0;
@@ -1140,9 +1142,9 @@ run_filters(FsearchConfig *config, int argc, char *argv[]) {
         return 1;
     g_autoptr(FsearchFilter) saved = fsearch_filter_manager_get_filter_for_name(config->filters, name);
     if (saved)
-        g_printerr("%s\tmacro=%s query=%s\n", saved->name, saved->macro, saved->query);
+        fsearch_cli_printerr("%s\tmacro=%s query=%s\n", saved->name, saved->macro, saved->query);
     else
-        g_printerr("%s\n", name);
+        fsearch_cli_printerr("%s\n", name);
     return 0;
 }
 
@@ -1188,7 +1190,7 @@ run_reset(FsearchConfig *config, int argc, char *argv[]) {
         }
     }
     if (!confirmed) {
-        g_printerr("fsearch config reset requires --yes\n");
+        fsearch_cli_printerr("fsearch config reset requires --yes\n");
         return 2;
     }
     if (!target)
@@ -1196,7 +1198,7 @@ run_reset(FsearchConfig *config, int argc, char *argv[]) {
     const gboolean index_target = strcmp(target, "all") == 0 || strcmp(target, "roots") == 0
                                || strcmp(target, "database") == 0 || strcmp(target, "excludes") == 0;
     if (rescan_now && !index_target) {
-        g_printerr("fsearch config reset: --rescan requires roots, database, excludes, or all\n");
+        fsearch_cli_printerr("fsearch config reset: --rescan requires roots, database, excludes, or all\n");
         return 2;
     }
     g_autoptr(FsearchConfig) defaults = g_new0(FsearchConfig, 1);
@@ -1236,19 +1238,19 @@ run_reset(FsearchConfig *config, int argc, char *argv[]) {
     else
         matched = reset_scalar_section(config, defaults, target);
     if (!matched) {
-        g_printerr("fsearch config: unknown setting or section: %s\n", target);
+        fsearch_cli_printerr("fsearch config: unknown setting or section: %s\n", target);
         return 2;
     }
     if (!save_config(config))
         return 1;
-    g_printerr("%s settings reset\n", target);
+    fsearch_cli_printerr("%s settings reset\n", target);
     return index_target ? finish_index_mutation(rescan_now) : 0;
 }
 
 static int
 run_doctor(FsearchConfig *config, gboolean config_existed) {
     if (!config_existed) {
-        g_print("configuration: missing; defaults active\nindex: unknown\n");
+        g_print("%s", _("configuration: missing; defaults active\nindex: unknown\n"));
         return 1;
     }
     g_autofree char *database_path = g_build_filename(g_get_user_data_dir(), "fsearch", "fsearch.db", NULL);
@@ -1256,12 +1258,12 @@ run_doctor(FsearchConfig *config, gboolean config_existed) {
     g_autoptr(FsearchDatabaseExcludeManager) indexed_excludes = NULL;
     FsearchDatabaseIndexPropertyFlags flags = DATABASE_INDEX_PROPERTY_FLAG_NONE;
     if (!fsearch_database_file_load_config(database_path, &indexed_includes, &indexed_excludes, &flags)) {
-        g_print("configuration: ok\nindex: missing or unreadable\n");
+        g_print("%s", _("configuration: ok\nindex: missing or unreadable\n"));
         return 1;
     }
     const gboolean current = fsearch_database_include_manager_equal(config->includes, indexed_includes)
                           && fsearch_database_exclude_manager_equal(config->excludes, indexed_excludes);
-    g_print("configuration: ok\nindex: %s\n", current ? "current" : "stale");
+    g_print(_("configuration: ok\nindex: %s\n"), current ? _("current") : _("stale"));
     return current ? 0 : 1;
 }
 
@@ -1273,7 +1275,7 @@ fsearch_cli_config_run(int argc, char *argv[]) {
     }
     if (strcmp(argv[1], "path") == 0) {
         if (argc > 2 && (strcmp(argv[2], "--help") == 0 || strcmp(argv[2], "-h") == 0)) {
-            g_print("Usage: fsearch config path\nPrint the active FSearch configuration file path.\n");
+            g_print("%s", _("Usage: fsearch config path\nPrint the active FSearch configuration file path.\n"));
             return 0;
         }
         if (argc > 2) {
@@ -1316,6 +1318,6 @@ fsearch_cli_config_run(int argc, char *argv[]) {
         return run_filters(config, argc, argv);
     if (strcmp(argv[1], "doctor") == 0)
         return run_doctor(config, existed);
-    g_printerr("fsearch config: unknown command: %s\n", argv[1]);
+    fsearch_cli_printerr("fsearch config: unknown command: %s\n", argv[1]);
     return 2;
 }

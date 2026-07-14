@@ -34,6 +34,8 @@ run_suite() {
 if run_suite 'Meson setup' nix develop -c meson setup builddir --reconfigure; then
 	run_suite 'Meson tests' nix develop -c meson test -C builddir --print-errorlogs
 	run_suite 'Cppcheck static analysis' nix develop -c bash tests/static-analysis . builddir
+	run_suite 'gettext translation helper' nix develop -c bash tests/i18n/test_translate_po tools/translate-po
+	run_suite 'gettext catalog integrity' nix develop -c bash tests/i18n/test_catalogs .
 fi
 
 if run_suite 'release build and Meson checks' nix build .#default; then

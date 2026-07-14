@@ -323,6 +323,16 @@ Instructions can be found here:
 
 And of course: Thank you for taking the time to translate FSearch!
 
+For maintainers, `./test` verifies every shipped catalog parses correctly, is current with the extracted template, and
+includes the human-facing CLI and configuration text. The stricter command below also requires every catalog to have no
+fuzzy or untranslated strings; it is the required gate before claiming complete translation coverage:
+
+```bash
+nix develop -c bash tests/i18n/test_catalogs . --complete
+```
+
+`tools/translate-po --dry-run po/LANGUAGE.po` reports the outstanding strings in one catalog without changing it.
+
 ## Current Limitations
 
 * Sorting lots of results by *Type* can be very slow, since gathering that information is expensive, and the data isn't

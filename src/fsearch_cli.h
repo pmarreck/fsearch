@@ -30,6 +30,9 @@ fsearch_cli_format_index_progress(const char *status);
 char *
 fsearch_cli_build_scoped_query(const char *query, const char *scope_path, gboolean global);
 
+void
+fsearch_cli_printerr(const char *format, ...) G_GNUC_PRINTF(1, 2);
+
 int
 fsearch_cli_run(int argc, char *argv[]);
 

@@ -1,0 +1,92 @@
+#!/usr/bin/env bash
+
+set -u
+
+source_root=$(realpath "${1:-.}")
+mode=${2:-integrity}
+if [ "$mode" != integrity ] && [ "$mode" != --complete ]; then
+	printf 'Usage: test_catalogs [SOURCE_ROOT] [--complete]\n' >&2
+	exit 2
+fi
+require_complete=false
+if [ "$mode" = --complete ]; then
+	require_complete=true
+fi
+po_dir="$source_root/po"
+pot_file="$po_dir/fsearch.pot"
+potfiles_file="$po_dir/POTFILES.in"
+failures=0
+
+fail() {
+	printf 'i18n: %s\n' "$*" >&2
+	failures=$((failures + 1))
+}
+
+contains_line() {
+	awk -v expected="$1" '$0 == expected { found = 1 } END { exit !found }' "$2"
+}
+
+count_entries() {
+	msgattrib "$1" --no-obsolete "$2" | awk '/^msgid / { count += 1 } END { print count + 0 }'
+}
+
+for source in src/fsearch_cli.c src/fsearch_cli_config.c; do
+	if ! contains_line "$source" "$potfiles_file"; then
+		fail "missing CLI source from POTFILES.in: $source"
+	fi
+done
+
+tmp_dir=$(mktemp -d)
+trap 'rm -rf "$tmp_dir"' EXIT
+cli_pot="$tmp_dir/cli.pot"
+template_cli_pot="$tmp_dir/template-cli.pot"
+template_config_pot="$tmp_dir/template-config.pot"
+template_all_pot="$tmp_dir/template-all.pot"
+if ! xgettext \
+	--language=C \
+	--from-code=UTF-8 \
+	--keyword=_ \
+	--keyword=N_ \
+	--keyword=fsearch_cli_printerr:1 \
+	--keyword=C_:1c,2 \
+	--keyword=ngettext:1,2 \
+	--output="$cli_pot" \
+	"$source_root/src/fsearch_cli.c" \
+	"$source_root/src/fsearch_cli_config.c" >/dev/null 2>&1; then
+	fail 'could not extract CLI gettext messages'
+elif [ ! -s "$cli_pot" ]; then
+	fail 'CLI/config user-facing strings are not marked for gettext extraction'
+elif ! msggrep --location=src/fsearch_cli.c --output-file="$template_cli_pot" "$pot_file" \
+	|| ! msggrep --location=src/fsearch_cli_config.c --output-file="$template_config_pot" "$pot_file" \
+	|| ! msgcat --use-first --output-file="$template_all_pot" "$template_cli_pot" "$template_config_pot" \
+	|| ! msgcmp --use-fuzzy --use-untranslated "$template_all_pot" "$cli_pot" >/dev/null 2>&1; then
+	fail 'committed template omits one or more CLI/config gettext messages'
+fi
+
+while IFS= read -r catalog; do
+	case "$catalog" in
+		"$pot_file") continue ;;
+	esac
+
+	if ! msgfmt --check --output-file=/dev/null "$catalog" >/dev/null 2>&1; then
+		fail "invalid gettext catalog: ${catalog#"$source_root/"}"
+		continue
+	fi
+	if ! msgcmp --use-fuzzy --use-untranslated "$catalog" "$pot_file" >/dev/null 2>&1; then
+		fail "stale catalog template: ${catalog#"$source_root/"}"
+	fi
+
+	if [ "$require_complete" = true ]; then
+		fuzzy=$(count_entries --only-fuzzy "$catalog")
+		if [ "$fuzzy" -ne 0 ]; then
+			fail "fuzzy entries in ${catalog#"$source_root/"}: $fuzzy"
+		fi
+
+		untranslated=$(count_entries --untranslated "$catalog")
+		if [ "$untranslated" -ne 0 ]; then
+			fail "untranslated entries in ${catalog#"$source_root/"}: $untranslated"
+		fi
+	fi
+done < <(find "$po_dir" -maxdepth 1 -type f -name '*.po' -print | sort)
+
+exit "$failures"
