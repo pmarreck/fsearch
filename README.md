@@ -323,6 +323,11 @@ Instructions can be found here:
 
 And of course: Thank you for taking the time to translate FSearch!
 
+The current CLI/config localization checkpoint is complete for Bulgarian (`bg`), German (`de`), Spanish (`es`),
+Indonesian (`id`), Italian (`it`), Japanese (`ja`), Norwegian Bokmal (`nb_NO`), Portuguese (`pt`), Russian (`ru`),
+and Turkish (`tr`). The remaining shipped catalogs are still in progress; do not interpret this list as a complete
+translation-coverage claim.
+
 For maintainers, `./test` verifies every shipped catalog parses correctly, is current with the extracted template, and
 includes the human-facing CLI and configuration text. The stricter command below also requires every catalog to have no
 fuzzy or untranslated strings; it is the required gate before claiming complete translation coverage:
