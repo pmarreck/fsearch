@@ -12,6 +12,7 @@ complete="$tmp_dir/complete.po"
 format_catalog="$tmp_dir/format.po"
 format_bad="$tmp_dir/format-bad.po"
 format_good="$tmp_dir/format-good.po"
+syntax_bad="$tmp_dir/syntax-bad.po"
 unflagged_catalog="$tmp_dir/unflagged-format.po"
 unflagged_bad="$tmp_dir/unflagged-format-bad.po"
 large_catalog="$tmp_dir/large.po"
@@ -94,6 +95,14 @@ printf '%s\n' \
 	'msgid_plural "Do you really want to open %'"'"'d files?"' \
 	'msgstr[0] "Benetan %'"'"'d fitxategi ireki nahi dituzu?"' \
 	'msgstr[1] "Benetan %'"'"'d fitxategi ireki nahi dituzu?"' >>"$format_good"
+
+header "$format_catalog" >"$syntax_bad"
+printf '%s\n' \
+	'#, c-format' \
+	'msgid "Do you really want to open %'"'"'d file?"' \
+	'msgid_plural "Do you really want to open %'"'"'d files?"' \
+	'msgstr[0] "Benetan %'"'"'d fitxategi ireki nahi dituzu?"' \
+	'msgstr[1] "unterminated' >>"$syntax_bad"
 
 printf '%s\n' \
 	'msgid ""' \
@@ -237,6 +246,15 @@ elif [[ "$output" != *'changed a format placeholder'* ]]; then
 fi
 if [ "$before" != "$after" ]; then
 	fail 'modified the catalog after rejecting a changed format placeholder'
+fi
+
+output=$(OPENAI_API_KEY=test-key FAKE_TRANSLATION="$syntax_bad" PATH="$fake_bin:$PATH" \
+	run_translator --apply "$format_catalog" 2>&1)
+rc=$?
+if [ "$rc" -eq 0 ]; then
+	fail "accepted syntactically invalid PO output: $output"
+elif [[ "$output" != *'failed msgfmt validation'* ]]; then
+	fail "did not identify msgfmt validation failure: $output"
 fi
 
 output=$(OPENAI_API_KEY=test-key FAKE_TRANSLATION="$format_good" PATH="$fake_bin:$PATH" \

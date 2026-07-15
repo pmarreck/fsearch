@@ -402,6 +402,7 @@ while IFS= read -r batch; do
 	batch_reconciled="$tmp_dir/reconciled-$batch_number.po"
 	batch_cleaned="$translated_dir/batch-$batch_number.po"
 	batch_remaining="$tmp_dir/remaining-$batch_number.po"
+	msgfmt_error="$tmp_dir/msgfmt-$batch_number.log"
 	curl_config="$tmp_dir/curl-$batch_number.conf"
 
 	printf 'translate-po: translating batch %s/%s (%s message%s)\n' \
@@ -490,8 +491,12 @@ while IFS= read -r batch; do
 		printf 'translate-po: translated batch %s changed its required header\n' "$batch_number" >&2
 		exit 1
 	fi
-	if ! msgfmt --check --check-format --output-file=/dev/null "$batch_translation" >/dev/null 2>&1 \
-		|| ! validate_exact_printf_placeholders "$batch_translation"; then
+	if ! msgfmt --check --check-format --output-file=/dev/null "$batch_translation" 2>"$msgfmt_error"; then
+		printf 'translate-po: translated batch %s failed msgfmt validation:\n' "$batch_number" >&2
+		sed -n '1,20p' "$msgfmt_error" >&2
+		exit 1
+	fi
+	if ! validate_exact_printf_placeholders "$batch_translation"; then
 		printf 'translate-po: translated batch %s is invalid or changed a format placeholder\n' "$batch_number" >&2
 		exit 1
 	fi

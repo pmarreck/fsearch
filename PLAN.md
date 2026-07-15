@@ -102,3 +102,5 @@
   Traditional Chinese's `%'d` count and confirmation strings were manually verified before retrying its atomically rejected batch; both catalogs passed strict gettext checks with zero fuzzy and untranslated entries before commit.
 - [x] Checkpoint 6: complete Brazilian Portuguese (`pt_BR`) and Korean (`ko`) through nine and eleven streamed batches. (2026-07-15 02:19 EDT)
   Both catalogs completed atomically and passed strict gettext, header/key invariants, the full suite, and the production build before commit.
+- [x] Checkpoint 7: complete Romanian (`ro`) and Arabic (`ar`), and distinguish malformed translated PO from placeholder violations. (2026-07-15 02:38 EDT)
+  Arabic's six-form `%u` plural and pre-existing `%'d`/`%s` translations were verified before retry; the helper now reports `msgfmt` diagnostics through a red-green regression test.
