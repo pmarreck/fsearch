@@ -81,3 +81,12 @@
   Curiosity poke: test the 20-entry boundary and preserve the bearer token's exclusion from process arguments.
 - [x] Re-run Basque through the new path, validate its format placeholders, and update the checkpoint only if the whole catalog passes independently. (2026-07-14 23:09 EDT)
   Curiosity poke: `%'d` must remain distinct from `%d` in plural translations.
+
+# Full Catalog Translation (2026-07-15)
+
+- [ ] Complete the 31 remaining catalogs: 5,963 incomplete entries require 316 twenty-entry streamed requests.
+  Run no more than two disjoint catalogs concurrently from canonical `master`, validate and commit small checkpoints, and preserve atomic per-catalog updates. Curiosity poke: rate-limit or stream failure must leave that catalog unchanged and stop the affected checkpoint.
+- [ ] Obtain an independent read-only review of each pushed translation checkpoint from `fsearch-i18n`.
+  Curiosity poke: the reviewer must validate the committed artifacts rather than trusting the producer's helper or summaries.
+- [x] Checkpoint 1: complete French (`fr`) and Dutch (`nl`) through seven streamed batches each. (2026-07-15 01:16 EDT)
+  Both catalogs passed strict gettext checks with zero fuzzy and untranslated entries before commit.
