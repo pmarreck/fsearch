@@ -14,11 +14,13 @@ allowing an explicit `FSEARCH_TRANSLATE_BATCH_SIZE` override for models or
 hardware that have been measured to sustain a larger batch safely.
 
 Schema-constrained Gemma responses can still remove an escaped quote from PO
-text or copy a non-English AppStream semicolon keyword list unchanged.
-Require PO escape preservation and explicitly describe the semicolon-list
-translation rule (with a short example) in every request, then independently
-reject malformed PO and unchanged non-English lists. Temperature zero reduces
-variation but does not make local GPU generation bitwise deterministic.
+text or copy a non-English AppStream semicolon keyword list unchanged. Require
+valid PO syntax, invite typographic Unicode quotation marks in translated
+prose to avoid fragile ASCII escaping, and explicitly describe the
+semicolon-list translation rule (with a short example) in every request. Then
+independently reject malformed PO and unchanged non-English lists. Temperature
+zero reduces variation but does not make local GPU generation bitwise
+deterministic.
 
 The PO header is source-owned metadata, not translated content. Restore it
 from the source catalog before validating a completed response, then treat a
