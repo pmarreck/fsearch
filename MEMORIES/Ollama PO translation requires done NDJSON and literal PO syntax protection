@@ -7,3 +7,8 @@ Gemma 4 returned valid JSON but initially rewrote the required GNU PO keyword
 `msgid` as `msg_id`, which `msgfmt` correctly rejected. Keep temperature at
 zero and explicitly require immutable PO keywords, while preserving the
 existing PO, gettext, exact-printf, completeness, and atomic-merge gates.
+
+With the locally configured 4K context, a real full-catalog 20-entry request
+truncated its JSON response. Keep the Ollama default at ten entries, while
+allowing an explicit `FSEARCH_TRANSLATE_BATCH_SIZE` override for models or
+hardware that have been measured to sustain a larger batch safely.

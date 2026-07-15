@@ -10,6 +10,9 @@ catalog="$tmp_dir/catalog.po"
 ollama_catalog="$tmp_dir/ollama-catalog.po"
 ollama_env_catalog="$tmp_dir/ollama-env-catalog.po"
 ollama_error_catalog="$tmp_dir/ollama-error-catalog.po"
+ollama_batch_catalog="$tmp_dir/ollama-batch-catalog.po"
+ollama_batch_one="$tmp_dir/ollama-batch-one.po"
+ollama_batch_two="$tmp_dir/ollama-batch-two.po"
 partial="$tmp_dir/partial.po"
 complete="$tmp_dir/complete.po"
 multiline_catalog="$tmp_dir/multiline.po"
@@ -20,6 +23,9 @@ format_good="$tmp_dir/format-good.po"
 syntax_bad="$tmp_dir/syntax-bad.po"
 unflagged_catalog="$tmp_dir/unflagged-format.po"
 unflagged_bad="$tmp_dir/unflagged-format-bad.po"
+keyword_catalog="$tmp_dir/keyword-catalog.po"
+keyword_unchanged="$tmp_dir/keyword-unchanged.po"
+keyword_translated="$tmp_dir/keyword-translated.po"
 large_catalog="$tmp_dir/large.po"
 large_batch_one="$tmp_dir/large-batch-one.po"
 large_batch_two="$tmp_dir/large-batch-two.po"
@@ -156,6 +162,24 @@ printf '%s\n' \
 	'msgid "%s\tactive=%s"' \
 	'msgstr "active=%s"' >>"$unflagged_bad"
 
+header "$catalog" >"$keyword_catalog"
+printf '%s\n' \
+	'#: data/io.github.cboxdoerfer.FSearch.desktop.in.in:10' \
+	'msgid "search;fsearch;files;folders;music;video;documents;find;tool;everything;"' \
+	'msgstr ""' >>"$keyword_catalog"
+
+header "$keyword_catalog" >"$keyword_unchanged"
+printf '%s\n' \
+	'#: data/io.github.cboxdoerfer.FSearch.desktop.in.in:10' \
+	'msgid "search;fsearch;files;folders;music;video;documents;find;tool;everything;"' \
+	'msgstr "search;fsearch;files;folders;music;video;documents;find;tool;everything;"' >>"$keyword_unchanged"
+
+header "$keyword_catalog" >"$keyword_translated"
+printf '%s\n' \
+	'#: data/io.github.cboxdoerfer.FSearch.desktop.in.in:10' \
+	'msgid "search;fsearch;files;folders;music;video;documents;find;tool;everything;"' \
+	'msgstr "recherche;fsearch;fichiers;dossiers;musique;video;documents;trouver;outil;tout;"' >>"$keyword_translated"
+
 printf '%s\n' \
 	"#!$BASH" \
 	'data_file=""' \
@@ -264,8 +288,13 @@ printf '%s\n' \
 	'if [ "$endpoint" != "${FAKE_OLLAMA_URL}/api/chat" ]; then printf "unexpected Ollama endpoint: %s\\n" "$endpoint" >&2; exit 92; fi' \
 	'if [ "$no_buffer" != true ] || [ "$max_time" != 900 ] || [ "$speed_limit" != 1 ] || [ "$speed_time" != 60 ]; then printf "Ollama request did not use the streaming timeout policy\\n" >&2; exit 91; fi' \
 	'if ! jq -e '\'' .model == "gemma4:12b" and .stream == true and .think == false and .options.temperature == 0 and .options.num_predict == 10000 and .format.required == ["po"] and ([.messages[].role] == ["system", "user"]) and ([.messages[].content] | join("\n") | contains("Never write msg_id")) '\'' "$request_path" >/dev/null; then printf "Ollama request did not use the required structured schema or immutable-PO defaults\\n" >&2; exit 90; fi' \
+	'call=1' \
+	'if [ -n "${FAKE_OLLAMA_COUNT_FILE-}" ]; then if [ -s "$FAKE_OLLAMA_COUNT_FILE" ]; then call=$(($(cat "$FAKE_OLLAMA_COUNT_FILE") + 1)); fi; printf "%s\\n" "$call" >"$FAKE_OLLAMA_COUNT_FILE"; fi' \
+	'if [ -n "${FAKE_OLLAMA_EXPECT_BATCH_SIZES-}" ]; then expected=$(printf "%s" "$FAKE_OLLAMA_EXPECT_BATCH_SIZES" | cut -d, -f "$call"); actual=$(jq -r '\''.messages[1].content'\'' "$request_path" | awk '\''/^msgid / && $0 != "msgid \"\"" { count += 1 } END { print count + 0 }'\''); if [ "$actual" != "$expected" ]; then printf "expected Ollama batch %s to contain %s entries, got %s\\n" "$call" "$expected" "$actual" >&2; exit 89; fi; fi' \
 	'if [ "${FAKE_OLLAMA_ERROR-false}" = true ]; then jq -nc '\''{error:"model rejected request"}'\''; exit 0; fi' \
-	'translation=$(jq -n --rawfile po "$FAKE_TRANSLATION" '\''{po:$po}'\'')' \
+	'translation_path=$(printenv "FAKE_OLLAMA_TRANSLATION_$call" 2>/dev/null || true)' \
+	'if [ -z "$translation_path" ]; then translation_path=${FAKE_TRANSLATION-}; fi' \
+	'translation=$(jq -n --rawfile po "$translation_path" '\''{po:$po}'\'')' \
 	'first=${translation:0:7}' \
 	'rest=${translation:7}' \
 	'for content in "$first" "$rest"; do jq -nc --arg content "$content" '\''{model:"gemma4:12b", message:{role:"assistant", content:$content}, done:false}'\''; done' \
@@ -324,6 +353,27 @@ for reference in source-one source-two; do
 		fail "discarded source reference: $reference"
 	fi
 done
+
+before=$(sha256sum "$keyword_catalog" | awk '{ print $1 }')
+output=$(OPENAI_API_KEY=test-key FAKE_TRANSLATION="$keyword_unchanged" PATH="$fake_bin:$PATH" \
+	run_translator --apply "$keyword_catalog" 2>&1)
+rc=$?
+after=$(sha256sum "$keyword_catalog" | awk '{ print $1 }')
+if [ "$rc" -eq 0 ]; then
+	fail "accepted an unchanged desktop discovery keyword list: $output"
+elif [[ "$output" != *'left a desktop keyword list unchanged'* ]]; then
+	fail "rejected an unchanged desktop discovery keyword list unclearly: $output"
+fi
+if [ "$before" != "$after" ]; then
+	fail 'modified the catalog after rejecting an unchanged desktop discovery keyword list'
+fi
+
+output=$(OPENAI_API_KEY=test-key FAKE_TRANSLATION="$keyword_translated" PATH="$fake_bin:$PATH" \
+	run_translator --apply "$keyword_catalog" 2>&1)
+rc=$?
+if [ "$rc" -ne 0 ]; then
+	fail "rejected a localized desktop discovery keyword list: $output"
+fi
 
 before=$(sha256sum "$ollama_error_catalog" | awk '{ print $1 }')
 output=$(env -u OPENAI_API_KEY FAKE_OLLAMA_URL=http://127.0.0.1:11434 FAKE_OLLAMA_ERROR=true \
@@ -481,6 +531,33 @@ elif [ "$(cat "$override_count_file")" -ne 3 ]; then
 	fail "used $(cat "$override_count_file") requests for a 21-entry catalog with a batch size of 10 instead of three"
 elif msgattrib --untranslated --no-obsolete "$override_catalog" | awk '/^msgid / { found = 1 } END { exit found ? 0 : 1 }'; then
 	fail 'left an untranslated entry after applying configured batches'
+fi
+
+header "$catalog" >"$ollama_batch_catalog"
+header "$catalog" >"$ollama_batch_one"
+header "$catalog" >"$ollama_batch_two"
+for ((number = 1; number <= 11; number += 1)); do
+	printf -v label '%02d' "$number"
+	printf '%s\n' "msgid \"local entry $label\"" 'msgstr ""' '' >>"$ollama_batch_catalog"
+	if [ "$number" -le 10 ]; then
+		printf '%s\n' "msgid \"local entry $label\"" "msgstr \"LOCAL ENTRY $label\"" '' >>"$ollama_batch_one"
+	else
+		printf '%s\n' "msgid \"local entry $label\"" "msgstr \"LOCAL ENTRY $label\"" '' >>"$ollama_batch_two"
+	fi
+done
+
+ollama_count_file="$tmp_dir/ollama-curl-count"
+output=$(env -u OPENAI_API_KEY FSEARCH_TRANSLATE_BACKEND=ollama FAKE_OLLAMA_URL=http://127.0.0.1:11434 \
+	FAKE_OLLAMA_COUNT_FILE="$ollama_count_file" FAKE_OLLAMA_EXPECT_BATCH_SIZES=10,1 \
+	FAKE_OLLAMA_TRANSLATION_1="$ollama_batch_one" FAKE_OLLAMA_TRANSLATION_2="$ollama_batch_two" \
+	PATH="$fake_ollama_bin:$PATH" bash "$translator" --apply "$ollama_batch_catalog" 2>&1)
+rc=$?
+if [ "$rc" -ne 0 ]; then
+	fail "rejected a valid Ollama-default batch size: $output"
+elif [ "$(cat "$ollama_count_file")" -ne 2 ]; then
+	fail "used $(cat "$ollama_count_file") Ollama requests for an 11-entry catalog instead of two"
+elif msgattrib --untranslated --no-obsolete "$ollama_batch_catalog" | awk '/^msgid / { found = 1 } END { exit found ? 0 : 1 }'; then
+	fail 'left an untranslated entry after applying Ollama-default batches'
 fi
 
 exit "$failures"

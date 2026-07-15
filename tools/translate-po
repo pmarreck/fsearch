@@ -2,21 +2,23 @@
 
 set -u
 
-batch_size=${FSEARCH_TRANSLATE_BATCH_SIZE:-20}
+batch_size=${FSEARCH_TRANSLATE_BATCH_SIZE-}
 max_output_tokens=10000
 stream_max_time=900
 stream_idle_seconds=60
 stream_idle_bytes=1
 
-case "$batch_size" in
-	''|*[!0-9]*)
+if [ -n "$batch_size" ]; then
+	case "$batch_size" in
+		*[!0-9]*)
+			printf 'translate-po: FSEARCH_TRANSLATE_BATCH_SIZE must be a positive integer\n' >&2
+			exit 2
+			;;
+	esac
+	if [ "$batch_size" -lt 1 ]; then
 		printf 'translate-po: FSEARCH_TRANSLATE_BATCH_SIZE must be a positive integer\n' >&2
 		exit 2
-		;;
-esac
-if [ "$batch_size" -lt 1 ]; then
-	printf 'translate-po: FSEARCH_TRANSLATE_BATCH_SIZE must be a positive integer\n' >&2
-	exit 2
+	fi
 fi
 
 usage() {
@@ -213,6 +215,79 @@ validate_exact_printf_placeholders() {
 	' "$1"
 }
 
+validate_desktop_keyword_translation() {
+	local catalog=$1
+	local locale=$2
+
+	case "$locale" in
+		en|en_*) return 0 ;;
+	esac
+
+	awk '
+		function quoted_text(line,    value) {
+			value = line
+			sub(/^[^"]*"/, "", value)
+			sub(/"$/, "", value)
+			return value
+		}
+
+		function clear_entry() {
+			entry_is_desktop = 0
+			msgid = ""
+			msgstr = ""
+			current_field = ""
+		}
+
+		function check_entry() {
+			if (entry_is_desktop && msgid ~ /^[^;]+;[^;]+;/ && msgstr == msgid) {
+				printf "translate-po: non-English desktop keyword list remained unchanged: %s\n", msgid > "/dev/stderr"
+				validation_failed = 1
+				exit 1
+			}
+		}
+
+		BEGIN {
+			clear_entry()
+		}
+
+		/^#:/ {
+			if ($0 ~ /data\/[^[:space:]]+\.desktop[^[:space:]]*:[0-9]+/)
+				entry_is_desktop = 1
+			next
+		}
+
+		/^msgid / {
+			msgid = quoted_text($0)
+			current_field = "msgid"
+			next
+		}
+
+		/^msgstr / {
+			msgstr = quoted_text($0)
+			current_field = "msgstr"
+			next
+		}
+
+		/^"/ {
+			if (current_field == "msgid")
+				msgid = msgid quoted_text($0)
+			else if (current_field == "msgstr")
+				msgstr = msgstr quoted_text($0)
+			next
+		}
+
+		/^$/ {
+			check_entry()
+			clear_entry()
+		}
+
+		END {
+			if (!validation_failed)
+				check_entry()
+		}
+	' "$catalog"
+}
+
 split_batches() {
 	local source=$1
 	local output_dir=$2
@@ -364,6 +439,13 @@ if [ -z "$model" ]; then
 	case "$backend" in
 		openai) model='gpt-5.6' ;;
 		ollama) model='gemma4:12b' ;;
+	esac
+fi
+
+if [ -z "$batch_size" ]; then
+	case "$backend" in
+		openai) batch_size=20 ;;
+		ollama) batch_size=10 ;;
 	esac
 fi
 
@@ -622,6 +704,10 @@ while IFS= read -r batch; do
 	fi
 	if ! validate_exact_printf_placeholders "$batch_translation"; then
 		printf 'translate-po: translated batch %s is invalid or changed a format placeholder\n' "$batch_number" >&2
+		exit 1
+	fi
+	if ! validate_desktop_keyword_translation "$batch_translation" "$locale"; then
+		printf 'translate-po: translated batch %s left a desktop keyword list unchanged\n' "$batch_number" >&2
 		exit 1
 	fi
 	if ! msgmerge --no-fuzzy-matching --output-file="$batch_reconciled" "$batch_translation" "$batch" \

@@ -339,8 +339,9 @@ tools/translate-po --apply --backend ollama po/LANGUAGE.po
 
 Set `FSEARCH_OLLAMA_URL` to use a non-default Ollama endpoint, select a different local model with `--model`, or use
 `FSEARCH_TRANSLATE_BACKEND=ollama` to make the local backend the default for a translation session. Both backends send
-at most 20 entries per streamed request and replace a catalog only after every batch completes and passes PO, gettext,
-and exact printf-placeholder validation.
+bounded streamed batches and replace a catalog only after every batch completes and passes PO, gettext, and exact
+printf-placeholder validation. OpenAI defaults to 20 entries per batch; local Ollama defaults to 10 for its practical
+context budget, and `FSEARCH_TRANSLATE_BATCH_SIZE` explicitly overrides either default.
 
 ## Current Limitations
 
