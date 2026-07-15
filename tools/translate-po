@@ -34,21 +34,79 @@ validate_exact_printf_placeholders() {
 			return value
 		}
 
-		function placeholders(text,    i, text_length, start, character, tokens) {
+		function is_digit(character) {
+			return character ~ /[0-9]/
+		}
+
+		function is_conversion(character) {
+			return character ~ /[aAcCdDeEfFgGimnOoPsSuUxX%]/
+		}
+
+		function printf_token(text, start,    i, text_length, first_digit, character, pair) {
+			text_length = length(text)
+			i = start + 1
+			if (i > text_length)
+				return ""
+			if (substr(text, i, 1) == "%")
+				return "%%"
+
+			first_digit = i
+			while (i <= text_length && is_digit(substr(text, i, 1)))
+				i += 1
+			if (i > first_digit && substr(text, i, 1) == "$")
+				i += 1
+			else
+				i = first_digit
+
+			while (i <= text_length && substr(text, i, 1) ~ /[-+ #0'\'']/)
+				i += 1
+			if (substr(text, i, 1) == "*") {
+				i += 1
+				first_digit = i
+				while (i <= text_length && is_digit(substr(text, i, 1)))
+					i += 1
+				if (i > first_digit && substr(text, i, 1) == "$")
+					i += 1
+			} else {
+				while (i <= text_length && is_digit(substr(text, i, 1)))
+					i += 1
+			}
+
+			if (substr(text, i, 1) == ".") {
+				i += 1
+				if (substr(text, i, 1) == "*") {
+					i += 1
+					first_digit = i
+					while (i <= text_length && is_digit(substr(text, i, 1)))
+						i += 1
+					if (i > first_digit && substr(text, i, 1) == "$")
+						i += 1
+				} else {
+					while (i <= text_length && is_digit(substr(text, i, 1)))
+						i += 1
+				}
+			}
+
+			pair = substr(text, i, 2)
+			if (pair == "hh" || pair == "ll")
+				i += 2
+			else if (substr(text, i, 1) ~ /[hljztLq]/)
+				i += 1
+			if (is_conversion(substr(text, i, 1)))
+				return substr(text, start, i - start + 1)
+			return ""
+		}
+
+		function placeholders(text,    i, text_length, token, tokens) {
 			text_length = length(text)
 			for (i = 1; i <= text_length; i += 1) {
 				if (substr(text, i, 1) != "%")
 					continue
-				start = i
-				i += 1
-				while (i <= text_length) {
-					character = substr(text, i, 1)
-					if (character ~ /[aAcdeEfFgGimnoOpPsSuUxX%]/) {
-						tokens = tokens "\034" substr(text, start, i - start + 1)
-						break
-					}
-					i += 1
-				}
+				token = printf_token(text, i)
+				if (token == "")
+					continue
+				tokens = tokens "\034" token
+				i += length(token) - 1
 			}
 			return tokens
 		}
@@ -64,12 +122,12 @@ validate_exact_printf_placeholders() {
 		}
 
 		function check_entry(    expected, item_index) {
-			if (!entry_is_c_format)
-				return
 			expected = placeholders(msgid)
+			if (!entry_is_c_format && expected == "")
+				return
 			for (item_index = 1; item_index <= translation_count; item_index += 1) {
 				if (placeholders(translations[item_index]) != expected) {
-					printf "translate-po: c-format translation changed a printf placeholder\n" > "/dev/stderr"
+					printf "translate-po: translation changed a printf placeholder\n" > "/dev/stderr"
 					validation_failed = 1
 					exit 1
 				}

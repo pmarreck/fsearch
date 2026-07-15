@@ -81,6 +81,8 @@
   Curiosity poke: test the 20-entry boundary and preserve the bearer token's exclusion from process arguments.
 - [x] Re-run Basque through the new path, validate its format placeholders, and update the checkpoint only if the whole catalog passes independently. (2026-07-14 23:09 EDT)
   Curiosity poke: `%'d` must remain distinct from `%d` in plural translations.
+- [x] Validate printf placeholders even when gettext omitted the `c-format` flag. (2026-07-15 01:25 EDT)
+  The independent reviewer found an unflagged multi-`%s` config dump; regression coverage proves it cannot be altered silently.
 
 # Full Catalog Translation (2026-07-15)
 

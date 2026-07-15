@@ -12,6 +12,8 @@ complete="$tmp_dir/complete.po"
 format_catalog="$tmp_dir/format.po"
 format_bad="$tmp_dir/format-bad.po"
 format_good="$tmp_dir/format-good.po"
+unflagged_catalog="$tmp_dir/unflagged-format.po"
+unflagged_bad="$tmp_dir/unflagged-format-bad.po"
 large_catalog="$tmp_dir/large.po"
 large_batch_one="$tmp_dir/large-batch-one.po"
 large_batch_two="$tmp_dir/large-batch-two.po"
@@ -92,6 +94,21 @@ printf '%s\n' \
 	'msgid_plural "Do you really want to open %'"'"'d files?"' \
 	'msgstr[0] "Benetan %'"'"'d fitxategi ireki nahi dituzu?"' \
 	'msgstr[1] "Benetan %'"'"'d fitxategi ireki nahi dituzu?"' >>"$format_good"
+
+printf '%s\n' \
+	'msgid ""' \
+	'msgstr ""' \
+	'"Language: xx\n"' \
+	'"Content-Type: text/plain; charset=UTF-8\n"' \
+	'"Content-Transfer-Encoding: 8bit\n"' \
+	'' \
+	'msgid "%s\tactive=%s"' \
+	'msgstr ""' >"$unflagged_catalog"
+
+header "$unflagged_catalog" >"$unflagged_bad"
+printf '%s\n' \
+	'msgid "%s\tactive=%s"' \
+	'msgstr "active=%s"' >>"$unflagged_bad"
 
 printf '%s\n' \
 	"#!$BASH" \
@@ -227,6 +244,20 @@ output=$(OPENAI_API_KEY=test-key FAKE_TRANSLATION="$format_good" PATH="$fake_bin
 rc=$?
 if [ "$rc" -ne 0 ]; then
 	fail "rejected a translation that preserved %'d: $output"
+fi
+
+before=$(sha256sum "$unflagged_catalog" | awk '{ print $1 }')
+output=$(OPENAI_API_KEY=test-key FAKE_TRANSLATION="$unflagged_bad" PATH="$fake_bin:$PATH" \
+	run_translator --apply "$unflagged_catalog" 2>&1)
+rc=$?
+after=$(sha256sum "$unflagged_catalog" | awk '{ print $1 }')
+if [ "$rc" -eq 0 ]; then
+	fail "accepted a changed placeholder without a c-format flag: $output"
+elif [[ "$output" != *'changed a format placeholder'* ]]; then
+	fail "rejected the unflagged changed placeholder for an unexpected reason: $output"
+fi
+if [ "$before" != "$after" ]; then
+	fail 'modified the catalog after rejecting an unflagged changed placeholder'
 fi
 
 output=$(run_translator --dry-run "$catalog" 2>&1)

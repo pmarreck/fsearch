@@ -3,6 +3,7 @@ the previous non-streamed Responses request before its 180-second timeout.
 `tools/translate-po` therefore sends at most 20 PO entries per streamed
 request, requires `response.completed`, and treats a 60-second byte-idle gap
 as failed. GNU gettext accepts compatible printf directives, so
-`msgfmt --check-format` alone does not reject `%d` in place of `%'d`; the
-helper must also compare each `c-format` translation's directive sequence
-exactly before it atomically updates a catalog.
+`msgfmt --check-format` alone does not reject `%d` in place of `%'d`, and it
+skips entries that extraction did not flag as `c-format`; the helper must
+compare every detected printf directive sequence exactly before it atomically
+updates a catalog.
