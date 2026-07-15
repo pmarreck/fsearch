@@ -1785,7 +1785,7 @@ msgstr "성능 및 고급 기능에 중점을 둔 파일 검색 프로그램"
 msgid "search;fsearch;files;folders;music;video;documents;find;tool;everything;"
 msgstr ""
 "search;fsearch;files;folders;music;video;documents;find;tool;everything;검색;"
-"파일;폴더;음악;비디오;문서;찾기;도구;"
+"파일;폴더;음악;비디오;문서;찾기;도구;모든 것;"
 
 #: data/io.github.cboxdoerfer.FSearch.desktop.in.in:12
 msgid "File Search Utility"
