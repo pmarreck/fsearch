@@ -19,326 +19,275 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n >= 2 && (n < 11 || n > 99);\n"
 "X-Generator: Weblate 4.3.2-dev\n"
 
-#: data/io.github.cboxdoerfer.FSearch.desktop.in.in:4 src/main.c:36
-msgid "FSearch"
-msgstr "FSearch"
-
 #: data/io.github.cboxdoerfer.FSearch.desktop.in.in:5
 msgid "A file search application focusing on performance and advanced features"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.desktop.in.in:10
-msgid "search;fsearch;files;folders;music;video;documents;find;tool;everything;"
-msgstr "rzu;fsearch;ifuyla;isdawen;aẓawan;avidyu;inatamen;af;imis;maṛṛa;"
-
-#: data/io.github.cboxdoerfer.FSearch.desktop.in.in:12
-#, fuzzy
-msgid "File Search Utility"
-msgstr "FSearch"
+msgstr "Asnas n unadi n ifuyla i yettwassnen s tmellit d tmahilin leqqayen"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:8
 msgid "A graphical file search application"
-msgstr ""
+msgstr "Asnas udlif n unadi n ifuyla"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:10
 msgid ""
 "FSearch helps you to find files and folders as easy and fast as possible. "
 "Just type a few letters and search results will appear almost instantly."
 msgstr ""
+"FSearch ad ak-iɛawen ad tafeḍ ifuyla d ikaramen s shala u s zzerb. Ari kan "
+"kra n isekkilen, igmaḍ n unadi ad d-banen din din."
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:14
 msgid ""
 "There are a lot of features which make searching as efficient and powerful "
 "as possible. Such as:"
 msgstr ""
+"Llan waṭas n tmahilin i yettarran anadi d amellal u d uzmir s wayen akk "
+"izemren. Am:"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:19
 msgid ""
 "Ignore case (e.g. searching for \"<code>fsearch</code>\" will match "
 "\"FSearch\" as well)"
 msgstr ""
+"Ttu talɣa n usekkil (amedya, anadi ɣef \"<code>fsearch</code>\" ad yemṣada "
+"ula d \"FSearch\")"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:20
 msgid "Regular expressions"
-msgstr ""
+msgstr "Tinfaliyin tiluganin"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:21
 msgid "Wildcard support"
-msgstr ""
+msgstr "Tadhelt n isekkilen ilelliyen"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:22
 msgid "Filter support (e.g. only search for audio files)"
-msgstr ""
+msgstr "Tadhelt n testayin (amedya, nadi kan ifuyla imeslawen)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:23
 msgid "Exclude certain files and folders"
-msgstr ""
+msgstr "Suffeɣ kra n ifuyla d ikaramen seg unadi"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:24
 msgid "Fast sort by name, path, size, modification time and extension"
-msgstr ""
+msgstr "Asmizzwer arurad s yisem, abrid, tiddi, akud n usnifel d useɣzef"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:26
 msgid ""
 "<em>Note:</em> Due to Flatpak's sandboxing, FSearch can't find every file on "
 "your system."
 msgstr ""
+"<em>Tamawt:</em> Ssebba n usgdel n Flatpak, FSearch ur izmir ad yaf yal "
+"afaylu deg unagraw inek."
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:35
 msgid "The default UI layout"
-msgstr ""
+msgstr "Taneɣruft n ugrudem tamezwert"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:41
 msgid "A layout more closely following GNOME HIGs"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:49
-#, fuzzy
-msgid "search"
-msgstr "Rzu"
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:50
-#, fuzzy
-msgid "fsearch"
-msgstr "Rzu"
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:51
-#, fuzzy
-msgid "files"
-msgstr "Ifuyla"
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:52
-#, fuzzy
-msgid "folders"
-msgstr "Isdawen"
+msgstr "Taneɣruft iḍefren s waṭas GNOME HIGs"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:53
 msgid "music"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:54
-#, fuzzy
-msgid "video"
-msgstr "Ividyuten"
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:55
-#, fuzzy
-msgid "documents"
-msgstr "Inatamn"
+msgstr "aẓawan"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:56
 msgid "find"
-msgstr ""
+msgstr "af"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:57
 msgid "tool"
-msgstr ""
+msgstr "ifecku"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:58
 msgid "everything"
-msgstr ""
+msgstr "kullu"
 
 #. Kept for appstreamcli < 1.0 (e.g. Ubuntu 20.04/22.04 PPA builds), which doesn't know <developer>.
 #. Translators: please do NOT translate this.
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:77
 msgid "Christian Boxdörfer"
-msgstr ""
+msgstr "Christian Boxdörfer"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:89
 msgid "DB rewrite"
-msgstr ""
+msgstr "Allus n tira n DB"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:90
 msgid "DB: Add support for filesystem monitoring"
-msgstr ""
+msgstr "DB: Rnu tallalt i usenqed n unagraw n yifuyla"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:91
 msgid ""
 "DB: Allow files and folders to be excluded based on fixed patterns, "
 "wildcards or regular expressions"
 msgstr ""
+"DB: Sireg asuffeɣ n ifuyla d ikaramen almend n udlifen usbiḍen, idlifen "
+"ilelliyen neɣ tinfaliyin tiluganin"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:92
 msgid ""
 "DB: Allow included folders to be scheduled and scanned after launch "
 "independently"
 msgstr ""
+"DB: Sireg ad ttusɣewsen ikaramen yedduklen, sakin ad ttusiggen deffir n "
+"usker s tlelli"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:93
 msgid "DB: Make rescanning more efficient"
-msgstr ""
+msgstr "DB: Err asiggez tikelt-nniḍen d ufellal ugar"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:94
 msgid "DB: Store database config in DB file"
-msgstr ""
+msgstr "DB: Sekles tawila n taffa n isefka deg ufaylu DB"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:95
 msgid "DB: Add checksum to DB file"
-msgstr ""
+msgstr "DB: Rnu tangalt n usenqed i ufaylu DB"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:96
 msgid "Make icon and file info gathering asynchronous (no UI blocking)"
-msgstr ""
+msgstr "Err alqaḍ n isallen n tignit d ufaylu war amtawa (ulac asewḥel n UI)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:97
 msgid "Reduce memory usage"
-msgstr ""
+msgstr "Senɣes aseqdec n tkatut"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:98
 msgid "Add contextual help for all preferences"
-msgstr ""
+msgstr "Rnu tallalt tanattalt i yismenyifen akk"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:99
 msgid "Numerous bug fixes and stability and performance improvements"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:106
-#, fuzzy
-msgid "New search engine"
-msgstr "FSearch"
+msgstr "Aṭas n useɣti n tuccḍiwin d usnerni n urkad akked tmellit"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:107
 msgid "Greatly improved highlighting of search terms"
-msgstr ""
+msgstr "Asnerni meqqren n usebrureq n wawalen n unadi"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:108
 msgid "Custom filters"
-msgstr ""
+msgstr "ⵉⵙⵜⴰⵢⵏ ⵉⵎⵢⴰⵙⵙⴰⵏ"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:109
 msgid "Improved sort performance"
-msgstr ""
+msgstr "ⴰⵙⵙⴼⵔⴰⵔ ⵏ ⵜⵎⵓⵔⵙⵜ ⵏ ⵓⵙⵎⵢⵉⵔ"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:110
 msgid "Improved scroll performance"
-msgstr ""
+msgstr "ⴰⵙⵙⴼⵔⴰⵔ ⵏ ⵜⵎⵓⵔⵙⵜ ⵏ ⵓⴷⵔⵓⵔⵉ"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:111
 msgid "Remember file selection after a database update"
-msgstr ""
+msgstr "ⵎⴽⵜⵉ ⴰⵙⵜⴰⵢ ⵏ ⵉⴼⵓⵢⵍⴰ ⵎⵏⵉⴷ ⵏ ⵓⵙⵏⴼⵍ ⵏ ⵜⴰⴷⴷⴰⵜ ⵏ ⵉⵙⴼⴽⴰ"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:112
 msgid "Automatically scroll the result list in rubberband selection mode"
-msgstr ""
+msgstr "ⴷⵔⵓⵔⵉ ⵙ ⵓⵡⵓⵔⵎⴰⵏ ⵜⴰⴱⴷⴰⵔⵜ ⵏ ⵉⴳⵎⴰⴹ ⴳ ⵓⵙⴽⴰⵔ ⵏ ⵓⵙⵜⴰⵢ ⵙ ⵓⵣⵉⵣⵣⵍ"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:113
 msgid "Invert selection with rubber band when 'Ctrl' is pressed"
-msgstr ""
+msgstr "ⵜⵜⵉ ⴰⵙⵜⴰⵢ ⵙ ⵓⵣⵉⵣⵣⵍ ⵎⵉ ⵉⵜⵜⵓⵙⵙⴰ 'Ctrl'"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:114
 msgid "Focus search entry when the main window gets activated"
-msgstr ""
+msgstr "ⵙⵔⵙ ⴰⵙⴰⵜⵉ ⵅⴼ ⵓⵏⴽⵛⵓⵎ ⵏ ⵓⵔⵣⵣⵓ ⵎⵉ ⵜⴻⵜⵜⵓⵔⵎⴰⴷ ⵜⴰⵙⴼⵍⵓⵜ ⵜⴰⵎⴰⵜⴰⵔⵜ"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:115
 msgid "Add filter for applications (i.e. .desktop files)"
-msgstr ""
+msgstr "ⵔⵏⵓ ⴰⵙⵜⴰⵢ ⵉ ⵉⵙⵏⴰⵙⵏ (ⴰⵎ .desktop ⵉⴼⵓⵢⵍⴰ)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:116
 msgid ""
 "Add option to launch applications directly instead of opening the .desktop "
 "files"
-msgstr ""
+msgstr "ⵔⵏⵓ ⵜⴰⵏⴰⵙⵜ ⵉ ⵓⵙⵏⴽⵔ ⵏ ⵉⵙⵏⴰⵙⵏ ⵙⵔⵉⴷ ⴳ ⵓⵎⴹⵉⵇ ⵏ ⵓⵍⴷⴰⵢ ⵏ .desktop ⵉⴼⵓⵢⵍⴰ"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:117
 msgid "Show application icons for .desktop files"
-msgstr ""
+msgstr "ⵙⵙⴽⵏ ⵜⵉⴽⵓⵏⴰ ⵏ ⵉⵙⵏⴰⵙⵏ ⵉ .desktop ⵉⴼⵓⵢⵍⴰ"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:118
 msgid "Add .odp and .ods files to document filter"
-msgstr ""
+msgstr "Rnu ifuyla .odp d .ods ɣer imsizdeg n isemliyen"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:119
 msgid ""
 "'Open with' menu now only shows applications which can handle the selected "
 "files"
 msgstr ""
+"Umuɣ 'Ldi s' tura isskan-d kan isnasen izemren ad sfekren ifuyla ittwafernen"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:120
 msgid ""
 "Improved opening of multiple files with the same type (they get now passed "
 "as a list to applications, instead of one by one)"
 msgstr ""
+"Allus n kra n ifuyla n wanaw yan ibedda (tura ad ttunefken i isnasen am "
+"tebdart, deg umḍiq n yiwen s yiwen)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:121
 msgid "Better support for opening files in sandboxed mode"
-msgstr ""
+msgstr "Tadhelt ifulkin i ulday n ifuyla deg uskar n sandbox"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:122
 msgid ""
 "Add menu items with links to the issue tracker, forum and donation pages"
 msgstr ""
+"Rnu iferdisen n wumuɣ s iseɣwan ɣer umsḍfar n wuguren, anmager d isebtar n "
+"tewsa"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:123
 msgid "Improve support for non-Linux systems"
-msgstr ""
+msgstr "Sifrer tadhelt i inagrawen ur nelli d Linux"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:124
 msgid ""
 "Add option to exit FSearch when Escape is pressed instead of minimizing the "
 "window"
 msgstr ""
+"Rnu tanfrunt i uffuɣ seg FSearch mi ara ittusenned Escape deg umḍiq n "
+"usimẓiy n usfaylu"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:125
 msgid "Exclude '/proc' and '/sys' by default"
-msgstr ""
+msgstr "Kkes '/proc' d '/sys' s lexṣas"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:126
 msgid "Open context menu when 'Menu' key or 'Shift + F10' are pressed"
-msgstr ""
+msgstr "Ldi umuɣ n umnaḍ mi ara ttusenned tqeffalt 'Menu' neɣ 'Shift + F10'"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:127
 msgid "and tons of bug fixes, translation updates and smaller improvements"
-msgstr ""
+msgstr "d waṭṭas n iseggem n ibugen, ileqman n tsuqilt d isifrer imẓiyen"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:133
 msgid "Initial release."
-msgstr ""
-
-#: src/fsearch.c:181
-msgid "translator-credits"
-msgstr "Ubuεli ḥakim"
+msgstr "Lqem amezwaru."
 
 #: src/fsearch.c:183
 msgid "A search utility focusing on performance and advanced features"
-msgstr ""
-
-#: src/fsearch.c:330
-#, fuzzy
-msgid "Saving database and config…"
-msgstr "Azdam n tsila n isefka…"
+msgstr "Allal n unadi i d-yezgan ɣef tmellit d tmahilin leqqayen"
 
 #: src/fsearch.c:786
 msgid "Open a new application window"
-msgstr ""
+msgstr "Ldi asfaylu amaynut n usnas"
 
 #: src/fsearch.c:787
 msgid "Minimize the application window"
-msgstr ""
+msgstr "Simeẓẓi asfaylu n usnas"
 
 #: src/fsearch.c:788
 msgid "Show the application preferences"
-msgstr ""
-
-#: src/fsearch.c:789
-#, fuzzy
-msgid "Set the search pattern"
-msgstr "Ssemal abra n urezzu"
-
-#: src/fsearch.c:790
-#, fuzzy
-msgid "Update the database and exit"
-msgstr "Sesdɣi tisila n isefka"
-
-#: src/fsearch.c:791
-#, fuzzy
-msgid "Print version information and exit"
-msgstr "Ssemal umalen n tleqqimt"
+msgstr "Sken ismenyifen n usnas"
 
 #: src/fsearch.c:883
 msgid ""
 "For command-line search help, run: fsearch --cli --help\n"
 "For shared configuration help, run: fsearch config --help"
 msgstr ""
+"I tallalt n unadi s izirig n tladna, selkem: fsearch --cli --help\n"
+"I tallalt n twila yettwabḍan, selkem: fsearch config --help"
 
 #: src/fsearch_cli.c:125
 #, c-format
@@ -346,22 +295,24 @@ msgid ""
 "Results capped at %u. Use --unlimit or --unlimited to get them all, or "
 "provide a custom --limit, or set FSEARCH_RESULT_LIMIT."
 msgstr ""
+"Igmaḍ ttwasbedden ɣer %u. Seqdec --unlimit neɣ --unlimited iwakken ad tawiḍ "
+"akk, neɣ mudd --limit udmawan, neɣ sbadu FSEARCH_RESULT_LIMIT."
 
 #: src/fsearch_cli.c:134
 #, c-format
 msgid "%u match."
 msgid_plural "%u matches."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%u amṣada."
+msgstr[1] "%u imṣadayen."
 
 #: src/fsearch_cli.c:142
 msgid "Updating FSearch index before searching..."
-msgstr ""
+msgstr "Aleqqem n umatar n FSearch send anadi..."
 
 #: src/fsearch_cli.c:149
 #, c-format
 msgid "Indexing: %s"
-msgstr ""
+msgstr "Asmuter: %s"
 
 #: src/fsearch_cli.c:181
 msgid ""
@@ -407,40 +358,82 @@ msgid ""
 "{png,jpg} selects alternatives; {01..12} is an inclusive numeric range; \\* "
 "matches a literal *.\n"
 msgstr ""
+"Aseqdec: fsearch --cli [OPTIONS]\n"
+"\n"
+"Nadi deg umatar i yellan n FSearch sakin siggez iberdan yemṣadan.\n"
+"\n"
+"  -s, --search PATTERN       Nadi s tseddast n tuttra n FSearch\n"
+"      --path DIRECTORY        Nadi s usniles ddaw n DIRECTORY (amezwer: "
+"akaram amiran)\n"
+"      --global                Nadi deg yal adig yettwamtern\n"
+"      --limit COUNT          Siggez ma aṭas COUNT n igmaḍ\n"
+"      --unlimit, --unlimited Siggez yal agmuḍ\n"
+"  -u, --update-database      Ales asmiḍen n umatar yettusbadun sakin ffeɣ\n"
+"      --about                Siggez talɣut n lebni deg yiwen n izirig\n"
+"  -h, --help                 Sken tallalt-a\n"
+"\n"
+"Tawila: fsearch config --help\n"
+"\n"
+"Imedyaten:\n"
+"  fsearch --cli --search invoice              # akaram amiran\n"
+"  fsearch --cli --path ~/Documents --search invoice\n"
+"  fsearch --cli --global --search invoice\n"
+"  fsearch --cli --search 'file:size:>20mb'\n"
+"  fsearch --cli --search 'ext:jpg;png'\n"
+"  fsearch --cli --search 'path:projects report'\n"
+"  fsearch --cli --search 'report AND ext:pdf'\n"
+"  fsearch --cli --search '(draft OR final) !archive'\n"
+"  fsearch --cli --search 'file:regex:\".+\\.pdf$\"'\n"
+"  fsearch --cli --search 'case:AGENTS'        # case-sensitive\n"
+"  fsearch --cli --search 'case:regex:\"^AGENTS\\.md$\"'\n"
+"  fsearch --cli --search 'glob:**/*.png'\n"
+"  fsearch --cli --search 'path:glob:**/AGENTS.md'\n"
+"  fsearch --cli --search 'case:glob:AGENTS.md' # case-sensitive glob\n"
+"\n"
+"Imedyaten seqdacen tallunt am AND. Eɛreḍ file:, folder:, path:, ext:, size:, "
+"dm:, case:, regex:, akked glob:.\n"
+"Taseddast tabuliyant: AND neɣ &&; OR neɣ ||; NOT neɣ !. Tacciwin sduklent "
+"irman.\n"
+"Taseddast n glob: * ur tesdukul ara /; ** tɛedda isulas; ? temṣada d yiwen n "
+"usekkil; [a-c] d azilal;\n"
+"Anadi n glob yettnadi iberdan s umezwer; seqdec **/ i yal talqayt; "
+"file:glob: yettnadi ismawen n ifuyla.\n"
+"{png,jpg} yettifriren tinefrunin; {01..12} d azilal umḍin amatu; \\* temṣada "
+"d * n tidet.\n"
 
 #: src/fsearch_cli.c:238
 #, c-format
 msgid "FSearch %s - indexed file search for %s %s\n"
-msgstr ""
+msgstr "FSearch %s - anadi n ufaylu yettwamtern i %s %s\n"
 
 #: src/fsearch_cli.c:301
 msgid "fsearch: interrupted\n"
-msgstr ""
+msgstr "fsearch: yettwaḥbes\n"
 
 #: src/fsearch_cli.c:315
 msgid "fsearch: search could not run because the index is unavailable\n"
-msgstr ""
+msgstr "fsearch: anadi ur izmir ara ad yeddu acku amatar ulac-it\n"
 
 #: src/fsearch_cli.c:352 src/fsearch_cli.c:381 src/fsearch_cli_config.c:774
 #: src/fsearch_cli_config.c:961 src/fsearch_cli_config.c:1147
 #, c-format
 msgid "%s\n"
-msgstr ""
+msgstr "%s\n"
 
 #: src/fsearch_cli.c:400
 #, c-format
 msgid "%s"
-msgstr ""
+msgstr "%s"
 
 #: src/fsearch_cli.c:473
 #, c-format
 msgid "fsearch: unknown CLI option: %s\n"
-msgstr ""
+msgstr "fsearch: tanefrunt CLI tarussint: %s\n"
 
 #: src/fsearch_cli.c:495
 #, c-format
 msgid "fsearch: failed to create data directory: %s\n"
-msgstr ""
+msgstr "fsearch: ur izmir ara ad yesnulfu akaram n isefka: %s\n"
 
 #: src/fsearch_cli_config.c:111
 msgid ""
@@ -482,30 +475,78 @@ msgid ""
 "  fsearch config filters add Documents --query 'ext:pdf' --macro docs\n"
 "  fsearch config reset search --yes\n"
 msgstr ""
+"Aseqdec: fsearch config COMMAND [OPTIONS]\n"
+"\n"
+"Wali u snifel tawila yettwabḍan n FSearch GUI akked CLI.\n"
+"\n"
+"Tiludna n twila:\n"
+"  path                         Siggez abrid n ufaylu n twila\n"
+"  show [SECTION] [--json]      Sken iɣewwaren\n"
+"  get KEY [--json]             Siggez yiwen n uɣewwar askalan\n"
+"  set KEY VALUE                Sbadu yiwen n uɣewwar askalan\n"
+"  unset KEY                    Err-d amezwer n yiwen n uɣewwar askalan\n"
+"  reset [KEY|SECTION] --yes [--rescan]\n"
+"                               Err-d imezwura\n"
+"  doctor                       Senqed tawila d tmatart\n"
+"  roots list|add|set|remove    Sefrek iẓuran yettwamtern\n"
+"  excludes list|add|remove|hidden\n"
+"                               Sefrek tinefrunin n tuffɣa seg umatar\n"
+"  filters list|add|set|remove|reset\n"
+"                               Sefrek imzizdigen n unadi yettwaseklesen\n"
+"\n"
+"Azalen iskalan seqdacen true/false, imḍanen imaẓlayen, neɣ izraren.\n"
+"Selkem 'fsearch config show' akken ad tebḍud yal KEY askalan akked VALUE "
+"amiran.\n"
+"Tigezmiwin tiskalanin: search, application, window, ui, columns, sort, "
+"dialogs.\n"
+"Seqdec 'fsearch config roots|excludes|filters --help' i tinefrunin n "
+"twacult.\n"
+"Mdel FSearch GUI send asnifel n iɣewwaren yettwabḍan.\n"
+"Isnifal n umatar ad ttunadin deg unadi CLI d-iteddun, neɣ imir imir s --"
+"rescan.\n"
+"Seqdec --json akked tiludna show, get, d collection list.\n"
+"\n"
+"Imedyaten:\n"
+"  fsearch config show search --json\n"
+"  fsearch config get search.match-case\n"
+"  fsearch config set search.match-case true\n"
+"  fsearch config roots add ~/Code --monitor --one-file-system --rescan\n"
+"  fsearch config excludes add '*.tmp' --type wildcard --scope basename --"
+"target files\n"
+"  fsearch config filters add Documents --query 'ext:pdf' --macro docs\n"
+"  fsearch config reset search --yes\n"
 
 #: src/fsearch_cli_config.c:152
 msgid ""
 "Usage: fsearch config show [SECTION] [--json]\n"
 "Show all scalar settings or one dotted section.\n"
 msgstr ""
+"Aseqdec: fsearch config show [SECTION] [--json]\n"
+"Sken akk iɣewwaren iskalanen neɣ yiwet n tgezmi s tenqiḍin.\n"
 
 #: src/fsearch_cli_config.c:154
 msgid ""
 "Usage: fsearch config get KEY [--json]\n"
 "Print one typed scalar value. Discover keys with 'fsearch config show'.\n"
 msgstr ""
+"Aseqdec: fsearch config get KEY [--json]\n"
+"Siggez azal asuf s wanaw. Af tisura s 'fsearch config show'.\n"
 
 #: src/fsearch_cli_config.c:157
 msgid ""
 "Usage: fsearch config set KEY VALUE\n"
 "Set a boolean, integer, string, or enumerated scalar value.\n"
 msgstr ""
+"Aseqdec: fsearch config set KEY VALUE\n"
+"Sbadu azal asuf abulan, ummid, azrar, neɣ win yettwabdaren.\n"
 
 #: src/fsearch_cli_config.c:159
 msgid ""
 "Usage: fsearch config unset KEY\n"
 "Restore one scalar setting to its built-in default.\n"
 msgstr ""
+"Aseqdec: fsearch config unset KEY\n"
+"Err yiwen n useɣwer asuf ɣer wazal-is amezwer yellan deg-s.\n"
 
 #: src/fsearch_cli_config.c:161
 msgid ""
@@ -513,6 +554,9 @@ msgid ""
 "Reset is destructive and requires --yes. --rescan applies to roots, "
 "database, excludes, or all.\n"
 msgstr ""
+"Aseqdec: fsearch config reset [KEY|SECTION] --yes [--rescan]\n"
+"Ales awennez ad isfeḍ isefka, yerna yesra --yes. --rescan ad ittusnes i "
+"iẓuran, taffa n isefka, tizrayin, neɣ akk.\n"
 
 #: src/fsearch_cli_config.c:164
 msgid ""
@@ -520,6 +564,9 @@ msgid ""
 "Check configuration readability and whether the saved index uses the same "
 "roots and exclusions.\n"
 msgstr ""
+"Aseqdec: fsearch config doctor\n"
+"Senqed ma izmer useɣwer ad yettwaɣra, akked ma amatar yettwakelsen isseqdac "
+"iẓuran d tizrayin-nni.\n"
 
 #: src/fsearch_cli_config.c:170
 msgid ""
@@ -539,6 +586,22 @@ msgid ""
 "  --rescan-every SECONDS        Set periodic rescan interval; 0 disables it\n"
 "  --rescan                      Rebuild the index immediately after saving\n"
 msgstr ""
+"Aseqdec: fsearch config roots COMMAND [PATH] [OPTIONS]\n"
+"\n"
+"Tiludna:\n"
+"  list [--json]                Bder iẓuran yettusmataran\n"
+"  add PATH [OPTIONS]           Rnu akaram aẓar\n"
+"  set PATH [OPTIONS]           Snifel aẓar yellan\n"
+"  remove PATH [--rescan]       Kkes aẓar yellan\n"
+"\n"
+"Tixtiṛiyin i add akked set:\n"
+"  --active, --inactive\n"
+"  --monitor, --no-monitor\n"
+"  --one-file-system, --no-one-file-system\n"
+"  --scan-after-launch, --no-scan-after-launch\n"
+"  --rescan-every SECONDS        Sbadu azilal n usiggez amezray; 0 ad t-"
+"issexsi\n"
+"  --rescan                      Ales lebni n umatar srid deffir usekles\n"
 
 #: src/fsearch_cli_config.c:187
 msgid ""
@@ -558,6 +621,21 @@ msgid ""
 "  --active, --inactive          Add state or removal selector\n"
 "  --rescan                      Rebuild the index immediately after saving\n"
 msgstr ""
+"Aseqdec: fsearch config excludes COMMAND [PATTERN|VALUE] [OPTIONS]\n"
+"\n"
+"Tiludna:\n"
+"  list [--json]                 Bder tizrayin\n"
+"  add PATTERN [OPTIONS]         Rnu tazrayt\n"
+"  remove PATTERN [OPTIONS]      Kkes tazrayt yemṣadan\n"
+"  hidden [true|false] [--rescan]\n"
+"                                Wali neɣ snifel tazrayt n ufaylu yeffren\n"
+"\n"
+"Tixtiṛiyin i add akked remove:\n"
+"  --type fixed|wildcard|regex   Amezwer: fixed\n"
+"  --scope full-path|basename    Amezwer: full-path\n"
+"  --target both|files|folders   Amezwer: both\n"
+"  --active, --inactive          Rnu addad neɣ ameskan n tukksa\n"
+"  --rescan                      Ales lebni n umatar srid deffir usekles\n"
 
 #: src/fsearch_cli_config.c:204
 msgid ""
@@ -577,205 +655,232 @@ msgid ""
 "  --path, --no-path             Search full paths\n"
 "  --regex, --no-regex           Treat query as a regular expression\n"
 msgstr ""
+"Aseqdec: fsearch config filters COMMAND [NAME] [OPTIONS]\n"
+"\n"
+"Tiludna:\n"
+"  list [--json]                 Bder imsizdigen yettwakelsen\n"
+"  add NAME [OPTIONS]            Rnu amsizdeg s yisem\n"
+"  set NAME [OPTIONS]            Snifel amsizdeg s yisem\n"
+"  remove NAME                   Kkes amsizdeg s yisem\n"
+"  reset                         Err imsizdigen yellan deg-s\n"
+"\n"
+"Tixtiṛiyin i add akked set:\n"
+"  --query QUERY                 Tuttra n FSearch yettwakelsen\n"
+"  --macro MACRO                 Isem n umakṛu n tuttra\n"
+"  --case, --no-case             Ṣada asekkil ameqqran d umeẓyan\n"
+"  --path, --no-path             Nadi iberdan ummiden\n"
+"  --regex, --no-regex           Sseqdec tuttra am tenfalit talugant\n"
 
 #: src/fsearch_cli_config.c:265
 msgid ""
 "fsearch config: close the running FSearch GUI before changing shared "
 "settings\n"
 msgstr ""
+"fsearch config: mdel FSearch GUI iteddu ɣas ad tesnifleḍ iseɣwaren "
+"yettwabḍan\n"
 
 #: src/fsearch_cli_config.c:269
 msgid "fsearch config: failed to save configuration\n"
-msgstr ""
+msgstr "fsearch config: ur izmir ara ad isekles aseɣwer\n"
 
 #: src/fsearch_cli_config.c:280
 msgid "Index configuration changed; the next CLI search will rebuild it.\n"
 msgstr ""
+"Tettubeddel twila n umatar; anadi CLI d-iteddun ad t-id-yebnu tikelt-"
+"nniḍen.\n"
 
 #: src/fsearch_cli_config.c:416
 #, c-format
 msgid "fsearch config %s: unknown option: %s\n"
-msgstr ""
+msgstr "fsearch config %s: tanefrunt tarussint: %s\n"
 
 #: src/fsearch_cli_config.c:422
 #, c-format
 msgid "fsearch config %s: unexpected argument: %s\n"
-msgstr ""
+msgstr "fsearch config %s: afakul ur nettwaṛǧa ara: %s\n"
 
 #: src/fsearch_cli_config.c:449
 msgid "Usage: fsearch config get KEY [--json]\n"
-msgstr ""
+msgstr "Aseqdec: fsearch config get KEY [--json]\n"
 
 #: src/fsearch_cli_config.c:454 src/fsearch_cli_config.c:555
 #, c-format
 msgid "fsearch config: unknown setting: %s\n"
-msgstr ""
+msgstr "fsearch config: iɣewwaṛ ur nettwassen ara: %s\n"
 
 #: src/fsearch_cli_config.c:502
 #, c-format
 msgid "fsearch config show: unknown section: %s\n"
-msgstr ""
+msgstr "fsearch config show: tigezmi tarussint: %s\n"
 
 #: src/fsearch_cli_config.c:550
 #, c-format
 msgid "Usage: fsearch config %s KEY%s\n"
-msgstr ""
+msgstr "Aseqdec: fsearch config %s KEY%s\n"
 
 #: src/fsearch_cli_config.c:566
 #, c-format
 msgid "fsearch config: invalid value for %s: %s\n"
-msgstr ""
+msgstr "fsearch config: azal arameɣtu i %s: %s\n"
 
 #: src/fsearch_cli_config.c:572
 #, c-format
 msgid "%s = %s\n"
-msgstr ""
+msgstr "%s = %s\n"
 
 #: src/fsearch_cli_config.c:637
 #, c-format
 msgid "fsearch config roots: unknown operation: %s\n"
-msgstr ""
+msgstr "fsearch config roots: tamhelt tarussint: %s\n"
 
 #: src/fsearch_cli_config.c:691
 msgid "fsearch config roots: --rescan-every requires SECONDS\n"
-msgstr ""
+msgstr "Iẓuran n uswel n fsearch: --rescan-every isra SECONDS\n"
 
 #: src/fsearch_cli_config.c:710
 msgid "fsearch config roots: missing PATH\n"
-msgstr ""
+msgstr "Iẓuran n uswel n fsearch: PATH ixṣṣa\n"
 
 #: src/fsearch_cli_config.c:717 src/fsearch_cli_config.c:732
 #, c-format
 msgid "fsearch config roots: path not found: %s\n"
-msgstr ""
+msgstr "Iẓuran n uswel n fsearch: ur nufi ara abrid: %s\n"
 
 #: src/fsearch_cli_config.c:724
 #, c-format
 msgid "fsearch config roots: not a directory: %s\n"
-msgstr ""
+msgstr "Iẓuran n uswel n fsearch: mačči d akaram: %s\n"
 
 #: src/fsearch_cli_config.c:728
 #, c-format
 msgid "fsearch config roots: path already exists: %s\n"
-msgstr ""
+msgstr "Iẓuran n uswel n fsearch: abrid illa yakan: %s\n"
 
 #: src/fsearch_cli_config.c:752
 #, c-format
 msgid "fsearch config roots: invalid rescan duration: %s\n"
 msgstr ""
+"Iẓuran n uswel n fsearch: tanzagt n wallus n usiggez d tarameɣtut: %s\n"
 
 #: src/fsearch_cli_config.c:765
 msgid ""
 "%s\tactive=%s monitor=%s one-file-system=%s scan-after-launch=%s rescan-"
 "after=%"
 msgstr ""
+"%s\tactive=%s monitor=%s one-file-system=%s scan-after-launch=%s rescan-"
+"after=%"
 
 #: src/fsearch_cli_config.c:844
 msgid "fsearch config excludes hidden: expected true or false\n"
-msgstr ""
+msgstr "Aswel n fsearch iḥeyyed iffernen: true neɣ false yetturaǧu\n"
 
 #: src/fsearch_cli_config.c:850
 #, c-format
 msgid "exclude-hidden = %s\n"
-msgstr ""
+msgstr "exclude-hidden = %s\n"
 
 #: src/fsearch_cli_config.c:856
 #, c-format
 msgid "fsearch config excludes: unknown operation: %s\n"
-msgstr ""
+msgstr "Aswel n fsearch iḥeyyed: tamhelt tarussint: %s\n"
 
 #: src/fsearch_cli_config.c:877
 #, c-format
 msgid "fsearch config excludes: %s requires a value\n"
-msgstr ""
+msgstr "fsearch config excludes: %s isra azal\n"
 
 #: src/fsearch_cli_config.c:909
 msgid "fsearch config excludes: missing PATTERN\n"
-msgstr ""
+msgstr "fsearch config excludes: ixuṣṣ PATTERN\n"
 
 #: src/fsearch_cli_config.c:914
 #, c-format
 msgid "fsearch config excludes: invalid type: %s\n"
-msgstr ""
+msgstr "fsearch config excludes: anaw mačči d ameɣtu: %s\n"
 
 #: src/fsearch_cli_config.c:919
 #, c-format
 msgid "fsearch config excludes: invalid scope: %s\n"
-msgstr ""
+msgstr "fsearch config excludes: taɣult mačči d tameɣtut: %s\n"
 
 #: src/fsearch_cli_config.c:924
 #, c-format
 msgid "fsearch config excludes: invalid target: %s\n"
-msgstr ""
+msgstr "fsearch config excludes: asaḍas mačči d ameɣtu: %s\n"
 
 #: src/fsearch_cli_config.c:954
 #, c-format
 msgid "fsearch config excludes: exclusion not found: %s\n"
-msgstr ""
+msgstr "fsearch config excludes: ur ittuyaf ara usuffeɣ: %s\n"
 
 #: src/fsearch_cli_config.c:1022
 msgid "filters reset\n"
-msgstr ""
+msgstr "imzizdigen ttuwennzen\n"
 
 #: src/fsearch_cli_config.c:1029
 #, c-format
 msgid "fsearch config filters: unknown operation: %s\n"
-msgstr ""
+msgstr "fsearch config filters: tamhelt tarussint: %s\n"
 
 #: src/fsearch_cli_config.c:1051
 #, c-format
 msgid "fsearch config filters: %s requires a value\n"
-msgstr ""
+msgstr "fsearch config filters: %s isra azal\n"
 
 #: src/fsearch_cli_config.c:1094
 msgid "fsearch config filters: missing NAME\n"
-msgstr ""
+msgstr "fsearch config filters: ixuṣṣ NAME\n"
 
 #: src/fsearch_cli_config.c:1100 src/fsearch_cli_config.c:1111
 #, c-format
 msgid "fsearch config filters: name not found: %s\n"
-msgstr ""
+msgstr "fsearch config filters: ur yettwaf ara: %s\n"
 
 #: src/fsearch_cli_config.c:1107
 #, c-format
 msgid "fsearch config filters: name already exists: %s\n"
-msgstr ""
+msgstr "fsearch config filters: ur yella yakan: %s\n"
 
 #: src/fsearch_cli_config.c:1145
 #, c-format
 msgid "%s\tmacro=%s query=%s\n"
-msgstr ""
+msgstr "%s\tmacro=%s query=%s\n"
 
 #: src/fsearch_cli_config.c:1193
 msgid "fsearch config reset requires --yes\n"
-msgstr ""
+msgstr "fsearch config reset yesra --yes\n"
 
 #: src/fsearch_cli_config.c:1201
 msgid ""
 "fsearch config reset: --rescan requires roots, database, excludes, or all\n"
 msgstr ""
+"fsearch config reset: --rescan yesra roots, database, excludes, neɣ all\n"
 
 #: src/fsearch_cli_config.c:1241
 #, c-format
 msgid "fsearch config: unknown setting or section: %s\n"
-msgstr ""
+msgstr "fsearch config: iɣewwaṛen neɣ tagezduḍt ur tettwassen ara: %s\n"
 
 #: src/fsearch_cli_config.c:1246
 #, c-format
 msgid "%s settings reset\n"
-msgstr ""
+msgstr "iɣewwaṛen n %s ttuwennzen\n"
 
 #: src/fsearch_cli_config.c:1253
 msgid ""
 "configuration: missing; defaults active\n"
 "index: unknown\n"
 msgstr ""
+"tawila: txuṣṣ; azal imezwar tturmiden\n"
+"amatar: arussin\n"
 
 #: src/fsearch_cli_config.c:1261
 msgid ""
 "configuration: ok\n"
 "index: missing or unreadable\n"
 msgstr ""
+"tawila: tedda\n"
+"amatar: ixuṣṣ neɣ ur yettwaɣra ara\n"
 
 #: src/fsearch_cli_config.c:1266
 #, c-format
@@ -783,126 +888,70 @@ msgid ""
 "configuration: ok\n"
 "index: %s\n"
 msgstr ""
+"tawila: tedda\n"
+"amatar: %s\n"
 
 #: src/fsearch_cli_config.c:1266
 msgid "current"
-msgstr ""
+msgstr "amiran"
 
 #: src/fsearch_cli_config.c:1266
 msgid "stale"
-msgstr ""
+msgstr "aqbur"
 
 #: src/fsearch_cli_config.c:1278
 msgid ""
 "Usage: fsearch config path\n"
 "Print the active FSearch configuration file path.\n"
 msgstr ""
+"Aseqdec: fsearch config path\n"
+"Siggez abrid n ufaylu n twila turmidt n FSearch.\n"
 
 #: src/fsearch_cli_config.c:1321
 #, c-format
 msgid "fsearch config: unknown command: %s\n"
-msgstr ""
+msgstr "fsearch config: taladna tarussint: %s\n"
 
 #: src/fsearch_database.c:795
 msgid "Index rescan: applying changes…"
-msgstr ""
-
-#: src/fsearch_database_file.c:1343
-#, fuzzy
-msgid "Loading folders…"
-msgstr "Azdam n tsila n isefka…"
-
-#: src/fsearch_database_file.c:1359
-#, fuzzy
-msgid "Loading files…"
-msgstr "Tukkesa n ifuyla…"
-
-#: src/fsearch_database_index_store.c:925 src/fsearch_statusbar.c:73
-#: src/fsearch_statusbar.ui:90
-#, fuzzy
-msgid "Sorting…"
-msgstr "Afran..."
-
-#: src/fsearch_database_preferences_widget.c:162
-#: src/fsearch_database_preferences_widget.c:176
-msgid "Select folder"
-msgstr "Stey Asdaw"
-
-#: src/fsearch_database_preferences_widget.c:165
-#: src/fsearch_database_preferences_widget.c:180
-#: src/fsearch_filter_editor.c:104 src/fsearch_preferences_dialog.c:331
-msgid "_Cancel"
-msgstr "_Sser"
-
-#: src/fsearch_database_preferences_widget.c:167
-#: src/fsearch_database_preferences_widget.c:179
-msgid "_Select"
-msgstr "S_tey"
+msgstr "Allus n usiggez n umatar: asnas n isnifal…"
 
 #: src/fsearch_database_preferences_widget.c:389
 msgid "Literal"
-msgstr ""
+msgstr "Aḍris amsislan"
 
 #: src/fsearch_database_preferences_widget.c:391
 msgid "Wildcard"
-msgstr ""
+msgstr "Azamul amaṭṭaf"
 
 #: src/fsearch_database_preferences_widget.c:393
 msgid "Regex"
-msgstr ""
-
-#: src/fsearch_database_preferences_widget.c:414
-#, fuzzy
-msgid "Full Path"
-msgstr "Aɣaras"
+msgstr "Tanfalit talugant"
 
 #: src/fsearch_database_preferences_widget.c:416
 msgid "Basename"
-msgstr ""
-
-#: src/fsearch_database_preferences_widget.c:434
-#, fuzzy
-msgid "Files & Folders"
-msgstr "Isdawen"
-
-#: src/fsearch_database_preferences_widget.c:436 src/fsearch_filter.c:114
-msgid "Files"
-msgstr "Ifuyla"
-
-#: src/fsearch_database_preferences_widget.c:438 src/fsearch_filter.c:113
-msgid "Folders"
-msgstr "Isdawen"
+msgstr "Isem n ufaylu"
 
 #: src/fsearch_database_preferences_widget.c:635
 #: src/fsearch_database_preferences_widget.c:860
 msgid "Active"
-msgstr ""
+msgstr "Urmid"
 
 #: src/fsearch_database_preferences_widget.c:640
 msgid "Pattern"
-msgstr ""
-
-#: src/fsearch_database_preferences_widget.c:694 src/fsearch_window.c:756
-#: src/menus.ui:275
-msgid "Type"
-msgstr "Anaw"
+msgstr "Taneɣruft"
 
 #: src/fsearch_database_preferences_widget.c:700
 msgid "Match"
-msgstr ""
+msgstr "Amṣada"
 
 #: src/fsearch_database_preferences_widget.c:706
 msgid "Applies To"
-msgstr ""
-
-#: src/fsearch_database_preferences_widget.c:864 src/fsearch_window.c:742
-#: src/menus.ui:219 src/menus.ui:267
-msgid "Path"
-msgstr "Aɣaras"
+msgstr "Ad ittusnes i"
 
 #: src/fsearch_database_preferences_widget.ui:78
 msgid "Enter path…"
-msgstr ""
+msgstr "Sekcem abrid…"
 
 #: src/fsearch_database_preferences_widget.ui:97
 #: src/fsearch_database_preferences_widget.ui:372
@@ -911,197 +960,150 @@ msgid ""
 "                                            database\n"
 "                                        "
 msgstr ""
+"Rnu abrid ara ittuselkemen deg\n"
+"                                            taffa n isefka\n"
+"                                        "
 
 #: src/fsearch_database_preferences_widget.ui:176
 msgid "Attempt to monitor"
-msgstr ""
+msgstr "Ɛreḍ ad tɛasseḍ"
 
 #: src/fsearch_database_preferences_widget.ui:191
 msgid "Scan after launch"
-msgstr ""
+msgstr "Ḍum seld asenker"
 
 #: src/fsearch_database_preferences_widget.ui:206
 msgid "Stay on one file system"
-msgstr ""
+msgstr "Qqim deg yiwen unagraw n ifuyla"
 
 #: src/fsearch_database_preferences_widget.ui:221
 msgid "Rescan every"
-msgstr ""
+msgstr "Ales aḍummu yal"
 
 #: src/fsearch_database_preferences_widget.ui:254
 msgid "Hours:"
-msgstr ""
+msgstr "Isragen:"
 
 #: src/fsearch_database_preferences_widget.ui:298
 msgid "Minutes:"
-msgstr ""
+msgstr "Tisdatin:"
 
 #: src/fsearch_database_preferences_widget.ui:310
 msgid "30"
-msgstr ""
+msgstr "30"
 
 #: src/fsearch_database_preferences_widget.ui:391
 msgid "Remove selected path"
-msgstr ""
+msgstr "Kkes abrid yettwafernen"
 
 #: src/fsearch_database_preferences_widget.ui:418
 msgid "Include"
-msgstr ""
+msgstr "Seddu"
 
 #: src/fsearch_database_preferences_widget.ui:477
 msgid ""
 "Add exclude rule\n"
 "                                                "
 msgstr ""
+"Rnu alugen n usuffeɣ\n"
+"                                                "
 
 #: src/fsearch_database_preferences_widget.ui:495
 msgid ""
 "Remove selected path\n"
 "                                                "
 msgstr ""
+"Kkes abrid yettwafernen\n"
+"                                                "
 
 #: src/fsearch_database_preferences_widget.ui:512
 msgid "Restore default exclude list"
-msgstr ""
+msgstr "Err-d tabdart n usuffeɣ tamezwert"
 
 #: src/fsearch_database_preferences_widget.ui:541
 msgid "Exclude hidden files and folders"
-msgstr ""
+msgstr "Suffeɣ ifuyla d ikaramen yeffren"
 
 #: src/fsearch_database_preferences_widget.ui:563
 msgid "Exclude"
-msgstr ""
+msgstr "Suffeɣ"
 
 #: src/fsearch_file_utils.c:161
 msgctxt "Will be followed by the path of the file."
 msgid "Error when removing file"
-msgstr ""
-
-#: src/fsearch_file_utils.c:163
-#, fuzzy
-msgid "Failed to get path"
-msgstr "Yan ukliki i uṛeẓẓum"
+msgstr "Tuccḍa deg tukksa n ufaylu"
 
 #: src/fsearch_file_utils.c:277
 msgctxt "Will be followed by the file path."
 msgid "Error when getting information from file"
-msgstr ""
+msgstr "Tuccḍa deg wawway n talɣut seg ufaylu"
 
 #: src/fsearch_file_utils.c:279
 msgid "Failed to get application information"
-msgstr ""
+msgstr "Ur teddi ara tuṭṭfa n talɣut n usnas"
 
 #: src/fsearch_file_utils.c:294
 msgctxt "Will be followed by the content type string."
 msgid "Error when getting information for content type"
-msgstr ""
+msgstr "Tuccḍa deg wawway n talɣut i wanaw n ugbur"
 
 #: src/fsearch_file_utils.c:296
 msgid "No default application registered"
-msgstr ""
+msgstr "Ulac asnas n lexṣas yettwaskelsen"
 
 #: src/fsearch_file_utils.c:524
 msgctxt "Will be followed by the path of the folder."
 msgid "Error when opening parent folder"
-msgstr ""
-
-#: src/fsearch_file_utils.c:526
-#, fuzzy
-msgid "Failed to get parent path"
-msgstr "Yan ukliki i uṛeẓẓum"
+msgstr "Tuccḍa deg ulday n ukaram amaraw"
 
 #: src/fsearch_file_utils.c:530
 msgctxt "Will be followed by the path of the folder."
 msgid "Error while opening folder"
-msgstr ""
-
-#: src/fsearch_file_utils.c:533
-#, fuzzy
-msgid "Failed to build open command"
-msgstr "Yan ukliki i uṛeẓẓum"
-
-#: src/fsearch_file_utils.c:589
-#, fuzzy
-msgid "Folder"
-msgstr "Isdawen"
+msgstr "Tuccḍa deg ulday n ukaram"
 
 #: src/fsearch_file_utils.c:595
 msgid "Unknown Type"
-msgstr ""
-
-#: src/fsearch_filter.c:112
-msgid "All"
-msgstr "Maṛṛa"
+msgstr "Anaw arussin"
 
 #: src/fsearch_filter.c:115
 msgid "Applications"
-msgstr ""
+msgstr "Isnasen"
 
 #: src/fsearch_filter.c:116
 msgid "Archives"
-msgstr ""
-
-#: src/fsearch_filter.c:117
-msgid "Audio"
-msgstr "Imesli"
-
-#: src/fsearch_filter.c:118
-msgid "Documents"
-msgstr "Inatamn"
-
-#: src/fsearch_filter.c:119
-msgid "Pictures"
-msgstr "Tiwlafin"
-
-#: src/fsearch_filter.c:120
-msgid "Videos"
-msgstr "Ividyuten"
+msgstr "Iɣbaren"
 
 #: src/fsearch_filter_editor.c:79
 msgid "Macro names must not contain `:` characters."
-msgstr ""
-
-#: src/fsearch_filter_editor.c:105 src/fsearch_preferences_dialog.c:332
-msgid "_OK"
-msgstr "_WAX"
+msgstr "Ismawen n makru ur ilaq ara ad ilin deg-sen isekkilen `:`."
 
 #: src/fsearch_filter_editor.ui:10 src/fsearch_filter_preferences_widget.c:156
 msgid "Edit filter"
-msgstr ""
-
-#: src/fsearch_filter_editor.ui:50
-#, fuzzy
-msgid "Name:"
-msgstr "Isem"
+msgstr "Ẓreg imsizdeg"
 
 #: src/fsearch_filter_editor.ui:61
 msgid "The unique name of this filter"
-msgstr ""
+msgstr "Isem asuf n umsizdeg ad"
 
 #: src/fsearch_filter_editor.ui:64
 msgid "Unique filter name"
-msgstr ""
-
-#: src/fsearch_filter_editor.ui:73
-#, fuzzy
-msgid "Search in path"
-msgstr "Rzu g uɣaras"
+msgstr "Isem asuf n umsizdeg"
 
 #: src/fsearch_filter_editor.ui:87
 msgid "Enable regular expressions"
-msgstr ""
+msgstr "Sermed tinfaliyin tiluganin"
 
 #: src/fsearch_filter_editor.ui:101
 msgid "Match case"
-msgstr ""
+msgstr "Qqen asekkil ameqqran d umeẓyan"
 
 #: src/fsearch_filter_editor.ui:146
 msgid "Query:"
-msgstr ""
+msgstr "Tuttra:"
 
 #: src/fsearch_filter_editor.ui:160
 msgid "Macro:"
-msgstr ""
+msgstr "Makṛu:"
 
 #: src/fsearch_filter_editor.ui:171
 msgid ""
@@ -1109,234 +1111,151 @@ msgid ""
 "search entry by typing its text followed by ':'\n"
 "                "
 msgstr ""
-
-#: src/fsearch_filter_preferences_widget.c:133
-#, fuzzy
-msgid "Add filter"
-msgstr "Isdawen"
-
-#: src/fsearch_filter_preferences_widget.c:315 src/fsearch_window.c:735
-#: src/menus.ui:215 src/menus.ui:263
-msgid "Name"
-msgstr "Isem"
+"Makṛu n umsizdeg ad. Makṛu ak isireg ad tkecmeḍ ɣer umsizdeg ad seg unekcum "
+"n unadi s tira n uḍris ines, iḍfer-it ':'\n"
+"                "
 
 #: src/fsearch_filter_preferences_widget.c:316
 msgid "Macro"
-msgstr ""
+msgstr "Makṛu"
 
 #: src/fsearch_filter_preferences_widget.c:317
 msgid "Query"
-msgstr ""
-
-#: src/fsearch_filter_preferences_widget.ui:77
-#, fuzzy
-msgid "Add new filter"
-msgstr "Isdawen"
+msgstr "Tuttra"
 
 #: src/fsearch_filter_preferences_widget.ui:95
 msgid "Remove selected filter"
-msgstr ""
-
-#: src/fsearch_filter_preferences_widget.ui:113
-#, fuzzy
-msgid "Edit selected filter"
-msgstr "Dɣer kra n usettay"
+msgstr "Kkes imsizdeg yettwafernen"
 
 #: src/fsearch_filter_preferences_widget.ui:129
 msgid "Restore default filters"
-msgstr ""
+msgstr "Err-d imsizdigen imezwar"
 
 #: src/fsearch_listview_popup.c:36
 msgid "Properties…"
-msgstr ""
+msgstr "Iraten…"
 
 #: src/fsearch_listview_popup.c:163
 msgid "Other Application…"
-msgstr ""
+msgstr "Asnas-nniḍen…"
 
 #: src/fsearch_overlay.ui:44
 msgid "Empty Database"
-msgstr ""
-
-#: src/fsearch_overlay.ui:60
-#, fuzzy
-msgid "Add folders"
-msgstr "Isdawen"
-
-#: src/fsearch_overlay.ui:108
-msgid "Loading Database…"
-msgstr "Azdam n tsila n isefka…"
+msgstr "Azadur n isefka d ilem"
 
 #: src/fsearch_overlay.ui:123
 msgid "This won't take long."
-msgstr ""
-
-#: src/fsearch_overlay.ui:171 src/fsearch_statusbar.ui:312
-msgid "Updating Database…"
-msgstr "asedɣi n tsila n isefka…"
+msgstr "Ayad ur rad yaṭṭef aṭas n wakud."
 
 #: src/fsearch_overlay.ui:186 src/fsearch_overlay.ui:383
 msgid "This may take a while."
-msgstr ""
+msgstr "Ayad izmer ad yaṭṭef kra n wakud."
 
 #: src/fsearch_overlay.ui:241
 msgid "Empty Query"
-msgstr ""
-
-#: src/fsearch_overlay.ui:256
-#, fuzzy
-msgid "Press <b>Ctrl + F</b> and start typing."
-msgstr "Adr <b>Ctrl + F</b> i usenti n tirra"
+msgstr "Tuttra d tilemt"
 
 #: src/fsearch_overlay.ui:304
 msgid "No Results Found"
-msgstr ""
+msgstr "Ur ttwafan igmaḍ"
 
 #: src/fsearch_overlay.ui:319
 msgid "Try a different search"
-msgstr ""
-
-#: src/fsearch_overlay.ui:368
-#, fuzzy
-msgid "Sorting results…"
-msgstr "Afran..."
+msgstr "Ɛreḍ anadi-nniḍen"
 
 #: src/fsearch_preferences.ui:7 src/fsearch_window.ui:251 src/menus.ui:84
 msgid "Preferences"
-msgstr ""
+msgstr "Ismenyifen"
 
 #: src/fsearch_preferences.ui:76
 msgid "Enable dark theme"
-msgstr ""
+msgstr "Rmed asentel aberkan"
 
 #: src/fsearch_preferences.ui:97
 msgid "Enable client-side decorations (requires restart)"
-msgstr ""
+msgstr "Rmed adlag n ugensu n umsaɣ (isra ales n usenker)"
 
 #: src/fsearch_preferences.ui:117
 msgid "Use binary units instead of decimal units"
-msgstr ""
+msgstr "Seqdec iferdisen imisin deg umḍiq n iferdisen imrawanen"
 
 #: src/fsearch_preferences.ui:138
 msgid "Remember window size"
-msgstr ""
+msgstr "Cfu ɣef teɣzi n usfaylu"
 
 #: src/fsearch_preferences.ui:159
 msgid "Exit on Escape"
-msgstr ""
+msgstr "Ffeɣ s Escape"
 
 #: src/fsearch_preferences.ui:202
 msgid "with keyboard shortcuts or menu entries"
-msgstr ""
-
-#: src/fsearch_preferences.ui:223
-msgid "with double click"
-msgstr "s sin iklikn"
+msgstr "s inegzumen n unasiw neɣ inekcam n wumuɣ"
 
 #: src/fsearch_preferences.ui:257
 msgid "Behaviour after successfully opening a file:"
-msgstr ""
-
-#: src/fsearch_preferences.ui:273
-msgid "Nothing"
-msgstr "Walu"
-
-#: src/fsearch_preferences.ui:274
-msgid "Minimize"
-msgstr "Ssemẓi"
-
-#: src/fsearch_preferences.ui:275
-msgid "Close"
-msgstr "Rgel"
-
-#: src/fsearch_preferences.ui:309
-msgid "General:"
-msgstr "Anatam:"
+msgstr "Tiddin mbaɛd mi yeldi ufaylu akken iwata:"
 
 #: src/fsearch_preferences.ui:344
 msgid "Show highlighted search terms"
-msgstr ""
+msgstr "Sken irmawen n unadi yettufeggɛen"
 
 #: src/fsearch_preferences.ui:366
 msgid "Show tooltips"
-msgstr ""
+msgstr "Sken tixbula n ifecka"
 
 #: src/fsearch_preferences.ui:387
 msgid "Show icons in name column"
-msgstr ""
+msgstr "Sken tignitin deg tgejdit n yisem"
 
 #: src/fsearch_preferences.ui:408
 msgid "Remember column configuration"
-msgstr ""
+msgstr "Cfu ɣef twila n tgejdit"
 
 #: src/fsearch_preferences.ui:429
 msgid "Remember sort order"
-msgstr ""
+msgstr "Cfu ɣef umizzwer n usmizzwer"
 
 #: src/fsearch_preferences.ui:450
 msgid "Open path with double click in path column"
-msgstr ""
-
-#: src/fsearch_preferences.ui:471
-msgid "Single click to open"
-msgstr "Yan ukliki i uṛeẓẓum"
+msgstr "Ldi abrid s usiti uslig deg tgejdit n ubrid"
 
 #: src/fsearch_preferences.ui:492
 msgid "Launch desktop files"
-msgstr ""
-
-#: src/fsearch_preferences.ui:519
-msgid "Results:"
-msgstr "Tiyufa:"
+msgstr "Sker ifuyla n tnarit"
 
 #: src/fsearch_preferences.ui:560
 msgid "Show database indexing status"
-msgstr ""
+msgstr "Sken addad n usmiter n taffa n yisefka"
 
 #: src/fsearch_preferences.ui:587
 msgid "Statusbar:"
-msgstr ""
+msgstr "Afeggag n waddad:"
 
 #: src/fsearch_preferences.ui:628
 msgid "Show warning dialogs when:"
-msgstr ""
+msgstr "Sken idiwenniyen n ulɣu mi:"
 
 #: src/fsearch_preferences.ui:638
 msgid "file / folder failed to open"
-msgstr ""
+msgstr "afaylu / akaram ur izmir ara ad yeldi"
 
 #: src/fsearch_preferences.ui:667
 msgid "Dialogs:"
-msgstr ""
-
-#: src/fsearch_preferences.ui:692
-msgid "Interface"
-msgstr "Anegrudm"
+msgstr "Idiwenniyen:"
 
 #: src/fsearch_preferences.ui:711
 msgid "Search in path when query contains path separators"
-msgstr ""
-
-#: src/fsearch_preferences.ui:730
-msgid "Search as you type"
-msgstr "Rzu adday ttarad"
+msgstr "Nadi deg ubrid mi ara yili deg tuttra imnabḍen n ubrid"
 
 #: src/fsearch_preferences.ui:750
 msgid "Hide results when search is empty"
-msgstr ""
+msgstr "Ffer igmaḍ mi ara tili unadi d ilem"
 
 #: src/fsearch_preferences.ui:769
 msgid "Match case when query contains at least one upper case character"
 msgstr ""
-
-#: src/fsearch_preferences.ui:801
-#, fuzzy
-msgid "Filter:"
-msgstr "Ssemal tastayt"
-
-#: src/fsearch_preferences.ui:822 src/fsearch_window.ui:639
-msgid "Search"
-msgstr "Rzu"
+"Qadaṛ amasal n isekkilen mi ara yili deg tuttra ma drus yiwen usekkil "
+"ameqqran"
 
 #: src/fsearch_preferences.ui:855
 msgid ""
@@ -1348,6 +1267,13 @@ msgid ""
 "Note that not all system themes provide such a darker variant, therefore "
 "enabling this setting might not have an effect."
 msgstr ""
+"<b>Rmed asentel aberkan:</b>\n"
+"\n"
+"Ma yermed, asentel n unagraw ad yettusutreḍ ad iseqdec aɣanib uḍlim i usnas "
+"<i>(d aselmed, iferdisen iberkanen n ugrudem ɣef uḍris aceɛlal)</i>.\n"
+"\n"
+"Ẓer belli mačči akk isental n unagraw i d-yettakken lqem-a uḍlim, ihi armad "
+"n yiɣewwar-a yezmer ur d-yeglu s kra n ubeddel."
 
 #: src/fsearch_preferences.ui:873
 msgid ""
@@ -1361,6 +1287,14 @@ msgid ""
 "This resembles a more traditional UI layout and takes a little bit more "
 "space."
 msgstr ""
+"<b>Rmed adlag n tama n umsaɣ:</b>\n"
+"\n"
+"Ma yermed, anekcum n unadi akked wumuɣ agejdan ad d-banen deg ufeggag n "
+"uzwel n usfaylu.\n"
+"\n"
+"Ma yensa, umuɣ agejdan ad d-iban d afeggag n wumuɣ, anekcum n unadi daw-as.\n"
+"Ayagi icuba ugar taneɣruft n ugrudem tansayt, yerna yettaṭṭaf cwiṭ ugar n "
+"umḍiq."
 
 #: src/fsearch_preferences.ui:893
 msgid ""
@@ -1373,6 +1307,14 @@ msgid ""
 "\t• <b>Decimal  units:</b> This refers to decimal SI prefixes <i>(e.g. 1 kB "
 "= 1000 bytes)</i>"
 msgstr ""
+"<b>Seqdec iferdisen imisin deg umḍiq n iferdisen imrawanen:</b>\n"
+"\n"
+"Iɣewwaren-a ttseyyiḍen amek ara d-banent tiddiwin n ifuyla.\n"
+"\n"
+"\t• <b>Iferdisen imisin:</b> Ayagi yettuɣal ɣer izwiren imisin n IEC "
+"<i>(amedya 1 KiB = 1024 bytes)</i>\n"
+"\t• <b>Iferdisen imrawanen:</b> Ayagi yettuɣal ɣer izwiren imrawanen n SI "
+"<i>(amedya 1 kB = 1000 bytes)</i>"
 
 #: src/fsearch_preferences.ui:913
 msgid ""
@@ -1384,6 +1326,13 @@ msgid ""
 "Note that some window managers ignore this request and force the window to "
 "have a different size."
 msgstr ""
+"<b>Mekti tiddi n usfaylu:</b>\n"
+"\n"
+"Ma yermed, tiddi n usfaylu n tɣimit yezrin ad d-tuɣal mi ara teldiḍ asfaylu "
+"n FSearch.\n"
+"\n"
+"Ẓer belli kra n imsefraken n isfuyla ttanfen asuter-a, yerna ttḥettimen ɣef "
+"usfaylu ad yesɛu tiddi-nniḍen."
 
 #: src/fsearch_preferences.ui:932
 msgid ""
@@ -1401,6 +1350,18 @@ msgid ""
 "\t• <b>keyboard shortcuts or menu entries</b> and/or\n"
 "\t• <b>mouse click</b>"
 msgstr ""
+"<b>Tiddin mbaɛd ma yeldi ufaylu akken iwata:</b>\n"
+"\n"
+"Mi ara yeldi ufaylu/ukaram akken iwata, yiwen seg tigawin-a yezmer ad "
+"yettwag:\n"
+"\t• <b>Ulac:</b> Ur d-ḍerru kra.\n"
+"                        • <b>Semẓi:</b> Asfaylu n FSearch yettwafernen akka "
+"tura ad yettusemẓi.\n"
+"\t• <b>Mdel:</b> Ffeɣ seg FSearch.\n"
+"\n"
+"Tzemreḍ ad tsewleḍ ma yella tigawin-a ad ttwaremdent mi ara yeldi ufaylu s\n"
+"\t• <b>inegzumen n unasiw neɣ inekcumen n wumuɣ</b> akked/neɣ\n"
+"\t• <b>usiti n umumed</b>"
 
 #: src/fsearch_preferences.ui:956
 msgid ""
@@ -1416,6 +1377,17 @@ msgid ""
 "This also works for regular expressions and wildcard expressions starting or "
 "ending with an asterisk. "
 msgstr ""
+"<b>Sken awalen n unadi yettusebruren:</b>\n"
+"\n"
+"Ma yermed, awalen n unadi ad ttusebruren deg tmuɣli n igmaḍ. D amedya, mi "
+"ara tnadiḍ \"foo\", akk timlilitin n <i>foo</i> deg yismawen n ifuyla/"
+"ikaramen ad ttusebrurent s isekkilen izuranen:\n"
+"\n"
+"\t<b>foo</b>bar.txt\n"
+"\tfile.<b>foo</b>\n"
+"\n"
+"Ayagi iteddu daɣen i tinfaliyin tiluganin akked tinfaliyin tilelliyin "
+"ibeddun neɣ ifakkan s teṛṣemt. "
 
 #: src/fsearch_preferences.ui:978
 msgid ""
@@ -1424,6 +1396,10 @@ msgid ""
 "If enabled, the results view will show the full path of the focused file/"
 "folder in a small tooltip window."
 msgstr ""
+"<b>Sken tilɣa n yifecka:</b>\n"
+"\n"
+"Ma yermed, taskant n igmaḍ ad tesken abrid ummid n ufaylu/ukaram "
+"yettwafernen deg usfaylu ameẓyan n telɣut n yifecka."
 
 #: src/fsearch_preferences.ui:995
 msgid ""
@@ -1431,6 +1407,9 @@ msgid ""
 "\n"
 "If enabled, file/folder icons will be shown in the name column."
 msgstr ""
+"<b>Sken tidwirin deg tgejdit n yisem:</b>\n"
+"\n"
+"Ma yermed, tidwirin n ufaylu/ukaram ad ttuseknent deg tgejdit n yisem."
 
 #: src/fsearch_preferences.ui:1012
 msgid ""
@@ -1440,6 +1419,11 @@ msgid ""
 "session will be restored when you open an FSearch window. This includes the "
 "size and visibility of all columns."
 msgstr ""
+"<b>Mmekti tawila n tgejdit:</b>\n"
+"\n"
+"Ma yermed, tawila n tgejdit n tmuɣli n igmaḍ seg tɣimit yezrin ad d-tuɣal mi "
+"ara teldiḍ asfaylu n FSearch. Ayagi iteddu ula ɣer teɣzi d tbanit n merra "
+"tigejda."
 
 #: src/fsearch_preferences.ui:1029
 msgid ""
@@ -1448,6 +1432,10 @@ msgid ""
 "If enabled, the sort order of the results view from the previous session "
 "will be restored when you open an FSearch window."
 msgstr ""
+"<b>Mmekti amizzwer n usmizzwer:</b>\n"
+"\n"
+"Ma yermed, amizzwer n usmizzwer n tmuɣli n igmaḍ seg tɣimit yezrin ad d-"
+"yuɣal mi ara teldiḍ asfaylu n FSearch."
 
 #: src/fsearch_preferences.ui:1046
 msgid ""
@@ -1455,6 +1443,9 @@ msgid ""
 "\n"
 "If enabled, double clicking in the path column will open the selected path."
 msgstr ""
+"<b>Ldi abrid s usiti uslig deg tgejdit n ubrid:</b>\n"
+"\n"
+"Ma yermed, asiti uslig deg tgejdit n ubrid ad yeldi abrid yettwafernen."
 
 #: src/fsearch_preferences.ui:1063
 msgid ""
@@ -1464,6 +1455,11 @@ msgid ""
 "want to select a file/folder while this setting is active, you need to hold "
 "<i>Ctrl</i> at the same time while clicking the file/folder."
 msgstr ""
+"<b>Yan usiti i welday:</b>\n"
+"\n"
+"Ma yermed, yan usiti ad yeldi afaylu/akaram yettwafernen. Ma tebɣiḍ kan ad "
+"tferneḍ afaylu/akaram mi ara yili usgaddi-a yermed, issefk ad teṭṭfeḍ "
+"<i>Ctrl</i> deg yimir-nni mi ara tessitiḍ ɣef ufaylu/ukaram."
 
 #: src/fsearch_preferences.ui:1080
 msgid ""
@@ -1472,6 +1468,10 @@ msgid ""
 "If enabled, the path that is currently being indexed is displayed in the "
 "statusbar."
 msgstr ""
+"<b>Sken addad n usmiter n taffa n isefka:</b>\n"
+"\n"
+"Ma yermed, abrid i yettusmitiren akka tura ad d-yettwaskan deg ufeggag n "
+"waddad."
 
 #: src/fsearch_preferences.ui:1097
 msgid ""
@@ -1480,6 +1480,10 @@ msgid ""
 "If enabled, a warning dialog is displayed when a file or folder failed to "
 "open."
 msgstr ""
+"<b>Sken idiwenniyen n ulɣu:</b>\n"
+"\n"
+"Ma yermed, ad d-yettwaskan udiwenni n ulɣu mi ara yili ufaylu neɣ akaram ur "
+"izmir ara ad yeldi."
 
 #: src/fsearch_preferences.ui:1114
 msgid ""
@@ -1488,6 +1492,10 @@ msgid ""
 "If enabled, search terms containing path separators (i.e. \"/\") will be "
 "automatically matched against the full path of a file or folder."
 msgstr ""
+"<b>Nadi deg ubrid mi ara tesɛu tuttra imnabḍen n ubrid:</b>\n"
+"\n"
+"Ma yermed, irmawen n unadi i yesɛan imnabḍen n ubrid (am \"/\") ad "
+"ttwacudden s wudem awurman ɣer ubrid ummid n ufaylu neɣ ukaram."
 
 #: src/fsearch_preferences.ui:1131
 msgid ""
@@ -1497,6 +1505,13 @@ msgid ""
 "trigger a case-sensitive search. This means a search term like <i>Foo</i> "
 "will match <i>FooBar.txt</i> but not <i>foobar.txt</i>."
 msgstr ""
+"<b>Qader talɣa n isekkilen mi ara tesɛu tuttra ma drus yiwen usekkil "
+"ameqqran:</b>\n"
+"\n"
+"Ma yermed, irmawen n unadi i yesɛan ma drus yiwen usekkil ameqqran ad sekren "
+"anadi yettḥulfun i talɣa n isekkilen. Ayagi yebɣa ad yini d akken awal n "
+"unadi am <i>Foo</i> ad yemṣada d <i>FooBar.txt</i> maca ur yemṣada ara d "
+"<i>foobar.txt</i>."
 
 #: src/fsearch_preferences.ui:1148
 msgid ""
@@ -1507,6 +1522,13 @@ msgid ""
 "If disabled, all files and folders will be displayed when the search entry "
 "is empty."
 msgstr ""
+"<b>Ffer igmaḍ mi ara yili unadi d ilem:</b>\n"
+"\n"
+"Ma yermed, ulac igmaḍ n unadi ara d-yettwasknen mi ara yili unekcum n unadi "
+"d ilem.\n"
+"\n"
+"Ma yensa, merra ifuyla d ikaramen ad d-ttwasknen mi ara yili unekcum n unadi "
+"d ilem."
 
 #: src/fsearch_preferences.ui:1167
 msgid ""
@@ -1517,6 +1539,12 @@ msgid ""
 "If disabled, the search is only updated when you hit <i>Enter</i> or press "
 "the search button. "
 msgstr ""
+"<b>ⴰⵔⵣⵣⵓ ⵍⵍⵉⵖ ⴰⵔ ⵜⴰⵔⴰⴷ:</b>\n"
+"\n"
+"ⵎⴽ ⵉⵔⵎⴷ, ⴰⴷ ⵉⵎⵓⵛⵛⵓ ⵓⵔⵣⵣⵓ ⵙ ⵓⵡⵓⵔⵎ ⵙ ⴽⵓ ⵜⵉⴽⴽⵉ ⵅⴼ ⵢⴰⵏ ⵓⵙⴰⵔⵓ.\n"
+"\n"
+"ⵎⴽ ⵉⵏⵙ, ⵓⵔ ⵉⵜⵜⵎⵓⵛⵛⵓ ⵓⵔⵣⵣⵓ ⴰⵔ ⵙⴽⵓⴷ ⵜⴽⴽⵉⴷ ⵅⴼ <i>Enter</i> ⵏⵉⵖ ⵜⵙⴷⴷⵉⴷ ⵜⴰⵇⴼⴰⵍⵜ ⵏ "
+"ⵓⵔⵣⵣⵓ. "
 
 #: src/fsearch_preferences.ui:1186
 msgid ""
@@ -1525,6 +1553,9 @@ msgid ""
 "If enabled, the database will be updated automatically in the background "
 "when you start FSearch."
 msgstr ""
+"<b>ⵎⵓⵛⵛⵓ ⵜⴰⴷⴰⵙⵉⵍⵜ ⵏ ⵉⵙⴼⴽⴰ ⴳ ⵜⵏⴽⵔⴰ:</b>\n"
+"\n"
+"ⵎⴽ ⵉⵔⵎⴷ, ⴰⴷ ⵜⵎⵓⵛⵛⵓ ⵜⴷⴰⵙⵉⵍⵜ ⵏ ⵉⵙⴼⴽⴰ ⵙ ⵓⵡⵓⵔⵎ ⴳ ⵓⴷⵉⵔ ⵍⵍⵉⵖ ⵜⵙⵙⵏⴽⴰⵔⴷ FSearch."
 
 #: src/fsearch_preferences.ui:1203
 msgid ""
@@ -1538,6 +1569,15 @@ msgid ""
 "\t• <b>One Filesystem:</b> If enabled, FSearch won't cross filesystem "
 "boundaries for this folder"
 msgstr ""
+"<b>ⵉⴽⴰⵔⴰⵎⵏ ⵉⵜⵜⵓⵙⵎⴷⵏ:</b>\n"
+"\n"
+"ⵜⴰⴱⴷⴰⵔⵜ ⴰⴷ ⵍⵍⴰⵏ ⴳⵉⵙ ⴰⴽⴽⵯ ⵉⴽⴰⵔⴰⵎⵏ ⵍⵍⵉ ⵜⵔⵉⴷ ⴰⴷ ⵜⵏ ⵜⵙⵎⴷⴷ ⴳ ⵜⴷⴰⵙⵉⵍⵜ ⵏ ⵉⵙⴼⴽⴰ.\n"
+"\n"
+"\t• <b>ⵉⵔⵎⴷ:</b> ⵎⴽ ⵉⵔⵎⴷ, ⴰⴷ ⵉⵜⵜⵓⵙⵎⴷ ⵓⴱⵔⵉⴷ ⴳ ⵜⴷⴰⵙⵉⵍⵜ ⵏ ⵉⵙⴼⴽⴰ ⴰⴼ ⴰⴷ ⴳⵉⵙ ⵉⵍⵉ "
+"ⵓⵔⵣⵣⵓ.\n"
+"\t• <b>ⴰⴱⵔⵉⴷ:</b> ⴰⴱⵔⵉⴷ ⵓⵎⵎⵉⴷ ⵍⵍⵉ ⵔⴰⴷ ⵉⵜⵜⵓⵙⵎⴷ.\n"
+"\t• <b>ⵢⴰⵏ ⵓⵏⴳⵔⴰⵡ ⵏ ⵉⴼⵓⵢⵍⴰ:</b> ⵎⴽ ⵉⵔⵎⴷ, ⵓⵔ ⵉⵔⴰⴷ FSearch ⴰⴷ ⵉⵣⵔⵉ ⵜⵉⵍⵉⵙⴰ ⵏ "
+"ⵓⵏⴳⵔⴰⵡ ⵏ ⵉⴼⵓⵢⵍⴰ ⵉ ⵓⴽⴰⵔⴰⵎ ⴰⴷ"
 
 #: src/fsearch_preferences.ui:1224
 msgid ""
@@ -1546,6 +1586,10 @@ msgid ""
 "This button opens a dialog where you can select a folder you want to include "
 "in the database for searching."
 msgstr ""
+"<b>ⵔⵏⵓ ⴰⴽⴰⵔⴰⵎ ⵖⵔ ⵜⴷⴰⵙⵉⵍⵜ ⵏ ⵉⵙⴼⴽⴰ:</b>\n"
+"\n"
+"ⵜⴰⵇⴼⴰⵍⵜ ⴰⴷ ⴰⵔ ⵜⵙⵙⵔⴳⵎ ⵢⴰⵏ ⵓⴷⵉⵡⵏⵏⵉ ⵎⴰⵏⵉ ⵜⵣⵎⵔⴷ ⴰⴷ ⵜⵙⵜⵢⴷ ⵢⴰⵏ ⵓⴽⴰⵔⴰⵎ ⵍⵍⵉ ⵜⵔⵉⴷ ⴰⴷ "
+"ⵜ ⵜⵙⵎⴷⴷ ⴳ ⵜⴷⴰⵙⵉⵍⵜ ⵏ ⵉⵙⴼⴽⴰ ⵉ ⵓⵔⵣⵣⵓ."
 
 #: src/fsearch_preferences.ui:1241
 msgid ""
@@ -1555,6 +1599,11 @@ msgid ""
 "include that folder in the database. This is useful for adding a path "
 "directly without browsing for it."
 msgstr ""
+"<b>ⵔⵏⵓ ⵢⴰⵏ ⵓⴱⵔⵉⴷ ⵓⵙⴷⵉⴷ:</b>\n"
+"\n"
+"ⴰⵔⴰ ⴷⴰ ⴰⴱⵔⵉⴷ ⵓⵎⵎⵉⴷ ⵏ ⵢⴰⵏ ⵓⴽⴰⵔⴰⵎ, ⵜⵙⴷⴷⵉⴷ ⵜⴰⵇⴼⴰⵍⵜ ⵍⵍⵉ ⴷⴰⵔⵙ ⵜⵣⴷⵉⴳ ⴰⴼ ⴰⴷ ⵜⵙⵎⴷⴷ "
+"ⴰⴽⴰⵔⴰⵎ ⴰⴷ ⴳ ⵜⴷⴰⵙⵉⵍⵜ ⵏ ⵉⵙⴼⴽⴰ. ⴰⵢⴰ ⵉⵏⴼⵄ ⵉ ⵓⵔⵏⴰⵡ ⵏ ⵓⴱⵔⵉⴷ ⵙ ⵓⵙⵔⵉⴷ, ⴱⵍⴰ ⴰⵙⵙⵉⵔⴰ "
+"ⵏⵏⵙ."
 
 #: src/fsearch_preferences.ui:1258
 msgid ""
@@ -1562,6 +1611,9 @@ msgid ""
 "\n"
 "This removes the selected folder from the list of included folders."
 msgstr ""
+"<b>ⴽⴽⵙ ⴰⴷⵓⵔ ⵉⵜⵜⵓⵙⵜⵢⵏ:</b>\n"
+"\n"
+"ⴰⵢⴰ ⴰⵔ ⵉⵜⵜⴽⴽⵙ ⴰⴽⴰⵔⴰⵎ ⵉⵜⵜⵓⵙⵜⵢⵏ ⵙⴳ ⵜⴱⴷⴰⵔⵜ ⵏ ⵉⴽⴰⵔⴰⵎⵏ ⵉⵜⵜⵓⵙⵎⴷⵏ."
 
 #: src/fsearch_preferences.ui:1275
 msgid ""
@@ -1574,6 +1626,14 @@ msgid ""
 "system resources per watched folder. For large directory trees with many "
 "files the system may run out of resources to watch them all."
 msgstr ""
+"<b>ⴰⵄⵔⴰⴹ ⵏ ⵓⵙⵙⵓⴷⵎ:</b>\n"
+"\n"
+"ⵎⴽ ⵉⵔⵎⴷ, ⴰⴷ ⵉⵙⵙⵓⴷⵎ FSearch ⴰⴽⴰⵔⴰⵎ ⴰⴷ ⵉ ⵉⵙⵏⴼⴰⵍ, ⵉⵙⵙⵎⵓⵛⵛⵓ ⵜⴰⴷⴰⵙⵉⵍⵜ ⵏ ⵉⵙⴼⴽⴰ ⵙ "
+"ⵓⵡⵓⵔⵎ, ⴰⴼ ⴰⴷ ⵓⵔ ⵜⵙⵔⵉⴷ ⴰⵍⵍⵓⵎⵎⵓⵥ ⵙ ⵓⴼⵓⵙ.\n"
+"\n"
+"ⵓⵔ ⵉⵜⵜⵓⵙⵙⵏⴷ ⵓⵙⵙⵓⴷⵎ ⴳ ⴽⵓ ⴰⵏⴳⵔⴰⵡ ⵏ ⵉⴼⵓⵢⵍⴰ, ⴰⵔ ⵉⵙⵙⵎⵔⴰⵙ ⵢⴰⵏ ⵓⴳⵣⵣⵓⵎ ⴰⵎⵥⵥⵢⴰⵏ ⵙⴳ "
+"ⵜⵖⴱⵓⵍⴰ ⵏ ⵓⵏⴳⵔⴰⵡ ⵉ ⴽⵓ ⴰⴽⴰⵔⴰⵎ ⵉⵜⵜⵓⵙⵙⵓⴷⵎⵏ. ⵉ ⵉⵙⴽⵍⴰ ⵉⵎⵇⵇⵔⴰⵏⵏ ⵏ ⵉⴽⴰⵔⴰⵎⵏ ⵉⵍⵍⴰⵏ "
+"ⴷⴰⵔⵙⵏ ⴰⵟⵟⴰⵚ ⵏ ⵉⴼⵓⵢⵍⴰ, ⵉⵣⵎⵔ ⴰⴷ ⴼⴰⵡⵏⵜ ⵜⵖⴱⵓⵍⴰ ⵏ ⵓⵏⴳⵔⴰⵡ ⴰⴼ ⴰⴷ ⵜⵏ ⵉⵙⵙⵓⴷⵎ ⴰⴽⴽⵯ."
 
 #: src/fsearch_preferences.ui:1294
 msgid ""
@@ -1582,6 +1642,11 @@ msgid ""
 "If enabled, this folder is rescanned every time FSearch starts, so the "
 "database reflects any changes made while FSearch wasn't running."
 msgstr ""
+"<b>ⴰⵍⵍⵓⵎⵎⵓⵥ ⴹⴰⵕⵜ ⵏ ⵓⵙⵙⵏⴽⵔ:</b>\n"
+"\n"
+"ⵎⴽ ⵉⵔⵎⴷ, ⴰⴷ ⵉⵜⵜⵓⵍⵓⵎⵎⵓⵥ ⵓⴽⴰⵔⴰⵎ ⴰⴷ ⵙ ⵓⵡⴷⵎ ⴰⵎⴰⵢⵏⵓ ⴽⵓ ⵜⵉⴽⴽⵍⵜ ⵍⵍⵉⵖ ⵉⵜⵜⵏⴽⴰⵔ "
+"FSearch, ⴰⴼ ⴰⴷ ⵜⵙⴽⵏ ⵜⴷⴰⵙⵉⵍⵜ ⵏ ⵉⵙⴼⴽⴰ ⴽⵓ ⵉⵙⵏⴼⴰⵍ ⵉⵜⵜⵓⴳⴰⵏ ⵍⵍⵉⵖ ⵓⵔ ⵉⵜⵜⵎⴰⵙⴰ "
+"FSearch."
 
 #: src/fsearch_preferences.ui:1311
 msgid ""
@@ -1591,6 +1656,11 @@ msgid ""
 "folder. Mounted file systems below it (e.g. external drives or network "
 "shares) are skipped."
 msgstr ""
+"<b>ⵇⵇⵉⵎ ⴳ ⵢⴰⵏ ⵓⵏⴳⵔⴰⵡ ⵏ ⵉⴼⵓⵢⵍⴰ:</b>\n"
+"\n"
+"ⵎⴽ ⵉⵔⵎⴷ, ⵓⵔ ⵉⵔⴰⴷ FSearch ⴰⴷ ⵉⵣⵔⵉ ⵜⵉⵍⵉⵙⴰ ⵏ ⵓⵏⴳⵔⴰⵡ ⵏ ⵉⴼⵓⵢⵍⴰ ⵍⵍⵉⵖ ⴰⵔ ⵉⵍⵓⵎⵎⵓⵥ "
+"ⴰⴽⴰⵔⴰⵎ ⴰⴷ. ⴰⴷ ⵉⵜⵜⵓⵣⵔⵉ ⵉⵏⴳⵔⴰⵡⵏ ⵏ ⵉⴼⵓⵢⵍⴰ ⵉⵜⵜⵓⵙⵔⵙⵏ ⴷⴷⴰⵡ ⴰⵙ (ⴰⵎ ⵉⵎⵙⵙⵓⴷⵙⵏ "
+"ⵉⴱⵕⵕⴰⵏⵉⵢⵏ ⵏⵉⵖ ⵉⴱⴹⴰⵏ ⵏ ⵓⵥⵟⵟⴰ)."
 
 #: src/fsearch_preferences.ui:1328
 msgid ""
@@ -1602,6 +1672,13 @@ msgid ""
 "This is useful for folders on file systems that can't be monitored for "
 "changes."
 msgstr ""
+"<b>ⴰⵍⵍⵓⵎⵎⵓⵥ ⵙ ⵓⵡⴰⵍ ⴽⵓ:</b>\n"
+"\n"
+"ⵎⴽ ⵉⵔⵎⴷ, ⴰⴷ ⵉⵜⵜⵓⵍⵓⵎⵎⵓⵥ ⵓⴽⴰⵔⴰⵎ ⴰⴷ ⵙ ⵓⵡⵓⵔⵎ ⴳ ⵓⵣⵎⵣ ⵉⵜⵜⵓⴼⴽⴰⵏ. ⵙⵙⵎⵔⵙ ⵉⴳⵔⴰⵏ ⵏ "
+"ⵜⵙⵔⴰⴳⵉⵏ ⴷ ⵜⵓⵙⴷⵉⴷⵉⵏ ⴰⴼ ⴰⴷ ⵜⵙⴱⴷⴷⴷ ⵎⵏⵛⴽ ⵏ ⵜⵉⴽⴽⴰⵍ ⵍⵍⵉ ⴳ ⵉⵜⵜⵉⵍⵉ ⵓⵍⵍⵓⵎⵎⵓⵥ.\n"
+"\n"
+"ⴰⵢⴰ ⵉⵏⴼⵄ ⵉ ⵉⴽⴰⵔⴰⵎⵏ ⵉⵍⵍⴰⵏ ⴳ ⵉⵏⴳⵔⴰⵡⵏ ⵏ ⵉⴼⵓⵢⵍⴰ ⵍⵍⵉ ⵓⵔ ⵉⵣⵎⵉⵔ ⵓⵙⵙⵓⴷⵎ ⵏ ⵉⵙⵏⴼⴰⵍ "
+"ⵏⵏⵙⵏ."
 
 #: src/fsearch_preferences.ui:1347
 msgid ""
@@ -1622,6 +1699,22 @@ msgid ""
 "\t• <b>Applies To:</b> Whether the rule affects <i>Files</i>, <i>Folders</i> "
 "or both."
 msgstr ""
+"<b>Ilugan n usuffeɣ:</b>\n"
+"\n"
+"Tabdart-a tesɛa ilugan i ifuyla d ikaramen i tebɣiḍ ad tsuffɣeḍ seg taffa n "
+"isefka.\n"
+"\n"
+"\t• <b>Urmid:</b> Ma yermed, ad yettwasnes ulug, ad ttwassuffɣen yiferdisen "
+"imeɣran.\n"
+"\t• <b>Udlif:</b> Aḍris i yettameɣran ɣef yal aferdis, yettwafham ilmend n "
+"Wanaw.\n"
+"\t• <b>Anaw:</b> Amek yettwafham udlif — <i>Aḍris usrid</i> (aḍris ameɣtu), "
+"<i>Azamul amaway</i> (s useqdec n * d ?) neɣ <i>Regex</i> (tanfalit "
+"talugant).\n"
+"\t• <b>Amṣada:</b> Ma yella udlif ad yettameɣri ɣef <i>Ubrid ummid</i> n "
+"uferdis neɣ ɣef <i>Yisem n ufaylu</i> kan (isem war abrid).\n"
+"\t• <b>Yettwasnes ɣef:</b> Ma yella ulug ad iḥaz <i>Ifuyla</i>, <i>Ikaramen</"
+"i> neɣ i sin."
 
 #: src/fsearch_preferences.ui:1370
 msgid ""
@@ -1630,6 +1723,11 @@ msgid ""
 "This adds a new, empty rule to the list. Edit its Pattern, Type, Match and "
 "Applies To columns to control what gets excluded from the database."
 msgstr ""
+"<b>Rnu alugen n usuffeɣ:</b>\n"
+"\n"
+"Ayagi ad yernu ar tebdart alugen amaynut ilem. Ẓreg tigejda-ines Udlif, "
+"Anaw, Amṣada d Yettwasnes ɣef iwakken ad tsenqdeḍ acu ara yettwassuffɣen seg "
+"taffa n isefka."
 
 #: src/fsearch_preferences.ui:1387
 msgid ""
@@ -1637,6 +1735,9 @@ msgid ""
 "\n"
 "This removes the selected rule from the list of exclude rules."
 msgstr ""
+"<b>Kkes izirig yettwafernen:</b>\n"
+"\n"
+"Ayagi ad yekkes alugen yettwafernen seg tebdart n ilugan n usuffeɣ."
 
 #: src/fsearch_preferences.ui:1404
 msgid ""
@@ -1646,6 +1747,11 @@ msgid ""
 "\n"
 "⚠ All rules which were created or edited by the user will be lost! ⚠"
 msgstr ""
+"<b>Err-d ilugan n usuffeɣ n lexṣas:</b>\n"
+"\n"
+"Taqeffalt-a ad d-terr tagrumma n lexṣas n ilugan n usuffeɣ.\n"
+"\n"
+"⚠ Akk ilugan i d-yerna neɣ i yeẓreg useqdac ad ṛuḥen! ⚠"
 
 #: src/fsearch_preferences.ui:1423
 msgid ""
@@ -1656,6 +1762,12 @@ msgid ""
 "all files or folders which are called either <i>.git</i> or <i>.cache</i> or "
 "end with <i>.swp</i>."
 msgstr ""
+"<b>Suffeɣ ifuyla d ikaramen seg taffa n isefka:</b>\n"
+"\n"
+"Tagi d tabdart n ifuyla (neɣ ikaramen) i tebɣiḍ ad tsuffɣeḍ seg taffa n "
+"isefka, ttwabḍan s wagaz n ticcert. Amedya, <i>.git;.cache;*.swp</i> ad "
+"isuffeɣ akk ifuyla neɣ ikaramen i wumi qqaren <i>.git</i> neɣ <i>.cache</i>, "
+"neɣ i ikeffun s <i>.swp</i>."
 
 #: src/fsearch_preferences.ui:1440
 msgid ""
@@ -1664,10 +1776,16 @@ msgid ""
 "If enabled, hidden files and folders will be excluded from the database "
 "<i>(i.e. all files or folders which start with a dot character)</i>."
 msgstr ""
+"<b>Suffeɣ ifuyla d ikaramen uffiren:</b>\n"
+"\n"
+"Ma yermed, ifuyla d ikaramen uffiren ad ttwassuffɣen seg taffa n isefka "
+"<i>(anamek-is, akk ifuyla neɣ ikaramen i ibeddun s uzamul n wagaz)</i>."
 
 #: src/fsearch_preferences.ui:1457
 msgid "Focus a setting to get a detailed description of what it does."
 msgstr ""
+"Err asaḍas ɣef yiwen n useɣwer iwakken ad tawiḍ aglam leqqayen n wayen "
+"ixeddem."
 
 #: src/fsearch_preferences.ui:1470
 msgid ""
@@ -1682,6 +1800,17 @@ msgid ""
 "\n"
 "<i><tt>fsearch --update-database</tt></i>"
 msgstr ""
+"<b>Leqqem taffa n isefka s wudem uslig deg tallunt n wakud yettwafernen:</"
+"b>\n"
+"\n"
+"Ma yermed, skud FSearch iteddu, taffa n isefka ad tettwaleqqem s wudem uslig "
+"s tallunt n wakud i d-yettunefken.\n"
+"\n"
+"Ma tebɣiḍ ad tleqqmeḍ taffa n isefka deg ugilal, ula ma FSearch ur iteddu "
+"ara, issefk ad tesqedceḍ ifecka am cron neɣ imeswaq n systemd iwakken ad "
+"teskerḍeḍ aleqqem s wudem uslig s:\n"
+"\n"
+"<i><tt>fsearch --update-database</tt></i>"
 
 #: src/fsearch_preferences.ui:1491
 msgid ""
@@ -1692,6 +1821,12 @@ msgid ""
 "launcher. Otherwise the <i>.desktop</i> file will be opened with the default "
 "handler for this type of files, which is usually a text editor."
 msgstr ""
+"<b>Sekker ifuyla n tnarit:</b>\n"
+"\n"
+"Ma yermed, asermed n ufaylu <i>.desktop</i> ad isekker asnas yettusbadun deg "
+"ufaylu-nni. S wakka FSearch yezmer ad yeddu am usekkar n isnasen. Ma ulac, "
+"afaylu <i>.desktop</i> ad yeldi s umsefrak n lexṣas n wanaw-a n ifuyla, i "
+"yettilin s umata d amaẓrag n uḍris."
 
 #: src/fsearch_preferences.ui:1508
 msgid ""
@@ -1704,6 +1839,15 @@ msgid ""
 "the filter on demand\n"
 "\t• <b>Query:</b> The search term by which the database should be filtered"
 msgstr ""
+"<b>Imzizdigen:</b>\n"
+"\n"
+"Tagi d tabdart n yimzizdigen akk yellan. Imzizdeg d unadi yettusbadun s "
+"uzwir.\n"
+"\n"
+"\t• <b>Isem:</b> Asulay asuf d unaglam n umzizdeg\n"
+"\t• <b>Amakru:</b> S tira n uḍris n umakru, yeḍfer-it ':' tzemreḍ ad "
+"tesremdeḍ amizizdeg ɣef usuter\n"
+"\t• <b>Tuttra:</b> Awal n unadi s wayes ara yettwazizdeg taffa n isefka"
 
 #: src/fsearch_preferences.ui:1529
 msgid ""
@@ -1711,6 +1855,9 @@ msgid ""
 "\n"
 "This button opens a dialog where you can edit a new filter."
 msgstr ""
+"<b>Rnu imsizdeg amaynu:</b>\n"
+"\n"
+"Taqeffalt ad teldi adiwenni anida i tzemreḍ ad tẓergeḍ imsizdeg amaynu."
 
 #: src/fsearch_preferences.ui:1546
 msgid ""
@@ -1718,6 +1865,9 @@ msgid ""
 "\n"
 "This button removes the currently selected filter."
 msgstr ""
+"<b>Kkes imsizdeg yettwafernen:</b>\n"
+"\n"
+"Taqeffalt ad tekkes imsizdeg yettwafernen tura."
 
 #: src/fsearch_preferences.ui:1563
 msgid ""
@@ -1725,6 +1875,9 @@ msgid ""
 "\n"
 "This button opens a dialog where you can edit the selected filter."
 msgstr ""
+"<b>Ẓreg imsizdeg yettwafernen:</b>\n"
+"\n"
+"Taqeffalt ad teldi adiwenni anida i tzemreḍ ad tẓergeḍ imsizdeg yettwafernen."
 
 #: src/fsearch_preferences.ui:1580
 msgid ""
@@ -1734,6 +1887,11 @@ msgid ""
 "\n"
 "⚠ All filters which were created or edited by the user will be lost! ⚠"
 msgstr ""
+"<b>Err-d imsizdigen imezwar:</b>\n"
+"\n"
+"Taqeffalt ad terr-d tawila tamezwarut n imsizdigen.\n"
+"\n"
+"⚠ Akk imsizdigen i d-yerna neɣ i yeẓreg useqdac ad ṛuḥen! ⚠"
 
 #: src/fsearch_preferences.ui:1599
 msgid ""
@@ -1742,133 +1900,81 @@ msgid ""
 "If enabled, FSearch exits when the Escape key is pressed instead of the "
 "window being minimized."
 msgstr ""
-
-#: src/fsearch_preferences.ui:1618 src/fsearch_window.ui:290
-#: src/fsearch_window.ui:415 src/menus.ui:150 src/menus.ui:156
-msgid "Help"
-msgstr "Tiwisi"
-
-#: src/fsearch_preferences_dialog.c:238
-msgid "Database"
-msgstr "tisila n isefka"
+"<b>Ffeɣ s Escape:</b>\n"
+"\n"
+"Ma yermed, FSearch ad yeffeɣ mi ara tettwasḍas tqeffalt Escape, deg umḍiq n "
+"usemẓi n usfaylu."
 
 #: src/fsearch_result_view.c:381
 msgid "Invalid row data"
-msgstr ""
-
-#: src/fsearch_statusbar.c:58
-#, fuzzy, c-format
-msgid "%'d Item"
-msgstr "%'d Iferdas"
-
-#: src/fsearch_statusbar.c:58 src/fsearch_statusbar.c:186
-#, c-format
-msgid "%'d Items"
-msgstr "%'d Iferdas"
+msgstr "Isefka n wadur mačči d imeɣta"
 
 #: src/fsearch_statusbar.c:80
 msgid "Querying…"
-msgstr ""
-
-#: src/fsearch_statusbar.c:175
-#, fuzzy
-msgid "Loading…"
-msgstr "Afran..."
-
-#: src/fsearch_statusbar.c:180
-#, fuzzy
-msgid "Scanning…"
-msgstr "Afran..."
+msgstr "Anadi…"
 
 #: src/fsearch_statusbar.ui:52
 msgid "Number of Search Results"
-msgstr ""
-
-#: src/fsearch_statusbar.ui:53
-msgid "0 Items"
-msgstr "0 iferdas"
-
-#: src/fsearch_statusbar.ui:106
-#, fuzzy
-msgid "Cancel"
-msgstr "_Sser"
+msgstr "Amḍan n igmaḍ n unadi"
 
 #: src/fsearch_statusbar.ui:153
 msgid "Index:"
-msgstr ""
-
-#: src/fsearch_statusbar.ui:228
-#, fuzzy
-msgid "Number of selected folders"
-msgstr "Stey Asdaw"
-
-#: src/fsearch_statusbar.ui:229 src/fsearch_statusbar.ui:254
-msgid "0/0"
-msgstr "0/0"
-
-#: src/fsearch_statusbar.ui:253
-#, fuzzy
-msgid "Number of selected files"
-msgstr "Dɣer kra n usettay"
-
-#: src/fsearch_statusbar.ui:328 src/fsearch_window.ui:103
-msgid "Cancel database update"
-msgstr "Sser asedɣi tisila n isefka"
+msgstr "Amatar:"
 
 #: src/fsearch_statusbar.ui:369
 msgid "Number of database items"
-msgstr ""
-
-#: src/fsearch_statusbar.ui:370
-msgid "(empty)"
-msgstr "(ixwa)"
+msgstr "Amḍan n iferdisen n taffa n isefka"
 
 #: src/fsearch_statusbar.ui:407
 msgid ""
 "Search term contains upper case characters.\n"
 "<b>Match Case</b> was temporarily activated for this term."
 msgstr ""
+"Awal n unadi igber isekkilen imeqqranen.\n"
+"<b>Amṣada n usekkil</b> irmed i kra n wakud i wawal-a."
 
 #: src/fsearch_statusbar.ui:438 src/fsearch_statusbar.ui:491
 msgid "CASE"
-msgstr ""
+msgstr "ASEKKIL"
 
 #: src/fsearch_statusbar.ui:514
 msgid ""
 "Search term contains path separators.\n"
 "<b>Search in Path</b> was temporarily activated for this term."
 msgstr ""
-
-#: src/fsearch_statusbar.ui:545 src/fsearch_statusbar.ui:598
-msgid "PATH"
-msgstr "ABRID"
+"Awal n unadi igber iberdiyen n ufraz n ubrid.\n"
+"<b>Nadi deg ubrid</b> irmed i kra n wakud i wawal-a."
 
 #: src/fsearch_statusbar.ui:651
 msgid "REGEX"
-msgstr ""
+msgstr "TANFALIT TALUGANT"
 
 #: src/fsearch_statusbar.ui:726
 msgid ""
 "The search was cancelled before it finished.\n"
 "<b>These results are incomplete.</b>"
 msgstr ""
+"Anadi yettwasefsex send ad yemmed.\n"
+"<b>Igmaḍ-a ur mmiden ara.</b>"
 
 #: src/fsearch_statusbar.ui:756
 msgid "PARTIAL"
-msgstr ""
+msgstr "ARUMMID"
 
 #: src/fsearch_welcome_dialog.ui:26
 msgid "What's New in FSearch"
-msgstr ""
+msgstr "Acu i d-amaynut deg FSearch"
 
 #: src/fsearch_welcome_dialog.ui:79
 msgid ""
 "<span size=\"xx-large\" weight=\"bold\">What's New in FSearch 0.3</span>"
 msgstr ""
+"<span size=\"xx-large\" weight=\"bold\">Acu i d-amaynut deg FSearch 0.3</"
+"span>"
 
 #: src/fsearch_welcome_dialog.ui:149
 msgid "<big><b>File System Monitoring</b></big>"
-msgstr ""
+msgstr "<big><b>Aḍfar n unagraw n yifuyla</b></big>"
 
 #: src/fsearch_welcome_dialog.ui:163
 msgid ""
@@ -1882,20 +1988,31 @@ msgid ""
 "<a href=\"URL\">https://github.com/cboxdoerfer/fsearch/wiki/Database-update</"
 "a>"
 msgstr ""
+"Tzemreḍ tura ad tḍefreḍ ikaramen imaẓlayen akken ad tekkseḍ allus n unadi "
+"yezgan. Imbeddlen n yifuyla ad d-banent din din deg yigmaḍ n unadi.\n"
+"\n"
+"I urmad n tmahilta-a, ddu ɣer tgezmi n taffa n yisefka deg usfaylu n "
+"Yismenyifen.\n"
+"\n"
+"Wali tasemlit ɣef uẓeṭṭa i wugar n yisalan:\n"
+"<a href=\"URL\">https://github.com/cboxdoerfer/fsearch/wiki/Database-update</"
+"a>"
 
 #: src/fsearch_welcome_dialog.ui:232
 msgid "<big><b>Folder-Specific Rescan Schedules</b></big>"
-msgstr ""
+msgstr "<big><b>Isuddisen n wallus n usiggez i yal akaram</b></big>"
 
 #: src/fsearch_welcome_dialog.ui:246
 msgid ""
 "You can now configure automatic update intervals for individual folders "
 "independently and tailored to each distinct location."
 msgstr ""
+"Tzemreḍ ad teswelḍ tura tallunin n uleqqem awurman i yal akaram s tlelli, s "
+"usgadi i yal adig yemgaraden."
 
 #: src/fsearch_welcome_dialog.ui:309
 msgid "<big><b>Improved Exclude Rules</b></big>"
-msgstr ""
+msgstr "<big><b>Ilugan n ustixxer yettwaseǧhden</b></big>"
 
 #: src/fsearch_welcome_dialog.ui:323
 msgid ""
@@ -1904,18 +2021,19 @@ msgid ""
 "Rules can be targeted specifically at files, folders, or both, and can be "
 "configured to match against either the basename or the full absolute path."
 msgstr ""
-
-#: src/fsearch_window.c:749 src/menus.ui:279
-msgid "Size"
-msgstr "Tiɣzi"
+"Tzemreḍ tura ad tesqedceḍ izamulen ilelliyen d tenfaliyin tiluganin i usbadu "
+"n yilugan n ustixxer iǧehden ugar. \n"
+"Ilugan zemren ad ttunefken s wudem usdid i yifuyla, i yikaramen, neɣ i sin, "
+"yerna zemren ad ttuswelken akken ad mṣadan ama d yisem azadur ama d abrid "
+"amagdez ummid."
 
 #: src/fsearch_window.c:763 src/menus.ui:271
 msgid "Extension"
-msgstr ""
+msgstr "Asiɣzef"
 
 #: src/fsearch_window.c:770 src/menus.ui:283
 msgid "Date Modified"
-msgstr ""
+msgstr "Azemz n ubeddel"
 
 #: src/fsearch_window.c:784
 msgid ""
@@ -1924,6 +2042,408 @@ msgid ""
 "This sort order is not persistent, it will be reset when the search term "
 "changes."
 msgstr ""
+"Asmizzwer s <b>Wanaw</b> izmer ad yeṭṭef kra n tsinin ma llant aṭas n "
+"tigemmiḍin.\n"
+"\n"
+"Amizzwer-a ur imezgi ara; ad yettales awennez-is mi ara ibeddel wawal n "
+"unadi."
+
+#: src/fsearch_window.ui:158 src/menus.ui:116
+msgid "Match Case"
+msgstr "Ṣada amasal n usekkil"
+
+#: src/fsearch_window.ui:172 src/menus.ui:120
+msgid "Enable RegEx"
+msgstr "Rmed RegEx"
+
+#: src/fsearch_window.ui:197 src/menus.ui:95
+msgid "Show Statusbar"
+msgstr "Sken afeggag n waddad"
+
+#: src/fsearch_window.ui:372 src/fsearch_window.ui:443 src/menus.ui:131
+msgid "Donate"
+msgstr "Mudd tawsa"
+
+#: src/fsearch_window.ui:387 src/menus.ui:142
+msgid "Forum"
+msgstr "Anmager"
+
+#: src/fsearch_window.ui:401 src/menus.ui:146
+msgid "Bug Reports and Feature Requests"
+msgstr "Ineqqisen n tuccḍiwin d issutren n tmahilin"
+
+#: src/fsearch_window.ui:460 src/menus.ui:133
+msgid "GitHub Sponsors"
+msgstr "Imendaden n GitHub"
+
+#: src/fsearch_window.ui:474 src/menus.ui:137
+msgid "PayPal"
+msgstr "PayPal"
+
+#: src/fsearch_window_actions.c:205
+msgid "Moving files to trash…"
+msgstr "Asmutti n ifuyla ɣer tqecwalt…"
+
+#: src/fsearch_window_actions.c:238 src/fsearch_window_actions.c:533
+#: src/fsearch_window_actions.c:580
+msgid "Something went wrong."
+msgstr "Yella kra ur iddi ara akken iwata."
+
+#: src/menus.ui:78
+msgid "Invert Selection"
+msgstr "Smutti tafrayt"
+
+#: src/menus.ui:213
+msgid "Copy as Text"
+msgstr "Nɣel am uḍris"
+
+#: src/menus.ui:223
+msgid "Path + Name"
+msgstr "Abrid + Isem"
+
+#: src/menus.ui:236
+msgid "Move to _Trash"
+msgstr "Smutti ɣer _tqecwalt"
+
+#: data/io.github.cboxdoerfer.FSearch.desktop.in.in:12
+msgid "File Search Utility"
+msgstr "Allal n unadi n ifuyla"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:49
+msgid "search"
+msgstr "anadi"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:50
+msgid "fsearch"
+msgstr "fsearch"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:51
+msgid "files"
+msgstr "ifuyla"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:52
+msgid "folders"
+msgstr "isdawen"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:54
+msgid "video"
+msgstr "ividyuten"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:55
+msgid "documents"
+msgstr "inatamn"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:106
+msgid "New search engine"
+msgstr "Amsedday n unadi amaynu"
+
+#: src/fsearch.c:330
+msgid "Saving database and config…"
+msgstr "Asekles n taffa n isefka d twila…"
+
+#: src/fsearch.c:789
+msgid "Set the search pattern"
+msgstr "Sbadu talɣa n unadi"
+
+#: src/fsearch.c:790
+msgid "Update the database and exit"
+msgstr "Leqqem taffa n isefka, tffeɣ"
+
+#: src/fsearch.c:791
+msgid "Print version information and exit"
+msgstr "Siggez talɣut n lqem, tffeɣ"
+
+#: src/fsearch_database_file.c:1343
+msgid "Loading folders…"
+msgstr "Asali n ikaram…"
+
+#: src/fsearch_database_file.c:1359
+msgid "Loading files…"
+msgstr "Asali n ifuyla…"
+
+#: src/fsearch_database_index_store.c:925 src/fsearch_statusbar.c:73
+#: src/fsearch_statusbar.ui:90
+msgid "Sorting…"
+msgstr "Asmizzwer…"
+
+#: src/fsearch_database_preferences_widget.c:414
+msgid "Full Path"
+msgstr "Aɣaras ummid"
+
+#: src/fsearch_database_preferences_widget.c:434
+msgid "Files & Folders"
+msgstr "Ifuyla & ikaram"
+
+#: src/fsearch_file_utils.c:163
+msgid "Failed to get path"
+msgstr "Ur yessaweḍ ara ad yawi aɣaras"
+
+#: src/fsearch_file_utils.c:526
+msgid "Failed to get parent path"
+msgstr "Ur yessaweḍ ara ad yawi aɣaras amaraw"
+
+#: src/fsearch_file_utils.c:533
+msgid "Failed to build open command"
+msgstr "Ur yeddi ara uskar n unezḍay n uṛeẓẓum"
+
+#: src/fsearch_file_utils.c:589
+msgid "Folder"
+msgstr "Akaram"
+
+#: src/fsearch_filter_editor.ui:50
+msgid "Name:"
+msgstr "Isem:"
+
+#: src/fsearch_filter_editor.ui:73
+msgid "Search in path"
+msgstr "Rzu deg uɣaras"
+
+#: src/fsearch_filter_preferences_widget.c:133
+msgid "Add filter"
+msgstr "Rnu imsizdeg"
+
+#: src/fsearch_filter_preferences_widget.ui:77
+msgid "Add new filter"
+msgstr "Rnu imsizdeg amaynu"
+
+#: src/fsearch_filter_preferences_widget.ui:113
+msgid "Edit selected filter"
+msgstr "Ẓreg imsizdeg yettwafernen"
+
+#: src/fsearch_overlay.ui:60
+msgid "Add folders"
+msgstr "Rnu ikaramen"
+
+#: src/fsearch_overlay.ui:256
+msgid "Press <b>Ctrl + F</b> and start typing."
+msgstr "Senned ɣef <b>Ctrl + F</b> sakin bdu tira."
+
+#: src/fsearch_overlay.ui:368
+msgid "Sorting results…"
+msgstr "Asmizzwer n igmaḍ…"
+
+#: src/fsearch_preferences.ui:801
+msgid "Filter:"
+msgstr "Tastayt:"
+
+#: src/fsearch_statusbar.c:58
+#, c-format
+msgid "%'d Item"
+msgstr "%'d uferdis"
+
+#: src/fsearch_statusbar.c:175
+msgid "Loading…"
+msgstr "Asali…"
+
+#: src/fsearch_statusbar.c:180
+msgid "Scanning…"
+msgstr "Asiggez…"
+
+#: src/fsearch_statusbar.ui:106
+msgid "Cancel"
+msgstr "Sser"
+
+#: src/fsearch_statusbar.ui:228
+msgid "Number of selected folders"
+msgstr "Amḍan n ikaramen yettwafernen"
+
+#: src/fsearch_statusbar.ui:253
+msgid "Number of selected files"
+msgstr "Amḍan n ifuyla yettwafernen"
+
+#: src/fsearch_window.ui:275 src/fsearch_window.ui:356 src/menus.ui:129
+msgid "FSearch Online"
+msgstr "FSearch ɣef uẓeṭṭa"
+
+#: src/fsearch_window_actions.c:110
+#, c-format
+msgid "Do you really want to open %'d file?"
+msgid_plural "Do you really want to open %'d files?"
+msgstr[0] "Is nit texsed ad teṛẓemed %'d ufaylu?"
+msgstr[1] "Is nit texsed ad teṛẓemed %'d ifuyla?"
+
+#: src/fsearch_window_actions.c:198
+#, c-format
+msgid "Do you really want to remove %'d file?"
+msgid_plural "Do you really want to remove %'d files?"
+msgstr[0] "Is nit texsed ad tekkesed %'d ufaylu?"
+msgstr[1] "Is nit texsed ad tekkesed %'d ifuyla?"
+
+#: src/fsearch_window_actions.c:263
+#, c-format
+msgid "Do you really want to open %'d file property window?"
+msgid_plural "Do you really want to open %'d file property windows?"
+msgstr[0] "Is nit texseḍ ad teṛẓmeḍ asfaylu n tmeẓliyin n %'d ufaylu?"
+msgstr[1] "Is nit texseḍ ad teṛẓmeḍ isfuyla n tmeẓliyin n %'d ifuyla?"
+
+#: src/fsearch_window_actions.c:270
+msgid "Opening file properties…"
+msgstr "Aṛẓam n tmeẓliyin n ufaylu…"
+
+#: src/menus.ui:42
+msgid "Close Window"
+msgstr "Mdel asfaylu"
+
+#: data/io.github.cboxdoerfer.FSearch.desktop.in.in:4 src/main.c:36
+msgid "FSearch"
+msgstr "FSearch"
+
+#: data/io.github.cboxdoerfer.FSearch.desktop.in.in:10
+msgid "search;fsearch;files;folders;music;video;documents;find;tool;everything;"
+msgstr "rzu;fsearch;ifuyla;isdawen;aẓawan;avidyu;inatamen;af;imis;maṛṛa;"
+
+#: src/fsearch.c:181
+msgid "translator-credits"
+msgstr "Ubuεli ḥakim"
+
+#: src/fsearch_database_preferences_widget.c:162
+#: src/fsearch_database_preferences_widget.c:176
+msgid "Select folder"
+msgstr "Stey Asdaw"
+
+#: src/fsearch_database_preferences_widget.c:165
+#: src/fsearch_database_preferences_widget.c:180
+#: src/fsearch_filter_editor.c:104 src/fsearch_preferences_dialog.c:331
+msgid "_Cancel"
+msgstr "_Sser"
+
+#: src/fsearch_database_preferences_widget.c:167
+#: src/fsearch_database_preferences_widget.c:179
+msgid "_Select"
+msgstr "S_tey"
+
+#: src/fsearch_database_preferences_widget.c:436 src/fsearch_filter.c:114
+msgid "Files"
+msgstr "Ifuyla"
+
+#: src/fsearch_database_preferences_widget.c:438 src/fsearch_filter.c:113
+msgid "Folders"
+msgstr "Isdawen"
+
+#: src/fsearch_database_preferences_widget.c:694 src/fsearch_window.c:756
+#: src/menus.ui:275
+msgid "Type"
+msgstr "Anaw"
+
+#: src/fsearch_database_preferences_widget.c:864 src/fsearch_window.c:742
+#: src/menus.ui:219 src/menus.ui:267
+msgid "Path"
+msgstr "Aɣaras"
+
+#: src/fsearch_filter.c:112
+msgid "All"
+msgstr "Maṛṛa"
+
+#: src/fsearch_filter.c:117
+msgid "Audio"
+msgstr "Imesli"
+
+#: src/fsearch_filter.c:118
+msgid "Documents"
+msgstr "Inatamn"
+
+#: src/fsearch_filter.c:119
+msgid "Pictures"
+msgstr "Tiwlafin"
+
+#: src/fsearch_filter.c:120
+msgid "Videos"
+msgstr "Ividyuten"
+
+#: src/fsearch_filter_editor.c:105 src/fsearch_preferences_dialog.c:332
+msgid "_OK"
+msgstr "_WAX"
+
+#: src/fsearch_filter_preferences_widget.c:315 src/fsearch_window.c:735
+#: src/menus.ui:215 src/menus.ui:263
+msgid "Name"
+msgstr "Isem"
+
+#: src/fsearch_overlay.ui:108
+msgid "Loading Database…"
+msgstr "Azdam n tsila n isefka…"
+
+#: src/fsearch_overlay.ui:171 src/fsearch_statusbar.ui:312
+msgid "Updating Database…"
+msgstr "asedɣi n tsila n isefka…"
+
+#: src/fsearch_preferences.ui:223
+msgid "with double click"
+msgstr "s sin iklikn"
+
+#: src/fsearch_preferences.ui:273
+msgid "Nothing"
+msgstr "Walu"
+
+#: src/fsearch_preferences.ui:274
+msgid "Minimize"
+msgstr "Ssemẓi"
+
+#: src/fsearch_preferences.ui:275
+msgid "Close"
+msgstr "Rgel"
+
+#: src/fsearch_preferences.ui:309
+msgid "General:"
+msgstr "Anatam:"
+
+#: src/fsearch_preferences.ui:471
+msgid "Single click to open"
+msgstr "Yan ukliki i uṛeẓẓum"
+
+#: src/fsearch_preferences.ui:519
+msgid "Results:"
+msgstr "Tiyufa:"
+
+#: src/fsearch_preferences.ui:692
+msgid "Interface"
+msgstr "Anegrudm"
+
+#: src/fsearch_preferences.ui:730
+msgid "Search as you type"
+msgstr "Rzu adday ttarad"
+
+#: src/fsearch_preferences.ui:822 src/fsearch_window.ui:639
+msgid "Search"
+msgstr "Rzu"
+
+#: src/fsearch_preferences.ui:1618 src/fsearch_window.ui:290
+#: src/fsearch_window.ui:415 src/menus.ui:150 src/menus.ui:156
+msgid "Help"
+msgstr "Tiwisi"
+
+#: src/fsearch_preferences_dialog.c:238
+msgid "Database"
+msgstr "tisila n isefka"
+
+#: src/fsearch_statusbar.c:58 src/fsearch_statusbar.c:186
+#, c-format
+msgid "%'d Items"
+msgstr "%'d Iferdas"
+
+#: src/fsearch_statusbar.ui:53
+msgid "0 Items"
+msgstr "0 iferdas"
+
+#: src/fsearch_statusbar.ui:229 src/fsearch_statusbar.ui:254
+msgid "0/0"
+msgstr "0/0"
+
+#: src/fsearch_statusbar.ui:328 src/fsearch_window.ui:103
+msgid "Cancel database update"
+msgstr "Sser asedɣi tisila n isefka"
+
+#: src/fsearch_statusbar.ui:370
+msgid "(empty)"
+msgstr "(ixwa)"
+
+#: src/fsearch_statusbar.ui:545 src/fsearch_statusbar.ui:598
+msgid "PATH"
+msgstr "ABRID"
+
+#: src/fsearch_window.c:749 src/menus.ui:279
+msgid "Size"
+msgstr "Tiɣzi"
 
 #: src/fsearch_window.ui:68
 msgid "New window"
@@ -1937,18 +2457,6 @@ msgstr "Ssedɣi tisila n isefka"
 msgid "Search in Path"
 msgstr "Rzu g uɣaras"
 
-#: src/fsearch_window.ui:158 src/menus.ui:116
-msgid "Match Case"
-msgstr ""
-
-#: src/fsearch_window.ui:172 src/menus.ui:120
-msgid "Enable RegEx"
-msgstr ""
-
-#: src/fsearch_window.ui:197 src/menus.ui:95
-msgid "Show Statusbar"
-msgstr ""
-
 #: src/fsearch_window.ui:211 src/menus.ui:99
 msgid "Show Filter"
 msgstr "Ssemal tastayt"
@@ -1956,11 +2464,6 @@ msgstr "Ssemal tastayt"
 #: src/fsearch_window.ui:225 src/menus.ui:103
 msgid "Show Search Button"
 msgstr "Ssemal abra n urezzu"
-
-#: src/fsearch_window.ui:275 src/fsearch_window.ui:356 src/menus.ui:129
-#, fuzzy
-msgid "FSearch Online"
-msgstr "FSearch"
 
 #: src/fsearch_window.ui:304 src/menus.ui:161
 msgid "About"
@@ -1970,26 +2473,6 @@ msgstr "Ɣef"
 msgid "Quit"
 msgstr "Ffeɣ"
 
-#: src/fsearch_window.ui:372 src/fsearch_window.ui:443 src/menus.ui:131
-msgid "Donate"
-msgstr ""
-
-#: src/fsearch_window.ui:387 src/menus.ui:142
-msgid "Forum"
-msgstr ""
-
-#: src/fsearch_window.ui:401 src/menus.ui:146
-msgid "Bug Reports and Feature Requests"
-msgstr ""
-
-#: src/fsearch_window.ui:460 src/menus.ui:133
-msgid "GitHub Sponsors"
-msgstr ""
-
-#: src/fsearch_window.ui:474 src/menus.ui:137
-msgid "PayPal"
-msgstr ""
-
 #: src/fsearch_window.ui:586
 msgid "Search…"
 msgstr "Rzu…"
@@ -1998,48 +2481,13 @@ msgstr "Rzu…"
 msgid "Select a Filter"
 msgstr "Dɣer kra n usettay"
 
-#: src/fsearch_window_actions.c:110
-#, fuzzy, c-format
-msgid "Do you really want to open %'d file?"
-msgid_plural "Do you really want to open %'d files?"
-msgstr[0] "Is nit texsed ad teṛẓemed %d ifuyla?"
-msgstr[1] "Is nit texsed ad teṛẓemed %d ifuyla?"
-
 #: src/fsearch_window_actions.c:115
 msgid "Opening Files…"
 msgstr "Aṛeẓẓum Ifuyla…"
 
-#: src/fsearch_window_actions.c:198
-#, fuzzy, c-format
-msgid "Do you really want to remove %'d file?"
-msgid_plural "Do you really want to remove %'d files?"
-msgstr[0] "Is nit texsed ad tekkesed %d ifuyla?"
-msgstr[1] "Is nit texsed ad tekkesed %d ifuyla?"
-
 #: src/fsearch_window_actions.c:205
 msgid "Deleting files…"
 msgstr "Tukkesa n ifuyla…"
-
-#: src/fsearch_window_actions.c:205
-msgid "Moving files to trash…"
-msgstr ""
-
-#: src/fsearch_window_actions.c:238 src/fsearch_window_actions.c:533
-#: src/fsearch_window_actions.c:580
-msgid "Something went wrong."
-msgstr ""
-
-#: src/fsearch_window_actions.c:263
-#, fuzzy, c-format
-msgid "Do you really want to open %'d file property window?"
-msgid_plural "Do you really want to open %'d file property windows?"
-msgstr[0] "Is nit texsed ad teṛẓemed %d ifuyla?"
-msgstr[1] "Is nit texsed ad teṛẓemed %d ifuyla?"
-
-#: src/fsearch_window_actions.c:270
-#, fuzzy
-msgid "Opening file properties…"
-msgstr "Aṛeẓẓum Ifuyla…"
 
 #: src/menus.ui:6
 msgid "_File"
@@ -2065,11 +2513,6 @@ msgstr "ssedɣi tisila n isefka"
 msgid "Cancel Update"
 msgstr "Sser Asedɣi"
 
-#: src/menus.ui:42
-#, fuzzy
-msgid "Close Window"
-msgstr "Asatm Amaynu"
-
 #: src/menus.ui:54
 msgid "_Edit"
 msgstr "_Ssenfel"
@@ -2090,10 +2533,6 @@ msgstr "Stey Maṛṛa"
 msgid "Deselect All"
 msgstr "Kkes astay maṛṛa"
 
-#: src/menus.ui:78
-msgid "Invert Selection"
-msgstr ""
-
 #: src/menus.ui:92
 msgid "_View"
 msgstr "Ẓe_ṛ"
@@ -2113,18 +2552,6 @@ msgstr "Ṛẓem _s"
 #: src/menus.ui:191
 msgid "_Open Folder"
 msgstr "Ṛ_ẓem Asdaw"
-
-#: src/menus.ui:213
-msgid "Copy as Text"
-msgstr ""
-
-#: src/menus.ui:223
-msgid "Path + Name"
-msgstr ""
-
-#: src/menus.ui:236
-msgid "Move to _Trash"
-msgstr ""
 
 #, fuzzy, c-format
 #~ msgid "Deleted %'d file."

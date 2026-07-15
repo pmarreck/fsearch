@@ -18,6 +18,10 @@ unflagged_bad="$tmp_dir/unflagged-format-bad.po"
 large_catalog="$tmp_dir/large.po"
 large_batch_one="$tmp_dir/large-batch-one.po"
 large_batch_two="$tmp_dir/large-batch-two.po"
+override_catalog="$tmp_dir/override.po"
+override_batch_one="$tmp_dir/override-batch-one.po"
+override_batch_two="$tmp_dir/override-batch-two.po"
+override_batch_three="$tmp_dir/override-batch-three.po"
 fake_bin="$tmp_dir/bin"
 mkdir -p "$fake_bin"
 
@@ -289,13 +293,25 @@ fi
 header "$catalog" >"$large_catalog"
 header "$catalog" >"$large_batch_one"
 header "$catalog" >"$large_batch_two"
+header "$catalog" >"$override_catalog"
+header "$catalog" >"$override_batch_one"
+header "$catalog" >"$override_batch_two"
+header "$catalog" >"$override_batch_three"
 for ((number = 1; number <= 21; number += 1)); do
 	printf -v label '%02d' "$number"
 	printf '%s\n' "msgid \"entry $label\"" 'msgstr ""' '' >>"$large_catalog"
+	printf '%s\n' "msgid \"entry $label\"" 'msgstr ""' '' >>"$override_catalog"
 	if [ "$number" -le 20 ]; then
 		printf '%s\n' "msgid \"entry $label\"" "msgstr \"ENTRY $label\"" '' >>"$large_batch_one"
 	else
 		printf '%s\n' "msgid \"entry $label\"" "msgstr \"ENTRY $label\"" '' >>"$large_batch_two"
+	fi
+	if [ "$number" -le 10 ]; then
+		printf '%s\n' "msgid \"entry $label\"" "msgstr \"ENTRY $label\"" '' >>"$override_batch_one"
+	elif [ "$number" -le 20 ]; then
+		printf '%s\n' "msgid \"entry $label\"" "msgstr \"ENTRY $label\"" '' >>"$override_batch_two"
+	else
+		printf '%s\n' "msgid \"entry $label\"" "msgstr \"ENTRY $label\"" '' >>"$override_batch_three"
 	fi
 done
 
@@ -310,6 +326,19 @@ elif [ "$(cat "$count_file")" -ne 2 ]; then
 	fail "used $(cat "$count_file") requests for a 21-entry catalog instead of two"
 elif msgattrib --untranslated --no-obsolete "$large_catalog" | awk '/^msgid / { found = 1 } END { exit found ? 0 : 1 }'; then
 	fail 'left an untranslated entry after applying multiple batches'
+fi
+
+override_count_file="$tmp_dir/override-curl-count"
+output=$(OPENAI_API_KEY=test-key FSEARCH_TRANSLATE_BATCH_SIZE=10 FAKE_CURL_COUNT_FILE="$override_count_file" FAKE_EXPECT_BATCH_SIZES=10,10,1 \
+	FAKE_TRANSLATION_1="$override_batch_one" FAKE_TRANSLATION_2="$override_batch_two" FAKE_TRANSLATION_3="$override_batch_three" PATH="$fake_bin:$PATH" \
+	run_translator --apply "$override_catalog" 2>&1)
+rc=$?
+if [ "$rc" -ne 0 ]; then
+	fail "rejected a valid configured batch size: $output"
+elif [ "$(cat "$override_count_file")" -ne 3 ]; then
+	fail "used $(cat "$override_count_file") requests for a 21-entry catalog with a batch size of 10 instead of three"
+elif msgattrib --untranslated --no-obsolete "$override_catalog" | awk '/^msgid / { found = 1 } END { exit found ? 0 : 1 }'; then
+	fail 'left an untranslated entry after applying configured batches'
 fi
 
 exit "$failures"
