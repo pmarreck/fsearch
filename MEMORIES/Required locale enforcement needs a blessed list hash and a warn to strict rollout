@@ -1,0 +1,9 @@
+Locale-completeness checks are only meaningful when their required locale set is
+itself protected. `po/REQUIRED_LOCALES` therefore has a committed SHA-256
+sentinel that the checker validates before catalog checks begin, making any
+scope change a conspicuous two-file review event.
+
+For a catalog rollout, run the same exhaustive checker in `--warn` mode while
+translations are incomplete, then switch its invocation to `--strict` only
+after every required locale passes. This preserves visible CI evidence without
+creating a deliberately red build window.

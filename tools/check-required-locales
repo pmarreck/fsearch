@@ -1,0 +1,113 @@
+#!/usr/bin/env bash
+
+set -u
+
+usage() {
+	printf 'Usage: check-required-locales [SOURCE_ROOT] --warn|--strict\n' >&2
+}
+
+source_root=${1:-.}
+mode=${2:---warn}
+if [ "$#" -gt 2 ] || { [ "$mode" != --warn ] && [ "$mode" != --strict ]; }; then
+	usage
+	exit 2
+fi
+
+source_root=$(realpath "$source_root")
+po_dir="$source_root/po"
+required="$po_dir/REQUIRED_LOCALES"
+blessing="$po_dir/REQUIRED_LOCALES.sha256"
+pot_file="$po_dir/fsearch.pot"
+tmp_dir=$(mktemp -d)
+trap 'rm -rf "$tmp_dir"' EXIT
+
+control_failure() {
+	printf 'i18n required locales: %s\n' "$*" >&2
+	exit 1
+}
+
+if [ ! -f "$required" ] || [ ! -f "$blessing" ] || [ ! -f "$pot_file" ]; then
+	control_failure 'missing REQUIRED_LOCALES control file, blessing, or fsearch.pot'
+fi
+
+expected_hash=$(awk 'NR == 1 { print $1 }' "$blessing")
+actual_hash=$(sha256sum "$required" | awk '{ print $1 }')
+if [[ ! "$expected_hash" =~ ^[0-9a-f]{64}$ ]] || [ "$actual_hash" != "$expected_hash" ]; then
+	control_failure 'control-file hash mismatch for po/REQUIRED_LOCALES'
+fi
+
+if ! awk '!/^[A-Za-z0-9_]+$/ { exit 1 }' "$required" || [ ! -s "$required" ]; then
+	control_failure 'invalid locale code in po/REQUIRED_LOCALES'
+fi
+if sort "$required" | uniq -d | grep -q .; then
+	control_failure 'duplicate locale code in po/REQUIRED_LOCALES'
+fi
+
+count_entries() {
+	msgattrib "$1" --no-obsolete "$2" | awk '
+		/^msgid / {
+			entry_index += 1
+			if (entry_index > 1)
+				count += 1
+		}
+		END { print count + 0 }
+	'
+}
+
+declare -A incomplete_seen=()
+incomplete_locales=()
+issues=()
+
+record_issue() {
+	local locale=$1
+	local reason=$2
+
+	if [ -z "${incomplete_seen[$locale]+x}" ]; then
+		incomplete_seen["$locale"]=1
+		incomplete_locales+=("$locale")
+	fi
+	issues+=("$locale: $reason")
+}
+
+while IFS= read -r locale; do
+	catalog="$po_dir/$locale.po"
+	if [ ! -f "$catalog" ]; then
+		record_issue "$locale" 'missing catalog'
+		continue
+	fi
+
+	if ! msgfmt --check --check-format --statistics --output-file=/dev/null "$catalog" >"$tmp_dir/$locale.msgfmt" 2>&1; then
+		record_issue "$locale" 'msgfmt --check --check-format failed'
+	fi
+
+	if ! msgcmp --use-fuzzy --use-untranslated "$catalog" "$pot_file" >"$tmp_dir/$locale.msgcmp" 2>&1; then
+		record_issue "$locale" 'keys differ from po/fsearch.pot'
+	fi
+
+	fuzzy=$(count_entries --only-fuzzy "$catalog")
+	if [ "$fuzzy" -ne 0 ]; then
+		record_issue "$locale" "fuzzy entries: $fuzzy"
+	fi
+
+	untranslated=$(count_entries --untranslated "$catalog")
+	if [ "$untranslated" -ne 0 ]; then
+		record_issue "$locale" "untranslated entries: $untranslated"
+	fi
+done <"$required"
+
+if [ "${#incomplete_locales[@]}" -eq 0 ]; then
+	exit 0
+fi
+
+locale_list=''
+for locale in "${incomplete_locales[@]}"; do
+	locale_list="${locale_list:+$locale_list }$locale"
+done
+printf 'WARN: i18n incomplete: %s (%s)\n' "$locale_list" "${#incomplete_locales[@]}"
+for issue in "${issues[@]}"; do
+	printf 'WARN: i18n incomplete: %s\n' "$issue"
+done
+
+if [ "$mode" = --strict ]; then
+	exit 1
+fi

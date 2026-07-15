@@ -42,6 +42,8 @@
               bash $src/tests/static-analysis .. .
               bash $src/tests/i18n/test_translate_po $src/tools/translate-po
               bash $src/tests/i18n/test_catalogs $src
+              bash $src/tests/i18n/test_required_locales $src/tools/check-required-locales
+              bash $src/tools/check-required-locales $src --warn
               runHook postCheck
             '';
           };
@@ -58,8 +60,10 @@
           checks = {
             build = fsearch;
             test = pkgs.runCommand "fsearch-test" {
-              nativeBuildInputs = [ pkgs.bash pkgs.jq ];
+              nativeBuildInputs = [ pkgs.bash pkgs.coreutils pkgs.gettext pkgs.jq ];
             } ''
+              bash ${self}/tests/i18n/test_required_locales ${self}/tools/check-required-locales
+              bash ${self}/tools/check-required-locales ${self} --warn
               bash ${self}/tests/cli/test_cli ${fsearch}/bin/fsearch
               touch $out
             '';

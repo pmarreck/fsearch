@@ -1,0 +1,115 @@
+#!/usr/bin/env bash
+
+set -u
+
+checker=${1:?usage: test_required_locales /path/to/check-required-locales}
+failures=0
+tmp_dir=$(mktemp -d)
+trap 'rm -rf "$tmp_dir"' EXIT
+repository_root=$(dirname "$(dirname "$(realpath "$checker")")")
+source_root="$tmp_dir/source"
+po_dir="$source_root/po"
+required="$po_dir/REQUIRED_LOCALES"
+blessing="$po_dir/REQUIRED_LOCALES.sha256"
+mkdir -p "$po_dir"
+
+fail() {
+	printf 'i18n required locales: %s\n' "$*" >&2
+	failures=$((failures + 1))
+}
+
+write_header() {
+	printf '%s\n' \
+		'msgid ""' \
+		'msgstr ""' \
+			'"Language: xx\n"' \
+			'"Content-Type: text/plain; charset=UTF-8\n"' \
+			'"Content-Transfer-Encoding: 8bit\n"' \
+		''
+}
+
+write_catalog() {
+	local path=$1
+	local translation=$2
+	local flags=${3-}
+
+	write_header >"$path"
+	if [ -n "$flags" ]; then
+		printf '%s\n' "$flags" >>"$path"
+	fi
+	printf '%s\n' \
+		'msgid "one"' \
+		"msgstr \"$translation\"" >>"$path"
+}
+
+write_header >"$po_dir/fsearch.pot"
+printf '%s\n' \
+	'msgid "one"' \
+	'msgstr ""' >>"$po_dir/fsearch.pot"
+
+write_catalog "$po_dir/complete.po" 'ONE'
+write_catalog "$po_dir/incomplete.po" ''
+write_catalog "$po_dir/fuzzy.po" 'ONE' '#, fuzzy'
+write_header >"$po_dir/stale.po"
+printf '%s\n' \
+	'msgid "two"' \
+	'msgstr "TWO"' >>"$po_dir/stale.po"
+
+printf '%s\n' complete incomplete fuzzy stale missing >"$required"
+sha256sum "$required" | awk '{ print $1 }' >"$blessing"
+
+output=$(bash "$checker" "$source_root" --warn 2>&1)
+rc=$?
+if [ "$rc" -ne 0 ]; then
+	fail "WARN mode rejected an incomplete required set: $output"
+fi
+for expected in \
+	'WARN: i18n incomplete: incomplete fuzzy stale missing (4)' \
+	'WARN: i18n incomplete: incomplete: untranslated entries: 1' \
+	'WARN: i18n incomplete: fuzzy: fuzzy entries: 1' \
+	'WARN: i18n incomplete: stale: keys differ from po/fsearch.pot' \
+	'WARN: i18n incomplete: missing: missing catalog'; do
+	case "$output" in
+		*"$expected"*) ;;
+		*) fail "WARN mode omitted expected diagnostic: $expected; output: $output" ;;
+	esac
+done
+
+output=$(bash "$checker" "$source_root" --strict 2>&1)
+rc=$?
+if [ "$rc" -eq 0 ]; then
+	fail "strict mode accepted an incomplete required set: $output"
+fi
+
+printf '%s\n' 0 >"$blessing"
+output=$(bash "$checker" "$source_root" --warn 2>&1)
+rc=$?
+if [ "$rc" -eq 0 ]; then
+	fail "WARN mode accepted a tampered locale-list blessing: $output"
+elif [[ "$output" != *'control-file hash mismatch'* ]]; then
+	fail "tampered locale-list blessing failed unclearly: $output"
+fi
+
+printf '%s\n' complete >"$required"
+sha256sum "$required" | awk '{ print $1 }' >"$blessing"
+output=$(bash "$checker" "$source_root" --strict 2>&1)
+rc=$?
+if [ "$rc" -ne 0 ]; then
+	fail "strict mode rejected a complete required set: $output"
+fi
+
+unicode_root="$tmp_dir/unicode-source"
+mkdir -p "$unicode_root/po"
+cp "$repository_root/po/ar.po" "$unicode_root/po/ar.po"
+cp "$repository_root/po/fsearch.pot" "$unicode_root/po/fsearch.pot"
+printf '%s\n' ar >"$unicode_root/po/REQUIRED_LOCALES"
+sha256sum "$unicode_root/po/REQUIRED_LOCALES" | awk '{ print $1 }' >"$unicode_root/po/REQUIRED_LOCALES.sha256"
+output=$(bash "$checker" "$unicode_root" --strict 2>&1)
+rc=$?
+if [ "$rc" -ne 0 ]; then
+	fail "strict mode rejected the complete Arabic catalog: $(printf '%s' "$output" | head -c 200)"
+elif [ -n "$output" ]; then
+	fail "strict mode leaked gettext diagnostics for the complete Arabic catalog: $(printf '%s' "$output" | head -c 200)"
+fi
+
+exit "$failures"

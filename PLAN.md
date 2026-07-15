@@ -86,7 +86,7 @@
 
 # Full Catalog Translation (2026-07-15)
 
-- [ ] Complete the 31 remaining catalogs: 5,963 incomplete entries require 316 twenty-entry streamed requests.
+- [ ] Complete the six remaining inherited catalogs: French (Canada) (`frc`), Irish (`ga`), Ido (`ie`), Georgian (`ka`), Dari (`prs`), and Urdu (`ur`).
   Run no more than two disjoint catalogs concurrently from canonical `master`, validate and commit small checkpoints, and preserve atomic per-catalog updates. Curiosity poke: rate-limit or stream failure must leave that catalog unchanged and stop the affected checkpoint.
 - [ ] Obtain an independent read-only review of each pushed translation checkpoint from `fsearch-i18n`.
   Curiosity poke: the reviewer must validate the committed artifacts rather than trusting the producer's helper or summaries.
@@ -118,3 +118,14 @@
   Both catalogs passed strict gettext, template-key and header invariants, with zero fuzzy or untranslated entries before the full-suite gate. Curiosity poke: rich preference strings must not cause a streamed response to end before completion.
 - [x] Checkpoint 12: complete Greek (`el`) and Estonian (`et`), and reject omitted multiline PO entries. (2026-07-15 08:15 EDT)
   The translator now counts every PO entry after its required header, including `msgid ""` entries with continuation lines; a red-green regression proves an omitted multiline entry leaves its catalog unchanged. Both catalogs passed corrected dry-run completeness, strict gettext, template-key, header, fuzzy, and untranslated gates. Curiosity poke: completion accounting must inspect PO entry boundaries, not assume a nonempty first `msgid` line.
+
+# 66-Catalog I18n Enforcement (2026-07-15)
+
+- [x] Phase 1: add the 66-locale required-list control file, blessed-hash sentinel, and WARN-only full-catalog completeness check to `./test` and Nix CI. (2026-07-15 10:43 EDT)
+  The gate protects the exact list with a committed SHA-256 control value, validates catalog existence, template keys, gettext format correctness, fuzzy entries, and untranslated entries. It currently reports the six inherited catalogs plus 24 not-yet-created catalogs as 30 explicit warnings while exiting successfully. Curiosity poke: the check must enumerate every missing, stale, fuzzy, or untranslated locale without allowing a future edit to silently shrink the required set.
+- [ ] Create and complete the 24 missing canonical i18n catalogs with gettext-derived plural headers.
+  Curiosity poke: under-resourced and RTL locales require the same structural and semantic review gates as well-resourced ones.
+- [ ] Scrub Weblate provenance only from the 17 AI-majority PO headers after all six inherited pending catalogs complete.
+  Curiosity poke: compare headers and bodies independently so the 25 Weblate-majority catalogs remain byte-identical.
+- [ ] Phase 2: flip the same 66-locale completeness gate from WARN to hard failure after independent verification finds all catalogs complete.
+  Curiosity poke: mutation of a catalog or the strictness switch must make CI fail.

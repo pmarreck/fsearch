@@ -9,10 +9,20 @@ failures=0
 run_suite() {
 	local name=$1
 	shift
+	local show_success_output=false
 	local out='' err='' rc=0 reported_failures=1
+
+	if [ "${1-}" = --show-success-output ]; then
+		show_success_output=true
+		shift
+	fi
 
 	capture "$@"
 	if [ "$rc" -eq 0 ]; then
+		if [ "$show_success_output" = true ]; then
+			[ -n "$out" ] && printf '%s\n' "$out"
+			[ -n "$err" ] && printf '%s\n' "$err" >&2
+		fi
 		printf 'PASS: %s\n' "$name"
 		return 0
 	fi
@@ -36,6 +46,8 @@ if run_suite 'Meson setup' nix develop -c meson setup builddir --reconfigure; th
 	run_suite 'Cppcheck static analysis' nix develop -c bash tests/static-analysis . builddir
 	run_suite 'gettext translation helper' nix develop -c bash tests/i18n/test_translate_po tools/translate-po
 	run_suite 'gettext catalog integrity' nix develop -c bash tests/i18n/test_catalogs .
+	run_suite 'required locale gate' nix develop -c bash tests/i18n/test_required_locales tools/check-required-locales
+	run_suite 'required locale WARN report' --show-success-output nix develop -c bash tools/check-required-locales . --warn
 fi
 
 if run_suite 'release build and Meson checks' nix build .#default; then
