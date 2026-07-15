@@ -10,6 +10,8 @@ catalog="$tmp_dir/catalog.po"
 ollama_catalog="$tmp_dir/ollama-catalog.po"
 ollama_env_catalog="$tmp_dir/ollama-env-catalog.po"
 ollama_error_catalog="$tmp_dir/ollama-error-catalog.po"
+ollama_retry_catalog="$tmp_dir/ollama-retry-catalog.po"
+ollama_retry_exhausted_catalog="$tmp_dir/ollama-retry-exhausted-catalog.po"
 ollama_batch_catalog="$tmp_dir/ollama-batch-catalog.po"
 ollama_batch_one="$tmp_dir/ollama-batch-one.po"
 ollama_batch_two="$tmp_dir/ollama-batch-two.po"
@@ -81,6 +83,8 @@ printf '%s\n' \
 cp "$catalog" "$ollama_catalog"
 cp "$catalog" "$ollama_env_catalog"
 cp "$catalog" "$ollama_error_catalog"
+cp "$catalog" "$ollama_retry_catalog"
+cp "$catalog" "$ollama_retry_exhausted_catalog"
 
 header "$catalog" >"$partial"
 printf '%s\n' \
@@ -411,6 +415,38 @@ if [ "$rc" -ne 0 ]; then
 	fail "rejected a complete keyless Ollama response: $output"
 elif msgattrib --untranslated --no-obsolete "$ollama_catalog" | awk '/^msgid / { found = 1 } END { exit found ? 0 : 1 }'; then
 	fail 'left an untranslated entry after accepting a complete Ollama response'
+fi
+
+ollama_retry_count_file="$tmp_dir/ollama-retry-count"
+output=$(env -u OPENAI_API_KEY FAKE_OLLAMA_URL=http://127.0.0.1:11434 \
+	FAKE_OLLAMA_COUNT_FILE="$ollama_retry_count_file" FAKE_OLLAMA_TRANSLATION_1="$syntax_bad" FAKE_OLLAMA_TRANSLATION_2="$complete" \
+	PATH="$fake_ollama_bin:$PATH" bash "$translator" --apply --backend ollama "$ollama_retry_catalog" 2>&1)
+rc=$?
+if [ "$rc" -ne 0 ]; then
+	fail "did not retry a transient invalid Ollama translation: $output"
+elif [ "$(cat "$ollama_retry_count_file")" -ne 2 ]; then
+	fail "used $(cat "$ollama_retry_count_file") Ollama requests after one invalid response instead of two"
+elif [[ "$output" != *'retrying after validation failure'* ]]; then
+	fail "retried an invalid Ollama translation without an actionable status: $output"
+elif msgattrib --untranslated --no-obsolete "$ollama_retry_catalog" | awk '/^msgid / { found = 1 } END { exit found ? 0 : 1 }'; then
+	fail 'left an untranslated entry after retrying an invalid Ollama response'
+fi
+
+before=$(sha256sum "$ollama_retry_exhausted_catalog" | awk '{ print $1 }')
+ollama_retry_exhausted_count_file="$tmp_dir/ollama-retry-exhausted-count"
+output=$(env -u OPENAI_API_KEY FAKE_OLLAMA_URL=http://127.0.0.1:11434 \
+	FAKE_OLLAMA_COUNT_FILE="$ollama_retry_exhausted_count_file" FAKE_OLLAMA_TRANSLATION_1="$syntax_bad" FAKE_OLLAMA_TRANSLATION_2="$syntax_bad" FAKE_OLLAMA_TRANSLATION_3="$syntax_bad" \
+	PATH="$fake_ollama_bin:$PATH" bash "$translator" --apply --backend ollama "$ollama_retry_exhausted_catalog" 2>&1)
+rc=$?
+after=$(sha256sum "$ollama_retry_exhausted_catalog" | awk '{ print $1 }')
+if [ "$rc" -eq 0 ]; then
+	fail "accepted three consecutively invalid Ollama translations: $output"
+elif [ "$(cat "$ollama_retry_exhausted_count_file")" -ne 3 ]; then
+	fail "used $(cat "$ollama_retry_exhausted_count_file") Ollama requests after exhausting retries instead of three"
+elif [[ "$output" != *'attempt 2/3'* ]]; then
+	fail "did not report the final permitted Ollama retry: $output"
+elif [ "$before" != "$after" ]; then
+	fail 'modified the catalog after exhausting Ollama validation retries'
 fi
 
 output=$(env -u OPENAI_API_KEY FSEARCH_TRANSLATE_BACKEND=ollama FAKE_OLLAMA_URL=http://127.0.0.1:11434 \

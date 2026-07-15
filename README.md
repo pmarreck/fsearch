@@ -341,7 +341,9 @@ Set `FSEARCH_OLLAMA_URL` to use a non-default Ollama endpoint, select a differen
 `FSEARCH_TRANSLATE_BACKEND=ollama` to make the local backend the default for a translation session. Both backends send
 bounded streamed batches and replace a catalog only after every batch completes and passes PO, gettext, and exact
 printf-placeholder validation. OpenAI defaults to 20 entries per batch; local Ollama defaults to 10 for its practical
-context budget, and `FSEARCH_TRANSLATE_BATCH_SIZE` explicitly overrides either default.
+context budget, and `FSEARCH_TRANSLATE_BATCH_SIZE` explicitly overrides either default. If a local response fails PO,
+header, placeholder, keyword, or completeness validation, only that batch is retried at most twice; HTTP/API and
+incomplete-stream failures stop immediately. A catalog is still replaced only after every batch passes.
 
 ## Current Limitations
 

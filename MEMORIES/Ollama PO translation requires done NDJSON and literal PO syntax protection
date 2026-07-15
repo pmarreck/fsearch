@@ -19,3 +19,9 @@ Require PO escape preservation and explicitly describe the semicolon-list
 translation rule (with a short example) in every request, then independently
 reject malformed PO and unchanged non-English lists. Temperature zero reduces
 variation but does not make local GPU generation bitwise deterministic.
+
+Treat a completed local response that fails PO/header/placeholder/keyword or
+completeness validation as a transient generation error: retry only that
+batch, capped at three total attempts, while retaining all atomic catalog
+boundaries. Transport, API-error, malformed-stream, and missing-completion
+failures are not safe to hide behind retries and must stop immediately.

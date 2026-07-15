@@ -534,6 +534,9 @@ while IFS= read -r batch; do
 
 	printf 'translate-po: translating batch %s/%s (%s message%s)\n' \
 		"$batch_number" "$batch_count" "$batch_entries" "$([ "$batch_entries" -eq 1 ] || printf 's')"
+	validation_attempt=0
+	while :; do
+		validation_attempt=$((validation_attempt + 1))
 	case "$backend" in
 		openai)
 			if ! jq -n \
@@ -693,34 +696,40 @@ while IFS= read -r batch; do
 			;;
 	esac
 
-	if ! diff -u <(header "$catalog") <(header "$batch_translation") >/dev/null; then
-		printf 'translate-po: translated batch %s changed its required header\n' "$batch_number" >&2
-		exit 1
-	fi
-	if ! msgfmt --check --check-format --output-file=/dev/null "$batch_translation" 2>"$msgfmt_error"; then
-		printf 'translate-po: translated batch %s failed msgfmt validation:\n' "$batch_number" >&2
-		sed -n '1,20p' "$msgfmt_error" >&2
-		exit 1
-	fi
-	if ! validate_exact_printf_placeholders "$batch_translation"; then
-		printf 'translate-po: translated batch %s is invalid or changed a format placeholder\n' "$batch_number" >&2
-		exit 1
-	fi
-	if ! validate_desktop_keyword_translation "$batch_translation" "$locale"; then
-		printf 'translate-po: translated batch %s left a desktop keyword list unchanged\n' "$batch_number" >&2
-		exit 1
-	fi
-	if ! msgmerge --no-fuzzy-matching --output-file="$batch_reconciled" "$batch_translation" "$batch" \
-		|| ! msgattrib --clear-fuzzy --output-file="$batch_cleaned" "$batch_reconciled" \
-		|| ! msgattrib --untranslated --no-obsolete --force-po --output-file="$batch_remaining" "$batch_cleaned"; then
-		printf 'translate-po: could not reconcile translated batch %s\n' "$batch_number" >&2
-		exit 1
-	fi
-	if [ "$(count_messages "$batch_remaining")" -ne 0 ]; then
-		printf 'translate-po: translation response omitted or left empty one or more requested entries for batch %s\n' "$batch_number" >&2
-		exit 1
-	fi
-	translated_files+=("$batch_cleaned")
+		validation_failed=false
+		if ! diff -u <(header "$catalog") <(header "$batch_translation") >/dev/null; then
+			printf 'translate-po: translated batch %s changed its required header\n' "$batch_number" >&2
+			validation_failed=true
+		elif ! msgfmt --check --check-format --output-file=/dev/null "$batch_translation" 2>"$msgfmt_error"; then
+			printf 'translate-po: translated batch %s failed msgfmt validation:\n' "$batch_number" >&2
+			sed -n '1,20p' "$msgfmt_error" >&2
+			validation_failed=true
+		elif ! validate_exact_printf_placeholders "$batch_translation"; then
+			printf 'translate-po: translated batch %s is invalid or changed a format placeholder\n' "$batch_number" >&2
+			validation_failed=true
+		elif ! validate_desktop_keyword_translation "$batch_translation" "$locale"; then
+			printf 'translate-po: translated batch %s left a desktop keyword list unchanged\n' "$batch_number" >&2
+			validation_failed=true
+		elif ! msgmerge --no-fuzzy-matching --output-file="$batch_reconciled" "$batch_translation" "$batch" \
+			|| ! msgattrib --clear-fuzzy --output-file="$batch_cleaned" "$batch_reconciled" \
+			|| ! msgattrib --untranslated --no-obsolete --force-po --output-file="$batch_remaining" "$batch_cleaned"; then
+			printf 'translate-po: could not reconcile translated batch %s\n' "$batch_number" >&2
+			validation_failed=true
+		elif [ "$(count_messages "$batch_remaining")" -ne 0 ]; then
+			printf 'translate-po: translation response omitted or left empty one or more requested entries for batch %s\n' "$batch_number" >&2
+			validation_failed=true
+		fi
+
+		if [ "$validation_failed" = false ]; then
+			translated_files+=("$batch_cleaned")
+			break
+		fi
+		if [ "$backend" != ollama ] || [ "$validation_attempt" -ge 3 ]; then
+			exit 1
+		fi
+		printf 'translate-po: retrying after validation failure: batch %s/%s (attempt %s/3)\n' \
+			"$batch_number" "$batch_count" "$validation_attempt" >&2
+	done
 done < <(find "$batch_dir" -maxdepth 1 -type f -name '*.po' -print | sort)
 
 if ! msgcat --use-first --output-file="$translated_all" "${translated_files[@]}" \
