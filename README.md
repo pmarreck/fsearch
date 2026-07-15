@@ -312,16 +312,9 @@ This fork provides a pinned Nix environment:
 
 ## Localization
 
-The localization of FSearch is managed with Weblate.
+This fork localizes FSearch with AI-assisted machine translation, applied directly to the shipped catalogs via `tools/translate-po` and gated by strict PO, gettext, and exact printf-placeholder validation before every commit.
 
-<https://hosted.weblate.org/projects/fsearch/>
-
-If you want to contribute translations please submit them there, instead of opening pull requests on GitHub. This also includes any suggestions to the English texts — English isn't my first language, so there are likely errors and unusual wordings.
-
-Instructions can be found here:
-<https://docs.weblate.org/en/latest/user/basic.html>
-
-And of course: Thank you for taking the time to translate FSearch!
+> Upstream project uses a slow, human-gated Weblate translation service that has taken years to add just a handful of translations when AI does high quality translation in a single afternoon. One of these things is the correct thing to be offended by.
 
 The current CLI/config localization checkpoint is complete for Basque (`eu`), Bulgarian (`bg`), German (`de`),
 Spanish (`es`), Indonesian (`id`), Italian (`it`), Japanese (`ja`), Norwegian Bokmal (`nb_NO`), Portuguese (`pt`),
