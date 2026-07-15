@@ -86,7 +86,7 @@
 
 # Full Catalog Translation (2026-07-15)
 
-- [ ] Complete the six remaining inherited catalogs: French (Canada) (`frc`), Irish (`ga`), Ido (`ie`), Georgian (`ka`), Dari (`prs`), and Urdu (`ur`).
+- [ ] Complete the five remaining inherited catalogs: Irish (`ga`), Ido (`ie`), Georgian (`ka`), Dari (`prs`), and Urdu (`ur`).
   Run no more than two disjoint catalogs concurrently from canonical `master`, validate and commit small checkpoints, and preserve atomic per-catalog updates. Curiosity poke: rate-limit or stream failure must leave that catalog unchanged and stop the affected checkpoint.
 - [ ] Obtain an independent read-only review of each pushed translation checkpoint from `fsearch-i18n`.
   Curiosity poke: the reviewer must validate the committed artifacts rather than trusting the producer's helper or summaries.
@@ -118,6 +118,8 @@
   Both catalogs passed strict gettext, template-key and header invariants, with zero fuzzy or untranslated entries before the full-suite gate. Curiosity poke: rich preference strings must not cause a streamed response to end before completion.
 - [x] Checkpoint 12: complete Greek (`el`) and Estonian (`et`), and reject omitted multiline PO entries. (2026-07-15 08:15 EDT)
   The translator now counts every PO entry after its required header, including `msgid ""` entries with continuation lines; a red-green regression proves an omitted multiline entry leaves its catalog unchanged. Both catalogs passed corrected dry-run completeness, strict gettext, template-key, header, fuzzy, and untranslated gates. Curiosity poke: completion accounting must inspect PO entry boundaries, not assume a nonempty first `msgid` line.
+- [x] Checkpoint 13: complete French (Canada) (`frc`) through 78 local five-entry batches. (2026-07-15 14:38 EDT)
+  The source-owned JSON-slot adapter completed all 388 entries atomically with standard French, zero fuzzy or untranslated entries, matching template keys, gettext-format validation, and a translated AppStream keyword list. Curiosity poke: retain independent semantic review because structural gates cannot establish regional-language quality.
 
 # 66-Catalog I18n Enforcement (2026-07-15)
 

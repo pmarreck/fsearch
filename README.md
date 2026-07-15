@@ -1,5 +1,5 @@
 [![🤖 Mechatron Prime](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Fthelio-nixos.tail66c90.ts.net%2Fbadges%2Ffsearch.json)](https://thelio-nixos.tail66c90.ts.net/mechatron-prime/)
-[![Localized catalogs](https://img.shields.io/badge/localized%20catalogs-11%2F42-informational?style=for-the-badge)](#localization)
+[![Localized catalogs](https://img.shields.io/badge/localized%20catalogs-37%2F42-informational?style=for-the-badge)](#localization)
 
 FSearch is a fast file search utility, inspired by Everything Search Engine. It's written in C and based on GTK3.
 This fork also provides a non-interactive command-line interface over the same index, query engine, and configuration as
@@ -316,10 +316,15 @@ This fork localizes FSearch with AI-assisted machine translation, applied direct
 
 > Upstream project uses a slow, human-gated Weblate translation service that has taken years to add just a handful of translations when AI does high quality translation in a single afternoon. One of these things is the correct thing to be offended by.
 
-The current CLI/config localization checkpoint is complete for Basque (`eu`), Bulgarian (`bg`), German (`de`),
-Spanish (`es`), Indonesian (`id`), Italian (`it`), Japanese (`ja`), Norwegian Bokmal (`nb_NO`), Portuguese (`pt`),
-Russian (`ru`), and Turkish (`tr`). The remaining shipped catalogs are still in progress; do not interpret this list
-as a complete translation-coverage claim.
+The current CLI/config localization checkpoint is complete for 37 of the 42 shipped catalogs: Arabic (`ar`), Basque
+(`eu`), Brazilian Portuguese (`pt_BR`), Bulgarian (`bg`), Catalan (`ca`), Central Atlas Tamazight (`tzm`), Dutch
+(`nl`), English (United Kingdom) (`en_GB`), Estonian (`et`), Finnish (`fi`), French (`fr`), French (Canada) (`frc`),
+Galician (`gl`), German (`de`), Greek (`el`), Hebrew (`he`), Hungarian (`hu`), Indonesian (`id`), Italian (`it`),
+Japanese (`ja`), Korean (`ko`), Lithuanian (`lt`), Marathi (`mr`), Norwegian Bokmal (`nb_NO`), Polish (`pl`),
+Portuguese (`pt`), Romanian (`ro`), Russian (`ru`), Simplified Chinese (`zh_CN`), Slovak (`sk`), Spanish (`es`),
+Standard Moroccan Tamazight (`zgh`), Swedish (`sv`), Telugu (`te`), Traditional Chinese (`zh_Hant`), Turkish (`tr`),
+and Ukrainian (`uk`). Five inherited catalogs remain in progress; this is not yet a complete translation-coverage
+claim.
 
 For maintainers, `./test` verifies every shipped catalog parses correctly, is current with the extracted template, and
 includes the human-facing CLI and configuration text. The stricter command below also requires every catalog to have no
