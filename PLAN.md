@@ -98,3 +98,5 @@
   Both catalogs passed strict gettext checks with zero fuzzy and untranslated entries before commit.
 - [x] Checkpoint 4: complete Hebrew (`he`) and Lithuanian (`lt`), and address reviewer-reported Chinese/Ukrainian keyword omissions. (2026-07-15 01:57 EDT)
   Hebrew retries preserved manually verified `%u` and `%'d` translations when the model omitted their required placeholders; all four catalogs passed strict gettext checks with zero fuzzy and untranslated entries before commit.
+- [x] Checkpoint 5: complete English (United Kingdom) (`en_GB`) and Traditional Chinese (`zh_Hant`) through nine streamed batches. (2026-07-15 02:11 EDT)
+  Traditional Chinese's `%'d` count and confirmation strings were manually verified before retrying its atomically rejected batch; both catalogs passed strict gettext checks with zero fuzzy and untranslated entries before commit.
