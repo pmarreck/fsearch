@@ -330,8 +330,17 @@ nix develop -c bash tests/i18n/test_catalogs . --complete
 ```
 
 `tools/translate-po --dry-run po/LANGUAGE.po` reports the outstanding strings in one catalog without changing it.
-`tools/translate-po --apply po/LANGUAGE.po` sends at most 20 entries per streamed request and replaces the catalog
-only after every batch has completed and passed PO, gettext, and exact printf-placeholder validation.
+`tools/translate-po --apply po/LANGUAGE.po` uses the OpenAI backend by default. The local Ollama backend needs no
+OpenAI credential and defaults to the installed `gemma4:12b` model:
+
+```bash
+tools/translate-po --apply --backend ollama po/LANGUAGE.po
+```
+
+Set `FSEARCH_OLLAMA_URL` to use a non-default Ollama endpoint, select a different local model with `--model`, or use
+`FSEARCH_TRANSLATE_BACKEND=ollama` to make the local backend the default for a translation session. Both backends send
+at most 20 entries per streamed request and replace a catalog only after every batch completes and passes PO, gettext,
+and exact printf-placeholder validation.
 
 ## Current Limitations
 

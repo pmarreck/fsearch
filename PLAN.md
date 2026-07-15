@@ -129,3 +129,12 @@
   Curiosity poke: compare headers and bodies independently so the 25 Weblate-majority catalogs remain byte-identical.
 - [ ] Phase 2: flip the same 66-locale completeness gate from WARN to hard failure after independent verification finds all catalogs complete.
   Curiosity poke: mutation of a catalog or the strictness switch must make CI fail.
+
+# Local Translation Backend (2026-07-15)
+
+- [x] Add a fake-HTTP-tested Ollama backend to `tools/translate-po` while preserving bounded streaming, completed-response checks, exact placeholder validation, and atomic catalog replacement. (2026-07-15 11:10 EDT)
+  The native `/api/chat` backend uses a keyless schema-constrained NDJSON stream, rejects a missing `done: true`, defaults to `gemma4:12b`, and retains the shared atomic PO merge. Curiosity poke: a local backend must not accidentally require or leak `OPENAI_API_KEY`, and a missing Ollama `done` event must leave the catalog untouched.
+- [x] Measure one real 20-entry `gemma4:12b` batch on a disposable catalog before running any complete locale. (2026-07-15 11:10 EDT)
+  A warmed French-Canadian batch completed in 25 seconds with zero untranslated entries after PO/gettext/printf validation: approximately 2,880 entries per hour before retry and review overhead. Curiosity poke: record throughput after the model is warm, rather than extrapolating from a single-message prompt.
+- [ ] Translate and independently review the six inherited catalogs, then the 24 gettext-initialized canonical catalogs, using the validated local backend.
+  Curiosity poke: under-resourced and RTL locales require structural gates plus later semantic spot-checks rather than a blind mass commit.

@@ -20,7 +20,7 @@ if [ "$batch_size" -lt 1 ]; then
 fi
 
 usage() {
-	printf '%s\n' 'Usage: tools/translate-po [--dry-run|--apply] [--model MODEL] CATALOG.po' >&2
+	printf '%s\n' 'Usage: tools/translate-po [--dry-run|--apply] [--backend openai|ollama] [--model MODEL] CATALOG.po' >&2
 }
 
 header() {
@@ -299,7 +299,8 @@ extract_stream_events() {
 }
 
 mode=''
-model='gpt-5.6'
+backend=${FSEARCH_TRANSLATE_BACKEND:-openai}
+model=''
 catalog=''
 
 while [ "$#" -gt 0 ]; do
@@ -318,6 +319,14 @@ while [ "$#" -gt 0 ]; do
 				exit 2
 			fi
 			model=$1
+			;;
+		--backend)
+			shift
+			if [ "$#" -eq 0 ]; then
+				usage
+				exit 2
+			fi
+			backend=$1
 			;;
 		--help|-h)
 			usage
@@ -341,6 +350,21 @@ done
 if [ -z "$mode" ] || [ -z "$catalog" ] || [ ! -f "$catalog" ]; then
 	usage
 	exit 2
+fi
+
+case "$backend" in
+	openai|ollama) ;;
+	*)
+		printf 'translate-po: backend must be openai or ollama\n' >&2
+		exit 2
+		;;
+esac
+
+if [ -z "$model" ]; then
+	case "$backend" in
+		openai) model='gpt-5.6' ;;
+		ollama) model='gemma4:12b' ;;
+	esac
 fi
 
 catalog=$(realpath "$catalog")
@@ -401,12 +425,14 @@ if [ "$mode" = 'dry-run' ]; then
 	exit 0
 fi
 
-if [ -z "${OPENAI_API_KEY-}" ]; then
+if [ "$backend" = openai ] && [ -z "${OPENAI_API_KEY-}" ]; then
 	printf 'translate-po: OPENAI_API_KEY is required for --apply\n' >&2
 	exit 2
 fi
 
-instructions='Translate GNU gettext PO entries. Preserve the PO header byte-for-byte. Preserve every msgid, msgid_plural, msgctxt, source reference, comment, and printf-style placeholder exactly. Translate every msgstr or msgstr[n] into the requested locale. Remove fuzzy flags. Do not translate CLI options, environment-variable names, JSON keys, setting keys, query syntax, paths, URLs, file extensions, or printf placeholders. Return no commentary: the JSON schema requires the complete translated PO file in its po property.'
+instructions='Translate GNU gettext PO entries. Preserve the PO header byte-for-byte. Preserve every msgid, msgid_plural, msgctxt, source reference, comment, and printf-style placeholder exactly. Translate every msgstr or msgstr[n] into the requested locale. Remove fuzzy flags. Do not translate CLI options, environment-variable names, JSON keys, setting keys, query syntax, paths, URLs, file extensions, or printf placeholders. The GNU gettext directive is literally msgid, with no underscore: Never write msg_id or change any PO keyword. Return no commentary: the JSON schema requires the complete translated PO file in its po property.'
+output_schema='{"type":"object","properties":{"po":{"type":"string"}},"required":["po"],"additionalProperties":false}'
+ollama_url=${FSEARCH_OLLAMA_URL:-http://127.0.0.1:11434}
 batch_number=0
 translated_files=()
 
@@ -426,85 +452,164 @@ while IFS= read -r batch; do
 
 	printf 'translate-po: translating batch %s/%s (%s message%s)\n' \
 		"$batch_number" "$batch_count" "$batch_entries" "$([ "$batch_entries" -eq 1 ] || printf 's')"
-	if ! jq -n \
-		--arg model "$model" \
-		--arg locale "$locale" \
-		--arg instructions "$instructions" \
-		--rawfile po "$batch" \
-		--argjson max_output_tokens "$max_output_tokens" \
-		'{
-			model: $model,
-			store: false,
-			stream: true,
-			max_output_tokens: $max_output_tokens,
-			reasoning: { effort: "none" },
-			instructions: $instructions,
-			input: ("Target locale: " + $locale + "\n\nTranslate this partial PO catalog:\n" + $po),
-			text: {
-				format: {
-					type: "json_schema",
-					name: "po_translation",
-					strict: true,
-					schema: {
-						type: "object",
-						properties: { po: { type: "string" } },
-						required: ["po"],
-						additionalProperties: false
+	case "$backend" in
+		openai)
+			if ! jq -n \
+				--arg model "$model" \
+				--arg locale "$locale" \
+				--arg instructions "$instructions" \
+				--rawfile po "$batch" \
+				--argjson max_output_tokens "$max_output_tokens" \
+				'{
+					model: $model,
+					store: false,
+					stream: true,
+					max_output_tokens: $max_output_tokens,
+					reasoning: { effort: "none" },
+					instructions: $instructions,
+					input: ("Target locale: " + $locale + "\n\nTranslate this partial PO catalog:\n" + $po),
+					text: {
+						format: {
+							type: "json_schema",
+							name: "po_translation",
+							strict: true,
+							schema: {
+								type: "object",
+								properties: { po: { type: "string" } },
+								required: ["po"],
+								additionalProperties: false
+							}
+						}
 					}
-				}
-			}
-		}' >"$request_file"; then
-		printf 'translate-po: could not prepare translation request for batch %s\n' "$batch_number" >&2
-		exit 1
-	fi
+				}' >"$request_file"; then
+				printf 'translate-po: could not prepare translation request for batch %s\n' "$batch_number" >&2
+				exit 1
+			fi
+			;;
+		ollama)
+			if ! jq -n \
+				--arg model "$model" \
+				--arg locale "$locale" \
+				--arg instructions "$instructions" \
+				--rawfile po "$batch" \
+				--argjson max_output_tokens "$max_output_tokens" \
+				--argjson output_schema "$output_schema" \
+				'{
+					model: $model,
+					stream: true,
+					think: false,
+					format: $output_schema,
+					options: { temperature: 0, num_predict: $max_output_tokens },
+					messages: [
+						{ role: "system", content: $instructions },
+						{
+							role: "user",
+							content: (
+								"Target locale: " + $locale +
+								"\n\nTranslate this partial PO catalog:\n" + $po +
+								"\n\nReturn JSON matching this schema:\n" + ($output_schema | tojson)
+							)
+						}
+					]
+				}' >"$request_file"; then
+				printf 'translate-po: could not prepare translation request for batch %s\n' "$batch_number" >&2
+				exit 1
+			fi
+			;;
+	esac
 
 	umask 077
-	if ! printf '%s\n' \
-		'header = "Content-Type: application/json"' \
-		"header = \"Authorization: Bearer $OPENAI_API_KEY\"" >"$curl_config"; then
-		printf 'translate-po: could not prepare private API credentials for batch %s\n' "$batch_number" >&2
-		exit 1
-	fi
+	case "$backend" in
+		openai)
+			if ! printf '%s\n' \
+				'header = "Content-Type: application/json"' \
+				"header = \"Authorization: Bearer $OPENAI_API_KEY\"" >"$curl_config"; then
+				printf 'translate-po: could not prepare private API credentials for batch %s\n' "$batch_number" >&2
+				exit 1
+			fi
 
-	if ! curl --config "$curl_config" \
-		--connect-timeout 10 \
-		--max-time "$stream_max_time" \
-		--speed-limit "$stream_idle_bytes" \
-		--speed-time "$stream_idle_seconds" \
-		--no-buffer \
-		--fail-with-body \
-		--silent \
-		--show-error \
-		--data-binary "@$request_file" \
-		https://api.openai.com/v1/responses >"$stream_file"; then
-		api_error=$(jq -r '.error.message? // empty' "$stream_file" 2>/dev/null || true)
-		if [ -n "$api_error" ]; then
-			printf 'translate-po: API request rejected: %s\n' "$api_error" >&2
-		fi
-		printf 'translate-po: translation request failed for batch %s\n' "$batch_number" >&2
-		exit 1
-	fi
+			if ! curl --config "$curl_config" \
+				--connect-timeout 10 \
+				--max-time "$stream_max_time" \
+				--speed-limit "$stream_idle_bytes" \
+				--speed-time "$stream_idle_seconds" \
+				--no-buffer \
+				--fail-with-body \
+				--silent \
+				--show-error \
+				--data-binary "@$request_file" \
+				https://api.openai.com/v1/responses >"$stream_file"; then
+				api_error=$(jq -r '.error.message? // empty' "$stream_file" 2>/dev/null || true)
+				if [ -n "$api_error" ]; then
+					printf 'translate-po: API request rejected: %s\n' "$api_error" >&2
+				fi
+				printf 'translate-po: translation request failed for batch %s\n' "$batch_number" >&2
+				exit 1
+			fi
 
-	if ! extract_stream_events "$stream_file" "$event_file" || [ ! -s "$event_file" ]; then
-		printf 'translate-po: API stream produced no events for batch %s\n' "$batch_number" >&2
-		exit 1
-	fi
+			if ! extract_stream_events "$stream_file" "$event_file" || [ ! -s "$event_file" ]; then
+				printf 'translate-po: API stream produced no events for batch %s\n' "$batch_number" >&2
+				exit 1
+			fi
 
-	stream_error=$(jq -r 'select(.type == "error") | .message // .error.message // empty' "$event_file" 2>/dev/null | head -n 1)
-	if [ -n "$stream_error" ]; then
-		printf 'translate-po: API stream failed: %s\n' "$stream_error" >&2
-		exit 1
-	fi
-	if ! jq -e 'select(.type == "response.completed" and .response.status == "completed")' "$event_file" >/dev/null 2>&1; then
-		printf 'translate-po: API stream ended before completion for batch %s\n' "$batch_number" >&2
-		exit 1
-	fi
-	if ! jq -rj 'select(.type == "response.output_text.delta") | .delta' "$event_file" >"$response_text" \
-		|| [ ! -s "$response_text" ] \
-		|| ! jq -er '.po' "$response_text" >"$batch_translation"; then
-		printf 'translate-po: API stream did not contain a structured PO translation for batch %s\n' "$batch_number" >&2
-		exit 1
-	fi
+			stream_error=$(jq -r 'select(.type == "error") | .message // .error.message // empty' "$event_file" 2>/dev/null | head -n 1)
+			if [ -n "$stream_error" ]; then
+				printf 'translate-po: API stream failed: %s\n' "$stream_error" >&2
+				exit 1
+			fi
+			if ! jq -e 'select(.type == "response.completed" and .response.status == "completed")' "$event_file" >/dev/null 2>&1; then
+				printf 'translate-po: API stream ended before completion for batch %s\n' "$batch_number" >&2
+				exit 1
+			fi
+			if ! jq -rj 'select(.type == "response.output_text.delta") | .delta' "$event_file" >"$response_text" \
+				|| [ ! -s "$response_text" ] \
+				|| ! jq -er '.po' "$response_text" >"$batch_translation"; then
+				printf 'translate-po: API stream did not contain a structured PO translation for batch %s\n' "$batch_number" >&2
+				exit 1
+			fi
+			;;
+		ollama)
+			if ! curl \
+				--connect-timeout 10 \
+				--max-time "$stream_max_time" \
+				--speed-limit "$stream_idle_bytes" \
+				--speed-time "$stream_idle_seconds" \
+				--no-buffer \
+				--fail-with-body \
+				--silent \
+				--show-error \
+				--data-binary "@$request_file" \
+				"${ollama_url%/}/api/chat" >"$stream_file"; then
+				api_error=$(jq -r '.error? // empty' "$stream_file" 2>/dev/null || true)
+				if [ -n "$api_error" ]; then
+					printf 'translate-po: Ollama request rejected: %s\n' "$api_error" >&2
+				fi
+				printf 'translate-po: Ollama translation request failed for batch %s\n' "$batch_number" >&2
+				exit 1
+			fi
+
+			if ! jq -c . "$stream_file" >"$event_file" 2>/dev/null || [ ! -s "$event_file" ]; then
+				printf 'translate-po: Ollama stream produced no JSON events for batch %s\n' "$batch_number" >&2
+				exit 1
+			fi
+
+			stream_error=$(jq -r 'select(.error != null) | .error' "$event_file" 2>/dev/null | head -n 1)
+			if [ -n "$stream_error" ]; then
+				printf 'translate-po: Ollama stream failed: %s\n' "$stream_error" >&2
+				exit 1
+			fi
+			if ! jq -e 'select(.done == true)' "$event_file" >/dev/null 2>&1; then
+				printf 'translate-po: Ollama stream ended before completion for batch %s\n' "$batch_number" >&2
+				exit 1
+			fi
+			if ! jq -rj 'select(.message.content? != null) | .message.content' "$event_file" >"$response_text" \
+				|| [ ! -s "$response_text" ] \
+				|| ! jq -er '.po' "$response_text" >"$batch_translation"; then
+				printf 'translate-po: Ollama stream did not contain a structured PO translation for batch %s\n' "$batch_number" >&2
+				exit 1
+			fi
+			;;
+	esac
 
 	if ! diff -u <(header "$catalog") <(header "$batch_translation") >/dev/null; then
 		printf 'translate-po: translated batch %s changed its required header\n' "$batch_number" >&2

@@ -7,6 +7,9 @@ failures=0
 tmp_dir=$(mktemp -d)
 trap 'rm -rf "$tmp_dir"' EXIT
 catalog="$tmp_dir/catalog.po"
+ollama_catalog="$tmp_dir/ollama-catalog.po"
+ollama_env_catalog="$tmp_dir/ollama-env-catalog.po"
+ollama_error_catalog="$tmp_dir/ollama-error-catalog.po"
 partial="$tmp_dir/partial.po"
 complete="$tmp_dir/complete.po"
 multiline_catalog="$tmp_dir/multiline.po"
@@ -68,6 +71,10 @@ printf '%s\n' \
 	'#: source-two' \
 	'msgid "two"' \
 	'msgstr ""' >"$catalog"
+
+cp "$catalog" "$ollama_catalog"
+cp "$catalog" "$ollama_env_catalog"
+cp "$catalog" "$ollama_error_catalog"
 
 header "$catalog" >"$partial"
 printf '%s\n' \
@@ -225,6 +232,46 @@ printf '%s\n' \
 	'printf '\''event: response.completed\ndata: {"type":"response.completed","response":{"status":"completed"}}\n\n'\''' >"$fake_bin/curl"
 chmod +x "$fake_bin/curl"
 
+fake_ollama_bin="$tmp_dir/ollama-bin"
+mkdir -p "$fake_ollama_bin"
+printf '%s\n' \
+	"#!$BASH" \
+	'data_file=""' \
+	'endpoint=""' \
+	'no_buffer=false' \
+	'max_time=""' \
+	'speed_limit=""' \
+	'speed_time=""' \
+	'expect_value=""' \
+	'for argument in "$@"; do' \
+	'  if [ "$expect_value" = data_file ]; then data_file="$argument"; expect_value=""; continue; fi' \
+	'  if [ -n "$expect_value" ]; then' \
+	'    case "$expect_value" in max_time) max_time="$argument" ;; speed_limit) speed_limit="$argument" ;; speed_time) speed_time="$argument" ;; esac' \
+	'    expect_value=""; continue' \
+	'  fi' \
+	'  case "$argument" in' \
+	'    --data-binary) expect_value=data_file ;;' \
+	'    --no-buffer) no_buffer=true ;;' \
+	'    --max-time) expect_value=max_time ;;' \
+	'    --speed-limit) expect_value=speed_limit ;;' \
+	'    --speed-time) expect_value=speed_time ;;' \
+	'    --config|Authorization:*) printf "Ollama request used OpenAI credential transport\\n" >&2; exit 94 ;;' \
+	'    http://*|https://*) endpoint="$argument" ;;' \
+	'  esac' \
+	'done' \
+	'request_path=$(printf "%s" "$data_file" | cut -c 2-)' \
+	'if [[ "$data_file" != @* ]] || [ ! -s "$request_path" ]; then printf "Ollama request body was not passed through a readable file\\n" >&2; exit 93; fi' \
+	'if [ "$endpoint" != "${FAKE_OLLAMA_URL}/api/chat" ]; then printf "unexpected Ollama endpoint: %s\\n" "$endpoint" >&2; exit 92; fi' \
+	'if [ "$no_buffer" != true ] || [ "$max_time" != 900 ] || [ "$speed_limit" != 1 ] || [ "$speed_time" != 60 ]; then printf "Ollama request did not use the streaming timeout policy\\n" >&2; exit 91; fi' \
+	'if ! jq -e '\'' .model == "gemma4:12b" and .stream == true and .think == false and .options.temperature == 0 and .options.num_predict == 10000 and .format.required == ["po"] and ([.messages[].role] == ["system", "user"]) and ([.messages[].content] | join("\n") | contains("Never write msg_id")) '\'' "$request_path" >/dev/null; then printf "Ollama request did not use the required structured schema or immutable-PO defaults\\n" >&2; exit 90; fi' \
+	'if [ "${FAKE_OLLAMA_ERROR-false}" = true ]; then jq -nc '\''{error:"model rejected request"}'\''; exit 0; fi' \
+	'translation=$(jq -n --rawfile po "$FAKE_TRANSLATION" '\''{po:$po}'\'')' \
+	'first=${translation:0:7}' \
+	'rest=${translation:7}' \
+	'for content in "$first" "$rest"; do jq -nc --arg content "$content" '\''{model:"gemma4:12b", message:{role:"assistant", content:$content}, done:false}'\''; done' \
+	'if [ "${FAKE_OLLAMA_DONE-true}" = true ]; then jq -nc '\''{model:"gemma4:12b", message:{role:"assistant", content:""}, done:true, done_reason:"stop"}'\''; fi' >"$fake_ollama_bin/curl"
+chmod +x "$fake_ollama_bin/curl"
+
 before=$(sha256sum "$catalog" | awk '{ print $1 }')
 output=$(OPENAI_API_KEY=test-key FAKE_TRANSLATION="$partial" PATH="$fake_bin:$PATH" \
 	run_translator --apply "$catalog" 2>&1)
@@ -277,6 +324,61 @@ for reference in source-one source-two; do
 		fail "discarded source reference: $reference"
 	fi
 done
+
+before=$(sha256sum "$ollama_error_catalog" | awk '{ print $1 }')
+output=$(env -u OPENAI_API_KEY FAKE_OLLAMA_URL=http://127.0.0.1:11434 FAKE_OLLAMA_ERROR=true \
+	PATH="$fake_ollama_bin:$PATH" bash "$translator" --apply --backend ollama "$ollama_error_catalog" 2>&1)
+rc=$?
+after=$(sha256sum "$ollama_error_catalog" | awk '{ print $1 }')
+if [ "$rc" -eq 0 ]; then
+	fail "accepted a structured Ollama stream error: $output"
+elif [[ "$output" != *'Ollama stream failed: model rejected request'* ]]; then
+	fail "discarded a structured Ollama stream error detail: $output"
+fi
+if [ "$before" != "$after" ]; then
+	fail 'modified the catalog after rejecting a structured Ollama stream error'
+fi
+
+before=$(sha256sum "$ollama_catalog" | awk '{ print $1 }')
+output=$(env -u OPENAI_API_KEY FAKE_OLLAMA_URL=http://127.0.0.1:11434 FAKE_OLLAMA_DONE=false \
+	FAKE_TRANSLATION="$complete" PATH="$fake_ollama_bin:$PATH" \
+	bash "$translator" --apply --backend ollama "$ollama_catalog" 2>&1)
+rc=$?
+after=$(sha256sum "$ollama_catalog" | awk '{ print $1 }')
+if [ "$rc" -eq 0 ]; then
+	fail "accepted an Ollama stream without its done event: $output"
+elif [[ "$output" != *'Ollama stream ended before completion'* ]]; then
+	fail "rejected an incomplete Ollama stream for an unexpected reason: $output"
+fi
+if [ "$before" != "$after" ]; then
+	fail 'modified the catalog after rejecting an incomplete Ollama stream'
+fi
+
+output=$(env -u OPENAI_API_KEY FAKE_OLLAMA_URL=http://127.0.0.1:11434 FAKE_TRANSLATION="$complete" \
+	PATH="$fake_ollama_bin:$PATH" bash "$translator" --apply --backend ollama "$ollama_catalog" 2>&1)
+rc=$?
+if [ "$rc" -ne 0 ]; then
+	fail "rejected a complete keyless Ollama response: $output"
+elif msgattrib --untranslated --no-obsolete "$ollama_catalog" | awk '/^msgid / { found = 1 } END { exit found ? 0 : 1 }'; then
+	fail 'left an untranslated entry after accepting a complete Ollama response'
+fi
+
+output=$(env -u OPENAI_API_KEY FSEARCH_TRANSLATE_BACKEND=ollama FAKE_OLLAMA_URL=http://127.0.0.1:11434 \
+	FAKE_TRANSLATION="$complete" PATH="$fake_ollama_bin:$PATH" bash "$translator" --apply "$ollama_env_catalog" 2>&1)
+rc=$?
+if [ "$rc" -ne 0 ]; then
+	fail "rejected a complete Ollama response selected by environment: $output"
+elif msgattrib --untranslated --no-obsolete "$ollama_env_catalog" | awk '/^msgid / { found = 1 } END { exit found ? 0 : 1 }'; then
+	fail 'left an untranslated entry after selecting Ollama through the environment'
+fi
+
+output=$(run_translator --dry-run --backend not-a-backend "$ollama_catalog" 2>&1)
+rc=$?
+if [ "$rc" -ne 2 ]; then
+	fail "accepted an unknown translation backend: $output"
+elif [[ "$output" != *'backend must be openai or ollama'* ]]; then
+	fail "rejected an unknown translation backend unclearly: $output"
+fi
 
 before=$(sha256sum "$format_catalog" | awk '{ print $1 }')
 output=$(OPENAI_API_KEY=test-key FAKE_TRANSLATION="$format_bad" PATH="$fake_bin:$PATH" \
