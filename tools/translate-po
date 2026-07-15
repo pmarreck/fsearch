@@ -111,6 +111,12 @@ validate_exact_printf_placeholders() {
 			return tokens
 		}
 
+		function placeholder_list(tokens) {
+			sub(/^\034/, "", tokens)
+			gsub(/\034/, ", ", tokens)
+			return tokens == "" ? "(none)" : tokens
+		}
+
 		function clear_entry(    item_index) {
 			entry_is_c_format = 0
 			msgid = ""
@@ -121,13 +127,16 @@ validate_exact_printf_placeholders() {
 				delete translations[item_index]
 		}
 
-		function check_entry(    expected, item_index) {
+		function check_entry(    expected, actual, item_index) {
 			expected = placeholders(msgid)
 			if (!entry_is_c_format && expected == "")
 				return
 			for (item_index = 1; item_index <= translation_count; item_index += 1) {
-				if (placeholders(translations[item_index]) != expected) {
+				actual = placeholders(translations[item_index])
+				if (actual != expected) {
 					printf "translate-po: translation changed a printf placeholder\n" > "/dev/stderr"
+					printf "translate-po: source tokens: %s; translation tokens: %s\n", placeholder_list(expected), placeholder_list(actual) > "/dev/stderr"
+					printf "translate-po: source msgid: %s\n", msgid > "/dev/stderr"
 					validation_failed = 1
 					exit 1
 				}

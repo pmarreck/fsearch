@@ -1054,7 +1054,7 @@ msgstr "专注于性能和高级功能的文件搜索工具"
 
 #: data/io.github.cboxdoerfer.FSearch.desktop.in.in:10
 msgid "search;fsearch;files;folders;music;video;documents;find;tool;everything;"
-msgstr "搜索;fsearch;文件;目录;音乐;视频;文档;查找;工具;everything;"
+msgstr "搜索;fsearch;文件;目录;音乐;视频;文档;查找;工具;所有文件;"
 
 #: data/io.github.cboxdoerfer.FSearch.desktop.in.in:12
 msgid "File Search Utility"
@@ -1155,7 +1155,7 @@ msgstr "工具"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:58
 msgid "everything"
-msgstr "everything"
+msgstr "所有文件"
 
 #. Kept for appstreamcli < 1.0 (e.g. Ubuntu 20.04/22.04 PPA builds), which doesn't know <developer>.
 #. Translators: please do NOT translate this.

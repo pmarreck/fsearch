@@ -1116,7 +1116,7 @@ msgstr ""
 
 #: data/io.github.cboxdoerfer.FSearch.desktop.in.in:10
 msgid "search;fsearch;files;folders;music;video;documents;find;tool;everything;"
-msgstr "пошук;fsearch;файли;каталоги;музика;відео;документи;шукати;засіб;everything;"
+msgstr "пошук;fsearch;файли;каталоги;музика;відео;документи;шукати;засіб;все;"
 
 #: data/io.github.cboxdoerfer.FSearch.desktop.in.in:12
 msgid "File Search Utility"
