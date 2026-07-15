@@ -162,6 +162,12 @@ render_translation_slots() {
 			return encoded_value source_suffix "\""
 		}
 
+		function restore_grouped_decimal_flag(encoded, source_value) {
+			if (source_value ~ /%\047d/ && source_value !~ /%d/)
+				gsub(/%d/, "%\047d", encoded)
+			return encoded
+		}
+
 		!header_complete {
 			print
 			if ($0 == "msgid \"\"")
@@ -213,9 +219,11 @@ render_translation_slots() {
 				exit
 			source_field = ""
 			if (source_msgid_plural != "")
-				encoded = preserve_terminal_newlines(encoded, source_msgid_plural)
+				source_value = source_msgid_plural
 			else
-				encoded = preserve_terminal_newlines(encoded, source_msgid)
+				source_value = source_msgid
+			encoded = restore_grouped_decimal_flag(encoded, source_value)
+			encoded = preserve_terminal_newlines(encoded, source_value)
 			print substr($0, 1, quote - 1) encoded
 			skip_translation_continuations = 1
 			next

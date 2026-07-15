@@ -21,6 +21,8 @@ ollama_slots_invalid_catalog="$tmp_dir/ollama-slots-invalid-catalog.po"
 ollama_slots_invalid_response="$tmp_dir/ollama-slots-invalid-response.json"
 ollama_slots_plural_catalog="$tmp_dir/ollama-slots-plural-catalog.po"
 ollama_slots_plural_response="$tmp_dir/ollama-slots-plural-response.json"
+ollama_slots_grouped_catalog="$tmp_dir/ollama-slots-grouped-catalog.po"
+ollama_slots_grouped_response="$tmp_dir/ollama-slots-grouped-response.json"
 ollama_slots_newline_catalog="$tmp_dir/ollama-slots-newline-catalog.po"
 ollama_slots_newline_response="$tmp_dir/ollama-slots-newline-response.json"
 ollama_batch_catalog="$tmp_dir/ollama-batch-catalog.po"
@@ -185,6 +187,8 @@ printf '%s\n' \
 
 cp "$format_catalog" "$ollama_slots_plural_catalog"
 printf '%s\n' '{"translations":["Open %'"'"'d file?","Open %'"'"'d files?"]}' >"$ollama_slots_plural_response"
+cp "$format_catalog" "$ollama_slots_grouped_catalog"
+printf '%s\n' '{"translations":["Open %d file?","Open %d files?"]}' >"$ollama_slots_grouped_response"
 
 printf '%s\n' \
 	'msgid ""' \
@@ -517,6 +521,17 @@ elif ! awk -v singular="msgstr[0] \"Open %'d file?\"" -v plural="msgstr[1] \"Ope
 	END { exit !(singular_found && plural_found) }
 ' "$ollama_slots_plural_catalog"; then
 	fail 'translation-slot rendering lost a plural form or its exact placeholder'
+fi
+
+output=$(env -u OPENAI_API_KEY FAKE_OLLAMA_URL=http://127.0.0.1:11434 \
+	FAKE_OLLAMA_RESPONSE_PATH="$ollama_slots_grouped_response" PATH="$fake_ollama_bin:$PATH" \
+	bash "$translator" --apply --backend ollama "$ollama_slots_grouped_catalog" 2>&1)
+rc=$?
+if [ "$rc" -ne 0 ]; then
+	fail "did not restore source grouping placeholders in Ollama translation slots: $output"
+elif ! grep -Fqx "msgstr[0] \"Open %'d file?\"" "$ollama_slots_grouped_catalog" \
+	|| ! grep -Fqx "msgstr[1] \"Open %'d files?\"" "$ollama_slots_grouped_catalog"; then
+	fail 'translation-slot rendering did not restore source grouping placeholders'
 fi
 
 output=$(env -u OPENAI_API_KEY FAKE_OLLAMA_URL=http://127.0.0.1:11434 \

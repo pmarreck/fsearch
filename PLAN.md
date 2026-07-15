@@ -150,5 +150,7 @@
   The local renderer replaces a model response's terminal escaped-newline sequence with the source `msgid` or `msgid_plural` sequence. A red-green fake Ollama test covers a singular slot plus both plural slots whose model responses omit required newlines; a mutation proves it distinguishes an encoded newline from a literal trailing backslash plus `n`.
 - [x] Make the root-output gettext key portable across C integer-format macros. (2026-07-15 14:15 EDT)
   The old translatable literal ended in a bare `%` because `xgettext` cannot expand concatenated `G_GINT64_FORMAT`; runtime and catalog keys therefore differed. Format the integer separately, pass it as a sixth `%s`, and preserve the corresponding minimal catalog migration. Curiosity poke: a model's repeated extra placeholder can expose a source-extraction bug rather than a model failure.
+- [x] Restore source grouping flags in local decimal placeholders. (2026-07-15 14:24 EDT)
+  A fake Ollama response that rewrites `%'d` as `%d` is now corrected only when its source slot uses grouped decimals and no ungrouped decimal placeholder. The exact-placeholder gate still rejects all other differences.
 - [ ] Translate and independently review the six inherited catalogs, then the 24 gettext-initialized canonical catalogs, using the validated local backend.
   Curiosity poke: under-resourced and RTL locales require structural gates plus later semantic spot-checks rather than a blind mass commit.

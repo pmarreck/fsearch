@@ -59,3 +59,8 @@ literal. `xgettext` records only the literal prefix, leaving an invalid bare
 percent in the catalog while runtime formatting uses the expanded conversion.
 Format the typed value separately and pass it through a normal portable `%s`
 placeholder, then migrate that one PO key without a whole-catalog rewrap.
+
+Gemma can remove the apostrophe grouping flag from a `%'d` placeholder. When a
+source slot uses grouped decimal formatting and contains no ordinary `%d`,
+restore that flag in the rendered data before the exact-placeholder gate. Keep
+the correction narrow so every other placeholder mismatch still fails.
