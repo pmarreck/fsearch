@@ -343,7 +343,8 @@ bounded streamed batches and replace a catalog only after every batch completes 
 printf-placeholder validation. OpenAI defaults to 20 entries per batch; local Ollama defaults to 5 after real ten-entry
 batches repeatedly omitted content under its practical context budget, and `FSEARCH_TRANSLATE_BATCH_SIZE` explicitly
 overrides either default. The source PO header is restored
-before validation, so model metadata churn cannot alter it. If a local response then fails PO, placeholder, keyword, or
+before validation when the response contains one, while a headerless PO body is preserved intact; model metadata churn
+therefore cannot alter the catalog header. If a local response then fails PO, placeholder, keyword, or
 completeness validation, only that batch is retried at most twice; HTTP/API and incomplete-stream failures stop
 immediately. A catalog is still replaced only after every batch passes.
 

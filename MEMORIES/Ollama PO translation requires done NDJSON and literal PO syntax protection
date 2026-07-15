@@ -23,10 +23,11 @@ independently reject malformed PO and unchanged non-English lists. Temperature
 zero reduces variation but does not make local GPU generation bitwise
 deterministic.
 
-The PO header is source-owned metadata, not translated content. Discard every
-model-produced line before its first blank separator, then restore the source
-header before validating the model body. This handles a malformed `msg_id`
-header without discarding otherwise valid translations. Treat a remaining
+The PO header is source-owned metadata, not translated content. When the first
+model PO entry is an empty header (including malformed `msg_id`), discard the
+model header block and restore the source header before validating the model
+body. A response that starts directly with a non-empty `msgid` is headerless,
+so preserve it intact rather than losing its first translation. Treat a remaining
 PO/placeholder/keyword/completeness validation failure as transient: retry
 only that batch, capped at three total attempts, while retaining all atomic
 catalog boundaries. Transport, API-error, malformed-stream, and

@@ -37,17 +37,27 @@ restore_source_header() {
 	local source=$1
 	local translated=$2
 	local restored=$3
+	local first_entry
+
+	first_entry=$(awk '/^(msgid|msg_id) / { print; exit }' "$translated")
 
 	{
 		header "$source"
-		awk '
-			!saw_body {
-				if (/^$/)
-					saw_body = 1
-				next
-			}
-			saw_body { print }
-		' "$translated"
+		case "$first_entry" in
+			'msgid ""'|'msg_id ""')
+				awk '
+					!saw_body {
+						if (/^$/)
+							saw_body = 1
+						next
+					}
+					saw_body { print }
+				' "$translated"
+				;;
+			*)
+				cat "$translated"
+				;;
+		esac
 	} >"$restored"
 }
 

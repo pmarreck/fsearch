@@ -14,6 +14,7 @@ ollama_retry_catalog="$tmp_dir/ollama-retry-catalog.po"
 ollama_retry_exhausted_catalog="$tmp_dir/ollama-retry-exhausted-catalog.po"
 ollama_header_catalog="$tmp_dir/ollama-header-catalog.po"
 ollama_broken_header_catalog="$tmp_dir/ollama-broken-header-catalog.po"
+ollama_headerless_catalog="$tmp_dir/ollama-headerless-catalog.po"
 ollama_batch_catalog="$tmp_dir/ollama-batch-catalog.po"
 ollama_batch_one="$tmp_dir/ollama-batch-one.po"
 ollama_batch_two="$tmp_dir/ollama-batch-two.po"
@@ -22,6 +23,7 @@ partial="$tmp_dir/partial.po"
 complete="$tmp_dir/complete.po"
 header_changed="$tmp_dir/header-changed.po"
 broken_header_keyword="$tmp_dir/broken-header-keyword.po"
+headerless_body="$tmp_dir/headerless-body.po"
 multiline_catalog="$tmp_dir/multiline.po"
 multiline_partial="$tmp_dir/multiline-partial.po"
 format_catalog="$tmp_dir/format.po"
@@ -92,6 +94,7 @@ cp "$catalog" "$ollama_retry_catalog"
 cp "$catalog" "$ollama_retry_exhausted_catalog"
 cp "$catalog" "$ollama_header_catalog"
 cp "$catalog" "$ollama_broken_header_catalog"
+cp "$catalog" "$ollama_headerless_catalog"
 
 header "$catalog" >"$partial"
 printf '%s\n' \
@@ -108,6 +111,7 @@ printf '%s\n' \
 
 sed 's/Content-Transfer-Encoding: 8bit/Content-Transfer-Encoding: changed/' "$complete" >"$header_changed"
 sed '0,/^msgid ""$/s//msg_id ""/' "$complete" >"$broken_header_keyword"
+awk 'saw_body { print } /^$/ { saw_body = 1 }' "$complete" >"$headerless_body"
 
 printf '%s\n' \
 	'msgid ""' \
@@ -468,6 +472,21 @@ elif ! cmp -s <(header "$catalog") <(header "$ollama_broken_header_catalog"); th
 	fail 'did not restore the exact source header after a malformed Ollama header'
 elif msgattrib --untranslated --no-obsolete "$ollama_broken_header_catalog" | awk '/^msgid / { found = 1 } END { exit found ? 0 : 1 }'; then
 	fail 'discarded translated body entries after a malformed Ollama header'
+fi
+
+ollama_headerless_count_file="$tmp_dir/ollama-headerless-count"
+output=$(env -u OPENAI_API_KEY FAKE_OLLAMA_URL=http://127.0.0.1:11434 \
+	FAKE_OLLAMA_COUNT_FILE="$ollama_headerless_count_file" FAKE_TRANSLATION="$headerless_body" \
+	PATH="$fake_ollama_bin:$PATH" bash "$translator" --apply --backend ollama "$ollama_headerless_catalog" 2>&1)
+rc=$?
+if [ "$rc" -ne 0 ]; then
+	fail "did not preserve a headerless Ollama PO body: $output"
+elif [ "$(cat "$ollama_headerless_count_file")" -ne 1 ]; then
+	fail "used $(cat "$ollama_headerless_count_file") Ollama requests for a headerless body instead of one"
+elif ! cmp -s <(header "$catalog") <(header "$ollama_headerless_catalog"); then
+	fail 'did not restore the exact source header after a headerless Ollama body'
+elif msgattrib --untranslated --no-obsolete "$ollama_headerless_catalog" | awk '/^msgid / { found = 1 } END { exit found ? 0 : 1 }'; then
+	fail 'discarded translated body entries after a headerless Ollama body'
 fi
 
 before=$(sha256sum "$ollama_retry_exhausted_catalog" | awk '{ print $1 }')
