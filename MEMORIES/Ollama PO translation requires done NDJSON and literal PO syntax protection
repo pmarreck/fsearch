@@ -46,3 +46,10 @@ until their first plural slots are filled. Validate every plural-bearing
 catalog proactively, and lock known exceptional locale formulas in the
 integrity gate. For the inherited `frc`/`prs` stubs use `n > 1`; for
 `ie`/`ka`/`ur` use `n != 1`, derived from CLDR integer cardinal behavior.
+
+GNU gettext also requires each translated string to retain the source's
+terminal newline sequence. A local model can omit it while otherwise returning
+valid JSON, so derive that escaped suffix from the source `msgid` (or
+`msgid_plural` for every plural slot) and replace the response suffix locally.
+Count escaping correctly: a literal trailing backslash followed by `n` is not
+an encoded newline.

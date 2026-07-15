@@ -115,6 +115,7 @@ render_translation_slots() {
 	local slots=$2
 	local output=$3
 
+	# GNU gettext requires terminal newlines to agree with the source strings.
 	awk -v slots="$slots" '
 		function take_slot(    encoded) {
 			if ((getline encoded < slots) <= 0) {
@@ -124,6 +125,41 @@ render_translation_slots() {
 			}
 			slots_used += 1
 			return encoded
+		}
+
+		function quoted_value(line,    value) {
+			value = line
+			sub(/^[^"]*"/, "", value)
+			sub(/"$/, "", value)
+			return value
+		}
+
+		function ends_with_escaped_newline(value,    character_index, backslashes) {
+			if (substr(value, length(value), 1) != "n")
+				return 0
+			backslashes = 0
+			for (character_index = length(value) - 1; character_index >= 1 && substr(value, character_index, 1) == "\\"; character_index -= 1)
+				backslashes += 1
+			return backslashes % 2 == 1
+		}
+
+		function trailing_escaped_newlines(value,    suffix) {
+			suffix = ""
+			while (ends_with_escaped_newline(value)) {
+				suffix = "\\n" suffix
+				value = substr(value, 1, length(value) - 2)
+			}
+			return suffix
+		}
+
+		function preserve_terminal_newlines(encoded, source_value,    encoded_value, source_suffix, encoded_suffix) {
+			encoded_value = encoded
+			sub(/"$/, "", encoded_value)
+			source_suffix = trailing_escaped_newlines(source_value)
+			encoded_suffix = trailing_escaped_newlines(encoded_value)
+			if (encoded_suffix != "")
+				encoded_value = substr(encoded_value, 1, length(encoded_value) - length(encoded_suffix))
+			return encoded_value source_suffix "\""
 		}
 
 		!header_complete {
@@ -141,6 +177,30 @@ render_translation_slots() {
 			skip_translation_continuations = 0
 		}
 
+		/^msgid / {
+			source_msgid = quoted_value($0)
+			source_msgid_plural = ""
+			source_field = "msgid"
+			print
+			next
+		}
+
+		/^msgid_plural / {
+			source_msgid_plural = quoted_value($0)
+			source_field = "msgid_plural"
+			print
+			next
+		}
+
+		/^"/ {
+			if (source_field == "msgid")
+				source_msgid = source_msgid quoted_value($0)
+			else if (source_field == "msgid_plural")
+				source_msgid_plural = source_msgid_plural quoted_value($0)
+			print
+			next
+		}
+
 		/^msgstr(\[[0-9]+\])? / {
 			quote = index($0, "\"")
 			if (quote == 0) {
@@ -151,6 +211,11 @@ render_translation_slots() {
 			encoded = take_slot()
 			if (failed)
 				exit
+			source_field = ""
+			if (source_msgid_plural != "")
+				encoded = preserve_terminal_newlines(encoded, source_msgid_plural)
+			else
+				encoded = preserve_terminal_newlines(encoded, source_msgid)
 			print substr($0, 1, quote - 1) encoded
 			skip_translation_continuations = 1
 			next

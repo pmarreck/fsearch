@@ -21,6 +21,8 @@ ollama_slots_invalid_catalog="$tmp_dir/ollama-slots-invalid-catalog.po"
 ollama_slots_invalid_response="$tmp_dir/ollama-slots-invalid-response.json"
 ollama_slots_plural_catalog="$tmp_dir/ollama-slots-plural-catalog.po"
 ollama_slots_plural_response="$tmp_dir/ollama-slots-plural-response.json"
+ollama_slots_newline_catalog="$tmp_dir/ollama-slots-newline-catalog.po"
+ollama_slots_newline_response="$tmp_dir/ollama-slots-newline-response.json"
 ollama_batch_catalog="$tmp_dir/ollama-batch-catalog.po"
 ollama_batch_one="$tmp_dir/ollama-batch-one.po"
 ollama_batch_two="$tmp_dir/ollama-batch-two.po"
@@ -183,6 +185,26 @@ printf '%s\n' \
 
 cp "$format_catalog" "$ollama_slots_plural_catalog"
 printf '%s\n' '{"translations":["Open %'"'"'d file?","Open %'"'"'d files?"]}' >"$ollama_slots_plural_response"
+
+printf '%s\n' \
+	'msgid ""' \
+	'msgstr ""' \
+	'"Language: xx\n"' \
+	'"Content-Type: text/plain; charset=UTF-8\n"' \
+	'"Content-Transfer-Encoding: 8bit\n"' \
+	'"Plural-Forms: nplurals=2; plural=n != 1;\n"' \
+	'' \
+	'msgid "Singular source line\n"' \
+	'msgstr ""' \
+	'' \
+	'msgid "One plural source line\n"' \
+	'msgid_plural "Many plural source lines\n"' \
+	'msgstr[0] ""' \
+	'msgstr[1] ""' \
+	'' \
+	'msgid "Literal source \\n"' \
+	'msgstr ""' >"$ollama_slots_newline_catalog"
+printf '%s\n' '{"translations":["Ligne source unique","Une ligne source","Plusieurs lignes source","Source litterale"]}' >"$ollama_slots_newline_response"
 
 header "$format_catalog" >"$syntax_bad"
 printf '%s\n' \
@@ -495,6 +517,19 @@ elif ! awk -v singular="msgstr[0] \"Open %'d file?\"" -v plural="msgstr[1] \"Ope
 	END { exit !(singular_found && plural_found) }
 ' "$ollama_slots_plural_catalog"; then
 	fail 'translation-slot rendering lost a plural form or its exact placeholder'
+fi
+
+output=$(env -u OPENAI_API_KEY FAKE_OLLAMA_URL=http://127.0.0.1:11434 \
+	FAKE_OLLAMA_RESPONSE_PATH="$ollama_slots_newline_response" PATH="$fake_ollama_bin:$PATH" \
+	bash "$translator" --apply --backend ollama "$ollama_slots_newline_catalog" 2>&1)
+rc=$?
+if [ "$rc" -ne 0 ]; then
+	fail "did not preserve source terminal newlines in Ollama translation slots: $output"
+elif ! grep -Fqx 'msgstr "Ligne source unique\n"' "$ollama_slots_newline_catalog" \
+	|| ! grep -Fqx 'msgstr[0] "Une ligne source\n"' "$ollama_slots_newline_catalog" \
+	|| ! grep -Fqx 'msgstr[1] "Plusieurs lignes source\n"' "$ollama_slots_newline_catalog" \
+	|| ! grep -Fqx 'msgstr "Source litterale"' "$ollama_slots_newline_catalog"; then
+	fail 'translation-slot rendering did not preserve source terminal newlines'
 fi
 
 cp "$ollama_env_catalog" "$ollama_slots_invalid_catalog"
