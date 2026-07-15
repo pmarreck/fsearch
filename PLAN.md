@@ -108,3 +108,5 @@
   Both catalogs completed atomically; Romanian, Portuguese, Brazilian Portuguese, and Indonesian now translate the AppStream `everything` keyword consistently, with strict gettext, header/key invariants, the full suite, and production build passing before commit.
 - [x] Preserve established bilingual keyword catalogs and complete Korean's localized keyword set. (2026-07-15 03:00 EDT)
   Japanese, Korean, Russian, and Turkish retain English plus localized AppStream discovery keywords; Korean now includes its existing `모든 것` translation alongside the other Korean terms.
+- [x] Restore literal application names and compact AppStream keyword delimiters. (2026-07-15 03:10 EDT)
+  Telugu preserves the literal `fsearch` brand token; Swedish and Telugu keyword lists no longer introduce space-prefixed tokens after semicolons.
