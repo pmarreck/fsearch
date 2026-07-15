@@ -100,3 +100,5 @@
   Hebrew retries preserved manually verified `%u` and `%'d` translations when the model omitted their required placeholders; all four catalogs passed strict gettext checks with zero fuzzy and untranslated entries before commit.
 - [x] Checkpoint 5: complete English (United Kingdom) (`en_GB`) and Traditional Chinese (`zh_Hant`) through nine streamed batches. (2026-07-15 02:11 EDT)
   Traditional Chinese's `%'d` count and confirmation strings were manually verified before retrying its atomically rejected batch; both catalogs passed strict gettext checks with zero fuzzy and untranslated entries before commit.
+- [x] Checkpoint 6: complete Brazilian Portuguese (`pt_BR`) and Korean (`ko`) through nine and eleven streamed batches. (2026-07-15 02:19 EDT)
+  Both catalogs completed atomically and passed strict gettext, header/key invariants, the full suite, and the production build before commit.
