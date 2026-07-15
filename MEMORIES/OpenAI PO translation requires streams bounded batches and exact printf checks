@@ -1,0 +1,8 @@
+The Basque catalog took 198.5 seconds to generate and returned no body from
+the previous non-streamed Responses request before its 180-second timeout.
+`tools/translate-po` therefore sends at most 20 PO entries per streamed
+request, requires `response.completed`, and treats a 60-second byte-idle gap
+as failed. GNU gettext accepts compatible printf directives, so
+`msgfmt --check-format` alone does not reject `%d` in place of `%'d`; the
+helper must also compare each `c-format` translation's directive sequence
+exactly before it atomically updates a catalog.

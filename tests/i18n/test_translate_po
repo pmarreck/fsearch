@@ -8,6 +8,13 @@ tmp_dir=$(mktemp -d)
 trap 'rm -rf "$tmp_dir"' EXIT
 catalog="$tmp_dir/catalog.po"
 partial="$tmp_dir/partial.po"
+complete="$tmp_dir/complete.po"
+format_catalog="$tmp_dir/format.po"
+format_bad="$tmp_dir/format-bad.po"
+format_good="$tmp_dir/format-good.po"
+large_catalog="$tmp_dir/large.po"
+large_batch_one="$tmp_dir/large-batch-one.po"
+large_batch_two="$tmp_dir/large-batch-two.po"
 fake_bin="$tmp_dir/bin"
 mkdir -p "$fake_bin"
 
@@ -18,6 +25,14 @@ fail() {
 
 run_translator() {
 	bash "$translator" "$@"
+}
+
+header() {
+	awk '
+		/^msgid ""$/ { in_header = 1 }
+		in_header { print }
+		in_header && /^$/ { exit }
+	' "$1"
 }
 
 printf '%s\n' \
@@ -35,43 +50,123 @@ printf '%s\n' \
 	'msgid "two"' \
 	'msgstr ""' >"$catalog"
 
-awk '
-	/^msgid ""$/ { in_header = 1 }
-	in_header { print }
-	in_header && /^$/ { exit }
-' "$catalog" >"$partial"
+header "$catalog" >"$partial"
 printf '%s\n' \
 	'msgid "one"' \
 	'msgstr "ONE"' >>"$partial"
 
+header "$catalog" >"$complete"
+printf '%s\n' \
+	'msgid "one"' \
+	'msgstr "ONE"' \
+	'' \
+	'msgid "two"' \
+	'msgstr "TWO"' >>"$complete"
+
+printf '%s\n' \
+	'msgid ""' \
+	'msgstr ""' \
+	'"Language: xx\n"' \
+	'"Content-Type: text/plain; charset=UTF-8\n"' \
+	'"Content-Transfer-Encoding: 8bit\n"' \
+	'"Plural-Forms: nplurals=2; plural=n != 1;\n"' \
+	'' \
+	'#, c-format' \
+	'msgid "Do you really want to open %'"'"'d file?"' \
+	'msgid_plural "Do you really want to open %'"'"'d files?"' \
+	'msgstr[0] ""' \
+	'msgstr[1] ""' >"$format_catalog"
+
+header "$format_catalog" >"$format_bad"
+printf '%s\n' \
+	'#, c-format' \
+	'msgid "Do you really want to open %'"'"'d file?"' \
+	'msgid_plural "Do you really want to open %'"'"'d files?"' \
+	'msgstr[0] "Benetan %d fitxategi ireki nahi dituzu?"' \
+	'msgstr[1] "Benetan %d fitxategi ireki nahi dituzu?"' >>"$format_bad"
+
+header "$format_catalog" >"$format_good"
+printf '%s\n' \
+	'#, c-format' \
+	'msgid "Do you really want to open %'"'"'d file?"' \
+	'msgid_plural "Do you really want to open %'"'"'d files?"' \
+	'msgstr[0] "Benetan %'"'"'d fitxategi ireki nahi dituzu?"' \
+	'msgstr[1] "Benetan %'"'"'d fitxategi ireki nahi dituzu?"' >>"$format_good"
+
 printf '%s\n' \
 	"#!$BASH" \
 	'data_file=""' \
+	'expect_data_file=false' \
+	'expect_value=""' \
+	'no_buffer=false' \
+	'max_time=""' \
+	'speed_limit=""' \
+	'speed_time=""' \
 	'for argument in "$@"; do' \
 	'  if [ "$expect_data_file" = true ]; then' \
 	'    data_file="$argument"' \
 	'    expect_data_file=false' \
 	'    continue' \
 	'  fi' \
+	'  if [ -n "$expect_value" ]; then' \
+	'    case "$expect_value" in' \
+	'      max_time) max_time="$argument" ;;' \
+	'      speed_limit) speed_limit="$argument" ;;' \
+	'      speed_time) speed_time="$argument" ;;' \
+	'    esac' \
+	'    expect_value=""' \
+	'    continue' \
+	'  fi' \
 	'  case "$argument" in' \
 	'    --data-binary) expect_data_file=true ;;' \
-	'    *test-key*) printf "credential leaked through curl argv\\n" >&2; exit 99 ;;' \
+	'    --no-buffer) no_buffer=true ;;' \
+	'    --max-time) expect_value=max_time ;;' \
+	'    --speed-limit) expect_value=speed_limit ;;' \
+	'    --speed-time) expect_value=speed_time ;;' \
+	'    *test-key*) printf "credential leaked through curl argv\n" >&2; exit 99 ;;' \
 	'  esac' \
 	'done' \
 	'request_path=$(printf "%s" "$data_file" | cut -c 2-)' \
 	'if [[ "$data_file" != @* ]] || [ ! -s "$request_path" ]; then' \
-	'  printf "request body was not passed through a readable file\\n" >&2' \
+	'  printf "request body was not passed through a readable file\n" >&2' \
 	'  exit 98' \
 	'fi' \
-	'if ! jq -e '\''.reasoning.effort == "none"'\'' "$request_path" >/dev/null; then' \
-	'  printf "translation request did not disable reasoning\\n" >&2' \
+	'if [ "$no_buffer" != true ] || [ "$max_time" != 900 ] || [ "$speed_limit" != 1 ] || [ "$speed_time" != 60 ]; then' \
+	'  printf "translation request did not use the streaming timeout policy\n" >&2' \
 	'  exit 97' \
 	'fi' \
-	'if [ "$FAKE_CURL_ERROR" = true ]; then' \
-	'  printf '\''{"error":{"message":"model rejected request"}}\n'\''' \
-	'  exit 22' \
+	'if ! jq -e '\''.stream == true and .reasoning.effort == "none" and .max_output_tokens == 10000'\'' "$request_path" >/dev/null; then' \
+	'  printf "translation request did not request streamed batches\n" >&2' \
+	'  exit 96' \
 	'fi' \
-	'jq -n --rawfile po "$FAKE_TRANSLATION" '\''{ output: [{ type: "message", content: [{ type: "output_text", text: ({ po: $po } | tojson) }] }] }'\''' >"$fake_bin/curl"
+	'call=1' \
+	'if [ -n "${FAKE_CURL_COUNT_FILE-}" ]; then' \
+	'  if [ -s "$FAKE_CURL_COUNT_FILE" ]; then call=$(($(cat "$FAKE_CURL_COUNT_FILE") + 1)); fi' \
+	'  printf "%s\n" "$call" >"$FAKE_CURL_COUNT_FILE"' \
+	'fi' \
+	'if [ -n "${FAKE_EXPECT_BATCH_SIZES-}" ]; then' \
+	'  expected=$(printf "%s" "$FAKE_EXPECT_BATCH_SIZES" | cut -d, -f "$call")' \
+	'  actual=$(jq -r '\''.input'\'' "$request_path" | awk '\''/^msgid / && $0 != "msgid \"\"" { count += 1 } END { print count + 0 }'\'')' \
+	'  if [ "$actual" != "$expected" ]; then' \
+	'    printf "expected batch %s to contain %s entries, got %s\n" "$call" "$expected" "$actual" >&2' \
+	'    exit 95' \
+	'  fi' \
+	'fi' \
+	'if [ "${FAKE_STREAM_ERROR-false}" = true ]; then' \
+	'  printf '\''event: error\ndata: {"type":"error","message":"model rejected request"}\n\n'\''' \
+	'  exit 0' \
+	'fi' \
+	'translation_path=$(printenv "FAKE_TRANSLATION_$call" 2>/dev/null || true)' \
+	'if [ -z "$translation_path" ]; then translation_path=${FAKE_TRANSLATION-}; fi' \
+	'translation=$(jq -n --rawfile po "$translation_path" '\''{po:$po}'\'')' \
+	'first=${translation:0:7}' \
+	'rest=${translation:7}' \
+	'for delta in "$first" "$rest"; do' \
+	'  event=$(jq -nc --arg delta "$delta" '\''{type:"response.output_text.delta", delta:$delta}'\'')' \
+	'  printf "event: response.output_text.delta\n"' \
+	'  printf "data: %s\n\n" "$event"' \
+	'done' \
+	'printf '\''event: response.completed\ndata: {"type":"response.completed","response":{"status":"completed"}}\n\n'\''' >"$fake_bin/curl"
 chmod +x "$fake_bin/curl"
 
 before=$(sha256sum "$catalog" | awk '{ print $1 }')
@@ -89,33 +184,20 @@ if [ "$before" != "$after" ]; then
 	fail 'modified the catalog after rejecting an incomplete response'
 fi
 
-output=$(OPENAI_API_KEY=test-key FAKE_CURL_ERROR=true FAKE_TRANSLATION="$partial" PATH="$fake_bin:$PATH" \
+output=$(OPENAI_API_KEY=test-key FAKE_STREAM_ERROR=true PATH="$fake_bin:$PATH" \
 	run_translator --apply "$catalog" 2>&1)
 rc=$?
 if [ "$rc" -eq 0 ]; then
-	fail "accepted a rejected API request: $output"
+	fail "accepted a streamed API error: $output"
 elif [[ "$output" != *'model rejected request'* ]]; then
-	fail "discarded the API error detail: $output"
+	fail "discarded the streamed API error detail: $output"
 fi
-
-complete="$tmp_dir/complete.po"
-awk '
-	/^msgid ""$/ { in_header = 1 }
-	in_header { print }
-	in_header && /^$/ { exit }
-' "$catalog" >"$complete"
-printf '%s\n' \
-	'msgid "one"' \
-	'msgstr "ONE"' \
-	'' \
-	'msgid "two"' \
-	'msgstr "TWO"' >>"$complete"
 
 output=$(OPENAI_API_KEY=test-key FAKE_TRANSLATION="$complete" PATH="$fake_bin:$PATH" \
 	run_translator --apply "$catalog" 2>&1)
 rc=$?
 if [ "$rc" -ne 0 ]; then
-	fail "rejected a complete response: $output"
+	fail "rejected a complete streamed response: $output"
 fi
 if msgattrib --untranslated --no-obsolete "$catalog" | awk '/^msgid / { found = 1 } END { exit found ? 0 : 1 }'; then
 	fail 'left an untranslated entry after accepting a complete response'
@@ -126,12 +208,59 @@ for reference in source-one source-two; do
 	fi
 done
 
+before=$(sha256sum "$format_catalog" | awk '{ print $1 }')
+output=$(OPENAI_API_KEY=test-key FAKE_TRANSLATION="$format_bad" PATH="$fake_bin:$PATH" \
+	run_translator --apply "$format_catalog" 2>&1)
+rc=$?
+after=$(sha256sum "$format_catalog" | awk '{ print $1 }')
+if [ "$rc" -eq 0 ]; then
+	fail "accepted a translation that changed %'d to %d: $output"
+elif [[ "$output" != *'changed a format placeholder'* ]]; then
+	fail "rejected the changed placeholder for an unexpected reason: $output"
+fi
+if [ "$before" != "$after" ]; then
+	fail 'modified the catalog after rejecting a changed format placeholder'
+fi
+
+output=$(OPENAI_API_KEY=test-key FAKE_TRANSLATION="$format_good" PATH="$fake_bin:$PATH" \
+	run_translator --apply "$format_catalog" 2>&1)
+rc=$?
+if [ "$rc" -ne 0 ]; then
+	fail "rejected a translation that preserved %'d: $output"
+fi
+
 output=$(run_translator --dry-run "$catalog" 2>&1)
 rc=$?
 if [ "$rc" -ne 0 ]; then
 	fail "rejected an already-complete catalog: $output"
 elif [[ "$output" != *'already complete'* ]]; then
 	fail "did not identify an already-complete catalog: $output"
+fi
+
+header "$catalog" >"$large_catalog"
+header "$catalog" >"$large_batch_one"
+header "$catalog" >"$large_batch_two"
+for ((number = 1; number <= 21; number += 1)); do
+	printf -v label '%02d' "$number"
+	printf '%s\n' "msgid \"entry $label\"" 'msgstr ""' '' >>"$large_catalog"
+	if [ "$number" -le 20 ]; then
+		printf '%s\n' "msgid \"entry $label\"" "msgstr \"ENTRY $label\"" '' >>"$large_batch_one"
+	else
+		printf '%s\n' "msgid \"entry $label\"" "msgstr \"ENTRY $label\"" '' >>"$large_batch_two"
+	fi
+done
+
+count_file="$tmp_dir/curl-count"
+output=$(OPENAI_API_KEY=test-key FAKE_CURL_COUNT_FILE="$count_file" FAKE_EXPECT_BATCH_SIZES=20,1 \
+	FAKE_TRANSLATION_1="$large_batch_one" FAKE_TRANSLATION_2="$large_batch_two" PATH="$fake_bin:$PATH" \
+	run_translator --apply "$large_catalog" 2>&1)
+rc=$?
+if [ "$rc" -ne 0 ]; then
+	fail "rejected a valid multi-batch response: $output"
+elif [ "$(cat "$count_file")" -ne 2 ]; then
+	fail "used $(cat "$count_file") requests for a 21-entry catalog instead of two"
+elif msgattrib --untranslated --no-obsolete "$large_catalog" | awk '/^msgid / { found = 1 } END { exit found ? 0 : 1 }'; then
+	fail 'left an untranslated entry after applying multiple batches'
 fi
 
 exit "$failures"

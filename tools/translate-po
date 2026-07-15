@@ -2,6 +2,12 @@
 
 set -u
 
+batch_size=20
+max_output_tokens=10000
+stream_max_time=900
+stream_idle_seconds=60
+stream_idle_bytes=1
+
 usage() {
 	printf '%s\n' 'Usage: tools/translate-po [--dry-run|--apply] [--model MODEL] CATALOG.po' >&2
 }
@@ -16,6 +22,194 @@ header() {
 
 count_messages() {
 	awk '$0 ~ /^msgid / && $0 != "msgid \"\"" { count += 1 } END { print count + 0 }' "$1"
+}
+
+validate_exact_printf_placeholders() {
+	# gettext accepts compatible printf directives; translations must retain exact ones.
+	awk '
+		function quoted_text(line,    value) {
+			value = line
+			sub(/^[^"]*"/, "", value)
+			sub(/"$/, "", value)
+			return value
+		}
+
+		function placeholders(text,    i, text_length, start, character, tokens) {
+			text_length = length(text)
+			for (i = 1; i <= text_length; i += 1) {
+				if (substr(text, i, 1) != "%")
+					continue
+				start = i
+				i += 1
+				while (i <= text_length) {
+					character = substr(text, i, 1)
+					if (character ~ /[aAcdeEfFgGimnoOpPsSuUxX%]/) {
+						tokens = tokens "\034" substr(text, start, i - start + 1)
+						break
+					}
+					i += 1
+				}
+			}
+			return tokens
+		}
+
+		function clear_entry(    item_index) {
+			entry_is_c_format = 0
+			msgid = ""
+			msgid_plural = ""
+			translation_count = 0
+			current_field = ""
+			for (item_index in translations)
+				delete translations[item_index]
+		}
+
+		function check_entry(    expected, item_index) {
+			if (!entry_is_c_format)
+				return
+			expected = placeholders(msgid)
+			for (item_index = 1; item_index <= translation_count; item_index += 1) {
+				if (placeholders(translations[item_index]) != expected) {
+					printf "translate-po: c-format translation changed a printf placeholder\n" > "/dev/stderr"
+					validation_failed = 1
+					exit 1
+				}
+			}
+		}
+
+		BEGIN {
+			clear_entry()
+		}
+
+		/^#,/ {
+			if ($0 ~ /(^|,)[[:space:]]*c-format([[:space:]]*,|$)/)
+				entry_is_c_format = 1
+			next
+		}
+
+		/^msgid / {
+			msgid = quoted_text($0)
+			current_field = "msgid"
+			next
+		}
+
+		/^msgid_plural / {
+			msgid_plural = quoted_text($0)
+			current_field = "msgid_plural"
+			next
+		}
+
+		/^msgstr(\[[0-9]+\])? / {
+			translation_count += 1
+			translations[translation_count] = quoted_text($0)
+			current_field = "translation"
+			next
+		}
+
+		/^"/ {
+			if (current_field == "msgid")
+				msgid = msgid quoted_text($0)
+			else if (current_field == "msgid_plural")
+				msgid_plural = msgid_plural quoted_text($0)
+			else if (current_field == "translation")
+				translations[translation_count] = translations[translation_count] quoted_text($0)
+			next
+		}
+
+		/^$/ {
+			check_entry()
+			clear_entry()
+		}
+
+		END {
+			if (!validation_failed)
+				check_entry()
+		}
+	' "$1"
+}
+
+split_batches() {
+	local source=$1
+	local output_dir=$2
+
+	# Preserve the header in every batch while grouping complete PO entries.
+	awk -v output_dir="$output_dir" -v batch_size="$batch_size" '
+		BEGIN {
+			in_header = 1
+		}
+
+		function flush_batch(    file, item_index) {
+			if (batch_entries == 0)
+				return
+			batch_index += 1
+			file = sprintf("%s/batch-%03d.po", output_dir, batch_index)
+			printf "%s", catalog_header > file
+			for (item_index = 1; item_index <= batch_entries; item_index += 1)
+				printf "%s\n", entries[item_index] > file
+			close(file)
+			for (item_index in entries)
+				delete entries[item_index]
+			batch_entries = 0
+		}
+
+		function flush_entry() {
+			if (entry == "")
+				return
+			batch_entries += 1
+			entries[batch_entries] = entry
+			entry = ""
+			if (batch_entries == batch_size)
+				flush_batch()
+		}
+
+		{
+			line = $0 "\n"
+			if (in_header) {
+				catalog_header = catalog_header line
+				if ($0 == "")
+					in_header = 0
+				next
+			}
+			if ($0 == "") {
+				flush_entry()
+				next
+			}
+			entry = entry line
+		}
+
+		END {
+			flush_entry()
+			flush_batch()
+		}
+	' "$source"
+}
+
+extract_stream_events() {
+	local stream_file=$1
+	local event_file=$2
+
+	# Reassemble one JSON payload per Server-Sent Event for jq validation.
+	awk '
+		function flush_event() {
+			if (data != "" && data != "[DONE]")
+				print data
+			data = ""
+		}
+
+		/^data: / {
+			chunk = substr($0, 7)
+			data = data == "" ? chunk : data "\n" chunk
+			next
+		}
+
+		/^$/ {
+			flush_event()
+			next
+		}
+
+		END {
+			flush_event()
+		}
+	' "$stream_file" >"$event_file"
 }
 
 mode=''
@@ -69,15 +263,14 @@ trap 'rm -rf "$tmp_dir"' EXIT
 untranslated="$tmp_dir/untranslated.po"
 fuzzy="$tmp_dir/fuzzy.po"
 todo="$tmp_dir/todo.po"
-translated="$tmp_dir/translated.po"
+batch_dir="$tmp_dir/batches"
+translated_dir="$tmp_dir/translated"
+translated_all="$tmp_dir/translated-all.po"
 reconciled="$tmp_dir/reconciled.po"
 cleaned="$tmp_dir/cleaned.po"
 remaining="$tmp_dir/remaining.po"
 merged="$tmp_dir/merged.po"
-response="$tmp_dir/response.json"
-response_text="$tmp_dir/response-text.json"
-curl_config="$tmp_dir/curl.conf"
-request_file="$tmp_dir/request.json"
+mkdir -p "$batch_dir" "$translated_dir"
 
 if ! msgattrib --untranslated --no-obsolete --force-po --output-file="$untranslated" "$catalog" \
 	|| ! msgattrib --only-fuzzy --no-obsolete --force-po --output-file="$fuzzy" "$catalog"; then
@@ -97,6 +290,17 @@ if ! msgcat --use-first --output-file="$todo" "$untranslated" "$fuzzy"; then
 	exit 1
 fi
 
+if ! split_batches "$todo" "$batch_dir"; then
+	printf 'translate-po: could not batch incomplete entries from %s\n' "$catalog" >&2
+	exit 1
+fi
+
+batch_count=$(find "$batch_dir" -maxdepth 1 -type f -name '*.po' -print | awk 'END { print NR + 0 }')
+if [ "$batch_count" -eq 0 ]; then
+	printf 'translate-po: could not create translation batches for %s\n' "$catalog" >&2
+	exit 1
+fi
+
 entries=$(count_messages "$todo")
 locale=$(awk -F': ' '/^"Language: / { sub(/\\n"$/, "", $2); print $2; exit }' "$catalog")
 if [ -z "$locale" ]; then
@@ -104,8 +308,9 @@ if [ -z "$locale" ]; then
 	exit 1
 fi
 
-printf 'translate-po: %s has %s incomplete message%s for locale %s\n' \
-	"$catalog" "$entries" "$([ "$entries" -eq 1 ] || printf 's')" "$locale"
+printf 'translate-po: %s has %s incomplete message%s for locale %s in %s batch%s\n' \
+	"$catalog" "$entries" "$([ "$entries" -eq 1 ] || printf 's')" "$locale" "$batch_count" \
+	"$([ "$batch_count" -eq 1 ] || printf 'es')"
 if [ "$mode" = 'dry-run' ]; then
 	exit 0
 fi
@@ -116,83 +321,135 @@ if [ -z "${OPENAI_API_KEY-}" ]; then
 fi
 
 instructions='Translate GNU gettext PO entries. Preserve the PO header byte-for-byte. Preserve every msgid, msgid_plural, msgctxt, source reference, comment, and printf-style placeholder exactly. Translate every msgstr or msgstr[n] into the requested locale. Remove fuzzy flags. Do not translate CLI options, environment-variable names, JSON keys, setting keys, query syntax, paths, URLs, file extensions, or printf placeholders. Return no commentary: the JSON schema requires the complete translated PO file in its po property.'
-if ! jq -n \
-	--arg model "$model" \
-	--arg locale "$locale" \
-	--arg instructions "$instructions" \
-	--rawfile po "$todo" \
-	'{
-		model: $model,
-		store: false,
-		max_output_tokens: 20000,
-		reasoning: { effort: "none" },
-		instructions: $instructions,
-		input: ("Target locale: " + $locale + "\n\nTranslate this partial PO catalog:\n" + $po),
-		text: {
-			format: {
-				type: "json_schema",
-				name: "po_translation",
-				strict: true,
-				schema: {
-					type: "object",
-					properties: { po: { type: "string" } },
-					required: ["po"],
-					additionalProperties: false
+batch_number=0
+translated_files=()
+
+while IFS= read -r batch; do
+	batch_number=$((batch_number + 1))
+	batch_entries=$(count_messages "$batch")
+	request_file="$tmp_dir/request-$batch_number.json"
+	stream_file="$tmp_dir/stream-$batch_number.sse"
+	event_file="$tmp_dir/events-$batch_number.ndjson"
+	response_text="$tmp_dir/response-$batch_number.json"
+	batch_translation="$tmp_dir/translation-$batch_number.po"
+	batch_reconciled="$tmp_dir/reconciled-$batch_number.po"
+	batch_cleaned="$translated_dir/batch-$batch_number.po"
+	batch_remaining="$tmp_dir/remaining-$batch_number.po"
+	curl_config="$tmp_dir/curl-$batch_number.conf"
+
+	printf 'translate-po: translating batch %s/%s (%s message%s)\n' \
+		"$batch_number" "$batch_count" "$batch_entries" "$([ "$batch_entries" -eq 1 ] || printf 's')"
+	if ! jq -n \
+		--arg model "$model" \
+		--arg locale "$locale" \
+		--arg instructions "$instructions" \
+		--rawfile po "$batch" \
+		--argjson max_output_tokens "$max_output_tokens" \
+		'{
+			model: $model,
+			store: false,
+			stream: true,
+			max_output_tokens: $max_output_tokens,
+			reasoning: { effort: "none" },
+			instructions: $instructions,
+			input: ("Target locale: " + $locale + "\n\nTranslate this partial PO catalog:\n" + $po),
+			text: {
+				format: {
+					type: "json_schema",
+					name: "po_translation",
+					strict: true,
+					schema: {
+						type: "object",
+						properties: { po: { type: "string" } },
+						required: ["po"],
+						additionalProperties: false
+					}
 				}
 			}
-		}
-	}' >"$request_file"; then
-	printf 'translate-po: could not prepare translation request for %s\n' "$catalog" >&2
-	exit 1
-fi
-
-umask 077
-if ! printf '%s\n' \
-	'header = "Content-Type: application/json"' \
-	"header = \"Authorization: Bearer $OPENAI_API_KEY\"" >"$curl_config"; then
-	printf 'translate-po: could not prepare private API credentials for %s\n' "$catalog" >&2
-	exit 1
-fi
-
-if ! curl --config "$curl_config" \
-	--connect-timeout 10 \
-	--max-time 180 \
-	--fail-with-body \
-	--silent \
-	--show-error \
-	--data-binary "@$request_file" \
-	https://api.openai.com/v1/responses >"$response"; then
-	api_error=$(jq -r '.error.message? // empty' "$response" 2>/dev/null || true)
-	if [ -n "$api_error" ]; then
-		printf 'translate-po: API request rejected: %s\n' "$api_error" >&2
+		}' >"$request_file"; then
+		printf 'translate-po: could not prepare translation request for batch %s\n' "$batch_number" >&2
+		exit 1
 	fi
-	printf 'translate-po: translation request failed for %s\n' "$catalog" >&2
-	exit 1
-fi
 
-if ! jq -er '[.output[]? | select(.type == "message") | .content[]? | select(.type == "output_text") | .text][0]' \
-	"$response" >"$response_text" \
-	|| ! jq -er '.po' "$response_text" >"$translated"; then
-	printf 'translate-po: API response did not contain a structured PO translation\n' >&2
-	exit 1
-fi
+	umask 077
+	if ! printf '%s\n' \
+		'header = "Content-Type: application/json"' \
+		"header = \"Authorization: Bearer $OPENAI_API_KEY\"" >"$curl_config"; then
+		printf 'translate-po: could not prepare private API credentials for batch %s\n' "$batch_number" >&2
+		exit 1
+	fi
 
-if ! diff -u <(header "$catalog") <(header "$translated") >/dev/null; then
-	printf 'translate-po: translated catalog changed its required header\n' >&2
-	exit 1
-fi
-if ! msgfmt --check --check-format --output-file=/dev/null "$translated" >/dev/null 2>&1; then
-	printf 'translate-po: translated PO is invalid or changed a format placeholder\n' >&2
-	exit 1
-fi
-if ! msgmerge --no-fuzzy-matching --output-file="$reconciled" "$translated" "$todo" \
+	if ! curl --config "$curl_config" \
+		--connect-timeout 10 \
+		--max-time "$stream_max_time" \
+		--speed-limit "$stream_idle_bytes" \
+		--speed-time "$stream_idle_seconds" \
+		--no-buffer \
+		--fail-with-body \
+		--silent \
+		--show-error \
+		--data-binary "@$request_file" \
+		https://api.openai.com/v1/responses >"$stream_file"; then
+		api_error=$(jq -r '.error.message? // empty' "$stream_file" 2>/dev/null || true)
+		if [ -n "$api_error" ]; then
+			printf 'translate-po: API request rejected: %s\n' "$api_error" >&2
+		fi
+		printf 'translate-po: translation request failed for batch %s\n' "$batch_number" >&2
+		exit 1
+	fi
+
+	if ! extract_stream_events "$stream_file" "$event_file" || [ ! -s "$event_file" ]; then
+		printf 'translate-po: API stream produced no events for batch %s\n' "$batch_number" >&2
+		exit 1
+	fi
+
+	stream_error=$(jq -r 'select(.type == "error") | .message // .error.message // empty' "$event_file" 2>/dev/null | head -n 1)
+	if [ -n "$stream_error" ]; then
+		printf 'translate-po: API stream failed: %s\n' "$stream_error" >&2
+		exit 1
+	fi
+	if ! jq -e 'select(.type == "response.completed" and .response.status == "completed")' "$event_file" >/dev/null 2>&1; then
+		printf 'translate-po: API stream ended before completion for batch %s\n' "$batch_number" >&2
+		exit 1
+	fi
+	if ! jq -rj 'select(.type == "response.output_text.delta") | .delta' "$event_file" >"$response_text" \
+		|| [ ! -s "$response_text" ] \
+		|| ! jq -er '.po' "$response_text" >"$batch_translation"; then
+		printf 'translate-po: API stream did not contain a structured PO translation for batch %s\n' "$batch_number" >&2
+		exit 1
+	fi
+
+	if ! diff -u <(header "$catalog") <(header "$batch_translation") >/dev/null; then
+		printf 'translate-po: translated batch %s changed its required header\n' "$batch_number" >&2
+		exit 1
+	fi
+	if ! msgfmt --check --check-format --output-file=/dev/null "$batch_translation" >/dev/null 2>&1 \
+		|| ! validate_exact_printf_placeholders "$batch_translation"; then
+		printf 'translate-po: translated batch %s is invalid or changed a format placeholder\n' "$batch_number" >&2
+		exit 1
+	fi
+	if ! msgmerge --no-fuzzy-matching --output-file="$batch_reconciled" "$batch_translation" "$batch" \
+		|| ! msgattrib --clear-fuzzy --output-file="$batch_cleaned" "$batch_reconciled" \
+		|| ! msgattrib --untranslated --no-obsolete --force-po --output-file="$batch_remaining" "$batch_cleaned"; then
+		printf 'translate-po: could not reconcile translated batch %s\n' "$batch_number" >&2
+		exit 1
+	fi
+	if [ "$(count_messages "$batch_remaining")" -ne 0 ]; then
+		printf 'translate-po: translation response omitted or left empty one or more requested entries for batch %s\n' "$batch_number" >&2
+		exit 1
+	fi
+	translated_files+=("$batch_cleaned")
+done < <(find "$batch_dir" -maxdepth 1 -type f -name '*.po' -print | sort)
+
+if ! msgcat --use-first --output-file="$translated_all" "${translated_files[@]}" \
+	|| ! msgmerge --no-fuzzy-matching --output-file="$reconciled" "$translated_all" "$todo" \
 	|| ! msgattrib --clear-fuzzy --output-file="$cleaned" "$reconciled" \
 	|| ! msgattrib --untranslated --no-obsolete --force-po --output-file="$remaining" "$cleaned"; then
-	printf 'translate-po: could not reconcile translated entries for %s\n' "$catalog" >&2
+	printf 'translate-po: could not reconcile translated batches for %s\n' "$catalog" >&2
 	exit 1
 fi
 if [ "$(count_messages "$remaining")" -ne 0 ]; then
-	printf 'translate-po: translation response omitted or left empty one or more requested entries for %s\n' "$catalog" >&2
+	printf 'translate-po: translated batches omitted or left empty one or more requested entries for %s\n' "$catalog" >&2
 	exit 1
 fi
 if ! msgcat --use-first --output-file="$merged" "$cleaned" "$catalog" \
@@ -210,4 +467,5 @@ if ! mv "$merged" "$catalog"; then
 	exit 1
 fi
 
-printf 'translate-po: applied %s translations to %s\n' "$entries" "$catalog"
+printf 'translate-po: applied %s translations across %s batch%s to %s\n' \
+	"$entries" "$batch_count" "$([ "$batch_count" -eq 1 ] || printf 'es')" "$catalog"
