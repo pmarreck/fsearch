@@ -114,3 +114,5 @@
   The two Tamazight catalogs deterministically ended a 20-entry preference-string stream without completion; the tested `FSEARCH_TRANSLATE_BATCH_SIZE=10` override re-batched them atomically and both completed with strict gettext, header/key invariants, full suite, and production build passing.
 - [x] Checkpoint 10: complete Catalan (`ca`) and Galician (`gl`), and lock invalid batch-size rejection in CI. (2026-07-15 04:16 EDT)
   Both catalogs completed atomically using the proven ten-entry override; the translator regression now verifies invalid batch-size values exit 2 with an actionable error.
+- [x] Checkpoint 11: complete Slovak (`sk`) and Marathi (`mr`) using the tested ten-entry batch override. (2026-07-15 08:03 EDT)
+  Both catalogs passed strict gettext, template-key and header invariants, with zero fuzzy or untranslated entries before the full-suite gate. Curiosity poke: rich preference strings must not cause a streamed response to end before completion.

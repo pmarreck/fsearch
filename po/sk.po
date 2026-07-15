@@ -14,327 +14,284 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Generator: Weblate 2.19-dev\n"
 
-#: data/io.github.cboxdoerfer.FSearch.desktop.in.in:4 src/main.c:36
-msgid "FSearch"
-msgstr "FSearch"
-
-#: data/io.github.cboxdoerfer.FSearch.desktop.in.in:5
-#, fuzzy
-msgid "A file search application focusing on performance and advanced features"
-msgstr "Program na vyhľadávanie súborov zameraný na výkon a pokročilé funkcie"
-
 #: data/io.github.cboxdoerfer.FSearch.desktop.in.in:10
 msgid "search;fsearch;files;folders;music;video;documents;find;tool;everything;"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.desktop.in.in:12
-#, fuzzy
-msgid "File Search Utility"
-msgstr "FSearch"
+msgstr "hľadať;fsearch;súbory;priečinky;hudba;video;dokumenty;nájsť;nástroj;všetko;"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:8
 msgid "A graphical file search application"
-msgstr ""
+msgstr "Grafická aplikácia na vyhľadávanie súborov"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:10
 msgid ""
 "FSearch helps you to find files and folders as easy and fast as possible. "
 "Just type a few letters and search results will appear almost instantly."
 msgstr ""
+"FSearch vám pomáha nájsť súbory a priečinky čo najjednoduchšie a "
+"najrýchlejšie. Stačí napísať niekoľko písmen a výsledky vyhľadávania sa "
+"zobrazia takmer okamžite."
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:14
 msgid ""
 "There are a lot of features which make searching as efficient and powerful "
 "as possible. Such as:"
 msgstr ""
+"K dispozícii je množstvo funkcií, vďaka ktorým je vyhľadávanie čo "
+"najefektívnejšie a najvýkonnejšie. Napríklad:"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:19
 msgid ""
 "Ignore case (e.g. searching for \"<code>fsearch</code>\" will match "
 "\"FSearch\" as well)"
 msgstr ""
+"Ignorovanie veľkosti písmen (napr. pri hľadaní \"<code>fsearch</code>\" sa "
+"nájde aj \"FSearch\")"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:20
 msgid "Regular expressions"
-msgstr ""
+msgstr "Regulárne výrazy"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:21
 msgid "Wildcard support"
-msgstr ""
+msgstr "Podpora zástupných znakov"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:22
 msgid "Filter support (e.g. only search for audio files)"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:23
-#, fuzzy
-msgid "Exclude certain files and folders"
-msgstr "Vylúčiť skryté súbory a priečinky"
+msgstr "Podpora filtrov (napr. vyhľadávanie iba zvukových súborov)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:24
 msgid "Fast sort by name, path, size, modification time and extension"
-msgstr ""
+msgstr "Rýchle zoradenie podľa názvu, cesty, veľkosti, času úpravy a prípony"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:26
 msgid ""
 "<em>Note:</em> Due to Flatpak's sandboxing, FSearch can't find every file on "
 "your system."
 msgstr ""
+"<em>Poznámka:</em> Z dôvodu izolácie Flatpaku nemôže FSearch nájsť každý "
+"súbor vo vašom systéme."
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:35
 msgid "The default UI layout"
-msgstr ""
+msgstr "Predvolené rozloženie používateľského rozhrania"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:41
 msgid "A layout more closely following GNOME HIGs"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:49
-#, fuzzy
-msgid "search"
-msgstr "Vyhľadávanie"
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:50
-#, fuzzy
-msgid "fsearch"
-msgstr "Vyhľadávanie"
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:51
-#, fuzzy
-msgid "files"
-msgstr "súborov?"
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:52
-#, fuzzy
-msgid "folders"
-msgstr "Priečinky"
+msgstr "Rozloženie, ktoré sa viac riadi smernicami GNOME HIG"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:53
 msgid "music"
-msgstr ""
+msgstr "hudba"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:54
 msgid "video"
-msgstr ""
+msgstr "video"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:55
 msgid "documents"
-msgstr ""
+msgstr "dokumenty"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:56
 msgid "find"
-msgstr ""
+msgstr "hľadať"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:57
 msgid "tool"
-msgstr ""
+msgstr "nástroj"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:58
 msgid "everything"
-msgstr ""
+msgstr "všetko"
 
 #. Kept for appstreamcli < 1.0 (e.g. Ubuntu 20.04/22.04 PPA builds), which doesn't know <developer>.
 #. Translators: please do NOT translate this.
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:77
 msgid "Christian Boxdörfer"
-msgstr ""
+msgstr "Christian Boxdörfer"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:89
 msgid "DB rewrite"
-msgstr ""
+msgstr "Prepracovanie databázy"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:90
 msgid "DB: Add support for filesystem monitoring"
-msgstr ""
+msgstr "DB: Pridaná podpora monitorovania súborového systému"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:91
 msgid ""
 "DB: Allow files and folders to be excluded based on fixed patterns, "
 "wildcards or regular expressions"
 msgstr ""
+"DB: Umožnené vylúčenie súborov a priečinkov na základe pevných vzorov, "
+"zástupných znakov alebo regulárnych výrazov"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:92
 msgid ""
 "DB: Allow included folders to be scheduled and scanned after launch "
 "independently"
 msgstr ""
+"DB: Umožnené nezávislé plánovanie a skenovanie zahrnutých priečinkov po "
+"spustení"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:93
 msgid "DB: Make rescanning more efficient"
-msgstr ""
+msgstr "DB: Zefektívnené opätovné skenovanie"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:94
 msgid "DB: Store database config in DB file"
-msgstr ""
+msgstr "DB: Ukladanie konfigurácie databázy v súbore DB"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:95
 msgid "DB: Add checksum to DB file"
-msgstr ""
+msgstr "DB: Pridaný kontrolný súčet do súboru DB"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:96
 msgid "Make icon and file info gathering asynchronous (no UI blocking)"
 msgstr ""
+"Asynchrónne získavanie ikon a informácií o súboroch (bez blokovania "
+"používateľského rozhrania)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:97
 msgid "Reduce memory usage"
-msgstr ""
+msgstr "Znížená spotreba pamäte"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:98
 msgid "Add contextual help for all preferences"
-msgstr ""
+msgstr "Pridaný kontextový pomocník pre všetky predvoľby"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:99
 msgid "Numerous bug fixes and stability and performance improvements"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:106
-#, fuzzy
-msgid "New search engine"
-msgstr "FSearch"
+msgstr "Množstvo opráv chýb a zlepšení stability a výkonu"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:107
 msgid "Greatly improved highlighting of search terms"
-msgstr ""
+msgstr "Výrazne vylepšené zvýrazňovanie hľadaných výrazov"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:108
 msgid "Custom filters"
-msgstr ""
+msgstr "Vlastné filtre"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:109
 msgid "Improved sort performance"
-msgstr ""
+msgstr "Vylepšený výkon zoraďovania"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:110
 msgid "Improved scroll performance"
-msgstr ""
+msgstr "Vylepšený výkon posúvania"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:111
 msgid "Remember file selection after a database update"
-msgstr ""
+msgstr "Zapamätanie výberu súborov po aktualizácii databázy"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:112
 msgid "Automatically scroll the result list in rubberband selection mode"
-msgstr ""
+msgstr "Automatické posúvanie zoznamu výsledkov v režime výberu obdĺžnikom"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:113
 msgid "Invert selection with rubber band when 'Ctrl' is pressed"
-msgstr ""
+msgstr "Obrátenie výberu obdĺžnikom pri stlačení klávesu „Ctrl“"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:114
 msgid "Focus search entry when the main window gets activated"
-msgstr ""
+msgstr "Zameranie vyhľadávacieho poľa pri aktivovaní hlavného okna"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:115
 msgid "Add filter for applications (i.e. .desktop files)"
-msgstr ""
+msgstr "Pridanie filtra pre aplikácie (t. j. súbory .desktop)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:116
 msgid ""
 "Add option to launch applications directly instead of opening the .desktop "
 "files"
 msgstr ""
+"Pridanie možnosti spúšťať aplikácie priamo namiesto otvárania "
+"súborov .desktop"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:117
 msgid "Show application icons for .desktop files"
-msgstr ""
+msgstr "Zobrazovať ikony aplikácií pre súbory .desktop"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:118
 msgid "Add .odp and .ods files to document filter"
-msgstr ""
+msgstr "Pridať súbory .odp a .ods do filtra dokumentov"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:119
 msgid ""
 "'Open with' menu now only shows applications which can handle the selected "
 "files"
 msgstr ""
+"Ponuka „Otvoriť pomocou“ teraz zobrazuje iba aplikácie, ktoré dokážu "
+"pracovať s vybranými súbormi"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:120
 msgid ""
 "Improved opening of multiple files with the same type (they get now passed "
 "as a list to applications, instead of one by one)"
 msgstr ""
+"Vylepšené otváranie viacerých súborov rovnakého typu (teraz sa aplikáciám "
+"odovzdávajú ako zoznam namiesto jedného po druhom)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:121
 msgid "Better support for opening files in sandboxed mode"
-msgstr ""
+msgstr "Lepšia podpora otvárania súborov v izolovanom režime"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:122
 msgid ""
 "Add menu items with links to the issue tracker, forum and donation pages"
 msgstr ""
+"Pridať do ponuky položky s odkazmi na sledovanie problémov, fórum a stránky "
+"na darovanie príspevkov"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:123
 msgid "Improve support for non-Linux systems"
-msgstr ""
+msgstr "Zlepšiť podporu systémov iných ako Linux"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:124
 msgid ""
 "Add option to exit FSearch when Escape is pressed instead of minimizing the "
 "window"
 msgstr ""
+"Pridať možnosť ukončiť FSearch po stlačení klávesu Escape namiesto "
+"minimalizovania okna"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:125
 msgid "Exclude '/proc' and '/sys' by default"
-msgstr ""
+msgstr "Predvolene vylúčiť '/proc' a '/sys'"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:126
 msgid "Open context menu when 'Menu' key or 'Shift + F10' are pressed"
 msgstr ""
+"Otvoriť kontextovú ponuku po stlačení klávesu „Menu“ alebo „Shift + F10“"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:127
 msgid "and tons of bug fixes, translation updates and smaller improvements"
-msgstr ""
+msgstr "a množstvo opráv chýb, aktualizácií prekladov a menších vylepšení"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:133
 msgid "Initial release."
-msgstr ""
+msgstr "Prvé vydanie."
 
 #: src/fsearch.c:181
 msgid "translator-credits"
-msgstr ""
-
-#: src/fsearch.c:183
-msgid "A search utility focusing on performance and advanced features"
-msgstr "Program na vyhľadávanie súborov zameraný na výkon a pokročilé funkcie"
-
-#: src/fsearch.c:330
-#, fuzzy
-msgid "Saving database and config…"
-msgstr "Načítavanie databázy..."
-
-#: src/fsearch.c:786
-#, fuzzy
-msgid "Open a new application window"
-msgstr "Otvoriť s iným programom"
-
-#: src/fsearch.c:787
-#, fuzzy
-msgid "Minimize the application window"
-msgstr "Otvoriť s iným programom"
+msgstr "Dávid Bolvanský <david.bolvansky@gmail.com>"
 
 #: src/fsearch.c:788
 msgid "Show the application preferences"
-msgstr ""
-
-#: src/fsearch.c:789
-#, fuzzy
-msgid "Set the search pattern"
-msgstr "Zobraziť tlačidlo vyhľadávania"
-
-#: src/fsearch.c:790
-#, fuzzy
-msgid "Update the database and exit"
-msgstr "Aktualizovať databázu"
+msgstr "Zobraziť predvoľby aplikácie"
 
 #: src/fsearch.c:791
 msgid "Print version information and exit"
-msgstr ""
+msgstr "Vypísať informácie o verzii a skončiť"
 
 #: src/fsearch.c:883
 msgid ""
 "For command-line search help, run: fsearch --cli --help\n"
 "For shared configuration help, run: fsearch config --help"
 msgstr ""
+"Ak chcete zobraziť pomocníka pre vyhľadávanie v príkazovom riadku, spustite: "
+"fsearch --cli --help\n"
+"Ak chcete zobraziť pomocníka pre zdieľanú konfiguráciu, spustite: fsearch "
+"config --help"
 
 #: src/fsearch_cli.c:125
 #, c-format
@@ -342,23 +299,26 @@ msgid ""
 "Results capped at %u. Use --unlimit or --unlimited to get them all, or "
 "provide a custom --limit, or set FSEARCH_RESULT_LIMIT."
 msgstr ""
+"Počet výsledkov je obmedzený na %u. Ak chcete získať všetky výsledky, "
+"použite --unlimit alebo --unlimited, prípadne zadajte vlastný --limit alebo "
+"nastavte FSEARCH_RESULT_LIMIT."
 
 #: src/fsearch_cli.c:134
 #, c-format
 msgid "%u match."
 msgid_plural "%u matches."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "%u zhoda."
+msgstr[1] "%u zhody."
+msgstr[2] "%u zhôd."
 
 #: src/fsearch_cli.c:142
 msgid "Updating FSearch index before searching..."
-msgstr ""
+msgstr "Aktualizuje sa index FSearch pred vyhľadávaním..."
 
 #: src/fsearch_cli.c:149
 #, c-format
 msgid "Indexing: %s"
-msgstr ""
+msgstr "Indexovanie: %s"
 
 #: src/fsearch_cli.c:181
 msgid ""
@@ -404,40 +364,85 @@ msgid ""
 "{png,jpg} selects alternatives; {01..12} is an inclusive numeric range; \\* "
 "matches a literal *.\n"
 msgstr ""
+"Použitie: fsearch --cli [OPTIONS]\n"
+"\n"
+"Vyhľadá v existujúcom indexe FSearch a vypíše zodpovedajúce cesty.\n"
+"\n"
+"  -s, --search PATTERN       Vyhľadá pomocou syntaxe dopytov FSearch\n"
+"      --path DIRECTORY        Vyhľadá rekurzívne pod DIRECTORY (predvolene: "
+"aktuálny adresár)\n"
+"      --global                Vyhľadá vo všetkých indexovaných "
+"umiestneniach\n"
+"      --limit COUNT          Vypíše najviac COUNT výsledkov\n"
+"      --unlimit, --unlimited Vypíše každý výsledok\n"
+"  -u, --update-database      Znova prehľadá nakonfigurovaný index a skončí\n"
+"      --about                Vypíše informácie o zostavení v jednom riadku\n"
+"  -h, --help                 Zobrazí túto pomoc\n"
+"\n"
+"Konfigurácia: fsearch config --help\n"
+"\n"
+"Príklady:\n"
+"  fsearch --cli --search invoice              # aktuálny adresár\n"
+"  fsearch --cli --path ~/Documents --search invoice\n"
+"  fsearch --cli --global --search invoice\n"
+"  fsearch --cli --search 'file:size:>20mb'\n"
+"  fsearch --cli --search 'ext:jpg;png'\n"
+"  fsearch --cli --search 'path:projects report'\n"
+"  fsearch --cli --search 'report AND ext:pdf'\n"
+"  fsearch --cli --search '(draft OR final) !archive'\n"
+"  fsearch --cli --search 'file:regex:\".+\\.pdf$\"'\n"
+"  fsearch --cli --search 'case:AGENTS'        # rozlišuje veľkosť písmen\n"
+"  fsearch --cli --search 'case:regex:\"^AGENTS\\.md$\"'\n"
+"  fsearch --cli --search 'glob:**/*.png'\n"
+"  fsearch --cli --search 'path:glob:**/AGENTS.md'\n"
+"  fsearch --cli --search 'case:glob:AGENTS.md' # glob rozlišujúci veľkosť "
+"písmen\n"
+"\n"
+"V príkladoch sa medzera používa ako AND. Vyskúšajte file:, folder:, path:, "
+"ext:, size:, dm:, case:, regex: a glob:.\n"
+"Booleovská syntax: AND alebo &&; OR alebo ||; NOT alebo !. Zátvorky "
+"zoskupujú výrazy.\n"
+"Syntax glob: * vylučuje /; ** zahŕňa adresáre; ? zodpovedá jednému znaku; [a-"
+"c] je rozsah;\n"
+"Glob predvolene prehľadáva cesty; pre ľubovoľnú hĺbku použite **/; "
+"file:glob: prehľadáva názvy súborov.\n"
+"{png,jpg} vyberá alternatívy; {01..12} je inkluzívny číselný rozsah; \\* "
+"zodpovedá doslovnému znaku *.\n"
 
 #: src/fsearch_cli.c:238
 #, c-format
 msgid "FSearch %s - indexed file search for %s %s\n"
-msgstr ""
+msgstr "FSearch %s – indexované vyhľadávanie súborov pre %s %s\n"
 
 #: src/fsearch_cli.c:301
 msgid "fsearch: interrupted\n"
-msgstr ""
+msgstr "fsearch: prerušené\n"
 
 #: src/fsearch_cli.c:315
 msgid "fsearch: search could not run because the index is unavailable\n"
 msgstr ""
+"fsearch: vyhľadávanie nebolo možné spustiť, pretože index nie je dostupný\n"
 
 #: src/fsearch_cli.c:352 src/fsearch_cli.c:381 src/fsearch_cli_config.c:774
 #: src/fsearch_cli_config.c:961 src/fsearch_cli_config.c:1147
 #, c-format
 msgid "%s\n"
-msgstr ""
+msgstr "%s\n"
 
 #: src/fsearch_cli.c:400
 #, c-format
 msgid "%s"
-msgstr ""
+msgstr "%s"
 
 #: src/fsearch_cli.c:473
 #, c-format
 msgid "fsearch: unknown CLI option: %s\n"
-msgstr ""
+msgstr "fsearch: neznáma voľba CLI: %s\n"
 
 #: src/fsearch_cli.c:495
 #, c-format
 msgid "fsearch: failed to create data directory: %s\n"
-msgstr ""
+msgstr "fsearch: nepodarilo sa vytvoriť dátový adresár: %s\n"
 
 #: src/fsearch_cli_config.c:111
 msgid ""
@@ -479,30 +484,81 @@ msgid ""
 "  fsearch config filters add Documents --query 'ext:pdf' --macro docs\n"
 "  fsearch config reset search --yes\n"
 msgstr ""
+"Použitie: fsearch config COMMAND [OPTIONS]\n"
+"\n"
+"Zobrazí a upraví zdieľanú konfiguráciu grafického rozhrania a CLI aplikácie "
+"FSearch.\n"
+"\n"
+"Konfiguračné príkazy:\n"
+"  path                         Vypíše cestu ku konfiguračnému súboru\n"
+"  show [SECTION] [--json]      Zobrazí nastavenia\n"
+"  get KEY [--json]             Vypíše jedno skalárne nastavenie\n"
+"  set KEY VALUE                Nastaví jedno skalárne nastavenie\n"
+"  unset KEY                    Obnoví predvolenú hodnotu jedného skalárneho "
+"nastavenia\n"
+"  reset [KEY|SECTION] --yes [--rescan]\n"
+"                               Obnoví predvolené hodnoty\n"
+"  doctor                       Skontroluje konzistentnosť konfigurácie a "
+"indexu\n"
+"  roots list|add|set|remove    Spravuje indexované koreňové adresáre\n"
+"  excludes list|add|remove|hidden\n"
+"                               Spravuje vylúčenia z indexu\n"
+"  filters list|add|set|remove|reset\n"
+"                               Spravuje uložené filtre vyhľadávania\n"
+"\n"
+"Skalárne hodnoty používajú true/false, desiatkové celé čísla alebo reťazce.\n"
+"Spustením 'fsearch config show' zobrazíte všetky skalárne kľúče a aktuálne "
+"hodnoty.\n"
+"Skalárne sekcie: search, application, window, ui, columns, sort, dialogs.\n"
+"Voľby skupín zobrazíte pomocou 'fsearch config roots|excludes|filters --"
+"help'.\n"
+"Pred zmenou zdieľaných nastavení zatvorte grafické rozhranie FSearch.\n"
+"Zmeny indexu bude možné vyhľadávať pri nasledujúcom vyhľadávaní cez CLI "
+"alebo okamžite pomocou --rescan.\n"
+"Použite --json s príkazmi show, get a príkazmi list pre kolekcie.\n"
+"\n"
+"Príklady:\n"
+"  fsearch config show search --json\n"
+"  fsearch config get search.match-case\n"
+"  fsearch config set search.match-case true\n"
+"  fsearch config roots add ~/Code --monitor --one-file-system --rescan\n"
+"  fsearch config excludes add '*.tmp' --type wildcard --scope basename --"
+"target files\n"
+"  fsearch config filters add Documents --query 'ext:pdf' --macro docs\n"
+"  fsearch config reset search --yes\n"
 
 #: src/fsearch_cli_config.c:152
 msgid ""
 "Usage: fsearch config show [SECTION] [--json]\n"
 "Show all scalar settings or one dotted section.\n"
 msgstr ""
+"Použitie: fsearch config show [SECTION] [--json]\n"
+"Zobrazí všetky skalárne nastavenia alebo jednu sekciu s bodkovou notáciou.\n"
 
 #: src/fsearch_cli_config.c:154
 msgid ""
 "Usage: fsearch config get KEY [--json]\n"
 "Print one typed scalar value. Discover keys with 'fsearch config show'.\n"
 msgstr ""
+"Použitie: fsearch config get KEY [--json]\n"
+"Vypíše jednu typovanú skalárnu hodnotu. Kľúče nájdete pomocou príkazu "
+"'fsearch config show'.\n"
 
 #: src/fsearch_cli_config.c:157
 msgid ""
 "Usage: fsearch config set KEY VALUE\n"
 "Set a boolean, integer, string, or enumerated scalar value.\n"
 msgstr ""
+"Použitie: fsearch config set KEY VALUE\n"
+"Nastaví logickú, celočíselnú, reťazcovú alebo výpočtovú skalárnu hodnotu.\n"
 
 #: src/fsearch_cli_config.c:159
 msgid ""
 "Usage: fsearch config unset KEY\n"
 "Restore one scalar setting to its built-in default.\n"
 msgstr ""
+"Použitie: fsearch config unset KEY\n"
+"Obnoví jedno skalárne nastavenie na jeho vstavanú predvolenú hodnotu.\n"
 
 #: src/fsearch_cli_config.c:161
 msgid ""
@@ -510,6 +566,9 @@ msgid ""
 "Reset is destructive and requires --yes. --rescan applies to roots, "
 "database, excludes, or all.\n"
 msgstr ""
+"Použitie: fsearch config reset [KEY|SECTION] --yes [--rescan]\n"
+"Obnovenie je deštruktívne a vyžaduje --yes. --rescan sa vzťahuje na koreňové "
+"adresáre, databázu, vylúčenia alebo všetko.\n"
 
 #: src/fsearch_cli_config.c:164
 msgid ""
@@ -517,6 +576,9 @@ msgid ""
 "Check configuration readability and whether the saved index uses the same "
 "roots and exclusions.\n"
 msgstr ""
+"Použitie: fsearch config doctor\n"
+"Skontroluje čitateľnosť konfigurácie a či uložený index používa rovnaké "
+"koreňové adresáre a vylúčenia.\n"
 
 #: src/fsearch_cli_config.c:170
 msgid ""
@@ -536,6 +598,22 @@ msgid ""
 "  --rescan-every SECONDS        Set periodic rescan interval; 0 disables it\n"
 "  --rescan                      Rebuild the index immediately after saving\n"
 msgstr ""
+"Použitie: fsearch config roots COMMAND [PATH] [OPTIONS]\n"
+"\n"
+"Príkazy:\n"
+"  list [--json]                Zobrazí indexované koreňové adresáre\n"
+"  add PATH [OPTIONS]           Pridá koreňový adresár\n"
+"  set PATH [OPTIONS]           Zmení existujúci koreňový adresár\n"
+"  remove PATH [--rescan]       Odstráni existujúci koreňový adresár\n"
+"\n"
+"Voľby pre add a set:\n"
+"  --active, --inactive\n"
+"  --monitor, --no-monitor\n"
+"  --one-file-system, --no-one-file-system\n"
+"  --scan-after-launch, --no-scan-after-launch\n"
+"  --rescan-every SECONDS        Nastaví interval pravidelného opätovného "
+"prehľadania; 0 ho zakáže\n"
+"  --rescan                      Ihneď po uložení znova zostaví index\n"
 
 #: src/fsearch_cli_config.c:187
 msgid ""
@@ -555,6 +633,22 @@ msgid ""
 "  --active, --inactive          Add state or removal selector\n"
 "  --rescan                      Rebuild the index immediately after saving\n"
 msgstr ""
+"Použitie: fsearch config excludes COMMAND [PATTERN|VALUE] [OPTIONS]\n"
+"\n"
+"Príkazy:\n"
+"  list [--json]                 Zobrazí vylúčenia\n"
+"  add PATTERN [OPTIONS]         Pridá vylúčenie\n"
+"  remove PATTERN [OPTIONS]      Odstráni zodpovedajúce vylúčenie\n"
+"  hidden [true|false] [--rescan]\n"
+"                                Zobrazí alebo zmení vylúčenie skrytých "
+"súborov\n"
+"\n"
+"Voľby pre add a remove:\n"
+"  --type fixed|wildcard|regex   Predvolené: fixed\n"
+"  --scope full-path|basename    Predvolené: full-path\n"
+"  --target both|files|folders   Predvolené: both\n"
+"  --active, --inactive          Pridá stav alebo selektor odstránenia\n"
+"  --rescan                      Ihneď po uložení znova zostaví index\n"
 
 #: src/fsearch_cli_config.c:204
 msgid ""
@@ -574,205 +668,231 @@ msgid ""
 "  --path, --no-path             Search full paths\n"
 "  --regex, --no-regex           Treat query as a regular expression\n"
 msgstr ""
+"Použitie: fsearch config filters COMMAND [NAME] [OPTIONS]\n"
+"\n"
+"Príkazy:\n"
+"  list [--json]                 Zobrazí uložené filtre\n"
+"  add NAME [OPTIONS]            Pridá pomenovaný filter\n"
+"  set NAME [OPTIONS]            Zmení pomenovaný filter\n"
+"  remove NAME                   Odstráni pomenovaný filter\n"
+"  reset                         Obnoví vstavané filtre\n"
+"\n"
+"Voľby pre add a set:\n"
+"  --query QUERY                 Uložený dopyt FSearch\n"
+"  --macro MACRO                 Názov makra dopytu\n"
+"  --case, --no-case             Rozlišuje veľkosť písmen\n"
+"  --path, --no-path             Prehľadáva úplné cesty\n"
+"  --regex, --no-regex           Považuje dopyt za regulárny výraz\n"
 
 #: src/fsearch_cli_config.c:265
 msgid ""
 "fsearch config: close the running FSearch GUI before changing shared "
 "settings\n"
 msgstr ""
+"fsearch config: pred zmenou zdieľaných nastavení zatvorte spustené grafické "
+"rozhranie FSearch\n"
 
 #: src/fsearch_cli_config.c:269
 msgid "fsearch config: failed to save configuration\n"
-msgstr ""
+msgstr "fsearch config: konfiguráciu sa nepodarilo uložiť\n"
 
 #: src/fsearch_cli_config.c:280
 msgid "Index configuration changed; the next CLI search will rebuild it.\n"
 msgstr ""
+"Konfigurácia indexu sa zmenila; pri nasledujúcom vyhľadávaní cez CLI sa "
+"index znova zostaví.\n"
 
 #: src/fsearch_cli_config.c:416
 #, c-format
 msgid "fsearch config %s: unknown option: %s\n"
-msgstr ""
+msgstr "fsearch config %s: neznáma voľba: %s\n"
 
 #: src/fsearch_cli_config.c:422
 #, c-format
 msgid "fsearch config %s: unexpected argument: %s\n"
-msgstr ""
+msgstr "fsearch config %s: neočakávaný argument: %s\n"
 
 #: src/fsearch_cli_config.c:449
 msgid "Usage: fsearch config get KEY [--json]\n"
-msgstr ""
+msgstr "Použitie: fsearch config get KEY [--json]\n"
 
 #: src/fsearch_cli_config.c:454 src/fsearch_cli_config.c:555
 #, c-format
 msgid "fsearch config: unknown setting: %s\n"
-msgstr ""
+msgstr "fsearch config: neznáme nastavenie: %s\n"
 
 #: src/fsearch_cli_config.c:502
 #, c-format
 msgid "fsearch config show: unknown section: %s\n"
-msgstr ""
+msgstr "fsearch config show: neznáma sekcia: %s\n"
 
 #: src/fsearch_cli_config.c:550
 #, c-format
 msgid "Usage: fsearch config %s KEY%s\n"
-msgstr ""
+msgstr "Použitie: fsearch config %s KEY%s\n"
 
 #: src/fsearch_cli_config.c:566
 #, c-format
 msgid "fsearch config: invalid value for %s: %s\n"
-msgstr ""
+msgstr "fsearch config: neplatná hodnota pre %s: %s\n"
 
 #: src/fsearch_cli_config.c:572
 #, c-format
 msgid "%s = %s\n"
-msgstr ""
+msgstr "%s = %s\n"
 
 #: src/fsearch_cli_config.c:637
 #, c-format
 msgid "fsearch config roots: unknown operation: %s\n"
-msgstr ""
+msgstr "fsearch config roots: neznáma operácia: %s\n"
 
 #: src/fsearch_cli_config.c:691
 msgid "fsearch config roots: --rescan-every requires SECONDS\n"
-msgstr ""
+msgstr "fsearch config roots: --rescan-every vyžaduje SECONDS\n"
 
 #: src/fsearch_cli_config.c:710
 msgid "fsearch config roots: missing PATH\n"
-msgstr ""
+msgstr "fsearch config roots: chýba PATH\n"
 
 #: src/fsearch_cli_config.c:717 src/fsearch_cli_config.c:732
 #, c-format
 msgid "fsearch config roots: path not found: %s\n"
-msgstr ""
+msgstr "fsearch config roots: cesta sa nenašla: %s\n"
 
 #: src/fsearch_cli_config.c:724
 #, c-format
 msgid "fsearch config roots: not a directory: %s\n"
-msgstr ""
+msgstr "fsearch config roots: nie je adresár: %s\n"
 
 #: src/fsearch_cli_config.c:728
 #, c-format
 msgid "fsearch config roots: path already exists: %s\n"
-msgstr ""
+msgstr "fsearch config roots: cesta už existuje: %s\n"
 
 #: src/fsearch_cli_config.c:752
 #, c-format
 msgid "fsearch config roots: invalid rescan duration: %s\n"
-msgstr ""
+msgstr "fsearch config roots: neplatné trvanie opätovného prehľadania: %s\n"
 
 #: src/fsearch_cli_config.c:765
 msgid ""
 "%s\tactive=%s monitor=%s one-file-system=%s scan-after-launch=%s rescan-"
 "after=%"
 msgstr ""
+"%s\tactive=%s monitor=%s one-file-system=%s scan-after-launch=%s rescan-"
+"after=%"
 
 #: src/fsearch_cli_config.c:844
 msgid "fsearch config excludes hidden: expected true or false\n"
-msgstr ""
+msgstr "fsearch config excludes hidden: očakáva sa true alebo false\n"
 
 #: src/fsearch_cli_config.c:850
 #, c-format
 msgid "exclude-hidden = %s\n"
-msgstr ""
+msgstr "exclude-hidden = %s\n"
 
 #: src/fsearch_cli_config.c:856
 #, c-format
 msgid "fsearch config excludes: unknown operation: %s\n"
-msgstr ""
+msgstr "fsearch config excludes: neznáma operácia: %s\n"
 
 #: src/fsearch_cli_config.c:877
 #, c-format
 msgid "fsearch config excludes: %s requires a value\n"
-msgstr ""
+msgstr "fsearch config excludes: %s vyžaduje hodnotu\n"
 
 #: src/fsearch_cli_config.c:909
 msgid "fsearch config excludes: missing PATTERN\n"
-msgstr ""
+msgstr "fsearch config excludes: chýba PATTERN\n"
 
 #: src/fsearch_cli_config.c:914
 #, c-format
 msgid "fsearch config excludes: invalid type: %s\n"
-msgstr ""
+msgstr "fsearch config excludes: neplatný typ: %s\n"
 
 #: src/fsearch_cli_config.c:919
 #, c-format
 msgid "fsearch config excludes: invalid scope: %s\n"
-msgstr ""
+msgstr "fsearch config excludes: neplatný rozsah: %s\n"
 
 #: src/fsearch_cli_config.c:924
 #, c-format
 msgid "fsearch config excludes: invalid target: %s\n"
-msgstr ""
+msgstr "fsearch config excludes: neplatný cieľ: %s\n"
 
 #: src/fsearch_cli_config.c:954
 #, c-format
 msgid "fsearch config excludes: exclusion not found: %s\n"
-msgstr ""
+msgstr "fsearch config excludes: vylúčenie sa nenašlo: %s\n"
 
 #: src/fsearch_cli_config.c:1022
 msgid "filters reset\n"
-msgstr ""
+msgstr "filtre boli obnovené\n"
 
 #: src/fsearch_cli_config.c:1029
 #, c-format
 msgid "fsearch config filters: unknown operation: %s\n"
-msgstr ""
+msgstr "fsearch config filters: neznáma operácia: %s\n"
 
 #: src/fsearch_cli_config.c:1051
 #, c-format
 msgid "fsearch config filters: %s requires a value\n"
-msgstr ""
+msgstr "fsearch config filters: %s vyžaduje hodnotu\n"
 
 #: src/fsearch_cli_config.c:1094
 msgid "fsearch config filters: missing NAME\n"
-msgstr ""
+msgstr "fsearch config filters: chýba NAME\n"
 
 #: src/fsearch_cli_config.c:1100 src/fsearch_cli_config.c:1111
 #, c-format
 msgid "fsearch config filters: name not found: %s\n"
-msgstr ""
+msgstr "fsearch config filters: názov sa nenašiel: %s\n"
 
 #: src/fsearch_cli_config.c:1107
 #, c-format
 msgid "fsearch config filters: name already exists: %s\n"
-msgstr ""
+msgstr "fsearch config filters: názov už existuje: %s\n"
 
 #: src/fsearch_cli_config.c:1145
 #, c-format
 msgid "%s\tmacro=%s query=%s\n"
-msgstr ""
+msgstr "%s\tmacro=%s query=%s\n"
 
 #: src/fsearch_cli_config.c:1193
 msgid "fsearch config reset requires --yes\n"
-msgstr ""
+msgstr "fsearch config reset vyžaduje --yes\n"
 
 #: src/fsearch_cli_config.c:1201
 msgid ""
 "fsearch config reset: --rescan requires roots, database, excludes, or all\n"
 msgstr ""
+"fsearch config reset: --rescan vyžaduje roots, database, excludes alebo all\n"
 
 #: src/fsearch_cli_config.c:1241
 #, c-format
 msgid "fsearch config: unknown setting or section: %s\n"
-msgstr ""
+msgstr "fsearch config: neznáme nastavenie alebo sekcia: %s\n"
 
 #: src/fsearch_cli_config.c:1246
 #, c-format
 msgid "%s settings reset\n"
-msgstr ""
+msgstr "Nastavenia %s boli obnovené\n"
 
 #: src/fsearch_cli_config.c:1253
 msgid ""
 "configuration: missing; defaults active\n"
 "index: unknown\n"
 msgstr ""
+"konfigurácia: chýba; predvolené hodnoty sú aktívne\n"
+"index: neznámy\n"
 
 #: src/fsearch_cli_config.c:1261
 msgid ""
 "configuration: ok\n"
 "index: missing or unreadable\n"
 msgstr ""
+"konfigurácia: v poriadku\n"
+"index: chýba alebo sa nedá prečítať\n"
 
 #: src/fsearch_cli_config.c:1266
 #, c-format
@@ -780,129 +900,72 @@ msgid ""
 "configuration: ok\n"
 "index: %s\n"
 msgstr ""
+"konfigurácia: v poriadku\n"
+"index: %s\n"
 
 #: src/fsearch_cli_config.c:1266
 msgid "current"
-msgstr ""
+msgstr "aktuálne"
 
 #: src/fsearch_cli_config.c:1266
 msgid "stale"
-msgstr ""
+msgstr "zastarané"
 
 #: src/fsearch_cli_config.c:1278
 msgid ""
 "Usage: fsearch config path\n"
 "Print the active FSearch configuration file path.\n"
 msgstr ""
+"Použitie: fsearch config path\n"
+"Vypíše cestu k aktívnemu konfiguračnému súboru aplikácie FSearch.\n"
 
 #: src/fsearch_cli_config.c:1321
 #, c-format
 msgid "fsearch config: unknown command: %s\n"
-msgstr ""
+msgstr "fsearch config: neznámy príkaz: %s\n"
 
 #: src/fsearch_database.c:795
 msgid "Index rescan: applying changes…"
-msgstr ""
-
-#: src/fsearch_database_file.c:1343
-#, fuzzy
-msgid "Loading folders…"
-msgstr "Načítavanie databázy..."
-
-#: src/fsearch_database_file.c:1359
-#, fuzzy
-msgid "Loading files…"
-msgstr "Vymazávanie súborov..."
-
-#: src/fsearch_database_index_store.c:925 src/fsearch_statusbar.c:73
-#: src/fsearch_statusbar.ui:90
-#, fuzzy
-msgid "Sorting…"
-msgstr "Načítavanie databázy..."
-
-#: src/fsearch_database_preferences_widget.c:162
-#: src/fsearch_database_preferences_widget.c:176
-#, fuzzy
-msgid "Select folder"
-msgstr "Vybrať filter"
+msgstr "Opätovné prehľadávanie indexu: uplatňujú sa zmeny…"
 
 #: src/fsearch_database_preferences_widget.c:165
 #: src/fsearch_database_preferences_widget.c:180
 #: src/fsearch_filter_editor.c:104 src/fsearch_preferences_dialog.c:331
 msgid "_Cancel"
-msgstr ""
-
-#: src/fsearch_database_preferences_widget.c:167
-#: src/fsearch_database_preferences_widget.c:179
-#, fuzzy
-msgid "_Select"
-msgstr "Zrušiť výber všetkých"
+msgstr "_Zrušiť"
 
 #: src/fsearch_database_preferences_widget.c:389
 msgid "Literal"
-msgstr ""
+msgstr "Doslovný"
 
 #: src/fsearch_database_preferences_widget.c:391
 msgid "Wildcard"
-msgstr ""
+msgstr "Zástupný znak"
 
 #: src/fsearch_database_preferences_widget.c:393
 msgid "Regex"
-msgstr ""
-
-#: src/fsearch_database_preferences_widget.c:414
-#, fuzzy
-msgid "Full Path"
-msgstr "Umiestnenie"
+msgstr "Regulárny výraz"
 
 #: src/fsearch_database_preferences_widget.c:416
 msgid "Basename"
-msgstr ""
-
-#: src/fsearch_database_preferences_widget.c:434
-#, fuzzy
-msgid "Files & Folders"
-msgstr "Priečinky"
-
-#: src/fsearch_database_preferences_widget.c:436 src/fsearch_filter.c:114
-msgid "Files"
-msgstr "Súbory"
-
-#: src/fsearch_database_preferences_widget.c:438 src/fsearch_filter.c:113
-msgid "Folders"
-msgstr "Priečinky"
+msgstr "Základný názov"
 
 #: src/fsearch_database_preferences_widget.c:635
 #: src/fsearch_database_preferences_widget.c:860
 msgid "Active"
-msgstr ""
+msgstr "Aktívne"
 
 #: src/fsearch_database_preferences_widget.c:640
 msgid "Pattern"
-msgstr ""
-
-#: src/fsearch_database_preferences_widget.c:694 src/fsearch_window.c:756
-#: src/menus.ui:275
-msgid "Type"
-msgstr "Typ"
-
-#: src/fsearch_database_preferences_widget.c:700
-#, fuzzy
-msgid "Match"
-msgstr "Rozlišovať veľké a malé písmená"
+msgstr "Vzor"
 
 #: src/fsearch_database_preferences_widget.c:706
 msgid "Applies To"
-msgstr ""
-
-#: src/fsearch_database_preferences_widget.c:864 src/fsearch_window.c:742
-#: src/menus.ui:219 src/menus.ui:267
-msgid "Path"
-msgstr "Umiestnenie"
+msgstr "Vzťahuje sa na"
 
 #: src/fsearch_database_preferences_widget.ui:78
 msgid "Enter path…"
-msgstr ""
+msgstr "Zadajte cestu…"
 
 #: src/fsearch_database_preferences_widget.ui:97
 #: src/fsearch_database_preferences_widget.ui:372
@@ -911,198 +974,154 @@ msgid ""
 "                                            database\n"
 "                                        "
 msgstr ""
+"Pridať cestu, ktorá sa má zahrnúť do\n"
+"                                            databázy\n"
+"                                        "
 
 #: src/fsearch_database_preferences_widget.ui:176
 msgid "Attempt to monitor"
-msgstr ""
+msgstr "Pokúsiť sa monitorovať"
 
 #: src/fsearch_database_preferences_widget.ui:191
 msgid "Scan after launch"
-msgstr ""
-
-#: src/fsearch_database_preferences_widget.ui:206
-#, fuzzy
-msgid "Stay on one file system"
-msgstr "Otvoriť súbor(y)"
+msgstr "Skenovať po spustení"
 
 #: src/fsearch_database_preferences_widget.ui:221
 msgid "Rescan every"
-msgstr ""
+msgstr "Opätovne skenovať každých"
 
 #: src/fsearch_database_preferences_widget.ui:254
 msgid "Hours:"
-msgstr ""
+msgstr "Hodiny:"
 
 #: src/fsearch_database_preferences_widget.ui:298
 msgid "Minutes:"
-msgstr ""
+msgstr "Minúty:"
 
 #: src/fsearch_database_preferences_widget.ui:310
 msgid "30"
-msgstr ""
+msgstr "30"
 
 #: src/fsearch_database_preferences_widget.ui:391
 msgid "Remove selected path"
-msgstr ""
-
-#: src/fsearch_database_preferences_widget.ui:418
-msgid "Include"
-msgstr "Zahrnúť"
+msgstr "Odstrániť vybranú cestu"
 
 #: src/fsearch_database_preferences_widget.ui:477
 msgid ""
 "Add exclude rule\n"
 "                                                "
 msgstr ""
+"Pridať pravidlo vylúčenia\n"
+"                                                "
 
 #: src/fsearch_database_preferences_widget.ui:495
 msgid ""
 "Remove selected path\n"
 "                                                "
 msgstr ""
+"Odstrániť vybranú cestu\n"
+"                                                "
 
 #: src/fsearch_database_preferences_widget.ui:512
 msgid "Restore default exclude list"
-msgstr ""
-
-#: src/fsearch_database_preferences_widget.ui:541
-msgid "Exclude hidden files and folders"
-msgstr "Vylúčiť skryté súbory a priečinky"
-
-#: src/fsearch_database_preferences_widget.ui:563
-msgid "Exclude"
-msgstr "Vylúčiť"
+msgstr "Obnoviť predvolený zoznam vylúčení"
 
 #: src/fsearch_file_utils.c:161
 msgctxt "Will be followed by the path of the file."
 msgid "Error when removing file"
-msgstr ""
+msgstr "Chyba pri odstraňovaní súboru"
 
 #: src/fsearch_file_utils.c:163
 msgid "Failed to get path"
-msgstr ""
+msgstr "Nepodarilo sa získať cestu"
 
 #: src/fsearch_file_utils.c:277
 msgctxt "Will be followed by the file path."
 msgid "Error when getting information from file"
-msgstr ""
-
-#: src/fsearch_file_utils.c:279
-#, fuzzy
-msgid "Failed to get application information"
-msgstr "Otvoriť s iným programom"
+msgstr "Chyba pri získavaní informácií zo súboru"
 
 #: src/fsearch_file_utils.c:294
 msgctxt "Will be followed by the content type string."
 msgid "Error when getting information for content type"
-msgstr ""
+msgstr "Chyba pri získavaní informácií o type obsahu"
 
 #: src/fsearch_file_utils.c:296
 msgid "No default application registered"
-msgstr ""
+msgstr "Nie je zaregistrovaná žiadna predvolená aplikácia"
 
 #: src/fsearch_file_utils.c:524
 msgctxt "Will be followed by the path of the folder."
 msgid "Error when opening parent folder"
-msgstr ""
+msgstr "Chyba pri otváraní nadradeného priečinka"
 
 #: src/fsearch_file_utils.c:526
 msgid "Failed to get parent path"
-msgstr ""
+msgstr "Nepodarilo sa získať nadradenú cestu"
 
 #: src/fsearch_file_utils.c:530
 msgctxt "Will be followed by the path of the folder."
 msgid "Error while opening folder"
-msgstr ""
+msgstr "Chyba pri otváraní priečinka"
 
 #: src/fsearch_file_utils.c:533
 msgid "Failed to build open command"
-msgstr ""
-
-#: src/fsearch_file_utils.c:589
-#, fuzzy
-msgid "Folder"
-msgstr "Priečinky"
+msgstr "Nepodarilo sa zostaviť príkaz na otvorenie"
 
 #: src/fsearch_file_utils.c:595
 msgid "Unknown Type"
-msgstr ""
-
-#: src/fsearch_filter.c:112
-msgid "All"
-msgstr "Všetky"
-
-#: src/fsearch_filter.c:115
-#, fuzzy
-msgid "Applications"
-msgstr "Iný program"
+msgstr "Neznámy typ"
 
 #: src/fsearch_filter.c:116
 msgid "Archives"
-msgstr ""
+msgstr "Archívy"
 
 #: src/fsearch_filter.c:117
 msgid "Audio"
-msgstr ""
+msgstr "Zvuk"
 
 #: src/fsearch_filter.c:118
 msgid "Documents"
-msgstr ""
+msgstr "Dokumenty"
 
 #: src/fsearch_filter.c:119
 msgid "Pictures"
-msgstr ""
+msgstr "Obrázky"
 
 #: src/fsearch_filter.c:120
 msgid "Videos"
-msgstr ""
+msgstr "Videá"
 
 #: src/fsearch_filter_editor.c:79
 msgid "Macro names must not contain `:` characters."
-msgstr ""
+msgstr "Názvy makier nesmú obsahovať znaky `:`."
 
 #: src/fsearch_filter_editor.c:105 src/fsearch_preferences_dialog.c:332
 msgid "_OK"
-msgstr ""
+msgstr "_OK"
 
 #: src/fsearch_filter_editor.ui:10 src/fsearch_filter_preferences_widget.c:156
 msgid "Edit filter"
-msgstr ""
-
-#: src/fsearch_filter_editor.ui:50
-#, fuzzy
-msgid "Name:"
-msgstr "Názov"
+msgstr "Upraviť filter"
 
 #: src/fsearch_filter_editor.ui:61
 msgid "The unique name of this filter"
-msgstr ""
+msgstr "Jedinečný názov tohto filtra"
 
 #: src/fsearch_filter_editor.ui:64
 msgid "Unique filter name"
-msgstr ""
-
-#: src/fsearch_filter_editor.ui:73
-#, fuzzy
-msgid "Search in path"
-msgstr "Vyhľadať v umiestnení"
+msgstr "Jedinečný názov filtra"
 
 #: src/fsearch_filter_editor.ui:87
 msgid "Enable regular expressions"
-msgstr ""
-
-#: src/fsearch_filter_editor.ui:101
-#, fuzzy
-msgid "Match case"
-msgstr "Rozlišovať veľké a malé písmená"
+msgstr "Povoliť regulárne výrazy"
 
 #: src/fsearch_filter_editor.ui:146
 msgid "Query:"
-msgstr ""
+msgstr "Dopyt:"
 
 #: src/fsearch_filter_editor.ui:160
 msgid "Macro:"
-msgstr ""
+msgstr "Makro:"
 
 #: src/fsearch_filter_editor.ui:171
 msgid ""
@@ -1110,247 +1129,93 @@ msgid ""
 "search entry by typing its text followed by ':'\n"
 "                "
 msgstr ""
-
-#: src/fsearch_filter_preferences_widget.c:133
-#, fuzzy
-msgid "Add filter"
-msgstr "Priečinky"
-
-#: src/fsearch_filter_preferences_widget.c:315 src/fsearch_window.c:735
-#: src/menus.ui:215 src/menus.ui:263
-msgid "Name"
-msgstr "Názov"
+"Makro pre tento filter. Makro umožňuje pristupovať k tomuto filtru z "
+"vyhľadávacieho poľa zadaním jeho textu nasledovaného znakom ':'\n"
+"                "
 
 #: src/fsearch_filter_preferences_widget.c:316
 msgid "Macro"
-msgstr ""
-
-#: src/fsearch_filter_preferences_widget.c:317
-#, fuzzy
-msgid "Query"
-msgstr "Žiadna požiadavka na vyhľadanie"
-
-#: src/fsearch_filter_preferences_widget.ui:77
-#, fuzzy
-msgid "Add new filter"
-msgstr "Priečinky"
-
-#: src/fsearch_filter_preferences_widget.ui:95
-#, fuzzy
-msgid "Remove selected filter"
-msgstr "Počet výsledkov vyhľadávania"
-
-#: src/fsearch_filter_preferences_widget.ui:113
-#, fuzzy
-msgid "Edit selected filter"
-msgstr "Počet výsledkov vyhľadávania"
+msgstr "Makro"
 
 #: src/fsearch_filter_preferences_widget.ui:129
 msgid "Restore default filters"
-msgstr ""
+msgstr "Obnoviť predvolené filtre"
 
 #: src/fsearch_listview_popup.c:36
 msgid "Properties…"
-msgstr ""
-
-#: src/fsearch_listview_popup.c:163
-#, fuzzy
-msgid "Other Application…"
-msgstr "Iný program"
-
-#: src/fsearch_overlay.ui:44
-msgid "Empty Database"
-msgstr "Vyprázdniť databázu"
-
-#: src/fsearch_overlay.ui:60
-#, fuzzy
-msgid "Add folders"
-msgstr "Priečinky"
-
-#: src/fsearch_overlay.ui:108
-#, fuzzy
-msgid "Loading Database…"
-msgstr "Načítavanie databázy..."
-
-#: src/fsearch_overlay.ui:123
-#, fuzzy
-msgid "This won't take long."
-msgstr "Môže to chvíľu trvať."
-
-#: src/fsearch_overlay.ui:171 src/fsearch_statusbar.ui:312
-#, fuzzy
-msgid "Updating Database…"
-msgstr "Aktualizácia databázy..."
-
-#: src/fsearch_overlay.ui:186 src/fsearch_overlay.ui:383
-msgid "This may take a while."
-msgstr "Môže to chvíľu trvať."
-
-#: src/fsearch_overlay.ui:241
-msgid "Empty Query"
-msgstr "Žiadna požiadavka na vyhľadanie"
-
-#: src/fsearch_overlay.ui:256
-#, fuzzy
-msgid "Press <b>Ctrl + F</b> and start typing."
-msgstr "Stlačte <b>Ctrl + F</b> a začnite písať"
-
-#: src/fsearch_overlay.ui:304
-msgid "No Results Found"
-msgstr "Nič nenájdené"
-
-#: src/fsearch_overlay.ui:319
-msgid "Try a different search"
-msgstr "Skúste iné vyhľadávanie"
+msgstr "Vlastnosti…"
 
 #: src/fsearch_overlay.ui:368
 msgid "Sorting results…"
-msgstr ""
-
-#: src/fsearch_preferences.ui:7 src/fsearch_window.ui:251 src/menus.ui:84
-msgid "Preferences"
-msgstr "Nastavenia"
-
-#: src/fsearch_preferences.ui:76
-msgid "Enable dark theme"
-msgstr "Povoliť tmavú tému"
+msgstr "Zoraďujú sa výsledky…"
 
 #: src/fsearch_preferences.ui:97
 msgid "Enable client-side decorations (requires restart)"
-msgstr ""
-
-#: src/fsearch_preferences.ui:117
-msgid "Use binary units instead of decimal units"
-msgstr "Používať binárne jednotky namiesto desatinných jednotiek"
-
-#: src/fsearch_preferences.ui:138
-msgid "Remember window size"
-msgstr "Zapamätať veľkosť okna"
+msgstr "Povoliť dekorácie na strane klienta (vyžaduje reštart)"
 
 #: src/fsearch_preferences.ui:159
 msgid "Exit on Escape"
-msgstr ""
+msgstr "Ukončiť po stlačení klávesu Escape"
 
 #: src/fsearch_preferences.ui:202
 msgid "with keyboard shortcuts or menu entries"
-msgstr ""
+msgstr "pomocou klávesových skratiek alebo položiek ponuky"
 
 #: src/fsearch_preferences.ui:223
 msgid "with double click"
-msgstr ""
+msgstr "dvojitým kliknutím"
 
 #: src/fsearch_preferences.ui:257
 msgid "Behaviour after successfully opening a file:"
-msgstr ""
+msgstr "Správanie po úspešnom otvorení súboru:"
 
 #: src/fsearch_preferences.ui:273
 msgid "Nothing"
-msgstr ""
+msgstr "Nič"
 
 #: src/fsearch_preferences.ui:274
 msgid "Minimize"
-msgstr ""
+msgstr "Minimalizovať"
 
 #: src/fsearch_preferences.ui:275
 msgid "Close"
-msgstr ""
+msgstr "Zavrieť"
 
 #: src/fsearch_preferences.ui:309
 msgid "General:"
-msgstr ""
+msgstr "Všeobecné:"
 
 #: src/fsearch_preferences.ui:344
 msgid "Show highlighted search terms"
-msgstr ""
-
-#: src/fsearch_preferences.ui:366
-msgid "Show tooltips"
-msgstr "Zobraziť tipy"
-
-#: src/fsearch_preferences.ui:387
-msgid "Show icons in name column"
-msgstr "Zobraziť ikony v stĺpci s názvami"
-
-#: src/fsearch_preferences.ui:408
-msgid "Remember column configuration"
-msgstr "Zapamätať nastavenie stĺpcov"
-
-#: src/fsearch_preferences.ui:429
-#, fuzzy
-msgid "Remember sort order"
-msgstr "Zapamätať veľkosť okna"
+msgstr "Zobraziť zvýraznené hľadané výrazy"
 
 #: src/fsearch_preferences.ui:450
 msgid "Open path with double click in path column"
-msgstr ""
+msgstr "Otvoriť cestu dvojitým kliknutím v stĺpci cesty"
 
 #: src/fsearch_preferences.ui:471
 msgid "Single click to open"
-msgstr ""
+msgstr "Otvoriť jedným kliknutím"
 
 #: src/fsearch_preferences.ui:492
 msgid "Launch desktop files"
-msgstr ""
+msgstr "Spúšťať súbory pracovnej plochy"
 
 #: src/fsearch_preferences.ui:519
 msgid "Results:"
-msgstr ""
-
-#: src/fsearch_preferences.ui:560
-#, fuzzy
-msgid "Show database indexing status"
-msgstr "Aktualizovať databázu pri spustení"
-
-#: src/fsearch_preferences.ui:587
-#, fuzzy
-msgid "Statusbar:"
-msgstr "Zobraziť stavový riadok"
+msgstr "Výsledky:"
 
 #: src/fsearch_preferences.ui:628
 msgid "Show warning dialogs when:"
-msgstr ""
+msgstr "Zobraziť varovné dialógové okná, keď:"
 
 #: src/fsearch_preferences.ui:638
 msgid "file / folder failed to open"
-msgstr ""
+msgstr "súbor / priečinok sa nepodarilo otvoriť"
 
 #: src/fsearch_preferences.ui:667
 msgid "Dialogs:"
-msgstr ""
-
-#: src/fsearch_preferences.ui:692
-msgid "Interface"
-msgstr "Rozhranie"
-
-#: src/fsearch_preferences.ui:711
-msgid "Search in path when query contains path separators"
-msgstr ""
-"Vyhľadávať v umiestnení, ak požiadavka na vyhľadanie obsahuje oddeľovače "
-"ciest"
-
-#: src/fsearch_preferences.ui:730
-msgid "Search as you type"
-msgstr "Vyhľadávať počas písania"
-
-#: src/fsearch_preferences.ui:750
-msgid "Hide results when search is empty"
-msgstr "Skryť výsledky pri prázdnej požiadavke na vyhľadanie"
-
-#: src/fsearch_preferences.ui:769
-#, fuzzy
-msgid "Match case when query contains at least one upper case character"
-msgstr ""
-"Vyhľadávať v umiestnení, ak požiadavka na vyhľadanie obsahuje oddeľovače "
-"ciest"
-
-#: src/fsearch_preferences.ui:801
-#, fuzzy
-msgid "Filter:"
-msgstr "Zobraziť filter"
-
-#: src/fsearch_preferences.ui:822 src/fsearch_window.ui:639
-msgid "Search"
-msgstr "Vyhľadávanie"
+msgstr "Dialógové okná:"
 
 #: src/fsearch_preferences.ui:855
 msgid ""
@@ -1362,6 +1227,14 @@ msgid ""
 "Note that not all system themes provide such a darker variant, therefore "
 "enabling this setting might not have an effect."
 msgstr ""
+"<b>Povoliť tmavý motív:</b>\n"
+"\n"
+"Ak je táto možnosť povolená, systémový motív bude požiadaný, aby pre "
+"aplikáciu použil tmavší vzhľad <i>(t. j. tmavé prvky používateľského "
+"rozhrania so svetlým textom)</i>.\n"
+"\n"
+"Nie všetky systémové motívy však poskytujú takýto tmavší variant, takže "
+"povolenie tohto nastavenia nemusí mať žiadny účinok."
 
 #: src/fsearch_preferences.ui:873
 msgid ""
@@ -1375,6 +1248,15 @@ msgid ""
 "This resembles a more traditional UI layout and takes a little bit more "
 "space."
 msgstr ""
+"<b>Povoliť dekorácie na strane klienta:</b>\n"
+"\n"
+"Ak je táto možnosť povolená, vyhľadávacie pole a hlavná ponuka sa zobrazia v "
+"záhlaví okna.\n"
+"\n"
+"Ak je táto možnosť zakázaná, hlavná ponuka sa zobrazí ako panel ponuky s "
+"vyhľadávacím poľom pod ním.\n"
+"Takéto rozloženie sa podobá tradičnejšiemu používateľskému rozhraniu a "
+"zaberá trochu viac miesta."
 
 #: src/fsearch_preferences.ui:893
 msgid ""
@@ -1387,6 +1269,14 @@ msgid ""
 "\t• <b>Decimal  units:</b> This refers to decimal SI prefixes <i>(e.g. 1 kB "
 "= 1000 bytes)</i>"
 msgstr ""
+"<b>Používať binárne jednotky namiesto desatinných:</b>\n"
+"\n"
+"Toto nastavenie určuje spôsob zobrazovania veľkostí súborov.\n"
+"\n"
+"\t• <b>Binárne jednotky:</b> Ide o binárne predpony IEC <i>(napr. 1 KiB = "
+"1024 bajtov)</i>\n"
+"\t• <b>Desatinné jednotky:</b> Ide o desatinné predpony SI <i>(napr. 1 kB = "
+"1000 bajtov)</i>"
 
 #: src/fsearch_preferences.ui:913
 msgid ""
@@ -1398,6 +1288,13 @@ msgid ""
 "Note that some window managers ignore this request and force the window to "
 "have a different size."
 msgstr ""
+"<b>Zapamätať si veľkosť okna:</b>\n"
+"\n"
+"Ak je táto možnosť povolená, pri otvorení okna aplikácie FSearch sa obnoví "
+"veľkosť okna z predchádzajúcej relácie.\n"
+"\n"
+"Niektorí správcovia okien túto požiadavku ignorujú a vynútia inú veľkosť "
+"okna."
 
 #: src/fsearch_preferences.ui:932
 msgid ""
@@ -1415,6 +1312,19 @@ msgid ""
 "\t• <b>keyboard shortcuts or menu entries</b> and/or\n"
 "\t• <b>mouse click</b>"
 msgstr ""
+"<b>Správanie po úspešnom otvorení súboru:</b>\n"
+"\n"
+"Po úspešnom otvorení súboru alebo priečinka možno vykonať jednu z "
+"nasledujúcich činností:\n"
+"\t• <b>Nič:</b> Nič sa nestane.\n"
+"                        • <b>Minimalizovať:</b> Aktuálne vybrané okno "
+"aplikácie FSearch sa minimalizuje.\n"
+"\t• <b>Zavrieť:</b> Ukončí aplikáciu FSearch.\n"
+"\n"
+"Môžete nastaviť, či sa majú tieto činnosti vykonať, keď bol súbor otvorený "
+"pomocou\n"
+"\t• <b>klávesových skratiek alebo položiek ponuky</b> a/alebo\n"
+"\t• <b>kliknutia myšou</b>"
 
 #: src/fsearch_preferences.ui:956
 msgid ""
@@ -1430,6 +1340,17 @@ msgid ""
 "This also works for regular expressions and wildcard expressions starting or "
 "ending with an asterisk. "
 msgstr ""
+"<b>Zobraziť zvýraznené hľadané výrazy:</b>\n"
+"\n"
+"Ak je táto možnosť povolená, hľadané výrazy budú zvýraznené v zobrazení "
+"výsledkov. Ak napríklad vyhľadáte výraz \"foo\", všetky výskyty výrazu "
+"<i>foo</i> v názvoch súborov a priečinkov sa zvýraznia tučným písmom:\n"
+"\n"
+"\t<b>foo</b>bar.txt\n"
+"\tfile.<b>foo</b>\n"
+"\n"
+"Funguje to aj pre regulárne výrazy a výrazy so zástupnými znakmi, ktoré sa "
+"začínajú alebo končia hviezdičkou. "
 
 #: src/fsearch_preferences.ui:978
 msgid ""
@@ -1438,6 +1359,10 @@ msgid ""
 "If enabled, the results view will show the full path of the focused file/"
 "folder in a small tooltip window."
 msgstr ""
+"<b>Zobraziť popisy:</b>\n"
+"\n"
+"Ak je táto možnosť povolená, zobrazenie výsledkov ukáže úplnú cestu k súboru "
+"alebo priečinku so zameraním v malom okne s popisom."
 
 #: src/fsearch_preferences.ui:995
 msgid ""
@@ -1445,6 +1370,10 @@ msgid ""
 "\n"
 "If enabled, file/folder icons will be shown in the name column."
 msgstr ""
+"<b>Zobraziť ikony v stĺpci s názvom:</b>\n"
+"\n"
+"Ak je táto možnosť povolená, v stĺpci s názvom sa zobrazia ikony súborov a "
+"priečinkov."
 
 #: src/fsearch_preferences.ui:1012
 msgid ""
@@ -1454,6 +1383,11 @@ msgid ""
 "session will be restored when you open an FSearch window. This includes the "
 "size and visibility of all columns."
 msgstr ""
+"<b>Zapamätať si nastavenie stĺpcov:</b>\n"
+"\n"
+"Ak je táto možnosť povolená, pri otvorení okna aplikácie FSearch sa obnoví "
+"nastavenie stĺpcov zobrazenia výsledkov z predchádzajúcej relácie. Zahŕňa to "
+"veľkosť a viditeľnosť všetkých stĺpcov."
 
 #: src/fsearch_preferences.ui:1029
 msgid ""
@@ -1462,6 +1396,10 @@ msgid ""
 "If enabled, the sort order of the results view from the previous session "
 "will be restored when you open an FSearch window."
 msgstr ""
+"<b>Zapamätať si poradie zoradenia:</b>\n"
+"\n"
+"Ak je táto možnosť povolená, pri otvorení okna aplikácie FSearch sa obnoví "
+"poradie zoradenia zobrazenia výsledkov z predchádzajúcej relácie."
 
 #: src/fsearch_preferences.ui:1046
 msgid ""
@@ -1469,6 +1407,10 @@ msgid ""
 "\n"
 "If enabled, double clicking in the path column will open the selected path."
 msgstr ""
+"<b>Otvoriť cestu dvojitým kliknutím v stĺpci cesty:</b>\n"
+"\n"
+"Ak je táto možnosť povolená, dvojitým kliknutím v stĺpci cesty sa otvorí "
+"vybraná cesta."
 
 #: src/fsearch_preferences.ui:1063
 msgid ""
@@ -1478,6 +1420,12 @@ msgid ""
 "want to select a file/folder while this setting is active, you need to hold "
 "<i>Ctrl</i> at the same time while clicking the file/folder."
 msgstr ""
+"<b>Otvoriť jedným kliknutím:</b>\n"
+"\n"
+"Ak je táto možnosť povolená, jedným kliknutím sa otvorí vybraný súbor/"
+"priečinok. Ak chcete pri aktívnom tomto nastavení súbor/priečinok iba "
+"vybrať, musíte pri kliknutí na súbor/priečinok súčasne podržať kláves "
+"<i>Ctrl</i>."
 
 #: src/fsearch_preferences.ui:1080
 msgid ""
@@ -1486,6 +1434,10 @@ msgid ""
 "If enabled, the path that is currently being indexed is displayed in the "
 "statusbar."
 msgstr ""
+"<b>Zobraziť stav indexovania databázy:</b>\n"
+"\n"
+"Ak je táto možnosť povolená, cesta, ktorá sa práve indexuje, sa zobrazí v "
+"stavovom riadku."
 
 #: src/fsearch_preferences.ui:1097
 msgid ""
@@ -1494,6 +1446,10 @@ msgid ""
 "If enabled, a warning dialog is displayed when a file or folder failed to "
 "open."
 msgstr ""
+"<b>Zobraziť dialógové okná s upozornením:</b>\n"
+"\n"
+"Ak je táto možnosť povolená, pri neúspešnom otvorení súboru alebo priečinka "
+"sa zobrazí dialógové okno s upozornením."
 
 #: src/fsearch_preferences.ui:1114
 msgid ""
@@ -1502,6 +1458,10 @@ msgid ""
 "If enabled, search terms containing path separators (i.e. \"/\") will be "
 "automatically matched against the full path of a file or folder."
 msgstr ""
+"<b>Hľadať v ceste, keď dopyt obsahuje oddeľovače cesty:</b>\n"
+"\n"
+"Ak je táto možnosť povolená, hľadané výrazy obsahujúce oddeľovače cesty (t. "
+"j. \"/\") sa automaticky porovnajú s úplnou cestou k súboru alebo priečinku."
 
 #: src/fsearch_preferences.ui:1131
 msgid ""
@@ -1511,6 +1471,13 @@ msgid ""
 "trigger a case-sensitive search. This means a search term like <i>Foo</i> "
 "will match <i>FooBar.txt</i> but not <i>foobar.txt</i>."
 msgstr ""
+"<b>Rozlišovať veľkosť písmen, keď dopyt obsahuje aspoň jedno veľké písmeno:</"
+"b>\n"
+"\n"
+"Ak je táto možnosť povolená, hľadané výrazy obsahujúce aspoň jedno veľké "
+"písmeno spustia vyhľadávanie rozlišujúce veľkosť písmen. To znamená, že "
+"hľadaný výraz ako <i>Foo</i> sa zhoduje s <i>FooBar.txt</i>, ale nie s "
+"<i>foobar.txt</i>."
 
 #: src/fsearch_preferences.ui:1148
 msgid ""
@@ -1521,6 +1488,13 @@ msgid ""
 "If disabled, all files and folders will be displayed when the search entry "
 "is empty."
 msgstr ""
+"<b>Skryť výsledky, keď je vyhľadávanie prázdne:</b>\n"
+"\n"
+"Ak je táto možnosť povolená, pri prázdnom vyhľadávacom poli sa nezobrazia "
+"žiadne výsledky vyhľadávania.\n"
+"\n"
+"Ak je táto možnosť zakázaná, pri prázdnom vyhľadávacom poli sa zobrazia "
+"všetky súbory a priečinky."
 
 #: src/fsearch_preferences.ui:1167
 msgid ""
@@ -1531,6 +1505,13 @@ msgid ""
 "If disabled, the search is only updated when you hit <i>Enter</i> or press "
 "the search button. "
 msgstr ""
+"<b>Vyhľadávať počas písania:</b>\n"
+"\n"
+"Ak je táto možnosť povolená, vyhľadávanie sa automaticky aktualizuje pri "
+"každom stlačení klávesu.\n"
+"\n"
+"Ak je táto možnosť zakázaná, vyhľadávanie sa aktualizuje iba po stlačení "
+"klávesu <i>Enter</i> alebo tlačidla vyhľadávania. "
 
 #: src/fsearch_preferences.ui:1186
 msgid ""
@@ -1539,6 +1520,10 @@ msgid ""
 "If enabled, the database will be updated automatically in the background "
 "when you start FSearch."
 msgstr ""
+"<b>Aktualizovať databázu pri spustení:</b>\n"
+"\n"
+"Ak je táto možnosť povolená, databáza sa pri spustení aplikácie FSearch "
+"automaticky aktualizuje na pozadí."
 
 #: src/fsearch_preferences.ui:1203
 msgid ""
@@ -1552,6 +1537,15 @@ msgid ""
 "\t• <b>One Filesystem:</b> If enabled, FSearch won't cross filesystem "
 "boundaries for this folder"
 msgstr ""
+"<b>Zahrnuté priečinky:</b>\n"
+"\n"
+"Tento zoznam obsahuje všetky priečinky, ktoré chcete zahrnúť do databázy.\n"
+"\n"
+"\t• <b>Aktívne:</b> Ak je táto možnosť povolená, cesta bude zahrnutá do "
+"databázy, v ktorej sa bude vyhľadávať.\n"
+"\t• <b>Cesta:</b> Úplná cesta, ktorá sa má zahrnúť.\n"
+"\t• <b>Jeden súborový systém:</b> Ak je táto možnosť povolená, FSearch pri "
+"tomto priečinku neprekročí hranice súborového systému"
 
 #: src/fsearch_preferences.ui:1224
 msgid ""
@@ -1560,6 +1554,10 @@ msgid ""
 "This button opens a dialog where you can select a folder you want to include "
 "in the database for searching."
 msgstr ""
+"<b>Pridať priečinok do databázy:</b>\n"
+"\n"
+"Toto tlačidlo otvorí dialógové okno, v ktorom môžete vybrať priečinok, ktorý "
+"chcete zahrnúť do databázy na vyhľadávanie."
 
 #: src/fsearch_preferences.ui:1241
 msgid ""
@@ -1569,6 +1567,11 @@ msgid ""
 "include that folder in the database. This is useful for adding a path "
 "directly without browsing for it."
 msgstr ""
+"<b>Pridať konkrétnu cestu:</b>\n"
+"\n"
+"Sem zadajte úplnú cestu k priečinku a kliknutím na tlačidlo vedľa nej "
+"zahrňte tento priečinok do databázy. Je to užitočné na priame pridanie cesty "
+"bez jej vyhľadávania."
 
 #: src/fsearch_preferences.ui:1258
 msgid ""
@@ -1576,6 +1579,9 @@ msgid ""
 "\n"
 "This removes the selected folder from the list of included folders."
 msgstr ""
+"<b>Odstrániť vybraný riadok:</b>\n"
+"\n"
+"Týmto sa vybraný priečinok odstráni zo zoznamu zahrnutých priečinkov."
 
 #: src/fsearch_preferences.ui:1275
 msgid ""
@@ -1588,6 +1594,16 @@ msgid ""
 "system resources per watched folder. For large directory trees with many "
 "files the system may run out of resources to watch them all."
 msgstr ""
+"<b>Pokúsiť sa monitorovať:</b>\n"
+"\n"
+"Ak je táto možnosť povolená, FSearch sleduje zmeny v tomto priečinku a "
+"automaticky udržiava databázu aktuálnu, takže nemusíte opätovné "
+"prehľadávanie spúšťať ručne.\n"
+"\n"
+"Monitorovanie nie je podporované na každom súborovom systéme a pre každý "
+"sledovaný priečinok využíva malé množstvo systémových prostriedkov. Pri "
+"veľkých adresárových stromoch s množstvom súborov môže systém vyčerpať "
+"prostriedky potrebné na sledovanie všetkých z nich."
 
 #: src/fsearch_preferences.ui:1294
 msgid ""
@@ -1596,6 +1612,11 @@ msgid ""
 "If enabled, this folder is rescanned every time FSearch starts, so the "
 "database reflects any changes made while FSearch wasn't running."
 msgstr ""
+"<b>Prehľadať po spustení:</b>\n"
+"\n"
+"Ak je táto možnosť povolená, tento priečinok sa znova prehľadá pri každom "
+"spustení programu FSearch, takže databáza bude obsahovať všetky zmeny "
+"vykonané v čase, keď FSearch nebol spustený."
 
 #: src/fsearch_preferences.ui:1311
 msgid ""
@@ -1605,6 +1626,11 @@ msgid ""
 "folder. Mounted file systems below it (e.g. external drives or network "
 "shares) are skipped."
 msgstr ""
+"<b>Zostať na jednom súborovom systéme:</b>\n"
+"\n"
+"Ak je táto možnosť povolená, FSearch pri prehľadávaní tohto priečinka "
+"neprekročí hranice súborového systému. Pripojené súborové systémy pod ním "
+"(napr. externé jednotky alebo sieťové zdieľania) sa preskočia."
 
 #: src/fsearch_preferences.ui:1328
 msgid ""
@@ -1616,6 +1642,14 @@ msgid ""
 "This is useful for folders on file systems that can't be monitored for "
 "changes."
 msgstr ""
+"<b>Opätovne prehľadať každých:</b>\n"
+"\n"
+"Ak je táto možnosť povolená, tento priečinok sa automaticky znova prehľadá v "
+"zadanom intervale. Pomocou polí hodín a minút nastavte frekvenciu opätovného "
+"prehľadávania.\n"
+"\n"
+"Je to užitočné pre priečinky na súborových systémoch, v ktorých nemožno "
+"monitorovať zmeny."
 
 #: src/fsearch_preferences.ui:1347
 msgid ""
@@ -1636,6 +1670,21 @@ msgid ""
 "\t• <b>Applies To:</b> Whether the rule affects <i>Files</i>, <i>Folders</i> "
 "or both."
 msgstr ""
+"<b>Pravidlá vylúčenia:</b>\n"
+"\n"
+"Tento zoznam obsahuje pravidlá pre súbory a priečinky, ktoré chcete vylúčiť "
+"z databázy.\n"
+"\n"
+"\t• <b>Aktívne:</b> Ak je táto možnosť povolená, pravidlo sa použije a "
+"zodpovedajúce položky sa vylúčia.\n"
+"\t• <b>Vzor:</b> Text porovnávaný s každou položkou, interpretovaný podľa "
+"typu.\n"
+"\t• <b>Typ:</b> Spôsob interpretácie vzoru — <i>Doslovný</i> (presný text), "
+"<i>Zástupné znaky</i> (pomocou * a ?) alebo <i>Regulárny výraz</i>.\n"
+"\t• <b>Zhoda:</b> Či sa vzor porovnáva s <i>úplnou cestou</i> položky, alebo "
+"iba s jej <i>základným názvom</i> (názvom bez cesty).\n"
+"\t• <b>Vzťahuje sa na:</b> Či pravidlo ovplyvňuje <i>súbory</i>, "
+"<i>priečinky</i> alebo oboje."
 
 #: src/fsearch_preferences.ui:1370
 msgid ""
@@ -1644,6 +1693,10 @@ msgid ""
 "This adds a new, empty rule to the list. Edit its Pattern, Type, Match and "
 "Applies To columns to control what gets excluded from the database."
 msgstr ""
+"<b>Pridať pravidlo vylúčenia:</b>\n"
+"\n"
+"Týmto sa do zoznamu pridá nové prázdne pravidlo. Úpravou jeho stĺpcov Vzor, "
+"Typ, Zhoda a Vzťahuje sa na určíte, čo sa vylúči z databázy."
 
 #: src/fsearch_preferences.ui:1387
 msgid ""
@@ -1651,6 +1704,9 @@ msgid ""
 "\n"
 "This removes the selected rule from the list of exclude rules."
 msgstr ""
+"<b>Odstrániť vybraný riadok:</b>\n"
+"\n"
+"Týmto sa vybrané pravidlo odstráni zo zoznamu pravidiel vylúčenia."
 
 #: src/fsearch_preferences.ui:1404
 msgid ""
@@ -1660,6 +1716,11 @@ msgid ""
 "\n"
 "⚠ All rules which were created or edited by the user will be lost! ⚠"
 msgstr ""
+"<b>Obnoviť predvolené pravidlá vylúčenia:</b>\n"
+"\n"
+"Toto tlačidlo obnoví predvolenú súpravu pravidiel vylúčenia.\n"
+"\n"
+"⚠ Všetky pravidlá, ktoré používateľ vytvoril alebo upravil, sa stratia! ⚠"
 
 #: src/fsearch_preferences.ui:1423
 msgid ""
@@ -1670,6 +1731,12 @@ msgid ""
 "all files or folders which are called either <i>.git</i> or <i>.cache</i> or "
 "end with <i>.swp</i>."
 msgstr ""
+"<b>Vylúčiť súbory a priečinky z databázy:</b>\n"
+"\n"
+"Toto je zoznam súborov (alebo priečinkov) oddelených bodkočiarkami, ktoré "
+"chcete vylúčiť z databázy. Napríklad <i>.git;.cache;*.swp</i> vylúči všetky "
+"súbory alebo priečinky s názvom <i>.git</i> alebo <i>.cache</i>, prípadne "
+"končiace na <i>.swp</i>."
 
 #: src/fsearch_preferences.ui:1440
 msgid ""
@@ -1678,10 +1745,15 @@ msgid ""
 "If enabled, hidden files and folders will be excluded from the database "
 "<i>(i.e. all files or folders which start with a dot character)</i>."
 msgstr ""
+"<b>Vylúčiť skryté súbory a priečinky:</b>\n"
+"\n"
+"Ak je táto možnosť povolená, skryté súbory a priečinky budú vylúčené z "
+"databázy <i>(t. j. všetky súbory alebo priečinky, ktorých názov sa začína "
+"bodkou)</i>."
 
 #: src/fsearch_preferences.ui:1457
 msgid "Focus a setting to get a detailed description of what it does."
-msgstr ""
+msgstr "Zameraním nastavenia získate podrobný opis jeho funkcie."
 
 #: src/fsearch_preferences.ui:1470
 msgid ""
@@ -1696,6 +1768,16 @@ msgid ""
 "\n"
 "<i><tt>fsearch --update-database</tt></i>"
 msgstr ""
+"<b>Pravidelne aktualizovať databázu v určenom časovom intervale:</b>\n"
+"\n"
+"Ak je táto možnosť povolená, databáza sa bude počas behu aplikácie FSearch "
+"pravidelne aktualizovať v zadanom časovom intervale.\n"
+"\n"
+"Ak chcete databázu aktualizovať na pozadí, aj keď aplikácia FSearch nie je "
+"spustená, mali by ste použiť nástroje ako cron alebo časovače systemd, ktoré "
+"budú pravidelne spúšťať aktualizáciu pomocou:\n"
+"\n"
+"<i><tt>fsearch --update-database</tt></i>"
 
 #: src/fsearch_preferences.ui:1491
 msgid ""
@@ -1706,6 +1788,13 @@ msgid ""
 "launcher. Otherwise the <i>.desktop</i> file will be opened with the default "
 "handler for this type of files, which is usually a text editor."
 msgstr ""
+"<b>Spúšťať súbory .desktop:</b>\n"
+"\n"
+"Ak je táto možnosť povolená, aktivovaním súboru <i>.desktop</i> sa spustí "
+"aplikácia definovaná v tomto súbore. Aplikácia FSearch tak môže fungovať ako "
+"spúšťač aplikácií. V opačnom prípade sa súbor <i>.desktop</i> otvorí v "
+"predvolenom programe pre tento typ súborov, ktorým je zvyčajne textový "
+"editor."
 
 #: src/fsearch_preferences.ui:1508
 msgid ""
@@ -1718,6 +1807,15 @@ msgid ""
 "the filter on demand\n"
 "\t• <b>Query:</b> The search term by which the database should be filtered"
 msgstr ""
+"<b>Filtre:</b>\n"
+"\n"
+"Toto je zoznam všetkých dostupných filtrov. Filter je preddefinované "
+"vyhľadávanie.\n"
+"\n"
+"\t• <b>Názov:</b> Jedinečný a výstižný identifikátor filtra\n"
+"\t• <b>Makro:</b> Zadaním textu makra, za ktorým nasleduje „:“, môžete "
+"filter podľa potreby aktivovať\n"
+"\t• <b>Dopyt:</b> Hľadaný výraz, podľa ktorého sa má databáza filtrovať"
 
 #: src/fsearch_preferences.ui:1529
 msgid ""
@@ -1725,6 +1823,9 @@ msgid ""
 "\n"
 "This button opens a dialog where you can edit a new filter."
 msgstr ""
+"<b>Pridať nový filter:</b>\n"
+"\n"
+"Toto tlačidlo otvorí dialógové okno, v ktorom môžete upraviť nový filter."
 
 #: src/fsearch_preferences.ui:1546
 msgid ""
@@ -1732,6 +1833,9 @@ msgid ""
 "\n"
 "This button removes the currently selected filter."
 msgstr ""
+"<b>Odstrániť vybraný filter:</b>\n"
+"\n"
+"Toto tlačidlo odstráni aktuálne vybraný filter."
 
 #: src/fsearch_preferences.ui:1563
 msgid ""
@@ -1739,6 +1843,9 @@ msgid ""
 "\n"
 "This button opens a dialog where you can edit the selected filter."
 msgstr ""
+"<b>Upraviť vybraný filter:</b>\n"
+"\n"
+"Toto tlačidlo otvorí dialógové okno, v ktorom môžete upraviť vybraný filter."
 
 #: src/fsearch_preferences.ui:1580
 msgid ""
@@ -1748,6 +1855,11 @@ msgid ""
 "\n"
 "⚠ All filters which were created or edited by the user will be lost! ⚠"
 msgstr ""
+"<b>Obnoviť predvolené filtre:</b>\n"
+"\n"
+"Toto tlačidlo obnoví predvolenú konfiguráciu filtrov.\n"
+"\n"
+"⚠ Všetky filtre, ktoré používateľ vytvoril alebo upravil, sa stratia! ⚠"
 
 #: src/fsearch_preferences.ui:1599
 msgid ""
@@ -1756,134 +1868,73 @@ msgid ""
 "If enabled, FSearch exits when the Escape key is pressed instead of the "
 "window being minimized."
 msgstr ""
-
-#: src/fsearch_preferences.ui:1618 src/fsearch_window.ui:290
-#: src/fsearch_window.ui:415 src/menus.ui:150 src/menus.ui:156
-#, fuzzy
-msgid "Help"
-msgstr "_Pomocnik"
-
-#: src/fsearch_preferences_dialog.c:238
-msgid "Database"
-msgstr "Databáza"
+"<b>Ukončiť klávesom Escape:</b>\n"
+"\n"
+"Ak je táto možnosť povolená, FSearch sa po stlačení klávesu Escape ukončí "
+"namiesto minimalizovania okna."
 
 #: src/fsearch_result_view.c:381
 msgid "Invalid row data"
-msgstr ""
-
-#: src/fsearch_statusbar.c:58
-#, fuzzy, c-format
-msgid "%'d Item"
-msgstr "Počet položiek: %'d"
-
-#: src/fsearch_statusbar.c:58 src/fsearch_statusbar.c:186
-#, c-format
-msgid "%'d Items"
-msgstr "Počet položiek: %'d"
+msgstr "Neplatné údaje riadka"
 
 #: src/fsearch_statusbar.c:80
 msgid "Querying…"
-msgstr ""
-
-#: src/fsearch_statusbar.c:175
-#, fuzzy
-msgid "Loading…"
-msgstr "Načítavanie databázy..."
+msgstr "Vyhľadáva sa…"
 
 #: src/fsearch_statusbar.c:180
 msgid "Scanning…"
-msgstr ""
-
-#: src/fsearch_statusbar.ui:52
-msgid "Number of Search Results"
-msgstr "Počet výsledkov vyhľadávania"
-
-#: src/fsearch_statusbar.ui:53
-msgid "0 Items"
-msgstr "0 položiek"
+msgstr "Prehľadáva sa…"
 
 #: src/fsearch_statusbar.ui:106
 msgid "Cancel"
-msgstr ""
+msgstr "Zrušiť"
 
 #: src/fsearch_statusbar.ui:153
 msgid "Index:"
-msgstr ""
-
-#: src/fsearch_statusbar.ui:228
-#, fuzzy
-msgid "Number of selected folders"
-msgstr "Počet výsledkov vyhľadávania"
-
-#: src/fsearch_statusbar.ui:229 src/fsearch_statusbar.ui:254
-msgid "0/0"
-msgstr "0/0"
-
-#: src/fsearch_statusbar.ui:253
-#, fuzzy
-msgid "Number of selected files"
-msgstr "Počet výsledkov vyhľadávania"
-
-#: src/fsearch_statusbar.ui:328 src/fsearch_window.ui:103
-#, fuzzy
-msgid "Cancel database update"
-msgstr "Aktualizovať databázu pri spustení"
-
-#: src/fsearch_statusbar.ui:369
-#, fuzzy
-msgid "Number of database items"
-msgstr "Počet výsledkov vyhľadávania"
-
-#: src/fsearch_statusbar.ui:370
-msgid "(empty)"
-msgstr "(prázdne)"
+msgstr "Index:"
 
 #: src/fsearch_statusbar.ui:407
 msgid ""
 "Search term contains upper case characters.\n"
 "<b>Match Case</b> was temporarily activated for this term."
 msgstr ""
-
-#: src/fsearch_statusbar.ui:438 src/fsearch_statusbar.ui:491
-msgid "CASE"
-msgstr "VEĽKÉ A MALÉ PÍSMENÁ"
+"Hľadaný výraz obsahuje veľké písmená.\n"
+"Pre tento výraz bolo dočasne aktivované nastavenie <b>Rozlišovať veľkosť "
+"písmen</b>."
 
 #: src/fsearch_statusbar.ui:514
 msgid ""
 "Search term contains path separators.\n"
 "<b>Search in Path</b> was temporarily activated for this term."
 msgstr ""
-
-#: src/fsearch_statusbar.ui:545 src/fsearch_statusbar.ui:598
-msgid "PATH"
-msgstr "UMIESTNENIE"
-
-#: src/fsearch_statusbar.ui:651
-msgid "REGEX"
-msgstr "REGULÁRNE VÝRAZY"
+"Hľadaný výraz obsahuje oddeľovače cesty.\n"
+"Pre tento výraz bolo dočasne aktivované nastavenie <b>Hľadať v ceste</b>."
 
 #: src/fsearch_statusbar.ui:726
 msgid ""
 "The search was cancelled before it finished.\n"
 "<b>These results are incomplete.</b>"
 msgstr ""
+"Vyhľadávanie bolo zrušené pred dokončením.\n"
+"<b>Tieto výsledky nie sú úplné.</b>"
 
 #: src/fsearch_statusbar.ui:756
 msgid "PARTIAL"
-msgstr ""
+msgstr "ČIASTOČNÉ"
 
 #: src/fsearch_welcome_dialog.ui:26
 msgid "What's New in FSearch"
-msgstr ""
+msgstr "Čo je nové vo FSearch"
 
 #: src/fsearch_welcome_dialog.ui:79
 msgid ""
 "<span size=\"xx-large\" weight=\"bold\">What's New in FSearch 0.3</span>"
 msgstr ""
+"<span size=\"xx-large\" weight=\"bold\">Čo je nové vo FSearch 0.3</span>"
 
 #: src/fsearch_welcome_dialog.ui:149
 msgid "<big><b>File System Monitoring</b></big>"
-msgstr ""
+msgstr "<big><b>Monitorovanie súborového systému</b></big>"
 
 #: src/fsearch_welcome_dialog.ui:163
 msgid ""
@@ -1897,20 +1948,33 @@ msgid ""
 "<a href=\"URL\">https://github.com/cboxdoerfer/fsearch/wiki/Database-update</"
 "a>"
 msgstr ""
+"Teraz môžete aktívne sledovať jednotlivé priečinky, aby ste sa vyhli častému "
+"opakovanému prehľadávaniu. Zmeny súborov sa potom okamžite zobrazia vo "
+"výsledkoch vyhľadávania.\n"
+"\n"
+"Ak chcete povoliť túto funkciu, prejdite do sekcie Databáza v dialógovom "
+"okne Predvoľby.\n"
+"\n"
+"Viac informácií nájdete v online dokumentácii:\n"
+"<a href=\"URL\">https://github.com/cboxdoerfer/fsearch/wiki/Database-update</"
+"a>"
 
 #: src/fsearch_welcome_dialog.ui:232
 msgid "<big><b>Folder-Specific Rescan Schedules</b></big>"
 msgstr ""
+"<big><b>Plány opakovaného prehľadávania pre jednotlivé priečinky</b></big>"
 
 #: src/fsearch_welcome_dialog.ui:246
 msgid ""
 "You can now configure automatic update intervals for individual folders "
 "independently and tailored to each distinct location."
 msgstr ""
+"Teraz môžete nezávisle nastaviť intervaly automatických aktualizácií pre "
+"jednotlivé priečinky a prispôsobiť ich každému konkrétnemu umiestneniu."
 
 #: src/fsearch_welcome_dialog.ui:309
 msgid "<big><b>Improved Exclude Rules</b></big>"
-msgstr ""
+msgstr "<big><b>Vylepšené pravidlá vylúčenia</b></big>"
 
 #: src/fsearch_welcome_dialog.ui:323
 msgid ""
@@ -1919,18 +1983,15 @@ msgid ""
 "Rules can be targeted specifically at files, folders, or both, and can be "
 "configured to match against either the basename or the full absolute path."
 msgstr ""
-
-#: src/fsearch_window.c:749 src/menus.ui:279
-msgid "Size"
-msgstr "Veľkosť"
+"Teraz môžete pomocou zástupných znakov a regulárnych výrazov definovať "
+"účinnejšie pravidlá vylúčenia. \n"
+"Pravidlá možno zacieliť konkrétne na súbory, priečinky alebo oboje a možno "
+"ich nastaviť tak, aby sa porovnávali buď so základným názvom, alebo s úplnou "
+"absolútnou cestou."
 
 #: src/fsearch_window.c:763 src/menus.ui:271
 msgid "Extension"
-msgstr ""
-
-#: src/fsearch_window.c:770 src/menus.ui:283
-msgid "Date Modified"
-msgstr "Dátum zmeny"
+msgstr "Prípona"
 
 #: src/fsearch_window.c:784
 msgid ""
@@ -1939,16 +2000,495 @@ msgid ""
 "This sort order is not persistent, it will be reset when the search term "
 "changes."
 msgstr ""
+"Zoradenie podľa <b>typu</b> môže pri veľkom počte výsledkov trvať niekoľko "
+"sekúnd.\n"
+"\n"
+"Toto poradie zoradenia nie je trvalé a po zmene hľadaného výrazu sa obnoví."
+
+#: src/fsearch_window.ui:304 src/menus.ui:161
+msgid "About"
+msgstr "O aplikácii"
+
+#: src/fsearch_window.ui:329 src/menus.ui:47
+msgid "Quit"
+msgstr "Ukončiť"
+
+#: src/fsearch_window.ui:372 src/fsearch_window.ui:443 src/menus.ui:131
+msgid "Donate"
+msgstr "Prispieť"
+
+#: src/fsearch_window.ui:387 src/menus.ui:142
+msgid "Forum"
+msgstr "Fórum"
+
+#: src/fsearch_window.ui:401 src/menus.ui:146
+msgid "Bug Reports and Feature Requests"
+msgstr "Hlásenia chýb a požiadavky na funkcie"
+
+#: src/fsearch_window.ui:460 src/menus.ui:133
+msgid "GitHub Sponsors"
+msgstr "Sponzori na GitHube"
+
+#: src/fsearch_window.ui:474 src/menus.ui:137
+msgid "PayPal"
+msgstr "PayPal"
+
+#: src/fsearch_window_actions.c:238 src/fsearch_window_actions.c:533
+#: src/fsearch_window_actions.c:580
+msgid "Something went wrong."
+msgstr "Niečo sa pokazilo."
+
+#: src/menus.ui:35
+msgid "Cancel Update"
+msgstr "Zrušiť aktualizáciu"
+
+#: src/menus.ui:62 src/menus.ui:228
+msgid "Cu_t"
+msgstr "Vystri_hnúť"
+
+#: src/menus.ui:213
+msgid "Copy as Text"
+msgstr "Kopírovať ako text"
+
+#: src/menus.ui:223
+msgid "Path + Name"
+msgstr "Cesta + názov"
+
+#: data/io.github.cboxdoerfer.FSearch.desktop.in.in:5
+msgid "A file search application focusing on performance and advanced features"
+msgstr ""
+"Aplikácia na vyhľadávanie súborov zameraná na výkon a pokročilé funkcie"
+
+#: data/io.github.cboxdoerfer.FSearch.desktop.in.in:12
+msgid "File Search Utility"
+msgstr "Nástroj na vyhľadávanie súborov"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:23
+msgid "Exclude certain files and folders"
+msgstr "Vylúčiť určité súbory a priečinky"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:49
+msgid "search"
+msgstr "vyhľadávanie"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:50
+msgid "fsearch"
+msgstr "fsearch"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:51
+msgid "files"
+msgstr "súbory"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:52
+msgid "folders"
+msgstr "priečinky"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:106
+msgid "New search engine"
+msgstr "Nový vyhľadávací nástroj"
+
+#: src/fsearch.c:330
+msgid "Saving database and config…"
+msgstr "Ukladanie databázy a konfigurácie…"
+
+#: src/fsearch.c:786
+msgid "Open a new application window"
+msgstr "Otvoriť nové okno aplikácie"
+
+#: src/fsearch.c:787
+msgid "Minimize the application window"
+msgstr "Minimalizovať okno aplikácie"
+
+#: src/fsearch.c:789
+msgid "Set the search pattern"
+msgstr "Nastaviť vzor vyhľadávania"
+
+#: src/fsearch.c:790
+msgid "Update the database and exit"
+msgstr "Aktualizovať databázu a skončiť"
+
+#: src/fsearch_database_file.c:1343
+msgid "Loading folders…"
+msgstr "Načítavanie priečinkov…"
+
+#: src/fsearch_database_file.c:1359
+msgid "Loading files…"
+msgstr "Načítavanie súborov…"
+
+#: src/fsearch_database_index_store.c:925 src/fsearch_statusbar.c:73
+#: src/fsearch_statusbar.ui:90
+msgid "Sorting…"
+msgstr "Zoraďovanie…"
+
+#: src/fsearch_database_preferences_widget.c:162
+#: src/fsearch_database_preferences_widget.c:176
+msgid "Select folder"
+msgstr "Vybrať priečinok"
+
+#: src/fsearch_database_preferences_widget.c:167
+#: src/fsearch_database_preferences_widget.c:179
+msgid "_Select"
+msgstr "_Vybrať"
+
+#: src/fsearch_database_preferences_widget.c:414
+msgid "Full Path"
+msgstr "Úplná cesta"
+
+#: src/fsearch_database_preferences_widget.c:434
+msgid "Files & Folders"
+msgstr "Súbory a priečinky"
+
+#: src/fsearch_database_preferences_widget.c:700
+msgid "Match"
+msgstr "Zhoda"
+
+#: src/fsearch_database_preferences_widget.ui:206
+msgid "Stay on one file system"
+msgstr "Zostať na jednom súborovom systéme"
+
+#: src/fsearch_file_utils.c:279
+msgid "Failed to get application information"
+msgstr "Nepodarilo sa získať informácie o aplikácii"
+
+#: src/fsearch_file_utils.c:589
+msgid "Folder"
+msgstr "Priečinok"
+
+#: src/fsearch_filter.c:115
+msgid "Applications"
+msgstr "Aplikácie"
+
+#: src/fsearch_filter_editor.ui:50
+msgid "Name:"
+msgstr "Názov:"
+
+#: src/fsearch_filter_editor.ui:73
+msgid "Search in path"
+msgstr "Hľadať v ceste"
+
+#: src/fsearch_filter_editor.ui:101
+msgid "Match case"
+msgstr "Rozlišovať veľké a malé písmená"
+
+#: src/fsearch_filter_preferences_widget.c:133
+msgid "Add filter"
+msgstr "Pridať filter"
+
+#: src/fsearch_filter_preferences_widget.c:317
+msgid "Query"
+msgstr "Dopyt"
+
+#: src/fsearch_filter_preferences_widget.ui:77
+msgid "Add new filter"
+msgstr "Pridať nový filter"
+
+#: src/fsearch_filter_preferences_widget.ui:95
+msgid "Remove selected filter"
+msgstr "Odstrániť vybraný filter"
+
+#: src/fsearch_filter_preferences_widget.ui:113
+msgid "Edit selected filter"
+msgstr "Upraviť vybraný filter"
+
+#: src/fsearch_listview_popup.c:163
+msgid "Other Application…"
+msgstr "Iná aplikácia…"
+
+#: src/fsearch_overlay.ui:60
+msgid "Add folders"
+msgstr "Pridať priečinky"
+
+#: src/fsearch_overlay.ui:108
+msgid "Loading Database…"
+msgstr "Načítava sa databáza…"
+
+#: src/fsearch_overlay.ui:123
+msgid "This won't take long."
+msgstr "Nebude to trvať dlho."
+
+#: src/fsearch_overlay.ui:171 src/fsearch_statusbar.ui:312
+msgid "Updating Database…"
+msgstr "Aktualizuje sa databáza…"
+
+#: src/fsearch_overlay.ui:256
+msgid "Press <b>Ctrl + F</b> and start typing."
+msgstr "Stlačte <b>Ctrl + F</b> a začnite písať."
+
+#: src/fsearch_preferences.ui:429
+msgid "Remember sort order"
+msgstr "Zapamätať poradie zoradenia"
+
+#: src/fsearch_preferences.ui:560
+msgid "Show database indexing status"
+msgstr "Zobraziť stav indexovania databázy"
+
+#: src/fsearch_preferences.ui:587
+msgid "Statusbar:"
+msgstr "Stavový riadok:"
+
+#: src/fsearch_preferences.ui:769
+msgid "Match case when query contains at least one upper case character"
+msgstr "Rozlišovať veľkosť písmen, ak dotaz obsahuje aspoň jedno veľké písmeno"
+
+#: src/fsearch_preferences.ui:801
+msgid "Filter:"
+msgstr "Filter:"
+
+#: src/fsearch_preferences.ui:1618 src/fsearch_window.ui:290
+#: src/fsearch_window.ui:415 src/menus.ui:150 src/menus.ui:156
+msgid "Help"
+msgstr "Pomocník"
+
+#: src/fsearch_statusbar.c:58
+#, c-format
+msgid "%'d Item"
+msgstr "%'d položka"
+
+#: src/fsearch_statusbar.c:175
+msgid "Loading…"
+msgstr "Načítava sa…"
+
+#: src/fsearch_statusbar.ui:228
+msgid "Number of selected folders"
+msgstr "Počet vybratých priečinkov"
+
+#: src/fsearch_statusbar.ui:253
+msgid "Number of selected files"
+msgstr "Počet vybratých súborov"
+
+#: src/fsearch_statusbar.ui:328 src/fsearch_window.ui:103
+msgid "Cancel database update"
+msgstr "Zrušiť aktualizáciu databázy"
+
+#: src/fsearch_statusbar.ui:369
+msgid "Number of database items"
+msgstr "Počet položiek databázy"
 
 #: src/fsearch_window.ui:68
-#, fuzzy
 msgid "New window"
 msgstr "Nové okno"
 
 #: src/fsearch_window.ui:89
-#, fuzzy
 msgid "Update database"
 msgstr "Aktualizovať databázu"
+
+#: src/fsearch_window.ui:275 src/fsearch_window.ui:356 src/menus.ui:129
+msgid "FSearch Online"
+msgstr "FSearch online"
+
+#: src/fsearch_window.ui:586
+msgid "Search…"
+msgstr "Hľadať…"
+
+#: src/fsearch_window_actions.c:110
+#, c-format
+msgid "Do you really want to open %'d file?"
+msgid_plural "Do you really want to open %'d files?"
+msgstr[0] "Naozaj chcete otvoriť %'d súbor?"
+msgstr[1] "Naozaj chcete otvoriť %'d súbory?"
+msgstr[2] "Naozaj chcete otvoriť %'d súborov?"
+
+#: src/fsearch_window_actions.c:115
+msgid "Opening Files…"
+msgstr "Otvárajú sa súbory…"
+
+#: src/fsearch_window_actions.c:198
+#, c-format
+msgid "Do you really want to remove %'d file?"
+msgid_plural "Do you really want to remove %'d files?"
+msgstr[0] "Naozaj chcete odstrániť %'d súbor?"
+msgstr[1] "Naozaj chcete odstrániť %'d súbory?"
+msgstr[2] "Naozaj chcete odstrániť %'d súborov?"
+
+#: src/fsearch_window_actions.c:205
+msgid "Deleting files…"
+msgstr "Odstraňovanie súborov…"
+
+#: src/fsearch_window_actions.c:205
+msgid "Moving files to trash…"
+msgstr "Presúvanie súborov do koša…"
+
+#: src/fsearch_window_actions.c:263
+#, c-format
+msgid "Do you really want to open %'d file property window?"
+msgid_plural "Do you really want to open %'d file property windows?"
+msgstr[0] "Naozaj chcete otvoriť %'d okno vlastností súboru?"
+msgstr[1] "Naozaj chcete otvoriť %'d okná vlastností súborov?"
+msgstr[2] "Naozaj chcete otvoriť %'d okien vlastností súborov?"
+
+#: src/fsearch_window_actions.c:270
+msgid "Opening file properties…"
+msgstr "Otváranie vlastností súborov…"
+
+#: src/menus.ui:42
+msgid "Close Window"
+msgstr "Zavrieť okno"
+
+#: src/menus.ui:69
+msgid "Select All"
+msgstr "Vybrať všetko"
+
+#: data/io.github.cboxdoerfer.FSearch.desktop.in.in:4 src/main.c:36
+msgid "FSearch"
+msgstr "FSearch"
+
+#: src/fsearch.c:183
+msgid "A search utility focusing on performance and advanced features"
+msgstr "Program na vyhľadávanie súborov zameraný na výkon a pokročilé funkcie"
+
+#: src/fsearch_database_preferences_widget.c:436 src/fsearch_filter.c:114
+msgid "Files"
+msgstr "Súbory"
+
+#: src/fsearch_database_preferences_widget.c:438 src/fsearch_filter.c:113
+msgid "Folders"
+msgstr "Priečinky"
+
+#: src/fsearch_database_preferences_widget.c:694 src/fsearch_window.c:756
+#: src/menus.ui:275
+msgid "Type"
+msgstr "Typ"
+
+#: src/fsearch_database_preferences_widget.c:864 src/fsearch_window.c:742
+#: src/menus.ui:219 src/menus.ui:267
+msgid "Path"
+msgstr "Umiestnenie"
+
+#: src/fsearch_database_preferences_widget.ui:418
+msgid "Include"
+msgstr "Zahrnúť"
+
+#: src/fsearch_database_preferences_widget.ui:541
+msgid "Exclude hidden files and folders"
+msgstr "Vylúčiť skryté súbory a priečinky"
+
+#: src/fsearch_database_preferences_widget.ui:563
+msgid "Exclude"
+msgstr "Vylúčiť"
+
+#: src/fsearch_filter.c:112
+msgid "All"
+msgstr "Všetky"
+
+#: src/fsearch_filter_preferences_widget.c:315 src/fsearch_window.c:735
+#: src/menus.ui:215 src/menus.ui:263
+msgid "Name"
+msgstr "Názov"
+
+#: src/fsearch_overlay.ui:44
+msgid "Empty Database"
+msgstr "Vyprázdniť databázu"
+
+#: src/fsearch_overlay.ui:186 src/fsearch_overlay.ui:383
+msgid "This may take a while."
+msgstr "Môže to chvíľu trvať."
+
+#: src/fsearch_overlay.ui:241
+msgid "Empty Query"
+msgstr "Žiadna požiadavka na vyhľadanie"
+
+#: src/fsearch_overlay.ui:304
+msgid "No Results Found"
+msgstr "Nič nenájdené"
+
+#: src/fsearch_overlay.ui:319
+msgid "Try a different search"
+msgstr "Skúste iné vyhľadávanie"
+
+#: src/fsearch_preferences.ui:7 src/fsearch_window.ui:251 src/menus.ui:84
+msgid "Preferences"
+msgstr "Nastavenia"
+
+#: src/fsearch_preferences.ui:76
+msgid "Enable dark theme"
+msgstr "Povoliť tmavú tému"
+
+#: src/fsearch_preferences.ui:117
+msgid "Use binary units instead of decimal units"
+msgstr "Používať binárne jednotky namiesto desatinných jednotiek"
+
+#: src/fsearch_preferences.ui:138
+msgid "Remember window size"
+msgstr "Zapamätať veľkosť okna"
+
+#: src/fsearch_preferences.ui:366
+msgid "Show tooltips"
+msgstr "Zobraziť tipy"
+
+#: src/fsearch_preferences.ui:387
+msgid "Show icons in name column"
+msgstr "Zobraziť ikony v stĺpci s názvami"
+
+#: src/fsearch_preferences.ui:408
+msgid "Remember column configuration"
+msgstr "Zapamätať nastavenie stĺpcov"
+
+#: src/fsearch_preferences.ui:692
+msgid "Interface"
+msgstr "Rozhranie"
+
+#: src/fsearch_preferences.ui:711
+msgid "Search in path when query contains path separators"
+msgstr ""
+"Vyhľadávať v umiestnení, ak požiadavka na vyhľadanie obsahuje oddeľovače "
+"ciest"
+
+#: src/fsearch_preferences.ui:730
+msgid "Search as you type"
+msgstr "Vyhľadávať počas písania"
+
+#: src/fsearch_preferences.ui:750
+msgid "Hide results when search is empty"
+msgstr "Skryť výsledky pri prázdnej požiadavke na vyhľadanie"
+
+#: src/fsearch_preferences.ui:822 src/fsearch_window.ui:639
+msgid "Search"
+msgstr "Vyhľadávanie"
+
+#: src/fsearch_preferences_dialog.c:238
+msgid "Database"
+msgstr "Databáza"
+
+#: src/fsearch_statusbar.c:58 src/fsearch_statusbar.c:186
+#, c-format
+msgid "%'d Items"
+msgstr "Počet položiek: %'d"
+
+#: src/fsearch_statusbar.ui:52
+msgid "Number of Search Results"
+msgstr "Počet výsledkov vyhľadávania"
+
+#: src/fsearch_statusbar.ui:53
+msgid "0 Items"
+msgstr "0 položiek"
+
+#: src/fsearch_statusbar.ui:229 src/fsearch_statusbar.ui:254
+msgid "0/0"
+msgstr "0/0"
+
+#: src/fsearch_statusbar.ui:370
+msgid "(empty)"
+msgstr "(prázdne)"
+
+#: src/fsearch_statusbar.ui:438 src/fsearch_statusbar.ui:491
+msgid "CASE"
+msgstr "VEĽKÉ A MALÉ PÍSMENÁ"
+
+#: src/fsearch_statusbar.ui:545 src/fsearch_statusbar.ui:598
+msgid "PATH"
+msgstr "UMIESTNENIE"
+
+#: src/fsearch_statusbar.ui:651
+msgid "REGEX"
+msgstr "REGULÁRNE VÝRAZY"
+
+#: src/fsearch_window.c:749 src/menus.ui:279
+msgid "Size"
+msgstr "Veľkosť"
+
+#: src/fsearch_window.c:770 src/menus.ui:283
+msgid "Date Modified"
+msgstr "Dátum zmeny"
 
 #: src/fsearch_window.ui:144 src/menus.ui:112
 msgid "Search in Path"
@@ -1974,96 +2514,9 @@ msgstr "Zobraziť filter"
 msgid "Show Search Button"
 msgstr "Zobraziť tlačidlo vyhľadávania"
 
-#: src/fsearch_window.ui:275 src/fsearch_window.ui:356 src/menus.ui:129
-#, fuzzy
-msgid "FSearch Online"
-msgstr "FSearch"
-
-#: src/fsearch_window.ui:304 src/menus.ui:161
-msgid "About"
-msgstr ""
-
-#: src/fsearch_window.ui:329 src/menus.ui:47
-msgid "Quit"
-msgstr ""
-
-#: src/fsearch_window.ui:372 src/fsearch_window.ui:443 src/menus.ui:131
-msgid "Donate"
-msgstr ""
-
-#: src/fsearch_window.ui:387 src/menus.ui:142
-msgid "Forum"
-msgstr ""
-
-#: src/fsearch_window.ui:401 src/menus.ui:146
-msgid "Bug Reports and Feature Requests"
-msgstr ""
-
-#: src/fsearch_window.ui:460 src/menus.ui:133
-msgid "GitHub Sponsors"
-msgstr ""
-
-#: src/fsearch_window.ui:474 src/menus.ui:137
-msgid "PayPal"
-msgstr ""
-
-#: src/fsearch_window.ui:586
-#, fuzzy
-msgid "Search…"
-msgstr "Vyhľadávanie"
-
 #: src/fsearch_window.ui:608
 msgid "Select a Filter"
 msgstr "Vybrať filter"
-
-#: src/fsearch_window_actions.c:110
-#, fuzzy, c-format
-msgid "Do you really want to open %'d file?"
-msgid_plural "Do you really want to open %'d files?"
-msgstr[0] "Naozaj chcete odstrániť"
-msgstr[1] "Naozaj chcete odstrániť"
-msgstr[2] "Naozaj chcete odstrániť"
-
-#: src/fsearch_window_actions.c:115
-#, fuzzy
-msgid "Opening Files…"
-msgstr "Otvoriť súbor(y)"
-
-#: src/fsearch_window_actions.c:198
-#, fuzzy, c-format
-msgid "Do you really want to remove %'d file?"
-msgid_plural "Do you really want to remove %'d files?"
-msgstr[0] "Naozaj chcete odstrániť"
-msgstr[1] "Naozaj chcete odstrániť"
-msgstr[2] "Naozaj chcete odstrániť"
-
-#: src/fsearch_window_actions.c:205
-#, fuzzy
-msgid "Deleting files…"
-msgstr "Vymazávanie súborov..."
-
-#: src/fsearch_window_actions.c:205
-#, fuzzy
-msgid "Moving files to trash…"
-msgstr "Presúvanie súborov do koša..."
-
-#: src/fsearch_window_actions.c:238 src/fsearch_window_actions.c:533
-#: src/fsearch_window_actions.c:580
-msgid "Something went wrong."
-msgstr ""
-
-#: src/fsearch_window_actions.c:263
-#, fuzzy, c-format
-msgid "Do you really want to open %'d file property window?"
-msgid_plural "Do you really want to open %'d file property windows?"
-msgstr[0] "Naozaj chcete odstrániť"
-msgstr[1] "Naozaj chcete odstrániť"
-msgstr[2] "Naozaj chcete odstrániť"
-
-#: src/fsearch_window_actions.c:270
-#, fuzzy
-msgid "Opening file properties…"
-msgstr "Otvoriť súbor(y)"
 
 #: src/menus.ui:6
 msgid "_File"
@@ -2085,15 +2538,6 @@ msgstr "Otvoriť priečinok"
 msgid "Update Database"
 msgstr "Aktualizovať databázu"
 
-#: src/menus.ui:35
-msgid "Cancel Update"
-msgstr ""
-
-#: src/menus.ui:42
-#, fuzzy
-msgid "Close Window"
-msgstr "Nové okno"
-
 #: src/menus.ui:54
 msgid "_Edit"
 msgstr "_Upraviť"
@@ -2101,15 +2545,6 @@ msgstr "_Upraviť"
 #: src/menus.ui:57 src/menus.ui:207
 msgid "_Copy"
 msgstr "_Kopírovať"
-
-#: src/menus.ui:62 src/menus.ui:228
-msgid "Cu_t"
-msgstr ""
-
-#: src/menus.ui:69
-#, fuzzy
-msgid "Select All"
-msgstr "Zrušiť výber všetkých"
 
 #: src/menus.ui:74
 msgid "Deselect All"
@@ -2138,14 +2573,6 @@ msgstr "Otvoriť _s"
 #: src/menus.ui:191
 msgid "_Open Folder"
 msgstr "_Otvoriť priečinok"
-
-#: src/menus.ui:213
-msgid "Copy as Text"
-msgstr ""
-
-#: src/menus.ui:223
-msgid "Path + Name"
-msgstr ""
 
 #: src/menus.ui:236
 msgid "Move to _Trash"
