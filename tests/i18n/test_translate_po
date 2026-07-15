@@ -12,11 +12,13 @@ ollama_env_catalog="$tmp_dir/ollama-env-catalog.po"
 ollama_error_catalog="$tmp_dir/ollama-error-catalog.po"
 ollama_retry_catalog="$tmp_dir/ollama-retry-catalog.po"
 ollama_retry_exhausted_catalog="$tmp_dir/ollama-retry-exhausted-catalog.po"
+ollama_header_catalog="$tmp_dir/ollama-header-catalog.po"
 ollama_batch_catalog="$tmp_dir/ollama-batch-catalog.po"
 ollama_batch_one="$tmp_dir/ollama-batch-one.po"
 ollama_batch_two="$tmp_dir/ollama-batch-two.po"
 partial="$tmp_dir/partial.po"
 complete="$tmp_dir/complete.po"
+header_changed="$tmp_dir/header-changed.po"
 multiline_catalog="$tmp_dir/multiline.po"
 multiline_partial="$tmp_dir/multiline-partial.po"
 format_catalog="$tmp_dir/format.po"
@@ -85,6 +87,7 @@ cp "$catalog" "$ollama_env_catalog"
 cp "$catalog" "$ollama_error_catalog"
 cp "$catalog" "$ollama_retry_catalog"
 cp "$catalog" "$ollama_retry_exhausted_catalog"
+cp "$catalog" "$ollama_header_catalog"
 
 header "$catalog" >"$partial"
 printf '%s\n' \
@@ -98,6 +101,8 @@ printf '%s\n' \
 	'' \
 	'msgid "two"' \
 	'msgstr "TWO"' >>"$complete"
+
+sed 's/Content-Transfer-Encoding: 8bit/Content-Transfer-Encoding: changed/' "$complete" >"$header_changed"
 
 printf '%s\n' \
 	'msgid ""' \
@@ -430,6 +435,19 @@ elif [[ "$output" != *'retrying after validation failure'* ]]; then
 	fail "retried an invalid Ollama translation without an actionable status: $output"
 elif msgattrib --untranslated --no-obsolete "$ollama_retry_catalog" | awk '/^msgid / { found = 1 } END { exit found ? 0 : 1 }'; then
 	fail 'left an untranslated entry after retrying an invalid Ollama response'
+fi
+
+ollama_header_count_file="$tmp_dir/ollama-header-count"
+output=$(env -u OPENAI_API_KEY FAKE_OLLAMA_URL=http://127.0.0.1:11434 \
+	FAKE_OLLAMA_COUNT_FILE="$ollama_header_count_file" FAKE_TRANSLATION="$header_changed" \
+	PATH="$fake_ollama_bin:$PATH" bash "$translator" --apply --backend ollama "$ollama_header_catalog" 2>&1)
+rc=$?
+if [ "$rc" -ne 0 ]; then
+	fail "did not restore the immutable source header after an Ollama response changed it: $output"
+elif [ "$(cat "$ollama_header_count_file")" -ne 1 ]; then
+	fail "used $(cat "$ollama_header_count_file") Ollama requests for a header-only mutation instead of one"
+elif ! cmp -s <(header "$catalog") <(header "$ollama_header_catalog"); then
+	fail 'did not restore the exact source header after an Ollama response changed it'
 fi
 
 before=$(sha256sum "$ollama_retry_exhausted_catalog" | awk '{ print $1 }')

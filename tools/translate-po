@@ -33,6 +33,26 @@ header() {
 	' "$1"
 }
 
+restore_source_header() {
+	local source=$1
+	local translated=$2
+	local restored=$3
+
+	{
+		header "$source"
+		awk '
+			/^msgid ""$/ && !saw_header { saw_header = 1; next }
+			!saw_header { next }
+			saw_header && !saw_body {
+				if (/^$/)
+					saw_body = 1
+				next
+			}
+			saw_body { print }
+		' "$translated"
+	} >"$restored"
+}
+
 count_messages() {
 	awk '
 		/^msgid / {
@@ -525,6 +545,7 @@ while IFS= read -r batch; do
 	stream_file="$tmp_dir/stream-$batch_number.sse"
 	event_file="$tmp_dir/events-$batch_number.ndjson"
 	response_text="$tmp_dir/response-$batch_number.json"
+	raw_batch_translation="$tmp_dir/raw-translation-$batch_number.po"
 	batch_translation="$tmp_dir/translation-$batch_number.po"
 	batch_reconciled="$tmp_dir/reconciled-$batch_number.po"
 	batch_cleaned="$translated_dir/batch-$batch_number.po"
@@ -648,7 +669,7 @@ while IFS= read -r batch; do
 			fi
 			if ! jq -rj 'select(.type == "response.output_text.delta") | .delta' "$event_file" >"$response_text" \
 				|| [ ! -s "$response_text" ] \
-				|| ! jq -er '.po' "$response_text" >"$batch_translation"; then
+				|| ! jq -er '.po' "$response_text" >"$raw_batch_translation"; then
 				printf 'translate-po: API stream did not contain a structured PO translation for batch %s\n' "$batch_number" >&2
 				exit 1
 			fi
@@ -689,12 +710,17 @@ while IFS= read -r batch; do
 			fi
 			if ! jq -rj 'select(.message.content? != null) | .message.content' "$event_file" >"$response_text" \
 				|| [ ! -s "$response_text" ] \
-				|| ! jq -er '.po' "$response_text" >"$batch_translation"; then
+				|| ! jq -er '.po' "$response_text" >"$raw_batch_translation"; then
 				printf 'translate-po: Ollama stream did not contain a structured PO translation for batch %s\n' "$batch_number" >&2
 				exit 1
 			fi
 			;;
-	esac
+		esac
+
+		if ! restore_source_header "$catalog" "$raw_batch_translation" "$batch_translation"; then
+			printf 'translate-po: could not restore the immutable source header for batch %s\n' "$batch_number" >&2
+			exit 1
+		fi
 
 		validation_failed=false
 		if ! diff -u <(header "$catalog") <(header "$batch_translation") >/dev/null; then
