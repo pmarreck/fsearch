@@ -19,312 +19,337 @@ msgstr ""
 
 #: data/io.github.cboxdoerfer.FSearch.desktop.in.in:4 src/main.c:36
 msgid "FSearch"
-msgstr ""
+msgstr "FSearch"
 
 #: data/io.github.cboxdoerfer.FSearch.desktop.in.in:5
 msgid "A file search application focusing on performance and advanced features"
 msgstr ""
+"Jõudlusele ja täiustatud funktsioonidele keskenduv failiotsingurakendus"
 
 #: data/io.github.cboxdoerfer.FSearch.desktop.in.in:10
 msgid "search;fsearch;files;folders;music;video;documents;find;tool;everything;"
-msgstr ""
+msgstr "otsing;fsearch;failid;kaustad;muusika;video;dokumendid;otsi;tööriist;kõik;"
 
 #: data/io.github.cboxdoerfer.FSearch.desktop.in.in:12
 msgid "File Search Utility"
-msgstr ""
+msgstr "Failiotsingu tööriist"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:8
 msgid "A graphical file search application"
-msgstr ""
+msgstr "Graafiline failiotsingurakendus"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:10
 msgid ""
 "FSearch helps you to find files and folders as easy and fast as possible. "
 "Just type a few letters and search results will appear almost instantly."
 msgstr ""
+"FSearch aitab teil faile ja kaustu võimalikult lihtsalt ja kiiresti leida. "
+"Sisestage vaid mõni täht ning otsingutulemused ilmuvad peaaegu kohe."
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:14
 msgid ""
 "There are a lot of features which make searching as efficient and powerful "
 "as possible. Such as:"
 msgstr ""
+"Rakendusel on palju funktsioone, mis muudavad otsimise võimalikult tõhusaks "
+"ja võimsaks. Näiteks:"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:19
 msgid ""
 "Ignore case (e.g. searching for \"<code>fsearch</code>\" will match "
 "\"FSearch\" as well)"
 msgstr ""
+"Tähesuuruse eiramine (nt otsing \"<code>fsearch</code>\" leiab ka "
+"\"FSearch\")"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:20
 msgid "Regular expressions"
-msgstr ""
+msgstr "Regulaaravaldised"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:21
 msgid "Wildcard support"
-msgstr ""
+msgstr "Metamärkide tugi"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:22
 msgid "Filter support (e.g. only search for audio files)"
-msgstr ""
+msgstr "Filtrite tugi (nt ainult helifailide otsimine)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:23
 msgid "Exclude certain files and folders"
-msgstr ""
+msgstr "Teatud failide ja kaustade välistamine"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:24
 msgid "Fast sort by name, path, size, modification time and extension"
-msgstr ""
+msgstr "Kiire sortimine nime, asukoha, suuruse, muutmisaja ja laiendi järgi"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:26
 msgid ""
 "<em>Note:</em> Due to Flatpak's sandboxing, FSearch can't find every file on "
 "your system."
 msgstr ""
+"<em>Märkus:</em> Flatpaki liivakastipiirangute tõttu ei leia FSearch kõiki "
+"süsteemis olevaid faile."
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:35
 msgid "The default UI layout"
-msgstr ""
+msgstr "Vaikimisi kasutajaliidese paigutus"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:41
 msgid "A layout more closely following GNOME HIGs"
-msgstr ""
+msgstr "GNOME-i kasutajaliidese juhistele täpsemalt vastav paigutus"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:49
 msgid "search"
-msgstr ""
+msgstr "otsing"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:50
 msgid "fsearch"
-msgstr ""
+msgstr "fsearch"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:51
 msgid "files"
-msgstr ""
+msgstr "failid"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:52
 msgid "folders"
-msgstr ""
+msgstr "kaustad"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:53
 msgid "music"
-msgstr ""
+msgstr "muusika"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:54
 msgid "video"
-msgstr ""
+msgstr "video"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:55
 msgid "documents"
-msgstr ""
+msgstr "dokumendid"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:56
 msgid "find"
-msgstr ""
+msgstr "otsi"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:57
 msgid "tool"
-msgstr ""
+msgstr "tööriist"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:58
 msgid "everything"
-msgstr ""
+msgstr "kõik"
 
 #. Kept for appstreamcli < 1.0 (e.g. Ubuntu 20.04/22.04 PPA builds), which doesn't know <developer>.
 #. Translators: please do NOT translate this.
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:77
 msgid "Christian Boxdörfer"
-msgstr ""
+msgstr "Christian Boxdörfer"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:89
 msgid "DB rewrite"
-msgstr ""
+msgstr "Andmebaasi ümberkirjutamine"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:90
 msgid "DB: Add support for filesystem monitoring"
-msgstr ""
+msgstr "Andmebaas: failisüsteemi jälgimise toe lisamine"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:91
 msgid ""
 "DB: Allow files and folders to be excluded based on fixed patterns, "
 "wildcards or regular expressions"
 msgstr ""
+"Andmebaas: failide ja kaustade välistamise võimaldamine fikseeritud "
+"mustrite, metamärkide või regulaaravaldiste alusel"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:92
 msgid ""
 "DB: Allow included folders to be scheduled and scanned after launch "
 "independently"
 msgstr ""
+"DB: võimalda kaasatud kaustu pärast käivitamist sõltumatult ajastada ja "
+"skannida"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:93
 msgid "DB: Make rescanning more efficient"
-msgstr ""
+msgstr "DB: muuda uuesti skannimine tõhusamaks"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:94
 msgid "DB: Store database config in DB file"
-msgstr ""
+msgstr "DB: salvesta andmebaasi konfiguratsioon DB-faili"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:95
 msgid "DB: Add checksum to DB file"
-msgstr ""
+msgstr "DB: lisa DB-failile kontrollsumma"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:96
 msgid "Make icon and file info gathering asynchronous (no UI blocking)"
 msgstr ""
+"Muuda ikooni- ja failiteabe kogumine asünkroonseks (kasutajaliides ei "
+"blokeeru)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:97
 msgid "Reduce memory usage"
-msgstr ""
+msgstr "Vähenda mälukasutust"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:98
 msgid "Add contextual help for all preferences"
-msgstr ""
+msgstr "Lisa kõigile eelistustele kontekstitundlik abi"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:99
 msgid "Numerous bug fixes and stability and performance improvements"
-msgstr ""
+msgstr "Arvukad veaparandused ning stabiilsuse ja jõudluse täiustused"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:106
 msgid "New search engine"
-msgstr ""
+msgstr "Uus otsingumootor"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:107
 msgid "Greatly improved highlighting of search terms"
-msgstr ""
+msgstr "Otsinguterminite esiletõstmist on oluliselt täiustatud"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:108
 msgid "Custom filters"
-msgstr ""
+msgstr "Kohandatud filtrid"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:109
 msgid "Improved sort performance"
-msgstr ""
+msgstr "Täiustatud sortimisjõudlus"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:110
 msgid "Improved scroll performance"
-msgstr ""
+msgstr "Täiustatud kerimisjõudlus"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:111
 msgid "Remember file selection after a database update"
-msgstr ""
+msgstr "Failivaliku säilitamine pärast andmebaasi uuendamist"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:112
 msgid "Automatically scroll the result list in rubberband selection mode"
-msgstr ""
+msgstr "Tulemuste loendi automaatne kerimine kummipaelvaliku režiimis"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:113
 msgid "Invert selection with rubber band when 'Ctrl' is pressed"
-msgstr ""
+msgstr "Kummipaelvaliku ümberpööramine klahvi „Ctrl“ vajutamisel"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:114
 msgid "Focus search entry when the main window gets activated"
-msgstr ""
+msgstr "Otsinguvälja fookustamine põhiakna aktiveerimisel"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:115
 msgid "Add filter for applications (i.e. .desktop files)"
-msgstr ""
+msgstr "Rakenduste filtri lisamine (st .desktop failide jaoks)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:116
 msgid ""
 "Add option to launch applications directly instead of opening the .desktop "
 "files"
 msgstr ""
+"Rakenduste otsekäivitamise võimaluse lisamine .desktop failide avamise asemel"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:117
 msgid "Show application icons for .desktop files"
-msgstr ""
+msgstr "Rakenduste ikoonide kuvamine .desktop failide puhul"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:118
 msgid "Add .odp and .ods files to document filter"
-msgstr ""
+msgstr "Lisa .odp- ja .ods-failid dokumendifiltrisse"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:119
 msgid ""
 "'Open with' menu now only shows applications which can handle the selected "
 "files"
 msgstr ""
+"Menüü „Ava rakendusega“ näitab nüüd ainult rakendusi, mis suudavad valitud "
+"faile töödelda"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:120
 msgid ""
 "Improved opening of multiple files with the same type (they get now passed "
 "as a list to applications, instead of one by one)"
 msgstr ""
+"Täiustatud mitme sama tüüpi faili avamist (nüüd edastatakse need "
+"rakendustele ükshaaval saatmise asemel loendina)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:121
 msgid "Better support for opening files in sandboxed mode"
-msgstr ""
+msgstr "Parem tugi failide avamiseks liivakastirežiimis"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:122
 msgid ""
 "Add menu items with links to the issue tracker, forum and donation pages"
 msgstr ""
+"Lisa menüüelemendid linkidega veajälgijale, foorumile ja annetuslehtedele"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:123
 msgid "Improve support for non-Linux systems"
-msgstr ""
+msgstr "Täiusta muude süsteemide kui Linuxi tuge"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:124
 msgid ""
 "Add option to exit FSearch when Escape is pressed instead of minimizing the "
 "window"
 msgstr ""
+"Lisa võimalus akna minimeerimise asemel Escape'i vajutamisel FSearchist "
+"väljuda"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:125
 msgid "Exclude '/proc' and '/sys' by default"
-msgstr ""
+msgstr "Välista vaikimisi '/proc' ja '/sys'"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:126
 msgid "Open context menu when 'Menu' key or 'Shift + F10' are pressed"
-msgstr ""
+msgstr "Ava kontekstimenüü klahvi 'Menu' või 'Shift + F10' vajutamisel"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:127
 msgid "and tons of bug fixes, translation updates and smaller improvements"
-msgstr ""
+msgstr "ning hulgaliselt veaparandusi, tõlkeuuendusi ja väiksemaid täiustusi"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:133
 msgid "Initial release."
-msgstr ""
+msgstr "Esialgne väljalase."
 
 #: src/fsearch.c:181
 msgid "translator-credits"
-msgstr ""
+msgstr "Tõlkijad"
 
 #: src/fsearch.c:183
 msgid "A search utility focusing on performance and advanced features"
-msgstr ""
+msgstr "Jõudlusele ja täiustatud funktsioonidele keskenduv otsinguutiliit"
 
 #: src/fsearch.c:330
 msgid "Saving database and config…"
-msgstr ""
+msgstr "Andmebaasi ja seadistuse salvestamine…"
 
 #: src/fsearch.c:786
 msgid "Open a new application window"
-msgstr ""
+msgstr "Ava uus rakenduseaken"
 
 #: src/fsearch.c:787
 msgid "Minimize the application window"
-msgstr ""
+msgstr "Minimeeri rakenduseaken"
 
 #: src/fsearch.c:788
 msgid "Show the application preferences"
-msgstr ""
+msgstr "Näita rakenduse eelistusi"
 
 #: src/fsearch.c:789
 msgid "Set the search pattern"
-msgstr ""
+msgstr "Määra otsingumuster"
 
 #: src/fsearch.c:790
 msgid "Update the database and exit"
-msgstr ""
+msgstr "Uuenda andmebaasi ja välju"
 
 #: src/fsearch.c:791
 msgid "Print version information and exit"
-msgstr ""
+msgstr "Kuva versiooniteave ja välju"
 
 #: src/fsearch.c:883
 msgid ""
 "For command-line search help, run: fsearch --cli --help\n"
 "For shared configuration help, run: fsearch config --help"
 msgstr ""
+"Käsureaotsingu abi saamiseks käivitage: fsearch --cli --help\n"
+"Ühise seadistuse abi saamiseks käivitage: fsearch config --help"
 
 #: src/fsearch_cli.c:125
 #, c-format
@@ -332,22 +357,25 @@ msgid ""
 "Results capped at %u. Use --unlimit or --unlimited to get them all, or "
 "provide a custom --limit, or set FSEARCH_RESULT_LIMIT."
 msgstr ""
+"Tulemuste arv on piiratud väärtusega %u. Kõigi tulemuste saamiseks kasutage "
+"--unlimit või --unlimited, määrake kohandatud --limit või seadke "
+"FSEARCH_RESULT_LIMIT."
 
 #: src/fsearch_cli.c:134
 #, c-format
 msgid "%u match."
 msgid_plural "%u matches."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%u vaste."
+msgstr[1] "%u vastet."
 
 #: src/fsearch_cli.c:142
 msgid "Updating FSearch index before searching..."
-msgstr ""
+msgstr "FSearchi indeksit uuendatakse enne otsimist..."
 
 #: src/fsearch_cli.c:149
 #, c-format
 msgid "Indexing: %s"
-msgstr ""
+msgstr "Indekseeritakse: %s"
 
 #: src/fsearch_cli.c:181
 msgid ""
@@ -393,40 +421,82 @@ msgid ""
 "{png,jpg} selects alternatives; {01..12} is an inclusive numeric range; \\* "
 "matches a literal *.\n"
 msgstr ""
+"Kasutus: fsearch --cli [OPTIONS]\n"
+"\n"
+"Otsib olemasolevast FSearchi indeksist ja väljastab sobivad teed.\n"
+"\n"
+"  -s, --search PATTERN       Otsi FSearchi päringusüntaksiga\n"
+"      --path DIRECTORY        Otsi rekursiivselt DIRECTORY alt (vaikimisi: "
+"praegune kataloog)\n"
+"      --global                Otsi kõigist indekseeritud asukohtadest\n"
+"      --limit COUNT          Väljasta kuni COUNT tulemust\n"
+"      --unlimit, --unlimited Väljasta kõik tulemused\n"
+"  -u, --update-database      Skanni seadistatud indeks uuesti ja välju\n"
+"      --about                Väljasta üherealine koosteteave\n"
+"  -h, --help                 Näita seda abi\n"
+"\n"
+"Seadistamine: fsearch config --help\n"
+"\n"
+"Näited:\n"
+"  fsearch --cli --search invoice              # praegune kataloog\n"
+"  fsearch --cli --path ~/Documents --search invoice\n"
+"  fsearch --cli --global --search invoice\n"
+"  fsearch --cli --search 'file:size:>20mb'\n"
+"  fsearch --cli --search 'ext:jpg;png'\n"
+"  fsearch --cli --search 'path:projects report'\n"
+"  fsearch --cli --search 'report AND ext:pdf'\n"
+"  fsearch --cli --search '(draft OR final) !archive'\n"
+"  fsearch --cli --search 'file:regex:\".+\\.pdf$\"'\n"
+"  fsearch --cli --search 'case:AGENTS'        # tõstutundlik\n"
+"  fsearch --cli --search 'case:regex:\"^AGENTS\\.md$\"'\n"
+"  fsearch --cli --search 'glob:**/*.png'\n"
+"  fsearch --cli --search 'path:glob:**/AGENTS.md'\n"
+"  fsearch --cli --search 'case:glob:AGENTS.md' # tõstutundlik glob\n"
+"\n"
+"Näidetes tähistab tühik operaatorit AND. Proovige file:, folder:, path:, "
+"ext:, size:, dm:, case:, regex: ja glob:.\n"
+"Loogikasüntaks: AND või &&; OR või ||; NOT või !. Sulud rühmitavad "
+"tingimusi.\n"
+"Globi süntaks: * välistab /; ** hõlmab katalooge; ? vastab ühele märgile; [a-"
+"c] on vahemik;\n"
+"Glob otsib vaikimisi teedest; suvalise sügavuse jaoks kasutage **/; "
+"file:glob: otsib failinimedest.\n"
+"{png,jpg} valib alternatiivid; {01..12} on kaasav arvvahemik; \\* vastab "
+"sõnasõnalisele märgile *.\n"
 
 #: src/fsearch_cli.c:238
 #, c-format
 msgid "FSearch %s - indexed file search for %s %s\n"
-msgstr ""
+msgstr "FSearch %s – indekseeritud failiotsing platvormile %s %s\n"
 
 #: src/fsearch_cli.c:301
 msgid "fsearch: interrupted\n"
-msgstr ""
+msgstr "fsearch: katkestatud\n"
 
 #: src/fsearch_cli.c:315
 msgid "fsearch: search could not run because the index is unavailable\n"
-msgstr ""
+msgstr "fsearch: otsingut ei saanud käivitada, sest indeks pole saadaval\n"
 
 #: src/fsearch_cli.c:352 src/fsearch_cli.c:381 src/fsearch_cli_config.c:774
 #: src/fsearch_cli_config.c:961 src/fsearch_cli_config.c:1147
 #, c-format
 msgid "%s\n"
-msgstr ""
+msgstr "%s\n"
 
 #: src/fsearch_cli.c:400
 #, c-format
 msgid "%s"
-msgstr ""
+msgstr "%s"
 
 #: src/fsearch_cli.c:473
 #, c-format
 msgid "fsearch: unknown CLI option: %s\n"
-msgstr ""
+msgstr "fsearch: tundmatu CLI suvand: %s\n"
 
 #: src/fsearch_cli.c:495
 #, c-format
 msgid "fsearch: failed to create data directory: %s\n"
-msgstr ""
+msgstr "fsearch: andmekataloogi loomine ebaõnnestus: %s\n"
 
 #: src/fsearch_cli_config.c:111
 msgid ""
@@ -468,30 +538,79 @@ msgid ""
 "  fsearch config filters add Documents --query 'ext:pdf' --macro docs\n"
 "  fsearch config reset search --yes\n"
 msgstr ""
+"Kasutus: fsearch config COMMAND [OPTIONS]\n"
+"\n"
+"FSearchi ühise GUI ja CLI konfiguratsiooni vaatamine ja muutmine.\n"
+"\n"
+"Konfiguratsioonikäsud:\n"
+"  path                         Konfiguratsioonifaili asukoha kuvamine\n"
+"  show [SECTION] [--json]      Sätete kuvamine\n"
+"  get KEY [--json]             Ühe skalaarse sätte kuvamine\n"
+"  set KEY VALUE                Ühe skalaarse sätte määramine\n"
+"  unset KEY                    Ühe skalaarse sätte vaikeväärtuse taastamine\n"
+"  reset [KEY|SECTION] --yes [--rescan]\n"
+"                               Vaikeväärtuste taastamine\n"
+"  doctor                       Konfiguratsiooni ja indeksi kooskõla "
+"kontrollimine\n"
+"  roots list|add|set|remove    Indekseeritud juurkataloogide haldamine\n"
+"  excludes list|add|remove|hidden\n"
+"                               Indeksist väljajätmiste haldamine\n"
+"  filters list|add|set|remove|reset\n"
+"                               Salvestatud otsingufiltrite haldamine\n"
+"\n"
+"Skalaarväärtustena kasutatakse true/false, kümnendtäisarve või stringe.\n"
+"Iga skalaarvõtme ja selle praeguse väärtuse loetlemiseks käivitage 'fsearch "
+"config show'.\n"
+"Skalaarjaotised: search, application, window, ui, columns, sort, dialogs.\n"
+"Käsurühmade suvandite vaatamiseks kasutage 'fsearch config roots|excludes|"
+"filters --help'.\n"
+"Enne ühiste sätete muutmist sulgege FSearchi GUI.\n"
+"Indeksi muudatused muutuvad otsitavaks järgmisel CLI otsingul või suvandiga "
+"--rescan kohe.\n"
+"Kasutage suvandit --json käskudega show, get ja kogumite loendikäskudega.\n"
+"\n"
+"Näited:\n"
+"  fsearch config show search --json\n"
+"  fsearch config get search.match-case\n"
+"  fsearch config set search.match-case true\n"
+"  fsearch config roots add ~/Code --monitor --one-file-system --rescan\n"
+"  fsearch config excludes add '*.tmp' --type wildcard --scope basename --"
+"target files\n"
+"  fsearch config filters add Documents --query 'ext:pdf' --macro docs\n"
+"  fsearch config reset search --yes\n"
 
 #: src/fsearch_cli_config.c:152
 msgid ""
 "Usage: fsearch config show [SECTION] [--json]\n"
 "Show all scalar settings or one dotted section.\n"
 msgstr ""
+"Kasutus: fsearch config show [SECTION] [--json]\n"
+"Kõigi skalaarsätete või ühe punktidega jaotise kuvamine.\n"
 
 #: src/fsearch_cli_config.c:154
 msgid ""
 "Usage: fsearch config get KEY [--json]\n"
 "Print one typed scalar value. Discover keys with 'fsearch config show'.\n"
 msgstr ""
+"Kasutus: fsearch config get KEY [--json]\n"
+"Ühe tüübitud skalaarväärtuse kuvamine. Võtmete leidmiseks kasutage käsku "
+"'fsearch config show'.\n"
 
 #: src/fsearch_cli_config.c:157
 msgid ""
 "Usage: fsearch config set KEY VALUE\n"
 "Set a boolean, integer, string, or enumerated scalar value.\n"
 msgstr ""
+"Kasutus: fsearch config set KEY VALUE\n"
+"Tõeväärtuse, täisarvu, stringi või loendväärtuse määramine.\n"
 
 #: src/fsearch_cli_config.c:159
 msgid ""
 "Usage: fsearch config unset KEY\n"
 "Restore one scalar setting to its built-in default.\n"
 msgstr ""
+"Kasutus: fsearch config unset KEY\n"
+"Ühe skalaarsätte sisseehitatud vaikeväärtuse taastamine.\n"
 
 #: src/fsearch_cli_config.c:161
 msgid ""
@@ -499,6 +618,9 @@ msgid ""
 "Reset is destructive and requires --yes. --rescan applies to roots, "
 "database, excludes, or all.\n"
 msgstr ""
+"Kasutus: fsearch config reset [KEY|SECTION] --yes [--rescan]\n"
+"Lähtestamine on hävitav ja nõuab suvandit --yes. --rescan rakendub "
+"juurkataloogidele, andmebaasile, väljajätmistele või kõigile.\n"
 
 #: src/fsearch_cli_config.c:164
 msgid ""
@@ -506,6 +628,9 @@ msgid ""
 "Check configuration readability and whether the saved index uses the same "
 "roots and exclusions.\n"
 msgstr ""
+"Kasutus: fsearch config doctor\n"
+"Kontrollib konfiguratsiooni loetavust ning seda, kas salvestatud indeks "
+"kasutab samu juurkatalooge ja väljajätmisi.\n"
 
 #: src/fsearch_cli_config.c:170
 msgid ""
@@ -525,6 +650,23 @@ msgid ""
 "  --rescan-every SECONDS        Set periodic rescan interval; 0 disables it\n"
 "  --rescan                      Rebuild the index immediately after saving\n"
 msgstr ""
+"Kasutus: fsearch config roots COMMAND [PATH] [OPTIONS]\n"
+"\n"
+"Käsud:\n"
+"  list [--json]                Loetle indekseeritud juurkaustad\n"
+"  add PATH [OPTIONS]           Lisa juurkaust\n"
+"  set PATH [OPTIONS]           Muuda olemasolevat juurkausta\n"
+"  remove PATH [--rescan]       Eemalda olemasolev juurkaust\n"
+"\n"
+"Valikute add ja set suvandid:\n"
+"  --active, --inactive\n"
+"  --monitor, --no-monitor\n"
+"  --one-file-system, --no-one-file-system\n"
+"  --scan-after-launch, --no-scan-after-launch\n"
+"  --rescan-every SECONDS        Määra perioodilise uuesti skannimise "
+"intervall; 0 keelab selle\n"
+"  --rescan                      Koosta indeks kohe pärast salvestamist "
+"uuesti\n"
 
 #: src/fsearch_cli_config.c:187
 msgid ""
@@ -544,6 +686,23 @@ msgid ""
 "  --active, --inactive          Add state or removal selector\n"
 "  --rescan                      Rebuild the index immediately after saving\n"
 msgstr ""
+"Kasutus: fsearch config excludes COMMAND [PATTERN|VALUE] [OPTIONS]\n"
+"\n"
+"Käsud:\n"
+"  list [--json]                 Loetle välistused\n"
+"  add PATTERN [OPTIONS]         Lisa välistus\n"
+"  remove PATTERN [OPTIONS]      Eemalda sobiv välistus\n"
+"  hidden [true|false] [--rescan]\n"
+"                                Vaata või muuda peidetud failide "
+"välistamist\n"
+"\n"
+"Valikute add ja remove suvandid:\n"
+"  --type fixed|wildcard|regex   Vaikimisi: fixed\n"
+"  --scope full-path|basename    Vaikimisi: full-path\n"
+"  --target both|files|folders   Vaikimisi: both\n"
+"  --active, --inactive          Lisa oleku- või eemaldamisvalik\n"
+"  --rescan                      Koosta indeks kohe pärast salvestamist "
+"uuesti\n"
 
 #: src/fsearch_cli_config.c:204
 msgid ""
@@ -563,205 +722,230 @@ msgid ""
 "  --path, --no-path             Search full paths\n"
 "  --regex, --no-regex           Treat query as a regular expression\n"
 msgstr ""
+"Kasutus: fsearch config filters COMMAND [NAME] [OPTIONS]\n"
+"\n"
+"Käsud:\n"
+"  list [--json]                 Loetle salvestatud filtrid\n"
+"  add NAME [OPTIONS]            Lisa nimega filter\n"
+"  set NAME [OPTIONS]            Muuda nimega filtrit\n"
+"  remove NAME                   Eemalda nimega filter\n"
+"  reset                         Taasta sisseehitatud filtrid\n"
+"\n"
+"Valikute add ja set suvandid:\n"
+"  --query QUERY                 Salvestatud FSearchi päring\n"
+"  --macro MACRO                 Päringumakro nimi\n"
+"  --case, --no-case             Arvesta tähesuurust\n"
+"  --path, --no-path             Otsi täisteedest\n"
+"  --regex, --no-regex           Käsitle päringut regulaaravaldisena\n"
 
 #: src/fsearch_cli_config.c:265
 msgid ""
 "fsearch config: close the running FSearch GUI before changing shared "
 "settings\n"
 msgstr ""
+"fsearch config: enne ühiste seadete muutmist sulge töötav FSearchi "
+"graafiline kasutajaliides\n"
 
 #: src/fsearch_cli_config.c:269
 msgid "fsearch config: failed to save configuration\n"
-msgstr ""
+msgstr "fsearch config: seadistuse salvestamine nurjus\n"
 
 #: src/fsearch_cli_config.c:280
 msgid "Index configuration changed; the next CLI search will rebuild it.\n"
-msgstr ""
+msgstr "Indeksi seadistus muutus; järgmine CLI-otsing koostab selle uuesti.\n"
 
 #: src/fsearch_cli_config.c:416
 #, c-format
 msgid "fsearch config %s: unknown option: %s\n"
-msgstr ""
+msgstr "fsearch config %s: tundmatu suvand: %s\n"
 
 #: src/fsearch_cli_config.c:422
 #, c-format
 msgid "fsearch config %s: unexpected argument: %s\n"
-msgstr ""
+msgstr "fsearch config %s: ootamatu argument: %s\n"
 
 #: src/fsearch_cli_config.c:449
 msgid "Usage: fsearch config get KEY [--json]\n"
-msgstr ""
+msgstr "Kasutus: fsearch config get KEY [--json]\n"
 
 #: src/fsearch_cli_config.c:454 src/fsearch_cli_config.c:555
 #, c-format
 msgid "fsearch config: unknown setting: %s\n"
-msgstr ""
+msgstr "fsearch config: tundmatu seade: %s\n"
 
 #: src/fsearch_cli_config.c:502
 #, c-format
 msgid "fsearch config show: unknown section: %s\n"
-msgstr ""
+msgstr "fsearch config show: tundmatu jaotis: %s\n"
 
 #: src/fsearch_cli_config.c:550
 #, c-format
 msgid "Usage: fsearch config %s KEY%s\n"
-msgstr ""
+msgstr "Kasutus: fsearch config %s KEY%s\n"
 
 #: src/fsearch_cli_config.c:566
 #, c-format
 msgid "fsearch config: invalid value for %s: %s\n"
-msgstr ""
+msgstr "fsearch config: sobimatu väärtus võtmele %s: %s\n"
 
 #: src/fsearch_cli_config.c:572
 #, c-format
 msgid "%s = %s\n"
-msgstr ""
+msgstr "%s = %s\n"
 
 #: src/fsearch_cli_config.c:637
 #, c-format
 msgid "fsearch config roots: unknown operation: %s\n"
-msgstr ""
+msgstr "fsearch config roots: tundmatu toiming: %s\n"
 
 #: src/fsearch_cli_config.c:691
 msgid "fsearch config roots: --rescan-every requires SECONDS\n"
-msgstr ""
+msgstr "fsearch config roots: --rescan-every nõuab argumenti SECONDS\n"
 
 #: src/fsearch_cli_config.c:710
 msgid "fsearch config roots: missing PATH\n"
-msgstr ""
+msgstr "fsearch config roots: PATH puudub\n"
 
 #: src/fsearch_cli_config.c:717 src/fsearch_cli_config.c:732
 #, c-format
 msgid "fsearch config roots: path not found: %s\n"
-msgstr ""
+msgstr "fsearch config roots: asukohta ei leitud: %s\n"
 
 #: src/fsearch_cli_config.c:724
 #, c-format
 msgid "fsearch config roots: not a directory: %s\n"
-msgstr ""
+msgstr "fsearch config roots: pole kataloog: %s\n"
 
 #: src/fsearch_cli_config.c:728
 #, c-format
 msgid "fsearch config roots: path already exists: %s\n"
-msgstr ""
+msgstr "fsearch config roots: asukoht on juba olemas: %s\n"
 
 #: src/fsearch_cli_config.c:752
 #, c-format
 msgid "fsearch config roots: invalid rescan duration: %s\n"
-msgstr ""
+msgstr "fsearch config roots: sobimatu uuesti skannimise kestus: %s\n"
 
 #: src/fsearch_cli_config.c:765
 msgid ""
 "%s\tactive=%s monitor=%s one-file-system=%s scan-after-launch=%s rescan-"
 "after=%"
 msgstr ""
+"%s\tactive=%s monitor=%s one-file-system=%s scan-after-launch=%s rescan-"
+"after=%"
 
 #: src/fsearch_cli_config.c:844
 msgid "fsearch config excludes hidden: expected true or false\n"
-msgstr ""
+msgstr "fsearch config excludes hidden: oodati väärtust true või false\n"
 
 #: src/fsearch_cli_config.c:850
 #, c-format
 msgid "exclude-hidden = %s\n"
-msgstr ""
+msgstr "exclude-hidden = %s\n"
 
 #: src/fsearch_cli_config.c:856
 #, c-format
 msgid "fsearch config excludes: unknown operation: %s\n"
-msgstr ""
+msgstr "fsearch config excludes: tundmatu toiming: %s\n"
 
 #: src/fsearch_cli_config.c:877
 #, c-format
 msgid "fsearch config excludes: %s requires a value\n"
-msgstr ""
+msgstr "fsearch config excludes: %s nõuab väärtust\n"
 
 #: src/fsearch_cli_config.c:909
 msgid "fsearch config excludes: missing PATTERN\n"
-msgstr ""
+msgstr "fsearch config excludes: PATTERN puudub\n"
 
 #: src/fsearch_cli_config.c:914
 #, c-format
 msgid "fsearch config excludes: invalid type: %s\n"
-msgstr ""
+msgstr "fsearch config excludes: sobimatu tüüp: %s\n"
 
 #: src/fsearch_cli_config.c:919
 #, c-format
 msgid "fsearch config excludes: invalid scope: %s\n"
-msgstr ""
+msgstr "fsearch config excludes: sobimatu ulatus: %s\n"
 
 #: src/fsearch_cli_config.c:924
 #, c-format
 msgid "fsearch config excludes: invalid target: %s\n"
-msgstr ""
+msgstr "fsearch config excludes: sobimatu sihtmärk: %s\n"
 
 #: src/fsearch_cli_config.c:954
 #, c-format
 msgid "fsearch config excludes: exclusion not found: %s\n"
-msgstr ""
+msgstr "fsearch config excludes: välistust ei leitud: %s\n"
 
 #: src/fsearch_cli_config.c:1022
 msgid "filters reset\n"
-msgstr ""
+msgstr "filtrid lähtestati\n"
 
 #: src/fsearch_cli_config.c:1029
 #, c-format
 msgid "fsearch config filters: unknown operation: %s\n"
-msgstr ""
+msgstr "fsearch config filters: tundmatu toiming: %s\n"
 
 #: src/fsearch_cli_config.c:1051
 #, c-format
 msgid "fsearch config filters: %s requires a value\n"
-msgstr ""
+msgstr "fsearch config filters: %s nõuab väärtust\n"
 
 #: src/fsearch_cli_config.c:1094
 msgid "fsearch config filters: missing NAME\n"
-msgstr ""
+msgstr "fsearch config filters: NAME puudub\n"
 
 #: src/fsearch_cli_config.c:1100 src/fsearch_cli_config.c:1111
 #, c-format
 msgid "fsearch config filters: name not found: %s\n"
-msgstr ""
+msgstr "fsearch config filters: nime ei leitud: %s\n"
 
 #: src/fsearch_cli_config.c:1107
 #, c-format
 msgid "fsearch config filters: name already exists: %s\n"
-msgstr ""
+msgstr "fsearch config filters: nimi on juba olemas: %s\n"
 
 #: src/fsearch_cli_config.c:1145
 #, c-format
 msgid "%s\tmacro=%s query=%s\n"
-msgstr ""
+msgstr "%s\tmacro=%s query=%s\n"
 
 #: src/fsearch_cli_config.c:1193
 msgid "fsearch config reset requires --yes\n"
-msgstr ""
+msgstr "fsearch config reset nõuab suvandit --yes\n"
 
 #: src/fsearch_cli_config.c:1201
 msgid ""
 "fsearch config reset: --rescan requires roots, database, excludes, or all\n"
 msgstr ""
+"fsearch config reset: --rescan nõuab väärtust roots, database, excludes või "
+"all\n"
 
 #: src/fsearch_cli_config.c:1241
 #, c-format
 msgid "fsearch config: unknown setting or section: %s\n"
-msgstr ""
+msgstr "fsearch config: tundmatu säte või jaotis: %s\n"
 
 #: src/fsearch_cli_config.c:1246
 #, c-format
 msgid "%s settings reset\n"
-msgstr ""
+msgstr "%s sätted lähtestati\n"
 
 #: src/fsearch_cli_config.c:1253
 msgid ""
 "configuration: missing; defaults active\n"
 "index: unknown\n"
 msgstr ""
+"konfiguratsioon: puudub; vaikesätted on aktiivsed\n"
+"indeks: teadmata\n"
 
 #: src/fsearch_cli_config.c:1261
 msgid ""
 "configuration: ok\n"
 "index: missing or unreadable\n"
 msgstr ""
+"konfiguratsioon: korras\n"
+"indeks: puudub või pole loetav\n"
 
 #: src/fsearch_cli_config.c:1266
 #, c-format
@@ -769,121 +953,125 @@ msgid ""
 "configuration: ok\n"
 "index: %s\n"
 msgstr ""
+"konfiguratsioon: korras\n"
+"indeks: %s\n"
 
 #: src/fsearch_cli_config.c:1266
 msgid "current"
-msgstr ""
+msgstr "ajakohane"
 
 #: src/fsearch_cli_config.c:1266
 msgid "stale"
-msgstr ""
+msgstr "aegunud"
 
 #: src/fsearch_cli_config.c:1278
 msgid ""
 "Usage: fsearch config path\n"
 "Print the active FSearch configuration file path.\n"
 msgstr ""
+"Kasutamine: fsearch config path\n"
+"Kuva aktiivse FSearchi konfiguratsioonifaili tee.\n"
 
 #: src/fsearch_cli_config.c:1321
 #, c-format
 msgid "fsearch config: unknown command: %s\n"
-msgstr ""
+msgstr "fsearch config: tundmatu käsk: %s\n"
 
 #: src/fsearch_database.c:795
 msgid "Index rescan: applying changes…"
-msgstr ""
+msgstr "Indeksi uuesti skannimine: muudatuste rakendamine…"
 
 #: src/fsearch_database_file.c:1343
 msgid "Loading folders…"
-msgstr ""
+msgstr "Kaustade laadimine…"
 
 #: src/fsearch_database_file.c:1359
 msgid "Loading files…"
-msgstr ""
+msgstr "Failide laadimine…"
 
 #: src/fsearch_database_index_store.c:925 src/fsearch_statusbar.c:73
 #: src/fsearch_statusbar.ui:90
 msgid "Sorting…"
-msgstr ""
+msgstr "Sortimine…"
 
 #: src/fsearch_database_preferences_widget.c:162
 #: src/fsearch_database_preferences_widget.c:176
 msgid "Select folder"
-msgstr ""
+msgstr "Vali kaust"
 
 #: src/fsearch_database_preferences_widget.c:165
 #: src/fsearch_database_preferences_widget.c:180
 #: src/fsearch_filter_editor.c:104 src/fsearch_preferences_dialog.c:331
 msgid "_Cancel"
-msgstr ""
+msgstr "_Loobu"
 
 #: src/fsearch_database_preferences_widget.c:167
 #: src/fsearch_database_preferences_widget.c:179
 msgid "_Select"
-msgstr ""
+msgstr "_Vali"
 
 #: src/fsearch_database_preferences_widget.c:389
 msgid "Literal"
-msgstr ""
+msgstr "Literaal"
 
 #: src/fsearch_database_preferences_widget.c:391
 msgid "Wildcard"
-msgstr ""
+msgstr "Metamärk"
 
 #: src/fsearch_database_preferences_widget.c:393
 msgid "Regex"
-msgstr ""
+msgstr "Regulaaravaldis"
 
 #: src/fsearch_database_preferences_widget.c:414
 msgid "Full Path"
-msgstr ""
+msgstr "Täielik asukoht"
 
 #: src/fsearch_database_preferences_widget.c:416
 msgid "Basename"
-msgstr ""
+msgstr "Põhinimi"
 
 #: src/fsearch_database_preferences_widget.c:434
 msgid "Files & Folders"
-msgstr ""
+msgstr "Failid ja kaustad"
 
 #: src/fsearch_database_preferences_widget.c:436 src/fsearch_filter.c:114
 msgid "Files"
-msgstr ""
+msgstr "Failid"
 
 #: src/fsearch_database_preferences_widget.c:438 src/fsearch_filter.c:113
 msgid "Folders"
-msgstr ""
+msgstr "Kaustad"
 
 #: src/fsearch_database_preferences_widget.c:635
 #: src/fsearch_database_preferences_widget.c:860
 msgid "Active"
-msgstr ""
+msgstr "Aktiivne"
 
 #: src/fsearch_database_preferences_widget.c:640
 msgid "Pattern"
-msgstr ""
+msgstr "Muster"
 
 #: src/fsearch_database_preferences_widget.c:694 src/fsearch_window.c:756
 #: src/menus.ui:275
 msgid "Type"
-msgstr ""
+msgstr "Tüüp"
 
 #: src/fsearch_database_preferences_widget.c:700
 msgid "Match"
-msgstr ""
+msgstr "Vaste"
 
 #: src/fsearch_database_preferences_widget.c:706
 msgid "Applies To"
-msgstr ""
+msgstr "Rakendub"
 
 #: src/fsearch_database_preferences_widget.c:864 src/fsearch_window.c:742
 #: src/menus.ui:219 src/menus.ui:267
 msgid "Path"
-msgstr ""
+msgstr "Asukoht"
 
 #: src/fsearch_database_preferences_widget.ui:78
 msgid "Enter path…"
-msgstr ""
+msgstr "Sisesta asukoht…"
 
 #: src/fsearch_database_preferences_widget.ui:97
 #: src/fsearch_database_preferences_widget.ui:372
@@ -892,191 +1080,198 @@ msgid ""
 "                                            database\n"
 "                                        "
 msgstr ""
+"Lisa andmebaasi kaasatav\n"
+"                                            asukoht\n"
+"                                        "
 
 #: src/fsearch_database_preferences_widget.ui:176
 msgid "Attempt to monitor"
-msgstr ""
+msgstr "Proovi jälgida"
 
 #: src/fsearch_database_preferences_widget.ui:191
 msgid "Scan after launch"
-msgstr ""
+msgstr "Skanni pärast käivitamist"
 
 #: src/fsearch_database_preferences_widget.ui:206
 msgid "Stay on one file system"
-msgstr ""
+msgstr "Püsi ühes failisüsteemis"
 
 #: src/fsearch_database_preferences_widget.ui:221
 msgid "Rescan every"
-msgstr ""
+msgstr "Skanni uuesti iga"
 
 #: src/fsearch_database_preferences_widget.ui:254
 msgid "Hours:"
-msgstr ""
+msgstr "Tunnid:"
 
 #: src/fsearch_database_preferences_widget.ui:298
 msgid "Minutes:"
-msgstr ""
+msgstr "Minutid:"
 
 #: src/fsearch_database_preferences_widget.ui:310
 msgid "30"
-msgstr ""
+msgstr "30"
 
 #: src/fsearch_database_preferences_widget.ui:391
 msgid "Remove selected path"
-msgstr ""
+msgstr "Eemalda valitud asukoht"
 
 #: src/fsearch_database_preferences_widget.ui:418
 msgid "Include"
-msgstr ""
+msgstr "Kaasa arvatud"
 
 #: src/fsearch_database_preferences_widget.ui:477
 msgid ""
 "Add exclude rule\n"
 "                                                "
 msgstr ""
+"Lisa välistamisreegel\n"
+"                                                "
 
 #: src/fsearch_database_preferences_widget.ui:495
 msgid ""
 "Remove selected path\n"
 "                                                "
 msgstr ""
+"Eemalda valitud asukoht\n"
+"                                                "
 
 #: src/fsearch_database_preferences_widget.ui:512
 msgid "Restore default exclude list"
-msgstr ""
+msgstr "Taasta vaikimisi välistamisloend"
 
 #: src/fsearch_database_preferences_widget.ui:541
 msgid "Exclude hidden files and folders"
-msgstr ""
+msgstr "Välista peidetud failid ja kaustad"
 
 #: src/fsearch_database_preferences_widget.ui:563
 msgid "Exclude"
-msgstr ""
+msgstr "Välista"
 
 #: src/fsearch_file_utils.c:161
 msgctxt "Will be followed by the path of the file."
 msgid "Error when removing file"
-msgstr ""
+msgstr "Viga faili eemaldamisel"
 
 #: src/fsearch_file_utils.c:163
 msgid "Failed to get path"
-msgstr ""
+msgstr "Asukoha hankimine nurjus"
 
 #: src/fsearch_file_utils.c:277
 msgctxt "Will be followed by the file path."
 msgid "Error when getting information from file"
-msgstr ""
+msgstr "Viga failist teabe hankimisel"
 
 #: src/fsearch_file_utils.c:279
 msgid "Failed to get application information"
-msgstr ""
+msgstr "Rakenduse teabe hankimine nurjus"
 
 #: src/fsearch_file_utils.c:294
 msgctxt "Will be followed by the content type string."
 msgid "Error when getting information for content type"
-msgstr ""
+msgstr "Viga sisutüübi teabe hankimisel"
 
 #: src/fsearch_file_utils.c:296
 msgid "No default application registered"
-msgstr ""
+msgstr "Vaikerakendust pole registreeritud"
 
 #: src/fsearch_file_utils.c:524
 msgctxt "Will be followed by the path of the folder."
 msgid "Error when opening parent folder"
-msgstr ""
+msgstr "Viga ülemkausta avamisel"
 
 #: src/fsearch_file_utils.c:526
 msgid "Failed to get parent path"
-msgstr ""
+msgstr "Ülemkausta asukoha hankimine nurjus"
 
 #: src/fsearch_file_utils.c:530
 msgctxt "Will be followed by the path of the folder."
 msgid "Error while opening folder"
-msgstr ""
+msgstr "Viga kausta avamisel"
 
 #: src/fsearch_file_utils.c:533
 msgid "Failed to build open command"
-msgstr ""
+msgstr "Avamiskäsu koostamine nurjus"
 
 #: src/fsearch_file_utils.c:589
 msgid "Folder"
-msgstr ""
+msgstr "Kaust"
 
 #: src/fsearch_file_utils.c:595
 msgid "Unknown Type"
-msgstr ""
+msgstr "Tundmatu tüüp"
 
 #: src/fsearch_filter.c:112
 msgid "All"
-msgstr ""
+msgstr "Kõik"
 
 #: src/fsearch_filter.c:115
 msgid "Applications"
-msgstr ""
+msgstr "Rakendused"
 
 #: src/fsearch_filter.c:116
 msgid "Archives"
-msgstr ""
+msgstr "Arhiivid"
 
 #: src/fsearch_filter.c:117
 msgid "Audio"
-msgstr ""
+msgstr "Helifailid"
 
 #: src/fsearch_filter.c:118
 msgid "Documents"
-msgstr ""
+msgstr "Dokumendid"
 
 #: src/fsearch_filter.c:119
 msgid "Pictures"
-msgstr ""
+msgstr "Pildid"
 
 #: src/fsearch_filter.c:120
 msgid "Videos"
-msgstr ""
+msgstr "Videod"
 
 #: src/fsearch_filter_editor.c:79
 msgid "Macro names must not contain `:` characters."
-msgstr ""
+msgstr "Makrode nimed ei tohi sisaldada märke `:`."
 
 #: src/fsearch_filter_editor.c:105 src/fsearch_preferences_dialog.c:332
 msgid "_OK"
-msgstr ""
+msgstr "_Olgu"
 
 #: src/fsearch_filter_editor.ui:10 src/fsearch_filter_preferences_widget.c:156
 msgid "Edit filter"
-msgstr ""
+msgstr "Filtri muutmine"
 
 #: src/fsearch_filter_editor.ui:50
 msgid "Name:"
-msgstr ""
+msgstr "Nimi:"
 
 #: src/fsearch_filter_editor.ui:61
 msgid "The unique name of this filter"
-msgstr ""
+msgstr "Selle filtri kordumatu nimi"
 
 #: src/fsearch_filter_editor.ui:64
 msgid "Unique filter name"
-msgstr ""
+msgstr "Filtri kordumatu nimi"
 
 #: src/fsearch_filter_editor.ui:73
 msgid "Search in path"
-msgstr ""
+msgstr "Otsi asukohateest"
 
 #: src/fsearch_filter_editor.ui:87
 msgid "Enable regular expressions"
-msgstr ""
+msgstr "Luba regulaaravaldised"
 
 #: src/fsearch_filter_editor.ui:101
 msgid "Match case"
-msgstr ""
+msgstr "Tõstutundlik"
 
 #: src/fsearch_filter_editor.ui:146
 msgid "Query:"
-msgstr ""
+msgstr "Päring:"
 
 #: src/fsearch_filter_editor.ui:160
 msgid "Macro:"
-msgstr ""
+msgstr "Makro:"
 
 #: src/fsearch_filter_editor.ui:171
 msgid ""
@@ -1084,227 +1279,230 @@ msgid ""
 "search entry by typing its text followed by ':'\n"
 "                "
 msgstr ""
+"Selle filtri makro. Makro võimaldab otsinguväljalt sellele filtrile ligi "
+"pääseda, sisestades selle teksti ja selle järele märgi ':'\n"
+"                "
 
 #: src/fsearch_filter_preferences_widget.c:133
 msgid "Add filter"
-msgstr ""
+msgstr "Lisa filter"
 
 #: src/fsearch_filter_preferences_widget.c:315 src/fsearch_window.c:735
 #: src/menus.ui:215 src/menus.ui:263
 msgid "Name"
-msgstr ""
+msgstr "Nimi"
 
 #: src/fsearch_filter_preferences_widget.c:316
 msgid "Macro"
-msgstr ""
+msgstr "Makro"
 
 #: src/fsearch_filter_preferences_widget.c:317
 msgid "Query"
-msgstr ""
+msgstr "Päring"
 
 #: src/fsearch_filter_preferences_widget.ui:77
 msgid "Add new filter"
-msgstr ""
+msgstr "Lisa uus filter"
 
 #: src/fsearch_filter_preferences_widget.ui:95
 msgid "Remove selected filter"
-msgstr ""
+msgstr "Eemalda valitud filter"
 
 #: src/fsearch_filter_preferences_widget.ui:113
 msgid "Edit selected filter"
-msgstr ""
+msgstr "Muuda valitud filtrit"
 
 #: src/fsearch_filter_preferences_widget.ui:129
 msgid "Restore default filters"
-msgstr ""
+msgstr "Taasta vaikefiltrid"
 
 #: src/fsearch_listview_popup.c:36
 msgid "Properties…"
-msgstr ""
+msgstr "Omadused…"
 
 #: src/fsearch_listview_popup.c:163
 msgid "Other Application…"
-msgstr ""
+msgstr "Muu rakendus…"
 
 #: src/fsearch_overlay.ui:44
 msgid "Empty Database"
-msgstr ""
+msgstr "Tühi andmebaas"
 
 #: src/fsearch_overlay.ui:60
 msgid "Add folders"
-msgstr ""
+msgstr "Lisa kaustu"
 
 #: src/fsearch_overlay.ui:108
 msgid "Loading Database…"
-msgstr ""
+msgstr "Andmebaasi laadimine…"
 
 #: src/fsearch_overlay.ui:123
 msgid "This won't take long."
-msgstr ""
+msgstr "See ei võta kaua aega."
 
 #: src/fsearch_overlay.ui:171 src/fsearch_statusbar.ui:312
 msgid "Updating Database…"
-msgstr ""
+msgstr "Andmebaasi uuendamine…"
 
 #: src/fsearch_overlay.ui:186 src/fsearch_overlay.ui:383
 msgid "This may take a while."
-msgstr ""
+msgstr "See võib veidi aega võtta."
 
 #: src/fsearch_overlay.ui:241
 msgid "Empty Query"
-msgstr ""
+msgstr "Tühi päring"
 
 #: src/fsearch_overlay.ui:256
 msgid "Press <b>Ctrl + F</b> and start typing."
-msgstr ""
+msgstr "Vajuta <b>Ctrl + F</b> ja alusta tippimist."
 
 #: src/fsearch_overlay.ui:304
 msgid "No Results Found"
-msgstr ""
+msgstr "Tulemusi ei leitud"
 
 #: src/fsearch_overlay.ui:319
 msgid "Try a different search"
-msgstr ""
+msgstr "Proovi teistsugust otsingut"
 
 #: src/fsearch_overlay.ui:368
 msgid "Sorting results…"
-msgstr ""
+msgstr "Tulemuste sortimine…"
 
 #: src/fsearch_preferences.ui:7 src/fsearch_window.ui:251 src/menus.ui:84
 msgid "Preferences"
-msgstr ""
+msgstr "Eelistused"
 
 #: src/fsearch_preferences.ui:76
 msgid "Enable dark theme"
-msgstr ""
+msgstr "Luba tume kujundus"
 
 #: src/fsearch_preferences.ui:97
 msgid "Enable client-side decorations (requires restart)"
-msgstr ""
+msgstr "Kliendipoolsete aknakaunistuste lubamine (nõuab taaskäivitamist)"
 
 #: src/fsearch_preferences.ui:117
 msgid "Use binary units instead of decimal units"
-msgstr ""
+msgstr "Kümnendühikute asemel kahendühikute kasutamine"
 
 #: src/fsearch_preferences.ui:138
 msgid "Remember window size"
-msgstr ""
+msgstr "Akna suuruse meeldejätmine"
 
 #: src/fsearch_preferences.ui:159
 msgid "Exit on Escape"
-msgstr ""
+msgstr "Väljumine klahviga Escape"
 
 #: src/fsearch_preferences.ui:202
 msgid "with keyboard shortcuts or menu entries"
-msgstr ""
+msgstr "klaviatuuri otseteede või menüükirjetega"
 
 #: src/fsearch_preferences.ui:223
 msgid "with double click"
-msgstr ""
+msgstr "topeltklõpsuga"
 
 #: src/fsearch_preferences.ui:257
 msgid "Behaviour after successfully opening a file:"
-msgstr ""
+msgstr "Käitumine pärast faili edukat avamist:"
 
 #: src/fsearch_preferences.ui:273
 msgid "Nothing"
-msgstr ""
+msgstr "Mitte midagi"
 
 #: src/fsearch_preferences.ui:274
 msgid "Minimize"
-msgstr ""
+msgstr "Minimeeri"
 
 #: src/fsearch_preferences.ui:275
 msgid "Close"
-msgstr ""
+msgstr "Sulge"
 
 #: src/fsearch_preferences.ui:309
 msgid "General:"
-msgstr ""
+msgstr "Üldine:"
 
 #: src/fsearch_preferences.ui:344
 msgid "Show highlighted search terms"
-msgstr ""
+msgstr "Kuva esiletõstetud otsingusõnad"
 
 #: src/fsearch_preferences.ui:366
 msgid "Show tooltips"
-msgstr ""
+msgstr "Kuva kohtspikrid"
 
 #: src/fsearch_preferences.ui:387
 msgid "Show icons in name column"
-msgstr ""
+msgstr "Kuva nimeveerus ikoonid"
 
 #: src/fsearch_preferences.ui:408
 msgid "Remember column configuration"
-msgstr ""
+msgstr "Jäta veergude seadistus meelde"
 
 #: src/fsearch_preferences.ui:429
 msgid "Remember sort order"
-msgstr ""
+msgstr "Jäta sortimisjärjekord meelde"
 
 #: src/fsearch_preferences.ui:450
 msgid "Open path with double click in path column"
-msgstr ""
+msgstr "Ava asukoht topeltklõpsuga asukohaveerus"
 
 #: src/fsearch_preferences.ui:471
 msgid "Single click to open"
-msgstr ""
+msgstr "Ava ühe klõpsuga"
 
 #: src/fsearch_preferences.ui:492
 msgid "Launch desktop files"
-msgstr ""
+msgstr "Käivita töölauafailid"
 
 #: src/fsearch_preferences.ui:519
 msgid "Results:"
-msgstr ""
+msgstr "Tulemused:"
 
 #: src/fsearch_preferences.ui:560
 msgid "Show database indexing status"
-msgstr ""
+msgstr "Näita andmebaasi indekseerimise olekut"
 
 #: src/fsearch_preferences.ui:587
 msgid "Statusbar:"
-msgstr ""
+msgstr "Olekuriba:"
 
 #: src/fsearch_preferences.ui:628
 msgid "Show warning dialogs when:"
-msgstr ""
+msgstr "Näita hoiatusdialooge, kui:"
 
 #: src/fsearch_preferences.ui:638
 msgid "file / folder failed to open"
-msgstr ""
+msgstr "faili / kausta avamine ebaõnnestus"
 
 #: src/fsearch_preferences.ui:667
 msgid "Dialogs:"
-msgstr ""
+msgstr "Dialoogid:"
 
 #: src/fsearch_preferences.ui:692
 msgid "Interface"
-msgstr ""
+msgstr "Kasutajaliides"
 
 #: src/fsearch_preferences.ui:711
 msgid "Search in path when query contains path separators"
-msgstr ""
+msgstr "Otsi teest, kui päring sisaldab teeeraldajaid"
 
 #: src/fsearch_preferences.ui:730
 msgid "Search as you type"
-msgstr ""
+msgstr "Otsi sisestamise ajal"
 
 #: src/fsearch_preferences.ui:750
 msgid "Hide results when search is empty"
-msgstr ""
+msgstr "Peida tulemused, kui otsing on tühi"
 
 #: src/fsearch_preferences.ui:769
 msgid "Match case when query contains at least one upper case character"
-msgstr ""
+msgstr "Arvesta tõstutundlikkust, kui päring sisaldab vähemalt üht suurtähte"
 
 #: src/fsearch_preferences.ui:801
 msgid "Filter:"
-msgstr ""
+msgstr "Filter:"
 
 #: src/fsearch_preferences.ui:822 src/fsearch_window.ui:639
 msgid "Search"
-msgstr ""
+msgstr "Otsi"
 
 #: src/fsearch_preferences.ui:855
 msgid ""
@@ -1316,6 +1514,14 @@ msgid ""
 "Note that not all system themes provide such a darker variant, therefore "
 "enabling this setting might not have an effect."
 msgstr ""
+"<b>Tumeda teema lubamine:</b>\n"
+"\n"
+"Kui see on lubatud, palutakse süsteemi teemal kasutada rakenduse jaoks "
+"tumedamat kujundust <i>(st tumedad kasutajaliidese elemendid heledal "
+"tekstil)</i>.\n"
+"\n"
+"Arvesta, et kõik süsteemiteemad ei paku tumedamat varianti, mistõttu ei "
+"pruugi selle sätte lubamine mõju avaldada."
 
 #: src/fsearch_preferences.ui:873
 msgid ""
@@ -1329,6 +1535,14 @@ msgid ""
 "This resembles a more traditional UI layout and takes a little bit more "
 "space."
 msgstr ""
+"<b>Kliendipoolsete aknakaunistuste lubamine:</b>\n"
+"\n"
+"Kui see on lubatud, kuvatakse otsinguväli ja peamenüü akna tiitliribal.\n"
+"\n"
+"Kui see on keelatud, kuvatakse peamenüü menüüribana ja otsinguväli selle "
+"all.\n"
+"See sarnaneb traditsioonilisema kasutajaliidese paigutusega ja võtab veidi "
+"rohkem ruumi."
 
 #: src/fsearch_preferences.ui:893
 msgid ""
@@ -1341,6 +1555,14 @@ msgid ""
 "\t• <b>Decimal  units:</b> This refers to decimal SI prefixes <i>(e.g. 1 kB "
 "= 1000 bytes)</i>"
 msgstr ""
+"<b>Kahendühikute kasutamine kümnendühikute asemel:</b>\n"
+"\n"
+"See säte määrab, kuidas failisuurusi kuvatakse.\n"
+"\n"
+"\t• <b>Kahendühikud:</b> need tähistavad kahendpõhiseid IEC eesliiteid "
+"<i>(nt 1 KiB = 1024 baiti)</i>\n"
+"\t• <b>Kümnendühikud:</b> need tähistavad kümnendpõhiseid SI eesliiteid "
+"<i>(nt 1 kB = 1000 baiti)</i>"
 
 #: src/fsearch_preferences.ui:913
 msgid ""
@@ -1352,6 +1574,13 @@ msgid ""
 "Note that some window managers ignore this request and force the window to "
 "have a different size."
 msgstr ""
+"<b>Akna suuruse meeldejätmine:</b>\n"
+"\n"
+"Kui see on lubatud, taastatakse FSearchi akna avamisel eelmise seansi akna "
+"suurus.\n"
+"\n"
+"Arvesta, et mõned aknahaldurid eiravad seda taotlust ja sunnivad aknale "
+"teise suuruse."
 
 #: src/fsearch_preferences.ui:932
 msgid ""
@@ -1369,6 +1598,17 @@ msgid ""
 "\t• <b>keyboard shortcuts or menu entries</b> and/or\n"
 "\t• <b>mouse click</b>"
 msgstr ""
+"<b>Käitumine pärast faili edukat avamist:</b>\n"
+"\n"
+"Kui fail või kaust avati edukalt, saab teha ühe järgmistest toimingutest:\n"
+"\t• <b>Mitte midagi:</b> midagi ei juhtu.\n"
+"                        • <b>Minimeerimine:</b> parajasti valitud FSearchi "
+"aken minimeeritakse.\n"
+"\t• <b>Sulgemine:</b> FSearch suletakse.\n"
+"\n"
+"Saad määrata, kas need toimingud käivitatakse, kui fail avati\n"
+"\t• <b>kiirklahvide või menüükirjete</b> ja/või\n"
+"\t• <b>hiireklõpsu</b> abil"
 
 #: src/fsearch_preferences.ui:956
 msgid ""
@@ -1384,6 +1624,17 @@ msgid ""
 "This also works for regular expressions and wildcard expressions starting or "
 "ending with an asterisk. "
 msgstr ""
+"<b>Esiletõstetud otsinguterminite kuvamine:</b>\n"
+"\n"
+"Kui see on lubatud, tõstetakse otsinguterminid tulemuste vaates esile. "
+"Näiteks kui otsid \"foo\", tõstetakse kõik <i>foo</i> esinemised failide või "
+"kaustade nimedes esile rasvases kirjas:\n"
+"\n"
+"\t<b>foo</b>bar.txt\n"
+"\tfile.<b>foo</b>\n"
+"\n"
+"See toimib ka regulaaravaldiste ning tärniga algavate või lõppevate "
+"metamärgiavaldiste puhul. "
 
 #: src/fsearch_preferences.ui:978
 msgid ""
@@ -1392,6 +1643,10 @@ msgid ""
 "If enabled, the results view will show the full path of the focused file/"
 "folder in a small tooltip window."
 msgstr ""
+"<b>Kohtspikrite kuvamine:</b>\n"
+"\n"
+"Kui see on lubatud, kuvatakse tulemuste vaates fookuses oleva faili või "
+"kausta täielik asukoht väikeses kohtspikriaknas."
 
 #: src/fsearch_preferences.ui:995
 msgid ""
@@ -1399,6 +1654,9 @@ msgid ""
 "\n"
 "If enabled, file/folder icons will be shown in the name column."
 msgstr ""
+"<b>Ikoonide kuvamine nimeveerus:</b>\n"
+"\n"
+"Kui see on lubatud, kuvatakse faili- ja kaustaikoonid nimeveerus."
 
 #: src/fsearch_preferences.ui:1012
 msgid ""
@@ -1408,6 +1666,11 @@ msgid ""
 "session will be restored when you open an FSearch window. This includes the "
 "size and visibility of all columns."
 msgstr ""
+"<b>Veeruseadistuse meeldejätmine:</b>\n"
+"\n"
+"Kui see on lubatud, taastatakse FSearchi akna avamisel eelmise seansi "
+"tulemuste vaate veeruseadistus. See hõlmab kõigi veergude suurust ja "
+"nähtavust."
 
 #: src/fsearch_preferences.ui:1029
 msgid ""
@@ -1416,6 +1679,10 @@ msgid ""
 "If enabled, the sort order of the results view from the previous session "
 "will be restored when you open an FSearch window."
 msgstr ""
+"<b>Sortimisjärjestuse meeldejätmine:</b>\n"
+"\n"
+"Kui see on lubatud, taastatakse FSearchi akna avamisel eelmise seansi "
+"tulemuste vaate sortimisjärjestus."
 
 #: src/fsearch_preferences.ui:1046
 msgid ""
@@ -1423,6 +1690,9 @@ msgid ""
 "\n"
 "If enabled, double clicking in the path column will open the selected path."
 msgstr ""
+"<b>Asukoha avamine topeltklõpsuga asukohaveerus:</b>\n"
+"\n"
+"Kui see on lubatud, avab topeltklõps asukohaveerus valitud asukoha."
 
 #: src/fsearch_preferences.ui:1063
 msgid ""
@@ -1432,6 +1702,11 @@ msgid ""
 "want to select a file/folder while this setting is active, you need to hold "
 "<i>Ctrl</i> at the same time while clicking the file/folder."
 msgstr ""
+"<b>Avamine ühe klõpsuga:</b>\n"
+"\n"
+"Kui see on lubatud, avab üks klõps valitud faili/kausta. Kui soovid selle "
+"seadistuse kasutamisel faili/kausta ainult valida, pead failil/kaustal "
+"klõpsates samal ajal hoidma all klahvi <i>Ctrl</i>."
 
 #: src/fsearch_preferences.ui:1080
 msgid ""
@@ -1440,6 +1715,9 @@ msgid ""
 "If enabled, the path that is currently being indexed is displayed in the "
 "statusbar."
 msgstr ""
+"<b>Andmebaasi indekseerimise oleku näitamine:</b>\n"
+"\n"
+"Kui see on lubatud, kuvatakse olekuribal parajasti indekseeritav asukoht."
 
 #: src/fsearch_preferences.ui:1097
 msgid ""
@@ -1448,6 +1726,10 @@ msgid ""
 "If enabled, a warning dialog is displayed when a file or folder failed to "
 "open."
 msgstr ""
+"<b>Hoiatusdialoogide näitamine:</b>\n"
+"\n"
+"Kui see on lubatud, kuvatakse faili või kausta avamise nurjumisel "
+"hoiatusdialoog."
 
 #: src/fsearch_preferences.ui:1114
 msgid ""
@@ -1456,6 +1738,10 @@ msgid ""
 "If enabled, search terms containing path separators (i.e. \"/\") will be "
 "automatically matched against the full path of a file or folder."
 msgstr ""
+"<b>Asukohast otsimine, kui päring sisaldab asukohaeraldajaid:</b>\n"
+"\n"
+"Kui see on lubatud, võrreldakse asukohaeraldajaid (nt \"/\") sisaldavaid "
+"otsingusõnu automaatselt faili või kausta täieliku asukohaga."
 
 #: src/fsearch_preferences.ui:1131
 msgid ""
@@ -1465,6 +1751,12 @@ msgid ""
 "trigger a case-sensitive search. This means a search term like <i>Foo</i> "
 "will match <i>FooBar.txt</i> but not <i>foobar.txt</i>."
 msgstr ""
+"<b>Tõstutundlik otsing, kui päring sisaldab vähemalt üht suurtähte:</b>\n"
+"\n"
+"Kui see on lubatud, käivitavad vähemalt üht suurtähte sisaldavad "
+"otsingusõnad tõstutundliku otsingu. See tähendab, et otsingusõna nagu "
+"<i>Foo</i> vastab failile <i>FooBar.txt</i>, kuid mitte failile "
+"<i>foobar.txt</i>."
 
 #: src/fsearch_preferences.ui:1148
 msgid ""
@@ -1475,6 +1767,12 @@ msgid ""
 "If disabled, all files and folders will be displayed when the search entry "
 "is empty."
 msgstr ""
+"<b>Tulemuste peitmine tühja otsingu korral:</b>\n"
+"\n"
+"Kui see on lubatud, ei kuvata tühja otsinguvälja korral otsingutulemusi.\n"
+"\n"
+"Kui see on keelatud, kuvatakse tühja otsinguvälja korral kõik failid ja "
+"kaustad."
 
 #: src/fsearch_preferences.ui:1167
 msgid ""
@@ -1485,6 +1783,12 @@ msgid ""
 "If disabled, the search is only updated when you hit <i>Enter</i> or press "
 "the search button. "
 msgstr ""
+"<b>Otsimine sisestamise ajal:</b>\n"
+"\n"
+"Kui see on lubatud, uuendatakse otsingut automaatselt iga klahvivajutusega.\n"
+"\n"
+"Kui see on keelatud, uuendatakse otsingut ainult siis, kui vajutad klahvi "
+"<i>Enter</i> või otsingunuppu. "
 
 #: src/fsearch_preferences.ui:1186
 msgid ""
@@ -1493,6 +1797,10 @@ msgid ""
 "If enabled, the database will be updated automatically in the background "
 "when you start FSearch."
 msgstr ""
+"<b>Andmebaasi uuendamine käivitamisel:</b>\n"
+"\n"
+"Kui see on lubatud, uuendatakse andmebaasi FSearchi käivitamisel "
+"automaatselt taustal."
 
 #: src/fsearch_preferences.ui:1203
 msgid ""
@@ -1506,6 +1814,15 @@ msgid ""
 "\t• <b>One Filesystem:</b> If enabled, FSearch won't cross filesystem "
 "boundaries for this folder"
 msgstr ""
+"<b>Kaasatud kaustad:</b>\n"
+"\n"
+"See loend sisaldab kõiki kaustu, mille soovite andmebaasi kaasata.\n"
+"\n"
+"\t• <b>Aktiivne:</b> Kui see on lubatud, kaasatakse otsinguks kasutatav tee "
+"andmebaasi.\n"
+"\t• <b>Tee:</b> Kaasatav täielik tee.\n"
+"\t• <b>Üks failisüsteem:</b> Kui see on lubatud, ei ületa FSearch selle "
+"kausta puhul failisüsteemi piire"
 
 #: src/fsearch_preferences.ui:1224
 msgid ""
@@ -1514,6 +1831,10 @@ msgid ""
 "This button opens a dialog where you can select a folder you want to include "
 "in the database for searching."
 msgstr ""
+"<b>Kausta lisamine andmebaasi:</b>\n"
+"\n"
+"See nupp avab dialoogi, kus saate valida kausta, mille soovite otsimiseks "
+"andmebaasi kaasata."
 
 #: src/fsearch_preferences.ui:1241
 msgid ""
@@ -1523,6 +1844,11 @@ msgid ""
 "include that folder in the database. This is useful for adding a path "
 "directly without browsing for it."
 msgstr ""
+"<b>Kindla tee lisamine:</b>\n"
+"\n"
+"Sisestage siia kausta täielik tee ja klõpsake selle kõrval olevat nuppu, et "
+"kaust andmebaasi kaasata. See on kasulik tee lisamiseks otse, ilma seda "
+"sirvimise teel otsimata."
 
 #: src/fsearch_preferences.ui:1258
 msgid ""
@@ -1530,6 +1856,9 @@ msgid ""
 "\n"
 "This removes the selected folder from the list of included folders."
 msgstr ""
+"<b>Valitud rea eemaldamine:</b>\n"
+"\n"
+"See eemaldab valitud kausta kaasatud kaustade loendist."
 
 #: src/fsearch_preferences.ui:1275
 msgid ""
@@ -1542,6 +1871,16 @@ msgid ""
 "system resources per watched folder. For large directory trees with many "
 "files the system may run out of resources to watch them all."
 msgstr ""
+"<b>Jälgimise proovimine:</b>\n"
+"\n"
+"Kui see on lubatud, jälgib FSearch selle kausta muudatusi ja hoiab "
+"andmebaasi automaatselt ajakohasena, nii et te ei pea käsitsi uuesti "
+"skannima.\n"
+"\n"
+"Jälgimine pole kõigis failisüsteemides toetatud ja kasutab iga jälgitava "
+"kausta kohta vähesel määral süsteemiressursse. Paljude failidega suurte "
+"kataloogipuude puhul ei pruugi süsteemil nende kõigi jälgimiseks piisavalt "
+"ressursse jätkuda."
 
 #: src/fsearch_preferences.ui:1294
 msgid ""
@@ -1550,6 +1889,10 @@ msgid ""
 "If enabled, this folder is rescanned every time FSearch starts, so the "
 "database reflects any changes made while FSearch wasn't running."
 msgstr ""
+"<b>Skannimine pärast käivitamist:</b>\n"
+"\n"
+"Kui see on lubatud, skannitakse see kaust igal FSearchi käivitamisel uuesti, "
+"et andmebaas kajastaks kõiki FSearchi seisuajal tehtud muudatusi."
 
 #: src/fsearch_preferences.ui:1311
 msgid ""
@@ -1559,6 +1902,11 @@ msgid ""
 "folder. Mounted file systems below it (e.g. external drives or network "
 "shares) are skipped."
 msgstr ""
+"<b>Ühte failisüsteemi jäämine:</b>\n"
+"\n"
+"Kui see on lubatud, ei ületa FSearch selle kausta skannimisel failisüsteemi "
+"piire. Selle alla haagitud failisüsteemid (nt välised kettad või võrgu "
+"jagatud ressursid) jäetakse vahele."
 
 #: src/fsearch_preferences.ui:1328
 msgid ""
@@ -1570,6 +1918,14 @@ msgid ""
 "This is useful for folders on file systems that can't be monitored for "
 "changes."
 msgstr ""
+"<b>Uuesti skannimise intervall:</b>\n"
+"\n"
+"Kui see on lubatud, skannitakse see kaust määratud intervalli järel "
+"automaatselt uuesti. Määrake tundide ja minutite väljadel, kui sageli uuesti "
+"skannitakse.\n"
+"\n"
+"See on kasulik kaustade puhul, mis asuvad failisüsteemides, kus muudatusi ei "
+"saa jälgida."
 
 #: src/fsearch_preferences.ui:1347
 msgid ""
@@ -1590,6 +1946,22 @@ msgid ""
 "\t• <b>Applies To:</b> Whether the rule affects <i>Files</i>, <i>Folders</i> "
 "or both."
 msgstr ""
+"<b>Välistamisreeglid:</b>\n"
+"\n"
+"See loend sisaldab reegleid failide ja kaustade kohta, mille soovite "
+"andmebaasist välja jätta.\n"
+"\n"
+"\t• <b>Aktiivne:</b> Kui see on lubatud, rakendatakse reeglit ja sobivad "
+"üksused jäetakse välja.\n"
+"\t• <b>Muster:</b> Tekst, millega iga üksust võrreldakse ja mida "
+"tõlgendatakse tüübi järgi.\n"
+"\t• <b>Tüüp:</b> Kuidas mustrit tõlgendatakse — <i>Literaal</i> (täpne "
+"tekst), <i>Metamärgid</i> (kasutades * ja ?) või <i>Regulaaravaldis</i> "
+"(regulaaravaldis).\n"
+"\t• <b>Vaste:</b> Kas mustrit võrreldakse üksuse <i>täieliku teega</i> või "
+"ainult selle <i>baasnimega</i> (nimi ilma teeta).\n"
+"\t• <b>Rakendub:</b> Kas reegel mõjutab <i>faile</i>, <i>kaustu</i> või "
+"mõlemaid."
 
 #: src/fsearch_preferences.ui:1370
 msgid ""
@@ -1598,6 +1970,10 @@ msgid ""
 "This adds a new, empty rule to the list. Edit its Pattern, Type, Match and "
 "Applies To columns to control what gets excluded from the database."
 msgstr ""
+"<b>Välistusreegli lisamine:</b>\n"
+"\n"
+"See lisab loendisse uue tühja reegli. Muutke selle veerge Muster, Tüüp, "
+"Vaste ja Rakendub, et määrata, mida andmebaasist välja jäetakse."
 
 #: src/fsearch_preferences.ui:1387
 msgid ""
@@ -1605,6 +1981,9 @@ msgid ""
 "\n"
 "This removes the selected rule from the list of exclude rules."
 msgstr ""
+"<b>Valitud rea eemaldamine:</b>\n"
+"\n"
+"See eemaldab valitud reegli välistusreeglite loendist."
 
 #: src/fsearch_preferences.ui:1404
 msgid ""
@@ -1614,6 +1993,11 @@ msgid ""
 "\n"
 "⚠ All rules which were created or edited by the user will be lost! ⚠"
 msgstr ""
+"<b>Vaikimisi välistusreeglite taastamine:</b>\n"
+"\n"
+"See nupp taastab välistusreeglite vaikekomplekti.\n"
+"\n"
+"⚠ Kõik kasutaja loodud või muudetud reeglid lähevad kaotsi! ⚠"
 
 #: src/fsearch_preferences.ui:1423
 msgid ""
@@ -1624,6 +2008,12 @@ msgid ""
 "all files or folders which are called either <i>.git</i> or <i>.cache</i> or "
 "end with <i>.swp</i>."
 msgstr ""
+"<b>Failide ja kaustade andmebaasist välistamine:</b>\n"
+"\n"
+"See on semikoolonitega eraldatud loend failidest (või kaustadest), mida "
+"soovite andmebaasist välistada. Näiteks <i>.git;.cache;*.swp</i> välistab "
+"kõik failid või kaustad, mille nimi on <i>.git</i> või <i>.cache</i> või mis "
+"lõpevad laiendiga <i>.swp</i>."
 
 #: src/fsearch_preferences.ui:1440
 msgid ""
@@ -1632,10 +2022,14 @@ msgid ""
 "If enabled, hidden files and folders will be excluded from the database "
 "<i>(i.e. all files or folders which start with a dot character)</i>."
 msgstr ""
+"<b>Peidetud failide ja kaustade välistamine:</b>\n"
+"\n"
+"Kui see on lubatud, jäetakse peidetud failid ja kaustad andmebaasist välja "
+"<i>(st kõik failid või kaustad, mille nimi algab punktiga)</i>."
 
 #: src/fsearch_preferences.ui:1457
 msgid "Focus a setting to get a detailed description of what it does."
-msgstr ""
+msgstr "Üksikasjaliku kirjelduse saamiseks valige soovitud säte."
 
 #: src/fsearch_preferences.ui:1470
 msgid ""
@@ -1650,6 +2044,16 @@ msgid ""
 "\n"
 "<i><tt>fsearch --update-database</tt></i>"
 msgstr ""
+"<b>Andmebaasi korrapärane uuendamine määratud ajavahemiku järel:</b>\n"
+"\n"
+"Kui see on lubatud ja FSearch töötab, uuendatakse andmebaasi korrapäraselt "
+"määratud ajavahemiku järel.\n"
+"\n"
+"Kui soovite andmebaasi taustal uuendada ka siis, kui FSearch ei tööta, "
+"kasutage uuendamise korrapäraseks käivitamiseks tööriistu nagu cron või "
+"systemd taimerid käsuga:\n"
+"\n"
+"<i><tt>fsearch --update-database</tt></i>"
 
 #: src/fsearch_preferences.ui:1491
 msgid ""
@@ -1660,6 +2064,12 @@ msgid ""
 "launcher. Otherwise the <i>.desktop</i> file will be opened with the default "
 "handler for this type of files, which is usually a text editor."
 msgstr ""
+"<b>Töölauafailide käivitamine:</b>\n"
+"\n"
+"Kui see on lubatud, käivitab <i>.desktop</i>-faili aktiveerimine selles "
+"failis määratud rakenduse. Nii saab FSearch toimida rakenduste käivitajana. "
+"Vastasel juhul avatakse <i>.desktop</i>-fail selle failitüübi "
+"vaikekäsitlejaga, milleks on tavaliselt tekstiredaktor."
 
 #: src/fsearch_preferences.ui:1508
 msgid ""
@@ -1672,6 +2082,14 @@ msgid ""
 "the filter on demand\n"
 "\t• <b>Query:</b> The search term by which the database should be filtered"
 msgstr ""
+"<b>Filtrid:</b>\n"
+"\n"
+"See on kõigi saadaolevate filtrite loend. Filter on eelmääratud otsing.\n"
+"\n"
+"\t• <b>Nimi:</b> filtri ainulaadne ja kirjeldav identifikaator\n"
+"\t• <b>Makro:</b> makro teksti ja selle järel ':' sisestades saate filtri "
+"vajaduse korral lubada\n"
+"\t• <b>Päring:</b> otsingutermin, mille järgi andmebaasi filtreeritakse"
 
 #: src/fsearch_preferences.ui:1529
 msgid ""
@@ -1679,6 +2097,9 @@ msgid ""
 "\n"
 "This button opens a dialog where you can edit a new filter."
 msgstr ""
+"<b>Uue filtri lisamine:</b>\n"
+"\n"
+"See nupp avab dialoogi, kus saate uut filtrit muuta."
 
 #: src/fsearch_preferences.ui:1546
 msgid ""
@@ -1686,6 +2107,9 @@ msgid ""
 "\n"
 "This button removes the currently selected filter."
 msgstr ""
+"<b>Valitud filtri eemaldamine:</b>\n"
+"\n"
+"See nupp eemaldab hetkel valitud filtri."
 
 #: src/fsearch_preferences.ui:1563
 msgid ""
@@ -1693,6 +2117,9 @@ msgid ""
 "\n"
 "This button opens a dialog where you can edit the selected filter."
 msgstr ""
+"<b>Valitud filtri muutmine:</b>\n"
+"\n"
+"See nupp avab dialoogi, kus saab valitud filtrit muuta."
 
 #: src/fsearch_preferences.ui:1580
 msgid ""
@@ -1702,6 +2129,11 @@ msgid ""
 "\n"
 "⚠ All filters which were created or edited by the user will be lost! ⚠"
 msgstr ""
+"<b>Vaikefiltrite taastamine:</b>\n"
+"\n"
+"See nupp taastab filtrite vaikekonfiguratsiooni.\n"
+"\n"
+"⚠ Kõik kasutaja loodud või muudetud filtrid lähevad kaotsi! ⚠"
 
 #: src/fsearch_preferences.ui:1599
 msgid ""
@@ -1710,128 +2142,139 @@ msgid ""
 "If enabled, FSearch exits when the Escape key is pressed instead of the "
 "window being minimized."
 msgstr ""
+"<b>Väljumine klahviga Escape:</b>\n"
+"\n"
+"Kui see on lubatud, väljub FSearch klahvi Escape vajutamisel, selle asemel "
+"et aken minimeerida."
 
 #: src/fsearch_preferences.ui:1618 src/fsearch_window.ui:290
 #: src/fsearch_window.ui:415 src/menus.ui:150 src/menus.ui:156
 msgid "Help"
-msgstr ""
+msgstr "Abi"
 
 #: src/fsearch_preferences_dialog.c:238
 msgid "Database"
-msgstr ""
+msgstr "Andmebaas"
 
 #: src/fsearch_result_view.c:381
 msgid "Invalid row data"
-msgstr ""
+msgstr "Vigased reaandmed"
 
 #: src/fsearch_statusbar.c:58
 #, c-format
 msgid "%'d Item"
-msgstr ""
+msgstr "%'d üksus"
 
 #: src/fsearch_statusbar.c:58 src/fsearch_statusbar.c:186
 #, c-format
 msgid "%'d Items"
-msgstr ""
+msgstr "%'d üksust"
 
 #: src/fsearch_statusbar.c:80
 msgid "Querying…"
-msgstr ""
+msgstr "Päringu tegemine…"
 
 #: src/fsearch_statusbar.c:175
 msgid "Loading…"
-msgstr ""
+msgstr "Laadimine…"
 
 #: src/fsearch_statusbar.c:180
 msgid "Scanning…"
-msgstr ""
+msgstr "Skannimine…"
 
 #: src/fsearch_statusbar.ui:52
 msgid "Number of Search Results"
-msgstr ""
+msgstr "Otsingutulemuste arv"
 
 #: src/fsearch_statusbar.ui:53
 msgid "0 Items"
-msgstr ""
+msgstr "0 üksust"
 
 #: src/fsearch_statusbar.ui:106
 msgid "Cancel"
-msgstr ""
+msgstr "Loobu"
 
 #: src/fsearch_statusbar.ui:153
 msgid "Index:"
-msgstr ""
+msgstr "Indeks:"
 
 #: src/fsearch_statusbar.ui:228
 msgid "Number of selected folders"
-msgstr ""
+msgstr "Valitud kaustade arv"
 
 #: src/fsearch_statusbar.ui:229 src/fsearch_statusbar.ui:254
 msgid "0/0"
-msgstr ""
+msgstr "0/0"
 
 #: src/fsearch_statusbar.ui:253
 msgid "Number of selected files"
-msgstr ""
+msgstr "Valitud failide arv"
 
 #: src/fsearch_statusbar.ui:328 src/fsearch_window.ui:103
 msgid "Cancel database update"
-msgstr ""
+msgstr "Loobu andmebaasi uuendamisest"
 
 #: src/fsearch_statusbar.ui:369
 msgid "Number of database items"
-msgstr ""
+msgstr "Andmebaasiüksuste arv"
 
 #: src/fsearch_statusbar.ui:370
 msgid "(empty)"
-msgstr ""
+msgstr "(tühi)"
 
 #: src/fsearch_statusbar.ui:407
 msgid ""
 "Search term contains upper case characters.\n"
 "<b>Match Case</b> was temporarily activated for this term."
 msgstr ""
+"Otsingusõna sisaldab suurtähti.\n"
+"Selle otsingusõna jaoks aktiveeriti ajutiselt <b>Tõstutundlik</b>."
 
 #: src/fsearch_statusbar.ui:438 src/fsearch_statusbar.ui:491
 msgid "CASE"
-msgstr ""
+msgstr "TÕST"
 
 #: src/fsearch_statusbar.ui:514
 msgid ""
 "Search term contains path separators.\n"
 "<b>Search in Path</b> was temporarily activated for this term."
 msgstr ""
+"Otsingusõna sisaldab tee-eraldajaid.\n"
+"Selle otsingusõna jaoks aktiveeriti ajutiselt <b>Otsi asukohateelt</b>."
 
 #: src/fsearch_statusbar.ui:545 src/fsearch_statusbar.ui:598
 msgid "PATH"
-msgstr ""
+msgstr "TEE"
 
 #: src/fsearch_statusbar.ui:651
 msgid "REGEX"
-msgstr ""
+msgstr "REGAVALDIS"
 
 #: src/fsearch_statusbar.ui:726
 msgid ""
 "The search was cancelled before it finished.\n"
 "<b>These results are incomplete.</b>"
 msgstr ""
+"Otsing katkestati enne selle lõppemist.\n"
+"<b>Need tulemused on puudulikud.</b>"
 
 #: src/fsearch_statusbar.ui:756
 msgid "PARTIAL"
-msgstr ""
+msgstr "OSALINE"
 
 #: src/fsearch_welcome_dialog.ui:26
 msgid "What's New in FSearch"
-msgstr ""
+msgstr "FSearchi uudised"
 
 #: src/fsearch_welcome_dialog.ui:79
 msgid ""
 "<span size=\"xx-large\" weight=\"bold\">What's New in FSearch 0.3</span>"
 msgstr ""
+"<span size=\"xx-large\" weight=\"bold\">Mida uut on FSearch 0.3-s</span>"
 
 #: src/fsearch_welcome_dialog.ui:149
 msgid "<big><b>File System Monitoring</b></big>"
-msgstr ""
+msgstr "<big><b>Failisüsteemi jälgimine</b></big>"
 
 #: src/fsearch_welcome_dialog.ui:163
 msgid ""
@@ -1845,20 +2288,30 @@ msgid ""
 "<a href=\"URL\">https://github.com/cboxdoerfer/fsearch/wiki/Database-update</"
 "a>"
 msgstr ""
+"Nüüd saab üksikuid kaustu aktiivselt jälgida, et vältida sagedast "
+"taasskannimist. Failimuudatused ilmuvad seejärel kohe otsingutulemustesse.\n"
+"\n"
+"Selle funktsiooni lubamiseks avage eelistuste dialoogi jaotis Andmebaas.\n"
+"\n"
+"Lisateavet leiate veebidokumentatsioonist:\n"
+"<a href=\"URL\">https://github.com/cboxdoerfer/fsearch/wiki/Database-update</"
+"a>"
 
 #: src/fsearch_welcome_dialog.ui:232
 msgid "<big><b>Folder-Specific Rescan Schedules</b></big>"
-msgstr ""
+msgstr "<big><b>Kaustapõhised taasskannimise ajakavad</b></big>"
 
 #: src/fsearch_welcome_dialog.ui:246
 msgid ""
 "You can now configure automatic update intervals for individual folders "
 "independently and tailored to each distinct location."
 msgstr ""
+"Nüüd saab üksikute kaustade automaatse uuendamise intervalle seadistada "
+"üksteisest sõltumatult ja iga asukoha jaoks eraldi."
 
 #: src/fsearch_welcome_dialog.ui:309
 msgid "<big><b>Improved Exclude Rules</b></big>"
-msgstr ""
+msgstr "<big><b>Täiustatud välistamisreeglid</b></big>"
 
 #: src/fsearch_welcome_dialog.ui:323
 msgid ""
@@ -1867,18 +2320,22 @@ msgid ""
 "Rules can be targeted specifically at files, folders, or both, and can be "
 "configured to match against either the basename or the full absolute path."
 msgstr ""
+"Nüüd saab tõhusamate välistamisreeglite määratlemiseks kasutada metamärke ja "
+"regulaaravaldisi. \n"
+"Reegleid saab rakendada konkreetselt failidele, kaustadele või mõlemale ning "
+"seadistada vastendama kas põhinime või täielikku absoluutset teed."
 
 #: src/fsearch_window.c:749 src/menus.ui:279
 msgid "Size"
-msgstr ""
+msgstr "Suurus"
 
 #: src/fsearch_window.c:763 src/menus.ui:271
 msgid "Extension"
-msgstr ""
+msgstr "Laiend"
 
 #: src/fsearch_window.c:770 src/menus.ui:283
 msgid "Date Modified"
-msgstr ""
+msgstr "Muutmise kuupäev"
 
 #: src/fsearch_window.c:784
 msgid ""
@@ -1887,201 +2344,206 @@ msgid ""
 "This sort order is not persistent, it will be reset when the search term "
 "changes."
 msgstr ""
+"Paljude tulemuste korral võib <b>tüübi</b> järgi sortimine võtta mõne "
+"sekundi.\n"
+"\n"
+"See sortimisjärjestus pole püsiv, vaid lähtestatakse otsingutermini "
+"muutmisel."
 
 #: src/fsearch_window.ui:68
 msgid "New window"
-msgstr ""
+msgstr "Uus aken"
 
 #: src/fsearch_window.ui:89
 msgid "Update database"
-msgstr ""
+msgstr "Uuenda andmebaasi"
 
 #: src/fsearch_window.ui:144 src/menus.ui:112
 msgid "Search in Path"
-msgstr ""
+msgstr "Otsi asukohast"
 
 #: src/fsearch_window.ui:158 src/menus.ui:116
 msgid "Match Case"
-msgstr ""
+msgstr "Tõstutundlik"
 
 #: src/fsearch_window.ui:172 src/menus.ui:120
 msgid "Enable RegEx"
-msgstr ""
+msgstr "Luba regulaaravaldised"
 
 #: src/fsearch_window.ui:197 src/menus.ui:95
 msgid "Show Statusbar"
-msgstr ""
+msgstr "Näita olekuriba"
 
 #: src/fsearch_window.ui:211 src/menus.ui:99
 msgid "Show Filter"
-msgstr ""
+msgstr "Näita filtrit"
 
 #: src/fsearch_window.ui:225 src/menus.ui:103
 msgid "Show Search Button"
-msgstr ""
+msgstr "Näita otsingunuppu"
 
 #: src/fsearch_window.ui:275 src/fsearch_window.ui:356 src/menus.ui:129
 msgid "FSearch Online"
-msgstr ""
+msgstr "FSearch veebis"
 
 #: src/fsearch_window.ui:304 src/menus.ui:161
 msgid "About"
-msgstr ""
+msgstr "Teave"
 
 #: src/fsearch_window.ui:329 src/menus.ui:47
 msgid "Quit"
-msgstr ""
+msgstr "Välju"
 
 #: src/fsearch_window.ui:372 src/fsearch_window.ui:443 src/menus.ui:131
 msgid "Donate"
-msgstr ""
+msgstr "Anneta"
 
 #: src/fsearch_window.ui:387 src/menus.ui:142
 msgid "Forum"
-msgstr ""
+msgstr "Foorum"
 
 #: src/fsearch_window.ui:401 src/menus.ui:146
 msgid "Bug Reports and Feature Requests"
-msgstr ""
+msgstr "Veateated ja funktsioonisoovid"
 
 #: src/fsearch_window.ui:460 src/menus.ui:133
 msgid "GitHub Sponsors"
-msgstr ""
+msgstr "GitHub Sponsors"
 
 #: src/fsearch_window.ui:474 src/menus.ui:137
 msgid "PayPal"
-msgstr ""
+msgstr "PayPal"
 
 #: src/fsearch_window.ui:586
 msgid "Search…"
-msgstr ""
+msgstr "Otsi…"
 
 #: src/fsearch_window.ui:608
 msgid "Select a Filter"
-msgstr ""
+msgstr "Vali filter"
 
 #: src/fsearch_window_actions.c:110
 #, c-format
 msgid "Do you really want to open %'d file?"
 msgid_plural "Do you really want to open %'d files?"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Kas soovite tõesti avada %'d faili?"
+msgstr[1] "Kas soovite tõesti avada %'d faili?"
 
 #: src/fsearch_window_actions.c:115
 msgid "Opening Files…"
-msgstr ""
+msgstr "Failide avamine…"
 
 #: src/fsearch_window_actions.c:198
 #, c-format
 msgid "Do you really want to remove %'d file?"
 msgid_plural "Do you really want to remove %'d files?"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Kas soovite tõesti eemaldada %'d faili?"
+msgstr[1] "Kas soovite tõesti eemaldada %'d faili?"
 
 #: src/fsearch_window_actions.c:205
 msgid "Deleting files…"
-msgstr ""
+msgstr "Failide kustutamine…"
 
 #: src/fsearch_window_actions.c:205
 msgid "Moving files to trash…"
-msgstr ""
+msgstr "Failide prügikasti teisaldamine…"
 
 #: src/fsearch_window_actions.c:238 src/fsearch_window_actions.c:533
 #: src/fsearch_window_actions.c:580
 msgid "Something went wrong."
-msgstr ""
+msgstr "Midagi läks valesti."
 
 #: src/fsearch_window_actions.c:263
 #, c-format
 msgid "Do you really want to open %'d file property window?"
 msgid_plural "Do you really want to open %'d file property windows?"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Kas soovite tõesti avada %'d faili omaduste akna?"
+msgstr[1] "Kas soovite tõesti avada %'d faili omaduste akent?"
 
 #: src/fsearch_window_actions.c:270
 msgid "Opening file properties…"
-msgstr ""
+msgstr "Faili omaduste avamine…"
 
 #: src/menus.ui:6
 msgid "_File"
-msgstr ""
+msgstr "_Fail"
 
 #: src/menus.ui:9
 msgid "New Window"
-msgstr ""
+msgstr "Uus aken"
 
 #: src/menus.ui:16 src/menus.ui:171
 msgid "_Open"
-msgstr ""
+msgstr "_Ava"
 
 #: src/menus.ui:21
 msgid "Open Folder"
-msgstr ""
+msgstr "Ava kaust"
 
 #: src/menus.ui:29
 msgid "Update Database"
-msgstr ""
+msgstr "Uuenda andmebaasi"
 
 #: src/menus.ui:35
 msgid "Cancel Update"
-msgstr ""
+msgstr "Tühista uuendamine"
 
 #: src/menus.ui:42
 msgid "Close Window"
-msgstr ""
+msgstr "Sulge aken"
 
 #: src/menus.ui:54
 msgid "_Edit"
-msgstr ""
+msgstr "_Redigeerimine"
 
 #: src/menus.ui:57 src/menus.ui:207
 msgid "_Copy"
-msgstr ""
+msgstr "_Kopeeri"
 
 #: src/menus.ui:62 src/menus.ui:228
 msgid "Cu_t"
-msgstr ""
+msgstr "_Lõika"
 
 #: src/menus.ui:69
 msgid "Select All"
-msgstr ""
+msgstr "Vali kõik"
 
 #: src/menus.ui:74
 msgid "Deselect All"
-msgstr ""
+msgstr "Tühista kõik valikud"
 
 #: src/menus.ui:78
 msgid "Invert Selection"
-msgstr ""
+msgstr "Pööra valik ümber"
 
 #: src/menus.ui:92
 msgid "_View"
-msgstr ""
+msgstr "_Vaade"
 
 #: src/menus.ui:109
 msgid "_Search"
-msgstr ""
+msgstr "_Otsi"
 
 #: src/menus.ui:126
 msgid "_Help"
-msgstr ""
+msgstr "_Abi"
 
 #: src/menus.ui:177
 msgid "Open _With"
-msgstr ""
+msgstr "Ava _rakendusega"
 
 #: src/menus.ui:191
 msgid "_Open Folder"
-msgstr ""
+msgstr "_Ava kaust"
 
 #: src/menus.ui:213
 msgid "Copy as Text"
-msgstr ""
+msgstr "Kopeeri tekstina"
 
 #: src/menus.ui:223
 msgid "Path + Name"
-msgstr ""
+msgstr "Asukoht + nimi"
 
 #: src/menus.ui:236
 msgid "Move to _Trash"
-msgstr ""
+msgstr "Teisalda _prügikasti"

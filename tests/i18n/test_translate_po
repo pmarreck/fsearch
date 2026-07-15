@@ -9,6 +9,8 @@ trap 'rm -rf "$tmp_dir"' EXIT
 catalog="$tmp_dir/catalog.po"
 partial="$tmp_dir/partial.po"
 complete="$tmp_dir/complete.po"
+multiline_catalog="$tmp_dir/multiline.po"
+multiline_partial="$tmp_dir/multiline-partial.po"
 format_catalog="$tmp_dir/format.po"
 format_bad="$tmp_dir/format-bad.po"
 format_good="$tmp_dir/format-good.po"
@@ -79,6 +81,20 @@ printf '%s\n' \
 	'' \
 	'msgid "two"' \
 	'msgstr "TWO"' >>"$complete"
+
+printf '%s\n' \
+	'msgid ""' \
+	'msgstr ""' \
+	'"Language: xx\n"' \
+	'"Content-Type: text/plain; charset=UTF-8\n"' \
+	'"Content-Transfer-Encoding: 8bit\n"' \
+	'' \
+	'msgid ""' \
+	'"A message that begins on a continuation line\n"' \
+	'"must still be counted."' \
+	'msgstr ""' >"$multiline_catalog"
+
+header "$multiline_catalog" >"$multiline_partial"
 
 printf '%s\n' \
 	'msgid ""' \
@@ -222,6 +238,20 @@ elif [[ "$output" != *'translation response omitted or left empty'* ]]; then
 fi
 if [ "$before" != "$after" ]; then
 	fail 'modified the catalog after rejecting an incomplete response'
+fi
+
+before=$(sha256sum "$multiline_catalog" | awk '{ print $1 }')
+output=$(OPENAI_API_KEY=test-key FAKE_TRANSLATION="$multiline_partial" PATH="$fake_bin:$PATH" \
+	run_translator --apply "$multiline_catalog" 2>&1)
+rc=$?
+after=$(sha256sum "$multiline_catalog" | awk '{ print $1 }')
+if [ "$rc" -eq 0 ]; then
+	fail "accepted a response that omitted a multiline requested entry: $output"
+elif [[ "$output" != *'translation response omitted or left empty'* ]]; then
+	fail "rejected the multiline response for an unexpected reason: $output"
+fi
+if [ "$before" != "$after" ]; then
+	fail 'modified the catalog after rejecting an incomplete multiline response'
 fi
 
 output=$(OPENAI_API_KEY=test-key FAKE_STREAM_ERROR=true PATH="$fake_bin:$PATH" \

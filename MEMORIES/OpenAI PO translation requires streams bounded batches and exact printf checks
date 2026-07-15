@@ -7,3 +7,8 @@ as failed. GNU gettext accepts compatible printf directives, so
 skips entries that extraction did not flag as `c-format`; the helper must
 compare every detected printf directive sequence exactly before it atomically
 updates a catalog.
+
+PO entry accounting must skip the required first header entry by position, not
+by rejecting `msgid ""`: real multiline messages use that same opening form.
+The helper's completion guard must reject an omitted multiline entry and leave
+the catalog unchanged.

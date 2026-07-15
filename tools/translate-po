@@ -32,7 +32,15 @@ header() {
 }
 
 count_messages() {
-	awk '$0 ~ /^msgid / && $0 != "msgid \"\"" { count += 1 } END { print count + 0 }' "$1"
+	awk '
+		/^msgid / {
+			# The first PO entry is the required header, even though multiline messages also start with msgid "".
+			message_index += 1
+			if (message_index > 1)
+				count += 1
+		}
+		END { print count + 0 }
+	' "$1"
 }
 
 validate_exact_printf_placeholders() {

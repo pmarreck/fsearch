@@ -116,3 +116,5 @@
   Both catalogs completed atomically using the proven ten-entry override; the translator regression now verifies invalid batch-size values exit 2 with an actionable error.
 - [x] Checkpoint 11: complete Slovak (`sk`) and Marathi (`mr`) using the tested ten-entry batch override. (2026-07-15 08:03 EDT)
   Both catalogs passed strict gettext, template-key and header invariants, with zero fuzzy or untranslated entries before the full-suite gate. Curiosity poke: rich preference strings must not cause a streamed response to end before completion.
+- [x] Checkpoint 12: complete Greek (`el`) and Estonian (`et`), and reject omitted multiline PO entries. (2026-07-15 08:15 EDT)
+  The translator now counts every PO entry after its required header, including `msgid ""` entries with continuation lines; a red-green regression proves an omitted multiline entry leaves its catalog unchanged. Both catalogs passed corrected dry-run completeness, strict gettext, template-key, header, fuzzy, and untranslated gates. Curiosity poke: completion accounting must inspect PO entry boundaries, not assume a nonempty first `msgid` line.
