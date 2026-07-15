@@ -61,6 +61,114 @@ restore_source_header() {
 	} >"$restored"
 }
 
+normalize_unescaped_po_quotes() {
+	local input=$1
+	local output=$2
+
+	awk '
+		function last_quote(line,    position_index, position) {
+			position = 0
+			for (position_index = 1; position_index <= length(line); position_index += 1) {
+				if (substr(line, position_index, 1) == "\"")
+					position = position_index
+			}
+			return position
+		}
+
+		function escape_unescaped_quotes(text,    character_index, character, previous, backslashes, escaped) {
+			for (character_index = 1; character_index <= length(text); character_index += 1) {
+				character = substr(text, character_index, 1)
+				if (character != "\"") {
+					escaped = escaped character
+					continue
+				}
+				backslashes = 0
+				for (previous = character_index - 1; previous >= 1 && substr(text, previous, 1) == "\\"; previous -= 1)
+					backslashes += 1
+				if (backslashes % 2 == 0)
+					escaped = escaped "\\"
+				escaped = escaped character
+			}
+			return escaped
+		}
+
+		/^(msgctxt|msgid|msgid_plural|msgstr(\[[0-9]+\])?) "/ || /^"/ {
+			first = index($0, "\"")
+			last = last_quote($0)
+			if (last <= first || substr($0, last + 1) !~ /^[[:space:]]*$/) {
+				print
+				next
+			}
+			prefix = substr($0, 1, first)
+			body = substr($0, first + 1, last - first - 1)
+			suffix = substr($0, last)
+			print prefix escape_unescaped_quotes(body) suffix
+			next
+		}
+
+		{ print }
+	' "$input" >"$output"
+}
+
+render_translation_slots() {
+	local source=$1
+	local slots=$2
+	local output=$3
+
+	awk -v slots="$slots" '
+		function take_slot(    encoded) {
+			if ((getline encoded < slots) <= 0) {
+				printf "translate-po: translation response omitted a required slot\n" > "/dev/stderr"
+				failed = 1
+				return ""
+			}
+			slots_used += 1
+			return encoded
+		}
+
+		!header_complete {
+			print
+			if ($0 == "msgid \"\"")
+				in_header = 1
+			if (in_header && /^$/)
+				header_complete = 1
+			next
+		}
+
+		skip_translation_continuations {
+			if (/^"/)
+				next
+			skip_translation_continuations = 0
+		}
+
+		/^msgstr(\[[0-9]+\])? / {
+			quote = index($0, "\"")
+			if (quote == 0) {
+				printf "translate-po: source PO has an invalid translation slot\n" > "/dev/stderr"
+				failed = 1
+				exit
+			}
+			encoded = take_slot()
+			if (failed)
+				exit
+			print substr($0, 1, quote - 1) encoded
+			skip_translation_continuations = 1
+			next
+		}
+
+		{ print }
+
+		END {
+			if (!failed && (getline extra < slots) > 0) {
+				printf "translate-po: translation response supplied an extra slot\n" > "/dev/stderr"
+				failed = 1
+			}
+			close(slots)
+			exit failed
+		}
+	' "$source" >"$output"
+}
+
 count_messages() {
 	awk '
 		/^msgid / {
@@ -69,6 +177,20 @@ count_messages() {
 			if (message_index > 1)
 				count += 1
 		}
+		END { print count + 0 }
+	' "$1"
+}
+
+count_translation_slots() {
+	awk '
+		!header_complete {
+			if ($0 == "msgid \"\"")
+				in_header = 1
+			if (in_header && /^$/)
+				header_complete = 1
+			next
+		}
+		/^msgstr(\[[0-9]+\])? / { count += 1 }
 		END { print count + 0 }
 	' "$1"
 }
@@ -540,8 +662,9 @@ if [ "$backend" = openai ] && [ -z "${OPENAI_API_KEY-}" ]; then
 	exit 2
 fi
 
-instructions='Translate GNU gettext PO entries. Preserve every msgid, msgid_plural, msgctxt, source reference, comment, HTML/XML markup, and printf-style placeholder exactly. Use valid GNU PO escaping for control characters. Use typographic Unicode quotation marks in translated prose instead of ASCII double quotes, so no literal ASCII quote appears inside a PO string. Translate every msgstr or msgstr[n] into the requested locale. Remove fuzzy flags. Do not translate CLI options, environment-variable names, JSON keys, setting keys, query syntax, paths, URLs, file extensions, or printf placeholders. Any msgid that is a semicolon-separated desktop keyword list must become an equally semicolon-separated list in the requested locale; translate every human-language token, retain only the literal fsearch brand token, and never return a non-English list unchanged. For example, French search;fsearch;files; becomes recherche;fsearch;fichiers;. The GNU gettext directive is literally msgid, with no underscore: Never write msg_id or change any PO keyword. Return no commentary: the JSON schema requires the complete translated PO file in its po property.'
-output_schema='{"type":"object","properties":{"po":{"type":"string"}},"required":["po"],"additionalProperties":false}'
+po_instructions='Translate GNU gettext PO entries. Preserve every msgid, msgid_plural, msgctxt, source reference, comment, HTML/XML markup, and printf-style placeholder exactly. Use valid GNU PO escaping for control characters. Use typographic Unicode quotation marks in translated prose instead of ASCII double quotes, so no literal ASCII quote appears inside a PO string. Translate every msgstr or msgstr[n] into the requested locale. Remove fuzzy flags. Do not translate CLI options, environment-variable names, JSON keys, setting keys, query syntax, paths, URLs, file extensions, or printf placeholders. Any msgid that is a semicolon-separated desktop keyword list must become an equally semicolon-separated list in the requested locale; translate every human-language token, retain only the literal fsearch brand token, and never return a non-English list unchanged. For example, French search;fsearch;files; becomes recherche;fsearch;fichiers;. The GNU gettext directive is literally msgid, with no underscore: Never write msg_id or change any PO keyword. Return no commentary: the JSON schema requires the complete translated PO file in its po property.'
+ollama_instructions='Translate the user-facing text in the supplied GNU gettext PO batch. Do not generate GNU PO syntax, comments, msgid values, msgstr values, headers, source references, or markup. Return only translation data in the JSON schema. The translations array must contain exactly one non-empty string for every non-header msgstr or msgstr[n] slot in the supplied batch, in source order. Preserve HTML/XML markup and printf-style placeholders exactly within each translation. Do not translate CLI options, environment-variable names, JSON keys, setting keys, query syntax, paths, URLs, file extensions, or printf placeholders. Any source that is a semicolon-separated desktop keyword list must become an equally semicolon-separated localized list; retain only the literal fsearch brand token, and never return a non-English list unchanged. For example, French search;fsearch;files; becomes recherche;fsearch;fichiers;. Return no commentary.'
+ollama_output_schema='{"type":"object","properties":{"translations":{"type":"array","items":{"type":"string"}}},"required":["translations"],"additionalProperties":false}'
 ollama_url=${FSEARCH_OLLAMA_URL:-http://127.0.0.1:11434}
 batch_number=0
 translated_files=()
@@ -549,12 +672,15 @@ translated_files=()
 while IFS= read -r batch; do
 	batch_number=$((batch_number + 1))
 	batch_entries=$(count_messages "$batch")
+	batch_slots=$(count_translation_slots "$batch")
 	request_file="$tmp_dir/request-$batch_number.json"
 	stream_file="$tmp_dir/stream-$batch_number.sse"
 	event_file="$tmp_dir/events-$batch_number.ndjson"
 	response_text="$tmp_dir/response-$batch_number.json"
 	raw_batch_translation="$tmp_dir/raw-translation-$batch_number.po"
 	batch_translation="$tmp_dir/translation-$batch_number.po"
+	normalized_batch_translation="$tmp_dir/normalized-translation-$batch_number.po"
+	translation_slots="$tmp_dir/translation-slots-$batch_number.jsonl"
 	batch_reconciled="$tmp_dir/reconciled-$batch_number.po"
 	batch_cleaned="$translated_dir/batch-$batch_number.po"
 	batch_remaining="$tmp_dir/remaining-$batch_number.po"
@@ -566,12 +692,14 @@ while IFS= read -r batch; do
 	validation_attempt=0
 	while :; do
 		validation_attempt=$((validation_attempt + 1))
+		rendered_from_slots=false
+		slot_render_failed=false
 	case "$backend" in
 		openai)
 			if ! jq -n \
 				--arg model "$model" \
 				--arg locale "$locale" \
-				--arg instructions "$instructions" \
+				--arg instructions "$po_instructions" \
 				--rawfile po "$batch" \
 				--argjson max_output_tokens "$max_output_tokens" \
 				'{
@@ -604,10 +732,11 @@ while IFS= read -r batch; do
 			if ! jq -n \
 				--arg model "$model" \
 				--arg locale "$locale" \
-				--arg instructions "$instructions" \
+				--arg instructions "$ollama_instructions" \
 				--rawfile po "$batch" \
 				--argjson max_output_tokens "$max_output_tokens" \
-				--argjson output_schema "$output_schema" \
+				--argjson translation_slot_count "$batch_slots" \
+				--argjson output_schema "$ollama_output_schema" \
 				'{
 					model: $model,
 					stream: true,
@@ -620,7 +749,7 @@ while IFS= read -r batch; do
 							role: "user",
 							content: (
 								"Target locale: " + $locale +
-								"\n\nTranslate this partial PO catalog:\n" + $po +
+								"\n\nThis batch has exactly " + ($translation_slot_count | tostring) + " translation slots. Translate this partial PO catalog as data only:\n" + $po +
 								"\n\nReturn JSON matching this schema:\n" + ($output_schema | tojson)
 							)
 						}
@@ -717,21 +846,41 @@ while IFS= read -r batch; do
 				exit 1
 			fi
 			if ! jq -rj 'select(.message.content? != null) | .message.content' "$event_file" >"$response_text" \
-				|| [ ! -s "$response_text" ] \
-				|| ! jq -er '.po' "$response_text" >"$raw_batch_translation"; then
-				printf 'translate-po: Ollama stream did not contain a structured PO translation for batch %s\n' "$batch_number" >&2
+				|| [ ! -s "$response_text" ]; then
+				printf 'translate-po: Ollama stream did not contain structured translation data for batch %s\n' "$batch_number" >&2
+				exit 1
+			fi
+			if jq -e 'has("translations")' "$response_text" >/dev/null 2>&1; then
+				rendered_from_slots=true
+				if ! jq -e '.translations | type == "array" and all(.[]; type == "string" and length > 0)' "$response_text" >/dev/null \
+					|| ! jq -c '.translations[]' "$response_text" >"$translation_slots" \
+					|| ! render_translation_slots "$batch" "$translation_slots" "$batch_translation"; then
+					slot_render_failed=true
+				fi
+			elif ! jq -er '.po' "$response_text" >"$raw_batch_translation"; then
+				printf 'translate-po: Ollama stream did not contain structured translation data for batch %s\n' "$batch_number" >&2
 				exit 1
 			fi
 			;;
 		esac
 
-		if ! restore_source_header "$catalog" "$raw_batch_translation" "$batch_translation"; then
-			printf 'translate-po: could not restore the immutable source header for batch %s\n' "$batch_number" >&2
-			exit 1
+		if [ "$rendered_from_slots" = false ]; then
+			if ! restore_source_header "$catalog" "$raw_batch_translation" "$batch_translation"; then
+				printf 'translate-po: could not restore the immutable source header for batch %s\n' "$batch_number" >&2
+				exit 1
+			fi
+			if ! normalize_unescaped_po_quotes "$batch_translation" "$normalized_batch_translation" \
+				|| ! mv "$normalized_batch_translation" "$batch_translation"; then
+				printf 'translate-po: could not normalize PO string quoting for batch %s\n' "$batch_number" >&2
+				exit 1
+			fi
 		fi
 
 		validation_failed=false
-		if ! diff -u <(header "$catalog") <(header "$batch_translation") >/dev/null; then
+		if [ "$slot_render_failed" = true ]; then
+			printf 'translate-po: Ollama response did not provide exactly one non-empty translation per source slot for batch %s\n' "$batch_number" >&2
+			validation_failed=true
+		elif ! diff -u <(header "$catalog") <(header "$batch_translation") >/dev/null; then
 			printf 'translate-po: translated batch %s changed its required header\n' "$batch_number" >&2
 			validation_failed=true
 		elif ! msgfmt --check --check-format --output-file=/dev/null "$batch_translation" 2>"$msgfmt_error"; then

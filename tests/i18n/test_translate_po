@@ -15,6 +15,12 @@ ollama_retry_exhausted_catalog="$tmp_dir/ollama-retry-exhausted-catalog.po"
 ollama_header_catalog="$tmp_dir/ollama-header-catalog.po"
 ollama_broken_header_catalog="$tmp_dir/ollama-broken-header-catalog.po"
 ollama_headerless_catalog="$tmp_dir/ollama-headerless-catalog.po"
+ollama_slots_catalog="$tmp_dir/ollama-slots-catalog.po"
+ollama_slots_response="$tmp_dir/ollama-slots-response.json"
+ollama_slots_invalid_catalog="$tmp_dir/ollama-slots-invalid-catalog.po"
+ollama_slots_invalid_response="$tmp_dir/ollama-slots-invalid-response.json"
+ollama_slots_plural_catalog="$tmp_dir/ollama-slots-plural-catalog.po"
+ollama_slots_plural_response="$tmp_dir/ollama-slots-plural-response.json"
 ollama_batch_catalog="$tmp_dir/ollama-batch-catalog.po"
 ollama_batch_one="$tmp_dir/ollama-batch-one.po"
 ollama_batch_two="$tmp_dir/ollama-batch-two.po"
@@ -24,6 +30,8 @@ complete="$tmp_dir/complete.po"
 header_changed="$tmp_dir/header-changed.po"
 broken_header_keyword="$tmp_dir/broken-header-keyword.po"
 headerless_body="$tmp_dir/headerless-body.po"
+quote_catalog="$tmp_dir/quote-catalog.po"
+quote_unescaped="$tmp_dir/quote-unescaped.po"
 multiline_catalog="$tmp_dir/multiline.po"
 multiline_partial="$tmp_dir/multiline-partial.po"
 format_catalog="$tmp_dir/format.po"
@@ -95,6 +103,8 @@ cp "$catalog" "$ollama_retry_exhausted_catalog"
 cp "$catalog" "$ollama_header_catalog"
 cp "$catalog" "$ollama_broken_header_catalog"
 cp "$catalog" "$ollama_headerless_catalog"
+cp "$catalog" "$ollama_slots_catalog"
+printf '%s\n' '{"translations":["ONE","TWO"]}' >"$ollama_slots_response"
 
 header "$catalog" >"$partial"
 printf '%s\n' \
@@ -112,6 +122,20 @@ printf '%s\n' \
 sed 's/Content-Transfer-Encoding: 8bit/Content-Transfer-Encoding: changed/' "$complete" >"$header_changed"
 sed '0,/^msgid ""$/s//msg_id ""/' "$complete" >"$broken_header_keyword"
 awk 'saw_body { print } /^$/ { saw_body = 1 }' "$complete" >"$headerless_body"
+
+printf '%s\n' \
+	'msgid ""' \
+	'msgstr ""' \
+	'"Language: xx\n"' \
+	'"Content-Type: text/plain; charset=UTF-8\n"' \
+	'"Content-Transfer-Encoding: 8bit\n"' \
+	'' \
+	'msgid "quoted \"fsearch\" example"' \
+	'msgstr ""' >"$quote_catalog"
+header "$quote_catalog" >"$quote_unescaped"
+printf '%s\n' \
+	'msgid "quoted "fsearch" example"' \
+	'msgstr "citation "fsearch" traduite"' >>"$quote_unescaped"
 
 printf '%s\n' \
 	'msgid ""' \
@@ -156,6 +180,9 @@ printf '%s\n' \
 	'msgid_plural "Do you really want to open %'"'"'d files?"' \
 	'msgstr[0] "Benetan %'"'"'d fitxategi ireki nahi dituzu?"' \
 	'msgstr[1] "Benetan %'"'"'d fitxategi ireki nahi dituzu?"' >>"$format_good"
+
+cp "$format_catalog" "$ollama_slots_plural_catalog"
+printf '%s\n' '{"translations":["Open %'"'"'d file?","Open %'"'"'d files?"]}' >"$ollama_slots_plural_response"
 
 header "$format_catalog" >"$syntax_bad"
 printf '%s\n' \
@@ -305,14 +332,15 @@ printf '%s\n' \
 	'if [[ "$data_file" != @* ]] || [ ! -s "$request_path" ]; then printf "Ollama request body was not passed through a readable file\\n" >&2; exit 93; fi' \
 	'if [ "$endpoint" != "${FAKE_OLLAMA_URL}/api/chat" ]; then printf "unexpected Ollama endpoint: %s\\n" "$endpoint" >&2; exit 92; fi' \
 	'if [ "$no_buffer" != true ] || [ "$max_time" != 900 ] || [ "$speed_limit" != 1 ] || [ "$speed_time" != 60 ]; then printf "Ollama request did not use the streaming timeout policy\\n" >&2; exit 91; fi' \
-	'if ! jq -e '\'' .model == "gemma4:12b" and .stream == true and .think == false and .options.temperature == 0 and .options.num_predict == 10000 and .format.required == ["po"] and ([.messages[].role] == ["system", "user"]) and ([.messages[].content] | join("\n") | contains("Never write msg_id")) and ([.messages[].content] | join("\n") | contains("Any msgid that is a semicolon-separated desktop keyword list")) and ([.messages[].content] | join("\n") | contains("Use typographic Unicode quotation marks in translated prose")) '\'' "$request_path" >/dev/null; then printf "Ollama request did not use the required structured schema or immutable-PO defaults\\n" >&2; exit 90; fi' \
+	'if ! jq -e '\'' .model == "gemma4:12b" and .stream == true and .think == false and .options.temperature == 0 and .options.num_predict == 10000 and .format.required == ["translations"] and .format.properties.translations.type == "array" and .format.properties.translations.items.type == "string" and ([.messages[].role] == ["system", "user"]) and ([.messages[].content] | join("\n") | contains("Do not generate GNU PO syntax")) and ([.messages[].content] | join("\n") | contains("semicolon-separated desktop keyword list")) '\'' "$request_path" >/dev/null; then printf "Ollama request did not use the required translation-data schema\\n" >&2; exit 90; fi' \
 	'call=1' \
 	'if [ -n "${FAKE_OLLAMA_COUNT_FILE-}" ]; then if [ -s "$FAKE_OLLAMA_COUNT_FILE" ]; then call=$(($(cat "$FAKE_OLLAMA_COUNT_FILE") + 1)); fi; printf "%s\\n" "$call" >"$FAKE_OLLAMA_COUNT_FILE"; fi' \
 	'if [ -n "${FAKE_OLLAMA_EXPECT_BATCH_SIZES-}" ]; then expected=$(printf "%s" "$FAKE_OLLAMA_EXPECT_BATCH_SIZES" | cut -d, -f "$call"); actual=$(jq -r '\''.messages[1].content'\'' "$request_path" | awk '\''/^msgid / && $0 != "msgid \"\"" { count += 1 } END { print count + 0 }'\''); if [ "$actual" != "$expected" ]; then printf "expected Ollama batch %s to contain %s entries, got %s\\n" "$call" "$expected" "$actual" >&2; exit 89; fi; fi' \
 	'if [ "${FAKE_OLLAMA_ERROR-false}" = true ]; then jq -nc '\''{error:"model rejected request"}'\''; exit 0; fi' \
+	'response_path=$(printenv FAKE_OLLAMA_RESPONSE_PATH 2>/dev/null || true)' \
 	'translation_path=$(printenv "FAKE_OLLAMA_TRANSLATION_$call" 2>/dev/null || true)' \
 	'if [ -z "$translation_path" ]; then translation_path=${FAKE_TRANSLATION-}; fi' \
-	'translation=$(jq -n --rawfile po "$translation_path" '\''{po:$po}'\'')' \
+	'if [ -n "$response_path" ]; then translation=$(cat "$response_path"); else translation=$(jq -n --rawfile po "$translation_path" '\''{po:$po}'\''); fi' \
 	'first=${translation:0:7}' \
 	'rest=${translation:7}' \
 	'for content in "$first" "$rest"; do jq -nc --arg content "$content" '\''{model:"gemma4:12b", message:{role:"assistant", content:$content}, done:false}'\''; done' \
@@ -362,6 +390,14 @@ output=$(OPENAI_API_KEY=test-key FAKE_TRANSLATION="$complete" PATH="$fake_bin:$P
 rc=$?
 if [ "$rc" -ne 0 ]; then
 	fail "rejected a complete streamed response: $output"
+fi
+output=$(OPENAI_API_KEY=test-key FAKE_TRANSLATION="$quote_unescaped" PATH="$fake_bin:$PATH" \
+	run_translator --apply "$quote_catalog" 2>&1)
+rc=$?
+if [ "$rc" -ne 0 ]; then
+	fail "did not canonicalize unescaped quote characters in a completed PO response: $output"
+elif ! awk '$0 == "msgstr \"citation \\\"fsearch\\\" traduite\"" { found = 1 } END { exit !found }' "$quote_catalog"; then
+	fail 'did not retain escaped literal quotes in the normalized translation'
 fi
 if msgattrib --untranslated --no-obsolete "$catalog" | awk '/^msgid / { found = 1 } END { exit found ? 0 : 1 }'; then
 	fail 'left an untranslated entry after accepting a complete response'
@@ -429,6 +465,53 @@ if [ "$rc" -ne 0 ]; then
 	fail "rejected a complete keyless Ollama response: $output"
 elif msgattrib --untranslated --no-obsolete "$ollama_catalog" | awk '/^msgid / { found = 1 } END { exit found ? 0 : 1 }'; then
 	fail 'left an untranslated entry after accepting a complete Ollama response'
+fi
+
+output=$(env -u OPENAI_API_KEY FAKE_OLLAMA_URL=http://127.0.0.1:11434 \
+	FAKE_OLLAMA_RESPONSE_PATH="$ollama_slots_response" PATH="$fake_ollama_bin:$PATH" \
+	bash "$translator" --apply --backend ollama "$ollama_slots_catalog" 2>&1)
+rc=$?
+if [ "$rc" -ne 0 ]; then
+	fail "did not render an Ollama translation-slot response into the source PO structure: $output"
+elif ! awk '
+	$0 == "msgid \"one\"" { one_id = 1 }
+	$0 == "msgstr \"ONE\"" { one_translation = 1 }
+	$0 == "msgid \"two\"" { two_id = 1 }
+	$0 == "msgstr \"TWO\"" { two_translation = 1 }
+	END { exit !(one_id && one_translation && two_id && two_translation) }
+' "$ollama_slots_catalog"; then
+	fail 'translation-slot rendering changed a source identifier or lost a rendered translation'
+fi
+
+output=$(env -u OPENAI_API_KEY FAKE_OLLAMA_URL=http://127.0.0.1:11434 \
+	FAKE_OLLAMA_RESPONSE_PATH="$ollama_slots_plural_response" PATH="$fake_ollama_bin:$PATH" \
+	bash "$translator" --apply --backend ollama "$ollama_slots_plural_catalog" 2>&1)
+rc=$?
+if [ "$rc" -ne 0 ]; then
+	fail "did not render plural translation slots: $output"
+elif ! awk -v singular="msgstr[0] \"Open %'d file?\"" -v plural="msgstr[1] \"Open %'d files?\"" '
+	$0 == singular { singular_found = 1 }
+	$0 == plural { plural_found = 1 }
+	END { exit !(singular_found && plural_found) }
+' "$ollama_slots_plural_catalog"; then
+	fail 'translation-slot rendering lost a plural form or its exact placeholder'
+fi
+
+cp "$ollama_env_catalog" "$ollama_slots_invalid_catalog"
+printf '%s\n' '{"translations":["ONE"]}' >"$ollama_slots_invalid_response"
+before=$(sha256sum "$ollama_slots_invalid_catalog" | awk '{ print $1 }')
+ollama_slots_invalid_count_file="$tmp_dir/ollama-slots-invalid-count"
+output=$(env -u OPENAI_API_KEY FAKE_OLLAMA_URL=http://127.0.0.1:11434 \
+	FAKE_OLLAMA_RESPONSE_PATH="$ollama_slots_invalid_response" FAKE_OLLAMA_COUNT_FILE="$ollama_slots_invalid_count_file" \
+	PATH="$fake_ollama_bin:$PATH" bash "$translator" --apply --backend ollama "$ollama_slots_invalid_catalog" 2>&1)
+rc=$?
+after=$(sha256sum "$ollama_slots_invalid_catalog" | awk '{ print $1 }')
+if [ "$rc" -eq 0 ]; then
+	fail "accepted an Ollama response with too few translation slots: $output"
+elif [ "$(cat "$ollama_slots_invalid_count_file")" -ne 3 ]; then
+	fail "used $(cat "$ollama_slots_invalid_count_file") Ollama requests for an invalid translation-slot response instead of three"
+elif [ "$before" != "$after" ]; then
+	fail 'modified the catalog after rejecting invalid Ollama translation slots'
 fi
 
 ollama_retry_count_file="$tmp_dir/ollama-retry-count"

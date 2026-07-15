@@ -33,3 +33,10 @@ only that batch, capped at three total attempts, while retaining all atomic
 catalog boundaries. Transport, API-error, malformed-stream, and
 missing-completion failures are not safe to hide behind retries and must stop
 immediately.
+
+Gemma is suitable for translating natural language, not for generating GNU PO
+syntax. The Ollama request must therefore ask for a JSON array of plain
+translation strings in source-slot order. Render those JSON string literals
+into the valid source batch locally, replacing only non-header `msgstr` or
+`msgstr[n]` slots. Keep source identifiers, comments, headers, plural fields,
+and escaping tool-owned; then run the existing semantic-preservation gates.
