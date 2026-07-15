@@ -12,3 +12,10 @@ With the locally configured 4K context, a real full-catalog 20-entry request
 truncated its JSON response. Keep the Ollama default at ten entries, while
 allowing an explicit `FSEARCH_TRANSLATE_BATCH_SIZE` override for models or
 hardware that have been measured to sustain a larger batch safely.
+
+Schema-constrained Gemma responses can still remove an escaped quote from PO
+text or copy a non-English AppStream semicolon keyword list unchanged.
+Require PO escape preservation and explicitly describe the semicolon-list
+translation rule (with a short example) in every request, then independently
+reject malformed PO and unchanged non-English lists. Temperature zero reduces
+variation but does not make local GPU generation bitwise deterministic.
