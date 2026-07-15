@@ -94,3 +94,5 @@
   Both catalogs passed strict gettext checks with zero fuzzy and untranslated entries before commit.
 - [x] Checkpoint 2: complete Polish (`pl`) and Ukrainian (`uk`) through seven streamed batches each. (2026-07-15 01:30 EDT)
   Both catalogs passed strict gettext checks with zero fuzzy and untranslated entries before commit.
+- [x] Checkpoint 3: complete Finnish (`fi`) and Simplified Chinese (`zh_CN`) through seven streamed batches each. (2026-07-15 01:36 EDT)
+  Both catalogs passed strict gettext checks with zero fuzzy and untranslated entries before commit.
