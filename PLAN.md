@@ -112,3 +112,5 @@
   Telugu preserves the literal `fsearch` brand token; Swedish and Telugu keyword lists no longer introduce space-prefixed tokens after semicolons.
 - [x] Checkpoint 9: complete Hungarian (`hu`), Standard Moroccan Tamazight (`zgh`), and Central Atlas Tamazight (`tzm`). (2026-07-15 04:04 EDT)
   The two Tamazight catalogs deterministically ended a 20-entry preference-string stream without completion; the tested `FSEARCH_TRANSLATE_BATCH_SIZE=10` override re-batched them atomically and both completed with strict gettext, header/key invariants, full suite, and production build passing.
+- [x] Checkpoint 10: complete Catalan (`ca`) and Galician (`gl`), and lock invalid batch-size rejection in CI. (2026-07-15 04:16 EDT)
+  Both catalogs completed atomically using the proven ten-entry override; the translator regression now verifies invalid batch-size values exit 2 with an actionable error.

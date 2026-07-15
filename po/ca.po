@@ -19,331 +19,289 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 3.9-dev\n"
 
-#: data/io.github.cboxdoerfer.FSearch.desktop.in.in:4 src/main.c:36
-msgid "FSearch"
-msgstr "FSearch"
-
-#: data/io.github.cboxdoerfer.FSearch.desktop.in.in:5
-#, fuzzy
-msgid "A file search application focusing on performance and advanced features"
-msgstr ""
-"Una eina de cerca caracteritzada pel seu rendiment i les prestacions "
-"avançades"
-
 #: data/io.github.cboxdoerfer.FSearch.desktop.in.in:10
 msgid "search;fsearch;files;folders;music;video;documents;find;tool;everything;"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.desktop.in.in:12
-#, fuzzy
-msgid "File Search Utility"
-msgstr "FSearch"
+msgstr "cerca;fsearch;fitxers;carpetes;música;vídeo;documents;troba;eina;tot;"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:8
 msgid "A graphical file search application"
-msgstr ""
+msgstr "Una aplicació gràfica de cerca de fitxers"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:10
 msgid ""
 "FSearch helps you to find files and folders as easy and fast as possible. "
 "Just type a few letters and search results will appear almost instantly."
 msgstr ""
+"El FSearch us ajuda a trobar fitxers i carpetes de la manera més fàcil i "
+"ràpida possible. Només cal que escriviu unes quantes lletres i els resultats "
+"de la cerca apareixeran gairebé a l'instant."
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:14
 msgid ""
 "There are a lot of features which make searching as efficient and powerful "
 "as possible. Such as:"
 msgstr ""
+"Hi ha moltes funcions que fan que la cerca sigui tan eficient i potent com "
+"sigui possible. Per exemple:"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:19
 msgid ""
 "Ignore case (e.g. searching for \"<code>fsearch</code>\" will match "
 "\"FSearch\" as well)"
 msgstr ""
+"Ignora les majúscules i minúscules (p. ex., la cerca de \"<code>fsearch</"
+"code>\" també coincidirà amb \"FSearch\")"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:20
 msgid "Regular expressions"
-msgstr ""
+msgstr "Expressions regulars"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:21
 msgid "Wildcard support"
-msgstr ""
+msgstr "Compatibilitat amb comodins"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:22
 msgid "Filter support (e.g. only search for audio files)"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:23
-#, fuzzy
-msgid "Exclude certain files and folders"
-msgstr "Exclou els fitxers i les carpetes amagats"
+msgstr "Compatibilitat amb filtres (p. ex., cercar només fitxers d'àudio)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:24
 msgid "Fast sort by name, path, size, modification time and extension"
-msgstr ""
+msgstr "Ordenació ràpida per nom, camí, mida, data de modificació i extensió"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:26
 msgid ""
 "<em>Note:</em> Due to Flatpak's sandboxing, FSearch can't find every file on "
 "your system."
 msgstr ""
+"<em>Nota:</em> A causa de l'aïllament del Flatpak, el FSearch no pot trobar "
+"tots els fitxers del sistema."
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:35
 msgid "The default UI layout"
-msgstr ""
+msgstr "La disposició predeterminada de la interfície d’usuari"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:41
 msgid "A layout more closely following GNOME HIGs"
 msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:49
-#, fuzzy
-msgid "search"
-msgstr "Cerca"
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:50
-#, fuzzy
-msgid "fsearch"
-msgstr "Cerca"
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:51
-#, fuzzy
-msgid "files"
-msgstr "fitxers?"
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:52
-#, fuzzy
-msgid "folders"
-msgstr "Carpetes"
+"Una disposició que segueix més fidelment les directrius d’interfície de GNOME"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:53
 msgid "music"
-msgstr ""
+msgstr "música"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:54
 msgid "video"
-msgstr ""
+msgstr "vídeo"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:55
 msgid "documents"
-msgstr ""
+msgstr "documents"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:56
 msgid "find"
-msgstr ""
+msgstr "cerca"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:57
 msgid "tool"
-msgstr ""
+msgstr "eina"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:58
 msgid "everything"
-msgstr ""
+msgstr "tot"
 
 #. Kept for appstreamcli < 1.0 (e.g. Ubuntu 20.04/22.04 PPA builds), which doesn't know <developer>.
 #. Translators: please do NOT translate this.
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:77
 msgid "Christian Boxdörfer"
-msgstr ""
+msgstr "Christian Boxdörfer"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:89
 msgid "DB rewrite"
-msgstr ""
+msgstr "Reescriptura de la base de dades"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:90
 msgid "DB: Add support for filesystem monitoring"
-msgstr ""
+msgstr "BD: Afegeix compatibilitat amb la supervisió del sistema de fitxers"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:91
 msgid ""
 "DB: Allow files and folders to be excluded based on fixed patterns, "
 "wildcards or regular expressions"
 msgstr ""
+"BD: Permet excloure fitxers i carpetes basant-se en patrons fixos, comodins "
+"o expressions regulars"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:92
 msgid ""
 "DB: Allow included folders to be scheduled and scanned after launch "
 "independently"
 msgstr ""
+"BD: Permet programar i escanejar de manera independent les carpetes incloses "
+"després de l'inici"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:93
 msgid "DB: Make rescanning more efficient"
-msgstr ""
+msgstr "BD: Fa que tornar a escanejar sigui més eficient"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:94
 msgid "DB: Store database config in DB file"
-msgstr ""
+msgstr "BD: Emmagatzema la configuració de la base de dades al fitxer de BD"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:95
 msgid "DB: Add checksum to DB file"
-msgstr ""
+msgstr "BD: Afegeix una suma de verificació al fitxer de BD"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:96
 msgid "Make icon and file info gathering asynchronous (no UI blocking)"
 msgstr ""
+"Fa que la recopilació d'informació d'icones i fitxers sigui asíncrona (sense "
+"bloquejar la interfície d'usuari)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:97
 msgid "Reduce memory usage"
-msgstr ""
+msgstr "Redueix l'ús de memòria"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:98
 msgid "Add contextual help for all preferences"
-msgstr ""
+msgstr "Afegeix ajuda contextual per a totes les preferències"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:99
 msgid "Numerous bug fixes and stability and performance improvements"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:106
-#, fuzzy
-msgid "New search engine"
-msgstr "FSearch"
+msgstr "Nombroses correccions d'errors i millores d'estabilitat i rendiment"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:107
 msgid "Greatly improved highlighting of search terms"
-msgstr ""
+msgstr "S'ha millorat considerablement el ressaltat dels termes de cerca"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:108
 msgid "Custom filters"
-msgstr ""
+msgstr "Filtres personalitzats"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:109
 msgid "Improved sort performance"
-msgstr ""
+msgstr "S'ha millorat el rendiment de l'ordenació"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:110
 msgid "Improved scroll performance"
-msgstr ""
+msgstr "S'ha millorat el rendiment del desplaçament"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:111
 msgid "Remember file selection after a database update"
 msgstr ""
+"Es recorda la selecció de fitxers després d'actualitzar la base de dades"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:112
 msgid "Automatically scroll the result list in rubberband selection mode"
 msgstr ""
+"Es desplaça automàticament la llista de resultats en el mode de selecció "
+"elàstica"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:113
 msgid "Invert selection with rubber band when 'Ctrl' is pressed"
-msgstr ""
+msgstr "S'inverteix la selecció elàstica quan es prem «Ctrl»"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:114
 msgid "Focus search entry when the main window gets activated"
-msgstr ""
+msgstr "Es dona el focus al camp de cerca quan s'activa la finestra principal"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:115
 msgid "Add filter for applications (i.e. .desktop files)"
-msgstr ""
+msgstr "S'afegeix un filtre per a les aplicacions (és a dir, fitxers .desktop)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:116
 msgid ""
 "Add option to launch applications directly instead of opening the .desktop "
 "files"
 msgstr ""
+"S'afegeix una opció per iniciar les aplicacions directament en lloc d'obrir "
+"els fitxers .desktop"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:117
 msgid "Show application icons for .desktop files"
-msgstr ""
+msgstr "Mostra les icones de les aplicacions per als fitxers .desktop"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:118
 msgid "Add .odp and .ods files to document filter"
-msgstr ""
+msgstr "Afegeix els fitxers .odp i .ods al filtre de documents"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:119
 msgid ""
 "'Open with' menu now only shows applications which can handle the selected "
 "files"
 msgstr ""
+"El menú «Obre amb» ara només mostra les aplicacions que poden gestionar els "
+"fitxers seleccionats"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:120
 msgid ""
 "Improved opening of multiple files with the same type (they get now passed "
 "as a list to applications, instead of one by one)"
 msgstr ""
+"S'ha millorat l'obertura de diversos fitxers del mateix tipus (ara es passen "
+"com una llista a les aplicacions, en comptes d'un per un)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:121
 msgid "Better support for opening files in sandboxed mode"
-msgstr ""
+msgstr "Millor compatibilitat amb l'obertura de fitxers en mode aïllat"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:122
 msgid ""
 "Add menu items with links to the issue tracker, forum and donation pages"
 msgstr ""
+"Afegeix elements de menú amb enllaços al seguiment d'incidències, al fòrum i "
+"a les pàgines de donacions"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:123
 msgid "Improve support for non-Linux systems"
-msgstr ""
+msgstr "Millora la compatibilitat amb sistemes que no són Linux"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:124
 msgid ""
 "Add option to exit FSearch when Escape is pressed instead of minimizing the "
 "window"
 msgstr ""
+"Afegeix una opció per sortir del FSearch quan es prem Escape en comptes de "
+"minimitzar la finestra"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:125
 msgid "Exclude '/proc' and '/sys' by default"
-msgstr ""
+msgstr "Exclou '/proc' i '/sys' per defecte"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:126
 msgid "Open context menu when 'Menu' key or 'Shift + F10' are pressed"
-msgstr ""
+msgstr "Obre el menú contextual quan es prem la tecla «Menu» o «Shift + F10»"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:127
 msgid "and tons of bug fixes, translation updates and smaller improvements"
 msgstr ""
+"i un munt de correccions d'errors, actualitzacions de traduccions i millores "
+"menors"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:133
 msgid "Initial release."
-msgstr ""
+msgstr "Versió inicial."
 
 #: src/fsearch.c:181
 msgid "translator-credits"
-msgstr ""
-
-#: src/fsearch.c:183
-msgid "A search utility focusing on performance and advanced features"
-msgstr ""
-"Una eina de cerca caracteritzada pel seu rendiment i les prestacions "
-"avançades"
-
-#: src/fsearch.c:330
-#, fuzzy
-msgid "Saving database and config…"
-msgstr "S’està carregant la base de dades…"
-
-#: src/fsearch.c:786
-#, fuzzy
-msgid "Open a new application window"
-msgstr "Obre amb una altra aplicació"
-
-#: src/fsearch.c:787
-#, fuzzy
-msgid "Minimize the application window"
-msgstr "Obre amb una altra aplicació"
+msgstr "Adolfo Jayme Barrientos <fitojb@ubuntu.com>"
 
 #: src/fsearch.c:788
 msgid "Show the application preferences"
-msgstr ""
-
-#: src/fsearch.c:789
-#, fuzzy
-msgid "Set the search pattern"
-msgstr "Mostra el botó de cerca"
-
-#: src/fsearch.c:790
-#, fuzzy
-msgid "Update the database and exit"
-msgstr "Actualitza la base de dades"
+msgstr "Mostra les preferències de l'aplicació"
 
 #: src/fsearch.c:791
 msgid "Print version information and exit"
-msgstr ""
+msgstr "Mostra la informació de la versió i surt"
 
 #: src/fsearch.c:883
 msgid ""
 "For command-line search help, run: fsearch --cli --help\n"
 "For shared configuration help, run: fsearch config --help"
 msgstr ""
+"Per obtenir ajuda sobre la cerca des de la línia d'ordres, executeu: fsearch "
+"--cli --help\n"
+"Per obtenir ajuda sobre la configuració compartida, executeu: fsearch config "
+"--help"
 
 #: src/fsearch_cli.c:125
 #, c-format
@@ -351,22 +309,25 @@ msgid ""
 "Results capped at %u. Use --unlimit or --unlimited to get them all, or "
 "provide a custom --limit, or set FSEARCH_RESULT_LIMIT."
 msgstr ""
+"Els resultats s'han limitat a %u. Useu --unlimit o --unlimited per obtenir-"
+"los tots, proporcioneu un --limit personalitzat o definiu "
+"FSEARCH_RESULT_LIMIT."
 
 #: src/fsearch_cli.c:134
 #, c-format
 msgid "%u match."
 msgid_plural "%u matches."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%u coincidència."
+msgstr[1] "%u coincidències."
 
 #: src/fsearch_cli.c:142
 msgid "Updating FSearch index before searching..."
-msgstr ""
+msgstr "S'està actualitzant l'índex de l'FSearch abans de cercar..."
 
 #: src/fsearch_cli.c:149
 #, c-format
 msgid "Indexing: %s"
-msgstr ""
+msgstr "S'està indexant: %s"
 
 #: src/fsearch_cli.c:181
 msgid ""
@@ -412,40 +373,85 @@ msgid ""
 "{png,jpg} selects alternatives; {01..12} is an inclusive numeric range; \\* "
 "matches a literal *.\n"
 msgstr ""
+"Ús: fsearch --cli [OPTIONS]\n"
+"\n"
+"Cerca a l'índex existent de FSearch i mostra els camins coincidents.\n"
+"\n"
+"  -s, --search PATTERN       Cerca amb la sintaxi de consulta de FSearch\n"
+"      --path DIRECTORY        Cerca recursivament sota DIRECTORY (per "
+"defecte: directori actual)\n"
+"      --global                Cerca a totes les ubicacions indexades\n"
+"      --limit COUNT          Mostra com a màxim COUNT resultats\n"
+"      --unlimit, --unlimited Mostra tots els resultats\n"
+"  -u, --update-database      Torna a explorar l'índex configurat i surt\n"
+"      --about                Mostra informació de compilació en una línia\n"
+"  -h, --help                 Mostra aquesta ajuda\n"
+"\n"
+"Configuració: fsearch config --help\n"
+"\n"
+"Exemples:\n"
+"  fsearch --cli --search invoice              # directori actual\n"
+"  fsearch --cli --path ~/Documents --search invoice\n"
+"  fsearch --cli --global --search invoice\n"
+"  fsearch --cli --search 'file:size:>20mb'\n"
+"  fsearch --cli --search 'ext:jpg;png'\n"
+"  fsearch --cli --search 'path:projects report'\n"
+"  fsearch --cli --search 'report AND ext:pdf'\n"
+"  fsearch --cli --search '(draft OR final) !archive'\n"
+"  fsearch --cli --search 'file:regex:\".+\\.pdf$\"'\n"
+"  fsearch --cli --search 'case:AGENTS'        # distingeix entre majúscules "
+"i minúscules\n"
+"  fsearch --cli --search 'case:regex:\"^AGENTS\\.md$\"'\n"
+"  fsearch --cli --search 'glob:**/*.png'\n"
+"  fsearch --cli --search 'path:glob:**/AGENTS.md'\n"
+"  fsearch --cli --search 'case:glob:AGENTS.md' # glob que distingeix entre "
+"majúscules i minúscules\n"
+"\n"
+"Els exemples utilitzen l'espai com a AND. Proveu file:, folder:, path:, "
+"ext:, size:, dm:, case:, regex: i glob:.\n"
+"Sintaxi booleana: AND o &&; OR o ||; NOT o !. Els parèntesis agrupen "
+"termes.\n"
+"Sintaxi glob: * exclou /; ** abasta directoris; ? coincideix amb un "
+"caràcter; [a-c] és un interval;\n"
+"Les cerques glob cerquen camins per defecte; utilitzeu **/ per a qualsevol "
+"profunditat; file:glob: cerca noms de fitxer.\n"
+"{png,jpg} selecciona alternatives; {01..12} és un interval numèric inclusiu; "
+"\\* coincideix amb un * literal.\n"
 
 #: src/fsearch_cli.c:238
 #, c-format
 msgid "FSearch %s - indexed file search for %s %s\n"
-msgstr ""
+msgstr "FSearch %s - cerca de fitxers indexats per a %s %s\n"
 
 #: src/fsearch_cli.c:301
 msgid "fsearch: interrupted\n"
-msgstr ""
+msgstr "fsearch: interromput\n"
 
 #: src/fsearch_cli.c:315
 msgid "fsearch: search could not run because the index is unavailable\n"
 msgstr ""
+"fsearch: no s'ha pogut executar la cerca perquè l'índex no està disponible\n"
 
 #: src/fsearch_cli.c:352 src/fsearch_cli.c:381 src/fsearch_cli_config.c:774
 #: src/fsearch_cli_config.c:961 src/fsearch_cli_config.c:1147
 #, c-format
 msgid "%s\n"
-msgstr ""
+msgstr "%s\n"
 
 #: src/fsearch_cli.c:400
 #, c-format
 msgid "%s"
-msgstr ""
+msgstr "%s"
 
 #: src/fsearch_cli.c:473
 #, c-format
 msgid "fsearch: unknown CLI option: %s\n"
-msgstr ""
+msgstr "fsearch: opció de la CLI desconeguda: %s\n"
 
 #: src/fsearch_cli.c:495
 #, c-format
 msgid "fsearch: failed to create data directory: %s\n"
-msgstr ""
+msgstr "fsearch: no s'ha pogut crear el directori de dades: %s\n"
 
 #: src/fsearch_cli_config.c:111
 msgid ""
@@ -487,30 +493,81 @@ msgid ""
 "  fsearch config filters add Documents --query 'ext:pdf' --macro docs\n"
 "  fsearch config reset search --yes\n"
 msgstr ""
+"Ús: fsearch config COMMAND [OPTIONS]\n"
+"\n"
+"Visualitzeu i modifiqueu la configuració compartida de la GUI i la CLI de "
+"FSearch.\n"
+"\n"
+"Ordres de configuració:\n"
+"  path                         Mostra el camí del fitxer de configuració\n"
+"  show [SECTION] [--json]      Mostra els paràmetres\n"
+"  get KEY [--json]             Mostra un paràmetre escalar\n"
+"  set KEY VALUE                Estableix un paràmetre escalar\n"
+"  unset KEY                    Restaura el valor predeterminat d'un "
+"paràmetre escalar\n"
+"  reset [KEY|SECTION] --yes [--rescan]\n"
+"                               Restaura els valors predeterminats\n"
+"  doctor                       Comprova la coherència de la configuració i "
+"l'índex\n"
+"  roots list|add|set|remove    Gestiona les arrels indexades\n"
+"  excludes list|add|remove|hidden\n"
+"                               Gestiona les exclusions de l'índex\n"
+"  filters list|add|set|remove|reset\n"
+"                               Gestiona els filtres de cerca desats\n"
+"\n"
+"Els valors escalars utilitzen true/false, enters decimals o cadenes.\n"
+"Executeu 'fsearch config show' per llistar cada clau escalar i el valor "
+"actual.\n"
+"Seccions escalars: search, application, window, ui, columns, sort, dialogs.\n"
+"Utilitzeu 'fsearch config roots|excludes|filters --help' per a les opcions "
+"de cada família.\n"
+"Tanqueu la GUI de FSearch abans de canviar els paràmetres compartits.\n"
+"Els canvis de l'índex es podran cercar en la cerca següent de la CLI o "
+"immediatament amb --rescan.\n"
+"Utilitzeu --json amb show, get i les ordres list de les col·leccions.\n"
+"\n"
+"Exemples:\n"
+"  fsearch config show search --json\n"
+"  fsearch config get search.match-case\n"
+"  fsearch config set search.match-case true\n"
+"  fsearch config roots add ~/Code --monitor --one-file-system --rescan\n"
+"  fsearch config excludes add '*.tmp' --type wildcard --scope basename --"
+"target files\n"
+"  fsearch config filters add Documents --query 'ext:pdf' --macro docs\n"
+"  fsearch config reset search --yes\n"
 
 #: src/fsearch_cli_config.c:152
 msgid ""
 "Usage: fsearch config show [SECTION] [--json]\n"
 "Show all scalar settings or one dotted section.\n"
 msgstr ""
+"Ús: fsearch config show [SECTION] [--json]\n"
+"Mostra tots els paràmetres escalars o una secció amb notació de punts.\n"
 
 #: src/fsearch_cli_config.c:154
 msgid ""
 "Usage: fsearch config get KEY [--json]\n"
 "Print one typed scalar value. Discover keys with 'fsearch config show'.\n"
 msgstr ""
+"Ús: fsearch config get KEY [--json]\n"
+"Mostra un valor escalar amb tipus. Descobriu les claus amb «fsearch config "
+"show».\n"
 
 #: src/fsearch_cli_config.c:157
 msgid ""
 "Usage: fsearch config set KEY VALUE\n"
 "Set a boolean, integer, string, or enumerated scalar value.\n"
 msgstr ""
+"Ús: fsearch config set KEY VALUE\n"
+"Estableix un valor escalar booleà, enter, de cadena o enumerat.\n"
 
 #: src/fsearch_cli_config.c:159
 msgid ""
 "Usage: fsearch config unset KEY\n"
 "Restore one scalar setting to its built-in default.\n"
 msgstr ""
+"Ús: fsearch config unset KEY\n"
+"Restaura un paràmetre escalar al valor predeterminat incorporat.\n"
 
 #: src/fsearch_cli_config.c:161
 msgid ""
@@ -518,6 +575,9 @@ msgid ""
 "Reset is destructive and requires --yes. --rescan applies to roots, "
 "database, excludes, or all.\n"
 msgstr ""
+"Ús: fsearch config reset [KEY|SECTION] --yes [--rescan]\n"
+"El restabliment és destructiu i requereix --yes. --rescan s'aplica a les "
+"arrels, la base de dades, les exclusions o tot.\n"
 
 #: src/fsearch_cli_config.c:164
 msgid ""
@@ -525,6 +585,9 @@ msgid ""
 "Check configuration readability and whether the saved index uses the same "
 "roots and exclusions.\n"
 msgstr ""
+"Ús: fsearch config doctor\n"
+"Comprova que la configuració sigui llegible i si l'índex desat utilitza les "
+"mateixes arrels i exclusions.\n"
 
 #: src/fsearch_cli_config.c:170
 msgid ""
@@ -544,6 +607,23 @@ msgid ""
 "  --rescan-every SECONDS        Set periodic rescan interval; 0 disables it\n"
 "  --rescan                      Rebuild the index immediately after saving\n"
 msgstr ""
+"Ús: fsearch config roots COMMAND [PATH] [OPTIONS]\n"
+"\n"
+"Ordres:\n"
+"  list [--json]                Llista les arrels indexades\n"
+"  add PATH [OPTIONS]           Afegeix un directori arrel\n"
+"  set PATH [OPTIONS]           Canvia una arrel existent\n"
+"  remove PATH [--rescan]       Elimina una arrel existent\n"
+"\n"
+"Opcions per a add i set:\n"
+"  --active, --inactive\n"
+"  --monitor, --no-monitor\n"
+"  --one-file-system, --no-one-file-system\n"
+"  --scan-after-launch, --no-scan-after-launch\n"
+"  --rescan-every SECONDS        Estableix l'interval de reexploració "
+"periòdica; 0 la inhabilita\n"
+"  --rescan                      Reconstrueix l'índex immediatament després "
+"de desar\n"
 
 #: src/fsearch_cli_config.c:187
 msgid ""
@@ -563,6 +643,23 @@ msgid ""
 "  --active, --inactive          Add state or removal selector\n"
 "  --rescan                      Rebuild the index immediately after saving\n"
 msgstr ""
+"Ús: fsearch config excludes COMMAND [PATTERN|VALUE] [OPTIONS]\n"
+"\n"
+"Ordres:\n"
+"  list [--json]                 Llista les exclusions\n"
+"  add PATTERN [OPTIONS]         Afegeix una exclusió\n"
+"  remove PATTERN [OPTIONS]      Elimina una exclusió coincident\n"
+"  hidden [true|false] [--rescan]\n"
+"                                Mostra o canvia l'exclusió dels fitxers "
+"ocults\n"
+"\n"
+"Opcions per a add i remove:\n"
+"  --type fixed|wildcard|regex   Valor predeterminat: fixed\n"
+"  --scope full-path|basename    Valor predeterminat: full-path\n"
+"  --target both|files|folders   Valor predeterminat: both\n"
+"  --active, --inactive          Afegeix l'estat o el selector d'eliminació\n"
+"  --rescan                      Reconstrueix l'índex immediatament després "
+"de desar\n"
 
 #: src/fsearch_cli_config.c:204
 msgid ""
@@ -582,205 +679,232 @@ msgid ""
 "  --path, --no-path             Search full paths\n"
 "  --regex, --no-regex           Treat query as a regular expression\n"
 msgstr ""
+"Ús: fsearch config filters COMMAND [NAME] [OPTIONS]\n"
+"\n"
+"Ordres:\n"
+"  list [--json]                 Llista els filtres desats\n"
+"  add NAME [OPTIONS]            Afegeix un filtre amb nom\n"
+"  set NAME [OPTIONS]            Canvia un filtre amb nom\n"
+"  remove NAME                   Elimina un filtre amb nom\n"
+"  reset                         Restaura els filtres incorporats\n"
+"\n"
+"Opcions per a add i set:\n"
+"  --query QUERY                 Consulta de FSearch desada\n"
+"  --macro MACRO                 Nom de la macro de consulta\n"
+"  --case, --no-case             Distingeix entre majúscules i minúscules\n"
+"  --path, --no-path             Cerca en els camins complets\n"
+"  --regex, --no-regex           Tracta la consulta com una expressió "
+"regular\n"
 
 #: src/fsearch_cli_config.c:265
 msgid ""
 "fsearch config: close the running FSearch GUI before changing shared "
 "settings\n"
 msgstr ""
+"fsearch config: tanqueu la interfície gràfica del FSearch en execució abans "
+"de canviar els paràmetres compartits\n"
 
 #: src/fsearch_cli_config.c:269
 msgid "fsearch config: failed to save configuration\n"
-msgstr ""
+msgstr "fsearch config: no s'ha pogut desar la configuració\n"
 
 #: src/fsearch_cli_config.c:280
 msgid "Index configuration changed; the next CLI search will rebuild it.\n"
 msgstr ""
+"La configuració de l’índex ha canviat; la propera cerca per CLI el "
+"reconstruirà.\n"
 
 #: src/fsearch_cli_config.c:416
 #, c-format
 msgid "fsearch config %s: unknown option: %s\n"
-msgstr ""
+msgstr "fsearch config %s: opció desconeguda: %s\n"
 
 #: src/fsearch_cli_config.c:422
 #, c-format
 msgid "fsearch config %s: unexpected argument: %s\n"
-msgstr ""
+msgstr "fsearch config %s: argument inesperat: %s\n"
 
 #: src/fsearch_cli_config.c:449
 msgid "Usage: fsearch config get KEY [--json]\n"
-msgstr ""
+msgstr "Ús: fsearch config get KEY [--json]\n"
 
 #: src/fsearch_cli_config.c:454 src/fsearch_cli_config.c:555
 #, c-format
 msgid "fsearch config: unknown setting: %s\n"
-msgstr ""
+msgstr "fsearch config: paràmetre desconegut: %s\n"
 
 #: src/fsearch_cli_config.c:502
 #, c-format
 msgid "fsearch config show: unknown section: %s\n"
-msgstr ""
+msgstr "fsearch config show: secció desconeguda: %s\n"
 
 #: src/fsearch_cli_config.c:550
 #, c-format
 msgid "Usage: fsearch config %s KEY%s\n"
-msgstr ""
+msgstr "Ús: fsearch config %s KEY%s\n"
 
 #: src/fsearch_cli_config.c:566
 #, c-format
 msgid "fsearch config: invalid value for %s: %s\n"
-msgstr ""
+msgstr "fsearch config: valor no vàlid per a %s: %s\n"
 
 #: src/fsearch_cli_config.c:572
 #, c-format
 msgid "%s = %s\n"
-msgstr ""
+msgstr "%s = %s\n"
 
 #: src/fsearch_cli_config.c:637
 #, c-format
 msgid "fsearch config roots: unknown operation: %s\n"
-msgstr ""
+msgstr "fsearch config roots: operació desconeguda: %s\n"
 
 #: src/fsearch_cli_config.c:691
 msgid "fsearch config roots: --rescan-every requires SECONDS\n"
-msgstr ""
+msgstr "fsearch config roots: --rescan-every requereix SECONDS\n"
 
 #: src/fsearch_cli_config.c:710
 msgid "fsearch config roots: missing PATH\n"
-msgstr ""
+msgstr "fsearch config roots: falta PATH\n"
 
 #: src/fsearch_cli_config.c:717 src/fsearch_cli_config.c:732
 #, c-format
 msgid "fsearch config roots: path not found: %s\n"
-msgstr ""
+msgstr "fsearch config roots: no s'ha trobat el camí: %s\n"
 
 #: src/fsearch_cli_config.c:724
 #, c-format
 msgid "fsearch config roots: not a directory: %s\n"
-msgstr ""
+msgstr "fsearch config roots: no és un directori: %s\n"
 
 #: src/fsearch_cli_config.c:728
 #, c-format
 msgid "fsearch config roots: path already exists: %s\n"
-msgstr ""
+msgstr "fsearch config roots: el camí ja existeix: %s\n"
 
 #: src/fsearch_cli_config.c:752
 #, c-format
 msgid "fsearch config roots: invalid rescan duration: %s\n"
-msgstr ""
+msgstr "fsearch config roots: durada de reescaneig no vàlida: %s\n"
 
 #: src/fsearch_cli_config.c:765
 msgid ""
 "%s\tactive=%s monitor=%s one-file-system=%s scan-after-launch=%s rescan-"
 "after=%"
 msgstr ""
+"%s\tactive=%s monitor=%s one-file-system=%s scan-after-launch=%s rescan-"
+"after=%"
 
 #: src/fsearch_cli_config.c:844
 msgid "fsearch config excludes hidden: expected true or false\n"
-msgstr ""
+msgstr "fsearch config excludes hidden: s'esperava true o false\n"
 
 #: src/fsearch_cli_config.c:850
 #, c-format
 msgid "exclude-hidden = %s\n"
-msgstr ""
+msgstr "exclude-hidden = %s\n"
 
 #: src/fsearch_cli_config.c:856
 #, c-format
 msgid "fsearch config excludes: unknown operation: %s\n"
-msgstr ""
+msgstr "fsearch config excludes: operació desconeguda: %s\n"
 
 #: src/fsearch_cli_config.c:877
 #, c-format
 msgid "fsearch config excludes: %s requires a value\n"
-msgstr ""
+msgstr "fsearch config excludes: %s requereix un valor\n"
 
 #: src/fsearch_cli_config.c:909
 msgid "fsearch config excludes: missing PATTERN\n"
-msgstr ""
+msgstr "fsearch config excludes: manca PATTERN\n"
 
 #: src/fsearch_cli_config.c:914
 #, c-format
 msgid "fsearch config excludes: invalid type: %s\n"
-msgstr ""
+msgstr "fsearch config excludes: tipus no vàlid: %s\n"
 
 #: src/fsearch_cli_config.c:919
 #, c-format
 msgid "fsearch config excludes: invalid scope: %s\n"
-msgstr ""
+msgstr "fsearch config excludes: àmbit no vàlid: %s\n"
 
 #: src/fsearch_cli_config.c:924
 #, c-format
 msgid "fsearch config excludes: invalid target: %s\n"
-msgstr ""
+msgstr "fsearch config excludes: destinació no vàlida: %s\n"
 
 #: src/fsearch_cli_config.c:954
 #, c-format
 msgid "fsearch config excludes: exclusion not found: %s\n"
-msgstr ""
+msgstr "fsearch config excludes: no s'ha trobat l'exclusió: %s\n"
 
 #: src/fsearch_cli_config.c:1022
 msgid "filters reset\n"
-msgstr ""
+msgstr "s'han restablert els filtres\n"
 
 #: src/fsearch_cli_config.c:1029
 #, c-format
 msgid "fsearch config filters: unknown operation: %s\n"
-msgstr ""
+msgstr "fsearch config filters: operació desconeguda: %s\n"
 
 #: src/fsearch_cli_config.c:1051
 #, c-format
 msgid "fsearch config filters: %s requires a value\n"
-msgstr ""
+msgstr "fsearch config filters: %s requereix un valor\n"
 
 #: src/fsearch_cli_config.c:1094
 msgid "fsearch config filters: missing NAME\n"
-msgstr ""
+msgstr "fsearch config filters: manca NAME\n"
 
 #: src/fsearch_cli_config.c:1100 src/fsearch_cli_config.c:1111
 #, c-format
 msgid "fsearch config filters: name not found: %s\n"
-msgstr ""
+msgstr "fsearch config filters: no s'ha trobat el nom: %s\n"
 
 #: src/fsearch_cli_config.c:1107
 #, c-format
 msgid "fsearch config filters: name already exists: %s\n"
-msgstr ""
+msgstr "fsearch config filters: el nom ja existeix: %s\n"
 
 #: src/fsearch_cli_config.c:1145
 #, c-format
 msgid "%s\tmacro=%s query=%s\n"
-msgstr ""
+msgstr "%s\tmacro=%s query=%s\n"
 
 #: src/fsearch_cli_config.c:1193
 msgid "fsearch config reset requires --yes\n"
-msgstr ""
+msgstr "fsearch config reset requereix --yes\n"
 
 #: src/fsearch_cli_config.c:1201
 msgid ""
 "fsearch config reset: --rescan requires roots, database, excludes, or all\n"
 msgstr ""
+"fsearch config reset: --rescan requereix roots, database, excludes o all\n"
 
 #: src/fsearch_cli_config.c:1241
 #, c-format
 msgid "fsearch config: unknown setting or section: %s\n"
-msgstr ""
+msgstr "fsearch config: paràmetre o secció desconeguts: %s\n"
 
 #: src/fsearch_cli_config.c:1246
 #, c-format
 msgid "%s settings reset\n"
-msgstr ""
+msgstr "S'han restablert els paràmetres de %s\n"
 
 #: src/fsearch_cli_config.c:1253
 msgid ""
 "configuration: missing; defaults active\n"
 "index: unknown\n"
 msgstr ""
+"configuració: absent; els valors predeterminats estan actius\n"
+"índex: desconegut\n"
 
 #: src/fsearch_cli_config.c:1261
 msgid ""
 "configuration: ok\n"
 "index: missing or unreadable\n"
 msgstr ""
+"configuració: correcta\n"
+"índex: absent o il·legible\n"
 
 #: src/fsearch_cli_config.c:1266
 #, c-format
@@ -788,129 +912,72 @@ msgid ""
 "configuration: ok\n"
 "index: %s\n"
 msgstr ""
+"configuració: correcta\n"
+"índex: %s\n"
 
 #: src/fsearch_cli_config.c:1266
 msgid "current"
-msgstr ""
+msgstr "actual"
 
 #: src/fsearch_cli_config.c:1266
 msgid "stale"
-msgstr ""
+msgstr "obsolet"
 
 #: src/fsearch_cli_config.c:1278
 msgid ""
 "Usage: fsearch config path\n"
 "Print the active FSearch configuration file path.\n"
 msgstr ""
+"Ús: fsearch config path\n"
+"Mostra el camí del fitxer de configuració actiu del FSearch.\n"
 
 #: src/fsearch_cli_config.c:1321
 #, c-format
 msgid "fsearch config: unknown command: %s\n"
-msgstr ""
+msgstr "fsearch config: ordre desconeguda: %s\n"
 
 #: src/fsearch_database.c:795
 msgid "Index rescan: applying changes…"
-msgstr ""
-
-#: src/fsearch_database_file.c:1343
-#, fuzzy
-msgid "Loading folders…"
-msgstr "S’està carregant la base de dades…"
-
-#: src/fsearch_database_file.c:1359
-#, fuzzy
-msgid "Loading files…"
-msgstr "S’estan suprimint els fitxers…"
-
-#: src/fsearch_database_index_store.c:925 src/fsearch_statusbar.c:73
-#: src/fsearch_statusbar.ui:90
-#, fuzzy
-msgid "Sorting…"
-msgstr "S’està carregant la base de dades…"
-
-#: src/fsearch_database_preferences_widget.c:162
-#: src/fsearch_database_preferences_widget.c:176
-#, fuzzy
-msgid "Select folder"
-msgstr "Seleccioneu un filtre"
+msgstr "Reexploració de l’índex: s’estan aplicant els canvis…"
 
 #: src/fsearch_database_preferences_widget.c:165
 #: src/fsearch_database_preferences_widget.c:180
 #: src/fsearch_filter_editor.c:104 src/fsearch_preferences_dialog.c:331
 msgid "_Cancel"
-msgstr ""
-
-#: src/fsearch_database_preferences_widget.c:167
-#: src/fsearch_database_preferences_widget.c:179
-#, fuzzy
-msgid "_Select"
-msgstr "Desselecciona-ho tot"
+msgstr "_Cancel·la"
 
 #: src/fsearch_database_preferences_widget.c:389
 msgid "Literal"
-msgstr ""
+msgstr "Literal"
 
 #: src/fsearch_database_preferences_widget.c:391
 msgid "Wildcard"
-msgstr ""
+msgstr "Comodí"
 
 #: src/fsearch_database_preferences_widget.c:393
 msgid "Regex"
-msgstr ""
-
-#: src/fsearch_database_preferences_widget.c:414
-#, fuzzy
-msgid "Full Path"
-msgstr "Camí"
+msgstr "Expressió regular"
 
 #: src/fsearch_database_preferences_widget.c:416
 msgid "Basename"
-msgstr ""
-
-#: src/fsearch_database_preferences_widget.c:434
-#, fuzzy
-msgid "Files & Folders"
-msgstr "Carpetes"
-
-#: src/fsearch_database_preferences_widget.c:436 src/fsearch_filter.c:114
-msgid "Files"
-msgstr "Fitxers"
-
-#: src/fsearch_database_preferences_widget.c:438 src/fsearch_filter.c:113
-msgid "Folders"
-msgstr "Carpetes"
+msgstr "Nom base"
 
 #: src/fsearch_database_preferences_widget.c:635
 #: src/fsearch_database_preferences_widget.c:860
 msgid "Active"
-msgstr ""
+msgstr "Actiu"
 
 #: src/fsearch_database_preferences_widget.c:640
 msgid "Pattern"
-msgstr ""
-
-#: src/fsearch_database_preferences_widget.c:694 src/fsearch_window.c:756
-#: src/menus.ui:275
-msgid "Type"
-msgstr "Tipus"
-
-#: src/fsearch_database_preferences_widget.c:700
-#, fuzzy
-msgid "Match"
-msgstr "Fes concordar les majúscules"
+msgstr "Patró"
 
 #: src/fsearch_database_preferences_widget.c:706
 msgid "Applies To"
-msgstr ""
-
-#: src/fsearch_database_preferences_widget.c:864 src/fsearch_window.c:742
-#: src/menus.ui:219 src/menus.ui:267
-msgid "Path"
-msgstr "Camí"
+msgstr "S'aplica a"
 
 #: src/fsearch_database_preferences_widget.ui:78
 msgid "Enter path…"
-msgstr ""
+msgstr "Introduïu el camí…"
 
 #: src/fsearch_database_preferences_widget.ui:97
 #: src/fsearch_database_preferences_widget.ui:372
@@ -919,198 +986,154 @@ msgid ""
 "                                            database\n"
 "                                        "
 msgstr ""
+"Afegeix un camí que s'inclourà a la\n"
+"                                            base de dades\n"
+"                                        "
 
 #: src/fsearch_database_preferences_widget.ui:176
 msgid "Attempt to monitor"
-msgstr ""
+msgstr "Intenta supervisar"
 
 #: src/fsearch_database_preferences_widget.ui:191
 msgid "Scan after launch"
-msgstr ""
-
-#: src/fsearch_database_preferences_widget.ui:206
-#, fuzzy
-msgid "Stay on one file system"
-msgstr "Obre fitxers"
+msgstr "Explora després de l'inici"
 
 #: src/fsearch_database_preferences_widget.ui:221
 msgid "Rescan every"
-msgstr ""
+msgstr "Torna a explorar cada"
 
 #: src/fsearch_database_preferences_widget.ui:254
 msgid "Hours:"
-msgstr ""
+msgstr "Hores:"
 
 #: src/fsearch_database_preferences_widget.ui:298
 msgid "Minutes:"
-msgstr ""
+msgstr "Minuts:"
 
 #: src/fsearch_database_preferences_widget.ui:310
 msgid "30"
-msgstr ""
+msgstr "30"
 
 #: src/fsearch_database_preferences_widget.ui:391
 msgid "Remove selected path"
-msgstr ""
-
-#: src/fsearch_database_preferences_widget.ui:418
-msgid "Include"
-msgstr "Inclou"
+msgstr "Suprimeix el camí seleccionat"
 
 #: src/fsearch_database_preferences_widget.ui:477
 msgid ""
 "Add exclude rule\n"
 "                                                "
 msgstr ""
+"Afegeix una regla d’exclusió\n"
+"                                                "
 
 #: src/fsearch_database_preferences_widget.ui:495
 msgid ""
 "Remove selected path\n"
 "                                                "
 msgstr ""
+"Suprimeix el camí seleccionat\n"
+"                                                "
 
 #: src/fsearch_database_preferences_widget.ui:512
 msgid "Restore default exclude list"
-msgstr ""
-
-#: src/fsearch_database_preferences_widget.ui:541
-msgid "Exclude hidden files and folders"
-msgstr "Exclou els fitxers i les carpetes amagats"
-
-#: src/fsearch_database_preferences_widget.ui:563
-msgid "Exclude"
-msgstr "Exclou"
+msgstr "Restaura la llista d’exclusions predeterminada"
 
 #: src/fsearch_file_utils.c:161
 msgctxt "Will be followed by the path of the file."
 msgid "Error when removing file"
-msgstr ""
+msgstr "S’ha produït un error en suprimir el fitxer"
 
 #: src/fsearch_file_utils.c:163
 msgid "Failed to get path"
-msgstr ""
+msgstr "No s’ha pogut obtenir el camí"
 
 #: src/fsearch_file_utils.c:277
 msgctxt "Will be followed by the file path."
 msgid "Error when getting information from file"
-msgstr ""
-
-#: src/fsearch_file_utils.c:279
-#, fuzzy
-msgid "Failed to get application information"
-msgstr "Obre amb una altra aplicació"
+msgstr "S’ha produït un error en obtenir informació del fitxer"
 
 #: src/fsearch_file_utils.c:294
 msgctxt "Will be followed by the content type string."
 msgid "Error when getting information for content type"
-msgstr ""
+msgstr "S’ha produït un error en obtenir informació del tipus de contingut"
 
 #: src/fsearch_file_utils.c:296
 msgid "No default application registered"
-msgstr ""
+msgstr "No hi ha cap aplicació predeterminada registrada"
 
 #: src/fsearch_file_utils.c:524
 msgctxt "Will be followed by the path of the folder."
 msgid "Error when opening parent folder"
-msgstr ""
+msgstr "Error en obrir la carpeta superior"
 
 #: src/fsearch_file_utils.c:526
 msgid "Failed to get parent path"
-msgstr ""
+msgstr "No s'ha pogut obtenir el camí superior"
 
 #: src/fsearch_file_utils.c:530
 msgctxt "Will be followed by the path of the folder."
 msgid "Error while opening folder"
-msgstr ""
+msgstr "Error en obrir la carpeta"
 
 #: src/fsearch_file_utils.c:533
 msgid "Failed to build open command"
-msgstr ""
-
-#: src/fsearch_file_utils.c:589
-#, fuzzy
-msgid "Folder"
-msgstr "Carpetes"
+msgstr "No s'ha pogut construir l'ordre d'obertura"
 
 #: src/fsearch_file_utils.c:595
 msgid "Unknown Type"
-msgstr ""
-
-#: src/fsearch_filter.c:112
-msgid "All"
-msgstr "Tot"
-
-#: src/fsearch_filter.c:115
-#, fuzzy
-msgid "Applications"
-msgstr "Una altra aplicació"
+msgstr "Tipus desconegut"
 
 #: src/fsearch_filter.c:116
 msgid "Archives"
-msgstr ""
+msgstr "Arxius"
 
 #: src/fsearch_filter.c:117
 msgid "Audio"
-msgstr ""
+msgstr "Àudio"
 
 #: src/fsearch_filter.c:118
 msgid "Documents"
-msgstr ""
+msgstr "Documents"
 
 #: src/fsearch_filter.c:119
 msgid "Pictures"
-msgstr ""
+msgstr "Imatges"
 
 #: src/fsearch_filter.c:120
 msgid "Videos"
-msgstr ""
+msgstr "Vídeos"
 
 #: src/fsearch_filter_editor.c:79
 msgid "Macro names must not contain `:` characters."
-msgstr ""
+msgstr "Els noms de les macros no poden contenir caràcters `:`."
 
 #: src/fsearch_filter_editor.c:105 src/fsearch_preferences_dialog.c:332
 msgid "_OK"
-msgstr ""
+msgstr "_D'acord"
 
 #: src/fsearch_filter_editor.ui:10 src/fsearch_filter_preferences_widget.c:156
 msgid "Edit filter"
-msgstr ""
-
-#: src/fsearch_filter_editor.ui:50
-#, fuzzy
-msgid "Name:"
-msgstr "Nom"
+msgstr "Edita el filtre"
 
 #: src/fsearch_filter_editor.ui:61
 msgid "The unique name of this filter"
-msgstr ""
+msgstr "El nom únic d'aquest filtre"
 
 #: src/fsearch_filter_editor.ui:64
 msgid "Unique filter name"
-msgstr ""
-
-#: src/fsearch_filter_editor.ui:73
-#, fuzzy
-msgid "Search in path"
-msgstr "Cerca al camí"
+msgstr "Nom únic del filtre"
 
 #: src/fsearch_filter_editor.ui:87
 msgid "Enable regular expressions"
-msgstr ""
-
-#: src/fsearch_filter_editor.ui:101
-#, fuzzy
-msgid "Match case"
-msgstr "Fes concordar les majúscules"
+msgstr "Activa les expressions regulars"
 
 #: src/fsearch_filter_editor.ui:146
 msgid "Query:"
-msgstr ""
+msgstr "Consulta:"
 
 #: src/fsearch_filter_editor.ui:160
 msgid "Macro:"
-msgstr ""
+msgstr "Macro:"
 
 #: src/fsearch_filter_editor.ui:171
 msgid ""
@@ -1118,243 +1141,93 @@ msgid ""
 "search entry by typing its text followed by ':'\n"
 "                "
 msgstr ""
-
-#: src/fsearch_filter_preferences_widget.c:133
-#, fuzzy
-msgid "Add filter"
-msgstr "Carpetes"
-
-#: src/fsearch_filter_preferences_widget.c:315 src/fsearch_window.c:735
-#: src/menus.ui:215 src/menus.ui:263
-msgid "Name"
-msgstr "Nom"
+"La macro d'aquest filtre. Una macro us permet accedir a aquest filtre des "
+"del camp de cerca escrivint-ne el text seguit de ':'\n"
+"                "
 
 #: src/fsearch_filter_preferences_widget.c:316
 msgid "Macro"
-msgstr ""
-
-#: src/fsearch_filter_preferences_widget.c:317
-#, fuzzy
-msgid "Query"
-msgstr "Consulta buida"
-
-#: src/fsearch_filter_preferences_widget.ui:77
-#, fuzzy
-msgid "Add new filter"
-msgstr "Carpetes"
-
-#: src/fsearch_filter_preferences_widget.ui:95
-#, fuzzy
-msgid "Remove selected filter"
-msgstr "Nombre de resultats de la cerca"
-
-#: src/fsearch_filter_preferences_widget.ui:113
-#, fuzzy
-msgid "Edit selected filter"
-msgstr "Nombre de resultats de la cerca"
+msgstr "Macro"
 
 #: src/fsearch_filter_preferences_widget.ui:129
 msgid "Restore default filters"
-msgstr ""
+msgstr "Restaura els filtres predeterminats"
 
 #: src/fsearch_listview_popup.c:36
 msgid "Properties…"
-msgstr ""
-
-#: src/fsearch_listview_popup.c:163
-#, fuzzy
-msgid "Other Application…"
-msgstr "Una altra aplicació"
-
-#: src/fsearch_overlay.ui:44
-msgid "Empty Database"
-msgstr "Base de dades buida"
-
-#: src/fsearch_overlay.ui:60
-#, fuzzy
-msgid "Add folders"
-msgstr "Carpetes"
-
-#: src/fsearch_overlay.ui:108
-#, fuzzy
-msgid "Loading Database…"
-msgstr "S’està carregant la base de dades…"
-
-#: src/fsearch_overlay.ui:123
-#, fuzzy
-msgid "This won't take long."
-msgstr "Això pot trigar una estona."
-
-#: src/fsearch_overlay.ui:171 src/fsearch_statusbar.ui:312
-#, fuzzy
-msgid "Updating Database…"
-msgstr "S’està actualitzant la base de dades…"
-
-#: src/fsearch_overlay.ui:186 src/fsearch_overlay.ui:383
-msgid "This may take a while."
-msgstr "Això pot trigar una estona."
-
-#: src/fsearch_overlay.ui:241
-msgid "Empty Query"
-msgstr "Consulta buida"
-
-#: src/fsearch_overlay.ui:256
-#, fuzzy
-msgid "Press <b>Ctrl + F</b> and start typing."
-msgstr "Premeu <b>Ctrl + F</b> i comenceu a escriure"
-
-#: src/fsearch_overlay.ui:304
-msgid "No Results Found"
-msgstr "No s’ha trobat cap resultat"
-
-#: src/fsearch_overlay.ui:319
-msgid "Try a different search"
-msgstr "Proveu de fer una cerca diferent"
+msgstr "Propietats…"
 
 #: src/fsearch_overlay.ui:368
 msgid "Sorting results…"
-msgstr ""
-
-#: src/fsearch_preferences.ui:7 src/fsearch_window.ui:251 src/menus.ui:84
-msgid "Preferences"
-msgstr "Preferències"
-
-#: src/fsearch_preferences.ui:76
-msgid "Enable dark theme"
-msgstr "Activa el tema fosc"
+msgstr "S'estan ordenant els resultats…"
 
 #: src/fsearch_preferences.ui:97
 msgid "Enable client-side decorations (requires restart)"
-msgstr ""
-
-#: src/fsearch_preferences.ui:117
-msgid "Use binary units instead of decimal units"
-msgstr "Utilitza unitats binàries en comptes d’unitats decimals"
-
-#: src/fsearch_preferences.ui:138
-msgid "Remember window size"
-msgstr "Recorda la mida de la finestra"
+msgstr "Activa les decoracions del costat del client (cal reiniciar)"
 
 #: src/fsearch_preferences.ui:159
 msgid "Exit on Escape"
-msgstr ""
+msgstr "Surt en prémer Escapada"
 
 #: src/fsearch_preferences.ui:202
 msgid "with keyboard shortcuts or menu entries"
-msgstr ""
+msgstr "amb dreceres de teclat o entrades de menú"
 
 #: src/fsearch_preferences.ui:223
 msgid "with double click"
-msgstr ""
+msgstr "amb un doble clic"
 
 #: src/fsearch_preferences.ui:257
 msgid "Behaviour after successfully opening a file:"
-msgstr ""
+msgstr "Comportament després d'obrir correctament un fitxer:"
 
 #: src/fsearch_preferences.ui:273
 msgid "Nothing"
-msgstr ""
+msgstr "Res"
 
 #: src/fsearch_preferences.ui:274
 msgid "Minimize"
-msgstr ""
+msgstr "Minimitza"
 
 #: src/fsearch_preferences.ui:275
 msgid "Close"
-msgstr ""
+msgstr "Tanca"
 
 #: src/fsearch_preferences.ui:309
 msgid "General:"
-msgstr ""
+msgstr "General:"
 
 #: src/fsearch_preferences.ui:344
 msgid "Show highlighted search terms"
-msgstr ""
-
-#: src/fsearch_preferences.ui:366
-msgid "Show tooltips"
-msgstr "Mostra els indicadors de funcions"
-
-#: src/fsearch_preferences.ui:387
-msgid "Show icons in name column"
-msgstr "Mostra icones al nom de les columnes"
-
-#: src/fsearch_preferences.ui:408
-msgid "Remember column configuration"
-msgstr "Recorda la configuració de les columnes"
-
-#: src/fsearch_preferences.ui:429
-#, fuzzy
-msgid "Remember sort order"
-msgstr "Recorda la mida de la finestra"
+msgstr "Mostra els termes de cerca ressaltats"
 
 #: src/fsearch_preferences.ui:450
 msgid "Open path with double click in path column"
-msgstr ""
+msgstr "Obre el camí amb un doble clic a la columna del camí"
 
 #: src/fsearch_preferences.ui:471
 msgid "Single click to open"
-msgstr ""
+msgstr "Un sol clic per obrir"
 
 #: src/fsearch_preferences.ui:492
 msgid "Launch desktop files"
-msgstr ""
+msgstr "Executa els fitxers d'escriptori"
 
 #: src/fsearch_preferences.ui:519
 msgid "Results:"
-msgstr ""
-
-#: src/fsearch_preferences.ui:560
-#, fuzzy
-msgid "Show database indexing status"
-msgstr "Actualitza la base de dades en iniciar"
-
-#: src/fsearch_preferences.ui:587
-#, fuzzy
-msgid "Statusbar:"
-msgstr "Mostra la barra d’estat"
+msgstr "Resultats:"
 
 #: src/fsearch_preferences.ui:628
 msgid "Show warning dialogs when:"
-msgstr ""
+msgstr "Mostra diàlegs d'avís quan:"
 
 #: src/fsearch_preferences.ui:638
 msgid "file / folder failed to open"
-msgstr ""
+msgstr "no s'ha pogut obrir el fitxer o la carpeta"
 
 #: src/fsearch_preferences.ui:667
 msgid "Dialogs:"
-msgstr ""
-
-#: src/fsearch_preferences.ui:692
-msgid "Interface"
-msgstr "Interfície"
-
-#: src/fsearch_preferences.ui:711
-msgid "Search in path when query contains path separators"
-msgstr "Cerca al camí quan la consulta inclogui separadors de camí"
-
-#: src/fsearch_preferences.ui:730
-msgid "Search as you type"
-msgstr "Cerca mentre es tecleja"
-
-#: src/fsearch_preferences.ui:750
-msgid "Hide results when search is empty"
-msgstr "Amaga els resultats si la cerca és buida"
-
-#: src/fsearch_preferences.ui:769
-#, fuzzy
-msgid "Match case when query contains at least one upper case character"
-msgstr "Cerca al camí quan la consulta inclogui separadors de camí"
-
-#: src/fsearch_preferences.ui:801
-#, fuzzy
-msgid "Filter:"
-msgstr "Mostra el filtre"
-
-#: src/fsearch_preferences.ui:822 src/fsearch_window.ui:639
-msgid "Search"
-msgstr "Cerca"
+msgstr "Diàlegs:"
 
 #: src/fsearch_preferences.ui:855
 msgid ""
@@ -1366,6 +1239,14 @@ msgid ""
 "Note that not all system themes provide such a darker variant, therefore "
 "enabling this setting might not have an effect."
 msgstr ""
+"<b>Activa el tema fosc:</b>\n"
+"\n"
+"Si s'activa, es demana al tema del sistema que utilitzi un estil més fosc "
+"per a l'aplicació <i>(és a dir, elements foscos de la interfície sobre text "
+"clar)</i>.\n"
+"\n"
+"Tingueu en compte que no tots els temes del sistema ofereixen una variant "
+"més fosca; per tant, activar aquest paràmetre pot no tenir cap efecte."
 
 #: src/fsearch_preferences.ui:873
 msgid ""
@@ -1379,6 +1260,15 @@ msgid ""
 "This resembles a more traditional UI layout and takes a little bit more "
 "space."
 msgstr ""
+"<b>Activa les decoracions del costat del client:</b>\n"
+"\n"
+"Si s'activa, el camp de cerca i el menú principal es mostren a la barra de "
+"títol de la finestra.\n"
+"\n"
+"Si es desactiva, el menú principal es mostra com una barra de menús amb el "
+"camp de cerca a sota.\n"
+"Això s'assembla a una disposició més tradicional de la interfície i ocupa "
+"una mica més d'espai."
 
 #: src/fsearch_preferences.ui:893
 msgid ""
@@ -1391,6 +1281,14 @@ msgid ""
 "\t• <b>Decimal  units:</b> This refers to decimal SI prefixes <i>(e.g. 1 kB "
 "= 1000 bytes)</i>"
 msgstr ""
+"<b>Utilitza unitats binàries en lloc d'unitats decimals:</b>\n"
+"\n"
+"Aquest paràmetre controla com es mostren les mides dels fitxers.\n"
+"\n"
+"\t• <b>Unitats binàries:</b> Fa referència als prefixos binaris de la CEI "
+"<i>(p. ex., 1 KiB = 1024 bytes)</i>\n"
+"\t• <b>Unitats decimals:</b> Fa referència als prefixos decimals del SI "
+"<i>(p. ex., 1 kB = 1000 bytes)</i>"
 
 #: src/fsearch_preferences.ui:913
 msgid ""
@@ -1402,6 +1300,13 @@ msgid ""
 "Note that some window managers ignore this request and force the window to "
 "have a different size."
 msgstr ""
+"<b>Recorda la mida de la finestra:</b>\n"
+"\n"
+"Si s'activa, la mida de la finestra de la sessió anterior es restaurarà quan "
+"obriu una finestra de l'FSearch.\n"
+"\n"
+"Tingueu en compte que alguns gestors de finestres ignoren aquesta "
+"sol·licitud i forcen la finestra a tenir una mida diferent."
 
 #: src/fsearch_preferences.ui:932
 msgid ""
@@ -1419,6 +1324,19 @@ msgid ""
 "\t• <b>keyboard shortcuts or menu entries</b> and/or\n"
 "\t• <b>mouse click</b>"
 msgstr ""
+"<b>Comportament després d'obrir correctament un fitxer:</b>\n"
+"\n"
+"Quan s'ha obert correctament un fitxer o una carpeta, es pot dur a terme una "
+"de les accions següents:\n"
+"\t• <b>Res:</b> No passa res.\n"
+"                        • <b>Minimitza:</b> La finestra de l'FSearch "
+"seleccionada actualment es minimitza.\n"
+"\t• <b>Tanca:</b> Surt de l'FSearch.\n"
+"\n"
+"Podeu configurar si aquestes accions s'han d'activar quan el fitxer s'obri "
+"amb\n"
+"\t• <b>dreceres de teclat o entrades de menú</b> i/o\n"
+"\t• <b>un clic del ratolí</b>"
 
 #: src/fsearch_preferences.ui:956
 msgid ""
@@ -1434,6 +1352,17 @@ msgid ""
 "This also works for regular expressions and wildcard expressions starting or "
 "ending with an asterisk. "
 msgstr ""
+"<b>Mostra ressaltats els termes de cerca:</b>\n"
+"\n"
+"Si s'activa, els termes de cerca es ressaltaran a la vista de resultats. Per "
+"exemple, quan cerqueu \"foo\", totes les aparicions de <i>foo</i> als noms "
+"de fitxers o carpetes es ressaltaran en negreta:\n"
+"\n"
+"\t<b>foo</b>bar.txt\n"
+"\tfile.<b>foo</b>\n"
+"\n"
+"Això també funciona amb expressions regulars i expressions amb comodins que "
+"comencin o acabin amb un asterisc. "
 
 #: src/fsearch_preferences.ui:978
 msgid ""
@@ -1442,6 +1371,10 @@ msgid ""
 "If enabled, the results view will show the full path of the focused file/"
 "folder in a small tooltip window."
 msgstr ""
+"<b>Mostra els indicadors de funció:</b>\n"
+"\n"
+"Si s'activa, la vista de resultats mostrarà el camí complet del fitxer o la "
+"carpeta que tingui el focus en una petita finestra d'indicador de funció."
 
 #: src/fsearch_preferences.ui:995
 msgid ""
@@ -1449,6 +1382,10 @@ msgid ""
 "\n"
 "If enabled, file/folder icons will be shown in the name column."
 msgstr ""
+"<b>Mostra les icones a la columna de nom:</b>\n"
+"\n"
+"Si s'activa, les icones dels fitxers i les carpetes es mostraran a la "
+"columna de nom."
 
 #: src/fsearch_preferences.ui:1012
 msgid ""
@@ -1458,6 +1395,11 @@ msgid ""
 "session will be restored when you open an FSearch window. This includes the "
 "size and visibility of all columns."
 msgstr ""
+"<b>Recorda la configuració de les columnes:</b>\n"
+"\n"
+"Si s'activa, la configuració de les columnes de la vista de resultats de la "
+"sessió anterior es restaurarà quan obriu una finestra de l'FSearch. Això "
+"inclou la mida i la visibilitat de totes les columnes."
 
 #: src/fsearch_preferences.ui:1029
 msgid ""
@@ -1466,6 +1408,10 @@ msgid ""
 "If enabled, the sort order of the results view from the previous session "
 "will be restored when you open an FSearch window."
 msgstr ""
+"<b>Recorda l'ordre d'ordenació:</b>\n"
+"\n"
+"Si s'activa, l'ordre d'ordenació de la vista de resultats de la sessió "
+"anterior es restaurarà quan obriu una finestra de l'FSearch."
 
 #: src/fsearch_preferences.ui:1046
 msgid ""
@@ -1473,6 +1419,10 @@ msgid ""
 "\n"
 "If enabled, double clicking in the path column will open the selected path."
 msgstr ""
+"<b>Obre el camí fent doble clic a la columna de camí:</b>\n"
+"\n"
+"Si s'activa, en fer doble clic a la columna de camí s'obrirà el camí "
+"seleccionat."
 
 #: src/fsearch_preferences.ui:1063
 msgid ""
@@ -1482,6 +1432,11 @@ msgid ""
 "want to select a file/folder while this setting is active, you need to hold "
 "<i>Ctrl</i> at the same time while clicking the file/folder."
 msgstr ""
+"<b>Un sol clic per obrir:</b>\n"
+"\n"
+"Si s'activa, un sol clic obrirà el fitxer o la carpeta seleccionats. Si "
+"només voleu seleccionar un fitxer o una carpeta mentre aquesta opció està "
+"activa, heu de mantenir premuda la tecla <i>Ctrl</i> mentre hi feu clic."
 
 #: src/fsearch_preferences.ui:1080
 msgid ""
@@ -1490,6 +1445,9 @@ msgid ""
 "If enabled, the path that is currently being indexed is displayed in the "
 "statusbar."
 msgstr ""
+"<b>Mostra l'estat d'indexació de la base de dades:</b>\n"
+"\n"
+"Si s'activa, el camí que s'està indexant es mostrarà a la barra d'estat."
 
 #: src/fsearch_preferences.ui:1097
 msgid ""
@@ -1498,6 +1456,10 @@ msgid ""
 "If enabled, a warning dialog is displayed when a file or folder failed to "
 "open."
 msgstr ""
+"<b>Mostra els diàlegs d'avís:</b>\n"
+"\n"
+"Si s'activa, es mostrarà un diàleg d'avís quan no es pugui obrir un fitxer o "
+"una carpeta."
 
 #: src/fsearch_preferences.ui:1114
 msgid ""
@@ -1506,6 +1468,11 @@ msgid ""
 "If enabled, search terms containing path separators (i.e. \"/\") will be "
 "automatically matched against the full path of a file or folder."
 msgstr ""
+"<b>Cerca al camí quan la consulta contingui separadors de camí:</b>\n"
+"\n"
+"Si s'activa, els termes de cerca que continguin separadors de camí (p. ex., "
+"\"/\") es compararan automàticament amb el camí complet d'un fitxer o una "
+"carpeta."
 
 #: src/fsearch_preferences.ui:1131
 msgid ""
@@ -1515,6 +1482,13 @@ msgid ""
 "trigger a case-sensitive search. This means a search term like <i>Foo</i> "
 "will match <i>FooBar.txt</i> but not <i>foobar.txt</i>."
 msgstr ""
+"<b>Distingeix entre majúscules i minúscules quan la consulta contingui "
+"almenys un caràcter en majúscula:</b>\n"
+"\n"
+"Si s'activa, els termes de cerca que continguin almenys un caràcter en "
+"majúscula iniciaran una cerca que distingeix entre majúscules i minúscules. "
+"Això vol dir que un terme de cerca com <i>Foo</i> coincidirà amb "
+"<i>FooBar.txt</i>, però no amb <i>foobar.txt</i>."
 
 #: src/fsearch_preferences.ui:1148
 msgid ""
@@ -1525,6 +1499,13 @@ msgid ""
 "If disabled, all files and folders will be displayed when the search entry "
 "is empty."
 msgstr ""
+"<b>Amaga els resultats quan la cerca estigui buida:</b>\n"
+"\n"
+"Si s'activa, no es mostrarà cap resultat quan el camp de cerca estigui "
+"buit.\n"
+"\n"
+"Si es desactiva, es mostraran tots els fitxers i les carpetes quan el camp "
+"de cerca estigui buit."
 
 #: src/fsearch_preferences.ui:1167
 msgid ""
@@ -1535,6 +1516,13 @@ msgid ""
 "If disabled, the search is only updated when you hit <i>Enter</i> or press "
 "the search button. "
 msgstr ""
+"<b>Cerca mentre escriviu:</b>\n"
+"\n"
+"Si s'activa, la cerca s'actualitzarà automàticament amb cada pulsació de "
+"tecla.\n"
+"\n"
+"Si es desactiva, la cerca només s'actualitzarà quan premeu <i>Enter</i> o el "
+"botó de cerca. "
 
 #: src/fsearch_preferences.ui:1186
 msgid ""
@@ -1543,6 +1531,10 @@ msgid ""
 "If enabled, the database will be updated automatically in the background "
 "when you start FSearch."
 msgstr ""
+"<b>Actualitza la base de dades en iniciar:</b>\n"
+"\n"
+"Si s'activa, la base de dades s'actualitzarà automàticament en segon pla "
+"quan inicieu el FSearch."
 
 #: src/fsearch_preferences.ui:1203
 msgid ""
@@ -1556,6 +1548,16 @@ msgid ""
 "\t• <b>One Filesystem:</b> If enabled, FSearch won't cross filesystem "
 "boundaries for this folder"
 msgstr ""
+"<b>Carpetes incloses:</b>\n"
+"\n"
+"Aquesta llista conté totes les carpetes que voleu incloure a la base de "
+"dades.\n"
+"\n"
+"\t• <b>Activa:</b> Si s'activa, el camí s'inclourà a la base de dades per "
+"fer-hi cerques.\n"
+"\t• <b>Camí:</b> El camí complet que s'ha d'incloure.\n"
+"\t• <b>Un sistema de fitxers:</b> Si s'activa, el FSearch no traspassarà els "
+"límits del sistema de fitxers per a aquesta carpeta"
 
 #: src/fsearch_preferences.ui:1224
 msgid ""
@@ -1564,6 +1566,10 @@ msgid ""
 "This button opens a dialog where you can select a folder you want to include "
 "in the database for searching."
 msgstr ""
+"<b>Afegeix una carpeta a la base de dades:</b>\n"
+"\n"
+"Aquest botó obre un diàleg on podeu seleccionar una carpeta que vulgueu "
+"incloure a la base de dades per fer-hi cerques."
 
 #: src/fsearch_preferences.ui:1241
 msgid ""
@@ -1573,6 +1579,11 @@ msgid ""
 "include that folder in the database. This is useful for adding a path "
 "directly without browsing for it."
 msgstr ""
+"<b>Afegeix un camí específic:</b>\n"
+"\n"
+"Escriviu aquí el camí complet d'una carpeta i feu clic al botó del costat "
+"per incloure-la a la base de dades. Això és útil per afegir un camí "
+"directament sense haver de cercar-lo."
 
 #: src/fsearch_preferences.ui:1258
 msgid ""
@@ -1580,6 +1591,9 @@ msgid ""
 "\n"
 "This removes the selected folder from the list of included folders."
 msgstr ""
+"<b>Suprimeix la fila seleccionada:</b>\n"
+"\n"
+"Això suprimeix la carpeta seleccionada de la llista de carpetes incloses."
 
 #: src/fsearch_preferences.ui:1275
 msgid ""
@@ -1592,6 +1606,16 @@ msgid ""
 "system resources per watched folder. For large directory trees with many "
 "files the system may run out of resources to watch them all."
 msgstr ""
+"<b>Intenta monitorar:</b>\n"
+"\n"
+"Si s'activa, el FSearch vigila els canvis en aquesta carpeta i manté la base "
+"de dades actualitzada automàticament, de manera que no hàgiu de tornar a "
+"explorar-la manualment.\n"
+"\n"
+"La monitorització no és compatible amb tots els sistemes de fitxers i "
+"utilitza una petita quantitat de recursos del sistema per cada carpeta "
+"vigilada. En arbres de directoris grans amb molts fitxers, el sistema pot "
+"quedar-se sense recursos per vigilar-los tots."
 
 #: src/fsearch_preferences.ui:1294
 msgid ""
@@ -1600,6 +1624,11 @@ msgid ""
 "If enabled, this folder is rescanned every time FSearch starts, so the "
 "database reflects any changes made while FSearch wasn't running."
 msgstr ""
+"<b>Explora després de l'inici:</b>\n"
+"\n"
+"Si s'activa, aquesta carpeta es torna a explorar cada vegada que s'inicia el "
+"FSearch, de manera que la base de dades reflecteixi els canvis fets mentre "
+"el FSearch no s'executava."
 
 #: src/fsearch_preferences.ui:1311
 msgid ""
@@ -1609,6 +1638,11 @@ msgid ""
 "folder. Mounted file systems below it (e.g. external drives or network "
 "shares) are skipped."
 msgstr ""
+"<b>Limita't a un sistema de fitxers:</b>\n"
+"\n"
+"Si s'activa, el FSearch no traspassarà els límits del sistema de fitxers en "
+"explorar aquesta carpeta. S'ometran els sistemes de fitxers muntats que hi "
+"hagi a sota (p. ex., unitats externes o recursos compartits de xarxa)."
 
 #: src/fsearch_preferences.ui:1328
 msgid ""
@@ -1620,6 +1654,14 @@ msgid ""
 "This is useful for folders on file systems that can't be monitored for "
 "changes."
 msgstr ""
+"<b>Torna a explorar cada:</b>\n"
+"\n"
+"Si s'activa, aquesta carpeta es torna a explorar automàticament segons "
+"l'interval indicat. Utilitzeu els camps d'hores i minuts per establir la "
+"freqüència de la nova exploració.\n"
+"\n"
+"Això és útil per a carpetes en sistemes de fitxers els canvis dels quals no "
+"es poden monitorar."
 
 #: src/fsearch_preferences.ui:1347
 msgid ""
@@ -1640,6 +1682,22 @@ msgid ""
 "\t• <b>Applies To:</b> Whether the rule affects <i>Files</i>, <i>Folders</i> "
 "or both."
 msgstr ""
+"<b>Regles d'exclusió:</b>\n"
+"\n"
+"Aquesta llista conté regles per als fitxers i les carpetes que vulgueu "
+"excloure de la base de dades.\n"
+"\n"
+"\t• <b>Activa:</b> Si s'activa, la regla s'aplica i se n'exclouen els "
+"elements coincidents.\n"
+"\t• <b>Patró:</b> El text que es compara amb cada element, interpretat "
+"segons el tipus.\n"
+"\t• <b>Tipus:</b> Com s'interpreta el patró: <i>Literal</i> (text exacte), "
+"<i>Comodí</i> (mitjançant * i ?) o <i>Expressió regular</i> (una expressió "
+"regular).\n"
+"\t• <b>Coincidència:</b> Si el patró es compara amb el <i>Camí complet</i> "
+"de l'element o només amb el seu <i>Nom base</i> (el nom sense el camí).\n"
+"\t• <b>S'aplica a:</b> Si la regla afecta els <i>Fitxers</i>, les "
+"<i>Carpetes</i> o tots dos."
 
 #: src/fsearch_preferences.ui:1370
 msgid ""
@@ -1648,6 +1706,11 @@ msgid ""
 "This adds a new, empty rule to the list. Edit its Pattern, Type, Match and "
 "Applies To columns to control what gets excluded from the database."
 msgstr ""
+"<b>Afegeix una regla d'exclusió:</b>\n"
+"\n"
+"Això afegeix una regla nova i buida a la llista. Editeu-ne les columnes "
+"Patró, Tipus, Coincidència i S'aplica a per controlar què s'exclou de la "
+"base de dades."
 
 #: src/fsearch_preferences.ui:1387
 msgid ""
@@ -1655,6 +1718,9 @@ msgid ""
 "\n"
 "This removes the selected rule from the list of exclude rules."
 msgstr ""
+"<b>Suprimeix la fila seleccionada:</b>\n"
+"\n"
+"Això suprimeix la regla seleccionada de la llista de regles d'exclusió."
 
 #: src/fsearch_preferences.ui:1404
 msgid ""
@@ -1664,6 +1730,11 @@ msgid ""
 "\n"
 "⚠ All rules which were created or edited by the user will be lost! ⚠"
 msgstr ""
+"<b>Restaura les regles d’exclusió predeterminades:</b>\n"
+"\n"
+"Aquest botó restaura el conjunt predeterminat de regles d’exclusió.\n"
+"\n"
+"⚠ Es perdran totes les regles creades o editades per l’usuari! ⚠"
 
 #: src/fsearch_preferences.ui:1423
 msgid ""
@@ -1674,6 +1745,12 @@ msgid ""
 "all files or folders which are called either <i>.git</i> or <i>.cache</i> or "
 "end with <i>.swp</i>."
 msgstr ""
+"<b>Exclou fitxers i carpetes de la base de dades:</b>\n"
+"\n"
+"Aquesta és una llista separada per punts i comes dels fitxers (o carpetes) "
+"que voleu excloure de la base de dades. Per exemple, <i>.git;.cache;*.swp</"
+"i> exclourà tots els fitxers o carpetes que s’anomenin <i>.git</i> o "
+"<i>.cache</i>, o que acabin en <i>.swp</i>."
 
 #: src/fsearch_preferences.ui:1440
 msgid ""
@@ -1682,10 +1759,16 @@ msgid ""
 "If enabled, hidden files and folders will be excluded from the database "
 "<i>(i.e. all files or folders which start with a dot character)</i>."
 msgstr ""
+"<b>Exclou els fitxers i les carpetes ocults:</b>\n"
+"\n"
+"Si s’activa, els fitxers i les carpetes ocults s’exclouran de la base de "
+"dades <i>(és a dir, tots els fitxers o carpetes que comencin amb un punt)</"
+"i>."
 
 #: src/fsearch_preferences.ui:1457
 msgid "Focus a setting to get a detailed description of what it does."
 msgstr ""
+"Poseu el focus en una opció per obtenir una descripció detallada de què fa."
 
 #: src/fsearch_preferences.ui:1470
 msgid ""
@@ -1700,6 +1783,17 @@ msgid ""
 "\n"
 "<i><tt>fsearch --update-database</tt></i>"
 msgstr ""
+"<b>Actualitza periòdicament la base de dades en un interval de temps "
+"específic:</b>\n"
+"\n"
+"Si s’activa, i mentre s’executi el FSearch, la base de dades s’actualitzarà "
+"periòdicament amb l’interval de temps indicat.\n"
+"\n"
+"Si voleu actualitzar la base de dades en segon pla, fins i tot quan el "
+"FSearch no s’estigui executant, heu d’utilitzar eines com cron o els "
+"temporitzadors de systemd per iniciar periòdicament l’actualització amb:\n"
+"\n"
+"<i><tt>fsearch --update-database</tt></i>"
 
 #: src/fsearch_preferences.ui:1491
 msgid ""
@@ -1710,6 +1804,13 @@ msgid ""
 "launcher. Otherwise the <i>.desktop</i> file will be opened with the default "
 "handler for this type of files, which is usually a text editor."
 msgstr ""
+"<b>Inicia els fitxers d’escriptori:</b>\n"
+"\n"
+"Si s’activa, en activar un fitxer <i>.desktop</i> s’iniciarà l’aplicació "
+"definida en aquest fitxer. D’aquesta manera, el FSearch pot actuar com un "
+"iniciador d’aplicacions. En cas contrari, el fitxer <i>.desktop</i> s’obrirà "
+"amb el gestor predeterminat per a aquest tipus de fitxers, que normalment és "
+"un editor de text."
 
 #: src/fsearch_preferences.ui:1508
 msgid ""
@@ -1722,6 +1823,16 @@ msgid ""
 "the filter on demand\n"
 "\t• <b>Query:</b> The search term by which the database should be filtered"
 msgstr ""
+"<b>Filtres:</b>\n"
+"\n"
+"Aquesta és una llista de tots els filtres disponibles. Un filtre és una "
+"cerca predefinida.\n"
+"\n"
+"\t• <b>Nom:</b> Un identificador únic i descriptiu per al filtre\n"
+"\t• <b>Macro:</b> Si escriviu el text de la macro seguit de «:», podeu "
+"activar el filtre quan calgui\n"
+"\t• <b>Consulta:</b> El terme de cerca amb què s’ha de filtrar la base de "
+"dades"
 
 #: src/fsearch_preferences.ui:1529
 msgid ""
@@ -1729,6 +1840,9 @@ msgid ""
 "\n"
 "This button opens a dialog where you can edit a new filter."
 msgstr ""
+"<b>Afegeix un filtre nou:</b>\n"
+"\n"
+"Aquest botó obre un diàleg en què podeu editar un filtre nou."
 
 #: src/fsearch_preferences.ui:1546
 msgid ""
@@ -1736,6 +1850,9 @@ msgid ""
 "\n"
 "This button removes the currently selected filter."
 msgstr ""
+"<b>Suprimeix el filtre seleccionat:</b>\n"
+"\n"
+"Aquest botó suprimeix el filtre seleccionat actualment."
 
 #: src/fsearch_preferences.ui:1563
 msgid ""
@@ -1743,6 +1860,9 @@ msgid ""
 "\n"
 "This button opens a dialog where you can edit the selected filter."
 msgstr ""
+"<b>Edita el filtre seleccionat:</b>\n"
+"\n"
+"Aquest botó obre un diàleg en què podeu editar el filtre seleccionat."
 
 #: src/fsearch_preferences.ui:1580
 msgid ""
@@ -1752,6 +1872,11 @@ msgid ""
 "\n"
 "⚠ All filters which were created or edited by the user will be lost! ⚠"
 msgstr ""
+"<b>Restaura els filtres predeterminats:</b>\n"
+"\n"
+"Aquest botó restaura la configuració predeterminada dels filtres.\n"
+"\n"
+"⚠ Es perdran tots els filtres que l'usuari hagi creat o editat! ⚠"
 
 #: src/fsearch_preferences.ui:1599
 msgid ""
@@ -1760,134 +1885,73 @@ msgid ""
 "If enabled, FSearch exits when the Escape key is pressed instead of the "
 "window being minimized."
 msgstr ""
-
-#: src/fsearch_preferences.ui:1618 src/fsearch_window.ui:290
-#: src/fsearch_window.ui:415 src/menus.ui:150 src/menus.ui:156
-#, fuzzy
-msgid "Help"
-msgstr "_Ajuda"
-
-#: src/fsearch_preferences_dialog.c:238
-msgid "Database"
-msgstr "Base de dades"
+"<b>Surt amb la tecla d'escapada:</b>\n"
+"\n"
+"Si s'activa, el FSearch es tanca quan es prem la tecla d'escapada en lloc de "
+"minimitzar-se la finestra."
 
 #: src/fsearch_result_view.c:381
 msgid "Invalid row data"
-msgstr ""
-
-#: src/fsearch_statusbar.c:58
-#, fuzzy, c-format
-msgid "%'d Item"
-msgstr "%'d elements"
-
-#: src/fsearch_statusbar.c:58 src/fsearch_statusbar.c:186
-#, c-format
-msgid "%'d Items"
-msgstr "%'d elements"
+msgstr "Dades de fila no vàlides"
 
 #: src/fsearch_statusbar.c:80
 msgid "Querying…"
-msgstr ""
-
-#: src/fsearch_statusbar.c:175
-#, fuzzy
-msgid "Loading…"
-msgstr "S’està carregant la base de dades…"
+msgstr "S'està consultant…"
 
 #: src/fsearch_statusbar.c:180
 msgid "Scanning…"
-msgstr ""
-
-#: src/fsearch_statusbar.ui:52
-msgid "Number of Search Results"
-msgstr "Nombre de resultats de la cerca"
-
-#: src/fsearch_statusbar.ui:53
-msgid "0 Items"
-msgstr "0 elements"
+msgstr "S'està escanejant…"
 
 #: src/fsearch_statusbar.ui:106
 msgid "Cancel"
-msgstr ""
+msgstr "Cancel·la"
 
 #: src/fsearch_statusbar.ui:153
 msgid "Index:"
-msgstr ""
-
-#: src/fsearch_statusbar.ui:228
-#, fuzzy
-msgid "Number of selected folders"
-msgstr "Nombre de resultats de la cerca"
-
-#: src/fsearch_statusbar.ui:229 src/fsearch_statusbar.ui:254
-msgid "0/0"
-msgstr "0/0"
-
-#: src/fsearch_statusbar.ui:253
-#, fuzzy
-msgid "Number of selected files"
-msgstr "Nombre de resultats de la cerca"
-
-#: src/fsearch_statusbar.ui:328 src/fsearch_window.ui:103
-#, fuzzy
-msgid "Cancel database update"
-msgstr "Actualitza la base de dades en iniciar"
-
-#: src/fsearch_statusbar.ui:369
-#, fuzzy
-msgid "Number of database items"
-msgstr "Nombre de resultats de la cerca"
-
-#: src/fsearch_statusbar.ui:370
-msgid "(empty)"
-msgstr "(buit)"
+msgstr "Índex:"
 
 #: src/fsearch_statusbar.ui:407
 msgid ""
 "Search term contains upper case characters.\n"
 "<b>Match Case</b> was temporarily activated for this term."
 msgstr ""
-
-#: src/fsearch_statusbar.ui:438 src/fsearch_statusbar.ui:491
-msgid "CASE"
-msgstr "MAJÚSCULES"
+"El terme de cerca conté caràcters en majúscula.\n"
+"S'ha activat temporalment <b>Distingeix entre majúscules i minúscules</b> "
+"per a aquest terme."
 
 #: src/fsearch_statusbar.ui:514
 msgid ""
 "Search term contains path separators.\n"
 "<b>Search in Path</b> was temporarily activated for this term."
 msgstr ""
-
-#: src/fsearch_statusbar.ui:545 src/fsearch_statusbar.ui:598
-msgid "PATH"
-msgstr "CAMÍ"
-
-#: src/fsearch_statusbar.ui:651
-msgid "REGEX"
-msgstr "EXPRESSIÓREGULAR"
+"El terme de cerca conté separadors de camí.\n"
+"S'ha activat temporalment <b>Cerca al camí</b> per a aquest terme."
 
 #: src/fsearch_statusbar.ui:726
 msgid ""
 "The search was cancelled before it finished.\n"
 "<b>These results are incomplete.</b>"
 msgstr ""
+"La cerca s'ha cancel·lat abans que acabés.\n"
+"<b>Aquests resultats són incomplets.</b>"
 
 #: src/fsearch_statusbar.ui:756
 msgid "PARTIAL"
-msgstr ""
+msgstr "PARCIAL"
 
 #: src/fsearch_welcome_dialog.ui:26
 msgid "What's New in FSearch"
-msgstr ""
+msgstr "Novetats del FSearch"
 
 #: src/fsearch_welcome_dialog.ui:79
 msgid ""
 "<span size=\"xx-large\" weight=\"bold\">What's New in FSearch 0.3</span>"
 msgstr ""
+"<span size=\"xx-large\" weight=\"bold\">Novetats del FSearch 0.3</span>"
 
 #: src/fsearch_welcome_dialog.ui:149
 msgid "<big><b>File System Monitoring</b></big>"
-msgstr ""
+msgstr "<big><b>Monitoratge del sistema de fitxers</b></big>"
 
 #: src/fsearch_welcome_dialog.ui:163
 msgid ""
@@ -1901,20 +1965,32 @@ msgid ""
 "<a href=\"URL\">https://github.com/cboxdoerfer/fsearch/wiki/Database-update</"
 "a>"
 msgstr ""
+"Ara podeu supervisar activament carpetes individuals per evitar exploracions "
+"freqüents. Els canvis als fitxers apareixeran immediatament als resultats de "
+"la cerca.\n"
+"\n"
+"Per activar aquesta funció, aneu a la secció Base de dades del diàleg de "
+"preferències.\n"
+"\n"
+"Consulteu la documentació en línia per obtenir més informació:\n"
+"<a href=\"URL\">https://github.com/cboxdoerfer/fsearch/wiki/Database-update</"
+"a>"
 
 #: src/fsearch_welcome_dialog.ui:232
 msgid "<big><b>Folder-Specific Rescan Schedules</b></big>"
-msgstr ""
+msgstr "<big><b>Planificacions d'exploració específiques per carpeta</b></big>"
 
 #: src/fsearch_welcome_dialog.ui:246
 msgid ""
 "You can now configure automatic update intervals for individual folders "
 "independently and tailored to each distinct location."
 msgstr ""
+"Ara podeu configurar els intervals d'actualització automàtica de cada "
+"carpeta de manera independent i adaptada a cada ubicació concreta."
 
 #: src/fsearch_welcome_dialog.ui:309
 msgid "<big><b>Improved Exclude Rules</b></big>"
-msgstr ""
+msgstr "<big><b>Regles d'exclusió millorades</b></big>"
 
 #: src/fsearch_welcome_dialog.ui:323
 msgid ""
@@ -1923,18 +1999,15 @@ msgid ""
 "Rules can be targeted specifically at files, folders, or both, and can be "
 "configured to match against either the basename or the full absolute path."
 msgstr ""
-
-#: src/fsearch_window.c:749 src/menus.ui:279
-msgid "Size"
-msgstr "Mida"
+"Ara podeu utilitzar comodins i expressions regulars per definir regles "
+"d'exclusió més potents. \n"
+"Les regles es poden aplicar específicament a fitxers, carpetes o tots dos, i "
+"es poden configurar perquè coincideixin amb el nom base o amb el camí "
+"absolut complet."
 
 #: src/fsearch_window.c:763 src/menus.ui:271
 msgid "Extension"
-msgstr ""
-
-#: src/fsearch_window.c:770 src/menus.ui:283
-msgid "Date Modified"
-msgstr "Data de modificació"
+msgstr "Extensió"
 
 #: src/fsearch_window.c:784
 msgid ""
@@ -1943,16 +2016,494 @@ msgid ""
 "This sort order is not persistent, it will be reset when the search term "
 "changes."
 msgstr ""
+"Ordenar per <b>Tipus</b> pot trigar uns segons si hi ha molts resultats.\n"
+"\n"
+"Aquest ordre no és persistent; es restablirà quan canviï el terme de cerca."
+
+#: src/fsearch_window.ui:304 src/menus.ui:161
+msgid "About"
+msgstr "Quant a"
+
+#: src/fsearch_window.ui:329 src/menus.ui:47
+msgid "Quit"
+msgstr "Surt"
+
+#: src/fsearch_window.ui:372 src/fsearch_window.ui:443 src/menus.ui:131
+msgid "Donate"
+msgstr "Feu una donació"
+
+#: src/fsearch_window.ui:387 src/menus.ui:142
+msgid "Forum"
+msgstr "Fòrum"
+
+#: src/fsearch_window.ui:401 src/menus.ui:146
+msgid "Bug Reports and Feature Requests"
+msgstr "Informes d'errors i sol·licituds de funcionalitats"
+
+#: src/fsearch_window.ui:460 src/menus.ui:133
+msgid "GitHub Sponsors"
+msgstr "Patrocinadors del GitHub"
+
+#: src/fsearch_window.ui:474 src/menus.ui:137
+msgid "PayPal"
+msgstr "PayPal"
+
+#: src/fsearch_window_actions.c:238 src/fsearch_window_actions.c:533
+#: src/fsearch_window_actions.c:580
+msgid "Something went wrong."
+msgstr "Alguna cosa ha anat malament."
+
+#: src/menus.ui:35
+msgid "Cancel Update"
+msgstr "Cancel·la l'actualització"
+
+#: src/menus.ui:62 src/menus.ui:228
+msgid "Cu_t"
+msgstr "Re_talla"
+
+#: src/menus.ui:213
+msgid "Copy as Text"
+msgstr "Copia com a text"
+
+#: src/menus.ui:223
+msgid "Path + Name"
+msgstr "Camí + nom"
+
+#: data/io.github.cboxdoerfer.FSearch.desktop.in.in:5
+msgid "A file search application focusing on performance and advanced features"
+msgstr ""
+"Una aplicació de cerca de fitxers centrada en el rendiment i les funcions "
+"avançades"
+
+#: data/io.github.cboxdoerfer.FSearch.desktop.in.in:12
+msgid "File Search Utility"
+msgstr "Utilitat de cerca de fitxers"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:23
+msgid "Exclude certain files and folders"
+msgstr "Exclou determinats fitxers i carpetes"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:49
+msgid "search"
+msgstr "cerca"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:50
+msgid "fsearch"
+msgstr "fsearch"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:51
+msgid "files"
+msgstr "fitxers"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:52
+msgid "folders"
+msgstr "carpetes"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:106
+msgid "New search engine"
+msgstr "Motor de cerca nou"
+
+#: src/fsearch.c:330
+msgid "Saving database and config…"
+msgstr "S’estan desant la base de dades i la configuració…"
+
+#: src/fsearch.c:786
+msgid "Open a new application window"
+msgstr "Obre una finestra nova de l’aplicació"
+
+#: src/fsearch.c:787
+msgid "Minimize the application window"
+msgstr "Minimitza la finestra de l’aplicació"
+
+#: src/fsearch.c:789
+msgid "Set the search pattern"
+msgstr "Estableix el patró de cerca"
+
+#: src/fsearch.c:790
+msgid "Update the database and exit"
+msgstr "Actualitza la base de dades i surt"
+
+#: src/fsearch_database_file.c:1343
+msgid "Loading folders…"
+msgstr "S’estan carregant les carpetes…"
+
+#: src/fsearch_database_file.c:1359
+msgid "Loading files…"
+msgstr "S’estan carregant els fitxers…"
+
+#: src/fsearch_database_index_store.c:925 src/fsearch_statusbar.c:73
+#: src/fsearch_statusbar.ui:90
+msgid "Sorting…"
+msgstr "S’està ordenant…"
+
+#: src/fsearch_database_preferences_widget.c:162
+#: src/fsearch_database_preferences_widget.c:176
+msgid "Select folder"
+msgstr "Seleccioneu una carpeta"
+
+#: src/fsearch_database_preferences_widget.c:167
+#: src/fsearch_database_preferences_widget.c:179
+msgid "_Select"
+msgstr "_Selecciona"
+
+#: src/fsearch_database_preferences_widget.c:414
+msgid "Full Path"
+msgstr "Camí complet"
+
+#: src/fsearch_database_preferences_widget.c:434
+msgid "Files & Folders"
+msgstr "Fitxers i carpetes"
+
+#: src/fsearch_database_preferences_widget.c:700
+msgid "Match"
+msgstr "Coincidència"
+
+#: src/fsearch_database_preferences_widget.ui:206
+msgid "Stay on one file system"
+msgstr "No surtis del sistema de fitxers"
+
+#: src/fsearch_file_utils.c:279
+msgid "Failed to get application information"
+msgstr "No s'ha pogut obtenir la informació de l'aplicació"
+
+#: src/fsearch_file_utils.c:589
+msgid "Folder"
+msgstr "Carpeta"
+
+#: src/fsearch_filter.c:115
+msgid "Applications"
+msgstr "Aplicacions"
+
+#: src/fsearch_filter_editor.ui:50
+msgid "Name:"
+msgstr "Nom:"
+
+#: src/fsearch_filter_editor.ui:73
+msgid "Search in path"
+msgstr "Cerca al camí"
+
+#: src/fsearch_filter_editor.ui:101
+msgid "Match case"
+msgstr "Distingeix entre majúscules i minúscules"
+
+#: src/fsearch_filter_preferences_widget.c:133
+msgid "Add filter"
+msgstr "Afegeix un filtre"
+
+#: src/fsearch_filter_preferences_widget.c:317
+msgid "Query"
+msgstr "Consulta"
+
+#: src/fsearch_filter_preferences_widget.ui:77
+msgid "Add new filter"
+msgstr "Afegeix un filtre nou"
+
+#: src/fsearch_filter_preferences_widget.ui:95
+msgid "Remove selected filter"
+msgstr "Suprimeix el filtre seleccionat"
+
+#: src/fsearch_filter_preferences_widget.ui:113
+msgid "Edit selected filter"
+msgstr "Edita el filtre seleccionat"
+
+#: src/fsearch_listview_popup.c:163
+msgid "Other Application…"
+msgstr "Una altra aplicació…"
+
+#: src/fsearch_overlay.ui:60
+msgid "Add folders"
+msgstr "Afegeix carpetes"
+
+#: src/fsearch_overlay.ui:108
+msgid "Loading Database…"
+msgstr "S’està carregant la base de dades…"
+
+#: src/fsearch_overlay.ui:123
+msgid "This won't take long."
+msgstr "Això no trigarà gaire."
+
+#: src/fsearch_overlay.ui:171 src/fsearch_statusbar.ui:312
+msgid "Updating Database…"
+msgstr "S’està actualitzant la base de dades…"
+
+#: src/fsearch_overlay.ui:256
+msgid "Press <b>Ctrl + F</b> and start typing."
+msgstr "Premeu <b>Ctrl + F</b> i comenceu a escriure."
+
+#: src/fsearch_preferences.ui:429
+msgid "Remember sort order"
+msgstr "Recorda l’ordre d’ordenació"
+
+#: src/fsearch_preferences.ui:560
+msgid "Show database indexing status"
+msgstr "Mostra l’estat d’indexació de la base de dades"
+
+#: src/fsearch_preferences.ui:587
+msgid "Statusbar:"
+msgstr "Barra d’estat:"
+
+#: src/fsearch_preferences.ui:769
+msgid "Match case when query contains at least one upper case character"
+msgstr ""
+"Distingeix entre majúscules i minúscules quan la consulta contingui almenys "
+"un caràcter en majúscula"
+
+#: src/fsearch_preferences.ui:801
+msgid "Filter:"
+msgstr "Filtre:"
+
+#: src/fsearch_preferences.ui:1618 src/fsearch_window.ui:290
+#: src/fsearch_window.ui:415 src/menus.ui:150 src/menus.ui:156
+msgid "Help"
+msgstr "Ajuda"
+
+#: src/fsearch_statusbar.c:58
+#, c-format
+msgid "%'d Item"
+msgstr "%'d element"
+
+#: src/fsearch_statusbar.c:175
+msgid "Loading…"
+msgstr "S’està carregant…"
+
+#: src/fsearch_statusbar.ui:228
+msgid "Number of selected folders"
+msgstr "Nombre de carpetes seleccionades"
+
+#: src/fsearch_statusbar.ui:253
+msgid "Number of selected files"
+msgstr "Nombre de fitxers seleccionats"
+
+#: src/fsearch_statusbar.ui:328 src/fsearch_window.ui:103
+msgid "Cancel database update"
+msgstr "Cancel·la l'actualització de la base de dades"
+
+#: src/fsearch_statusbar.ui:369
+msgid "Number of database items"
+msgstr "Nombre d'elements de la base de dades"
 
 #: src/fsearch_window.ui:68
-#, fuzzy
 msgid "New window"
 msgstr "Finestra nova"
 
 #: src/fsearch_window.ui:89
-#, fuzzy
 msgid "Update database"
 msgstr "Actualitza la base de dades"
+
+#: src/fsearch_window.ui:275 src/fsearch_window.ui:356 src/menus.ui:129
+msgid "FSearch Online"
+msgstr "FSearch en línia"
+
+#: src/fsearch_window.ui:586
+msgid "Search…"
+msgstr "Cerca…"
+
+#: src/fsearch_window_actions.c:110
+#, c-format
+msgid "Do you really want to open %'d file?"
+msgid_plural "Do you really want to open %'d files?"
+msgstr[0] "Realment voleu obrir %'d fitxer?"
+msgstr[1] "Realment voleu obrir %'d fitxers?"
+
+#: src/fsearch_window_actions.c:115
+msgid "Opening Files…"
+msgstr "S'estan obrint els fitxers…"
+
+#: src/fsearch_window_actions.c:198
+#, c-format
+msgid "Do you really want to remove %'d file?"
+msgid_plural "Do you really want to remove %'d files?"
+msgstr[0] "Segur que voleu suprimir %'d fitxer?"
+msgstr[1] "Segur que voleu suprimir %'d fitxers?"
+
+#: src/fsearch_window_actions.c:205
+msgid "Deleting files…"
+msgstr "S’estan suprimint els fitxers…"
+
+#: src/fsearch_window_actions.c:205
+msgid "Moving files to trash…"
+msgstr "S’estan enviant els fitxers a la paperera…"
+
+#: src/fsearch_window_actions.c:263
+#, c-format
+msgid "Do you really want to open %'d file property window?"
+msgid_plural "Do you really want to open %'d file property windows?"
+msgstr[0] "Segur que voleu obrir %'d finestra de propietats de fitxer?"
+msgstr[1] "Segur que voleu obrir %'d finestres de propietats de fitxer?"
+
+#: src/fsearch_window_actions.c:270
+msgid "Opening file properties…"
+msgstr "S’estan obrint les propietats dels fitxers…"
+
+#: src/menus.ui:42
+msgid "Close Window"
+msgstr "Tanca la finestra"
+
+#: src/menus.ui:69
+msgid "Select All"
+msgstr "Selecciona-ho tot"
+
+#: data/io.github.cboxdoerfer.FSearch.desktop.in.in:4 src/main.c:36
+msgid "FSearch"
+msgstr "FSearch"
+
+#: src/fsearch.c:183
+msgid "A search utility focusing on performance and advanced features"
+msgstr ""
+"Una eina de cerca caracteritzada pel seu rendiment i les prestacions "
+"avançades"
+
+#: src/fsearch_database_preferences_widget.c:436 src/fsearch_filter.c:114
+msgid "Files"
+msgstr "Fitxers"
+
+#: src/fsearch_database_preferences_widget.c:438 src/fsearch_filter.c:113
+msgid "Folders"
+msgstr "Carpetes"
+
+#: src/fsearch_database_preferences_widget.c:694 src/fsearch_window.c:756
+#: src/menus.ui:275
+msgid "Type"
+msgstr "Tipus"
+
+#: src/fsearch_database_preferences_widget.c:864 src/fsearch_window.c:742
+#: src/menus.ui:219 src/menus.ui:267
+msgid "Path"
+msgstr "Camí"
+
+#: src/fsearch_database_preferences_widget.ui:418
+msgid "Include"
+msgstr "Inclou"
+
+#: src/fsearch_database_preferences_widget.ui:541
+msgid "Exclude hidden files and folders"
+msgstr "Exclou els fitxers i les carpetes amagats"
+
+#: src/fsearch_database_preferences_widget.ui:563
+msgid "Exclude"
+msgstr "Exclou"
+
+#: src/fsearch_filter.c:112
+msgid "All"
+msgstr "Tot"
+
+#: src/fsearch_filter_preferences_widget.c:315 src/fsearch_window.c:735
+#: src/menus.ui:215 src/menus.ui:263
+msgid "Name"
+msgstr "Nom"
+
+#: src/fsearch_overlay.ui:44
+msgid "Empty Database"
+msgstr "Base de dades buida"
+
+#: src/fsearch_overlay.ui:186 src/fsearch_overlay.ui:383
+msgid "This may take a while."
+msgstr "Això pot trigar una estona."
+
+#: src/fsearch_overlay.ui:241
+msgid "Empty Query"
+msgstr "Consulta buida"
+
+#: src/fsearch_overlay.ui:304
+msgid "No Results Found"
+msgstr "No s’ha trobat cap resultat"
+
+#: src/fsearch_overlay.ui:319
+msgid "Try a different search"
+msgstr "Proveu de fer una cerca diferent"
+
+#: src/fsearch_preferences.ui:7 src/fsearch_window.ui:251 src/menus.ui:84
+msgid "Preferences"
+msgstr "Preferències"
+
+#: src/fsearch_preferences.ui:76
+msgid "Enable dark theme"
+msgstr "Activa el tema fosc"
+
+#: src/fsearch_preferences.ui:117
+msgid "Use binary units instead of decimal units"
+msgstr "Utilitza unitats binàries en comptes d’unitats decimals"
+
+#: src/fsearch_preferences.ui:138
+msgid "Remember window size"
+msgstr "Recorda la mida de la finestra"
+
+#: src/fsearch_preferences.ui:366
+msgid "Show tooltips"
+msgstr "Mostra els indicadors de funcions"
+
+#: src/fsearch_preferences.ui:387
+msgid "Show icons in name column"
+msgstr "Mostra icones al nom de les columnes"
+
+#: src/fsearch_preferences.ui:408
+msgid "Remember column configuration"
+msgstr "Recorda la configuració de les columnes"
+
+#: src/fsearch_preferences.ui:692
+msgid "Interface"
+msgstr "Interfície"
+
+#: src/fsearch_preferences.ui:711
+msgid "Search in path when query contains path separators"
+msgstr "Cerca al camí quan la consulta inclogui separadors de camí"
+
+#: src/fsearch_preferences.ui:730
+msgid "Search as you type"
+msgstr "Cerca mentre es tecleja"
+
+#: src/fsearch_preferences.ui:750
+msgid "Hide results when search is empty"
+msgstr "Amaga els resultats si la cerca és buida"
+
+#: src/fsearch_preferences.ui:822 src/fsearch_window.ui:639
+msgid "Search"
+msgstr "Cerca"
+
+#: src/fsearch_preferences_dialog.c:238
+msgid "Database"
+msgstr "Base de dades"
+
+#: src/fsearch_statusbar.c:58 src/fsearch_statusbar.c:186
+#, c-format
+msgid "%'d Items"
+msgstr "%'d elements"
+
+#: src/fsearch_statusbar.ui:52
+msgid "Number of Search Results"
+msgstr "Nombre de resultats de la cerca"
+
+#: src/fsearch_statusbar.ui:53
+msgid "0 Items"
+msgstr "0 elements"
+
+#: src/fsearch_statusbar.ui:229 src/fsearch_statusbar.ui:254
+msgid "0/0"
+msgstr "0/0"
+
+#: src/fsearch_statusbar.ui:370
+msgid "(empty)"
+msgstr "(buit)"
+
+#: src/fsearch_statusbar.ui:438 src/fsearch_statusbar.ui:491
+msgid "CASE"
+msgstr "MAJÚSCULES"
+
+#: src/fsearch_statusbar.ui:545 src/fsearch_statusbar.ui:598
+msgid "PATH"
+msgstr "CAMÍ"
+
+#: src/fsearch_statusbar.ui:651
+msgid "REGEX"
+msgstr "EXPRESSIÓREGULAR"
+
+#: src/fsearch_window.c:749 src/menus.ui:279
+msgid "Size"
+msgstr "Mida"
+
+#: src/fsearch_window.c:770 src/menus.ui:283
+msgid "Date Modified"
+msgstr "Data de modificació"
 
 #: src/fsearch_window.ui:144 src/menus.ui:112
 msgid "Search in Path"
@@ -1978,93 +2529,9 @@ msgstr "Mostra el filtre"
 msgid "Show Search Button"
 msgstr "Mostra el botó de cerca"
 
-#: src/fsearch_window.ui:275 src/fsearch_window.ui:356 src/menus.ui:129
-#, fuzzy
-msgid "FSearch Online"
-msgstr "FSearch"
-
-#: src/fsearch_window.ui:304 src/menus.ui:161
-msgid "About"
-msgstr ""
-
-#: src/fsearch_window.ui:329 src/menus.ui:47
-msgid "Quit"
-msgstr ""
-
-#: src/fsearch_window.ui:372 src/fsearch_window.ui:443 src/menus.ui:131
-msgid "Donate"
-msgstr ""
-
-#: src/fsearch_window.ui:387 src/menus.ui:142
-msgid "Forum"
-msgstr ""
-
-#: src/fsearch_window.ui:401 src/menus.ui:146
-msgid "Bug Reports and Feature Requests"
-msgstr ""
-
-#: src/fsearch_window.ui:460 src/menus.ui:133
-msgid "GitHub Sponsors"
-msgstr ""
-
-#: src/fsearch_window.ui:474 src/menus.ui:137
-msgid "PayPal"
-msgstr ""
-
-#: src/fsearch_window.ui:586
-#, fuzzy
-msgid "Search…"
-msgstr "Cerca"
-
 #: src/fsearch_window.ui:608
 msgid "Select a Filter"
 msgstr "Seleccioneu un filtre"
-
-#: src/fsearch_window_actions.c:110
-#, fuzzy, c-format
-msgid "Do you really want to open %'d file?"
-msgid_plural "Do you really want to open %'d files?"
-msgstr[0] "Realment voleu suprimir"
-msgstr[1] "Realment voleu suprimir"
-
-#: src/fsearch_window_actions.c:115
-#, fuzzy
-msgid "Opening Files…"
-msgstr "Obre fitxers"
-
-#: src/fsearch_window_actions.c:198
-#, fuzzy, c-format
-msgid "Do you really want to remove %'d file?"
-msgid_plural "Do you really want to remove %'d files?"
-msgstr[0] "Realment voleu suprimir"
-msgstr[1] "Realment voleu suprimir"
-
-#: src/fsearch_window_actions.c:205
-#, fuzzy
-msgid "Deleting files…"
-msgstr "S’estan suprimint els fitxers…"
-
-#: src/fsearch_window_actions.c:205
-#, fuzzy
-msgid "Moving files to trash…"
-msgstr "S’estan enviant els fitxers a la paperera…"
-
-#: src/fsearch_window_actions.c:238 src/fsearch_window_actions.c:533
-#: src/fsearch_window_actions.c:580
-msgid "Something went wrong."
-msgstr ""
-
-#: src/fsearch_window_actions.c:263
-#, fuzzy, c-format
-msgid "Do you really want to open %'d file property window?"
-msgid_plural "Do you really want to open %'d file property windows?"
-msgstr[0] "Realment voleu suprimir"
-msgstr[1] "Realment voleu suprimir"
-
-#: src/fsearch_window_actions.c:270
-#, fuzzy
-msgid "Opening file properties…"
-msgstr "Obre fitxers"
 
 #: src/menus.ui:6
 msgid "_File"
@@ -2086,15 +2553,6 @@ msgstr "Obre una carpeta"
 msgid "Update Database"
 msgstr "Actualitza la base de dades"
 
-#: src/menus.ui:35
-msgid "Cancel Update"
-msgstr ""
-
-#: src/menus.ui:42
-#, fuzzy
-msgid "Close Window"
-msgstr "Finestra nova"
-
 #: src/menus.ui:54
 msgid "_Edit"
 msgstr "_Edita"
@@ -2102,15 +2560,6 @@ msgstr "_Edita"
 #: src/menus.ui:57 src/menus.ui:207
 msgid "_Copy"
 msgstr "_Copia"
-
-#: src/menus.ui:62 src/menus.ui:228
-msgid "Cu_t"
-msgstr ""
-
-#: src/menus.ui:69
-#, fuzzy
-msgid "Select All"
-msgstr "Desselecciona-ho tot"
 
 #: src/menus.ui:74
 msgid "Deselect All"
@@ -2139,14 +2588,6 @@ msgstr "O_bre amb"
 #: src/menus.ui:191
 msgid "_Open Folder"
 msgstr "_Obre una carpeta"
-
-#: src/menus.ui:213
-msgid "Copy as Text"
-msgstr ""
-
-#: src/menus.ui:223
-msgid "Path + Name"
-msgstr ""
 
 #: src/menus.ui:236
 msgid "Move to _Trash"

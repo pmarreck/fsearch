@@ -34,6 +34,16 @@ run_translator() {
 	bash "$translator" "$@"
 }
 
+for invalid_batch_size in abc 0 -5 3.5; do
+	output=$(FSEARCH_TRANSLATE_BATCH_SIZE="$invalid_batch_size" run_translator --dry-run "$catalog" 2>&1)
+	rc=$?
+	if [ "$rc" -ne 2 ]; then
+		fail "accepted invalid batch size $invalid_batch_size: $output"
+	elif [[ "$output" != *'must be a positive integer'* ]]; then
+		fail "rejected invalid batch size $invalid_batch_size without an actionable error: $output"
+	fi
+done
+
 header() {
 	awk '
 		/^msgid ""$/ { in_header = 1 }
