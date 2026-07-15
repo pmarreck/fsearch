@@ -30,6 +30,40 @@ count_entries() {
 	msgattrib "$1" --no-obsolete "$2" | awk '/^msgid / { count += 1 } END { print count + 0 }'
 }
 
+has_concrete_plural_forms() {
+	awk '
+		/^msgid ""$/ { in_header = 1 }
+		in_header && /^"/ {
+			line = $0
+			sub(/^"/, "", line)
+			sub(/"$/, "", line)
+			header = header line
+		}
+		in_header && /^$/ { exit }
+		END {
+			valid = header ~ /Plural-Forms: nplurals=[1-9][0-9]*; plural=/ \
+				&& header !~ /nplurals=INTEGER; plural=EXPRESSION/
+			exit !valid
+		}
+	' "$1"
+}
+
+has_expected_plural_forms() {
+	case "${1#"$source_root/"}" in
+		po/frc.po|po/prs.po)
+			expected='"Plural-Forms: nplurals=2; plural=n > 1;\n"'
+			;;
+		po/ie.po|po/ka.po|po/ur.po)
+			expected='"Plural-Forms: nplurals=2; plural=n != 1;\n"'
+			;;
+		*)
+			return 0
+			;;
+	esac
+
+	sed -n '1,/^$/p' "$1" | grep -Fqx "$expected"
+}
+
 for source in src/fsearch_cli.c src/fsearch_cli_config.c; do
 	if ! contains_line "$source" "$potfiles_file"; then
 		fail "missing CLI source from POTFILES.in: $source"
@@ -74,6 +108,13 @@ while IFS= read -r catalog; do
 	fi
 	if ! msgcmp --use-fuzzy --use-untranslated "$catalog" "$pot_file" >/dev/null 2>&1; then
 		fail "stale catalog template: ${catalog#"$source_root/"}"
+	fi
+	if awk '/^msgid_plural / { found = 1 } END { exit !found }' "$catalog" \
+		&& ! has_concrete_plural_forms "$catalog"; then
+		fail "catalog with plural entries lacks concrete Plural-Forms: ${catalog#"$source_root/"}"
+	fi
+	if ! has_expected_plural_forms "$catalog"; then
+		fail "catalog has an unexpected Plural-Forms rule: ${catalog#"$source_root/"}"
 	fi
 
 	if [ "$require_complete" = true ]; then

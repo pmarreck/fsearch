@@ -40,3 +40,9 @@ translation strings in source-slot order. Render those JSON string literals
 into the valid source batch locally, replacing only non-header `msgstr` or
 `msgstr[n]` slots. Keep source identifiers, comments, headers, plural fields,
 and escaping tool-owned; then run the existing semantic-preservation gates.
+
+Untranslated PO stubs can hide a missing or placeholder `Plural-Forms` header
+until their first plural slots are filled. Validate every plural-bearing
+catalog proactively, and lock known exceptional locale formulas in the
+integrity gate. For the inherited `frc`/`prs` stubs use `n > 1`; for
+`ie`/`ka`/`ur` use `n != 1`, derived from CLDR integer cardinal behavior.
