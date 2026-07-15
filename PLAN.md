@@ -71,14 +71,13 @@
 - [x] Extract all human-facing CLI and shared-configuration strings into gettext without translating machine-readable output, query syntax, setting keys, or JSON fields. Completed 2026-07-14 18:07 EDT.
   Curiosity poke: preserve printf/GLib format placeholders exactly across translations.
 - [ ] Complete and validate translations for every shipped catalog, then make the translation badge reflect the independently checked result.
-  First checkpoint completes `bg`, `de`, `es`, `id`, `it`, `ja`, `nb_NO`, `pt`, `ru`, and `tr`; Basque requires a separately approved retry after an API-side generation stall. Curiosity poke: RTL catalogs and new strings must pass the same gate rather than inheriting an optimistic upstream percentage.
+  The current checkpoint completes `bg`, `de`, `es`, `eu`, `id`, `it`, `ja`, `nb_NO`, `pt`, `ru`, and `tr`. Curiosity poke: RTL catalogs and new strings must pass the same gate rather than inheriting an optimistic upstream percentage.
 
 # Translation Reliability (2026-07-14)
-
 
 - [x] Make `translate-po` send bounded PO batches through streamed Responses events and abort only after a genuine idle interval. (2026-07-14 23:03 EDT)
   Curiosity poke: a completed stream must reconstruct bytes exactly and an interrupted stream must never modify the catalog.
 - [x] Cover streamed completion, streamed API errors, and a catalog requiring more than one batch before implementing the helper change. (2026-07-14 23:03 EDT)
   Curiosity poke: test the 20-entry boundary and preserve the bearer token's exclusion from process arguments.
-- [ ] Re-run Basque through the new path, validate its format placeholders, and update the checkpoint only if the whole catalog passes independently.
+- [x] Re-run Basque through the new path, validate its format placeholders, and update the checkpoint only if the whole catalog passes independently. (2026-07-14 23:09 EDT)
   Curiosity poke: `%'d` must remain distinct from `%d` in plural translations.

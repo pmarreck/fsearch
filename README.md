@@ -1,5 +1,5 @@
 [![🤖 Mechatron Prime](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Fthelio-nixos.tail66c90.ts.net%2Fbadges%2Ffsearch.json)](https://thelio-nixos.tail66c90.ts.net/mechatron-prime/)
-[![Localized catalogs](https://img.shields.io/badge/localized%20catalogs-10%2F42-informational?style=for-the-badge)](#localization)
+[![Localized catalogs](https://img.shields.io/badge/localized%20catalogs-11%2F42-informational?style=for-the-badge)](#localization)
 
 FSearch is a fast file search utility, inspired by Everything Search Engine. It's written in C and based on GTK3.
 This fork also provides a non-interactive command-line interface over the same index, query engine, and configuration as
@@ -323,10 +323,10 @@ Instructions can be found here:
 
 And of course: Thank you for taking the time to translate FSearch!
 
-The current CLI/config localization checkpoint is complete for Bulgarian (`bg`), German (`de`), Spanish (`es`),
-Indonesian (`id`), Italian (`it`), Japanese (`ja`), Norwegian Bokmal (`nb_NO`), Portuguese (`pt`), Russian (`ru`),
-and Turkish (`tr`). The remaining shipped catalogs are still in progress; do not interpret this list as a complete
-translation-coverage claim.
+The current CLI/config localization checkpoint is complete for Basque (`eu`), Bulgarian (`bg`), German (`de`),
+Spanish (`es`), Indonesian (`id`), Italian (`it`), Japanese (`ja`), Norwegian Bokmal (`nb_NO`), Portuguese (`pt`),
+Russian (`ru`), and Turkish (`tr`). The remaining shipped catalogs are still in progress; do not interpret this list
+as a complete translation-coverage claim.
 
 For maintainers, `./test` verifies every shipped catalog parses correctly, is current with the extracted template, and
 includes the human-facing CLI and configuration text. The stricter command below also requires every catalog to have no
@@ -337,6 +337,8 @@ nix develop -c bash tests/i18n/test_catalogs . --complete
 ```
 
 `tools/translate-po --dry-run po/LANGUAGE.po` reports the outstanding strings in one catalog without changing it.
+`tools/translate-po --apply po/LANGUAGE.po` sends at most 20 entries per streamed request and replaces the catalog
+only after every batch has completed and passed PO, gettext, and exact printf-placeholder validation.
 
 ## Current Limitations
 
