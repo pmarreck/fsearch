@@ -953,7 +953,7 @@ msgstr "Aplikasi pencarian file yang berfokus pada performa dan fitur canggih"
 
 #: data/io.github.cboxdoerfer.FSearch.desktop.in.in:10
 msgid "search;fsearch;files;folders;music;video;documents;find;tool;everything;"
-msgstr "search;fsearch;files;folders;music;video;documents;find;tool;everything;"
+msgstr "cari;fsearch;berkas;folder;musik;video;dokumen;temukan;alat;segalanya;"
 
 #: data/io.github.cboxdoerfer.FSearch.desktop.in.in:12
 msgid "File Search Utility"

@@ -1755,7 +1755,7 @@ msgstr ""
 
 #: data/io.github.cboxdoerfer.FSearch.desktop.in.in:10
 msgid "search;fsearch;files;folders;music;video;documents;find;tool;everything;"
-msgstr "cautare;fsearch;fisiere;foldere;muzica;video;documente;gasire;unelte;everything;"
+msgstr "cautare;fsearch;fisiere;foldere;muzica;video;documente;gasire;unelte;tot;"
 
 #: data/io.github.cboxdoerfer.FSearch.desktop.in.in:12
 msgid "File Search Utility"
@@ -1865,7 +1865,7 @@ msgstr "unelte"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:58
 msgid "everything"
-msgstr "everything"
+msgstr "tot"
 
 #. Kept for appstreamcli < 1.0 (e.g. Ubuntu 20.04/22.04 PPA builds), which doesn't know <developer>.
 #. Translators: please do NOT translate this.

@@ -104,3 +104,5 @@
   Both catalogs completed atomically and passed strict gettext, header/key invariants, the full suite, and the production build before commit.
 - [x] Checkpoint 7: complete Romanian (`ro`) and Arabic (`ar`), and distinguish malformed translated PO from placeholder violations. (2026-07-15 02:38 EDT)
   Arabic's six-form `%u` plural and pre-existing `%'d`/`%s` translations were verified before retry; the helper now reports `msgfmt` diagnostics through a red-green regression test.
+- [x] Checkpoint 8: complete Swedish (`sv`) and Telugu (`te`), and resolve the reviewer/sweep's unambiguous AppStream keyword findings. (2026-07-15 02:55 EDT)
+  Both catalogs completed atomically; Romanian, Portuguese, Brazilian Portuguese, and Indonesian now translate the AppStream `everything` keyword consistently, with strict gettext, header/key invariants, the full suite, and production build passing before commit.

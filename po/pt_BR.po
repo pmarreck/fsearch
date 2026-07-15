@@ -1470,7 +1470,7 @@ msgstr ""
 
 #: data/io.github.cboxdoerfer.FSearch.desktop.in.in:10
 msgid "search;fsearch;files;folders;music;video;documents;find;tool;everything;"
-msgstr "busca;fsearch;arquivos;pastas;músicas;vídeos;documentos;encontrar;ferramenta;everything;"
+msgstr "busca;fsearch;arquivos;pastas;músicas;vídeos;documentos;encontrar;ferramenta;tudo;"
 
 #: data/io.github.cboxdoerfer.FSearch.desktop.in.in:12
 msgid "File Search Utility"
