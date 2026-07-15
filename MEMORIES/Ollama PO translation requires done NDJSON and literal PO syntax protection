@@ -53,3 +53,9 @@ valid JSON, so derive that escaped suffix from the source `msgid` (or
 `msgid_plural` for every plural slot) and replace the response suffix locally.
 Count escaping correctly: a literal trailing backslash followed by `n` is not
 an encoded newline.
+
+Do not concatenate C printf macros such as `G_GINT64_FORMAT` into a gettext
+literal. `xgettext` records only the literal prefix, leaving an invalid bare
+percent in the catalog while runtime formatting uses the expanded conversion.
+Format the typed value separately and pass it through a normal portable `%s`
+placeholder, then migrate that one PO key without a whole-catalog rewrap.

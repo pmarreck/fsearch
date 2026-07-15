@@ -755,9 +755,9 @@ msgstr "fsearch config roots: पुन्हा स्कॅन करण्य
 #: src/fsearch_cli_config.c:765
 msgid ""
 "%s\tactive=%s monitor=%s one-file-system=%s scan-after-launch=%s rescan-"
-"after=%"
+"after=%s\n"
 msgstr ""
-"%s\tसक्रिय=%s निरीक्षण=%s एक-फाइल-प्रणाली=%s प्रारंभानंतर-स्कॅन=%s पुन्हा-स्कॅन-कालावधी=%"
+"%s\tसक्रिय=%s निरीक्षण=%s एक-फाइल-प्रणाली=%s प्रारंभानंतर-स्कॅन=%s पुन्हा-स्कॅन-कालावधी=%s\n"
 
 #: src/fsearch_cli_config.c:844
 msgid "fsearch config excludes hidden: expected true or false\n"

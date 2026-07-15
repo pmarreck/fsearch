@@ -64,6 +64,41 @@ has_expected_plural_forms() {
 	sed -n '1,/^$/p' "$1" | grep -Fqx "$expected"
 }
 
+has_portable_root_output_format() {
+	awk '
+		function quoted_value(line,    value) {
+			value = line
+			sub(/^[^"]*"/, "", value)
+			sub(/"$/, "", value)
+			return value
+		}
+
+		function check_entry() {
+			if (msgid == "%s\\tactive=%s monitor=%s one-file-system=%s scan-after-launch=%s rescan-after=%s\\n")
+				found = 1
+		}
+
+		/^msgid / {
+			check_entry()
+			msgid = quoted_value($0)
+			field = "msgid"
+			next
+		}
+
+		field == "msgid" && /^"/ {
+			msgid = msgid quoted_value($0)
+			next
+		}
+
+		/^msgstr/ { field = "" }
+
+		END {
+			check_entry()
+			exit !found
+		}
+	' "$1"
+}
+
 for source in src/fsearch_cli.c src/fsearch_cli_config.c; do
 	if ! contains_line "$source" "$potfiles_file"; then
 		fail "missing CLI source from POTFILES.in: $source"
@@ -95,6 +130,9 @@ elif ! msggrep --location=src/fsearch_cli.c --output-file="$template_cli_pot" "$
 	|| ! msgcat --use-first --output-file="$template_all_pot" "$template_cli_pot" "$template_config_pot" \
 	|| ! msgcmp --use-fuzzy --use-untranslated "$template_all_pot" "$cli_pot" >/dev/null 2>&1; then
 	fail 'committed template omits one or more CLI/config gettext messages'
+fi
+if ! has_portable_root_output_format "$cli_pot"; then
+	fail 'CLI root output format is not portable gettext text with six string placeholders'
 fi
 
 while IFS= read -r catalog; do

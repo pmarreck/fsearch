@@ -560,10 +560,10 @@ msgstr "fsearch config roots: ongeldige duur voor opnieuw scannen: %s\n"
 #: src/fsearch_cli_config.c:765
 msgid ""
 "%s\tactive=%s monitor=%s one-file-system=%s scan-after-launch=%s rescan-"
-"after=%"
+"after=%s\n"
 msgstr ""
 "%s\tactive=%s monitor=%s one-file-system=%s scan-after-launch=%s rescan-"
-"after=%"
+"after=%s\n"
 
 #: src/fsearch_cli_config.c:844
 msgid "fsearch config excludes hidden: expected true or false\n"

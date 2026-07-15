@@ -616,15 +616,17 @@ run_roots(FsearchConfig *config, int argc, char *argv[]) {
                         fsearch_database_include_get_one_file_system(root) ? "true" : "false",
                         fsearch_database_include_get_scan_after_launch(root) ? "true" : "false",
                         fsearch_database_include_get_rescan_after(root));
-            else
+            else {
+                g_autofree char *rescan_after = g_strdup_printf("%" G_GINT64_FORMAT, fsearch_database_include_get_rescan_after(root));
                 g_print("%s\tactive=%s monitor=%s one-file-system=%s scan-after-launch=%s "
-                        "rescan-after=%" G_GINT64_FORMAT "\n",
+                        "rescan-after=%s\n",
                         fsearch_database_include_get_path(root),
                         fsearch_database_include_get_active(root) ? "true" : "false",
                         fsearch_database_include_get_monitored(root) ? "true" : "false",
                         fsearch_database_include_get_one_file_system(root) ? "true" : "false",
                         fsearch_database_include_get_scan_after_launch(root) ? "true" : "false",
-                        fsearch_database_include_get_rescan_after(root));
+                        rescan_after);
+            }
         }
         if (json)
             g_print("]\n");
@@ -762,13 +764,14 @@ run_roots(FsearchConfig *config, int argc, char *argv[]) {
         return 1;
     g_autoptr(FsearchDatabaseInclude) saved = find_root(config, path);
     if (saved) {
-        fsearch_cli_printerr("%s\tactive=%s monitor=%s one-file-system=%s scan-after-launch=%s rescan-after=%" G_GINT64_FORMAT "\n",
+        g_autofree char *rescan_after = g_strdup_printf("%" G_GINT64_FORMAT, fsearch_database_include_get_rescan_after(saved));
+        fsearch_cli_printerr("%s\tactive=%s monitor=%s one-file-system=%s scan-after-launch=%s rescan-after=%s\n",
                    path,
                    fsearch_database_include_get_active(saved) ? "true" : "false",
                    fsearch_database_include_get_monitored(saved) ? "true" : "false",
                    fsearch_database_include_get_one_file_system(saved) ? "true" : "false",
                    fsearch_database_include_get_scan_after_launch(saved) ? "true" : "false",
-                   fsearch_database_include_get_rescan_after(saved));
+                   rescan_after);
     }
     else {
         fsearch_cli_printerr("%s\n", path);
