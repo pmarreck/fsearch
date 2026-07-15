@@ -13,12 +13,15 @@ ollama_error_catalog="$tmp_dir/ollama-error-catalog.po"
 ollama_retry_catalog="$tmp_dir/ollama-retry-catalog.po"
 ollama_retry_exhausted_catalog="$tmp_dir/ollama-retry-exhausted-catalog.po"
 ollama_header_catalog="$tmp_dir/ollama-header-catalog.po"
+ollama_broken_header_catalog="$tmp_dir/ollama-broken-header-catalog.po"
 ollama_batch_catalog="$tmp_dir/ollama-batch-catalog.po"
 ollama_batch_one="$tmp_dir/ollama-batch-one.po"
 ollama_batch_two="$tmp_dir/ollama-batch-two.po"
+ollama_batch_three="$tmp_dir/ollama-batch-three.po"
 partial="$tmp_dir/partial.po"
 complete="$tmp_dir/complete.po"
 header_changed="$tmp_dir/header-changed.po"
+broken_header_keyword="$tmp_dir/broken-header-keyword.po"
 multiline_catalog="$tmp_dir/multiline.po"
 multiline_partial="$tmp_dir/multiline-partial.po"
 format_catalog="$tmp_dir/format.po"
@@ -88,6 +91,7 @@ cp "$catalog" "$ollama_error_catalog"
 cp "$catalog" "$ollama_retry_catalog"
 cp "$catalog" "$ollama_retry_exhausted_catalog"
 cp "$catalog" "$ollama_header_catalog"
+cp "$catalog" "$ollama_broken_header_catalog"
 
 header "$catalog" >"$partial"
 printf '%s\n' \
@@ -103,6 +107,7 @@ printf '%s\n' \
 	'msgstr "TWO"' >>"$complete"
 
 sed 's/Content-Transfer-Encoding: 8bit/Content-Transfer-Encoding: changed/' "$complete" >"$header_changed"
+sed '0,/^msgid ""$/s//msg_id ""/' "$complete" >"$broken_header_keyword"
 
 printf '%s\n' \
 	'msgid ""' \
@@ -450,6 +455,21 @@ elif ! cmp -s <(header "$catalog") <(header "$ollama_header_catalog"); then
 	fail 'did not restore the exact source header after an Ollama response changed it'
 fi
 
+ollama_broken_header_count_file="$tmp_dir/ollama-broken-header-count"
+output=$(env -u OPENAI_API_KEY FAKE_OLLAMA_URL=http://127.0.0.1:11434 \
+	FAKE_OLLAMA_COUNT_FILE="$ollama_broken_header_count_file" FAKE_TRANSLATION="$broken_header_keyword" \
+	PATH="$fake_ollama_bin:$PATH" bash "$translator" --apply --backend ollama "$ollama_broken_header_catalog" 2>&1)
+rc=$?
+if [ "$rc" -ne 0 ]; then
+	fail "did not discard a malformed Ollama header while preserving its translated body: $output"
+elif [ "$(cat "$ollama_broken_header_count_file")" -ne 1 ]; then
+	fail "used $(cat "$ollama_broken_header_count_file") Ollama requests for a malformed-header body instead of one"
+elif ! cmp -s <(header "$catalog") <(header "$ollama_broken_header_catalog"); then
+	fail 'did not restore the exact source header after a malformed Ollama header'
+elif msgattrib --untranslated --no-obsolete "$ollama_broken_header_catalog" | awk '/^msgid / { found = 1 } END { exit found ? 0 : 1 }'; then
+	fail 'discarded translated body entries after a malformed Ollama header'
+fi
+
 before=$(sha256sum "$ollama_retry_exhausted_catalog" | awk '{ print $1 }')
 ollama_retry_exhausted_count_file="$tmp_dir/ollama-retry-exhausted-count"
 output=$(env -u OPENAI_API_KEY FAKE_OLLAMA_URL=http://127.0.0.1:11434 \
@@ -590,26 +610,29 @@ fi
 header "$catalog" >"$ollama_batch_catalog"
 header "$catalog" >"$ollama_batch_one"
 header "$catalog" >"$ollama_batch_two"
+header "$catalog" >"$ollama_batch_three"
 for ((number = 1; number <= 11; number += 1)); do
 	printf -v label '%02d' "$number"
 	printf '%s\n' "msgid \"local entry $label\"" 'msgstr ""' '' >>"$ollama_batch_catalog"
-	if [ "$number" -le 10 ]; then
+	if [ "$number" -le 5 ]; then
 		printf '%s\n' "msgid \"local entry $label\"" "msgstr \"LOCAL ENTRY $label\"" '' >>"$ollama_batch_one"
-	else
+	elif [ "$number" -le 10 ]; then
 		printf '%s\n' "msgid \"local entry $label\"" "msgstr \"LOCAL ENTRY $label\"" '' >>"$ollama_batch_two"
+	else
+		printf '%s\n' "msgid \"local entry $label\"" "msgstr \"LOCAL ENTRY $label\"" '' >>"$ollama_batch_three"
 	fi
 done
 
 ollama_count_file="$tmp_dir/ollama-curl-count"
 output=$(env -u OPENAI_API_KEY FSEARCH_TRANSLATE_BACKEND=ollama FAKE_OLLAMA_URL=http://127.0.0.1:11434 \
-	FAKE_OLLAMA_COUNT_FILE="$ollama_count_file" FAKE_OLLAMA_EXPECT_BATCH_SIZES=10,1 \
-	FAKE_OLLAMA_TRANSLATION_1="$ollama_batch_one" FAKE_OLLAMA_TRANSLATION_2="$ollama_batch_two" \
+	FAKE_OLLAMA_COUNT_FILE="$ollama_count_file" FAKE_OLLAMA_EXPECT_BATCH_SIZES=5,5,1 \
+	FAKE_OLLAMA_TRANSLATION_1="$ollama_batch_one" FAKE_OLLAMA_TRANSLATION_2="$ollama_batch_two" FAKE_OLLAMA_TRANSLATION_3="$ollama_batch_three" \
 	PATH="$fake_ollama_bin:$PATH" bash "$translator" --apply "$ollama_batch_catalog" 2>&1)
 rc=$?
 if [ "$rc" -ne 0 ]; then
 	fail "rejected a valid Ollama-default batch size: $output"
-elif [ "$(cat "$ollama_count_file")" -ne 2 ]; then
-	fail "used $(cat "$ollama_count_file") Ollama requests for an 11-entry catalog instead of two"
+elif [ "$(cat "$ollama_count_file")" -ne 3 ]; then
+	fail "used $(cat "$ollama_count_file") Ollama requests for an 11-entry catalog instead of three"
 elif msgattrib --untranslated --no-obsolete "$ollama_batch_catalog" | awk '/^msgid / { found = 1 } END { exit found ? 0 : 1 }'; then
 	fail 'left an untranslated entry after applying Ollama-default batches'
 fi

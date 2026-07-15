@@ -9,9 +9,10 @@ zero and explicitly require immutable PO keywords, while preserving the
 existing PO, gettext, exact-printf, completeness, and atomic-merge gates.
 
 With the locally configured 4K context, a real full-catalog 20-entry request
-truncated its JSON response. Keep the Ollama default at ten entries, while
-allowing an explicit `FSEARCH_TRANSLATE_BATCH_SIZE` override for models or
-hardware that have been measured to sustain a larger batch safely.
+truncated its JSON response and later ten-entry batches repeatedly omitted
+entries. Keep the Ollama default at five entries, while allowing an explicit
+`FSEARCH_TRANSLATE_BATCH_SIZE` override for models or hardware that have been
+measured to sustain a larger batch safely.
 
 Schema-constrained Gemma responses can still remove an escaped quote from PO
 text or copy a non-English AppStream semicolon keyword list unchanged. Require
@@ -22,10 +23,12 @@ independently reject malformed PO and unchanged non-English lists. Temperature
 zero reduces variation but does not make local GPU generation bitwise
 deterministic.
 
-The PO header is source-owned metadata, not translated content. Restore it
-from the source catalog before validating a completed response, then treat a
-remaining PO/placeholder/keyword/completeness validation failure as transient:
-retry only that batch, capped at three total attempts, while retaining all
-atomic catalog boundaries. Transport, API-error, malformed-stream, and
+The PO header is source-owned metadata, not translated content. Discard every
+model-produced line before its first blank separator, then restore the source
+header before validating the model body. This handles a malformed `msg_id`
+header without discarding otherwise valid translations. Treat a remaining
+PO/placeholder/keyword/completeness validation failure as transient: retry
+only that batch, capped at three total attempts, while retaining all atomic
+catalog boundaries. Transport, API-error, malformed-stream, and
 missing-completion failures are not safe to hide behind retries and must stop
 immediately.

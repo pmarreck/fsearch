@@ -340,8 +340,9 @@ tools/translate-po --apply --backend ollama po/LANGUAGE.po
 Set `FSEARCH_OLLAMA_URL` to use a non-default Ollama endpoint, select a different local model with `--model`, or use
 `FSEARCH_TRANSLATE_BACKEND=ollama` to make the local backend the default for a translation session. Both backends send
 bounded streamed batches and replace a catalog only after every batch completes and passes PO, gettext, and exact
-printf-placeholder validation. OpenAI defaults to 20 entries per batch; local Ollama defaults to 10 for its practical
-context budget, and `FSEARCH_TRANSLATE_BATCH_SIZE` explicitly overrides either default. The source PO header is restored
+printf-placeholder validation. OpenAI defaults to 20 entries per batch; local Ollama defaults to 5 after real ten-entry
+batches repeatedly omitted content under its practical context budget, and `FSEARCH_TRANSLATE_BATCH_SIZE` explicitly
+overrides either default. The source PO header is restored
 before validation, so model metadata churn cannot alter it. If a local response then fails PO, placeholder, keyword, or
 completeness validation, only that batch is retried at most twice; HTTP/API and incomplete-stream failures stop
 immediately. A catalog is still replaced only after every batch passes.

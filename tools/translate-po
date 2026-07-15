@@ -41,9 +41,7 @@ restore_source_header() {
 	{
 		header "$source"
 		awk '
-			/^msgid ""$/ && !saw_header { saw_header = 1; next }
-			!saw_header { next }
-			saw_header && !saw_body {
+			!saw_body {
 				if (/^$/)
 					saw_body = 1
 				next
@@ -465,7 +463,7 @@ fi
 if [ -z "$batch_size" ]; then
 	case "$backend" in
 		openai) batch_size=20 ;;
-		ollama) batch_size=10 ;;
+		ollama) batch_size=5 ;;
 	esac
 fi
 
