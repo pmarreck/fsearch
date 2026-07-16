@@ -3,4 +3,6 @@ GNU gettext ignores `LANGUAGE=<catalog>` when `LC_MESSAGES` is `C` or
 language selection must first set `LANGUAGE` and ensure only `LC_MESSAGES`
 uses an available non-C locale, leaving the other libc locale categories
 unchanged. The `--lang` release tests deliberately run with `LC_ALL=C.utf8`
-to keep that behavior covered.
+to keep that behavior covered. The Linux package wrapper defaults
+`LOCALE_ARCHIVE` to `glibcLocales` (without overriding an explicit caller
+value), because Nix check sandboxes do not expose the host locale archive.

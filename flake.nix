@@ -21,6 +21,7 @@
               jq
               libxml2
               meson
+              makeWrapper
               ninja
               pkg-config
               cppcheck
@@ -35,6 +36,10 @@
 
             mesonFlags = [ "--buildtype=release" ];
             mesonBuildDir = "builddir";
+            postFixup = pkgs.lib.optionalString pkgs.stdenv.hostPlatform.isLinux ''
+              wrapProgram $out/bin/fsearch \
+                --set-default LOCALE_ARCHIVE ${pkgs.glibcLocales}/lib/locale/locale-archive
+            '';
             doCheck = true;
             checkPhase = ''
               runHook preCheck

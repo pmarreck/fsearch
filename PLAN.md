@@ -140,6 +140,8 @@
   Explicit selection supports `--lang CODE` and `--lang=CODE`, normalizes BCP-47 separators, folds Chinese script/region variants into FSearch's `zh_CN`/`zh_Hant` catalogs, and works from a `C.UTF-8` shell without changing the standard locale path when no override is supplied.
 - [x] Cover precedence, normalized locale tags, malformed selectors, `--` handling, and translated CLI/config output with deterministic unit and integration tests. Completed 2026-07-16 14:07 EDT.
   Release coverage verifies `FSEARCH_LANG`, later CLI override precedence, both config argument positions, and GUI stripping before GTK parsing; aliases and broader localized help remain intentionally deferred.
+- [x] Make the Nix package provide an available message locale for explicit language selection in hermetic `C.UTF-8` check environments. Completed 2026-07-16 14:18 EDT.
+  The Linux package wrapper defaults `LOCALE_ARCHIVE` to `glibcLocales`, preserving any caller-provided archive. The exact Nix `checks.x86_64-linux.test` target and the full suite now prove translated CLI/config output in its isolated sandbox.
 
 # Local Translation Backend (2026-07-15)
 
