@@ -3,6 +3,7 @@
 #include "fsearch_config.h"
 #include "fsearch_database_include.h"
 #include "fsearch_database_include_manager.h"
+#include "fsearch_locale.h"
 
 #include <glib.h>
 #include <glib/gstdio.h>
@@ -61,6 +62,114 @@ test_frontend_selection(void) {
     g_assert_cmpint(fsearch_cli_select_frontend(G_N_ELEMENTS(config_search_value_argv), config_search_value_argv, NULL),
                     ==,
                     FSEARCH_CLI_FRONTEND_GUI);
+}
+
+static void
+test_locale_argument_selection(void) {
+    char *argument_argv[] = {"fsearch", "--cli", "--lang", "pt-br", "--search", "report", NULL};
+    FsearchLocaleArguments arguments = {0};
+    g_autoptr(GError) error = NULL;
+    g_assert_true(fsearch_locale_arguments_parse(G_N_ELEMENTS(argument_argv) - 1,
+                                                 argument_argv,
+                                                 "fr",
+                                                 &arguments,
+                                                 &error));
+    g_assert_no_error(error);
+    g_assert_cmpstr(arguments.language, ==, "pt_BR");
+    g_assert_cmpint(arguments.argc, ==, 4);
+    g_assert_cmpstr(arguments.argv[0], ==, "fsearch");
+    g_assert_cmpstr(arguments.argv[1], ==, "--cli");
+    g_assert_cmpstr(arguments.argv[2], ==, "--search");
+    g_assert_cmpstr(arguments.argv[3], ==, "report");
+    fsearch_locale_arguments_clear(&arguments);
+
+    char *equals_argv[] = {"fsearch", "--lang=zh-hant", "config", "--help", NULL};
+    g_assert_true(fsearch_locale_arguments_parse(G_N_ELEMENTS(equals_argv) - 1,
+                                                 equals_argv,
+                                                 "fr",
+                                                 &arguments,
+                                                 &error));
+    g_assert_no_error(error);
+    g_assert_cmpstr(arguments.language, ==, "zh_Hant");
+    g_assert_cmpint(arguments.argc, ==, 3);
+    g_assert_cmpstr(arguments.argv[1], ==, "config");
+    fsearch_locale_arguments_clear(&arguments);
+
+    char *simplified_argv[] = {"fsearch", "--lang", "zh", NULL};
+    g_assert_true(fsearch_locale_arguments_parse(G_N_ELEMENTS(simplified_argv) - 1,
+                                                 simplified_argv,
+                                                 NULL,
+                                                 &arguments,
+                                                 &error));
+    g_assert_no_error(error);
+    g_assert_cmpstr(arguments.language, ==, "zh_CN");
+    fsearch_locale_arguments_clear(&arguments);
+
+    char *traditional_argv[] = {"fsearch", "--lang", "zh-TW", NULL};
+    g_assert_true(fsearch_locale_arguments_parse(G_N_ELEMENTS(traditional_argv) - 1,
+                                                 traditional_argv,
+                                                 NULL,
+                                                 &arguments,
+                                                 &error));
+    g_assert_no_error(error);
+    g_assert_cmpstr(arguments.language, ==, "zh_Hant");
+    fsearch_locale_arguments_clear(&arguments);
+
+    char *environment_argv[] = {"fsearch", "--cli", "--help", NULL};
+    g_assert_true(fsearch_locale_arguments_parse(G_N_ELEMENTS(environment_argv) - 1,
+                                                 environment_argv,
+                                                 "fr",
+                                                 &arguments,
+                                                 &error));
+    g_assert_no_error(error);
+    g_assert_cmpstr(arguments.language, ==, "fr");
+    fsearch_locale_arguments_clear(&arguments);
+
+    char *literal_argv[] = {"fsearch", "--", "--lang", "fr", NULL};
+    g_assert_true(fsearch_locale_arguments_parse(G_N_ELEMENTS(literal_argv) - 1,
+                                                 literal_argv,
+                                                 "de",
+                                                 &arguments,
+                                                 &error));
+    g_assert_no_error(error);
+    g_assert_cmpstr(arguments.language, ==, "de");
+    g_assert_cmpint(arguments.argc, ==, 4);
+    g_assert_cmpstr(arguments.argv[2], ==, "--lang");
+    fsearch_locale_arguments_clear(&arguments);
+}
+
+static void
+test_locale_argument_rejection(void) {
+    char *missing_value_argv[] = {"fsearch", "--lang", NULL};
+    FsearchLocaleArguments arguments = {0};
+    g_autoptr(GError) error = NULL;
+    g_assert_false(fsearch_locale_arguments_parse(G_N_ELEMENTS(missing_value_argv) - 1,
+                                                  missing_value_argv,
+                                                  NULL,
+                                                  &arguments,
+                                                  &error));
+    g_assert_error(error, FSEARCH_LOCALE_ERROR, FSEARCH_LOCALE_ERROR_MISSING_VALUE);
+    g_assert_cmpstr(error->message, ==, "--lang requires a language code");
+
+    char *invalid_value_argv[] = {"fsearch", "--lang", "fr:de", NULL};
+    g_clear_error(&error);
+    g_assert_false(fsearch_locale_arguments_parse(G_N_ELEMENTS(invalid_value_argv) - 1,
+                                                  invalid_value_argv,
+                                                  NULL,
+                                                  &arguments,
+                                                  &error));
+    g_assert_error(error, FSEARCH_LOCALE_ERROR, FSEARCH_LOCALE_ERROR_INVALID_VALUE);
+    g_assert_cmpstr(error->message, ==, "invalid language code: fr:de");
+
+    char *numeric_language_argv[] = {"fsearch", "--lang", "12", NULL};
+    g_clear_error(&error);
+    g_assert_false(fsearch_locale_arguments_parse(G_N_ELEMENTS(numeric_language_argv) - 1,
+                                                  numeric_language_argv,
+                                                  NULL,
+                                                  &arguments,
+                                                  &error));
+    g_assert_error(error, FSEARCH_LOCALE_ERROR, FSEARCH_LOCALE_ERROR_INVALID_VALUE);
+    g_assert_cmpstr(error->message, ==, "invalid language code: 12");
 }
 
 static void
@@ -345,6 +454,8 @@ main(int argc, char **argv) {
     g_test_init(&argc, &argv, NULL);
 
     g_test_add_func("/FSearch/cli/frontend_selection", test_frontend_selection);
+    g_test_add_func("/FSearch/cli/locale_argument_selection", test_locale_argument_selection);
+    g_test_add_func("/FSearch/cli/locale_argument_rejection", test_locale_argument_rejection);
     g_test_add_func("/FSearch/cli/config_detects_running_gui", test_config_detects_running_gui);
     g_test_add_func("/FSearch/cli/result_limit_precedence", test_result_limit_precedence);
     g_test_add_func("/FSearch/cli/cap_notice", test_cap_notice);

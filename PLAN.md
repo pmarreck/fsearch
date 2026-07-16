@@ -134,6 +134,13 @@
 - [ ] Phase 2: flip the same 64-locale completeness gate from WARN to hard failure after independent verification finds all catalogs complete.
   Curiosity poke: mutation of a catalog or the strictness switch must make CI fail.
 
+# Locale Selection (2026-07-16)
+
+- [x] Add a shared `--lang CODE` / `FSEARCH_LANG` locale selector before gettext startup, while keeping its option aliases and wider localized-help surface deferred until the catalog rollout is complete. Completed 2026-07-16 14:07 EDT.
+  Explicit selection supports `--lang CODE` and `--lang=CODE`, normalizes BCP-47 separators, folds Chinese script/region variants into FSearch's `zh_CN`/`zh_Hant` catalogs, and works from a `C.UTF-8` shell without changing the standard locale path when no override is supplied.
+- [x] Cover precedence, normalized locale tags, malformed selectors, `--` handling, and translated CLI/config output with deterministic unit and integration tests. Completed 2026-07-16 14:07 EDT.
+  Release coverage verifies `FSEARCH_LANG`, later CLI override precedence, both config argument positions, and GUI stripping before GTK parsing; aliases and broader localized help remain intentionally deferred.
+
 # Local Translation Backend (2026-07-15)
 
 - [x] Add a fake-HTTP-tested Ollama backend to `tools/translate-po` while preserving bounded streaming, completed-response checks, exact placeholder validation, and atomic catalog replacement. (2026-07-15 11:10 EDT)

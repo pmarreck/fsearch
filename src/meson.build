@@ -15,6 +15,7 @@ libfsearch_sources = [
     'fsearch.c',
     'fsearch_cli.c',
     'fsearch_cli_config.c',
+    'fsearch_locale.c',
     'fsearch_array.c',
     'fsearch_clipboard.c',
     'fsearch_config.c',

@@ -99,6 +99,14 @@ assert_success_contains 'CLI about' 'indexed file search for' "$binary" --cli --
 assert_success_contains 'CLI version compatibility' 'FSearch 0.3-beta2' "$binary" --cli --version
 assert_success_contains 'environment-selected CLI help' '--unlimit' env FSEARCH_UI=CLI "$binary" --help
 assert_success_contains 'explicit GUI overrides CLI environment' 'FSearch 0.3-beta2' env FSEARCH_UI=CLI "$binary" --gui --version
+assert_success_contains 'CLI --lang selects French in C locale' 'Utilisation : fsearch --cli' env LC_ALL=C.utf8 "$binary" --cli --lang fr --help
+assert_success_contains 'FSEARCH_LANG selects French in C locale' 'Utilisation : fsearch --cli' env LC_ALL=C.utf8 FSEARCH_LANG=fr "$binary" --cli --help
+assert_success_contains 'CLI --lang overrides FSEARCH_LANG' 'Verwendung: fsearch --cli' env LC_ALL=C.utf8 FSEARCH_LANG=fr "$binary" --cli --lang de --help
+assert_success_contains 'CLI config honors --lang' 'Konfigurationsbefehle:' env LC_ALL=C.utf8 "$binary" --lang de config --help
+assert_success_contains 'CLI config accepts --lang after subcommand' 'Konfigurationsbefehle:' env LC_ALL=C.utf8 "$binary" config --lang de --help
+assert_success_contains 'GUI strips --lang before GTK parsing' 'FSearch 0.3' env FSEARCH_UI=CLI "$binary" --lang de --gui --version
+assert_failure_contains 'CLI --lang requires a code' '--lang requires a language code' "$binary" --cli --lang
+assert_failure_contains 'CLI --lang rejects an invalid code' 'invalid language code: fr:de' "$binary" --cli --lang fr:de
 
 config_tmp=$(mktemp -d "${TMPDIR:-/tmp}/fsearch-config-cli.XXXXXX")
 config_home="$config_tmp/config"
