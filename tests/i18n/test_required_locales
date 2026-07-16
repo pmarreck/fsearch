@@ -143,4 +143,21 @@ elif [ -n "$output" ]; then
 	fail "strict mode leaked gettext diagnostics for the complete Arabic catalog: $(printf '%s' "$output" | head -c 200)"
 fi
 
+required_count=$(wc -l <"$repository_root/po/REQUIRED_LOCALES")
+if [ "$required_count" -ne 64 ]; then
+	fail "expected 64 enforced locales, got $required_count"
+fi
+for excluded_locale in ie ig; do
+	if rg -qx "$excluded_locale" "$repository_root/po/REQUIRED_LOCALES"; then
+		fail "enforced locale list still contains excluded locale: $excluded_locale"
+	fi
+done
+output=$(bash "$checker" "$repository_root" --warn 2>&1)
+rc=$?
+if [ "$rc" -ne 0 ]; then
+	fail "WARN mode rejected the authorized 64-locale set: $output"
+elif [[ "$output" != *'WARN: i18n incomplete: ga ka prs ur am az bn bs da fa fil ha hi hr is km mk pa ps sl sq sr sw ta th vi yo (27)'* ]]; then
+	fail "WARN mode did not report the authorized 27-locale set: $output"
+fi
+
 exit "$failures"

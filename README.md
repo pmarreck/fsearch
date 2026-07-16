@@ -323,8 +323,9 @@ Galician (`gl`), German (`de`), Greek (`el`), Hebrew (`he`), Hungarian (`hu`), I
 Japanese (`ja`), Korean (`ko`), Lithuanian (`lt`), Marathi (`mr`), Norwegian Bokmal (`nb_NO`), Polish (`pl`),
 Portuguese (`pt`), Romanian (`ro`), Russian (`ru`), Simplified Chinese (`zh_CN`), Slovak (`sk`), Spanish (`es`),
 Standard Moroccan Tamazight (`zgh`), Swedish (`sv`), Telugu (`te`), Traditional Chinese (`zh_Hant`), Turkish (`tr`),
-and Ukrainian (`uk`). Five inherited catalogs remain in progress; this is not yet a complete translation-coverage
-claim.
+and Ukrainian (`uk`). Four required inherited catalogs remain in progress. Interlingue (`ie`) and Igbo (`ig`) are
+excluded from this fork's completion claim because no available translation model met their quality floor; the upstream
+Interlingue catalog is retained but unenforced. This is not yet a complete translation-coverage claim.
 
 For maintainers, `./test` verifies every shipped catalog parses correctly, is current with the extracted template, and
 includes the human-facing CLI and configuration text. The stricter command below also requires every catalog to have no

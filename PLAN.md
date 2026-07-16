@@ -86,7 +86,7 @@
 
 # Full Catalog Translation (2026-07-15)
 
-- [ ] Complete the five remaining inherited catalogs: Irish (`ga`), Ido (`ie`), Georgian (`ka`), Dari (`prs`), and Urdu (`ur`).
+- [ ] Complete the four remaining required inherited catalogs: Irish (`ga`), Georgian (`ka`), Dari (`prs`), and Urdu (`ur`).
   Run no more than two disjoint catalogs concurrently from canonical `master`, validate and commit small checkpoints, and preserve atomic per-catalog updates. Curiosity poke: rate-limit or stream failure must leave that catalog unchanged and stop the affected checkpoint.
 - [ ] Obtain an independent read-only review of each pushed translation checkpoint from `fsearch-i18n`.
   Curiosity poke: the reviewer must validate the committed artifacts rather than trusting the producer's helper or summaries.
@@ -121,15 +121,17 @@
 - [x] Checkpoint 13: complete French (Canada) (`frc`) through 78 local five-entry batches. (2026-07-15 14:38 EDT)
   The source-owned JSON-slot adapter completed all 388 entries atomically with standard French, zero fuzzy or untranslated entries, matching template keys, gettext-format validation, and a translated AppStream keyword list. Curiosity poke: retain independent semantic review because structural gates cannot establish regional-language quality.
 
-# 66-Catalog I18n Enforcement (2026-07-15)
+# 64-Catalog I18n Enforcement (2026-07-15)
 
-- [x] Phase 1: add the 66-locale required-list control file, blessed-hash sentinel, and WARN-only full-catalog completeness check to `./test` and Nix CI. (2026-07-15 10:43 EDT)
-  The gate protects the exact list with a committed SHA-256 control value, validates catalog existence, template keys, gettext format correctness, fuzzy entries, and untranslated entries. It currently reports the six inherited catalogs plus 24 not-yet-created catalogs as 30 explicit warnings while exiting successfully. Curiosity poke: the check must enumerate every missing, stale, fuzzy, or untranslated locale without allowing a future edit to silently shrink the required set.
-- [ ] Create and complete the 24 missing canonical i18n catalogs with gettext-derived plural headers.
+- [x] Phase 1: add the 64-locale required-list control file, blessed-hash sentinel, and WARN-only full-catalog completeness check to `./test` and Nix CI. (2026-07-15 10:43 EDT)
+  The gate protects the exact list with a committed SHA-256 control value, validates catalog existence, template keys, gettext format correctness, fuzzy entries, and untranslated entries. Peter authorized excluding Interlingue (`ie`) and Igbo (`ig`) because neither available translation model clears their semantic-quality floor; the retained Interlingue catalog remains unenforced. It now reports four inherited catalogs plus 23 not-yet-created catalogs as 27 explicit warnings while exiting successfully. Curiosity poke: the check must enumerate every missing, stale, fuzzy, or untranslated locale without allowing a future edit to silently shrink the required set.
+- [x] Narrow the protected translation-completeness target from 66 to 64 locales. (2026-07-16 09:49 EDT)
+  The two excluded locales are covered by a red-green integration assertion that also requires the corresponding 27-locale WARN report. This is an explicit Peter-authorized control-list and checksum update, not an unreviewed list drift.
+- [ ] Create and complete the 23 missing canonical i18n catalogs with gettext-derived plural headers.
   Curiosity poke: under-resourced and RTL locales require the same structural and semantic review gates as well-resourced ones.
-- [ ] Scrub Weblate provenance only from the 17 AI-majority PO headers after all six inherited pending catalogs complete.
+- [ ] Scrub Weblate provenance only from the 17 AI-majority PO headers after all four required inherited catalogs complete.
   Curiosity poke: compare headers and bodies independently so the 25 Weblate-majority catalogs remain byte-identical.
-- [ ] Phase 2: flip the same 66-locale completeness gate from WARN to hard failure after independent verification finds all catalogs complete.
+- [ ] Phase 2: flip the same 64-locale completeness gate from WARN to hard failure after independent verification finds all catalogs complete.
   Curiosity poke: mutation of a catalog or the strictness switch must make CI fail.
 
 # Local Translation Backend (2026-07-15)
@@ -158,5 +160,5 @@
   Independent review found Gemma had left six CLI diagnostics and Cu_t entirely English in the completed French (Canada) catalog. The fake Ollama request contract now requires explicit examples that distinguish preserved commands/options/metavariables from translatable prose and preserve one accelerator underscore. The ten FRC findings use the independently established standard-French translations. Curiosity poke: nonempty English msgstr values evade gettext completeness, so retain semantic review of local-model checkpoints.
 - [x] Send every translation backend a checked target-language name plus locale code. (2026-07-16 09:48 EDT)
   po/LOCALE_NAMES names every protected locale; requests say, for example, Irish (ga) rather than only ga, and the required-locale gate rejects a missing, malformed, duplicate, or drifted mapping. Curiosity poke: language names improve model context but cannot establish semantic quality, so local-model output still needs an independent review.
-- [ ] Translate and independently review the six inherited catalogs, then the 24 gettext-initialized canonical catalogs, using the validated local backend.
+- [ ] Translate and independently review the four required inherited catalogs, then the 23 gettext-initialized canonical catalogs, using the validated local backend.
   Curiosity poke: under-resourced and RTL locales require structural gates plus later semantic spot-checks rather than a blind mass commit.

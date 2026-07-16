@@ -1,0 +1,13 @@
+Gemma and Qwen fabricated plausible but false Irish, and Claude independently
+identified the same low-confidence failure mode for Interlingue and Igbo.
+Gettext syntax, exact placeholders, and non-English keyword checks establish
+structure but cannot certify meaning. Two agreeing general-purpose LLMs are
+not an independent semantic oracle for a language outside both models' reliable
+coverage.
+
+Peter authorized removing `ie` and `ig` from the protected locale-completeness
+set rather than shipping fabricated translation. Keep existing `po/ie.po` as
+upstream history but unenforced. Before restoring either locale, require an
+authoritative source, native review, or a separately evaluated
+translation-specialized model; then make the control-list/checksum change and
+restore the exact-map entry together.
