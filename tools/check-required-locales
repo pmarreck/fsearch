@@ -17,6 +17,7 @@ source_root=$(realpath "$source_root")
 po_dir="$source_root/po"
 required="$po_dir/REQUIRED_LOCALES"
 blessing="$po_dir/REQUIRED_LOCALES.sha256"
+locale_names="$po_dir/LOCALE_NAMES"
 pot_file="$po_dir/fsearch.pot"
 tmp_dir=$(mktemp -d)
 trap 'rm -rf "$tmp_dir"' EXIT
@@ -28,6 +29,9 @@ control_failure() {
 
 if [ ! -f "$required" ] || [ ! -f "$blessing" ] || [ ! -f "$pot_file" ]; then
 	control_failure 'missing REQUIRED_LOCALES control file, blessing, or fsearch.pot'
+fi
+if [ ! -f "$locale_names" ]; then
+	control_failure 'missing LOCALE_NAMES control file'
 fi
 
 expected_hash=$(awk 'NR == 1 { print $1 }' "$blessing")
@@ -41,6 +45,17 @@ if ! awk '!/^[A-Za-z0-9_]+$/ { exit 1 }' "$required" || [ ! -s "$required" ]; th
 fi
 if sort "$required" | uniq -d | grep -q .; then
 	control_failure 'duplicate locale code in po/REQUIRED_LOCALES'
+fi
+if ! awk -F '\t' 'NF != 2 || $1 !~ /^[A-Za-z0-9_]+$/ || $2 == "" { exit 1 }' "$locale_names"; then
+	control_failure 'invalid entry in po/LOCALE_NAMES'
+fi
+if cut -f1 "$locale_names" | sort | uniq -d | grep -q .; then
+	control_failure 'duplicate locale code in po/LOCALE_NAMES'
+fi
+sort "$required" >"$tmp_dir/required-locales.sorted"
+cut -f1 "$locale_names" | sort >"$tmp_dir/locale-names.sorted"
+if ! cmp -s "$tmp_dir/required-locales.sorted" "$tmp_dir/locale-names.sorted"; then
+	control_failure 'locale-name mapping does not match po/REQUIRED_LOCALES'
 fi
 
 count_entries() {

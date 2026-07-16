@@ -55,7 +55,10 @@ override_batch_one="$tmp_dir/override-batch-one.po"
 override_batch_two="$tmp_dir/override-batch-two.po"
 override_batch_three="$tmp_dir/override-batch-three.po"
 fake_bin="$tmp_dir/bin"
+locale_names="$tmp_dir/LOCALE_NAMES"
 mkdir -p "$fake_bin"
+
+printf 'xx\tTest language\n' >"$locale_names"
 
 fail() {
 	printf 'i18n translate-po: %s\n' "$*" >&2
@@ -358,7 +361,7 @@ printf '%s\n' \
 	'if [[ "$data_file" != @* ]] || [ ! -s "$request_path" ]; then printf "Ollama request body was not passed through a readable file\\n" >&2; exit 93; fi' \
 	'if [ "$endpoint" != "${FAKE_OLLAMA_URL}/api/chat" ]; then printf "unexpected Ollama endpoint: %s\\n" "$endpoint" >&2; exit 92; fi' \
 	'if [ "$no_buffer" != true ] || [ "$max_time" != 900 ] || [ "$speed_limit" != 1 ] || [ "$speed_time" != 60 ]; then printf "Ollama request did not use the streaming timeout policy\\n" >&2; exit 91; fi' \
-	'if ! jq -e '\'' .model == "gemma4:12b" and .stream == true and .think == false and .options.temperature == 0 and .options.num_predict == 10000 and .format.required == ["translations"] and .format.properties.translations.type == "array" and .format.properties.translations.items.type == "string" and ([.messages[].role] == ["system", "user"]) and ([.messages[].content] | join("\n") | contains("Do not generate GNU PO syntax")) and ([.messages[].content] | join("\n") | contains("semicolon-separated desktop keyword list")) and ([.messages[].content] | join("\n") | contains("human-readable prose in CLI usage and diagnostic messages")) and ([.messages[].content] | join("\n") | contains("Usage: fsearch config get KEY [--json]")) and ([.messages[].content] | join("\n") | contains("Cou_per")) '\'' "$request_path" >/dev/null; then printf "Ollama request did not include CLI-prose and accelerator translation guidance\\n" >&2; exit 90; fi' \
+	'if ! jq -e '\'' .model == "gemma4:12b" and .stream == true and .think == false and .options.temperature == 0 and .options.num_predict == 10000 and .format.required == ["translations"] and .format.properties.translations.type == "array" and .format.properties.translations.items.type == "string" and ([.messages[].role] == ["system", "user"]) and ([.messages[].content] | join("\n") | contains("Do not generate GNU PO syntax")) and ([.messages[].content] | join("\n") | contains("semicolon-separated desktop keyword list")) and ([.messages[].content] | join("\n") | contains("human-readable prose in CLI usage and diagnostic messages")) and ([.messages[].content] | join("\n") | contains("Usage: fsearch config get KEY [--json]")) and ([.messages[].content] | join("\n") | contains("Cou_per")) and ([.messages[].content] | join("\n") | contains("Target language: Test language (xx)")) '\'' "$request_path" >/dev/null; then printf "Ollama request did not include a human-readable target language\\n" >&2; exit 90; fi' \
 	'call=1' \
 	'if [ -n "${FAKE_OLLAMA_COUNT_FILE-}" ]; then if [ -s "$FAKE_OLLAMA_COUNT_FILE" ]; then call=$(($(cat "$FAKE_OLLAMA_COUNT_FILE") + 1)); fi; printf "%s\\n" "$call" >"$FAKE_OLLAMA_COUNT_FILE"; fi' \
 	'if [ -n "${FAKE_OLLAMA_EXPECT_BATCH_SIZES-}" ]; then expected=$(printf "%s" "$FAKE_OLLAMA_EXPECT_BATCH_SIZES" | cut -d, -f "$call"); actual=$(jq -r '\''.messages[1].content'\'' "$request_path" | awk '\''/^msgid / && $0 != "msgid \"\"" { count += 1 } END { print count + 0 }'\''); if [ "$actual" != "$expected" ]; then printf "expected Ollama batch %s to contain %s entries, got %s\\n" "$call" "$expected" "$actual" >&2; exit 89; fi; fi' \

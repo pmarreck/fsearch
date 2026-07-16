@@ -11,6 +11,7 @@ source_root="$tmp_dir/source"
 po_dir="$source_root/po"
 required="$po_dir/REQUIRED_LOCALES"
 blessing="$po_dir/REQUIRED_LOCALES.sha256"
+locale_names="$po_dir/LOCALE_NAMES"
 mkdir -p "$po_dir"
 
 fail() {
@@ -57,6 +58,12 @@ printf '%s\n' \
 
 printf '%s\n' complete incomplete fuzzy stale missing >"$required"
 sha256sum "$required" | awk '{ print $1 }' >"$blessing"
+printf '%s\n' \
+	$'complete\tComplete' \
+	$'incomplete\tIncomplete' \
+	$'fuzzy\tFuzzy' \
+	$'stale\tStale' \
+	$'missing\tMissing' >"$locale_names"
 
 output=$(bash "$checker" "$source_root" --warn 2>&1)
 rc=$?
@@ -81,6 +88,16 @@ if [ "$rc" -eq 0 ]; then
 	fail "strict mode accepted an incomplete required set: $output"
 fi
 
+mv "$locale_names" "$locale_names.saved"
+output=$(bash "$checker" "$source_root" --warn 2>&1)
+rc=$?
+if [ "$rc" -eq 0 ]; then
+	fail "WARN mode accepted a missing locale-name mapping: $output"
+elif [[ "$output" != *'missing LOCALE_NAMES control file'* ]]; then
+	fail "missing locale-name mapping failed unclearly: $output"
+fi
+mv "$locale_names.saved" "$locale_names"
+
 printf '%s\n' 0 >"$blessing"
 output=$(bash "$checker" "$source_root" --warn 2>&1)
 rc=$?
@@ -92,11 +109,24 @@ fi
 
 printf '%s\n' complete >"$required"
 sha256sum "$required" | awk '{ print $1 }' >"$blessing"
+printf '%s\n' $'complete\tComplete' >"$locale_names"
 output=$(bash "$checker" "$source_root" --strict 2>&1)
 rc=$?
 if [ "$rc" -ne 0 ]; then
 	fail "strict mode rejected a complete required set: $output"
 fi
+
+printf '%s\n' \
+	$'complete\tComplete' \
+	$'unexpected\tUnexpected' >"$locale_names"
+output=$(bash "$checker" "$source_root" --strict 2>&1)
+rc=$?
+if [ "$rc" -eq 0 ]; then
+	fail "strict mode accepted a locale-name mapping with an unexpected locale: $output"
+elif [[ "$output" != *'locale-name mapping does not match'* ]]; then
+	fail "unexpected locale-name mapping failed unclearly: $output"
+fi
+printf '%s\n' $'complete\tComplete' >"$locale_names"
 
 unicode_root="$tmp_dir/unicode-source"
 mkdir -p "$unicode_root/po"
@@ -104,6 +134,7 @@ cp "$repository_root/po/ar.po" "$unicode_root/po/ar.po"
 cp "$repository_root/po/fsearch.pot" "$unicode_root/po/fsearch.pot"
 printf '%s\n' ar >"$unicode_root/po/REQUIRED_LOCALES"
 sha256sum "$unicode_root/po/REQUIRED_LOCALES" | awk '{ print $1 }' >"$unicode_root/po/REQUIRED_LOCALES.sha256"
+printf '%s\n' $'ar\tArabic' >"$unicode_root/po/LOCALE_NAMES"
 output=$(bash "$checker" "$unicode_root" --strict 2>&1)
 rc=$?
 if [ "$rc" -ne 0 ]; then

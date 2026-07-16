@@ -354,6 +354,9 @@ alter the catalog header. If a local response then fails PO, placeholder, keywor
 completeness validation, only that batch is retried at most twice; HTTP/API and incomplete-stream failures stop
 immediately. A catalog is still replaced only after every batch passes.
 
+The checked-in `po/LOCALE_NAMES` mapping provides every request with both a human-readable target language and its locale
+code, for example `Irish (ga)`; the required-locale gate rejects a missing, duplicate, malformed, or drifted mapping.
+
 ## Current Limitations
 
 * Sorting lots of results by *Type* can be very slow, since gathering that information is expensive, and the data isn't

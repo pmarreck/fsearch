@@ -254,6 +254,27 @@ count_messages() {
 	' "$1"
 }
 
+locale_display_name() {
+	local catalog=$1
+	local locale=$2
+	local names_file
+	local display_name
+
+	names_file="$(dirname "$catalog")/LOCALE_NAMES"
+	if [ ! -f "$names_file" ]; then
+		printf 'translate-po: missing locale-name mapping: %s\n' "$names_file" >&2
+		return 1
+	fi
+
+	display_name=$(awk -F '\t' -v locale="$locale" '$1 == locale { print $2; exit }' "$names_file")
+	if [ -z "$display_name" ]; then
+		printf 'translate-po: locale %s has no display name in %s\n' "$locale" "$names_file" >&2
+		return 1
+	fi
+
+	printf '%s (%s)' "$display_name" "$locale"
+}
+
 count_translation_slots() {
 	awk '
 		!header_complete {
@@ -722,6 +743,9 @@ if [ -z "$locale" ]; then
 	printf 'translate-po: catalog has no Language header: %s\n' "$catalog" >&2
 	exit 1
 fi
+if ! target_language=$(locale_display_name "$catalog" "$locale"); then
+	exit 1
+fi
 
 printf 'translate-po: %s has %s incomplete message%s for locale %s in %s batch%s\n' \
 	"$catalog" "$entries" "$([ "$entries" -eq 1 ] || printf 's')" "$locale" "$batch_count" \
@@ -771,7 +795,7 @@ while IFS= read -r batch; do
 		openai)
 			if ! jq -n \
 				--arg model "$model" \
-				--arg locale "$locale" \
+				--arg target_language "$target_language" \
 				--arg instructions "$po_instructions" \
 				--rawfile po "$batch" \
 				--argjson max_output_tokens "$max_output_tokens" \
@@ -782,7 +806,7 @@ while IFS= read -r batch; do
 					max_output_tokens: $max_output_tokens,
 					reasoning: { effort: "none" },
 					instructions: $instructions,
-					input: ("Target locale: " + $locale + "\n\nTranslate this partial PO catalog:\n" + $po),
+					input: ("Target language: " + $target_language + "\n\nTranslate this partial PO catalog:\n" + $po),
 					text: {
 						format: {
 							type: "json_schema",
@@ -804,7 +828,7 @@ while IFS= read -r batch; do
 		ollama)
 			if ! jq -n \
 				--arg model "$model" \
-				--arg locale "$locale" \
+				--arg target_language "$target_language" \
 				--arg instructions "$ollama_instructions" \
 				--rawfile po "$batch" \
 				--argjson max_output_tokens "$max_output_tokens" \
@@ -821,7 +845,7 @@ while IFS= read -r batch; do
 						{
 							role: "user",
 							content: (
-								"Target locale: " + $locale +
+								"Target language: " + $target_language +
 								"\n\nThis batch has exactly " + ($translation_slot_count | tostring) + " translation slots. Translate this partial PO catalog as data only:\n" + $po +
 								"\n\nReturn JSON matching this schema:\n" + ($output_schema | tojson)
 							)
