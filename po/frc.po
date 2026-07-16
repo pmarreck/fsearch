@@ -802,7 +802,7 @@ msgstr "fsearch config %s: argument inattendu : %s\n"
 
 #: src/fsearch_cli_config.c:449
 msgid "Usage: fsearch config get KEY [--json]\n"
-msgstr "Usage: fsearch config get KEY [--json]\n"
+msgstr "Utilisation : fsearch config get KEY [--json]\n"
 
 #: src/fsearch_cli_config.c:454 src/fsearch_cli_config.c:555
 #, c-format
@@ -836,26 +836,26 @@ msgstr "fsearch config roots: opération inconnue: %s\n"
 
 #: src/fsearch_cli_config.c:691
 msgid "fsearch config roots: --rescan-every requires SECONDS\n"
-msgstr "fsearch config roots: --rescan-every requires SECONDS\n"
+msgstr "fsearch config roots : --rescan-every nécessite SECONDS\n"
 
 #: src/fsearch_cli_config.c:710
 msgid "fsearch config roots: missing PATH\n"
-msgstr "fsearch config roots: missing PATH\n"
+msgstr "fsearch config roots : PATH manquant\n"
 
 #: src/fsearch_cli_config.c:717 src/fsearch_cli_config.c:732
 #, c-format
 msgid "fsearch config roots: path not found: %s\n"
-msgstr "fsearch config roots: path not found: %s\n"
+msgstr "fsearch config roots : chemin introuvable : %s\n"
 
 #: src/fsearch_cli_config.c:724
 #, c-format
 msgid "fsearch config roots: not a directory: %s\n"
-msgstr "fsearch config roots: not a directory: %s\n"
+msgstr "fsearch config roots : ce n’est pas un répertoire : %s\n"
 
 #: src/fsearch_cli_config.c:728
 #, c-format
 msgid "fsearch config roots: path already exists: %s\n"
-msgstr "fsearch config roots: path already exists: %s\n"
+msgstr "fsearch config roots : le chemin existe déjà : %s\n"
 
 #: src/fsearch_cli_config.c:752
 #, c-format
@@ -1055,7 +1055,7 @@ msgstr "Joker"
 
 #: src/fsearch_database_preferences_widget.c:393
 msgid "Regex"
-msgstr "Regex"
+msgstr "Expression régulière"
 
 #: src/fsearch_database_preferences_widget.c:414
 msgid "Full Path"
@@ -1299,7 +1299,7 @@ msgstr "Requête :"
 
 #: src/fsearch_filter_editor.ui:160
 msgid "Macro:"
-msgstr "Macro:"
+msgstr "Macro :"
 
 #: src/fsearch_filter_editor.ui:171
 msgid ""
@@ -2255,7 +2255,7 @@ msgstr "Annuler"
 
 #: src/fsearch_statusbar.ui:153
 msgid "Index:"
-msgstr "Index:"
+msgstr "Index :"
 
 #: src/fsearch_statusbar.ui:228
 msgid "Number of selected folders"
@@ -2567,7 +2567,7 @@ msgstr "_Copier"
 
 #: src/menus.ui:62 src/menus.ui:228
 msgid "Cu_t"
-msgstr "Cu_t"
+msgstr "Cou_per"
 
 #: src/menus.ui:69
 msgid "Select All"
