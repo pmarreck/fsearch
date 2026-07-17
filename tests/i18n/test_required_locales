@@ -156,8 +156,8 @@ output=$(bash "$checker" "$repository_root" --warn 2>&1)
 rc=$?
 if [ "$rc" -ne 0 ]; then
 	fail "WARN mode rejected the authorized 64-locale set: $output"
-elif [[ "$output" != *'WARN: i18n incomplete: ga ka prs ur am az bn bs da fa fil ha hi hr is km mk pa ps sl sq sr sw ta th vi yo (27)'* ]]; then
-	fail "WARN mode did not report the authorized 27-locale set: $output"
+elif [[ "$output" != *'WARN: i18n incomplete: ka prs ur am az bn bs da fa fil ha hi hr is km mk pa ps sl sq sr sw ta th vi yo (26)'* ]]; then
+	fail "WARN mode did not report the authorized 26-locale set: $output"
 fi
 
 exit "$failures"

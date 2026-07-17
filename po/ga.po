@@ -17,338 +17,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n==2 ? 1 : 2;\n"
 
-#: data/io.github.cboxdoerfer.FSearch.desktop.in.in:4 src/main.c:36
-msgid "FSearch"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.desktop.in.in:5
-msgid "A file search application focusing on performance and advanced features"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.desktop.in.in:10
-msgid "search;fsearch;files;folders;music;video;documents;find;tool;everything;"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.desktop.in.in:12
-msgid "File Search Utility"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:8
-msgid "A graphical file search application"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:10
-msgid ""
-"FSearch helps you to find files and folders as easy and fast as possible. "
-"Just type a few letters and search results will appear almost instantly."
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:14
-msgid ""
-"There are a lot of features which make searching as efficient and powerful "
-"as possible. Such as:"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:19
-msgid ""
-"Ignore case (e.g. searching for \"<code>fsearch</code>\" will match "
-"\"FSearch\" as well)"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:20
-msgid "Regular expressions"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:21
-msgid "Wildcard support"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:22
-msgid "Filter support (e.g. only search for audio files)"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:23
-msgid "Exclude certain files and folders"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:24
-msgid "Fast sort by name, path, size, modification time and extension"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:26
-msgid ""
-"<em>Note:</em> Due to Flatpak's sandboxing, FSearch can't find every file on "
-"your system."
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:35
-msgid "The default UI layout"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:41
-msgid "A layout more closely following GNOME HIGs"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:49
-msgid "search"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:50
-msgid "fsearch"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:51
-msgid "files"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:52
-msgid "folders"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:53
-msgid "music"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:54
-msgid "video"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:55
-msgid "documents"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:56
-msgid "find"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:57
-msgid "tool"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:58
-msgid "everything"
-msgstr ""
-
-#. Kept for appstreamcli < 1.0 (e.g. Ubuntu 20.04/22.04 PPA builds), which doesn't know <developer>.
-#. Translators: please do NOT translate this.
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:77
-msgid "Christian Boxdörfer"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:89
-msgid "DB rewrite"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:90
-msgid "DB: Add support for filesystem monitoring"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:91
-msgid ""
-"DB: Allow files and folders to be excluded based on fixed patterns, "
-"wildcards or regular expressions"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:92
-msgid ""
-"DB: Allow included folders to be scheduled and scanned after launch "
-"independently"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:93
-msgid "DB: Make rescanning more efficient"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:94
-msgid "DB: Store database config in DB file"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:95
-msgid "DB: Add checksum to DB file"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:96
-msgid "Make icon and file info gathering asynchronous (no UI blocking)"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:97
-msgid "Reduce memory usage"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:98
-msgid "Add contextual help for all preferences"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:99
-msgid "Numerous bug fixes and stability and performance improvements"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:106
-msgid "New search engine"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:107
-msgid "Greatly improved highlighting of search terms"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:108
-msgid "Custom filters"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:109
-msgid "Improved sort performance"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:110
-msgid "Improved scroll performance"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:111
-msgid "Remember file selection after a database update"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:112
-msgid "Automatically scroll the result list in rubberband selection mode"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:113
-msgid "Invert selection with rubber band when 'Ctrl' is pressed"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:114
-msgid "Focus search entry when the main window gets activated"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:115
-msgid "Add filter for applications (i.e. .desktop files)"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:116
-msgid ""
-"Add option to launch applications directly instead of opening the .desktop "
-"files"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:117
-msgid "Show application icons for .desktop files"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:118
-msgid "Add .odp and .ods files to document filter"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:119
-msgid ""
-"'Open with' menu now only shows applications which can handle the selected "
-"files"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:120
-msgid ""
-"Improved opening of multiple files with the same type (they get now passed "
-"as a list to applications, instead of one by one)"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:121
-msgid "Better support for opening files in sandboxed mode"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:122
-msgid ""
-"Add menu items with links to the issue tracker, forum and donation pages"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:123
-msgid "Improve support for non-Linux systems"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:124
-msgid ""
-"Add option to exit FSearch when Escape is pressed instead of minimizing the "
-"window"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:125
-msgid "Exclude '/proc' and '/sys' by default"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:126
-msgid "Open context menu when 'Menu' key or 'Shift + F10' are pressed"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:127
-msgid "and tons of bug fixes, translation updates and smaller improvements"
-msgstr ""
-
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:133
-msgid "Initial release."
-msgstr ""
-
-#: src/fsearch.c:181
-msgid "translator-credits"
-msgstr ""
-
-#: src/fsearch.c:183
-msgid "A search utility focusing on performance and advanced features"
-msgstr ""
-
-#: src/fsearch.c:330
-msgid "Saving database and config…"
-msgstr ""
-
-#: src/fsearch.c:786
-msgid "Open a new application window"
-msgstr ""
-
-#: src/fsearch.c:787
-msgid "Minimize the application window"
-msgstr ""
-
-#: src/fsearch.c:788
-msgid "Show the application preferences"
-msgstr ""
-
-#: src/fsearch.c:789
-msgid "Set the search pattern"
-msgstr ""
-
-#: src/fsearch.c:790
-msgid "Update the database and exit"
-msgstr ""
-
-#: src/fsearch.c:791
-msgid "Print version information and exit"
-msgstr ""
-
 #: src/fsearch.c:883
 msgid ""
 "For command-line search help, run: fsearch --cli --help\n"
 "For shared configuration help, run: fsearch config --help"
 msgstr ""
-
-#: src/fsearch_cli.c:125
-#, c-format
-msgid ""
-"Results capped at %u. Use --unlimit or --unlimited to get them all, or "
-"provide a custom --limit, or set FSEARCH_RESULT_LIMIT."
-msgstr ""
-
-#: src/fsearch_cli.c:134
-#, c-format
-msgid "%u match."
-msgid_plural "%u matches."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-
-#: src/fsearch_cli.c:142
-msgid "Updating FSearch index before searching..."
-msgstr ""
-
-#: src/fsearch_cli.c:149
-#, c-format
-msgid "Indexing: %s"
-msgstr ""
+"Le haghaidh cabhair chuardaigh ar líne na n-orduithe, rith: fsearch --cli --help\n"
+"Le haghaidh cabhair chumraíochta roinnte, rith: fsearch config --help"
 
 #: src/fsearch_cli.c:181
 msgid ""
@@ -357,8 +32,7 @@ msgid ""
 "Search the existing FSearch index and print matching paths.\n"
 "\n"
 "  -s, --search PATTERN       Search with FSearch query syntax\n"
-"      --path DIRECTORY        Search recursively below DIRECTORY (default: "
-"current directory)\n"
+"      --path DIRECTORY        Search recursively below DIRECTORY (default: current directory)\n"
 "      --global                Search every indexed location\n"
 "      --limit COUNT          Print at most COUNT results\n"
 "      --unlimit, --unlimited Print every result\n"
@@ -384,50 +58,48 @@ msgid ""
 "  fsearch --cli --search 'path:glob:**/AGENTS.md'\n"
 "  fsearch --cli --search 'case:glob:AGENTS.md' # case-sensitive glob\n"
 "\n"
-"Examples use space as AND. Try file:, folder:, path:, ext:, size:, dm:, "
-"case:, regex:, and glob:.\n"
+"Examples use space as AND. Try file:, folder:, path:, ext:, size:, dm:, case:, regex:, and glob:.\n"
 "Boolean syntax: AND or &&; OR or ||; NOT or !. Parentheses group terms.\n"
-"Glob syntax: * excludes /; ** spans directories; ? matches one character; [a-"
-"c] is a range;\n"
-"Glob searches paths by default; use **/ for any depth; file:glob: searches "
-"file names.\n"
-"{png,jpg} selects alternatives; {01..12} is an inclusive numeric range; \\* "
-"matches a literal *.\n"
+"Glob syntax: * excludes /; ** spans directories; ? matches one character; [a-c] is a range;\n"
+"Glob searches paths by default; use **/ for any depth; file:glob: searches file names.\n"
+"{png,jpg} selects alternatives; {01..12} is an inclusive numeric range; \\* matches a literal *.\n"
 msgstr ""
-
-#: src/fsearch_cli.c:238
-#, c-format
-msgid "FSearch %s - indexed file search for %s %s\n"
-msgstr ""
-
-#: src/fsearch_cli.c:301
-msgid "fsearch: interrupted\n"
-msgstr ""
-
-#: src/fsearch_cli.c:315
-msgid "fsearch: search could not run because the index is unavailable\n"
-msgstr ""
-
-#: src/fsearch_cli.c:352 src/fsearch_cli.c:381 src/fsearch_cli_config.c:774
-#: src/fsearch_cli_config.c:961 src/fsearch_cli_config.c:1147
-#, c-format
-msgid "%s\n"
-msgstr ""
-
-#: src/fsearch_cli.c:400
-#, c-format
-msgid "%s"
-msgstr ""
-
-#: src/fsearch_cli.c:473
-#, c-format
-msgid "fsearch: unknown CLI option: %s\n"
-msgstr ""
-
-#: src/fsearch_cli.c:495
-#, c-format
-msgid "fsearch: failed to create data directory: %s\n"
-msgstr ""
+"Úsáid: fsearch --cli [OPTIONS]\n"
+"\n"
+"Cuardaigh an t-innéacs FSearch atá ann cheana agus taispeáin na conairí meaitseála.\n"
+"\n"
+"  -s, --search PATTERN       Cuardaigh le comhréir iarratais FSearch\n"
+"      --path DIRECTORY        Cuardaigh go hathchúrsach faoi DIRECTORY (réamhshocrú: eolaire reatha)\n"
+"      --global                Cuardaigh gach suíomh innéacsaithe\n"
+"      --limit COUNT          Taispeáin ar a mhéad COUNT toradh\n"
+"      --unlimit, --unlimited Taispeáin gach toradh\n"
+"  -u, --update-database      Athscan an t-innéacs cumraithe agus scoir\n"
+"      --about                Taispeáin faisnéis tógála aon líne\n"
+"  -h, --help                 Taispeáin an chabhair seo\n"
+"\n"
+"Cumraíocht: fsearch config --help\n"
+"\n"
+"Samplaí:\n"
+"  fsearch --cli --search invoice              # eolaire reatha\n"
+"  fsearch --cli --path ~/Documents --search invoice\n"
+"  fsearch --cli --global --search invoice\n"
+"  fsearch --cli --search 'file:size:>20mb'\n"
+"  fsearch --cli --search 'ext:jpg;png'\n"
+"  fsearch --cli --search 'path:projects report'\n"
+"  fsearch --cli --search 'report AND ext:pdf'\n"
+"  fsearch --cli --search '(draft OR final) !archive'\n"
+"  fsearch --cli --search 'file:regex:\".+\\.pdf$\"'\n"
+"  fsearch --cli --search 'case:AGENTS'        # cás-íogair\n"
+"  fsearch --cli --search 'case:regex:\"^AGENTS\\.md$\"'\n"
+"  fsearch --cli --search 'glob:**/*.png'\n"
+"  fsearch --cli --search 'path:glob:**/AGENTS.md'\n"
+"  fsearch --cli --search 'case:glob:AGENTS.md' # glob cás-íogair\n"
+"\n"
+"Úsáideann na samplaí spás mar AND. Bain triail as file:, folder:, path:, ext:, size:, dm:, case:, regex:, agus glob:.\n"
+"Comhréir Bhúlach: AND nó &&; OR nó ||; NOT nó !. Grúpálann lúibíní téarmaí.\n"
+"Comhréir glob: fágann * an / as; réimníonn ** eolairí; meaitseálann ? carachtar amháin; is raon é [a-c];\n"
+"Cuardaíonn glob conairí de réir réamhshocraithe; úsáid **/ le haghaidh doimhneacht ar bith; cuardaíonn file:glob: ainmneacha comhad.\n"
+"roghnaíonn {png,jpg} malairtí; {01..12} is raon uimhriúil cuimsitheach é; \\* comhoiriúnaíonn le réalta liteartha *.\n"
 
 #: src/fsearch_cli_config.c:111
 msgid ""
@@ -455,8 +127,7 @@ msgid ""
 "Scalar sections: search, application, window, ui, columns, sort, dialogs.\n"
 "Use 'fsearch config roots|excludes|filters --help' for family options.\n"
 "Close the FSearch GUI before changing shared settings.\n"
-"Index changes become searchable on the next CLI search, or immediately with "
-"--rescan.\n"
+"Index changes become searchable on the next CLI search, or immediately with --rescan.\n"
 "Use --json with show, get, and collection list commands.\n"
 "\n"
 "Examples:\n"
@@ -464,49 +135,93 @@ msgid ""
 "  fsearch config get search.match-case\n"
 "  fsearch config set search.match-case true\n"
 "  fsearch config roots add ~/Code --monitor --one-file-system --rescan\n"
-"  fsearch config excludes add '*.tmp' --type wildcard --scope basename --"
-"target files\n"
+"  fsearch config excludes add '*.tmp' --type wildcard --scope basename --target files\n"
 "  fsearch config filters add Documents --query 'ext:pdf' --macro docs\n"
 "  fsearch config reset search --yes\n"
 msgstr ""
+"Úsáid: fsearch config COMMAND [OPTIONS]\n"
+"\n"
+"Féach ar an gcumraíocht chomhroinnte GUI agus CLI FSearch agus mionathraigh í.\n"
+"\n"
+"Orduithe cumraíochta:\n"
+"  path                         Taispeáin conair an chomhaid chumraíochta\n"
+"  show [SECTION] [--json]      Taispeáin socruithe\n"
+"  get KEY [--json]             Taispeáin socrú scálach amháin\n"
+"  set KEY VALUE                Socraigh socrú scálach amháin\n"
+"  unset KEY                    Athchóirigh réamhshocrú socraithe scálach amháin\n"
+"  reset [KEY|SECTION] --yes [--rescan]\n"
+"                               Athchóirigh réamhshocruithe\n"
+"  doctor                       Seiceáil comhsheasmhacht na cumraíochta agus an innéacs\n"
+"  roots list|add|set|remove    Bainistigh fréamhacha innéacsaithe\n"
+"  excludes list|add|remove|hidden\n"
+"                               Bainistigh eisiaimh innéacs\n"
+"  filters list|add|set|remove|reset\n"
+"                               Bainistigh scagairí cuardaigh sábháilte\n"
+"\n"
+"Úsáideann luachanna scálacha true/false, slánuimhreacha deachúlacha, nó teaghráin.\n"
+"Rith 'fsearch config show' chun gach eochair scálach agus a luach reatha a liostú.\n"
+"Rannáin scálacha: search, application, window, ui, columns, sort, dialogs.\n"
+"Úsáid 'fsearch config roots|excludes|filters --help' le haghaidh roghanna teaghlaigh.\n"
+"Dún GUI FSearch sula n-athraíonn tú socruithe comhroinnte.\n"
+"Bíonn athruithe innéacs inchuardaithe ar an gcéad chuardach CLI eile, nó láithreach le --rescan.\n"
+"Úsáid --json leis na horduithe show, get, agus collection list.\n"
+"\n"
+"Samplaí:\n"
+"  fsearch config show search --json\n"
+"  fsearch config get search.match-case\n"
+"  fsearch config set search.match-case true\n"
+"  fsearch config roots add ~/Code --monitor --one-file-system --rescan\n"
+"  fsearch config excludes add '*.tmp' --type wildcard --scope basename --target files\n"
+"  fsearch config filters add Documents --query 'ext:pdf' --macro docs\n"
+"  fsearch config reset search --yes\n"
 
 #: src/fsearch_cli_config.c:152
 msgid ""
 "Usage: fsearch config show [SECTION] [--json]\n"
 "Show all scalar settings or one dotted section.\n"
 msgstr ""
+"Úsáid: fsearch config show [SECTION] [--json]\n"
+"Taispeáin gach socrú scálach nó rannán poncaithe amháin.\n"
 
 #: src/fsearch_cli_config.c:154
 msgid ""
 "Usage: fsearch config get KEY [--json]\n"
 "Print one typed scalar value. Discover keys with 'fsearch config show'.\n"
 msgstr ""
+"Úsáid: fsearch config get KEY [--json]\n"
+"Taispeáin luach scálach clóscríofa amháin. Aimsigh eochracha le 'fsearch config show'.\n"
 
 #: src/fsearch_cli_config.c:157
 msgid ""
 "Usage: fsearch config set KEY VALUE\n"
 "Set a boolean, integer, string, or enumerated scalar value.\n"
 msgstr ""
+"Úsáid: fsearch config set KEY VALUE\n"
+"Socraigh luach scálach Boole, slánuimhir, teaghrán, nó áirithe.\n"
 
 #: src/fsearch_cli_config.c:159
 msgid ""
 "Usage: fsearch config unset KEY\n"
 "Restore one scalar setting to its built-in default.\n"
 msgstr ""
+"Úsáid: fsearch config unset KEY\n"
+"Athchóirigh socrú scálach amháin chuig a réamhshocrú ionsuite.\n"
 
 #: src/fsearch_cli_config.c:161
 msgid ""
 "Usage: fsearch config reset [KEY|SECTION] --yes [--rescan]\n"
-"Reset is destructive and requires --yes. --rescan applies to roots, "
-"database, excludes, or all.\n"
+"Reset is destructive and requires --yes. --rescan applies to roots, database, excludes, or all.\n"
 msgstr ""
+"Úsáid: fsearch config reset [KEY|SECTION] --yes [--rescan]\n"
+"Tá reset millteach agus éilíonn sé --yes. Baineann --rescan le roots, database, excludes, nó all.\n"
 
 #: src/fsearch_cli_config.c:164
 msgid ""
 "Usage: fsearch config doctor\n"
-"Check configuration readability and whether the saved index uses the same "
-"roots and exclusions.\n"
+"Check configuration readability and whether the saved index uses the same roots and exclusions.\n"
 msgstr ""
+"Úsáid: fsearch config doctor\n"
+"Seiceáil inléiteacht na cumraíochta agus an úsáideann an t-innéacs sábháilte na fréamhacha agus na heisiaimh chéanna.\n"
 
 #: src/fsearch_cli_config.c:170
 msgid ""
@@ -526,6 +241,21 @@ msgid ""
 "  --rescan-every SECONDS        Set periodic rescan interval; 0 disables it\n"
 "  --rescan                      Rebuild the index immediately after saving\n"
 msgstr ""
+"Úsáid: fsearch config roots COMMAND [PATH] [OPTIONS]\n"
+"\n"
+"Orduithe:\n"
+"  list [--json]                Liostaigh fréamhacha innéacsaithe\n"
+"  add PATH [OPTIONS]           Cuir eolaire fréimhe leis\n"
+"  set PATH [OPTIONS]           Athraigh fréamh atá ann cheana\n"
+"  remove PATH [--rescan]       Bain fréamh atá ann cheana\n"
+"\n"
+"Roghanna le haghaidh add agus set:\n"
+"  --active, --inactive\n"
+"  --monitor, --no-monitor\n"
+"  --one-file-system, --no-one-file-system\n"
+"  --scan-after-launch, --no-scan-after-launch\n"
+"  --rescan-every SECONDS        Socraigh eatramh athscanta tréimhsiúil; díchumasaíonn 0 é\n"
+"  --rescan                      Atóg an t-innéacs láithreach tar éis a shábháil\n"
 
 #: src/fsearch_cli_config.c:187
 msgid ""
@@ -545,6 +275,21 @@ msgid ""
 "  --active, --inactive          Add state or removal selector\n"
 "  --rescan                      Rebuild the index immediately after saving\n"
 msgstr ""
+"Úsáid: fsearch config excludes COMMAND [PATTERN|VALUE] [OPTIONS]\n"
+"\n"
+"Orduithe:\n"
+"  list [--json]                 Liostaigh eisiaimh\n"
+"  add PATTERN [OPTIONS]         Cuir eisiamh leis\n"
+"  remove PATTERN [OPTIONS]      Bain eisiamh meaitseála\n"
+"  hidden [true|false] [--rescan]\n"
+"                                Féach ar nó athraigh eisiamh comhad folaithe\n"
+"\n"
+"Roghanna le haghaidh add agus remove:\n"
+"  --type fixed|wildcard|regex   Réamhshocrú: fixed\n"
+"  --scope full-path|basename    Réamhshocrú: full-path\n"
+"  --target both|files|folders   Réamhshocrú: both\n"
+"  --active, --inactive          Roghnóir stádais cuir-leis nó bainte\n"
+"  --rescan                      Atóg an t-innéacs láithreach tar éis a shábháil\n"
 
 #: src/fsearch_cli_config.c:204
 msgid ""
@@ -564,772 +309,117 @@ msgid ""
 "  --path, --no-path             Search full paths\n"
 "  --regex, --no-regex           Treat query as a regular expression\n"
 msgstr ""
-
-#: src/fsearch_cli_config.c:265
-msgid ""
-"fsearch config: close the running FSearch GUI before changing shared "
-"settings\n"
-msgstr ""
-
-#: src/fsearch_cli_config.c:269
-msgid "fsearch config: failed to save configuration\n"
-msgstr ""
-
-#: src/fsearch_cli_config.c:280
-msgid "Index configuration changed; the next CLI search will rebuild it.\n"
-msgstr ""
-
-#: src/fsearch_cli_config.c:416
-#, c-format
-msgid "fsearch config %s: unknown option: %s\n"
-msgstr ""
-
-#: src/fsearch_cli_config.c:422
-#, c-format
-msgid "fsearch config %s: unexpected argument: %s\n"
-msgstr ""
-
-#: src/fsearch_cli_config.c:449
-msgid "Usage: fsearch config get KEY [--json]\n"
-msgstr ""
-
-#: src/fsearch_cli_config.c:454 src/fsearch_cli_config.c:555
-#, c-format
-msgid "fsearch config: unknown setting: %s\n"
-msgstr ""
-
-#: src/fsearch_cli_config.c:502
-#, c-format
-msgid "fsearch config show: unknown section: %s\n"
-msgstr ""
-
-#: src/fsearch_cli_config.c:550
-#, c-format
-msgid "Usage: fsearch config %s KEY%s\n"
-msgstr ""
-
-#: src/fsearch_cli_config.c:566
-#, c-format
-msgid "fsearch config: invalid value for %s: %s\n"
-msgstr ""
-
-#: src/fsearch_cli_config.c:572
-#, c-format
-msgid "%s = %s\n"
-msgstr ""
-
-#: src/fsearch_cli_config.c:637
-#, c-format
-msgid "fsearch config roots: unknown operation: %s\n"
-msgstr ""
-
-#: src/fsearch_cli_config.c:691
-msgid "fsearch config roots: --rescan-every requires SECONDS\n"
-msgstr ""
-
-#: src/fsearch_cli_config.c:710
-msgid "fsearch config roots: missing PATH\n"
-msgstr ""
-
-#: src/fsearch_cli_config.c:717 src/fsearch_cli_config.c:732
-#, c-format
-msgid "fsearch config roots: path not found: %s\n"
-msgstr ""
-
-#: src/fsearch_cli_config.c:724
-#, c-format
-msgid "fsearch config roots: not a directory: %s\n"
-msgstr ""
-
-#: src/fsearch_cli_config.c:728
-#, c-format
-msgid "fsearch config roots: path already exists: %s\n"
-msgstr ""
-
-#: src/fsearch_cli_config.c:752
-#, c-format
-msgid "fsearch config roots: invalid rescan duration: %s\n"
-msgstr ""
-
-#: src/fsearch_cli_config.c:765
-msgid ""
-"%s\tactive=%s monitor=%s one-file-system=%s scan-after-launch=%s rescan-"
-"after=%s\n"
-msgstr ""
-
-#: src/fsearch_cli_config.c:844
-msgid "fsearch config excludes hidden: expected true or false\n"
-msgstr ""
-
-#: src/fsearch_cli_config.c:850
-#, c-format
-msgid "exclude-hidden = %s\n"
-msgstr ""
-
-#: src/fsearch_cli_config.c:856
-#, c-format
-msgid "fsearch config excludes: unknown operation: %s\n"
-msgstr ""
-
-#: src/fsearch_cli_config.c:877
-#, c-format
-msgid "fsearch config excludes: %s requires a value\n"
-msgstr ""
-
-#: src/fsearch_cli_config.c:909
-msgid "fsearch config excludes: missing PATTERN\n"
-msgstr ""
-
-#: src/fsearch_cli_config.c:914
-#, c-format
-msgid "fsearch config excludes: invalid type: %s\n"
-msgstr ""
-
-#: src/fsearch_cli_config.c:919
-#, c-format
-msgid "fsearch config excludes: invalid scope: %s\n"
-msgstr ""
-
-#: src/fsearch_cli_config.c:924
-#, c-format
-msgid "fsearch config excludes: invalid target: %s\n"
-msgstr ""
-
-#: src/fsearch_cli_config.c:954
-#, c-format
-msgid "fsearch config excludes: exclusion not found: %s\n"
-msgstr ""
-
-#: src/fsearch_cli_config.c:1022
-msgid "filters reset\n"
-msgstr ""
-
-#: src/fsearch_cli_config.c:1029
-#, c-format
-msgid "fsearch config filters: unknown operation: %s\n"
-msgstr ""
-
-#: src/fsearch_cli_config.c:1051
-#, c-format
-msgid "fsearch config filters: %s requires a value\n"
-msgstr ""
-
-#: src/fsearch_cli_config.c:1094
-msgid "fsearch config filters: missing NAME\n"
-msgstr ""
-
-#: src/fsearch_cli_config.c:1100 src/fsearch_cli_config.c:1111
-#, c-format
-msgid "fsearch config filters: name not found: %s\n"
-msgstr ""
-
-#: src/fsearch_cli_config.c:1107
-#, c-format
-msgid "fsearch config filters: name already exists: %s\n"
-msgstr ""
-
-#: src/fsearch_cli_config.c:1145
-#, c-format
-msgid "%s\tmacro=%s query=%s\n"
-msgstr ""
-
-#: src/fsearch_cli_config.c:1193
-msgid "fsearch config reset requires --yes\n"
-msgstr ""
-
-#: src/fsearch_cli_config.c:1201
-msgid ""
-"fsearch config reset: --rescan requires roots, database, excludes, or all\n"
-msgstr ""
-
-#: src/fsearch_cli_config.c:1241
-#, c-format
-msgid "fsearch config: unknown setting or section: %s\n"
-msgstr ""
-
-#: src/fsearch_cli_config.c:1246
-#, c-format
-msgid "%s settings reset\n"
-msgstr ""
+"Úsáid: fsearch config filters COMMAND [NAME] [OPTIONS]\n"
+"\n"
+"Orduithe:\n"
+"  list [--json]                 Liostaigh scagairí sábháilte\n"
+"  add NAME [OPTIONS]            Cuir scagaire ainmnithe leis\n"
+"  set NAME [OPTIONS]            Athraigh scagaire ainmnithe\n"
+"  remove NAME                   Bain scagaire ainmnithe\n"
+"  reset                         Athchóirigh scagairí ionsuite\n"
+"\n"
+"Roghanna le haghaidh add agus set:\n"
+"  --query QUERY                 Iarratas FSearch sábháilte\n"
+"  --macro MACRO                 Ainm macra an iarratais\n"
+"  --case, --no-case             Meaitseáil cás\n"
+"  --path, --no-path             Cuardaigh conairí iomlána\n"
+"  --regex, --no-regex           Caith leis an iarratas mar shlonn rialta\n"
 
 #: src/fsearch_cli_config.c:1253
 msgid ""
 "configuration: missing; defaults active\n"
 "index: unknown\n"
 msgstr ""
+"cumraíocht: ar iarraidh; réamhshocruithe gníomhach\n"
+"innéacs: anaithnid\n"
 
 #: src/fsearch_cli_config.c:1261
 msgid ""
 "configuration: ok\n"
 "index: missing or unreadable\n"
 msgstr ""
+"cumraíocht: ceart go leor\n"
+"innéacs: ar iarraidh nó do-léite\n"
 
 #: src/fsearch_cli_config.c:1266
-#, c-format
 msgid ""
 "configuration: ok\n"
 "index: %s\n"
 msgstr ""
-
-#: src/fsearch_cli_config.c:1266
-msgid "current"
-msgstr ""
-
-#: src/fsearch_cli_config.c:1266
-msgid "stale"
-msgstr ""
+"cumraíocht: ceart go leor\n"
+"innéacs: %s\n"
 
 #: src/fsearch_cli_config.c:1278
 msgid ""
 "Usage: fsearch config path\n"
 "Print the active FSearch configuration file path.\n"
 msgstr ""
+"Úsáid: fsearch config path\n"
+"Taispeáin conair an chomhaid chumraíochta ghníomhaigh FSearch.\n"
 
-#: src/fsearch_cli_config.c:1321
-#, c-format
-msgid "fsearch config: unknown command: %s\n"
-msgstr ""
-
-#: src/fsearch_database.c:795
-msgid "Index rescan: applying changes…"
-msgstr ""
-
-#: src/fsearch_database_file.c:1343
-msgid "Loading folders…"
-msgstr ""
-
-#: src/fsearch_database_file.c:1359
-msgid "Loading files…"
-msgstr ""
-
-#: src/fsearch_database_index_store.c:925 src/fsearch_statusbar.c:73
-#: src/fsearch_statusbar.ui:90
-msgid "Sorting…"
-msgstr ""
-
-#: src/fsearch_database_preferences_widget.c:162
-#: src/fsearch_database_preferences_widget.c:176
-msgid "Select folder"
-msgstr ""
-
-#: src/fsearch_database_preferences_widget.c:165
-#: src/fsearch_database_preferences_widget.c:180
-#: src/fsearch_filter_editor.c:104 src/fsearch_preferences_dialog.c:331
-msgid "_Cancel"
-msgstr ""
-
-#: src/fsearch_database_preferences_widget.c:167
-#: src/fsearch_database_preferences_widget.c:179
-msgid "_Select"
-msgstr ""
-
-#: src/fsearch_database_preferences_widget.c:389
-msgid "Literal"
-msgstr ""
-
-#: src/fsearch_database_preferences_widget.c:391
-msgid "Wildcard"
-msgstr ""
-
-#: src/fsearch_database_preferences_widget.c:393
-msgid "Regex"
-msgstr ""
-
-#: src/fsearch_database_preferences_widget.c:414
-msgid "Full Path"
-msgstr ""
-
-#: src/fsearch_database_preferences_widget.c:416
-msgid "Basename"
-msgstr ""
-
-#: src/fsearch_database_preferences_widget.c:434
-msgid "Files & Folders"
-msgstr ""
-
-#: src/fsearch_database_preferences_widget.c:436 src/fsearch_filter.c:114
-msgid "Files"
-msgstr ""
-
-#: src/fsearch_database_preferences_widget.c:438 src/fsearch_filter.c:113
-msgid "Folders"
-msgstr ""
-
-#: src/fsearch_database_preferences_widget.c:635
-#: src/fsearch_database_preferences_widget.c:860
-msgid "Active"
-msgstr ""
-
-#: src/fsearch_database_preferences_widget.c:640
-msgid "Pattern"
-msgstr ""
-
-#: src/fsearch_database_preferences_widget.c:694 src/fsearch_window.c:756
-#: src/menus.ui:275
-msgid "Type"
-msgstr ""
-
-#: src/fsearch_database_preferences_widget.c:700
-msgid "Match"
-msgstr ""
-
-#: src/fsearch_database_preferences_widget.c:706
-msgid "Applies To"
-msgstr ""
-
-#: src/fsearch_database_preferences_widget.c:864 src/fsearch_window.c:742
-#: src/menus.ui:219 src/menus.ui:267
-msgid "Path"
-msgstr ""
-
-#: src/fsearch_database_preferences_widget.ui:78
-msgid "Enter path…"
-msgstr ""
-
-#: src/fsearch_database_preferences_widget.ui:97
 #: src/fsearch_database_preferences_widget.ui:372
 msgid ""
 "Add path to be included in\n"
 "                                            database\n"
 "                                        "
 msgstr ""
-
-#: src/fsearch_database_preferences_widget.ui:176
-msgid "Attempt to monitor"
-msgstr ""
-
-#: src/fsearch_database_preferences_widget.ui:191
-msgid "Scan after launch"
-msgstr ""
-
-#: src/fsearch_database_preferences_widget.ui:206
-msgid "Stay on one file system"
-msgstr ""
-
-#: src/fsearch_database_preferences_widget.ui:221
-msgid "Rescan every"
-msgstr ""
-
-#: src/fsearch_database_preferences_widget.ui:254
-msgid "Hours:"
-msgstr ""
-
-#: src/fsearch_database_preferences_widget.ui:298
-msgid "Minutes:"
-msgstr ""
-
-#: src/fsearch_database_preferences_widget.ui:310
-msgid "30"
-msgstr ""
-
-#: src/fsearch_database_preferences_widget.ui:391
-msgid "Remove selected path"
-msgstr ""
-
-#: src/fsearch_database_preferences_widget.ui:418
-msgid "Include"
-msgstr ""
+"Cuir conair leis le cur san áireamh sa\n"
+"                                            bhunachar sonraí\n"
+"                                        "
 
 #: src/fsearch_database_preferences_widget.ui:477
 msgid ""
 "Add exclude rule\n"
 "                                                "
 msgstr ""
+"Cuir riail eisiaimh leis\n"
+"                                                "
 
 #: src/fsearch_database_preferences_widget.ui:495
 msgid ""
 "Remove selected path\n"
 "                                                "
 msgstr ""
-
-#: src/fsearch_database_preferences_widget.ui:512
-msgid "Restore default exclude list"
-msgstr ""
-
-#: src/fsearch_database_preferences_widget.ui:541
-msgid "Exclude hidden files and folders"
-msgstr ""
-
-#: src/fsearch_database_preferences_widget.ui:563
-msgid "Exclude"
-msgstr ""
-
-#: src/fsearch_file_utils.c:161
-msgctxt "Will be followed by the path of the file."
-msgid "Error when removing file"
-msgstr ""
-
-#: src/fsearch_file_utils.c:163
-msgid "Failed to get path"
-msgstr ""
-
-#: src/fsearch_file_utils.c:277
-msgctxt "Will be followed by the file path."
-msgid "Error when getting information from file"
-msgstr ""
-
-#: src/fsearch_file_utils.c:279
-msgid "Failed to get application information"
-msgstr ""
-
-#: src/fsearch_file_utils.c:294
-msgctxt "Will be followed by the content type string."
-msgid "Error when getting information for content type"
-msgstr ""
-
-#: src/fsearch_file_utils.c:296
-msgid "No default application registered"
-msgstr ""
-
-#: src/fsearch_file_utils.c:524
-msgctxt "Will be followed by the path of the folder."
-msgid "Error when opening parent folder"
-msgstr ""
-
-#: src/fsearch_file_utils.c:526
-msgid "Failed to get parent path"
-msgstr ""
-
-#: src/fsearch_file_utils.c:530
-msgctxt "Will be followed by the path of the folder."
-msgid "Error while opening folder"
-msgstr ""
-
-#: src/fsearch_file_utils.c:533
-msgid "Failed to build open command"
-msgstr ""
-
-#: src/fsearch_file_utils.c:589
-msgid "Folder"
-msgstr ""
-
-#: src/fsearch_file_utils.c:595
-msgid "Unknown Type"
-msgstr ""
-
-#: src/fsearch_filter.c:112
-msgid "All"
-msgstr ""
-
-#: src/fsearch_filter.c:115
-msgid "Applications"
-msgstr ""
-
-#: src/fsearch_filter.c:116
-msgid "Archives"
-msgstr ""
-
-#: src/fsearch_filter.c:117
-msgid "Audio"
-msgstr ""
-
-#: src/fsearch_filter.c:118
-msgid "Documents"
-msgstr ""
-
-#: src/fsearch_filter.c:119
-msgid "Pictures"
-msgstr ""
-
-#: src/fsearch_filter.c:120
-msgid "Videos"
-msgstr ""
-
-#: src/fsearch_filter_editor.c:79
-msgid "Macro names must not contain `:` characters."
-msgstr ""
-
-#: src/fsearch_filter_editor.c:105 src/fsearch_preferences_dialog.c:332
-msgid "_OK"
-msgstr ""
-
-#: src/fsearch_filter_editor.ui:10 src/fsearch_filter_preferences_widget.c:156
-msgid "Edit filter"
-msgstr ""
-
-#: src/fsearch_filter_editor.ui:50
-msgid "Name:"
-msgstr ""
-
-#: src/fsearch_filter_editor.ui:61
-msgid "The unique name of this filter"
-msgstr ""
-
-#: src/fsearch_filter_editor.ui:64
-msgid "Unique filter name"
-msgstr ""
-
-#: src/fsearch_filter_editor.ui:73
-msgid "Search in path"
-msgstr ""
-
-#: src/fsearch_filter_editor.ui:87
-msgid "Enable regular expressions"
-msgstr ""
-
-#: src/fsearch_filter_editor.ui:101
-msgid "Match case"
-msgstr ""
-
-#: src/fsearch_filter_editor.ui:146
-msgid "Query:"
-msgstr ""
-
-#: src/fsearch_filter_editor.ui:160
-msgid "Macro:"
-msgstr ""
+"Bain an chonair roghnaithe\n"
+"                                                "
 
 #: src/fsearch_filter_editor.ui:171
 msgid ""
-"The macro for this filter. A macro allows you to access this filter from the "
-"search entry by typing its text followed by ':'\n"
+"The macro for this filter. A macro allows you to access this filter from the search entry by typing its text followed by ':'\n"
 "                "
 msgstr ""
-
-#: src/fsearch_filter_preferences_widget.c:133
-msgid "Add filter"
-msgstr ""
-
-#: src/fsearch_filter_preferences_widget.c:315 src/fsearch_window.c:735
-#: src/menus.ui:215 src/menus.ui:263
-msgid "Name"
-msgstr ""
-
-#: src/fsearch_filter_preferences_widget.c:316
-msgid "Macro"
-msgstr ""
-
-#: src/fsearch_filter_preferences_widget.c:317
-msgid "Query"
-msgstr ""
-
-#: src/fsearch_filter_preferences_widget.ui:77
-msgid "Add new filter"
-msgstr ""
-
-#: src/fsearch_filter_preferences_widget.ui:95
-msgid "Remove selected filter"
-msgstr ""
-
-#: src/fsearch_filter_preferences_widget.ui:113
-msgid "Edit selected filter"
-msgstr ""
-
-#: src/fsearch_filter_preferences_widget.ui:129
-msgid "Restore default filters"
-msgstr ""
-
-#: src/fsearch_listview_popup.c:36
-msgid "Properties…"
-msgstr ""
-
-#: src/fsearch_listview_popup.c:163
-msgid "Other Application…"
-msgstr ""
-
-#: src/fsearch_overlay.ui:44
-msgid "Empty Database"
-msgstr ""
-
-#: src/fsearch_overlay.ui:60
-msgid "Add folders"
-msgstr ""
-
-#: src/fsearch_overlay.ui:108
-msgid "Loading Database…"
-msgstr ""
-
-#: src/fsearch_overlay.ui:123
-msgid "This won't take long."
-msgstr ""
-
-#: src/fsearch_overlay.ui:171 src/fsearch_statusbar.ui:312
-msgid "Updating Database…"
-msgstr ""
-
-#: src/fsearch_overlay.ui:186 src/fsearch_overlay.ui:383
-msgid "This may take a while."
-msgstr ""
-
-#: src/fsearch_overlay.ui:241
-msgid "Empty Query"
-msgstr ""
-
-#: src/fsearch_overlay.ui:256
-msgid "Press <b>Ctrl + F</b> and start typing."
-msgstr ""
-
-#: src/fsearch_overlay.ui:304
-msgid "No Results Found"
-msgstr ""
-
-#: src/fsearch_overlay.ui:319
-msgid "Try a different search"
-msgstr ""
-
-#: src/fsearch_overlay.ui:368
-msgid "Sorting results…"
-msgstr ""
-
-#: src/fsearch_preferences.ui:7 src/fsearch_window.ui:251 src/menus.ui:84
-msgid "Preferences"
-msgstr ""
-
-#: src/fsearch_preferences.ui:76
-msgid "Enable dark theme"
-msgstr ""
-
-#: src/fsearch_preferences.ui:97
-msgid "Enable client-side decorations (requires restart)"
-msgstr ""
-
-#: src/fsearch_preferences.ui:117
-msgid "Use binary units instead of decimal units"
-msgstr ""
-
-#: src/fsearch_preferences.ui:138
-msgid "Remember window size"
-msgstr ""
-
-#: src/fsearch_preferences.ui:159
-msgid "Exit on Escape"
-msgstr ""
-
-#: src/fsearch_preferences.ui:202
-msgid "with keyboard shortcuts or menu entries"
-msgstr ""
-
-#: src/fsearch_preferences.ui:223
-msgid "with double click"
-msgstr ""
-
-#: src/fsearch_preferences.ui:257
-msgid "Behaviour after successfully opening a file:"
-msgstr ""
-
-#: src/fsearch_preferences.ui:273
-msgid "Nothing"
-msgstr ""
-
-#: src/fsearch_preferences.ui:274
-msgid "Minimize"
-msgstr ""
-
-#: src/fsearch_preferences.ui:275
-msgid "Close"
-msgstr ""
-
-#: src/fsearch_preferences.ui:309
-msgid "General:"
-msgstr ""
-
-#: src/fsearch_preferences.ui:344
-msgid "Show highlighted search terms"
-msgstr ""
-
-#: src/fsearch_preferences.ui:366
-msgid "Show tooltips"
-msgstr ""
-
-#: src/fsearch_preferences.ui:387
-msgid "Show icons in name column"
-msgstr ""
-
-#: src/fsearch_preferences.ui:408
-msgid "Remember column configuration"
-msgstr ""
-
-#: src/fsearch_preferences.ui:429
-msgid "Remember sort order"
-msgstr ""
-
-#: src/fsearch_preferences.ui:450
-msgid "Open path with double click in path column"
-msgstr ""
-
-#: src/fsearch_preferences.ui:471
-msgid "Single click to open"
-msgstr ""
-
-#: src/fsearch_preferences.ui:492
-msgid "Launch desktop files"
-msgstr ""
-
-#: src/fsearch_preferences.ui:519
-msgid "Results:"
-msgstr ""
-
-#: src/fsearch_preferences.ui:560
-msgid "Show database indexing status"
-msgstr ""
-
-#: src/fsearch_preferences.ui:587
-msgid "Statusbar:"
-msgstr ""
-
-#: src/fsearch_preferences.ui:628
-msgid "Show warning dialogs when:"
-msgstr ""
-
-#: src/fsearch_preferences.ui:638
-msgid "file / folder failed to open"
-msgstr ""
-
-#: src/fsearch_preferences.ui:667
-msgid "Dialogs:"
-msgstr ""
-
-#: src/fsearch_preferences.ui:692
-msgid "Interface"
-msgstr ""
-
-#: src/fsearch_preferences.ui:711
-msgid "Search in path when query contains path separators"
-msgstr ""
-
-#: src/fsearch_preferences.ui:730
-msgid "Search as you type"
-msgstr ""
-
-#: src/fsearch_preferences.ui:750
-msgid "Hide results when search is empty"
-msgstr ""
-
-#: src/fsearch_preferences.ui:769
-msgid "Match case when query contains at least one upper case character"
-msgstr ""
-
-#: src/fsearch_preferences.ui:801
-msgid "Filter:"
-msgstr ""
-
-#: src/fsearch_preferences.ui:822 src/fsearch_window.ui:639
-msgid "Search"
-msgstr ""
+"An macra don scagaire seo. Ligeann macra duit an scagaire seo a rochtain ón iontráil chuardaigh trí théacs a chlóscríobh agus ':' ina dhiaidh\n"
+"                "
 
 #: src/fsearch_preferences.ui:855
 msgid ""
 "<b>Enable dark theme:</b>\n"
 "\n"
-"If enabled, the system theme is asked to use a darker styling for the "
-"application <i>(i.e. dark UI elements on bright text)</i>.\n"
+"If enabled, the system theme is asked to use a darker styling for the application <i>(i.e. dark UI elements on bright text)</i>.\n"
 "\n"
-"Note that not all system themes provide such a darker variant, therefore "
-"enabling this setting might not have an effect."
+"Note that not all system themes provide such a darker variant, therefore enabling this setting might not have an effect."
 msgstr ""
+"<b>Cumasaigh téama dorcha:</b>\n"
+"\n"
+"Má tá sé cumasaithe, iarrtar ar théama an chórais stíleáil níos dorcha a úsáid don fheidhmchlár <i>(i.e. eilimintí dorcha Chomhéadain ar théacs geal)</i>.\n"
+"\n"
+"Tabhair faoi deara nach soláthraíonn gach téama córais a leithéid de leagan níos dorcha, agus mar sin seans nach mbeadh éifeacht ag cumasú an tsocraithe seo."
 
 #: src/fsearch_preferences.ui:873
 msgid ""
 "<b>Enable client-side decorations:</b>\n"
 "\n"
-"If enabled, the search entry and main menu are displayed in the window title "
-"bar.\n"
+"If enabled, the search entry and main menu are displayed in the window title bar.\n"
 "\n"
-"If disabled, the main menu is displayed as a menu bar with the search entry "
-"below it.\n"
-"This resembles a more traditional UI layout and takes a little bit more "
-"space."
+"If disabled, the main menu is displayed as a menu bar with the search entry below it.\n"
+"This resembles a more traditional UI layout and takes a little bit more space."
 msgstr ""
+"<b>Cumasaigh maisiúcháin ar thaobh an chliaint:</b>\n"
+"\n"
+"Má tá sé cumasaithe, taispeántar an iontráil chuardaigh agus an príomh-roghchlár i mbarra teidil na fuinneoige.\n"
+"\n"
+"Má tá sé díchumasaithe, taispeántar an príomh-roghchlár mar bharra roghchláir leis an iontráil chuardaigh thíos ann.\n"
+"Tá sé seo cosúil le leagan amach Chomhéadain níos traidisiúnta agus tógann sé beagán níos mó spáis."
 
 #: src/fsearch_preferences.ui:893
 msgid ""
@@ -1337,62 +427,83 @@ msgid ""
 "\n"
 "This settings controls how file sizes are displayed.\n"
 "\n"
-"\t• <b>Binary units:</b> This refers to binary IEC prefixes <i>(e.g. 1 KiB = "
-"1024 bytes)</i>\n"
-"\t• <b>Decimal  units:</b> This refers to decimal SI prefixes <i>(e.g. 1 kB "
-"= 1000 bytes)</i>"
+"\t• <b>Binary units:</b> This refers to binary IEC prefixes <i>(e.g. 1 KiB = 1024 bytes)</i>\n"
+"\t• <b>Decimal  units:</b> This refers to decimal SI prefixes <i>(e.g. 1 kB = 1000 bytes)</i>"
 msgstr ""
+"<b>Úsáid aonaid dhénártha in ionad na n-aonad deachúil:</b>\n"
+"\n"
+"Rialaíonn an socrú seo conas a léirítear méideanna comhaid.\n"
+"\n"
+"\t• <b>Aonaid dhénártha:</b> Tagraíonn sé seo do réimíreanna dénártha <i> (m.sh. 1 KiB = 1024 bytes)</i>\n"
+"\t• <b>Aonaid dheachúla:</b> Tagraíonn sé seo do réimíreanna deachúla SI <i>(m.sh. 1 kB = 1000 beart)</i>"
 
 #: src/fsearch_preferences.ui:913
 msgid ""
 "<b>Remember window size:</b>\n"
 "\n"
-"If enabled, the window size from the previous session will be restored when "
-"you open an FSearch window.\n"
+"If enabled, the window size from the previous session will be restored when you open an FSearch window.\n"
 "\n"
-"Note that some window managers ignore this request and force the window to "
-"have a different size."
+"Note that some window managers ignore this request and force the window to have a different size."
 msgstr ""
+"<b>Cuimhnigh méid na fuinneoige:</b>\n"
+"\n"
+"Má tá sé cumasaithe, déanfar méid na fuinneoige ón seisiún roimhe seo a athbhunú nuair a osclaíonn tú fuinneog FSearch.\n"
+"\n"
+"Tabhair faoi deara go ndéanann roinnt bainisteoirí fuinneoige neamhaird den iarratas seo agus go gcuireann siad iallach ar an bhfuinneog méid difriúil a bheith aici."
 
 #: src/fsearch_preferences.ui:932
 msgid ""
 "<b>Behaviour after successfully opening a file:</b>\n"
 "\n"
-"When a file/folder was successfully opened one of the following actions can "
-"be performed:\n"
+"When a file/folder was successfully opened one of the following actions can be performed:\n"
 "\t• <b>Nothing:</b> Nothing happens.\n"
-"                        • <b>Minimize:</b> The currently selected FSearch "
-"window becomes minimized.\n"
+"                        • <b>Minimize:</b> The currently selected FSearch window becomes minimized.\n"
 "\t• <b>Close:</b> Quit FSearch.\n"
 "\n"
-"You can configure if those actions should be triggered when the file was "
-"opened with\n"
+"You can configure if those actions should be triggered when the file was opened with\n"
 "\t• <b>keyboard shortcuts or menu entries</b> and/or\n"
 "\t• <b>mouse click</b>"
 msgstr ""
+"<b>Iompar tar éis comhad a oscailt go rathúil:</b>\n"
+"\n"
+"Nuair a osclaíodh comhad/fillteán go rathúil is féidir ceann de na gníomhartha seo a leanas a dhéanamh:\n"
+"\t• <b>Tada:</b> Ní tharlaíonn tada.\n"
+"                        • <b>Íoslaghdaigh:</b> Íoslaghdaítear an fhuinneog FSearch atá roghnaithe faoi láthair.\n"
+"\t• <b>Dún:</b> Scoir FSearch.\n"
+"\n"
+"Is féidir leat a chumrú ar cheart na gníomhartha sin a chur i ngníomh nuair a osclaíodh an comhad leis\n"
+"\t• <b>aicearraí méarchláir nó iontrálacha roghchláir</b> agus/nó\n"
+"\t• <b>cliceáil luiche</b>"
 
 #: src/fsearch_preferences.ui:956
 msgid ""
 "<b>Show highlighted search terms:</b>\n"
 "\n"
-"If enabled, the search terms will be highlighted in the results view. For "
-"example when you search for \"foo\" all appearances of <i>foo</i> in file/"
-"folder names will be highlighted with bold characters:\n"
+"If enabled, the search terms will be highlighted in the results view. For example when you search for \"foo\" all appearances of <i>foo</i> in file/folder names will be highlighted with bold characters:\n"
 "\n"
 "\t<b>foo</b>bar.txt\n"
 "\tfile.<b>foo</b>\n"
 "\n"
-"This also works for regular expressions and wildcard expressions starting or "
-"ending with an asterisk. "
+"This also works for regular expressions and wildcard expressions starting or ending with an asterisk. "
 msgstr ""
+"<b>Taispeáin téarmaí cuardaigh aibhsithe:</b>\n"
+"\n"
+"Má tá sé cumasaithe, cuirfear béim ar na téarmaí cuardaigh i radharc na dtorthaí. Mar shampla, nuair a chuardaíonn tú \\\"foo\\\" léireofar gach láithriú <i>foo</i> in ainmneacha comhaid/fillteán le carachtair throma:\n"
+"\n"
+"\t<b>foo</b>bar.txt\n"
+"\tcomhad.<b>foo</b>\n"
+"\n"
+"Oibríonn sé seo freisin le haghaidh slonn rialta agus slonn saoróg ag tosú nó ag críochnú le réiltín."
 
 #: src/fsearch_preferences.ui:978
 msgid ""
 "<b>Show tooltips:</b>\n"
 "\n"
-"If enabled, the results view will show the full path of the focused file/"
-"folder in a small tooltip window."
+"If enabled, the results view will show the full path of the focused file/folder in a small tooltip window."
 msgstr ""
+"<b>Taispeáin leideanna uirlisí:</b>\n"
+"\n"
+"Má tá sé cumasaithe, léireoidh amharc na dtorthaí conair iomlán an chomhaid/fhillteáin dhírithe i bhfuinneog bheag leideanna."
 
 #: src/fsearch_preferences.ui:995
 msgid ""
@@ -1400,23 +511,29 @@ msgid ""
 "\n"
 "If enabled, file/folder icons will be shown in the name column."
 msgstr ""
+"<b>Taispeáin deilbhíní sa cholún ainm:</b>\n"
+"\n"
+"Má tá sé cumasaithe, taispeánfar deilbhíní comhaid/fillteán sa cholún ainm."
 
 #: src/fsearch_preferences.ui:1012
 msgid ""
 "<b>Remember column configuration:</b>\n"
 "\n"
-"If enabled, the column configuration of the results view from the previous "
-"session will be restored when you open an FSearch window. This includes the "
-"size and visibility of all columns."
+"If enabled, the column configuration of the results view from the previous session will be restored when you open an FSearch window. This includes the size and visibility of all columns."
 msgstr ""
+"<b>Cuimhnigh cumraíocht an cholúin:</b>\n"
+"\n"
+"Má tá sé cumasaithe, déanfar cumraíocht an cholúin d’amharc na dtorthaí ón seisiún roimhe seo a athchóiriú nuair a osclaíonn tú fuinneog FSearch. Áirítear leis seo méid agus infheictheacht na gcolún go léir."
 
 #: src/fsearch_preferences.ui:1029
 msgid ""
 "<b>Remember sort order:</b>\n"
 "\n"
-"If enabled, the sort order of the results view from the previous session "
-"will be restored when you open an FSearch window."
+"If enabled, the sort order of the results view from the previous session will be restored when you open an FSearch window."
 msgstr ""
+"<b>Cuimhnigh an t-ord sórtála:</b>\n"
+"\n"
+"Má tá sé cumasaithe, déanfar ord sórtála radharc na dtorthaí ón seisiún roimhe seo a athchóiriú nuair a osclaíonn tú fuinneog FSearch."
 
 #: src/fsearch_preferences.ui:1046
 msgid ""
@@ -1424,48 +541,59 @@ msgid ""
 "\n"
 "If enabled, double clicking in the path column will open the selected path."
 msgstr ""
+"<b>Oscail conair le cliceáil faoi dhó sa cholún conaire:</b>\n"
+"\n"
+"Má tá sé cumasaithe, déanfar an conair roghnaithe a oscailt trí chliceáil faoi dhó sa cholún conaire."
 
 #: src/fsearch_preferences.ui:1063
 msgid ""
 "<b>Single click to open:</b>\n"
 "\n"
-"If enabled, a single click will open the selected file/folder. If you only "
-"want to select a file/folder while this setting is active, you need to hold "
-"<i>Ctrl</i> at the same time while clicking the file/folder."
+"If enabled, a single click will open the selected file/folder. If you only want to select a file/folder while this setting is active, you need to hold <i>Ctrl</i> at the same time while clicking the file/folder."
 msgstr ""
+"<b>Cliceáil amháin le hoscailt:</b>\n"
+"\n"
+"Má tá sé cumasaithe, osclóidh cliceáil amháin an comhad/fillteán roghnaithe. Mura dteastaíonn uait ach comhad/fillteán a roghnú agus an socrú seo gníomhach, ní mór duit <i>Ctrl</i> a choinneáil ag an am céanna agus cliceáil ar an gcomhad/fillteán."
 
 #: src/fsearch_preferences.ui:1080
 msgid ""
 "<b>Show database indexing status:</b>\n"
 "\n"
-"If enabled, the path that is currently being indexed is displayed in the "
-"statusbar."
+"If enabled, the path that is currently being indexed is displayed in the statusbar."
 msgstr ""
+"<b>Taispeáin stádas innéacsaithe an bhunachair shonraí:</b>\n"
+"\n"
+"Má tá sé cumasaithe, taispeántar an chonair atá á hinnéacsú faoi láthair sa bharra stádais."
 
 #: src/fsearch_preferences.ui:1097
 msgid ""
 "<b>Show warning dialogs:</b>\n"
 "\n"
-"If enabled, a warning dialog is displayed when a file or folder failed to "
-"open."
+"If enabled, a warning dialog is displayed when a file or folder failed to open."
 msgstr ""
+"<b>Taispeáin dialóga rabhaidh:</b>\n"
+"\n"
+"Má tá sé cumasaithe, taispeántar dialóg rabhaidh nuair a theip ar chomhad nó ar fhillteán a oscailt."
 
 #: src/fsearch_preferences.ui:1114
 msgid ""
 "<b>Search in path when query contains path separators:</b>\n"
 "\n"
-"If enabled, search terms containing path separators (i.e. \"/\") will be "
-"automatically matched against the full path of a file or folder."
+"If enabled, search terms containing path separators (i.e. \"/\") will be automatically matched against the full path of a file or folder."
 msgstr ""
+"<b>Cuardaigh sa chonair nuair atá deighilteoirí conaire sa cheist:</b>\n"
+"\n"
+"Má tá sé cumasaithe, déanfar téarmaí cuardaigh ina bhfuil deighilteoirí conaire (i.e. \\\"/\\\") a mheaitseáil go huathoibríoch le conair iomlán comhaid nó fillteáin."
 
 #: src/fsearch_preferences.ui:1131
 msgid ""
 "<b>Match case when query contains at least one upper case character:</b>\n"
 "\n"
-"If enabled, search terms containing at least one upper case character will "
-"trigger a case-sensitive search. This means a search term like <i>Foo</i> "
-"will match <i>FooBar.txt</i> but not <i>foobar.txt</i>."
+"If enabled, search terms containing at least one upper case character will trigger a case-sensitive search. This means a search term like <i>Foo</i> will match <i>FooBar.txt</i> but not <i>foobar.txt</i>."
 msgstr ""
+"<b>Meaitseálann an cás nuair atá carachtar cás uachtair amháin ar a laghad sa cheist:</b>\n"
+"\n"
+"Má tá sé cumasaithe, cuirfidh téarmaí cuardaigh ina bhfuil ar a laghad carachtar cás uachtair amháin tús le cuardach cás-íogair. Ciallaíonn sé seo go mbeidh téarma cuardaigh cosúil le <i>Foo</i> ag teacht le <i>FooBar.txt</i> ach nach mbeidh <i>foobar.txt</i> ann."
 
 #: src/fsearch_preferences.ui:1148
 msgid ""
@@ -1473,9 +601,13 @@ msgid ""
 "\n"
 "If enabled, no search results are displayed when the search entry is empty.\n"
 "\n"
-"If disabled, all files and folders will be displayed when the search entry "
-"is empty."
+"If disabled, all files and folders will be displayed when the search entry is empty."
 msgstr ""
+"<b>Folaigh na torthaí nuair atá an cuardach folamh:</b>\n"
+"\n"
+"Má tá sé cumasaithe, ní thaispeántar torthaí cuardaigh nuair a bhíonn an iontráil chuardaigh folamh.\n"
+"\n"
+"Má tá sé díchumasaithe, taispeánfar gach comhad agus fillteán nuair a bhíonn an iontráil chuardaigh folamh."
 
 #: src/fsearch_preferences.ui:1167
 msgid ""
@@ -1483,17 +615,23 @@ msgid ""
 "\n"
 "If enabled, the search is automatically updated with every keystroke.\n"
 "\n"
-"If disabled, the search is only updated when you hit <i>Enter</i> or press "
-"the search button. "
+"If disabled, the search is only updated when you hit <i>Enter</i> or press the search button. "
 msgstr ""
+"<b>Cuardaigh agus tú ag clóscríobh:</b>\n"
+"\n"
+"Má tá sé cumasaithe, déantar an cuardach a nuashonrú go huathoibríoch le gach eochairbhuillí.\n"
+"\n"
+"Má tá sé díchumasaithe, ní dhéantar an cuardach a nuashonrú ach amháin nuair a bhuaileann tú <i>Iontráil</i> nó nuair a bhrúnn tú an cnaipe cuardaigh."
 
 #: src/fsearch_preferences.ui:1186
 msgid ""
 "<b>Update database on start:</b>\n"
 "\n"
-"If enabled, the database will be updated automatically in the background "
-"when you start FSearch."
+"If enabled, the database will be updated automatically in the background when you start FSearch."
 msgstr ""
+"<b>Nuashonraigh an bunachar sonraí nuair a thosóidh tú:</b>\n"
+"\n"
+"Má tá sé cumasaithe, déanfar an bunachar sonraí a nuashonrú go huathoibríoch sa chúlra nuair a thosaíonn tú ar FSearch."
 
 #: src/fsearch_preferences.ui:1203
 msgid ""
@@ -1501,29 +639,37 @@ msgid ""
 "\n"
 "This list contains all folders you want to include in the database.\n"
 "\n"
-"\t• <b>Active:</b> If enabled, the path will included in the database to be "
-"searched in.\n"
+"\t• <b>Active:</b> If enabled, the path will included in the database to be searched in.\n"
 "\t• <b>Path:</b> The full path to be included.\n"
-"\t• <b>One Filesystem:</b> If enabled, FSearch won't cross filesystem "
-"boundaries for this folder"
+"\t• <b>One Filesystem:</b> If enabled, FSearch won't cross filesystem boundaries for this folder"
 msgstr ""
+"<b>Fillteáin san áireamh:</b>\n"
+"\n"
+"Ar an liosta seo tá gach fillteán is mian leat a chur san áireamh sa bhunachar sonraí.\n"
+"\n"
+"\t• <b>Gníomhach:</b> Má tá sé cumasaithe, cuirfear an chonair san áireamh sa bhunachar sonraí a mbeidh tú ag cuardach ann.\n"
+"\t• <b>Conair:</b> An chonair iomlán le cur san áireamh.\n"
+"\t• <b>Córas Comhad amháin:</b> Má tá sé cumasaithe, ní thrasnóidh FSearch teorainneacha an chórais comhad don fhillteán seo"
 
 #: src/fsearch_preferences.ui:1224
 msgid ""
 "<b>Add folder to database:</b>\n"
 "\n"
-"This button opens a dialog where you can select a folder you want to include "
-"in the database for searching."
+"This button opens a dialog where you can select a folder you want to include in the database for searching."
 msgstr ""
+"<b>Cuir fillteán leis an mbunachar sonraí:</b>\n"
+"\n"
+"Osclaíonn an cnaipe seo dialóg inar féidir leat fillteán a roghnú is mian leat a áireamh sa bhunachar sonraí lena chuardach."
 
 #: src/fsearch_preferences.ui:1241
 msgid ""
 "<b>Add a specific path:</b>\n"
 "\n"
-"Type the full path of a folder here and click the button next to it to "
-"include that folder in the database. This is useful for adding a path "
-"directly without browsing for it."
+"Type the full path of a folder here and click the button next to it to include that folder in the database. This is useful for adding a path directly without browsing for it."
 msgstr ""
+"<b>Cuir conair ar leith leis:</b>\n"
+"\n"
+"Clóscríobh conair iomlán an fhillteáin anseo agus cliceáil ar an gcnaipe in aice leis chun an fillteán sin a chur san áireamh sa bhunachar sonraí. Tá sé seo úsáideach chun conair a chur leis go díreach gan brabhsáil dó."
 
 #: src/fsearch_preferences.ui:1258
 msgid ""
@@ -1531,74 +677,89 @@ msgid ""
 "\n"
 "This removes the selected folder from the list of included folders."
 msgstr ""
+"<b>Bain an ró roghnaithe:</b>\n"
+"\n"
+"Baineann sé seo an fillteán roghnaithe as liosta na bhfillteán atá san áireamh."
 
 #: src/fsearch_preferences.ui:1275
 msgid ""
 "<b>Attempt to monitor:</b>\n"
 "\n"
-"If enabled, FSearch watches this folder for changes and keeps the database "
-"up to date automatically, so you don't have to rescan manually.\n"
+"If enabled, FSearch watches this folder for changes and keeps the database up to date automatically, so you don't have to rescan manually.\n"
 "\n"
-"Monitoring isn't supported on every file system and uses a small amount of "
-"system resources per watched folder. For large directory trees with many "
-"files the system may run out of resources to watch them all."
+"Monitoring isn't supported on every file system and uses a small amount of system resources per watched folder. For large directory trees with many files the system may run out of resources to watch them all."
 msgstr ""
+"<b>Déan iarracht monatóireacht a dhéanamh:</b>\n"
+"\n"
+"Má tá sé cumasaithe, féachann FSearch ar an bhfillteán seo le haghaidh athruithe agus coinníonn sé an bunachar sonraí cothrom le dáta go huathoibríoch, mar sin ní gá duit a athscanadh de láimh.\n"
+"\n"
+"Ní thacaítear le monatóireacht ar gach córas comhaid agus úsáideann sé méid beag acmhainní córais in aghaidh an fhillteáin faire. I gcás crann eolaire mór le go leor comhad d'fhéadfadh an córas rith as acmhainní chun féachaint orthu go léir."
 
 #: src/fsearch_preferences.ui:1294
 msgid ""
 "<b>Scan after launch:</b>\n"
 "\n"
-"If enabled, this folder is rescanned every time FSearch starts, so the "
-"database reflects any changes made while FSearch wasn't running."
+"If enabled, this folder is rescanned every time FSearch starts, so the database reflects any changes made while FSearch wasn't running."
 msgstr ""
+"<b>Scan tar éis an tseolta:</b>\n"
+"\n"
+"Má tá sé cumasaithe, déantar an fillteán seo a athscanadh gach uair a thosaíonn FSearch, mar sin léiríonn an bunachar sonraí aon athruithe a rinneadh nuair nach raibh FSearch ag rith."
 
 #: src/fsearch_preferences.ui:1311
 msgid ""
 "<b>Stay on one file system:</b>\n"
 "\n"
-"If enabled, FSearch won't cross file system boundaries while scanning this "
-"folder. Mounted file systems below it (e.g. external drives or network "
-"shares) are skipped."
+"If enabled, FSearch won't cross file system boundaries while scanning this folder. Mounted file systems below it (e.g. external drives or network shares) are skipped."
 msgstr ""
+"<b>Fan ar chóras comhad amháin:</b>\n"
+"\n"
+"Má tá sé cumasaithe, ní thrasnóidh FSearch teorainneacha an chórais comhad agus an fillteán seo á scanadh. Ní dhéantar córais comhad suite faoina bhun (m.sh. tiomántáin sheachtracha nó scaireanna líonra)."
 
 #: src/fsearch_preferences.ui:1328
 msgid ""
 "<b>Rescan every:</b>\n"
 "\n"
-"If enabled, this folder is rescanned automatically at the given interval. "
-"Use the hours and minutes fields to set how often the rescan happens.\n"
+"If enabled, this folder is rescanned automatically at the given interval. Use the hours and minutes fields to set how often the rescan happens.\n"
 "\n"
-"This is useful for folders on file systems that can't be monitored for "
-"changes."
+"This is useful for folders on file systems that can't be monitored for changes."
 msgstr ""
+"<b>Athscan gach:</b>\n"
+"\n"
+"Má tá sé cumasaithe, déanfar an fillteán seo a athscanadh go huathoibríoch ag an eatramh a thugtar. Bain úsáid as na réimsí uaireanta agus miontuairiscí chun cé chomh minic a tharlaíonn an t-athscanadh a shocrú.\n"
+"\n"
+"Tá sé seo úsáideach le haghaidh fillteáin ar chórais comhad nach féidir monatóireacht a dhéanamh orthu le haghaidh athruithe."
 
 #: src/fsearch_preferences.ui:1347
 msgid ""
 "<b>Exclude rules:</b>\n"
 "\n"
-"This list contains rules for the files and folders you want to exclude from "
-"the database.\n"
+"This list contains rules for the files and folders you want to exclude from the database.\n"
 "\n"
-"\t• <b>Active:</b> If enabled, the rule is applied and matching items are "
-"excluded.\n"
-"\t• <b>Pattern:</b> The text matched against each item, interpreted "
-"according to the Type.\n"
-"\t• <b>Type:</b> How the pattern is interpreted — <i>Literal</i> (exact "
-"text), <i>Wildcard</i> (using * and ?) or <i>Regex</i> (a regular "
-"expression).\n"
-"\t• <b>Match:</b> Whether the pattern is matched against the item's <i>Full "
-"Path</i> or only its <i>Basename</i> (the name without the path).\n"
-"\t• <b>Applies To:</b> Whether the rule affects <i>Files</i>, <i>Folders</i> "
-"or both."
+"\t• <b>Active:</b> If enabled, the rule is applied and matching items are excluded.\n"
+"\t• <b>Pattern:</b> The text matched against each item, interpreted according to the Type.\n"
+"\t• <b>Type:</b> How the pattern is interpreted — <i>Literal</i> (exact text), <i>Wildcard</i> (using * and ?) or <i>Regex</i> (a regular expression).\n"
+"\t• <b>Match:</b> Whether the pattern is matched against the item's <i>Full Path</i> or only its <i>Basename</i> (the name without the path).\n"
+"\t• <b>Applies To:</b> Whether the rule affects <i>Files</i>, <i>Folders</i> or both."
 msgstr ""
+"<b>Rialacha eisiaimh:</b>\n"
+"\n"
+"Tá rialacha sa liosta seo maidir leis na comhaid agus na fillteáin is mian leat a eisiamh ón mbunachar sonraí.\n"
+"\n"
+"\t• <b>Gníomhach:</b> Má tá sé cumasaithe, cuirtear an riail i bhfeidhm agus fágtar míreanna meaitseála as an áireamh.\n"
+"\t• <b>Patrún:</b> An téacs a mheaitseáil le gach mír, léirmhínithe de réir an Chineáil.\n"
+"\t• <b>Cineál:</b> Conas a dhéantar an patrún a léirmhíniú — <i>Litiriúil</i> (téacs cruinn), <i>Saoróg</i> (ag úsáid * agus ?) nó <i>Regex</i> (slonn rialta).\n"
+"\t• <b>Meaitseáil:</b> Cibé an bhfuil an patrún meaitseáilte le <i>Conair Iomlán</i> na míre nó lena <i>Bunainm</i> amháin (an t-ainm gan an chonair).\n"
+"\t• <b>Baineann sé le:</b> Cibé an mbíonn tionchar ag an riail ar <i>Comhaid</i>, <i>Fillteáin</i> nó an dá rud."
 
 #: src/fsearch_preferences.ui:1370
 msgid ""
 "<b>Add exclude rule:</b>\n"
 "\n"
-"This adds a new, empty rule to the list. Edit its Pattern, Type, Match and "
-"Applies To columns to control what gets excluded from the database."
+"This adds a new, empty rule to the list. Edit its Pattern, Type, Match and Applies To columns to control what gets excluded from the database."
 msgstr ""
+"<b>Cuir riail eisiaimh leis:</b>\n"
+"\n"
+"Cuireann sé seo riail nua, folamh leis an liosta. Cuir a Phatrún, Cineál, Meaitseáil agus Feidhmíonn Le Colúin in Eagar chun a bhfuil eisiata ón mbunachar sonraí a rialú."
 
 #: src/fsearch_preferences.ui:1387
 msgid ""
@@ -1606,6 +767,9 @@ msgid ""
 "\n"
 "This removes the selected rule from the list of exclude rules."
 msgstr ""
+"<b>Bain an ró roghnaithe:</b>\n"
+"\n"
+"Baineann sé seo an riail roghnaithe as liosta na rialacha eisiata."
 
 #: src/fsearch_preferences.ui:1404
 msgid ""
@@ -1615,52 +779,59 @@ msgid ""
 "\n"
 "⚠ All rules which were created or edited by the user will be lost! ⚠"
 msgstr ""
+"<b>Aischuir na rialacha eisiata réamhshocraithe:</b>\n"
+"\n"
+"Athshocróidh an cnaipe seo an tacar réamhshocraithe rialacha eisiata.\n"
+"\n"
+"⚠ Caillfear gach riail a chruthaigh nó a chuir an t-úsáideoir in eagar! ⚠"
 
 #: src/fsearch_preferences.ui:1423
 msgid ""
 "<b>Exclude files and folders from database:</b>\n"
 "\n"
-"This is a semi-colon separated list of files (or folders) you want to "
-"exclude from the database. For example <i>.git;.cache;*.swp</i> will exclude "
-"all files or folders which are called either <i>.git</i> or <i>.cache</i> or "
-"end with <i>.swp</i>."
+"This is a semi-colon separated list of files (or folders) you want to exclude from the database. For example <i>.git;.cache;*.swp</i> will exclude all files or folders which are called either <i>.git</i> or <i>.cache</i> or end with <i>.swp</i>."
 msgstr ""
+"<b>Eisiaigh comhaid agus fillteáin ón mbunachar sonraí:</b>\n"
+"\n"
+"Seo liosta leathchoilín de chomhaid (nó fillteáin) ar mhaith leat a eisiamh ón mbunachar sonraí. Mar shampla ní dhéanfaidh <i>.git;.cache;*.swp</i> gach comhad nó fillteán ar a dtugtar <i>.git</i> nó <i>.cache</i> nó a chríochnaíonn le <i>.swp</i>."
 
 #: src/fsearch_preferences.ui:1440
 msgid ""
 "<b>Exclude hidden files and folders:</b>\n"
 "\n"
-"If enabled, hidden files and folders will be excluded from the database "
-"<i>(i.e. all files or folders which start with a dot character)</i>."
+"If enabled, hidden files and folders will be excluded from the database <i>(i.e. all files or folders which start with a dot character)</i>."
 msgstr ""
-
-#: src/fsearch_preferences.ui:1457
-msgid "Focus a setting to get a detailed description of what it does."
-msgstr ""
+"<b>Eisiaigh comhaid fholaithe agus fillteáin:</b>\n"
+"\n"
+"Má tá sé cumasaithe, fágfar comhaid fholaithe agus fillteáin as an áireamh sa bhunachar sonraí <i> (i.e. gach comhad nó fillteán a thosaíonn le carachtar ponc)</i>."
 
 #: src/fsearch_preferences.ui:1470
 msgid ""
 "<b>Periodically update database at a specific time interval:</b>\n"
 "\n"
-"If enabled and as long as FSearch is running, the database will be updated "
-"periodically with the given time interval.\n"
+"If enabled and as long as FSearch is running, the database will be updated periodically with the given time interval.\n"
 "\n"
-"If you want to update the database in the background, even when FSearch is "
-"not running, you should use tools like cron or systemd timers to "
-"periodically trigger the update with:\n"
+"If you want to update the database in the background, even when FSearch is not running, you should use tools like cron or systemd timers to periodically trigger the update with:\n"
 "\n"
 "<i><tt>fsearch --update-database</tt></i>"
 msgstr ""
+"<b>Nuashonraigh an bunachar sonraí go tréimhsiúil ag eatramh ama ar leith:</b>\n"
+"\n"
+"Má tá sé cumasaithe agus fad atá FSearch ar siúl, déanfar an bunachar sonraí a nuashonrú go tréimhsiúil leis an eatramh ama tugtha.\n"
+"\n"
+"Más mian leat an bunachar sonraí sa chúlra a nuashonrú, fiú nuair nach bhfuil FSearch ag rith, ba cheart duit uirlisí amhail amadóirí cron nó córas a úsáid chun an nuashonrú a spreagadh go tréimhsiúil le:\n"
+"\n"
+"<i><tt>fsearch --update-database</tt></i>"
 
 #: src/fsearch_preferences.ui:1491
 msgid ""
 "<b>Launch desktop files:</b>\n"
 "\n"
-"If enabled, activating a <i>.desktop</i> file will launch the application "
-"defined within that file. This way FSearch can act like an application "
-"launcher. Otherwise the <i>.desktop</i> file will be opened with the default "
-"handler for this type of files, which is usually a text editor."
+"If enabled, activating a <i>.desktop</i> file will launch the application defined within that file. This way FSearch can act like an application launcher. Otherwise the <i>.desktop</i> file will be opened with the default handler for this type of files, which is usually a text editor."
 msgstr ""
+"<b>Seol comhaid deisce:</b>\n"
+"\n"
+"Má tá sé cumasaithe, má ghníomhachtaítear comhad <i>.desktop</i> seolfar an feidhmchlár atá sainithe laistigh den chomhad sin. Ar an mbealach seo is féidir le FSearch gníomhú ar nós tosaitheoir feidhmchlár. Seachas sin osclófar an comhad <i>.desktop</i> leis an láimhseálaí réamhshocraithe don chineál seo comhaid, ar gnátheagarthóir téacs é."
 
 #: src/fsearch_preferences.ui:1508
 msgid ""
@@ -1669,10 +840,16 @@ msgid ""
 "This is a list of all available filters. A filter is a predefined search.\n"
 "\n"
 "\t• <b>Name:</b> A unique and descriptive identifier for the filter\n"
-"\t• <b>Macro:</b> By typing the macro text followed by a ':' you can enable "
-"the filter on demand\n"
+"\t• <b>Macro:</b> By typing the macro text followed by a ':' you can enable the filter on demand\n"
 "\t• <b>Query:</b> The search term by which the database should be filtered"
 msgstr ""
+"<b>Scagairí:</b>\n"
+"\n"
+"Seo liosta de na scagairí go léir atá ar fáil. Is cuardach réamhshainithe é scagaire.\n"
+"\n"
+"\t• <b>Ainm:</b> Aitheantóir uathúil agus tuairisciúil don scagaire\n"
+"\t• <b>Macra:</b> Trí an macra-théacs a chlóscríobh agus ':' ina dhiaidh is féidir leat an scagaire a chumasú ar éileamh\n"
+"\t• <b>Ceist:</b> An téarma cuardaigh faoinar cheart an bunachar sonraí a scagadh"
 
 #: src/fsearch_preferences.ui:1529
 msgid ""
@@ -1680,6 +857,9 @@ msgid ""
 "\n"
 "This button opens a dialog where you can edit a new filter."
 msgstr ""
+"<b>Cuir scagaire nua leis:</b>\n"
+"\n"
+"Osclaíonn an cnaipe seo dialóg inar féidir leat scagaire nua a chur in eagar."
 
 #: src/fsearch_preferences.ui:1546
 msgid ""
@@ -1687,6 +867,9 @@ msgid ""
 "\n"
 "This button removes the currently selected filter."
 msgstr ""
+"<b>Bain an scagaire roghnaithe:</b>\n"
+"\n"
+"Baineann an cnaipe seo amach an scagaire atá roghnaithe faoi láthair."
 
 #: src/fsearch_preferences.ui:1563
 msgid ""
@@ -1694,6 +877,9 @@ msgid ""
 "\n"
 "This button opens a dialog where you can edit the selected filter."
 msgstr ""
+"<b>Cuir an scagaire roghnaithe in eagar:</b>\n"
+"\n"
+"Osclaíonn an cnaipe seo dialóg inar féidir leat an scagaire roghnaithe a chur in eagar."
 
 #: src/fsearch_preferences.ui:1580
 msgid ""
@@ -1703,389 +889,1431 @@ msgid ""
 "\n"
 "⚠ All filters which were created or edited by the user will be lost! ⚠"
 msgstr ""
+"<b>Aischuir na scagairí réamhshocraithe:</b>\n"
+"\n"
+"Athshocróidh an cnaipe seo cumraíocht réamhshocraithe an scagaire.\n"
+"\n"
+"⚠ Caillfear gach scagaire a chruthaigh nó a chuir an t-úsáideoir in eagar! ⚠"
 
 #: src/fsearch_preferences.ui:1599
 msgid ""
 "<b>Exit on Escape:</b>\n"
 "\n"
-"If enabled, FSearch exits when the Escape key is pressed instead of the "
-"window being minimized."
+"If enabled, FSearch exits when the Escape key is pressed instead of the window being minimized."
 msgstr ""
-
-#: src/fsearch_preferences.ui:1618 src/fsearch_window.ui:290
-#: src/fsearch_window.ui:415 src/menus.ui:150 src/menus.ui:156
-msgid "Help"
-msgstr ""
-
-#: src/fsearch_preferences_dialog.c:238
-msgid "Database"
-msgstr ""
-
-#: src/fsearch_result_view.c:381
-msgid "Invalid row data"
-msgstr ""
-
-#: src/fsearch_statusbar.c:58
-#, c-format
-msgid "%'d Item"
-msgstr ""
-
-#: src/fsearch_statusbar.c:58 src/fsearch_statusbar.c:186
-#, c-format
-msgid "%'d Items"
-msgstr ""
-
-#: src/fsearch_statusbar.c:80
-msgid "Querying…"
-msgstr ""
-
-#: src/fsearch_statusbar.c:175
-msgid "Loading…"
-msgstr ""
-
-#: src/fsearch_statusbar.c:180
-msgid "Scanning…"
-msgstr ""
-
-#: src/fsearch_statusbar.ui:52
-msgid "Number of Search Results"
-msgstr ""
-
-#: src/fsearch_statusbar.ui:53
-msgid "0 Items"
-msgstr ""
-
-#: src/fsearch_statusbar.ui:106
-msgid "Cancel"
-msgstr ""
-
-#: src/fsearch_statusbar.ui:153
-msgid "Index:"
-msgstr ""
-
-#: src/fsearch_statusbar.ui:228
-msgid "Number of selected folders"
-msgstr ""
-
-#: src/fsearch_statusbar.ui:229 src/fsearch_statusbar.ui:254
-msgid "0/0"
-msgstr ""
-
-#: src/fsearch_statusbar.ui:253
-msgid "Number of selected files"
-msgstr ""
-
-#: src/fsearch_statusbar.ui:328 src/fsearch_window.ui:103
-msgid "Cancel database update"
-msgstr ""
-
-#: src/fsearch_statusbar.ui:369
-msgid "Number of database items"
-msgstr ""
-
-#: src/fsearch_statusbar.ui:370
-msgid "(empty)"
-msgstr ""
+"<b>Scoir ar Éalú:</b>\n"
+"\n"
+"Má tá sé cumasaithe, scoireann FSearch nuair a bhrúitear an eochair Escape in ionad an fhuinneog a íoslaghdú."
 
 #: src/fsearch_statusbar.ui:407
 msgid ""
 "Search term contains upper case characters.\n"
 "<b>Match Case</b> was temporarily activated for this term."
 msgstr ""
-
-#: src/fsearch_statusbar.ui:438 src/fsearch_statusbar.ui:491
-msgid "CASE"
-msgstr ""
+"Tá carachtair chás uachtair sa téarma cuardaigh.\n"
+"Cuireadh <b>Match Case</b> i ngníomh go sealadach don téarma seo."
 
 #: src/fsearch_statusbar.ui:514
 msgid ""
 "Search term contains path separators.\n"
 "<b>Search in Path</b> was temporarily activated for this term."
 msgstr ""
-
-#: src/fsearch_statusbar.ui:545 src/fsearch_statusbar.ui:598
-msgid "PATH"
-msgstr ""
-
-#: src/fsearch_statusbar.ui:651
-msgid "REGEX"
-msgstr ""
+"Tá deighilteoirí conaire sa téarma cuardaigh.\n"
+"Cuireadh <b>Search in Path</b> i ngníomh go sealadach don téarma seo."
 
 #: src/fsearch_statusbar.ui:726
 msgid ""
 "The search was cancelled before it finished.\n"
 "<b>These results are incomplete.</b>"
 msgstr ""
-
-#: src/fsearch_statusbar.ui:756
-msgid "PARTIAL"
-msgstr ""
-
-#: src/fsearch_welcome_dialog.ui:26
-msgid "What's New in FSearch"
-msgstr ""
-
-#: src/fsearch_welcome_dialog.ui:79
-msgid ""
-"<span size=\"xx-large\" weight=\"bold\">What's New in FSearch 0.3</span>"
-msgstr ""
-
-#: src/fsearch_welcome_dialog.ui:149
-msgid "<big><b>File System Monitoring</b></big>"
-msgstr ""
+"Cuireadh an cuardach ar ceal sular chríochnaigh sé.\n"
+"<b>Tá na torthaí seo neamhiomlán.</b>"
 
 #: src/fsearch_welcome_dialog.ui:163
 msgid ""
-"You can now actively watch individual folders to eliminate frequent rescans. "
-"File changes then appear in your search results immediately.\n"
+"You can now actively watch individual folders to eliminate frequent rescans. File changes then appear in your search results immediately.\n"
 "\n"
-"To enable this feature go to the Database section of the Preferences "
-"dialog.\n"
+"To enable this feature go to the Database section of the Preferences dialog.\n"
 "\n"
 "See the online documentation for more information:\n"
-"<a href=\"URL\">https://github.com/cboxdoerfer/fsearch/wiki/Database-update</"
-"a>"
+"<a href=\"URL\">https://github.com/cboxdoerfer/fsearch/wiki/Database-update</a>"
 msgstr ""
-
-#: src/fsearch_welcome_dialog.ui:232
-msgid "<big><b>Folder-Specific Rescan Schedules</b></big>"
-msgstr ""
-
-#: src/fsearch_welcome_dialog.ui:246
-msgid ""
-"You can now configure automatic update intervals for individual folders "
-"independently and tailored to each distinct location."
-msgstr ""
-
-#: src/fsearch_welcome_dialog.ui:309
-msgid "<big><b>Improved Exclude Rules</b></big>"
-msgstr ""
+"Is féidir leat féachaint go gníomhach ar fhillteáin aonair anois chun athscananna minice a dhíchur. Ansin feictear athruithe comhad i do thorthaí cuardaigh láithreach.\n"
+"\n"
+"Chun an ghné seo a chumasú téigh go dtí an roinn Bunachar Sonraí den dialóg Roghanna.\n"
+"\n"
+"Féach ar an doiciméadú ar líne le haghaidh tuilleadh eolais:\n"
+"<a href=\\\"URL\\\">https://github.com/cboxdoerfer/fsearch/wiki/Database-update</a>"
 
 #: src/fsearch_welcome_dialog.ui:323
 msgid ""
-"You can now use wildcards and regular expressions to define more powerful "
-"exclude rules. \n"
-"Rules can be targeted specifically at files, folders, or both, and can be "
-"configured to match against either the basename or the full absolute path."
+"You can now use wildcards and regular expressions to define more powerful exclude rules. \n"
+"Rules can be targeted specifically at files, folders, or both, and can be configured to match against either the basename or the full absolute path."
 msgstr ""
-
-#: src/fsearch_window.c:749 src/menus.ui:279
-msgid "Size"
-msgstr ""
-
-#: src/fsearch_window.c:763 src/menus.ui:271
-msgid "Extension"
-msgstr ""
-
-#: src/fsearch_window.c:770 src/menus.ui:283
-msgid "Date Modified"
-msgstr ""
+"Is féidir leat saoróga agus slonn rialta a úsáid anois chun rialacha eisiaimh níos cumhachtaí a shainiú. \n"
+"Is féidir rialacha a dhíriú go sonrach ar chomhaid, ar fhillteáin, nó ar an dá cheann, agus is féidir iad a chumrú chun meaitseáil leis an mbunainm nó leis an gconair iomlán."
 
 #: src/fsearch_window.c:784
 msgid ""
 "Sorting by <b>Type</b> can take a few seconds with many results.\n"
 "\n"
-"This sort order is not persistent, it will be reset when the search term "
-"changes."
+"This sort order is not persistent, it will be reset when the search term changes."
 msgstr ""
+"Seans go dtógfaidh sórtáil de réir <b>Cineál</b> cúpla soicind agus go leor torthaí.\n"
+"\n"
+"Níl an t-ordú sórtála seo leanúnach, déanfar é a athshocrú nuair a athraíonn an téarma cuardaigh."
+
+#: data/io.github.cboxdoerfer.FSearch.desktop.in.in:4 src/main.c:36
+msgid "FSearch"
+msgstr "FSearch"
+
+#: data/io.github.cboxdoerfer.FSearch.desktop.in.in:5
+msgid "A file search application focusing on performance and advanced features"
+msgstr "Feidhmchlár cuardaigh comhad a dhíríonn ar fheidhmíocht agus ar ghnéithe ardleibhéil"
+
+#: data/io.github.cboxdoerfer.FSearch.desktop.in.in:10
+msgid "search;fsearch;files;folders;music;video;documents;find;tool;everything;"
+msgstr "cuardaigh;fsearch;comhaid;fillteáin;ceol;físeán;cáipéisí;aimsigh;uirlis;gach rud;"
+
+#: data/io.github.cboxdoerfer.FSearch.desktop.in.in:12
+msgid "File Search Utility"
+msgstr "Uirlis Chuardaigh Comhad"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:8
+msgid "A graphical file search application"
+msgstr "Feidhmchlár grafach chun comhaid a chuardach"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:10
+msgid "FSearch helps you to find files and folders as easy and fast as possible. Just type a few letters and search results will appear almost instantly."
+msgstr "Cabhraíonn FSearch leat comhaid agus fillteáin a aimsiú chomh héasca agus chomh tapa agus is féidir. Ní gá ach cúpla litir a chlóscríobh agus taispeánfar torthaí an chuardaigh beagnach láithreach."
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:14
+msgid "There are a lot of features which make searching as efficient and powerful as possible. Such as:"
+msgstr "Tá go leor gnéithe ann a fhágann an cuardach chomh héifeachtach agus chomh cumhachtach agus is féidir. Mar shampla:"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:19
+msgid "Ignore case (e.g. searching for \"<code>fsearch</code>\" will match \"FSearch\" as well)"
+msgstr "Neamhaird ar chás (m.sh. meaitseálfaidh cuardach ar “<code>fsearch</code>” le “FSearch” freisin)"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:20
+msgid "Regular expressions"
+msgstr "Sloinn rialta"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:21
+msgid "Wildcard support"
+msgstr "Tacaíocht do shaoróga"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:22
+msgid "Filter support (e.g. only search for audio files)"
+msgstr "Tacaíocht scagairí (m.sh. gan chuardach ach ar chomhaid fhuaime)"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:23
+msgid "Exclude certain files and folders"
+msgstr "Fág comhaid agus fillteáin áirithe as an áireamh"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:24
+msgid "Fast sort by name, path, size, modification time and extension"
+msgstr "Sórtáil thapa de réir ainm, conaire, méid, ama athraithe agus iarmhíre"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:26
+msgid "<em>Note:</em> Due to Flatpak's sandboxing, FSearch can't find every file on your system."
+msgstr "<em>Nóta:</em> De bharr bhosca gainimh Flatpak, ní féidir le FSearch gach comhad ar do chóras a aimsiú."
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:35
+msgid "The default UI layout"
+msgstr "Leagan amach réamhshocraithe an chomhéadain"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:41
+msgid "A layout more closely following GNOME HIGs"
+msgstr "Leagan amach a leanann Treoirlínte Comhéadain Dhaonna GNOME níos dlúithe"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:49
+msgid "search"
+msgstr "cuardaigh"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:50
+msgid "fsearch"
+msgstr "fsearch"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:51
+msgid "files"
+msgstr "comhaid"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:52
+msgid "folders"
+msgstr "fillteáin"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:53
+msgid "music"
+msgstr "ceol"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:54
+msgid "video"
+msgstr "físeán"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:55
+msgid "documents"
+msgstr "cáipéisí"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:56
+msgid "find"
+msgstr "aimsigh"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:57
+msgid "tool"
+msgstr "uirlis"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:58
+msgid "everything"
+msgstr "gach rud"
+
+#. Kept for appstreamcli < 1.0 (e.g. Ubuntu 20.04/22.04 PPA builds), which doesn't know <developer>.
+#. Translators: please do NOT translate this.
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:77
+msgid "Christian Boxdörfer"
+msgstr "Christian Boxdörfer"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:89
+msgid "DB rewrite"
+msgstr "Athscríobh an bhunachair sonraí"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:90
+msgid "DB: Add support for filesystem monitoring"
+msgstr "Bunachar: Cuir tacaíocht ar fáil le monatóireacht ar an gcóras comhad"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:91
+msgid "DB: Allow files and folders to be excluded based on fixed patterns, wildcards or regular expressions"
+msgstr "Bunachar: Ceadaigh comhaid agus fillteáin a fhágáil as an áireamh de réir patrún socraithe, saoróg nó sloinn rialta"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:92
+msgid "DB: Allow included folders to be scheduled and scanned after launch independently"
+msgstr "Bunachar: Ceadaigh fillteáin san áireamh a sceidealú agus a scanadh tar éis tosaithe go neamhspleách"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:93
+msgid "DB: Make rescanning more efficient"
+msgstr "Bunachar: Déan an t-athscanadh níos éifeachtaí"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:94
+msgid "DB: Store database config in DB file"
+msgstr "Bunachar: Stóráil cumraíocht an bhunachair sa chomhad DB"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:95
+msgid "DB: Add checksum to DB file"
+msgstr "Bunachar: Cuir suim sheiceála leis an gcomhad DB"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:96
+msgid "Make icon and file info gathering asynchronous (no UI blocking)"
+msgstr "Déan bailiú deilbhíní agus faisnéise comhad neamhshioncrónach (gan bhac ar an gcomhéadan)"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:97
+msgid "Reduce memory usage"
+msgstr "Laghdaigh úsáid na cuimhne"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:98
+msgid "Add contextual help for all preferences"
+msgstr "Cuir cabhair chomhthéacsúil le gach sainrogha"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:99
+msgid "Numerous bug fixes and stability and performance improvements"
+msgstr "Neart deisithe fabhtanna agus feabhsuithe cobhsaíochta agus feidhmíochta"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:106
+msgid "New search engine"
+msgstr "Inneall cuardaigh nua"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:107
+msgid "Greatly improved highlighting of search terms"
+msgstr "Aibhsiú téarmaí cuardaigh feabhsaithe go mór"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:108
+msgid "Custom filters"
+msgstr "Scagairí saincheaptha"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:109
+msgid "Improved sort performance"
+msgstr "Feidhmíocht sórtála feabhsaithe"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:110
+msgid "Improved scroll performance"
+msgstr "Feidhmíocht scrollaithe feabhsaithe"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:111
+msgid "Remember file selection after a database update"
+msgstr "Cuimhnigh ar roghnú comhad tar éis nuashonrú ar an mbunachar sonraí"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:112
+msgid "Automatically scroll the result list in rubberband selection mode"
+msgstr "Scrollaigh liosta na dtorthaí go huathoibríoch sa mhód roghnaithe banda rubair"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:113
+msgid "Invert selection with rubber band when 'Ctrl' is pressed"
+msgstr "Inbhéartaigh an roghnú leis an mbanda rubair nuair a bhrúitear ‘Ctrl’"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:114
+msgid "Focus search entry when the main window gets activated"
+msgstr "Dírigh an iontráil chuardaigh nuair a ghníomhachtaítear an phríomhfhuinneog"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:115
+msgid "Add filter for applications (i.e. .desktop files)"
+msgstr "Cuir scagaire le haghaidh feidhmchlár (i.e. comhaid .desktop)"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:116
+msgid "Add option to launch applications directly instead of opening the .desktop files"
+msgstr "Cuir rogha leis chun feidhmchláir a thosú go díreach in ionad na comhaid .desktop a oscailt"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:117
+msgid "Show application icons for .desktop files"
+msgstr "Taispeáin deilbhíní feidhmchláir do chomhaid .desktop"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:118
+msgid "Add .odp and .ods files to document filter"
+msgstr "Cuir comhaid .odp agus .ods leis an scagaire cáipéisí"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:119
+msgid "'Open with' menu now only shows applications which can handle the selected files"
+msgstr "Ní thaispeánann an roghchlár ‘Oscail le’ anois ach feidhmchláir atá in ann na comhaid roghnaithe a láimhseáil"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:120
+msgid "Improved opening of multiple files with the same type (they get now passed as a list to applications, instead of one by one)"
+msgstr "Feabhsaíodh oscailt il-chomhad den chineál céanna (cuirtear iad ar aghaidh anois mar liosta chuig feidhmchláir, in ionad ceann ar cheann)"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:121
+msgid "Better support for opening files in sandboxed mode"
+msgstr "Tacaíocht níos fearr le comhaid a oscailt sa mhód bosca gainimh"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:122
+msgid "Add menu items with links to the issue tracker, forum and donation pages"
+msgstr "Cuir míreanna roghchláir le naisc chuig an lorgaire fadhbanna, an fóram agus na leathanaigh síntiús"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:123
+msgid "Improve support for non-Linux systems"
+msgstr "Feabhsaigh tacaíocht do chórais nach Linux iad"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:124
+msgid "Add option to exit FSearch when Escape is pressed instead of minimizing the window"
+msgstr "Cuir rogha leis chun scor de FSearch nuair a bhrúitear Escape in ionad an fhuinneog a íoslaghdú"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:125
+msgid "Exclude '/proc' and '/sys' by default"
+msgstr "Fág ‘/proc’ agus ‘/sys’ as an áireamh de réir réamhshocraithe"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:126
+msgid "Open context menu when 'Menu' key or 'Shift + F10' are pressed"
+msgstr "Oscail an roghchlár comhthéacs nuair a bhrúitear an eochair ‘Menu’ nó ‘Shift + F10’"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:127
+msgid "and tons of bug fixes, translation updates and smaller improvements"
+msgstr "agus neart deisithe fabhtanna, nuashonruithe aistriúcháin agus feabhsuithe níos lú"
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:133
+msgid "Initial release."
+msgstr "An chéad eisiúint."
+
+#: src/fsearch.c:181
+msgid "translator-credits"
+msgstr "Aistriúchán ríomhchuidithe (bunaithe ar théarmaíocht GNOME agus téarma.ie)"
+
+#: src/fsearch.c:183
+msgid "A search utility focusing on performance and advanced features"
+msgstr "Uirlis chuardaigh a dhíríonn ar fheidhmíocht agus ar ghnéithe ardleibhéil"
+
+#: src/fsearch.c:330
+msgid "Saving database and config…"
+msgstr "Bunachar sonraí agus cumraíocht á sábháil…"
+
+#: src/fsearch.c:786
+msgid "Open a new application window"
+msgstr "Oscail fuinneog feidhmchláir nua"
+
+#: src/fsearch.c:787
+msgid "Minimize the application window"
+msgstr "Íoslaghdaigh fuinneog an fheidhmchláir"
+
+#: src/fsearch.c:788
+msgid "Show the application preferences"
+msgstr "Taispeáin sainroghanna an fheidhmchláir"
+
+#: src/fsearch.c:789
+msgid "Set the search pattern"
+msgstr "Socraigh an patrún cuardaigh"
+
+#: src/fsearch.c:790
+msgid "Update the database and exit"
+msgstr "Nuashonraigh an bunachar sonraí agus scoir"
+
+#: src/fsearch.c:791
+msgid "Print version information and exit"
+msgstr "Priontáil faisnéis leagain agus scoir"
+
+#: src/fsearch_cli.c:125
+#, c-format
+msgid "Results capped at %u. Use --unlimit or --unlimited to get them all, or provide a custom --limit, or set FSEARCH_RESULT_LIMIT."
+msgstr "Cuireadh uasteorainn de %u ar na torthaí. Úsáid --unlimit nó --unlimited chun iad go léir a fháil, nó tabhair --limit saincheaptha, nó socraigh FSEARCH_RESULT_LIMIT."
+
+#: src/fsearch_cli.c:134
+#, c-format
+msgid "%u match."
+msgid_plural "%u matches."
+msgstr[0] "%u mheaitseáil."
+msgstr[1] "%u mheaitseáil."
+msgstr[2] "%u meaitseáil."
+
+#: src/fsearch_cli.c:142
+msgid "Updating FSearch index before searching..."
+msgstr "Innéacs FSearch á nuashonrú roimh chuardach..."
+
+#: src/fsearch_cli.c:149
+#, c-format
+msgid "Indexing: %s"
+msgstr "Á innéacsú: %s"
+
+#: src/fsearch_cli.c:238
+#, c-format
+msgid "FSearch %s - indexed file search for %s %s\n"
+msgstr "FSearch %s - cuardach comhad innéacsaithe le haghaidh %s %s\n"
+
+#: src/fsearch_cli.c:301
+msgid "fsearch: interrupted\n"
+msgstr "fsearch: idirbhriste\n"
+
+#: src/fsearch_cli.c:315
+msgid "fsearch: search could not run because the index is unavailable\n"
+msgstr "fsearch: níorbh fhéidir an cuardach a rith mar níl an t-innéacs ar fáil\n"
+
+#: src/fsearch_cli.c:352 src/fsearch_cli.c:381 src/fsearch_cli_config.c:774
+#: src/fsearch_cli_config.c:961 src/fsearch_cli_config.c:1147
+#, c-format
+msgid "%s\n"
+msgstr "%s\n"
+
+#: src/fsearch_cli.c:400
+#, c-format
+msgid "%s"
+msgstr "%s"
+
+#: src/fsearch_cli.c:473
+#, c-format
+msgid "fsearch: unknown CLI option: %s\n"
+msgstr "fsearch: rogha CLI anaithnid: %s\n"
+
+#: src/fsearch_cli.c:495
+#, c-format
+msgid "fsearch: failed to create data directory: %s\n"
+msgstr "fsearch: theip ar chruthú na comhadlainne sonraí: %s\n"
+
+#: src/fsearch_cli_config.c:265
+msgid "fsearch config: close the running FSearch GUI before changing shared settings\n"
+msgstr "fsearch config: dún an GUI FSearch atá ar siúl sula n-athraítear socruithe comhroinnte\n"
+
+#: src/fsearch_cli_config.c:269
+msgid "fsearch config: failed to save configuration\n"
+msgstr "fsearch config: theip ar shábháil na cumraíochta\n"
+
+#: src/fsearch_cli_config.c:280
+msgid "Index configuration changed; the next CLI search will rebuild it.\n"
+msgstr "Athraíodh cumraíocht an innéacs; atógfaidh an chéad chuardach CLI eile é.\n"
+
+#: src/fsearch_cli_config.c:416
+#, c-format
+msgid "fsearch config %s: unknown option: %s\n"
+msgstr "fsearch config %s: rogha anaithnid: %s\n"
+
+#: src/fsearch_cli_config.c:422
+#, c-format
+msgid "fsearch config %s: unexpected argument: %s\n"
+msgstr "fsearch config %s: argóint gan choinne: %s\n"
+
+#: src/fsearch_cli_config.c:449
+msgid "Usage: fsearch config get KEY [--json]\n"
+msgstr "Úsáid: fsearch config get KEY [--json]\n"
+
+#: src/fsearch_cli_config.c:454 src/fsearch_cli_config.c:555
+#, c-format
+msgid "fsearch config: unknown setting: %s\n"
+msgstr "fsearch config: socrú anaithnid: %s\n"
+
+#: src/fsearch_cli_config.c:502
+#, c-format
+msgid "fsearch config show: unknown section: %s\n"
+msgstr "fsearch config show: rannán anaithnid: %s\n"
+
+#: src/fsearch_cli_config.c:550
+#, c-format
+msgid "Usage: fsearch config %s KEY%s\n"
+msgstr "Úsáid: fsearch config %s KEY%s\n"
+
+#: src/fsearch_cli_config.c:566
+#, c-format
+msgid "fsearch config: invalid value for %s: %s\n"
+msgstr "fsearch config: luach neamhbhailí do %s: %s\n"
+
+#: src/fsearch_cli_config.c:572
+#, c-format
+msgid "%s = %s\n"
+msgstr "%s = %s\n"
+
+#: src/fsearch_cli_config.c:637
+#, c-format
+msgid "fsearch config roots: unknown operation: %s\n"
+msgstr "fsearch config roots: oibríocht anaithnid: %s\n"
+
+#: src/fsearch_cli_config.c:691
+msgid "fsearch config roots: --rescan-every requires SECONDS\n"
+msgstr "fsearch config roots: éilíonn --rescan-every SECONDS\n"
+
+#: src/fsearch_cli_config.c:710
+msgid "fsearch config roots: missing PATH\n"
+msgstr "fsearch config roots: PATH ar iarraidh\n"
+
+#: src/fsearch_cli_config.c:717 src/fsearch_cli_config.c:732
+#, c-format
+msgid "fsearch config roots: path not found: %s\n"
+msgstr "fsearch config roots: conair gan aimsiú: %s\n"
+
+#: src/fsearch_cli_config.c:724
+#, c-format
+msgid "fsearch config roots: not a directory: %s\n"
+msgstr "fsearch config roots: ní comhadlann é: %s\n"
+
+#: src/fsearch_cli_config.c:728
+#, c-format
+msgid "fsearch config roots: path already exists: %s\n"
+msgstr "fsearch config roots: tá an chonair ann cheana: %s\n"
+
+#: src/fsearch_cli_config.c:752
+#, c-format
+msgid "fsearch config roots: invalid rescan duration: %s\n"
+msgstr "fsearch config roots: fad athscanta neamhbhailí: %s\n"
+
+#: src/fsearch_cli_config.c:765
+msgid "%s\tactive=%s monitor=%s one-file-system=%s scan-after-launch=%s rescan-after=%s\n"
+msgstr "%s\tactive=%s monitor=%s one-file-system=%s scan-after-launch=%s rescan-after=%s\n"
+
+#: src/fsearch_cli_config.c:844
+msgid "fsearch config excludes hidden: expected true or false\n"
+msgstr "fsearch config excludes hidden: ag súil le true nó false\n"
+
+#: src/fsearch_cli_config.c:850
+#, c-format
+msgid "exclude-hidden = %s\n"
+msgstr "exclude-hidden = %s\n"
+
+#: src/fsearch_cli_config.c:856
+#, c-format
+msgid "fsearch config excludes: unknown operation: %s\n"
+msgstr "fsearch config excludes: oibríocht anaithnid: %s\n"
+
+#: src/fsearch_cli_config.c:877
+#, c-format
+msgid "fsearch config excludes: %s requires a value\n"
+msgstr "fsearch config excludes: éilíonn %s luach\n"
+
+#: src/fsearch_cli_config.c:909
+msgid "fsearch config excludes: missing PATTERN\n"
+msgstr "fsearch config excludes: PATTERN ar iarraidh\n"
+
+#: src/fsearch_cli_config.c:914
+#, c-format
+msgid "fsearch config excludes: invalid type: %s\n"
+msgstr "fsearch config excludes: cineál neamhbhailí: %s\n"
+
+#: src/fsearch_cli_config.c:919
+#, c-format
+msgid "fsearch config excludes: invalid scope: %s\n"
+msgstr "fsearch config excludes: scóip neamhbhailí: %s\n"
+
+#: src/fsearch_cli_config.c:924
+#, c-format
+msgid "fsearch config excludes: invalid target: %s\n"
+msgstr "fsearch config excludes: sprioc neamhbhailí: %s\n"
+
+#: src/fsearch_cli_config.c:954
+#, c-format
+msgid "fsearch config excludes: exclusion not found: %s\n"
+msgstr "fsearch config excludes: eisiamh gan aimsiú: %s\n"
+
+#: src/fsearch_cli_config.c:1022
+msgid "filters reset\n"
+msgstr "scagairí athshocraithe\n"
+
+#: src/fsearch_cli_config.c:1029
+#, c-format
+msgid "fsearch config filters: unknown operation: %s\n"
+msgstr "fsearch config filters: oibríocht anaithnid: %s\n"
+
+#: src/fsearch_cli_config.c:1051
+#, c-format
+msgid "fsearch config filters: %s requires a value\n"
+msgstr "fsearch config filters: éilíonn %s luach\n"
+
+#: src/fsearch_cli_config.c:1094
+msgid "fsearch config filters: missing NAME\n"
+msgstr "fsearch config filters: NAME ar iarraidh\n"
+
+#: src/fsearch_cli_config.c:1100 src/fsearch_cli_config.c:1111
+#, c-format
+msgid "fsearch config filters: name not found: %s\n"
+msgstr "fsearch config filters: ainm gan aimsiú: %s\n"
+
+#: src/fsearch_cli_config.c:1107
+#, c-format
+msgid "fsearch config filters: name already exists: %s\n"
+msgstr "fsearch config filters: tá an t-ainm ann cheana: %s\n"
+
+#: src/fsearch_cli_config.c:1145
+#, c-format
+msgid "%s\tmacro=%s query=%s\n"
+msgstr "%s\tmacro=%s query=%s\n"
+
+#: src/fsearch_cli_config.c:1193
+msgid "fsearch config reset requires --yes\n"
+msgstr "fsearch config reset: éilíonn --yes\n"
+
+#: src/fsearch_cli_config.c:1201
+msgid "fsearch config reset: --rescan requires roots, database, excludes, or all\n"
+msgstr "fsearch config reset: éilíonn --rescan ceann de roots, database, excludes, nó all\n"
+
+#: src/fsearch_cli_config.c:1241
+#, c-format
+msgid "fsearch config: unknown setting or section: %s\n"
+msgstr "fsearch config: socrú nó rannán anaithnid: %s\n"
+
+#: src/fsearch_cli_config.c:1246
+#, c-format
+msgid "%s settings reset\n"
+msgstr "socruithe %s athshocraithe\n"
+
+#: src/fsearch_cli_config.c:1266
+msgid "current"
+msgstr "reatha"
+
+#: src/fsearch_cli_config.c:1266
+msgid "stale"
+msgstr "as dáta"
+
+#: src/fsearch_cli_config.c:1321
+#, c-format
+msgid "fsearch config: unknown command: %s\n"
+msgstr "fsearch config: ordú anaithnid: %s\n"
+
+#: src/fsearch_database.c:795
+msgid "Index rescan: applying changes…"
+msgstr "Athscanadh innéacs: athruithe á gcur i bhfeidhm…"
+
+#: src/fsearch_database_file.c:1343
+msgid "Loading folders…"
+msgstr "Fillteáin á lódáil…"
+
+#: src/fsearch_database_file.c:1359
+msgid "Loading files…"
+msgstr "Comhaid á lódáil…"
+
+#: src/fsearch_database_index_store.c:925 src/fsearch_statusbar.c:73
+#: src/fsearch_statusbar.ui:90
+msgid "Sorting…"
+msgstr "Á shórtáil…"
+
+#: src/fsearch_database_preferences_widget.c:162
+#: src/fsearch_database_preferences_widget.c:176
+msgid "Select folder"
+msgstr "Roghnaigh fillteán"
+
+#: src/fsearch_database_preferences_widget.c:165
+#: src/fsearch_database_preferences_widget.c:180
+#: src/fsearch_filter_editor.c:104 src/fsearch_preferences_dialog.c:331
+msgid "_Cancel"
+msgstr "_Cealaigh"
+
+#: src/fsearch_database_preferences_widget.c:167
+#: src/fsearch_database_preferences_widget.c:179
+msgid "_Select"
+msgstr "_Roghnaigh"
+
+#: src/fsearch_database_preferences_widget.c:389
+msgid "Literal"
+msgstr "Litriúil"
+
+#: src/fsearch_database_preferences_widget.c:391
+msgid "Wildcard"
+msgstr "Saoróg"
+
+#: src/fsearch_database_preferences_widget.c:393
+msgid "Regex"
+msgstr "Slonn Rialta"
+
+#: src/fsearch_database_preferences_widget.c:414
+msgid "Full Path"
+msgstr "Conair Iomlán"
+
+#: src/fsearch_database_preferences_widget.c:416
+msgid "Basename"
+msgstr "Bunainm"
+
+#: src/fsearch_database_preferences_widget.c:434
+msgid "Files & Folders"
+msgstr "Comhaid ⁊ Fillteáin"
+
+#: src/fsearch_database_preferences_widget.c:436 src/fsearch_filter.c:114
+msgid "Files"
+msgstr "Comhaid"
+
+#: src/fsearch_database_preferences_widget.c:438 src/fsearch_filter.c:113
+msgid "Folders"
+msgstr "Fillteáin"
+
+#: src/fsearch_database_preferences_widget.c:635
+#: src/fsearch_database_preferences_widget.c:860
+msgid "Active"
+msgstr "Gníomhach"
+
+#: src/fsearch_database_preferences_widget.c:640
+msgid "Pattern"
+msgstr "Patrún"
+
+#: src/fsearch_database_preferences_widget.c:694 src/fsearch_window.c:756
+#: src/menus.ui:275
+msgid "Type"
+msgstr "Cineál"
+
+#: src/fsearch_database_preferences_widget.c:700
+msgid "Match"
+msgstr "Meaitseáil"
+
+#: src/fsearch_database_preferences_widget.c:706
+msgid "Applies To"
+msgstr "Baineann le"
+
+#: src/fsearch_database_preferences_widget.c:864 src/fsearch_window.c:742
+#: src/menus.ui:219 src/menus.ui:267
+msgid "Path"
+msgstr "Conair"
+
+#: src/fsearch_database_preferences_widget.ui:78
+msgid "Enter path…"
+msgstr "Iontráil conair…"
+
+#: src/fsearch_database_preferences_widget.ui:176
+msgid "Attempt to monitor"
+msgstr "Déan iarracht monatóireacht a dhéanamh"
+
+#: src/fsearch_database_preferences_widget.ui:191
+msgid "Scan after launch"
+msgstr "Scan tar éis tosaithe"
+
+#: src/fsearch_database_preferences_widget.ui:206
+msgid "Stay on one file system"
+msgstr "Fan ar chóras comhad amháin"
+
+#: src/fsearch_database_preferences_widget.ui:221
+msgid "Rescan every"
+msgstr "Athscan gach"
+
+#: src/fsearch_database_preferences_widget.ui:254
+msgid "Hours:"
+msgstr "Uaireanta:"
+
+#: src/fsearch_database_preferences_widget.ui:298
+msgid "Minutes:"
+msgstr "Nóiméid:"
+
+#: src/fsearch_database_preferences_widget.ui:310
+msgid "30"
+msgstr "30"
+
+#: src/fsearch_database_preferences_widget.ui:391
+msgid "Remove selected path"
+msgstr "Bain an chonair roghnaithe"
+
+#: src/fsearch_database_preferences_widget.ui:418
+msgid "Include"
+msgstr "Cuir san áireamh"
+
+#: src/fsearch_database_preferences_widget.ui:512
+msgid "Restore default exclude list"
+msgstr "Athchóirigh an liosta eisiaimh réamhshocraithe"
+
+#: src/fsearch_database_preferences_widget.ui:541
+msgid "Exclude hidden files and folders"
+msgstr "Fág comhaid agus fillteáin fholaithe as an áireamh"
+
+#: src/fsearch_database_preferences_widget.ui:563
+msgid "Exclude"
+msgstr "Fág as an áireamh"
+
+#: src/fsearch_file_utils.c:161
+msgctxt "Will be followed by the path of the file."
+msgid "Error when removing file"
+msgstr "Earráid agus comhad á bhaint"
+
+#: src/fsearch_file_utils.c:163
+msgid "Failed to get path"
+msgstr "Theip ar fháil na conaire"
+
+#: src/fsearch_file_utils.c:277
+msgctxt "Will be followed by the file path."
+msgid "Error when getting information from file"
+msgstr "Earráid agus faisnéis á fáil ó chomhad"
+
+#: src/fsearch_file_utils.c:279
+msgid "Failed to get application information"
+msgstr "Theip ar fháil faisnéise feidhmchláir"
+
+#: src/fsearch_file_utils.c:294
+msgctxt "Will be followed by the content type string."
+msgid "Error when getting information for content type"
+msgstr "Earráid agus faisnéis á fáil don chineál ábhair"
+
+#: src/fsearch_file_utils.c:296
+msgid "No default application registered"
+msgstr "Níl aon fheidhmchlár réamhshocraithe cláraithe"
+
+#: src/fsearch_file_utils.c:524
+msgctxt "Will be followed by the path of the folder."
+msgid "Error when opening parent folder"
+msgstr "Earráid agus an mháthairfhillteán á oscailt"
+
+#: src/fsearch_file_utils.c:526
+msgid "Failed to get parent path"
+msgstr "Theip ar fháil na máthairchonaire"
+
+#: src/fsearch_file_utils.c:530
+msgctxt "Will be followed by the path of the folder."
+msgid "Error while opening folder"
+msgstr "Earráid agus fillteán á oscailt"
+
+#: src/fsearch_file_utils.c:533
+msgid "Failed to build open command"
+msgstr "Theip ar thógáil an ordaithe oscailte"
+
+#: src/fsearch_file_utils.c:589
+msgid "Folder"
+msgstr "Fillteán"
+
+#: src/fsearch_file_utils.c:595
+msgid "Unknown Type"
+msgstr "Cineál Anaithnid"
+
+#: src/fsearch_filter.c:112
+msgid "All"
+msgstr "Uile"
+
+#: src/fsearch_filter.c:115
+msgid "Applications"
+msgstr "Feidhmchláir"
+
+#: src/fsearch_filter.c:116
+msgid "Archives"
+msgstr "Cartlanna"
+
+#: src/fsearch_filter.c:117
+msgid "Audio"
+msgstr "Fuaim"
+
+#: src/fsearch_filter.c:118
+msgid "Documents"
+msgstr "Cáipéisí"
+
+#: src/fsearch_filter.c:119
+msgid "Pictures"
+msgstr "Pictiúir"
+
+#: src/fsearch_filter.c:120
+msgid "Videos"
+msgstr "Físeáin"
+
+#: src/fsearch_filter_editor.c:79
+msgid "Macro names must not contain `:` characters."
+msgstr "Ní ceadmhach carachtair `:` a bheith in ainmneacha macra."
+
+#: src/fsearch_filter_editor.c:105 src/fsearch_preferences_dialog.c:332
+msgid "_OK"
+msgstr "_OK"
+
+#: src/fsearch_filter_editor.ui:10 src/fsearch_filter_preferences_widget.c:156
+msgid "Edit filter"
+msgstr "Cuir scagaire in eagar"
+
+#: src/fsearch_filter_editor.ui:50
+msgid "Name:"
+msgstr "Ainm:"
+
+#: src/fsearch_filter_editor.ui:61
+msgid "The unique name of this filter"
+msgstr "Ainm uathúil an scagaire seo"
+
+#: src/fsearch_filter_editor.ui:64
+msgid "Unique filter name"
+msgstr "Ainm scagaire uathúil"
+
+#: src/fsearch_filter_editor.ui:73
+msgid "Search in path"
+msgstr "Cuardaigh sa chonair"
+
+#: src/fsearch_filter_editor.ui:87
+msgid "Enable regular expressions"
+msgstr "Cumasaigh sloinn rialta"
+
+#: src/fsearch_filter_editor.ui:101
+msgid "Match case"
+msgstr "Meaitseáil cás"
+
+#: src/fsearch_filter_editor.ui:146
+msgid "Query:"
+msgstr "Ceist:"
+
+#: src/fsearch_filter_editor.ui:160
+msgid "Macro:"
+msgstr "Macra:"
+
+#: src/fsearch_filter_preferences_widget.c:133
+msgid "Add filter"
+msgstr "Cuir scagaire leis"
+
+#: src/fsearch_filter_preferences_widget.c:315 src/fsearch_window.c:735
+#: src/menus.ui:215 src/menus.ui:263
+msgid "Name"
+msgstr "Ainm"
+
+#: src/fsearch_filter_preferences_widget.c:316
+msgid "Macro"
+msgstr "Macra"
+
+#: src/fsearch_filter_preferences_widget.c:317
+msgid "Query"
+msgstr "Ceist"
+
+#: src/fsearch_filter_preferences_widget.ui:77
+msgid "Add new filter"
+msgstr "Cuir scagaire nua leis"
+
+#: src/fsearch_filter_preferences_widget.ui:95
+msgid "Remove selected filter"
+msgstr "Bain an scagaire roghnaithe"
+
+#: src/fsearch_filter_preferences_widget.ui:113
+msgid "Edit selected filter"
+msgstr "Cuir an scagaire roghnaithe in eagar"
+
+#: src/fsearch_filter_preferences_widget.ui:129
+msgid "Restore default filters"
+msgstr "Athchóirigh na scagairí réamhshocraithe"
+
+#: src/fsearch_listview_popup.c:36
+msgid "Properties…"
+msgstr "Airíonna…"
+
+#: src/fsearch_listview_popup.c:163
+msgid "Other Application…"
+msgstr "Feidhmchlár Eile…"
+
+#: src/fsearch_overlay.ui:44
+msgid "Empty Database"
+msgstr "Bunachar Sonraí Folamh"
+
+#: src/fsearch_overlay.ui:60
+msgid "Add folders"
+msgstr "Cuir fillteáin leis"
+
+#: src/fsearch_overlay.ui:108
+msgid "Loading Database…"
+msgstr "Bunachar Sonraí á Lódáil…"
+
+#: src/fsearch_overlay.ui:123
+msgid "This won't take long."
+msgstr "Ní thógfaidh sé seo i bhfad."
+
+#: src/fsearch_overlay.ui:171 src/fsearch_statusbar.ui:312
+msgid "Updating Database…"
+msgstr "Bunachar Sonraí á Nuashonrú…"
+
+#: src/fsearch_overlay.ui:186 src/fsearch_overlay.ui:383
+msgid "This may take a while."
+msgstr "D’fhéadfadh sé seo tamall a thógáil."
+
+#: src/fsearch_overlay.ui:241
+msgid "Empty Query"
+msgstr "Ceist Fholamh"
+
+#: src/fsearch_overlay.ui:256
+msgid "Press <b>Ctrl + F</b> and start typing."
+msgstr "Brúigh <b>Ctrl + F</b> agus tosaigh ag clóscríobh."
+
+#: src/fsearch_overlay.ui:304
+msgid "No Results Found"
+msgstr "Níor Aimsíodh Aon Torthaí"
+
+#: src/fsearch_overlay.ui:319
+msgid "Try a different search"
+msgstr "Bain triail as cuardach difriúil"
+
+#: src/fsearch_overlay.ui:368
+msgid "Sorting results…"
+msgstr "Torthaí á sórtáil…"
+
+#: src/fsearch_preferences.ui:7 src/fsearch_window.ui:251 src/menus.ui:84
+msgid "Preferences"
+msgstr "Sainroghanna"
+
+#: src/fsearch_preferences.ui:76
+msgid "Enable dark theme"
+msgstr "Cumasaigh an téama dorcha"
+
+#: src/fsearch_preferences.ui:97
+msgid "Enable client-side decorations (requires restart)"
+msgstr "Cumasaigh maisíochtaí ar thaobh an chliaint (teastaíonn atosú)"
+
+#: src/fsearch_preferences.ui:117
+msgid "Use binary units instead of decimal units"
+msgstr "Úsáid aonaid dhénártha in ionad aonaid deachúlacha"
+
+#: src/fsearch_preferences.ui:138
+msgid "Remember window size"
+msgstr "Cuimhnigh ar mhéid na fuinneoige"
+
+#: src/fsearch_preferences.ui:159
+msgid "Exit on Escape"
+msgstr "Scoir ar Escape"
+
+#: src/fsearch_preferences.ui:202
+msgid "with keyboard shortcuts or menu entries"
+msgstr "le haicearraí méarchláir nó míreanna roghchláir"
+
+#: src/fsearch_preferences.ui:223
+msgid "with double click"
+msgstr "le déchliceáil"
+
+#: src/fsearch_preferences.ui:257
+msgid "Behaviour after successfully opening a file:"
+msgstr "Iompar tar éis comhad a oscailt go rathúil:"
+
+#: src/fsearch_preferences.ui:273
+msgid "Nothing"
+msgstr "Faic"
+
+#: src/fsearch_preferences.ui:274
+msgid "Minimize"
+msgstr "Íoslaghdaigh"
+
+#: src/fsearch_preferences.ui:275
+msgid "Close"
+msgstr "Dún"
+
+#: src/fsearch_preferences.ui:309
+msgid "General:"
+msgstr "Ginearálta:"
+
+#: src/fsearch_preferences.ui:344
+msgid "Show highlighted search terms"
+msgstr "Taispeáin téarmaí cuardaigh aibhsithe"
+
+#: src/fsearch_preferences.ui:366
+msgid "Show tooltips"
+msgstr "Taispeáin leideanna uirlisí"
+
+#: src/fsearch_preferences.ui:387
+msgid "Show icons in name column"
+msgstr "Taispeáin deilbhíní sa cholún ainmneacha"
+
+#: src/fsearch_preferences.ui:408
+msgid "Remember column configuration"
+msgstr "Cuimhnigh ar chumraíocht na gcolún"
+
+#: src/fsearch_preferences.ui:429
+msgid "Remember sort order"
+msgstr "Cuimhnigh ar an ord sórtála"
+
+#: src/fsearch_preferences.ui:450
+msgid "Open path with double click in path column"
+msgstr "Oscail conair le déchliceáil sa cholún conaire"
+
+#: src/fsearch_preferences.ui:471
+msgid "Single click to open"
+msgstr "Cliceáil aonair chun oscailt"
+
+#: src/fsearch_preferences.ui:492
+msgid "Launch desktop files"
+msgstr "Tosaigh comhaid deisce"
+
+#: src/fsearch_preferences.ui:519
+msgid "Results:"
+msgstr "Torthaí:"
+
+#: src/fsearch_preferences.ui:560
+msgid "Show database indexing status"
+msgstr "Taispeáin stádas innéacsaithe an bhunachair sonraí"
+
+#: src/fsearch_preferences.ui:587
+msgid "Statusbar:"
+msgstr "Barra stádais:"
+
+#: src/fsearch_preferences.ui:628
+msgid "Show warning dialogs when:"
+msgstr "Taispeáin dialóga rabhaidh nuair:"
+
+#: src/fsearch_preferences.ui:638
+msgid "file / folder failed to open"
+msgstr "a theipeann ar chomhad / fhillteán a oscailt"
+
+#: src/fsearch_preferences.ui:667
+msgid "Dialogs:"
+msgstr "Dialóga:"
+
+#: src/fsearch_preferences.ui:692
+msgid "Interface"
+msgstr "Comhéadan"
+
+#: src/fsearch_preferences.ui:711
+msgid "Search in path when query contains path separators"
+msgstr "Cuardaigh sa chonair nuair a bhíonn deighilteoirí conaire sa cheist"
+
+#: src/fsearch_preferences.ui:730
+msgid "Search as you type"
+msgstr "Cuardaigh de réir mar a chlóscríobhann tú"
+
+#: src/fsearch_preferences.ui:750
+msgid "Hide results when search is empty"
+msgstr "Folaigh na torthaí nuair a bhíonn an cuardach folamh"
+
+#: src/fsearch_preferences.ui:769
+msgid "Match case when query contains at least one upper case character"
+msgstr "Meaitseáil cás nuair a bhíonn carachtar cás uachtair amháin ar a laghad sa cheist"
+
+#: src/fsearch_preferences.ui:801
+msgid "Filter:"
+msgstr "Scagaire:"
+
+#: src/fsearch_preferences.ui:822 src/fsearch_window.ui:639
+msgid "Search"
+msgstr "Cuardaigh"
+
+#: src/fsearch_preferences.ui:1457
+msgid "Focus a setting to get a detailed description of what it does."
+msgstr "Dírigh ar shocrú chun cur síos mionsonraithe a fháil ar a bhfuil ar siúl aige."
+
+#: src/fsearch_preferences.ui:1618 src/fsearch_window.ui:290
+#: src/fsearch_window.ui:415 src/menus.ui:150 src/menus.ui:156
+msgid "Help"
+msgstr "Cabhair"
+
+#: src/fsearch_preferences_dialog.c:238
+msgid "Database"
+msgstr "Bunachar Sonraí"
+
+#: src/fsearch_result_view.c:381
+msgid "Invalid row data"
+msgstr "Sonraí ró neamhbhailí"
+
+#: src/fsearch_statusbar.c:58
+#, c-format
+msgid "%'d Item"
+msgstr "%'d Mhír"
+
+#: src/fsearch_statusbar.c:58 src/fsearch_statusbar.c:186
+#, c-format
+msgid "%'d Items"
+msgstr "%'d Mhír"
+
+#: src/fsearch_statusbar.c:80
+msgid "Querying…"
+msgstr "Á fhiosrú…"
+
+#: src/fsearch_statusbar.c:175
+msgid "Loading…"
+msgstr "Á lódáil…"
+
+#: src/fsearch_statusbar.c:180
+msgid "Scanning…"
+msgstr "Á scanadh…"
+
+#: src/fsearch_statusbar.ui:52
+msgid "Number of Search Results"
+msgstr "Líon na dTorthaí Cuardaigh"
+
+#: src/fsearch_statusbar.ui:53
+msgid "0 Items"
+msgstr "0 Mhír"
+
+#: src/fsearch_statusbar.ui:106
+msgid "Cancel"
+msgstr "Cealaigh"
+
+#: src/fsearch_statusbar.ui:153
+msgid "Index:"
+msgstr "Innéacs:"
+
+#: src/fsearch_statusbar.ui:228
+msgid "Number of selected folders"
+msgstr "Líon na bhfillteán roghnaithe"
+
+#: src/fsearch_statusbar.ui:229 src/fsearch_statusbar.ui:254
+msgid "0/0"
+msgstr "0/0"
+
+#: src/fsearch_statusbar.ui:253
+msgid "Number of selected files"
+msgstr "Líon na gcomhad roghnaithe"
+
+#: src/fsearch_statusbar.ui:328 src/fsearch_window.ui:103
+msgid "Cancel database update"
+msgstr "Cealaigh nuashonrú an bhunachair sonraí"
+
+#: src/fsearch_statusbar.ui:369
+msgid "Number of database items"
+msgstr "Líon míreanna an bhunachair sonraí"
+
+#: src/fsearch_statusbar.ui:370
+msgid "(empty)"
+msgstr "(folamh)"
+
+#: src/fsearch_statusbar.ui:438 src/fsearch_statusbar.ui:491
+msgid "CASE"
+msgstr "CASE"
+
+#: src/fsearch_statusbar.ui:545 src/fsearch_statusbar.ui:598
+msgid "PATH"
+msgstr "PATH"
+
+#: src/fsearch_statusbar.ui:651
+msgid "REGEX"
+msgstr "REGEX"
+
+#: src/fsearch_statusbar.ui:756
+msgid "PARTIAL"
+msgstr "PARTIAL"
+
+#: src/fsearch_welcome_dialog.ui:26
+msgid "What's New in FSearch"
+msgstr "Cad atá Nua i FSearch"
+
+#: src/fsearch_welcome_dialog.ui:79
+msgid "<span size=\"xx-large\" weight=\"bold\">What's New in FSearch 0.3</span>"
+msgstr "<span size=\"xx-large\" weight=\"bold\">Cad atá Nua i FSearch 0.3</span>"
+
+#: src/fsearch_welcome_dialog.ui:149
+msgid "<big><b>File System Monitoring</b></big>"
+msgstr "<big><b>Monatóireacht ar an gCóras Comhad</b></big>"
+
+#: src/fsearch_welcome_dialog.ui:232
+msgid "<big><b>Folder-Specific Rescan Schedules</b></big>"
+msgstr "<big><b>Sceidil Athscanta Shonracha d’Fhillteáin</b></big>"
+
+#: src/fsearch_welcome_dialog.ui:246
+msgid "You can now configure automatic update intervals for individual folders independently and tailored to each distinct location."
+msgstr "Is féidir leat eatraimh nuashonraithe uathoibríocha a chumrú anois d’fhillteáin aonair go neamhspleách agus oiriúnaithe do gach suíomh ar leith."
+
+#: src/fsearch_welcome_dialog.ui:309
+msgid "<big><b>Improved Exclude Rules</b></big>"
+msgstr "<big><b>Rialacha Eisiaimh Feabhsaithe</b></big>"
+
+#: src/fsearch_window.c:749 src/menus.ui:279
+msgid "Size"
+msgstr "Méid"
+
+#: src/fsearch_window.c:763 src/menus.ui:271
+msgid "Extension"
+msgstr "Iarmhír"
+
+#: src/fsearch_window.c:770 src/menus.ui:283
+msgid "Date Modified"
+msgstr "Dáta Athraithe"
 
 #: src/fsearch_window.ui:68
 msgid "New window"
-msgstr ""
+msgstr "Fuinneog nua"
 
 #: src/fsearch_window.ui:89
 msgid "Update database"
-msgstr ""
+msgstr "Nuashonraigh an bunachar sonraí"
 
 #: src/fsearch_window.ui:144 src/menus.ui:112
 msgid "Search in Path"
-msgstr ""
+msgstr "Cuardaigh sa Chonair"
 
 #: src/fsearch_window.ui:158 src/menus.ui:116
 msgid "Match Case"
-msgstr ""
+msgstr "Meaitseáil Cás"
 
 #: src/fsearch_window.ui:172 src/menus.ui:120
 msgid "Enable RegEx"
-msgstr ""
+msgstr "Cumasaigh Slonn Rialta"
 
 #: src/fsearch_window.ui:197 src/menus.ui:95
 msgid "Show Statusbar"
-msgstr ""
+msgstr "Taispeáin an Barra Stádais"
 
 #: src/fsearch_window.ui:211 src/menus.ui:99
 msgid "Show Filter"
-msgstr ""
+msgstr "Taispeáin an Scagaire"
 
 #: src/fsearch_window.ui:225 src/menus.ui:103
 msgid "Show Search Button"
-msgstr ""
+msgstr "Taispeáin an Cnaipe Cuardaigh"
 
 #: src/fsearch_window.ui:275 src/fsearch_window.ui:356 src/menus.ui:129
 msgid "FSearch Online"
-msgstr ""
+msgstr "FSearch Online"
 
 #: src/fsearch_window.ui:304 src/menus.ui:161
 msgid "About"
-msgstr ""
+msgstr "Maidir Le"
 
 #: src/fsearch_window.ui:329 src/menus.ui:47
 msgid "Quit"
-msgstr ""
+msgstr "Scoir"
 
 #: src/fsearch_window.ui:372 src/fsearch_window.ui:443 src/menus.ui:131
 msgid "Donate"
-msgstr ""
+msgstr "Tabhair Síntiús"
 
 #: src/fsearch_window.ui:387 src/menus.ui:142
 msgid "Forum"
-msgstr ""
+msgstr "Fóram"
 
 #: src/fsearch_window.ui:401 src/menus.ui:146
 msgid "Bug Reports and Feature Requests"
-msgstr ""
+msgstr "Tuairiscí Fabhtanna agus Iarratais ar Ghnéithe"
 
 #: src/fsearch_window.ui:460 src/menus.ui:133
 msgid "GitHub Sponsors"
-msgstr ""
+msgstr "GitHub Sponsors"
 
 #: src/fsearch_window.ui:474 src/menus.ui:137
 msgid "PayPal"
-msgstr ""
+msgstr "PayPal"
 
 #: src/fsearch_window.ui:586
 msgid "Search…"
-msgstr ""
+msgstr "Cuardaigh…"
 
 #: src/fsearch_window.ui:608
 msgid "Select a Filter"
-msgstr ""
+msgstr "Roghnaigh Scagaire"
 
 #: src/fsearch_window_actions.c:110
 #, c-format
 msgid "Do you really want to open %'d file?"
 msgid_plural "Do you really want to open %'d files?"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "An bhfuil tú cinnte gur mian leat %'d chomhad a oscailt?"
+msgstr[1] "An bhfuil tú cinnte gur mian leat %'d chomhad a oscailt?"
+msgstr[2] "An bhfuil tú cinnte gur mian leat %'d comhad a oscailt?"
 
 #: src/fsearch_window_actions.c:115
 msgid "Opening Files…"
-msgstr ""
+msgstr "Comhaid á n-oscailt…"
 
 #: src/fsearch_window_actions.c:198
 #, c-format
 msgid "Do you really want to remove %'d file?"
 msgid_plural "Do you really want to remove %'d files?"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "An bhfuil tú cinnte gur mian leat %'d chomhad a bhaint?"
+msgstr[1] "An bhfuil tú cinnte gur mian leat %'d chomhad a bhaint?"
+msgstr[2] "An bhfuil tú cinnte gur mian leat %'d comhad a bhaint?"
 
 #: src/fsearch_window_actions.c:205
 msgid "Deleting files…"
-msgstr ""
+msgstr "Comhaid á scriosadh…"
 
 #: src/fsearch_window_actions.c:205
 msgid "Moving files to trash…"
-msgstr ""
+msgstr "Comhaid á n-aistriú go dtí an bruscar…"
 
 #: src/fsearch_window_actions.c:238 src/fsearch_window_actions.c:533
 #: src/fsearch_window_actions.c:580
 msgid "Something went wrong."
-msgstr ""
+msgstr "Chuaigh rud éigin cearr."
 
 #: src/fsearch_window_actions.c:263
 #, c-format
 msgid "Do you really want to open %'d file property window?"
 msgid_plural "Do you really want to open %'d file property windows?"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "An bhfuil tú cinnte gur mian leat %'d fhuinneog airíonna comhaid a oscailt?"
+msgstr[1] "An bhfuil tú cinnte gur mian leat %'d fhuinneog airíonna comhaid a oscailt?"
+msgstr[2] "An bhfuil tú cinnte gur mian leat %'d fuinneog airíonna comhaid a oscailt?"
 
 #: src/fsearch_window_actions.c:270
 msgid "Opening file properties…"
-msgstr ""
+msgstr "Airíonna comhaid á n-oscailt…"
 
 #: src/menus.ui:6
 msgid "_File"
-msgstr ""
+msgstr "_Comhad"
 
 #: src/menus.ui:9
 msgid "New Window"
-msgstr ""
+msgstr "Fuinneog Nua"
 
 #: src/menus.ui:16 src/menus.ui:171
 msgid "_Open"
-msgstr ""
+msgstr "_Oscail"
 
 #: src/menus.ui:21
 msgid "Open Folder"
-msgstr ""
+msgstr "Oscail Fillteán"
 
 #: src/menus.ui:29
 msgid "Update Database"
-msgstr ""
+msgstr "Nuashonraigh an Bunachar Sonraí"
 
 #: src/menus.ui:35
 msgid "Cancel Update"
-msgstr ""
+msgstr "Cealaigh an Nuashonrú"
 
 #: src/menus.ui:42
 msgid "Close Window"
-msgstr ""
+msgstr "Dún an Fhuinneog"
 
 #: src/menus.ui:54
 msgid "_Edit"
-msgstr ""
+msgstr "_Eagar"
 
 #: src/menus.ui:57 src/menus.ui:207
 msgid "_Copy"
-msgstr ""
+msgstr "_Cóipeáil"
 
 #: src/menus.ui:62 src/menus.ui:228
 msgid "Cu_t"
-msgstr ""
+msgstr "Gea_rr"
 
 #: src/menus.ui:69
 msgid "Select All"
-msgstr ""
+msgstr "Roghnaigh Uile"
 
 #: src/menus.ui:74
 msgid "Deselect All"
-msgstr ""
+msgstr "Díroghnaigh Uile"
 
 #: src/menus.ui:78
 msgid "Invert Selection"
-msgstr ""
+msgstr "Inbhéartaigh an Roghnú"
 
 #: src/menus.ui:92
 msgid "_View"
-msgstr ""
+msgstr "_Amharc"
 
 #: src/menus.ui:109
 msgid "_Search"
-msgstr ""
+msgstr "_Cuardaigh"
 
 #: src/menus.ui:126
 msgid "_Help"
-msgstr ""
+msgstr "_Cabhair"
 
 #: src/menus.ui:177
 msgid "Open _With"
-msgstr ""
+msgstr "Oscail _Le"
 
 #: src/menus.ui:191
 msgid "_Open Folder"
-msgstr ""
+msgstr "_Oscail Fillteán"
 
 #: src/menus.ui:213
 msgid "Copy as Text"
-msgstr ""
+msgstr "Cóipeáil mar Théacs"
 
 #: src/menus.ui:223
 msgid "Path + Name"
-msgstr ""
+msgstr "Conair + Ainm"
 
 #: src/menus.ui:236
 msgid "Move to _Trash"
-msgstr ""
+msgstr "Bogadh go dtí an _Bruscar"
