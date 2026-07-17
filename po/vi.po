@@ -1,0 +1,2084 @@
+# Vietnamese translations for fsearch package.
+# Copyright (C) 2026 THE fsearch'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the fsearch package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: fsearch\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-14 17:04-0400\n"
+"PO-Revision-Date: 2026-04-13 17:23+0200\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: data/io.github.cboxdoerfer.FSearch.desktop.in.in:4 src/main.c:36
+msgid "FSearch"
+msgstr ""
+
+#: data/io.github.cboxdoerfer.FSearch.desktop.in.in:5
+msgid "A file search application focusing on performance and advanced features"
+msgstr ""
+
+#: data/io.github.cboxdoerfer.FSearch.desktop.in.in:10
+msgid "search;fsearch;files;folders;music;video;documents;find;tool;everything;"
+msgstr ""
+
+#: data/io.github.cboxdoerfer.FSearch.desktop.in.in:12
+msgid "File Search Utility"
+msgstr ""
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:8
+msgid "A graphical file search application"
+msgstr ""
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:10
+msgid ""
+"FSearch helps you to find files and folders as easy and fast as possible. "
+"Just type a few letters and search results will appear almost instantly."
+msgstr ""
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:14
+msgid ""
+"There are a lot of features which make searching as efficient and powerful "
+"as possible. Such as:"
+msgstr ""
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:19
+msgid ""
+"Ignore case (e.g. searching for \"<code>fsearch</code>\" will match "
+"\"FSearch\" as well)"
+msgstr ""
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:20
+msgid "Regular expressions"
+msgstr ""
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:21
+msgid "Wildcard support"
+msgstr ""
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:22
+msgid "Filter support (e.g. only search for audio files)"
+msgstr ""
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:23
+msgid "Exclude certain files and folders"
+msgstr ""
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:24
+msgid "Fast sort by name, path, size, modification time and extension"
+msgstr ""
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:26
+msgid ""
+"<em>Note:</em> Due to Flatpak's sandboxing, FSearch can't find every file on "
+"your system."
+msgstr ""
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:35
+msgid "The default UI layout"
+msgstr ""
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:41
+msgid "A layout more closely following GNOME HIGs"
+msgstr ""
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:49
+msgid "search"
+msgstr ""
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:50
+msgid "fsearch"
+msgstr ""
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:51
+msgid "files"
+msgstr ""
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:52
+msgid "folders"
+msgstr ""
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:53
+msgid "music"
+msgstr ""
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:54
+msgid "video"
+msgstr ""
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:55
+msgid "documents"
+msgstr ""
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:56
+msgid "find"
+msgstr ""
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:57
+msgid "tool"
+msgstr ""
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:58
+msgid "everything"
+msgstr ""
+
+#. Kept for appstreamcli < 1.0 (e.g. Ubuntu 20.04/22.04 PPA builds), which doesn't know <developer>.
+#. Translators: please do NOT translate this.
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:77
+msgid "Christian Boxdörfer"
+msgstr ""
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:89
+msgid "DB rewrite"
+msgstr ""
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:90
+msgid "DB: Add support for filesystem monitoring"
+msgstr ""
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:91
+msgid ""
+"DB: Allow files and folders to be excluded based on fixed patterns, "
+"wildcards or regular expressions"
+msgstr ""
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:92
+msgid ""
+"DB: Allow included folders to be scheduled and scanned after launch "
+"independently"
+msgstr ""
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:93
+msgid "DB: Make rescanning more efficient"
+msgstr ""
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:94
+msgid "DB: Store database config in DB file"
+msgstr ""
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:95
+msgid "DB: Add checksum to DB file"
+msgstr ""
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:96
+msgid "Make icon and file info gathering asynchronous (no UI blocking)"
+msgstr ""
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:97
+msgid "Reduce memory usage"
+msgstr ""
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:98
+msgid "Add contextual help for all preferences"
+msgstr ""
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:99
+msgid "Numerous bug fixes and stability and performance improvements"
+msgstr ""
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:106
+msgid "New search engine"
+msgstr ""
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:107
+msgid "Greatly improved highlighting of search terms"
+msgstr ""
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:108
+msgid "Custom filters"
+msgstr ""
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:109
+msgid "Improved sort performance"
+msgstr ""
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:110
+msgid "Improved scroll performance"
+msgstr ""
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:111
+msgid "Remember file selection after a database update"
+msgstr ""
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:112
+msgid "Automatically scroll the result list in rubberband selection mode"
+msgstr ""
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:113
+msgid "Invert selection with rubber band when 'Ctrl' is pressed"
+msgstr ""
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:114
+msgid "Focus search entry when the main window gets activated"
+msgstr ""
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:115
+msgid "Add filter for applications (i.e. .desktop files)"
+msgstr ""
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:116
+msgid ""
+"Add option to launch applications directly instead of opening the .desktop "
+"files"
+msgstr ""
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:117
+msgid "Show application icons for .desktop files"
+msgstr ""
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:118
+msgid "Add .odp and .ods files to document filter"
+msgstr ""
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:119
+msgid ""
+"'Open with' menu now only shows applications which can handle the selected "
+"files"
+msgstr ""
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:120
+msgid ""
+"Improved opening of multiple files with the same type (they get now passed "
+"as a list to applications, instead of one by one)"
+msgstr ""
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:121
+msgid "Better support for opening files in sandboxed mode"
+msgstr ""
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:122
+msgid ""
+"Add menu items with links to the issue tracker, forum and donation pages"
+msgstr ""
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:123
+msgid "Improve support for non-Linux systems"
+msgstr ""
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:124
+msgid ""
+"Add option to exit FSearch when Escape is pressed instead of minimizing the "
+"window"
+msgstr ""
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:125
+msgid "Exclude '/proc' and '/sys' by default"
+msgstr ""
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:126
+msgid "Open context menu when 'Menu' key or 'Shift + F10' are pressed"
+msgstr ""
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:127
+msgid "and tons of bug fixes, translation updates and smaller improvements"
+msgstr ""
+
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:133
+msgid "Initial release."
+msgstr ""
+
+#: src/fsearch.c:181
+msgid "translator-credits"
+msgstr ""
+
+#: src/fsearch.c:183
+msgid "A search utility focusing on performance and advanced features"
+msgstr ""
+
+#: src/fsearch.c:330
+msgid "Saving database and config…"
+msgstr ""
+
+#: src/fsearch.c:786
+msgid "Open a new application window"
+msgstr ""
+
+#: src/fsearch.c:787
+msgid "Minimize the application window"
+msgstr ""
+
+#: src/fsearch.c:788
+msgid "Show the application preferences"
+msgstr ""
+
+#: src/fsearch.c:789
+msgid "Set the search pattern"
+msgstr ""
+
+#: src/fsearch.c:790
+msgid "Update the database and exit"
+msgstr ""
+
+#: src/fsearch.c:791
+msgid "Print version information and exit"
+msgstr ""
+
+#: src/fsearch.c:883
+msgid ""
+"For command-line search help, run: fsearch --cli --help\n"
+"For shared configuration help, run: fsearch config --help"
+msgstr ""
+
+#: src/fsearch_cli.c:125
+#, c-format
+msgid ""
+"Results capped at %u. Use --unlimit or --unlimited to get them all, or "
+"provide a custom --limit, or set FSEARCH_RESULT_LIMIT."
+msgstr ""
+
+#: src/fsearch_cli.c:134
+#, c-format
+msgid "%u match."
+msgid_plural "%u matches."
+msgstr[0] ""
+
+#: src/fsearch_cli.c:142
+msgid "Updating FSearch index before searching..."
+msgstr ""
+
+#: src/fsearch_cli.c:149
+#, c-format
+msgid "Indexing: %s"
+msgstr ""
+
+#: src/fsearch_cli.c:181
+msgid ""
+"Usage: fsearch --cli [OPTIONS]\n"
+"\n"
+"Search the existing FSearch index and print matching paths.\n"
+"\n"
+"  -s, --search PATTERN       Search with FSearch query syntax\n"
+"      --path DIRECTORY        Search recursively below DIRECTORY (default: "
+"current directory)\n"
+"      --global                Search every indexed location\n"
+"      --limit COUNT          Print at most COUNT results\n"
+"      --unlimit, --unlimited Print every result\n"
+"  -u, --update-database      Rescan the configured index and exit\n"
+"      --about                Print one-line build information\n"
+"  -h, --help                 Show this help\n"
+"\n"
+"Configuration: fsearch config --help\n"
+"\n"
+"Examples:\n"
+"  fsearch --cli --search invoice              # current directory\n"
+"  fsearch --cli --path ~/Documents --search invoice\n"
+"  fsearch --cli --global --search invoice\n"
+"  fsearch --cli --search 'file:size:>20mb'\n"
+"  fsearch --cli --search 'ext:jpg;png'\n"
+"  fsearch --cli --search 'path:projects report'\n"
+"  fsearch --cli --search 'report AND ext:pdf'\n"
+"  fsearch --cli --search '(draft OR final) !archive'\n"
+"  fsearch --cli --search 'file:regex:\".+\\.pdf$\"'\n"
+"  fsearch --cli --search 'case:AGENTS'        # case-sensitive\n"
+"  fsearch --cli --search 'case:regex:\"^AGENTS\\.md$\"'\n"
+"  fsearch --cli --search 'glob:**/*.png'\n"
+"  fsearch --cli --search 'path:glob:**/AGENTS.md'\n"
+"  fsearch --cli --search 'case:glob:AGENTS.md' # case-sensitive glob\n"
+"\n"
+"Examples use space as AND. Try file:, folder:, path:, ext:, size:, dm:, "
+"case:, regex:, and glob:.\n"
+"Boolean syntax: AND or &&; OR or ||; NOT or !. Parentheses group terms.\n"
+"Glob syntax: * excludes /; ** spans directories; ? matches one character; [a-"
+"c] is a range;\n"
+"Glob searches paths by default; use **/ for any depth; file:glob: searches "
+"file names.\n"
+"{png,jpg} selects alternatives; {01..12} is an inclusive numeric range; \\* "
+"matches a literal *.\n"
+msgstr ""
+
+#: src/fsearch_cli.c:238
+#, c-format
+msgid "FSearch %s - indexed file search for %s %s\n"
+msgstr ""
+
+#: src/fsearch_cli.c:301
+msgid "fsearch: interrupted\n"
+msgstr ""
+
+#: src/fsearch_cli.c:315
+msgid "fsearch: search could not run because the index is unavailable\n"
+msgstr ""
+
+#: src/fsearch_cli.c:352 src/fsearch_cli.c:381 src/fsearch_cli_config.c:774
+#: src/fsearch_cli_config.c:961 src/fsearch_cli_config.c:1147
+#, c-format
+msgid "%s\n"
+msgstr ""
+
+#: src/fsearch_cli.c:400
+#, c-format
+msgid "%s"
+msgstr ""
+
+#: src/fsearch_cli.c:473
+#, c-format
+msgid "fsearch: unknown CLI option: %s\n"
+msgstr ""
+
+#: src/fsearch_cli.c:495
+#, c-format
+msgid "fsearch: failed to create data directory: %s\n"
+msgstr ""
+
+#: src/fsearch_cli_config.c:111
+msgid ""
+"Usage: fsearch config COMMAND [OPTIONS]\n"
+"\n"
+"View and modify the shared FSearch GUI and CLI configuration.\n"
+"\n"
+"Configuration commands:\n"
+"  path                         Print the configuration file path\n"
+"  show [SECTION] [--json]      Show settings\n"
+"  get KEY [--json]             Print one scalar setting\n"
+"  set KEY VALUE                Set one scalar setting\n"
+"  unset KEY                    Restore one scalar setting default\n"
+"  reset [KEY|SECTION] --yes [--rescan]\n"
+"                               Restore defaults\n"
+"  doctor                       Check configuration and index consistency\n"
+"  roots list|add|set|remove    Manage indexed roots\n"
+"  excludes list|add|remove|hidden\n"
+"                               Manage index exclusions\n"
+"  filters list|add|set|remove|reset\n"
+"                               Manage saved search filters\n"
+"\n"
+"Scalar values use true/false, decimal integers, or strings.\n"
+"Run 'fsearch config show' to list every scalar key and current value.\n"
+"Scalar sections: search, application, window, ui, columns, sort, dialogs.\n"
+"Use 'fsearch config roots|excludes|filters --help' for family options.\n"
+"Close the FSearch GUI before changing shared settings.\n"
+"Index changes become searchable on the next CLI search, or immediately with "
+"--rescan.\n"
+"Use --json with show, get, and collection list commands.\n"
+"\n"
+"Examples:\n"
+"  fsearch config show search --json\n"
+"  fsearch config get search.match-case\n"
+"  fsearch config set search.match-case true\n"
+"  fsearch config roots add ~/Code --monitor --one-file-system --rescan\n"
+"  fsearch config excludes add '*.tmp' --type wildcard --scope basename --"
+"target files\n"
+"  fsearch config filters add Documents --query 'ext:pdf' --macro docs\n"
+"  fsearch config reset search --yes\n"
+msgstr ""
+
+#: src/fsearch_cli_config.c:152
+msgid ""
+"Usage: fsearch config show [SECTION] [--json]\n"
+"Show all scalar settings or one dotted section.\n"
+msgstr ""
+
+#: src/fsearch_cli_config.c:154
+msgid ""
+"Usage: fsearch config get KEY [--json]\n"
+"Print one typed scalar value. Discover keys with 'fsearch config show'.\n"
+msgstr ""
+
+#: src/fsearch_cli_config.c:157
+msgid ""
+"Usage: fsearch config set KEY VALUE\n"
+"Set a boolean, integer, string, or enumerated scalar value.\n"
+msgstr ""
+
+#: src/fsearch_cli_config.c:159
+msgid ""
+"Usage: fsearch config unset KEY\n"
+"Restore one scalar setting to its built-in default.\n"
+msgstr ""
+
+#: src/fsearch_cli_config.c:161
+msgid ""
+"Usage: fsearch config reset [KEY|SECTION] --yes [--rescan]\n"
+"Reset is destructive and requires --yes. --rescan applies to roots, "
+"database, excludes, or all.\n"
+msgstr ""
+
+#: src/fsearch_cli_config.c:164
+msgid ""
+"Usage: fsearch config doctor\n"
+"Check configuration readability and whether the saved index uses the same "
+"roots and exclusions.\n"
+msgstr ""
+
+#: src/fsearch_cli_config.c:170
+msgid ""
+"Usage: fsearch config roots COMMAND [PATH] [OPTIONS]\n"
+"\n"
+"Commands:\n"
+"  list [--json]                List indexed roots\n"
+"  add PATH [OPTIONS]           Add a root directory\n"
+"  set PATH [OPTIONS]           Change an existing root\n"
+"  remove PATH [--rescan]       Remove an existing root\n"
+"\n"
+"Options for add and set:\n"
+"  --active, --inactive\n"
+"  --monitor, --no-monitor\n"
+"  --one-file-system, --no-one-file-system\n"
+"  --scan-after-launch, --no-scan-after-launch\n"
+"  --rescan-every SECONDS        Set periodic rescan interval; 0 disables it\n"
+"  --rescan                      Rebuild the index immediately after saving\n"
+msgstr ""
+
+#: src/fsearch_cli_config.c:187
+msgid ""
+"Usage: fsearch config excludes COMMAND [PATTERN|VALUE] [OPTIONS]\n"
+"\n"
+"Commands:\n"
+"  list [--json]                 List exclusions\n"
+"  add PATTERN [OPTIONS]         Add an exclusion\n"
+"  remove PATTERN [OPTIONS]      Remove a matching exclusion\n"
+"  hidden [true|false] [--rescan]\n"
+"                                View or change hidden-file exclusion\n"
+"\n"
+"Options for add and remove:\n"
+"  --type fixed|wildcard|regex   Default: fixed\n"
+"  --scope full-path|basename    Default: full-path\n"
+"  --target both|files|folders   Default: both\n"
+"  --active, --inactive          Add state or removal selector\n"
+"  --rescan                      Rebuild the index immediately after saving\n"
+msgstr ""
+
+#: src/fsearch_cli_config.c:204
+msgid ""
+"Usage: fsearch config filters COMMAND [NAME] [OPTIONS]\n"
+"\n"
+"Commands:\n"
+"  list [--json]                 List saved filters\n"
+"  add NAME [OPTIONS]            Add a named filter\n"
+"  set NAME [OPTIONS]            Change a named filter\n"
+"  remove NAME                   Remove a named filter\n"
+"  reset                         Restore built-in filters\n"
+"\n"
+"Options for add and set:\n"
+"  --query QUERY                 Saved FSearch query\n"
+"  --macro MACRO                 Query macro name\n"
+"  --case, --no-case             Match case\n"
+"  --path, --no-path             Search full paths\n"
+"  --regex, --no-regex           Treat query as a regular expression\n"
+msgstr ""
+
+#: src/fsearch_cli_config.c:265
+msgid ""
+"fsearch config: close the running FSearch GUI before changing shared "
+"settings\n"
+msgstr ""
+
+#: src/fsearch_cli_config.c:269
+msgid "fsearch config: failed to save configuration\n"
+msgstr ""
+
+#: src/fsearch_cli_config.c:280
+msgid "Index configuration changed; the next CLI search will rebuild it.\n"
+msgstr ""
+
+#: src/fsearch_cli_config.c:416
+#, c-format
+msgid "fsearch config %s: unknown option: %s\n"
+msgstr ""
+
+#: src/fsearch_cli_config.c:422
+#, c-format
+msgid "fsearch config %s: unexpected argument: %s\n"
+msgstr ""
+
+#: src/fsearch_cli_config.c:449
+msgid "Usage: fsearch config get KEY [--json]\n"
+msgstr ""
+
+#: src/fsearch_cli_config.c:454 src/fsearch_cli_config.c:555
+#, c-format
+msgid "fsearch config: unknown setting: %s\n"
+msgstr ""
+
+#: src/fsearch_cli_config.c:502
+#, c-format
+msgid "fsearch config show: unknown section: %s\n"
+msgstr ""
+
+#: src/fsearch_cli_config.c:550
+#, c-format
+msgid "Usage: fsearch config %s KEY%s\n"
+msgstr ""
+
+#: src/fsearch_cli_config.c:566
+#, c-format
+msgid "fsearch config: invalid value for %s: %s\n"
+msgstr ""
+
+#: src/fsearch_cli_config.c:572
+#, c-format
+msgid "%s = %s\n"
+msgstr ""
+
+#: src/fsearch_cli_config.c:637
+#, c-format
+msgid "fsearch config roots: unknown operation: %s\n"
+msgstr ""
+
+#: src/fsearch_cli_config.c:691
+msgid "fsearch config roots: --rescan-every requires SECONDS\n"
+msgstr ""
+
+#: src/fsearch_cli_config.c:710
+msgid "fsearch config roots: missing PATH\n"
+msgstr ""
+
+#: src/fsearch_cli_config.c:717 src/fsearch_cli_config.c:732
+#, c-format
+msgid "fsearch config roots: path not found: %s\n"
+msgstr ""
+
+#: src/fsearch_cli_config.c:724
+#, c-format
+msgid "fsearch config roots: not a directory: %s\n"
+msgstr ""
+
+#: src/fsearch_cli_config.c:728
+#, c-format
+msgid "fsearch config roots: path already exists: %s\n"
+msgstr ""
+
+#: src/fsearch_cli_config.c:752
+#, c-format
+msgid "fsearch config roots: invalid rescan duration: %s\n"
+msgstr ""
+
+#: src/fsearch_cli_config.c:765
+msgid ""
+"%s\tactive=%s monitor=%s one-file-system=%s scan-after-launch=%s rescan-"
+"after=%s\n"
+msgstr ""
+
+#: src/fsearch_cli_config.c:844
+msgid "fsearch config excludes hidden: expected true or false\n"
+msgstr ""
+
+#: src/fsearch_cli_config.c:850
+#, c-format
+msgid "exclude-hidden = %s\n"
+msgstr ""
+
+#: src/fsearch_cli_config.c:856
+#, c-format
+msgid "fsearch config excludes: unknown operation: %s\n"
+msgstr ""
+
+#: src/fsearch_cli_config.c:877
+#, c-format
+msgid "fsearch config excludes: %s requires a value\n"
+msgstr ""
+
+#: src/fsearch_cli_config.c:909
+msgid "fsearch config excludes: missing PATTERN\n"
+msgstr ""
+
+#: src/fsearch_cli_config.c:914
+#, c-format
+msgid "fsearch config excludes: invalid type: %s\n"
+msgstr ""
+
+#: src/fsearch_cli_config.c:919
+#, c-format
+msgid "fsearch config excludes: invalid scope: %s\n"
+msgstr ""
+
+#: src/fsearch_cli_config.c:924
+#, c-format
+msgid "fsearch config excludes: invalid target: %s\n"
+msgstr ""
+
+#: src/fsearch_cli_config.c:954
+#, c-format
+msgid "fsearch config excludes: exclusion not found: %s\n"
+msgstr ""
+
+#: src/fsearch_cli_config.c:1022
+msgid "filters reset\n"
+msgstr ""
+
+#: src/fsearch_cli_config.c:1029
+#, c-format
+msgid "fsearch config filters: unknown operation: %s\n"
+msgstr ""
+
+#: src/fsearch_cli_config.c:1051
+#, c-format
+msgid "fsearch config filters: %s requires a value\n"
+msgstr ""
+
+#: src/fsearch_cli_config.c:1094
+msgid "fsearch config filters: missing NAME\n"
+msgstr ""
+
+#: src/fsearch_cli_config.c:1100 src/fsearch_cli_config.c:1111
+#, c-format
+msgid "fsearch config filters: name not found: %s\n"
+msgstr ""
+
+#: src/fsearch_cli_config.c:1107
+#, c-format
+msgid "fsearch config filters: name already exists: %s\n"
+msgstr ""
+
+#: src/fsearch_cli_config.c:1145
+#, c-format
+msgid "%s\tmacro=%s query=%s\n"
+msgstr ""
+
+#: src/fsearch_cli_config.c:1193
+msgid "fsearch config reset requires --yes\n"
+msgstr ""
+
+#: src/fsearch_cli_config.c:1201
+msgid ""
+"fsearch config reset: --rescan requires roots, database, excludes, or all\n"
+msgstr ""
+
+#: src/fsearch_cli_config.c:1241
+#, c-format
+msgid "fsearch config: unknown setting or section: %s\n"
+msgstr ""
+
+#: src/fsearch_cli_config.c:1246
+#, c-format
+msgid "%s settings reset\n"
+msgstr ""
+
+#: src/fsearch_cli_config.c:1253
+msgid ""
+"configuration: missing; defaults active\n"
+"index: unknown\n"
+msgstr ""
+
+#: src/fsearch_cli_config.c:1261
+msgid ""
+"configuration: ok\n"
+"index: missing or unreadable\n"
+msgstr ""
+
+#: src/fsearch_cli_config.c:1266
+#, c-format
+msgid ""
+"configuration: ok\n"
+"index: %s\n"
+msgstr ""
+
+#: src/fsearch_cli_config.c:1266
+msgid "current"
+msgstr ""
+
+#: src/fsearch_cli_config.c:1266
+msgid "stale"
+msgstr ""
+
+#: src/fsearch_cli_config.c:1278
+msgid ""
+"Usage: fsearch config path\n"
+"Print the active FSearch configuration file path.\n"
+msgstr ""
+
+#: src/fsearch_cli_config.c:1321
+#, c-format
+msgid "fsearch config: unknown command: %s\n"
+msgstr ""
+
+#: src/fsearch_database.c:795
+msgid "Index rescan: applying changes…"
+msgstr ""
+
+#: src/fsearch_database_file.c:1343
+msgid "Loading folders…"
+msgstr ""
+
+#: src/fsearch_database_file.c:1359
+msgid "Loading files…"
+msgstr ""
+
+#: src/fsearch_database_index_store.c:925 src/fsearch_statusbar.c:73
+#: src/fsearch_statusbar.ui:90
+msgid "Sorting…"
+msgstr ""
+
+#: src/fsearch_database_preferences_widget.c:162
+#: src/fsearch_database_preferences_widget.c:176
+msgid "Select folder"
+msgstr ""
+
+#: src/fsearch_database_preferences_widget.c:165
+#: src/fsearch_database_preferences_widget.c:180
+#: src/fsearch_filter_editor.c:104 src/fsearch_preferences_dialog.c:331
+msgid "_Cancel"
+msgstr ""
+
+#: src/fsearch_database_preferences_widget.c:167
+#: src/fsearch_database_preferences_widget.c:179
+msgid "_Select"
+msgstr ""
+
+#: src/fsearch_database_preferences_widget.c:389
+msgid "Literal"
+msgstr ""
+
+#: src/fsearch_database_preferences_widget.c:391
+msgid "Wildcard"
+msgstr ""
+
+#: src/fsearch_database_preferences_widget.c:393
+msgid "Regex"
+msgstr ""
+
+#: src/fsearch_database_preferences_widget.c:414
+msgid "Full Path"
+msgstr ""
+
+#: src/fsearch_database_preferences_widget.c:416
+msgid "Basename"
+msgstr ""
+
+#: src/fsearch_database_preferences_widget.c:434
+msgid "Files & Folders"
+msgstr ""
+
+#: src/fsearch_database_preferences_widget.c:436 src/fsearch_filter.c:114
+msgid "Files"
+msgstr ""
+
+#: src/fsearch_database_preferences_widget.c:438 src/fsearch_filter.c:113
+msgid "Folders"
+msgstr ""
+
+#: src/fsearch_database_preferences_widget.c:635
+#: src/fsearch_database_preferences_widget.c:860
+msgid "Active"
+msgstr ""
+
+#: src/fsearch_database_preferences_widget.c:640
+msgid "Pattern"
+msgstr ""
+
+#: src/fsearch_database_preferences_widget.c:694 src/fsearch_window.c:756
+#: src/menus.ui:275
+msgid "Type"
+msgstr ""
+
+#: src/fsearch_database_preferences_widget.c:700
+msgid "Match"
+msgstr ""
+
+#: src/fsearch_database_preferences_widget.c:706
+msgid "Applies To"
+msgstr ""
+
+#: src/fsearch_database_preferences_widget.c:864 src/fsearch_window.c:742
+#: src/menus.ui:219 src/menus.ui:267
+msgid "Path"
+msgstr ""
+
+#: src/fsearch_database_preferences_widget.ui:78
+msgid "Enter path…"
+msgstr ""
+
+#: src/fsearch_database_preferences_widget.ui:97
+#: src/fsearch_database_preferences_widget.ui:372
+msgid ""
+"Add path to be included in\n"
+"                                            database\n"
+"                                        "
+msgstr ""
+
+#: src/fsearch_database_preferences_widget.ui:176
+msgid "Attempt to monitor"
+msgstr ""
+
+#: src/fsearch_database_preferences_widget.ui:191
+msgid "Scan after launch"
+msgstr ""
+
+#: src/fsearch_database_preferences_widget.ui:206
+msgid "Stay on one file system"
+msgstr ""
+
+#: src/fsearch_database_preferences_widget.ui:221
+msgid "Rescan every"
+msgstr ""
+
+#: src/fsearch_database_preferences_widget.ui:254
+msgid "Hours:"
+msgstr ""
+
+#: src/fsearch_database_preferences_widget.ui:298
+msgid "Minutes:"
+msgstr ""
+
+#: src/fsearch_database_preferences_widget.ui:310
+msgid "30"
+msgstr ""
+
+#: src/fsearch_database_preferences_widget.ui:391
+msgid "Remove selected path"
+msgstr ""
+
+#: src/fsearch_database_preferences_widget.ui:418
+msgid "Include"
+msgstr ""
+
+#: src/fsearch_database_preferences_widget.ui:477
+msgid ""
+"Add exclude rule\n"
+"                                                "
+msgstr ""
+
+#: src/fsearch_database_preferences_widget.ui:495
+msgid ""
+"Remove selected path\n"
+"                                                "
+msgstr ""
+
+#: src/fsearch_database_preferences_widget.ui:512
+msgid "Restore default exclude list"
+msgstr ""
+
+#: src/fsearch_database_preferences_widget.ui:541
+msgid "Exclude hidden files and folders"
+msgstr ""
+
+#: src/fsearch_database_preferences_widget.ui:563
+msgid "Exclude"
+msgstr ""
+
+#: src/fsearch_file_utils.c:161
+msgctxt "Will be followed by the path of the file."
+msgid "Error when removing file"
+msgstr ""
+
+#: src/fsearch_file_utils.c:163
+msgid "Failed to get path"
+msgstr ""
+
+#: src/fsearch_file_utils.c:277
+msgctxt "Will be followed by the file path."
+msgid "Error when getting information from file"
+msgstr ""
+
+#: src/fsearch_file_utils.c:279
+msgid "Failed to get application information"
+msgstr ""
+
+#: src/fsearch_file_utils.c:294
+msgctxt "Will be followed by the content type string."
+msgid "Error when getting information for content type"
+msgstr ""
+
+#: src/fsearch_file_utils.c:296
+msgid "No default application registered"
+msgstr ""
+
+#: src/fsearch_file_utils.c:524
+msgctxt "Will be followed by the path of the folder."
+msgid "Error when opening parent folder"
+msgstr ""
+
+#: src/fsearch_file_utils.c:526
+msgid "Failed to get parent path"
+msgstr ""
+
+#: src/fsearch_file_utils.c:530
+msgctxt "Will be followed by the path of the folder."
+msgid "Error while opening folder"
+msgstr ""
+
+#: src/fsearch_file_utils.c:533
+msgid "Failed to build open command"
+msgstr ""
+
+#: src/fsearch_file_utils.c:589
+msgid "Folder"
+msgstr ""
+
+#: src/fsearch_file_utils.c:595
+msgid "Unknown Type"
+msgstr ""
+
+#: src/fsearch_filter.c:112
+msgid "All"
+msgstr ""
+
+#: src/fsearch_filter.c:115
+msgid "Applications"
+msgstr ""
+
+#: src/fsearch_filter.c:116
+msgid "Archives"
+msgstr ""
+
+#: src/fsearch_filter.c:117
+msgid "Audio"
+msgstr ""
+
+#: src/fsearch_filter.c:118
+msgid "Documents"
+msgstr ""
+
+#: src/fsearch_filter.c:119
+msgid "Pictures"
+msgstr ""
+
+#: src/fsearch_filter.c:120
+msgid "Videos"
+msgstr ""
+
+#: src/fsearch_filter_editor.c:79
+msgid "Macro names must not contain `:` characters."
+msgstr ""
+
+#: src/fsearch_filter_editor.c:105 src/fsearch_preferences_dialog.c:332
+msgid "_OK"
+msgstr ""
+
+#: src/fsearch_filter_editor.ui:10 src/fsearch_filter_preferences_widget.c:156
+msgid "Edit filter"
+msgstr ""
+
+#: src/fsearch_filter_editor.ui:50
+msgid "Name:"
+msgstr ""
+
+#: src/fsearch_filter_editor.ui:61
+msgid "The unique name of this filter"
+msgstr ""
+
+#: src/fsearch_filter_editor.ui:64
+msgid "Unique filter name"
+msgstr ""
+
+#: src/fsearch_filter_editor.ui:73
+msgid "Search in path"
+msgstr ""
+
+#: src/fsearch_filter_editor.ui:87
+msgid "Enable regular expressions"
+msgstr ""
+
+#: src/fsearch_filter_editor.ui:101
+msgid "Match case"
+msgstr ""
+
+#: src/fsearch_filter_editor.ui:146
+msgid "Query:"
+msgstr ""
+
+#: src/fsearch_filter_editor.ui:160
+msgid "Macro:"
+msgstr ""
+
+#: src/fsearch_filter_editor.ui:171
+msgid ""
+"The macro for this filter. A macro allows you to access this filter from the "
+"search entry by typing its text followed by ':'\n"
+"                "
+msgstr ""
+
+#: src/fsearch_filter_preferences_widget.c:133
+msgid "Add filter"
+msgstr ""
+
+#: src/fsearch_filter_preferences_widget.c:315 src/fsearch_window.c:735
+#: src/menus.ui:215 src/menus.ui:263
+msgid "Name"
+msgstr ""
+
+#: src/fsearch_filter_preferences_widget.c:316
+msgid "Macro"
+msgstr ""
+
+#: src/fsearch_filter_preferences_widget.c:317
+msgid "Query"
+msgstr ""
+
+#: src/fsearch_filter_preferences_widget.ui:77
+msgid "Add new filter"
+msgstr ""
+
+#: src/fsearch_filter_preferences_widget.ui:95
+msgid "Remove selected filter"
+msgstr ""
+
+#: src/fsearch_filter_preferences_widget.ui:113
+msgid "Edit selected filter"
+msgstr ""
+
+#: src/fsearch_filter_preferences_widget.ui:129
+msgid "Restore default filters"
+msgstr ""
+
+#: src/fsearch_listview_popup.c:36
+msgid "Properties…"
+msgstr ""
+
+#: src/fsearch_listview_popup.c:163
+msgid "Other Application…"
+msgstr ""
+
+#: src/fsearch_overlay.ui:44
+msgid "Empty Database"
+msgstr ""
+
+#: src/fsearch_overlay.ui:60
+msgid "Add folders"
+msgstr ""
+
+#: src/fsearch_overlay.ui:108
+msgid "Loading Database…"
+msgstr ""
+
+#: src/fsearch_overlay.ui:123
+msgid "This won't take long."
+msgstr ""
+
+#: src/fsearch_overlay.ui:171 src/fsearch_statusbar.ui:312
+msgid "Updating Database…"
+msgstr ""
+
+#: src/fsearch_overlay.ui:186 src/fsearch_overlay.ui:383
+msgid "This may take a while."
+msgstr ""
+
+#: src/fsearch_overlay.ui:241
+msgid "Empty Query"
+msgstr ""
+
+#: src/fsearch_overlay.ui:256
+msgid "Press <b>Ctrl + F</b> and start typing."
+msgstr ""
+
+#: src/fsearch_overlay.ui:304
+msgid "No Results Found"
+msgstr ""
+
+#: src/fsearch_overlay.ui:319
+msgid "Try a different search"
+msgstr ""
+
+#: src/fsearch_overlay.ui:368
+msgid "Sorting results…"
+msgstr ""
+
+#: src/fsearch_preferences.ui:7 src/fsearch_window.ui:251 src/menus.ui:84
+msgid "Preferences"
+msgstr ""
+
+#: src/fsearch_preferences.ui:76
+msgid "Enable dark theme"
+msgstr ""
+
+#: src/fsearch_preferences.ui:97
+msgid "Enable client-side decorations (requires restart)"
+msgstr ""
+
+#: src/fsearch_preferences.ui:117
+msgid "Use binary units instead of decimal units"
+msgstr ""
+
+#: src/fsearch_preferences.ui:138
+msgid "Remember window size"
+msgstr ""
+
+#: src/fsearch_preferences.ui:159
+msgid "Exit on Escape"
+msgstr ""
+
+#: src/fsearch_preferences.ui:202
+msgid "with keyboard shortcuts or menu entries"
+msgstr ""
+
+#: src/fsearch_preferences.ui:223
+msgid "with double click"
+msgstr ""
+
+#: src/fsearch_preferences.ui:257
+msgid "Behaviour after successfully opening a file:"
+msgstr ""
+
+#: src/fsearch_preferences.ui:273
+msgid "Nothing"
+msgstr ""
+
+#: src/fsearch_preferences.ui:274
+msgid "Minimize"
+msgstr ""
+
+#: src/fsearch_preferences.ui:275
+msgid "Close"
+msgstr ""
+
+#: src/fsearch_preferences.ui:309
+msgid "General:"
+msgstr ""
+
+#: src/fsearch_preferences.ui:344
+msgid "Show highlighted search terms"
+msgstr ""
+
+#: src/fsearch_preferences.ui:366
+msgid "Show tooltips"
+msgstr ""
+
+#: src/fsearch_preferences.ui:387
+msgid "Show icons in name column"
+msgstr ""
+
+#: src/fsearch_preferences.ui:408
+msgid "Remember column configuration"
+msgstr ""
+
+#: src/fsearch_preferences.ui:429
+msgid "Remember sort order"
+msgstr ""
+
+#: src/fsearch_preferences.ui:450
+msgid "Open path with double click in path column"
+msgstr ""
+
+#: src/fsearch_preferences.ui:471
+msgid "Single click to open"
+msgstr ""
+
+#: src/fsearch_preferences.ui:492
+msgid "Launch desktop files"
+msgstr ""
+
+#: src/fsearch_preferences.ui:519
+msgid "Results:"
+msgstr ""
+
+#: src/fsearch_preferences.ui:560
+msgid "Show database indexing status"
+msgstr ""
+
+#: src/fsearch_preferences.ui:587
+msgid "Statusbar:"
+msgstr ""
+
+#: src/fsearch_preferences.ui:628
+msgid "Show warning dialogs when:"
+msgstr ""
+
+#: src/fsearch_preferences.ui:638
+msgid "file / folder failed to open"
+msgstr ""
+
+#: src/fsearch_preferences.ui:667
+msgid "Dialogs:"
+msgstr ""
+
+#: src/fsearch_preferences.ui:692
+msgid "Interface"
+msgstr ""
+
+#: src/fsearch_preferences.ui:711
+msgid "Search in path when query contains path separators"
+msgstr ""
+
+#: src/fsearch_preferences.ui:730
+msgid "Search as you type"
+msgstr ""
+
+#: src/fsearch_preferences.ui:750
+msgid "Hide results when search is empty"
+msgstr ""
+
+#: src/fsearch_preferences.ui:769
+msgid "Match case when query contains at least one upper case character"
+msgstr ""
+
+#: src/fsearch_preferences.ui:801
+msgid "Filter:"
+msgstr ""
+
+#: src/fsearch_preferences.ui:822 src/fsearch_window.ui:639
+msgid "Search"
+msgstr ""
+
+#: src/fsearch_preferences.ui:855
+msgid ""
+"<b>Enable dark theme:</b>\n"
+"\n"
+"If enabled, the system theme is asked to use a darker styling for the "
+"application <i>(i.e. dark UI elements on bright text)</i>.\n"
+"\n"
+"Note that not all system themes provide such a darker variant, therefore "
+"enabling this setting might not have an effect."
+msgstr ""
+
+#: src/fsearch_preferences.ui:873
+msgid ""
+"<b>Enable client-side decorations:</b>\n"
+"\n"
+"If enabled, the search entry and main menu are displayed in the window title "
+"bar.\n"
+"\n"
+"If disabled, the main menu is displayed as a menu bar with the search entry "
+"below it.\n"
+"This resembles a more traditional UI layout and takes a little bit more "
+"space."
+msgstr ""
+
+#: src/fsearch_preferences.ui:893
+msgid ""
+"<b>Use binary units instead of decimal units:</b>\n"
+"\n"
+"This settings controls how file sizes are displayed.\n"
+"\n"
+"\t• <b>Binary units:</b> This refers to binary IEC prefixes <i>(e.g. 1 KiB = "
+"1024 bytes)</i>\n"
+"\t• <b>Decimal  units:</b> This refers to decimal SI prefixes <i>(e.g. 1 kB "
+"= 1000 bytes)</i>"
+msgstr ""
+
+#: src/fsearch_preferences.ui:913
+msgid ""
+"<b>Remember window size:</b>\n"
+"\n"
+"If enabled, the window size from the previous session will be restored when "
+"you open an FSearch window.\n"
+"\n"
+"Note that some window managers ignore this request and force the window to "
+"have a different size."
+msgstr ""
+
+#: src/fsearch_preferences.ui:932
+msgid ""
+"<b>Behaviour after successfully opening a file:</b>\n"
+"\n"
+"When a file/folder was successfully opened one of the following actions can "
+"be performed:\n"
+"\t• <b>Nothing:</b> Nothing happens.\n"
+"                        • <b>Minimize:</b> The currently selected FSearch "
+"window becomes minimized.\n"
+"\t• <b>Close:</b> Quit FSearch.\n"
+"\n"
+"You can configure if those actions should be triggered when the file was "
+"opened with\n"
+"\t• <b>keyboard shortcuts or menu entries</b> and/or\n"
+"\t• <b>mouse click</b>"
+msgstr ""
+
+#: src/fsearch_preferences.ui:956
+msgid ""
+"<b>Show highlighted search terms:</b>\n"
+"\n"
+"If enabled, the search terms will be highlighted in the results view. For "
+"example when you search for \"foo\" all appearances of <i>foo</i> in file/"
+"folder names will be highlighted with bold characters:\n"
+"\n"
+"\t<b>foo</b>bar.txt\n"
+"\tfile.<b>foo</b>\n"
+"\n"
+"This also works for regular expressions and wildcard expressions starting or "
+"ending with an asterisk. "
+msgstr ""
+
+#: src/fsearch_preferences.ui:978
+msgid ""
+"<b>Show tooltips:</b>\n"
+"\n"
+"If enabled, the results view will show the full path of the focused file/"
+"folder in a small tooltip window."
+msgstr ""
+
+#: src/fsearch_preferences.ui:995
+msgid ""
+"<b>Show icons in name column:</b>\n"
+"\n"
+"If enabled, file/folder icons will be shown in the name column."
+msgstr ""
+
+#: src/fsearch_preferences.ui:1012
+msgid ""
+"<b>Remember column configuration:</b>\n"
+"\n"
+"If enabled, the column configuration of the results view from the previous "
+"session will be restored when you open an FSearch window. This includes the "
+"size and visibility of all columns."
+msgstr ""
+
+#: src/fsearch_preferences.ui:1029
+msgid ""
+"<b>Remember sort order:</b>\n"
+"\n"
+"If enabled, the sort order of the results view from the previous session "
+"will be restored when you open an FSearch window."
+msgstr ""
+
+#: src/fsearch_preferences.ui:1046
+msgid ""
+"<b>Open path with double click in path column:</b>\n"
+"\n"
+"If enabled, double clicking in the path column will open the selected path."
+msgstr ""
+
+#: src/fsearch_preferences.ui:1063
+msgid ""
+"<b>Single click to open:</b>\n"
+"\n"
+"If enabled, a single click will open the selected file/folder. If you only "
+"want to select a file/folder while this setting is active, you need to hold "
+"<i>Ctrl</i> at the same time while clicking the file/folder."
+msgstr ""
+
+#: src/fsearch_preferences.ui:1080
+msgid ""
+"<b>Show database indexing status:</b>\n"
+"\n"
+"If enabled, the path that is currently being indexed is displayed in the "
+"statusbar."
+msgstr ""
+
+#: src/fsearch_preferences.ui:1097
+msgid ""
+"<b>Show warning dialogs:</b>\n"
+"\n"
+"If enabled, a warning dialog is displayed when a file or folder failed to "
+"open."
+msgstr ""
+
+#: src/fsearch_preferences.ui:1114
+msgid ""
+"<b>Search in path when query contains path separators:</b>\n"
+"\n"
+"If enabled, search terms containing path separators (i.e. \"/\") will be "
+"automatically matched against the full path of a file or folder."
+msgstr ""
+
+#: src/fsearch_preferences.ui:1131
+msgid ""
+"<b>Match case when query contains at least one upper case character:</b>\n"
+"\n"
+"If enabled, search terms containing at least one upper case character will "
+"trigger a case-sensitive search. This means a search term like <i>Foo</i> "
+"will match <i>FooBar.txt</i> but not <i>foobar.txt</i>."
+msgstr ""
+
+#: src/fsearch_preferences.ui:1148
+msgid ""
+"<b>Hide results when search is empty:</b>\n"
+"\n"
+"If enabled, no search results are displayed when the search entry is empty.\n"
+"\n"
+"If disabled, all files and folders will be displayed when the search entry "
+"is empty."
+msgstr ""
+
+#: src/fsearch_preferences.ui:1167
+msgid ""
+"<b>Search as you type:</b>\n"
+"\n"
+"If enabled, the search is automatically updated with every keystroke.\n"
+"\n"
+"If disabled, the search is only updated when you hit <i>Enter</i> or press "
+"the search button. "
+msgstr ""
+
+#: src/fsearch_preferences.ui:1186
+msgid ""
+"<b>Update database on start:</b>\n"
+"\n"
+"If enabled, the database will be updated automatically in the background "
+"when you start FSearch."
+msgstr ""
+
+#: src/fsearch_preferences.ui:1203
+msgid ""
+"<b>Included folders:</b>\n"
+"\n"
+"This list contains all folders you want to include in the database.\n"
+"\n"
+"\t• <b>Active:</b> If enabled, the path will included in the database to be "
+"searched in.\n"
+"\t• <b>Path:</b> The full path to be included.\n"
+"\t• <b>One Filesystem:</b> If enabled, FSearch won't cross filesystem "
+"boundaries for this folder"
+msgstr ""
+
+#: src/fsearch_preferences.ui:1224
+msgid ""
+"<b>Add folder to database:</b>\n"
+"\n"
+"This button opens a dialog where you can select a folder you want to include "
+"in the database for searching."
+msgstr ""
+
+#: src/fsearch_preferences.ui:1241
+msgid ""
+"<b>Add a specific path:</b>\n"
+"\n"
+"Type the full path of a folder here and click the button next to it to "
+"include that folder in the database. This is useful for adding a path "
+"directly without browsing for it."
+msgstr ""
+
+#: src/fsearch_preferences.ui:1258
+msgid ""
+"<b>Remove selected row:</b>\n"
+"\n"
+"This removes the selected folder from the list of included folders."
+msgstr ""
+
+#: src/fsearch_preferences.ui:1275
+msgid ""
+"<b>Attempt to monitor:</b>\n"
+"\n"
+"If enabled, FSearch watches this folder for changes and keeps the database "
+"up to date automatically, so you don't have to rescan manually.\n"
+"\n"
+"Monitoring isn't supported on every file system and uses a small amount of "
+"system resources per watched folder. For large directory trees with many "
+"files the system may run out of resources to watch them all."
+msgstr ""
+
+#: src/fsearch_preferences.ui:1294
+msgid ""
+"<b>Scan after launch:</b>\n"
+"\n"
+"If enabled, this folder is rescanned every time FSearch starts, so the "
+"database reflects any changes made while FSearch wasn't running."
+msgstr ""
+
+#: src/fsearch_preferences.ui:1311
+msgid ""
+"<b>Stay on one file system:</b>\n"
+"\n"
+"If enabled, FSearch won't cross file system boundaries while scanning this "
+"folder. Mounted file systems below it (e.g. external drives or network "
+"shares) are skipped."
+msgstr ""
+
+#: src/fsearch_preferences.ui:1328
+msgid ""
+"<b>Rescan every:</b>\n"
+"\n"
+"If enabled, this folder is rescanned automatically at the given interval. "
+"Use the hours and minutes fields to set how often the rescan happens.\n"
+"\n"
+"This is useful for folders on file systems that can't be monitored for "
+"changes."
+msgstr ""
+
+#: src/fsearch_preferences.ui:1347
+msgid ""
+"<b>Exclude rules:</b>\n"
+"\n"
+"This list contains rules for the files and folders you want to exclude from "
+"the database.\n"
+"\n"
+"\t• <b>Active:</b> If enabled, the rule is applied and matching items are "
+"excluded.\n"
+"\t• <b>Pattern:</b> The text matched against each item, interpreted "
+"according to the Type.\n"
+"\t• <b>Type:</b> How the pattern is interpreted — <i>Literal</i> (exact "
+"text), <i>Wildcard</i> (using * and ?) or <i>Regex</i> (a regular "
+"expression).\n"
+"\t• <b>Match:</b> Whether the pattern is matched against the item's <i>Full "
+"Path</i> or only its <i>Basename</i> (the name without the path).\n"
+"\t• <b>Applies To:</b> Whether the rule affects <i>Files</i>, <i>Folders</i> "
+"or both."
+msgstr ""
+
+#: src/fsearch_preferences.ui:1370
+msgid ""
+"<b>Add exclude rule:</b>\n"
+"\n"
+"This adds a new, empty rule to the list. Edit its Pattern, Type, Match and "
+"Applies To columns to control what gets excluded from the database."
+msgstr ""
+
+#: src/fsearch_preferences.ui:1387
+msgid ""
+"<b>Remove selected row:</b>\n"
+"\n"
+"This removes the selected rule from the list of exclude rules."
+msgstr ""
+
+#: src/fsearch_preferences.ui:1404
+msgid ""
+"<b>Restore default exclude rules:</b>\n"
+"\n"
+"This button restores the default set of exclude rules.\n"
+"\n"
+"⚠ All rules which were created or edited by the user will be lost! ⚠"
+msgstr ""
+
+#: src/fsearch_preferences.ui:1423
+msgid ""
+"<b>Exclude files and folders from database:</b>\n"
+"\n"
+"This is a semi-colon separated list of files (or folders) you want to "
+"exclude from the database. For example <i>.git;.cache;*.swp</i> will exclude "
+"all files or folders which are called either <i>.git</i> or <i>.cache</i> or "
+"end with <i>.swp</i>."
+msgstr ""
+
+#: src/fsearch_preferences.ui:1440
+msgid ""
+"<b>Exclude hidden files and folders:</b>\n"
+"\n"
+"If enabled, hidden files and folders will be excluded from the database "
+"<i>(i.e. all files or folders which start with a dot character)</i>."
+msgstr ""
+
+#: src/fsearch_preferences.ui:1457
+msgid "Focus a setting to get a detailed description of what it does."
+msgstr ""
+
+#: src/fsearch_preferences.ui:1470
+msgid ""
+"<b>Periodically update database at a specific time interval:</b>\n"
+"\n"
+"If enabled and as long as FSearch is running, the database will be updated "
+"periodically with the given time interval.\n"
+"\n"
+"If you want to update the database in the background, even when FSearch is "
+"not running, you should use tools like cron or systemd timers to "
+"periodically trigger the update with:\n"
+"\n"
+"<i><tt>fsearch --update-database</tt></i>"
+msgstr ""
+
+#: src/fsearch_preferences.ui:1491
+msgid ""
+"<b>Launch desktop files:</b>\n"
+"\n"
+"If enabled, activating a <i>.desktop</i> file will launch the application "
+"defined within that file. This way FSearch can act like an application "
+"launcher. Otherwise the <i>.desktop</i> file will be opened with the default "
+"handler for this type of files, which is usually a text editor."
+msgstr ""
+
+#: src/fsearch_preferences.ui:1508
+msgid ""
+"<b>Filters:</b>\n"
+"\n"
+"This is a list of all available filters. A filter is a predefined search.\n"
+"\n"
+"\t• <b>Name:</b> A unique and descriptive identifier for the filter\n"
+"\t• <b>Macro:</b> By typing the macro text followed by a ':' you can enable "
+"the filter on demand\n"
+"\t• <b>Query:</b> The search term by which the database should be filtered"
+msgstr ""
+
+#: src/fsearch_preferences.ui:1529
+msgid ""
+"<b>Add a new filter:</b>\n"
+"\n"
+"This button opens a dialog where you can edit a new filter."
+msgstr ""
+
+#: src/fsearch_preferences.ui:1546
+msgid ""
+"<b>Remove selected filter:</b>\n"
+"\n"
+"This button removes the currently selected filter."
+msgstr ""
+
+#: src/fsearch_preferences.ui:1563
+msgid ""
+"<b>Edit selected filter:</b>\n"
+"\n"
+"This button opens a dialog where you can edit the selected filter."
+msgstr ""
+
+#: src/fsearch_preferences.ui:1580
+msgid ""
+"<b>Restore default filters:</b>\n"
+"\n"
+"This button restores the default filter configuration.\n"
+"\n"
+"⚠ All filters which were created or edited by the user will be lost! ⚠"
+msgstr ""
+
+#: src/fsearch_preferences.ui:1599
+msgid ""
+"<b>Exit on Escape:</b>\n"
+"\n"
+"If enabled, FSearch exits when the Escape key is pressed instead of the "
+"window being minimized."
+msgstr ""
+
+#: src/fsearch_preferences.ui:1618 src/fsearch_window.ui:290
+#: src/fsearch_window.ui:415 src/menus.ui:150 src/menus.ui:156
+msgid "Help"
+msgstr ""
+
+#: src/fsearch_preferences_dialog.c:238
+msgid "Database"
+msgstr ""
+
+#: src/fsearch_result_view.c:381
+msgid "Invalid row data"
+msgstr ""
+
+#: src/fsearch_statusbar.c:58
+#, c-format
+msgid "%'d Item"
+msgstr ""
+
+#: src/fsearch_statusbar.c:58 src/fsearch_statusbar.c:186
+#, c-format
+msgid "%'d Items"
+msgstr ""
+
+#: src/fsearch_statusbar.c:80
+msgid "Querying…"
+msgstr ""
+
+#: src/fsearch_statusbar.c:175
+msgid "Loading…"
+msgstr ""
+
+#: src/fsearch_statusbar.c:180
+msgid "Scanning…"
+msgstr ""
+
+#: src/fsearch_statusbar.ui:52
+msgid "Number of Search Results"
+msgstr ""
+
+#: src/fsearch_statusbar.ui:53
+msgid "0 Items"
+msgstr ""
+
+#: src/fsearch_statusbar.ui:106
+msgid "Cancel"
+msgstr ""
+
+#: src/fsearch_statusbar.ui:153
+msgid "Index:"
+msgstr ""
+
+#: src/fsearch_statusbar.ui:228
+msgid "Number of selected folders"
+msgstr ""
+
+#: src/fsearch_statusbar.ui:229 src/fsearch_statusbar.ui:254
+msgid "0/0"
+msgstr ""
+
+#: src/fsearch_statusbar.ui:253
+msgid "Number of selected files"
+msgstr ""
+
+#: src/fsearch_statusbar.ui:328 src/fsearch_window.ui:103
+msgid "Cancel database update"
+msgstr ""
+
+#: src/fsearch_statusbar.ui:369
+msgid "Number of database items"
+msgstr ""
+
+#: src/fsearch_statusbar.ui:370
+msgid "(empty)"
+msgstr ""
+
+#: src/fsearch_statusbar.ui:407
+msgid ""
+"Search term contains upper case characters.\n"
+"<b>Match Case</b> was temporarily activated for this term."
+msgstr ""
+
+#: src/fsearch_statusbar.ui:438 src/fsearch_statusbar.ui:491
+msgid "CASE"
+msgstr ""
+
+#: src/fsearch_statusbar.ui:514
+msgid ""
+"Search term contains path separators.\n"
+"<b>Search in Path</b> was temporarily activated for this term."
+msgstr ""
+
+#: src/fsearch_statusbar.ui:545 src/fsearch_statusbar.ui:598
+msgid "PATH"
+msgstr ""
+
+#: src/fsearch_statusbar.ui:651
+msgid "REGEX"
+msgstr ""
+
+#: src/fsearch_statusbar.ui:726
+msgid ""
+"The search was cancelled before it finished.\n"
+"<b>These results are incomplete.</b>"
+msgstr ""
+
+#: src/fsearch_statusbar.ui:756
+msgid "PARTIAL"
+msgstr ""
+
+#: src/fsearch_welcome_dialog.ui:26
+msgid "What's New in FSearch"
+msgstr ""
+
+#: src/fsearch_welcome_dialog.ui:79
+msgid ""
+"<span size=\"xx-large\" weight=\"bold\">What's New in FSearch 0.3</span>"
+msgstr ""
+
+#: src/fsearch_welcome_dialog.ui:149
+msgid "<big><b>File System Monitoring</b></big>"
+msgstr ""
+
+#: src/fsearch_welcome_dialog.ui:163
+msgid ""
+"You can now actively watch individual folders to eliminate frequent rescans. "
+"File changes then appear in your search results immediately.\n"
+"\n"
+"To enable this feature go to the Database section of the Preferences "
+"dialog.\n"
+"\n"
+"See the online documentation for more information:\n"
+"<a href=\"URL\">https://github.com/cboxdoerfer/fsearch/wiki/Database-update</"
+"a>"
+msgstr ""
+
+#: src/fsearch_welcome_dialog.ui:232
+msgid "<big><b>Folder-Specific Rescan Schedules</b></big>"
+msgstr ""
+
+#: src/fsearch_welcome_dialog.ui:246
+msgid ""
+"You can now configure automatic update intervals for individual folders "
+"independently and tailored to each distinct location."
+msgstr ""
+
+#: src/fsearch_welcome_dialog.ui:309
+msgid "<big><b>Improved Exclude Rules</b></big>"
+msgstr ""
+
+#: src/fsearch_welcome_dialog.ui:323
+msgid ""
+"You can now use wildcards and regular expressions to define more powerful "
+"exclude rules. \n"
+"Rules can be targeted specifically at files, folders, or both, and can be "
+"configured to match against either the basename or the full absolute path."
+msgstr ""
+
+#: src/fsearch_window.c:749 src/menus.ui:279
+msgid "Size"
+msgstr ""
+
+#: src/fsearch_window.c:763 src/menus.ui:271
+msgid "Extension"
+msgstr ""
+
+#: src/fsearch_window.c:770 src/menus.ui:283
+msgid "Date Modified"
+msgstr ""
+
+#: src/fsearch_window.c:784
+msgid ""
+"Sorting by <b>Type</b> can take a few seconds with many results.\n"
+"\n"
+"This sort order is not persistent, it will be reset when the search term "
+"changes."
+msgstr ""
+
+#: src/fsearch_window.ui:68
+msgid "New window"
+msgstr ""
+
+#: src/fsearch_window.ui:89
+msgid "Update database"
+msgstr ""
+
+#: src/fsearch_window.ui:144 src/menus.ui:112
+msgid "Search in Path"
+msgstr ""
+
+#: src/fsearch_window.ui:158 src/menus.ui:116
+msgid "Match Case"
+msgstr ""
+
+#: src/fsearch_window.ui:172 src/menus.ui:120
+msgid "Enable RegEx"
+msgstr ""
+
+#: src/fsearch_window.ui:197 src/menus.ui:95
+msgid "Show Statusbar"
+msgstr ""
+
+#: src/fsearch_window.ui:211 src/menus.ui:99
+msgid "Show Filter"
+msgstr ""
+
+#: src/fsearch_window.ui:225 src/menus.ui:103
+msgid "Show Search Button"
+msgstr ""
+
+#: src/fsearch_window.ui:275 src/fsearch_window.ui:356 src/menus.ui:129
+msgid "FSearch Online"
+msgstr ""
+
+#: src/fsearch_window.ui:304 src/menus.ui:161
+msgid "About"
+msgstr ""
+
+#: src/fsearch_window.ui:329 src/menus.ui:47
+msgid "Quit"
+msgstr ""
+
+#: src/fsearch_window.ui:372 src/fsearch_window.ui:443 src/menus.ui:131
+msgid "Donate"
+msgstr ""
+
+#: src/fsearch_window.ui:387 src/menus.ui:142
+msgid "Forum"
+msgstr ""
+
+#: src/fsearch_window.ui:401 src/menus.ui:146
+msgid "Bug Reports and Feature Requests"
+msgstr ""
+
+#: src/fsearch_window.ui:460 src/menus.ui:133
+msgid "GitHub Sponsors"
+msgstr ""
+
+#: src/fsearch_window.ui:474 src/menus.ui:137
+msgid "PayPal"
+msgstr ""
+
+#: src/fsearch_window.ui:586
+msgid "Search…"
+msgstr ""
+
+#: src/fsearch_window.ui:608
+msgid "Select a Filter"
+msgstr ""
+
+#: src/fsearch_window_actions.c:110
+#, c-format
+msgid "Do you really want to open %'d file?"
+msgid_plural "Do you really want to open %'d files?"
+msgstr[0] ""
+
+#: src/fsearch_window_actions.c:115
+msgid "Opening Files…"
+msgstr ""
+
+#: src/fsearch_window_actions.c:198
+#, c-format
+msgid "Do you really want to remove %'d file?"
+msgid_plural "Do you really want to remove %'d files?"
+msgstr[0] ""
+
+#: src/fsearch_window_actions.c:205
+msgid "Deleting files…"
+msgstr ""
+
+#: src/fsearch_window_actions.c:205
+msgid "Moving files to trash…"
+msgstr ""
+
+#: src/fsearch_window_actions.c:238 src/fsearch_window_actions.c:533
+#: src/fsearch_window_actions.c:580
+msgid "Something went wrong."
+msgstr ""
+
+#: src/fsearch_window_actions.c:263
+#, c-format
+msgid "Do you really want to open %'d file property window?"
+msgid_plural "Do you really want to open %'d file property windows?"
+msgstr[0] ""
+
+#: src/fsearch_window_actions.c:270
+msgid "Opening file properties…"
+msgstr ""
+
+#: src/menus.ui:6
+msgid "_File"
+msgstr ""
+
+#: src/menus.ui:9
+msgid "New Window"
+msgstr ""
+
+#: src/menus.ui:16 src/menus.ui:171
+msgid "_Open"
+msgstr ""
+
+#: src/menus.ui:21
+msgid "Open Folder"
+msgstr ""
+
+#: src/menus.ui:29
+msgid "Update Database"
+msgstr ""
+
+#: src/menus.ui:35
+msgid "Cancel Update"
+msgstr ""
+
+#: src/menus.ui:42
+msgid "Close Window"
+msgstr ""
+
+#: src/menus.ui:54
+msgid "_Edit"
+msgstr ""
+
+#: src/menus.ui:57 src/menus.ui:207
+msgid "_Copy"
+msgstr ""
+
+#: src/menus.ui:62 src/menus.ui:228
+msgid "Cu_t"
+msgstr ""
+
+#: src/menus.ui:69
+msgid "Select All"
+msgstr ""
+
+#: src/menus.ui:74
+msgid "Deselect All"
+msgstr ""
+
+#: src/menus.ui:78
+msgid "Invert Selection"
+msgstr ""
+
+#: src/menus.ui:92
+msgid "_View"
+msgstr ""
+
+#: src/menus.ui:109
+msgid "_Search"
+msgstr ""
+
+#: src/menus.ui:126
+msgid "_Help"
+msgstr ""
+
+#: src/menus.ui:177
+msgid "Open _With"
+msgstr ""
+
+#: src/menus.ui:191
+msgid "_Open Folder"
+msgstr ""
+
+#: src/menus.ui:213
+msgid "Copy as Text"
+msgstr ""
+
+#: src/menus.ui:223
+msgid "Path + Name"
+msgstr ""
+
+#: src/menus.ui:236
+msgid "Move to _Trash"
+msgstr ""
+
