@@ -19,335 +19,337 @@ msgstr ""
 
 #: data/io.github.cboxdoerfer.FSearch.desktop.in.in:4 src/main.c:36
 msgid "FSearch"
-msgstr ""
+msgstr "FSearch"
 
 #: data/io.github.cboxdoerfer.FSearch.desktop.in.in:5
 msgid "A file search application focusing on performance and advanced features"
-msgstr ""
+msgstr "Skráaleitarforrit með áherslu á frammistöðu og háþróaða eiginleika"
 
 #: data/io.github.cboxdoerfer.FSearch.desktop.in.in:10
 msgid "search;fsearch;files;folders;music;video;documents;find;tool;everything;"
-msgstr ""
+msgstr "leit;fsearch;skrár;möppur;tónlist;myndband;skjöl;finna;tól;allt;"
 
 #: data/io.github.cboxdoerfer.FSearch.desktop.in.in:12
 msgid "File Search Utility"
-msgstr ""
+msgstr "Skráaleitarforrit"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:8
 msgid "A graphical file search application"
-msgstr ""
+msgstr "Myndrænt skráaleitarforrit"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:10
 msgid ""
 "FSearch helps you to find files and folders as easy and fast as possible. "
 "Just type a few letters and search results will appear almost instantly."
-msgstr ""
+msgstr "FSearch hjálpar þér að finna skrár og möppur eins auðvelt og hratt og mögulegt er. Sláðu bara inn nokkra stafi og leitarniðurstöður birtast nánast samstundis."
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:14
 msgid ""
 "There are a lot of features which make searching as efficient and powerful "
 "as possible. Such as:"
-msgstr ""
+msgstr "Það eru fullt af eiginleikum sem gera leit eins skilvirka og öfluga og mögulegt er. Svo sem eins og:"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:19
 msgid ""
 "Ignore case (e.g. searching for \"<code>fsearch</code>\" will match "
 "\"FSearch\" as well)"
-msgstr ""
+msgstr "Hunsa hástafi (t.d. að leita að \\\"<code>fsearch</code>\\\" mun passa við \\\"FSearch\\\" líka)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:20
 msgid "Regular expressions"
-msgstr ""
+msgstr "Regluleg tjáning"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:21
 msgid "Wildcard support"
-msgstr ""
+msgstr "Stuðningur við algildi"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:22
 msgid "Filter support (e.g. only search for audio files)"
-msgstr ""
+msgstr "Síustuðningur (t.d. leitaðu aðeins að hljóðskrám)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:23
 msgid "Exclude certain files and folders"
-msgstr ""
+msgstr "Útiloka ákveðnar skrár og möppur"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:24
 msgid "Fast sort by name, path, size, modification time and extension"
-msgstr ""
+msgstr "Fljótleg flokkun eftir nafni, slóð, stærð, breytingartíma og framlengingu"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:26
 msgid ""
 "<em>Note:</em> Due to Flatpak's sandboxing, FSearch can't find every file on "
 "your system."
-msgstr ""
+msgstr "<em>Athugið:</em> Vegna sandkassa Flatpak getur FSearch ekki fundið allar skrár á kerfinu þínu."
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:35
 msgid "The default UI layout"
-msgstr ""
+msgstr "Sjálfgefið UI skipulag"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:41
 msgid "A layout more closely following GNOME HIGs"
-msgstr ""
+msgstr "Skipulag sem fylgir nánar GNOME HIGs"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:49
 msgid "search"
-msgstr ""
+msgstr "leit"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:50
 msgid "fsearch"
-msgstr ""
+msgstr "fleit"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:51
 msgid "files"
-msgstr ""
+msgstr "skrár"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:52
 msgid "folders"
-msgstr ""
+msgstr "möppur"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:53
 msgid "music"
-msgstr ""
+msgstr "tónlist"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:54
 msgid "video"
-msgstr ""
+msgstr "myndband"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:55
 msgid "documents"
-msgstr ""
+msgstr "skjöl"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:56
 msgid "find"
-msgstr ""
+msgstr "finna"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:57
 msgid "tool"
-msgstr ""
+msgstr "tól"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:58
 msgid "everything"
-msgstr ""
+msgstr "allt"
 
 #. Kept for appstreamcli < 1.0 (e.g. Ubuntu 20.04/22.04 PPA builds), which doesn't know <developer>.
 #. Translators: please do NOT translate this.
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:77
 msgid "Christian Boxdörfer"
-msgstr ""
+msgstr "Christian Boxdörfer"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:89
 msgid "DB rewrite"
-msgstr ""
+msgstr "DB endurskrifa"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:90
 msgid "DB: Add support for filesystem monitoring"
-msgstr ""
+msgstr "DB: Bættu við stuðningi við eftirlit með skráarkerfum"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:91
 msgid ""
 "DB: Allow files and folders to be excluded based on fixed patterns, "
 "wildcards or regular expressions"
-msgstr ""
+msgstr "DB: Leyfa að skrár og möppur séu útilokaðar út frá föstum mynstrum, algildum eða reglulegum tjáningum"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:92
 msgid ""
 "DB: Allow included folders to be scheduled and scanned after launch "
 "independently"
-msgstr ""
+msgstr "DB: Leyfa að meðfylgjandi möppur séu tímasettar og skannaðar eftir ræsingu sjálfstætt"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:93
 msgid "DB: Make rescanning more efficient"
-msgstr ""
+msgstr "DB: Gerðu endurskönnun skilvirkari"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:94
 msgid "DB: Store database config in DB file"
-msgstr ""
+msgstr "DB: Geymdu gagnagrunnsstillingar í DB skrá"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:95
 msgid "DB: Add checksum to DB file"
-msgstr ""
+msgstr "DB: Bættu eftirlitsummu við DB skrá"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:96
 msgid "Make icon and file info gathering asynchronous (no UI blocking)"
-msgstr ""
+msgstr "Gerðu söfnun tákna og skráarupplýsinga ósamstillta (engin lokun á notendaviðmóti)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:97
 msgid "Reduce memory usage"
-msgstr ""
+msgstr "Draga úr minnisnotkun"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:98
 msgid "Add contextual help for all preferences"
-msgstr ""
+msgstr "Bættu við samhengishjálp fyrir allar óskir"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:99
 msgid "Numerous bug fixes and stability and performance improvements"
-msgstr ""
+msgstr "Fjölmargar villuleiðréttingar og endurbætur á stöðugleika og afköstum"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:106
 msgid "New search engine"
-msgstr ""
+msgstr "Ný leitarvél"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:107
 msgid "Greatly improved highlighting of search terms"
-msgstr ""
+msgstr "Stórbætt auðkenning leitarorða"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:108
 msgid "Custom filters"
-msgstr ""
+msgstr "Sérsniðnar síur"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:109
 msgid "Improved sort performance"
-msgstr ""
+msgstr "Bætt flokkunarafköst"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:110
 msgid "Improved scroll performance"
-msgstr ""
+msgstr "Bætt frammistaða flettu"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:111
 msgid "Remember file selection after a database update"
-msgstr ""
+msgstr "Mundu skráarval eftir uppfærslu gagnagrunns"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:112
 msgid "Automatically scroll the result list in rubberband selection mode"
-msgstr ""
+msgstr "Skrunaðu sjálfkrafa niður niðurstöðulistann í vali á gúmmíbandi"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:113
 msgid "Invert selection with rubber band when 'Ctrl' is pressed"
-msgstr ""
+msgstr "Snúið vali við með gúmmíbandi þegar ýtt er á 'Ctrl'"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:114
 msgid "Focus search entry when the main window gets activated"
-msgstr ""
+msgstr "Leggðu áherslu á leitarfærslu þegar aðalglugginn er virkjaður"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:115
 msgid "Add filter for applications (i.e. .desktop files)"
-msgstr ""
+msgstr "Bæta við síu fyrir forrit (þ.e. .desktop skrár)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:116
 msgid ""
 "Add option to launch applications directly instead of opening the .desktop "
 "files"
-msgstr ""
+msgstr "Bættu við möguleika til að ræsa forrit beint í stað þess að opna .desktop skrárnar"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:117
 msgid "Show application icons for .desktop files"
-msgstr ""
+msgstr "Sýna forritatákn fyrir .desktop skrár"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:118
 msgid "Add .odp and .ods files to document filter"
-msgstr ""
+msgstr "Bættu .odp og .ods skrám við skjalasíu"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:119
 msgid ""
 "'Open with' menu now only shows applications which can handle the selected "
 "files"
-msgstr ""
+msgstr "'Opna með' valmyndin sýnir nú aðeins forrit sem geta séð um valdar skrár"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:120
 msgid ""
 "Improved opening of multiple files with the same type (they get now passed "
 "as a list to applications, instead of one by one)"
-msgstr ""
+msgstr "Bætt opnun margra skráa af sömu gerð (þær eru nú sendar sem listi í forrit, í stað ein í einu)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:121
 msgid "Better support for opening files in sandboxed mode"
-msgstr ""
+msgstr "Betri stuðningur við að opna skrár í sandkassaham"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:122
 msgid ""
 "Add menu items with links to the issue tracker, forum and donation pages"
-msgstr ""
+msgstr "Bættu við valmyndaratriðum með tenglum á málafylkinguna, spjallborðið og framlagssíðurnar"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:123
 msgid "Improve support for non-Linux systems"
-msgstr ""
+msgstr "Bættu stuðning við kerfi sem ekki eru frá Linux"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:124
 msgid ""
 "Add option to exit FSearch when Escape is pressed instead of minimizing the "
 "window"
-msgstr ""
+msgstr "Bættu við möguleika til að hætta við FSearch þegar ýtt er á Escape í stað þess að lágmarka gluggann"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:125
 msgid "Exclude '/proc' and '/sys' by default"
-msgstr ""
+msgstr "Útiloka '/proc' og '/sys' sjálfgefið"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:126
 msgid "Open context menu when 'Menu' key or 'Shift + F10' are pressed"
-msgstr ""
+msgstr "Opnaðu samhengisvalmyndina þegar ýtt er á 'Valmynd' takkann eða 'Shift + F10'"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:127
 msgid "and tons of bug fixes, translation updates and smaller improvements"
-msgstr ""
+msgstr "og fullt af villuleiðréttingum, þýðingaruppfærslum og smærri endurbótum"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:133
 msgid "Initial release."
-msgstr ""
+msgstr "Upphafleg útgáfa."
 
 #: src/fsearch.c:181
 msgid "translator-credits"
-msgstr ""
+msgstr "þýðanda-inneign"
 
 #: src/fsearch.c:183
 msgid "A search utility focusing on performance and advanced features"
-msgstr ""
+msgstr "Leitartæki með áherslu á frammistöðu og háþróaða eiginleika"
 
 #: src/fsearch.c:330
 msgid "Saving database and config…"
-msgstr ""
+msgstr "Vistar gagnagrunn og stillingar..."
 
 #: src/fsearch.c:786
 msgid "Open a new application window"
-msgstr ""
+msgstr "Opnaðu nýjan forritsglugga"
 
 #: src/fsearch.c:787
 msgid "Minimize the application window"
-msgstr ""
+msgstr "Lágmarkaðu forritsgluggann"
 
 #: src/fsearch.c:788
 msgid "Show the application preferences"
-msgstr ""
+msgstr "Sýndu forritastillingarnar"
 
 #: src/fsearch.c:789
 msgid "Set the search pattern"
-msgstr ""
+msgstr "Stilltu leitarmynstrið"
 
 #: src/fsearch.c:790
 msgid "Update the database and exit"
-msgstr ""
+msgstr "Uppfærðu gagnagrunninn og farðu út"
 
 #: src/fsearch.c:791
 msgid "Print version information and exit"
-msgstr ""
+msgstr "Prenta útgáfuupplýsingar og hætta"
 
 #: src/fsearch.c:883
 msgid ""
 "For command-line search help, run: fsearch --cli --help\n"
 "For shared configuration help, run: fsearch config --help"
 msgstr ""
+"Fyrir skipanalínuleitarhjálp skaltu keyra: fsearch --cli --help\n"
+"Til að fá sameiginlega stillingarhjálp skaltu keyra: fsearch config --help"
 
 #: src/fsearch_cli.c:125
 #, c-format
 msgid ""
 "Results capped at %u. Use --unlimit or --unlimited to get them all, or "
 "provide a custom --limit, or set FSEARCH_RESULT_LIMIT."
-msgstr ""
+msgstr "Niðurstöður takmarkaðar við %u. Notaðu --unlimit eða --unlimited til að fá þær allar, eða gefðu upp sérsniðið --limit, eða stilltu FSEARCH_RESULT_LIMIT."
 
 #: src/fsearch_cli.c:134
 #, c-format
 msgid "%u match."
 msgid_plural "%u matches."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%u samsvörun."
+msgstr[1] "%u samsvörun."
 
 #: src/fsearch_cli.c:142
 msgid "Updating FSearch index before searching..."
-msgstr ""
+msgstr "Uppfærir FSearch vísitölu áður en leitað er..."
 
 #: src/fsearch_cli.c:149
 #, c-format
 msgid "Indexing: %s"
-msgstr ""
+msgstr "Skráning: %s"
 
 #: src/fsearch_cli.c:181
 msgid ""
@@ -393,40 +395,76 @@ msgid ""
 "{png,jpg} selects alternatives; {01..12} is an inclusive numeric range; \\* "
 "matches a literal *.\n"
 msgstr ""
+"Notkun: fsearch --cli [OPTIONS]\n"
+"\n"
+"Leitaðu í núverandi FSearch vísitölu og prentaðu samsvarandi slóðir.\n"
+"\n"
+"  -s, --search PATTERN       Leitaðu með FSearch fyrirspurnarsetningafræði\n"
+"      --path DIRECTORY        Leitaðu endurtekið fyrir neðan MÁL (sjálfgefið: núverandi skrá)\n"
+"      --global                Leitaðu á hverjum verðtryggðum stað\n"
+"      --limit COUNT          Prentaðu að hámarki COUNT niðurstöður\n"
+"      --unlimit, --unlimited Prentaðu hverja niðurstöðu\n"
+"  -u, --update-database      Skannaðu aftur stilltu vísitöluna og farðu úr\n"
+"      --about                Prentaðu byggingarupplýsingar í einni línu\n"
+"  -h, --help                 Sýndu þessa hjálp\n"
+"\n"
+"Stillingar: fsearch config --help\n"
+"\n"
+"Dæmi:\n"
+"  fsearch --cli --search invoice              # eolaire reatha\n"
+"  fsearch --cli --path ~/Documents --search invoice\n"
+"  fsearch --cli --global --search invoice\n"
+"  fsearch --cli --search 'file:size:>20mb'\n"
+"  fsearch --cli --search 'ext:jpg;png'\n"
+"  fsearch --cli --search 'path:projects report'\n"
+"  fsearch --cli --search 'report AND ext:pdf'\n"
+"  fsearch --cli --search '(draft OR final) !archive'\n"
+"  fsearch --cli --search 'file:regex:\".+\\.pdf$\"'\n"
+"  fsearch --cli --search 'case:AGENTS'        # cás-íogair\n"
+"  fsearch --cli --search 'case:regex:\"^AGENTS\\.md$\"'\n"
+"  fsearch --cli --search 'glob:**/*.png'\n"
+"  fsearch --cli --search 'path:glob:**/AGENTS.md'\n"
+"  fsearch --cli --search 'case:glob:AGENTS.md' # glob cás-íogair\n"
+"\n"
+"Dæmi nota bil sem OG. Prófaðu skrá:, mappa:, slóð:, ext:, stærð:, dm:, case:, regex: og glob:.\n"
+"Boolean setningafræði: OG eða &&; EÐA eða ||; EKKI eða!. Sviga hópa hugtök.\n"
+"Glob setningafræði: * útilokar /; ** spannar möppur; ? passar við eina staf; [a-c] er svið;\n"
+"Glob leitar að slóðum sjálfgefið; notaðu **/ fyrir hvaða dýpi sem er; file:glob: leitar að skráarnöfnum.\n"
+"{png,jpg} velur valkosti; {01..12} er innifalið tölusvið; \\* passar við bókstaflega *.\n"
 
 #: src/fsearch_cli.c:238
 #, c-format
 msgid "FSearch %s - indexed file search for %s %s\n"
-msgstr ""
+msgstr "FSearch %s - verðtryggð skráaleit fyrir %s %s\n"
 
 #: src/fsearch_cli.c:301
 msgid "fsearch: interrupted\n"
-msgstr ""
+msgstr "fsearch: truflað\n"
 
 #: src/fsearch_cli.c:315
 msgid "fsearch: search could not run because the index is unavailable\n"
-msgstr ""
+msgstr "fsearch: leit gat ekki keyrt vegna þess að skráin er ekki tiltæk\n"
 
 #: src/fsearch_cli.c:352 src/fsearch_cli.c:381 src/fsearch_cli_config.c:774
 #: src/fsearch_cli_config.c:961 src/fsearch_cli_config.c:1147
 #, c-format
 msgid "%s\n"
-msgstr ""
+msgstr "%s\n"
 
 #: src/fsearch_cli.c:400
 #, c-format
 msgid "%s"
-msgstr ""
+msgstr "%s"
 
 #: src/fsearch_cli.c:473
 #, c-format
 msgid "fsearch: unknown CLI option: %s\n"
-msgstr ""
+msgstr "fsearch: óþekktur CLI valkostur: %s\n"
 
 #: src/fsearch_cli.c:495
 #, c-format
 msgid "fsearch: failed to create data directory: %s\n"
-msgstr ""
+msgstr "fsearch: tókst ekki að búa til gagnaskrá: %s\n"
 
 #: src/fsearch_cli_config.c:111
 msgid ""
@@ -468,30 +506,73 @@ msgid ""
 "  fsearch config filters add Documents --query 'ext:pdf' --macro docs\n"
 "  fsearch config reset search --yes\n"
 msgstr ""
+"Notkun: fsearch config COMMAND [OPTIONS]\n"
+"\n"
+"Skoðaðu og breyttu sameiginlegu FSearch GUI og CLI stillingum.\n"
+"\n"
+"Stillingarskipanir:\n"
+"  path                         Prentaðu slóð stillingarskráar\n"
+"  show [SECTION] [--json]      Sýna stillingar\n"
+"  get KEY [--json]             Prentaðu eina skalarstillingu\n"
+"  set KEY VALUE                Stilltu eina skalarstillingu\n"
+"  unset KEY                    Endurheimtu sjálfgefna stillingu fyrir eina stigstærð\n"
+"  reset [KEY|SECTION] --yes [--rescan]\n"
+"                               Endurheimta sjálfgefna stillingar\n"
+"  doctor                       Athugaðu stillingar og vísitölusamkvæmni\n"
+"  roots list|add|set|remove    Stjórna verðtryggðum rótum\n"
+"  excludes list|add|remove|hidden\n"
+"                               Stjórna útilokun vísitölu\n"
+"  filters list|add|set|remove|reset\n"
+"                               Hafa umsjón með vistuðum leitarsíum\n"
+"\n"
+"Skalargildi nota satt/ósatt, heiltölur með aukastaf eða strengi.\n"
+"Keyrðu 'fsearch config show' til að skrá alla kvarðalykla og núverandi gildi.\n"
+"Skalarhlutar: search, application, window, ui, columns, sort, dialogs.\n"
+"Notaðu 'fsearch config roots|excludes|filters --help' fyrir fjölskylduvalkosti.\n"
+"Lokaðu FSearch GUI áður en þú breytir samnýttum stillingum.\n"
+"Vísitalabreytingar verða leitanlegar í næstu CLI leit, eða strax með --rescan.\n"
+"Notaðu --json með skipunum sýna, fá og safna lista.\n"
+"\n"
+"Dæmi:\n"
+"  fsearch config show search --json\n"
+"  fsearch config get search.match-case\n"
+"  fsearch config set search.match-case true\n"
+"  fsearch config roots add ~/Code --monitor --one-file-system --rescan\n"
+"  fsearch config excludes add '*.tmp' --type wildcard --scope basename --target files\n"
+"  fsearch config filters add Documents --query 'ext:pdf' --macro docs\n"
+"  fsearch config reset search --yes\n"
 
 #: src/fsearch_cli_config.c:152
 msgid ""
 "Usage: fsearch config show [SECTION] [--json]\n"
 "Show all scalar settings or one dotted section.\n"
 msgstr ""
+"Notkun: fsearch config show [SECTION] [--json]\n"
+"Sýna allar stigstærðarstillingar eða einn punktahluta.\n"
 
 #: src/fsearch_cli_config.c:154
 msgid ""
 "Usage: fsearch config get KEY [--json]\n"
 "Print one typed scalar value. Discover keys with 'fsearch config show'.\n"
 msgstr ""
+"Notkun: fsearch config get KEY [--json]\n"
+"Prentaðu eitt vélritað stærðargildi. Uppgötvaðu lykla með 'fsearch config show'.\n"
 
 #: src/fsearch_cli_config.c:157
 msgid ""
 "Usage: fsearch config set KEY VALUE\n"
 "Set a boolean, integer, string, or enumerated scalar value.\n"
 msgstr ""
+"Notkun: fsearch config set KEY VALUE\n"
+"Stilltu boolean, heiltölu, streng eða upptalið kvarðagildi.\n"
 
 #: src/fsearch_cli_config.c:159
 msgid ""
 "Usage: fsearch config unset KEY\n"
 "Restore one scalar setting to its built-in default.\n"
 msgstr ""
+"Notkun: fsearch config unset KEY\n"
+"Endurheimtu eina mælikvarðastillingu í innbyggða sjálfgefna stillingu.\n"
 
 #: src/fsearch_cli_config.c:161
 msgid ""
@@ -499,6 +580,8 @@ msgid ""
 "Reset is destructive and requires --yes. --rescan applies to roots, "
 "database, excludes, or all.\n"
 msgstr ""
+"Notkun: fsearch config reset [KEY|SECTION] --yes [--rescan]\n"
+"Endurstilling er eyðileggjandi og krefst --já. --rescan á við um rætur, gagnagrunn, útilokanir eða allt.\n"
 
 #: src/fsearch_cli_config.c:164
 msgid ""
@@ -506,6 +589,8 @@ msgid ""
 "Check configuration readability and whether the saved index uses the same "
 "roots and exclusions.\n"
 msgstr ""
+"Notkun: fsearch config doctor\n"
+"Athugaðu læsileika stillinga og hvort vistuð vísitala notar sömu rætur og útilokanir.\n"
 
 #: src/fsearch_cli_config.c:170
 msgid ""
@@ -525,6 +610,21 @@ msgid ""
 "  --rescan-every SECONDS        Set periodic rescan interval; 0 disables it\n"
 "  --rescan                      Rebuild the index immediately after saving\n"
 msgstr ""
+"Notkun: fsearch config roots COMMAND [PATH] [OPTIONS]\n"
+"\n"
+"Skipanir:\n"
+"  list [--json]                Skráðu verðtryggðar rætur\n"
+"  add PATH [OPTIONS]           Bættu við rótarskrá\n"
+"  set PATH [OPTIONS]           Breyttu núverandi rót\n"
+"  remove PATH [--rescan]       Fjarlægðu núverandi rót\n"
+"\n"
+"Valkostir til að bæta við og stilla:\n"
+"  --active, --inactive\n"
+"  --monitor, --no-monitor\n"
+"  --one-file-system, --no-one-file-system\n"
+"  --scan-after-launch, --no-scan-after-launch\n"
+"  --rescan-every SECONDS        Stilltu reglubundið endurskannabil; 0 gerir það óvirkt\n"
+"  --rescan                      Endurreisa vísitöluna strax eftir vistun\n"
 
 #: src/fsearch_cli_config.c:187
 msgid ""
@@ -544,6 +644,21 @@ msgid ""
 "  --active, --inactive          Add state or removal selector\n"
 "  --rescan                      Rebuild the index immediately after saving\n"
 msgstr ""
+"Notkun: fsearch config excludes COMMAND [PATTERN|VALUE] [OPTIONS]\n"
+"\n"
+"Skipanir:\n"
+"  list [--json]                 Lista útilokanir\n"
+"  add PATTERN [OPTIONS]         Bættu við útilokun\n"
+"  remove PATTERN [OPTIONS]      Fjarlægðu samsvarandi útilokun\n"
+"  hidden [true|false] [--rescan]\n"
+"                                Skoðaðu eða breyttu útilokun falinna skráa\n"
+"\n"
+"Valkostir til að bæta við og fjarlægja:\n"
+"  --type fixed|wildcard|regex   Sjálfgefið: fast\n"
+"  --scope full-path|basename    Sjálfgefið: fullur slóð\n"
+"  --target both|files|folders   Sjálfgefið: bæði\n"
+"  --active, --inactive          Bæta við stöðu eða fjarlægingarvali\n"
+"  --rescan                      Endurreisa vísitöluna strax eftir vistun\n"
 
 #: src/fsearch_cli_config.c:204
 msgid ""
@@ -563,205 +678,224 @@ msgid ""
 "  --path, --no-path             Search full paths\n"
 "  --regex, --no-regex           Treat query as a regular expression\n"
 msgstr ""
+"Notkun: fsearch config filters COMMAND [NAME] [OPTIONS]\n"
+"\n"
+"Skipanir:\n"
+"  list [--json]                 Listaðu vistaðar síur\n"
+"  add NAME [OPTIONS]            Bættu við nafngreindri síu\n"
+"  set NAME [OPTIONS]            Breyttu nafngreindri síu\n"
+"  remove NAME                   Fjarlægðu nafngreinda síu\n"
+"  reset                         Endurheimtu innbyggðar síur\n"
+"\n"
+"Valkostir til að bæta við og stilla:\n"
+"  --query QUERY                 Vistað FSearch fyrirspurn\n"
+"  --macro MACRO                 Fyrirspurnarfjölviheiti\n"
+"  --case, --no-case             Passahylki\n"
+"  --path, --no-path             Leitaðu að fullum slóðum\n"
+"  --regex, --no-regex           Meðhöndlaðu fyrirspurn sem venjulega tjáningu\n"
 
 #: src/fsearch_cli_config.c:265
 msgid ""
 "fsearch config: close the running FSearch GUI before changing shared "
 "settings\n"
-msgstr ""
+msgstr "fsearch config: lokaðu keyrandi FSearch GUI áður en þú breytir samnýttum stillingum\n"
 
 #: src/fsearch_cli_config.c:269
 msgid "fsearch config: failed to save configuration\n"
-msgstr ""
+msgstr "fsearch config: tókst ekki að vista stillingar\n"
 
 #: src/fsearch_cli_config.c:280
 msgid "Index configuration changed; the next CLI search will rebuild it.\n"
-msgstr ""
+msgstr "Uppsetningu vísitölu breytt; næsta CLI leit mun endurbyggja það.\n"
 
 #: src/fsearch_cli_config.c:416
 #, c-format
 msgid "fsearch config %s: unknown option: %s\n"
-msgstr ""
+msgstr "fsearch stillingar %s: óþekktur valkostur: %s\n"
 
 #: src/fsearch_cli_config.c:422
 #, c-format
 msgid "fsearch config %s: unexpected argument: %s\n"
-msgstr ""
+msgstr "fsearch stillingar %s: óvænt rök: %s\n"
 
 #: src/fsearch_cli_config.c:449
 msgid "Usage: fsearch config get KEY [--json]\n"
-msgstr ""
+msgstr "Notkun: fsearch config fáðu KEY [--json]\n"
 
 #: src/fsearch_cli_config.c:454 src/fsearch_cli_config.c:555
 #, c-format
 msgid "fsearch config: unknown setting: %s\n"
-msgstr ""
+msgstr "fsearch config: óþekkt stilling: %s\n"
 
 #: src/fsearch_cli_config.c:502
 #, c-format
 msgid "fsearch config show: unknown section: %s\n"
-msgstr ""
+msgstr "fsearch config show: óþekktur hluti: %s\n"
 
 #: src/fsearch_cli_config.c:550
 #, c-format
 msgid "Usage: fsearch config %s KEY%s\n"
-msgstr ""
+msgstr "Notkun: fsearch config %s KEY%s\n"
 
 #: src/fsearch_cli_config.c:566
 #, c-format
 msgid "fsearch config: invalid value for %s: %s\n"
-msgstr ""
+msgstr "fsearch config: ógilt gildi fyrir %s: %s\n"
 
 #: src/fsearch_cli_config.c:572
 #, c-format
 msgid "%s = %s\n"
-msgstr ""
+msgstr "%s = %s\n"
 
 #: src/fsearch_cli_config.c:637
 #, c-format
 msgid "fsearch config roots: unknown operation: %s\n"
-msgstr ""
+msgstr "fsearch config rætur: óþekkt aðgerð: %s\n"
 
 #: src/fsearch_cli_config.c:691
 msgid "fsearch config roots: --rescan-every requires SECONDS\n"
-msgstr ""
+msgstr "fsearch config rætur: --rescan-hvert krefst SECONDS\n"
 
 #: src/fsearch_cli_config.c:710
 msgid "fsearch config roots: missing PATH\n"
-msgstr ""
+msgstr "fsearch config rætur: vantar PATH\n"
 
 #: src/fsearch_cli_config.c:717 src/fsearch_cli_config.c:732
 #, c-format
 msgid "fsearch config roots: path not found: %s\n"
-msgstr ""
+msgstr "fsearch config roots: slóð fannst ekki: %s\n"
 
 #: src/fsearch_cli_config.c:724
 #, c-format
 msgid "fsearch config roots: not a directory: %s\n"
-msgstr ""
+msgstr "fsearch config rætur: ekki möppu: %s\n"
 
 #: src/fsearch_cli_config.c:728
 #, c-format
 msgid "fsearch config roots: path already exists: %s\n"
-msgstr ""
+msgstr "fsearch config roots: slóð er þegar til: %s\n"
 
 #: src/fsearch_cli_config.c:752
 #, c-format
 msgid "fsearch config roots: invalid rescan duration: %s\n"
-msgstr ""
+msgstr "fsearch config rætur: ógild endurskoðunarlengd: %s\n"
 
 #: src/fsearch_cli_config.c:765
 msgid ""
 "%s\tactive=%s monitor=%s one-file-system=%s scan-after-launch=%s rescan-"
 "after=%s\n"
-msgstr ""
+msgstr "%s active=%s monitor=%s one-file-system=%s scan-after-launch=%s rescan-after=%s\n"
 
 #: src/fsearch_cli_config.c:844
 msgid "fsearch config excludes hidden: expected true or false\n"
-msgstr ""
+msgstr "fsearch config útilokar falinn: væntanlegur satt eða ósatt\n"
 
 #: src/fsearch_cli_config.c:850
 #, c-format
 msgid "exclude-hidden = %s\n"
-msgstr ""
+msgstr "útiloka-falið = %s\n"
 
 #: src/fsearch_cli_config.c:856
 #, c-format
 msgid "fsearch config excludes: unknown operation: %s\n"
-msgstr ""
+msgstr "fsearch config útilokar: óþekkt aðgerð: %s\n"
 
 #: src/fsearch_cli_config.c:877
 #, c-format
 msgid "fsearch config excludes: %s requires a value\n"
-msgstr ""
+msgstr "fsearch config útilokar: %s krefst gildis\n"
 
 #: src/fsearch_cli_config.c:909
 msgid "fsearch config excludes: missing PATTERN\n"
-msgstr ""
+msgstr "fsearch config útilokar: PATTERN vantar\n"
 
 #: src/fsearch_cli_config.c:914
 #, c-format
 msgid "fsearch config excludes: invalid type: %s\n"
-msgstr ""
+msgstr "fsearch config útilokar: ógild gerð: %s\n"
 
 #: src/fsearch_cli_config.c:919
 #, c-format
 msgid "fsearch config excludes: invalid scope: %s\n"
-msgstr ""
+msgstr "fsearch config útilokar: ógilt umfang: %s\n"
 
 #: src/fsearch_cli_config.c:924
 #, c-format
 msgid "fsearch config excludes: invalid target: %s\n"
-msgstr ""
+msgstr "fsearch config útilokar: ógilt markmið: %s\n"
 
 #: src/fsearch_cli_config.c:954
 #, c-format
 msgid "fsearch config excludes: exclusion not found: %s\n"
-msgstr ""
+msgstr "fsearch config útilokar: útilokun fannst ekki: %s\n"
 
 #: src/fsearch_cli_config.c:1022
 msgid "filters reset\n"
-msgstr ""
+msgstr "síur endurstilla\n"
 
 #: src/fsearch_cli_config.c:1029
 #, c-format
 msgid "fsearch config filters: unknown operation: %s\n"
-msgstr ""
+msgstr "fsearch stillingarsíur: óþekkt aðgerð: %s\n"
 
 #: src/fsearch_cli_config.c:1051
 #, c-format
 msgid "fsearch config filters: %s requires a value\n"
-msgstr ""
+msgstr "fsearch stillingarsíur: %s krefst gildis\n"
 
 #: src/fsearch_cli_config.c:1094
 msgid "fsearch config filters: missing NAME\n"
-msgstr ""
+msgstr "fsearch stillingarsíur: vantar NAME\n"
 
 #: src/fsearch_cli_config.c:1100 src/fsearch_cli_config.c:1111
 #, c-format
 msgid "fsearch config filters: name not found: %s\n"
-msgstr ""
+msgstr "fsearch stillingarsíur: nafn fannst ekki: %s\n"
 
 #: src/fsearch_cli_config.c:1107
 #, c-format
 msgid "fsearch config filters: name already exists: %s\n"
-msgstr ""
+msgstr "fsearch stillingarsíur: nafn er þegar til: %s\n"
 
 #: src/fsearch_cli_config.c:1145
 #, c-format
 msgid "%s\tmacro=%s query=%s\n"
-msgstr ""
+msgstr "%s macro=%s fyrirspurn=%s\n"
 
 #: src/fsearch_cli_config.c:1193
 msgid "fsearch config reset requires --yes\n"
-msgstr ""
+msgstr "fsearch stillingar endurstillingu krefst --já\n"
 
 #: src/fsearch_cli_config.c:1201
 msgid ""
 "fsearch config reset: --rescan requires roots, database, excludes, or all\n"
-msgstr ""
+msgstr "fsearch config endurstilla: --rescan krefst rætur, gagnagrunns, útilokunar eða allt\n"
 
 #: src/fsearch_cli_config.c:1241
 #, c-format
 msgid "fsearch config: unknown setting or section: %s\n"
-msgstr ""
+msgstr "fsearch config: óþekkt stilling eða hluti: %s\n"
 
 #: src/fsearch_cli_config.c:1246
 #, c-format
 msgid "%s settings reset\n"
-msgstr ""
+msgstr "Stillingar %s endurstilltar\n"
 
 #: src/fsearch_cli_config.c:1253
 msgid ""
 "configuration: missing; defaults active\n"
 "index: unknown\n"
 msgstr ""
+"stillingar: vantar; sjálfgefnar virkar\n"
+"vísitala: óþekkt\n"
 
 #: src/fsearch_cli_config.c:1261
 msgid ""
 "configuration: ok\n"
 "index: missing or unreadable\n"
 msgstr ""
+"stillingar: allt í lagi\n"
+"vísir: vantar eða ólæsilegt\n"
 
 #: src/fsearch_cli_config.c:1266
 #, c-format
@@ -769,121 +903,125 @@ msgid ""
 "configuration: ok\n"
 "index: %s\n"
 msgstr ""
+"stillingar: allt í lagi\n"
+"vísitala: %s\n"
 
 #: src/fsearch_cli_config.c:1266
 msgid "current"
-msgstr ""
+msgstr "núverandi"
 
 #: src/fsearch_cli_config.c:1266
 msgid "stale"
-msgstr ""
+msgstr "gamaldags"
 
 #: src/fsearch_cli_config.c:1278
 msgid ""
 "Usage: fsearch config path\n"
 "Print the active FSearch configuration file path.\n"
 msgstr ""
+"Notkun: fsearch config path\n"
+"Prentaðu virku FSearch stillingarskráarslóðina.\n"
 
 #: src/fsearch_cli_config.c:1321
 #, c-format
 msgid "fsearch config: unknown command: %s\n"
-msgstr ""
+msgstr "fsearch config: óþekkt skipun: %s\n"
 
 #: src/fsearch_database.c:795
 msgid "Index rescan: applying changes…"
-msgstr ""
+msgstr "Endurskanna vísitölu: beitir breytingum..."
 
 #: src/fsearch_database_file.c:1343
 msgid "Loading folders…"
-msgstr ""
+msgstr "Hleður möppum..."
 
 #: src/fsearch_database_file.c:1359
 msgid "Loading files…"
-msgstr ""
+msgstr "Hleður skrám..."
 
 #: src/fsearch_database_index_store.c:925 src/fsearch_statusbar.c:73
 #: src/fsearch_statusbar.ui:90
 msgid "Sorting…"
-msgstr ""
+msgstr "Raða…"
 
 #: src/fsearch_database_preferences_widget.c:162
 #: src/fsearch_database_preferences_widget.c:176
 msgid "Select folder"
-msgstr ""
+msgstr "Veldu möppu"
 
 #: src/fsearch_database_preferences_widget.c:165
 #: src/fsearch_database_preferences_widget.c:180
 #: src/fsearch_filter_editor.c:104 src/fsearch_preferences_dialog.c:331
 msgid "_Cancel"
-msgstr ""
+msgstr "_Hætta við"
 
 #: src/fsearch_database_preferences_widget.c:167
 #: src/fsearch_database_preferences_widget.c:179
 msgid "_Select"
-msgstr ""
+msgstr "_Veldu"
 
 #: src/fsearch_database_preferences_widget.c:389
 msgid "Literal"
-msgstr ""
+msgstr "Bókstaflega"
 
 #: src/fsearch_database_preferences_widget.c:391
 msgid "Wildcard"
-msgstr ""
+msgstr "Wildcard"
 
 #: src/fsearch_database_preferences_widget.c:393
 msgid "Regex"
-msgstr ""
+msgstr "Regex"
 
 #: src/fsearch_database_preferences_widget.c:414
 msgid "Full Path"
-msgstr ""
+msgstr "Full leið"
 
 #: src/fsearch_database_preferences_widget.c:416
 msgid "Basename"
-msgstr ""
+msgstr "Grunnnafn"
 
 #: src/fsearch_database_preferences_widget.c:434
 msgid "Files & Folders"
-msgstr ""
+msgstr "Skrár og möppur"
 
 #: src/fsearch_database_preferences_widget.c:436 src/fsearch_filter.c:114
 msgid "Files"
-msgstr ""
+msgstr "Skrár"
 
 #: src/fsearch_database_preferences_widget.c:438 src/fsearch_filter.c:113
 msgid "Folders"
-msgstr ""
+msgstr "Möppur"
 
 #: src/fsearch_database_preferences_widget.c:635
 #: src/fsearch_database_preferences_widget.c:860
 msgid "Active"
-msgstr ""
+msgstr "Virkur"
 
 #: src/fsearch_database_preferences_widget.c:640
 msgid "Pattern"
-msgstr ""
+msgstr "Mynstur"
 
 #: src/fsearch_database_preferences_widget.c:694 src/fsearch_window.c:756
 #: src/menus.ui:275
 msgid "Type"
-msgstr ""
+msgstr "Tegund"
 
 #: src/fsearch_database_preferences_widget.c:700
 msgid "Match"
-msgstr ""
+msgstr "Samsvörun"
 
 #: src/fsearch_database_preferences_widget.c:706
 msgid "Applies To"
-msgstr ""
+msgstr "Gildir um"
 
 #: src/fsearch_database_preferences_widget.c:864 src/fsearch_window.c:742
 #: src/menus.ui:219 src/menus.ui:267
 msgid "Path"
-msgstr ""
+msgstr "Slóð"
 
 #: src/fsearch_database_preferences_widget.ui:78
 msgid "Enter path…"
-msgstr ""
+msgstr "Sláðu inn slóð…"
 
 #: src/fsearch_database_preferences_widget.ui:97
 #: src/fsearch_database_preferences_widget.ui:372
@@ -892,191 +1030,195 @@ msgid ""
 "                                            database\n"
 "                                        "
 msgstr ""
+"Bættu við slóð til að vera með í\n"
+"                                            gagnasafn"
 
 #: src/fsearch_database_preferences_widget.ui:176
 msgid "Attempt to monitor"
-msgstr ""
+msgstr "Reyndu að fylgjast með"
 
 #: src/fsearch_database_preferences_widget.ui:191
 msgid "Scan after launch"
-msgstr ""
+msgstr "Skanna eftir sjósetningu"
 
 #: src/fsearch_database_preferences_widget.ui:206
 msgid "Stay on one file system"
-msgstr ""
+msgstr "Vertu á einu skráarkerfi"
 
 #: src/fsearch_database_preferences_widget.ui:221
 msgid "Rescan every"
-msgstr ""
+msgstr "Skannaðu aftur hvert"
 
 #: src/fsearch_database_preferences_widget.ui:254
 msgid "Hours:"
-msgstr ""
+msgstr "Klukkutímar:"
 
 #: src/fsearch_database_preferences_widget.ui:298
 msgid "Minutes:"
-msgstr ""
+msgstr "Fundargerð:"
 
 #: src/fsearch_database_preferences_widget.ui:310
 msgid "30"
-msgstr ""
+msgstr "30"
 
 #: src/fsearch_database_preferences_widget.ui:391
 msgid "Remove selected path"
-msgstr ""
+msgstr "Fjarlægðu valda slóð"
 
 #: src/fsearch_database_preferences_widget.ui:418
 msgid "Include"
-msgstr ""
+msgstr "Taka með"
 
 #: src/fsearch_database_preferences_widget.ui:477
 msgid ""
 "Add exclude rule\n"
 "                                                "
 msgstr ""
+"Bæta við útilokunarreglu"
 
 #: src/fsearch_database_preferences_widget.ui:495
 msgid ""
 "Remove selected path\n"
 "                                                "
 msgstr ""
+"Fjarlægðu valda slóð"
 
 #: src/fsearch_database_preferences_widget.ui:512
 msgid "Restore default exclude list"
-msgstr ""
+msgstr "Endurheimta sjálfgefna útilokunarlista"
 
 #: src/fsearch_database_preferences_widget.ui:541
 msgid "Exclude hidden files and folders"
-msgstr ""
+msgstr "Útiloka faldar skrár og möppur"
 
 #: src/fsearch_database_preferences_widget.ui:563
 msgid "Exclude"
-msgstr ""
+msgstr "Útiloka"
 
 #: src/fsearch_file_utils.c:161
 msgctxt "Will be followed by the path of the file."
 msgid "Error when removing file"
-msgstr ""
+msgstr "Villa við að fjarlægja skrá"
 
 #: src/fsearch_file_utils.c:163
 msgid "Failed to get path"
-msgstr ""
+msgstr "Ekki tókst að ná slóð"
 
 #: src/fsearch_file_utils.c:277
 msgctxt "Will be followed by the file path."
 msgid "Error when getting information from file"
-msgstr ""
+msgstr "Villa við að sækja upplýsingar úr skrá"
 
 #: src/fsearch_file_utils.c:279
 msgid "Failed to get application information"
-msgstr ""
+msgstr "Mistókst að fá umsóknarupplýsingar"
 
 #: src/fsearch_file_utils.c:294
 msgctxt "Will be followed by the content type string."
 msgid "Error when getting information for content type"
-msgstr ""
+msgstr "Villa við að fá upplýsingar um efnistegund"
 
 #: src/fsearch_file_utils.c:296
 msgid "No default application registered"
-msgstr ""
+msgstr "Ekkert sjálfgefið forrit skráð"
 
 #: src/fsearch_file_utils.c:524
 msgctxt "Will be followed by the path of the folder."
 msgid "Error when opening parent folder"
-msgstr ""
+msgstr "Villa við að opna yfirmöppu"
 
 #: src/fsearch_file_utils.c:526
 msgid "Failed to get parent path"
-msgstr ""
+msgstr "Mistókst að ná í foreldraslóð"
 
 #: src/fsearch_file_utils.c:530
 msgctxt "Will be followed by the path of the folder."
 msgid "Error while opening folder"
-msgstr ""
+msgstr "Villa við að opna möppuna"
 
 #: src/fsearch_file_utils.c:533
 msgid "Failed to build open command"
-msgstr ""
+msgstr "Mistókst að búa til opna stjórn"
 
 #: src/fsearch_file_utils.c:589
 msgid "Folder"
-msgstr ""
+msgstr "Mappa"
 
 #: src/fsearch_file_utils.c:595
 msgid "Unknown Type"
-msgstr ""
+msgstr "Óþekkt gerð"
 
 #: src/fsearch_filter.c:112
 msgid "All"
-msgstr ""
+msgstr "Allt"
 
 #: src/fsearch_filter.c:115
 msgid "Applications"
-msgstr ""
+msgstr "Umsóknir"
 
 #: src/fsearch_filter.c:116
 msgid "Archives"
-msgstr ""
+msgstr "Skjalasafn"
 
 #: src/fsearch_filter.c:117
 msgid "Audio"
-msgstr ""
+msgstr "Hljóð"
 
 #: src/fsearch_filter.c:118
 msgid "Documents"
-msgstr ""
+msgstr "Skjöl"
 
 #: src/fsearch_filter.c:119
 msgid "Pictures"
-msgstr ""
+msgstr "Myndir"
 
 #: src/fsearch_filter.c:120
 msgid "Videos"
-msgstr ""
+msgstr "Myndbönd"
 
 #: src/fsearch_filter_editor.c:79
 msgid "Macro names must not contain `:` characters."
-msgstr ""
+msgstr "Fjölvanöfn mega ekki innihalda „:“ stafi."
 
 #: src/fsearch_filter_editor.c:105 src/fsearch_preferences_dialog.c:332
 msgid "_OK"
-msgstr ""
+msgstr "_Allt í lagi"
 
 #: src/fsearch_filter_editor.ui:10 src/fsearch_filter_preferences_widget.c:156
 msgid "Edit filter"
-msgstr ""
+msgstr "Breyta síu"
 
 #: src/fsearch_filter_editor.ui:50
 msgid "Name:"
-msgstr ""
+msgstr "Nafn:"
 
 #: src/fsearch_filter_editor.ui:61
 msgid "The unique name of this filter"
-msgstr ""
+msgstr "Einstakt heiti þessarar síu"
 
 #: src/fsearch_filter_editor.ui:64
 msgid "Unique filter name"
-msgstr ""
+msgstr "Einstakt síuheiti"
 
 #: src/fsearch_filter_editor.ui:73
 msgid "Search in path"
-msgstr ""
+msgstr "Leitaðu í slóð"
 
 #: src/fsearch_filter_editor.ui:87
 msgid "Enable regular expressions"
-msgstr ""
+msgstr "Virkjaðu reglulegar tjáningar"
 
 #: src/fsearch_filter_editor.ui:101
 msgid "Match case"
-msgstr ""
+msgstr "Passahylki"
 
 #: src/fsearch_filter_editor.ui:146
 msgid "Query:"
-msgstr ""
+msgstr "Fyrirspurn:"
 
 #: src/fsearch_filter_editor.ui:160
 msgid "Macro:"
-msgstr ""
+msgstr "Fjölvi:"
 
 #: src/fsearch_filter_editor.ui:171
 msgid ""
@@ -1084,227 +1226,228 @@ msgid ""
 "search entry by typing its text followed by ':'\n"
 "                "
 msgstr ""
+"Fjölvi fyrir þessa síu. Fjölvi gerir þér kleift að fá aðgang að þessari síu frá leitarfærslunni með því að slá inn texta hennar og síðan ':'"
 
 #: src/fsearch_filter_preferences_widget.c:133
 msgid "Add filter"
-msgstr ""
+msgstr "Bæta við síu"
 
 #: src/fsearch_filter_preferences_widget.c:315 src/fsearch_window.c:735
 #: src/menus.ui:215 src/menus.ui:263
 msgid "Name"
-msgstr ""
+msgstr "Nafn"
 
 #: src/fsearch_filter_preferences_widget.c:316
 msgid "Macro"
-msgstr ""
+msgstr "Fjölvi"
 
 #: src/fsearch_filter_preferences_widget.c:317
 msgid "Query"
-msgstr ""
+msgstr "Fyrirspurn"
 
 #: src/fsearch_filter_preferences_widget.ui:77
 msgid "Add new filter"
-msgstr ""
+msgstr "Bæta við nýrri síu"
 
 #: src/fsearch_filter_preferences_widget.ui:95
 msgid "Remove selected filter"
-msgstr ""
+msgstr "Fjarlægðu valda síu"
 
 #: src/fsearch_filter_preferences_widget.ui:113
 msgid "Edit selected filter"
-msgstr ""
+msgstr "Breyta valinni síu"
 
 #: src/fsearch_filter_preferences_widget.ui:129
 msgid "Restore default filters"
-msgstr ""
+msgstr "Endurheimtu sjálfgefnar síur"
 
 #: src/fsearch_listview_popup.c:36
 msgid "Properties…"
-msgstr ""
+msgstr "Eiginleikar…"
 
 #: src/fsearch_listview_popup.c:163
 msgid "Other Application…"
-msgstr ""
+msgstr "Annað forrit…"
 
 #: src/fsearch_overlay.ui:44
 msgid "Empty Database"
-msgstr ""
+msgstr "Tómur gagnagrunnur"
 
 #: src/fsearch_overlay.ui:60
 msgid "Add folders"
-msgstr ""
+msgstr "Bæta við möppum"
 
 #: src/fsearch_overlay.ui:108
 msgid "Loading Database…"
-msgstr ""
+msgstr "Hleður gagnagrunn..."
 
 #: src/fsearch_overlay.ui:123
 msgid "This won't take long."
-msgstr ""
+msgstr "Þetta mun ekki taka langan tíma."
 
 #: src/fsearch_overlay.ui:171 src/fsearch_statusbar.ui:312
 msgid "Updating Database…"
-msgstr ""
+msgstr "Uppfærir gagnagrunn..."
 
 #: src/fsearch_overlay.ui:186 src/fsearch_overlay.ui:383
 msgid "This may take a while."
-msgstr ""
+msgstr "Þetta getur tekið smá tíma."
 
 #: src/fsearch_overlay.ui:241
 msgid "Empty Query"
-msgstr ""
+msgstr "Tóm fyrirspurn"
 
 #: src/fsearch_overlay.ui:256
 msgid "Press <b>Ctrl + F</b> and start typing."
-msgstr ""
+msgstr "Ýttu á <b>Ctrl + F</b> og byrjaðu að skrifa."
 
 #: src/fsearch_overlay.ui:304
 msgid "No Results Found"
-msgstr ""
+msgstr "Engar niðurstöður fundust"
 
 #: src/fsearch_overlay.ui:319
 msgid "Try a different search"
-msgstr ""
+msgstr "Prófaðu aðra leit"
 
 #: src/fsearch_overlay.ui:368
 msgid "Sorting results…"
-msgstr ""
+msgstr "Raða niðurstöður..."
 
 #: src/fsearch_preferences.ui:7 src/fsearch_window.ui:251 src/menus.ui:84
 msgid "Preferences"
-msgstr ""
+msgstr "Óskir"
 
 #: src/fsearch_preferences.ui:76
 msgid "Enable dark theme"
-msgstr ""
+msgstr "Virkjaðu dökkt þema"
 
 #: src/fsearch_preferences.ui:97
 msgid "Enable client-side decorations (requires restart)"
-msgstr ""
+msgstr "Virkja skreytingar viðskiptavinarhliðar (krefst endurræsingar)"
 
 #: src/fsearch_preferences.ui:117
 msgid "Use binary units instead of decimal units"
-msgstr ""
+msgstr "Notaðu tvöfaldar einingar í stað tugaeininga"
 
 #: src/fsearch_preferences.ui:138
 msgid "Remember window size"
-msgstr ""
+msgstr "Mundu stærð glugga"
 
 #: src/fsearch_preferences.ui:159
 msgid "Exit on Escape"
-msgstr ""
+msgstr "Hætta á Escape"
 
 #: src/fsearch_preferences.ui:202
 msgid "with keyboard shortcuts or menu entries"
-msgstr ""
+msgstr "með flýtilykla eða valmyndarfærslum"
 
 #: src/fsearch_preferences.ui:223
 msgid "with double click"
-msgstr ""
+msgstr "með tvísmelli"
 
 #: src/fsearch_preferences.ui:257
 msgid "Behaviour after successfully opening a file:"
-msgstr ""
+msgstr "Hegðun eftir að skrá hefur verið opnuð:"
 
 #: src/fsearch_preferences.ui:273
 msgid "Nothing"
-msgstr ""
+msgstr "Ekkert"
 
 #: src/fsearch_preferences.ui:274
 msgid "Minimize"
-msgstr ""
+msgstr "Lágmarka"
 
 #: src/fsearch_preferences.ui:275
 msgid "Close"
-msgstr ""
+msgstr "Loka"
 
 #: src/fsearch_preferences.ui:309
 msgid "General:"
-msgstr ""
+msgstr "Almennt:"
 
 #: src/fsearch_preferences.ui:344
 msgid "Show highlighted search terms"
-msgstr ""
+msgstr "Sýna auðkennd leitarorð"
 
 #: src/fsearch_preferences.ui:366
 msgid "Show tooltips"
-msgstr ""
+msgstr "Sýndu verkfæraábendingar"
 
 #: src/fsearch_preferences.ui:387
 msgid "Show icons in name column"
-msgstr ""
+msgstr "Sýna tákn í nafnadálki"
 
 #: src/fsearch_preferences.ui:408
 msgid "Remember column configuration"
-msgstr ""
+msgstr "Mundu dálkstillingu"
 
 #: src/fsearch_preferences.ui:429
 msgid "Remember sort order"
-msgstr ""
+msgstr "Mundu eftir röðun"
 
 #: src/fsearch_preferences.ui:450
 msgid "Open path with double click in path column"
-msgstr ""
+msgstr "Opnaðu slóð með tvísmelli í slóðadálki"
 
 #: src/fsearch_preferences.ui:471
 msgid "Single click to open"
-msgstr ""
+msgstr "Einn smellur til að opna"
 
 #: src/fsearch_preferences.ui:492
 msgid "Launch desktop files"
-msgstr ""
+msgstr "Ræstu skjáborðsskrár"
 
 #: src/fsearch_preferences.ui:519
 msgid "Results:"
-msgstr ""
+msgstr "Niðurstöður:"
 
 #: src/fsearch_preferences.ui:560
 msgid "Show database indexing status"
-msgstr ""
+msgstr "Sýna gagnagrunnsskráningarstöðu"
 
 #: src/fsearch_preferences.ui:587
 msgid "Statusbar:"
-msgstr ""
+msgstr "Stöðustika:"
 
 #: src/fsearch_preferences.ui:628
 msgid "Show warning dialogs when:"
-msgstr ""
+msgstr "Sýna viðvörunarglugga þegar:"
 
 #: src/fsearch_preferences.ui:638
 msgid "file / folder failed to open"
-msgstr ""
+msgstr "Ekki tókst að opna skrá / mappa"
 
 #: src/fsearch_preferences.ui:667
 msgid "Dialogs:"
-msgstr ""
+msgstr "Valmyndir:"
 
 #: src/fsearch_preferences.ui:692
 msgid "Interface"
-msgstr ""
+msgstr "Viðmót"
 
 #: src/fsearch_preferences.ui:711
 msgid "Search in path when query contains path separators"
-msgstr ""
+msgstr "Leitaðu í slóð þegar fyrirspurn inniheldur slóðaskilgreinar"
 
 #: src/fsearch_preferences.ui:730
 msgid "Search as you type"
-msgstr ""
+msgstr "Leitaðu á meðan þú skrifar"
 
 #: src/fsearch_preferences.ui:750
 msgid "Hide results when search is empty"
-msgstr ""
+msgstr "Fela niðurstöður þegar leit er tóm"
 
 #: src/fsearch_preferences.ui:769
 msgid "Match case when query contains at least one upper case character"
-msgstr ""
+msgstr "Passa saman hástafi þegar fyrirspurn inniheldur að minnsta kosti einn hástaf"
 
 #: src/fsearch_preferences.ui:801
 msgid "Filter:"
-msgstr ""
+msgstr "Sía:"
 
 #: src/fsearch_preferences.ui:822 src/fsearch_window.ui:639
 msgid "Search"
-msgstr ""
+msgstr "Leita"
 
 #: src/fsearch_preferences.ui:855
 msgid ""
@@ -1316,6 +1459,11 @@ msgid ""
 "Note that not all system themes provide such a darker variant, therefore "
 "enabling this setting might not have an effect."
 msgstr ""
+"<b>Virkja dökkt þema:</b>\n"
+"\n"
+"Ef það er virkt er kerfisþemað beðið um að nota dekkri stíl fyrir forritið <i>(þ.e. dökk UI atriði á björtum texta)</i>.\n"
+"\n"
+"Athugaðu að ekki öll kerfisþemu bjóða upp á svo dekkra afbrigði og því gæti það ekki haft áhrif að virkja þessa stillingu."
 
 #: src/fsearch_preferences.ui:873
 msgid ""
@@ -1329,6 +1477,12 @@ msgid ""
 "This resembles a more traditional UI layout and takes a little bit more "
 "space."
 msgstr ""
+"<b>Virkja skreytingar við viðskiptavini:</b>\n"
+"\n"
+"Ef það er virkt birtast leitarfærslan og aðalvalmyndin á titilstiku gluggans.\n"
+"\n"
+"Ef slökkt er á henni birtist aðalvalmyndin sem valmyndarstika með leitarfærslunni fyrir neðan hana.\n"
+"Þetta líkist hefðbundnara UI skipulag og tekur aðeins meira pláss."
 
 #: src/fsearch_preferences.ui:893
 msgid ""
@@ -1341,6 +1495,12 @@ msgid ""
 "\t• <b>Decimal  units:</b> This refers to decimal SI prefixes <i>(e.g. 1 kB "
 "= 1000 bytes)</i>"
 msgstr ""
+"<b>Notaðu tvöfaldar einingar í stað aukastafareininga:</b>\n"
+"\n"
+"Þessar stillingar stjórna því hvernig skráarstærðir eru birtar.\n"
+"\n"
+"\t• <b>Tvöfundar einingar:</b> Þetta vísar til tvöfaldra IEC forskeyti <i>(t.d. 1 KiB = 1024 bæti)</i>\n"
+"\t• <b>Taugaeiningar:</b> Þetta vísar til aukastafa SI forskeyti <i>(t.d. 1 kB = 1000 bæti)</i>"
 
 #: src/fsearch_preferences.ui:913
 msgid ""
@@ -1352,6 +1512,11 @@ msgid ""
 "Note that some window managers ignore this request and force the window to "
 "have a different size."
 msgstr ""
+"<b>Mundu gluggastærð:</b>\n"
+"\n"
+"Ef virkt verður gluggastærðin frá fyrri lotu endurheimt þegar þú opnar FSearch glugga.\n"
+"\n"
+"Athugaðu að sumir gluggastjórar hunsa þessa beiðni og þvinga gluggann til að hafa aðra stærð."
 
 #: src/fsearch_preferences.ui:932
 msgid ""
@@ -1369,6 +1534,16 @@ msgid ""
 "\t• <b>keyboard shortcuts or menu entries</b> and/or\n"
 "\t• <b>mouse click</b>"
 msgstr ""
+"<b>Hegðun eftir að skrá hefur verið opnuð:</b>\n"
+"\n"
+"Þegar skrá/möppu tókst að opna er hægt að framkvæma eina af eftirfarandi aðgerðum:\n"
+"\t• <b>Ekkert:</b> Ekkert gerist.\n"
+"                        • <b>Lágmarka:</b> FSearch glugginn sem nú er valinn verður lágmarkaður.\n"
+"\t• <b>Loka:</b> Hætta í FSearch.\n"
+"\n"
+"Þú getur stillt hvort þessar aðgerðir ættu að koma af stað þegar skráin var opnuð með\n"
+"\t• <b>flýtivísar eða valmyndarfærslur</b> og/eða\n"
+"\t• <b>mús smellur</b>"
 
 #: src/fsearch_preferences.ui:956
 msgid ""
@@ -1384,6 +1559,14 @@ msgid ""
 "This also works for regular expressions and wildcard expressions starting or "
 "ending with an asterisk. "
 msgstr ""
+"<b>Sýna auðkennd leitarorð:</b>\n"
+"\n"
+"Ef það er virkt verða leitarskilyrðin auðkennd á niðurstöðuskjánum. Til dæmis þegar þú leitar að \\\"foo\\\" verða allar birtingar <i>foo</i> í skráar-/möppuheitum auðkenndar með feitletruðum stöfum:\n"
+"\n"
+"\t<b>foo</b>bar.txt\n"
+"\tskrá.<b>foo</b>\n"
+"\n"
+"Þetta virkar líka fyrir reglubundnar tjáningar og stafrænar tjáningar sem byrja eða enda á stjörnu."
 
 #: src/fsearch_preferences.ui:978
 msgid ""
@@ -1392,6 +1575,9 @@ msgid ""
 "If enabled, the results view will show the full path of the focused file/"
 "folder in a small tooltip window."
 msgstr ""
+"<b>Sýna ábendingar:</b>\n"
+"\n"
+"Ef kveikt er á því mun niðurstöðuskjárinn sýna alla slóð fókusskráarinnar/möppunnar í litlum leiðbeiningaglugga."
 
 #: src/fsearch_preferences.ui:995
 msgid ""
@@ -1399,6 +1585,9 @@ msgid ""
 "\n"
 "If enabled, file/folder icons will be shown in the name column."
 msgstr ""
+"<b>Sýna tákn í nafnadálki:</b>\n"
+"\n"
+"Ef það er virkt munu skráar-/möpputákn birtast í nafnadálknum."
 
 #: src/fsearch_preferences.ui:1012
 msgid ""
@@ -1408,6 +1597,9 @@ msgid ""
 "session will be restored when you open an FSearch window. This includes the "
 "size and visibility of all columns."
 msgstr ""
+"<b>Mundu dálkastillingu:</b>\n"
+"\n"
+"Ef það er virkt verður dálkauppsetning niðurstöðuyfirlitsins frá fyrri lotu endurheimt þegar þú opnar FSearch glugga. Þetta felur í sér stærð og sýnileika allra dálka."
 
 #: src/fsearch_preferences.ui:1029
 msgid ""
@@ -1416,6 +1608,9 @@ msgid ""
 "If enabled, the sort order of the results view from the previous session "
 "will be restored when you open an FSearch window."
 msgstr ""
+"<b>Mundu flokkunarröð:</b>\n"
+"\n"
+"Ef það er virkt verður röðun niðurstöðuskjásins frá fyrri lotu endurheimt þegar þú opnar FSearch glugga."
 
 #: src/fsearch_preferences.ui:1046
 msgid ""
@@ -1423,6 +1618,9 @@ msgid ""
 "\n"
 "If enabled, double clicking in the path column will open the selected path."
 msgstr ""
+"<b>Opna slóð með tvísmelli í slóðadálki:</b>\n"
+"\n"
+"Ef það er virkt mun tvísmella á slóðadálkinn opna valda slóðina."
 
 #: src/fsearch_preferences.ui:1063
 msgid ""
@@ -1432,6 +1630,9 @@ msgid ""
 "want to select a file/folder while this setting is active, you need to hold "
 "<i>Ctrl</i> at the same time while clicking the file/folder."
 msgstr ""
+"<b>Einn smellur til að opna:</b>\n"
+"\n"
+"Ef það er virkt mun einn smellur opna valda skrá/möppu. Ef þú vilt aðeins velja skrá/möppu á meðan þessi stilling er virk, þarftu að halda <i>Ctrl</i> inni á sama tíma á meðan þú smellir á skrána/möppuna."
 
 #: src/fsearch_preferences.ui:1080
 msgid ""
@@ -1440,6 +1641,9 @@ msgid ""
 "If enabled, the path that is currently being indexed is displayed in the "
 "statusbar."
 msgstr ""
+"<b>Sýna stöðu flokkunar gagnagrunns:</b>\n"
+"\n"
+"Ef það er virkt birtist slóðin sem nú er verið að skrásetja á stöðustikunni."
 
 #: src/fsearch_preferences.ui:1097
 msgid ""
@@ -1448,6 +1652,9 @@ msgid ""
 "If enabled, a warning dialog is displayed when a file or folder failed to "
 "open."
 msgstr ""
+"<b>Sýna viðvörunarglugga:</b>\n"
+"\n"
+"Ef virkt birtist viðvörunargluggi þegar ekki tókst að opna skrá eða mappa."
 
 #: src/fsearch_preferences.ui:1114
 msgid ""
@@ -1456,6 +1663,9 @@ msgid ""
 "If enabled, search terms containing path separators (i.e. \"/\") will be "
 "automatically matched against the full path of a file or folder."
 msgstr ""
+"<b>Leita í slóð þegar fyrirspurn inniheldur slóðaskilgreinar:</b>\n"
+"\n"
+"Ef kveikt er á því munu leitarorð sem innihalda slóðaskilgreinar (þ.e. \\\"/\\\") passa sjálfkrafa saman við fulla slóð skráar eða möppu."
 
 #: src/fsearch_preferences.ui:1131
 msgid ""
@@ -1465,6 +1675,9 @@ msgid ""
 "trigger a case-sensitive search. This means a search term like <i>Foo</i> "
 "will match <i>FooBar.txt</i> but not <i>foobar.txt</i>."
 msgstr ""
+"<b>Passaðu saman hástöfum þegar fyrirspurn inniheldur að minnsta kosti einn hástafi:</b>\n"
+"\n"
+"Ef kveikt er á því munu leitarorð sem innihalda að minnsta kosti einn hástaf kveikja á hástafaleit. Þetta þýðir að leitarorð eins og <i>Foo</i> passar við <i>FooBar.txt</i> en ekki <i>foobar.txt</i>."
 
 #: src/fsearch_preferences.ui:1148
 msgid ""
@@ -1475,6 +1688,11 @@ msgid ""
 "If disabled, all files and folders will be displayed when the search entry "
 "is empty."
 msgstr ""
+"<b>Fela niðurstöður þegar leit er tóm:</b>\n"
+"\n"
+"Ef virkt birtast engar leitarniðurstöður þegar leitarfærslan er tóm.\n"
+"\n"
+"Ef slökkt er á því munu allar skrár og möppur birtast þegar leitarfærslan er tóm."
 
 #: src/fsearch_preferences.ui:1167
 msgid ""
@@ -1485,6 +1703,11 @@ msgid ""
 "If disabled, the search is only updated when you hit <i>Enter</i> or press "
 "the search button. "
 msgstr ""
+"<b>Leita um leið og þú skrifar:</b>\n"
+"\n"
+"Ef virkjað er leitin uppfærð sjálfkrafa við hverja áslátt.\n"
+"\n"
+"Ef slökkt er á leitinni er leitin aðeins uppfærð þegar þú ýtir á <i>Enter</i> eða ýtir á leitarhnappinn."
 
 #: src/fsearch_preferences.ui:1186
 msgid ""
@@ -1493,6 +1716,9 @@ msgid ""
 "If enabled, the database will be updated automatically in the background "
 "when you start FSearch."
 msgstr ""
+"<b>Uppfæra gagnagrunn við upphaf:</b>\n"
+"\n"
+"Ef virkt verður gagnagrunnurinn uppfærður sjálfkrafa í bakgrunni þegar þú ræsir FSearch."
 
 #: src/fsearch_preferences.ui:1203
 msgid ""
@@ -1506,6 +1732,13 @@ msgid ""
 "\t• <b>One Filesystem:</b> If enabled, FSearch won't cross filesystem "
 "boundaries for this folder"
 msgstr ""
+"<b>Meðfylgjandi möppur:</b>\n"
+"\n"
+"Þessi listi inniheldur allar möppur sem þú vilt hafa í gagnagrunninum.\n"
+"\n"
+"\t• <b>Virkt:</b> Ef það er virkt mun slóðin vera með í gagnagrunninum sem leitað er í.\n"
+"\t• <b>Slóð:</b> Öll slóðin sem á að vera með.\n"
+"\t• <b>Eitt skráarkerfi:</b> Ef það er virkt mun FSearch ekki fara yfir skráarkerfismörk fyrir þessa möppu"
 
 #: src/fsearch_preferences.ui:1224
 msgid ""
@@ -1514,6 +1747,9 @@ msgid ""
 "This button opens a dialog where you can select a folder you want to include "
 "in the database for searching."
 msgstr ""
+"<b>Bæta möppu við gagnagrunn:</b>\n"
+"\n"
+"Þessi hnappur opnar glugga þar sem þú getur valið möppu sem þú vilt hafa með í gagnagrunninum til að leita."
 
 #: src/fsearch_preferences.ui:1241
 msgid ""
@@ -1523,6 +1759,9 @@ msgid ""
 "include that folder in the database. This is useful for adding a path "
 "directly without browsing for it."
 msgstr ""
+"<b>Bæta við ákveðinni slóð:</b>\n"
+"\n"
+"Sláðu inn alla slóð möppu hér og smelltu á hnappinn við hliðina á henni til að hafa þá möppu með í gagnagrunninum. Þetta er gagnlegt til að bæta við slóð beint án þess að fletta eftir henni."
 
 #: src/fsearch_preferences.ui:1258
 msgid ""
@@ -1530,6 +1769,9 @@ msgid ""
 "\n"
 "This removes the selected folder from the list of included folders."
 msgstr ""
+"<b>Fjarlægja valda línu:</b>\n"
+"\n"
+"Þetta fjarlægir valda möppu af listanum yfir möppur sem fylgja með."
 
 #: src/fsearch_preferences.ui:1275
 msgid ""
@@ -1542,6 +1784,11 @@ msgid ""
 "system resources per watched folder. For large directory trees with many "
 "files the system may run out of resources to watch them all."
 msgstr ""
+"<b>Tilraun til að fylgjast með:</b>\n"
+"\n"
+"Ef kveikt er á því horfir FSearch eftir breytingum á þessari möppu og heldur gagnagrunninum sjálfkrafa uppfærðum, svo þú þarft ekki að skanna aftur handvirkt.\n"
+"\n"
+"Vöktun er ekki studd á hverju skráarkerfi og notar lítið magn af kerfisauðlindum í hverja möppu sem horft er á. Fyrir stór skráartré með mörgum skrám gæti kerfið orðið uppiskroppa með fjármagn til að horfa á þær allar."
 
 #: src/fsearch_preferences.ui:1294
 msgid ""
@@ -1550,6 +1797,9 @@ msgid ""
 "If enabled, this folder is rescanned every time FSearch starts, so the "
 "database reflects any changes made while FSearch wasn't running."
 msgstr ""
+"<b>Skanna eftir ræsingu:</b>\n"
+"\n"
+"Ef virkjað er þessi mappa endurskoðuð í hvert sinn sem FSearch byrjar, þannig að gagnagrunnurinn endurspeglar allar breytingar sem gerðar voru á meðan FSearch var ekki í gangi."
 
 #: src/fsearch_preferences.ui:1311
 msgid ""
@@ -1559,6 +1809,9 @@ msgid ""
 "folder. Mounted file systems below it (e.g. external drives or network "
 "shares) are skipped."
 msgstr ""
+"<b>Vertu í einu skráarkerfi:</b>\n"
+"\n"
+"Ef það er virkt mun FSearch ekki fara yfir landamæri skráarkerfisins meðan þessi möppu er skannað. Sleppt er skráarkerfum fyrir neðan það (t.d. ytri drif eða nethlutdeild)."
 
 #: src/fsearch_preferences.ui:1328
 msgid ""
@@ -1570,6 +1823,11 @@ msgid ""
 "This is useful for folders on file systems that can't be monitored for "
 "changes."
 msgstr ""
+"<b>Skannaðu aftur á hverjum:</b>\n"
+"\n"
+"Ef virkjað er þessi mappa endurskoðuð sjálfkrafa með tilteknu millibili. Notaðu klukkustundir og mínútur til að stilla hversu oft endurskönnun á sér stað.\n"
+"\n"
+"Þetta er gagnlegt fyrir möppur á skráarkerfum sem ekki er hægt að fylgjast með með tilliti til breytinga."
 
 #: src/fsearch_preferences.ui:1347
 msgid ""
@@ -1590,6 +1848,15 @@ msgid ""
 "\t• <b>Applies To:</b> Whether the rule affects <i>Files</i>, <i>Folders</i> "
 "or both."
 msgstr ""
+"<b>Útloka reglur:</b>\n"
+"\n"
+"Þessi listi inniheldur reglur fyrir skrárnar og möppurnar sem þú vilt útiloka úr gagnagrunninum.\n"
+"\n"
+"\t• <b>Virkt:</b> Ef það er virkt er reglunni beitt og samsvarandi atriði eru útilokuð.\n"
+"\t• <b>Mynstur:</b> Textinn passaði við hvert atriði, túlkað í samræmi við gerð.\n"
+"\t• <b>Tegund:</b> Hvernig mynstrið er túlkað — <i>Líteral</i> (nákvæmur texti), <i>Wildcard</i> (með * og ?) eða <i>Regex</i> (regluleg tjáning).\n"
+"\t• <b>Passing:</b> Hvort mynstrið er samræmt <i>Full Path</i> hlutarins eða aðeins <i>Basename</i> þess (nafnið án slóðarinnar).\n"
+"\t• <b>Á við um:</b> Hvort reglan hefur áhrif á <i>skrár</i>, <i>möppur</i> eða bæði."
 
 #: src/fsearch_preferences.ui:1370
 msgid ""
@@ -1598,6 +1865,9 @@ msgid ""
 "This adds a new, empty rule to the list. Edit its Pattern, Type, Match and "
 "Applies To columns to control what gets excluded from the database."
 msgstr ""
+"<b>Bæta við útilokunarreglu:</b>\n"
+"\n"
+"Þetta bætir nýrri, tómri reglu við listann. Breyttu mynstri, gerð, samsvörun og á við dálka til að stjórna því hvað verður útilokað úr gagnagrunninum."
 
 #: src/fsearch_preferences.ui:1387
 msgid ""
@@ -1605,6 +1875,9 @@ msgid ""
 "\n"
 "This removes the selected rule from the list of exclude rules."
 msgstr ""
+"<b>Fjarlægja valda línu:</b>\n"
+"\n"
+"Þetta fjarlægir valda reglu af listanum yfir útilokunarreglur."
 
 #: src/fsearch_preferences.ui:1404
 msgid ""
@@ -1614,6 +1887,11 @@ msgid ""
 "\n"
 "⚠ All rules which were created or edited by the user will be lost! ⚠"
 msgstr ""
+"<b>Endurheimta sjálfgefnar útilokunarreglur:</b>\n"
+"\n"
+"Þessi hnappur endurheimtir sjálfgefið sett af útilokunarreglum.\n"
+"\n"
+"⚠ Allar reglur sem voru búnar til eða breytt af notanda munu glatast! ⚠"
 
 #: src/fsearch_preferences.ui:1423
 msgid ""
@@ -1624,6 +1902,9 @@ msgid ""
 "all files or folders which are called either <i>.git</i> or <i>.cache</i> or "
 "end with <i>.swp</i>."
 msgstr ""
+"<b>Útloka skrár og möppur úr gagnagrunni:</b>\n"
+"\n"
+"Þetta er með semípunkti aðskilinn listi yfir skrár (eða möppur) sem þú vilt útiloka úr gagnagrunninum. Til dæmis mun <i>.git;.cache;*.swp</i> útiloka allar skrár eða möppur sem kallast annað hvort <i>.git</i> eða <i>.cache</i> eða enda á <i>.swp</i>."
 
 #: src/fsearch_preferences.ui:1440
 msgid ""
@@ -1632,10 +1913,13 @@ msgid ""
 "If enabled, hidden files and folders will be excluded from the database "
 "<i>(i.e. all files or folders which start with a dot character)</i>."
 msgstr ""
+"<b>Útloka faldar skrár og möppur:</b>\n"
+"\n"
+"Ef það er virkt verða faldar skrár og möppur útilokaðar úr gagnagrunninum <i>(þ.e. allar skrár eða möppur sem byrja á punktastaf)</i>."
 
 #: src/fsearch_preferences.ui:1457
 msgid "Focus a setting to get a detailed description of what it does."
-msgstr ""
+msgstr "Leggðu áherslu á stillingu til að fá nákvæma lýsingu á því sem hún gerir."
 
 #: src/fsearch_preferences.ui:1470
 msgid ""
@@ -1650,6 +1934,13 @@ msgid ""
 "\n"
 "<i><tt>fsearch --update-database</tt></i>"
 msgstr ""
+"<b>Uppfærðu gagnagrunn reglulega á ákveðnu tímabili:</b>\n"
+"\n"
+"Ef það er virkt og svo lengi sem FSearch er í gangi, verður gagnagrunnurinn uppfærður reglulega með tilteknu tímabili.\n"
+"\n"
+"Ef þú vilt uppfæra gagnagrunninn í bakgrunni, jafnvel þegar FSearch er ekki í gangi, ættir þú að nota verkfæri eins og cron eða systemd tímamæla til að kveikja reglulega á uppfærslunni með:\n"
+"\n"
+"<i><tt>fsearch --update-database</tt></i>"
 
 #: src/fsearch_preferences.ui:1491
 msgid ""
@@ -1660,6 +1951,9 @@ msgid ""
 "launcher. Otherwise the <i>.desktop</i> file will be opened with the default "
 "handler for this type of files, which is usually a text editor."
 msgstr ""
+"<b>Ræsa skjáborðsskrár:</b>\n"
+"\n"
+"Ef kveikt er á því mun virkja <i>.desktop</i> skrá ræsa forritið sem er skilgreint í þeirri skrá. Þannig getur FSearch virkað eins og ræsiforrit. Annars verður <i>.desktop</i> skráin opnuð með sjálfgefna meðhöndluninni fyrir þessa tegund skráa, sem venjulega er textaritill."
 
 #: src/fsearch_preferences.ui:1508
 msgid ""
@@ -1672,6 +1966,13 @@ msgid ""
 "the filter on demand\n"
 "\t• <b>Query:</b> The search term by which the database should be filtered"
 msgstr ""
+"<b>Síur:</b>\n"
+"\n"
+"Þetta er listi yfir allar tiltækar síur. Sía er fyrirfram skilgreind leit.\n"
+"\n"
+"\t• <b>Nafn:</b> Einstakt og lýsandi auðkenni fyrir síuna\n"
+"\t• <b>Macro:</b> Með því að slá inn fjölvatextann á eftir ':' geturðu virkjað síuna eftir beiðni\n"
+"\t• <b>Query:</b> Leitarorðið sem gagnagrunninn ætti að sía eftir"
 
 #: src/fsearch_preferences.ui:1529
 msgid ""
@@ -1679,6 +1980,9 @@ msgid ""
 "\n"
 "This button opens a dialog where you can edit a new filter."
 msgstr ""
+"<b>Bæta við nýrri síu:</b>\n"
+"\n"
+"Þessi hnappur opnar glugga þar sem þú getur breytt nýrri síu."
 
 #: src/fsearch_preferences.ui:1546
 msgid ""
@@ -1686,6 +1990,9 @@ msgid ""
 "\n"
 "This button removes the currently selected filter."
 msgstr ""
+"<b>Fjarlægja valda síu:</b>\n"
+"\n"
+"Þessi hnappur fjarlægir síuna sem er valin."
 
 #: src/fsearch_preferences.ui:1563
 msgid ""
@@ -1693,6 +2000,9 @@ msgid ""
 "\n"
 "This button opens a dialog where you can edit the selected filter."
 msgstr ""
+"<b>Breyta völdum síu:</b>\n"
+"\n"
+"Þessi hnappur opnar glugga þar sem þú getur breytt völdum síu."
 
 #: src/fsearch_preferences.ui:1580
 msgid ""
@@ -1702,6 +2012,11 @@ msgid ""
 "\n"
 "⚠ All filters which were created or edited by the user will be lost! ⚠"
 msgstr ""
+"<b>Endurheimta sjálfgefnar síur:</b>\n"
+"\n"
+"Þessi hnappur endurheimtir sjálfgefna síustillingu.\n"
+"\n"
+"⚠ Allar síur sem notandinn hafði búið til eða breytt munu glatast! ⚠"
 
 #: src/fsearch_preferences.ui:1599
 msgid ""
@@ -1710,128 +2025,137 @@ msgid ""
 "If enabled, FSearch exits when the Escape key is pressed instead of the "
 "window being minimized."
 msgstr ""
+"<b>Hættu á Escape:</b>\n"
+"\n"
+"Ef kveikt er á því, lýkur FSearch þegar ýtt er á Escape takkann í stað þess að gluggann sé lágmarkaður."
 
 #: src/fsearch_preferences.ui:1618 src/fsearch_window.ui:290
 #: src/fsearch_window.ui:415 src/menus.ui:150 src/menus.ui:156
 msgid "Help"
-msgstr ""
+msgstr "Hjálp"
 
 #: src/fsearch_preferences_dialog.c:238
 msgid "Database"
-msgstr ""
+msgstr "Gagnagrunnur"
 
 #: src/fsearch_result_view.c:381
 msgid "Invalid row data"
-msgstr ""
+msgstr "Ógild línugögn"
 
 #: src/fsearch_statusbar.c:58
 #, c-format
 msgid "%'d Item"
-msgstr ""
+msgstr "%'d Atriði"
 
 #: src/fsearch_statusbar.c:58 src/fsearch_statusbar.c:186
 #, c-format
 msgid "%'d Items"
-msgstr ""
+msgstr "%'d Atriði"
 
 #: src/fsearch_statusbar.c:80
 msgid "Querying…"
-msgstr ""
+msgstr "Er að spyrja..."
 
 #: src/fsearch_statusbar.c:175
 msgid "Loading…"
-msgstr ""
+msgstr "Hleður…"
 
 #: src/fsearch_statusbar.c:180
 msgid "Scanning…"
-msgstr ""
+msgstr "Skannar…"
 
 #: src/fsearch_statusbar.ui:52
 msgid "Number of Search Results"
-msgstr ""
+msgstr "Fjöldi leitarniðurstaðna"
 
 #: src/fsearch_statusbar.ui:53
 msgid "0 Items"
-msgstr ""
+msgstr "0 atriði"
 
 #: src/fsearch_statusbar.ui:106
 msgid "Cancel"
-msgstr ""
+msgstr "Hætta við"
 
 #: src/fsearch_statusbar.ui:153
 msgid "Index:"
-msgstr ""
+msgstr "Vísitala:"
 
 #: src/fsearch_statusbar.ui:228
 msgid "Number of selected folders"
-msgstr ""
+msgstr "Fjöldi valda möppur"
 
 #: src/fsearch_statusbar.ui:229 src/fsearch_statusbar.ui:254
 msgid "0/0"
-msgstr ""
+msgstr "0/0"
 
 #: src/fsearch_statusbar.ui:253
 msgid "Number of selected files"
-msgstr ""
+msgstr "Fjöldi valinna skráa"
 
 #: src/fsearch_statusbar.ui:328 src/fsearch_window.ui:103
 msgid "Cancel database update"
-msgstr ""
+msgstr "Hætta við uppfærslu gagnagrunns"
 
 #: src/fsearch_statusbar.ui:369
 msgid "Number of database items"
-msgstr ""
+msgstr "Fjöldi gagnagrunnsþátta"
 
 #: src/fsearch_statusbar.ui:370
 msgid "(empty)"
-msgstr ""
+msgstr "(tómt)"
 
 #: src/fsearch_statusbar.ui:407
 msgid ""
 "Search term contains upper case characters.\n"
 "<b>Match Case</b> was temporarily activated for this term."
 msgstr ""
+"Leitarorð inniheldur hástafi.\n"
+"<b>Match Case</b> var virkjuð tímabundið fyrir þetta tímabil."
 
 #: src/fsearch_statusbar.ui:438 src/fsearch_statusbar.ui:491
 msgid "CASE"
-msgstr ""
+msgstr "MÁLI"
 
 #: src/fsearch_statusbar.ui:514
 msgid ""
 "Search term contains path separators.\n"
 "<b>Search in Path</b> was temporarily activated for this term."
 msgstr ""
+"Leitarorð inniheldur slóðaskilgreinar.\n"
+"<b>Leit í slóð</b> var virkjuð tímabundið fyrir þetta hugtak."
 
 #: src/fsearch_statusbar.ui:545 src/fsearch_statusbar.ui:598
 msgid "PATH"
-msgstr ""
+msgstr "LEIGUR"
 
 #: src/fsearch_statusbar.ui:651
 msgid "REGEX"
-msgstr ""
+msgstr "REGEX"
 
 #: src/fsearch_statusbar.ui:726
 msgid ""
 "The search was cancelled before it finished.\n"
 "<b>These results are incomplete.</b>"
 msgstr ""
+"Leitinni var hætt áður en henni lauk.\n"
+"<b>Þessar niðurstöður eru ófullnægjandi.</b>"
 
 #: src/fsearch_statusbar.ui:756
 msgid "PARTIAL"
-msgstr ""
+msgstr "HLUTI"
 
 #: src/fsearch_welcome_dialog.ui:26
 msgid "What's New in FSearch"
-msgstr ""
+msgstr "Hvað er nýtt í FSearch"
 
 #: src/fsearch_welcome_dialog.ui:79
 msgid ""
 "<span size=\"xx-large\" weight=\"bold\">What's New in FSearch 0.3</span>"
-msgstr ""
+msgstr "<span size=\\\"xx-large\\\" weight=\\\"bold\\\">Hvað er nýtt í FSearch 0.3</span>"
 
 #: src/fsearch_welcome_dialog.ui:149
 msgid "<big><b>File System Monitoring</b></big>"
-msgstr ""
+msgstr "<big><b>Vöktun skráakerfis</b></big>"
 
 #: src/fsearch_welcome_dialog.ui:163
 msgid ""
@@ -1845,20 +2169,26 @@ msgid ""
 "<a href=\"URL\">https://github.com/cboxdoerfer/fsearch/wiki/Database-update</"
 "a>"
 msgstr ""
+"Þú getur nú virkan horft á einstakar möppur til að koma í veg fyrir tíðar endurskannanir. Skráarbreytingar birtast síðan strax í leitarniðurstöðum þínum.\n"
+"\n"
+"Til að virkja þennan eiginleika skaltu fara í gagnagrunnshlutann í valmyndinni.\n"
+"\n"
+"Sjá netskjölin fyrir frekari upplýsingar:\n"
+"<a href=\\\"URL\\\">https://github.com/cboxdoerfer/fsearch/wiki/Database-update</a>"
 
 #: src/fsearch_welcome_dialog.ui:232
 msgid "<big><b>Folder-Specific Rescan Schedules</b></big>"
-msgstr ""
+msgstr "<big><b>Möppusértæk endurskönnunaráætlanir</b></big>"
 
 #: src/fsearch_welcome_dialog.ui:246
 msgid ""
 "You can now configure automatic update intervals for individual folders "
 "independently and tailored to each distinct location."
-msgstr ""
+msgstr "Þú getur nú stillt sjálfvirkt uppfærslutímabil fyrir einstakar möppur sjálfstætt og sérsniðið að hverri staðsetningu."
 
 #: src/fsearch_welcome_dialog.ui:309
 msgid "<big><b>Improved Exclude Rules</b></big>"
-msgstr ""
+msgstr "<big><b>Bættar útilokunarreglur</b></big>"
 
 #: src/fsearch_welcome_dialog.ui:323
 msgid ""
@@ -1867,18 +2197,20 @@ msgid ""
 "Rules can be targeted specifically at files, folders, or both, and can be "
 "configured to match against either the basename or the full absolute path."
 msgstr ""
+"Þú getur nú notað jokertákn og regluleg segð til að skilgreina öflugri útilokunarreglur. \n"
+"Hægt er að miða reglur sérstaklega á skrár, möppur eða hvort tveggja, og hægt er að stilla þær þannig að þær passa við annað hvort grunnnafnið eða heildarslóðina."
 
 #: src/fsearch_window.c:749 src/menus.ui:279
 msgid "Size"
-msgstr ""
+msgstr "Stærð"
 
 #: src/fsearch_window.c:763 src/menus.ui:271
 msgid "Extension"
-msgstr ""
+msgstr "Framlenging"
 
 #: src/fsearch_window.c:770 src/menus.ui:283
 msgid "Date Modified"
-msgstr ""
+msgstr "Dagsetning breytt"
 
 #: src/fsearch_window.c:784
 msgid ""
@@ -1887,201 +2219,205 @@ msgid ""
 "This sort order is not persistent, it will be reset when the search term "
 "changes."
 msgstr ""
+"Það getur tekið nokkrar sekúndur að flokka eftir <b>tegund</b> með mörgum niðurstöðum.\n"
+"\n"
+"Þessi flokkunarröð er ekki viðvarandi, hún verður endurstillt þegar leitarorðið breytist."
 
 #: src/fsearch_window.ui:68
 msgid "New window"
-msgstr ""
+msgstr "Nýr gluggi"
 
 #: src/fsearch_window.ui:89
 msgid "Update database"
-msgstr ""
+msgstr "Uppfærðu gagnagrunn"
 
 #: src/fsearch_window.ui:144 src/menus.ui:112
 msgid "Search in Path"
-msgstr ""
+msgstr "Leitaðu í Path"
 
 #: src/fsearch_window.ui:158 src/menus.ui:116
 msgid "Match Case"
-msgstr ""
+msgstr "Match Case"
 
 #: src/fsearch_window.ui:172 src/menus.ui:120
 msgid "Enable RegEx"
-msgstr ""
+msgstr "Virkja RegEx"
 
 #: src/fsearch_window.ui:197 src/menus.ui:95
 msgid "Show Statusbar"
-msgstr ""
+msgstr "Sýna stöðustiku"
 
 #: src/fsearch_window.ui:211 src/menus.ui:99
 msgid "Show Filter"
-msgstr ""
+msgstr "Sýna síu"
 
 #: src/fsearch_window.ui:225 src/menus.ui:103
 msgid "Show Search Button"
-msgstr ""
+msgstr "Sýna leitarhnapp"
 
 #: src/fsearch_window.ui:275 src/fsearch_window.ui:356 src/menus.ui:129
 msgid "FSearch Online"
-msgstr ""
+msgstr "FSearch á netinu"
 
 #: src/fsearch_window.ui:304 src/menus.ui:161
 msgid "About"
-msgstr ""
+msgstr "Um"
 
 #: src/fsearch_window.ui:329 src/menus.ui:47
 msgid "Quit"
-msgstr ""
+msgstr "Hætta"
 
 #: src/fsearch_window.ui:372 src/fsearch_window.ui:443 src/menus.ui:131
 msgid "Donate"
-msgstr ""
+msgstr "Gefðu"
 
 #: src/fsearch_window.ui:387 src/menus.ui:142
 msgid "Forum"
-msgstr ""
+msgstr "Spjallborð"
 
 #: src/fsearch_window.ui:401 src/menus.ui:146
 msgid "Bug Reports and Feature Requests"
-msgstr ""
+msgstr "Villuskýrslur og eiginleikabeiðnir"
 
 #: src/fsearch_window.ui:460 src/menus.ui:133
 msgid "GitHub Sponsors"
-msgstr ""
+msgstr "GitHub styrktaraðilar"
 
 #: src/fsearch_window.ui:474 src/menus.ui:137
 msgid "PayPal"
-msgstr ""
+msgstr "PayPal"
 
 #: src/fsearch_window.ui:586
 msgid "Search…"
-msgstr ""
+msgstr "Leita…"
 
 #: src/fsearch_window.ui:608
 msgid "Select a Filter"
-msgstr ""
+msgstr "Veldu síu"
 
 #: src/fsearch_window_actions.c:110
 #, c-format
 msgid "Do you really want to open %'d file?"
 msgid_plural "Do you really want to open %'d files?"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Viltu virkilega opna %'d skrá?"
+msgstr[1] "Viltu virkilega opna %'d skrár?"
 
 #: src/fsearch_window_actions.c:115
 msgid "Opening Files…"
-msgstr ""
+msgstr "Opnar skrár..."
 
 #: src/fsearch_window_actions.c:198
 #, c-format
 msgid "Do you really want to remove %'d file?"
 msgid_plural "Do you really want to remove %'d files?"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Viltu virkilega fjarlægja %'d skrá?"
+msgstr[1] "Viltu virkilega fjarlægja %'d skrár?"
 
 #: src/fsearch_window_actions.c:205
 msgid "Deleting files…"
-msgstr ""
+msgstr "Eyðir skrám..."
 
 #: src/fsearch_window_actions.c:205
 msgid "Moving files to trash…"
-msgstr ""
+msgstr "Færir skrár í ruslið..."
 
 #: src/fsearch_window_actions.c:238 src/fsearch_window_actions.c:533
 #: src/fsearch_window_actions.c:580
 msgid "Something went wrong."
-msgstr ""
+msgstr "Eitthvað fór úrskeiðis."
 
 #: src/fsearch_window_actions.c:263
 #, c-format
 msgid "Do you really want to open %'d file property window?"
 msgid_plural "Do you really want to open %'d file property windows?"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Viltu virkilega opna %'d skráareiginleikaglugga?"
+msgstr[1] "Viltu virkilega opna %'d skráareiginleikaglugga?"
 
 #: src/fsearch_window_actions.c:270
 msgid "Opening file properties…"
-msgstr ""
+msgstr "Opnar skráareiginleika..."
 
 #: src/menus.ui:6
 msgid "_File"
-msgstr ""
+msgstr "_Skrá"
 
 #: src/menus.ui:9
 msgid "New Window"
-msgstr ""
+msgstr "Nýr gluggi"
 
 #: src/menus.ui:16 src/menus.ui:171
 msgid "_Open"
-msgstr ""
+msgstr "_Opið"
 
 #: src/menus.ui:21
 msgid "Open Folder"
-msgstr ""
+msgstr "Opna möppu"
 
 #: src/menus.ui:29
 msgid "Update Database"
-msgstr ""
+msgstr "Uppfærðu gagnagrunn"
 
 #: src/menus.ui:35
 msgid "Cancel Update"
-msgstr ""
+msgstr "Hætta við uppfærslu"
 
 #: src/menus.ui:42
 msgid "Close Window"
-msgstr ""
+msgstr "Lokaðu glugga"
 
 #: src/menus.ui:54
 msgid "_Edit"
-msgstr ""
+msgstr "_Breyta"
 
 #: src/menus.ui:57 src/menus.ui:207
 msgid "_Copy"
-msgstr ""
+msgstr "_Afrita"
 
 #: src/menus.ui:62 src/menus.ui:228
 msgid "Cu_t"
-msgstr ""
+msgstr "Cu_t"
 
 #: src/menus.ui:69
 msgid "Select All"
-msgstr ""
+msgstr "Veldu Allt"
 
 #: src/menus.ui:74
 msgid "Deselect All"
-msgstr ""
+msgstr "Afvelja allt"
 
 #: src/menus.ui:78
 msgid "Invert Selection"
-msgstr ""
+msgstr "Snúa við vali"
 
 #: src/menus.ui:92
 msgid "_View"
-msgstr ""
+msgstr "_Skoða"
 
 #: src/menus.ui:109
 msgid "_Search"
-msgstr ""
+msgstr "_Leita"
 
 #: src/menus.ui:126
 msgid "_Help"
-msgstr ""
+msgstr "_Hjálp"
 
 #: src/menus.ui:177
 msgid "Open _With"
-msgstr ""
+msgstr "Opna _Með"
 
 #: src/menus.ui:191
 msgid "_Open Folder"
-msgstr ""
+msgstr "_Opna möppu"
 
 #: src/menus.ui:213
 msgid "Copy as Text"
-msgstr ""
+msgstr "Afritaðu sem texta"
 
 #: src/menus.ui:223
 msgid "Path + Name"
-msgstr ""
+msgstr "Slóð + nafn"
 
 #: src/menus.ui:236
 msgid "Move to _Trash"
-msgstr ""
+msgstr "Færa í _ruslið"
+
