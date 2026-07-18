@@ -19,335 +19,337 @@ msgstr ""
 
 #: data/io.github.cboxdoerfer.FSearch.desktop.in.in:4 src/main.c:36
 msgid "FSearch"
-msgstr ""
+msgstr "FSearch"
 
 #: data/io.github.cboxdoerfer.FSearch.desktop.in.in:5
 msgid "A file search application focusing on performance and advanced features"
-msgstr ""
+msgstr "በአፈጻጸም እና በላቁ ባህሪያት ላይ የሚያተኩር የፋይል ፍለጋ መተግበሪያ"
 
 #: data/io.github.cboxdoerfer.FSearch.desktop.in.in:10
 msgid "search;fsearch;files;folders;music;video;documents;find;tool;everything;"
-msgstr ""
+msgstr "ፍለጋ;fsearch;ፋይሎች;ማህደሮች;ሙዚቃ;ቪዲዮ;ሰነዶች;ማግኘት;መሳሪያ;ሁሉም ነገር;"
 
 #: data/io.github.cboxdoerfer.FSearch.desktop.in.in:12
 msgid "File Search Utility"
-msgstr ""
+msgstr "የፋይል ፍለጋ መገልገያ"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:8
 msgid "A graphical file search application"
-msgstr ""
+msgstr "ግራፊክ ፋይል ፍለጋ መተግበሪያ"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:10
 msgid ""
 "FSearch helps you to find files and folders as easy and fast as possible. "
 "Just type a few letters and search results will appear almost instantly."
-msgstr ""
+msgstr "FSearch ፋይሎችን እና ማህደሮችን በተቻለ መጠን ቀላል እና ፈጣን እንዲያገኙ ያግዝዎታል። ጥቂት ፊደሎችን ብቻ ይተይቡ እና የፍለጋ ውጤቶች ወዲያውኑ ማለት ይቻላል ይታያሉ።"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:14
 msgid ""
 "There are a lot of features which make searching as efficient and powerful "
 "as possible. Such as:"
-msgstr ""
+msgstr "ፍለጋን በተቻለ መጠን ቀልጣፋ እና ኃይለኛ የሚያደርጉ ብዙ ባህሪያት አሉ። እንደ፥"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:19
 msgid ""
 "Ignore case (e.g. searching for \"<code>fsearch</code>\" will match "
 "\"FSearch\" as well)"
-msgstr ""
+msgstr "ጉዳዩን ችላ በል (ለምሳሌ \\\"<code>fsearch</code>\\\" መፈለግ \\\"FSearch\\\" እንዲሁ ይዛመዳል)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:20
 msgid "Regular expressions"
-msgstr ""
+msgstr "መደበኛ መግለጫዎች"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:21
 msgid "Wildcard support"
-msgstr ""
+msgstr "Wildcard ድጋፍ"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:22
 msgid "Filter support (e.g. only search for audio files)"
-msgstr ""
+msgstr "የማጣሪያ ድጋፍ (ለምሳሌ የድምጽ ፋይሎችን ብቻ ፈልግ)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:23
 msgid "Exclude certain files and folders"
-msgstr ""
+msgstr "የተወሰኑ ፋይሎችን እና ማህደሮችን አያካትቱ"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:24
 msgid "Fast sort by name, path, size, modification time and extension"
-msgstr ""
+msgstr "በፍጥነት በስም ፣ በዱካ ፣ በመጠን ፣ በማሻሻያ ጊዜ እና በቅጥያ ደርድር"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:26
 msgid ""
 "<em>Note:</em> Due to Flatpak's sandboxing, FSearch can't find every file on "
 "your system."
-msgstr ""
+msgstr "<em>ማስታወሻ፡</em> በFlatpak ማጠሪያ ምክንያት FSearch በስርዓትዎ ላይ ያለውን ፋይል ሁሉ ማግኘት አይችልም።"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:35
 msgid "The default UI layout"
-msgstr ""
+msgstr "ነባሪው UI አቀማመጥ"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:41
 msgid "A layout more closely following GNOME HIGs"
-msgstr ""
+msgstr "GNOME HIGsን የሚከተል አቀማመጥ"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:49
 msgid "search"
-msgstr ""
+msgstr "ፍለጋ"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:50
 msgid "fsearch"
-msgstr ""
+msgstr "ፍለጋ"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:51
 msgid "files"
-msgstr ""
+msgstr "ፋይሎች"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:52
 msgid "folders"
-msgstr ""
+msgstr "ማህደሮች"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:53
 msgid "music"
-msgstr ""
+msgstr "ሙዚቃ"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:54
 msgid "video"
-msgstr ""
+msgstr "ቪዲዮ"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:55
 msgid "documents"
-msgstr ""
+msgstr "ሰነዶች"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:56
 msgid "find"
-msgstr ""
+msgstr "ማግኘት"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:57
 msgid "tool"
-msgstr ""
+msgstr "መሳሪያ"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:58
 msgid "everything"
-msgstr ""
+msgstr "ሁሉም ነገር"
 
 #. Kept for appstreamcli < 1.0 (e.g. Ubuntu 20.04/22.04 PPA builds), which doesn't know <developer>.
 #. Translators: please do NOT translate this.
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:77
 msgid "Christian Boxdörfer"
-msgstr ""
+msgstr "ክርስቲያን ቦክስዶርፈር"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:89
 msgid "DB rewrite"
-msgstr ""
+msgstr "ዲቢ እንደገና ይፃፉ"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:90
 msgid "DB: Add support for filesystem monitoring"
-msgstr ""
+msgstr "ዲቢ፡ ለፋይል ስርዓት ክትትል ድጋፍን ያክሉ"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:91
 msgid ""
 "DB: Allow files and folders to be excluded based on fixed patterns, "
 "wildcards or regular expressions"
-msgstr ""
+msgstr "ዲቢ፡ ፋይሎችን እና ማህደሮችን በቋሚ ስርዓተ ጥለቶች፣ በዱር ካርዶች ወይም በመደበኛ መግለጫዎች ላይ በመመስረት እንዲገለሉ ፍቀድ"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:92
 msgid ""
 "DB: Allow included folders to be scheduled and scanned after launch "
 "independently"
-msgstr ""
+msgstr "ዲቢ፡ የተካተቱት አቃፊዎች መርሐግብር እንዲይዙ እና ለብቻው ከጀመሩ በኋላ እንዲቃኙ ፍቀድ"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:93
 msgid "DB: Make rescanning more efficient"
-msgstr ""
+msgstr "ዲቢ፡ እንደገና መቃኘትን የበለጠ ቀልጣፋ ያድርጉት"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:94
 msgid "DB: Store database config in DB file"
-msgstr ""
+msgstr "DB: የውሂብ ጎታ ውቅር በዲቢ ፋይል ውስጥ ያከማቹ"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:95
 msgid "DB: Add checksum to DB file"
-msgstr ""
+msgstr "ዲቢ፡ ቼክ ድምርን ወደ ዲቢ ፋይል አክል"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:96
 msgid "Make icon and file info gathering asynchronous (no UI blocking)"
-msgstr ""
+msgstr "የአዶ እና የፋይል መረጃ መሰብሰብ ያልተመሳሰለ አድርግ (የ UI እገዳ የለም)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:97
 msgid "Reduce memory usage"
-msgstr ""
+msgstr "የማህደረ ትውስታ አጠቃቀምን ይቀንሱ"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:98
 msgid "Add contextual help for all preferences"
-msgstr ""
+msgstr "ለሁሉም ምርጫዎች የአውድ እገዛን ያክሉ"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:99
 msgid "Numerous bug fixes and stability and performance improvements"
-msgstr ""
+msgstr "በርካታ የሳንካ ጥገናዎች እና መረጋጋት እና የአፈጻጸም ማሻሻያዎች"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:106
 msgid "New search engine"
-msgstr ""
+msgstr "አዲስ የፍለጋ ሞተር"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:107
 msgid "Greatly improved highlighting of search terms"
-msgstr ""
+msgstr "በጣም የተሻሻለ የፍለጋ ቃላት ማድመቅ"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:108
 msgid "Custom filters"
-msgstr ""
+msgstr "ብጁ ማጣሪያዎች"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:109
 msgid "Improved sort performance"
-msgstr ""
+msgstr "የተሻሻለ የመደርደር አፈጻጸም"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:110
 msgid "Improved scroll performance"
-msgstr ""
+msgstr "የተሻሻለ የማሸብለል አፈጻጸም"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:111
 msgid "Remember file selection after a database update"
-msgstr ""
+msgstr "ከዳታቤዝ ዝመና በኋላ የፋይል ምርጫን አስታውስ"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:112
 msgid "Automatically scroll the result list in rubberband selection mode"
-msgstr ""
+msgstr "የውጤት ዝርዝሩን በራበርባንድ ምርጫ ሁነታ በራስ-ሰር ያሸብልሉ።"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:113
 msgid "Invert selection with rubber band when 'Ctrl' is pressed"
-msgstr ""
+msgstr "'Ctrl' ሲጫን ምርጫን በላስቲክ ባንድ ገልብጥ"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:114
 msgid "Focus search entry when the main window gets activated"
-msgstr ""
+msgstr "ዋናው መስኮት ሲነቃ የፍለጋ ግቤት ላይ አተኩር"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:115
 msgid "Add filter for applications (i.e. .desktop files)"
-msgstr ""
+msgstr "ለመተግበሪያዎች ማጣሪያ አክል (ማለትም የዴስክቶፕ ፋይሎች)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:116
 msgid ""
 "Add option to launch applications directly instead of opening the .desktop "
 "files"
-msgstr ""
+msgstr "የዴስክቶፕ ፋይሎችን ከመክፈት ይልቅ መተግበሪያዎችን በቀጥታ ለማስጀመር አማራጭ ያክሉ"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:117
 msgid "Show application icons for .desktop files"
-msgstr ""
+msgstr "ለ ዴስክቶፕ ፋይሎች የመተግበሪያ አዶዎችን አሳይ"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:118
 msgid "Add .odp and .ods files to document filter"
-msgstr ""
+msgstr "ወደ ሰነድ ማጣሪያ የ.odp እና .ods ፋይሎችን ያክሉ"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:119
 msgid ""
 "'Open with' menu now only shows applications which can handle the selected "
 "files"
-msgstr ""
+msgstr "'ክፈት በ' ሜኑ አሁን የተመረጡትን ፋይሎች ማስተናገድ የሚችሉ መተግበሪያዎችን ብቻ ያሳያል"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:120
 msgid ""
 "Improved opening of multiple files with the same type (they get now passed "
 "as a list to applications, instead of one by one)"
-msgstr ""
+msgstr "የተሻሻለ በርካታ ፋይሎች ከተመሳሳዩ ዓይነት ጋር መከፈት (አሁን አንድ በአንድ ከመሆን ይልቅ ወደ ትግበራዎች ዝርዝር ተላልፈዋል)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:121
 msgid "Better support for opening files in sandboxed mode"
-msgstr ""
+msgstr "ፋይሎችን በአሸዋ ሳጥን ውስጥ ለመክፈት የተሻለ ድጋፍ"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:122
 msgid ""
 "Add menu items with links to the issue tracker, forum and donation pages"
-msgstr ""
+msgstr "ወደ የችግር መከታተያ፣ መድረክ እና የልገሳ ገፆች አገናኞች የምናሌ ንጥሎችን ያክሉ"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:123
 msgid "Improve support for non-Linux systems"
-msgstr ""
+msgstr "ሊኑክስ ላልሆኑ ስርዓቶች ድጋፍን ያሻሽሉ።"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:124
 msgid ""
 "Add option to exit FSearch when Escape is pressed instead of minimizing the "
 "window"
-msgstr ""
+msgstr "መስኮቱን ከመቀነስ ይልቅ Escape ሲጫን ከFSearch ለመውጣት አማራጭን ያክሉ"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:125
 msgid "Exclude '/proc' and '/sys' by default"
-msgstr ""
+msgstr "በነባሪነት '/proc' እና '/sys'ን ያስወግዱ"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:126
 msgid "Open context menu when 'Menu' key or 'Shift + F10' are pressed"
-msgstr ""
+msgstr "'Menu' ቁልፍ ወይም 'Shift + F10' ሲጫኑ አውድ ሜኑ ይክፈቱ"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:127
 msgid "and tons of bug fixes, translation updates and smaller improvements"
-msgstr ""
+msgstr "እና ብዙ የሳንካ ጥገናዎች፣ የትርጉም ማሻሻያዎች እና ትናንሽ ማሻሻያዎች"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:133
 msgid "Initial release."
-msgstr ""
+msgstr "የመጀመሪያ ልቀት"
 
 #: src/fsearch.c:181
 msgid "translator-credits"
-msgstr ""
+msgstr "ተርጓሚ-ክሬዲቶች"
 
 #: src/fsearch.c:183
 msgid "A search utility focusing on performance and advanced features"
-msgstr ""
+msgstr "በአፈጻጸም እና በላቁ ባህሪያት ላይ የሚያተኩር የፍለጋ መገልገያ"
 
 #: src/fsearch.c:330
 msgid "Saving database and config…"
-msgstr ""
+msgstr "የውሂብ ጎታ እና ማዋቀር በማስቀመጥ ላይ…"
 
 #: src/fsearch.c:786
 msgid "Open a new application window"
-msgstr ""
+msgstr "አዲስ የመተግበሪያ መስኮት ክፈት"
 
 #: src/fsearch.c:787
 msgid "Minimize the application window"
-msgstr ""
+msgstr "የመተግበሪያ መስኮቱን አሳንስ"
 
 #: src/fsearch.c:788
 msgid "Show the application preferences"
-msgstr ""
+msgstr "የመተግበሪያ ምርጫዎችን አሳይ"
 
 #: src/fsearch.c:789
 msgid "Set the search pattern"
-msgstr ""
+msgstr "የፍለጋ ስርዓተ-ጥለት ያዘጋጁ"
 
 #: src/fsearch.c:790
 msgid "Update the database and exit"
-msgstr ""
+msgstr "የውሂብ ጎታውን ያዘምኑ እና ይውጡ"
 
 #: src/fsearch.c:791
 msgid "Print version information and exit"
-msgstr ""
+msgstr "የስሪት መረጃን አትም እና ውጣ"
 
 #: src/fsearch.c:883
 msgid ""
 "For command-line search help, run: fsearch --cli --help\n"
 "For shared configuration help, run: fsearch config --help"
 msgstr ""
+"ለትዕዛዝ-መስመር ፍለጋ እገዛ፣ አሂድ፡- fsearch --cli --help\n"
+"ለጋራ ውቅር እገዛ፣ አሂድ፡ fsearch config --help"
 
 #: src/fsearch_cli.c:125
 #, c-format
 msgid ""
 "Results capped at %u. Use --unlimit or --unlimited to get them all, or "
 "provide a custom --limit, or set FSEARCH_RESULT_LIMIT."
-msgstr ""
+msgstr "ውጤቶች በ%u ላይ ተዘግበዋል። ሁሉንም ለማግኘት --unlimit ወይም --unlimited ይጠቀሙ፣ ወይም ብጁ --limitን ያቅርቡ ወይም FSEARCH_RESULT_LIMIT ያዘጋጁ።"
 
 #: src/fsearch_cli.c:134
 #, c-format
 msgid "%u match."
 msgid_plural "%u matches."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%u ግጥሚያ።"
+msgstr[1] "%u ግጥሚያዎች።"
 
 #: src/fsearch_cli.c:142
 msgid "Updating FSearch index before searching..."
-msgstr ""
+msgstr "ከመፈለግዎ በፊት FSearch ኢንዴክስ በማዘመን ላይ..."
 
 #: src/fsearch_cli.c:149
 #, c-format
 msgid "Indexing: %s"
-msgstr ""
+msgstr "መረጃ ጠቋሚ፡ %s"
 
 #: src/fsearch_cli.c:181
 msgid ""
@@ -393,40 +395,76 @@ msgid ""
 "{png,jpg} selects alternatives; {01..12} is an inclusive numeric range; \\* "
 "matches a literal *.\n"
 msgstr ""
+"አጠቃቀም፡ fsearch --cli [OPTIONS]\n"
+"\n"
+"ያለውን የ FSearch መረጃ ጠቋሚ ይፈልጉ እና ተዛማጅ መንገዶችን ያትሙ።\n"
+"\n"
+"  -s, --search PATTERN       በFSearch መጠይቅ አገባብ ይፈልጉ\n"
+"      --path DIRECTORY        ከ DIRECTORY በታች ደጋግመው ይፈልጉ (ነባሪ፡ የአሁኑ ማውጫ)\n"
+"      --global                በእያንዳንዱ የተጠቆመ ቦታ ይፈልጉ\n"
+"      --limit COUNT          ቢበዛ COUNT ውጤቶች አትም።\n"
+"      --unlimit, --unlimited እያንዳንዱን ውጤት አትም\n"
+"  -u, --update-database      የተዋቀረውን ኢንዴክስ እንደገና ቃኝ እና ውጣ\n"
+"      --about                የአንድ መስመር ግንባታ መረጃ ያትሙ\n"
+"  -h, --help                 ይህንን እገዛ አሳይ\n"
+"\n"
+"ማዋቀር፡- fsearch config --help\n"
+"\n"
+"ምሳሌዎች፡-\n"
+"  fsearch --cli --search invoice              # eolaire reatha\n"
+"  fsearch --cli --path ~/Documents --search invoice\n"
+"  fsearch --cli --global --search invoice\n"
+"  fsearch --cli --search 'file:size:>20mb'\n"
+"  fsearch --cli --search 'ext:jpg;png'\n"
+"  fsearch --cli --search 'path:projects report'\n"
+"  fsearch --cli --search 'report AND ext:pdf'\n"
+"  fsearch --cli --search '(draft OR final) !archive'\n"
+"  fsearch --cli --search 'file:regex:\".+\\.pdf$\"'\n"
+"  fsearch --cli --search 'case:AGENTS'        # cás-íogair\n"
+"  fsearch --cli --search 'case:regex:\"^AGENTS\\.md$\"'\n"
+"  fsearch --cli --search 'glob:**/*.png'\n"
+"  fsearch --cli --search 'path:glob:**/AGENTS.md'\n"
+"  fsearch --cli --search 'case:glob:AGENTS.md' # glob cás-íogair\n"
+"\n"
+"ምሳሌዎች ቦታን እንደ AND ይጠቀማሉ። ፋይል:, ማህደር:, ዱካ:, ext:, መጠን:, dm:, መያዣ:, regex:, እና glob: ይሞክሩ.\n"
+"ቡሊያን አገባብ፡ AND ወይም &&; ወይም ወይም ||; አይደለም ወይም!. ቅንጅቶች የቡድን ቃላት።\n"
+"ግሎብ አገባብ፡ * አያካትትም /; ** ማውጫዎች; ? ከአንድ ቁምፊ ጋር ይዛመዳል; [a-c] ክልል ነው;\n"
+"ግሎብ በነባሪ መንገዶችን ይፈልጋል; ለማንኛውም ጥልቀት ** / ይጠቀሙ; file:glob: የፋይል ስሞችን ይፈልጋል።\n"
+"{png,jpg} አማራጮችን ይመርጣል; {01..12} አካታች የቁጥር ክልል ነው።; \\* ከጥሬው * ጋር ይዛመዳል።\n"
 
 #: src/fsearch_cli.c:238
 #, c-format
 msgid "FSearch %s - indexed file search for %s %s\n"
-msgstr ""
+msgstr "FSearch %s - የተጠቆመ ፋይል ፍለጋ ለ %s %s\n"
 
 #: src/fsearch_cli.c:301
 msgid "fsearch: interrupted\n"
-msgstr ""
+msgstr "fsearch: ተቋርጧል\n"
 
 #: src/fsearch_cli.c:315
 msgid "fsearch: search could not run because the index is unavailable\n"
-msgstr ""
+msgstr "fsearch: ፍለጋው ሊሄድ አልቻለም ምክንያቱም መረጃ ጠቋሚው አይገኝም\n"
 
 #: src/fsearch_cli.c:352 src/fsearch_cli.c:381 src/fsearch_cli_config.c:774
 #: src/fsearch_cli_config.c:961 src/fsearch_cli_config.c:1147
 #, c-format
 msgid "%s\n"
-msgstr ""
+msgstr "%s\n"
 
 #: src/fsearch_cli.c:400
 #, c-format
 msgid "%s"
-msgstr ""
+msgstr "%s"
 
 #: src/fsearch_cli.c:473
 #, c-format
 msgid "fsearch: unknown CLI option: %s\n"
-msgstr ""
+msgstr "fsearch፡ ያልታወቀ CLI አማራጭ፡ %s\n"
 
 #: src/fsearch_cli.c:495
 #, c-format
 msgid "fsearch: failed to create data directory: %s\n"
-msgstr ""
+msgstr "fsearch: የውሂብ ማውጫ መፍጠር አልተሳካም: %s\n"
 
 #: src/fsearch_cli_config.c:111
 msgid ""
@@ -468,30 +506,73 @@ msgid ""
 "  fsearch config filters add Documents --query 'ext:pdf' --macro docs\n"
 "  fsearch config reset search --yes\n"
 msgstr ""
+"አጠቃቀም፡ fsearch config COMMAND [OPTIONS]\n"
+"\n"
+"የተጋራውን FSearch GUI እና CLI ውቅረት ይመልከቱ እና ያሻሽሉ።\n"
+"\n"
+"የማዋቀር ትዕዛዞች፡-\n"
+"  path                         የውቅረት ፋይል ዱካውን ያትሙ\n"
+"  show [SECTION] [--json]      ቅንብሮችን አሳይ\n"
+"  get KEY [--json]             አንድ scalar ቅንብር ያትሙ\n"
+"  set KEY VALUE                አንድ scalar ቅንብር ያዘጋጁ\n"
+"  unset KEY                    አንድ scalar ቅንብር ነባሪ ወደነበረበት መልስ\n"
+"  reset [KEY|SECTION] --yes [--rescan]\n"
+"                               ነባሪዎችን ወደነበሩበት ይመልሱ\n"
+"  doctor                       የውቅረት እና የኢንዴክስ ወጥነት ያረጋግጡ\n"
+"  roots list|add|set|remove    የተጠቆሙ ሥሮችን ያስተዳድሩ\n"
+"  excludes list|add|remove|hidden\n"
+"                               የኢንዴክስ ማግለሎችን ያስተዳድሩ\n"
+"  filters list|add|set|remove|reset\n"
+"                               የተቀመጡ የፍለጋ ማጣሪያዎችን ያቀናብሩ\n"
+"\n"
+"ስካላር እሴቶች እውነት/ውሸት፣ አስርዮሽ ኢንቲጀር ወይም ሕብረቁምፊዎችን ይጠቀማሉ።\n"
+"እያንዳንዱን ስካላር ቁልፍ እና የአሁኑን እሴት ለመዘርዘር 'fsearch config show'ን ያሂዱ።\n"
+"ስካላር ክፍሎች፡- search, application, window, ui, columns, sort, dialogs.\n"
+"ለቤተሰብ አማራጮች 'fsearch config roots|excludes|filter --help' ይጠቀሙ።\n"
+"የተጋሩ ቅንብሮችን ከመቀየርዎ በፊት FSearch GUIን ይዝጉ።\n"
+"የኢንዴክስ ለውጦች በሚቀጥለው የCLI ፍለጋ ወይም ወዲያውኑ በ --rescan ሊፈለጉ ይችላሉ።\n"
+"--jsonን በትዕይንት፣ በማግኘት እና በስብስብ ዝርዝር ትዕዛዞች ይጠቀሙ።\n"
+"\n"
+"ምሳሌዎች፡-\n"
+"  fsearch config show search --json\n"
+"  fsearch config get search.match-case\n"
+"  fsearch config set search.match-case true\n"
+"  fsearch config roots add ~/Code --monitor --one-file-system --rescan\n"
+"  fsearch config excludes add '*.tmp' --type wildcard --scope basename --target files\n"
+"  fsearch config filters add Documents --query 'ext:pdf' --macro docs\n"
+"  fsearch config reset search --yes\n"
 
 #: src/fsearch_cli_config.c:152
 msgid ""
 "Usage: fsearch config show [SECTION] [--json]\n"
 "Show all scalar settings or one dotted section.\n"
 msgstr ""
+"አጠቃቀም፡ fsearch config show [SECTION] [--json]\n"
+"ሁሉንም scalar ቅንብሮች ወይም አንድ ባለ ነጥብ ክፍል አሳይ።\n"
 
 #: src/fsearch_cli_config.c:154
 msgid ""
 "Usage: fsearch config get KEY [--json]\n"
 "Print one typed scalar value. Discover keys with 'fsearch config show'.\n"
 msgstr ""
+"አጠቃቀም፡ fsearch config get KEY [--json]\n"
+"አንድ የተተየበው scalar ዋጋ ያትሙ። በ'fsearch config show' ቁልፎችን ያግኙ።\n"
 
 #: src/fsearch_cli_config.c:157
 msgid ""
 "Usage: fsearch config set KEY VALUE\n"
 "Set a boolean, integer, string, or enumerated scalar value.\n"
 msgstr ""
+"አጠቃቀም፡ fsearch config set KEY VALUE\n"
+"ቡሊያን፣ ኢንቲጀር፣ ሕብረቁምፊ ወይም የተዘረዘረ የመለኪያ እሴት ያዘጋጁ።\n"
 
 #: src/fsearch_cli_config.c:159
 msgid ""
 "Usage: fsearch config unset KEY\n"
 "Restore one scalar setting to its built-in default.\n"
 msgstr ""
+"አጠቃቀም፡ fsearch config unset KEY\n"
+"አንድ scalar ቅንብር ወደ አብሮገነብ ነባሪ ይመልሱ።\n"
 
 #: src/fsearch_cli_config.c:161
 msgid ""
@@ -499,6 +580,8 @@ msgid ""
 "Reset is destructive and requires --yes. --rescan applies to roots, "
 "database, excludes, or all.\n"
 msgstr ""
+"አጠቃቀም፡ fsearch config reset [KEY|SECTION] --yes [--rescan]\n"
+"ዳግም ማስጀመር አጥፊ ነው እና ያስፈልገዋል --አዎ። --rescan ለሥሮች፣ ዳታቤዝ፣ ማግለያዎች ወይም ሁሉንም ይመለከታል።\n"
 
 #: src/fsearch_cli_config.c:164
 msgid ""
@@ -506,6 +589,8 @@ msgid ""
 "Check configuration readability and whether the saved index uses the same "
 "roots and exclusions.\n"
 msgstr ""
+"አጠቃቀም፡ fsearch config doctor\n"
+"የውቅረት ተነባቢነትን ያረጋግጡ እና የተቀመጠው ኢንዴክስ ተመሳሳይ ስሮች እና ማግለያዎች ይጠቀም እንደሆነ ያረጋግጡ።\n"
 
 #: src/fsearch_cli_config.c:170
 msgid ""
@@ -525,6 +610,21 @@ msgid ""
 "  --rescan-every SECONDS        Set periodic rescan interval; 0 disables it\n"
 "  --rescan                      Rebuild the index immediately after saving\n"
 msgstr ""
+"አጠቃቀም፡ fsearch config roots COMMAND [PATH] [OPTIONS]\n"
+"\n"
+"ትዕዛዞች፡-\n"
+"  list [--json]                የተጠቆሙ ሥሮችን ይዘርዝሩ\n"
+"  add PATH [OPTIONS]           ስርወ ማውጫ ያክሉ\n"
+"  set PATH [OPTIONS]           አሁን ያለውን ሥር ይለውጡ\n"
+"  remove PATH [--rescan]       ነባሩን ስር አስወግድ\n"
+"\n"
+"የመደመር እና የማዋቀር አማራጮች፡-\n"
+"  --active, --inactive\n"
+"  --monitor, --no-monitor\n"
+"  --one-file-system, --no-one-file-system\n"
+"  --scan-after-launch, --no-scan-after-launch\n"
+"  --rescan-every SECONDS        ወቅታዊ የዳግም መቃን ክፍተት ያዘጋጁ; 0 ያሰናክለዋል።\n"
+"  --rescan                      ካስቀመጡ በኋላ ወዲያውኑ መረጃ ጠቋሚውን እንደገና ይገንቡ\n"
 
 #: src/fsearch_cli_config.c:187
 msgid ""
@@ -544,6 +644,21 @@ msgid ""
 "  --active, --inactive          Add state or removal selector\n"
 "  --rescan                      Rebuild the index immediately after saving\n"
 msgstr ""
+"አጠቃቀም፡ fsearch config excludes COMMAND [PATTERN|VALUE] [OPTIONS]\n"
+"\n"
+"ትዕዛዞች፡-\n"
+"  list [--json]                 የማይካተቱ ይዘርዝሩ\n"
+"  add PATTERN [OPTIONS]         ማግለል ያክሉ\n"
+"  remove PATTERN [OPTIONS]      ተዛማጅ መገለልን ያስወግዱ\n"
+"  hidden [true|false] [--rescan]\n"
+"                                የተደበቀ-ፋይል ማግለልን ይመልከቱ ወይም ይቀይሩ\n"
+"\n"
+"የመደመር እና የማስወገድ አማራጮች፡-\n"
+"  --type fixed|wildcard|regex   ነባሪ፡ ቋሚ\n"
+"  --scope full-path|basename    ነባሪ፡ ሙሉ መንገድ\n"
+"  --target both|files|folders   ነባሪ፡ ሁለቱም\n"
+"  --active, --inactive          ግዛት ወይም የማስወገጃ መራጭ ያክሉ\n"
+"  --rescan                      ካስቀመጡ በኋላ ወዲያውኑ መረጃ ጠቋሚውን እንደገና ይገንቡ\n"
 
 #: src/fsearch_cli_config.c:204
 msgid ""
@@ -563,205 +678,224 @@ msgid ""
 "  --path, --no-path             Search full paths\n"
 "  --regex, --no-regex           Treat query as a regular expression\n"
 msgstr ""
+"አጠቃቀም፡ fsearch config filters COMMAND [NAME] [OPTIONS]\n"
+"\n"
+"ትዕዛዞች፡-\n"
+"  list [--json]                 የተቀመጡ ማጣሪያዎችን ይዘርዝሩ\n"
+"  add NAME [OPTIONS]            የተሰየመ ማጣሪያ ያክሉ\n"
+"  set NAME [OPTIONS]            የተሰየመ ማጣሪያ ይቀይሩ\n"
+"  remove NAME                   የተሰየመ ማጣሪያ ያስወግዱ\n"
+"  reset                         አብሮ የተሰሩ ማጣሪያዎችን ወደነበሩበት ይመልሱ\n"
+"\n"
+"የመደመር እና የማዋቀር አማራጮች፡-\n"
+"  --query QUERY                 የFSearch መጠይቅ ተቀምጧል\n"
+"  --macro MACRO                 የጥያቄ ማክሮ ስም\n"
+"  --case, --no-case             የማዛመጃ መያዣ\n"
+"  --path, --no-path             ሙሉ መንገዶችን ይፈልጉ\n"
+"  --regex, --no-regex           ጥያቄን እንደ መደበኛ አገላለጽ ይያዙ\n"
 
 #: src/fsearch_cli_config.c:265
 msgid ""
 "fsearch config: close the running FSearch GUI before changing shared "
 "settings\n"
-msgstr ""
+msgstr "fsearch config: የጋራ ቅንብሮችን ከመቀየርዎ በፊት አሂድ FSearch GUIን ይዝጉ\n"
 
 #: src/fsearch_cli_config.c:269
 msgid "fsearch config: failed to save configuration\n"
-msgstr ""
+msgstr "fsearch config: ውቅረትን ማስቀመጥ አልተሳካም\n"
 
 #: src/fsearch_cli_config.c:280
 msgid "Index configuration changed; the next CLI search will rebuild it.\n"
-msgstr ""
+msgstr "የመረጃ ጠቋሚ ውቅር ተለውጧል; የሚቀጥለው የ CLI ፍለጋ እንደገና ይገነባል.\n"
 
 #: src/fsearch_cli_config.c:416
 #, c-format
 msgid "fsearch config %s: unknown option: %s\n"
-msgstr ""
+msgstr "የfsearch ውቅረት %s፡ ያልታወቀ አማራጭ፡ %s\n"
 
 #: src/fsearch_cli_config.c:422
 #, c-format
 msgid "fsearch config %s: unexpected argument: %s\n"
-msgstr ""
+msgstr "fsearch ውቅር %s፡ ያልተጠበቀ ክርክር፡ %s\n"
 
 #: src/fsearch_cli_config.c:449
 msgid "Usage: fsearch config get KEY [--json]\n"
-msgstr ""
+msgstr "አጠቃቀም፡ fsearch config ያግኙ KEY [-json]\n"
 
 #: src/fsearch_cli_config.c:454 src/fsearch_cli_config.c:555
 #, c-format
 msgid "fsearch config: unknown setting: %s\n"
-msgstr ""
+msgstr "fsearch ውቅር፡ ያልታወቀ ቅንብር፡ %s\n"
 
 #: src/fsearch_cli_config.c:502
 #, c-format
 msgid "fsearch config show: unknown section: %s\n"
-msgstr ""
+msgstr "fsearch ውቅር አሳይ፡ ያልታወቀ ክፍል፡ %s\n"
 
 #: src/fsearch_cli_config.c:550
 #, c-format
 msgid "Usage: fsearch config %s KEY%s\n"
-msgstr ""
+msgstr "አጠቃቀም፡ fsearch ውቅር %s ቁልፍ%s\n"
 
 #: src/fsearch_cli_config.c:566
 #, c-format
 msgid "fsearch config: invalid value for %s: %s\n"
-msgstr ""
+msgstr "fsearch ውቅር፡ ልክ ያልሆነ ዋጋ ለ%s፡ %s\n"
 
 #: src/fsearch_cli_config.c:572
 #, c-format
 msgid "%s = %s\n"
-msgstr ""
+msgstr "%s = %s\n"
 
 #: src/fsearch_cli_config.c:637
 #, c-format
 msgid "fsearch config roots: unknown operation: %s\n"
-msgstr ""
+msgstr "fsearch config roots፡ ያልታወቀ ስራ፡ %s\n"
 
 #: src/fsearch_cli_config.c:691
 msgid "fsearch config roots: --rescan-every requires SECONDS\n"
-msgstr ""
+msgstr "fsearch config roots: --rescan-ሁሉም SECONDS ያስፈልገዋል\n"
 
 #: src/fsearch_cli_config.c:710
 msgid "fsearch config roots: missing PATH\n"
-msgstr ""
+msgstr "fsearch config roots፡ የሚጎድል PATH\n"
 
 #: src/fsearch_cli_config.c:717 src/fsearch_cli_config.c:732
 #, c-format
 msgid "fsearch config roots: path not found: %s\n"
-msgstr ""
+msgstr "fsearch config roots፡ ዱካ አልተገኘም፡ %s\n"
 
 #: src/fsearch_cli_config.c:724
 #, c-format
 msgid "fsearch config roots: not a directory: %s\n"
-msgstr ""
+msgstr "fsearch config roots፡ ማውጫ አይደለም፡ %s\n"
 
 #: src/fsearch_cli_config.c:728
 #, c-format
 msgid "fsearch config roots: path already exists: %s\n"
-msgstr ""
+msgstr "fsearch config roots፡ ዱካ አስቀድሞ አለ፡ %s\n"
 
 #: src/fsearch_cli_config.c:752
 #, c-format
 msgid "fsearch config roots: invalid rescan duration: %s\n"
-msgstr ""
+msgstr "fsearch config roots፡ ልክ ያልሆነ የዳግም ቃኚ ቆይታ፡ %s\n"
 
 #: src/fsearch_cli_config.c:765
 msgid ""
 "%s\tactive=%s monitor=%s one-file-system=%s scan-after-launch=%s rescan-"
 "after=%s\n"
-msgstr ""
+msgstr "%s active=%s monitor=%s one-file-system=%s scan-after-launch=%s rescan-after=%s\n"
 
 #: src/fsearch_cli_config.c:844
 msgid "fsearch config excludes hidden: expected true or false\n"
-msgstr ""
+msgstr "fsearch config የተደበቀ: የሚጠበቀው እውነት ወይም ውሸት አያካትትም\n"
 
 #: src/fsearch_cli_config.c:850
 #, c-format
 msgid "exclude-hidden = %s\n"
-msgstr ""
+msgstr "የማይካተቱ-የተደበቀ = %s\n"
 
 #: src/fsearch_cli_config.c:856
 #, c-format
 msgid "fsearch config excludes: unknown operation: %s\n"
-msgstr ""
+msgstr "fsearch config አያካትትም: ያልታወቀ ክወና: %s\n"
 
 #: src/fsearch_cli_config.c:877
 #, c-format
 msgid "fsearch config excludes: %s requires a value\n"
-msgstr ""
+msgstr "fsearch config አያካትትም፦ %s ዋጋ ያስፈልገዋል\n"
 
 #: src/fsearch_cli_config.c:909
 msgid "fsearch config excludes: missing PATTERN\n"
-msgstr ""
+msgstr "fsearch config አያካትትም: PATTERN ጠፍቷል\n"
 
 #: src/fsearch_cli_config.c:914
 #, c-format
 msgid "fsearch config excludes: invalid type: %s\n"
-msgstr ""
+msgstr "fsearch config አያካትትም: ልክ ያልሆነ አይነት: %s\n"
 
 #: src/fsearch_cli_config.c:919
 #, c-format
 msgid "fsearch config excludes: invalid scope: %s\n"
-msgstr ""
+msgstr "fsearch config አያካትትም: ልክ ያልሆነ ወሰን: %s\n"
 
 #: src/fsearch_cli_config.c:924
 #, c-format
 msgid "fsearch config excludes: invalid target: %s\n"
-msgstr ""
+msgstr "fsearch config አያካትትም: ልክ ያልሆነ ኢላማ: %s\n"
 
 #: src/fsearch_cli_config.c:954
 #, c-format
 msgid "fsearch config excludes: exclusion not found: %s\n"
-msgstr ""
+msgstr "fsearch config አያካትትም: ማግለል አልተገኘም: %s\n"
 
 #: src/fsearch_cli_config.c:1022
 msgid "filters reset\n"
-msgstr ""
+msgstr "ማጣሪያዎች ዳግም ያስጀምራሉ\n"
 
 #: src/fsearch_cli_config.c:1029
 #, c-format
 msgid "fsearch config filters: unknown operation: %s\n"
-msgstr ""
+msgstr "የfsearch ውቅር ማጣሪያዎች፡ ያልታወቀ ስራ፡ %s\n"
 
 #: src/fsearch_cli_config.c:1051
 #, c-format
 msgid "fsearch config filters: %s requires a value\n"
-msgstr ""
+msgstr "fsearch config ማጣሪያዎች፡ %s ዋጋ ያስፈልገዋል\n"
 
 #: src/fsearch_cli_config.c:1094
 msgid "fsearch config filters: missing NAME\n"
-msgstr ""
+msgstr "fsearch config ማጣሪያዎች፡ NAME ይጎድላል\n"
 
 #: src/fsearch_cli_config.c:1100 src/fsearch_cli_config.c:1111
 #, c-format
 msgid "fsearch config filters: name not found: %s\n"
-msgstr ""
+msgstr "fsearch config ማጣሪያዎች፡ ስም አልተገኘም፡ %s\n"
 
 #: src/fsearch_cli_config.c:1107
 #, c-format
 msgid "fsearch config filters: name already exists: %s\n"
-msgstr ""
+msgstr "fsearch config ማጣሪያዎች፡ ስም አስቀድሞ አለ፡ %s\n"
 
 #: src/fsearch_cli_config.c:1145
 #, c-format
 msgid "%s\tmacro=%s query=%s\n"
-msgstr ""
+msgstr "%s ማክሮ=%s መጠይቅ=%s\n"
 
 #: src/fsearch_cli_config.c:1193
 msgid "fsearch config reset requires --yes\n"
-msgstr ""
+msgstr "fsearch config ዳግም ማስጀመር ያስፈልገዋል --አዎ\n"
 
 #: src/fsearch_cli_config.c:1201
 msgid ""
 "fsearch config reset: --rescan requires roots, database, excludes, or all\n"
-msgstr ""
+msgstr "fsearch config reset: --rescan ሩትን፣ ዳታቤዝን፣ ማግለልን ወይም ሁሉንም ይፈልጋል\n"
 
 #: src/fsearch_cli_config.c:1241
 #, c-format
 msgid "fsearch config: unknown setting or section: %s\n"
-msgstr ""
+msgstr "fsearch ውቅር፡ ያልታወቀ ቅንብር ወይም ክፍል፡ %s\n"
 
 #: src/fsearch_cli_config.c:1246
 #, c-format
 msgid "%s settings reset\n"
-msgstr ""
+msgstr "የ%s ቅንብሮች ዳግም ተጀምረዋል።\n"
 
 #: src/fsearch_cli_config.c:1253
 msgid ""
 "configuration: missing; defaults active\n"
 "index: unknown\n"
 msgstr ""
+"ውቅር: ጠፍቷል; ነባሪዎች ንቁ ናቸው።\n"
+"መረጃ ጠቋሚ: ያልታወቀ\n"
 
 #: src/fsearch_cli_config.c:1261
 msgid ""
 "configuration: ok\n"
 "index: missing or unreadable\n"
 msgstr ""
+"ውቅር፡ እሺ\n"
+"መረጃ ጠቋሚ: የጎደለ ወይም የማይነበብ\n"
 
 #: src/fsearch_cli_config.c:1266
 #, c-format
@@ -769,121 +903,125 @@ msgid ""
 "configuration: ok\n"
 "index: %s\n"
 msgstr ""
+"ውቅር፡ እሺ\n"
+"መረጃ ጠቋሚ፡ %s\n"
 
 #: src/fsearch_cli_config.c:1266
 msgid "current"
-msgstr ""
+msgstr "ወቅታዊ"
 
 #: src/fsearch_cli_config.c:1266
 msgid "stale"
-msgstr ""
+msgstr "የቆየ"
 
 #: src/fsearch_cli_config.c:1278
 msgid ""
 "Usage: fsearch config path\n"
 "Print the active FSearch configuration file path.\n"
 msgstr ""
+"አጠቃቀም፡ fsearch config path\n"
+"ንቁውን የ FSearch ውቅር ፋይል መንገድ ያትሙ።\n"
 
 #: src/fsearch_cli_config.c:1321
 #, c-format
 msgid "fsearch config: unknown command: %s\n"
-msgstr ""
+msgstr "fsearch ውቅር፡ ያልታወቀ ትዕዛዝ፡ %s\n"
 
 #: src/fsearch_database.c:795
 msgid "Index rescan: applying changes…"
-msgstr ""
+msgstr "የመረጃ ጠቋሚ ድጋሚ ቃኝ፡ ለውጦችን በመተግበር ላይ…"
 
 #: src/fsearch_database_file.c:1343
 msgid "Loading folders…"
-msgstr ""
+msgstr "አቃፊዎችን በመጫን ላይ…"
 
 #: src/fsearch_database_file.c:1359
 msgid "Loading files…"
-msgstr ""
+msgstr "ፋይሎችን በመጫን ላይ…"
 
 #: src/fsearch_database_index_store.c:925 src/fsearch_statusbar.c:73
 #: src/fsearch_statusbar.ui:90
 msgid "Sorting…"
-msgstr ""
+msgstr "በመደርደር ላይ…"
 
 #: src/fsearch_database_preferences_widget.c:162
 #: src/fsearch_database_preferences_widget.c:176
 msgid "Select folder"
-msgstr ""
+msgstr "አቃፊ ይምረጡ"
 
 #: src/fsearch_database_preferences_widget.c:165
 #: src/fsearch_database_preferences_widget.c:180
 #: src/fsearch_filter_editor.c:104 src/fsearch_preferences_dialog.c:331
 msgid "_Cancel"
-msgstr ""
+msgstr "_ሰርዝ"
 
 #: src/fsearch_database_preferences_widget.c:167
 #: src/fsearch_database_preferences_widget.c:179
 msgid "_Select"
-msgstr ""
+msgstr "_ይምረጡ"
 
 #: src/fsearch_database_preferences_widget.c:389
 msgid "Literal"
-msgstr ""
+msgstr "ቃል በቃል"
 
 #: src/fsearch_database_preferences_widget.c:391
 msgid "Wildcard"
-msgstr ""
+msgstr "Wildcard"
 
 #: src/fsearch_database_preferences_widget.c:393
 msgid "Regex"
-msgstr ""
+msgstr "Regex"
 
 #: src/fsearch_database_preferences_widget.c:414
 msgid "Full Path"
-msgstr ""
+msgstr "ሙሉ መንገድ"
 
 #: src/fsearch_database_preferences_widget.c:416
 msgid "Basename"
-msgstr ""
+msgstr "የመሠረት ስም"
 
 #: src/fsearch_database_preferences_widget.c:434
 msgid "Files & Folders"
-msgstr ""
+msgstr "ፋይሎች እና አቃፊዎች"
 
 #: src/fsearch_database_preferences_widget.c:436 src/fsearch_filter.c:114
 msgid "Files"
-msgstr ""
+msgstr "ፋይሎች"
 
 #: src/fsearch_database_preferences_widget.c:438 src/fsearch_filter.c:113
 msgid "Folders"
-msgstr ""
+msgstr "አቃፊዎች"
 
 #: src/fsearch_database_preferences_widget.c:635
 #: src/fsearch_database_preferences_widget.c:860
 msgid "Active"
-msgstr ""
+msgstr "ንቁ"
 
 #: src/fsearch_database_preferences_widget.c:640
 msgid "Pattern"
-msgstr ""
+msgstr "ስርዓተ-ጥለት"
 
 #: src/fsearch_database_preferences_widget.c:694 src/fsearch_window.c:756
 #: src/menus.ui:275
 msgid "Type"
-msgstr ""
+msgstr "ዓይነት"
 
 #: src/fsearch_database_preferences_widget.c:700
 msgid "Match"
-msgstr ""
+msgstr "ግጥሚያ"
 
 #: src/fsearch_database_preferences_widget.c:706
 msgid "Applies To"
-msgstr ""
+msgstr "የሚመለከተው"
 
 #: src/fsearch_database_preferences_widget.c:864 src/fsearch_window.c:742
 #: src/menus.ui:219 src/menus.ui:267
 msgid "Path"
-msgstr ""
+msgstr "መንገድ"
 
 #: src/fsearch_database_preferences_widget.ui:78
 msgid "Enter path…"
-msgstr ""
+msgstr "መንገድ አስገባ…"
 
 #: src/fsearch_database_preferences_widget.ui:97
 #: src/fsearch_database_preferences_widget.ui:372
@@ -892,191 +1030,195 @@ msgid ""
 "                                            database\n"
 "                                        "
 msgstr ""
+"የሚካተትበትን መንገድ ያክሉ\n"
+"                                            የውሂብ ጎታ"
 
 #: src/fsearch_database_preferences_widget.ui:176
 msgid "Attempt to monitor"
-msgstr ""
+msgstr "ለመከታተል ሞክር"
 
 #: src/fsearch_database_preferences_widget.ui:191
 msgid "Scan after launch"
-msgstr ""
+msgstr "ከተነሳ በኋላ ይቃኙ"
 
 #: src/fsearch_database_preferences_widget.ui:206
 msgid "Stay on one file system"
-msgstr ""
+msgstr "በአንድ የፋይል ስርዓት ላይ ይቆዩ"
 
 #: src/fsearch_database_preferences_widget.ui:221
 msgid "Rescan every"
-msgstr ""
+msgstr "እያንዳንዱን እንደገና ቃኝ"
 
 #: src/fsearch_database_preferences_widget.ui:254
 msgid "Hours:"
-msgstr ""
+msgstr "ሰዓታት፡"
 
 #: src/fsearch_database_preferences_widget.ui:298
 msgid "Minutes:"
-msgstr ""
+msgstr "ደቂቃዎች፡-"
 
 #: src/fsearch_database_preferences_widget.ui:310
 msgid "30"
-msgstr ""
+msgstr "30"
 
 #: src/fsearch_database_preferences_widget.ui:391
 msgid "Remove selected path"
-msgstr ""
+msgstr "የተመረጠውን መንገድ አስወግድ"
 
 #: src/fsearch_database_preferences_widget.ui:418
 msgid "Include"
-msgstr ""
+msgstr "ያካትቱ"
 
 #: src/fsearch_database_preferences_widget.ui:477
 msgid ""
 "Add exclude rule\n"
 "                                                "
 msgstr ""
+"የማያካትት ደንብ ያክሉ"
 
 #: src/fsearch_database_preferences_widget.ui:495
 msgid ""
 "Remove selected path\n"
 "                                                "
 msgstr ""
+"የተመረጠውን መንገድ አስወግድ"
 
 #: src/fsearch_database_preferences_widget.ui:512
 msgid "Restore default exclude list"
-msgstr ""
+msgstr "ነባሪ የማያካትት ዝርዝርን ወደነበረበት መልስ"
 
 #: src/fsearch_database_preferences_widget.ui:541
 msgid "Exclude hidden files and folders"
-msgstr ""
+msgstr "የተደበቁ ፋይሎችን እና ማህደሮችን አያካትቱ"
 
 #: src/fsearch_database_preferences_widget.ui:563
 msgid "Exclude"
-msgstr ""
+msgstr "አያካትትም።"
 
 #: src/fsearch_file_utils.c:161
 msgctxt "Will be followed by the path of the file."
 msgid "Error when removing file"
-msgstr ""
+msgstr "ፋይሉን ሲያስወግዱ ስህተት"
 
 #: src/fsearch_file_utils.c:163
 msgid "Failed to get path"
-msgstr ""
+msgstr "መንገድ ማግኘት አልተሳካም።"
 
 #: src/fsearch_file_utils.c:277
 msgctxt "Will be followed by the file path."
 msgid "Error when getting information from file"
-msgstr ""
+msgstr "ከፋይል መረጃ ሲያገኙ ስህተት"
 
 #: src/fsearch_file_utils.c:279
 msgid "Failed to get application information"
-msgstr ""
+msgstr "የመተግበሪያ መረጃ ማግኘት አልተሳካም።"
 
 #: src/fsearch_file_utils.c:294
 msgctxt "Will be followed by the content type string."
 msgid "Error when getting information for content type"
-msgstr ""
+msgstr "ለይዘት አይነት መረጃ ሲያገኙ ስህተት"
 
 #: src/fsearch_file_utils.c:296
 msgid "No default application registered"
-msgstr ""
+msgstr "ምንም ነባሪ መተግበሪያ አልተመዘገበም።"
 
 #: src/fsearch_file_utils.c:524
 msgctxt "Will be followed by the path of the folder."
 msgid "Error when opening parent folder"
-msgstr ""
+msgstr "የወላጅ አቃፊን ሲከፍቱ ስህተት"
 
 #: src/fsearch_file_utils.c:526
 msgid "Failed to get parent path"
-msgstr ""
+msgstr "የወላጅ መንገድ ማግኘት አልተሳካም።"
 
 #: src/fsearch_file_utils.c:530
 msgctxt "Will be followed by the path of the folder."
 msgid "Error while opening folder"
-msgstr ""
+msgstr "አቃፊን በመክፈት ላይ ስህተት"
 
 #: src/fsearch_file_utils.c:533
 msgid "Failed to build open command"
-msgstr ""
+msgstr "ክፍት ትዕዛዝ መገንባት አልተሳካም።"
 
 #: src/fsearch_file_utils.c:589
 msgid "Folder"
-msgstr ""
+msgstr "አቃፊ"
 
 #: src/fsearch_file_utils.c:595
 msgid "Unknown Type"
-msgstr ""
+msgstr "ያልታወቀ ዓይነት"
 
 #: src/fsearch_filter.c:112
 msgid "All"
-msgstr ""
+msgstr "ሁሉም"
 
 #: src/fsearch_filter.c:115
 msgid "Applications"
-msgstr ""
+msgstr "መተግበሪያዎች"
 
 #: src/fsearch_filter.c:116
 msgid "Archives"
-msgstr ""
+msgstr "ማህደሮች"
 
 #: src/fsearch_filter.c:117
 msgid "Audio"
-msgstr ""
+msgstr "ኦዲዮ"
 
 #: src/fsearch_filter.c:118
 msgid "Documents"
-msgstr ""
+msgstr "ሰነዶች"
 
 #: src/fsearch_filter.c:119
 msgid "Pictures"
-msgstr ""
+msgstr "ስዕሎች"
 
 #: src/fsearch_filter.c:120
 msgid "Videos"
-msgstr ""
+msgstr "ቪዲዮዎች"
 
 #: src/fsearch_filter_editor.c:79
 msgid "Macro names must not contain `:` characters."
-msgstr ""
+msgstr "የማክሮ ስሞች `:` ቁምፊዎችን መያዝ የለባቸውም።"
 
 #: src/fsearch_filter_editor.c:105 src/fsearch_preferences_dialog.c:332
 msgid "_OK"
-msgstr ""
+msgstr "_እሺ"
 
 #: src/fsearch_filter_editor.ui:10 src/fsearch_filter_preferences_widget.c:156
 msgid "Edit filter"
-msgstr ""
+msgstr "ማጣሪያን አርትዕ"
 
 #: src/fsearch_filter_editor.ui:50
 msgid "Name:"
-msgstr ""
+msgstr "ስም፡"
 
 #: src/fsearch_filter_editor.ui:61
 msgid "The unique name of this filter"
-msgstr ""
+msgstr "የዚህ ማጣሪያ ልዩ ስም"
 
 #: src/fsearch_filter_editor.ui:64
 msgid "Unique filter name"
-msgstr ""
+msgstr "ልዩ የማጣሪያ ስም"
 
 #: src/fsearch_filter_editor.ui:73
 msgid "Search in path"
-msgstr ""
+msgstr "በመንገድ ላይ ይፈልጉ"
 
 #: src/fsearch_filter_editor.ui:87
 msgid "Enable regular expressions"
-msgstr ""
+msgstr "መደበኛ መግለጫዎችን አንቃ"
 
 #: src/fsearch_filter_editor.ui:101
 msgid "Match case"
-msgstr ""
+msgstr "የማዛመጃ መያዣ"
 
 #: src/fsearch_filter_editor.ui:146
 msgid "Query:"
-msgstr ""
+msgstr "ጥያቄ፡-"
 
 #: src/fsearch_filter_editor.ui:160
 msgid "Macro:"
-msgstr ""
+msgstr "ማክሮ፡"
 
 #: src/fsearch_filter_editor.ui:171
 msgid ""
@@ -1084,227 +1226,228 @@ msgid ""
 "search entry by typing its text followed by ':'\n"
 "                "
 msgstr ""
+"የዚህ ማጣሪያ ማክሮ። ማክሮ ይህን ማጣሪያ ከፍለጋው ግቤት እንዲደርሱበት ይፈቅድልዎታል ጽሑፉን በመቀጠል ':'"
 
 #: src/fsearch_filter_preferences_widget.c:133
 msgid "Add filter"
-msgstr ""
+msgstr "ማጣሪያ ጨምር"
 
 #: src/fsearch_filter_preferences_widget.c:315 src/fsearch_window.c:735
 #: src/menus.ui:215 src/menus.ui:263
 msgid "Name"
-msgstr ""
+msgstr "ስም"
 
 #: src/fsearch_filter_preferences_widget.c:316
 msgid "Macro"
-msgstr ""
+msgstr "ማክሮ"
 
 #: src/fsearch_filter_preferences_widget.c:317
 msgid "Query"
-msgstr ""
+msgstr "መጠይቅ"
 
 #: src/fsearch_filter_preferences_widget.ui:77
 msgid "Add new filter"
-msgstr ""
+msgstr "አዲስ ማጣሪያ ያክሉ"
 
 #: src/fsearch_filter_preferences_widget.ui:95
 msgid "Remove selected filter"
-msgstr ""
+msgstr "የተመረጠውን ማጣሪያ ያስወግዱ"
 
 #: src/fsearch_filter_preferences_widget.ui:113
 msgid "Edit selected filter"
-msgstr ""
+msgstr "የተመረጠውን ማጣሪያ ያርትዑ"
 
 #: src/fsearch_filter_preferences_widget.ui:129
 msgid "Restore default filters"
-msgstr ""
+msgstr "ነባሪ ማጣሪያዎችን ወደነበሩበት ይመልሱ"
 
 #: src/fsearch_listview_popup.c:36
 msgid "Properties…"
-msgstr ""
+msgstr "ንብረቶች…"
 
 #: src/fsearch_listview_popup.c:163
 msgid "Other Application…"
-msgstr ""
+msgstr "ሌላ መተግበሪያ…"
 
 #: src/fsearch_overlay.ui:44
 msgid "Empty Database"
-msgstr ""
+msgstr "ባዶ የውሂብ ጎታ"
 
 #: src/fsearch_overlay.ui:60
 msgid "Add folders"
-msgstr ""
+msgstr "አቃፊዎችን ያክሉ"
 
 #: src/fsearch_overlay.ui:108
 msgid "Loading Database…"
-msgstr ""
+msgstr "የውሂብ ጎታ በመጫን ላይ…"
 
 #: src/fsearch_overlay.ui:123
 msgid "This won't take long."
-msgstr ""
+msgstr "ይህ ብዙ ጊዜ አይፈጅም."
 
 #: src/fsearch_overlay.ui:171 src/fsearch_statusbar.ui:312
 msgid "Updating Database…"
-msgstr ""
+msgstr "የውሂብ ጎታ በማዘመን ላይ…"
 
 #: src/fsearch_overlay.ui:186 src/fsearch_overlay.ui:383
 msgid "This may take a while."
-msgstr ""
+msgstr "ይህ ትንሽ ጊዜ ሊወስድ ይችላል."
 
 #: src/fsearch_overlay.ui:241
 msgid "Empty Query"
-msgstr ""
+msgstr "ባዶ መጠይቅ"
 
 #: src/fsearch_overlay.ui:256
 msgid "Press <b>Ctrl + F</b> and start typing."
-msgstr ""
+msgstr "<b>Ctrl + F</b>ን ይጫኑ እና መተየብ ይጀምሩ።"
 
 #: src/fsearch_overlay.ui:304
 msgid "No Results Found"
-msgstr ""
+msgstr "ምንም ውጤቶች አልተገኙም።"
 
 #: src/fsearch_overlay.ui:319
 msgid "Try a different search"
-msgstr ""
+msgstr "የተለየ ፍለጋ ይሞክሩ"
 
 #: src/fsearch_overlay.ui:368
 msgid "Sorting results…"
-msgstr ""
+msgstr "ውጤቶችን በመደርደር ላይ…"
 
 #: src/fsearch_preferences.ui:7 src/fsearch_window.ui:251 src/menus.ui:84
 msgid "Preferences"
-msgstr ""
+msgstr "ምርጫዎች"
 
 #: src/fsearch_preferences.ui:76
 msgid "Enable dark theme"
-msgstr ""
+msgstr "ጨለማ ገጽታን አንቃ"
 
 #: src/fsearch_preferences.ui:97
 msgid "Enable client-side decorations (requires restart)"
-msgstr ""
+msgstr "ከደንበኛ ጎን ማስጌጫዎችን አንቃ (ዳግም መጀመር ያስፈልገዋል)"
 
 #: src/fsearch_preferences.ui:117
 msgid "Use binary units instead of decimal units"
-msgstr ""
+msgstr "ከአስርዮሽ ክፍሎች ይልቅ ሁለትዮሽ ክፍሎችን ይጠቀሙ"
 
 #: src/fsearch_preferences.ui:138
 msgid "Remember window size"
-msgstr ""
+msgstr "የመስኮቱን መጠን አስታውስ"
 
 #: src/fsearch_preferences.ui:159
 msgid "Exit on Escape"
-msgstr ""
+msgstr "Escape ላይ ውጣ"
 
 #: src/fsearch_preferences.ui:202
 msgid "with keyboard shortcuts or menu entries"
-msgstr ""
+msgstr "በቁልፍ ሰሌዳ አቋራጮች ወይም የምናሌ ግቤቶች"
 
 #: src/fsearch_preferences.ui:223
 msgid "with double click"
-msgstr ""
+msgstr "በድርብ ጠቅታ"
 
 #: src/fsearch_preferences.ui:257
 msgid "Behaviour after successfully opening a file:"
-msgstr ""
+msgstr "በተሳካ ሁኔታ ፋይልን ከከፈቱ በኋላ ባህሪ፡-"
 
 #: src/fsearch_preferences.ui:273
 msgid "Nothing"
-msgstr ""
+msgstr "መነም"
 
 #: src/fsearch_preferences.ui:274
 msgid "Minimize"
-msgstr ""
+msgstr "አሳንስ"
 
 #: src/fsearch_preferences.ui:275
 msgid "Close"
-msgstr ""
+msgstr "ገጠመ"
 
 #: src/fsearch_preferences.ui:309
 msgid "General:"
-msgstr ""
+msgstr "አጠቃላይ፡"
 
 #: src/fsearch_preferences.ui:344
 msgid "Show highlighted search terms"
-msgstr ""
+msgstr "የደመቁ የፍለጋ ቃላትን አሳይ"
 
 #: src/fsearch_preferences.ui:366
 msgid "Show tooltips"
-msgstr ""
+msgstr "የመሳሪያ ምክሮችን አሳይ"
 
 #: src/fsearch_preferences.ui:387
 msgid "Show icons in name column"
-msgstr ""
+msgstr "አዶዎችን በስም አምድ ውስጥ አሳይ"
 
 #: src/fsearch_preferences.ui:408
 msgid "Remember column configuration"
-msgstr ""
+msgstr "የአምድ ውቅርን አስታውስ"
 
 #: src/fsearch_preferences.ui:429
 msgid "Remember sort order"
-msgstr ""
+msgstr "ቅደም ተከተል አስታውስ"
 
 #: src/fsearch_preferences.ui:450
 msgid "Open path with double click in path column"
-msgstr ""
+msgstr "በመንገዱ አምድ ውስጥ ድርብ ጠቅ በማድረግ ዱካውን ይክፈቱ"
 
 #: src/fsearch_preferences.ui:471
 msgid "Single click to open"
-msgstr ""
+msgstr "ለመክፈት አንድ ጊዜ ጠቅ ያድርጉ"
 
 #: src/fsearch_preferences.ui:492
 msgid "Launch desktop files"
-msgstr ""
+msgstr "የዴስክቶፕ ፋይሎችን አስጀምር"
 
 #: src/fsearch_preferences.ui:519
 msgid "Results:"
-msgstr ""
+msgstr "ውጤቶች፡-"
 
 #: src/fsearch_preferences.ui:560
 msgid "Show database indexing status"
-msgstr ""
+msgstr "የውሂብ ጎታ መረጃ ጠቋሚ ሁኔታን አሳይ"
 
 #: src/fsearch_preferences.ui:587
 msgid "Statusbar:"
-msgstr ""
+msgstr "የሁኔታ አሞሌ፡"
 
 #: src/fsearch_preferences.ui:628
 msgid "Show warning dialogs when:"
-msgstr ""
+msgstr "በሚከተለው ጊዜ የማስጠንቀቂያ ንግግሮችን አሳይ"
 
 #: src/fsearch_preferences.ui:638
 msgid "file / folder failed to open"
-msgstr ""
+msgstr "ፋይል/አቃፊ ሊከፈት አልቻለም"
 
 #: src/fsearch_preferences.ui:667
 msgid "Dialogs:"
-msgstr ""
+msgstr "መገናኛዎች፡"
 
 #: src/fsearch_preferences.ui:692
 msgid "Interface"
-msgstr ""
+msgstr "በይነገጽ"
 
 #: src/fsearch_preferences.ui:711
 msgid "Search in path when query contains path separators"
-msgstr ""
+msgstr "መጠይቁ ዱካ መለያያዎችን ሲይዝ መንገዱን ይፈልጉ"
 
 #: src/fsearch_preferences.ui:730
 msgid "Search as you type"
-msgstr ""
+msgstr "ሲተይቡ ይፈልጉ"
 
 #: src/fsearch_preferences.ui:750
 msgid "Hide results when search is empty"
-msgstr ""
+msgstr "ፍለጋ ባዶ ሲሆን ውጤቱን ደብቅ"
 
 #: src/fsearch_preferences.ui:769
 msgid "Match case when query contains at least one upper case character"
-msgstr ""
+msgstr "መጠይቁ ቢያንስ አንድ ትልቅ ቁምፊ ሲይዝ ተዛማጅ መያዣ"
 
 #: src/fsearch_preferences.ui:801
 msgid "Filter:"
-msgstr ""
+msgstr "አጣራ፡"
 
 #: src/fsearch_preferences.ui:822 src/fsearch_window.ui:639
 msgid "Search"
-msgstr ""
+msgstr "ፈልግ"
 
 #: src/fsearch_preferences.ui:855
 msgid ""
@@ -1316,6 +1459,11 @@ msgid ""
 "Note that not all system themes provide such a darker variant, therefore "
 "enabling this setting might not have an effect."
 msgstr ""
+"<b>ጨለማ ገጽታን አንቃ፡</b>\n"
+"\n"
+"ከነቃ የስርዓት ጭብጡ ለመተግበሪያው የበለጠ ጠቆር ያለ አጻጻፍ እንዲጠቀም ይጠየቃል<i>(ማለትም በብሩህ ጽሁፍ ላይ የጨለማ UI ክፍሎች)</i>።\n"
+"\n"
+"ሁሉም የስርዓት ጭብጦች እንደዚህ አይነት ጠቆር ያለ ልዩነት እንደማይሰጡ ልብ ይበሉ፣ ስለዚህ ይህን ቅንብር ማንቃት ላይሰራ ይችላል።"
 
 #: src/fsearch_preferences.ui:873
 msgid ""
@@ -1329,6 +1477,12 @@ msgid ""
 "This resembles a more traditional UI layout and takes a little bit more "
 "space."
 msgstr ""
+"<b>ከደንበኛ ጎን ማስጌጫዎችን አንቃ፡</b>\n"
+"\n"
+"ከነቃ የፍለጋ ግቤት እና ዋናው ሜኑ በመስኮቱ ርዕስ አሞሌ ውስጥ ይታያሉ።\n"
+"\n"
+"ከተሰናከለ ዋናው ሜኑ ከታች ካለው የፍለጋ ግቤት ጋር እንደ ምናሌ አሞሌ ይታያል።\n"
+"ይህ የበለጠ ባህላዊ የተጠቃሚ በይነገጽ አቀማመጥን ይመስላል እና ትንሽ ተጨማሪ ቦታ ይወስዳል።"
 
 #: src/fsearch_preferences.ui:893
 msgid ""
@@ -1341,6 +1495,12 @@ msgid ""
 "\t• <b>Decimal  units:</b> This refers to decimal SI prefixes <i>(e.g. 1 kB "
 "= 1000 bytes)</i>"
 msgstr ""
+"<b>ከአስርዮሽ አሃዶች ይልቅ ሁለትዮሽ ክፍሎችን ተጠቀም፡</b>\n"
+"\n"
+"ይህ ቅንብሮች የፋይል መጠኖች እንዴት እንደሚታዩ ይቆጣጠራል።\n"
+"\n"
+"\t• <b>ሁለትዮሽ አሃዶች፡</b> ይህ ሁለትዮሽ IEC ቅድመ ቅጥያዎችን ያመለክታል <i>(ለምሳሌ 1 KiB = 1024 ባይት)</i>\n"
+"\t• <b>አስርዮሽ አሃዶች፡</b> ይህ የአስርዮሽ SI ቅድመ ቅጥያዎችን ያመለክታል <i>(ለምሳሌ 1 ኪባ = 1000 ባይት)</i>"
 
 #: src/fsearch_preferences.ui:913
 msgid ""
@@ -1352,6 +1512,11 @@ msgid ""
 "Note that some window managers ignore this request and force the window to "
 "have a different size."
 msgstr ""
+"<b>የመስኮትን መጠን አስታውስ፡</b>\n"
+"\n"
+"ከነቃ የ FSearch መስኮት ሲከፍቱ ካለፈው ክፍለ ጊዜ የመስኮቱ መጠን ይመለሳል።\n"
+"\n"
+"አንዳንድ የመስኮት አስተዳዳሪዎች ይህንን ጥያቄ ችላ ብለው መስኮቱ የተለየ መጠን እንዲኖረው እንደሚያስገድዱ ልብ ይበሉ።"
 
 #: src/fsearch_preferences.ui:932
 msgid ""
@@ -1369,6 +1534,16 @@ msgid ""
 "\t• <b>keyboard shortcuts or menu entries</b> and/or\n"
 "\t• <b>mouse click</b>"
 msgstr ""
+"<b>ፋይሉን በተሳካ ሁኔታ ከከፈቱ በኋላ ባህሪ፡</b>\n"
+"\n"
+"ፋይል/አቃፊ በተሳካ ሁኔታ ሲከፈት ከሚከተሉት እርምጃዎች ውስጥ አንዱ ሊከናወን ይችላል።\n"
+"\t• <b>ምንም፡</b> ምንም አይከሰትም።\n"
+"                        • <b>አሳንስ፡</b> አሁን የተመረጠው FSearch መስኮት ይቀንሳል።\n"
+"\t• <b>ዝጋ፡</b> FSearchን አቋርጥ።\n"
+"\n"
+"ፋይሉ በሚከፈትበት ጊዜ እነዚያ እርምጃዎች መቀስቀስ ካለባቸው ማዋቀር ይችላሉ።\n"
+"\t• <b>የቁልፍ ሰሌዳ አቋራጮች ወይም የምናሌ ግቤቶች</b> እና/ወይም\n"
+"\t• <b>መዳፊት ጠቅታ</b>"
 
 #: src/fsearch_preferences.ui:956
 msgid ""
@@ -1384,6 +1559,14 @@ msgid ""
 "This also works for regular expressions and wildcard expressions starting or "
 "ending with an asterisk. "
 msgstr ""
+"<b>የደመቁ የፍለጋ ቃላትን አሳይ፡</b>\n"
+"\n"
+"ከነቃ የፍለጋ ቃላቱ በውጤቶች እይታ ውስጥ ይደምቃሉ። ለምሳሌ \\\"foo\\\"ን ስትፈልግ በፋይል/አቃፊ ስሞች ውስጥ ያሉ ሁሉም የ<i>foo</i> ገፅታዎች በደማቅ ቁምፊዎች ይደምቃሉ፡\n"
+"\n"
+"\t<b>ፉ</b>bar.txt\n"
+"\tፋይል።<b>ፉ</b>\n"
+"\n"
+"ይህ ደግሞ ለመደበኛ አገላለጾች እና ለቃላት አገላለጾች በኮከብ ተጀምሮ ለሚያልቅ ይሰራል።"
 
 #: src/fsearch_preferences.ui:978
 msgid ""
@@ -1392,6 +1575,9 @@ msgid ""
 "If enabled, the results view will show the full path of the focused file/"
 "folder in a small tooltip window."
 msgstr ""
+"<b>የመሳሪያ ምክሮችን አሳይ፡</b>\n"
+"\n"
+"ከነቃ የውጤቶች እይታ የተተኮረውን ፋይል/አቃፊ ሙሉ ዱካ በትንሽ የመሳሪያ ጫፍ መስኮት ያሳያል።"
 
 #: src/fsearch_preferences.ui:995
 msgid ""
@@ -1399,6 +1585,9 @@ msgid ""
 "\n"
 "If enabled, file/folder icons will be shown in the name column."
 msgstr ""
+"<b>አዶዎችን በስም ዓምድ አሳይ፡</b>\n"
+"\n"
+"ከነቃ የፋይል/የአቃፊ አዶዎች በስም ዓምድ ውስጥ ይታያሉ።"
 
 #: src/fsearch_preferences.ui:1012
 msgid ""
@@ -1408,6 +1597,9 @@ msgid ""
 "session will be restored when you open an FSearch window. This includes the "
 "size and visibility of all columns."
 msgstr ""
+"<b>የአምድ ውቅርን አስታውስ፡</b>\n"
+"\n"
+"ከነቃ የFSearch መስኮት ሲከፍቱ ካለፈው ክፍለ ጊዜ የውጤቶች እይታ የአምድ ውቅር ይመለሳል። ይህ የሁሉም ዓምዶች መጠን እና ታይነት ያካትታል።"
 
 #: src/fsearch_preferences.ui:1029
 msgid ""
@@ -1416,6 +1608,9 @@ msgid ""
 "If enabled, the sort order of the results view from the previous session "
 "will be restored when you open an FSearch window."
 msgstr ""
+"<b>የመደርደር ቅደም ተከተል አስታውስ፡</b>\n"
+"\n"
+"ከነቃ፣ የFSearch መስኮት ሲከፍቱ ካለፈው ክፍለ ጊዜ የውጤቶች እይታ አይነት ቅደም ተከተል ይመለሳል።"
 
 #: src/fsearch_preferences.ui:1046
 msgid ""
@@ -1423,6 +1618,9 @@ msgid ""
 "\n"
 "If enabled, double clicking in the path column will open the selected path."
 msgstr ""
+"<b>በመንገድ አምድ ላይ ድርብ ጠቅ በማድረግ ዱካ ይክፈቱ፡</b>\n"
+"\n"
+"ከነቃ በመንገዱ አምድ ላይ ሁለቴ ጠቅ ማድረግ የተመረጠውን መንገድ ይከፍታል።"
 
 #: src/fsearch_preferences.ui:1063
 msgid ""
@@ -1432,6 +1630,9 @@ msgid ""
 "want to select a file/folder while this setting is active, you need to hold "
 "<i>Ctrl</i> at the same time while clicking the file/folder."
 msgstr ""
+"<b>ለመክፈት አንድ ጊዜ ጠቅ ያድርጉ፡</b>\n"
+"\n"
+"ከነቃ አንድ ጊዜ ጠቅ ማድረግ የተመረጠውን ፋይል/አቃፊ ይከፍታል። ይህ ቅንብር ንቁ ሆኖ ሳለ ፋይል/አቃፊን ብቻ መምረጥ ከፈለጉ ፋይሉን/አቃፊውን ሲጫኑ <i>Ctrl</i>ን በተመሳሳይ ጊዜ መያዝ ያስፈልግዎታል።"
 
 #: src/fsearch_preferences.ui:1080
 msgid ""
@@ -1440,6 +1641,9 @@ msgid ""
 "If enabled, the path that is currently being indexed is displayed in the "
 "statusbar."
 msgstr ""
+"<b>የመረጃ ቋት መረጃ ጠቋሚ ሁኔታን አሳይ፡</b>\n"
+"\n"
+"ከነቃ፣ አሁን እየተጠቆመ ያለው መንገድ በሁኔታ አሞሌው ላይ ይታያል።"
 
 #: src/fsearch_preferences.ui:1097
 msgid ""
@@ -1448,6 +1652,9 @@ msgid ""
 "If enabled, a warning dialog is displayed when a file or folder failed to "
 "open."
 msgstr ""
+"<b>የማስጠንቀቂያ መገናኛዎችን አሳይ፡</b>\n"
+"\n"
+"ከነቃ ፋይል ወይም አቃፊ መክፈት ሲሳነው የማስጠንቀቂያ ንግግር ይታያል።"
 
 #: src/fsearch_preferences.ui:1114
 msgid ""
@@ -1456,6 +1663,9 @@ msgid ""
 "If enabled, search terms containing path separators (i.e. \"/\") will be "
 "automatically matched against the full path of a file or folder."
 msgstr ""
+"<b>መጠይቁ ዱካ መለያያዎችን ሲይዝ መንገዱን ይፈልጉ፡</b>\n"
+"\n"
+"ከነቃ፣ ዱካ መለያያዎችን (ማለትም \\\"/\\\") የያዙ የፍለጋ ቃላት በቀጥታ ከፋይል ወይም አቃፊ ሙሉ ዱካ ጋር ይዛመዳሉ።"
 
 #: src/fsearch_preferences.ui:1131
 msgid ""
@@ -1465,6 +1675,9 @@ msgid ""
 "trigger a case-sensitive search. This means a search term like <i>Foo</i> "
 "will match <i>FooBar.txt</i> but not <i>foobar.txt</i>."
 msgstr ""
+"<b>ጥያቄው ቢያንስ አንድ ትልቅ ቁምፊ ሲይዝ የማመሳሰል ጉዳይ፡</b>\n"
+"\n"
+"ከነቃ ቢያንስ አንድ አቢይ ሆሄያት የያዙ የፍለጋ ቃላቶች ለጉዳይ ሚስጥራዊነት ያለው ፍለጋ ያስነሳሉ። ይህ ማለት እንደ <i>ፉ</i> ያለ የፍለጋ ቃል ከ<i>FooBar.txt</i> ጋር ይዛመዳል ነገር ግን <i>foobar.txt</i> አይደለም ማለት ነው።"
 
 #: src/fsearch_preferences.ui:1148
 msgid ""
@@ -1475,6 +1688,11 @@ msgid ""
 "If disabled, all files and folders will be displayed when the search entry "
 "is empty."
 msgstr ""
+"<b>ፍለጋ ባዶ ሲሆን ውጤቱን ደብቅ፦</b>\n"
+"\n"
+"ከነቃ የፍለጋው ግቤት ባዶ ሲሆን ምንም የፍለጋ ውጤቶች አይታዩም።\n"
+"\n"
+"ከተሰናከለ የፍለጋው ግቤት ባዶ ሲሆን ሁሉም ፋይሎች እና አቃፊዎች ይታያሉ።"
 
 #: src/fsearch_preferences.ui:1167
 msgid ""
@@ -1485,6 +1703,11 @@ msgid ""
 "If disabled, the search is only updated when you hit <i>Enter</i> or press "
 "the search button. "
 msgstr ""
+"<b>ሲተይቡ ፈልግ፡</b>\n"
+"\n"
+"ከነቃ ፍለጋው በእያንዳንዱ የቁልፍ ጭነቶች በራስ-ሰር ይዘምናል።\n"
+"\n"
+"ከተሰናከለ ፍለጋው የሚዘመነው <i>Enter</i>ን ሲመቱ ወይም የፍለጋ አዝራሩን ሲጫኑ ብቻ ነው።"
 
 #: src/fsearch_preferences.ui:1186
 msgid ""
@@ -1493,6 +1716,9 @@ msgid ""
 "If enabled, the database will be updated automatically in the background "
 "when you start FSearch."
 msgstr ""
+"<b>በመጀመሪያ የውሂብ ጎታ አዘምን፡</b>\n"
+"\n"
+"ከነቃ፣ FSearchን ሲጀምሩ የመረጃ ቋቱ በራስ-ሰር ከበስተጀርባ ይዘምናል።"
 
 #: src/fsearch_preferences.ui:1203
 msgid ""
@@ -1506,6 +1732,13 @@ msgid ""
 "\t• <b>One Filesystem:</b> If enabled, FSearch won't cross filesystem "
 "boundaries for this folder"
 msgstr ""
+"<b>የተካተቱ አቃፊዎች፡</b>\n"
+"\n"
+"ይህ ዝርዝር በመረጃ ቋቱ ውስጥ ሊያካትቷቸው የሚፈልጓቸውን ሁሉንም አቃፊዎች ይዟል።\n"
+"\n"
+"\t• <b>ንቁ፡</b> ከነቃ ዱካው በሚፈለገው የውሂብ ጎታ ውስጥ ይካተታል።\n"
+"\t• <b>መንገድ፡</b> የሚካተትበት ሙሉ መንገድ።\n"
+"\t• <b>አንድ ፋይል ስርዓት፡</b> ከነቃ FSearch ለዚህ አቃፊ የፋይል ስርዓት ድንበሮችን አያልፍም።"
 
 #: src/fsearch_preferences.ui:1224
 msgid ""
@@ -1514,6 +1747,9 @@ msgid ""
 "This button opens a dialog where you can select a folder you want to include "
 "in the database for searching."
 msgstr ""
+"<b>አቃፊን ወደ የውሂብ ጎታ አክል፡</b>\n"
+"\n"
+"ይህ ቁልፍ ለመፈለግ በመረጃ ቋቱ ውስጥ ሊያካትቱት የሚፈልጉትን አቃፊ የሚመርጡበት መገናኛ ይከፍታል።"
 
 #: src/fsearch_preferences.ui:1241
 msgid ""
@@ -1523,6 +1759,9 @@ msgid ""
 "include that folder in the database. This is useful for adding a path "
 "directly without browsing for it."
 msgstr ""
+"<b>አንድ የተወሰነ መንገድ አክል፡</b>\n"
+"\n"
+"የአቃፊውን ሙሉ ዱካ እዚህ ይተይቡ እና ያንን አቃፊ በመረጃ ቋቱ ውስጥ ለማካተት ከጎኑ ያለውን ቁልፍ ጠቅ ያድርጉ። ይህ ሳያስሱ በቀጥታ መንገድን ለመጨመር ይጠቅማል።"
 
 #: src/fsearch_preferences.ui:1258
 msgid ""
@@ -1530,6 +1769,9 @@ msgid ""
 "\n"
 "This removes the selected folder from the list of included folders."
 msgstr ""
+"<b>የተመረጠውን ረድፍ አስወግድ፡</b>\n"
+"\n"
+"ይህ የተመረጠውን አቃፊ ከተካተቱት አቃፊዎች ዝርዝር ያስወግዳል."
 
 #: src/fsearch_preferences.ui:1275
 msgid ""
@@ -1542,6 +1784,11 @@ msgid ""
 "system resources per watched folder. For large directory trees with many "
 "files the system may run out of resources to watch them all."
 msgstr ""
+"<b>ለመከታተል ሙከራ፡</b>\n"
+"\n"
+"ከነቃ FSearch ይህንን አቃፊ ለለውጦች ይመለከተዋል እና ዳታቤዙን በራስ-ሰር ያዘምናል ስለዚህ እራስዎ እንደገና መቃኘት የለብዎትም።\n"
+"\n"
+"ክትትል በእያንዳንዱ የፋይል ስርዓት ላይ አይደገፍም እና በትንሽ መጠን የስርዓት ሀብቶችን በአንድ የታየ አቃፊ ይጠቀማል። ብዙ ፋይሎች ላሏቸው ትላልቅ የማውጫ ዛፎች ስርዓቱ ሁሉንም ለማየት ሃብቱን ሊያልቅ ይችላል።"
 
 #: src/fsearch_preferences.ui:1294
 msgid ""
@@ -1550,6 +1797,9 @@ msgid ""
 "If enabled, this folder is rescanned every time FSearch starts, so the "
 "database reflects any changes made while FSearch wasn't running."
 msgstr ""
+"<b>ከተጀመረ በኋላ ይቃኙ፡</b>\n"
+"\n"
+"ከነቃ ይህ አቃፊ FSearch በጀመረ ቁጥር እንደገና ይቃኛል፣ ስለዚህ ዳታቤዙ FSearch በማይሰራበት ጊዜ የተደረጉ ለውጦችን ያሳያል።"
 
 #: src/fsearch_preferences.ui:1311
 msgid ""
@@ -1559,6 +1809,9 @@ msgid ""
 "folder. Mounted file systems below it (e.g. external drives or network "
 "shares) are skipped."
 msgstr ""
+"<b>በአንድ የፋይል ስርዓት ላይ ይቆዩ፡</b>\n"
+"\n"
+"ከነቃ FSearch ይህን አቃፊ እየቃኘ ሳለ የፋይል ስርዓት ድንበሮችን አያልፍም። ከሱ በታች የተጫኑ የፋይል ስርዓቶች (ለምሳሌ ውጫዊ ድራይቮች ወይም የአውታረ መረብ ማጋራቶች) ተዘለዋል።"
 
 #: src/fsearch_preferences.ui:1328
 msgid ""
@@ -1570,6 +1823,11 @@ msgid ""
 "This is useful for folders on file systems that can't be monitored for "
 "changes."
 msgstr ""
+"<b>እያንዳንዱን ቃኝ፡</b>\n"
+"\n"
+"ከነቃ ይህ አቃፊ በተሰጠው የጊዜ ክፍተት በራስ ሰር ይቃኛል። ድጋሚ ቅኝቱ ለምን ያህል ጊዜ እንደሚከሰት ለማዘጋጀት የሰዓቱን እና የደቂቃውን መስኮች ይጠቀሙ።\n"
+"\n"
+"ይህ በፋይል ስርዓቶች ላይ ላሉ ማህደሮች ጠቃሚ ነው ለውጦችን መከታተል ለማይችሉ።"
 
 #: src/fsearch_preferences.ui:1347
 msgid ""
@@ -1590,6 +1848,15 @@ msgid ""
 "\t• <b>Applies To:</b> Whether the rule affects <i>Files</i>, <i>Folders</i> "
 "or both."
 msgstr ""
+"<b>ደንቦችን አታካትት፡</b>\n"
+"\n"
+"ይህ ዝርዝር ከመረጃ ቋቱ ውስጥ ሊያስወግዷቸው የሚፈልጓቸውን ፋይሎች እና አቃፊዎች ደንቦች ይዟል.\n"
+"\n"
+"\t• <b>ንቁ፡</b> ከነቃ ደንቡ ይተገበራል እና ተዛማጅ እቃዎች አይካተቱም።\n"
+"\t• <b>ስርዓተ-ጥለት፡</b> ጽሑፉ ከእያንዳንዱ ንጥል ጋር ይዛመዳል፣ እንደ ዓይነቱ ይተረጎማል።\n"
+"\t• <b>ዓይነት፡</b> ስርዓተ-ጥለት እንዴት እንደሚተረጎም — <i>ቀጥታ ፅሁፍ/፣ <i>Wildcard</i> (* እና ? በመጠቀም ላይ) ወይም <i>Regex</i> (መደበኛ አገላለጽ)።\n"
+"\t• <b>ተዛማጅ፡</b> ንድፉ ከንጥሉ <i>ሙሉ ዱካ</i> ጋር ይዛመዳል ወይም <i>Basename</i> ብቻ (ዱካ የሌለው ስም)።\n"
+"\t• <b>የሚመለከተው፡</b> ደንቡ <i>ፋይሎችን</i>ን፣ <i>አቃፊዎችን</i>ን ወይም ሁለቱንም ይነካ እንደሆነ።"
 
 #: src/fsearch_preferences.ui:1370
 msgid ""
@@ -1598,6 +1865,9 @@ msgid ""
 "This adds a new, empty rule to the list. Edit its Pattern, Type, Match and "
 "Applies To columns to control what gets excluded from the database."
 msgstr ""
+"<b>የማካተት ህግን ጨምር፡</b>\n"
+"\n"
+"ይህ በዝርዝሩ ላይ አዲስ፣ ባዶ ህግን ይጨምራል። ከመረጃ ቋቱ ምን እንደሚገለል ለመቆጣጠር የእሱን ስርዓተ-ጥለት፣ አይነት፣ ተዛማጅ እና በአምዶች ላይ ይተገበራል።"
 
 #: src/fsearch_preferences.ui:1387
 msgid ""
@@ -1605,6 +1875,9 @@ msgid ""
 "\n"
 "This removes the selected rule from the list of exclude rules."
 msgstr ""
+"<b>የተመረጠውን ረድፍ አስወግድ፡</b>\n"
+"\n"
+"ይህ የተመረጠውን ህግ ከማካተት ደንቦች ዝርዝር ውስጥ ያስወግዳል."
 
 #: src/fsearch_preferences.ui:1404
 msgid ""
@@ -1614,6 +1887,11 @@ msgid ""
 "\n"
 "⚠ All rules which were created or edited by the user will be lost! ⚠"
 msgstr ""
+"<b>የማያካትት ደንቦችን ወደነበረበት ይመልሱ፡</b>\n"
+"\n"
+"ይህ አዝራር ነባሪውን የማያካትት ደንቦችን ወደነበረበት ይመልሳል።\n"
+"\n"
+"⚠ በተጠቃሚው የተፈጠሩ ወይም የተስተካከሉ ህጎች ሁሉ ይጠፋሉ! ⚠"
 
 #: src/fsearch_preferences.ui:1423
 msgid ""
@@ -1624,6 +1902,9 @@ msgid ""
 "all files or folders which are called either <i>.git</i> or <i>.cache</i> or "
 "end with <i>.swp</i>."
 msgstr ""
+"<b>ፋይሎችን እና ማህደሮችን ከመረጃ ቋት አያካትቱ፡</b>\n"
+"\n"
+"ይህ ከመረጃ ቋቱ ማግለል የሚፈልጓቸው ከፊል ኮሎን የተከፋፈሉ የፋይሎች (ወይም አቃፊዎች) ዝርዝር ነው። ለምሳሌ <i>.git;.cache;*.swp</i> <i>.git</i> ወይም <i>.cache</i> ተብለው የሚጠሩትን ወይም በ<i>.swp</i> የሚጨርሱትን ሁሉንም ፋይሎች ወይም አቃፊዎች ያስወግዳል።"
 
 #: src/fsearch_preferences.ui:1440
 msgid ""
@@ -1632,10 +1913,13 @@ msgid ""
 "If enabled, hidden files and folders will be excluded from the database "
 "<i>(i.e. all files or folders which start with a dot character)</i>."
 msgstr ""
+"<b>የተደበቁ ፋይሎችን እና አቃፊዎችን አግልል፡</b>\n"
+"\n"
+"ከነቃ፣ የተደበቁ ፋይሎች እና አቃፊዎች ከመረጃ ቋቱ ውስጥ ይገለላሉ <i>(ማለትም በነጥብ ቁምፊ የሚጀምሩ ሁሉም ፋይሎች ወይም አቃፊዎች)</i>።"
 
 #: src/fsearch_preferences.ui:1457
 msgid "Focus a setting to get a detailed description of what it does."
-msgstr ""
+msgstr "የሚሰራውን ዝርዝር መግለጫ ለማግኘት ቅንብር ላይ አተኩር።"
 
 #: src/fsearch_preferences.ui:1470
 msgid ""
@@ -1650,6 +1934,13 @@ msgid ""
 "\n"
 "<i><tt>fsearch --update-database</tt></i>"
 msgstr ""
+"<b>በተወሰነ የጊዜ ልዩነት የውሂብ ጎታውን በየጊዜው አዘምን፡</b>\n"
+"\n"
+"ከነቃ እና FSearch እስካለ ድረስ የውሂብ ጎታው ከተሰጠው የጊዜ ክፍተት ጋር በየጊዜው ይዘምናል።\n"
+"\n"
+"ዳታቤዙን ከበስተጀርባ ማዘመን ከፈለጉ፣ FSearch በማይሰራበት ጊዜ እንኳን፣ ዝመናውን በየጊዜው ለማስነሳት እንደ cron ወይም systemd timers ያሉ መሳሪያዎችን መጠቀም አለቦት፡-\n"
+"\n"
+"<i><tt>fsearch --update-database</tt></i>"
 
 #: src/fsearch_preferences.ui:1491
 msgid ""
@@ -1660,6 +1951,9 @@ msgid ""
 "launcher. Otherwise the <i>.desktop</i> file will be opened with the default "
 "handler for this type of files, which is usually a text editor."
 msgstr ""
+"<b>የዴስክቶፕ ፋይሎችን አስጀምር፡</b>\n"
+"\n"
+"ከነቃ የ<i>.desktop</i> ፋይልን ማግበር በዚያ ፋይል ውስጥ የተገለጸውን መተግበሪያ ይጀምራል። በዚህ መንገድ FSearch እንደ መተግበሪያ አስጀማሪ መስራት ይችላል። ያለበለዚያ የ<i>. ዴስክቶፕ</i> ፋይሉ ለዚህ አይነት ፋይሎች በነባሪ ተቆጣጣሪ ይከፈታል፣ ይህም አብዛኛውን ጊዜ የጽሑፍ አርታኢ ነው።"
 
 #: src/fsearch_preferences.ui:1508
 msgid ""
@@ -1672,6 +1966,13 @@ msgid ""
 "the filter on demand\n"
 "\t• <b>Query:</b> The search term by which the database should be filtered"
 msgstr ""
+"<b>ማጣሪያዎች፡</b>\n"
+"\n"
+"ይህ የሁሉም የሚገኙ ማጣሪያዎች ዝርዝር ነው። ማጣሪያ አስቀድሞ የተገለጸ ፍለጋ ነው።\n"
+"\n"
+"\t• <b>ስም፡</b> ለማጣሪያው ልዩ እና ገላጭ መለያ\n"
+"\t• <b>ማክሮ፡</b> ማክሮ ጽሁፍን በመተየብ ':' በፈለጉት ጊዜ ማጣሪያውን ማንቃት ይችላሉ።\n"
+"\t• <b>መጠይቅ፡</b> የውሂብ ጎታው የሚጣራበት የፍለጋ ቃል"
 
 #: src/fsearch_preferences.ui:1529
 msgid ""
@@ -1679,6 +1980,9 @@ msgid ""
 "\n"
 "This button opens a dialog where you can edit a new filter."
 msgstr ""
+"<b>አዲስ ማጣሪያ አክል፡</b>\n"
+"\n"
+"ይህ አዝራር አዲስ ማጣሪያ የሚያስተካክሉበት መገናኛ ይከፍታል።"
 
 #: src/fsearch_preferences.ui:1546
 msgid ""
@@ -1686,6 +1990,9 @@ msgid ""
 "\n"
 "This button removes the currently selected filter."
 msgstr ""
+"<b>የተመረጠውን ማጣሪያ አስወግድ፡</b>\n"
+"\n"
+"ይህ አዝራር አሁን የተመረጠውን ማጣሪያ ያስወግዳል."
 
 #: src/fsearch_preferences.ui:1563
 msgid ""
@@ -1693,6 +2000,9 @@ msgid ""
 "\n"
 "This button opens a dialog where you can edit the selected filter."
 msgstr ""
+"<b>የተመረጠውን ማጣሪያ አርትዕ፡</b>\n"
+"\n"
+"ይህ አዝራር የተመረጠውን ማጣሪያ ማስተካከል የሚችሉበት መገናኛ ይከፍታል."
 
 #: src/fsearch_preferences.ui:1580
 msgid ""
@@ -1702,6 +2012,11 @@ msgid ""
 "\n"
 "⚠ All filters which were created or edited by the user will be lost! ⚠"
 msgstr ""
+"<b>ነባሪ ማጣሪያዎችን ወደነበሩበት ይመልሱ፦</b>\n"
+"\n"
+"ይህ አዝራር ነባሪውን የማጣሪያ ውቅረት ወደነበረበት ይመልሳል።\n"
+"\n"
+"⚠ በተጠቃሚው የተፈጠሩ ወይም የተስተካከሉ ሁሉም ማጣሪያዎች ይጠፋሉ! ⚠"
 
 #: src/fsearch_preferences.ui:1599
 msgid ""
@@ -1710,128 +2025,137 @@ msgid ""
 "If enabled, FSearch exits when the Escape key is pressed instead of the "
 "window being minimized."
 msgstr ""
+"<b>በማምለጥ ላይ ውጣ፡</b>\n"
+"\n"
+"ከነቃ FSearch የሚወጣው መስኮቱ ከመቀነሱ ይልቅ የማምለጫ ቁልፉ ሲጫን ነው።"
 
 #: src/fsearch_preferences.ui:1618 src/fsearch_window.ui:290
 #: src/fsearch_window.ui:415 src/menus.ui:150 src/menus.ui:156
 msgid "Help"
-msgstr ""
+msgstr "እገዛ"
 
 #: src/fsearch_preferences_dialog.c:238
 msgid "Database"
-msgstr ""
+msgstr "የውሂብ ጎታ"
 
 #: src/fsearch_result_view.c:381
 msgid "Invalid row data"
-msgstr ""
+msgstr "ልክ ያልሆነ የረድፍ ውሂብ"
 
 #: src/fsearch_statusbar.c:58
 #, c-format
 msgid "%'d Item"
-msgstr ""
+msgstr "%'d ንጥል"
 
 #: src/fsearch_statusbar.c:58 src/fsearch_statusbar.c:186
 #, c-format
 msgid "%'d Items"
-msgstr ""
+msgstr "%'d እቃዎች"
 
 #: src/fsearch_statusbar.c:80
 msgid "Querying…"
-msgstr ""
+msgstr "በመጠየቅ ላይ…"
 
 #: src/fsearch_statusbar.c:175
 msgid "Loading…"
-msgstr ""
+msgstr "በመጫን ላይ…"
 
 #: src/fsearch_statusbar.c:180
 msgid "Scanning…"
-msgstr ""
+msgstr "በመቃኘት ላይ…"
 
 #: src/fsearch_statusbar.ui:52
 msgid "Number of Search Results"
-msgstr ""
+msgstr "የፍለጋ ውጤቶች ብዛት"
 
 #: src/fsearch_statusbar.ui:53
 msgid "0 Items"
-msgstr ""
+msgstr "0 እቃዎች"
 
 #: src/fsearch_statusbar.ui:106
 msgid "Cancel"
-msgstr ""
+msgstr "ሰርዝ"
 
 #: src/fsearch_statusbar.ui:153
 msgid "Index:"
-msgstr ""
+msgstr "መረጃ ጠቋሚ፡-"
 
 #: src/fsearch_statusbar.ui:228
 msgid "Number of selected folders"
-msgstr ""
+msgstr "የተመረጡ አቃፊዎች ብዛት"
 
 #: src/fsearch_statusbar.ui:229 src/fsearch_statusbar.ui:254
 msgid "0/0"
-msgstr ""
+msgstr "0/0"
 
 #: src/fsearch_statusbar.ui:253
 msgid "Number of selected files"
-msgstr ""
+msgstr "የተመረጡ ፋይሎች ብዛት"
 
 #: src/fsearch_statusbar.ui:328 src/fsearch_window.ui:103
 msgid "Cancel database update"
-msgstr ""
+msgstr "የውሂብ ጎታ ዝማኔን ሰርዝ"
 
 #: src/fsearch_statusbar.ui:369
 msgid "Number of database items"
-msgstr ""
+msgstr "የውሂብ ጎታ ንጥሎች ብዛት"
 
 #: src/fsearch_statusbar.ui:370
 msgid "(empty)"
-msgstr ""
+msgstr "(ባዶ)"
 
 #: src/fsearch_statusbar.ui:407
 msgid ""
 "Search term contains upper case characters.\n"
 "<b>Match Case</b> was temporarily activated for this term."
 msgstr ""
+"የፍለጋ ቃል አቢይ ሆሄያትን ይዟል።\n"
+"<b>Match Case</b> ለጊዜው ለዚህ ቃል ነቅቷል።"
 
 #: src/fsearch_statusbar.ui:438 src/fsearch_statusbar.ui:491
 msgid "CASE"
-msgstr ""
+msgstr "ጉዳይ"
 
 #: src/fsearch_statusbar.ui:514
 msgid ""
 "Search term contains path separators.\n"
 "<b>Search in Path</b> was temporarily activated for this term."
 msgstr ""
+"የፍለጋ ቃል ዱካ መለያያዎችን ይዟል።\n"
+"<b>በመንገድ ላይ ፍለጋ</b> ለጊዜው ለዚህ ቃል ነቅቷል።"
 
 #: src/fsearch_statusbar.ui:545 src/fsearch_statusbar.ui:598
 msgid "PATH"
-msgstr ""
+msgstr "PATH"
 
 #: src/fsearch_statusbar.ui:651
 msgid "REGEX"
-msgstr ""
+msgstr "REGEX"
 
 #: src/fsearch_statusbar.ui:726
 msgid ""
 "The search was cancelled before it finished.\n"
 "<b>These results are incomplete.</b>"
 msgstr ""
+"ፍለጋው ከመጠናቀቁ በፊት ተሰርዟል።\n"
+"<b>እነዚህ ውጤቶች ያልተሟሉ ናቸው።</b>"
 
 #: src/fsearch_statusbar.ui:756
 msgid "PARTIAL"
-msgstr ""
+msgstr "ከፊል"
 
 #: src/fsearch_welcome_dialog.ui:26
 msgid "What's New in FSearch"
-msgstr ""
+msgstr "በFSearch ውስጥ ምን አዲስ ነገር አለ።"
 
 #: src/fsearch_welcome_dialog.ui:79
 msgid ""
 "<span size=\"xx-large\" weight=\"bold\">What's New in FSearch 0.3</span>"
-msgstr ""
+msgstr "<span size=\\\"xx-large\\\"weight=\\\"bold\\\">በFSearch 0.3 ውስጥ ምን አዲስ ነገር አለ</span>"
 
 #: src/fsearch_welcome_dialog.ui:149
 msgid "<big><b>File System Monitoring</b></big>"
-msgstr ""
+msgstr "<big><b>የፋይል ስርዓት ክትትል</b></big>"
 
 #: src/fsearch_welcome_dialog.ui:163
 msgid ""
@@ -1845,20 +2169,26 @@ msgid ""
 "<a href=\"URL\">https://github.com/cboxdoerfer/fsearch/wiki/Database-update</"
 "a>"
 msgstr ""
+"ተደጋጋሚ ዳግም ቅኝቶችን ለማስወገድ አሁን ነጠላ አቃፊዎችን በንቃት መመልከት ይችላሉ። የፋይል ለውጦች ከዚያ በፍለጋ ውጤቶችዎ ውስጥ ወዲያውኑ ይታያሉ።\n"
+"\n"
+"ይህንን ባህሪ ለማንቃት ወደ ምርጫዎች መገናኛው የውሂብ ጎታ ክፍል ይሂዱ።\n"
+"\n"
+"ለበለጠ መረጃ የመስመር ላይ ሰነዶችን ይመልከቱ፡-\n"
+"<a href=\\\"URL\\\">https://github.com/cboxdoerfer/fsearch/wiki/Database-update</a>"
 
 #: src/fsearch_welcome_dialog.ui:232
 msgid "<big><b>Folder-Specific Rescan Schedules</b></big>"
-msgstr ""
+msgstr "<big><b>አቃፊ-ተኮር የድጋሚ ቅኝት መርሃ ግብሮች</b></big>"
 
 #: src/fsearch_welcome_dialog.ui:246
 msgid ""
 "You can now configure automatic update intervals for individual folders "
 "independently and tailored to each distinct location."
-msgstr ""
+msgstr "አሁን ለእያንዳንዱ አቃፊ በተናጥል እና ለእያንዳንዱ የተለየ ቦታ ብጁ በራስ-ሰር የማዘመን ክፍተቶችን ማዋቀር ይችላሉ።"
 
 #: src/fsearch_welcome_dialog.ui:309
 msgid "<big><b>Improved Exclude Rules</b></big>"
-msgstr ""
+msgstr "<big><b>የተሻሻለ የማግለል ደንቦች</b></big>"
 
 #: src/fsearch_welcome_dialog.ui:323
 msgid ""
@@ -1867,18 +2197,20 @@ msgid ""
 "Rules can be targeted specifically at files, folders, or both, and can be "
 "configured to match against either the basename or the full absolute path."
 msgstr ""
+"የበለጠ ኃይለኛ የማግለል ደንቦችን ለመወሰን አሁን የዱር ምልክቶችን እና መደበኛ መግለጫዎችን መጠቀም ይችላሉ። \n"
+"ሕጎች በተለይ በፋይሎች፣ አቃፊዎች ወይም ሁለቱም ላይ ሊነጣጠሩ ይችላሉ፣ እና ከመሠረታዊ ስም ወይም ከሙሉ ፍፁም ዱካ ጋር እንዲዛመድ ሊዋቀሩ ይችላሉ።"
 
 #: src/fsearch_window.c:749 src/menus.ui:279
 msgid "Size"
-msgstr ""
+msgstr "መጠን"
 
 #: src/fsearch_window.c:763 src/menus.ui:271
 msgid "Extension"
-msgstr ""
+msgstr "ቅጥያ"
 
 #: src/fsearch_window.c:770 src/menus.ui:283
 msgid "Date Modified"
-msgstr ""
+msgstr "የተቀየረበት ቀን"
 
 #: src/fsearch_window.c:784
 msgid ""
@@ -1887,201 +2219,205 @@ msgid ""
 "This sort order is not persistent, it will be reset when the search term "
 "changes."
 msgstr ""
+"በ<b>አይነት</b> መደርደር ከብዙ ውጤቶች ጋር ጥቂት ሰከንዶች ሊወስድ ይችላል።\n"
+"\n"
+"ይህ የመደርደር ቅደም ተከተል ዘላቂ አይደለም፣ የፍለጋ ቃሉ ሲቀየር ዳግም ይጀመራል።"
 
 #: src/fsearch_window.ui:68
 msgid "New window"
-msgstr ""
+msgstr "አዲስ መስኮት"
 
 #: src/fsearch_window.ui:89
 msgid "Update database"
-msgstr ""
+msgstr "የውሂብ ጎታ አዘምን"
 
 #: src/fsearch_window.ui:144 src/menus.ui:112
 msgid "Search in Path"
-msgstr ""
+msgstr "በመንገድ ላይ ይፈልጉ"
 
 #: src/fsearch_window.ui:158 src/menus.ui:116
 msgid "Match Case"
-msgstr ""
+msgstr "ተዛማጅ መያዣ"
 
 #: src/fsearch_window.ui:172 src/menus.ui:120
 msgid "Enable RegEx"
-msgstr ""
+msgstr "RegEx ን አንቃ"
 
 #: src/fsearch_window.ui:197 src/menus.ui:95
 msgid "Show Statusbar"
-msgstr ""
+msgstr "የሁኔታ አሞሌን አሳይ"
 
 #: src/fsearch_window.ui:211 src/menus.ui:99
 msgid "Show Filter"
-msgstr ""
+msgstr "ማጣሪያ አሳይ"
 
 #: src/fsearch_window.ui:225 src/menus.ui:103
 msgid "Show Search Button"
-msgstr ""
+msgstr "የፍለጋ ቁልፍ አሳይ"
 
 #: src/fsearch_window.ui:275 src/fsearch_window.ui:356 src/menus.ui:129
 msgid "FSearch Online"
-msgstr ""
+msgstr "FSearch ኦንላይን"
 
 #: src/fsearch_window.ui:304 src/menus.ui:161
 msgid "About"
-msgstr ""
+msgstr "ስለ"
 
 #: src/fsearch_window.ui:329 src/menus.ui:47
 msgid "Quit"
-msgstr ""
+msgstr "አቁም"
 
 #: src/fsearch_window.ui:372 src/fsearch_window.ui:443 src/menus.ui:131
 msgid "Donate"
-msgstr ""
+msgstr "ለገሱ"
 
 #: src/fsearch_window.ui:387 src/menus.ui:142
 msgid "Forum"
-msgstr ""
+msgstr "መድረክ"
 
 #: src/fsearch_window.ui:401 src/menus.ui:146
 msgid "Bug Reports and Feature Requests"
-msgstr ""
+msgstr "የሳንካ ሪፖርቶች እና የባህሪ ጥያቄዎች"
 
 #: src/fsearch_window.ui:460 src/menus.ui:133
 msgid "GitHub Sponsors"
-msgstr ""
+msgstr "GitHub ስፖንሰሮች"
 
 #: src/fsearch_window.ui:474 src/menus.ui:137
 msgid "PayPal"
-msgstr ""
+msgstr "PayPal"
 
 #: src/fsearch_window.ui:586
 msgid "Search…"
-msgstr ""
+msgstr "ፈልግ…"
 
 #: src/fsearch_window.ui:608
 msgid "Select a Filter"
-msgstr ""
+msgstr "ማጣሪያ ይምረጡ"
 
 #: src/fsearch_window_actions.c:110
 #, c-format
 msgid "Do you really want to open %'d file?"
 msgid_plural "Do you really want to open %'d files?"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "በእርግጥ %'d ፋይል መክፈት ይፈልጋሉ?"
+msgstr[1] "በእርግጥ %'d ፋይሎችን መክፈት ይፈልጋሉ?"
 
 #: src/fsearch_window_actions.c:115
 msgid "Opening Files…"
-msgstr ""
+msgstr "ፋይሎችን በመክፈት ላይ…"
 
 #: src/fsearch_window_actions.c:198
 #, c-format
 msgid "Do you really want to remove %'d file?"
 msgid_plural "Do you really want to remove %'d files?"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "በእርግጥ %'d ፋይልን ማስወገድ ይፈልጋሉ?"
+msgstr[1] "በእርግጥ %'d ፋይሎችን ማስወገድ ይፈልጋሉ?"
 
 #: src/fsearch_window_actions.c:205
 msgid "Deleting files…"
-msgstr ""
+msgstr "ፋይሎችን በመሰረዝ ላይ…"
 
 #: src/fsearch_window_actions.c:205
 msgid "Moving files to trash…"
-msgstr ""
+msgstr "ፋይሎችን ወደ መጣያ በመውሰድ ላይ…"
 
 #: src/fsearch_window_actions.c:238 src/fsearch_window_actions.c:533
 #: src/fsearch_window_actions.c:580
 msgid "Something went wrong."
-msgstr ""
+msgstr "የሆነ ችግር ተፈጥሯል።"
 
 #: src/fsearch_window_actions.c:263
 #, c-format
 msgid "Do you really want to open %'d file property window?"
 msgid_plural "Do you really want to open %'d file property windows?"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "የምር የ%'dፋይል ንብረት መስኮት መክፈት ይፈልጋሉ?"
+msgstr[1] "በእርግጥ የ%'d ፋይል ንብረት መስኮቶችን መክፈት ይፈልጋሉ?"
 
 #: src/fsearch_window_actions.c:270
 msgid "Opening file properties…"
-msgstr ""
+msgstr "የፋይል ንብረቶችን በመክፈት ላይ…"
 
 #: src/menus.ui:6
 msgid "_File"
-msgstr ""
+msgstr "_ፋይል"
 
 #: src/menus.ui:9
 msgid "New Window"
-msgstr ""
+msgstr "አዲስ መስኮት"
 
 #: src/menus.ui:16 src/menus.ui:171
 msgid "_Open"
-msgstr ""
+msgstr "_ክፈት"
 
 #: src/menus.ui:21
 msgid "Open Folder"
-msgstr ""
+msgstr "አቃፊ ክፈት"
 
 #: src/menus.ui:29
 msgid "Update Database"
-msgstr ""
+msgstr "የውሂብ ጎታ አዘምን"
 
 #: src/menus.ui:35
 msgid "Cancel Update"
-msgstr ""
+msgstr "ዝማኔን ሰርዝ"
 
 #: src/menus.ui:42
 msgid "Close Window"
-msgstr ""
+msgstr "መስኮት ዝጋ"
 
 #: src/menus.ui:54
 msgid "_Edit"
-msgstr ""
+msgstr "_አስተካክል።"
 
 #: src/menus.ui:57 src/menus.ui:207
 msgid "_Copy"
-msgstr ""
+msgstr "_ቅዳ"
 
 #: src/menus.ui:62 src/menus.ui:228
 msgid "Cu_t"
-msgstr ""
+msgstr "ቍ"
 
 #: src/menus.ui:69
 msgid "Select All"
-msgstr ""
+msgstr "ሁሉንም ይምረጡ"
 
 #: src/menus.ui:74
 msgid "Deselect All"
-msgstr ""
+msgstr "ሁሉንም አይምረጡ"
 
 #: src/menus.ui:78
 msgid "Invert Selection"
-msgstr ""
+msgstr "የተገላቢጦሽ ምርጫ"
 
 #: src/menus.ui:92
 msgid "_View"
-msgstr ""
+msgstr "_እይታ"
 
 #: src/menus.ui:109
 msgid "_Search"
-msgstr ""
+msgstr "_ፈልግ"
 
 #: src/menus.ui:126
 msgid "_Help"
-msgstr ""
+msgstr "_እገዛ"
 
 #: src/menus.ui:177
 msgid "Open _With"
-msgstr ""
+msgstr "ክፈት በ _"
 
 #: src/menus.ui:191
 msgid "_Open Folder"
-msgstr ""
+msgstr "_አቃፊን ክፈት"
 
 #: src/menus.ui:213
 msgid "Copy as Text"
-msgstr ""
+msgstr "እንደ ጽሑፍ ይቅዱ"
 
 #: src/menus.ui:223
 msgid "Path + Name"
-msgstr ""
+msgstr "መንገድ + ስም"
 
 #: src/menus.ui:236
 msgid "Move to _Trash"
-msgstr ""
+msgstr "ወደ _መጣያ ውሰድ"
+
