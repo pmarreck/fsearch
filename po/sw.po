@@ -27,7 +27,7 @@ msgstr "Programu ya utafutaji wa faili inayozingatia utendaji na vipengele vya j
 
 #: data/io.github.cboxdoerfer.FSearch.desktop.in.in:10
 msgid "search;fsearch;files;folders;music;video;documents;find;tool;everything;"
-msgstr "tafuta;tafuta;faili;folda;muziki;video;nyaraka;tafuta;zana;kila kitu;"
+msgstr "tafuta;fsearch;faili;folda;muziki;video;hati;tafuta;chombo;kila kitu;"
 
 #: data/io.github.cboxdoerfer.FSearch.desktop.in.in:12
 msgid "File Search Utility"
