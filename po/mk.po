@@ -19,312 +19,347 @@ msgstr ""
 
 #: data/io.github.cboxdoerfer.FSearch.desktop.in.in:4 src/main.c:36
 msgid "FSearch"
-msgstr ""
+msgstr "FSearch"
 
 #: data/io.github.cboxdoerfer.FSearch.desktop.in.in:5
 msgid "A file search application focusing on performance and advanced features"
 msgstr ""
+"Апликација за пребарување фајлови која се фокусира на перформанси и напредни "
+"функции"
 
 #: data/io.github.cboxdoerfer.FSearch.desktop.in.in:10
 msgid "search;fsearch;files;folders;music;video;documents;find;tool;everything;"
-msgstr ""
+msgstr "пребарување;fsearch;датотеки;папки;музика;видео;документи;најди;алатка;сè;"
 
 #: data/io.github.cboxdoerfer.FSearch.desktop.in.in:12
 msgid "File Search Utility"
-msgstr ""
+msgstr "Алатка за пребарување на датотеки"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:8
 msgid "A graphical file search application"
-msgstr ""
+msgstr "Графичка апликација за пребарување датотеки"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:10
 msgid ""
 "FSearch helps you to find files and folders as easy and fast as possible. "
 "Just type a few letters and search results will appear almost instantly."
 msgstr ""
+"FSearch ви помага да ги најдете датотеките и фолдерите што е можно најлесно "
+"и најбрзо. Само внесете неколку букви и резултатите од пребарувањето ќе се "
+"појават речиси моментално."
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:14
 msgid ""
 "There are a lot of features which make searching as efficient and powerful "
 "as possible. Such as:"
 msgstr ""
+"Има многу функции кои го прават пребарувањето што е можно најефикасно и "
+"најмоќно. Такви како:"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:19
 msgid ""
 "Ignore case (e.g. searching for \"<code>fsearch</code>\" will match "
 "\"FSearch\" as well)"
 msgstr ""
+"Игнорирај големи и мали букви (на пр. пребарувањето за \"<code>fsearch</"
+"code>\" ќе го препознае и \"FSearch\")"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:20
 msgid "Regular expressions"
-msgstr ""
+msgstr "Регуларни изрази"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:21
 msgid "Wildcard support"
-msgstr ""
+msgstr "Поддршка за wildcard"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:22
 msgid "Filter support (e.g. only search for audio files)"
-msgstr ""
+msgstr "Поддршка за филтрирање (на пр. пребарувајте само аудио датотеки)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:23
 msgid "Exclude certain files and folders"
-msgstr ""
+msgstr "Исклучи одредени датотеки и фолдери"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:24
 msgid "Fast sort by name, path, size, modification time and extension"
-msgstr ""
+msgstr "Брзо сортирање по име, пат, големина, време на измена и надобрасување"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:26
 msgid ""
 "<em>Note:</em> Due to Flatpak's sandboxing, FSearch can't find every file on "
 "your system."
 msgstr ""
+"<em>Забелешка:</em> Поради песочницата на Flatpak, FSearch не може да ги "
+"најде сите датотеки на вашиот систем."
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:35
 msgid "The default UI layout"
-msgstr ""
+msgstr "Стандардната конфигурација на корисничкиот интерфејс"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:41
 msgid "A layout more closely following GNOME HIGs"
-msgstr ""
+msgstr "Изглед кој поблизу ја следи GNOME HIG"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:49
 msgid "search"
-msgstr ""
+msgstr "пребарај"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:50
 msgid "fsearch"
-msgstr ""
+msgstr "fsearch"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:51
 msgid "files"
-msgstr ""
+msgstr "датотеки"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:52
 msgid "folders"
-msgstr ""
+msgstr "папки"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:53
 msgid "music"
-msgstr ""
+msgstr "музика"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:54
 msgid "video"
-msgstr ""
+msgstr "видео"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:55
 msgid "documents"
-msgstr ""
+msgstr "документи"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:56
 msgid "find"
-msgstr ""
+msgstr "пронајди"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:57
 msgid "tool"
-msgstr ""
+msgstr "алатка"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:58
 msgid "everything"
-msgstr ""
+msgstr "сè"
 
 #. Kept for appstreamcli < 1.0 (e.g. Ubuntu 20.04/22.04 PPA builds), which doesn't know <developer>.
 #. Translators: please do NOT translate this.
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:77
 msgid "Christian Boxdörfer"
-msgstr ""
+msgstr "Кристијан Боксдорфер"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:89
 msgid "DB rewrite"
-msgstr ""
+msgstr "Препишување на база на податоци"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:90
 msgid "DB: Add support for filesystem monitoring"
-msgstr ""
+msgstr "БАЗА ПОД ПОДАТОЦИ: Додадена поддршка за мониторинг на фајл-системот"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:91
 msgid ""
 "DB: Allow files and folders to be excluded based on fixed patterns, "
 "wildcards or regular expressions"
 msgstr ""
+"БАЗА ПОДПОДАТОЦИ: Дозволете да фајловите и фолдерите бидат исклучени врз "
+"основа на фиксни шаблони, дивкардзи или редовни изрази"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:92
 msgid ""
 "DB: Allow included folders to be scheduled and scanned after launch "
 "independently"
 msgstr ""
+"БАЗА ПОДПОДАТОЦИ: Дозволете на вклучените папки да бидат закажани и "
+"пребарани по започнување на програмата независно"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:93
 msgid "DB: Make rescanning more efficient"
-msgstr ""
+msgstr "БАЗА ПОДПОДАТОЦИ: Направете го повторно скенирање по ефикасно"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:94
 msgid "DB: Store database config in DB file"
 msgstr ""
+"БАЗА ПОДПОДАТОЦИ: Зачувај ја конфигурацијата на базата во датотеката на "
+"базата"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:95
 msgid "DB: Add checksum to DB file"
-msgstr ""
+msgstr "БАЗА ПОДПОДАТОЦИ: Додај контролна сума во датокот на базата"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:96
 msgid "Make icon and file info gathering asynchronous (no UI blocking)"
 msgstr ""
+"Направете ја собирањета на иконите и информациите за датокот асинхронно (без "
+"блокирање на корисничкиот интерфејс)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:97
 msgid "Reduce memory usage"
-msgstr ""
+msgstr "Најминимално користење меморија"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:98
 msgid "Add contextual help for all preferences"
-msgstr ""
+msgstr "Додај контекстуална помош за сите преференции"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:99
 msgid "Numerous bug fixes and stability and performance improvements"
-msgstr ""
+msgstr "Многу поправки на грешки и подобрувања на стабилноста и перформансите"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:106
 msgid "New search engine"
-msgstr ""
+msgstr "Нов пребарувач"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:107
 msgid "Greatly improved highlighting of search terms"
-msgstr ""
+msgstr "Знаботно подобрено истакнување на пребараните термини"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:108
 msgid "Custom filters"
-msgstr ""
+msgstr "Прилагодени филтри"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:109
 msgid "Improved sort performance"
-msgstr ""
+msgstr "Подобрена претпоставка на сортирање"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:110
 msgid "Improved scroll performance"
-msgstr ""
+msgstr "Подобрена производива на скролување"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:111
 msgid "Remember file selection after a database update"
-msgstr ""
+msgstr "Запамтете го изборот на датоци по ажурирање на базата на податоци"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:112
 msgid "Automatically scroll the result list in rubberband selection mode"
 msgstr ""
+"Автоматски скролајте ја листата на резултати во режимот на избор со гумастица"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:113
 msgid "Invert selection with rubber band when 'Ctrl' is pressed"
-msgstr ""
+msgstr "Инверзирајте го изборот со гумастица кога е притиснат 'Ctrl'"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:114
 msgid "Focus search entry when the main window gets activated"
-msgstr ""
+msgstr "Фокусирај го пребарувачниот внес кога главниот прозорец се активира"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:115
 msgid "Add filter for applications (i.e. .desktop files)"
-msgstr ""
+msgstr "Додај филтер за апликации (на пр. .desktop датотеки)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:116
 msgid ""
 "Add option to launch applications directly instead of opening the .desktop "
 "files"
 msgstr ""
+"Додајте опција за директно лансирање на апликации наместо отворање "
+"на .desktop датотеките"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:117
 msgid "Show application icons for .desktop files"
-msgstr ""
+msgstr "Прикажи икони на апликациите за .desktop датотеки"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:118
 msgid "Add .odp and .ods files to document filter"
-msgstr ""
+msgstr "Додајте .odp и .ods датотеки во филтерот за документи"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:119
 msgid ""
 "'Open with' menu now only shows applications which can handle the selected "
 "files"
 msgstr ""
+"„Отвори со“ мениу сега прикажува само апликации кои можат да ги обработат "
+"избраните датотеки"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:120
 msgid ""
 "Improved opening of multiple files with the same type (they get now passed "
 "as a list to applications, instead of one by one)"
 msgstr ""
+"Подобрено отворање на повеќе датотеки од ист тип (тие сега се предаваат како "
+"листа до апликациите, наместо една по една)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:121
 msgid "Better support for opening files in sandboxed mode"
-msgstr ""
+msgstr "Подобро поддршка за отворање датотеки во sandbox режимот"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:122
 msgid ""
 "Add menu items with links to the issue tracker, forum and donation pages"
 msgstr ""
+"Додајте менија со линкови до следењето на проблеми, форум и страници за "
+"донации"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:123
 msgid "Improve support for non-Linux systems"
-msgstr ""
+msgstr "Подобрете ја поддршката за системи кои не се Linux"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:124
 msgid ""
 "Add option to exit FSearch when Escape is pressed instead of minimizing the "
 "window"
 msgstr ""
+"Додајте опција за излезување од FSearch кога се притисне Escape наместо да "
+"се минимизира прозорец"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:125
 msgid "Exclude '/proc' and '/sys' by default"
-msgstr ""
+msgstr "Исклучи го '/proc' и '/sys' по стандард"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:126
 msgid "Open context menu when 'Menu' key or 'Shift + F10' are pressed"
 msgstr ""
+"Отвори контекстуално мениу кога се притиснат копчето 'Menu' или 'Shift + F10'"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:127
 msgid "and tons of bug fixes, translation updates and smaller improvements"
-msgstr ""
+msgstr "и многу поправки на грешки, преводи и помали подобрувања"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:133
 msgid "Initial release."
-msgstr ""
+msgstr "Првина верзија."
 
 #: src/fsearch.c:181
 msgid "translator-credits"
-msgstr ""
+msgstr "преведувачи"
 
 #: src/fsearch.c:183
 msgid "A search utility focusing on performance and advanced features"
 msgstr ""
+"Алатка за пребарување која се фокусира на перформансите и напредните функции"
 
 #: src/fsearch.c:330
 msgid "Saving database and config…"
-msgstr ""
+msgstr "Зачувување на базата на податоци и конфигурацијата…"
 
 #: src/fsearch.c:786
 msgid "Open a new application window"
-msgstr ""
+msgstr "Отворете ново прозорец за апликација"
 
 #: src/fsearch.c:787
 msgid "Minimize the application window"
-msgstr ""
+msgstr "Минимизирајте го прозорецот на апликацијата"
 
 #: src/fsearch.c:788
 msgid "Show the application preferences"
-msgstr ""
+msgstr "Прикажи ги преференциите на апликацијата"
 
 #: src/fsearch.c:789
 msgid "Set the search pattern"
-msgstr ""
+msgstr "Постави го шаблонот за пребарување"
 
 #: src/fsearch.c:790
 msgid "Update the database and exit"
-msgstr ""
+msgstr "Ажурирајте ја базата на податоци и излезете"
 
 #: src/fsearch.c:791
 msgid "Print version information and exit"
-msgstr ""
+msgstr "Испечати информации за верзијата и излезе"
 
 #: src/fsearch.c:883
 msgid ""
 "For command-line search help, run: fsearch --cli --help\n"
 "For shared configuration help, run: fsearch config --help"
 msgstr ""
+"За помош со пребарување преку командната линија, изврнете: fsearch --cli --"
+"help\n"
+"За помош за заедничка конфигурација, изврнете: fsearch config --help"
 
 #: src/fsearch_cli.c:125
 #, c-format
@@ -332,22 +367,25 @@ msgid ""
 "Results capped at %u. Use --unlimit or --unlimited to get them all, or "
 "provide a custom --limit, or set FSEARCH_RESULT_LIMIT."
 msgstr ""
+"Резултатите се ограничени на %u. Користете --unlimit или --unlimited за да "
+"ги добиете сите, обезбедете сопствено --limit, или поставете "
+"FSEARCH_RESULT_LIMIT."
 
 #: src/fsearch_cli.c:134
 #, c-format
 msgid "%u match."
 msgid_plural "%u matches."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%u одговори."
+msgstr[1] "%u одговори."
 
 #: src/fsearch_cli.c:142
 msgid "Updating FSearch index before searching..."
-msgstr ""
+msgstr "Ажурирање на FSearch индексот пред пребарување..."
 
 #: src/fsearch_cli.c:149
 #, c-format
 msgid "Indexing: %s"
-msgstr ""
+msgstr "Индексирање: %s"
 
 #: src/fsearch_cli.c:181
 msgid ""
@@ -393,40 +431,88 @@ msgid ""
 "{png,jpg} selects alternatives; {01..12} is an inclusive numeric range; \\* "
 "matches a literal *.\n"
 msgstr ""
+"Употреба: fsearch --cli [OPTIONS]\n"
+"\n"
+"Пребарајте во постоечкиот FSearch индекс и испечате ги совпаѓачките патиња.\n"
+"\n"
+"  -s, --search PATTERN       Пребарувајте со FSearch синтакса за "
+"пребарување\n"
+"      --path DIRECTORY        Рекурзивно пребарувајте под DIRECTORY "
+"(default: теков директориум)\n"
+"      --global                Пребарувајте во секоја индексирана локација\n"
+"      --limit COUNT          Испечатајте најмногу COUNT резултати\n"
+"      --unlimit, --unlimited Пребарувајте сите резултати\n"
+"      -u, --update-database  Повторно пребарајте го конфигурираниот индекс и "
+"излезете\n"
+"      --about                Испечатајте информации за изградбата во една "
+"линија\n"
+"      -h, --help               Покажете ја оваа помошб\n"
+"\n"
+"Конфигурација: fsearch config --help\n"
+"\n"
+"Примери:\n"
+"  fsearch --cli --search invoice              # теков директориум\n"
+"  fsearch --cli --path ~/Documents --search invoice\n"
+"  fsearch --cli --global --search invoice\n"
+"  fsearch --cli --search 'file:size:>20mb'\n"
+"  fsearch --cli --search 'ext:jpg;png'\n"
+"  fsearch --cli --search 'path:projects report'\n"
+"  fsearch --cli --search 'report AND ext:pdf'\n"
+"  fsearch --cli --search '(draft OR final) !archive'\n"
+"  fsearch --cli --search 'file:regex:\".+\\.pdf$\"'\n"
+"  fsearch --cli --search 'case:AGENTS'        # чувствително на големико/"
+"малико букви\n"
+"  fsearch --cli --search 'case:regex:\"^AGENTS\\.md$\"'\n"
+"  fsearch --cli --search 'glob:**/*.png'\n"
+"  fsearch --cli --search 'path:glob:**/AGENTS.md'\n"
+"  fsearch --cli --search 'case:glob:AGENTS.md' # glob чувствително на "
+"големико/малико букви\n"
+"\n"
+"Примерите користат празно место како AND. Обидете се со file:, folder:, "
+"path:, ext:, size:, dm:, case:, regex:, и glob:.\n"
+"Булева синтакса: AND или &&; OR или ||; NOT или !. Заградите ги групираат "
+"термините.\n"
+"Glob синтакса: * исклучува /; ** ги прекучува директориите; ? совпаѓа со "
+"еден карактер; [a-c] е опсег;\n"
+"Glob по default пребарува патињи; користете **/ за која било длабочина; "
+"file:glob: пребарува имиња на датотеки.\n"
+"{png,jpg} избира алтернативи; {01..12} е вклучен нумерички опсег; \\* "
+"совпаѓа со буквално *.\n"
 
 #: src/fsearch_cli.c:238
 #, c-format
 msgid "FSearch %s - indexed file search for %s %s\n"
-msgstr ""
+msgstr "FSearch %s - индексирано пребарување на датотеки за %s %s\n"
 
 #: src/fsearch_cli.c:301
 msgid "fsearch: interrupted\n"
-msgstr ""
+msgstr "fsearch: прекинато\n"
 
 #: src/fsearch_cli.c:315
 msgid "fsearch: search could not run because the index is unavailable\n"
 msgstr ""
+"fsearch: пребарувањето не може да се изврши бидејќи индексот не е достапен\n"
 
 #: src/fsearch_cli.c:352 src/fsearch_cli.c:381 src/fsearch_cli_config.c:774
 #: src/fsearch_cli_config.c:961 src/fsearch_cli_config.c:1147
 #, c-format
 msgid "%s\n"
-msgstr ""
+msgstr "%s\n"
 
 #: src/fsearch_cli.c:400
 #, c-format
 msgid "%s"
-msgstr ""
+msgstr "%s"
 
 #: src/fsearch_cli.c:473
 #, c-format
 msgid "fsearch: unknown CLI option: %s\n"
-msgstr ""
+msgstr "fsearch: непознаата CLI опција: %s\n"
 
 #: src/fsearch_cli.c:495
 #, c-format
 msgid "fsearch: failed to create data directory: %s\n"
-msgstr ""
+msgstr "fsearch: неуспешно креирање на директорија за податоци: %s\n"
 
 #: src/fsearch_cli_config.c:111
 msgid ""
@@ -468,30 +554,82 @@ msgid ""
 "  fsearch config filters add Documents --query 'ext:pdf' --macro docs\n"
 "  fsearch config reset search --yes\n"
 msgstr ""
+"Utilizacija: fsearch config COMMAND [OPTIONS]\n"
+"\n"
+"Прегледајте и изменете заедничката FSearch GUI и CLI конфигурација.\n"
+"\n"
+"Команди за конфигурација:\n"
+"  path                         Испечатајте го патот до датокот на "
+"конфигурација\n"
+"  show [SECTION] [--json]      Покажете ги поставките\n"
+"  get KEY [--json]             Испечајте една скаларна поставка\n"
+"  set KEY VALUE                Поставете една скаларна поставка\n"
+"  unset KEY                    Вратете ја дефолтната вредност на една "
+"скаларна поставка\n"
+"  reset [KEY|SECTION] --yes [--rescan]\n"
+"                                Вратете ги дефолтно првобиците\n"
+"  doctor                       Проверете ја конзистентноста на "
+"конфигурацијата и индексот\n"
+"  roots list|add|set|remove    Управувајте со индексирани корени\n"
+"  excludes list|add|remove|hidden\n"
+"                                Управујте со исклучења од индексот\n"
+"  filters list|add|set|remove|reset\n"
+"                                Управујте со зачувани филтри за пребарување\n"
+"\n"
+"Скаларните вредности користат true/false, децимални целиброиви или низи.\n"
+"Извршете 'fsearch config show' за да ја излишите секоја скаларна клуч и "
+"моментална вредност.\n"
+"Скаларни секции: search, application, window, ui, columns, sort, dialogs.\n"
+"Користете 'fsearch config roots|excludes|filters --help' за опции на "
+"семејство.\n"
+"Затворете ја FSearch GUI пред да промените заедничките поставки.\n"
+"Промените во индексот стануваат пребарувави на следното CLI пребарување, или "
+"веднаш со\n"
+"--rescan.\n"
+"Користете --json со командите show, get, и collection list.\n"
+"\n"
+"Примерчиња:\n"
+"  fsearch config show search --json\n"
+"  fsearch config get search.match-case\n"
+"  fsearch config set search.match-case true\n"
+"  fsearch config roots add ~/Code --monitor --one-file-system --rescan\n"
+"  fsearch config excludes add '*.tmp' --type wildcard --scope basename --\n"
+"target files\n"
+"  fsearch config filters add Documents --query 'ext:pdf' --macro docs\n"
+"  fsearch config reset search --yes\n"
 
 #: src/fsearch_cli_config.c:152
 msgid ""
 "Usage: fsearch config show [SECTION] [--json]\n"
 "Show all scalar settings or one dotted section.\n"
 msgstr ""
+"Користење: fsearch config show [SECTION] [--json]\n"
+"Прикажи ги сите скаларни поставки или еден точкав дел.\n"
 
 #: src/fsearch_cli_config.c:154
 msgid ""
 "Usage: fsearch config get KEY [--json]\n"
 "Print one typed scalar value. Discover keys with 'fsearch config show'.\n"
 msgstr ""
+"Искористување: fsearch config get KEY [--json]\n"
+"Испечате една скаларна вредност од одреден тип. Откријте ги клучовите со "
+"'fsearch config show'.\n"
 
 #: src/fsearch_cli_config.c:157
 msgid ""
 "Usage: fsearch config set KEY VALUE\n"
 "Set a boolean, integer, string, or enumerated scalar value.\n"
 msgstr ""
+"Употреба: fsearch config set KEY ВРЕДНОСТ\n"
+"Поставите булево, целото број, низа или пребројан скаларна вредност.\n"
 
 #: src/fsearch_cli_config.c:159
 msgid ""
 "Usage: fsearch config unset KEY\n"
 "Restore one scalar setting to its built-in default.\n"
 msgstr ""
+"Користење: fsearch config unset KEY\n"
+"Вратете една скаларна поставка на нејзината вградена стандардна вредност.\n"
 
 #: src/fsearch_cli_config.c:161
 msgid ""
@@ -499,6 +637,9 @@ msgid ""
 "Reset is destructive and requires --yes. --rescan applies to roots, "
 "database, excludes, or all.\n"
 msgstr ""
+"Utilizacija: fsearch config reset [KEY|SECTION] --yes [--rescan]\n"
+"Reset-ot je destruktiven i бара --yes. --rescan се однесува на корени, база "
+"на податоци, исклучувања или на сите.\n"
 
 #: src/fsearch_cli_config.c:164
 msgid ""
@@ -506,6 +647,9 @@ msgid ""
 "Check configuration readability and whether the saved index uses the same "
 "roots and exclusions.\n"
 msgstr ""
+"Користење: fsearch config doctor\n"
+"Провери ја пречитабелноста на конфигурацијата и дали зачуваниот индекс "
+"користи ги истите корени и исклучења.\n"
 
 #: src/fsearch_cli_config.c:170
 msgid ""
@@ -525,6 +669,22 @@ msgid ""
 "  --rescan-every SECONDS        Set periodic rescan interval; 0 disables it\n"
 "  --rescan                      Rebuild the index immediately after saving\n"
 msgstr ""
+"Utilizacija: fsearch config roots COMMAND [PATH] [OPTIONS]\n"
+"\n"
+"Komandi:\n"
+"  list [--json]                Прелистај индексирани корени\n"
+"  add PATH [OPTIONS]           Додај коренски директориум\n"
+"  set PATH [OPTIONS]           Промени постоечки корен\n"
+"  remove PATH [--rescan]       Избриши постоечки корен\n"
+"\n"
+"Опции за add и set:\n"
+"  --active, --inactive\n"
+"  --monitor, --no-monitor\n"
+"  --one-file-system, --no-one-file-system\n"
+"  --scan-after-launch, --no-scan-after-launch\n"
+"  --rescan-every SECONDS        Постави периодичен интервал за "
+"преискусување; 0 го исклучува\n"
+"  --rescan                      Преизгради го индексот веднаш по зачувување\n"
 
 #: src/fsearch_cli_config.c:187
 msgid ""
@@ -544,6 +704,23 @@ msgid ""
 "  --active, --inactive          Add state or removal selector\n"
 "  --rescan                      Rebuild the index immediately after saving\n"
 msgstr ""
+"Utilizacija: fsearch config excludes COMMAND [PATTERN|VALUE] [OPTIONS]\n"
+"\n"
+"Komandi:\n"
+"  list [--json]                 Прелистај исклучувања\n"
+"  add PATTERN [OPTIONS]         Додај исклучување\n"
+"  remove PATTERN [OPTIONS]      Избриши одговарачко исклучување\n"
+"  hidden [true|false] [--rescan]\n"
+"                                Прегледај или промени исклучување на скриени "
+"датотеки\n"
+"\n"
+"Опции за add и remove:\n"
+"  --type fixed|wildcard|regex   Default: fixed\n"
+"  --scope full-path|basename    Default: full-path\n"
+"  --target both|files|folders   Default: both\n"
+"  --active, --inactive          Додај преклопник за состојба или "
+"отстранување\n"
+"  --rescan                      Преизгради го индексот веднаш по зачувување\n"
 
 #: src/fsearch_cli_config.c:204
 msgid ""
@@ -563,205 +740,232 @@ msgid ""
 "  --path, --no-path             Search full paths\n"
 "  --regex, --no-regex           Treat query as a regular expression\n"
 msgstr ""
+"Utilizacija: fsearch config filters COMMAND [NAME] [OPTIONS]\n"
+"\n"
+"Komandi:\n"
+"  list [--json]                 Прелистај зачувани филтри\n"
+"  add NAME [OPTIONS]            Додај именуван филтер\n"
+"  set NAME [OPTIONS]            Промени именуван филтер\n"
+"  remove NAME                   Избриши именуван филтер\n"
+"  reset                         Воспостави вградени филтри\n"
+"\n"
+"Опции за add и set:\n"
+"  --query QUERY                 Зачушен FSearch препрас\n"
+"  --macro MACRO                 Име на макро препрас\n"
+"  --case, --no-case             Усогласеност со големи/мали букви\n"
+"  --path, --no-path             Пребарувај полни пати\n"
+"  --regex, --no-regex           Третирај го препрасот како редовен израз\n"
 
 #: src/fsearch_cli_config.c:265
 msgid ""
 "fsearch config: close the running FSearch GUI before changing shared "
 "settings\n"
 msgstr ""
+"fsearch config: затворете ја работежната FSearch GUI пред да промените "
+"заеднички поставки\n"
 
 #: src/fsearch_cli_config.c:269
 msgid "fsearch config: failed to save configuration\n"
-msgstr ""
+msgstr "fsearch config: неуспешно зачувување на конфигурацијата\n"
 
 #: src/fsearch_cli_config.c:280
 msgid "Index configuration changed; the next CLI search will rebuild it.\n"
 msgstr ""
+"Конфигурацијата на индексот е променена; следната пребарскување преку CLI ќе "
+"го пресостави.\n"
 
 #: src/fsearch_cli_config.c:416
 #, c-format
 msgid "fsearch config %s: unknown option: %s\n"
-msgstr ""
+msgstr "fsearch config %s: непознаата опција: %s\n"
 
 #: src/fsearch_cli_config.c:422
 #, c-format
 msgid "fsearch config %s: unexpected argument: %s\n"
-msgstr ""
+msgstr "fsearch config %s: неочекуван аргумент: %s\n"
 
 #: src/fsearch_cli_config.c:449
 msgid "Usage: fsearch config get KEY [--json]\n"
-msgstr ""
+msgstr "Користење: fsearch config get KEY [--json]\n"
 
 #: src/fsearch_cli_config.c:454 src/fsearch_cli_config.c:555
 #, c-format
 msgid "fsearch config: unknown setting: %s\n"
-msgstr ""
+msgstr "fsearch config: непознаата поставка: %s\n"
 
 #: src/fsearch_cli_config.c:502
 #, c-format
 msgid "fsearch config show: unknown section: %s\n"
-msgstr ""
+msgstr "fsearch config show: непознаата секција: %s\n"
 
 #: src/fsearch_cli_config.c:550
 #, c-format
 msgid "Usage: fsearch config %s KEY%s\n"
-msgstr ""
+msgstr "Користење: fsearch config %s KEY%s\n"
 
 #: src/fsearch_cli_config.c:566
 #, c-format
 msgid "fsearch config: invalid value for %s: %s\n"
-msgstr ""
+msgstr "fsearch config: невалидна вредност за %s: %s\n"
 
 #: src/fsearch_cli_config.c:572
 #, c-format
 msgid "%s = %s\n"
-msgstr ""
+msgstr "%s = %s\n"
 
 #: src/fsearch_cli_config.c:637
 #, c-format
 msgid "fsearch config roots: unknown operation: %s\n"
-msgstr ""
+msgstr "fsearch config roots: непознаата операција: %s\n"
 
 #: src/fsearch_cli_config.c:691
 msgid "fsearch config roots: --rescan-every requires SECONDS\n"
-msgstr ""
+msgstr "fsearch config roots: --rescan-every бара SECONDS\n"
 
 #: src/fsearch_cli_config.c:710
 msgid "fsearch config roots: missing PATH\n"
-msgstr ""
+msgstr "fsearch config roots: недостасува PATH\n"
 
 #: src/fsearch_cli_config.c:717 src/fsearch_cli_config.c:732
 #, c-format
 msgid "fsearch config roots: path not found: %s\n"
-msgstr ""
+msgstr "fsearch config roots: патот не е пронајден: %s\n"
 
 #: src/fsearch_cli_config.c:724
 #, c-format
 msgid "fsearch config roots: not a directory: %s\n"
-msgstr ""
+msgstr "fsearch config roots: не е директориум: %s\n"
 
 #: src/fsearch_cli_config.c:728
 #, c-format
 msgid "fsearch config roots: path already exists: %s\n"
-msgstr ""
+msgstr "fsearch config roots: патот веќе постои: %s\n"
 
 #: src/fsearch_cli_config.c:752
 #, c-format
 msgid "fsearch config roots: invalid rescan duration: %s\n"
-msgstr ""
+msgstr "fsearch config roots: невалидна трајност на преискусување: %s\n"
 
 #: src/fsearch_cli_config.c:765
 msgid ""
 "%s\tactive=%s monitor=%s one-file-system=%s scan-after-launch=%s rescan-"
 "after=%s\n"
 msgstr ""
+"%s\tactive=%s monitor=%s one-file-system=%s scan-after-launch=%s rescan-"
+"after=%s\n"
 
 #: src/fsearch_cli_config.c:844
 msgid "fsearch config excludes hidden: expected true or false\n"
-msgstr ""
+msgstr "fsearch config excludes hidden: се очекува true или false\n"
 
 #: src/fsearch_cli_config.c:850
 #, c-format
 msgid "exclude-hidden = %s\n"
-msgstr ""
+msgstr "исклучи_скриени = %s\n"
 
 #: src/fsearch_cli_config.c:856
 #, c-format
 msgid "fsearch config excludes: unknown operation: %s\n"
-msgstr ""
+msgstr "fsearch config excludes: непознаата операција: %s\n"
 
 #: src/fsearch_cli_config.c:877
 #, c-format
 msgid "fsearch config excludes: %s requires a value\n"
-msgstr ""
+msgstr "fsearch config excludes: %s бара вредност\n"
 
 #: src/fsearch_cli_config.c:909
 msgid "fsearch config excludes: missing PATTERN\n"
-msgstr ""
+msgstr "fsearch config excludes: недостасува PATTERN\n"
 
 #: src/fsearch_cli_config.c:914
 #, c-format
 msgid "fsearch config excludes: invalid type: %s\n"
-msgstr ""
+msgstr "fsearch config excludes: невалиден тип: %s\n"
 
 #: src/fsearch_cli_config.c:919
 #, c-format
 msgid "fsearch config excludes: invalid scope: %s\n"
-msgstr ""
+msgstr "fsearch config excludes: невалиден опсег: %s\n"
 
 #: src/fsearch_cli_config.c:924
 #, c-format
 msgid "fsearch config excludes: invalid target: %s\n"
-msgstr ""
+msgstr "fsearch config excludes: невалидна цел: %s\n"
 
 #: src/fsearch_cli_config.c:954
 #, c-format
 msgid "fsearch config excludes: exclusion not found: %s\n"
-msgstr ""
+msgstr "fsearch config excludes: исклучување не најдено: %s\n"
 
 #: src/fsearch_cli_config.c:1022
 msgid "filters reset\n"
-msgstr ""
+msgstr "ресетирање на филтерите\n"
 
 #: src/fsearch_cli_config.c:1029
 #, c-format
 msgid "fsearch config filters: unknown operation: %s\n"
-msgstr ""
+msgstr "fsearch config filters: непознаата операција: %s\n"
 
 #: src/fsearch_cli_config.c:1051
 #, c-format
 msgid "fsearch config filters: %s requires a value\n"
-msgstr ""
+msgstr "fsearch config filters: %s бара вредност\n"
 
 #: src/fsearch_cli_config.c:1094
 msgid "fsearch config filters: missing NAME\n"
-msgstr ""
+msgstr "fsearch config filters: недостасува NAME\n"
 
 #: src/fsearch_cli_config.c:1100 src/fsearch_cli_config.c:1111
 #, c-format
 msgid "fsearch config filters: name not found: %s\n"
-msgstr ""
+msgstr "fsearch config filters: name not found: %s\n"
 
 #: src/fsearch_cli_config.c:1107
 #, c-format
 msgid "fsearch config filters: name already exists: %s\n"
-msgstr ""
+msgstr "fsearch config filters: името веќе постои: %s\n"
 
 #: src/fsearch_cli_config.c:1145
 #, c-format
 msgid "%s\tmacro=%s query=%s\n"
-msgstr ""
+msgstr "%s\tmacro=%s query=%s\n"
 
 #: src/fsearch_cli_config.c:1193
 msgid "fsearch config reset requires --yes\n"
-msgstr ""
+msgstr "fsearch config reset бара --yes\n"
 
 #: src/fsearch_cli_config.c:1201
 msgid ""
 "fsearch config reset: --rescan requires roots, database, excludes, or all\n"
 msgstr ""
+"fsearch config reset: --rescan бара корени, база на податоци, исклучења или "
+"сè\n"
 
 #: src/fsearch_cli_config.c:1241
 #, c-format
 msgid "fsearch config: unknown setting or section: %s\n"
-msgstr ""
+msgstr "fsearch config: непознаата поставка или секција: %s\n"
 
 #: src/fsearch_cli_config.c:1246
 #, c-format
 msgid "%s settings reset\n"
-msgstr ""
+msgstr "Подесувањата за %s се ресетирани\n"
 
 #: src/fsearch_cli_config.c:1253
 msgid ""
 "configuration: missing; defaults active\n"
 "index: unknown\n"
 msgstr ""
+"конфигурација: недостасува; активни стандардни вредности\n"
+"индекс: непознаато\n"
 
 #: src/fsearch_cli_config.c:1261
 msgid ""
 "configuration: ok\n"
 "index: missing or unreadable\n"
 msgstr ""
+"конфигурација: во ред\n"
+"индекс: недостасува или не може да се прочита\n"
 
 #: src/fsearch_cli_config.c:1266
 #, c-format
@@ -769,121 +973,125 @@ msgid ""
 "configuration: ok\n"
 "index: %s\n"
 msgstr ""
+"конфигурација: во ред\n"
+"индекс: %s\n"
 
 #: src/fsearch_cli_config.c:1266
 msgid "current"
-msgstr ""
+msgstr "тековен"
 
 #: src/fsearch_cli_config.c:1266
 msgid "stale"
-msgstr ""
+msgstr "застарел"
 
 #: src/fsearch_cli_config.c:1278
 msgid ""
 "Usage: fsearch config path\n"
 "Print the active FSearch configuration file path.\n"
 msgstr ""
+"Користење: fsearch config path\n"
+"Испечатај го патот до активното конфигурациско префикс на FSearch.\n"
 
 #: src/fsearch_cli_config.c:1321
 #, c-format
 msgid "fsearch config: unknown command: %s\n"
-msgstr ""
+msgstr "fsearch config: непознаата команда: %s\n"
 
 #: src/fsearch_database.c:795
 msgid "Index rescan: applying changes…"
-msgstr ""
+msgstr "Преисканирање на индексот: се применуваат промени..."
 
 #: src/fsearch_database_file.c:1343
 msgid "Loading folders…"
-msgstr ""
+msgstr "Тоачивање на фолдерите..."
 
 #: src/fsearch_database_file.c:1359
 msgid "Loading files…"
-msgstr ""
+msgstr "Тоачивање датотеки..."
 
 #: src/fsearch_database_index_store.c:925 src/fsearch_statusbar.c:73
 #: src/fsearch_statusbar.ui:90
 msgid "Sorting…"
-msgstr ""
+msgstr "Сортирање..."
 
 #: src/fsearch_database_preferences_widget.c:162
 #: src/fsearch_database_preferences_widget.c:176
 msgid "Select folder"
-msgstr ""
+msgstr "Изберете фолдер"
 
 #: src/fsearch_database_preferences_widget.c:165
 #: src/fsearch_database_preferences_widget.c:180
 #: src/fsearch_filter_editor.c:104 src/fsearch_preferences_dialog.c:331
 msgid "_Cancel"
-msgstr ""
+msgstr "Откажи"
 
 #: src/fsearch_database_preferences_widget.c:167
 #: src/fsearch_database_preferences_widget.c:179
 msgid "_Select"
-msgstr ""
+msgstr "Избе_р"
 
 #: src/fsearch_database_preferences_widget.c:389
 msgid "Literal"
-msgstr ""
+msgstr "Буквално"
 
 #: src/fsearch_database_preferences_widget.c:391
 msgid "Wildcard"
-msgstr ""
+msgstr "Дилтајлд"
 
 #: src/fsearch_database_preferences_widget.c:393
 msgid "Regex"
-msgstr ""
+msgstr "Регуларен израз"
 
 #: src/fsearch_database_preferences_widget.c:414
 msgid "Full Path"
-msgstr ""
+msgstr "Пунтуен пат"
 
 #: src/fsearch_database_preferences_widget.c:416
 msgid "Basename"
-msgstr ""
+msgstr "Основно име"
 
 #: src/fsearch_database_preferences_widget.c:434
 msgid "Files & Folders"
-msgstr ""
+msgstr "Датотеки и папки"
 
 #: src/fsearch_database_preferences_widget.c:436 src/fsearch_filter.c:114
 msgid "Files"
-msgstr ""
+msgstr "Датотеки"
 
 #: src/fsearch_database_preferences_widget.c:438 src/fsearch_filter.c:113
 msgid "Folders"
-msgstr ""
+msgstr "Фолдери"
 
 #: src/fsearch_database_preferences_widget.c:635
 #: src/fsearch_database_preferences_widget.c:860
 msgid "Active"
-msgstr ""
+msgstr "Активно"
 
 #: src/fsearch_database_preferences_widget.c:640
 msgid "Pattern"
-msgstr ""
+msgstr "Шаблон"
 
 #: src/fsearch_database_preferences_widget.c:694 src/fsearch_window.c:756
 #: src/menus.ui:275
 msgid "Type"
-msgstr ""
+msgstr "Тип"
 
 #: src/fsearch_database_preferences_widget.c:700
 msgid "Match"
-msgstr ""
+msgstr "Соодпаѓање"
 
 #: src/fsearch_database_preferences_widget.c:706
 msgid "Applies To"
-msgstr ""
+msgstr "Се однесува на"
 
 #: src/fsearch_database_preferences_widget.c:864 src/fsearch_window.c:742
 #: src/menus.ui:219 src/menus.ui:267
 msgid "Path"
-msgstr ""
+msgstr "Патока"
 
 #: src/fsearch_database_preferences_widget.ui:78
 msgid "Enter path…"
-msgstr ""
+msgstr "Наведете патка..."
 
 #: src/fsearch_database_preferences_widget.ui:97
 #: src/fsearch_database_preferences_widget.ui:372
@@ -892,191 +1100,194 @@ msgid ""
 "                                            database\n"
 "                                        "
 msgstr ""
+"Додај пат да биде вклучен во\n"
+"                                            базата\n"
+"                                        "
 
 #: src/fsearch_database_preferences_widget.ui:176
 msgid "Attempt to monitor"
-msgstr ""
+msgstr "Пробај да мониторираш"
 
 #: src/fsearch_database_preferences_widget.ui:191
 msgid "Scan after launch"
-msgstr ""
+msgstr "Скенирај по стартување"
 
 #: src/fsearch_database_preferences_widget.ui:206
 msgid "Stay on one file system"
-msgstr ""
+msgstr "Остани на еден систем за датотеки"
 
 #: src/fsearch_database_preferences_widget.ui:221
 msgid "Rescan every"
-msgstr ""
+msgstr "Преисканирај секоја"
 
 #: src/fsearch_database_preferences_widget.ui:254
 msgid "Hours:"
-msgstr ""
+msgstr "Часови:"
 
 #: src/fsearch_database_preferences_widget.ui:298
 msgid "Minutes:"
-msgstr ""
+msgstr "Минути:"
 
 #: src/fsearch_database_preferences_widget.ui:310
 msgid "30"
-msgstr ""
+msgstr "30"
 
 #: src/fsearch_database_preferences_widget.ui:391
 msgid "Remove selected path"
-msgstr ""
+msgstr "Избриши го избраниот пат"
 
 #: src/fsearch_database_preferences_widget.ui:418
 msgid "Include"
-msgstr ""
+msgstr "Вклучи"
 
 #: src/fsearch_database_preferences_widget.ui:477
 msgid ""
 "Add exclude rule\n"
 "                                                "
-msgstr ""
+msgstr "Додај правило за исклучување"
 
 #: src/fsearch_database_preferences_widget.ui:495
 msgid ""
 "Remove selected path\n"
 "                                                "
-msgstr ""
+msgstr "Избриши го избраниот пат"
 
 #: src/fsearch_database_preferences_widget.ui:512
 msgid "Restore default exclude list"
-msgstr ""
+msgstr "Врати ја листата на исклучени елементи"
 
 #: src/fsearch_database_preferences_widget.ui:541
 msgid "Exclude hidden files and folders"
-msgstr ""
+msgstr "Исклучи ги скриените датотеки и папки"
 
 #: src/fsearch_database_preferences_widget.ui:563
 msgid "Exclude"
-msgstr ""
+msgstr "Исклучи"
 
 #: src/fsearch_file_utils.c:161
 msgctxt "Will be followed by the path of the file."
 msgid "Error when removing file"
-msgstr ""
+msgstr "Грешка при отстранување на датокот"
 
 #: src/fsearch_file_utils.c:163
 msgid "Failed to get path"
-msgstr ""
+msgstr "Не успеваше да се добие патот"
 
 #: src/fsearch_file_utils.c:277
 msgctxt "Will be followed by the file path."
 msgid "Error when getting information from file"
-msgstr ""
+msgstr "Грешка при преземање информации од датокот"
 
 #: src/fsearch_file_utils.c:279
 msgid "Failed to get application information"
-msgstr ""
+msgstr "Не успеваше да се добијат информации за апликацијата"
 
 #: src/fsearch_file_utils.c:294
 msgctxt "Will be followed by the content type string."
 msgid "Error when getting information for content type"
-msgstr ""
+msgstr "Грешка при преземање информации за типот на содржина"
 
 #: src/fsearch_file_utils.c:296
 msgid "No default application registered"
-msgstr ""
+msgstr "Нема регистрирана дефолтна апликација"
 
 #: src/fsearch_file_utils.c:524
 msgctxt "Will be followed by the path of the folder."
 msgid "Error when opening parent folder"
-msgstr ""
+msgstr "Грешка при отворање на родителскиот фолдер"
 
 #: src/fsearch_file_utils.c:526
 msgid "Failed to get parent path"
-msgstr ""
+msgstr "Не успеваше да се добие родителскиот пат"
 
 #: src/fsearch_file_utils.c:530
 msgctxt "Will be followed by the path of the folder."
 msgid "Error while opening folder"
-msgstr ""
+msgstr "Грешка при отворање на фолдер"
 
 #: src/fsearch_file_utils.c:533
 msgid "Failed to build open command"
-msgstr ""
+msgstr "Не успеваше да се изгради 'open' команда"
 
 #: src/fsearch_file_utils.c:589
 msgid "Folder"
-msgstr ""
+msgstr "Фолдер"
 
 #: src/fsearch_file_utils.c:595
 msgid "Unknown Type"
-msgstr ""
+msgstr "Непознаата тип"
 
 #: src/fsearch_filter.c:112
 msgid "All"
-msgstr ""
+msgstr "Сите"
 
 #: src/fsearch_filter.c:115
 msgid "Applications"
-msgstr ""
+msgstr "Апликации"
 
 #: src/fsearch_filter.c:116
 msgid "Archives"
-msgstr ""
+msgstr "Архиви"
 
 #: src/fsearch_filter.c:117
 msgid "Audio"
-msgstr ""
+msgstr "Аудио"
 
 #: src/fsearch_filter.c:118
 msgid "Documents"
-msgstr ""
+msgstr "Документи"
 
 #: src/fsearch_filter.c:119
 msgid "Pictures"
-msgstr ""
+msgstr "Слики"
 
 #: src/fsearch_filter.c:120
 msgid "Videos"
-msgstr ""
+msgstr "Видеоси"
 
 #: src/fsearch_filter_editor.c:79
 msgid "Macro names must not contain `:` characters."
-msgstr ""
+msgstr "Имињата на макровите не сме да содржат `:` карактери."
 
 #: src/fsearch_filter_editor.c:105 src/fsearch_preferences_dialog.c:332
 msgid "_OK"
-msgstr ""
+msgstr "О_К"
 
 #: src/fsearch_filter_editor.ui:10 src/fsearch_filter_preferences_widget.c:156
 msgid "Edit filter"
-msgstr ""
+msgstr "Уреди филтер"
 
 #: src/fsearch_filter_editor.ui:50
 msgid "Name:"
-msgstr ""
+msgstr "Име:"
 
 #: src/fsearch_filter_editor.ui:61
 msgid "The unique name of this filter"
-msgstr ""
+msgstr "Уникатното име на овој филтер"
 
 #: src/fsearch_filter_editor.ui:64
 msgid "Unique filter name"
-msgstr ""
+msgstr "Уникатно име на филтерот"
 
 #: src/fsearch_filter_editor.ui:73
 msgid "Search in path"
-msgstr ""
+msgstr "Пребарај во патот"
 
 #: src/fsearch_filter_editor.ui:87
 msgid "Enable regular expressions"
-msgstr ""
+msgstr "Овозможи регуларни изрази"
 
 #: src/fsearch_filter_editor.ui:101
 msgid "Match case"
-msgstr ""
+msgstr "Соодветува на големи и мали букви"
 
 #: src/fsearch_filter_editor.ui:146
 msgid "Query:"
-msgstr ""
+msgstr "Прешучување:"
 
 #: src/fsearch_filter_editor.ui:160
 msgid "Macro:"
-msgstr ""
+msgstr "Макро:"
 
 #: src/fsearch_filter_editor.ui:171
 msgid ""
@@ -1084,227 +1295,231 @@ msgid ""
 "search entry by typing its text followed by ':'\n"
 "                "
 msgstr ""
+"Макрото за овој филтер. Макрото ви овозможува да пристапните до овој филтер "
+"од пребарувачот внесувајќи го неговиот текст следен со ':'"
 
 #: src/fsearch_filter_preferences_widget.c:133
 msgid "Add filter"
-msgstr ""
+msgstr "Додај филтер"
 
 #: src/fsearch_filter_preferences_widget.c:315 src/fsearch_window.c:735
 #: src/menus.ui:215 src/menus.ui:263
 msgid "Name"
-msgstr ""
+msgstr "Име"
 
 #: src/fsearch_filter_preferences_widget.c:316
 msgid "Macro"
-msgstr ""
+msgstr "Макро"
 
 #: src/fsearch_filter_preferences_widget.c:317
 msgid "Query"
-msgstr ""
+msgstr "Пребарување"
 
 #: src/fsearch_filter_preferences_widget.ui:77
 msgid "Add new filter"
-msgstr ""
+msgstr "Додај нов филтер"
 
 #: src/fsearch_filter_preferences_widget.ui:95
 msgid "Remove selected filter"
-msgstr ""
+msgstr "Избриши го избраниот филтер"
 
 #: src/fsearch_filter_preferences_widget.ui:113
 msgid "Edit selected filter"
-msgstr ""
+msgstr "Уреди го избраниот филтер"
 
 #: src/fsearch_filter_preferences_widget.ui:129
 msgid "Restore default filters"
-msgstr ""
+msgstr "Вратете ги првичните филтри"
 
 #: src/fsearch_listview_popup.c:36
 msgid "Properties…"
-msgstr ""
+msgstr "Сварактеристики..."
 
 #: src/fsearch_listview_popup.c:163
 msgid "Other Application…"
-msgstr ""
+msgstr "Друга апликација…"
 
 #: src/fsearch_overlay.ui:44
 msgid "Empty Database"
-msgstr ""
+msgstr "Празна база на податоци"
 
 #: src/fsearch_overlay.ui:60
 msgid "Add folders"
-msgstr ""
+msgstr "Додај папки"
 
 #: src/fsearch_overlay.ui:108
 msgid "Loading Database…"
-msgstr ""
+msgstr "Точиба база на податоци..."
 
 #: src/fsearch_overlay.ui:123
 msgid "This won't take long."
-msgstr ""
+msgstr "Ова нема да трае долго."
 
 #: src/fsearch_overlay.ui:171 src/fsearch_statusbar.ui:312
 msgid "Updating Database…"
-msgstr ""
+msgstr "Ажурирање на базата на податоци..."
 
 #: src/fsearch_overlay.ui:186 src/fsearch_overlay.ui:383
 msgid "This may take a while."
-msgstr ""
+msgstr "Ова може да однема време."
 
 #: src/fsearch_overlay.ui:241
 msgid "Empty Query"
-msgstr ""
+msgstr "Празен преглед"
 
 #: src/fsearch_overlay.ui:256
 msgid "Press <b>Ctrl + F</b> and start typing."
-msgstr ""
+msgstr "Притиснете <b>Ctrl + F</b> и почнете да пишуте."
 
 #: src/fsearch_overlay.ui:304
 msgid "No Results Found"
-msgstr ""
+msgstr "Не се најдени резултати"
 
 #: src/fsearch_overlay.ui:319
 msgid "Try a different search"
-msgstr ""
+msgstr "Пробај друга пребарска"
 
 #: src/fsearch_overlay.ui:368
 msgid "Sorting results…"
-msgstr ""
+msgstr "Сортирање на резултатите..."
 
 #: src/fsearch_preferences.ui:7 src/fsearch_window.ui:251 src/menus.ui:84
 msgid "Preferences"
-msgstr ""
+msgstr "Преференции"
 
 #: src/fsearch_preferences.ui:76
 msgid "Enable dark theme"
-msgstr ""
+msgstr "Овозможи темна тема"
 
 #: src/fsearch_preferences.ui:97
 msgid "Enable client-side decorations (requires restart)"
-msgstr ""
+msgstr "Овозможи декорации на клиентската страна (потребно е рестартирање)"
 
 #: src/fsearch_preferences.ui:117
 msgid "Use binary units instead of decimal units"
-msgstr ""
+msgstr "Користете бинарни мерки наместо децимални мерки"
 
 #: src/fsearch_preferences.ui:138
 msgid "Remember window size"
-msgstr ""
+msgstr "Запамти го големината на прозорецот"
 
 #: src/fsearch_preferences.ui:159
 msgid "Exit on Escape"
-msgstr ""
+msgstr "Излези со Escape"
 
 #: src/fsearch_preferences.ui:202
 msgid "with keyboard shortcuts or menu entries"
-msgstr ""
+msgstr "со прекури на тастатура или ставки во менито"
 
 #: src/fsearch_preferences.ui:223
 msgid "with double click"
-msgstr ""
+msgstr "со двојно кликнување"
 
 #: src/fsearch_preferences.ui:257
 msgid "Behaviour after successfully opening a file:"
-msgstr ""
+msgstr "Однесување по успешно отворање на датокот:"
 
 #: src/fsearch_preferences.ui:273
 msgid "Nothing"
-msgstr ""
+msgstr "Ништо"
 
 #: src/fsearch_preferences.ui:274
 msgid "Minimize"
-msgstr ""
+msgstr "Минимизирај"
 
 #: src/fsearch_preferences.ui:275
 msgid "Close"
-msgstr ""
+msgstr "Затвори"
 
 #: src/fsearch_preferences.ui:309
 msgid "General:"
-msgstr ""
+msgstr "Општо:"
 
 #: src/fsearch_preferences.ui:344
 msgid "Show highlighted search terms"
-msgstr ""
+msgstr "Прикажи ги истакнатите термини за пребарување"
 
 #: src/fsearch_preferences.ui:366
 msgid "Show tooltips"
-msgstr ""
+msgstr "Прикажи помошбни совети"
 
 #: src/fsearch_preferences.ui:387
 msgid "Show icons in name column"
-msgstr ""
+msgstr "Прикажи икони во колоната со имиња"
 
 #: src/fsearch_preferences.ui:408
 msgid "Remember column configuration"
-msgstr ""
+msgstr "Запамти ја конфигурацијата на колоните"
 
 #: src/fsearch_preferences.ui:429
 msgid "Remember sort order"
-msgstr ""
+msgstr "Запамти го редоследот на сортирање"
 
 #: src/fsearch_preferences.ui:450
 msgid "Open path with double click in path column"
-msgstr ""
+msgstr "Отвори го патот со двојно кликнување во колоната за пат"
 
 #: src/fsearch_preferences.ui:471
 msgid "Single click to open"
-msgstr ""
+msgstr "Еден клик за отворање"
 
 #: src/fsearch_preferences.ui:492
 msgid "Launch desktop files"
-msgstr ""
+msgstr "Лансирај десктоп датотеки"
 
 #: src/fsearch_preferences.ui:519
 msgid "Results:"
-msgstr ""
+msgstr "Резултати:"
 
 #: src/fsearch_preferences.ui:560
 msgid "Show database indexing status"
-msgstr ""
+msgstr "Прикажи статус на индексирање на базата на податоци"
 
 #: src/fsearch_preferences.ui:587
 msgid "Statusbar:"
-msgstr ""
+msgstr "Статус бар:"
 
 #: src/fsearch_preferences.ui:628
 msgid "Show warning dialogs when:"
-msgstr ""
+msgstr "Прикажи предупредувачки дијалози кога:"
 
 #: src/fsearch_preferences.ui:638
 msgid "file / folder failed to open"
-msgstr ""
+msgstr "не успева да се отвори датокот / папка"
 
 #: src/fsearch_preferences.ui:667
 msgid "Dialogs:"
-msgstr ""
+msgstr "Дијалози:"
 
 #: src/fsearch_preferences.ui:692
 msgid "Interface"
-msgstr ""
+msgstr "Интерфејс"
 
 #: src/fsearch_preferences.ui:711
 msgid "Search in path when query contains path separators"
-msgstr ""
+msgstr "Пребарај во патокот кога барањето содржи разделители на патека"
 
 #: src/fsearch_preferences.ui:730
 msgid "Search as you type"
-msgstr ""
+msgstr "Пребарај додека пишуваш"
 
 #: src/fsearch_preferences.ui:750
 msgid "Hide results when search is empty"
-msgstr ""
+msgstr "Скриј ги резултатите кога пребарувањето е празно"
 
 #: src/fsearch_preferences.ui:769
 msgid "Match case when query contains at least one upper case character"
 msgstr ""
+"Соодпаѓај по големи букви кога повикот содржи најмалку еден карактер со "
+"голема буква"
 
 #: src/fsearch_preferences.ui:801
 msgid "Filter:"
-msgstr ""
+msgstr "Филтер:"
 
 #: src/fsearch_preferences.ui:822 src/fsearch_window.ui:639
 msgid "Search"
-msgstr ""
+msgstr "Пребарај"
 
 #: src/fsearch_preferences.ui:855
 msgid ""
@@ -1316,6 +1531,13 @@ msgid ""
 "Note that not all system themes provide such a darker variant, therefore "
 "enabling this setting might not have an effect."
 msgstr ""
+"<b>Овозможи темна тема:</b>\n"
+"\n"
+"Ако е овозможена, системската тема се бара да користи потемно стилизирање за "
+"апликацијата <i>(на пр. темни UI елементи на свет одпечатен текст)</i>.\n"
+"\n"
+"Забележете дека не сите системски теми нудат таква потемна варијанта, затоа "
+"овозможувањето на оваа поставка можеби нема да има ефект."
 
 #: src/fsearch_preferences.ui:873
 msgid ""
@@ -1329,6 +1551,15 @@ msgid ""
 "This resembles a more traditional UI layout and takes a little bit more "
 "space."
 msgstr ""
+"<b>Овозможи декорции на клиентската страна:</b>\n"
+"\n"
+"Ако е овозможено, внесот за пребарување и главниот мениу се прикажуваат во "
+"лентата со наслов на прозорецот.\n"
+"\n"
+"Ако е исклучено, главниот мениу се прикажува како лента со менија со внесот "
+"за пребарување под неа.\n"
+"Ова потсетува на потрадиционален распоред на корисничкиот интерфејс и зазема "
+"малку повеќе простор."
 
 #: src/fsearch_preferences.ui:893
 msgid ""
@@ -1341,6 +1572,14 @@ msgid ""
 "\t• <b>Decimal  units:</b> This refers to decimal SI prefixes <i>(e.g. 1 kB "
 "= 1000 bytes)</i>"
 msgstr ""
+"<b>Користете бинарни мерки наместо децимални мерки:</b>\n"
+"\n"
+"Оваа поставка контролира како се прикажуваат големините на датотеките.\n"
+"\n"
+"\t• <b>Бинарни мерки:</b> Ова се однесува на бинарните IEC префикси <i>(на "
+"пр. 1 KiB = 1024 байти)</i>\n"
+"\t• <b>Децимални мерки:</b> Ова се однесува на децималните SI префикси "
+"<i>(на пр. 1 kB = 1000 байти)</i>"
 
 #: src/fsearch_preferences.ui:913
 msgid ""
@@ -1352,6 +1591,13 @@ msgid ""
 "Note that some window managers ignore this request and force the window to "
 "have a different size."
 msgstr ""
+"<b>Запамти ја големината на прозорецот:</b>\n"
+"\n"
+"Ако е вклучено, големината на прозорецот од претходната сесија ќе биде "
+"вратена кога ќе го отворите FSearch прозорецот.\n"
+"\n"
+"Забележете дека некои менаџери на прозорци го игнорираат овој барач и "
+"принусно му даваат на прозорецот различна големина."
 
 #: src/fsearch_preferences.ui:932
 msgid ""
@@ -1369,6 +1615,19 @@ msgid ""
 "\t• <b>keyboard shortcuts or menu entries</b> and/or\n"
 "\t• <b>mouse click</b>"
 msgstr ""
+"<b>Поведение по успешно отворање на даточен фајл:</b>\n"
+"\n"
+"Кога фајл/фолдер е успешно отворен, може да се изврши една од следните "
+"акции:\n"
+"\t• <b>Ништо:</b> Ништо не се случува.\n"
+"\t• <b>Минимизирај:</b> Моментално избраниот FSearch прозорец станува "
+"минимизиран.\n"
+"\t• <b>Затвори:</b> FSearch се затвора.\n"
+"\n"
+"Можете да конфигурирате дали овие акции треба да бидат активирани кога "
+"фајлот е отворен преку\n"
+"\t• <b>прекуратки на тастатурата или ставки во менито</b> и/или\n"
+"\t• <b>клик со глувчета</b>"
 
 #: src/fsearch_preferences.ui:956
 msgid ""
@@ -1384,6 +1643,17 @@ msgid ""
 "This also works for regular expressions and wildcard expressions starting or "
 "ending with an asterisk. "
 msgstr ""
+"<b>Прикажи ги истакнатите пребарувачки термини:</b>\n"
+"\n"
+"Ако е вклучено, пребаруваните термини ќе бидат истакнати во прегледот на "
+"резултатите. На пример, кога барате \"foo\", сите појавувања на <i>foo</i> "
+"во имините на датотеки/папки ќе бидат истакнати со болдни карактери:\n"
+"\n"
+"\t<b>foo</b>bar.txt\n"
+"\tfile.<b>foo</b>\n"
+"\n"
+"Ова исто така работи за регулярни изрази и експресии со див-картери кои "
+"започнуваат или завршуваат со азберк."
 
 #: src/fsearch_preferences.ui:978
 msgid ""
@@ -1392,6 +1662,10 @@ msgid ""
 "If enabled, the results view will show the full path of the focused file/"
 "folder in a small tooltip window."
 msgstr ""
+"<b>Прикажи помошбни совети (tooltips):</b>\n"
+"\n"
+"Ако е вклучено, прегледот на резултатите ќе го прикажува целиот пат до "
+"фокусираниот датотек/фолдер во мало прозорец за помошен совет."
 
 #: src/fsearch_preferences.ui:995
 msgid ""
@@ -1399,6 +1673,10 @@ msgid ""
 "\n"
 "If enabled, file/folder icons will be shown in the name column."
 msgstr ""
+"<b>Прикажи икони во колоната со име:<b/>\n"
+"\n"
+"Ако е овозможено, ќе се прикажуваат икони за датоци и папки во колоната со "
+"име."
 
 #: src/fsearch_preferences.ui:1012
 msgid ""
@@ -1408,6 +1686,11 @@ msgid ""
 "session will be restored when you open an FSearch window. This includes the "
 "size and visibility of all columns."
 msgstr ""
+"<b>Запамти ја конфигурацијата на колоните:</b>\n"
+"\n"
+"Ако е овозможено, конфигурацијата на колоните во прегледот на резултатите од "
+"претходната сесија ќе биде вратена кога ќе го отворите прозорецот FSearch. "
+"Ова вклучува големина и видливост на сите колони."
 
 #: src/fsearch_preferences.ui:1029
 msgid ""
@@ -1416,6 +1699,10 @@ msgid ""
 "If enabled, the sort order of the results view from the previous session "
 "will be restored when you open an FSearch window."
 msgstr ""
+"<b>Запамти го редоследот на сортирањето:</b>\n"
+"\n"
+"Ако е вклучено, редоследот на сортирање на прегледот на резултатите од "
+"претходната сесија ќе биде вратен кога ќе ја отворите прозорецот на FSearch."
 
 #: src/fsearch_preferences.ui:1046
 msgid ""
@@ -1423,6 +1710,10 @@ msgid ""
 "\n"
 "If enabled, double clicking in the path column will open the selected path."
 msgstr ""
+"<b>Отвори го патот со двојно кликнување во колоната за пат:</b>\n"
+"\n"
+"Ако е овозможено, двојно кликнување во колоната за пат ќе го отвори "
+"избраниот пат."
 
 #: src/fsearch_preferences.ui:1063
 msgid ""
@@ -1432,6 +1723,11 @@ msgid ""
 "want to select a file/folder while this setting is active, you need to hold "
 "<i>Ctrl</i> at the same time while clicking the file/folder."
 msgstr ""
+"<b>Еден клик за отворање:</b>\n"
+"\n"
+"Ако е овозможна, еден клик ќе го отвори избраниот датотек/фолдер. Ако сакате "
+"само да го изберете датотекот/фолдерот додека оваа опција е активна, треба "
+"да го држите <i>Ctrl</i> во исто време кога кликате на датотекот/фолдерот."
 
 #: src/fsearch_preferences.ui:1080
 msgid ""
@@ -1440,6 +1736,10 @@ msgid ""
 "If enabled, the path that is currently being indexed is displayed in the "
 "statusbar."
 msgstr ""
+"<b>Прикажи статус на индексирање на базата на податоци:</b>\n"
+"\n"
+"Ако е вклучено, патокот што моментално се индексира се прикажува во "
+"статусната лента."
 
 #: src/fsearch_preferences.ui:1097
 msgid ""
@@ -1448,6 +1748,10 @@ msgid ""
 "If enabled, a warning dialog is displayed when a file or folder failed to "
 "open."
 msgstr ""
+"<b>Прикажи дијалози за предупредување:</b>\n"
+"\n"
+"Ако е овозможна, се прикажува дијалог за предупредување кога дадовка или "
+"фолдер не може да се отвори."
 
 #: src/fsearch_preferences.ui:1114
 msgid ""
@@ -1456,6 +1760,11 @@ msgid ""
 "If enabled, search terms containing path separators (i.e. \"/\") will be "
 "automatically matched against the full path of a file or folder."
 msgstr ""
+"<b>Пребарај во патот кога барањето содржи разделители на патокот:</b>\n"
+"\n"
+"Ако е вклучено, поимините за пребарување кои содржат разделители на патокот "
+"(на пр. \"/\") автоматски ќе бидат усогласени со целиот пат до даденото "
+"датотека или папка."
 
 #: src/fsearch_preferences.ui:1131
 msgid ""
@@ -1465,6 +1774,13 @@ msgid ""
 "trigger a case-sensitive search. This means a search term like <i>Foo</i> "
 "will match <i>FooBar.txt</i> but not <i>foobar.txt</i>."
 msgstr ""
+"<b>Соодветувај на големи букви кога повикот содржи најмалку еден карактер со "
+"голема буква:</b>\n"
+"\n"
+"Ако е вклучено, поишуците за пребарување кои содржат најмалку еден карактер "
+"со голема буква ќе активираат пребарување чувствително на големи и мали "
+"букви. Ова значи дека поишукот за пребарување како <i>Foo</i> ќе одговара на "
+"<i>FooBar.txt</i> но не и на <i>foobar.txt</i>."
 
 #: src/fsearch_preferences.ui:1148
 msgid ""
@@ -1475,6 +1791,13 @@ msgid ""
 "If disabled, all files and folders will be displayed when the search entry "
 "is empty."
 msgstr ""
+"<b>Скриј ги резултатите кога пребарувањето е празно:</b>\n"
+"\n"
+"Ако е вклучено, нема да се прикажуваат резултати од пребарувањето кога "
+"полето за пребарување е празно.\n"
+"\n"
+"Ако е исклучено, сите датотеки и папки ќе бидат прикажани кога полето за "
+"пребарување е празно."
 
 #: src/fsearch_preferences.ui:1167
 msgid ""
@@ -1485,6 +1808,13 @@ msgid ""
 "If disabled, the search is only updated when you hit <i>Enter</i> or press "
 "the search button. "
 msgstr ""
+"<b>Пребарај додека пишуваш:</b>\n"
+"\n"
+"Ако е вклучено, пребарувањето автоматски се ажурира со секое притискање на "
+"тастатурата.\n"
+"\n"
+"Ако е исклучено, пребарувањето се ажурира само кога ќе притиснете <i>Enter</"
+"em> или ќе го притиснете копчето за пребарување."
 
 #: src/fsearch_preferences.ui:1186
 msgid ""
@@ -1493,6 +1823,10 @@ msgid ""
 "If enabled, the database will be updated automatically in the background "
 "when you start FSearch."
 msgstr ""
+"<b>Ажурирај ја базата при почеток:</b>\n"
+"\n"
+"Ако е овозможено, базата ќе се ажурира автоматски во позадина кога ќе го "
+"стартувате FSearch."
 
 #: src/fsearch_preferences.ui:1203
 msgid ""
@@ -1506,6 +1840,16 @@ msgid ""
 "\t• <b>One Filesystem:</b> If enabled, FSearch won't cross filesystem "
 "boundaries for this folder"
 msgstr ""
+"<b>Вклучени папки:</b>\n"
+"\n"
+"Оваа листа ги содржи сите папки кои сакате да ги вклучите во базата на "
+"податоци.\n"
+"\n"
+"\t• <b>Активно:</b> Ако е овозможено, патот ќе биде вклучен во базата за "
+"пребарување.\n"
+"\t• <b>Пат:</b> Целосниот пат што треба да се вклучи.\n"
+"\t• <b>Еден фајл-сист:</b> Ако е овозможено, FSearch нема да ги прекусува "
+"границите на фајл-системите за оваа папка"
 
 #: src/fsearch_preferences.ui:1224
 msgid ""
@@ -1514,6 +1858,10 @@ msgid ""
 "This button opens a dialog where you can select a folder you want to include "
 "in the database for searching."
 msgstr ""
+"<b>Додај папка во базата на податоци:</b>\n"
+"\n"
+"Овој копче отвора дијалог каде што можете да изберете папка која сакате да "
+"ја вклучите во базата за пребарување."
 
 #: src/fsearch_preferences.ui:1241
 msgid ""
@@ -1523,6 +1871,12 @@ msgid ""
 "include that folder in the database. This is useful for adding a path "
 "directly without browsing for it."
 msgstr ""
+"<b>Додај специфичен пат:</b>\n"
+"\n"
+"\n"
+"Напишете го целиот пат на фолдер овде и кликнете на копчето до него за да го "
+"вклучите тој фолдер во базата. Ова е корисно за директно додавање на пат без "
+"пребарување преку прелистување."
 
 #: src/fsearch_preferences.ui:1258
 msgid ""
@@ -1530,6 +1884,9 @@ msgid ""
 "\n"
 "This removes the selected folder from the list of included folders."
 msgstr ""
+"<b>Отстрани ја избраната редоцка:**>\n"
+"\n"
+"Оваа го отстранува избраниот фолдер од листата на вклучени фолдери."
 
 #: src/fsearch_preferences.ui:1275
 msgid ""
@@ -1542,6 +1899,15 @@ msgid ""
 "system resources per watched folder. For large directory trees with many "
 "files the system may run out of resources to watch them all."
 msgstr ""
+"<b>Пробавајте да следите:</b>\n"
+"\n"
+"Ако е вклучено, FSearch ја следи оваа папка за промени и автоматски ја "
+"одржува базата на податоци ажурирана, па затоа не морате рачно да ја "
+"пребарувате повторно.\n"
+"\n"
+"Следењето не е поддржано на секој систем на датотеки и троши мала количина "
+"системски ресурси за секоја следена папка. За големи древа на директории со "
+"многу датотеки, системот може да остане без ресурси за да ги следи сите."
 
 #: src/fsearch_preferences.ui:1294
 msgid ""
@@ -1550,6 +1916,11 @@ msgid ""
 "If enabled, this folder is rescanned every time FSearch starts, so the "
 "database reflects any changes made while FSearch wasn't running."
 msgstr ""
+"<b>Скенирај по стартување:</b>\n"
+"\n"
+"Ако е овозможено, оваа папка се преискусува секој пат кога FSearch се "
+"стартува, па базата на податоци одразува сите промени направени додека "
+"FSearch не бил во работа."
 
 #: src/fsearch_preferences.ui:1311
 msgid ""
@@ -1559,6 +1930,11 @@ msgid ""
 "folder. Mounted file systems below it (e.g. external drives or network "
 "shares) are skipped."
 msgstr ""
+"<b>Остани на еден систем за датотеки:</b>\n"
+"\n"
+"Ако е вклучено, FSearch нема да прекусува граници на системи за датотеки "
+"додека пребарува во овој фолдер. Монтираните системи за датотеки под него "
+"(на пр. надворешни дискови или мрежни споделени папки) ќе бидат премнени."
 
 #: src/fsearch_preferences.ui:1328
 msgid ""
@@ -1570,6 +1946,13 @@ msgid ""
 "This is useful for folders on file systems that can't be monitored for "
 "changes."
 msgstr ""
+"<b>Повторно скенирај секој:</b>\n"
+"\n"
+"Ако е вклучено, оваа папка автоматски се преискенирува во дадениот интервал. "
+"Користете ги полињата за часови и минути за да поставите колку често се "
+"случува повторното скенирање.\n"
+"\n"
+"Ова е корисно за папки на фајл системи кои не можат да се следат за промени."
 
 #: src/fsearch_preferences.ui:1347
 msgid ""
@@ -1590,6 +1973,22 @@ msgid ""
 "\t• <b>Applies To:</b> Whether the rule affects <i>Files</i>, <i>Folders</i> "
 "or both."
 msgstr ""
+"<b>Правила за исклучување:</b>\n"
+"\n"
+"Оваа листа содржи правила за датотеки и папки кои сакате да ги исклучите од "
+"базата на податоци.\n"
+"\n"
+"\t• <b>Активно:</b> Ако е вклучено, правилото се применува и совпаѓаните "
+"ставки се исклучуваат.\n"
+"\t• <b>Шаблон:</b> Текстот кој се споредува со секоја ставка, интерпретиран "
+"во согласност со Типот.\n"
+"\t• <b>Тип:</b> Како се интерпретира шаблонот — <i>Буквално</i> (прецизен "
+"текст), <i>Wildcard</i> (користејќи * и ?) или <i>Regex</i> (регуларен "
+"израз).\n"
+"\t• <b>Совпаѓање:</b> Дали шаблонот се споредува со <i>Целосен пат</i> на "
+"ставката или само со нејзиниот <i>Основен иминец</i> (името без патот).\n"
+"\t• <b>Се однесува на:</b> Дали правилото влијае на <i>Датотеки</i>, "
+"<i>Папки</i> или двете."
 
 #: src/fsearch_preferences.ui:1370
 msgid ""
@@ -1598,6 +1997,10 @@ msgid ""
 "This adds a new, empty rule to the list. Edit its Pattern, Type, Match and "
 "Applies To columns to control what gets excluded from the database."
 msgstr ""
+"<b>Додај правило за исклучување:</b>\n"
+"\n"
+"Ова додава ново, празно правило на листа. Уреди ги колоните Pattern, Type, "
+"Match и Applies To за да контролирате што се исклучува од базата на податоци."
 
 #: src/fsearch_preferences.ui:1387
 msgid ""
@@ -1605,6 +2008,9 @@ msgid ""
 "\n"
 "This removes the selected rule from the list of exclude rules."
 msgstr ""
+"<b>Отстрани ја избраната редоцка:**>\n"
+"\n"
+"Оваа правило го отстранува од листа на исклучени правила."
 
 #: src/fsearch_preferences.ui:1404
 msgid ""
@@ -1614,6 +2020,12 @@ msgid ""
 "\n"
 "⚠ All rules which were created or edited by the user will be lost! ⚠"
 msgstr ""
+"<b>Воспостави правила за исклучување на дефолтни вредности:</b>\n"
+"\n"
+"Овој копче ги враќа дефолтното премногу правила за исклучување.\n"
+"\n"
+"⚠ Сите правила кои беа креирани или уредени од страна на корисникот ќе бидат "
+"избришани! ⚠"
 
 #: src/fsearch_preferences.ui:1423
 msgid ""
@@ -1624,6 +2036,12 @@ msgid ""
 "all files or folders which are called either <i>.git</i> or <i>.cache</i> or "
 "end with <i>.swp</i>."
 msgstr ""
+"<b>Исклучи датотеки и папки од базата на податоци:</b>\n"
+"\n"
+"Ова е листа на датотеки (или папки) кои са одвоени со точка-запирка (;) и "
+"кои са исклучени од базата на податоци. На пример, <i>.git;.cache;*.swp</i> "
+"ќе ги исклучи сите датотеки или папки кои се нарекуваат <i>.git</i> или "
+"<i>.cache</i> или завршуваат на <i>.swp</i>."
 
 #: src/fsearch_preferences.ui:1440
 msgid ""
@@ -1632,10 +2050,16 @@ msgid ""
 "If enabled, hidden files and folders will be excluded from the database "
 "<i>(i.e. all files or folders which start with a dot character)</i>."
 msgstr ""
+"<b>Исклучи скриени датотеки и фолдери:</b>\n"
+"\n"
+"Ако е вклучено, скриените датотеки и фолдери ќе бидат исклучени од базата на "
+"податоци <i>(на пример, сите датотеки или фолдери кои започнуваат со знакот "
+"точка)</i>."
 
 #: src/fsearch_preferences.ui:1457
 msgid "Focus a setting to get a detailed description of what it does."
 msgstr ""
+"Фокусирајте на постставка за да добиете детално преглед за тоа што ја врши."
 
 #: src/fsearch_preferences.ui:1470
 msgid ""
@@ -1650,6 +2074,16 @@ msgid ""
 "\n"
 "<i><tt>fsearch --update-database</tt></i>"
 msgstr ""
+"<b>Периодично ажурирајте ја базата на одреден временски интервал:</b>\n"
+"\n"
+"Ако е овозможено и додека FSearch работи, базата ќе се ажурира периодично со "
+"дадениот временски интервал.\n"
+"\n"
+"Ако сакате да ја ажурирате базата во позадина, дури и кога FSearch не "
+"работи, треба да користите алатки како cron или systemd timers за периодично "
+"активирање на ажурирањето со:\n"
+"\n"
+"<i><tt>fsearch --update-database</tt></i>"
 
 #: src/fsearch_preferences.ui:1491
 msgid ""
@@ -1660,6 +2094,13 @@ msgid ""
 "launcher. Otherwise the <i>.desktop</i> file will be opened with the default "
 "handler for this type of files, which is usually a text editor."
 msgstr ""
+"<b>Отварање на десктоп датотеки:</b>\n"
+"\n"
+"Ако е ова опција вклучена, активирањето на <i>.desktop</i> датотека ќе ја "
+"старта апликацијата дефинирана во таа датотека. На овој начин FSearch може "
+"да делува како ланчер за апликации. Во спротивно, <i>.desktop</i> датотеката "
+"ќе биде отворена со стандардниот обработчик за овој тип на датотеки, што "
+"обично е текстуалниот уредувач."
 
 #: src/fsearch_preferences.ui:1508
 msgid ""
@@ -1672,6 +2113,16 @@ msgid ""
 "the filter on demand\n"
 "\t• <b>Query:</b> The search term by which the database should be filtered"
 msgstr ""
+"<b>Филтри:</b>\n"
+"\n"
+"Ова е листа на сите достапни филтри. Филтерот е претходно дефинирана "
+"пребарскување.\n"
+"\n"
+"\t• <b>Име:</b> Уникатен и описен идентификатор за филтерот\n"
+"\t• <b>Макро:</b> Преку внесување на макро текстот следен со ':' можете да "
+"го активирате филтерот по потреба\n"
+"\t• <b>Пребарскување:</b> Терминот за пребарскување со кој треба да биде "
+"филтрирана базата на податоци"
 
 #: src/fsearch_preferences.ui:1529
 msgid ""
@@ -1679,6 +2130,9 @@ msgid ""
 "\n"
 "This button opens a dialog where you can edit a new filter."
 msgstr ""
+"<b>Додај нов филтер:</b>\n"
+"\n"
+"Овој копче отвора дијалог во кој можете да го уредите новиот филтер."
 
 #: src/fsearch_preferences.ui:1546
 msgid ""
@@ -1686,6 +2140,9 @@ msgid ""
 "\n"
 "This button removes the currently selected filter."
 msgstr ""
+"<b>Отстрани го избраниот филтер:</b>\n"
+"\n"
+"Овој копче го отстранува моментално избраниот филтер."
 
 #: src/fsearch_preferences.ui:1563
 msgid ""
@@ -1693,6 +2150,9 @@ msgid ""
 "\n"
 "This button opens a dialog where you can edit the selected filter."
 msgstr ""
+"<b>Уреди го избраниот филтер:</b>\n"
+"\n"
+"Овој копче отвора дијалог во кој можете да го уредите избраниот филтер."
 
 #: src/fsearch_preferences.ui:1580
 msgid ""
@@ -1702,6 +2162,12 @@ msgid ""
 "\n"
 "⚠ All filters which were created or edited by the user will be lost! ⚠"
 msgstr ""
+"<b>Воспостави филтерите на првобитните вредности:</b>\n"
+"\n"
+"Оваа копче ја враќа стандардната конфигурација на филтрите.\n"
+"\n"
+"⚠ Сите филтри кои беа креирани или уредени од страна на корисникот ќе бидат "
+"избришани! ⚠"
 
 #: src/fsearch_preferences.ui:1599
 msgid ""
@@ -1710,128 +2176,140 @@ msgid ""
 "If enabled, FSearch exits when the Escape key is pressed instead of the "
 "window being minimized."
 msgstr ""
+"<b>Изнагај со Escape:</b>\n"
+"\n"
+"Ако е вклучено, FSearch ќе се затвори кога ќе се притисне копчето Escape "
+"наместо прозорецот да биде минимизиран."
 
 #: src/fsearch_preferences.ui:1618 src/fsearch_window.ui:290
 #: src/fsearch_window.ui:415 src/menus.ui:150 src/menus.ui:156
 msgid "Help"
-msgstr ""
+msgstr "Помош"
 
 #: src/fsearch_preferences_dialog.c:238
 msgid "Database"
-msgstr ""
+msgstr "База на податоци"
 
 #: src/fsearch_result_view.c:381
 msgid "Invalid row data"
-msgstr ""
+msgstr "Неваљни податоци во редот"
 
 #: src/fsearch_statusbar.c:58
 #, c-format
 msgid "%'d Item"
-msgstr ""
+msgstr "%'d ставки"
 
 #: src/fsearch_statusbar.c:58 src/fsearch_statusbar.c:186
 #, c-format
 msgid "%'d Items"
-msgstr ""
+msgstr "%'d ставки"
 
 #: src/fsearch_statusbar.c:80
 msgid "Querying…"
-msgstr ""
+msgstr "Пребарување..."
 
 #: src/fsearch_statusbar.c:175
 msgid "Loading…"
-msgstr ""
+msgstr "Точи..."
 
 #: src/fsearch_statusbar.c:180
 msgid "Scanning…"
-msgstr ""
+msgstr "Сканирање..."
 
 #: src/fsearch_statusbar.ui:52
 msgid "Number of Search Results"
-msgstr ""
+msgstr "Број на резултати од пребарувањето"
 
 #: src/fsearch_statusbar.ui:53
 msgid "0 Items"
-msgstr ""
+msgstr "0 ставки"
 
 #: src/fsearch_statusbar.ui:106
 msgid "Cancel"
-msgstr ""
+msgstr "Откажи"
 
 #: src/fsearch_statusbar.ui:153
 msgid "Index:"
-msgstr ""
+msgstr "Индекс:"
 
 #: src/fsearch_statusbar.ui:228
 msgid "Number of selected folders"
-msgstr ""
+msgstr "Број на избрани папки"
 
 #: src/fsearch_statusbar.ui:229 src/fsearch_statusbar.ui:254
 msgid "0/0"
-msgstr ""
+msgstr "0/0"
 
 #: src/fsearch_statusbar.ui:253
 msgid "Number of selected files"
-msgstr ""
+msgstr "Број на избрани датотеки"
 
 #: src/fsearch_statusbar.ui:328 src/fsearch_window.ui:103
 msgid "Cancel database update"
-msgstr ""
+msgstr "Прекини со ажурирање на базата на податоци"
 
 #: src/fsearch_statusbar.ui:369
 msgid "Number of database items"
-msgstr ""
+msgstr "Број на ставки во базата"
 
 #: src/fsearch_statusbar.ui:370
 msgid "(empty)"
-msgstr ""
+msgstr "(празно)"
 
 #: src/fsearch_statusbar.ui:407
 msgid ""
 "Search term contains upper case characters.\n"
 "<b>Match Case</b> was temporarily activated for this term."
 msgstr ""
+"Терминот за пребарување содржи големи букви.\n"
+"<b>Соодветување на големи и мали букви</b> беше привремено активирано за "
+"овој термин."
 
 #: src/fsearch_statusbar.ui:438 src/fsearch_statusbar.ui:491
 msgid "CASE"
-msgstr ""
+msgstr "СЛУЧАЈ"
 
 #: src/fsearch_statusbar.ui:514
 msgid ""
 "Search term contains path separators.\n"
 "<b>Search in Path</b> was temporarily activated for this term."
 msgstr ""
+"Терминот за пребарување содржи разделители на патиња.\n"
+"<b>Пребарај во патиња</b> беше привремено активирано за овој термин."
 
 #: src/fsearch_statusbar.ui:545 src/fsearch_statusbar.ui:598
 msgid "PATH"
-msgstr ""
+msgstr "ПАТ"
 
 #: src/fsearch_statusbar.ui:651
 msgid "REGEX"
-msgstr ""
+msgstr "REGEX"
 
 #: src/fsearch_statusbar.ui:726
 msgid ""
 "The search was cancelled before it finished.\n"
 "<b>These results are incomplete.</b>"
 msgstr ""
+"Пребарувањето беше прекинато пред да заврши.\n"
+"<b>Овие резултати се некомплетни.</b>"
 
 #: src/fsearch_statusbar.ui:756
 msgid "PARTIAL"
-msgstr ""
+msgstr "ДЕЛОВИТО"
 
 #: src/fsearch_welcome_dialog.ui:26
 msgid "What's New in FSearch"
-msgstr ""
+msgstr "Што има ново во FSearch"
 
 #: src/fsearch_welcome_dialog.ui:79
 msgid ""
 "<span size=\"xx-large\" weight=\"bold\">What's New in FSearch 0.3</span>"
 msgstr ""
+"<span size=\"xx-large\" weight=\"bold\">Што има ново во FSearch 0.3</span>"
 
 #: src/fsearch_welcome_dialog.ui:149
 msgid "<big><b>File System Monitoring</b></big>"
-msgstr ""
+msgstr "<big><b>Надзор на фајл системот</b></big>"
 
 #: src/fsearch_welcome_dialog.ui:163
 msgid ""
@@ -1845,20 +2323,32 @@ msgid ""
 "<a href=\"URL\">https://github.com/cboxdoerfer/fsearch/wiki/Database-update</"
 "a>"
 msgstr ""
+"Можете активно да ги следите поединечните папки за да ги елиминирате честите "
+"пребарувања. Промените во фајловите тогаш веднаш се појавуваат во вашите "
+"резултати на пребарување.\n"
+"\n"
+"За да ја активирате оваа функција, одете во делот Database (База на "
+"податоци) во дијалогот Preferences (Поставки).\n"
+"\n"
+"Видете ја онлајн документацијата за дополнителни информации:\n"
+"<a href=\"URL\">https://github.com/cboxdoerfer/fsearch/wiki/Database-update</"
+"a>"
 
 #: src/fsearch_welcome_dialog.ui:232
 msgid "<big><b>Folder-Specific Rescan Schedules</b></big>"
-msgstr ""
+msgstr "<big><b>Планови за преискусување специфични за папки</b></big>"
 
 #: src/fsearch_welcome_dialog.ui:246
 msgid ""
 "You can now configure automatic update intervals for individual folders "
 "independently and tailored to each distinct location."
 msgstr ""
+"Сега можете да ги конфигурирате интервалите за автоматско ажурирање за "
+"поединечни папки поединечно и прилагодено на секоја посебна локација."
 
 #: src/fsearch_welcome_dialog.ui:309
 msgid "<big><b>Improved Exclude Rules</b></big>"
-msgstr ""
+msgstr "<big><b>Подобрени правила за исклучување</b></big>"
 
 #: src/fsearch_welcome_dialog.ui:323
 msgid ""
@@ -1867,18 +2357,24 @@ msgid ""
 "Rules can be targeted specifically at files, folders, or both, and can be "
 "configured to match against either the basename or the full absolute path."
 msgstr ""
+"Сега можете да користите wildcard карактери и редовни изрази за дефинирање "
+"на помоќни правила за исклучување. \n"
+"\n"
+"Правилата можат да бидат насочени специфично кон датотеки, папки или двете, "
+"и можат да се конфигурирани да одговараат на името на датотеката (basename) "
+"или на целиот апсолутен пат."
 
 #: src/fsearch_window.c:749 src/menus.ui:279
 msgid "Size"
-msgstr ""
+msgstr "Големина"
 
 #: src/fsearch_window.c:763 src/menus.ui:271
 msgid "Extension"
-msgstr ""
+msgstr "Проширување"
 
 #: src/fsearch_window.c:770 src/menus.ui:283
 msgid "Date Modified"
-msgstr ""
+msgstr "Датум на измена)"
 
 #: src/fsearch_window.c:784
 msgid ""
@@ -1887,201 +2383,207 @@ msgid ""
 "This sort order is not persistent, it will be reset when the search term "
 "changes."
 msgstr ""
+"Сортирање по <b>Тип</b> може да трае неколку секунди кај многу резултати.\n"
+"\n"
+"Овој редослед на сортирање не е постојан, тој ќе биде ресетирани кога "
+"терминот за пребарување ќе се промени."
 
 #: src/fsearch_window.ui:68
 msgid "New window"
-msgstr ""
+msgstr "Нов прозорец"
 
 #: src/fsearch_window.ui:89
 msgid "Update database"
-msgstr ""
+msgstr "Ажурирајте ја базата на податоци"
 
 #: src/fsearch_window.ui:144 src/menus.ui:112
 msgid "Search in Path"
-msgstr ""
+msgstr "Пребарај во патокот"
 
 #: src/fsearch_window.ui:158 src/menus.ui:116
 msgid "Match Case"
-msgstr ""
+msgstr "Соодветува на големи и мали букви"
 
 #: src/fsearch_window.ui:172 src/menus.ui:120
 msgid "Enable RegEx"
-msgstr ""
+msgstr "Овозможи RegEx"
 
 #: src/fsearch_window.ui:197 src/menus.ui:95
 msgid "Show Statusbar"
-msgstr ""
+msgstr "Прикажи статусната лента"
 
 #: src/fsearch_window.ui:211 src/menus.ui:99
 msgid "Show Filter"
-msgstr ""
+msgstr "Прикажи филтер"
 
 #: src/fsearch_window.ui:225 src/menus.ui:103
 msgid "Show Search Button"
-msgstr ""
+msgstr "Кочни копче за пребарување"
 
 #: src/fsearch_window.ui:275 src/fsearch_window.ui:356 src/menus.ui:129
 msgid "FSearch Online"
-msgstr ""
+msgstr "FSearch Online"
 
 #: src/fsearch_window.ui:304 src/menus.ui:161
 msgid "About"
-msgstr ""
+msgstr "Забр"
 
 #: src/fsearch_window.ui:329 src/menus.ui:47
 msgid "Quit"
-msgstr ""
+msgstr "Прекини"
 
 #: src/fsearch_window.ui:372 src/fsearch_window.ui:443 src/menus.ui:131
 msgid "Donate"
-msgstr ""
+msgstr "Донација"
 
 #: src/fsearch_window.ui:387 src/menus.ui:142
 msgid "Forum"
-msgstr ""
+msgstr "Форум"
 
 #: src/fsearch_window.ui:401 src/menus.ui:146
 msgid "Bug Reports and Feature Requests"
-msgstr ""
+msgstr "Извештаи за грешки и барања за нови функции"
 
 #: src/fsearch_window.ui:460 src/menus.ui:133
 msgid "GitHub Sponsors"
-msgstr ""
+msgstr "GitHub Спонзори"
 
 #: src/fsearch_window.ui:474 src/menus.ui:137
 msgid "PayPal"
-msgstr ""
+msgstr "PayPal"
 
 #: src/fsearch_window.ui:586
 msgid "Search…"
-msgstr ""
+msgstr "Пребарај..."
 
 #: src/fsearch_window.ui:608
 msgid "Select a Filter"
-msgstr ""
+msgstr "Изберете филтер"
 
 #: src/fsearch_window_actions.c:110
 #, c-format
 msgid "Do you really want to open %'d file?"
 msgid_plural "Do you really want to open %'d files?"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Дали навистина сакате да го отворите %'d фајл?"
+msgstr[1] "Дали навистина сакате да ги отворите %'d фајлови?"
 
 #: src/fsearch_window_actions.c:115
 msgid "Opening Files…"
-msgstr ""
+msgstr "Отворање датотеки..."
 
 #: src/fsearch_window_actions.c:198
 #, c-format
 msgid "Do you really want to remove %'d file?"
 msgid_plural "Do you really want to remove %'d files?"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Дали навистина сакате да го отстраните %'d фајл?"
+msgstr[1] "Дали навистина сакате да ги отстраните %'d фајлови?"
 
 #: src/fsearch_window_actions.c:205
 msgid "Deleting files…"
-msgstr ""
+msgstr "Бришење на датоци..."
 
 #: src/fsearch_window_actions.c:205
 msgid "Moving files to trash…"
-msgstr ""
+msgstr "Префрлање на датотеки во кошче..."
 
 #: src/fsearch_window_actions.c:238 src/fsearch_window_actions.c:533
 #: src/fsearch_window_actions.c:580
 msgid "Something went wrong."
-msgstr ""
+msgstr "Нешто почнаше грешно."
 
 #: src/fsearch_window_actions.c:263
 #, c-format
 msgid "Do you really want to open %'d file property window?"
 msgid_plural "Do you really want to open %'d file property windows?"
 msgstr[0] ""
+"Дали навистина сакате да ја отворите прозорецот за својства на %'d датотека?"
 msgstr[1] ""
+"Дали навистина сакате да ги отворите прозорците за својства на %'d датотеки?"
 
 #: src/fsearch_window_actions.c:270
 msgid "Opening file properties…"
-msgstr ""
+msgstr "Отворање на својствата на датокот..."
 
 #: src/menus.ui:6
 msgid "_File"
-msgstr ""
+msgstr "_Датотека"
 
 #: src/menus.ui:9
 msgid "New Window"
-msgstr ""
+msgstr "Нов прозорец"
 
 #: src/menus.ui:16 src/menus.ui:171
 msgid "_Open"
-msgstr ""
+msgstr "О_твори"
 
 #: src/menus.ui:21
 msgid "Open Folder"
-msgstr ""
+msgstr "Отвори папка"
 
 #: src/menus.ui:29
 msgid "Update Database"
-msgstr ""
+msgstr "Ажурирај ја базата на податоци"
 
 #: src/menus.ui:35
 msgid "Cancel Update"
-msgstr ""
+msgstr "Откажи со ажурирање"
 
 #: src/menus.ui:42
 msgid "Close Window"
-msgstr ""
+msgstr "Затвори го прозорецот"
 
 #: src/menus.ui:54
 msgid "_Edit"
-msgstr ""
+msgstr "У_редување"
 
 #: src/menus.ui:57 src/menus.ui:207
 msgid "_Copy"
-msgstr ""
+msgstr "Копирај"
 
 #: src/menus.ui:62 src/menus.ui:228
 msgid "Cu_t"
-msgstr ""
+msgstr "Ис_еч"
 
 #: src/menus.ui:69
 msgid "Select All"
-msgstr ""
+msgstr "Избери сè"
 
 #: src/menus.ui:74
 msgid "Deselect All"
-msgstr ""
+msgstr "Деселектирај сè"
 
 #: src/menus.ui:78
 msgid "Invert Selection"
-msgstr ""
+msgstr "Инверзија на изборот"
 
 #: src/menus.ui:92
 msgid "_View"
-msgstr ""
+msgstr "Преглед"
 
 #: src/menus.ui:109
 msgid "_Search"
-msgstr ""
+msgstr "_Пребарај"
 
 #: src/menus.ui:126
 msgid "_Help"
-msgstr ""
+msgstr "_Помош"
 
 #: src/menus.ui:177
 msgid "Open _With"
-msgstr ""
+msgstr "О_ткори"
 
 #: src/menus.ui:191
 msgid "_Open Folder"
-msgstr ""
+msgstr "О_твори папка"
 
 #: src/menus.ui:213
 msgid "Copy as Text"
-msgstr ""
+msgstr "Копирај како текст"
 
 #: src/menus.ui:223
 msgid "Path + Name"
-msgstr ""
+msgstr "Патека + Име"
 
 #: src/menus.ui:236
 msgid "Move to _Trash"
-msgstr ""
+msgstr "Префрли во _корпа"
