@@ -19,334 +19,336 @@ msgstr ""
 
 #: data/io.github.cboxdoerfer.FSearch.desktop.in.in:4 src/main.c:36
 msgid "FSearch"
-msgstr ""
+msgstr "FTìm kiếm"
 
 #: data/io.github.cboxdoerfer.FSearch.desktop.in.in:5
 msgid "A file search application focusing on performance and advanced features"
-msgstr ""
+msgstr "Một ứng dụng tìm kiếm tập tin tập trung vào hiệu suất và các tính năng nâng cao"
 
 #: data/io.github.cboxdoerfer.FSearch.desktop.in.in:10
 msgid "search;fsearch;files;folders;music;video;documents;find;tool;everything;"
-msgstr ""
+msgstr "tìm kiếm;fsearch;tập tin;thư mục;âm nhạc;băng hình;tài liệu;tìm thấy;dụng cụ;mọi thứ;"
 
 #: data/io.github.cboxdoerfer.FSearch.desktop.in.in:12
 msgid "File Search Utility"
-msgstr ""
+msgstr "Tiện ích tìm kiếm tệp"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:8
 msgid "A graphical file search application"
-msgstr ""
+msgstr "Một ứng dụng tìm kiếm tập tin đồ họa"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:10
 msgid ""
 "FSearch helps you to find files and folders as easy and fast as possible. "
 "Just type a few letters and search results will appear almost instantly."
-msgstr ""
+msgstr "FSearch giúp bạn tìm các tập tin và thư mục dễ dàng và nhanh chóng nhất có thể. Chỉ cần gõ một vài chữ cái và kết quả tìm kiếm sẽ xuất hiện gần như ngay lập tức."
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:14
 msgid ""
 "There are a lot of features which make searching as efficient and powerful "
 "as possible. Such as:"
-msgstr ""
+msgstr "Có rất nhiều tính năng giúp tìm kiếm hiệu quả và mạnh mẽ nhất có thể. Chẳng hạn như:"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:19
 msgid ""
 "Ignore case (e.g. searching for \"<code>fsearch</code>\" will match "
 "\"FSearch\" as well)"
-msgstr ""
+msgstr "Bỏ qua trường hợp (ví dụ: tìm kiếm \\\"<code>fsearch</code>\\\" cũng sẽ khớp với \\\"FSearch\\\")"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:20
 msgid "Regular expressions"
-msgstr ""
+msgstr "Biểu thức chính quy"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:21
 msgid "Wildcard support"
-msgstr ""
+msgstr "Hỗ trợ ký tự đại diện"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:22
 msgid "Filter support (e.g. only search for audio files)"
-msgstr ""
+msgstr "Hỗ trợ bộ lọc (ví dụ: chỉ tìm kiếm tệp âm thanh)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:23
 msgid "Exclude certain files and folders"
-msgstr ""
+msgstr "Loại trừ một số tệp và thư mục nhất định"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:24
 msgid "Fast sort by name, path, size, modification time and extension"
-msgstr ""
+msgstr "Sắp xếp nhanh theo tên, đường dẫn, kích thước, thời gian sửa đổi và tiện ích mở rộng"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:26
 msgid ""
 "<em>Note:</em> Due to Flatpak's sandboxing, FSearch can't find every file on "
 "your system."
-msgstr ""
+msgstr "<em>Lưu ý:</em> Do tính năng hộp cát của Flatpak, FSearch không thể tìm thấy mọi tệp trên hệ thống của bạn."
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:35
 msgid "The default UI layout"
-msgstr ""
+msgstr "Bố cục giao diện người dùng mặc định"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:41
 msgid "A layout more closely following GNOME HIGs"
-msgstr ""
+msgstr "Bố cục bám sát hơn Gnome HIG"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:49
 msgid "search"
-msgstr ""
+msgstr "tìm kiếm"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:50
 msgid "fsearch"
-msgstr ""
+msgstr "tìm kiếm"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:51
 msgid "files"
-msgstr ""
+msgstr "tập tin"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:52
 msgid "folders"
-msgstr ""
+msgstr "thư mục"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:53
 msgid "music"
-msgstr ""
+msgstr "âm nhạc"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:54
 msgid "video"
-msgstr ""
+msgstr "băng hình"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:55
 msgid "documents"
-msgstr ""
+msgstr "tài liệu"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:56
 msgid "find"
-msgstr ""
+msgstr "tìm thấy"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:57
 msgid "tool"
-msgstr ""
+msgstr "dụng cụ"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:58
 msgid "everything"
-msgstr ""
+msgstr "mọi thứ"
 
 #. Kept for appstreamcli < 1.0 (e.g. Ubuntu 20.04/22.04 PPA builds), which doesn't know <developer>.
 #. Translators: please do NOT translate this.
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:77
 msgid "Christian Boxdörfer"
-msgstr ""
+msgstr "Christian Boxdorfer"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:89
 msgid "DB rewrite"
-msgstr ""
+msgstr "viết lại DB"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:90
 msgid "DB: Add support for filesystem monitoring"
-msgstr ""
+msgstr "DB: Thêm hỗ trợ giám sát hệ thống tập tin"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:91
 msgid ""
 "DB: Allow files and folders to be excluded based on fixed patterns, "
 "wildcards or regular expressions"
-msgstr ""
+msgstr "DB: Cho phép loại trừ các tệp và thư mục dựa trên các mẫu, ký tự đại diện hoặc biểu thức chính quy cố định"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:92
 msgid ""
 "DB: Allow included folders to be scheduled and scanned after launch "
 "independently"
-msgstr ""
+msgstr "DB: Cho phép lập lịch và quét các thư mục đi kèm sau khi khởi chạy độc lập"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:93
 msgid "DB: Make rescanning more efficient"
-msgstr ""
+msgstr "DB: Giúp việc quét lại hiệu quả hơn"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:94
 msgid "DB: Store database config in DB file"
-msgstr ""
+msgstr "DB: Lưu trữ cấu hình cơ sở dữ liệu trong tệp DB"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:95
 msgid "DB: Add checksum to DB file"
-msgstr ""
+msgstr "DB: Thêm tổng kiểm tra vào tệp DB"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:96
 msgid "Make icon and file info gathering asynchronous (no UI blocking)"
-msgstr ""
+msgstr "Làm cho việc thu thập thông tin biểu tượng và tệp không đồng bộ (không chặn giao diện người dùng)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:97
 msgid "Reduce memory usage"
-msgstr ""
+msgstr "Giảm mức sử dụng bộ nhớ"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:98
 msgid "Add contextual help for all preferences"
-msgstr ""
+msgstr "Thêm trợ giúp theo ngữ cảnh cho tất cả các tùy chọn"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:99
 msgid "Numerous bug fixes and stability and performance improvements"
-msgstr ""
+msgstr "Nhiều bản sửa lỗi cũng như cải thiện tính ổn định và hiệu suất"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:106
 msgid "New search engine"
-msgstr ""
+msgstr "Công cụ tìm kiếm mới"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:107
 msgid "Greatly improved highlighting of search terms"
-msgstr ""
+msgstr "Cải thiện đáng kể việc đánh dấu các cụm từ tìm kiếm"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:108
 msgid "Custom filters"
-msgstr ""
+msgstr "Bộ lọc tùy chỉnh"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:109
 msgid "Improved sort performance"
-msgstr ""
+msgstr "Cải thiện hiệu suất sắp xếp"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:110
 msgid "Improved scroll performance"
-msgstr ""
+msgstr "Cải thiện hiệu suất cuộn"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:111
 msgid "Remember file selection after a database update"
-msgstr ""
+msgstr "Ghi nhớ lựa chọn tệp sau khi cập nhật cơ sở dữ liệu"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:112
 msgid "Automatically scroll the result list in rubberband selection mode"
-msgstr ""
+msgstr "Tự động cuộn danh sách kết quả ở chế độ chọn dây cao su"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:113
 msgid "Invert selection with rubber band when 'Ctrl' is pressed"
-msgstr ""
+msgstr "Đảo ngược lựa chọn bằng dây cao su khi nhấn 'Ctrl'"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:114
 msgid "Focus search entry when the main window gets activated"
-msgstr ""
+msgstr "Tập trung vào mục tìm kiếm khi cửa sổ chính được kích hoạt"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:115
 msgid "Add filter for applications (i.e. .desktop files)"
-msgstr ""
+msgstr "Thêm bộ lọc cho các ứng dụng (tức là tệp .desktop)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:116
 msgid ""
 "Add option to launch applications directly instead of opening the .desktop "
 "files"
-msgstr ""
+msgstr "Thêm tùy chọn khởi chạy ứng dụng trực tiếp thay vì mở file .desktop"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:117
 msgid "Show application icons for .desktop files"
-msgstr ""
+msgstr "Hiển thị biểu tượng ứng dụng cho tệp .desktop"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:118
 msgid "Add .odp and .ods files to document filter"
-msgstr ""
+msgstr "Thêm tệp .odp và .ods vào bộ lọc tài liệu"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:119
 msgid ""
 "'Open with' menu now only shows applications which can handle the selected "
 "files"
-msgstr ""
+msgstr "Menu 'Mở bằng' hiện chỉ hiển thị các ứng dụng có thể xử lý các tệp đã chọn"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:120
 msgid ""
 "Improved opening of multiple files with the same type (they get now passed "
 "as a list to applications, instead of one by one)"
-msgstr ""
+msgstr "Cải thiện khả năng mở nhiều tệp có cùng loại (giờ đây chúng được chuyển dưới dạng danh sách tới các ứng dụng, thay vì từng tệp một)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:121
 msgid "Better support for opening files in sandboxed mode"
-msgstr ""
+msgstr "Hỗ trợ tốt hơn cho việc mở file ở chế độ sandbox"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:122
 msgid ""
 "Add menu items with links to the issue tracker, forum and donation pages"
-msgstr ""
+msgstr "Thêm các mục menu có liên kết đến trang theo dõi vấn đề, diễn đàn và quyên góp"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:123
 msgid "Improve support for non-Linux systems"
-msgstr ""
+msgstr "Cải thiện hỗ trợ cho các hệ thống không phải Linux"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:124
 msgid ""
 "Add option to exit FSearch when Escape is pressed instead of minimizing the "
 "window"
-msgstr ""
+msgstr "Thêm tùy chọn thoát FSearch khi nhấn Escape thay vì thu nhỏ cửa sổ"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:125
 msgid "Exclude '/proc' and '/sys' by default"
-msgstr ""
+msgstr "Loại trừ '/proc' và '/sys' theo mặc định"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:126
 msgid "Open context menu when 'Menu' key or 'Shift + F10' are pressed"
-msgstr ""
+msgstr "Mở menu ngữ cảnh khi nhấn phím 'Menu' hoặc 'Shift + F10'"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:127
 msgid "and tons of bug fixes, translation updates and smaller improvements"
-msgstr ""
+msgstr "và rất nhiều bản sửa lỗi, cập nhật bản dịch và những cải tiến nhỏ hơn"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:133
 msgid "Initial release."
-msgstr ""
+msgstr "Phát hành lần đầu."
 
 #: src/fsearch.c:181
 msgid "translator-credits"
-msgstr ""
+msgstr "dịch thuật-tín dụng"
 
 #: src/fsearch.c:183
 msgid "A search utility focusing on performance and advanced features"
-msgstr ""
+msgstr "Tiện ích tìm kiếm tập trung vào hiệu suất và các tính năng nâng cao"
 
 #: src/fsearch.c:330
 msgid "Saving database and config…"
-msgstr ""
+msgstr "Đang lưu cơ sở dữ liệu và cấu hình…"
 
 #: src/fsearch.c:786
 msgid "Open a new application window"
-msgstr ""
+msgstr "Mở một cửa sổ ứng dụng mới"
 
 #: src/fsearch.c:787
 msgid "Minimize the application window"
-msgstr ""
+msgstr "Thu nhỏ cửa sổ ứng dụng"
 
 #: src/fsearch.c:788
 msgid "Show the application preferences"
-msgstr ""
+msgstr "Hiển thị tùy chọn ứng dụng"
 
 #: src/fsearch.c:789
 msgid "Set the search pattern"
-msgstr ""
+msgstr "Đặt mẫu tìm kiếm"
 
 #: src/fsearch.c:790
 msgid "Update the database and exit"
-msgstr ""
+msgstr "Cập nhật cơ sở dữ liệu và thoát"
 
 #: src/fsearch.c:791
 msgid "Print version information and exit"
-msgstr ""
+msgstr "In thông tin phiên bản và thoát"
 
 #: src/fsearch.c:883
 msgid ""
 "For command-line search help, run: fsearch --cli --help\n"
 "For shared configuration help, run: fsearch config --help"
 msgstr ""
+"Để được trợ giúp tìm kiếm dòng lệnh, hãy chạy: fsearch --cli --help\n"
+"Để được trợ giúp về cấu hình được chia sẻ, hãy chạy: fsearch config --help"
 
 #: src/fsearch_cli.c:125
 #, c-format
 msgid ""
 "Results capped at %u. Use --unlimit or --unlimited to get them all, or "
 "provide a custom --limit, or set FSEARCH_RESULT_LIMIT."
-msgstr ""
+msgstr "Kết quả được giới hạn ở mức %u. Sử dụng --unlimit hoặc --unlimited để có được tất cả hoặc cung cấp --limit tùy chỉnh hoặc đặt FSEARCH_RESULT_LIMIT."
 
 #: src/fsearch_cli.c:134
 #, c-format
 msgid "%u match."
 msgid_plural "%u matches."
-msgstr[0] ""
+msgstr[0] "%u trận đấu."
 
 #: src/fsearch_cli.c:142
 msgid "Updating FSearch index before searching..."
-msgstr ""
+msgstr "Đang cập nhật chỉ mục FSearch trước khi tìm kiếm..."
 
 #: src/fsearch_cli.c:149
 #, c-format
 msgid "Indexing: %s"
-msgstr ""
+msgstr "Lập chỉ mục: %s"
 
 #: src/fsearch_cli.c:181
 msgid ""
@@ -392,40 +394,76 @@ msgid ""
 "{png,jpg} selects alternatives; {01..12} is an inclusive numeric range; \\* "
 "matches a literal *.\n"
 msgstr ""
+"Cách sử dụng: fsearch --cli [OPTIONS]\n"
+"\n"
+"Tìm kiếm chỉ mục FSearch hiện có và in các đường dẫn phù hợp.\n"
+"\n"
+"  -s, --search PATTERN       Tìm kiếm bằng cú pháp truy vấn FSearch\n"
+"      --path DIRECTORY        Tìm kiếm đệ quy bên dưới THƯ MỤC (mặc định: thư mục hiện tại)\n"
+"      --global                Tìm kiếm mọi vị trí được lập chỉ mục\n"
+"      --limit COUNT          In tối đa COUNT kết quả\n"
+"      --unlimit, --unlimited In mọi kết quả\n"
+"  -u, --update-database      Quét lại chỉ mục đã cấu hình và thoát\n"
+"      --about                In thông tin bản dựng một dòng\n"
+"  -h, --help                 Hiển thị trợ giúp này\n"
+"\n"
+"Cấu hình: fsearch config --help\n"
+"\n"
+"Ví dụ:\n"
+"  fsearch --cli --search invoice              # eolaire reatha\n"
+"  fsearch --cli --path ~/Documents --search invoice\n"
+"  fsearch --cli --global --search invoice\n"
+"  fsearch --cli --search 'file:size:>20mb'\n"
+"  fsearch --cli --search 'ext:jpg;png'\n"
+"  fsearch --cli --search 'path:projects report'\n"
+"  fsearch --cli --search 'report AND ext:pdf'\n"
+"  fsearch --cli --search '(draft OR final) !archive'\n"
+"  fsearch --cli --search 'file:regex:\".+\\.pdf$\"'\n"
+"  fsearch --cli --search 'case:AGENTS'        # cás-íogair\n"
+"  fsearch --cli --search 'case:regex:\"^AGENTS\\.md$\"'\n"
+"  fsearch --cli --search 'glob:**/*.png'\n"
+"  fsearch --cli --search 'path:glob:**/AGENTS.md'\n"
+"  fsearch --cli --search 'case:glob:AGENTS.md' # glob cás-íogair\n"
+"\n"
+"Ví dụ sử dụng dấu cách dưới dạng AND. Hãy thử file:, folder:, path:, ext:, size:, dm:, case:, Regex:, và glob:.\n"
+"Cú pháp Boolean: AND hoặc &&; HOẶC hoặc ||; KHÔNG hoặc !. Nhóm thuật ngữ trong ngoặc đơn.\n"
+"Cú pháp toàn cầu: * loại trừ /; ** mở rộng các thư mục; ? khớp với một ký tự; [a-c] là một phạm vi;\n"
+"Glob tìm kiếm đường dẫn theo mặc định; sử dụng **/ cho bất kỳ độ sâu nào; file:glob: tìm kiếm tên tập tin.\n"
+"{png,jpg} chọn các lựa chọn thay thế; {01..12} là một phạm vi số bao gồm; \\* khớp với một chữ *.\n"
 
 #: src/fsearch_cli.c:238
 #, c-format
 msgid "FSearch %s - indexed file search for %s %s\n"
-msgstr ""
+msgstr "FSearch %s - tìm kiếm tệp được lập chỉ mục cho %s %s\n"
 
 #: src/fsearch_cli.c:301
 msgid "fsearch: interrupted\n"
-msgstr ""
+msgstr "tìm kiếm: bị gián đoạn\n"
 
 #: src/fsearch_cli.c:315
 msgid "fsearch: search could not run because the index is unavailable\n"
-msgstr ""
+msgstr "fsearch: tìm kiếm không thể chạy vì không có chỉ mục\n"
 
 #: src/fsearch_cli.c:352 src/fsearch_cli.c:381 src/fsearch_cli_config.c:774
 #: src/fsearch_cli_config.c:961 src/fsearch_cli_config.c:1147
 #, c-format
 msgid "%s\n"
-msgstr ""
+msgstr "%s\n"
 
 #: src/fsearch_cli.c:400
 #, c-format
 msgid "%s"
-msgstr ""
+msgstr "%s"
 
 #: src/fsearch_cli.c:473
 #, c-format
 msgid "fsearch: unknown CLI option: %s\n"
-msgstr ""
+msgstr "fsearch: tùy chọn CLI không xác định: %s\n"
 
 #: src/fsearch_cli.c:495
 #, c-format
 msgid "fsearch: failed to create data directory: %s\n"
-msgstr ""
+msgstr "fsearch: không tạo được thư mục dữ liệu: %s\n"
 
 #: src/fsearch_cli_config.c:111
 msgid ""
@@ -467,30 +505,73 @@ msgid ""
 "  fsearch config filters add Documents --query 'ext:pdf' --macro docs\n"
 "  fsearch config reset search --yes\n"
 msgstr ""
+"Cách sử dụng: fsearch config COMMAND [OPTIONS]\n"
+"\n"
+"Xem và sửa đổi cấu hình GUI và CLI FSearch được chia sẻ.\n"
+"\n"
+"Các lệnh cấu hình:\n"
+"  path                         In đường dẫn file cấu hình\n"
+"  show [SECTION] [--json]      Hiển thị cài đặt\n"
+"  get KEY [--json]             In một cài đặt vô hướng\n"
+"  set KEY VALUE                Đặt một cài đặt vô hướng\n"
+"  unset KEY                    Khôi phục mặc định một cài đặt vô hướng\n"
+"  reset [KEY|SECTION] --yes [--rescan]\n"
+"                               Khôi phục mặc định\n"
+"  doctor                       Kiểm tra tính nhất quán của cấu hình và chỉ mục\n"
+"  roots list|add|set|remove    Quản lý các gốc được lập chỉ mục\n"
+"  excludes list|add|remove|hidden\n"
+"                               Quản lý loại trừ chỉ mục\n"
+"  filters list|add|set|remove|reset\n"
+"                               Quản lý bộ lọc tìm kiếm đã lưu\n"
+"\n"
+"Giá trị vô hướng sử dụng đúng/sai, số nguyên thập phân hoặc chuỗi.\n"
+"Chạy 'fsearch config show' để liệt kê mọi khóa vô hướng và giá trị hiện tại.\n"
+"Phần vô hướng: search, application, window, ui, columns, sort, dialogs.\n"
+"Sử dụng 'fsearch configroots|excludes|filters --help' cho các tùy chọn nhóm.\n"
+"Đóng GUI FSearch trước khi thay đổi cài đặt chia sẻ.\n"
+"Các thay đổi chỉ mục có thể tìm kiếm được trong lần tìm kiếm CLI tiếp theo hoặc ngay lập tức bằng --rescan.\n"
+"Sử dụng --json với các lệnh hiển thị, nhận và thu thập danh sách.\n"
+"\n"
+"Ví dụ:\n"
+"  fsearch config show search --json\n"
+"  fsearch config get search.match-case\n"
+"  fsearch config set search.match-case true\n"
+"  fsearch config roots add ~/Code --monitor --one-file-system --rescan\n"
+"  fsearch config excludes add '*.tmp' --type wildcard --scope basename --target files\n"
+"  fsearch config filters add Documents --query 'ext:pdf' --macro docs\n"
+"  fsearch config reset search --yes\n"
 
 #: src/fsearch_cli_config.c:152
 msgid ""
 "Usage: fsearch config show [SECTION] [--json]\n"
 "Show all scalar settings or one dotted section.\n"
 msgstr ""
+"Cách sử dụng: fsearch config show [SECTION] [--json]\n"
+"Hiển thị tất cả các cài đặt vô hướng hoặc một phần chấm.\n"
 
 #: src/fsearch_cli_config.c:154
 msgid ""
 "Usage: fsearch config get KEY [--json]\n"
 "Print one typed scalar value. Discover keys with 'fsearch config show'.\n"
 msgstr ""
+"Cách sử dụng: fsearch config get KEY [--json]\n"
+"In một giá trị vô hướng đã gõ. Khám phá các phím với 'hiển thị cấu hình fsearch'.\n"
 
 #: src/fsearch_cli_config.c:157
 msgid ""
 "Usage: fsearch config set KEY VALUE\n"
 "Set a boolean, integer, string, or enumerated scalar value.\n"
 msgstr ""
+"Cách sử dụng: fsearch config set KEY VALUE\n"
+"Đặt giá trị vô hướng boolean, số nguyên, chuỗi hoặc liệt kê.\n"
 
 #: src/fsearch_cli_config.c:159
 msgid ""
 "Usage: fsearch config unset KEY\n"
 "Restore one scalar setting to its built-in default.\n"
 msgstr ""
+"Cách sử dụng: fsearch config unset KEY\n"
+"Khôi phục một cài đặt vô hướng về mặc định tích hợp sẵn.\n"
 
 #: src/fsearch_cli_config.c:161
 msgid ""
@@ -498,6 +579,8 @@ msgid ""
 "Reset is destructive and requires --yes. --rescan applies to roots, "
 "database, excludes, or all.\n"
 msgstr ""
+"Cách sử dụng: fsearch config reset [KEY|SECTION] --yes [--rescan]\n"
+"Đặt lại có tính chất phá hoại và yêu cầu --có. --rescan áp dụng cho gốc, cơ sở dữ liệu, loại trừ hoặc tất cả.\n"
 
 #: src/fsearch_cli_config.c:164
 msgid ""
@@ -505,6 +588,8 @@ msgid ""
 "Check configuration readability and whether the saved index uses the same "
 "roots and exclusions.\n"
 msgstr ""
+"Cách sử dụng: fsearch config doctor\n"
+"Kiểm tra khả năng đọc cấu hình và liệu chỉ mục đã lưu có sử dụng cùng các gốc và loại trừ hay không.\n"
 
 #: src/fsearch_cli_config.c:170
 msgid ""
@@ -524,6 +609,21 @@ msgid ""
 "  --rescan-every SECONDS        Set periodic rescan interval; 0 disables it\n"
 "  --rescan                      Rebuild the index immediately after saving\n"
 msgstr ""
+"Cách sử dụng: fsearch config roots COMMAND [PATH] [OPTIONS]\n"
+"\n"
+"Lệnh:\n"
+"  list [--json]                Liệt kê các gốc được lập chỉ mục\n"
+"  add PATH [OPTIONS]           Thêm một thư mục gốc\n"
+"  set PATH [OPTIONS]           Thay đổi một gốc hiện có\n"
+"  remove PATH [--rescan]       Xóa một gốc hiện có\n"
+"\n"
+"Các tùy chọn để thêm và đặt:\n"
+"  --active, --inactive\n"
+"  --monitor, --no-monitor\n"
+"  --one-file-system, --no-one-file-system\n"
+"  --scan-after-launch, --no-scan-after-launch\n"
+"  --rescan-every SECONDS        Đặt khoảng thời gian quét lại định kỳ; 0 vô hiệu hóa nó\n"
+"  --rescan                      Xây dựng lại chỉ mục ngay sau khi lưu\n"
 
 #: src/fsearch_cli_config.c:187
 msgid ""
@@ -543,6 +643,21 @@ msgid ""
 "  --active, --inactive          Add state or removal selector\n"
 "  --rescan                      Rebuild the index immediately after saving\n"
 msgstr ""
+"Cách sử dụng: fsearch config excludes COMMAND [PATTERN|VALUE] [OPTIONS]\n"
+"\n"
+"Lệnh:\n"
+"  list [--json]                 Danh sách loại trừ\n"
+"  add PATTERN [OPTIONS]         Thêm một loại trừ\n"
+"  remove PATTERN [OPTIONS]      Xóa một loại trừ phù hợp\n"
+"  hidden [true|false] [--rescan]\n"
+"                                Xem hoặc thay đổi loại trừ tệp ẩn\n"
+"\n"
+"Tùy chọn thêm và xóa:\n"
+"  --type fixed|wildcard|regex   Mặc định: đã sửa\n"
+"  --scope full-path|basename    Mặc định: đường dẫn đầy đủ\n"
+"  --target both|files|folders   Mặc định: cả hai\n"
+"  --active, --inactive          Thêm bộ chọn trạng thái hoặc loại bỏ\n"
+"  --rescan                      Xây dựng lại chỉ mục ngay sau khi lưu\n"
 
 #: src/fsearch_cli_config.c:204
 msgid ""
@@ -562,205 +677,224 @@ msgid ""
 "  --path, --no-path             Search full paths\n"
 "  --regex, --no-regex           Treat query as a regular expression\n"
 msgstr ""
+"Cách sử dụng: fsearch config filters COMMAND [NAME] [OPTIONS]\n"
+"\n"
+"Lệnh:\n"
+"  list [--json]                 Liệt kê các bộ lọc đã lưu\n"
+"  add NAME [OPTIONS]            Thêm bộ lọc được đặt tên\n"
+"  set NAME [OPTIONS]            Thay đổi bộ lọc được đặt tên\n"
+"  remove NAME                   Xóa bộ lọc được đặt tên\n"
+"  reset                         Khôi phục các bộ lọc tích hợp\n"
+"\n"
+"Các tùy chọn để thêm và đặt:\n"
+"  --query QUERY                 Truy vấn FSearch đã lưu\n"
+"  --macro MACRO                 Tên macro truy vấn\n"
+"  --case, --no-case             Hộp diêm\n"
+"  --path, --no-path             Tìm kiếm đường dẫn đầy đủ\n"
+"  --regex, --no-regex           Coi truy vấn như một biểu thức chính quy\n"
 
 #: src/fsearch_cli_config.c:265
 msgid ""
 "fsearch config: close the running FSearch GUI before changing shared "
 "settings\n"
-msgstr ""
+msgstr "Cấu hình fsearch: đóng GUI FSearch đang chạy trước khi thay đổi cài đặt chia sẻ\n"
 
 #: src/fsearch_cli_config.c:269
 msgid "fsearch config: failed to save configuration\n"
-msgstr ""
+msgstr "Cấu hình fsearch: không lưu được cấu hình\n"
 
 #: src/fsearch_cli_config.c:280
 msgid "Index configuration changed; the next CLI search will rebuild it.\n"
-msgstr ""
+msgstr "Cấu hình chỉ mục đã thay đổi; tìm kiếm CLI tiếp theo sẽ xây dựng lại nó.\n"
 
 #: src/fsearch_cli_config.c:416
 #, c-format
 msgid "fsearch config %s: unknown option: %s\n"
-msgstr ""
+msgstr "cấu hình fsearch %s: tùy chọn không xác định: %s\n"
 
 #: src/fsearch_cli_config.c:422
 #, c-format
 msgid "fsearch config %s: unexpected argument: %s\n"
-msgstr ""
+msgstr "cấu hình fsearch %s: đối số không mong đợi: %s\n"
 
 #: src/fsearch_cli_config.c:449
 msgid "Usage: fsearch config get KEY [--json]\n"
-msgstr ""
+msgstr "Cách sử dụng: cấu hình fsearch lấy KEY [--json]\n"
 
 #: src/fsearch_cli_config.c:454 src/fsearch_cli_config.c:555
 #, c-format
 msgid "fsearch config: unknown setting: %s\n"
-msgstr ""
+msgstr "cấu hình fsearch: cài đặt không xác định: %s\n"
 
 #: src/fsearch_cli_config.c:502
 #, c-format
 msgid "fsearch config show: unknown section: %s\n"
-msgstr ""
+msgstr "cấu hình fsearch hiển thị: phần không xác định: %s\n"
 
 #: src/fsearch_cli_config.c:550
 #, c-format
 msgid "Usage: fsearch config %s KEY%s\n"
-msgstr ""
+msgstr "Cách sử dụng: cấu hình fsearch %s KEY%s\n"
 
 #: src/fsearch_cli_config.c:566
 #, c-format
 msgid "fsearch config: invalid value for %s: %s\n"
-msgstr ""
+msgstr "cấu hình fsearch: giá trị không hợp lệ cho %s: %s\n"
 
 #: src/fsearch_cli_config.c:572
 #, c-format
 msgid "%s = %s\n"
-msgstr ""
+msgstr "%s = %s\n"
 
 #: src/fsearch_cli_config.c:637
 #, c-format
 msgid "fsearch config roots: unknown operation: %s\n"
-msgstr ""
+msgstr "gốc cấu hình fsearch: thao tác không xác định: %s\n"
 
 #: src/fsearch_cli_config.c:691
 msgid "fsearch config roots: --rescan-every requires SECONDS\n"
-msgstr ""
+msgstr "gốc cấu hình fsearch: --rescan-every yêu cầu GIÂY\n"
 
 #: src/fsearch_cli_config.c:710
 msgid "fsearch config roots: missing PATH\n"
-msgstr ""
+msgstr "gốc cấu hình fsearch: thiếu PATH\n"
 
 #: src/fsearch_cli_config.c:717 src/fsearch_cli_config.c:732
 #, c-format
 msgid "fsearch config roots: path not found: %s\n"
-msgstr ""
+msgstr "gốc cấu hình fsearch: không tìm thấy đường dẫn: %s\n"
 
 #: src/fsearch_cli_config.c:724
 #, c-format
 msgid "fsearch config roots: not a directory: %s\n"
-msgstr ""
+msgstr "gốc cấu hình fsearch: không phải thư mục: %s\n"
 
 #: src/fsearch_cli_config.c:728
 #, c-format
 msgid "fsearch config roots: path already exists: %s\n"
-msgstr ""
+msgstr "gốc cấu hình fsearch: đường dẫn đã tồn tại: %s\n"
 
 #: src/fsearch_cli_config.c:752
 #, c-format
 msgid "fsearch config roots: invalid rescan duration: %s\n"
-msgstr ""
+msgstr "gốc cấu hình fsearch: thời lượng quét lại không hợp lệ: %s\n"
 
 #: src/fsearch_cli_config.c:765
 msgid ""
 "%s\tactive=%s monitor=%s one-file-system=%s scan-after-launch=%s rescan-"
 "after=%s\n"
-msgstr ""
+msgstr "%s active=%s màn hình=%s one-file-system=%s scan-after-launch=%s quét lại sau=%s\n"
 
 #: src/fsearch_cli_config.c:844
 msgid "fsearch config excludes hidden: expected true or false\n"
-msgstr ""
+msgstr "Cấu hình fsearch loại trừ ẩn: được mong đợi là đúng hoặc sai\n"
 
 #: src/fsearch_cli_config.c:850
 #, c-format
 msgid "exclude-hidden = %s\n"
-msgstr ""
+msgstr "loại trừ-ẩn = %s\n"
 
 #: src/fsearch_cli_config.c:856
 #, c-format
 msgid "fsearch config excludes: unknown operation: %s\n"
-msgstr ""
+msgstr "cấu hình fsearch loại trừ: thao tác không xác định: %s\n"
 
 #: src/fsearch_cli_config.c:877
 #, c-format
 msgid "fsearch config excludes: %s requires a value\n"
-msgstr ""
+msgstr "cấu hình fsearch loại trừ: %s yêu cầu một giá trị\n"
 
 #: src/fsearch_cli_config.c:909
 msgid "fsearch config excludes: missing PATTERN\n"
-msgstr ""
+msgstr "cấu hình fsearch loại trừ: thiếu MẪU\n"
 
 #: src/fsearch_cli_config.c:914
 #, c-format
 msgid "fsearch config excludes: invalid type: %s\n"
-msgstr ""
+msgstr "cấu hình fsearch loại trừ: loại không hợp lệ: %s\n"
 
 #: src/fsearch_cli_config.c:919
 #, c-format
 msgid "fsearch config excludes: invalid scope: %s\n"
-msgstr ""
+msgstr "cấu hình fsearch loại trừ: phạm vi không hợp lệ: %s\n"
 
 #: src/fsearch_cli_config.c:924
 #, c-format
 msgid "fsearch config excludes: invalid target: %s\n"
-msgstr ""
+msgstr "cấu hình fsearch loại trừ: mục tiêu không hợp lệ: %s\n"
 
 #: src/fsearch_cli_config.c:954
 #, c-format
 msgid "fsearch config excludes: exclusion not found: %s\n"
-msgstr ""
+msgstr "cấu hình fsearch loại trừ: không tìm thấy loại trừ: %s\n"
 
 #: src/fsearch_cli_config.c:1022
 msgid "filters reset\n"
-msgstr ""
+msgstr "thiết lập lại bộ lọc\n"
 
 #: src/fsearch_cli_config.c:1029
 #, c-format
 msgid "fsearch config filters: unknown operation: %s\n"
-msgstr ""
+msgstr "bộ lọc cấu hình fsearch: thao tác không xác định: %s\n"
 
 #: src/fsearch_cli_config.c:1051
 #, c-format
 msgid "fsearch config filters: %s requires a value\n"
-msgstr ""
+msgstr "bộ lọc cấu hình fsearch: %s yêu cầu một giá trị\n"
 
 #: src/fsearch_cli_config.c:1094
 msgid "fsearch config filters: missing NAME\n"
-msgstr ""
+msgstr "bộ lọc cấu hình fsearch: thiếu NAME\n"
 
 #: src/fsearch_cli_config.c:1100 src/fsearch_cli_config.c:1111
 #, c-format
 msgid "fsearch config filters: name not found: %s\n"
-msgstr ""
+msgstr "bộ lọc cấu hình fsearch: không tìm thấy tên: %s\n"
 
 #: src/fsearch_cli_config.c:1107
 #, c-format
 msgid "fsearch config filters: name already exists: %s\n"
-msgstr ""
+msgstr "bộ lọc cấu hình fsearch: tên đã tồn tại: %s\n"
 
 #: src/fsearch_cli_config.c:1145
 #, c-format
 msgid "%s\tmacro=%s query=%s\n"
-msgstr ""
+msgstr "%s macro=%s truy vấn=%s\n"
 
 #: src/fsearch_cli_config.c:1193
 msgid "fsearch config reset requires --yes\n"
-msgstr ""
+msgstr "thiết lập lại cấu hình fsearch yêu cầu --yes\n"
 
 #: src/fsearch_cli_config.c:1201
 msgid ""
 "fsearch config reset: --rescan requires roots, database, excludes, or all\n"
-msgstr ""
+msgstr "Đặt lại cấu hình fsearch: --rescan yêu cầu gốc, cơ sở dữ liệu, loại trừ hoặc tất cả\n"
 
 #: src/fsearch_cli_config.c:1241
 #, c-format
 msgid "fsearch config: unknown setting or section: %s\n"
-msgstr ""
+msgstr "cấu hình fsearch: cài đặt hoặc phần không xác định: %s\n"
 
 #: src/fsearch_cli_config.c:1246
 #, c-format
 msgid "%s settings reset\n"
-msgstr ""
+msgstr "đặt lại cài đặt %s\n"
 
 #: src/fsearch_cli_config.c:1253
 msgid ""
 "configuration: missing; defaults active\n"
 "index: unknown\n"
 msgstr ""
+"cấu hình: thiếu; mặc định hoạt động\n"
+"chỉ số: không rõ\n"
 
 #: src/fsearch_cli_config.c:1261
 msgid ""
 "configuration: ok\n"
 "index: missing or unreadable\n"
 msgstr ""
+"cấu hình: ổn\n"
+"chỉ mục: thiếu hoặc không thể đọc được\n"
 
 #: src/fsearch_cli_config.c:1266
 #, c-format
@@ -768,121 +902,125 @@ msgid ""
 "configuration: ok\n"
 "index: %s\n"
 msgstr ""
+"cấu hình: ổn\n"
+"chỉ số: %s\n"
 
 #: src/fsearch_cli_config.c:1266
 msgid "current"
-msgstr ""
+msgstr "hiện hành"
 
 #: src/fsearch_cli_config.c:1266
 msgid "stale"
-msgstr ""
+msgstr "cũ kỹ"
 
 #: src/fsearch_cli_config.c:1278
 msgid ""
 "Usage: fsearch config path\n"
 "Print the active FSearch configuration file path.\n"
 msgstr ""
+"Cách sử dụng: fsearch config path\n"
+"In đường dẫn tệp cấu hình FSearch đang hoạt động.\n"
 
 #: src/fsearch_cli_config.c:1321
 #, c-format
 msgid "fsearch config: unknown command: %s\n"
-msgstr ""
+msgstr "cấu hình fsearch: lệnh không xác định: %s\n"
 
 #: src/fsearch_database.c:795
 msgid "Index rescan: applying changes…"
-msgstr ""
+msgstr "Quét lại chỉ mục: áp dụng các thay đổi…"
 
 #: src/fsearch_database_file.c:1343
 msgid "Loading folders…"
-msgstr ""
+msgstr "Đang tải thư mục…"
 
 #: src/fsearch_database_file.c:1359
 msgid "Loading files…"
-msgstr ""
+msgstr "Đang tải tập tin…"
 
 #: src/fsearch_database_index_store.c:925 src/fsearch_statusbar.c:73
 #: src/fsearch_statusbar.ui:90
 msgid "Sorting…"
-msgstr ""
+msgstr "Đang sắp xếp…"
 
 #: src/fsearch_database_preferences_widget.c:162
 #: src/fsearch_database_preferences_widget.c:176
 msgid "Select folder"
-msgstr ""
+msgstr "Chọn thư mục"
 
 #: src/fsearch_database_preferences_widget.c:165
 #: src/fsearch_database_preferences_widget.c:180
 #: src/fsearch_filter_editor.c:104 src/fsearch_preferences_dialog.c:331
 msgid "_Cancel"
-msgstr ""
+msgstr "_Hủy bỏ"
 
 #: src/fsearch_database_preferences_widget.c:167
 #: src/fsearch_database_preferences_widget.c:179
 msgid "_Select"
-msgstr ""
+msgstr "_Lựa chọn"
 
 #: src/fsearch_database_preferences_widget.c:389
 msgid "Literal"
-msgstr ""
+msgstr "nghĩa đen"
 
 #: src/fsearch_database_preferences_widget.c:391
 msgid "Wildcard"
-msgstr ""
+msgstr "Ký tự đại diện"
 
 #: src/fsearch_database_preferences_widget.c:393
 msgid "Regex"
-msgstr ""
+msgstr "Biểu thức chính quy"
 
 #: src/fsearch_database_preferences_widget.c:414
 msgid "Full Path"
-msgstr ""
+msgstr "Đường dẫn đầy đủ"
 
 #: src/fsearch_database_preferences_widget.c:416
 msgid "Basename"
-msgstr ""
+msgstr "Tên cơ sở"
 
 #: src/fsearch_database_preferences_widget.c:434
 msgid "Files & Folders"
-msgstr ""
+msgstr "Tệp & Thư mục"
 
 #: src/fsearch_database_preferences_widget.c:436 src/fsearch_filter.c:114
 msgid "Files"
-msgstr ""
+msgstr "Tập tin"
 
 #: src/fsearch_database_preferences_widget.c:438 src/fsearch_filter.c:113
 msgid "Folders"
-msgstr ""
+msgstr "Thư mục"
 
 #: src/fsearch_database_preferences_widget.c:635
 #: src/fsearch_database_preferences_widget.c:860
 msgid "Active"
-msgstr ""
+msgstr "Tích cực"
 
 #: src/fsearch_database_preferences_widget.c:640
 msgid "Pattern"
-msgstr ""
+msgstr "Mẫu"
 
 #: src/fsearch_database_preferences_widget.c:694 src/fsearch_window.c:756
 #: src/menus.ui:275
 msgid "Type"
-msgstr ""
+msgstr "Kiểu"
 
 #: src/fsearch_database_preferences_widget.c:700
 msgid "Match"
-msgstr ""
+msgstr "Cuộc thi đấu"
 
 #: src/fsearch_database_preferences_widget.c:706
 msgid "Applies To"
-msgstr ""
+msgstr "Áp dụng cho"
 
 #: src/fsearch_database_preferences_widget.c:864 src/fsearch_window.c:742
 #: src/menus.ui:219 src/menus.ui:267
 msgid "Path"
-msgstr ""
+msgstr "Con đường"
 
 #: src/fsearch_database_preferences_widget.ui:78
 msgid "Enter path…"
-msgstr ""
+msgstr "Nhập đường dẫn…"
 
 #: src/fsearch_database_preferences_widget.ui:97
 #: src/fsearch_database_preferences_widget.ui:372
@@ -891,191 +1029,195 @@ msgid ""
 "                                            database\n"
 "                                        "
 msgstr ""
+"Thêm đường dẫn để đưa vào\n"
+"                                            cơ sở dữ liệu"
 
 #: src/fsearch_database_preferences_widget.ui:176
 msgid "Attempt to monitor"
-msgstr ""
+msgstr "Cố gắng giám sát"
 
 #: src/fsearch_database_preferences_widget.ui:191
 msgid "Scan after launch"
-msgstr ""
+msgstr "Quét sau khi khởi chạy"
 
 #: src/fsearch_database_preferences_widget.ui:206
 msgid "Stay on one file system"
-msgstr ""
+msgstr "Ở trên một hệ thống tập tin"
 
 #: src/fsearch_database_preferences_widget.ui:221
 msgid "Rescan every"
-msgstr ""
+msgstr "Quét lại mỗi"
 
 #: src/fsearch_database_preferences_widget.ui:254
 msgid "Hours:"
-msgstr ""
+msgstr "Giờ:"
 
 #: src/fsearch_database_preferences_widget.ui:298
 msgid "Minutes:"
-msgstr ""
+msgstr "Phút:"
 
 #: src/fsearch_database_preferences_widget.ui:310
 msgid "30"
-msgstr ""
+msgstr "30"
 
 #: src/fsearch_database_preferences_widget.ui:391
 msgid "Remove selected path"
-msgstr ""
+msgstr "Xóa đường dẫn đã chọn"
 
 #: src/fsearch_database_preferences_widget.ui:418
 msgid "Include"
-msgstr ""
+msgstr "Bao gồm"
 
 #: src/fsearch_database_preferences_widget.ui:477
 msgid ""
 "Add exclude rule\n"
 "                                                "
 msgstr ""
+"Thêm quy tắc loại trừ"
 
 #: src/fsearch_database_preferences_widget.ui:495
 msgid ""
 "Remove selected path\n"
 "                                                "
 msgstr ""
+"Xóa đường dẫn đã chọn"
 
 #: src/fsearch_database_preferences_widget.ui:512
 msgid "Restore default exclude list"
-msgstr ""
+msgstr "Khôi phục danh sách loại trừ mặc định"
 
 #: src/fsearch_database_preferences_widget.ui:541
 msgid "Exclude hidden files and folders"
-msgstr ""
+msgstr "Loại trừ các tập tin và thư mục ẩn"
 
 #: src/fsearch_database_preferences_widget.ui:563
 msgid "Exclude"
-msgstr ""
+msgstr "Loại trừ"
 
 #: src/fsearch_file_utils.c:161
 msgctxt "Will be followed by the path of the file."
 msgid "Error when removing file"
-msgstr ""
+msgstr "Lỗi khi xóa tập tin"
 
 #: src/fsearch_file_utils.c:163
 msgid "Failed to get path"
-msgstr ""
+msgstr "Không tìm được đường dẫn"
 
 #: src/fsearch_file_utils.c:277
 msgctxt "Will be followed by the file path."
 msgid "Error when getting information from file"
-msgstr ""
+msgstr "Lỗi khi lấy thông tin từ file"
 
 #: src/fsearch_file_utils.c:279
 msgid "Failed to get application information"
-msgstr ""
+msgstr "Không thể lấy được thông tin ứng dụng"
 
 #: src/fsearch_file_utils.c:294
 msgctxt "Will be followed by the content type string."
 msgid "Error when getting information for content type"
-msgstr ""
+msgstr "Lỗi khi lấy thông tin cho loại nội dung"
 
 #: src/fsearch_file_utils.c:296
 msgid "No default application registered"
-msgstr ""
+msgstr "Không có ứng dụng mặc định nào được đăng ký"
 
 #: src/fsearch_file_utils.c:524
 msgctxt "Will be followed by the path of the folder."
 msgid "Error when opening parent folder"
-msgstr ""
+msgstr "Lỗi khi mở thư mục mẹ"
 
 #: src/fsearch_file_utils.c:526
 msgid "Failed to get parent path"
-msgstr ""
+msgstr "Không lấy được đường dẫn gốc"
 
 #: src/fsearch_file_utils.c:530
 msgctxt "Will be followed by the path of the folder."
 msgid "Error while opening folder"
-msgstr ""
+msgstr "Lỗi khi mở thư mục"
 
 #: src/fsearch_file_utils.c:533
 msgid "Failed to build open command"
-msgstr ""
+msgstr "Không thể xây dựng lệnh mở"
 
 #: src/fsearch_file_utils.c:589
 msgid "Folder"
-msgstr ""
+msgstr "Thư mục"
 
 #: src/fsearch_file_utils.c:595
 msgid "Unknown Type"
-msgstr ""
+msgstr "Loại không xác định"
 
 #: src/fsearch_filter.c:112
 msgid "All"
-msgstr ""
+msgstr "Tất cả"
 
 #: src/fsearch_filter.c:115
 msgid "Applications"
-msgstr ""
+msgstr "Ứng dụng"
 
 #: src/fsearch_filter.c:116
 msgid "Archives"
-msgstr ""
+msgstr "Lưu trữ"
 
 #: src/fsearch_filter.c:117
 msgid "Audio"
-msgstr ""
+msgstr "Âm thanh"
 
 #: src/fsearch_filter.c:118
 msgid "Documents"
-msgstr ""
+msgstr "Tài liệu"
 
 #: src/fsearch_filter.c:119
 msgid "Pictures"
-msgstr ""
+msgstr "Hình ảnh"
 
 #: src/fsearch_filter.c:120
 msgid "Videos"
-msgstr ""
+msgstr "Video"
 
 #: src/fsearch_filter_editor.c:79
 msgid "Macro names must not contain `:` characters."
-msgstr ""
+msgstr "Tên macro không được chứa ký tự `:`."
 
 #: src/fsearch_filter_editor.c:105 src/fsearch_preferences_dialog.c:332
 msgid "_OK"
-msgstr ""
+msgstr "_ĐƯỢC RỒI"
 
 #: src/fsearch_filter_editor.ui:10 src/fsearch_filter_preferences_widget.c:156
 msgid "Edit filter"
-msgstr ""
+msgstr "Chỉnh sửa bộ lọc"
 
 #: src/fsearch_filter_editor.ui:50
 msgid "Name:"
-msgstr ""
+msgstr "Tên:"
 
 #: src/fsearch_filter_editor.ui:61
 msgid "The unique name of this filter"
-msgstr ""
+msgstr "Tên duy nhất của bộ lọc này"
 
 #: src/fsearch_filter_editor.ui:64
 msgid "Unique filter name"
-msgstr ""
+msgstr "Tên bộ lọc duy nhất"
 
 #: src/fsearch_filter_editor.ui:73
 msgid "Search in path"
-msgstr ""
+msgstr "Tìm kiếm trong đường dẫn"
 
 #: src/fsearch_filter_editor.ui:87
 msgid "Enable regular expressions"
-msgstr ""
+msgstr "Bật biểu thức chính quy"
 
 #: src/fsearch_filter_editor.ui:101
 msgid "Match case"
-msgstr ""
+msgstr "Hộp diêm"
 
 #: src/fsearch_filter_editor.ui:146
 msgid "Query:"
-msgstr ""
+msgstr "Truy vấn:"
 
 #: src/fsearch_filter_editor.ui:160
 msgid "Macro:"
-msgstr ""
+msgstr "Vĩ mô:"
 
 #: src/fsearch_filter_editor.ui:171
 msgid ""
@@ -1083,227 +1225,228 @@ msgid ""
 "search entry by typing its text followed by ':'\n"
 "                "
 msgstr ""
+"Macro cho bộ lọc này. Macro cho phép bạn truy cập bộ lọc này từ mục tìm kiếm bằng cách nhập văn bản của nó theo sau là ':'"
 
 #: src/fsearch_filter_preferences_widget.c:133
 msgid "Add filter"
-msgstr ""
+msgstr "Thêm bộ lọc"
 
 #: src/fsearch_filter_preferences_widget.c:315 src/fsearch_window.c:735
 #: src/menus.ui:215 src/menus.ui:263
 msgid "Name"
-msgstr ""
+msgstr "Tên"
 
 #: src/fsearch_filter_preferences_widget.c:316
 msgid "Macro"
-msgstr ""
+msgstr "Vĩ mô"
 
 #: src/fsearch_filter_preferences_widget.c:317
 msgid "Query"
-msgstr ""
+msgstr "Truy vấn"
 
 #: src/fsearch_filter_preferences_widget.ui:77
 msgid "Add new filter"
-msgstr ""
+msgstr "Thêm bộ lọc mới"
 
 #: src/fsearch_filter_preferences_widget.ui:95
 msgid "Remove selected filter"
-msgstr ""
+msgstr "Xóa bộ lọc đã chọn"
 
 #: src/fsearch_filter_preferences_widget.ui:113
 msgid "Edit selected filter"
-msgstr ""
+msgstr "Chỉnh sửa bộ lọc đã chọn"
 
 #: src/fsearch_filter_preferences_widget.ui:129
 msgid "Restore default filters"
-msgstr ""
+msgstr "Khôi phục bộ lọc mặc định"
 
 #: src/fsearch_listview_popup.c:36
 msgid "Properties…"
-msgstr ""
+msgstr "Của cải…"
 
 #: src/fsearch_listview_popup.c:163
 msgid "Other Application…"
-msgstr ""
+msgstr "Ứng dụng khác…"
 
 #: src/fsearch_overlay.ui:44
 msgid "Empty Database"
-msgstr ""
+msgstr "Cơ sở dữ liệu trống"
 
 #: src/fsearch_overlay.ui:60
 msgid "Add folders"
-msgstr ""
+msgstr "Thêm thư mục"
 
 #: src/fsearch_overlay.ui:108
 msgid "Loading Database…"
-msgstr ""
+msgstr "Đang tải cơ sở dữ liệu…"
 
 #: src/fsearch_overlay.ui:123
 msgid "This won't take long."
-msgstr ""
+msgstr "Việc này sẽ không mất nhiều thời gian đâu."
 
 #: src/fsearch_overlay.ui:171 src/fsearch_statusbar.ui:312
 msgid "Updating Database…"
-msgstr ""
+msgstr "Đang cập nhật cơ sở dữ liệu…"
 
 #: src/fsearch_overlay.ui:186 src/fsearch_overlay.ui:383
 msgid "This may take a while."
-msgstr ""
+msgstr "Điều này có thể mất một thời gian."
 
 #: src/fsearch_overlay.ui:241
 msgid "Empty Query"
-msgstr ""
+msgstr "Truy vấn trống"
 
 #: src/fsearch_overlay.ui:256
 msgid "Press <b>Ctrl + F</b> and start typing."
-msgstr ""
+msgstr "Nhấn <b>Ctrl + F</b> và bắt đầu nhập."
 
 #: src/fsearch_overlay.ui:304
 msgid "No Results Found"
-msgstr ""
+msgstr "Không tìm thấy kết quả"
 
 #: src/fsearch_overlay.ui:319
 msgid "Try a different search"
-msgstr ""
+msgstr "Hãy thử tìm kiếm khác"
 
 #: src/fsearch_overlay.ui:368
 msgid "Sorting results…"
-msgstr ""
+msgstr "Sắp xếp kết quả…"
 
 #: src/fsearch_preferences.ui:7 src/fsearch_window.ui:251 src/menus.ui:84
 msgid "Preferences"
-msgstr ""
+msgstr "Tùy chọn"
 
 #: src/fsearch_preferences.ui:76
 msgid "Enable dark theme"
-msgstr ""
+msgstr "Bật chủ đề tối"
 
 #: src/fsearch_preferences.ui:97
 msgid "Enable client-side decorations (requires restart)"
-msgstr ""
+msgstr "Bật trang trí phía máy khách (yêu cầu khởi động lại)"
 
 #: src/fsearch_preferences.ui:117
 msgid "Use binary units instead of decimal units"
-msgstr ""
+msgstr "Sử dụng đơn vị nhị phân thay vì đơn vị thập phân"
 
 #: src/fsearch_preferences.ui:138
 msgid "Remember window size"
-msgstr ""
+msgstr "Ghi nhớ kích thước cửa sổ"
 
 #: src/fsearch_preferences.ui:159
 msgid "Exit on Escape"
-msgstr ""
+msgstr "Thoát trên Escape"
 
 #: src/fsearch_preferences.ui:202
 msgid "with keyboard shortcuts or menu entries"
-msgstr ""
+msgstr "bằng phím tắt hoặc mục menu"
 
 #: src/fsearch_preferences.ui:223
 msgid "with double click"
-msgstr ""
+msgstr "bằng cách nhấp đúp chuột"
 
 #: src/fsearch_preferences.ui:257
 msgid "Behaviour after successfully opening a file:"
-msgstr ""
+msgstr "Hành vi sau khi mở file thành công:"
 
 #: src/fsearch_preferences.ui:273
 msgid "Nothing"
-msgstr ""
+msgstr "Không có gì"
 
 #: src/fsearch_preferences.ui:274
 msgid "Minimize"
-msgstr ""
+msgstr "Giảm thiểu"
 
 #: src/fsearch_preferences.ui:275
 msgid "Close"
-msgstr ""
+msgstr "Đóng"
 
 #: src/fsearch_preferences.ui:309
 msgid "General:"
-msgstr ""
+msgstr "Tổng quan:"
 
 #: src/fsearch_preferences.ui:344
 msgid "Show highlighted search terms"
-msgstr ""
+msgstr "Hiển thị cụm từ tìm kiếm được đánh dấu"
 
 #: src/fsearch_preferences.ui:366
 msgid "Show tooltips"
-msgstr ""
+msgstr "Hiển thị chú giải công cụ"
 
 #: src/fsearch_preferences.ui:387
 msgid "Show icons in name column"
-msgstr ""
+msgstr "Hiển thị biểu tượng ở cột tên"
 
 #: src/fsearch_preferences.ui:408
 msgid "Remember column configuration"
-msgstr ""
+msgstr "Ghi nhớ cấu hình cột"
 
 #: src/fsearch_preferences.ui:429
 msgid "Remember sort order"
-msgstr ""
+msgstr "Nhớ thứ tự sắp xếp"
 
 #: src/fsearch_preferences.ui:450
 msgid "Open path with double click in path column"
-msgstr ""
+msgstr "Mở đường dẫn bằng cách nhấp đúp vào cột đường dẫn"
 
 #: src/fsearch_preferences.ui:471
 msgid "Single click to open"
-msgstr ""
+msgstr "Bấm một lần để mở"
 
 #: src/fsearch_preferences.ui:492
 msgid "Launch desktop files"
-msgstr ""
+msgstr "Khởi chạy tập tin máy tính để bàn"
 
 #: src/fsearch_preferences.ui:519
 msgid "Results:"
-msgstr ""
+msgstr "Kết quả:"
 
 #: src/fsearch_preferences.ui:560
 msgid "Show database indexing status"
-msgstr ""
+msgstr "Hiển thị trạng thái lập chỉ mục cơ sở dữ liệu"
 
 #: src/fsearch_preferences.ui:587
 msgid "Statusbar:"
-msgstr ""
+msgstr "Thanh trạng thái:"
 
 #: src/fsearch_preferences.ui:628
 msgid "Show warning dialogs when:"
-msgstr ""
+msgstr "Hiển thị hộp thoại cảnh báo khi:"
 
 #: src/fsearch_preferences.ui:638
 msgid "file / folder failed to open"
-msgstr ""
+msgstr "tập tin/thư mục không mở được"
 
 #: src/fsearch_preferences.ui:667
 msgid "Dialogs:"
-msgstr ""
+msgstr "Hộp thoại:"
 
 #: src/fsearch_preferences.ui:692
 msgid "Interface"
-msgstr ""
+msgstr "Giao diện"
 
 #: src/fsearch_preferences.ui:711
 msgid "Search in path when query contains path separators"
-msgstr ""
+msgstr "Tìm kiếm trong đường dẫn khi truy vấn chứa dấu phân cách đường dẫn"
 
 #: src/fsearch_preferences.ui:730
 msgid "Search as you type"
-msgstr ""
+msgstr "Tìm kiếm khi bạn nhập"
 
 #: src/fsearch_preferences.ui:750
 msgid "Hide results when search is empty"
-msgstr ""
+msgstr "Ẩn kết quả khi tìm kiếm trống"
 
 #: src/fsearch_preferences.ui:769
 msgid "Match case when query contains at least one upper case character"
-msgstr ""
+msgstr "Khớp chữ hoa khi truy vấn chứa ít nhất một ký tự chữ hoa"
 
 #: src/fsearch_preferences.ui:801
 msgid "Filter:"
-msgstr ""
+msgstr "Lọc:"
 
 #: src/fsearch_preferences.ui:822 src/fsearch_window.ui:639
 msgid "Search"
-msgstr ""
+msgstr "Tìm kiếm"
 
 #: src/fsearch_preferences.ui:855
 msgid ""
@@ -1315,6 +1458,11 @@ msgid ""
 "Note that not all system themes provide such a darker variant, therefore "
 "enabling this setting might not have an effect."
 msgstr ""
+"<b>Bật chủ đề tối:</b>\n"
+"\n"
+"Nếu được bật, chủ đề hệ thống sẽ được yêu cầu sử dụng kiểu tối hơn cho ứng dụng <i>(tức là các thành phần giao diện người dùng tối trên văn bản sáng)</i>.\n"
+"\n"
+"Lưu ý rằng không phải tất cả các chủ đề hệ thống đều cung cấp biến thể tối hơn như vậy, do đó việc bật cài đặt này có thể không có tác dụng."
 
 #: src/fsearch_preferences.ui:873
 msgid ""
@@ -1328,6 +1476,12 @@ msgid ""
 "This resembles a more traditional UI layout and takes a little bit more "
 "space."
 msgstr ""
+"<b>Bật trang trí phía máy khách:</b>\n"
+"\n"
+"Nếu được bật, mục tìm kiếm và menu chính sẽ được hiển thị trên thanh tiêu đề của cửa sổ.\n"
+"\n"
+"Nếu bị tắt, menu chính sẽ được hiển thị dưới dạng thanh menu với mục tìm kiếm bên dưới.\n"
+"Điều này giống với bố cục giao diện người dùng truyền thống hơn và chiếm nhiều không gian hơn một chút."
 
 #: src/fsearch_preferences.ui:893
 msgid ""
@@ -1340,6 +1494,12 @@ msgid ""
 "\t• <b>Decimal  units:</b> This refers to decimal SI prefixes <i>(e.g. 1 kB "
 "= 1000 bytes)</i>"
 msgstr ""
+"<b>Sử dụng đơn vị nhị phân thay vì đơn vị thập phân:</b>\n"
+"\n"
+"Cài đặt này kiểm soát cách hiển thị kích thước tệp.\n"
+"\n"
+"\t• <b>Đơn vị nhị phân:</b> Điều này đề cập đến tiền tố IEC nhị phân <i>(ví dụ: 1 KiB = 1024 byte)</i>\n"
+"\t• <b>Đơn vị thập phân:</b> Điều này đề cập đến tiền tố SI thập phân <i>(ví dụ: 1 kB = 1000 byte)</i>"
 
 #: src/fsearch_preferences.ui:913
 msgid ""
@@ -1351,6 +1511,11 @@ msgid ""
 "Note that some window managers ignore this request and force the window to "
 "have a different size."
 msgstr ""
+"<b>Ghi nhớ kích thước cửa sổ:</b>\n"
+"\n"
+"Nếu được bật, kích thước cửa sổ từ phiên trước đó sẽ được khôi phục khi bạn mở cửa sổ FSearch.\n"
+"\n"
+"Lưu ý rằng một số trình quản lý cửa sổ bỏ qua yêu cầu này và buộc cửa sổ phải có kích thước khác."
 
 #: src/fsearch_preferences.ui:932
 msgid ""
@@ -1368,6 +1533,16 @@ msgid ""
 "\t• <b>keyboard shortcuts or menu entries</b> and/or\n"
 "\t• <b>mouse click</b>"
 msgstr ""
+"<b>Hành vi sau khi mở tệp thành công:</b>\n"
+"\n"
+"Khi một tập tin/thư mục được mở thành công, có thể thực hiện một trong các hành động sau:\n"
+"\t• <b>Không có gì:</b> Không có gì xảy ra.\n"
+"                        • <b>Thu nhỏ:</b> Cửa sổ FSearch hiện được chọn sẽ được thu nhỏ.\n"
+"\t• <b>Đóng:</b> Thoát FSearch.\n"
+"\n"
+"Bạn có thể định cấu hình xem những hành động đó có được kích hoạt hay không khi tệp được mở bằng\n"
+"\t• <b>phím tắt hoặc mục menu</b> và/hoặc\n"
+"\t• <b>nhấp chuột</b>"
 
 #: src/fsearch_preferences.ui:956
 msgid ""
@@ -1383,6 +1558,14 @@ msgid ""
 "This also works for regular expressions and wildcard expressions starting or "
 "ending with an asterisk. "
 msgstr ""
+"<b>Hiển thị cụm từ tìm kiếm được đánh dấu:</b>\n"
+"\n"
+"Nếu được bật, cụm từ tìm kiếm sẽ được đánh dấu trong chế độ xem kết quả. Ví dụ: khi bạn tìm kiếm \\\"foo\\\" tất cả sự xuất hiện của <i>foo</i> trong tên tệp/thư mục sẽ được đánh dấu bằng các ký tự in đậm:\n"
+"\n"
+"\t<b>foo</b>bar.txt\n"
+"\ttập tin.<b>foo</b>\n"
+"\n"
+"Điều này cũng áp dụng cho các biểu thức chính quy và biểu thức ký tự đại diện bắt đầu hoặc kết thúc bằng dấu hoa thị."
 
 #: src/fsearch_preferences.ui:978
 msgid ""
@@ -1391,6 +1574,9 @@ msgid ""
 "If enabled, the results view will show the full path of the focused file/"
 "folder in a small tooltip window."
 msgstr ""
+"<b>Hiển thị chú giải công cụ:</b>\n"
+"\n"
+"Nếu được bật, chế độ xem kết quả sẽ hiển thị đường dẫn đầy đủ của tệp/thư mục được tập trung trong một cửa sổ chú giải công cụ nhỏ."
 
 #: src/fsearch_preferences.ui:995
 msgid ""
@@ -1398,6 +1584,9 @@ msgid ""
 "\n"
 "If enabled, file/folder icons will be shown in the name column."
 msgstr ""
+"<b>Hiển thị biểu tượng ở cột tên:</b>\n"
+"\n"
+"Nếu được bật, các biểu tượng tệp/thư mục sẽ được hiển thị trong cột tên."
 
 #: src/fsearch_preferences.ui:1012
 msgid ""
@@ -1407,6 +1596,9 @@ msgid ""
 "session will be restored when you open an FSearch window. This includes the "
 "size and visibility of all columns."
 msgstr ""
+"<b>Ghi nhớ cấu hình cột:</b>\n"
+"\n"
+"Nếu được bật, cấu hình cột của chế độ xem kết quả từ phiên trước đó sẽ được khôi phục khi bạn mở cửa sổ FSearch. Điều này bao gồm kích thước và khả năng hiển thị của tất cả các cột."
 
 #: src/fsearch_preferences.ui:1029
 msgid ""
@@ -1415,6 +1607,9 @@ msgid ""
 "If enabled, the sort order of the results view from the previous session "
 "will be restored when you open an FSearch window."
 msgstr ""
+"<b>Ghi nhớ thứ tự sắp xếp:</b>\n"
+"\n"
+"Nếu được bật, thứ tự sắp xếp của chế độ xem kết quả từ phiên trước đó sẽ được khôi phục khi bạn mở cửa sổ FSearch."
 
 #: src/fsearch_preferences.ui:1046
 msgid ""
@@ -1422,6 +1617,9 @@ msgid ""
 "\n"
 "If enabled, double clicking in the path column will open the selected path."
 msgstr ""
+"<b>Mở đường dẫn bằng cách nhấp đúp chuột vào cột đường dẫn:</b>\n"
+"\n"
+"Nếu được bật, nhấp đúp vào cột đường dẫn sẽ mở đường dẫn đã chọn."
 
 #: src/fsearch_preferences.ui:1063
 msgid ""
@@ -1431,6 +1629,9 @@ msgid ""
 "want to select a file/folder while this setting is active, you need to hold "
 "<i>Ctrl</i> at the same time while clicking the file/folder."
 msgstr ""
+"<b>Một cú nhấp chuột để mở:</b>\n"
+"\n"
+"Nếu được bật, một cú nhấp chuột sẽ mở tệp/thư mục đã chọn. Nếu bạn chỉ muốn chọn một tệp/thư mục trong khi cài đặt này đang hoạt động, bạn cần giữ <i>Ctrl</i> cùng lúc trong khi nhấp vào tệp/thư mục."
 
 #: src/fsearch_preferences.ui:1080
 msgid ""
@@ -1439,6 +1640,9 @@ msgid ""
 "If enabled, the path that is currently being indexed is displayed in the "
 "statusbar."
 msgstr ""
+"<b>Hiển thị trạng thái lập chỉ mục cơ sở dữ liệu:</b>\n"
+"\n"
+"Nếu được bật, đường dẫn hiện đang được lập chỉ mục sẽ được hiển thị trên thanh trạng thái."
 
 #: src/fsearch_preferences.ui:1097
 msgid ""
@@ -1447,6 +1651,9 @@ msgid ""
 "If enabled, a warning dialog is displayed when a file or folder failed to "
 "open."
 msgstr ""
+"<b>Hiển thị hộp thoại cảnh báo:</b>\n"
+"\n"
+"Nếu được bật, hộp thoại cảnh báo sẽ hiển thị khi không mở được tệp hoặc thư mục."
 
 #: src/fsearch_preferences.ui:1114
 msgid ""
@@ -1455,6 +1662,9 @@ msgid ""
 "If enabled, search terms containing path separators (i.e. \"/\") will be "
 "automatically matched against the full path of a file or folder."
 msgstr ""
+"<b>Tìm kiếm trong đường dẫn khi truy vấn chứa dấu phân cách đường dẫn:</b>\n"
+"\n"
+"Nếu được bật, các cụm từ tìm kiếm có chứa dấu phân cách đường dẫn (tức là \\\"/\\\") sẽ được tự động khớp với đường dẫn đầy đủ của tệp hoặc thư mục."
 
 #: src/fsearch_preferences.ui:1131
 msgid ""
@@ -1464,6 +1674,9 @@ msgid ""
 "trigger a case-sensitive search. This means a search term like <i>Foo</i> "
 "will match <i>FooBar.txt</i> but not <i>foobar.txt</i>."
 msgstr ""
+"<b>So khớp chữ hoa khi truy vấn chứa ít nhất một ký tự chữ hoa:</b>\n"
+"\n"
+"Nếu được bật, các cụm từ tìm kiếm có chứa ít nhất một ký tự chữ hoa sẽ kích hoạt tìm kiếm phân biệt chữ hoa chữ thường. Điều này có nghĩa là cụm từ tìm kiếm như <i>Foo</i> sẽ khớp với <i>FooBar.txt</i> nhưng không khớp với <i>foobar.txt</i>."
 
 #: src/fsearch_preferences.ui:1148
 msgid ""
@@ -1474,6 +1687,11 @@ msgid ""
 "If disabled, all files and folders will be displayed when the search entry "
 "is empty."
 msgstr ""
+"<b>Ẩn kết quả khi tìm kiếm trống:</b>\n"
+"\n"
+"Nếu được bật, sẽ không có kết quả tìm kiếm nào được hiển thị khi mục tìm kiếm trống.\n"
+"\n"
+"Nếu bị tắt, tất cả các tệp và thư mục sẽ được hiển thị khi mục tìm kiếm trống."
 
 #: src/fsearch_preferences.ui:1167
 msgid ""
@@ -1484,6 +1702,11 @@ msgid ""
 "If disabled, the search is only updated when you hit <i>Enter</i> or press "
 "the search button. "
 msgstr ""
+"<b>Tìm kiếm khi bạn nhập:</b>\n"
+"\n"
+"Nếu được bật, tìm kiếm sẽ tự động được cập nhật với mỗi lần nhấn phím.\n"
+"\n"
+"Nếu bị tắt, tìm kiếm chỉ được cập nhật khi bạn nhấn <i>Enter</i> hoặc nhấn nút tìm kiếm."
 
 #: src/fsearch_preferences.ui:1186
 msgid ""
@@ -1492,6 +1715,9 @@ msgid ""
 "If enabled, the database will be updated automatically in the background "
 "when you start FSearch."
 msgstr ""
+"<b>Cập nhật cơ sở dữ liệu khi bắt đầu:</b>\n"
+"\n"
+"Nếu được bật, cơ sở dữ liệu sẽ được cập nhật tự động ở chế độ nền khi bạn khởi động FSearch."
 
 #: src/fsearch_preferences.ui:1203
 msgid ""
@@ -1505,6 +1731,13 @@ msgid ""
 "\t• <b>One Filesystem:</b> If enabled, FSearch won't cross filesystem "
 "boundaries for this folder"
 msgstr ""
+"<b>Các thư mục được bao gồm:</b>\n"
+"\n"
+"Danh sách này chứa tất cả các thư mục bạn muốn đưa vào cơ sở dữ liệu.\n"
+"\n"
+"\t• <b>Hoạt động:</b> Nếu được bật, đường dẫn sẽ được đưa vào cơ sở dữ liệu cần tìm kiếm.\n"
+"\t• <b>Đường dẫn:</b> Đường dẫn đầy đủ được đưa vào.\n"
+"\t• <b>Một hệ thống tệp:</b> Nếu được bật, FSearch sẽ không vượt qua ranh giới hệ thống tệp cho thư mục này"
 
 #: src/fsearch_preferences.ui:1224
 msgid ""
@@ -1513,6 +1746,9 @@ msgid ""
 "This button opens a dialog where you can select a folder you want to include "
 "in the database for searching."
 msgstr ""
+"<b>Thêm thư mục vào cơ sở dữ liệu:</b>\n"
+"\n"
+"Nút này mở ra một hộp thoại trong đó bạn có thể chọn thư mục bạn muốn đưa vào cơ sở dữ liệu để tìm kiếm."
 
 #: src/fsearch_preferences.ui:1241
 msgid ""
@@ -1522,6 +1758,9 @@ msgid ""
 "include that folder in the database. This is useful for adding a path "
 "directly without browsing for it."
 msgstr ""
+"<b>Thêm đường dẫn cụ thể:</b>\n"
+"\n"
+"Nhập đường dẫn đầy đủ của thư mục vào đây và nhấp vào nút bên cạnh để đưa thư mục đó vào cơ sở dữ liệu. Điều này rất hữu ích khi thêm đường dẫn trực tiếp mà không cần duyệt tìm nó."
 
 #: src/fsearch_preferences.ui:1258
 msgid ""
@@ -1529,6 +1768,9 @@ msgid ""
 "\n"
 "This removes the selected folder from the list of included folders."
 msgstr ""
+"<b>Xóa hàng đã chọn:</b>\n"
+"\n"
+"Thao tác này sẽ xóa thư mục đã chọn khỏi danh sách các thư mục được bao gồm."
 
 #: src/fsearch_preferences.ui:1275
 msgid ""
@@ -1541,6 +1783,11 @@ msgid ""
 "system resources per watched folder. For large directory trees with many "
 "files the system may run out of resources to watch them all."
 msgstr ""
+"<b>Cố gắng theo dõi:</b>\n"
+"\n"
+"Nếu được bật, FSearch sẽ theo dõi các thay đổi trong thư mục này và tự động cập nhật cơ sở dữ liệu, do đó bạn không phải quét lại theo cách thủ công.\n"
+"\n"
+"Việc giám sát không được hỗ trợ trên mọi hệ thống tệp và sử dụng một lượng nhỏ tài nguyên hệ thống cho mỗi thư mục đã xem. Đối với những cây thư mục lớn có nhiều tệp, hệ thống có thể hết tài nguyên để xem tất cả."
 
 #: src/fsearch_preferences.ui:1294
 msgid ""
@@ -1549,6 +1796,9 @@ msgid ""
 "If enabled, this folder is rescanned every time FSearch starts, so the "
 "database reflects any changes made while FSearch wasn't running."
 msgstr ""
+"<b>Quét sau khi khởi chạy:</b>\n"
+"\n"
+"Nếu được bật, thư mục này sẽ được quét lại mỗi khi FSearch khởi động, do đó cơ sở dữ liệu phản ánh mọi thay đổi được thực hiện khi FSearch không chạy."
 
 #: src/fsearch_preferences.ui:1311
 msgid ""
@@ -1558,6 +1808,9 @@ msgid ""
 "folder. Mounted file systems below it (e.g. external drives or network "
 "shares) are skipped."
 msgstr ""
+"<b>Lưu lại trên một hệ thống tệp:</b>\n"
+"\n"
+"Nếu được bật, FSearch sẽ không vượt qua ranh giới hệ thống tệp khi quét thư mục này. Các hệ thống tệp được gắn bên dưới nó (ví dụ: ổ đĩa ngoài hoặc mạng chia sẻ) bị bỏ qua."
 
 #: src/fsearch_preferences.ui:1328
 msgid ""
@@ -1569,6 +1822,11 @@ msgid ""
 "This is useful for folders on file systems that can't be monitored for "
 "changes."
 msgstr ""
+"<b>Quét lại mọi:</b>\n"
+"\n"
+"Nếu được bật, thư mục này sẽ tự động được quét lại trong khoảng thời gian nhất định. Sử dụng các trường giờ và phút để đặt tần suất quét lại.\n"
+"\n"
+"Điều này hữu ích cho các thư mục trên hệ thống tệp không thể theo dõi các thay đổi."
 
 #: src/fsearch_preferences.ui:1347
 msgid ""
@@ -1589,6 +1847,15 @@ msgid ""
 "\t• <b>Applies To:</b> Whether the rule affects <i>Files</i>, <i>Folders</i> "
 "or both."
 msgstr ""
+"<b>Loại trừ quy tắc:</b>\n"
+"\n"
+"Danh sách này chứa các quy tắc cho các tệp và thư mục bạn muốn loại trừ khỏi cơ sở dữ liệu.\n"
+"\n"
+"\t• <b>Hoạt động:</b> Nếu được bật, quy tắc sẽ được áp dụng và các mục phù hợp sẽ bị loại trừ.\n"
+"\t• <b>Mẫu:</b> Văn bản khớp với từng mục, được diễn giải theo Loại.\n"
+"\t• <b>Loại:</b> Cách diễn giải mẫu — <i>Literal</i> (văn bản chính xác), <i>Ký tự đại diện</i> (sử dụng * và ?) hoặc <i>Regex</i> (biểu thức chính quy).\n"
+"\t• <b>Khớp:</b> Liệu mẫu có khớp với <i>Đường dẫn đầy đủ</i> của mục hay chỉ với <i>Tên cơ sở</i> của mục đó (tên không có đường dẫn).\n"
+"\t• <b>Áp dụng cho:</b> Liệu quy tắc có ảnh hưởng đến <i>Tệp</i>, <i>Thư mục</i> hay cả hai hay không."
 
 #: src/fsearch_preferences.ui:1370
 msgid ""
@@ -1597,6 +1864,9 @@ msgid ""
 "This adds a new, empty rule to the list. Edit its Pattern, Type, Match and "
 "Applies To columns to control what gets excluded from the database."
 msgstr ""
+"<b>Thêm quy tắc loại trừ:</b>\n"
+"\n"
+"Điều này thêm một quy tắc mới, trống vào danh sách. Chỉnh sửa các cột Mẫu, Loại, So khớp và Áp dụng cho để kiểm soát những gì bị loại khỏi cơ sở dữ liệu."
 
 #: src/fsearch_preferences.ui:1387
 msgid ""
@@ -1604,6 +1874,9 @@ msgid ""
 "\n"
 "This removes the selected rule from the list of exclude rules."
 msgstr ""
+"<b>Xóa hàng đã chọn:</b>\n"
+"\n"
+"Thao tác này sẽ xóa quy tắc đã chọn khỏi danh sách quy tắc loại trừ."
 
 #: src/fsearch_preferences.ui:1404
 msgid ""
@@ -1613,6 +1886,11 @@ msgid ""
 "\n"
 "⚠ All rules which were created or edited by the user will be lost! ⚠"
 msgstr ""
+"<b>Khôi phục các quy tắc loại trừ mặc định:</b>\n"
+"\n"
+"Nút này khôi phục bộ quy tắc loại trừ mặc định.\n"
+"\n"
+"⚠ Tất cả các quy tắc do người dùng tạo hoặc chỉnh sửa sẽ bị mất! ⚠"
 
 #: src/fsearch_preferences.ui:1423
 msgid ""
@@ -1623,6 +1901,9 @@ msgid ""
 "all files or folders which are called either <i>.git</i> or <i>.cache</i> or "
 "end with <i>.swp</i>."
 msgstr ""
+"<b>Loại trừ các tệp và thư mục khỏi cơ sở dữ liệu:</b>\n"
+"\n"
+"Đây là danh sách các tệp (hoặc thư mục) được phân tách bằng dấu chấm phẩy mà bạn muốn loại trừ khỏi cơ sở dữ liệu. Ví dụ: <i>.git;.cache;*.swp</i> sẽ loại trừ tất cả các tệp hoặc thư mục được gọi là <i>.git</i> hoặc <i>.cache</i> hoặc kết thúc bằng <i>.swp</i>."
 
 #: src/fsearch_preferences.ui:1440
 msgid ""
@@ -1631,10 +1912,13 @@ msgid ""
 "If enabled, hidden files and folders will be excluded from the database "
 "<i>(i.e. all files or folders which start with a dot character)</i>."
 msgstr ""
+"<b>Loại trừ các tệp và thư mục ẩn:</b>\n"
+"\n"
+"Nếu được bật, các tệp và thư mục ẩn sẽ bị loại trừ khỏi cơ sở dữ liệu <i>(tức là tất cả các tệp hoặc thư mục bắt đầu bằng ký tự dấu chấm)</i>."
 
 #: src/fsearch_preferences.ui:1457
 msgid "Focus a setting to get a detailed description of what it does."
-msgstr ""
+msgstr "Tập trung vào một cài đặt để có được mô tả chi tiết về chức năng của nó."
 
 #: src/fsearch_preferences.ui:1470
 msgid ""
@@ -1649,6 +1933,13 @@ msgid ""
 "\n"
 "<i><tt>fsearch --update-database</tt></i>"
 msgstr ""
+"<b>Cập nhật cơ sở dữ liệu định kỳ vào khoảng thời gian cụ thể:</b>\n"
+"\n"
+"Nếu được bật và miễn là FSearch đang chạy, cơ sở dữ liệu sẽ được cập nhật định kỳ với khoảng thời gian nhất định.\n"
+"\n"
+"Nếu bạn muốn cập nhật cơ sở dữ liệu ở chế độ nền, ngay cả khi FSearch không chạy, bạn nên sử dụng các công cụ như bộ đếm thời gian cron hoặc systemd để kích hoạt cập nhật định kỳ bằng:\n"
+"\n"
+"<i><tt>fsearch --update-database</tt></i>"
 
 #: src/fsearch_preferences.ui:1491
 msgid ""
@@ -1659,6 +1950,9 @@ msgid ""
 "launcher. Otherwise the <i>.desktop</i> file will be opened with the default "
 "handler for this type of files, which is usually a text editor."
 msgstr ""
+"<b>Khởi chạy các tệp trên máy tính để bàn:</b>\n"
+"\n"
+"Nếu được bật, việc kích hoạt tệp <i>.desktop</i> sẽ khởi chạy ứng dụng được xác định trong tệp đó. Bằng cách này, FSearch có thể hoạt động giống như một trình khởi chạy ứng dụng. Nếu không, tệp <i>.desktop</i> sẽ được mở bằng trình xử lý mặc định cho loại tệp này, thường là trình soạn thảo văn bản."
 
 #: src/fsearch_preferences.ui:1508
 msgid ""
@@ -1671,6 +1965,13 @@ msgid ""
 "the filter on demand\n"
 "\t• <b>Query:</b> The search term by which the database should be filtered"
 msgstr ""
+"<b>Bộ lọc:</b>\n"
+"\n"
+"Đây là danh sách tất cả các bộ lọc có sẵn. Bộ lọc là một tìm kiếm được xác định trước.\n"
+"\n"
+"\t• <b>Tên:</b> Mã định danh mang tính mô tả và duy nhất cho bộ lọc\n"
+"\t• <b>Macro:</b> Bằng cách nhập văn bản macro theo sau là ':' bạn có thể bật bộ lọc theo yêu cầu\n"
+"\t• <b>Truy vấn:</b> Thuật ngữ tìm kiếm mà cơ sở dữ liệu sẽ được lọc"
 
 #: src/fsearch_preferences.ui:1529
 msgid ""
@@ -1678,6 +1979,9 @@ msgid ""
 "\n"
 "This button opens a dialog where you can edit a new filter."
 msgstr ""
+"<b>Thêm bộ lọc mới:</b>\n"
+"\n"
+"Nút này mở ra hộp thoại trong đó bạn có thể chỉnh sửa bộ lọc mới."
 
 #: src/fsearch_preferences.ui:1546
 msgid ""
@@ -1685,6 +1989,9 @@ msgid ""
 "\n"
 "This button removes the currently selected filter."
 msgstr ""
+"<b>Xóa bộ lọc đã chọn:</b>\n"
+"\n"
+"Nút này loại bỏ bộ lọc hiện được chọn."
 
 #: src/fsearch_preferences.ui:1563
 msgid ""
@@ -1692,6 +1999,9 @@ msgid ""
 "\n"
 "This button opens a dialog where you can edit the selected filter."
 msgstr ""
+"<b>Chỉnh sửa bộ lọc đã chọn:</b>\n"
+"\n"
+"Nút này mở ra một hộp thoại trong đó bạn có thể chỉnh sửa bộ lọc đã chọn."
 
 #: src/fsearch_preferences.ui:1580
 msgid ""
@@ -1701,6 +2011,11 @@ msgid ""
 "\n"
 "⚠ All filters which were created or edited by the user will be lost! ⚠"
 msgstr ""
+"<b>Khôi phục bộ lọc mặc định:</b>\n"
+"\n"
+"Nút này khôi phục cấu hình bộ lọc mặc định.\n"
+"\n"
+"⚠ Tất cả các bộ lọc do người dùng tạo hoặc chỉnh sửa sẽ bị mất! ⚠"
 
 #: src/fsearch_preferences.ui:1599
 msgid ""
@@ -1709,128 +2024,137 @@ msgid ""
 "If enabled, FSearch exits when the Escape key is pressed instead of the "
 "window being minimized."
 msgstr ""
+"<b>Thoát khi thoát:</b>\n"
+"\n"
+"Nếu được bật, FSearch sẽ thoát khi nhấn phím Escape thay vì cửa sổ được thu nhỏ."
 
 #: src/fsearch_preferences.ui:1618 src/fsearch_window.ui:290
 #: src/fsearch_window.ui:415 src/menus.ui:150 src/menus.ui:156
 msgid "Help"
-msgstr ""
+msgstr "Giúp đỡ"
 
 #: src/fsearch_preferences_dialog.c:238
 msgid "Database"
-msgstr ""
+msgstr "Cơ sở dữ liệu"
 
 #: src/fsearch_result_view.c:381
 msgid "Invalid row data"
-msgstr ""
+msgstr "Dữ liệu hàng không hợp lệ"
 
 #: src/fsearch_statusbar.c:58
 #, c-format
 msgid "%'d Item"
-msgstr ""
+msgstr "%'d Mục"
 
 #: src/fsearch_statusbar.c:58 src/fsearch_statusbar.c:186
 #, c-format
 msgid "%'d Items"
-msgstr ""
+msgstr "%'d Mục"
 
 #: src/fsearch_statusbar.c:80
 msgid "Querying…"
-msgstr ""
+msgstr "Đang truy vấn…"
 
 #: src/fsearch_statusbar.c:175
 msgid "Loading…"
-msgstr ""
+msgstr "Đang tải…"
 
 #: src/fsearch_statusbar.c:180
 msgid "Scanning…"
-msgstr ""
+msgstr "Đang quét…"
 
 #: src/fsearch_statusbar.ui:52
 msgid "Number of Search Results"
-msgstr ""
+msgstr "Số lượng kết quả tìm kiếm"
 
 #: src/fsearch_statusbar.ui:53
 msgid "0 Items"
-msgstr ""
+msgstr "0 mặt hàng"
 
 #: src/fsearch_statusbar.ui:106
 msgid "Cancel"
-msgstr ""
+msgstr "Hủy bỏ"
 
 #: src/fsearch_statusbar.ui:153
 msgid "Index:"
-msgstr ""
+msgstr "Chỉ mục:"
 
 #: src/fsearch_statusbar.ui:228
 msgid "Number of selected folders"
-msgstr ""
+msgstr "Số lượng thư mục đã chọn"
 
 #: src/fsearch_statusbar.ui:229 src/fsearch_statusbar.ui:254
 msgid "0/0"
-msgstr ""
+msgstr "0/0"
 
 #: src/fsearch_statusbar.ui:253
 msgid "Number of selected files"
-msgstr ""
+msgstr "Số lượng tập tin đã chọn"
 
 #: src/fsearch_statusbar.ui:328 src/fsearch_window.ui:103
 msgid "Cancel database update"
-msgstr ""
+msgstr "Hủy cập nhật cơ sở dữ liệu"
 
 #: src/fsearch_statusbar.ui:369
 msgid "Number of database items"
-msgstr ""
+msgstr "Số lượng mục cơ sở dữ liệu"
 
 #: src/fsearch_statusbar.ui:370
 msgid "(empty)"
-msgstr ""
+msgstr "(trống)"
 
 #: src/fsearch_statusbar.ui:407
 msgid ""
 "Search term contains upper case characters.\n"
 "<b>Match Case</b> was temporarily activated for this term."
 msgstr ""
+"Cụm từ tìm kiếm chứa các ký tự chữ hoa.\n"
+"<b>Trường hợp phù hợp</b> đã tạm thời được kích hoạt cho thuật ngữ này."
 
 #: src/fsearch_statusbar.ui:438 src/fsearch_statusbar.ui:491
 msgid "CASE"
-msgstr ""
+msgstr "TRƯỜNG HỢP"
 
 #: src/fsearch_statusbar.ui:514
 msgid ""
 "Search term contains path separators.\n"
 "<b>Search in Path</b> was temporarily activated for this term."
 msgstr ""
+"Cụm từ tìm kiếm có chứa dấu phân cách đường dẫn.\n"
+"<b>Tìm kiếm trong Đường dẫn</b> tạm thời được kích hoạt cho cụm từ này."
 
 #: src/fsearch_statusbar.ui:545 src/fsearch_statusbar.ui:598
 msgid "PATH"
-msgstr ""
+msgstr "CON ĐƯỜNG"
 
 #: src/fsearch_statusbar.ui:651
 msgid "REGEX"
-msgstr ""
+msgstr "REGEX"
 
 #: src/fsearch_statusbar.ui:726
 msgid ""
 "The search was cancelled before it finished.\n"
 "<b>These results are incomplete.</b>"
 msgstr ""
+"Việc tìm kiếm đã bị hủy trước khi nó kết thúc.\n"
+"<b>Những kết quả này chưa đầy đủ.</b>"
 
 #: src/fsearch_statusbar.ui:756
 msgid "PARTIAL"
-msgstr ""
+msgstr "MỘT PHẦN"
 
 #: src/fsearch_welcome_dialog.ui:26
 msgid "What's New in FSearch"
-msgstr ""
+msgstr "Có gì mới trong FSearch"
 
 #: src/fsearch_welcome_dialog.ui:79
 msgid ""
 "<span size=\"xx-large\" weight=\"bold\">What's New in FSearch 0.3</span>"
-msgstr ""
+msgstr "<span size=\\\"xx-large\\\" Weight=\\\"bold\\\">Có gì mới trong FSearch 0.3</span>"
 
 #: src/fsearch_welcome_dialog.ui:149
 msgid "<big><b>File System Monitoring</b></big>"
-msgstr ""
+msgstr "<big><b>Giám sát hệ thống tệp</b></big>"
 
 #: src/fsearch_welcome_dialog.ui:163
 msgid ""
@@ -1844,20 +2168,26 @@ msgid ""
 "<a href=\"URL\">https://github.com/cboxdoerfer/fsearch/wiki/Database-update</"
 "a>"
 msgstr ""
+"Bây giờ bạn có thể chủ động xem các thư mục riêng lẻ để loại bỏ việc quét lại thường xuyên. Các thay đổi về tệp sau đó sẽ xuất hiện trong kết quả tìm kiếm của bạn ngay lập tức.\n"
+"\n"
+"Để bật tính năng này, hãy đi tới phần Cơ sở dữ liệu của hộp thoại Tùy chọn.\n"
+"\n"
+"Xem tài liệu trực tuyến để biết thêm thông tin:\n"
+"<a href=\\\"URL\\\">https://github.com/cboxdoerfer/fsearch/wiki/Database-update</a>"
 
 #: src/fsearch_welcome_dialog.ui:232
 msgid "<big><b>Folder-Specific Rescan Schedules</b></big>"
-msgstr ""
+msgstr "<big><b>Lịch quét lại theo thư mục cụ thể</b></big>"
 
 #: src/fsearch_welcome_dialog.ui:246
 msgid ""
 "You can now configure automatic update intervals for individual folders "
 "independently and tailored to each distinct location."
-msgstr ""
+msgstr "Giờ đây, bạn có thể định cấu hình khoảng thời gian cập nhật tự động cho từng thư mục một cách độc lập và phù hợp với từng vị trí riêng biệt."
 
 #: src/fsearch_welcome_dialog.ui:309
 msgid "<big><b>Improved Exclude Rules</b></big>"
-msgstr ""
+msgstr "<big><b>Quy tắc loại trừ được cải tiến</b></big>"
 
 #: src/fsearch_welcome_dialog.ui:323
 msgid ""
@@ -1866,18 +2196,20 @@ msgid ""
 "Rules can be targeted specifically at files, folders, or both, and can be "
 "configured to match against either the basename or the full absolute path."
 msgstr ""
+"Bây giờ bạn có thể sử dụng các ký tự đại diện và biểu thức chính quy để xác định các quy tắc loại trừ mạnh mẽ hơn. \n"
+"Các quy tắc có thể được nhắm mục tiêu cụ thể vào các tệp, thư mục hoặc cả hai và có thể được định cấu hình để khớp với tên cơ sở hoặc đường dẫn tuyệt đối đầy đủ."
 
 #: src/fsearch_window.c:749 src/menus.ui:279
 msgid "Size"
-msgstr ""
+msgstr "Kích cỡ"
 
 #: src/fsearch_window.c:763 src/menus.ui:271
 msgid "Extension"
-msgstr ""
+msgstr "Sự mở rộng"
 
 #: src/fsearch_window.c:770 src/menus.ui:283
 msgid "Date Modified"
-msgstr ""
+msgstr "Ngày sửa đổi"
 
 #: src/fsearch_window.c:784
 msgid ""
@@ -1886,198 +2218,202 @@ msgid ""
 "This sort order is not persistent, it will be reset when the search term "
 "changes."
 msgstr ""
+"Việc sắp xếp theo <b>Loại</b> có thể mất vài giây và có nhiều kết quả.\n"
+"\n"
+"Thứ tự sắp xếp này không cố định, nó sẽ được đặt lại khi cụm từ tìm kiếm thay đổi."
 
 #: src/fsearch_window.ui:68
 msgid "New window"
-msgstr ""
+msgstr "Cửa sổ mới"
 
 #: src/fsearch_window.ui:89
 msgid "Update database"
-msgstr ""
+msgstr "Cập nhật cơ sở dữ liệu"
 
 #: src/fsearch_window.ui:144 src/menus.ui:112
 msgid "Search in Path"
-msgstr ""
+msgstr "Tìm kiếm trong đường dẫn"
 
 #: src/fsearch_window.ui:158 src/menus.ui:116
 msgid "Match Case"
-msgstr ""
+msgstr "Hộp đựng trận đấu"
 
 #: src/fsearch_window.ui:172 src/menus.ui:120
 msgid "Enable RegEx"
-msgstr ""
+msgstr "Bật RegEx"
 
 #: src/fsearch_window.ui:197 src/menus.ui:95
 msgid "Show Statusbar"
-msgstr ""
+msgstr "Hiển thị thanh trạng thái"
 
 #: src/fsearch_window.ui:211 src/menus.ui:99
 msgid "Show Filter"
-msgstr ""
+msgstr "Hiển thị bộ lọc"
 
 #: src/fsearch_window.ui:225 src/menus.ui:103
 msgid "Show Search Button"
-msgstr ""
+msgstr "Hiển thị nút tìm kiếm"
 
 #: src/fsearch_window.ui:275 src/fsearch_window.ui:356 src/menus.ui:129
 msgid "FSearch Online"
-msgstr ""
+msgstr "FTìm kiếm trực tuyến"
 
 #: src/fsearch_window.ui:304 src/menus.ui:161
 msgid "About"
-msgstr ""
+msgstr "Về"
 
 #: src/fsearch_window.ui:329 src/menus.ui:47
 msgid "Quit"
-msgstr ""
+msgstr "Từ bỏ"
 
 #: src/fsearch_window.ui:372 src/fsearch_window.ui:443 src/menus.ui:131
 msgid "Donate"
-msgstr ""
+msgstr "Quyên tặng"
 
 #: src/fsearch_window.ui:387 src/menus.ui:142
 msgid "Forum"
-msgstr ""
+msgstr "diễn đàn"
 
 #: src/fsearch_window.ui:401 src/menus.ui:146
 msgid "Bug Reports and Feature Requests"
-msgstr ""
+msgstr "Báo cáo lỗi và yêu cầu tính năng"
 
 #: src/fsearch_window.ui:460 src/menus.ui:133
 msgid "GitHub Sponsors"
-msgstr ""
+msgstr "Nhà tài trợ GitHub"
 
 #: src/fsearch_window.ui:474 src/menus.ui:137
 msgid "PayPal"
-msgstr ""
+msgstr "PayPal"
 
 #: src/fsearch_window.ui:586
 msgid "Search…"
-msgstr ""
+msgstr "Tìm kiếm…"
 
 #: src/fsearch_window.ui:608
 msgid "Select a Filter"
-msgstr ""
+msgstr "Chọn một bộ lọc"
 
 #: src/fsearch_window_actions.c:110
 #, c-format
 msgid "Do you really want to open %'d file?"
 msgid_plural "Do you really want to open %'d files?"
-msgstr[0] ""
+msgstr[0] "Bạn có thực sự muốn mở tệp %'d không?"
 
 #: src/fsearch_window_actions.c:115
 msgid "Opening Files…"
-msgstr ""
+msgstr "Đang mở tệp…"
 
 #: src/fsearch_window_actions.c:198
 #, c-format
 msgid "Do you really want to remove %'d file?"
 msgid_plural "Do you really want to remove %'d files?"
-msgstr[0] ""
+msgstr[0] "Bạn có thực sự muốn xóa tệp %'d không?"
 
 #: src/fsearch_window_actions.c:205
 msgid "Deleting files…"
-msgstr ""
+msgstr "Đang xóa tập tin…"
 
 #: src/fsearch_window_actions.c:205
 msgid "Moving files to trash…"
-msgstr ""
+msgstr "Đang di chuyển tệp vào thùng rác…"
 
 #: src/fsearch_window_actions.c:238 src/fsearch_window_actions.c:533
 #: src/fsearch_window_actions.c:580
 msgid "Something went wrong."
-msgstr ""
+msgstr "Đã xảy ra lỗi."
 
 #: src/fsearch_window_actions.c:263
 #, c-format
 msgid "Do you really want to open %'d file property window?"
 msgid_plural "Do you really want to open %'d file property windows?"
-msgstr[0] ""
+msgstr[0] "Bạn có thực sự muốn mở cửa sổ thuộc tính tệp %'d không?"
 
 #: src/fsearch_window_actions.c:270
 msgid "Opening file properties…"
-msgstr ""
+msgstr "Đang mở thuộc tính tệp…"
 
 #: src/menus.ui:6
 msgid "_File"
-msgstr ""
+msgstr "_Tài liệu"
 
 #: src/menus.ui:9
 msgid "New Window"
-msgstr ""
+msgstr "Cửa sổ mới"
 
 #: src/menus.ui:16 src/menus.ui:171
 msgid "_Open"
-msgstr ""
+msgstr "_Mở"
 
 #: src/menus.ui:21
 msgid "Open Folder"
-msgstr ""
+msgstr "Mở thư mục"
 
 #: src/menus.ui:29
 msgid "Update Database"
-msgstr ""
+msgstr "Cập nhật cơ sở dữ liệu"
 
 #: src/menus.ui:35
 msgid "Cancel Update"
-msgstr ""
+msgstr "Hủy cập nhật"
 
 #: src/menus.ui:42
 msgid "Close Window"
-msgstr ""
+msgstr "Đóng cửa sổ"
 
 #: src/menus.ui:54
 msgid "_Edit"
-msgstr ""
+msgstr "_Biên tập"
 
 #: src/menus.ui:57 src/menus.ui:207
 msgid "_Copy"
-msgstr ""
+msgstr "_Sao chép"
 
 #: src/menus.ui:62 src/menus.ui:228
 msgid "Cu_t"
-msgstr ""
+msgstr "Cắt"
 
 #: src/menus.ui:69
 msgid "Select All"
-msgstr ""
+msgstr "Chọn tất cả"
 
 #: src/menus.ui:74
 msgid "Deselect All"
-msgstr ""
+msgstr "Bỏ chọn tất cả"
 
 #: src/menus.ui:78
 msgid "Invert Selection"
-msgstr ""
+msgstr "Đảo ngược lựa chọn"
 
 #: src/menus.ui:92
 msgid "_View"
-msgstr ""
+msgstr "_Xem"
 
 #: src/menus.ui:109
 msgid "_Search"
-msgstr ""
+msgstr "_Tìm kiếm"
 
 #: src/menus.ui:126
 msgid "_Help"
-msgstr ""
+msgstr "_Giúp đỡ"
 
 #: src/menus.ui:177
 msgid "Open _With"
-msgstr ""
+msgstr "Mở _Với"
 
 #: src/menus.ui:191
 msgid "_Open Folder"
-msgstr ""
+msgstr "_Mở thư mục"
 
 #: src/menus.ui:213
 msgid "Copy as Text"
-msgstr ""
+msgstr "Sao chép dưới dạng văn bản"
 
 #: src/menus.ui:223
 msgid "Path + Name"
-msgstr ""
+msgstr "Đường dẫn + Tên"
 
 #: src/menus.ui:236
 msgid "Move to _Trash"
-msgstr ""
+msgstr "Di chuyển đến _Thùng rác"
+
