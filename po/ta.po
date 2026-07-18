@@ -19,335 +19,337 @@ msgstr ""
 
 #: data/io.github.cboxdoerfer.FSearch.desktop.in.in:4 src/main.c:36
 msgid "FSearch"
-msgstr ""
+msgstr "FSearch"
 
 #: data/io.github.cboxdoerfer.FSearch.desktop.in.in:5
 msgid "A file search application focusing on performance and advanced features"
-msgstr ""
+msgstr "செயல்திறன் மற்றும் மேம்பட்ட அம்சங்களில் கவனம் செலுத்தும் கோப்பு தேடல் பயன்பாடு"
 
 #: data/io.github.cboxdoerfer.FSearch.desktop.in.in:10
 msgid "search;fsearch;files;folders;music;video;documents;find;tool;everything;"
-msgstr ""
+msgstr "தேடல், தேடல்"
 
 #: data/io.github.cboxdoerfer.FSearch.desktop.in.in:12
 msgid "File Search Utility"
-msgstr ""
+msgstr "கோப்பு தேடல் பயன்பாடு"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:8
 msgid "A graphical file search application"
-msgstr ""
+msgstr "ஒரு வரைகலை கோப்பு தேடல் பயன்பாடு"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:10
 msgid ""
 "FSearch helps you to find files and folders as easy and fast as possible. "
 "Just type a few letters and search results will appear almost instantly."
-msgstr ""
+msgstr "கோப்புகள் மற்றும் கோப்புறைகளை முடிந்தவரை எளிதாகவும் வேகமாகவும் கண்டறிய FSearch உதவுகிறது. சில எழுத்துக்களைத் தட்டச்சு செய்தால், தேடல் முடிவுகள் உடனடியாகத் தோன்றும்."
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:14
 msgid ""
 "There are a lot of features which make searching as efficient and powerful "
 "as possible. Such as:"
-msgstr ""
+msgstr "தேடலை முடிந்தவரை திறமையாகவும் சக்திவாய்ந்ததாகவும் மாற்றும் அம்சங்கள் நிறைய உள்ளன. போன்ற:"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:19
 msgid ""
 "Ignore case (e.g. searching for \"<code>fsearch</code>\" will match "
 "\"FSearch\" as well)"
-msgstr ""
+msgstr "வழக்கை புறக்கணிக்கவும் (எ.கா. \\\"<code>fsearch</code>\\\" ஐ தேடுவது \\\"FSearch\\\" உடன் பொருந்தும்)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:20
 msgid "Regular expressions"
-msgstr ""
+msgstr "வழக்கமான வெளிப்பாடுகள்"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:21
 msgid "Wildcard support"
-msgstr ""
+msgstr "வைல்டு கார்டு ஆதரவு"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:22
 msgid "Filter support (e.g. only search for audio files)"
-msgstr ""
+msgstr "வடிகட்டி ஆதரவு (எ.கா. ஆடியோ கோப்புகளை மட்டும் தேடவும்)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:23
 msgid "Exclude certain files and folders"
-msgstr ""
+msgstr "சில கோப்புகள் மற்றும் கோப்புறைகளை விலக்கவும்"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:24
 msgid "Fast sort by name, path, size, modification time and extension"
-msgstr ""
+msgstr "பெயர், பாதை, அளவு, மாற்றம் நேரம் மற்றும் நீட்டிப்பு ஆகியவற்றின் அடிப்படையில் வேகமாக வரிசைப்படுத்தவும்"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:26
 msgid ""
 "<em>Note:</em> Due to Flatpak's sandboxing, FSearch can't find every file on "
 "your system."
-msgstr ""
+msgstr "<em>குறிப்பு:</em> Flatpak இன் சாண்ட்பாக்சிங் காரணமாக, FSearch ஆல் உங்கள் கணினியில் உள்ள ஒவ்வொரு கோப்பையும் கண்டுபிடிக்க முடியவில்லை."
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:35
 msgid "The default UI layout"
-msgstr ""
+msgstr "இயல்புநிலை UI தளவமைப்பு"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:41
 msgid "A layout more closely following GNOME HIGs"
-msgstr ""
+msgstr "GNOME HIG களை மிக நெருக்கமாகப் பின்பற்றும் ஒரு தளவமைப்பு"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:49
 msgid "search"
-msgstr ""
+msgstr "தேடல்"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:50
 msgid "fsearch"
-msgstr ""
+msgstr "தேடுதல்"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:51
 msgid "files"
-msgstr ""
+msgstr "கோப்புகள்"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:52
 msgid "folders"
-msgstr ""
+msgstr "கோப்புறைகள்"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:53
 msgid "music"
-msgstr ""
+msgstr "இசை"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:54
 msgid "video"
-msgstr ""
+msgstr "வீடியோ"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:55
 msgid "documents"
-msgstr ""
+msgstr "ஆவணங்கள்"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:56
 msgid "find"
-msgstr ""
+msgstr "கண்டுபிடிக்க"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:57
 msgid "tool"
-msgstr ""
+msgstr "கருவி"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:58
 msgid "everything"
-msgstr ""
+msgstr "எல்லாம்"
 
 #. Kept for appstreamcli < 1.0 (e.g. Ubuntu 20.04/22.04 PPA builds), which doesn't know <developer>.
 #. Translators: please do NOT translate this.
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:77
 msgid "Christian Boxdörfer"
-msgstr ""
+msgstr "கிறிஸ்டியன் பாக்ஸ்டோர்ஃபர்"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:89
 msgid "DB rewrite"
-msgstr ""
+msgstr "DB மீண்டும் எழுதவும்"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:90
 msgid "DB: Add support for filesystem monitoring"
-msgstr ""
+msgstr "DB: கோப்பு முறைமை கண்காணிப்புக்கான ஆதரவைச் சேர்க்கவும்"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:91
 msgid ""
 "DB: Allow files and folders to be excluded based on fixed patterns, "
 "wildcards or regular expressions"
-msgstr ""
+msgstr "DB: நிலையான வடிவங்கள், வைல்டு கார்டுகள் அல்லது வழக்கமான வெளிப்பாடுகளின் அடிப்படையில் கோப்புகள் மற்றும் கோப்புறைகளை விலக்க அனுமதிக்கவும்"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:92
 msgid ""
 "DB: Allow included folders to be scheduled and scanned after launch "
 "independently"
-msgstr ""
+msgstr "DB: சேர்க்கப்பட்ட கோப்புறைகளை சுயாதீனமாக அறிமுகப்படுத்திய பின் திட்டமிடப்பட்டு ஸ்கேன் செய்ய அனுமதிக்கவும்"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:93
 msgid "DB: Make rescanning more efficient"
-msgstr ""
+msgstr "DB: மறுபரிசீலனை செய்வதை மிகவும் திறமையானதாக்கு"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:94
 msgid "DB: Store database config in DB file"
-msgstr ""
+msgstr "DB: DB கோப்பில் தரவுத்தள கட்டமைப்பை சேமிக்கவும்"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:95
 msgid "DB: Add checksum to DB file"
-msgstr ""
+msgstr "DB: DB கோப்பில் செக்சம் சேர்க்கவும்"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:96
 msgid "Make icon and file info gathering asynchronous (no UI blocking)"
-msgstr ""
+msgstr "ஐகான் மற்றும் கோப்பு தகவல் சேகரிப்பை ஒத்திசைவற்றதாக ஆக்குங்கள் (UI தடுப்பு இல்லை)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:97
 msgid "Reduce memory usage"
-msgstr ""
+msgstr "நினைவக பயன்பாட்டைக் குறைக்கவும்"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:98
 msgid "Add contextual help for all preferences"
-msgstr ""
+msgstr "எல்லா விருப்பங்களுக்கும் சூழ்நிலை உதவியைச் சேர்க்கவும்"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:99
 msgid "Numerous bug fixes and stability and performance improvements"
-msgstr ""
+msgstr "பல பிழை திருத்தங்கள் மற்றும் நிலைத்தன்மை மற்றும் செயல்திறன் மேம்பாடுகள்"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:106
 msgid "New search engine"
-msgstr ""
+msgstr "புதிய தேடுபொறி"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:107
 msgid "Greatly improved highlighting of search terms"
-msgstr ""
+msgstr "தேடல் சொற்களின் சிறப்பம்சங்கள் பெரிதும் மேம்படுத்தப்பட்டுள்ளன"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:108
 msgid "Custom filters"
-msgstr ""
+msgstr "தனிப்பயன் வடிப்பான்கள்"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:109
 msgid "Improved sort performance"
-msgstr ""
+msgstr "மேம்படுத்தப்பட்ட வரிசை செயல்திறன்"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:110
 msgid "Improved scroll performance"
-msgstr ""
+msgstr "மேம்படுத்தப்பட்ட சுருள் செயல்திறன்"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:111
 msgid "Remember file selection after a database update"
-msgstr ""
+msgstr "தரவுத்தள புதுப்பித்தலுக்குப் பிறகு கோப்புத் தேர்வை நினைவில் கொள்க"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:112
 msgid "Automatically scroll the result list in rubberband selection mode"
-msgstr ""
+msgstr "ரப்பர்பேண்ட் தேர்வு முறையில் தானாக முடிவு பட்டியலை உருட்டவும்"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:113
 msgid "Invert selection with rubber band when 'Ctrl' is pressed"
-msgstr ""
+msgstr "'Ctrl' அழுத்தும் போது ரப்பர் பேண்ட் மூலம் தேர்வைத் தலைகீழாக மாற்றவும்"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:114
 msgid "Focus search entry when the main window gets activated"
-msgstr ""
+msgstr "பிரதான சாளரம் செயல்படுத்தப்படும்போது தேடல் உள்ளீட்டில் கவனம் செலுத்துங்கள்"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:115
 msgid "Add filter for applications (i.e. .desktop files)"
-msgstr ""
+msgstr "பயன்பாடுகளுக்கான வடிப்பானைச் சேர்க்கவும் (அதாவது .டெஸ்க்டாப் கோப்புகள்)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:116
 msgid ""
 "Add option to launch applications directly instead of opening the .desktop "
 "files"
-msgstr ""
+msgstr "டெஸ்க்டாப் கோப்புகளைத் திறப்பதற்குப் பதிலாக நேரடியாகப் பயன்பாடுகளைத் தொடங்க விருப்பத்தைச் சேர்க்கவும்"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:117
 msgid "Show application icons for .desktop files"
-msgstr ""
+msgstr "டெஸ்க்டாப் கோப்புகளுக்கான பயன்பாட்டு ஐகான்களைக் காட்டு"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:118
 msgid "Add .odp and .ods files to document filter"
-msgstr ""
+msgstr "ஆவண வடிப்பானில் .odp மற்றும் .ods கோப்புகளைச் சேர்க்கவும்"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:119
 msgid ""
 "'Open with' menu now only shows applications which can handle the selected "
 "files"
-msgstr ""
+msgstr "தேர்ந்தெடுக்கப்பட்ட கோப்புகளைக் கையாளக்கூடிய பயன்பாடுகளை மட்டுமே இப்போது 'இதனுடன் திற' மெனு காட்டுகிறது"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:120
 msgid ""
 "Improved opening of multiple files with the same type (they get now passed "
 "as a list to applications, instead of one by one)"
-msgstr ""
+msgstr "ஒரே வகையிலான பல கோப்புகளைத் திறப்பது மேம்படுத்தப்பட்டது (ஒவ்வொன்றாகப் பயன்படுத்துவதற்குப் பதிலாக, இப்போது அவை ஒரு பட்டியலாகப் பயன்படுத்தப்படுகின்றன)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:121
 msgid "Better support for opening files in sandboxed mode"
-msgstr ""
+msgstr "சாண்ட்பாக்ஸ் பயன்முறையில் கோப்புகளைத் திறப்பதற்கான சிறந்த ஆதரவு"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:122
 msgid ""
 "Add menu items with links to the issue tracker, forum and donation pages"
-msgstr ""
+msgstr "சிக்கல் கண்காணிப்பு, மன்றம் மற்றும் நன்கொடை பக்கங்களுக்கான இணைப்புகளுடன் மெனு உருப்படிகளைச் சேர்க்கவும்"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:123
 msgid "Improve support for non-Linux systems"
-msgstr ""
+msgstr "லினக்ஸ் அல்லாத கணினிகளுக்கான ஆதரவை மேம்படுத்தவும்"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:124
 msgid ""
 "Add option to exit FSearch when Escape is pressed instead of minimizing the "
 "window"
-msgstr ""
+msgstr "சாளரத்தைக் குறைப்பதற்குப் பதிலாக எஸ்கேப் அழுத்தும் போது FSearch இலிருந்து வெளியேற விருப்பத்தைச் சேர்க்கவும்"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:125
 msgid "Exclude '/proc' and '/sys' by default"
-msgstr ""
+msgstr "இயல்புநிலையாக '/proc' மற்றும் '/sys' ஐ விலக்கவும்"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:126
 msgid "Open context menu when 'Menu' key or 'Shift + F10' are pressed"
-msgstr ""
+msgstr "'மெனு' விசை அல்லது 'Shift + F10' அழுத்தும் போது சூழல் மெனுவைத் திறக்கவும்"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:127
 msgid "and tons of bug fixes, translation updates and smaller improvements"
-msgstr ""
+msgstr "மற்றும் பல பிழை திருத்தங்கள், மொழிபெயர்ப்பு புதுப்பிப்புகள் மற்றும் சிறிய மேம்பாடுகள்"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:133
 msgid "Initial release."
-msgstr ""
+msgstr "ஆரம்ப வெளியீடு."
 
 #: src/fsearch.c:181
 msgid "translator-credits"
-msgstr ""
+msgstr "மொழிபெயர்ப்பாளர்-வரவுகள்"
 
 #: src/fsearch.c:183
 msgid "A search utility focusing on performance and advanced features"
-msgstr ""
+msgstr "செயல்திறன் மற்றும் மேம்பட்ட அம்சங்களில் கவனம் செலுத்தும் ஒரு தேடல் பயன்பாடு"
 
 #: src/fsearch.c:330
 msgid "Saving database and config…"
-msgstr ""
+msgstr "தரவுத்தளத்தையும் கட்டமைப்பையும் சேமிக்கிறது…"
 
 #: src/fsearch.c:786
 msgid "Open a new application window"
-msgstr ""
+msgstr "புதிய பயன்பாட்டு சாளரத்தைத் திறக்கவும்"
 
 #: src/fsearch.c:787
 msgid "Minimize the application window"
-msgstr ""
+msgstr "பயன்பாட்டு சாளரத்தை குறைக்கவும்"
 
 #: src/fsearch.c:788
 msgid "Show the application preferences"
-msgstr ""
+msgstr "பயன்பாட்டு விருப்பங்களைக் காட்டு"
 
 #: src/fsearch.c:789
 msgid "Set the search pattern"
-msgstr ""
+msgstr "தேடல் முறையை அமைக்கவும்"
 
 #: src/fsearch.c:790
 msgid "Update the database and exit"
-msgstr ""
+msgstr "தரவுத்தளத்தைப் புதுப்பித்து வெளியேறவும்"
 
 #: src/fsearch.c:791
 msgid "Print version information and exit"
-msgstr ""
+msgstr "பதிப்புத் தகவலை அச்சிட்டு வெளியேறவும்"
 
 #: src/fsearch.c:883
 msgid ""
 "For command-line search help, run: fsearch --cli --help\n"
 "For shared configuration help, run: fsearch config --help"
 msgstr ""
+"கட்டளை வரி தேடல் உதவிக்கு, இயக்கவும்: fsearch --cli --help\n"
+"பகிரப்பட்ட உள்ளமைவு உதவிக்கு, இயக்கவும்: fsearch config --help"
 
 #: src/fsearch_cli.c:125
 #, c-format
 msgid ""
 "Results capped at %u. Use --unlimit or --unlimited to get them all, or "
 "provide a custom --limit, or set FSEARCH_RESULT_LIMIT."
-msgstr ""
+msgstr "முடிவுகள் %u இல் மூடப்பட்டுள்ளன. அனைத்தையும் பெற --அன்லிமிட் அல்லது --அன்லிமிடெட் பயன்படுத்தவும் அல்லது தனிப்பயன் --வரம்பு வழங்கவும் அல்லது FSEARCH_RESULT_LIMIT அமைக்கவும்."
 
 #: src/fsearch_cli.c:134
 #, c-format
 msgid "%u match."
 msgid_plural "%u matches."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%u பொருத்தம்."
+msgstr[1] "%u பொருந்துகிறது."
 
 #: src/fsearch_cli.c:142
 msgid "Updating FSearch index before searching..."
-msgstr ""
+msgstr "தேடுவதற்கு முன் FSearch குறியீட்டைப் புதுப்பிக்கிறது..."
 
 #: src/fsearch_cli.c:149
 #, c-format
 msgid "Indexing: %s"
-msgstr ""
+msgstr "அட்டவணைப்படுத்தல்: %s"
 
 #: src/fsearch_cli.c:181
 msgid ""
@@ -393,40 +395,76 @@ msgid ""
 "{png,jpg} selects alternatives; {01..12} is an inclusive numeric range; \\* "
 "matches a literal *.\n"
 msgstr ""
+"பயன்பாடு: fsearch --cli [OPTIONS]\n"
+"\n"
+"ஏற்கனவே உள்ள FSearch குறியீட்டைத் தேடவும் மற்றும் பொருந்தும் பாதைகளை அச்சிடவும்.\n"
+"\n"
+"  -s, --search PATTERN       FSearch வினவல் தொடரியல் மூலம் தேடவும்\n"
+"      --path DIRECTORY        டைரக்டரிக்கு கீழே மீண்டும் மீண்டும் தேடவும் (இயல்புநிலை: தற்போதைய கோப்பகம்)\n"
+"      --global                ஒவ்வொரு அட்டவணையிடப்பட்ட இடத்தையும் தேடுங்கள்\n"
+"      --limit COUNT          அதிகபட்சம் COUNT முடிவுகளை அச்சிடுங்கள்\n"
+"      --unlimit, --unlimited ஒவ்வொரு முடிவையும் அச்சிடுங்கள்\n"
+"  -u, --update-database      கட்டமைக்கப்பட்ட குறியீட்டை மீண்டும் ஸ்கேன் செய்து வெளியேறவும்\n"
+"      --about                ஒரு வரி உருவாக்க தகவலை அச்சிடவும்\n"
+"  -h, --help                 இந்த உதவியைக் காட்டு\n"
+"\n"
+"கட்டமைப்பு: fsearch config --help\n"
+"\n"
+"எடுத்துக்காட்டுகள்:\n"
+"  fsearch --cli --search invoice              # eolaire reatha\n"
+"  fsearch --cli --path ~/Documents --search invoice\n"
+"  fsearch --cli --global --search invoice\n"
+"  fsearch --cli --search 'file:size:>20mb'\n"
+"  fsearch --cli --search 'ext:jpg;png'\n"
+"  fsearch --cli --search 'path:projects report'\n"
+"  fsearch --cli --search 'report AND ext:pdf'\n"
+"  fsearch --cli --search '(draft OR final) !archive'\n"
+"  fsearch --cli --search 'file:regex:\".+\\.pdf$\"'\n"
+"  fsearch --cli --search 'case:AGENTS'        # cás-íogair\n"
+"  fsearch --cli --search 'case:regex:\"^AGENTS\\.md$\"'\n"
+"  fsearch --cli --search 'glob:**/*.png'\n"
+"  fsearch --cli --search 'path:glob:**/AGENTS.md'\n"
+"  fsearch --cli --search 'case:glob:AGENTS.md' # glob cás-íogair\n"
+"\n"
+"எடுத்துக்காட்டுகள் இடத்தை AND ஆகப் பயன்படுத்துகின்றன. கோப்பு:, கோப்புறை:, பாதை:, ext:, அளவு:, dm:, case:, regex:, மற்றும் glob: ஆகியவற்றை முயற்சிக்கவும்.\n"
+"பூலியன் தொடரியல்: AND அல்லது &&; OR அல்லது ||; இல்லை அல்லது!. அடைப்புக்குறி குழு விதிமுறைகள்.\n"
+"குளோப் தொடரியல்: * தவிர்த்து /; ** அடைவுகளை பரப்புகிறது; ? ஒரு பாத்திரம் பொருந்துகிறது; [a-c] என்பது ஒரு வரம்பு;\n"
+"Glob முன்னிருப்பாக பாதைகளைத் தேடுகிறது; எந்த ஆழத்திற்கும் **/ பயன்படுத்தவும்; file:glob: கோப்பு பெயர்களைத் தேடுகிறது.\n"
+"{png,jpg} மாற்றுகளைத் தேர்ந்தெடுக்கிறது; {01..12} உள்ளடக்கிய எண் வரம்பாகும்; \\* ஒரு சொல் * பொருந்துகிறது.\n"
 
 #: src/fsearch_cli.c:238
 #, c-format
 msgid "FSearch %s - indexed file search for %s %s\n"
-msgstr ""
+msgstr "FSearch %s - %s %s க்கான அட்டவணைப்படுத்தப்பட்ட கோப்பு தேடல்\n"
 
 #: src/fsearch_cli.c:301
 msgid "fsearch: interrupted\n"
-msgstr ""
+msgstr "fsearch: குறுக்கிடப்பட்டது\n"
 
 #: src/fsearch_cli.c:315
 msgid "fsearch: search could not run because the index is unavailable\n"
-msgstr ""
+msgstr "fsearch: இன்டெக்ஸ் கிடைக்காததால் தேடலை இயக்க முடியவில்லை\n"
 
 #: src/fsearch_cli.c:352 src/fsearch_cli.c:381 src/fsearch_cli_config.c:774
 #: src/fsearch_cli_config.c:961 src/fsearch_cli_config.c:1147
 #, c-format
 msgid "%s\n"
-msgstr ""
+msgstr "%s\n"
 
 #: src/fsearch_cli.c:400
 #, c-format
 msgid "%s"
-msgstr ""
+msgstr "%s"
 
 #: src/fsearch_cli.c:473
 #, c-format
 msgid "fsearch: unknown CLI option: %s\n"
-msgstr ""
+msgstr "fsearch: தெரியாத CLI விருப்பம்: %s\n"
 
 #: src/fsearch_cli.c:495
 #, c-format
 msgid "fsearch: failed to create data directory: %s\n"
-msgstr ""
+msgstr "fsearch: தரவு கோப்பகத்தை உருவாக்க முடியவில்லை: %s\n"
 
 #: src/fsearch_cli_config.c:111
 msgid ""
@@ -468,30 +506,73 @@ msgid ""
 "  fsearch config filters add Documents --query 'ext:pdf' --macro docs\n"
 "  fsearch config reset search --yes\n"
 msgstr ""
+"பயன்பாடு: fsearch config COMMAND [OPTIONS]\n"
+"\n"
+"பகிரப்பட்ட FSearch GUI மற்றும் CLI உள்ளமைவைக் கண்டு திருத்தவும்.\n"
+"\n"
+"கட்டமைப்பு கட்டளைகள்:\n"
+"  path                         உள்ளமைவு கோப்பு பாதையை அச்சிடவும்\n"
+"  show [SECTION] [--json]      அமைப்புகளைக் காட்டு\n"
+"  get KEY [--json]             ஒரு அளவுகோல் அமைப்பை அச்சிடவும்\n"
+"  set KEY VALUE                ஒரு அளவுகோல் அமைப்பை அமைக்கவும்\n"
+"  unset KEY                    ஒரு ஸ்கேலர் அமைப்பை இயல்புநிலையாக மீட்டமைக்கவும்\n"
+"  reset [KEY|SECTION] --yes [--rescan]\n"
+"                               இயல்புநிலைகளை மீட்டமை\n"
+"  doctor                       உள்ளமைவு மற்றும் குறியீட்டு நிலைத்தன்மையை சரிபார்க்கவும்\n"
+"  roots list|add|set|remove    குறியிடப்பட்ட வேர்களை நிர்வகிக்கவும்\n"
+"  excludes list|add|remove|hidden\n"
+"                               குறியீட்டு விலக்குகளை நிர்வகிக்கவும்\n"
+"  filters list|add|set|remove|reset\n"
+"                               சேமிக்கப்பட்ட தேடல் வடிப்பான்களை நிர்வகிக்கவும்\n"
+"\n"
+"அளவிடல் மதிப்புகள் சரி/தவறு, தசம முழு எண்கள் அல்லது சரங்களைப் பயன்படுத்துகின்றன.\n"
+"ஒவ்வொரு ஸ்கேலர் விசையையும் தற்போதைய மதிப்பையும் பட்டியலிட 'fsearch config show' ஐ இயக்கவும்.\n"
+"அளவுகோல் பிரிவுகள்: search, application, window, ui, columns, sort, dialogs.\n"
+"குடும்ப விருப்பங்களுக்கு 'fsearch config roots|excludes|filters --help' ஐப் பயன்படுத்தவும்.\n"
+"பகிரப்பட்ட அமைப்புகளை மாற்றுவதற்கு முன் FSearch GUI ஐ மூடவும்.\n"
+"குறியீட்டு மாற்றங்கள் அடுத்த CLI தேடலில் தேடக்கூடியதாக மாறும், அல்லது உடனடியாக --rescan உடன்.\n"
+"ஷோ, கெட் மற்றும் சேகரிப்பு பட்டியல் கட்டளைகளுடன் --json ஐப் பயன்படுத்தவும்.\n"
+"\n"
+"எடுத்துக்காட்டுகள்:\n"
+"  fsearch config show search --json\n"
+"  fsearch config get search.match-case\n"
+"  fsearch config set search.match-case true\n"
+"  fsearch config roots add ~/Code --monitor --one-file-system --rescan\n"
+"  fsearch config excludes add '*.tmp' --type wildcard --scope basename --target files\n"
+"  fsearch config filters add Documents --query 'ext:pdf' --macro docs\n"
+"  fsearch config reset search --yes\n"
 
 #: src/fsearch_cli_config.c:152
 msgid ""
 "Usage: fsearch config show [SECTION] [--json]\n"
 "Show all scalar settings or one dotted section.\n"
 msgstr ""
+"பயன்பாடு: fsearch config show [SECTION] [--json]\n"
+"அனைத்து ஸ்கேலர் அமைப்புகளையும் அல்லது ஒரு புள்ளியிடப்பட்ட பகுதியையும் காட்டு.\n"
 
 #: src/fsearch_cli_config.c:154
 msgid ""
 "Usage: fsearch config get KEY [--json]\n"
 "Print one typed scalar value. Discover keys with 'fsearch config show'.\n"
 msgstr ""
+"பயன்பாடு: fsearch config get KEY [--json]\n"
+"தட்டச்சு செய்யப்பட்ட ஒரு அளவிடல் மதிப்பை அச்சிடவும். 'fsearch config show' மூலம் விசைகளைக் கண்டறியவும்.\n"
 
 #: src/fsearch_cli_config.c:157
 msgid ""
 "Usage: fsearch config set KEY VALUE\n"
 "Set a boolean, integer, string, or enumerated scalar value.\n"
 msgstr ""
+"பயன்பாடு: fsearch config set KEY VALUE\n"
+"பூலியன், முழு எண், சரம் அல்லது கணக்கிடப்பட்ட அளவிடல் மதிப்பை அமைக்கவும்.\n"
 
 #: src/fsearch_cli_config.c:159
 msgid ""
 "Usage: fsearch config unset KEY\n"
 "Restore one scalar setting to its built-in default.\n"
 msgstr ""
+"பயன்பாடு: fsearch config unset KEY\n"
+"ஒரு அளவிடல் அமைப்பை அதன் உள்ளமைந்த இயல்புநிலைக்கு மீட்டமைக்கவும்.\n"
 
 #: src/fsearch_cli_config.c:161
 msgid ""
@@ -499,6 +580,8 @@ msgid ""
 "Reset is destructive and requires --yes. --rescan applies to roots, "
 "database, excludes, or all.\n"
 msgstr ""
+"பயன்பாடு: fsearch config reset [KEY|SECTION] --yes [--rescan]\n"
+"மீட்டமைப்பது அழிவுகரமானது மற்றும் தேவை --ஆம். --rescan வேர்கள், தரவுத்தளம், விலக்கப்பட்டவை அல்லது அனைத்திற்கும் பொருந்தும்.\n"
 
 #: src/fsearch_cli_config.c:164
 msgid ""
@@ -506,6 +589,8 @@ msgid ""
 "Check configuration readability and whether the saved index uses the same "
 "roots and exclusions.\n"
 msgstr ""
+"பயன்பாடு: fsearch config doctor\n"
+"உள்ளமைவு வாசிப்புத்திறனைச் சரிபார்க்கவும் மற்றும் சேமித்த குறியீடு அதே வேர்கள் மற்றும் விலக்குகளைப் பயன்படுத்துகிறதா என்பதைச் சரிபார்க்கவும்.\n"
 
 #: src/fsearch_cli_config.c:170
 msgid ""
@@ -525,6 +610,21 @@ msgid ""
 "  --rescan-every SECONDS        Set periodic rescan interval; 0 disables it\n"
 "  --rescan                      Rebuild the index immediately after saving\n"
 msgstr ""
+"பயன்பாடு: fsearch config roots COMMAND [PATH] [OPTIONS]\n"
+"\n"
+"கட்டளைகள்:\n"
+"  list [--json]                அட்டவணைப்படுத்தப்பட்ட வேர்களை பட்டியலிடுங்கள்\n"
+"  add PATH [OPTIONS]           ரூட் கோப்பகத்தைச் சேர்க்கவும்\n"
+"  set PATH [OPTIONS]           ஏற்கனவே உள்ள ரூட்டை மாற்றவும்\n"
+"  remove PATH [--rescan]       ஏற்கனவே உள்ள ரூட்டை அகற்றவும்\n"
+"\n"
+"சேர்ப்பதற்கும் அமைப்பதற்கும் விருப்பங்கள்:\n"
+"  --active, --inactive\n"
+"  --monitor, --no-monitor\n"
+"  --one-file-system, --no-one-file-system\n"
+"  --scan-after-launch, --no-scan-after-launch\n"
+"  --rescan-every SECONDS        கால இடைவெளியை அமைக்கவும்; 0 அதை முடக்குகிறது\n"
+"  --rescan                      சேமித்த உடனேயே குறியீட்டை மீண்டும் உருவாக்கவும்\n"
 
 #: src/fsearch_cli_config.c:187
 msgid ""
@@ -544,6 +644,21 @@ msgid ""
 "  --active, --inactive          Add state or removal selector\n"
 "  --rescan                      Rebuild the index immediately after saving\n"
 msgstr ""
+"பயன்பாடு: fsearch config excludes COMMAND [PATTERN|VALUE] [OPTIONS]\n"
+"\n"
+"கட்டளைகள்:\n"
+"  list [--json]                 பட்டியல் விலக்குகள்\n"
+"  add PATTERN [OPTIONS]         ஒரு விலக்கைச் சேர்க்கவும்\n"
+"  remove PATTERN [OPTIONS]      பொருந்தும் விலக்கை அகற்று\n"
+"  hidden [true|false] [--rescan]\n"
+"                                மறைக்கப்பட்ட கோப்பு விலக்குகளைப் பார்க்கவும் அல்லது மாற்றவும்\n"
+"\n"
+"சேர்க்க மற்றும் அகற்றுவதற்கான விருப்பங்கள்:\n"
+"  --type fixed|wildcard|regex   இயல்புநிலை: சரி செய்யப்பட்டது\n"
+"  --scope full-path|basename    இயல்புநிலை: முழு பாதை\n"
+"  --target both|files|folders   இயல்புநிலை: இரண்டும்\n"
+"  --active, --inactive          நிலை அல்லது அகற்றுதல் தேர்வியைச் சேர்க்கவும்\n"
+"  --rescan                      சேமித்த உடனேயே குறியீட்டை மீண்டும் உருவாக்கவும்\n"
 
 #: src/fsearch_cli_config.c:204
 msgid ""
@@ -563,205 +678,224 @@ msgid ""
 "  --path, --no-path             Search full paths\n"
 "  --regex, --no-regex           Treat query as a regular expression\n"
 msgstr ""
+"பயன்பாடு: fsearch config filters COMMAND [NAME] [OPTIONS]\n"
+"\n"
+"கட்டளைகள்:\n"
+"  list [--json]                 சேமித்த வடிப்பான்களைப் பட்டியலிடுங்கள்\n"
+"  add NAME [OPTIONS]            பெயரிடப்பட்ட வடிப்பானைச் சேர்க்கவும்\n"
+"  set NAME [OPTIONS]            பெயரிடப்பட்ட வடிகட்டியை மாற்றவும்\n"
+"  remove NAME                   பெயரிடப்பட்ட வடிகட்டியை அகற்றவும்\n"
+"  reset                         உள்ளமைக்கப்பட்ட வடிப்பான்களை மீட்டமைக்கவும்\n"
+"\n"
+"சேர்ப்பதற்கும் அமைப்பதற்கும் விருப்பங்கள்:\n"
+"  --query QUERY                 FSearch வினவல் சேமிக்கப்பட்டது\n"
+"  --macro MACRO                 மேக்ரோ பெயரை வினவவும்\n"
+"  --case, --no-case             போட்டி வழக்கு\n"
+"  --path, --no-path             முழு பாதைகளையும் தேடுங்கள்\n"
+"  --regex, --no-regex           வினவலை வழக்கமான வெளிப்பாடாகக் கருதுங்கள்\n"
 
 #: src/fsearch_cli_config.c:265
 msgid ""
 "fsearch config: close the running FSearch GUI before changing shared "
 "settings\n"
-msgstr ""
+msgstr "fsearch config: பகிரப்பட்ட அமைப்புகளை மாற்றுவதற்கு முன் இயங்கும் FSearch GUI ஐ மூடவும்\n"
 
 #: src/fsearch_cli_config.c:269
 msgid "fsearch config: failed to save configuration\n"
-msgstr ""
+msgstr "fsearch config: உள்ளமைவைச் சேமிக்க முடியவில்லை\n"
 
 #: src/fsearch_cli_config.c:280
 msgid "Index configuration changed; the next CLI search will rebuild it.\n"
-msgstr ""
+msgstr "குறியீட்டு கட்டமைப்பு மாற்றப்பட்டது; அடுத்த CLI தேடல் அதை மீண்டும் உருவாக்கும்.\n"
 
 #: src/fsearch_cli_config.c:416
 #, c-format
 msgid "fsearch config %s: unknown option: %s\n"
-msgstr ""
+msgstr "fsearch config %s: தெரியாத விருப்பம்: %s\n"
 
 #: src/fsearch_cli_config.c:422
 #, c-format
 msgid "fsearch config %s: unexpected argument: %s\n"
-msgstr ""
+msgstr "fsearch config %s: எதிர்பாராத வாதம்: %s\n"
 
 #: src/fsearch_cli_config.c:449
 msgid "Usage: fsearch config get KEY [--json]\n"
-msgstr ""
+msgstr "பயன்பாடு: fsearch config விசையைப் பெறவும் [--json]\n"
 
 #: src/fsearch_cli_config.c:454 src/fsearch_cli_config.c:555
 #, c-format
 msgid "fsearch config: unknown setting: %s\n"
-msgstr ""
+msgstr "fsearch config: தெரியாத அமைப்பு: %s\n"
 
 #: src/fsearch_cli_config.c:502
 #, c-format
 msgid "fsearch config show: unknown section: %s\n"
-msgstr ""
+msgstr "fsearch config show: தெரியாத பகுதி: %s\n"
 
 #: src/fsearch_cli_config.c:550
 #, c-format
 msgid "Usage: fsearch config %s KEY%s\n"
-msgstr ""
+msgstr "பயன்பாடு: fsearch config %s KEY%s\n"
 
 #: src/fsearch_cli_config.c:566
 #, c-format
 msgid "fsearch config: invalid value for %s: %s\n"
-msgstr ""
+msgstr "fsearch config: %s க்கான தவறான மதிப்பு: %s\n"
 
 #: src/fsearch_cli_config.c:572
 #, c-format
 msgid "%s = %s\n"
-msgstr ""
+msgstr "%s = %s\n"
 
 #: src/fsearch_cli_config.c:637
 #, c-format
 msgid "fsearch config roots: unknown operation: %s\n"
-msgstr ""
+msgstr "fsearch config roots: தெரியாத செயல்பாடு: %s\n"
 
 #: src/fsearch_cli_config.c:691
 msgid "fsearch config roots: --rescan-every requires SECONDS\n"
-msgstr ""
+msgstr "fsearch config roots: --rescan-ஒவ்வொரு வினாடியும் தேவை\n"
 
 #: src/fsearch_cli_config.c:710
 msgid "fsearch config roots: missing PATH\n"
-msgstr ""
+msgstr "fsearch config roots: PATH இல்லை\n"
 
 #: src/fsearch_cli_config.c:717 src/fsearch_cli_config.c:732
 #, c-format
 msgid "fsearch config roots: path not found: %s\n"
-msgstr ""
+msgstr "fsearch config roots: பாதை கிடைக்கவில்லை: %s\n"
 
 #: src/fsearch_cli_config.c:724
 #, c-format
 msgid "fsearch config roots: not a directory: %s\n"
-msgstr ""
+msgstr "fsearch config roots: அடைவு அல்ல: %s\n"
 
 #: src/fsearch_cli_config.c:728
 #, c-format
 msgid "fsearch config roots: path already exists: %s\n"
-msgstr ""
+msgstr "fsearch config roots: பாதை ஏற்கனவே உள்ளது: %s\n"
 
 #: src/fsearch_cli_config.c:752
 #, c-format
 msgid "fsearch config roots: invalid rescan duration: %s\n"
-msgstr ""
+msgstr "fsearch config roots: தவறான மறுபரிசீலனை காலம்: %s\n"
 
 #: src/fsearch_cli_config.c:765
 msgid ""
 "%s\tactive=%s monitor=%s one-file-system=%s scan-after-launch=%s rescan-"
 "after=%s\n"
-msgstr ""
+msgstr "%s செயலில்=%s மானிட்டர்=%s one-file-system=%s scan-after-launch=%s rescan-after=%s\n"
 
 #: src/fsearch_cli_config.c:844
 msgid "fsearch config excludes hidden: expected true or false\n"
-msgstr ""
+msgstr "fsearch config மறைக்கப்பட்டதை விலக்குகிறது: எதிர்பார்க்கப்படும் உண்மை அல்லது தவறு\n"
 
 #: src/fsearch_cli_config.c:850
 #, c-format
 msgid "exclude-hidden = %s\n"
-msgstr ""
+msgstr "exclude-hidden = %s\n"
 
 #: src/fsearch_cli_config.c:856
 #, c-format
 msgid "fsearch config excludes: unknown operation: %s\n"
-msgstr ""
+msgstr "fsearch config விலக்குகிறது: தெரியாத செயல்பாடு: %s\n"
 
 #: src/fsearch_cli_config.c:877
 #, c-format
 msgid "fsearch config excludes: %s requires a value\n"
-msgstr ""
+msgstr "fsearch config விலக்குகிறது: %s க்கு மதிப்பு தேவை\n"
 
 #: src/fsearch_cli_config.c:909
 msgid "fsearch config excludes: missing PATTERN\n"
-msgstr ""
+msgstr "fsearch config விலக்குகிறது: PATTERN இல்லை\n"
 
 #: src/fsearch_cli_config.c:914
 #, c-format
 msgid "fsearch config excludes: invalid type: %s\n"
-msgstr ""
+msgstr "fsearch config விலக்குகிறது: தவறான வகை: %s\n"
 
 #: src/fsearch_cli_config.c:919
 #, c-format
 msgid "fsearch config excludes: invalid scope: %s\n"
-msgstr ""
+msgstr "fsearch config விலக்குகிறது: தவறான நோக்கம்: %s\n"
 
 #: src/fsearch_cli_config.c:924
 #, c-format
 msgid "fsearch config excludes: invalid target: %s\n"
-msgstr ""
+msgstr "fsearch config விலக்குகிறது: தவறான இலக்கு: %s\n"
 
 #: src/fsearch_cli_config.c:954
 #, c-format
 msgid "fsearch config excludes: exclusion not found: %s\n"
-msgstr ""
+msgstr "fsearch config விலக்குகிறது: விலக்கு கிடைக்கவில்லை: %s\n"
 
 #: src/fsearch_cli_config.c:1022
 msgid "filters reset\n"
-msgstr ""
+msgstr "வடிப்பான்கள் மீட்டமைக்கப்படுகின்றன\n"
 
 #: src/fsearch_cli_config.c:1029
 #, c-format
 msgid "fsearch config filters: unknown operation: %s\n"
-msgstr ""
+msgstr "fsearch config வடிப்பான்கள்: அறியப்படாத செயல்பாடு: %s\n"
 
 #: src/fsearch_cli_config.c:1051
 #, c-format
 msgid "fsearch config filters: %s requires a value\n"
-msgstr ""
+msgstr "fsearch config வடிப்பான்கள்: %s க்கு மதிப்பு தேவை\n"
 
 #: src/fsearch_cli_config.c:1094
 msgid "fsearch config filters: missing NAME\n"
-msgstr ""
+msgstr "fsearch config வடிப்பான்கள்: NAME ஐ காணவில்லை\n"
 
 #: src/fsearch_cli_config.c:1100 src/fsearch_cli_config.c:1111
 #, c-format
 msgid "fsearch config filters: name not found: %s\n"
-msgstr ""
+msgstr "fsearch config வடிப்பான்கள்: பெயர் கிடைக்கவில்லை: %s\n"
 
 #: src/fsearch_cli_config.c:1107
 #, c-format
 msgid "fsearch config filters: name already exists: %s\n"
-msgstr ""
+msgstr "fsearch config வடிப்பான்கள்: பெயர் ஏற்கனவே உள்ளது: %s\n"
 
 #: src/fsearch_cli_config.c:1145
 #, c-format
 msgid "%s\tmacro=%s query=%s\n"
-msgstr ""
+msgstr "%s மேக்ரோ=%s வினவல்=%s\n"
 
 #: src/fsearch_cli_config.c:1193
 msgid "fsearch config reset requires --yes\n"
-msgstr ""
+msgstr "fsearch config reset தேவை --ஆம்\n"
 
 #: src/fsearch_cli_config.c:1201
 msgid ""
 "fsearch config reset: --rescan requires roots, database, excludes, or all\n"
-msgstr ""
+msgstr "fsearch config reset: --rescan க்கு வேர்கள், தரவுத்தளம், தவிர்த்து, அல்லது அனைத்தும் தேவை\n"
 
 #: src/fsearch_cli_config.c:1241
 #, c-format
 msgid "fsearch config: unknown setting or section: %s\n"
-msgstr ""
+msgstr "fsearch config: தெரியாத அமைப்பு அல்லது பிரிவு: %s\n"
 
 #: src/fsearch_cli_config.c:1246
 #, c-format
 msgid "%s settings reset\n"
-msgstr ""
+msgstr "%s அமைப்புகள் மீட்டமைக்கப்பட்டது\n"
 
 #: src/fsearch_cli_config.c:1253
 msgid ""
 "configuration: missing; defaults active\n"
 "index: unknown\n"
 msgstr ""
+"கட்டமைப்பு: காணவில்லை; இயல்புநிலை செயலில் உள்ளது\n"
+"சுட்டி: தெரியவில்லை\n"
 
 #: src/fsearch_cli_config.c:1261
 msgid ""
 "configuration: ok\n"
 "index: missing or unreadable\n"
 msgstr ""
+"கட்டமைப்பு: சரி\n"
+"அட்டவணை: காணவில்லை அல்லது படிக்க முடியாதது\n"
 
 #: src/fsearch_cli_config.c:1266
 #, c-format
@@ -769,121 +903,125 @@ msgid ""
 "configuration: ok\n"
 "index: %s\n"
 msgstr ""
+"கட்டமைப்பு: சரி\n"
+"சுட்டி: %s\n"
 
 #: src/fsearch_cli_config.c:1266
 msgid "current"
-msgstr ""
+msgstr "தற்போதைய"
 
 #: src/fsearch_cli_config.c:1266
 msgid "stale"
-msgstr ""
+msgstr "பழமையான"
 
 #: src/fsearch_cli_config.c:1278
 msgid ""
 "Usage: fsearch config path\n"
 "Print the active FSearch configuration file path.\n"
 msgstr ""
+"பயன்பாடு: fsearch config path\n"
+"செயலில் உள்ள FSearch உள்ளமைவு கோப்பு பாதையை அச்சிடவும்.\n"
 
 #: src/fsearch_cli_config.c:1321
 #, c-format
 msgid "fsearch config: unknown command: %s\n"
-msgstr ""
+msgstr "fsearch config: தெரியாத கட்டளை: %s\n"
 
 #: src/fsearch_database.c:795
 msgid "Index rescan: applying changes…"
-msgstr ""
+msgstr "குறியீட்டு மறுபரிசீலனை: மாற்றங்களைப் பயன்படுத்துகிறது…"
 
 #: src/fsearch_database_file.c:1343
 msgid "Loading folders…"
-msgstr ""
+msgstr "கோப்புறைகளை ஏற்றுகிறது…"
 
 #: src/fsearch_database_file.c:1359
 msgid "Loading files…"
-msgstr ""
+msgstr "கோப்புகளை ஏற்றுகிறது…"
 
 #: src/fsearch_database_index_store.c:925 src/fsearch_statusbar.c:73
 #: src/fsearch_statusbar.ui:90
 msgid "Sorting…"
-msgstr ""
+msgstr "வரிசைப்படுத்துகிறது…"
 
 #: src/fsearch_database_preferences_widget.c:162
 #: src/fsearch_database_preferences_widget.c:176
 msgid "Select folder"
-msgstr ""
+msgstr "கோப்புறையைத் தேர்ந்தெடுக்கவும்"
 
 #: src/fsearch_database_preferences_widget.c:165
 #: src/fsearch_database_preferences_widget.c:180
 #: src/fsearch_filter_editor.c:104 src/fsearch_preferences_dialog.c:331
 msgid "_Cancel"
-msgstr ""
+msgstr "_ரத்துசெய்"
 
 #: src/fsearch_database_preferences_widget.c:167
 #: src/fsearch_database_preferences_widget.c:179
 msgid "_Select"
-msgstr ""
+msgstr "_தேர்ந்தெடு"
 
 #: src/fsearch_database_preferences_widget.c:389
 msgid "Literal"
-msgstr ""
+msgstr "இலக்கியம்"
 
 #: src/fsearch_database_preferences_widget.c:391
 msgid "Wildcard"
-msgstr ""
+msgstr "வைல்ட் கார்டு"
 
 #: src/fsearch_database_preferences_widget.c:393
 msgid "Regex"
-msgstr ""
+msgstr "ரெஜெக்ஸ்"
 
 #: src/fsearch_database_preferences_widget.c:414
 msgid "Full Path"
-msgstr ""
+msgstr "முழு பாதை"
 
 #: src/fsearch_database_preferences_widget.c:416
 msgid "Basename"
-msgstr ""
+msgstr "அடிப்படை பெயர்"
 
 #: src/fsearch_database_preferences_widget.c:434
 msgid "Files & Folders"
-msgstr ""
+msgstr "கோப்புகள் & கோப்புறைகள்"
 
 #: src/fsearch_database_preferences_widget.c:436 src/fsearch_filter.c:114
 msgid "Files"
-msgstr ""
+msgstr "கோப்புகள்"
 
 #: src/fsearch_database_preferences_widget.c:438 src/fsearch_filter.c:113
 msgid "Folders"
-msgstr ""
+msgstr "கோப்புறைகள்"
 
 #: src/fsearch_database_preferences_widget.c:635
 #: src/fsearch_database_preferences_widget.c:860
 msgid "Active"
-msgstr ""
+msgstr "செயலில்"
 
 #: src/fsearch_database_preferences_widget.c:640
 msgid "Pattern"
-msgstr ""
+msgstr "முறை"
 
 #: src/fsearch_database_preferences_widget.c:694 src/fsearch_window.c:756
 #: src/menus.ui:275
 msgid "Type"
-msgstr ""
+msgstr "வகை"
 
 #: src/fsearch_database_preferences_widget.c:700
 msgid "Match"
-msgstr ""
+msgstr "போட்டி"
 
 #: src/fsearch_database_preferences_widget.c:706
 msgid "Applies To"
-msgstr ""
+msgstr "க்கு பொருந்தும்"
 
 #: src/fsearch_database_preferences_widget.c:864 src/fsearch_window.c:742
 #: src/menus.ui:219 src/menus.ui:267
 msgid "Path"
-msgstr ""
+msgstr "பாதை"
 
 #: src/fsearch_database_preferences_widget.ui:78
 msgid "Enter path…"
-msgstr ""
+msgstr "பாதையை உள்ளிடவும்…"
 
 #: src/fsearch_database_preferences_widget.ui:97
 #: src/fsearch_database_preferences_widget.ui:372
@@ -892,191 +1030,195 @@ msgid ""
 "                                            database\n"
 "                                        "
 msgstr ""
+"சேர்க்க வேண்டிய பாதையைச் சேர்க்கவும்\n"
+"                                            தரவுத்தளம்"
 
 #: src/fsearch_database_preferences_widget.ui:176
 msgid "Attempt to monitor"
-msgstr ""
+msgstr "கண்காணிக்க முயற்சி"
 
 #: src/fsearch_database_preferences_widget.ui:191
 msgid "Scan after launch"
-msgstr ""
+msgstr "துவக்கிய பின் ஸ்கேன் செய்யவும்"
 
 #: src/fsearch_database_preferences_widget.ui:206
 msgid "Stay on one file system"
-msgstr ""
+msgstr "ஒரே கோப்பு முறைமையில் இருங்கள்"
 
 #: src/fsearch_database_preferences_widget.ui:221
 msgid "Rescan every"
-msgstr ""
+msgstr "ஒவ்வொன்றையும் மீண்டும் ஸ்கேன் செய்யவும்"
 
 #: src/fsearch_database_preferences_widget.ui:254
 msgid "Hours:"
-msgstr ""
+msgstr "மணிநேரம்:"
 
 #: src/fsearch_database_preferences_widget.ui:298
 msgid "Minutes:"
-msgstr ""
+msgstr "நிமிடங்கள்:"
 
 #: src/fsearch_database_preferences_widget.ui:310
 msgid "30"
-msgstr ""
+msgstr "30"
 
 #: src/fsearch_database_preferences_widget.ui:391
 msgid "Remove selected path"
-msgstr ""
+msgstr "தேர்ந்தெடுக்கப்பட்ட பாதையை அகற்று"
 
 #: src/fsearch_database_preferences_widget.ui:418
 msgid "Include"
-msgstr ""
+msgstr "அடங்கும்"
 
 #: src/fsearch_database_preferences_widget.ui:477
 msgid ""
 "Add exclude rule\n"
 "                                                "
 msgstr ""
+"விலக்கு விதியைச் சேர்க்கவும்"
 
 #: src/fsearch_database_preferences_widget.ui:495
 msgid ""
 "Remove selected path\n"
 "                                                "
 msgstr ""
+"தேர்ந்தெடுக்கப்பட்ட பாதையை அகற்று"
 
 #: src/fsearch_database_preferences_widget.ui:512
 msgid "Restore default exclude list"
-msgstr ""
+msgstr "இயல்புநிலை விலக்கு பட்டியலை மீட்டமை"
 
 #: src/fsearch_database_preferences_widget.ui:541
 msgid "Exclude hidden files and folders"
-msgstr ""
+msgstr "மறைக்கப்பட்ட கோப்புகள் மற்றும் கோப்புறைகளை விலக்கு"
 
 #: src/fsearch_database_preferences_widget.ui:563
 msgid "Exclude"
-msgstr ""
+msgstr "விலக்கு"
 
 #: src/fsearch_file_utils.c:161
 msgctxt "Will be followed by the path of the file."
 msgid "Error when removing file"
-msgstr ""
+msgstr "கோப்பை அகற்றுவதில் பிழை"
 
 #: src/fsearch_file_utils.c:163
 msgid "Failed to get path"
-msgstr ""
+msgstr "பாதையைப் பெற முடியவில்லை"
 
 #: src/fsearch_file_utils.c:277
 msgctxt "Will be followed by the file path."
 msgid "Error when getting information from file"
-msgstr ""
+msgstr "கோப்பிலிருந்து தகவலைப் பெறுவதில் பிழை"
 
 #: src/fsearch_file_utils.c:279
 msgid "Failed to get application information"
-msgstr ""
+msgstr "விண்ணப்பத் தகவலைப் பெறுவதில் தோல்வி"
 
 #: src/fsearch_file_utils.c:294
 msgctxt "Will be followed by the content type string."
 msgid "Error when getting information for content type"
-msgstr ""
+msgstr "உள்ளடக்க வகைக்கான தகவலைப் பெறுவதில் பிழை"
 
 #: src/fsearch_file_utils.c:296
 msgid "No default application registered"
-msgstr ""
+msgstr "இயல்புநிலை விண்ணப்பம் எதுவும் பதிவு செய்யப்படவில்லை"
 
 #: src/fsearch_file_utils.c:524
 msgctxt "Will be followed by the path of the folder."
 msgid "Error when opening parent folder"
-msgstr ""
+msgstr "பெற்றோர் கோப்புறையைத் திறக்கும்போது பிழை"
 
 #: src/fsearch_file_utils.c:526
 msgid "Failed to get parent path"
-msgstr ""
+msgstr "பெற்றோர் வழியைப் பெறுவதில் தோல்வி"
 
 #: src/fsearch_file_utils.c:530
 msgctxt "Will be followed by the path of the folder."
 msgid "Error while opening folder"
-msgstr ""
+msgstr "கோப்புறையைத் திறக்கும்போது பிழை"
 
 #: src/fsearch_file_utils.c:533
 msgid "Failed to build open command"
-msgstr ""
+msgstr "திறந்த கட்டளையை உருவாக்க முடியவில்லை"
 
 #: src/fsearch_file_utils.c:589
 msgid "Folder"
-msgstr ""
+msgstr "கோப்புறை"
 
 #: src/fsearch_file_utils.c:595
 msgid "Unknown Type"
-msgstr ""
+msgstr "தெரியாத வகை"
 
 #: src/fsearch_filter.c:112
 msgid "All"
-msgstr ""
+msgstr "அனைத்து"
 
 #: src/fsearch_filter.c:115
 msgid "Applications"
-msgstr ""
+msgstr "விண்ணப்பங்கள்"
 
 #: src/fsearch_filter.c:116
 msgid "Archives"
-msgstr ""
+msgstr "காப்பகங்கள்"
 
 #: src/fsearch_filter.c:117
 msgid "Audio"
-msgstr ""
+msgstr "ஆடியோ"
 
 #: src/fsearch_filter.c:118
 msgid "Documents"
-msgstr ""
+msgstr "ஆவணங்கள்"
 
 #: src/fsearch_filter.c:119
 msgid "Pictures"
-msgstr ""
+msgstr "படங்கள்"
 
 #: src/fsearch_filter.c:120
 msgid "Videos"
-msgstr ""
+msgstr "வீடியோக்கள்"
 
 #: src/fsearch_filter_editor.c:79
 msgid "Macro names must not contain `:` characters."
-msgstr ""
+msgstr "மேக்ரோ பெயர்களில் `:` எழுத்துகள் இருக்கக்கூடாது."
 
 #: src/fsearch_filter_editor.c:105 src/fsearch_preferences_dialog.c:332
 msgid "_OK"
-msgstr ""
+msgstr "_சரி"
 
 #: src/fsearch_filter_editor.ui:10 src/fsearch_filter_preferences_widget.c:156
 msgid "Edit filter"
-msgstr ""
+msgstr "வடிப்பானைத் திருத்து"
 
 #: src/fsearch_filter_editor.ui:50
 msgid "Name:"
-msgstr ""
+msgstr "பெயர்:"
 
 #: src/fsearch_filter_editor.ui:61
 msgid "The unique name of this filter"
-msgstr ""
+msgstr "இந்த வடிகட்டியின் தனித்துவமான பெயர்"
 
 #: src/fsearch_filter_editor.ui:64
 msgid "Unique filter name"
-msgstr ""
+msgstr "தனித்த வடிகட்டி பெயர்"
 
 #: src/fsearch_filter_editor.ui:73
 msgid "Search in path"
-msgstr ""
+msgstr "பாதையில் தேடுங்கள்"
 
 #: src/fsearch_filter_editor.ui:87
 msgid "Enable regular expressions"
-msgstr ""
+msgstr "வழக்கமான வெளிப்பாடுகளை இயக்கவும்"
 
 #: src/fsearch_filter_editor.ui:101
 msgid "Match case"
-msgstr ""
+msgstr "போட்டி வழக்கு"
 
 #: src/fsearch_filter_editor.ui:146
 msgid "Query:"
-msgstr ""
+msgstr "கேள்வி:"
 
 #: src/fsearch_filter_editor.ui:160
 msgid "Macro:"
-msgstr ""
+msgstr "மேக்ரோ:"
 
 #: src/fsearch_filter_editor.ui:171
 msgid ""
@@ -1084,227 +1226,228 @@ msgid ""
 "search entry by typing its text followed by ':'\n"
 "                "
 msgstr ""
+"இந்த வடிகட்டிக்கான மேக்ரோ. மேக்ரோ இந்த வடிப்பானை தேடல் உள்ளீட்டிலிருந்து அதன் உரையைத் தொடர்ந்து ':' என்று தட்டச்சு செய்வதன் மூலம் அணுக அனுமதிக்கிறது."
 
 #: src/fsearch_filter_preferences_widget.c:133
 msgid "Add filter"
-msgstr ""
+msgstr "வடிகட்டி சேர்க்கவும்"
 
 #: src/fsearch_filter_preferences_widget.c:315 src/fsearch_window.c:735
 #: src/menus.ui:215 src/menus.ui:263
 msgid "Name"
-msgstr ""
+msgstr "பெயர்"
 
 #: src/fsearch_filter_preferences_widget.c:316
 msgid "Macro"
-msgstr ""
+msgstr "மேக்ரோ"
 
 #: src/fsearch_filter_preferences_widget.c:317
 msgid "Query"
-msgstr ""
+msgstr "வினவு"
 
 #: src/fsearch_filter_preferences_widget.ui:77
 msgid "Add new filter"
-msgstr ""
+msgstr "புதிய வடிகட்டியைச் சேர்க்கவும்"
 
 #: src/fsearch_filter_preferences_widget.ui:95
 msgid "Remove selected filter"
-msgstr ""
+msgstr "தேர்ந்தெடுக்கப்பட்ட வடிகட்டியை அகற்று"
 
 #: src/fsearch_filter_preferences_widget.ui:113
 msgid "Edit selected filter"
-msgstr ""
+msgstr "தேர்ந்தெடுக்கப்பட்ட வடிப்பானைத் திருத்தவும்"
 
 #: src/fsearch_filter_preferences_widget.ui:129
 msgid "Restore default filters"
-msgstr ""
+msgstr "இயல்பு வடிப்பான்களை மீட்டமைக்கவும்"
 
 #: src/fsearch_listview_popup.c:36
 msgid "Properties…"
-msgstr ""
+msgstr "பண்புகள்..."
 
 #: src/fsearch_listview_popup.c:163
 msgid "Other Application…"
-msgstr ""
+msgstr "பிற பயன்பாடு…"
 
 #: src/fsearch_overlay.ui:44
 msgid "Empty Database"
-msgstr ""
+msgstr "வெற்று தரவுத்தளம்"
 
 #: src/fsearch_overlay.ui:60
 msgid "Add folders"
-msgstr ""
+msgstr "கோப்புறைகளைச் சேர்க்கவும்"
 
 #: src/fsearch_overlay.ui:108
 msgid "Loading Database…"
-msgstr ""
+msgstr "தரவுத்தளத்தை ஏற்றுகிறது…"
 
 #: src/fsearch_overlay.ui:123
 msgid "This won't take long."
-msgstr ""
+msgstr "இதற்கு அதிக நேரம் எடுக்காது."
 
 #: src/fsearch_overlay.ui:171 src/fsearch_statusbar.ui:312
 msgid "Updating Database…"
-msgstr ""
+msgstr "தரவுத்தளத்தைப் புதுப்பிக்கிறது…"
 
 #: src/fsearch_overlay.ui:186 src/fsearch_overlay.ui:383
 msgid "This may take a while."
-msgstr ""
+msgstr "இதற்கு சிறிது நேரம் ஆகலாம்."
 
 #: src/fsearch_overlay.ui:241
 msgid "Empty Query"
-msgstr ""
+msgstr "வெற்று வினவல்"
 
 #: src/fsearch_overlay.ui:256
 msgid "Press <b>Ctrl + F</b> and start typing."
-msgstr ""
+msgstr "<b>Ctrl + F</b> ஐ அழுத்தி தட்டச்சு செய்யத் தொடங்குங்கள்."
 
 #: src/fsearch_overlay.ui:304
 msgid "No Results Found"
-msgstr ""
+msgstr "முடிவுகள் எதுவும் கிடைக்கவில்லை"
 
 #: src/fsearch_overlay.ui:319
 msgid "Try a different search"
-msgstr ""
+msgstr "வேறு தேடலை முயற்சிக்கவும்"
 
 #: src/fsearch_overlay.ui:368
 msgid "Sorting results…"
-msgstr ""
+msgstr "முடிவுகளை வரிசைப்படுத்துகிறது…"
 
 #: src/fsearch_preferences.ui:7 src/fsearch_window.ui:251 src/menus.ui:84
 msgid "Preferences"
-msgstr ""
+msgstr "விருப்பங்கள்"
 
 #: src/fsearch_preferences.ui:76
 msgid "Enable dark theme"
-msgstr ""
+msgstr "இருண்ட தீம் இயக்கவும்"
 
 #: src/fsearch_preferences.ui:97
 msgid "Enable client-side decorations (requires restart)"
-msgstr ""
+msgstr "கிளையன்ட் பக்க அலங்காரங்களை இயக்கு (மறுதொடக்கம் தேவை)"
 
 #: src/fsearch_preferences.ui:117
 msgid "Use binary units instead of decimal units"
-msgstr ""
+msgstr "தசம அலகுகளுக்குப் பதிலாக பைனரி அலகுகளைப் பயன்படுத்தவும்"
 
 #: src/fsearch_preferences.ui:138
 msgid "Remember window size"
-msgstr ""
+msgstr "சாளரத்தின் அளவை நினைவில் கொள்ளுங்கள்"
 
 #: src/fsearch_preferences.ui:159
 msgid "Exit on Escape"
-msgstr ""
+msgstr "எஸ்கேப்பில் வெளியேறவும்"
 
 #: src/fsearch_preferences.ui:202
 msgid "with keyboard shortcuts or menu entries"
-msgstr ""
+msgstr "விசைப்பலகை குறுக்குவழிகள் அல்லது மெனு உள்ளீடுகளுடன்"
 
 #: src/fsearch_preferences.ui:223
 msgid "with double click"
-msgstr ""
+msgstr "இரட்டை கிளிக் மூலம்"
 
 #: src/fsearch_preferences.ui:257
 msgid "Behaviour after successfully opening a file:"
-msgstr ""
+msgstr "கோப்பை வெற்றிகரமாக திறந்த பிறகு நடத்தை:"
 
 #: src/fsearch_preferences.ui:273
 msgid "Nothing"
-msgstr ""
+msgstr "ஒன்றுமில்லை"
 
 #: src/fsearch_preferences.ui:274
 msgid "Minimize"
-msgstr ""
+msgstr "குறைக்கவும்"
 
 #: src/fsearch_preferences.ui:275
 msgid "Close"
-msgstr ""
+msgstr "மூடு"
 
 #: src/fsearch_preferences.ui:309
 msgid "General:"
-msgstr ""
+msgstr "பொது:"
 
 #: src/fsearch_preferences.ui:344
 msgid "Show highlighted search terms"
-msgstr ""
+msgstr "தனிப்படுத்தப்பட்ட தேடல் சொற்களைக் காட்டு"
 
 #: src/fsearch_preferences.ui:366
 msgid "Show tooltips"
-msgstr ""
+msgstr "உதவிக்குறிப்புகளைக் காட்டு"
 
 #: src/fsearch_preferences.ui:387
 msgid "Show icons in name column"
-msgstr ""
+msgstr "பெயர் நெடுவரிசையில் ஐகான்களைக் காட்டு"
 
 #: src/fsearch_preferences.ui:408
 msgid "Remember column configuration"
-msgstr ""
+msgstr "நெடுவரிசை கட்டமைப்பை நினைவில் கொள்க"
 
 #: src/fsearch_preferences.ui:429
 msgid "Remember sort order"
-msgstr ""
+msgstr "வரிசை வரிசையை நினைவில் கொள்க"
 
 #: src/fsearch_preferences.ui:450
 msgid "Open path with double click in path column"
-msgstr ""
+msgstr "பாதை நெடுவரிசையில் இருமுறை கிளிக் செய்வதன் மூலம் பாதையைத் திறக்கவும்"
 
 #: src/fsearch_preferences.ui:471
 msgid "Single click to open"
-msgstr ""
+msgstr "திறக்க ஒரே கிளிக்கில்"
 
 #: src/fsearch_preferences.ui:492
 msgid "Launch desktop files"
-msgstr ""
+msgstr "டெஸ்க்டாப் கோப்புகளை இயக்கவும்"
 
 #: src/fsearch_preferences.ui:519
 msgid "Results:"
-msgstr ""
+msgstr "முடிவுகள்:"
 
 #: src/fsearch_preferences.ui:560
 msgid "Show database indexing status"
-msgstr ""
+msgstr "தரவுத்தள அட்டவணைப்படுத்தல் நிலையைக் காட்டு"
 
 #: src/fsearch_preferences.ui:587
 msgid "Statusbar:"
-msgstr ""
+msgstr "நிலைப்பட்டி:"
 
 #: src/fsearch_preferences.ui:628
 msgid "Show warning dialogs when:"
-msgstr ""
+msgstr "எப்பொழுது எச்சரிக்கை உரையாடல்களைக் காட்டு:"
 
 #: src/fsearch_preferences.ui:638
 msgid "file / folder failed to open"
-msgstr ""
+msgstr "கோப்பு / கோப்புறை திறக்க முடியவில்லை"
 
 #: src/fsearch_preferences.ui:667
 msgid "Dialogs:"
-msgstr ""
+msgstr "உரையாடல்கள்:"
 
 #: src/fsearch_preferences.ui:692
 msgid "Interface"
-msgstr ""
+msgstr "இடைமுகம்"
 
 #: src/fsearch_preferences.ui:711
 msgid "Search in path when query contains path separators"
-msgstr ""
+msgstr "வினவலில் பாதை பிரிப்பான்கள் இருக்கும்போது பாதையில் தேடவும்"
 
 #: src/fsearch_preferences.ui:730
 msgid "Search as you type"
-msgstr ""
+msgstr "நீங்கள் தட்டச்சு செய்யும் போது தேடுங்கள்"
 
 #: src/fsearch_preferences.ui:750
 msgid "Hide results when search is empty"
-msgstr ""
+msgstr "தேடல் காலியாக இருக்கும்போது முடிவுகளை மறை"
 
 #: src/fsearch_preferences.ui:769
 msgid "Match case when query contains at least one upper case character"
-msgstr ""
+msgstr "வினவலில் குறைந்தபட்சம் ஒரு பெரிய எழுத்துக்குறி இருக்கும் போது கேஸ் பொருத்தவும்"
 
 #: src/fsearch_preferences.ui:801
 msgid "Filter:"
-msgstr ""
+msgstr "வடிகட்டி:"
 
 #: src/fsearch_preferences.ui:822 src/fsearch_window.ui:639
 msgid "Search"
-msgstr ""
+msgstr "தேடு"
 
 #: src/fsearch_preferences.ui:855
 msgid ""
@@ -1316,6 +1459,11 @@ msgid ""
 "Note that not all system themes provide such a darker variant, therefore "
 "enabling this setting might not have an effect."
 msgstr ""
+"<b>இருண்ட தீமை இயக்கு:</b>\n"
+"\n"
+"இயக்கப்பட்டால், <i>(அதாவது பிரகாசமான உரையில் இருண்ட UI கூறுகள்)</i> பயன்பாட்டிற்கு இருண்ட ஸ்டைலிங்கைப் பயன்படுத்தும்படி கணினி தீம் கேட்கப்படும்.\n"
+"\n"
+"அனைத்து சிஸ்டம் தீம்களும் அத்தகைய இருண்ட மாறுபாட்டை வழங்காது என்பதை நினைவில் கொள்ளவும், எனவே இந்த அமைப்பை இயக்குவது எந்த விளைவையும் ஏற்படுத்தாது."
 
 #: src/fsearch_preferences.ui:873
 msgid ""
@@ -1329,6 +1477,12 @@ msgid ""
 "This resembles a more traditional UI layout and takes a little bit more "
 "space."
 msgstr ""
+"<b>கிளையன்ட் பக்க அலங்காரங்களை இயக்கு:</b>\n"
+"\n"
+"இயக்கப்பட்டால், தேடல் உள்ளீடு மற்றும் முக்கிய மெனு சாளரத்தின் தலைப்புப் பட்டியில் காட்டப்படும்.\n"
+"\n"
+"முடக்கப்பட்டிருந்தால், முக்கிய மெனு அதன் கீழே உள்ள தேடல் உள்ளீட்டுடன் மெனு பட்டியாக காட்டப்படும்.\n"
+"இது மிகவும் பாரம்பரிய UI தளவமைப்பை ஒத்திருக்கிறது மற்றும் சிறிது அதிக இடத்தை எடுக்கும்."
 
 #: src/fsearch_preferences.ui:893
 msgid ""
@@ -1341,6 +1495,12 @@ msgid ""
 "\t• <b>Decimal  units:</b> This refers to decimal SI prefixes <i>(e.g. 1 kB "
 "= 1000 bytes)</i>"
 msgstr ""
+"<b>தசம அலகுகளுக்குப் பதிலாக பைனரி அலகுகளைப் பயன்படுத்தவும்:</b>\n"
+"\n"
+"கோப்பு அளவுகள் எவ்வாறு காட்டப்படுகின்றன என்பதை இந்த அமைப்புகள் கட்டுப்படுத்துகிறது.\n"
+"\n"
+"\t• <b>பைனரி அலகுகள்:</b> இது பைனரி IEC முன்னொட்டுகளைக் குறிக்கிறது <i>(எ.கா. 1 KiB = 1024 பைட்டுகள்)</i>\n"
+"\t• <b>தசம அலகுகள்:</b> இது தசம SI முன்னொட்டுகளைக் குறிக்கிறது <i>(எ.கா. 1 kB = 1000 பைட்டுகள்)</i>"
 
 #: src/fsearch_preferences.ui:913
 msgid ""
@@ -1352,6 +1512,11 @@ msgid ""
 "Note that some window managers ignore this request and force the window to "
 "have a different size."
 msgstr ""
+"<b>சாளர அளவை நினைவில் கொள்க:</b>\n"
+"\n"
+"இயக்கப்பட்டால், நீங்கள் FSearch சாளரத்தைத் திறக்கும்போது முந்தைய அமர்வின் சாளர அளவு மீட்டமைக்கப்படும்.\n"
+"\n"
+"சில சாளர மேலாளர்கள் இந்தக் கோரிக்கையைப் புறக்கணித்து, சாளரத்தை வேறு அளவைக் கொண்டிருக்கும்படி கட்டாயப்படுத்துகிறார்கள் என்பதை நினைவில் கொள்ளவும்."
 
 #: src/fsearch_preferences.ui:932
 msgid ""
@@ -1369,6 +1534,16 @@ msgid ""
 "\t• <b>keyboard shortcuts or menu entries</b> and/or\n"
 "\t• <b>mouse click</b>"
 msgstr ""
+"<b>கோப்பை வெற்றிகரமாகத் திறந்த பிறகு நடத்தை:</b>\n"
+"\n"
+"ஒரு கோப்பு/கோப்புறை வெற்றிகரமாக திறக்கப்பட்டால், பின்வரும் செயல்களில் ஒன்றைச் செய்யலாம்:\n"
+"\t• <b>ஒன்றுமில்லை:</b> எதுவும் நடக்காது.\n"
+"                        • <b>சிறிதாக்கு:</b> தற்போது தேர்ந்தெடுக்கப்பட்ட FSearch சாளரம் குறைக்கப்படுகிறது.\n"
+"\t• <b>மூடு:</b> FSearch ஐ விட்டு வெளியேறவும்.\n"
+"\n"
+"கோப்பு திறக்கப்படும்போது அந்த செயல்கள் தூண்டப்பட வேண்டுமா என்பதை நீங்கள் கட்டமைக்கலாம்\n"
+"\t• <b>விசைப்பலகை குறுக்குவழிகள் அல்லது மெனு உள்ளீடுகள்</b> மற்றும்/அல்லது\n"
+"\t• <b>மவுஸ் கிளிக்</b>"
 
 #: src/fsearch_preferences.ui:956
 msgid ""
@@ -1384,6 +1559,14 @@ msgid ""
 "This also works for regular expressions and wildcard expressions starting or "
 "ending with an asterisk. "
 msgstr ""
+"<b>தனிப்படுத்தப்பட்ட தேடல் சொற்களைக் காட்டு:</b>\n"
+"\n"
+"இயக்கப்பட்டால், தேடல் சொற்கள் முடிவுகள் பார்வையில் தனிப்படுத்தப்படும். எடுத்துக்காட்டாக நீங்கள் \\\"foo\\\" ஐ தேடும்போது கோப்பு/கோப்புறை பெயர்களில் உள்ள <i>foo</i> இன் அனைத்து தோற்றங்களும் தடிமனான எழுத்துகளுடன் சிறப்பிக்கப்படும்:\n"
+"\n"
+"\t<b>foo</b>bar.txt\n"
+"\tகோப்பு.<b>foo</b>\n"
+"\n"
+"இது வழக்கமான வெளிப்பாடுகள் மற்றும் வைல்டு கார்டு வெளிப்பாடுகளுக்கு ஒரு நட்சத்திரத்துடன் தொடங்கும் அல்லது முடிவடையும்."
 
 #: src/fsearch_preferences.ui:978
 msgid ""
@@ -1392,6 +1575,9 @@ msgid ""
 "If enabled, the results view will show the full path of the focused file/"
 "folder in a small tooltip window."
 msgstr ""
+"<b>உதவிக்குறிப்புகளைக் காட்டு:</b>\n"
+"\n"
+"இயக்கப்பட்டால், முடிவுகள் காட்சியானது கவனம் செலுத்திய கோப்பு/கோப்புறையின் முழு பாதையையும் ஒரு சிறிய உதவிக்குறிப்பு சாளரத்தில் காண்பிக்கும்."
 
 #: src/fsearch_preferences.ui:995
 msgid ""
@@ -1399,6 +1585,9 @@ msgid ""
 "\n"
 "If enabled, file/folder icons will be shown in the name column."
 msgstr ""
+"<b>பெயர் நெடுவரிசையில் ஐகான்களைக் காட்டு:</b>\n"
+"\n"
+"இயக்கப்பட்டால், பெயர் நெடுவரிசையில் கோப்பு/கோப்புறை ஐகான்கள் காண்பிக்கப்படும்."
 
 #: src/fsearch_preferences.ui:1012
 msgid ""
@@ -1408,6 +1597,9 @@ msgid ""
 "session will be restored when you open an FSearch window. This includes the "
 "size and visibility of all columns."
 msgstr ""
+"<b>நெடுவரிசை உள்ளமைவை நினைவில் கொள்க:</b>\n"
+"\n"
+"இயக்கப்பட்டால், நீங்கள் ஒரு FSearch சாளரத்தைத் திறக்கும்போது, முந்தைய அமர்வின் முடிவுக் காட்சியின் நெடுவரிசை உள்ளமைவு மீட்டமைக்கப்படும். இதில் அனைத்து நெடுவரிசைகளின் அளவும் தெரிவுநிலையும் அடங்கும்."
 
 #: src/fsearch_preferences.ui:1029
 msgid ""
@@ -1416,6 +1608,9 @@ msgid ""
 "If enabled, the sort order of the results view from the previous session "
 "will be restored when you open an FSearch window."
 msgstr ""
+"<b>வரிசை வரிசையை நினைவில் கொள்க:</b>\n"
+"\n"
+"இயக்கப்பட்டால், நீங்கள் FSearch சாளரத்தைத் திறக்கும் போது, முந்தைய அமர்வின் முடிவு காட்சியின் வரிசை வரிசை மீட்டமைக்கப்படும்."
 
 #: src/fsearch_preferences.ui:1046
 msgid ""
@@ -1423,6 +1618,9 @@ msgid ""
 "\n"
 "If enabled, double clicking in the path column will open the selected path."
 msgstr ""
+"<b>பாதை நெடுவரிசையில் இருமுறை கிளிக் செய்வதன் மூலம் பாதையைத் திறக்கவும்:</b>\n"
+"\n"
+"இயக்கப்பட்டால், பாதை நெடுவரிசையில் இருமுறை கிளிக் செய்தால், தேர்ந்தெடுக்கப்பட்ட பாதை திறக்கும்."
 
 #: src/fsearch_preferences.ui:1063
 msgid ""
@@ -1432,6 +1630,9 @@ msgid ""
 "want to select a file/folder while this setting is active, you need to hold "
 "<i>Ctrl</i> at the same time while clicking the file/folder."
 msgstr ""
+"<b>திறக்க ஒற்றை கிளிக்:</b>\n"
+"\n"
+"இயக்கப்பட்டால், ஒரே கிளிக்கில் தேர்ந்தெடுக்கப்பட்ட கோப்பு/கோப்புறை திறக்கும். இந்த அமைப்பு செயலில் இருக்கும்போது ஒரு கோப்பு/கோப்புறையை மட்டும் தேர்ந்தெடுக்க விரும்பினால், கோப்பு/கோப்புறையைக் கிளிக் செய்யும் போது <i>Ctrl</i>ஐ ஒரே நேரத்தில் வைத்திருக்க வேண்டும்."
 
 #: src/fsearch_preferences.ui:1080
 msgid ""
@@ -1440,6 +1641,9 @@ msgid ""
 "If enabled, the path that is currently being indexed is displayed in the "
 "statusbar."
 msgstr ""
+"<b>தரவுத்தள அட்டவணைப்படுத்தல் நிலையைக் காட்டு:</b>\n"
+"\n"
+"இயக்கப்பட்டால், தற்போது அட்டவணைப்படுத்தப்பட்ட பாதை நிலைப்பட்டியில் காட்டப்படும்."
 
 #: src/fsearch_preferences.ui:1097
 msgid ""
@@ -1448,6 +1652,9 @@ msgid ""
 "If enabled, a warning dialog is displayed when a file or folder failed to "
 "open."
 msgstr ""
+"<b>எச்சரிக்கை உரையாடல்களைக் காட்டு:</b>\n"
+"\n"
+"இயக்கப்பட்டால், ஒரு கோப்பு அல்லது கோப்புறை திறக்கத் தவறினால் எச்சரிக்கை உரையாடல் காட்டப்படும்."
 
 #: src/fsearch_preferences.ui:1114
 msgid ""
@@ -1456,6 +1663,9 @@ msgid ""
 "If enabled, search terms containing path separators (i.e. \"/\") will be "
 "automatically matched against the full path of a file or folder."
 msgstr ""
+"<b>வினவலில் பாதை பிரிப்பான்கள் இருக்கும்போது பாதையில் தேடவும்:</b>\n"
+"\n"
+"இயக்கப்பட்டால், பாதை பிரிப்பான்களைக் கொண்ட தேடல் சொற்கள் (அதாவது \\\"/\\\") கோப்பு அல்லது கோப்புறையின் முழுப் பாதையுடன் தானாகப் பொருத்தப்படும்."
 
 #: src/fsearch_preferences.ui:1131
 msgid ""
@@ -1465,6 +1675,9 @@ msgid ""
 "trigger a case-sensitive search. This means a search term like <i>Foo</i> "
 "will match <i>FooBar.txt</i> but not <i>foobar.txt</i>."
 msgstr ""
+"<b>வினவலில் குறைந்தபட்சம் ஒரு பெரிய எழுத்து எழுத்து இருக்கும் போது கேஸை பொருத்தவும்:</b>\n"
+"\n"
+"இயக்கப்பட்டால், குறைந்தபட்சம் ஒரு பெரிய எழுத்துக்குறியைக் கொண்ட தேடல் சொற்கள், கேஸ்-சென்சிட்டிவ் தேடலைத் தூண்டும். அதாவது <i>Foo</i> போன்ற தேடல் சொல் <i>FooBar.txt</i> உடன் பொருந்தும் ஆனால் <i>foobar.txt</i> அல்ல."
 
 #: src/fsearch_preferences.ui:1148
 msgid ""
@@ -1475,6 +1688,11 @@ msgid ""
 "If disabled, all files and folders will be displayed when the search entry "
 "is empty."
 msgstr ""
+"<b>தேடல் காலியாக இருக்கும்போது முடிவுகளை மறை:</b>\n"
+"\n"
+"இயக்கப்பட்டால், தேடல் உள்ளீடு காலியாக இருக்கும்போது தேடல் முடிவுகள் எதுவும் காட்டப்படாது.\n"
+"\n"
+"முடக்கப்பட்டிருந்தால், தேடல் உள்ளீடு காலியாக இருக்கும்போது எல்லா கோப்புகளும் கோப்புறைகளும் காட்டப்படும்."
 
 #: src/fsearch_preferences.ui:1167
 msgid ""
@@ -1485,6 +1703,11 @@ msgid ""
 "If disabled, the search is only updated when you hit <i>Enter</i> or press "
 "the search button. "
 msgstr ""
+"<b>நீங்கள் தட்டச்சு செய்யும் போது தேடவும்:</b>\n"
+"\n"
+"இயக்கப்பட்டால், ஒவ்வொரு விசை அழுத்தத்திலும் தேடல் தானாகவே புதுப்பிக்கப்படும்.\n"
+"\n"
+"முடக்கப்பட்டிருந்தால், <i>Enter</i> அல்லது தேடல் பொத்தானை அழுத்தினால் மட்டுமே தேடல் புதுப்பிக்கப்படும்."
 
 #: src/fsearch_preferences.ui:1186
 msgid ""
@@ -1493,6 +1716,9 @@ msgid ""
 "If enabled, the database will be updated automatically in the background "
 "when you start FSearch."
 msgstr ""
+"<b>தொடக்கத்தில் தரவுத்தளத்தைப் புதுப்பிக்கவும்:</b>\n"
+"\n"
+"இயக்கப்பட்டால், நீங்கள் FSearch ஐத் தொடங்கும்போது தரவுத்தளம் பின்னணியில் தானாகவே புதுப்பிக்கப்படும்."
 
 #: src/fsearch_preferences.ui:1203
 msgid ""
@@ -1506,6 +1732,13 @@ msgid ""
 "\t• <b>One Filesystem:</b> If enabled, FSearch won't cross filesystem "
 "boundaries for this folder"
 msgstr ""
+"<b>சேர்க்கப்பட்ட கோப்புறைகள்:</b>\n"
+"\n"
+"இந்த பட்டியலில் நீங்கள் தரவுத்தளத்தில் சேர்க்க விரும்பும் அனைத்து கோப்புறைகளும் உள்ளன.\n"
+"\n"
+"\t• <b>செயலில்:</b> இயக்கப்பட்டால், தேட வேண்டிய தரவுத்தளத்தில் பாதை சேர்க்கப்படும்.\n"
+"\t• <b>பாதை:</b> சேர்க்கப்பட வேண்டிய முழு பாதை.\n"
+"\t• <b>ஒரு கோப்பு முறைமை:</b> இயக்கப்பட்டிருந்தால், இந்தக் கோப்புறைக்கான கோப்பு முறைமை எல்லைகளை FSearch கடக்காது"
 
 #: src/fsearch_preferences.ui:1224
 msgid ""
@@ -1514,6 +1747,9 @@ msgid ""
 "This button opens a dialog where you can select a folder you want to include "
 "in the database for searching."
 msgstr ""
+"<b>தரவுத்தளத்தில் கோப்புறையைச் சேர்:</b>\n"
+"\n"
+"இந்த பொத்தான் ஒரு உரையாடலைத் திறக்கும், அங்கு நீங்கள் தேடுவதற்கு தரவுத்தளத்தில் சேர்க்க விரும்பும் கோப்புறையைத் தேர்ந்தெடுக்கலாம்."
 
 #: src/fsearch_preferences.ui:1241
 msgid ""
@@ -1523,6 +1759,9 @@ msgid ""
 "include that folder in the database. This is useful for adding a path "
 "directly without browsing for it."
 msgstr ""
+"<b>குறிப்பிட்ட பாதையைச் சேர்:</b>\n"
+"\n"
+"ஒரு கோப்புறையின் முழு பாதையையும் இங்கே தட்டச்சு செய்து, தரவுத்தளத்தில் அந்தக் கோப்புறையைச் சேர்க்க, அதற்கு அடுத்துள்ள பொத்தானைக் கிளிக் செய்யவும். ஒரு பாதையை உலாவாமல் நேரடியாகச் சேர்க்க இது பயனுள்ளதாக இருக்கும்."
 
 #: src/fsearch_preferences.ui:1258
 msgid ""
@@ -1530,6 +1769,9 @@ msgid ""
 "\n"
 "This removes the selected folder from the list of included folders."
 msgstr ""
+"<b>தேர்ந்தெடுக்கப்பட்ட வரிசையை அகற்று:</b>\n"
+"\n"
+"இது சேர்க்கப்பட்ட கோப்புறைகளின் பட்டியலிலிருந்து தேர்ந்தெடுக்கப்பட்ட கோப்புறையை நீக்குகிறது."
 
 #: src/fsearch_preferences.ui:1275
 msgid ""
@@ -1542,6 +1784,11 @@ msgid ""
 "system resources per watched folder. For large directory trees with many "
 "files the system may run out of resources to watch them all."
 msgstr ""
+"<b>கண்காணிப்பதற்கான முயற்சி:</b>\n"
+"\n"
+"இயக்கப்பட்டால், FSearch மாற்றங்களுக்காக இந்தக் கோப்புறையைப் பார்க்கிறது மற்றும் தரவுத்தளத்தை தானாகவே புதுப்பித்த நிலையில் வைத்திருக்கும், எனவே நீங்கள் கைமுறையாக மீண்டும் ஸ்கேன் செய்ய வேண்டியதில்லை.\n"
+"\n"
+"ஒவ்வொரு கோப்பு முறைமையிலும் கண்காணிப்பு ஆதரிக்கப்படாது மற்றும் பார்த்த கோப்புறையில் சிறிதளவு கணினி ஆதாரங்களைப் பயன்படுத்துகிறது. பல கோப்புகளைக் கொண்ட பெரிய அடைவு மரங்களுக்கு, அவை அனைத்தையும் பார்க்க கணினியில் ஆதாரங்கள் இல்லாமல் போகலாம்."
 
 #: src/fsearch_preferences.ui:1294
 msgid ""
@@ -1550,6 +1797,9 @@ msgid ""
 "If enabled, this folder is rescanned every time FSearch starts, so the "
 "database reflects any changes made while FSearch wasn't running."
 msgstr ""
+"<b>தொடங்கிய பின் ஸ்கேன்:</b>\n"
+"\n"
+"இயக்கப்பட்டால், FSearch தொடங்கும் ஒவ்வொரு முறையும் இந்தக் கோப்புறை மீண்டும் ஸ்கேன் செய்யப்படும், எனவே FSearch இயங்காதபோது செய்யப்பட்ட மாற்றங்களை தரவுத்தளத்தில் பிரதிபலிக்கும்."
 
 #: src/fsearch_preferences.ui:1311
 msgid ""
@@ -1559,6 +1809,9 @@ msgid ""
 "folder. Mounted file systems below it (e.g. external drives or network "
 "shares) are skipped."
 msgstr ""
+"<b>ஒரு கோப்பு முறைமையில் இருங்கள்:</b>\n"
+"\n"
+"இயக்கப்பட்டிருந்தால், இந்தக் கோப்புறையை ஸ்கேன் செய்யும் போது FSearch கோப்பு முறைமை எல்லைகளைக் கடக்காது. அதன் கீழே பொருத்தப்பட்ட கோப்பு முறைமைகள் (எ.கா. வெளிப்புற இயக்கிகள் அல்லது நெட்வொர்க் பங்குகள்) தவிர்க்கப்பட்டன."
 
 #: src/fsearch_preferences.ui:1328
 msgid ""
@@ -1570,6 +1823,11 @@ msgid ""
 "This is useful for folders on file systems that can't be monitored for "
 "changes."
 msgstr ""
+"<b>ஒவ்வொன்றையும் மீண்டும் ஸ்கேன் செய்யவும்:</b>\n"
+"\n"
+"இயக்கப்பட்டால், கொடுக்கப்பட்ட இடைவெளியில் இந்தக் கோப்புறை தானாகவே மீண்டும் ஸ்கேன் செய்யப்படும். மறுபரிசீலனை எவ்வளவு அடிக்கடி நிகழ்கிறது என்பதை அமைக்க மணிநேரம் மற்றும் நிமிட புலங்களைப் பயன்படுத்தவும்.\n"
+"\n"
+"மாற்றங்களைக் கண்காணிக்க முடியாத கோப்பு முறைமைகளில் உள்ள கோப்புறைகளுக்கு இது பயனுள்ளதாக இருக்கும்."
 
 #: src/fsearch_preferences.ui:1347
 msgid ""
@@ -1590,6 +1848,15 @@ msgid ""
 "\t• <b>Applies To:</b> Whether the rule affects <i>Files</i>, <i>Folders</i> "
 "or both."
 msgstr ""
+"<b>விதிகளை விலக்கு:</b>\n"
+"\n"
+"இந்த பட்டியலில் நீங்கள் தரவுத்தளத்திலிருந்து விலக்க விரும்பும் கோப்புகள் மற்றும் கோப்புறைகளுக்கான விதிகள் உள்ளன.\n"
+"\n"
+"\t• <b>செயலில்:</b> இயக்கப்பட்டால், விதி பயன்படுத்தப்படும் மற்றும் பொருந்தும் உருப்படிகள் விலக்கப்படும்.\n"
+"\t• <b>வடிவம்:</b> ஒவ்வொரு உருப்படிக்கும் பொருந்திய உரை, வகைக்கு ஏற்ப விளக்கப்படுகிறது.\n"
+"\t• <b>வகை:</b> முறை எவ்வாறு விளக்கப்படுகிறது — <i>லிட்டரல்</i> (சரியான உரை), <i>வைல்ட்கார்டு</i> (* மற்றும் ? ஐப் பயன்படுத்தி) அல்லது <i>Regex</i> (ஒரு வழக்கமான வெளிப்பாடு).\n"
+"\t• <b>பொருத்தம்:</b> உருப்படியின் <i>முழு பாதைக்கு</i> அல்லது அதன் <i>அடிப்படைப்பெயர்</i> (பாதை இல்லாத பெயர்) உடன் பேட்டர்ன் பொருந்துமா\n"
+"\t• <b>இதற்குப் பொருந்தும்:</b> விதி <i>கோப்புகள்</i>, <i>கோப்புறைகள்</i> அல்லது இரண்டையும் பாதிக்கிறதா."
 
 #: src/fsearch_preferences.ui:1370
 msgid ""
@@ -1598,6 +1865,9 @@ msgid ""
 "This adds a new, empty rule to the list. Edit its Pattern, Type, Match and "
 "Applies To columns to control what gets excluded from the database."
 msgstr ""
+"<b>விலக்கு விதியைச் சேர்:</b>\n"
+"\n"
+"இது பட்டியலில் புதிய, வெற்று விதியைச் சேர்க்கிறது. தரவுத்தளத்தில் இருந்து விலக்கப்படுவதைக் கட்டுப்படுத்த, அதன் பேட்டர்ன், வகை, பொருத்தம் மற்றும் நெடுவரிசைகளுக்குப் பொருந்தும்."
 
 #: src/fsearch_preferences.ui:1387
 msgid ""
@@ -1605,6 +1875,9 @@ msgid ""
 "\n"
 "This removes the selected rule from the list of exclude rules."
 msgstr ""
+"<b>தேர்ந்தெடுக்கப்பட்ட வரிசையை அகற்று:</b>\n"
+"\n"
+"இது விலக்கு விதிகளின் பட்டியலிலிருந்து தேர்ந்தெடுக்கப்பட்ட விதியை நீக்குகிறது."
 
 #: src/fsearch_preferences.ui:1404
 msgid ""
@@ -1614,6 +1887,11 @@ msgid ""
 "\n"
 "⚠ All rules which were created or edited by the user will be lost! ⚠"
 msgstr ""
+"<b>விதிகளைத் தவிர்த்து இயல்புநிலையை மீட்டமை:</b>\n"
+"\n"
+"இந்த பொத்தான் விலக்கு விதிகளின் இயல்புநிலை தொகுப்பை மீட்டமைக்கிறது.\n"
+"\n"
+"⚠ பயனரால் உருவாக்கப்பட்ட அல்லது திருத்தப்பட்ட அனைத்து விதிகளும் இழக்கப்படும்! ⚠"
 
 #: src/fsearch_preferences.ui:1423
 msgid ""
@@ -1624,6 +1902,9 @@ msgid ""
 "all files or folders which are called either <i>.git</i> or <i>.cache</i> or "
 "end with <i>.swp</i>."
 msgstr ""
+"<b>தரவுத்தளத்திலிருந்து கோப்புகள் மற்றும் கோப்புறைகளை விலக்கு:</b>\n"
+"\n"
+"இது தரவுத்தளத்திலிருந்து நீங்கள் விலக்க விரும்பும் கோப்புகளின் (அல்லது கோப்புறைகள்) அரை-பெருங்குடல் பிரிக்கப்பட்ட பட்டியல். எடுத்துக்காட்டாக, <i>.git;.cache;*.swp</i> <i>.git</i> அல்லது <i>.cache</i> அல்லது <i>.swp</i> என அழைக்கப்படும் அனைத்து கோப்புகள் அல்லது கோப்புறைகளை விலக்கும்."
 
 #: src/fsearch_preferences.ui:1440
 msgid ""
@@ -1632,10 +1913,13 @@ msgid ""
 "If enabled, hidden files and folders will be excluded from the database "
 "<i>(i.e. all files or folders which start with a dot character)</i>."
 msgstr ""
+"<b>மறைக்கப்பட்ட கோப்புகள் மற்றும் கோப்புறைகளை விலக்கு:</b>\n"
+"\n"
+"இயக்கப்பட்டால், மறைக்கப்பட்ட கோப்புகள் மற்றும் கோப்புறைகள் தரவுத்தளத்திலிருந்து விலக்கப்படும் <i>(அதாவது புள்ளி எழுத்துடன் தொடங்கும் அனைத்து கோப்புகள் அல்லது கோப்புறைகள்)</i>."
 
 #: src/fsearch_preferences.ui:1457
 msgid "Focus a setting to get a detailed description of what it does."
-msgstr ""
+msgstr "அது என்ன செய்கிறது என்பது பற்றிய விரிவான விளக்கத்தைப் பெற, அமைப்பில் கவனம் செலுத்தவும்."
 
 #: src/fsearch_preferences.ui:1470
 msgid ""
@@ -1650,6 +1934,13 @@ msgid ""
 "\n"
 "<i><tt>fsearch --update-database</tt></i>"
 msgstr ""
+"<b>ஒரு குறிப்பிட்ட நேர இடைவெளியில் தரவுத்தளத்தை அவ்வப்போது புதுப்பிக்கவும்:</b>\n"
+"\n"
+"இயக்கப்பட்டிருந்தால் மற்றும் FSearch இயங்கும் வரை, கொடுக்கப்பட்ட நேர இடைவெளியுடன் தரவுத்தளம் அவ்வப்போது புதுப்பிக்கப்படும்.\n"
+"\n"
+"FSearch இயங்காதபோதும், பின்னணியில் தரவுத்தளத்தைப் புதுப்பிக்க விரும்பினால், கிரான் அல்லது systemd டைமர்கள் போன்ற கருவிகளைப் பயன்படுத்தி அவ்வப்போது புதுப்பிப்பைத் தூண்ட வேண்டும்:\n"
+"\n"
+"<i><tt>fsearch --update-database</tt></i>"
 
 #: src/fsearch_preferences.ui:1491
 msgid ""
@@ -1660,6 +1951,9 @@ msgid ""
 "launcher. Otherwise the <i>.desktop</i> file will be opened with the default "
 "handler for this type of files, which is usually a text editor."
 msgstr ""
+"<b>டெஸ்க்டாப் கோப்புகளை துவக்கவும்:</b>\n"
+"\n"
+"இயக்கப்பட்டால், <i>.desktop</i> கோப்பைச் செயல்படுத்துவது அந்தக் கோப்பில் வரையறுக்கப்பட்ட பயன்பாட்டைத் தொடங்கும். இந்த வழியில் FSearch ஒரு பயன்பாட்டு துவக்கி போல் செயல்பட முடியும். இல்லையெனில் <i>.desktop</i> கோப்பு இந்த வகை கோப்புகளுக்கான இயல்புநிலை கையாளுதலுடன் திறக்கப்படும், இது பொதுவாக உரை திருத்தியாகும்."
 
 #: src/fsearch_preferences.ui:1508
 msgid ""
@@ -1672,6 +1966,13 @@ msgid ""
 "the filter on demand\n"
 "\t• <b>Query:</b> The search term by which the database should be filtered"
 msgstr ""
+"<b>வடிப்பான்கள்:</b>\n"
+"\n"
+"கிடைக்கக்கூடிய அனைத்து வடிப்பான்களின் பட்டியல் இது. வடிப்பான் என்பது முன் வரையறுக்கப்பட்ட தேடலாகும்.\n"
+"\n"
+"\t• <b>பெயர்:</b> வடிப்பானுக்கான தனித்துவமான மற்றும் விளக்கமான அடையாளங்காட்டி\n"
+"\t• <b>மேக்ரோ:</b> மேக்ரோ உரையைத் தொடர்ந்து ':' தட்டச்சு செய்வதன் மூலம் தேவைக்கேற்ப வடிப்பானை இயக்கலாம்\n"
+"\t• <b>வினவல்:</b> தரவுத்தளத்தை வடிகட்ட வேண்டிய தேடல் சொல்"
 
 #: src/fsearch_preferences.ui:1529
 msgid ""
@@ -1679,6 +1980,9 @@ msgid ""
 "\n"
 "This button opens a dialog where you can edit a new filter."
 msgstr ""
+"<b>புதிய வடிப்பானைச் சேர்:</b>\n"
+"\n"
+"இந்தப் பொத்தான் புதிய வடிப்பானைத் திருத்தக்கூடிய உரையாடலைத் திறக்கும்."
 
 #: src/fsearch_preferences.ui:1546
 msgid ""
@@ -1686,6 +1990,9 @@ msgid ""
 "\n"
 "This button removes the currently selected filter."
 msgstr ""
+"<b>தேர்ந்தெடுக்கப்பட்ட வடிப்பானை அகற்று:</b>\n"
+"\n"
+"இந்த பொத்தான் தற்போது தேர்ந்தெடுக்கப்பட்ட வடிப்பானை நீக்குகிறது."
 
 #: src/fsearch_preferences.ui:1563
 msgid ""
@@ -1693,6 +2000,9 @@ msgid ""
 "\n"
 "This button opens a dialog where you can edit the selected filter."
 msgstr ""
+"<b>தேர்ந்தெடுத்த வடிப்பானைத் திருத்து:</b>\n"
+"\n"
+"இந்தப் பொத்தான் ஒரு உரையாடலைத் திறக்கும், அதில் நீங்கள் தேர்ந்தெடுத்த வடிப்பானைத் திருத்தலாம்."
 
 #: src/fsearch_preferences.ui:1580
 msgid ""
@@ -1702,6 +2012,11 @@ msgid ""
 "\n"
 "⚠ All filters which were created or edited by the user will be lost! ⚠"
 msgstr ""
+"<b>இயல்புநிலை வடிப்பான்களை மீட்டமை:</b>\n"
+"\n"
+"இந்த பொத்தான் இயல்புநிலை வடிகட்டி கட்டமைப்பை மீட்டமைக்கிறது.\n"
+"\n"
+"⚠ பயனரால் உருவாக்கப்பட்ட அல்லது திருத்தப்பட்ட அனைத்து வடிப்பான்களும் இழக்கப்படும்! ⚠"
 
 #: src/fsearch_preferences.ui:1599
 msgid ""
@@ -1710,128 +2025,137 @@ msgid ""
 "If enabled, FSearch exits when the Escape key is pressed instead of the "
 "window being minimized."
 msgstr ""
+"<b>எஸ்கேப்பில் வெளியேறு:</b>\n"
+"\n"
+"இயக்கப்பட்டால், சாளரம் சிறிதாக்கப்படுவதற்குப் பதிலாக எஸ்கேப் விசையை அழுத்தினால் FSearch வெளியேறும்."
 
 #: src/fsearch_preferences.ui:1618 src/fsearch_window.ui:290
 #: src/fsearch_window.ui:415 src/menus.ui:150 src/menus.ui:156
 msgid "Help"
-msgstr ""
+msgstr "உதவி"
 
 #: src/fsearch_preferences_dialog.c:238
 msgid "Database"
-msgstr ""
+msgstr "தரவுத்தளம்"
 
 #: src/fsearch_result_view.c:381
 msgid "Invalid row data"
-msgstr ""
+msgstr "தவறான வரிசை தரவு"
 
 #: src/fsearch_statusbar.c:58
 #, c-format
 msgid "%'d Item"
-msgstr ""
+msgstr "%'d உருப்படி"
 
 #: src/fsearch_statusbar.c:58 src/fsearch_statusbar.c:186
 #, c-format
 msgid "%'d Items"
-msgstr ""
+msgstr "%'d உருப்படிகள்"
 
 #: src/fsearch_statusbar.c:80
 msgid "Querying…"
-msgstr ""
+msgstr "வினவுகிறது…"
 
 #: src/fsearch_statusbar.c:175
 msgid "Loading…"
-msgstr ""
+msgstr "ஏற்றுகிறது…"
 
 #: src/fsearch_statusbar.c:180
 msgid "Scanning…"
-msgstr ""
+msgstr "ஸ்கேன் செய்கிறது…"
 
 #: src/fsearch_statusbar.ui:52
 msgid "Number of Search Results"
-msgstr ""
+msgstr "தேடல் முடிவுகளின் எண்ணிக்கை"
 
 #: src/fsearch_statusbar.ui:53
 msgid "0 Items"
-msgstr ""
+msgstr "0 பொருட்கள்"
 
 #: src/fsearch_statusbar.ui:106
 msgid "Cancel"
-msgstr ""
+msgstr "ரத்து செய்"
 
 #: src/fsearch_statusbar.ui:153
 msgid "Index:"
-msgstr ""
+msgstr "அட்டவணை:"
 
 #: src/fsearch_statusbar.ui:228
 msgid "Number of selected folders"
-msgstr ""
+msgstr "தேர்ந்தெடுக்கப்பட்ட கோப்புறைகளின் எண்ணிக்கை"
 
 #: src/fsearch_statusbar.ui:229 src/fsearch_statusbar.ui:254
 msgid "0/0"
-msgstr ""
+msgstr "0/0"
 
 #: src/fsearch_statusbar.ui:253
 msgid "Number of selected files"
-msgstr ""
+msgstr "தேர்ந்தெடுக்கப்பட்ட கோப்புகளின் எண்ணிக்கை"
 
 #: src/fsearch_statusbar.ui:328 src/fsearch_window.ui:103
 msgid "Cancel database update"
-msgstr ""
+msgstr "தரவுத்தள புதுப்பிப்பை ரத்துசெய்"
 
 #: src/fsearch_statusbar.ui:369
 msgid "Number of database items"
-msgstr ""
+msgstr "தரவுத்தள உருப்படிகளின் எண்ணிக்கை"
 
 #: src/fsearch_statusbar.ui:370
 msgid "(empty)"
-msgstr ""
+msgstr "(காலி)"
 
 #: src/fsearch_statusbar.ui:407
 msgid ""
 "Search term contains upper case characters.\n"
 "<b>Match Case</b> was temporarily activated for this term."
 msgstr ""
+"தேடல் வார்த்தையில் பெரிய எழுத்துகள் உள்ளன.\n"
+"<b>மேட்ச் கேஸ்</b> இந்த வார்த்தைக்காக தற்காலிகமாக செயல்படுத்தப்பட்டது."
 
 #: src/fsearch_statusbar.ui:438 src/fsearch_statusbar.ui:491
 msgid "CASE"
-msgstr ""
+msgstr "வழக்கு"
 
 #: src/fsearch_statusbar.ui:514
 msgid ""
 "Search term contains path separators.\n"
 "<b>Search in Path</b> was temporarily activated for this term."
 msgstr ""
+"தேடல் சொல்லில் பாதை பிரிப்பான்கள் உள்ளன.\n"
+"<b>பாதையில் தேடல்</b> இந்த வார்த்தைக்காக தற்காலிகமாக செயல்படுத்தப்பட்டது."
 
 #: src/fsearch_statusbar.ui:545 src/fsearch_statusbar.ui:598
 msgid "PATH"
-msgstr ""
+msgstr "பாதை"
 
 #: src/fsearch_statusbar.ui:651
 msgid "REGEX"
-msgstr ""
+msgstr "ரெஜெக்ஸ்"
 
 #: src/fsearch_statusbar.ui:726
 msgid ""
 "The search was cancelled before it finished.\n"
 "<b>These results are incomplete.</b>"
 msgstr ""
+"தேடல் முடிவதற்குள் ரத்து செய்யப்பட்டது.\n"
+"<b>இந்த முடிவுகள் முழுமையடையவில்லை.</b>"
 
 #: src/fsearch_statusbar.ui:756
 msgid "PARTIAL"
-msgstr ""
+msgstr "பகுதி"
 
 #: src/fsearch_welcome_dialog.ui:26
 msgid "What's New in FSearch"
-msgstr ""
+msgstr "FSearch இல் புதிதாக என்ன இருக்கிறது"
 
 #: src/fsearch_welcome_dialog.ui:79
 msgid ""
 "<span size=\"xx-large\" weight=\"bold\">What's New in FSearch 0.3</span>"
-msgstr ""
+msgstr "<span size=\\\"xx-large\\\" weight=\\\"bold\\\">FSearch 0.3 இல் புதிதாக என்ன இருக்கிறது</span>"
 
 #: src/fsearch_welcome_dialog.ui:149
 msgid "<big><b>File System Monitoring</b></big>"
-msgstr ""
+msgstr "<big><b>கோப்பு முறைமை கண்காணிப்பு</b></big>"
 
 #: src/fsearch_welcome_dialog.ui:163
 msgid ""
@@ -1845,20 +2169,26 @@ msgid ""
 "<a href=\"URL\">https://github.com/cboxdoerfer/fsearch/wiki/Database-update</"
 "a>"
 msgstr ""
+"அடிக்கடி மறுபரிசீலனை செய்வதை அகற்ற தனிப்பட்ட கோப்புறைகளை நீங்கள் இப்போது தீவிரமாகப் பார்க்கலாம். கோப்பு மாற்றங்கள் உடனடியாக உங்கள் தேடல் முடிவுகளில் தோன்றும்.\n"
+"\n"
+"இந்த அம்சத்தை இயக்க விருப்பத்தேர்வுகள் உரையாடலின் தரவுத்தளப் பகுதிக்குச் செல்லவும்.\n"
+"\n"
+"மேலும் தகவலுக்கு ஆன்லைன் ஆவணங்களைப் பார்க்கவும்:\n"
+"<a href=\\\"URL\\\">https://github.com/cboxdoerfer/fsearch/wiki/Database-update</a>"
 
 #: src/fsearch_welcome_dialog.ui:232
 msgid "<big><b>Folder-Specific Rescan Schedules</b></big>"
-msgstr ""
+msgstr "<big><b>கோப்புறை-குறிப்பிட்ட மறு ஆய்வு அட்டவணைகள்</b></big>"
 
 #: src/fsearch_welcome_dialog.ui:246
 msgid ""
 "You can now configure automatic update intervals for individual folders "
 "independently and tailored to each distinct location."
-msgstr ""
+msgstr "தனித்தனி கோப்புறைகளுக்கான தானியங்கி புதுப்பிப்பு இடைவெளிகளை நீங்கள் இப்போது தனித்தனியாகவும், ஒவ்வொரு தனித்தனி இருப்பிடத்திற்கும் ஏற்றவாறு கட்டமைக்கலாம்."
 
 #: src/fsearch_welcome_dialog.ui:309
 msgid "<big><b>Improved Exclude Rules</b></big>"
-msgstr ""
+msgstr "<big><b>மேம்படுத்தப்பட்ட விலக்கு விதிகள்</b></big>"
 
 #: src/fsearch_welcome_dialog.ui:323
 msgid ""
@@ -1867,18 +2197,20 @@ msgid ""
 "Rules can be targeted specifically at files, folders, or both, and can be "
 "configured to match against either the basename or the full absolute path."
 msgstr ""
+"மிகவும் சக்திவாய்ந்த விலக்கு விதிகளை வரையறுக்க, நீங்கள் இப்போது வைல்டு கார்டுகளையும் வழக்கமான வெளிப்பாடுகளையும் பயன்படுத்தலாம். \n"
+"விதிகள் குறிப்பாக கோப்புகள், கோப்புறைகள் அல்லது இரண்டையும் இலக்காகக் கொள்ளலாம், மேலும் அடிப்படைப்பெயர் அல்லது முழு முழுமையான பாதைக்கு எதிராகப் பொருந்துமாறு கட்டமைக்க முடியும்."
 
 #: src/fsearch_window.c:749 src/menus.ui:279
 msgid "Size"
-msgstr ""
+msgstr "அளவு"
 
 #: src/fsearch_window.c:763 src/menus.ui:271
 msgid "Extension"
-msgstr ""
+msgstr "நீட்டிப்பு"
 
 #: src/fsearch_window.c:770 src/menus.ui:283
 msgid "Date Modified"
-msgstr ""
+msgstr "தேதி மாற்றப்பட்டது"
 
 #: src/fsearch_window.c:784
 msgid ""
@@ -1887,201 +2219,205 @@ msgid ""
 "This sort order is not persistent, it will be reset when the search term "
 "changes."
 msgstr ""
+"<b>வகை</b> மூலம் வரிசைப்படுத்த பல முடிவுகளுடன் சில வினாடிகள் ஆகலாம்.\n"
+"\n"
+"இந்த வரிசைமுறை நிலையானது அல்ல, தேடல் சொல் மாறும்போது அது மீட்டமைக்கப்படும்."
 
 #: src/fsearch_window.ui:68
 msgid "New window"
-msgstr ""
+msgstr "புதிய சாளரம்"
 
 #: src/fsearch_window.ui:89
 msgid "Update database"
-msgstr ""
+msgstr "தரவுத்தளத்தைப் புதுப்பிக்கவும்"
 
 #: src/fsearch_window.ui:144 src/menus.ui:112
 msgid "Search in Path"
-msgstr ""
+msgstr "பாதையில் தேடுங்கள்"
 
 #: src/fsearch_window.ui:158 src/menus.ui:116
 msgid "Match Case"
-msgstr ""
+msgstr "போட்டி வழக்கு"
 
 #: src/fsearch_window.ui:172 src/menus.ui:120
 msgid "Enable RegEx"
-msgstr ""
+msgstr "RegEx ஐ இயக்கவும்"
 
 #: src/fsearch_window.ui:197 src/menus.ui:95
 msgid "Show Statusbar"
-msgstr ""
+msgstr "நிலைப்பட்டியைக் காட்டு"
 
 #: src/fsearch_window.ui:211 src/menus.ui:99
 msgid "Show Filter"
-msgstr ""
+msgstr "வடிகட்டியைக் காட்டு"
 
 #: src/fsearch_window.ui:225 src/menus.ui:103
 msgid "Show Search Button"
-msgstr ""
+msgstr "தேடல் பொத்தானைக் காட்டு"
 
 #: src/fsearch_window.ui:275 src/fsearch_window.ui:356 src/menus.ui:129
 msgid "FSearch Online"
-msgstr ""
+msgstr "FSearch ஆன்லைன்"
 
 #: src/fsearch_window.ui:304 src/menus.ui:161
 msgid "About"
-msgstr ""
+msgstr "பற்றி"
 
 #: src/fsearch_window.ui:329 src/menus.ui:47
 msgid "Quit"
-msgstr ""
+msgstr "வெளியேறு"
 
 #: src/fsearch_window.ui:372 src/fsearch_window.ui:443 src/menus.ui:131
 msgid "Donate"
-msgstr ""
+msgstr "தானம் செய்"
 
 #: src/fsearch_window.ui:387 src/menus.ui:142
 msgid "Forum"
-msgstr ""
+msgstr "மன்றம்"
 
 #: src/fsearch_window.ui:401 src/menus.ui:146
 msgid "Bug Reports and Feature Requests"
-msgstr ""
+msgstr "பிழை அறிக்கைகள் மற்றும் அம்ச கோரிக்கைகள்"
 
 #: src/fsearch_window.ui:460 src/menus.ui:133
 msgid "GitHub Sponsors"
-msgstr ""
+msgstr "GitHub ஸ்பான்சர்கள்"
 
 #: src/fsearch_window.ui:474 src/menus.ui:137
 msgid "PayPal"
-msgstr ""
+msgstr "பேபால்"
 
 #: src/fsearch_window.ui:586
 msgid "Search…"
-msgstr ""
+msgstr "தேடு…"
 
 #: src/fsearch_window.ui:608
 msgid "Select a Filter"
-msgstr ""
+msgstr "ஒரு வடிகட்டியைத் தேர்ந்தெடுக்கவும்"
 
 #: src/fsearch_window_actions.c:110
 #, c-format
 msgid "Do you really want to open %'d file?"
 msgid_plural "Do you really want to open %'d files?"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "நீங்கள் உண்மையில் %'d கோப்பைத் திறக்க விரும்புகிறீர்களா?"
+msgstr[1] "நீங்கள் உண்மையில் %'d கோப்புகளைத் திறக்க விரும்புகிறீர்களா?"
 
 #: src/fsearch_window_actions.c:115
 msgid "Opening Files…"
-msgstr ""
+msgstr "கோப்புகளைத் திறக்கிறது…"
 
 #: src/fsearch_window_actions.c:198
 #, c-format
 msgid "Do you really want to remove %'d file?"
 msgid_plural "Do you really want to remove %'d files?"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "நீங்கள் உண்மையில் %'d கோப்பை அகற்ற விரும்புகிறீர்களா?"
+msgstr[1] "நீங்கள் உண்மையில் %'d கோப்புகளை அகற்ற விரும்புகிறீர்களா?"
 
 #: src/fsearch_window_actions.c:205
 msgid "Deleting files…"
-msgstr ""
+msgstr "கோப்புகளை நீக்குகிறது…"
 
 #: src/fsearch_window_actions.c:205
 msgid "Moving files to trash…"
-msgstr ""
+msgstr "கோப்புகளை குப்பைக்கு நகர்த்துகிறது…"
 
 #: src/fsearch_window_actions.c:238 src/fsearch_window_actions.c:533
 #: src/fsearch_window_actions.c:580
 msgid "Something went wrong."
-msgstr ""
+msgstr "ஏதோ தவறாகிவிட்டது."
 
 #: src/fsearch_window_actions.c:263
 #, c-format
 msgid "Do you really want to open %'d file property window?"
 msgid_plural "Do you really want to open %'d file property windows?"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "நீங்கள் உண்மையில் %'d கோப்பு சொத்து சாளரத்தை திறக்க விரும்புகிறீர்களா?"
+msgstr[1] "நீங்கள் உண்மையில் %'d கோப்பு சொத்து சாளரங்களை திறக்க விரும்புகிறீர்களா?"
 
 #: src/fsearch_window_actions.c:270
 msgid "Opening file properties…"
-msgstr ""
+msgstr "கோப்பு பண்புகளைத் திறக்கிறது…"
 
 #: src/menus.ui:6
 msgid "_File"
-msgstr ""
+msgstr "_கோப்பு"
 
 #: src/menus.ui:9
 msgid "New Window"
-msgstr ""
+msgstr "புதிய சாளரம்"
 
 #: src/menus.ui:16 src/menus.ui:171
 msgid "_Open"
-msgstr ""
+msgstr "_திற"
 
 #: src/menus.ui:21
 msgid "Open Folder"
-msgstr ""
+msgstr "கோப்புறையைத் திறக்கவும்"
 
 #: src/menus.ui:29
 msgid "Update Database"
-msgstr ""
+msgstr "தரவுத்தளத்தைப் புதுப்பிக்கவும்"
 
 #: src/menus.ui:35
 msgid "Cancel Update"
-msgstr ""
+msgstr "புதுப்பிப்பை ரத்துசெய்"
 
 #: src/menus.ui:42
 msgid "Close Window"
-msgstr ""
+msgstr "சாளரத்தை மூடு"
 
 #: src/menus.ui:54
 msgid "_Edit"
-msgstr ""
+msgstr "_திருத்து"
 
 #: src/menus.ui:57 src/menus.ui:207
 msgid "_Copy"
-msgstr ""
+msgstr "_நகல்"
 
 #: src/menus.ui:62 src/menus.ui:228
 msgid "Cu_t"
-msgstr ""
+msgstr "Cu_t"
 
 #: src/menus.ui:69
 msgid "Select All"
-msgstr ""
+msgstr "அனைத்தையும் தேர்ந்தெடுக்கவும்"
 
 #: src/menus.ui:74
 msgid "Deselect All"
-msgstr ""
+msgstr "அனைத்தையும் தேர்வுநீக்கவும்"
 
 #: src/menus.ui:78
 msgid "Invert Selection"
-msgstr ""
+msgstr "தலைகீழ் தேர்வு"
 
 #: src/menus.ui:92
 msgid "_View"
-msgstr ""
+msgstr "_பார்க்கவும்"
 
 #: src/menus.ui:109
 msgid "_Search"
-msgstr ""
+msgstr "_தேடல்"
 
 #: src/menus.ui:126
 msgid "_Help"
-msgstr ""
+msgstr "_உதவி"
 
 #: src/menus.ui:177
 msgid "Open _With"
-msgstr ""
+msgstr "_உடன் திற"
 
 #: src/menus.ui:191
 msgid "_Open Folder"
-msgstr ""
+msgstr "_கோப்புறையைத் திறக்கவும்"
 
 #: src/menus.ui:213
 msgid "Copy as Text"
-msgstr ""
+msgstr "உரையாக நகலெடுக்கவும்"
 
 #: src/menus.ui:223
 msgid "Path + Name"
-msgstr ""
+msgstr "பாதை + பெயர்"
 
 #: src/menus.ui:236
 msgid "Move to _Trash"
-msgstr ""
+msgstr "_குப்பைக்கு நகர்த்தவும்"
+
