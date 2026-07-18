@@ -19,335 +19,337 @@ msgstr ""
 
 #: data/io.github.cboxdoerfer.FSearch.desktop.in.in:4 src/main.c:36
 msgid "FSearch"
-msgstr ""
+msgstr "FSearch"
 
 #: data/io.github.cboxdoerfer.FSearch.desktop.in.in:5
 msgid "A file search application focusing on performance and advanced features"
-msgstr ""
+msgstr "কর্মক্ষমতা এবং উন্নত বৈশিষ্ট্যের উপর ফোকাস করে একটি ফাইল অনুসন্ধান অ্যাপ্লিকেশন"
 
 #: data/io.github.cboxdoerfer.FSearch.desktop.in.in:10
 msgid "search;fsearch;files;folders;music;video;documents;find;tool;everything;"
-msgstr ""
+msgstr "অনুসন্ধান;fsearch;ফাইল;ফোল্ডার;সঙ্গীত;ভিডিও;নথিপত্র;খুঁজুন;টুল;সবকিছু;"
 
 #: data/io.github.cboxdoerfer.FSearch.desktop.in.in:12
 msgid "File Search Utility"
-msgstr ""
+msgstr "ফাইল অনুসন্ধান ইউটিলিটি"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:8
 msgid "A graphical file search application"
-msgstr ""
+msgstr "একটি গ্রাফিক্যাল ফাইল অনুসন্ধান অ্যাপ্লিকেশন"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:10
 msgid ""
 "FSearch helps you to find files and folders as easy and fast as possible. "
 "Just type a few letters and search results will appear almost instantly."
-msgstr ""
+msgstr "FSearch আপনাকে ফাইল এবং ফোল্ডারগুলিকে যতটা সম্ভব সহজ এবং দ্রুত খুঁজে পেতে সাহায্য করে। শুধু কয়েকটি অক্ষর টাইপ করুন এবং অনুসন্ধান ফলাফল প্রায় সঙ্গে সঙ্গে প্রদর্শিত হবে."
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:14
 msgid ""
 "There are a lot of features which make searching as efficient and powerful "
 "as possible. Such as:"
-msgstr ""
+msgstr "অনেকগুলি বৈশিষ্ট্য রয়েছে যা অনুসন্ধানকে যতটা সম্ভব দক্ষ এবং শক্তিশালী করে তোলে। যেমন:"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:19
 msgid ""
 "Ignore case (e.g. searching for \"<code>fsearch</code>\" will match "
 "\"FSearch\" as well)"
-msgstr ""
+msgstr "কেস উপেক্ষা করুন (যেমন \\\"<code>fsearch</code>\\\" অনুসন্ধান করা \\\"FSearch\\\" এর সাথেও মিলবে)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:20
 msgid "Regular expressions"
-msgstr ""
+msgstr "নিয়মিত অভিব্যক্তি"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:21
 msgid "Wildcard support"
-msgstr ""
+msgstr "ওয়াইল্ডকার্ড সমর্থন"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:22
 msgid "Filter support (e.g. only search for audio files)"
-msgstr ""
+msgstr "ফিল্টার সমর্থন (যেমন শুধুমাত্র অডিও ফাইল অনুসন্ধান)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:23
 msgid "Exclude certain files and folders"
-msgstr ""
+msgstr "নির্দিষ্ট ফাইল এবং ফোল্ডারগুলি বাদ দিন"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:24
 msgid "Fast sort by name, path, size, modification time and extension"
-msgstr ""
+msgstr "নাম, পথ, আকার, পরিবর্তনের সময় এবং এক্সটেনশন অনুসারে দ্রুত বাছাই করুন"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:26
 msgid ""
 "<em>Note:</em> Due to Flatpak's sandboxing, FSearch can't find every file on "
 "your system."
-msgstr ""
+msgstr "<em>দ্রষ্টব্য:</em> Flatpak এর স্যান্ডবক্সিংয়ের কারণে, FSearch আপনার সিস্টেমে প্রতিটি ফাইল খুঁজে পায় না।"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:35
 msgid "The default UI layout"
-msgstr ""
+msgstr "ডিফল্ট UI লেআউট"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:41
 msgid "A layout more closely following GNOME HIGs"
-msgstr ""
+msgstr "একটি বিন্যাস আরো ঘনিষ্ঠভাবে GNOME HIGs অনুসরণ করে"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:49
 msgid "search"
-msgstr ""
+msgstr "অনুসন্ধান"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:50
 msgid "fsearch"
-msgstr ""
+msgstr "fsearch"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:51
 msgid "files"
-msgstr ""
+msgstr "ফাইল"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:52
 msgid "folders"
-msgstr ""
+msgstr "ফোল্ডার"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:53
 msgid "music"
-msgstr ""
+msgstr "সঙ্গীত"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:54
 msgid "video"
-msgstr ""
+msgstr "ভিডিও"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:55
 msgid "documents"
-msgstr ""
+msgstr "নথিপত্র"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:56
 msgid "find"
-msgstr ""
+msgstr "খুঁজুন"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:57
 msgid "tool"
-msgstr ""
+msgstr "টুল"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:58
 msgid "everything"
-msgstr ""
+msgstr "সবকিছু"
 
 #. Kept for appstreamcli < 1.0 (e.g. Ubuntu 20.04/22.04 PPA builds), which doesn't know <developer>.
 #. Translators: please do NOT translate this.
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:77
 msgid "Christian Boxdörfer"
-msgstr ""
+msgstr "খ্রিস্টান বক্সডর্ফার"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:89
 msgid "DB rewrite"
-msgstr ""
+msgstr "ডিবি পুনর্লিখন"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:90
 msgid "DB: Add support for filesystem monitoring"
-msgstr ""
+msgstr "DB: ফাইল সিস্টেম পর্যবেক্ষণের জন্য সমর্থন যোগ করুন"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:91
 msgid ""
 "DB: Allow files and folders to be excluded based on fixed patterns, "
 "wildcards or regular expressions"
-msgstr ""
+msgstr "DB: নির্দিষ্ট প্যাটার্ন, ওয়াইল্ডকার্ড বা নিয়মিত অভিব্যক্তির উপর ভিত্তি করে ফাইল এবং ফোল্ডারগুলিকে বাদ দেওয়ার অনুমতি দিন"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:92
 msgid ""
 "DB: Allow included folders to be scheduled and scanned after launch "
 "independently"
-msgstr ""
+msgstr "DB: অন্তর্ভুক্ত ফোল্ডারগুলিকে স্বাধীনভাবে লঞ্চ করার পরে নির্ধারিত এবং স্ক্যান করার অনুমতি দিন"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:93
 msgid "DB: Make rescanning more efficient"
-msgstr ""
+msgstr "ডিবি: রিস্ক্যানিংকে আরও দক্ষ করে তুলুন"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:94
 msgid "DB: Store database config in DB file"
-msgstr ""
+msgstr "DB: DB ফাইলে ডাটাবেস কনফিগার সংরক্ষণ করুন"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:95
 msgid "DB: Add checksum to DB file"
-msgstr ""
+msgstr "ডিবি: ডিবি ফাইলে চেকসাম যোগ করুন"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:96
 msgid "Make icon and file info gathering asynchronous (no UI blocking)"
-msgstr ""
+msgstr "আইকন এবং ফাইল তথ্য সংগ্রহকে অ্যাসিঙ্ক্রোনাস করুন (ইউআই ব্লকিং নেই)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:97
 msgid "Reduce memory usage"
-msgstr ""
+msgstr "মেমরির ব্যবহার কমিয়ে দিন"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:98
 msgid "Add contextual help for all preferences"
-msgstr ""
+msgstr "সমস্ত পছন্দের জন্য প্রাসঙ্গিক সাহায্য যোগ করুন"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:99
 msgid "Numerous bug fixes and stability and performance improvements"
-msgstr ""
+msgstr "অসংখ্য বাগ সংশোধন এবং স্থিতিশীলতা এবং কর্মক্ষমতা উন্নতি"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:106
 msgid "New search engine"
-msgstr ""
+msgstr "নতুন সার্চ ইঞ্জিন"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:107
 msgid "Greatly improved highlighting of search terms"
-msgstr ""
+msgstr "সার্চ টার্মের হাইলাইটিং অনেক উন্নত"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:108
 msgid "Custom filters"
-msgstr ""
+msgstr "কাস্টম ফিল্টার"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:109
 msgid "Improved sort performance"
-msgstr ""
+msgstr "উন্নত বাছাই কর্মক্ষমতা"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:110
 msgid "Improved scroll performance"
-msgstr ""
+msgstr "উন্নত স্ক্রোল কর্মক্ষমতা"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:111
 msgid "Remember file selection after a database update"
-msgstr ""
+msgstr "একটি ডাটাবেস আপডেটের পরে ফাইল নির্বাচন মনে রাখবেন"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:112
 msgid "Automatically scroll the result list in rubberband selection mode"
-msgstr ""
+msgstr "রাবারব্যান্ড নির্বাচন মোডে স্বয়ংক্রিয়ভাবে ফলাফল তালিকা স্ক্রোল করুন"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:113
 msgid "Invert selection with rubber band when 'Ctrl' is pressed"
-msgstr ""
+msgstr "যখন 'Ctrl' চাপা হয় তখন রাবার ব্যান্ড দিয়ে নির্বাচন উল্টে দিন"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:114
 msgid "Focus search entry when the main window gets activated"
-msgstr ""
+msgstr "প্রধান উইন্ডো সক্রিয় হয়ে গেলে অনুসন্ধান এন্ট্রিতে ফোকাস করুন"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:115
 msgid "Add filter for applications (i.e. .desktop files)"
-msgstr ""
+msgstr "অ্যাপ্লিকেশনের জন্য ফিল্টার যোগ করুন (যেমন .ডেস্কটপ ফাইল)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:116
 msgid ""
 "Add option to launch applications directly instead of opening the .desktop "
 "files"
-msgstr ""
+msgstr ".desktop ফাইল খোলার পরিবর্তে সরাসরি অ্যাপ্লিকেশন চালু করার বিকল্প যোগ করুন"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:117
 msgid "Show application icons for .desktop files"
-msgstr ""
+msgstr "ডেস্কটপ ফাইলের জন্য অ্যাপ্লিকেশন আইকন দেখান"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:118
 msgid "Add .odp and .ods files to document filter"
-msgstr ""
+msgstr "ডকুমেন্ট ফিল্টারে .odp এবং .ods ফাইল যোগ করুন"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:119
 msgid ""
 "'Open with' menu now only shows applications which can handle the selected "
 "files"
-msgstr ""
+msgstr "'ওপেন উইথ' মেনু এখন শুধুমাত্র সেই অ্যাপ্লিকেশনগুলি দেখায় যা নির্বাচিত ফাইলগুলি পরিচালনা করতে পারে৷"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:120
 msgid ""
 "Improved opening of multiple files with the same type (they get now passed "
 "as a list to applications, instead of one by one)"
-msgstr ""
+msgstr "একই ধরণের একাধিক ফাইলের উন্নত খোলার (এগুলি এখন একটির পরিবর্তে একটি অ্যাপ্লিকেশনের তালিকা হিসাবে পাস করা হয়েছে)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:121
 msgid "Better support for opening files in sandboxed mode"
-msgstr ""
+msgstr "স্যান্ডবক্সড মোডে ফাইল খোলার জন্য আরও ভাল সমর্থন"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:122
 msgid ""
 "Add menu items with links to the issue tracker, forum and donation pages"
-msgstr ""
+msgstr "ইস্যু ট্র্যাকার, ফোরাম এবং অনুদান পৃষ্ঠাগুলির লিঙ্ক সহ মেনু আইটেম যোগ করুন"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:123
 msgid "Improve support for non-Linux systems"
-msgstr ""
+msgstr "নন-লিনাক্স সিস্টেমের জন্য সমর্থন উন্নত করুন"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:124
 msgid ""
 "Add option to exit FSearch when Escape is pressed instead of minimizing the "
 "window"
-msgstr ""
+msgstr "উইন্ডোটি ছোট করার পরিবর্তে Escape চাপলে FSearch থেকে প্রস্থান করার বিকল্প যোগ করুন"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:125
 msgid "Exclude '/proc' and '/sys' by default"
-msgstr ""
+msgstr "ডিফল্টরূপে '/proc' এবং '/sys' বাদ দিন"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:126
 msgid "Open context menu when 'Menu' key or 'Shift + F10' are pressed"
-msgstr ""
+msgstr "'মেনু' কী বা 'Shift + F10' চাপলে প্রসঙ্গ মেনু খুলুন"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:127
 msgid "and tons of bug fixes, translation updates and smaller improvements"
-msgstr ""
+msgstr "এবং প্রচুর বাগ সংশোধন, অনুবাদ আপডেট এবং ছোট উন্নতি"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:133
 msgid "Initial release."
-msgstr ""
+msgstr "প্রাথমিক মুক্তি।"
 
 #: src/fsearch.c:181
 msgid "translator-credits"
-msgstr ""
+msgstr "অনুবাদক-ক্রেডিট"
 
 #: src/fsearch.c:183
 msgid "A search utility focusing on performance and advanced features"
-msgstr ""
+msgstr "কর্মক্ষমতা এবং উন্নত বৈশিষ্ট্যগুলিতে ফোকাস করে একটি অনুসন্ধান ইউটিলিটি৷"
 
 #: src/fsearch.c:330
 msgid "Saving database and config…"
-msgstr ""
+msgstr "ডাটাবেস এবং কনফিগারেশন সংরক্ষণ করা হচ্ছে..."
 
 #: src/fsearch.c:786
 msgid "Open a new application window"
-msgstr ""
+msgstr "একটি নতুন অ্যাপ্লিকেশন উইন্ডো খুলুন"
 
 #: src/fsearch.c:787
 msgid "Minimize the application window"
-msgstr ""
+msgstr "অ্যাপ্লিকেশন উইন্ডোটি ছোট করুন"
 
 #: src/fsearch.c:788
 msgid "Show the application preferences"
-msgstr ""
+msgstr "অ্যাপ্লিকেশন পছন্দগুলি দেখান"
 
 #: src/fsearch.c:789
 msgid "Set the search pattern"
-msgstr ""
+msgstr "অনুসন্ধান প্যাটার্ন সেট করুন"
 
 #: src/fsearch.c:790
 msgid "Update the database and exit"
-msgstr ""
+msgstr "ডাটাবেস আপডেট করুন এবং প্রস্থান করুন"
 
 #: src/fsearch.c:791
 msgid "Print version information and exit"
-msgstr ""
+msgstr "সংস্করণ তথ্য প্রিন্ট করুন এবং প্রস্থান করুন"
 
 #: src/fsearch.c:883
 msgid ""
 "For command-line search help, run: fsearch --cli --help\n"
 "For shared configuration help, run: fsearch config --help"
 msgstr ""
+"কমান্ড-লাইন অনুসন্ধান সহায়তার জন্য, চালান: fsearch --cli --help\n"
+"শেয়ার্ড কনফিগারেশন সহায়তার জন্য, চালান: fsearch config --help"
 
 #: src/fsearch_cli.c:125
 #, c-format
 msgid ""
 "Results capped at %u. Use --unlimit or --unlimited to get them all, or "
 "provide a custom --limit, or set FSEARCH_RESULT_LIMIT."
-msgstr ""
+msgstr "ফলাফল %u এ সীমাবদ্ধ। সেগুলি সব পেতে --unlimit বা --unlimit ব্যবহার করুন, অথবা একটি কাস্টম --সীমা প্রদান করুন, অথবা FSEARCH_RESULT_LIMIT সেট করুন।"
 
 #: src/fsearch_cli.c:134
 #, c-format
 msgid "%u match."
 msgid_plural "%u matches."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%u মিল।"
+msgstr[1] "%uটি মিল।"
 
 #: src/fsearch_cli.c:142
 msgid "Updating FSearch index before searching..."
-msgstr ""
+msgstr "অনুসন্ধান করার আগে FSearch সূচক আপডেট করা হচ্ছে..."
 
 #: src/fsearch_cli.c:149
 #, c-format
 msgid "Indexing: %s"
-msgstr ""
+msgstr "ইন্ডেক্সিং: %s"
 
 #: src/fsearch_cli.c:181
 msgid ""
@@ -393,40 +395,76 @@ msgid ""
 "{png,jpg} selects alternatives; {01..12} is an inclusive numeric range; \\* "
 "matches a literal *.\n"
 msgstr ""
+"ব্যবহার: fsearch --cli [OPTIONS]\n"
+"\n"
+"বিদ্যমান FSearch সূচী অনুসন্ধান করুন এবং মিলিত পাথ মুদ্রণ করুন।\n"
+"\n"
+"  -s, --search PATTERN       FSearch ক্যোয়ারী সিনট্যাক্স দিয়ে অনুসন্ধান করুন\n"
+"      --path DIRECTORY        DIRECTORY এর নীচে পুনরাবৃত্তভাবে অনুসন্ধান করুন (ডিফল্ট: বর্তমান ডিরেক্টরি)\n"
+"      --global                প্রতিটি সূচিবদ্ধ অবস্থান অনুসন্ধান করুন\n"
+"      --limit COUNT          সর্বাধিক COUNTটি ফলাফল প্রিন্ট করুন৷\n"
+"      --unlimit, --unlimited প্রতিটি ফলাফল প্রিন্ট করুন\n"
+"  -u, --update-database      কনফিগার করা সূচকটি পুনরায় স্ক্যান করুন এবং প্রস্থান করুন\n"
+"      --about                এক লাইন বিল্ড তথ্য মুদ্রণ\n"
+"  -h, --help                 এই সাহায্য দেখান\n"
+"\n"
+"কনফিগারেশন: fsearch config --help\n"
+"\n"
+"উদাহরণ:\n"
+"  fsearch --cli --search invoice              # eolaire reatha\n"
+"  fsearch --cli --path ~/Documents --search invoice\n"
+"  fsearch --cli --global --search invoice\n"
+"  fsearch --cli --search 'file:size:>20mb'\n"
+"  fsearch --cli --search 'ext:jpg;png'\n"
+"  fsearch --cli --search 'path:projects report'\n"
+"  fsearch --cli --search 'report AND ext:pdf'\n"
+"  fsearch --cli --search '(draft OR final) !archive'\n"
+"  fsearch --cli --search 'file:regex:\".+\\.pdf$\"'\n"
+"  fsearch --cli --search 'case:AGENTS'        # cás-íogair\n"
+"  fsearch --cli --search 'case:regex:\"^AGENTS\\.md$\"'\n"
+"  fsearch --cli --search 'glob:**/*.png'\n"
+"  fsearch --cli --search 'path:glob:**/AGENTS.md'\n"
+"  fsearch --cli --search 'case:glob:AGENTS.md' # glob cás-íogair\n"
+"\n"
+"উদাহরণ AND হিসাবে স্থান ব্যবহার করে। ফাইল:, ফোল্ডার:, পথ:, ext:, আকার:, dm:, case:, regex:, এবং glob: ব্যবহার করে দেখুন।\n"
+"বুলিয়ান সিনট্যাক্স: AND বা &&; বা বা ||; না বা!। বন্ধনী গ্রুপ পদ।\n"
+"গ্লোব সিনট্যাক্স: * বাদ দেয় /; ** স্প্যান ডিরেক্টরি; ? একটি অক্ষর মেলে; [a-c] একটি পরিসীমা;\n"
+"গ্লোব ডিফল্টরূপে পাথ অনুসন্ধান করে; যেকোনো গভীরতার জন্য **/ ব্যবহার করুন; file:glob: ফাইলের নাম অনুসন্ধান করে।\n"
+"{png,jpg} বিকল্প নির্বাচন করে; {01..12} একটি অন্তর্ভুক্ত সাংখ্যিক পরিসর; \\* একটি আক্ষরিক * মেলে।\n"
 
 #: src/fsearch_cli.c:238
 #, c-format
 msgid "FSearch %s - indexed file search for %s %s\n"
-msgstr ""
+msgstr "FSearch %s - %s %s এর জন্য সূচীকৃত ফাইল অনুসন্ধান\n"
 
 #: src/fsearch_cli.c:301
 msgid "fsearch: interrupted\n"
-msgstr ""
+msgstr "fsearch: বাধাপ্রাপ্ত\n"
 
 #: src/fsearch_cli.c:315
 msgid "fsearch: search could not run because the index is unavailable\n"
-msgstr ""
+msgstr "fsearch: অনুসন্ধান চালানো যায়নি কারণ সূচকটি অনুপলব্ধ\n"
 
 #: src/fsearch_cli.c:352 src/fsearch_cli.c:381 src/fsearch_cli_config.c:774
 #: src/fsearch_cli_config.c:961 src/fsearch_cli_config.c:1147
 #, c-format
 msgid "%s\n"
-msgstr ""
+msgstr "%s\n"
 
 #: src/fsearch_cli.c:400
 #, c-format
 msgid "%s"
-msgstr ""
+msgstr "%s"
 
 #: src/fsearch_cli.c:473
 #, c-format
 msgid "fsearch: unknown CLI option: %s\n"
-msgstr ""
+msgstr "fsearch: অজানা CLI বিকল্প: %s\n"
 
 #: src/fsearch_cli.c:495
 #, c-format
 msgid "fsearch: failed to create data directory: %s\n"
-msgstr ""
+msgstr "fsearch: ডেটা ডিরেক্টরি তৈরি করতে ব্যর্থ হয়েছে: %s\n"
 
 #: src/fsearch_cli_config.c:111
 msgid ""
@@ -468,30 +506,73 @@ msgid ""
 "  fsearch config filters add Documents --query 'ext:pdf' --macro docs\n"
 "  fsearch config reset search --yes\n"
 msgstr ""
+"ব্যবহার: fsearch config COMMAND [OPTIONS]\n"
+"\n"
+"শেয়ার করা FSearch GUI এবং CLI কনফিগারেশন দেখুন এবং পরিবর্তন করুন।\n"
+"\n"
+"কনফিগারেশন কমান্ড:\n"
+"  path                         কনফিগারেশন ফাইল পাথ প্রিন্ট করুন\n"
+"  show [SECTION] [--json]      সেটিংস দেখান\n"
+"  get KEY [--json]             একটি স্কেলার সেটিং প্রিন্ট করুন\n"
+"  set KEY VALUE                একটি স্কেলার সেটিং সেট করুন\n"
+"  unset KEY                    একটি স্কেলার সেটিং ডিফল্ট পুনরুদ্ধার করুন\n"
+"  reset [KEY|SECTION] --yes [--rescan]\n"
+"                               ডিফল্ট পুনরুদ্ধার করুন\n"
+"  doctor                       কনফিগারেশন এবং সূচক সামঞ্জস্য পরীক্ষা করুন\n"
+"  roots list|add|set|remove    সূচীযুক্ত শিকড় পরিচালনা করুন\n"
+"  excludes list|add|remove|hidden\n"
+"                               সূচক বর্জন পরিচালনা করুন\n"
+"  filters list|add|set|remove|reset\n"
+"                               সংরক্ষিত অনুসন্ধান ফিল্টার পরিচালনা করুন\n"
+"\n"
+"স্কেলার মান সত্য/মিথ্যা, দশমিক পূর্ণসংখ্যা বা স্ট্রিং ব্যবহার করে।\n"
+"প্রতিটি স্কেলার কী এবং বর্তমান মান তালিকাভুক্ত করতে 'fsearch config show' চালান।\n"
+"স্কেলার বিভাগ: search, application, window, ui, columns, sort, dialogs.\n"
+"পারিবারিক বিকল্পের জন্য 'fsearch config roots|excludes|filters --help' ব্যবহার করুন।\n"
+"শেয়ার করা সেটিংস পরিবর্তন করার আগে FSearch GUI বন্ধ করুন।\n"
+"পরবর্তী CLI অনুসন্ধানে বা অবিলম্বে --rescan-এর মাধ্যমে সূচক পরিবর্তনগুলি অনুসন্ধানযোগ্য হয়ে ওঠে।\n"
+"শো, গেট এবং সংগ্রহ তালিকা কমান্ডের সাথে --json ব্যবহার করুন।\n"
+"\n"
+"উদাহরণ:\n"
+"  fsearch config show search --json\n"
+"  fsearch config get search.match-case\n"
+"  fsearch config set search.match-case true\n"
+"  fsearch config roots add ~/Code --monitor --one-file-system --rescan\n"
+"  fsearch config excludes add '*.tmp' --type wildcard --scope basename --target files\n"
+"  fsearch config filters add Documents --query 'ext:pdf' --macro docs\n"
+"  fsearch config reset search --yes\n"
 
 #: src/fsearch_cli_config.c:152
 msgid ""
 "Usage: fsearch config show [SECTION] [--json]\n"
 "Show all scalar settings or one dotted section.\n"
 msgstr ""
+"ব্যবহার: fsearch config show [SECTION] [--json]\n"
+"সমস্ত স্কেলার সেটিংস বা একটি বিন্দুযুক্ত বিভাগ দেখান।\n"
 
 #: src/fsearch_cli_config.c:154
 msgid ""
 "Usage: fsearch config get KEY [--json]\n"
 "Print one typed scalar value. Discover keys with 'fsearch config show'.\n"
 msgstr ""
+"ব্যবহার: fsearch config get KEY [--json]\n"
+"একটি টাইপ করা স্কেলার মান মুদ্রণ করুন। 'fsearch config show' সহ কীগুলি আবিষ্কার করুন।\n"
 
 #: src/fsearch_cli_config.c:157
 msgid ""
 "Usage: fsearch config set KEY VALUE\n"
 "Set a boolean, integer, string, or enumerated scalar value.\n"
 msgstr ""
+"ব্যবহার: fsearch config set KEY VALUE\n"
+"একটি বুলিয়ান, পূর্ণসংখ্যা, স্ট্রিং, বা গণনাকৃত স্কেলার মান সেট করুন।\n"
 
 #: src/fsearch_cli_config.c:159
 msgid ""
 "Usage: fsearch config unset KEY\n"
 "Restore one scalar setting to its built-in default.\n"
 msgstr ""
+"ব্যবহার: fsearch config unset KEY\n"
+"একটি স্কেলার সেটিং এর অন্তর্নির্মিত ডিফল্টে পুনরুদ্ধার করুন।\n"
 
 #: src/fsearch_cli_config.c:161
 msgid ""
@@ -499,6 +580,8 @@ msgid ""
 "Reset is destructive and requires --yes. --rescan applies to roots, "
 "database, excludes, or all.\n"
 msgstr ""
+"ব্যবহার: fsearch config reset [KEY|SECTION] --yes [--rescan]\n"
+"রিসেট ধ্বংসাত্মক এবং প্রয়োজন -- হ্যাঁ। --rescan রুট, ডাটাবেস, বাদ, বা সমস্ত ক্ষেত্রে প্রযোজ্য।\n"
 
 #: src/fsearch_cli_config.c:164
 msgid ""
@@ -506,6 +589,8 @@ msgid ""
 "Check configuration readability and whether the saved index uses the same "
 "roots and exclusions.\n"
 msgstr ""
+"ব্যবহার: fsearch config doctor\n"
+"কনফিগারেশন পঠনযোগ্যতা পরীক্ষা করুন এবং সংরক্ষিত সূচক একই রুট এবং বর্জন ব্যবহার করে কিনা।\n"
 
 #: src/fsearch_cli_config.c:170
 msgid ""
@@ -525,6 +610,21 @@ msgid ""
 "  --rescan-every SECONDS        Set periodic rescan interval; 0 disables it\n"
 "  --rescan                      Rebuild the index immediately after saving\n"
 msgstr ""
+"ব্যবহার: fsearch config roots COMMAND [PATH] [OPTIONS]\n"
+"\n"
+"আদেশ:\n"
+"  list [--json]                সূচিবদ্ধ শিকড়ের তালিকা করুন\n"
+"  add PATH [OPTIONS]           একটি রুট ডিরেক্টরি যোগ করুন\n"
+"  set PATH [OPTIONS]           একটি বিদ্যমান রুট পরিবর্তন করুন\n"
+"  remove PATH [--rescan]       একটি বিদ্যমান রুট সরান\n"
+"\n"
+"যোগ এবং সেট করার জন্য বিকল্প:\n"
+"  --active, --inactive\n"
+"  --monitor, --no-monitor\n"
+"  --one-file-system, --no-one-file-system\n"
+"  --scan-after-launch, --no-scan-after-launch\n"
+"  --rescan-every SECONDS        পর্যায়ক্রমিক রিস্ক্যান ব্যবধান সেট করুন; 0 এটি নিষ্ক্রিয় করে\n"
+"  --rescan                      সংরক্ষণ করার পর অবিলম্বে সূচকটি পুনর্নির্মাণ করুন\n"
 
 #: src/fsearch_cli_config.c:187
 msgid ""
@@ -544,6 +644,21 @@ msgid ""
 "  --active, --inactive          Add state or removal selector\n"
 "  --rescan                      Rebuild the index immediately after saving\n"
 msgstr ""
+"ব্যবহার: fsearch config excludes COMMAND [PATTERN|VALUE] [OPTIONS]\n"
+"\n"
+"আদেশ:\n"
+"  list [--json]                 তালিকা বাদ\n"
+"  add PATTERN [OPTIONS]         একটি বর্জন যোগ করুন\n"
+"  remove PATTERN [OPTIONS]      একটি মিলে যাওয়া বাদ সরান\n"
+"  hidden [true|false] [--rescan]\n"
+"                                লুকানো-ফাইল বর্জন দেখুন বা পরিবর্তন করুন\n"
+"\n"
+"যোগ এবং অপসারণের জন্য বিকল্প:\n"
+"  --type fixed|wildcard|regex   ডিফল্ট: স্থির\n"
+"  --scope full-path|basename    ডিফল্ট: পূর্ণ-পথ\n"
+"  --target both|files|folders   ডিফল্ট: উভয়\n"
+"  --active, --inactive          রাজ্য বা অপসারণ নির্বাচক যোগ করুন\n"
+"  --rescan                      সংরক্ষণ করার পর অবিলম্বে সূচকটি পুনর্নির্মাণ করুন\n"
 
 #: src/fsearch_cli_config.c:204
 msgid ""
@@ -563,205 +678,224 @@ msgid ""
 "  --path, --no-path             Search full paths\n"
 "  --regex, --no-regex           Treat query as a regular expression\n"
 msgstr ""
+"ব্যবহার: fsearch config filters COMMAND [NAME] [OPTIONS]\n"
+"\n"
+"আদেশ:\n"
+"  list [--json]                 সংরক্ষিত ফিল্টার তালিকা\n"
+"  add NAME [OPTIONS]            একটি নামযুক্ত ফিল্টার যোগ করুন\n"
+"  set NAME [OPTIONS]            একটি নামযুক্ত ফিল্টার পরিবর্তন করুন\n"
+"  remove NAME                   একটি নামযুক্ত ফিল্টার সরান\n"
+"  reset                         বিল্ট-ইন ফিল্টার পুনরুদ্ধার করুন\n"
+"\n"
+"যোগ এবং সেট করার জন্য বিকল্প:\n"
+"  --query QUERY                 সংরক্ষিত FSearch ক্যোয়ারী\n"
+"  --macro MACRO                 ম্যাক্রো নাম জিজ্ঞাসা করুন\n"
+"  --case, --no-case             ম্যাচ কেস\n"
+"  --path, --no-path             সম্পূর্ণ পাথ অনুসন্ধান করুন\n"
+"  --regex, --no-regex           প্রশ্নটিকে নিয়মিত অভিব্যক্তি হিসাবে বিবেচনা করুন\n"
 
 #: src/fsearch_cli_config.c:265
 msgid ""
 "fsearch config: close the running FSearch GUI before changing shared "
 "settings\n"
-msgstr ""
+msgstr "fsearch config: শেয়ার করা সেটিংস পরিবর্তন করার আগে চলমান FSearch GUI বন্ধ করুন\n"
 
 #: src/fsearch_cli_config.c:269
 msgid "fsearch config: failed to save configuration\n"
-msgstr ""
+msgstr "fsearch config: কনফিগারেশন সংরক্ষণ করতে ব্যর্থ হয়েছে\n"
 
 #: src/fsearch_cli_config.c:280
 msgid "Index configuration changed; the next CLI search will rebuild it.\n"
-msgstr ""
+msgstr "সূচক কনফিগারেশন পরিবর্তিত হয়েছে; পরবর্তী CLI অনুসন্ধান এটি পুনর্নির্মাণ করবে।\n"
 
 #: src/fsearch_cli_config.c:416
 #, c-format
 msgid "fsearch config %s: unknown option: %s\n"
-msgstr ""
+msgstr "fsearch কনফিগারেশন %s: অজানা বিকল্প: %s\n"
 
 #: src/fsearch_cli_config.c:422
 #, c-format
 msgid "fsearch config %s: unexpected argument: %s\n"
-msgstr ""
+msgstr "fsearch কনফিগারেশন %s: অপ্রত্যাশিত যুক্তি: %s\n"
 
 #: src/fsearch_cli_config.c:449
 msgid "Usage: fsearch config get KEY [--json]\n"
-msgstr ""
+msgstr "ব্যবহার: fsearch config KEY পেতে [--json]\n"
 
 #: src/fsearch_cli_config.c:454 src/fsearch_cli_config.c:555
 #, c-format
 msgid "fsearch config: unknown setting: %s\n"
-msgstr ""
+msgstr "fsearch কনফিগারেশন: অজানা সেটিং: %s\n"
 
 #: src/fsearch_cli_config.c:502
 #, c-format
 msgid "fsearch config show: unknown section: %s\n"
-msgstr ""
+msgstr "fsearch কনফিগারেশন শো: অজানা বিভাগ: %s\n"
 
 #: src/fsearch_cli_config.c:550
 #, c-format
 msgid "Usage: fsearch config %s KEY%s\n"
-msgstr ""
+msgstr "ব্যবহার: fsearch config %s KEY%s\n"
 
 #: src/fsearch_cli_config.c:566
 #, c-format
 msgid "fsearch config: invalid value for %s: %s\n"
-msgstr ""
+msgstr "fsearch কনফিগারেশন: %s এর জন্য অবৈধ মান: %s\n"
 
 #: src/fsearch_cli_config.c:572
 #, c-format
 msgid "%s = %s\n"
-msgstr ""
+msgstr "%s = %s\n"
 
 #: src/fsearch_cli_config.c:637
 #, c-format
 msgid "fsearch config roots: unknown operation: %s\n"
-msgstr ""
+msgstr "fsearch config roots: অজানা অপারেশন: %s\n"
 
 #: src/fsearch_cli_config.c:691
 msgid "fsearch config roots: --rescan-every requires SECONDS\n"
-msgstr ""
+msgstr "fsearch config roots: --rescan-প্রত্যেক সেকেন্ডের প্রয়োজন\n"
 
 #: src/fsearch_cli_config.c:710
 msgid "fsearch config roots: missing PATH\n"
-msgstr ""
+msgstr "fsearch config roots: PATH অনুপস্থিত\n"
 
 #: src/fsearch_cli_config.c:717 src/fsearch_cli_config.c:732
 #, c-format
 msgid "fsearch config roots: path not found: %s\n"
-msgstr ""
+msgstr "fsearch config roots: পাথ পাওয়া যায়নি: %s\n"
 
 #: src/fsearch_cli_config.c:724
 #, c-format
 msgid "fsearch config roots: not a directory: %s\n"
-msgstr ""
+msgstr "fsearch config roots: একটি ডিরেক্টরি নয়: %s\n"
 
 #: src/fsearch_cli_config.c:728
 #, c-format
 msgid "fsearch config roots: path already exists: %s\n"
-msgstr ""
+msgstr "fsearch config roots: পথ ইতিমধ্যেই বিদ্যমান: %s\n"
 
 #: src/fsearch_cli_config.c:752
 #, c-format
 msgid "fsearch config roots: invalid rescan duration: %s\n"
-msgstr ""
+msgstr "fsearch config roots: অবৈধ রিস্ক্যান সময়কাল: %s\n"
 
 #: src/fsearch_cli_config.c:765
 msgid ""
 "%s\tactive=%s monitor=%s one-file-system=%s scan-after-launch=%s rescan-"
 "after=%s\n"
-msgstr ""
+msgstr "%s সক্রিয়=%s মনিটর=%s one-file-system=%s scan-after-launch=%s rescan-after=%s\n"
 
 #: src/fsearch_cli_config.c:844
 msgid "fsearch config excludes hidden: expected true or false\n"
-msgstr ""
+msgstr "fsearch কনফিগার লুকানো বাদ দেয়: প্রত্যাশিত সত্য বা মিথ্যা\n"
 
 #: src/fsearch_cli_config.c:850
 #, c-format
 msgid "exclude-hidden = %s\n"
-msgstr ""
+msgstr "exclude-hidden = %s\n"
 
 #: src/fsearch_cli_config.c:856
 #, c-format
 msgid "fsearch config excludes: unknown operation: %s\n"
-msgstr ""
+msgstr "fsearch কনফিগারেশন বাদ দেয়: অজানা অপারেশন: %s\n"
 
 #: src/fsearch_cli_config.c:877
 #, c-format
 msgid "fsearch config excludes: %s requires a value\n"
-msgstr ""
+msgstr "fsearch কনফিগারেশন বাদ দেয়: %s-এর একটি মান প্রয়োজন\n"
 
 #: src/fsearch_cli_config.c:909
 msgid "fsearch config excludes: missing PATTERN\n"
-msgstr ""
+msgstr "fsearch কনফিগারেশন বাদ দেয়: অনুপস্থিত PATTERN\n"
 
 #: src/fsearch_cli_config.c:914
 #, c-format
 msgid "fsearch config excludes: invalid type: %s\n"
-msgstr ""
+msgstr "fsearch কনফিগারেশন বাদ দেয়: অবৈধ প্রকার: %s\n"
 
 #: src/fsearch_cli_config.c:919
 #, c-format
 msgid "fsearch config excludes: invalid scope: %s\n"
-msgstr ""
+msgstr "fsearch কনফিগারেশন বাদ দেয়: অবৈধ সুযোগ: %s\n"
 
 #: src/fsearch_cli_config.c:924
 #, c-format
 msgid "fsearch config excludes: invalid target: %s\n"
-msgstr ""
+msgstr "fsearch কনফিগারেশন বাদ দেয়: অবৈধ লক্ষ্য: %s\n"
 
 #: src/fsearch_cli_config.c:954
 #, c-format
 msgid "fsearch config excludes: exclusion not found: %s\n"
-msgstr ""
+msgstr "fsearch কনফিগারেশন বাদ দেয়: বর্জন পাওয়া যায়নি: %s\n"
 
 #: src/fsearch_cli_config.c:1022
 msgid "filters reset\n"
-msgstr ""
+msgstr "ফিল্টার রিসেট\n"
 
 #: src/fsearch_cli_config.c:1029
 #, c-format
 msgid "fsearch config filters: unknown operation: %s\n"
-msgstr ""
+msgstr "fsearch কনফিগার ফিল্টার: অজানা অপারেশন: %s\n"
 
 #: src/fsearch_cli_config.c:1051
 #, c-format
 msgid "fsearch config filters: %s requires a value\n"
-msgstr ""
+msgstr "fsearch কনফিগার ফিল্টার: %s একটি মান প্রয়োজন\n"
 
 #: src/fsearch_cli_config.c:1094
 msgid "fsearch config filters: missing NAME\n"
-msgstr ""
+msgstr "fsearch কনফিগার ফিল্টার: NAME অনুপস্থিত\n"
 
 #: src/fsearch_cli_config.c:1100 src/fsearch_cli_config.c:1111
 #, c-format
 msgid "fsearch config filters: name not found: %s\n"
-msgstr ""
+msgstr "fsearch কনফিগার ফিল্টার: নাম পাওয়া যায়নি: %s\n"
 
 #: src/fsearch_cli_config.c:1107
 #, c-format
 msgid "fsearch config filters: name already exists: %s\n"
-msgstr ""
+msgstr "fsearch কনফিগার ফিল্টার: নাম ইতিমধ্যেই বিদ্যমান: %s\n"
 
 #: src/fsearch_cli_config.c:1145
 #, c-format
 msgid "%s\tmacro=%s query=%s\n"
-msgstr ""
+msgstr "%s ম্যাক্রো=%s প্রশ্ন=%s\n"
 
 #: src/fsearch_cli_config.c:1193
 msgid "fsearch config reset requires --yes\n"
-msgstr ""
+msgstr "fsearch কনফিগারেশন রিসেট প্রয়োজন -- হ্যাঁ\n"
 
 #: src/fsearch_cli_config.c:1201
 msgid ""
 "fsearch config reset: --rescan requires roots, database, excludes, or all\n"
-msgstr ""
+msgstr "fsearch কনফিগারেশন রিসেট: --rescan এর জন্য রুট, ডাটাবেস, এক্সক্লুড, বা সব প্রয়োজন\n"
 
 #: src/fsearch_cli_config.c:1241
 #, c-format
 msgid "fsearch config: unknown setting or section: %s\n"
-msgstr ""
+msgstr "fsearch config: অজানা সেটিং বা বিভাগ: %s\n"
 
 #: src/fsearch_cli_config.c:1246
 #, c-format
 msgid "%s settings reset\n"
-msgstr ""
+msgstr "%s সেটিংস রিসেট৷\n"
 
 #: src/fsearch_cli_config.c:1253
 msgid ""
 "configuration: missing; defaults active\n"
 "index: unknown\n"
 msgstr ""
+"কনফিগারেশন: অনুপস্থিত; ডিফল্ট সক্রিয়\n"
+"সূচক: অজানা\n"
 
 #: src/fsearch_cli_config.c:1261
 msgid ""
 "configuration: ok\n"
 "index: missing or unreadable\n"
 msgstr ""
+"কনফিগারেশন: ঠিক আছে\n"
+"index: অনুপস্থিত বা অপঠনযোগ্য\n"
 
 #: src/fsearch_cli_config.c:1266
 #, c-format
@@ -769,121 +903,125 @@ msgid ""
 "configuration: ok\n"
 "index: %s\n"
 msgstr ""
+"কনফিগারেশন: ঠিক আছে\n"
+"সূচক: %s\n"
 
 #: src/fsearch_cli_config.c:1266
 msgid "current"
-msgstr ""
+msgstr "বর্তমান"
 
 #: src/fsearch_cli_config.c:1266
 msgid "stale"
-msgstr ""
+msgstr "বাসি"
 
 #: src/fsearch_cli_config.c:1278
 msgid ""
 "Usage: fsearch config path\n"
 "Print the active FSearch configuration file path.\n"
 msgstr ""
+"ব্যবহার: fsearch config path\n"
+"সক্রিয় FSearch কনফিগারেশন ফাইল পাথ প্রিন্ট করুন।\n"
 
 #: src/fsearch_cli_config.c:1321
 #, c-format
 msgid "fsearch config: unknown command: %s\n"
-msgstr ""
+msgstr "fsearch config: অজানা কমান্ড: %s\n"
 
 #: src/fsearch_database.c:795
 msgid "Index rescan: applying changes…"
-msgstr ""
+msgstr "সূচক পুনঃস্ক্যান: পরিবর্তনগুলি প্রয়োগ করা হচ্ছে..."
 
 #: src/fsearch_database_file.c:1343
 msgid "Loading folders…"
-msgstr ""
+msgstr "ফোল্ডার লোড হচ্ছে..."
 
 #: src/fsearch_database_file.c:1359
 msgid "Loading files…"
-msgstr ""
+msgstr "ফাইল লোড হচ্ছে..."
 
 #: src/fsearch_database_index_store.c:925 src/fsearch_statusbar.c:73
 #: src/fsearch_statusbar.ui:90
 msgid "Sorting…"
-msgstr ""
+msgstr "সাজানো হচ্ছে..."
 
 #: src/fsearch_database_preferences_widget.c:162
 #: src/fsearch_database_preferences_widget.c:176
 msgid "Select folder"
-msgstr ""
+msgstr "ফোল্ডার নির্বাচন করুন"
 
 #: src/fsearch_database_preferences_widget.c:165
 #: src/fsearch_database_preferences_widget.c:180
 #: src/fsearch_filter_editor.c:104 src/fsearch_preferences_dialog.c:331
 msgid "_Cancel"
-msgstr ""
+msgstr "_বাতিল করুন"
 
 #: src/fsearch_database_preferences_widget.c:167
 #: src/fsearch_database_preferences_widget.c:179
 msgid "_Select"
-msgstr ""
+msgstr "_নির্বাচন করুন"
 
 #: src/fsearch_database_preferences_widget.c:389
 msgid "Literal"
-msgstr ""
+msgstr "আক্ষরিক"
 
 #: src/fsearch_database_preferences_widget.c:391
 msgid "Wildcard"
-msgstr ""
+msgstr "ওয়াইল্ডকার্ড"
 
 #: src/fsearch_database_preferences_widget.c:393
 msgid "Regex"
-msgstr ""
+msgstr "রেজেক্স"
 
 #: src/fsearch_database_preferences_widget.c:414
 msgid "Full Path"
-msgstr ""
+msgstr "সম্পূর্ণ পথ"
 
 #: src/fsearch_database_preferences_widget.c:416
 msgid "Basename"
-msgstr ""
+msgstr "বেসনেম"
 
 #: src/fsearch_database_preferences_widget.c:434
 msgid "Files & Folders"
-msgstr ""
+msgstr "ফাইল ও ফোল্ডার"
 
 #: src/fsearch_database_preferences_widget.c:436 src/fsearch_filter.c:114
 msgid "Files"
-msgstr ""
+msgstr "ফাইল"
 
 #: src/fsearch_database_preferences_widget.c:438 src/fsearch_filter.c:113
 msgid "Folders"
-msgstr ""
+msgstr "ফোল্ডার"
 
 #: src/fsearch_database_preferences_widget.c:635
 #: src/fsearch_database_preferences_widget.c:860
 msgid "Active"
-msgstr ""
+msgstr "সক্রিয়"
 
 #: src/fsearch_database_preferences_widget.c:640
 msgid "Pattern"
-msgstr ""
+msgstr "প্যাটার্ন"
 
 #: src/fsearch_database_preferences_widget.c:694 src/fsearch_window.c:756
 #: src/menus.ui:275
 msgid "Type"
-msgstr ""
+msgstr "টাইপ"
 
 #: src/fsearch_database_preferences_widget.c:700
 msgid "Match"
-msgstr ""
+msgstr "ম্যাচ"
 
 #: src/fsearch_database_preferences_widget.c:706
 msgid "Applies To"
-msgstr ""
+msgstr "প্রযোজ্য"
 
 #: src/fsearch_database_preferences_widget.c:864 src/fsearch_window.c:742
 #: src/menus.ui:219 src/menus.ui:267
 msgid "Path"
-msgstr ""
+msgstr "পথ"
 
 #: src/fsearch_database_preferences_widget.ui:78
 msgid "Enter path…"
-msgstr ""
+msgstr "পথ প্রবেশ করান..."
 
 #: src/fsearch_database_preferences_widget.ui:97
 #: src/fsearch_database_preferences_widget.ui:372
@@ -892,191 +1030,195 @@ msgid ""
 "                                            database\n"
 "                                        "
 msgstr ""
+"অন্তর্ভুক্ত করার জন্য পথ যোগ করুন\n"
+"                                            ডাটাবেস"
 
 #: src/fsearch_database_preferences_widget.ui:176
 msgid "Attempt to monitor"
-msgstr ""
+msgstr "নিরীক্ষণের চেষ্টা"
 
 #: src/fsearch_database_preferences_widget.ui:191
 msgid "Scan after launch"
-msgstr ""
+msgstr "লঞ্চের পরে স্ক্যান করুন"
 
 #: src/fsearch_database_preferences_widget.ui:206
 msgid "Stay on one file system"
-msgstr ""
+msgstr "এক ফাইল সিস্টেমে থাকুন"
 
 #: src/fsearch_database_preferences_widget.ui:221
 msgid "Rescan every"
-msgstr ""
+msgstr "প্রতিটা রিস্ক্যান করুন"
 
 #: src/fsearch_database_preferences_widget.ui:254
 msgid "Hours:"
-msgstr ""
+msgstr "ঘন্টা:"
 
 #: src/fsearch_database_preferences_widget.ui:298
 msgid "Minutes:"
-msgstr ""
+msgstr "মিনিট:"
 
 #: src/fsearch_database_preferences_widget.ui:310
 msgid "30"
-msgstr ""
+msgstr "30"
 
 #: src/fsearch_database_preferences_widget.ui:391
 msgid "Remove selected path"
-msgstr ""
+msgstr "নির্বাচিত পথ সরান"
 
 #: src/fsearch_database_preferences_widget.ui:418
 msgid "Include"
-msgstr ""
+msgstr "অন্তর্ভুক্ত করুন"
 
 #: src/fsearch_database_preferences_widget.ui:477
 msgid ""
 "Add exclude rule\n"
 "                                                "
 msgstr ""
+"বাদ নিয়ম যোগ করুন"
 
 #: src/fsearch_database_preferences_widget.ui:495
 msgid ""
 "Remove selected path\n"
 "                                                "
 msgstr ""
+"নির্বাচিত পথ সরান"
 
 #: src/fsearch_database_preferences_widget.ui:512
 msgid "Restore default exclude list"
-msgstr ""
+msgstr "ডিফল্ট বাদ তালিকা পুনরুদ্ধার করুন"
 
 #: src/fsearch_database_preferences_widget.ui:541
 msgid "Exclude hidden files and folders"
-msgstr ""
+msgstr "লুকানো ফাইল এবং ফোল্ডার বাদ"
 
 #: src/fsearch_database_preferences_widget.ui:563
 msgid "Exclude"
-msgstr ""
+msgstr "বাদ দিন"
 
 #: src/fsearch_file_utils.c:161
 msgctxt "Will be followed by the path of the file."
 msgid "Error when removing file"
-msgstr ""
+msgstr "ফাইল সরানোর সময় ত্রুটি"
 
 #: src/fsearch_file_utils.c:163
 msgid "Failed to get path"
-msgstr ""
+msgstr "পথ পেতে ব্যর্থ"
 
 #: src/fsearch_file_utils.c:277
 msgctxt "Will be followed by the file path."
 msgid "Error when getting information from file"
-msgstr ""
+msgstr "ফাইল থেকে তথ্য পাওয়ার সময় ত্রুটি"
 
 #: src/fsearch_file_utils.c:279
 msgid "Failed to get application information"
-msgstr ""
+msgstr "আবেদন তথ্য পেতে ব্যর্থ"
 
 #: src/fsearch_file_utils.c:294
 msgctxt "Will be followed by the content type string."
 msgid "Error when getting information for content type"
-msgstr ""
+msgstr "বিষয়বস্তুর প্রকারের তথ্য পাওয়ার সময় ত্রুটি"
 
 #: src/fsearch_file_utils.c:296
 msgid "No default application registered"
-msgstr ""
+msgstr "কোন ডিফল্ট আবেদন নিবন্ধিত"
 
 #: src/fsearch_file_utils.c:524
 msgctxt "Will be followed by the path of the folder."
 msgid "Error when opening parent folder"
-msgstr ""
+msgstr "মূল ফোল্ডার খোলার সময় ত্রুটি"
 
 #: src/fsearch_file_utils.c:526
 msgid "Failed to get parent path"
-msgstr ""
+msgstr "অভিভাবক পথ পেতে ব্যর্থ"
 
 #: src/fsearch_file_utils.c:530
 msgctxt "Will be followed by the path of the folder."
 msgid "Error while opening folder"
-msgstr ""
+msgstr "ফোল্ডার খোলার সময় ত্রুটি"
 
 #: src/fsearch_file_utils.c:533
 msgid "Failed to build open command"
-msgstr ""
+msgstr "খোলা কমান্ড তৈরি করতে ব্যর্থ হয়েছে"
 
 #: src/fsearch_file_utils.c:589
 msgid "Folder"
-msgstr ""
+msgstr "ফোল্ডার"
 
 #: src/fsearch_file_utils.c:595
 msgid "Unknown Type"
-msgstr ""
+msgstr "অজানা প্রকার"
 
 #: src/fsearch_filter.c:112
 msgid "All"
-msgstr ""
+msgstr "সব"
 
 #: src/fsearch_filter.c:115
 msgid "Applications"
-msgstr ""
+msgstr "অ্যাপ্লিকেশন"
 
 #: src/fsearch_filter.c:116
 msgid "Archives"
-msgstr ""
+msgstr "আর্কাইভস"
 
 #: src/fsearch_filter.c:117
 msgid "Audio"
-msgstr ""
+msgstr "অডিও"
 
 #: src/fsearch_filter.c:118
 msgid "Documents"
-msgstr ""
+msgstr "নথিপত্র"
 
 #: src/fsearch_filter.c:119
 msgid "Pictures"
-msgstr ""
+msgstr "ছবি"
 
 #: src/fsearch_filter.c:120
 msgid "Videos"
-msgstr ""
+msgstr "ভিডিও"
 
 #: src/fsearch_filter_editor.c:79
 msgid "Macro names must not contain `:` characters."
-msgstr ""
+msgstr "ম্যাক্রো নামের অবশ্যই `:` অক্ষর থাকবে না।"
 
 #: src/fsearch_filter_editor.c:105 src/fsearch_preferences_dialog.c:332
 msgid "_OK"
-msgstr ""
+msgstr "_ঠিক আছে"
 
 #: src/fsearch_filter_editor.ui:10 src/fsearch_filter_preferences_widget.c:156
 msgid "Edit filter"
-msgstr ""
+msgstr "ফিল্টার সম্পাদনা করুন"
 
 #: src/fsearch_filter_editor.ui:50
 msgid "Name:"
-msgstr ""
+msgstr "নাম:"
 
 #: src/fsearch_filter_editor.ui:61
 msgid "The unique name of this filter"
-msgstr ""
+msgstr "এই ফিল্টারের অনন্য নাম"
 
 #: src/fsearch_filter_editor.ui:64
 msgid "Unique filter name"
-msgstr ""
+msgstr "অনন্য ফিল্টারের নাম"
 
 #: src/fsearch_filter_editor.ui:73
 msgid "Search in path"
-msgstr ""
+msgstr "পথে অনুসন্ধান করুন"
 
 #: src/fsearch_filter_editor.ui:87
 msgid "Enable regular expressions"
-msgstr ""
+msgstr "নিয়মিত অভিব্যক্তি সক্ষম করুন"
 
 #: src/fsearch_filter_editor.ui:101
 msgid "Match case"
-msgstr ""
+msgstr "ম্যাচ কেস"
 
 #: src/fsearch_filter_editor.ui:146
 msgid "Query:"
-msgstr ""
+msgstr "প্রশ্ন:"
 
 #: src/fsearch_filter_editor.ui:160
 msgid "Macro:"
-msgstr ""
+msgstr "ম্যাক্রো:"
 
 #: src/fsearch_filter_editor.ui:171
 msgid ""
@@ -1084,227 +1226,228 @@ msgid ""
 "search entry by typing its text followed by ':'\n"
 "                "
 msgstr ""
+"এই ফিল্টারের জন্য ম্যাক্রো। একটি ম্যাক্রো আপনাকে অনুসন্ধান এন্ট্রি থেকে এই ফিল্টারটি ':' এর পরে এর পাঠ্য টাইপ করে অ্যাক্সেস করতে দেয়।"
 
 #: src/fsearch_filter_preferences_widget.c:133
 msgid "Add filter"
-msgstr ""
+msgstr "ফিল্টার যোগ করুন"
 
 #: src/fsearch_filter_preferences_widget.c:315 src/fsearch_window.c:735
 #: src/menus.ui:215 src/menus.ui:263
 msgid "Name"
-msgstr ""
+msgstr "নাম"
 
 #: src/fsearch_filter_preferences_widget.c:316
 msgid "Macro"
-msgstr ""
+msgstr "ম্যাক্রো"
 
 #: src/fsearch_filter_preferences_widget.c:317
 msgid "Query"
-msgstr ""
+msgstr "প্রশ্ন"
 
 #: src/fsearch_filter_preferences_widget.ui:77
 msgid "Add new filter"
-msgstr ""
+msgstr "নতুন ফিল্টার যোগ করুন"
 
 #: src/fsearch_filter_preferences_widget.ui:95
 msgid "Remove selected filter"
-msgstr ""
+msgstr "নির্বাচিত ফিল্টার সরান"
 
 #: src/fsearch_filter_preferences_widget.ui:113
 msgid "Edit selected filter"
-msgstr ""
+msgstr "নির্বাচিত ফিল্টার সম্পাদনা করুন"
 
 #: src/fsearch_filter_preferences_widget.ui:129
 msgid "Restore default filters"
-msgstr ""
+msgstr "ডিফল্ট ফিল্টার পুনরুদ্ধার করুন"
 
 #: src/fsearch_listview_popup.c:36
 msgid "Properties…"
-msgstr ""
+msgstr "বৈশিষ্ট্য…"
 
 #: src/fsearch_listview_popup.c:163
 msgid "Other Application…"
-msgstr ""
+msgstr "অন্যান্য অ্যাপ্লিকেশন…"
 
 #: src/fsearch_overlay.ui:44
 msgid "Empty Database"
-msgstr ""
+msgstr "খালি ডাটাবেস"
 
 #: src/fsearch_overlay.ui:60
 msgid "Add folders"
-msgstr ""
+msgstr "ফোল্ডার যোগ করুন"
 
 #: src/fsearch_overlay.ui:108
 msgid "Loading Database…"
-msgstr ""
+msgstr "ডাটাবেস লোড হচ্ছে..."
 
 #: src/fsearch_overlay.ui:123
 msgid "This won't take long."
-msgstr ""
+msgstr "এই সময় লাগবে না."
 
 #: src/fsearch_overlay.ui:171 src/fsearch_statusbar.ui:312
 msgid "Updating Database…"
-msgstr ""
+msgstr "ডেটাবেস আপডেট করা হচ্ছে..."
 
 #: src/fsearch_overlay.ui:186 src/fsearch_overlay.ui:383
 msgid "This may take a while."
-msgstr ""
+msgstr "এতে কিছুটা সময় লাগতে পারে।"
 
 #: src/fsearch_overlay.ui:241
 msgid "Empty Query"
-msgstr ""
+msgstr "খালি প্রশ্ন"
 
 #: src/fsearch_overlay.ui:256
 msgid "Press <b>Ctrl + F</b> and start typing."
-msgstr ""
+msgstr "<b>Ctrl + F</b> টিপুন এবং টাইপ করা শুরু করুন।"
 
 #: src/fsearch_overlay.ui:304
 msgid "No Results Found"
-msgstr ""
+msgstr "কোন ফলাফল পাওয়া যায়নি"
 
 #: src/fsearch_overlay.ui:319
 msgid "Try a different search"
-msgstr ""
+msgstr "একটি ভিন্ন অনুসন্ধান চেষ্টা করুন"
 
 #: src/fsearch_overlay.ui:368
 msgid "Sorting results…"
-msgstr ""
+msgstr "ফলাফল বাছাই করা হচ্ছে..."
 
 #: src/fsearch_preferences.ui:7 src/fsearch_window.ui:251 src/menus.ui:84
 msgid "Preferences"
-msgstr ""
+msgstr "পছন্দসমূহ"
 
 #: src/fsearch_preferences.ui:76
 msgid "Enable dark theme"
-msgstr ""
+msgstr "অন্ধকার থিম সক্ষম করুন"
 
 #: src/fsearch_preferences.ui:97
 msgid "Enable client-side decorations (requires restart)"
-msgstr ""
+msgstr "ক্লায়েন্ট-সাইড ডেকোরেশন সক্ষম করুন (পুনঃসূচনা প্রয়োজন)"
 
 #: src/fsearch_preferences.ui:117
 msgid "Use binary units instead of decimal units"
-msgstr ""
+msgstr "দশমিক এককের পরিবর্তে বাইনারি ইউনিট ব্যবহার করুন"
 
 #: src/fsearch_preferences.ui:138
 msgid "Remember window size"
-msgstr ""
+msgstr "জানালার আকার মনে রাখবেন"
 
 #: src/fsearch_preferences.ui:159
 msgid "Exit on Escape"
-msgstr ""
+msgstr "Escape এ প্রস্থান করুন"
 
 #: src/fsearch_preferences.ui:202
 msgid "with keyboard shortcuts or menu entries"
-msgstr ""
+msgstr "কীবোর্ড শর্টকাট বা মেনু এন্ট্রি সহ"
 
 #: src/fsearch_preferences.ui:223
 msgid "with double click"
-msgstr ""
+msgstr "ডাবল ক্লিকের সাথে"
 
 #: src/fsearch_preferences.ui:257
 msgid "Behaviour after successfully opening a file:"
-msgstr ""
+msgstr "সফলভাবে একটি ফাইল খোলার পরে আচরণ:"
 
 #: src/fsearch_preferences.ui:273
 msgid "Nothing"
-msgstr ""
+msgstr "কিছুই না"
 
 #: src/fsearch_preferences.ui:274
 msgid "Minimize"
-msgstr ""
+msgstr "ছোট করুন"
 
 #: src/fsearch_preferences.ui:275
 msgid "Close"
-msgstr ""
+msgstr "বন্ধ"
 
 #: src/fsearch_preferences.ui:309
 msgid "General:"
-msgstr ""
+msgstr "সাধারণ:"
 
 #: src/fsearch_preferences.ui:344
 msgid "Show highlighted search terms"
-msgstr ""
+msgstr "হাইলাইট করা অনুসন্ধান পদ দেখান"
 
 #: src/fsearch_preferences.ui:366
 msgid "Show tooltips"
-msgstr ""
+msgstr "টুলটিপ দেখান"
 
 #: src/fsearch_preferences.ui:387
 msgid "Show icons in name column"
-msgstr ""
+msgstr "নামের কলামে আইকন দেখান"
 
 #: src/fsearch_preferences.ui:408
 msgid "Remember column configuration"
-msgstr ""
+msgstr "কলাম কনফিগারেশন মনে রাখবেন"
 
 #: src/fsearch_preferences.ui:429
 msgid "Remember sort order"
-msgstr ""
+msgstr "বাছাই আদেশ মনে রাখবেন"
 
 #: src/fsearch_preferences.ui:450
 msgid "Open path with double click in path column"
-msgstr ""
+msgstr "পাথ কলামে ডাবল ক্লিক করে পথ খুলুন"
 
 #: src/fsearch_preferences.ui:471
 msgid "Single click to open"
-msgstr ""
+msgstr "খুলতে একক ক্লিক করুন"
 
 #: src/fsearch_preferences.ui:492
 msgid "Launch desktop files"
-msgstr ""
+msgstr "ডেস্কটপ ফাইল চালু করুন"
 
 #: src/fsearch_preferences.ui:519
 msgid "Results:"
-msgstr ""
+msgstr "ফলাফল:"
 
 #: src/fsearch_preferences.ui:560
 msgid "Show database indexing status"
-msgstr ""
+msgstr "ডাটাবেস ইনডেক্সিং অবস্থা দেখান"
 
 #: src/fsearch_preferences.ui:587
 msgid "Statusbar:"
-msgstr ""
+msgstr "স্ট্যাটাসবার:"
 
 #: src/fsearch_preferences.ui:628
 msgid "Show warning dialogs when:"
-msgstr ""
+msgstr "সতর্কতা ডায়ালগ দেখান যখন:"
 
 #: src/fsearch_preferences.ui:638
 msgid "file / folder failed to open"
-msgstr ""
+msgstr "ফাইল / ফোল্ডার খুলতে ব্যর্থ হয়েছে"
 
 #: src/fsearch_preferences.ui:667
 msgid "Dialogs:"
-msgstr ""
+msgstr "ডায়ালগ:"
 
 #: src/fsearch_preferences.ui:692
 msgid "Interface"
-msgstr ""
+msgstr "ইন্টারফেস"
 
 #: src/fsearch_preferences.ui:711
 msgid "Search in path when query contains path separators"
-msgstr ""
+msgstr "যখন ক্যোয়ারীতে পাথ বিভাজক থাকে তখন পাথে অনুসন্ধান করুন"
 
 #: src/fsearch_preferences.ui:730
 msgid "Search as you type"
-msgstr ""
+msgstr "আপনি টাইপ হিসাবে অনুসন্ধান করুন"
 
 #: src/fsearch_preferences.ui:750
 msgid "Hide results when search is empty"
-msgstr ""
+msgstr "অনুসন্ধান খালি হলে ফলাফল লুকান"
 
 #: src/fsearch_preferences.ui:769
 msgid "Match case when query contains at least one upper case character"
-msgstr ""
+msgstr "ক্যোয়ারীতে অন্তত একটি বড় হাতের অক্ষর থাকলে কেসটি মিল করুন"
 
 #: src/fsearch_preferences.ui:801
 msgid "Filter:"
-msgstr ""
+msgstr "ফিল্টার:"
 
 #: src/fsearch_preferences.ui:822 src/fsearch_window.ui:639
 msgid "Search"
-msgstr ""
+msgstr "অনুসন্ধান করুন"
 
 #: src/fsearch_preferences.ui:855
 msgid ""
@@ -1316,6 +1459,11 @@ msgid ""
 "Note that not all system themes provide such a darker variant, therefore "
 "enabling this setting might not have an effect."
 msgstr ""
+"<b>অন্ধকার থিম সক্ষম করুন:</b>\n"
+"\n"
+"সক্ষম হলে, সিস্টেম থিমটিকে অ্যাপ্লিকেশনটির জন্য একটি গাঢ় স্টাইলিং ব্যবহার করতে বলা হয় <i>(অর্থাৎ উজ্জ্বল পাঠ্যে গাঢ় UI উপাদান)</i>৷\n"
+"\n"
+"মনে রাখবেন যে সমস্ত সিস্টেম থিমগুলি এমন একটি গাঢ় বৈকল্পিক প্রদান করে না, তাই এই সেটিংটি সক্ষম করার প্রভাব নাও থাকতে পারে৷"
 
 #: src/fsearch_preferences.ui:873
 msgid ""
@@ -1329,6 +1477,12 @@ msgid ""
 "This resembles a more traditional UI layout and takes a little bit more "
 "space."
 msgstr ""
+"<b>ক্লায়েন্ট-সাইড সজ্জা সক্ষম করুন:</b>\n"
+"\n"
+"যদি সক্রিয় থাকে, অনুসন্ধান এন্ট্রি এবং প্রধান মেনু উইন্ডো শিরোনাম বারে প্রদর্শিত হয়।\n"
+"\n"
+"অক্ষম করা হলে, প্রধান মেনু একটি মেনু বার হিসাবে প্রদর্শিত হয় যার নীচে অনুসন্ধান এন্ট্রি থাকে৷\n"
+"এটি একটি আরও ঐতিহ্যগত UI লেআউটের অনুরূপ এবং একটু বেশি জায়গা নেয়।"
 
 #: src/fsearch_preferences.ui:893
 msgid ""
@@ -1341,6 +1495,12 @@ msgid ""
 "\t• <b>Decimal  units:</b> This refers to decimal SI prefixes <i>(e.g. 1 kB "
 "= 1000 bytes)</i>"
 msgstr ""
+"<b>দশমিক এককের পরিবর্তে বাইনারি ইউনিট ব্যবহার করুন:</b>\n"
+"\n"
+"এই সেটিংস ফাইলের আকারগুলি কীভাবে প্রদর্শিত হবে তা নিয়ন্ত্রণ করে।\n"
+"\n"
+"\t• <b>বাইনারী ইউনিট:</b> এটি বাইনারি IEC উপসর্গকে বোঝায় <i>(যেমন 1 KiB = 1024 বাইট)</i>\n"
+"\t• <b>দশমিক একক:</b> এটি দশমিক SI উপসর্গকে বোঝায় <i>(যেমন 1 kB = 1000 বাইট)</i>"
 
 #: src/fsearch_preferences.ui:913
 msgid ""
@@ -1352,6 +1512,11 @@ msgid ""
 "Note that some window managers ignore this request and force the window to "
 "have a different size."
 msgstr ""
+"<b>উইন্ডোর আকার মনে রাখবেন:</b>\n"
+"\n"
+"যদি সক্রিয় থাকে, আপনি একটি FSearch উইন্ডো খুললে পূর্ববর্তী সেশনের উইন্ডোর আকার পুনরুদ্ধার করা হবে।\n"
+"\n"
+"মনে রাখবেন যে কিছু উইন্ডো ম্যানেজার এই অনুরোধ উপেক্ষা করে এবং উইন্ডোটিকে একটি ভিন্ন আকারের জন্য বাধ্য করে।"
 
 #: src/fsearch_preferences.ui:932
 msgid ""
@@ -1369,6 +1534,16 @@ msgid ""
 "\t• <b>keyboard shortcuts or menu entries</b> and/or\n"
 "\t• <b>mouse click</b>"
 msgstr ""
+"<b>একটি ফাইল সফলভাবে খোলার পরে আচরণ:</b>\n"
+"\n"
+"যখন একটি ফাইল/ফোল্ডার সফলভাবে খোলা হয় তখন নিম্নলিখিত ক্রিয়াগুলির মধ্যে একটি সম্পাদন করা যেতে পারে:\n"
+"\t• <b>কিছুই না:</b> কিছুই হয় না।\n"
+"                        • <b>মিনিমাইজ করুন:</b> বর্তমানে নির্বাচিত FSearch উইন্ডোটি ছোট হয়ে যাবে।\n"
+"\t• <b>বন্ধ করুন:</b> FSearch প্রস্থান করুন।\n"
+"\n"
+"ফাইলটি খোলার সময় এই ক্রিয়াগুলি ট্রিগার করা উচিত কিনা তা আপনি কনফিগার করতে পারেন\n"
+"\t• <b>কীবোর্ড শর্টকাট বা মেনু এন্ট্রি</b> এবং/অথবা\n"
+"\t• <b>মাউস ক্লিক</b>"
 
 #: src/fsearch_preferences.ui:956
 msgid ""
@@ -1384,6 +1559,14 @@ msgid ""
 "This also works for regular expressions and wildcard expressions starting or "
 "ending with an asterisk. "
 msgstr ""
+"<b>হাইলাইট করা অনুসন্ধান শব্দগুলি দেখান:</b>৷\n"
+"\n"
+"যদি সক্ষম করা হয়, অনুসন্ধানের পদগুলি ফলাফলের দৃশ্যে হাইলাইট করা হবে৷ উদাহরণস্বরূপ আপনি যখন \\\"foo\\\" অনুসন্ধান করেন তখন ফাইল/ফোল্ডারের নামগুলিতে <i>foo</i> এর সমস্ত উপস্থিতি গাঢ় অক্ষর দিয়ে হাইলাইট করা হবে:\n"
+"\n"
+"\t<b>foo</b>bar.txt\n"
+"\tফাইল।<b>foo</b>\n"
+"\n"
+"এটি একটি তারকাচিহ্ন দিয়ে শুরু বা শেষ হওয়া রেগুলার এক্সপ্রেশন এবং ওয়াইল্ডকার্ড এক্সপ্রেশনের জন্যও কাজ করে।"
 
 #: src/fsearch_preferences.ui:978
 msgid ""
@@ -1392,6 +1575,9 @@ msgid ""
 "If enabled, the results view will show the full path of the focused file/"
 "folder in a small tooltip window."
 msgstr ""
+"<b> টুলটিপ দেখান:</b>\n"
+"\n"
+"যদি সক্ষম করা থাকে, ফলাফল দর্শন একটি ছোট টুলটিপ উইন্ডোতে ফোকাস করা ফাইল/ফোল্ডারের সম্পূর্ণ পথ দেখাবে।"
 
 #: src/fsearch_preferences.ui:995
 msgid ""
@@ -1399,6 +1585,9 @@ msgid ""
 "\n"
 "If enabled, file/folder icons will be shown in the name column."
 msgstr ""
+"<b>নামের কলামে আইকন দেখান:</b>\n"
+"\n"
+"যদি সক্রিয় করা হয়, ফাইল/ফোল্ডার আইকন নামের কলামে দেখানো হবে।"
 
 #: src/fsearch_preferences.ui:1012
 msgid ""
@@ -1408,6 +1597,9 @@ msgid ""
 "session will be restored when you open an FSearch window. This includes the "
 "size and visibility of all columns."
 msgstr ""
+"<b>কলাম কনফিগারেশন মনে রাখবেন:</b>\n"
+"\n"
+"যদি সক্রিয় করা থাকে, আপনি একটি FSearch উইন্ডো খুললে পূর্ববর্তী সেশন থেকে ফলাফল দেখার কলাম কনফিগারেশন পুনরুদ্ধার করা হবে। এটি সমস্ত কলামের আকার এবং দৃশ্যমানতা অন্তর্ভুক্ত করে।"
 
 #: src/fsearch_preferences.ui:1029
 msgid ""
@@ -1416,6 +1608,9 @@ msgid ""
 "If enabled, the sort order of the results view from the previous session "
 "will be restored when you open an FSearch window."
 msgstr ""
+"<b>সর্ট অর্ডার মনে রাখবেন:</b>\n"
+"\n"
+"যদি সক্রিয় করা থাকে, আপনি একটি FSearch উইন্ডো খুললে পূর্ববর্তী সেশন থেকে ফলাফলের দৃশ্যের সাজানোর ক্রম পুনরুদ্ধার করা হবে।"
 
 #: src/fsearch_preferences.ui:1046
 msgid ""
@@ -1423,6 +1618,9 @@ msgid ""
 "\n"
 "If enabled, double clicking in the path column will open the selected path."
 msgstr ""
+"<b>পাথ কলামে ডাবল ক্লিক করে পথ খুলুন:</b>\n"
+"\n"
+"সক্ষম হলে, পাথ কলামে ডাবল ক্লিক করলে নির্বাচিত পাথ খুলবে।"
 
 #: src/fsearch_preferences.ui:1063
 msgid ""
@@ -1432,6 +1630,9 @@ msgid ""
 "want to select a file/folder while this setting is active, you need to hold "
 "<i>Ctrl</i> at the same time while clicking the file/folder."
 msgstr ""
+"<b>খুলতে একক ক্লিক:</b>\n"
+"\n"
+"সক্ষম হলে, একটি একক ক্লিক নির্বাচিত ফাইল/ফোল্ডার খুলবে। এই সেটিং সক্রিয় থাকাকালীন আপনি যদি শুধুমাত্র একটি ফাইল/ফোল্ডার নির্বাচন করতে চান, তাহলে ফাইল/ফোল্ডারে ক্লিক করার সময় আপনাকে একই সময়ে <i>Ctrl</i> ধরে রাখতে হবে।"
 
 #: src/fsearch_preferences.ui:1080
 msgid ""
@@ -1440,6 +1641,9 @@ msgid ""
 "If enabled, the path that is currently being indexed is displayed in the "
 "statusbar."
 msgstr ""
+"<b>ডেটাবেস ইন্ডেক্সিং অবস্থা দেখান:</b>\n"
+"\n"
+"সক্রিয় থাকলে, বর্তমানে যে পথটি সূচিত করা হচ্ছে তা স্ট্যাটাসবারে প্রদর্শিত হবে।"
 
 #: src/fsearch_preferences.ui:1097
 msgid ""
@@ -1448,6 +1652,9 @@ msgid ""
 "If enabled, a warning dialog is displayed when a file or folder failed to "
 "open."
 msgstr ""
+"<b>সতর্কতামূলক ডায়ালগ দেখান:</b>\n"
+"\n"
+"যদি সক্রিয় থাকে, একটি ফাইল বা ফোল্ডার খুলতে ব্যর্থ হলে একটি সতর্কীকরণ ডায়ালগ প্রদর্শিত হয়৷"
 
 #: src/fsearch_preferences.ui:1114
 msgid ""
@@ -1456,6 +1663,9 @@ msgid ""
 "If enabled, search terms containing path separators (i.e. \"/\") will be "
 "automatically matched against the full path of a file or folder."
 msgstr ""
+"<b>পাথ অনুসন্ধান করুন যখন ক্যোয়ারীতে পাথ বিভাজক থাকে:</b>\n"
+"\n"
+"সক্ষম হলে, পাথ বিভাজক (যেমন \\\"/\\\") সমন্বিত অনুসন্ধান শব্দগুলি একটি ফাইল বা ফোল্ডারের সম্পূর্ণ পাথের সাথে স্বয়ংক্রিয়ভাবে মিলিত হবে৷"
 
 #: src/fsearch_preferences.ui:1131
 msgid ""
@@ -1465,6 +1675,9 @@ msgid ""
 "trigger a case-sensitive search. This means a search term like <i>Foo</i> "
 "will match <i>FooBar.txt</i> but not <i>foobar.txt</i>."
 msgstr ""
+"<b>কোয়েরিতে অন্তত একটি বড় হাতের অক্ষর থাকলে কেস ম্যাচ করুন:</b>\n"
+"\n"
+"যদি সক্ষম করা থাকে, অন্তত একটি বড় হাতের অক্ষর ধারণকারী অনুসন্ধান শব্দগুলি একটি কেস-সংবেদনশীল অনুসন্ধানকে ট্রিগার করবে৷ এর মানে হল <i>Foo</i> এর মত একটি অনুসন্ধান শব্দ <i>FooBar.txt</i> এর সাথে মিলবে কিন্তু <i>foobar.txt</i> নয়।"
 
 #: src/fsearch_preferences.ui:1148
 msgid ""
@@ -1475,6 +1688,11 @@ msgid ""
 "If disabled, all files and folders will be displayed when the search entry "
 "is empty."
 msgstr ""
+"<b>অনুসন্ধান খালি হলে ফলাফল লুকান:</b>\n"
+"\n"
+"যদি সক্ষম করা থাকে, অনুসন্ধান এন্ট্রি খালি থাকলে কোনো অনুসন্ধান ফলাফল প্রদর্শিত হয় না।\n"
+"\n"
+"অক্ষম করা থাকলে, অনুসন্ধান এন্ট্রি খালি হলে সমস্ত ফাইল এবং ফোল্ডার প্রদর্শিত হবে৷"
 
 #: src/fsearch_preferences.ui:1167
 msgid ""
@@ -1485,6 +1703,11 @@ msgid ""
 "If disabled, the search is only updated when you hit <i>Enter</i> or press "
 "the search button. "
 msgstr ""
+"<b>আপনার টাইপ করার সাথে সাথে অনুসন্ধান করুন:</b>\n"
+"\n"
+"যদি সক্রিয় থাকে, অনুসন্ধান স্বয়ংক্রিয়ভাবে প্রতিটি কীস্ট্রোকের সাথে আপডেট হয়৷\n"
+"\n"
+"যদি অক্ষম করা থাকে, আপনি <i>Enter</i> বা অনুসন্ধান বোতাম টিপুন তখনই অনুসন্ধানটি আপডেট হয়৷"
 
 #: src/fsearch_preferences.ui:1186
 msgid ""
@@ -1493,6 +1716,9 @@ msgid ""
 "If enabled, the database will be updated automatically in the background "
 "when you start FSearch."
 msgstr ""
+"<b>শুরুতে ডেটাবেস আপডেট করুন:</b>\n"
+"\n"
+"যদি সক্রিয় থাকে, আপনি যখন FSearch শুরু করবেন তখন ডাটাবেস স্বয়ংক্রিয়ভাবে পটভূমিতে আপডেট হবে।"
 
 #: src/fsearch_preferences.ui:1203
 msgid ""
@@ -1506,6 +1732,13 @@ msgid ""
 "\t• <b>One Filesystem:</b> If enabled, FSearch won't cross filesystem "
 "boundaries for this folder"
 msgstr ""
+"<b>অন্তর্ভুক্ত ফোল্ডার:</b>\n"
+"\n"
+"এই তালিকায় সমস্ত ফোল্ডার রয়েছে যা আপনি ডাটাবেসে অন্তর্ভুক্ত করতে চান।\n"
+"\n"
+"\t• <b>সক্রিয়:</b> যদি সক্রিয় করা হয়, তাহলে পাথটি অনুসন্ধান করা ডাটাবেসে অন্তর্ভুক্ত হবে।\n"
+"\t• <b>পথ:</b> সম্পূর্ণ পাথ অন্তর্ভুক্ত করতে হবে।\n"
+"\t• <b>একটি ফাইলসিস্টেম:</b> সক্ষম হলে, FSearch এই ফোল্ডারের জন্য ফাইল সিস্টেমের সীমানা অতিক্রম করবে না"
 
 #: src/fsearch_preferences.ui:1224
 msgid ""
@@ -1514,6 +1747,9 @@ msgid ""
 "This button opens a dialog where you can select a folder you want to include "
 "in the database for searching."
 msgstr ""
+"<b>ডাটাবেসে ফোল্ডার যোগ করুন:</b>\n"
+"\n"
+"এই বোতামটি একটি ডায়ালগ খোলে যেখানে আপনি অনুসন্ধানের জন্য ডাটাবেসে অন্তর্ভুক্ত করতে চান এমন একটি ফোল্ডার নির্বাচন করতে পারেন।"
 
 #: src/fsearch_preferences.ui:1241
 msgid ""
@@ -1523,6 +1759,9 @@ msgid ""
 "include that folder in the database. This is useful for adding a path "
 "directly without browsing for it."
 msgstr ""
+"<b>একটি নির্দিষ্ট পথ যোগ করুন:</b>\n"
+"\n"
+"এখানে একটি ফোল্ডারের সম্পূর্ণ পাথ টাইপ করুন এবং সেই ফোল্ডারটিকে ডাটাবেসে অন্তর্ভুক্ত করতে এর পাশের বোতামে ক্লিক করুন। এটির জন্য ব্রাউজ না করে সরাসরি একটি পথ যোগ করার জন্য এটি কার্যকর।"
 
 #: src/fsearch_preferences.ui:1258
 msgid ""
@@ -1530,6 +1769,9 @@ msgid ""
 "\n"
 "This removes the selected folder from the list of included folders."
 msgstr ""
+"<b>নির্বাচিত সারি সরান:</b>\n"
+"\n"
+"এটি অন্তর্ভুক্ত ফোল্ডারের তালিকা থেকে নির্বাচিত ফোল্ডারটিকে সরিয়ে দেয়।"
 
 #: src/fsearch_preferences.ui:1275
 msgid ""
@@ -1542,6 +1784,11 @@ msgid ""
 "system resources per watched folder. For large directory trees with many "
 "files the system may run out of resources to watch them all."
 msgstr ""
+"<b>নিরীক্ষণ করার চেষ্টা:</b>\n"
+"\n"
+"সক্রিয় থাকলে, FSearch পরিবর্তনের জন্য এই ফোল্ডারটি দেখে এবং ডাটাবেসটিকে স্বয়ংক্রিয়ভাবে আপ টু ডেট রাখে, তাই আপনাকে ম্যানুয়ালি পুনরায় স্ক্যান করতে হবে না।\n"
+"\n"
+"প্রতিটি ফাইল সিস্টেমে মনিটরিং সমর্থিত নয় এবং প্রতি দেখা ফোল্ডারে অল্প পরিমাণ সিস্টেম রিসোর্স ব্যবহার করে। অনেকগুলি ফাইল সহ বৃহৎ ডিরেক্টরি গাছের জন্য সিস্টেমের সম্পদ শেষ হতে পারে সেগুলি দেখার জন্য।"
 
 #: src/fsearch_preferences.ui:1294
 msgid ""
@@ -1550,6 +1797,9 @@ msgid ""
 "If enabled, this folder is rescanned every time FSearch starts, so the "
 "database reflects any changes made while FSearch wasn't running."
 msgstr ""
+"<b>লঞ্চের পরে স্ক্যান করুন:</b>\n"
+"\n"
+"যদি সক্রিয় করা থাকে, এই ফোল্ডারটি প্রতিবার FSearch শুরু করার সময় পুনরায় স্ক্যান করা হয়, তাই ডাটাবেস FSearch চালু না থাকাকালীন করা যেকোনো পরিবর্তন প্রতিফলিত করে।"
 
 #: src/fsearch_preferences.ui:1311
 msgid ""
@@ -1559,6 +1809,9 @@ msgid ""
 "folder. Mounted file systems below it (e.g. external drives or network "
 "shares) are skipped."
 msgstr ""
+"<b>একটি ফাইল সিস্টেমে থাকুন:</b>\n"
+"\n"
+"সক্রিয় থাকলে, এই ফোল্ডারটি স্ক্যান করার সময় FSearch ফাইল সিস্টেমের সীমানা অতিক্রম করবে না। এর নীচে মাউন্ট করা ফাইল সিস্টেমগুলি (যেমন বাহ্যিক ড্রাইভ বা নেটওয়ার্ক শেয়ার) বাদ দেওয়া হয়েছে।"
 
 #: src/fsearch_preferences.ui:1328
 msgid ""
@@ -1570,6 +1823,11 @@ msgid ""
 "This is useful for folders on file systems that can't be monitored for "
 "changes."
 msgstr ""
+"<b>প্রতিটি পুনরায় স্ক্যান করুন:</b>\n"
+"\n"
+"যদি সক্রিয় করা থাকে, এই ফোল্ডারটি প্রদত্ত ব্যবধানে স্বয়ংক্রিয়ভাবে পুনরায় স্ক্যান করা হয়৷ রিস্ক্যান কত ঘন ঘন ঘটবে তা সেট করতে ঘন্টা এবং মিনিটের ক্ষেত্র ব্যবহার করুন।\n"
+"\n"
+"এটি ফাইল সিস্টেমের ফোল্ডারগুলির জন্য দরকারী যা পরিবর্তনের জন্য নিরীক্ষণ করা যায় না।"
 
 #: src/fsearch_preferences.ui:1347
 msgid ""
@@ -1590,6 +1848,15 @@ msgid ""
 "\t• <b>Applies To:</b> Whether the rule affects <i>Files</i>, <i>Folders</i> "
 "or both."
 msgstr ""
+"<b>নিয়ম বাদ দিন:</b>\n"
+"\n"
+"এই তালিকায় ফাইল এবং ফোল্ডারের নিয়ম রয়েছে যা আপনি ডাটাবেস থেকে বাদ দিতে চান।\n"
+"\n"
+"\t• <b>সক্রিয়:</b> সক্ষম হলে, নিয়মটি প্রয়োগ করা হয় এবং মিলিত আইটেমগুলি বাদ দেওয়া হয়।\n"
+"\t• <b>প্যাটার্ন:</b> প্রতিটি আইটেমের সাথে মিলিত পাঠ্য, প্রকার অনুসারে ব্যাখ্যা করা হয়েছে।\n"
+"\t• <b>প্রকার:</b> প্যাটার্নটি কীভাবে ব্যাখ্যা করা হয় — <i>আক্ষরিক</i> (সঠিক পাঠ্য), <i>ওয়াইল্ডকার্ড</i> (* এবং ?) বা <i>রেজেক্স</i> (একটি নিয়মিত অভিব্যক্তি)।\n"
+"\t• <b>ম্যাচ:</b> প্যাটার্নটি আইটেমের <i>সম্পূর্ণ পথের</i> সাথে মিলছে কিনা বা শুধুমাত্র তার <i>বেসনাম</i> (পাথ ছাড়া নাম)।\n"
+"\t• <b>এতে প্রযোজ্য:</b> নিয়মটি <i>ফাইল</i>, <i>ফোল্ডার</i> বা উভয়কেই প্রভাবিত করে কিনা।"
 
 #: src/fsearch_preferences.ui:1370
 msgid ""
@@ -1598,6 +1865,9 @@ msgid ""
 "This adds a new, empty rule to the list. Edit its Pattern, Type, Match and "
 "Applies To columns to control what gets excluded from the database."
 msgstr ""
+"<b>বাদ দেওয়ার নিয়ম যোগ করুন:</b>\n"
+"\n"
+"এটি তালিকায় একটি নতুন, খালি নিয়ম যোগ করে। ডাটাবেস থেকে কী বাদ দেওয়া হয় তা নিয়ন্ত্রণ করতে এর প্যাটার্ন, টাইপ, ম্যাচ এবং কলামগুলিতে প্রযোজ্য সম্পাদনা করুন।"
 
 #: src/fsearch_preferences.ui:1387
 msgid ""
@@ -1605,6 +1875,9 @@ msgid ""
 "\n"
 "This removes the selected rule from the list of exclude rules."
 msgstr ""
+"<b>নির্বাচিত সারি সরান:</b>\n"
+"\n"
+"এটি বাদ দেওয়া নিয়মের তালিকা থেকে নির্বাচিত নিয়মকে সরিয়ে দেয়।"
 
 #: src/fsearch_preferences.ui:1404
 msgid ""
@@ -1614,6 +1887,11 @@ msgid ""
 "\n"
 "⚠ All rules which were created or edited by the user will be lost! ⚠"
 msgstr ""
+"<b>ডিফল্ট বর্জন নিয়ম পুনরুদ্ধার করুন:</b>\n"
+"\n"
+"এই বোতামটি বর্জনের নিয়মের ডিফল্ট সেট পুনরুদ্ধার করে।\n"
+"\n"
+"⚠ ব্যবহারকারীর দ্বারা তৈরি বা সম্পাদনা করা সমস্ত নিয়ম হারিয়ে যাবে! ⚠"
 
 #: src/fsearch_preferences.ui:1423
 msgid ""
@@ -1624,6 +1902,9 @@ msgid ""
 "all files or folders which are called either <i>.git</i> or <i>.cache</i> or "
 "end with <i>.swp</i>."
 msgstr ""
+"<b>ডাটাবেস থেকে ফাইল এবং ফোল্ডার বাদ দিন:</b>\n"
+"\n"
+"আপনি ডাটাবেস থেকে বাদ দিতে চান এমন ফাইলগুলির (বা ফোল্ডার) এটি একটি সেমি-কোলন বিভক্ত তালিকা। উদাহরণস্বরূপ <i>.git;.cache;*.swp</i> সমস্ত ফাইল বা ফোল্ডার বাদ দেবে যেগুলিকে হয় <i>.git</i> বা <i>.cache</i> বলা হয় অথবা <i>.swp</i> দিয়ে শেষ হয়।"
 
 #: src/fsearch_preferences.ui:1440
 msgid ""
@@ -1632,10 +1913,13 @@ msgid ""
 "If enabled, hidden files and folders will be excluded from the database "
 "<i>(i.e. all files or folders which start with a dot character)</i>."
 msgstr ""
+"<b>লুকানো ফাইল এবং ফোল্ডারগুলি বাদ দিন:</b>\n"
+"\n"
+"যদি সক্ষম করা থাকে, লুকানো ফাইল এবং ফোল্ডারগুলি ডাটাবেস থেকে বাদ দেওয়া হবে <i>(অর্থাৎ সমস্ত ফাইল বা ফোল্ডার যা একটি ডট অক্ষর দিয়ে শুরু হয়)</i>।"
 
 #: src/fsearch_preferences.ui:1457
 msgid "Focus a setting to get a detailed description of what it does."
-msgstr ""
+msgstr "এটি কী করে তার বিশদ বিবরণ পেতে একটি সেটিং ফোকাস করুন।"
 
 #: src/fsearch_preferences.ui:1470
 msgid ""
@@ -1650,6 +1934,13 @@ msgid ""
 "\n"
 "<i><tt>fsearch --update-database</tt></i>"
 msgstr ""
+"<b>একটি নির্দিষ্ট সময়ের ব্যবধানে পর্যায়ক্রমে ডেটাবেস আপডেট করুন:</b>\n"
+"\n"
+"যদি সক্রিয় থাকে এবং যতক্ষণ পর্যন্ত FSearch চলমান থাকে, ডেটাবেস নির্দিষ্ট সময়ের ব্যবধানে পর্যায়ক্রমে আপডেট করা হবে।\n"
+"\n"
+"আপনি যদি ব্যাকগ্রাউন্ডে ডাটাবেস আপডেট করতে চান, এমনকি যখন FSearch চলছে না, তাহলে আপনাকে ক্রোন বা সিস্টেমড টাইমারের মতো টুল ব্যবহার করতে হবে যাতে পর্যায়ক্রমে আপডেটটি ট্রিগার করতে হয়:\n"
+"\n"
+"<i><tt>fsearch --update-database</tt></i>"
 
 #: src/fsearch_preferences.ui:1491
 msgid ""
@@ -1660,6 +1951,9 @@ msgid ""
 "launcher. Otherwise the <i>.desktop</i> file will be opened with the default "
 "handler for this type of files, which is usually a text editor."
 msgstr ""
+"<b>ডেস্কটপ ফাইল চালু করুন:</b>\n"
+"\n"
+"যদি সক্রিয় থাকে, একটি <i>.ডেস্কটপ</i> ফাইল সক্রিয় করা সেই ফাইলের মধ্যে সংজ্ঞায়িত অ্যাপ্লিকেশনটি চালু করবে। এইভাবে FSearch একটি অ্যাপ্লিকেশন লঞ্চারের মতো কাজ করতে পারে। অন্যথায় <i>.ডেস্কটপ</i> ফাইলটি এই ধরনের ফাইলগুলির জন্য ডিফল্ট হ্যান্ডলার দিয়ে খোলা হবে, যা সাধারণত একটি পাঠ্য সম্পাদক।"
 
 #: src/fsearch_preferences.ui:1508
 msgid ""
@@ -1672,6 +1966,13 @@ msgid ""
 "the filter on demand\n"
 "\t• <b>Query:</b> The search term by which the database should be filtered"
 msgstr ""
+"<b>ফিল্টার:</b>\n"
+"\n"
+"এটি সমস্ত উপলব্ধ ফিল্টারগুলির একটি তালিকা৷ একটি ফিল্টার একটি পূর্বনির্ধারিত অনুসন্ধান।\n"
+"\n"
+"\t• <b>নাম:</b> ফিল্টারের জন্য একটি অনন্য এবং বর্ণনামূলক শনাক্তকারী৷\n"
+"\t• <b>ম্যাক্রো:</b> একটি ':' এর পরে ম্যাক্রো পাঠ্য টাইপ করে আপনি চাহিদা অনুযায়ী ফিল্টার সক্ষম করতে পারেন\n"
+"\t• <b>কোয়েরি:</b> অনুসন্ধান শব্দ যার দ্বারা ডাটাবেস ফিল্টার করা উচিত"
 
 #: src/fsearch_preferences.ui:1529
 msgid ""
@@ -1679,6 +1980,9 @@ msgid ""
 "\n"
 "This button opens a dialog where you can edit a new filter."
 msgstr ""
+"<b>একটি নতুন ফিল্টার যোগ করুন:</b>\n"
+"\n"
+"এই বোতামটি একটি ডায়ালগ খোলে যেখানে আপনি একটি নতুন ফিল্টার সম্পাদনা করতে পারেন।"
 
 #: src/fsearch_preferences.ui:1546
 msgid ""
@@ -1686,6 +1990,9 @@ msgid ""
 "\n"
 "This button removes the currently selected filter."
 msgstr ""
+"<b>নির্বাচিত ফিল্টার সরান:</b>\n"
+"\n"
+"এই বোতামটি বর্তমানে নির্বাচিত ফিল্টারটি সরিয়ে দেয়।"
 
 #: src/fsearch_preferences.ui:1563
 msgid ""
@@ -1693,6 +2000,9 @@ msgid ""
 "\n"
 "This button opens a dialog where you can edit the selected filter."
 msgstr ""
+"<b>নির্বাচিত ফিল্টার সম্পাদনা করুন:</b>\n"
+"\n"
+"এই বোতামটি একটি ডায়ালগ খোলে যেখানে আপনি নির্বাচিত ফিল্টার সম্পাদনা করতে পারেন।"
 
 #: src/fsearch_preferences.ui:1580
 msgid ""
@@ -1702,6 +2012,11 @@ msgid ""
 "\n"
 "⚠ All filters which were created or edited by the user will be lost! ⚠"
 msgstr ""
+"<b>ডিফল্ট ফিল্টার পুনরুদ্ধার করুন:</b>\n"
+"\n"
+"এই বোতামটি ডিফল্ট ফিল্টার কনফিগারেশন পুনরুদ্ধার করে।\n"
+"\n"
+"⚠ ব্যবহারকারীর দ্বারা তৈরি বা সম্পাদনা করা সমস্ত ফিল্টার হারিয়ে যাবে! ⚠"
 
 #: src/fsearch_preferences.ui:1599
 msgid ""
@@ -1710,128 +2025,137 @@ msgid ""
 "If enabled, FSearch exits when the Escape key is pressed instead of the "
 "window being minimized."
 msgstr ""
+"<b>Escape এ প্রস্থান করুন:</b>\n"
+"\n"
+"সক্রিয় থাকলে, উইন্ডোটি ছোট করার পরিবর্তে Escape কী চাপলে FSearch প্রস্থান করে।"
 
 #: src/fsearch_preferences.ui:1618 src/fsearch_window.ui:290
 #: src/fsearch_window.ui:415 src/menus.ui:150 src/menus.ui:156
 msgid "Help"
-msgstr ""
+msgstr "সাহায্য"
 
 #: src/fsearch_preferences_dialog.c:238
 msgid "Database"
-msgstr ""
+msgstr "ডাটাবেস"
 
 #: src/fsearch_result_view.c:381
 msgid "Invalid row data"
-msgstr ""
+msgstr "অবৈধ সারি ডেটা"
 
 #: src/fsearch_statusbar.c:58
 #, c-format
 msgid "%'d Item"
-msgstr ""
+msgstr "%'d আইটেম"
 
 #: src/fsearch_statusbar.c:58 src/fsearch_statusbar.c:186
 #, c-format
 msgid "%'d Items"
-msgstr ""
+msgstr "%'d আইটেম"
 
 #: src/fsearch_statusbar.c:80
 msgid "Querying…"
-msgstr ""
+msgstr "প্রশ্ন করা হচ্ছে..."
 
 #: src/fsearch_statusbar.c:175
 msgid "Loading…"
-msgstr ""
+msgstr "লোড হচ্ছে..."
 
 #: src/fsearch_statusbar.c:180
 msgid "Scanning…"
-msgstr ""
+msgstr "স্ক্যান করা হচ্ছে..."
 
 #: src/fsearch_statusbar.ui:52
 msgid "Number of Search Results"
-msgstr ""
+msgstr "অনুসন্ধান ফলাফলের সংখ্যা"
 
 #: src/fsearch_statusbar.ui:53
 msgid "0 Items"
-msgstr ""
+msgstr "0 আইটেম"
 
 #: src/fsearch_statusbar.ui:106
 msgid "Cancel"
-msgstr ""
+msgstr "বাতিল করুন"
 
 #: src/fsearch_statusbar.ui:153
 msgid "Index:"
-msgstr ""
+msgstr "সূচক:"
 
 #: src/fsearch_statusbar.ui:228
 msgid "Number of selected folders"
-msgstr ""
+msgstr "নির্বাচিত ফোল্ডারের সংখ্যা"
 
 #: src/fsearch_statusbar.ui:229 src/fsearch_statusbar.ui:254
 msgid "0/0"
-msgstr ""
+msgstr "0/0"
 
 #: src/fsearch_statusbar.ui:253
 msgid "Number of selected files"
-msgstr ""
+msgstr "নির্বাচিত ফাইলের সংখ্যা"
 
 #: src/fsearch_statusbar.ui:328 src/fsearch_window.ui:103
 msgid "Cancel database update"
-msgstr ""
+msgstr "ডাটাবেস আপডেট বাতিল করুন"
 
 #: src/fsearch_statusbar.ui:369
 msgid "Number of database items"
-msgstr ""
+msgstr "ডাটাবেস আইটেম সংখ্যা"
 
 #: src/fsearch_statusbar.ui:370
 msgid "(empty)"
-msgstr ""
+msgstr "(খালি)"
 
 #: src/fsearch_statusbar.ui:407
 msgid ""
 "Search term contains upper case characters.\n"
 "<b>Match Case</b> was temporarily activated for this term."
 msgstr ""
+"অনুসন্ধান শব্দে বড় হাতের অক্ষর রয়েছে।\n"
+"এই মেয়াদের জন্য <b>ম্যাচ কেস</b> সাময়িকভাবে সক্রিয় করা হয়েছে।"
 
 #: src/fsearch_statusbar.ui:438 src/fsearch_statusbar.ui:491
 msgid "CASE"
-msgstr ""
+msgstr "মামলা"
 
 #: src/fsearch_statusbar.ui:514
 msgid ""
 "Search term contains path separators.\n"
 "<b>Search in Path</b> was temporarily activated for this term."
 msgstr ""
+"অনুসন্ধান শব্দে পাথ বিভাজক রয়েছে।\n"
+"এই শব্দের জন্য <b>পাথে অনুসন্ধান</b> সাময়িকভাবে সক্রিয় করা হয়েছে৷"
 
 #: src/fsearch_statusbar.ui:545 src/fsearch_statusbar.ui:598
 msgid "PATH"
-msgstr ""
+msgstr "PATH"
 
 #: src/fsearch_statusbar.ui:651
 msgid "REGEX"
-msgstr ""
+msgstr "REGEX"
 
 #: src/fsearch_statusbar.ui:726
 msgid ""
 "The search was cancelled before it finished.\n"
 "<b>These results are incomplete.</b>"
 msgstr ""
+"অনুসন্ধানটি শেষ হওয়ার আগেই বাতিল হয়ে গেছে।\n"
+"<b>এই ফলাফলগুলি অসম্পূর্ণ৷</b>৷"
 
 #: src/fsearch_statusbar.ui:756
 msgid "PARTIAL"
-msgstr ""
+msgstr "আংশিক"
 
 #: src/fsearch_welcome_dialog.ui:26
 msgid "What's New in FSearch"
-msgstr ""
+msgstr "FSearch এ নতুন কি আছে"
 
 #: src/fsearch_welcome_dialog.ui:79
 msgid ""
 "<span size=\"xx-large\" weight=\"bold\">What's New in FSearch 0.3</span>"
-msgstr ""
+msgstr "<span size=\\\"xx-large\\\" weight=\\\"bold\\\">FSearch 0.3 এ নতুন কি আছে</span>"
 
 #: src/fsearch_welcome_dialog.ui:149
 msgid "<big><b>File System Monitoring</b></big>"
-msgstr ""
+msgstr "<big><b>ফাইল সিস্টেম মনিটরিং</b></big>"
 
 #: src/fsearch_welcome_dialog.ui:163
 msgid ""
@@ -1845,20 +2169,26 @@ msgid ""
 "<a href=\"URL\">https://github.com/cboxdoerfer/fsearch/wiki/Database-update</"
 "a>"
 msgstr ""
+"ঘন ঘন পুনঃস্ক্যানগুলি দূর করতে আপনি এখন সক্রিয়ভাবে পৃথক ফোল্ডারগুলি দেখতে পারেন। ফাইল পরিবর্তন তারপর অবিলম্বে আপনার অনুসন্ধান ফলাফল প্রদর্শিত হবে.\n"
+"\n"
+"এই বৈশিষ্ট্যটি সক্ষম করতে পছন্দ ডায়ালগের ডেটাবেস বিভাগে যান।\n"
+"\n"
+"আরও তথ্যের জন্য অনলাইন ডকুমেন্টেশন দেখুন:\n"
+"<a href=\\\"URL\\\">https://github.com/cboxdoerfer/fsearch/wiki/Database-update</a>"
 
 #: src/fsearch_welcome_dialog.ui:232
 msgid "<big><b>Folder-Specific Rescan Schedules</b></big>"
-msgstr ""
+msgstr "<big><b>ফোল্ডার-নির্দিষ্ট রিস্ক্যান শিডিউল</b></big>"
 
 #: src/fsearch_welcome_dialog.ui:246
 msgid ""
 "You can now configure automatic update intervals for individual folders "
 "independently and tailored to each distinct location."
-msgstr ""
+msgstr "আপনি এখন স্বতন্ত্র ফোল্ডারগুলির জন্য স্বয়ংক্রিয় আপডেট ব্যবধানগুলি কনফিগার করতে পারেন এবং প্রতিটি স্বতন্ত্র অবস্থানের জন্য উপযুক্ত।"
 
 #: src/fsearch_welcome_dialog.ui:309
 msgid "<big><b>Improved Exclude Rules</b></big>"
-msgstr ""
+msgstr "<big><b>উন্নত বর্জনের নিয়ম</b></big>"
 
 #: src/fsearch_welcome_dialog.ui:323
 msgid ""
@@ -1867,18 +2197,20 @@ msgid ""
 "Rules can be targeted specifically at files, folders, or both, and can be "
 "configured to match against either the basename or the full absolute path."
 msgstr ""
+"আপনি এখন ওয়াইল্ডকার্ড এবং রেগুলার এক্সপ্রেশন ব্যবহার করতে পারেন আরো শক্তিশালী এক্সক্লুড নিয়ম সংজ্ঞায়িত করতে। \n"
+"নিয়মগুলি বিশেষভাবে ফাইল, ফোল্ডার বা উভয়কে লক্ষ্য করে করা যেতে পারে এবং বেসনাম বা সম্পূর্ণ পরম পথের সাথে মেলে কনফিগার করা যেতে পারে।"
 
 #: src/fsearch_window.c:749 src/menus.ui:279
 msgid "Size"
-msgstr ""
+msgstr "আকার"
 
 #: src/fsearch_window.c:763 src/menus.ui:271
 msgid "Extension"
-msgstr ""
+msgstr "এক্সটেনশন"
 
 #: src/fsearch_window.c:770 src/menus.ui:283
 msgid "Date Modified"
-msgstr ""
+msgstr "তারিখ পরিবর্তিত"
 
 #: src/fsearch_window.c:784
 msgid ""
@@ -1887,201 +2219,205 @@ msgid ""
 "This sort order is not persistent, it will be reset when the search term "
 "changes."
 msgstr ""
+"<b>টাইপ</b> অনুসারে বাছাই করা অনেক ফলাফল সহ কয়েক সেকেন্ড সময় নিতে পারে।\n"
+"\n"
+"এই সাজানোর ক্রম স্থায়ী নয়, অনুসন্ধান শব্দটি পরিবর্তিত হলে এটি পুনরায় সেট করা হবে।"
 
 #: src/fsearch_window.ui:68
 msgid "New window"
-msgstr ""
+msgstr "নতুন উইন্ডো"
 
 #: src/fsearch_window.ui:89
 msgid "Update database"
-msgstr ""
+msgstr "ডাটাবেস আপডেট করুন"
 
 #: src/fsearch_window.ui:144 src/menus.ui:112
 msgid "Search in Path"
-msgstr ""
+msgstr "পথে অনুসন্ধান করুন"
 
 #: src/fsearch_window.ui:158 src/menus.ui:116
 msgid "Match Case"
-msgstr ""
+msgstr "ম্যাচ কেস"
 
 #: src/fsearch_window.ui:172 src/menus.ui:120
 msgid "Enable RegEx"
-msgstr ""
+msgstr "RegEx সক্ষম করুন"
 
 #: src/fsearch_window.ui:197 src/menus.ui:95
 msgid "Show Statusbar"
-msgstr ""
+msgstr "স্ট্যাটাসবার দেখান"
 
 #: src/fsearch_window.ui:211 src/menus.ui:99
 msgid "Show Filter"
-msgstr ""
+msgstr "ফিল্টার দেখান"
 
 #: src/fsearch_window.ui:225 src/menus.ui:103
 msgid "Show Search Button"
-msgstr ""
+msgstr "অনুসন্ধান বোতাম দেখান"
 
 #: src/fsearch_window.ui:275 src/fsearch_window.ui:356 src/menus.ui:129
 msgid "FSearch Online"
-msgstr ""
+msgstr "FSearch অনলাইন"
 
 #: src/fsearch_window.ui:304 src/menus.ui:161
 msgid "About"
-msgstr ""
+msgstr "সম্পর্কে"
 
 #: src/fsearch_window.ui:329 src/menus.ui:47
 msgid "Quit"
-msgstr ""
+msgstr "প্রস্থান করুন"
 
 #: src/fsearch_window.ui:372 src/fsearch_window.ui:443 src/menus.ui:131
 msgid "Donate"
-msgstr ""
+msgstr "দান করুন"
 
 #: src/fsearch_window.ui:387 src/menus.ui:142
 msgid "Forum"
-msgstr ""
+msgstr "ফোরাম"
 
 #: src/fsearch_window.ui:401 src/menus.ui:146
 msgid "Bug Reports and Feature Requests"
-msgstr ""
+msgstr "বাগ রিপোর্ট এবং বৈশিষ্ট্য অনুরোধ"
 
 #: src/fsearch_window.ui:460 src/menus.ui:133
 msgid "GitHub Sponsors"
-msgstr ""
+msgstr "GitHub স্পনসর"
 
 #: src/fsearch_window.ui:474 src/menus.ui:137
 msgid "PayPal"
-msgstr ""
+msgstr "পেপ্যাল"
 
 #: src/fsearch_window.ui:586
 msgid "Search…"
-msgstr ""
+msgstr "অনুসন্ধান…"
 
 #: src/fsearch_window.ui:608
 msgid "Select a Filter"
-msgstr ""
+msgstr "একটি ফিল্টার নির্বাচন করুন"
 
 #: src/fsearch_window_actions.c:110
 #, c-format
 msgid "Do you really want to open %'d file?"
 msgid_plural "Do you really want to open %'d files?"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "আপনি কি সত্যিই %'d ফাইল খুলতে চান?"
+msgstr[1] "আপনি কি সত্যিই %'dটি ফাইল খুলতে চান?"
 
 #: src/fsearch_window_actions.c:115
 msgid "Opening Files…"
-msgstr ""
+msgstr "ফাইল খোলা হচ্ছে..."
 
 #: src/fsearch_window_actions.c:198
 #, c-format
 msgid "Do you really want to remove %'d file?"
 msgid_plural "Do you really want to remove %'d files?"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "আপনি কি সত্যিই %'d ফাইল সরাতে চান?"
+msgstr[1] "আপনি কি সত্যিই %'dটি ফাইল সরাতে চান?"
 
 #: src/fsearch_window_actions.c:205
 msgid "Deleting files…"
-msgstr ""
+msgstr "ফাইল মুছে ফেলা হচ্ছে..."
 
 #: src/fsearch_window_actions.c:205
 msgid "Moving files to trash…"
-msgstr ""
+msgstr "ফাইল ট্র্যাশে সরানো হচ্ছে..."
 
 #: src/fsearch_window_actions.c:238 src/fsearch_window_actions.c:533
 #: src/fsearch_window_actions.c:580
 msgid "Something went wrong."
-msgstr ""
+msgstr "কিছু ভুল হয়েছে"
 
 #: src/fsearch_window_actions.c:263
 #, c-format
 msgid "Do you really want to open %'d file property window?"
 msgid_plural "Do you really want to open %'d file property windows?"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "আপনি কি সত্যিই %'d ফাইল সম্পত্তি উইন্ডো খুলতে চান?"
+msgstr[1] "আপনি কি সত্যিই %'d ফাইল সম্পত্তি উইন্ডো খুলতে চান?"
 
 #: src/fsearch_window_actions.c:270
 msgid "Opening file properties…"
-msgstr ""
+msgstr "ফাইল বৈশিষ্ট্য খোলা হচ্ছে..."
 
 #: src/menus.ui:6
 msgid "_File"
-msgstr ""
+msgstr "_ফাইল"
 
 #: src/menus.ui:9
 msgid "New Window"
-msgstr ""
+msgstr "নতুন উইন্ডো"
 
 #: src/menus.ui:16 src/menus.ui:171
 msgid "_Open"
-msgstr ""
+msgstr "_খোলা"
 
 #: src/menus.ui:21
 msgid "Open Folder"
-msgstr ""
+msgstr "ফোল্ডার খুলুন"
 
 #: src/menus.ui:29
 msgid "Update Database"
-msgstr ""
+msgstr "ডেটাবেস আপডেট করুন"
 
 #: src/menus.ui:35
 msgid "Cancel Update"
-msgstr ""
+msgstr "আপডেট বাতিল করুন"
 
 #: src/menus.ui:42
 msgid "Close Window"
-msgstr ""
+msgstr "উইন্ডো বন্ধ করুন"
 
 #: src/menus.ui:54
 msgid "_Edit"
-msgstr ""
+msgstr "_ সম্পাদনা করুন"
 
 #: src/menus.ui:57 src/menus.ui:207
 msgid "_Copy"
-msgstr ""
+msgstr "_কপি"
 
 #: src/menus.ui:62 src/menus.ui:228
 msgid "Cu_t"
-msgstr ""
+msgstr "Cu_t"
 
 #: src/menus.ui:69
 msgid "Select All"
-msgstr ""
+msgstr "সব নির্বাচন করুন"
 
 #: src/menus.ui:74
 msgid "Deselect All"
-msgstr ""
+msgstr "সকলকে অনির্বাচন করুন"
 
 #: src/menus.ui:78
 msgid "Invert Selection"
-msgstr ""
+msgstr "উল্টানো নির্বাচন"
 
 #: src/menus.ui:92
 msgid "_View"
-msgstr ""
+msgstr "_দেখুন"
 
 #: src/menus.ui:109
 msgid "_Search"
-msgstr ""
+msgstr "_অনুসন্ধান"
 
 #: src/menus.ui:126
 msgid "_Help"
-msgstr ""
+msgstr "_হেল্প"
 
 #: src/menus.ui:177
 msgid "Open _With"
-msgstr ""
+msgstr "খুলুন _With"
 
 #: src/menus.ui:191
 msgid "_Open Folder"
-msgstr ""
+msgstr "_ফোল্ডার খুলুন"
 
 #: src/menus.ui:213
 msgid "Copy as Text"
-msgstr ""
+msgstr "পাঠ্য হিসাবে অনুলিপি করুন"
 
 #: src/menus.ui:223
 msgid "Path + Name"
-msgstr ""
+msgstr "পথ + নাম"
 
 #: src/menus.ui:236
 msgid "Move to _Trash"
-msgstr ""
+msgstr "_ট্র্যাশে সরান"
+
