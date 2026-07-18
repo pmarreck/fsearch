@@ -19,334 +19,337 @@ msgstr ""
 
 #: data/io.github.cboxdoerfer.FSearch.desktop.in.in:4 src/main.c:36
 msgid "FSearch"
-msgstr ""
+msgstr "ស្វែងរក"
 
 #: data/io.github.cboxdoerfer.FSearch.desktop.in.in:5
 msgid "A file search application focusing on performance and advanced features"
-msgstr ""
+msgstr "កម្មវិធីស្វែងរកឯកសារផ្តោតលើការអនុវត្ត និងមុខងារកម្រិតខ្ពស់"
 
 #: data/io.github.cboxdoerfer.FSearch.desktop.in.in:10
 msgid "search;fsearch;files;folders;music;video;documents;find;tool;everything;"
-msgstr ""
+msgstr "ស្វែងរក;fsearch;ឯកសារ;ថតឯកសារ;តន្ត្រី;វីដេអូ;ឯកសារ;ស្វែងរក;ឧបករណ៍;អ្វីគ្រប់យ៉ាង;"
 
 #: data/io.github.cboxdoerfer.FSearch.desktop.in.in:12
 msgid "File Search Utility"
-msgstr ""
+msgstr "ឧបករណ៍ស្វែងរកឯកសារ"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:8
 msgid "A graphical file search application"
-msgstr ""
+msgstr "កម្មវិធីស្វែងរកឯកសារក្រាហ្វិក"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:10
 msgid ""
 "FSearch helps you to find files and folders as easy and fast as possible. "
 "Just type a few letters and search results will appear almost instantly."
-msgstr ""
+msgstr "FSearch ជួយអ្នកក្នុងការស្វែងរកឯកសារ និងថតឯកសារបានយ៉ាងងាយស្រួល និងលឿនតាមដែលអាចធ្វើទៅបាន។ គ្រាន់តែវាយអក្សរពីរបីហើយលទ្ធផលស្វែងរកនឹងលេចឡើងស្ទើរតែភ្លាមៗ។"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:14
 msgid ""
 "There are a lot of features which make searching as efficient and powerful "
 "as possible. Such as:"
-msgstr ""
+msgstr "មានមុខងារជាច្រើនដែលធ្វើឱ្យការស្វែងរកមានប្រសិទ្ធភាព និងខ្លាំងតាមដែលអាចធ្វើទៅបាន។ ដូចជា៖"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:19
 msgid ""
 "Ignore case (e.g. searching for \"<code>fsearch</code>\" will match "
 "\"FSearch\" as well)"
-msgstr ""
+msgstr "មិនអើពើករណី (ឧ. ការស្វែងរក \\\"<code>fsearch</code>\\\" នឹងផ្គូផ្គង \\\"FSearch\\\" ផងដែរ)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:20
 msgid "Regular expressions"
-msgstr ""
+msgstr "កន្សោមទៀងទាត់"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:21
 msgid "Wildcard support"
-msgstr ""
+msgstr "ការគាំទ្រអក្សរជំនួស"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:22
 msgid "Filter support (e.g. only search for audio files)"
-msgstr ""
+msgstr "ជំនួយតម្រង (ឧ. ស្វែងរកតែឯកសារអូឌីយ៉ូ)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:23
 msgid "Exclude certain files and folders"
-msgstr ""
+msgstr "មិនរាប់បញ្ចូលឯកសារ និងថតមួយចំនួន"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:24
 msgid "Fast sort by name, path, size, modification time and extension"
-msgstr ""
+msgstr "តម្រៀបលឿនតាមឈ្មោះ ផ្លូវ ទំហំ ពេលវេលាកែប្រែ និងផ្នែកបន្ថែម"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:26
 msgid ""
 "<em>Note:</em> Due to Flatpak's sandboxing, FSearch can't find every file on "
 "your system."
-msgstr ""
+msgstr "<em>ចំណាំ៖</em> ដោយសារការ Sandboxing របស់ Flatpak FSearch មិនអាចស្វែងរករាល់ឯកសារនៅលើប្រព័ន្ធរបស់អ្នកបានទេ។"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:35
 msgid "The default UI layout"
-msgstr ""
+msgstr "ប្លង់ UI លំនាំដើម"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:41
 msgid "A layout more closely following GNOME HIGs"
-msgstr ""
+msgstr "ប្លង់កាន់តែជិតតាម GNOME HIGs"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:49
 msgid "search"
-msgstr ""
+msgstr "ស្វែងរក"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:50
 msgid "fsearch"
-msgstr ""
+msgstr "ស្វែងរក"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:51
 msgid "files"
-msgstr ""
+msgstr "ឯកសារ"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:52
 msgid "folders"
-msgstr ""
+msgstr "ថតឯកសារ"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:53
 msgid "music"
-msgstr ""
+msgstr "តន្ត្រី"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:54
 msgid "video"
-msgstr ""
+msgstr "វីដេអូ"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:55
 msgid "documents"
-msgstr ""
+msgstr "ឯកសារ"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:56
 msgid "find"
-msgstr ""
+msgstr "ស្វែងរក"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:57
 msgid "tool"
-msgstr ""
+msgstr "ឧបករណ៍"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:58
 msgid "everything"
-msgstr ""
+msgstr "អ្វីគ្រប់យ៉ាង"
 
 #. Kept for appstreamcli < 1.0 (e.g. Ubuntu 20.04/22.04 PPA builds), which doesn't know <developer>.
 #. Translators: please do NOT translate this.
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:77
 msgid "Christian Boxdörfer"
-msgstr ""
+msgstr "Christian Boxdörfer"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:89
 msgid "DB rewrite"
-msgstr ""
+msgstr "DB សរសេរឡើងវិញ"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:90
 msgid "DB: Add support for filesystem monitoring"
-msgstr ""
+msgstr "DB៖ បន្ថែមការគាំទ្រសម្រាប់ការត្រួតពិនិត្យប្រព័ន្ធឯកសារ"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:91
 msgid ""
 "DB: Allow files and folders to be excluded based on fixed patterns, "
 "wildcards or regular expressions"
-msgstr ""
+msgstr "DB៖ អនុញ្ញាតឱ្យឯកសារ និងថតត្រូវបានដកចេញដោយផ្អែកលើលំនាំថេរ តួអក្សរជំនួស ឬកន្សោមធម្មតា"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:92
 msgid ""
 "DB: Allow included folders to be scheduled and scanned after launch "
 "independently"
-msgstr ""
+msgstr "DB៖ អនុញ្ញាត​ឱ្យ​ថត​ដែល​បាន​រួម​បញ្ចូល​ត្រូវ​បាន​កំណត់​ពេល​វេលា និង​ស្កេន​បន្ទាប់​ពី​បើក​ដំណើរការ​ដោយ​ឯករាជ្យ"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:93
 msgid "DB: Make rescanning more efficient"
-msgstr ""
+msgstr "DB៖ ធ្វើឱ្យការស្កេនឡើងវិញកាន់តែមានប្រសិទ្ធភាព"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:94
 msgid "DB: Store database config in DB file"
-msgstr ""
+msgstr "DB៖ រក្សាទុកការកំណត់រចនាសម្ព័ន្ធមូលដ្ឋានទិន្នន័យនៅក្នុងឯកសារ DB"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:95
 msgid "DB: Add checksum to DB file"
-msgstr ""
+msgstr "DB៖ បន្ថែម checksum ទៅឯកសារ DB"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:96
 msgid "Make icon and file info gathering asynchronous (no UI blocking)"
-msgstr ""
+msgstr "បង្កើតរូបតំណាង និងឯកសារប្រមូលផ្តុំព័ត៌មានអសមកាល (គ្មានការទប់ស្កាត់ UI)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:97
 msgid "Reduce memory usage"
-msgstr ""
+msgstr "កាត់បន្ថយការប្រើប្រាស់អង្គចងចាំ"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:98
 msgid "Add contextual help for all preferences"
-msgstr ""
+msgstr "បន្ថែមជំនួយបរិបទសម្រាប់ចំណូលចិត្តទាំងអស់។"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:99
 msgid "Numerous bug fixes and stability and performance improvements"
-msgstr ""
+msgstr "ការកែកំហុសជាច្រើន និងស្ថេរភាព និងការកែលម្អការអនុវត្ត"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:106
 msgid "New search engine"
-msgstr ""
+msgstr "ម៉ាស៊ីនស្វែងរកថ្មី។"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:107
 msgid "Greatly improved highlighting of search terms"
-msgstr ""
+msgstr "ការបន្លិចពាក្យស្វែងរកប្រសើរឡើងយ៉ាងខ្លាំង"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:108
 msgid "Custom filters"
-msgstr ""
+msgstr "តម្រងផ្ទាល់ខ្លួន"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:109
 msgid "Improved sort performance"
-msgstr ""
+msgstr "ធ្វើឱ្យប្រសើរឡើងនូវដំណើរការតម្រៀប"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:110
 msgid "Improved scroll performance"
-msgstr ""
+msgstr "ដំណើរការរមូរប្រសើរឡើង"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:111
 msgid "Remember file selection after a database update"
-msgstr ""
+msgstr "ចងចាំការជ្រើសរើសឯកសារបន្ទាប់ពីការធ្វើបច្ចុប្បន្នភាពមូលដ្ឋានទិន្នន័យ"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:112
 msgid "Automatically scroll the result list in rubberband selection mode"
-msgstr ""
+msgstr "រមូរបញ្ជីលទ្ធផលដោយស្វ័យប្រវត្តិនៅក្នុងរបៀបជ្រើសរើសខ្សែកៅស៊ូ"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:113
 msgid "Invert selection with rubber band when 'Ctrl' is pressed"
-msgstr ""
+msgstr "ការ​ជ្រើសរើស​បញ្ច្រាស​ជាមួយ​ក្រុម​កៅស៊ូ​ពេល​ចុច 'Ctrl'"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:114
 msgid "Focus search entry when the main window gets activated"
-msgstr ""
+msgstr "ផ្ដោតលើធាតុស្វែងរក នៅពេលដែលបង្អួចមេត្រូវបានធ្វើឱ្យសកម្ម"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:115
 msgid "Add filter for applications (i.e. .desktop files)"
-msgstr ""
+msgstr "បន្ថែមតម្រងសម្រាប់កម្មវិធី (ឧ. ឯកសារ .desktop)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:116
 msgid ""
 "Add option to launch applications directly instead of opening the .desktop "
 "files"
-msgstr ""
+msgstr "បន្ថែមជម្រើសដើម្បីបើកដំណើរការកម្មវិធីដោយផ្ទាល់ជំនួសឱ្យការបើកឯកសារ .desktop"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:117
 msgid "Show application icons for .desktop files"
-msgstr ""
+msgstr "បង្ហាញរូបតំណាងកម្មវិធីសម្រាប់ឯកសារ .desktop"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:118
 msgid "Add .odp and .ods files to document filter"
-msgstr ""
+msgstr "បន្ថែមឯកសារ .odp និង .ods ទៅតម្រងឯកសារ"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:119
 msgid ""
 "'Open with' menu now only shows applications which can handle the selected "
 "files"
-msgstr ""
+msgstr "ម៉ឺនុយ 'បើកជាមួយ' ឥឡូវនេះបង្ហាញតែកម្មវិធីដែលអាចគ្រប់គ្រងឯកសារដែលបានជ្រើសរើសប៉ុណ្ណោះ។"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:120
 msgid ""
 "Improved opening of multiple files with the same type (they get now passed "
 "as a list to applications, instead of one by one)"
-msgstr ""
+msgstr "ធ្វើឱ្យប្រសើរឡើងនូវការបើកឯកសារច្រើនដែលមានប្រភេទដូចគ្នា (ឥឡូវនេះពួកវាត្រូវបានបញ្ជូនជាបញ្ជីទៅកម្មវិធី ជំនួសឱ្យមួយម្តងៗ)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:121
 msgid "Better support for opening files in sandboxed mode"
-msgstr ""
+msgstr "ការគាំទ្រកាន់តែប្រសើរសម្រាប់ការបើកឯកសារនៅក្នុងរបៀប sandboxed"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:122
 msgid ""
 "Add menu items with links to the issue tracker, forum and donation pages"
-msgstr ""
+msgstr "បន្ថែមធាតុម៉ឺនុយជាមួយនឹងតំណភ្ជាប់ទៅកាន់កម្មវិធីតាមដានបញ្ហា វេទិកា និងទំព័របរិច្ចាគ"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:123
 msgid "Improve support for non-Linux systems"
-msgstr ""
+msgstr "កែលម្អការគាំទ្រសម្រាប់ប្រព័ន្ធមិនមែនលីនុច"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:124
 msgid ""
 "Add option to exit FSearch when Escape is pressed instead of minimizing the "
 "window"
-msgstr ""
+msgstr "បន្ថែមជម្រើសដើម្បីចេញពី FSearch នៅពេលចុច Escape ជំនួសឱ្យការបង្រួមបង្អួច"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:125
 msgid "Exclude '/proc' and '/sys' by default"
-msgstr ""
+msgstr "មិនរាប់បញ្ចូល '/proc' និង '/sys' តាមលំនាំដើម"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:126
 msgid "Open context menu when 'Menu' key or 'Shift + F10' are pressed"
-msgstr ""
+msgstr "បើកម៉ឺនុយបរិបទនៅពេលចុចគ្រាប់ចុច 'ម៉ឺនុយ' ឬ 'ប្ដូរ + F10' ត្រូវបានចុច"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:127
 msgid "and tons of bug fixes, translation updates and smaller improvements"
-msgstr ""
+msgstr "និងការកែកំហុសជាច្រើន ការធ្វើបច្ចុប្បន្នភាពការបកប្រែ និងការកែលម្អតូចៗ"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:133
 msgid "Initial release."
-msgstr ""
+msgstr "ការចេញផ្សាយដំបូង។"
 
 #: src/fsearch.c:181
 msgid "translator-credits"
-msgstr ""
+msgstr "អ្នកបកប្រែ - ឥណទាន"
 
 #: src/fsearch.c:183
 msgid "A search utility focusing on performance and advanced features"
-msgstr ""
+msgstr "ឧបករណ៍ស្វែងរកដែលផ្តោតលើការអនុវត្ត និងមុខងារកម្រិតខ្ពស់"
 
 #: src/fsearch.c:330
 msgid "Saving database and config…"
-msgstr ""
+msgstr "កំពុងរក្សាទុកមូលដ្ឋានទិន្នន័យ និងកំណត់រចនាសម្ព័ន្ធ..."
 
 #: src/fsearch.c:786
 msgid "Open a new application window"
-msgstr ""
+msgstr "បើកបង្អួចកម្មវិធីថ្មី។"
 
 #: src/fsearch.c:787
 msgid "Minimize the application window"
-msgstr ""
+msgstr "បង្រួមបង្អួចកម្មវិធី"
 
 #: src/fsearch.c:788
 msgid "Show the application preferences"
-msgstr ""
+msgstr "បង្ហាញចំណូលចិត្តកម្មវិធី"
 
 #: src/fsearch.c:789
 msgid "Set the search pattern"
-msgstr ""
+msgstr "កំណត់លំនាំស្វែងរក"
 
 #: src/fsearch.c:790
 msgid "Update the database and exit"
-msgstr ""
+msgstr "ធ្វើបច្ចុប្បន្នភាពមូលដ្ឋានទិន្នន័យហើយចាកចេញ"
 
 #: src/fsearch.c:791
 msgid "Print version information and exit"
-msgstr ""
+msgstr "បោះពុម្ពព័ត៌មានកំណែហើយចេញ"
 
 #: src/fsearch.c:883
 msgid ""
 "For command-line search help, run: fsearch --cli --help\n"
 "For shared configuration help, run: fsearch config --help"
 msgstr ""
+"សម្រាប់ជំនួយការស្វែងរកបន្ទាត់ពាក្យបញ្ជា សូមដំណើរការ៖ fsearch --cli --help\n"
+"សម្រាប់ជំនួយក្នុងការកំណត់រចនាសម្ព័ន្ធដែលបានចែករំលែក សូមដំណើរការ៖ fsearch config --help"
 
 #: src/fsearch_cli.c:125
 #, c-format
 msgid ""
 "Results capped at %u. Use --unlimit or --unlimited to get them all, or "
 "provide a custom --limit, or set FSEARCH_RESULT_LIMIT."
-msgstr ""
+msgstr "លទ្ធផលបានកំណត់នៅ %u ។ ប្រើ --unlimit ឬ --unlimited ដើម្បី​ទទួល​បាន​វា​ទាំងអស់ ឬ​ផ្តល់​នូវ --limit ផ្ទាល់ខ្លួន ឬ​កំណត់ FSEARCH_RESULT_LIMIT ។"
 
 #: src/fsearch_cli.c:134
 #, c-format
 msgid "%u match."
 msgid_plural "%u matches."
-msgstr[0] ""
+msgstr[0] "%u ត្រូវគ្នា។"
+msgstr[1] "%u ត្រូវគ្នា។"
 
 #: src/fsearch_cli.c:142
 msgid "Updating FSearch index before searching..."
-msgstr ""
+msgstr "ការធ្វើបច្ចុប្បន្នភាពសន្ទស្សន៍ FSearch មុនពេលស្វែងរក..."
 
 #: src/fsearch_cli.c:149
 #, c-format
 msgid "Indexing: %s"
-msgstr ""
+msgstr "ការធ្វើលិបិក្រម៖ %s"
 
 #: src/fsearch_cli.c:181
 msgid ""
@@ -392,40 +395,76 @@ msgid ""
 "{png,jpg} selects alternatives; {01..12} is an inclusive numeric range; \\* "
 "matches a literal *.\n"
 msgstr ""
+"ការប្រើប្រាស់៖ fsearch --cli [OPTIONS]\n"
+"\n"
+"ស្វែងរកសន្ទស្សន៍ FSSearch ដែលមានស្រាប់ និងបោះពុម្ពផ្លូវដែលត្រូវគ្នា។\n"
+"\n"
+"  -s, --search PATTERN       ស្វែងរកដោយប្រើវាក្យសម្ព័ន្ធសំណួរ FSSearch\n"
+"      --path DIRECTORY        ស្វែងរក​ដដែលៗ​ខាងក្រោម DIRECTORY (លំនាំដើម៖ ថតបច្ចុប្បន្ន)\n"
+"      --global                ស្វែងរករាល់ទីតាំងដែលបានធ្វើលិបិក្រម\n"
+"      --limit COUNT          បោះពុម្ពលទ្ធផលច្រើនបំផុត COUNT\n"
+"      --unlimit, --unlimited បោះពុម្ពលទ្ធផលនីមួយៗ\n"
+"  -u, --update-database      ស្កេនលិបិក្រមដែលបានកំណត់រចនាសម្ព័ន្ធឡើងវិញ ហើយចេញ\n"
+"      --about                បោះពុម្ពព័ត៌មានស្ថាបនាមួយជួរ\n"
+"  -h, --help                 បង្ហាញជំនួយនេះ។\n"
+"\n"
+"ការកំណត់រចនាសម្ព័ន្ធ៖ fsearch config --help\n"
+"\n"
+"ឧទាហរណ៍៖\n"
+"  fsearch --cli --search invoice              # eolaire reatha\n"
+"  fsearch --cli --path ~/Documents --search invoice\n"
+"  fsearch --cli --global --search invoice\n"
+"  fsearch --cli --search 'file:size:>20mb'\n"
+"  fsearch --cli --search 'ext:jpg;png'\n"
+"  fsearch --cli --search 'path:projects report'\n"
+"  fsearch --cli --search 'report AND ext:pdf'\n"
+"  fsearch --cli --search '(draft OR final) !archive'\n"
+"  fsearch --cli --search 'file:regex:\".+\\.pdf$\"'\n"
+"  fsearch --cli --search 'case:AGENTS'        # cás-íogair\n"
+"  fsearch --cli --search 'case:regex:\"^AGENTS\\.md$\"'\n"
+"  fsearch --cli --search 'glob:**/*.png'\n"
+"  fsearch --cli --search 'path:glob:**/AGENTS.md'\n"
+"  fsearch --cli --search 'case:glob:AGENTS.md' # glob cás-íogair\n"
+"\n"
+"ឧទាហរណ៍ប្រើចន្លោះជា AND ។ សាកល្បងឯកសារ៖, ថត៖, ផ្លូវ៖, ext:, ទំហំ៖, dm:, ករណី៖, regex៖, និង glob៖។\n"
+"វាក្យសម្ព័ន្ធប៊ូលីន៖ AND ឬ &&; OR ឬ ||; មិនមែនឬ!។ ពាក្យក្រុមវង់ក្រចក។\n"
+"វាក្យសម្ព័ន្ធ Glob៖ * excludes /; ** វិសាលភាពថត; ? ផ្គូផ្គងតួអក្សរមួយ; [a-c] គឺជាជួរមួយ;\n"
+"Glob ស្វែងរកផ្លូវតាមលំនាំដើម; ប្រើ **/ សម្រាប់ជម្រៅណាមួយ; file:glob: ស្វែងរកឈ្មោះឯកសារ។\n"
+"{png,jpg} ជ្រើសរើសជម្រើស; {01..12} គឺជាជួរលេខរួមបញ្ចូល; \\* ត្រូវគ្នានឹងព្យញ្ជនៈ * ។\n"
 
 #: src/fsearch_cli.c:238
 #, c-format
 msgid "FSearch %s - indexed file search for %s %s\n"
-msgstr ""
+msgstr "FSearch %s - ឯកសារដែលបានធ្វើលិបិក្រមស្វែងរក %s %s\n"
 
 #: src/fsearch_cli.c:301
 msgid "fsearch: interrupted\n"
-msgstr ""
+msgstr "fsearch: រំខាន\n"
 
 #: src/fsearch_cli.c:315
 msgid "fsearch: search could not run because the index is unavailable\n"
-msgstr ""
+msgstr "fsearch: ការស្វែងរកមិនអាចដំណើរការបានទេព្រោះសន្ទស្សន៍មិនអាចប្រើបាន\n"
 
 #: src/fsearch_cli.c:352 src/fsearch_cli.c:381 src/fsearch_cli_config.c:774
 #: src/fsearch_cli_config.c:961 src/fsearch_cli_config.c:1147
 #, c-format
 msgid "%s\n"
-msgstr ""
+msgstr "%s\n"
 
 #: src/fsearch_cli.c:400
 #, c-format
 msgid "%s"
-msgstr ""
+msgstr "%s"
 
 #: src/fsearch_cli.c:473
 #, c-format
 msgid "fsearch: unknown CLI option: %s\n"
-msgstr ""
+msgstr "fsearch៖ ជម្រើស CLI ដែលមិនស្គាល់៖ %s\n"
 
 #: src/fsearch_cli.c:495
 #, c-format
 msgid "fsearch: failed to create data directory: %s\n"
-msgstr ""
+msgstr "fsearch៖ បរាជ័យក្នុងការបង្កើតថតទិន្នន័យ៖ %s\n"
 
 #: src/fsearch_cli_config.c:111
 msgid ""
@@ -467,30 +506,73 @@ msgid ""
 "  fsearch config filters add Documents --query 'ext:pdf' --macro docs\n"
 "  fsearch config reset search --yes\n"
 msgstr ""
+"ការប្រើប្រាស់៖ fsearch config COMMAND [OPTIONS]\n"
+"\n"
+"មើល និងកែប្រែការកំណត់រចនាសម្ព័ន្ធ FSearch GUI និង CLI ដែលបានចែករំលែក។\n"
+"\n"
+"ពាក្យបញ្ជាកំណត់រចនាសម្ព័ន្ធ៖\n"
+"  path                         បោះពុម្ពផ្លូវឯកសារកំណត់រចនាសម្ព័ន្ធ\n"
+"  show [SECTION] [--json]      បង្ហាញការកំណត់\n"
+"  get KEY [--json]             បោះពុម្ពការកំណត់មាត្រដ្ឋានមួយ។\n"
+"  set KEY VALUE                កំណត់ការកំណត់មាត្រដ្ឋានមួយ។\n"
+"  unset KEY                    ស្តារការកំណត់មាត្រដ្ឋានមួយតាមលំនាំដើម\n"
+"  reset [KEY|SECTION] --yes [--rescan]\n"
+"                               ស្តារលំនាំដើម\n"
+"  doctor                       ពិនិត្យការកំណត់រចនាសម្ព័ន្ធ និងសន្ទស្សន៍ភាពស៊ីសង្វាក់គ្នា។\n"
+"  roots list|add|set|remove    គ្រប់គ្រងឫសដែលបានធ្វើលិបិក្រម\n"
+"  excludes list|add|remove|hidden\n"
+"                               គ្រប់គ្រងការមិនរាប់បញ្ចូលលិបិក្រម\n"
+"  filters list|add|set|remove|reset\n"
+"                               គ្រប់គ្រងតម្រងស្វែងរកដែលបានរក្សាទុក\n"
+"\n"
+"តម្លៃមាត្រដ្ឋានប្រើពិត/មិនពិត ចំនួនទសភាគ ឬខ្សែអក្សរ។\n"
+"ដំណើរការ 'fsearch config show' ដើម្បីរាយបញ្ជីរាល់ scalar key និងតម្លៃបច្ចុប្បន្ន។\n"
+"ផ្នែកមាត្រដ្ឋាន៖ search, application, window, ui, columns, sort, dialogs.\n"
+"ប្រើ 'fsearch config roots|excludes|filters --help' សម្រាប់ជម្រើសគ្រួសារ។\n"
+"បិទ FSearch GUI មុនពេលផ្លាស់ប្តូរការកំណត់ដែលបានចែករំលែក។\n"
+"ការផ្លាស់ប្តូរសន្ទស្សន៍អាចស្វែងរកបាននៅលើការស្វែងរក CLI បន្ទាប់ ឬភ្លាមៗជាមួយ --rescan ។\n"
+"ប្រើ --json ជាមួយនឹងពាក្យបញ្ជា show, get, និង collection list ។\n"
+"\n"
+"ឧទាហរណ៍៖\n"
+"  fsearch config show search --json\n"
+"  fsearch config get search.match-case\n"
+"  fsearch config set search.match-case true\n"
+"  fsearch config roots add ~/Code --monitor --one-file-system --rescan\n"
+"  fsearch config excludes add '*.tmp' --type wildcard --scope basename --target files\n"
+"  fsearch config filters add Documents --query 'ext:pdf' --macro docs\n"
+"  fsearch config reset search --yes\n"
 
 #: src/fsearch_cli_config.c:152
 msgid ""
 "Usage: fsearch config show [SECTION] [--json]\n"
 "Show all scalar settings or one dotted section.\n"
 msgstr ""
+"ការប្រើប្រាស់៖ fsearch config show [SECTION] [--json]\n"
+"បង្ហាញការកំណត់មាត្រដ្ឋានទាំងអស់ ឬផ្នែកដែលមានចំនុចមួយ។\n"
 
 #: src/fsearch_cli_config.c:154
 msgid ""
 "Usage: fsearch config get KEY [--json]\n"
 "Print one typed scalar value. Discover keys with 'fsearch config show'.\n"
 msgstr ""
+"ការប្រើប្រាស់៖ fsearch config get KEY [--json]\n"
+"បោះពុម្ពតម្លៃមាត្រដ្ឋានដែលបានវាយបញ្ចូលមួយ។ ស្វែងរកគន្លឹះជាមួយ 'fsearch config show'។\n"
 
 #: src/fsearch_cli_config.c:157
 msgid ""
 "Usage: fsearch config set KEY VALUE\n"
 "Set a boolean, integer, string, or enumerated scalar value.\n"
 msgstr ""
+"ការប្រើប្រាស់៖ fsearch config set KEY VALUE\n"
+"កំណត់ប៊ូលីន ចំនួនគត់ ខ្សែអក្សរ ឬតម្លៃមាត្រដ្ឋានដែលបានរាប់បញ្ចូល។\n"
 
 #: src/fsearch_cli_config.c:159
 msgid ""
 "Usage: fsearch config unset KEY\n"
 "Restore one scalar setting to its built-in default.\n"
 msgstr ""
+"ការប្រើប្រាស់៖ fsearch config unset KEY\n"
+"ស្ដារការកំណត់មាត្រដ្ឋានមួយទៅលំនាំដើមដែលភ្ជាប់មកជាមួយរបស់វា។\n"
 
 #: src/fsearch_cli_config.c:161
 msgid ""
@@ -498,6 +580,8 @@ msgid ""
 "Reset is destructive and requires --yes. --rescan applies to roots, "
 "database, excludes, or all.\n"
 msgstr ""
+"ការប្រើប្រាស់៖ fsearch config reset [KEY|SECTION] --yes [--rescan]\n"
+"ការកំណត់ឡើងវិញគឺជាការបំផ្លិចបំផ្លាញ ហើយទាមទារ --yes ។ --Recan អនុវត្តចំពោះឫស មូលដ្ឋានទិន្នន័យ មិនរាប់បញ្ចូល ឬទាំងអស់។\n"
 
 #: src/fsearch_cli_config.c:164
 msgid ""
@@ -505,6 +589,8 @@ msgid ""
 "Check configuration readability and whether the saved index uses the same "
 "roots and exclusions.\n"
 msgstr ""
+"ការប្រើប្រាស់៖ fsearch config doctor\n"
+"ពិនិត្យលទ្ធភាពអានការកំណត់រចនាសម្ព័ន្ធ និងថាតើលិបិក្រមដែលបានរក្សាទុកប្រើឫសដូចគ្នា និងការបដិសេធឬអត់។\n"
 
 #: src/fsearch_cli_config.c:170
 msgid ""
@@ -524,6 +610,21 @@ msgid ""
 "  --rescan-every SECONDS        Set periodic rescan interval; 0 disables it\n"
 "  --rescan                      Rebuild the index immediately after saving\n"
 msgstr ""
+"ការប្រើប្រាស់៖ fsearch config roots COMMAND [PATH] [OPTIONS]\n"
+"\n"
+"ពាក្យបញ្ជា៖\n"
+"  list [--json]                រាយបញ្ជីឫសគល់ដែលបានធ្វើលិបិក្រម\n"
+"  add PATH [OPTIONS]           បន្ថែមថតឯកសារដើម\n"
+"  set PATH [OPTIONS]           ផ្លាស់ប្តូរឫសដែលមានស្រាប់\n"
+"  remove PATH [--rescan]       យកឫសដែលមានស្រាប់ចេញ\n"
+"\n"
+"ជម្រើសសម្រាប់បន្ថែម និងកំណត់៖\n"
+"  --active, --inactive\n"
+"  --monitor, --no-monitor\n"
+"  --one-file-system, --no-one-file-system\n"
+"  --scan-after-launch, --no-scan-after-launch\n"
+"  --rescan-every SECONDS        កំណត់ចន្លោះពេលស្កេនឡើងវិញតាមកាលកំណត់; 0 បិទវា។\n"
+"  --rescan                      បង្កើតលិបិក្រមឡើងវិញភ្លាមៗបន្ទាប់ពីរក្សាទុក\n"
 
 #: src/fsearch_cli_config.c:187
 msgid ""
@@ -543,6 +644,21 @@ msgid ""
 "  --active, --inactive          Add state or removal selector\n"
 "  --rescan                      Rebuild the index immediately after saving\n"
 msgstr ""
+"ការប្រើប្រាស់៖ fsearch config excludes COMMAND [PATTERN|VALUE] [OPTIONS]\n"
+"\n"
+"ពាក្យបញ្ជា៖\n"
+"  list [--json]                 បញ្ជីការមិនរាប់បញ្ចូល\n"
+"  add PATTERN [OPTIONS]         បន្ថែមការលើកលែង\n"
+"  remove PATTERN [OPTIONS]      \n"
+"  hidden [true|false] [--rescan]\n"
+"                                មើល ឬផ្លាស់ប្តូរការដកឯកសារលាក់\n"
+"\n"
+"ជម្រើសសម្រាប់បន្ថែម និងលុប៖\n"
+"  --type fixed|wildcard|regex   លំនាំដើម៖ ថេរ\n"
+"  --scope full-path|basename    លំនាំដើម៖ ពេញផ្លូវ\n"
+"  --target both|files|folders   លំនាំដើម៖ ទាំងពីរ\n"
+"  --active, --inactive          បន្ថែម​ជម្រើស​ស្ថានភាព ឬ​ការ​ដក​ចេញ\n"
+"  --rescan                      បង្កើតលិបិក្រមឡើងវិញភ្លាមៗបន្ទាប់ពីរក្សាទុក\n"
 
 #: src/fsearch_cli_config.c:204
 msgid ""
@@ -562,205 +678,224 @@ msgid ""
 "  --path, --no-path             Search full paths\n"
 "  --regex, --no-regex           Treat query as a regular expression\n"
 msgstr ""
+"ការប្រើប្រាស់៖ fsearch config filters COMMAND [NAME] [OPTIONS]\n"
+"\n"
+"ពាក្យបញ្ជា៖\n"
+"  list [--json]                 រាយបញ្ជីតម្រងដែលបានរក្សាទុក\n"
+"  add NAME [OPTIONS]            បន្ថែមតម្រងដែលមានឈ្មោះ\n"
+"  set NAME [OPTIONS]            ផ្លាស់ប្តូរតម្រងដែលមានឈ្មោះ\n"
+"  remove NAME                   យកតម្រងដែលមានឈ្មោះចេញ\n"
+"  reset                         ស្តារតម្រងដែលមានស្រាប់\n"
+"\n"
+"ជម្រើសសម្រាប់បន្ថែម និងកំណត់៖\n"
+"  --query QUERY                 បានរក្សាទុកសំណួរ FSSearch\n"
+"  --macro MACRO                 ឈ្មោះម៉ាក្រូសំណួរ\n"
+"  --case, --no-case             ករណីផ្គូផ្គង\n"
+"  --path, --no-path             ស្វែងរកផ្លូវពេញ\n"
+"  --regex, --no-regex           ចាត់ទុកសំណួរជាកន្សោមធម្មតា។\n"
 
 #: src/fsearch_cli_config.c:265
 msgid ""
 "fsearch config: close the running FSearch GUI before changing shared "
 "settings\n"
-msgstr ""
+msgstr "fsearch config៖ បិទ FSearch GUI ដែលកំពុងដំណើរការ មុនពេលផ្លាស់ប្តូរការកំណត់ដែលបានចែករំលែក\n"
 
 #: src/fsearch_cli_config.c:269
 msgid "fsearch config: failed to save configuration\n"
-msgstr ""
+msgstr "fsearch config៖ បរាជ័យក្នុងការរក្សាទុកការកំណត់\n"
 
 #: src/fsearch_cli_config.c:280
 msgid "Index configuration changed; the next CLI search will rebuild it.\n"
-msgstr ""
+msgstr "ការកំណត់រចនាសម្ព័ន្ធសន្ទស្សន៍បានផ្លាស់ប្តូរ; ការស្វែងរក CLI បន្ទាប់នឹងបង្កើតវាឡើងវិញ។\n"
 
 #: src/fsearch_cli_config.c:416
 #, c-format
 msgid "fsearch config %s: unknown option: %s\n"
-msgstr ""
+msgstr "fsearch config %s៖ ជម្រើសមិនស្គាល់៖ %s\n"
 
 #: src/fsearch_cli_config.c:422
 #, c-format
 msgid "fsearch config %s: unexpected argument: %s\n"
-msgstr ""
+msgstr "fsearch config %s៖ អាគុយម៉ង់ដែលមិនរំពឹងទុក៖ %s\n"
 
 #: src/fsearch_cli_config.c:449
 msgid "Usage: fsearch config get KEY [--json]\n"
-msgstr ""
+msgstr "ការប្រើប្រាស់៖ fsearch config ទទួលបាន KEY [--json]\n"
 
 #: src/fsearch_cli_config.c:454 src/fsearch_cli_config.c:555
 #, c-format
 msgid "fsearch config: unknown setting: %s\n"
-msgstr ""
+msgstr "fsearch config៖ មិនស្គាល់ការកំណត់៖ %s\n"
 
 #: src/fsearch_cli_config.c:502
 #, c-format
 msgid "fsearch config show: unknown section: %s\n"
-msgstr ""
+msgstr "fsearch config បង្ហាញ៖ ផ្នែកមិនស្គាល់៖ %s\n"
 
 #: src/fsearch_cli_config.c:550
 #, c-format
 msgid "Usage: fsearch config %s KEY%s\n"
-msgstr ""
+msgstr "ការប្រើប្រាស់៖ fsearch config %s KEY%s\n"
 
 #: src/fsearch_cli_config.c:566
 #, c-format
 msgid "fsearch config: invalid value for %s: %s\n"
-msgstr ""
+msgstr "fsearch config៖ តម្លៃមិនត្រឹមត្រូវសម្រាប់ %s៖ %s\n"
 
 #: src/fsearch_cli_config.c:572
 #, c-format
 msgid "%s = %s\n"
-msgstr ""
+msgstr "%s = %s\n"
 
 #: src/fsearch_cli_config.c:637
 #, c-format
 msgid "fsearch config roots: unknown operation: %s\n"
-msgstr ""
+msgstr "fsearch config roots៖ ប្រតិបត្តិការមិនស្គាល់៖ %s\n"
 
 #: src/fsearch_cli_config.c:691
 msgid "fsearch config roots: --rescan-every requires SECONDS\n"
-msgstr ""
+msgstr "fsearch config roots: --rescan-every ទាមទារ SECONDS\n"
 
 #: src/fsearch_cli_config.c:710
 msgid "fsearch config roots: missing PATH\n"
-msgstr ""
+msgstr "fsearch config roots: បាត់ PATH\n"
 
 #: src/fsearch_cli_config.c:717 src/fsearch_cli_config.c:732
 #, c-format
 msgid "fsearch config roots: path not found: %s\n"
-msgstr ""
+msgstr "fsearch config roots៖ រកមិនឃើញផ្លូវ៖ %s\n"
 
 #: src/fsearch_cli_config.c:724
 #, c-format
 msgid "fsearch config roots: not a directory: %s\n"
-msgstr ""
+msgstr "fsearch config roots៖ មិនមែនជាថតឯកសារ៖ %s\n"
 
 #: src/fsearch_cli_config.c:728
 #, c-format
 msgid "fsearch config roots: path already exists: %s\n"
-msgstr ""
+msgstr "fsearch config roots៖ ផ្លូវមានរួចហើយ៖ %s\n"
 
 #: src/fsearch_cli_config.c:752
 #, c-format
 msgid "fsearch config roots: invalid rescan duration: %s\n"
-msgstr ""
+msgstr "fsearch config roots៖ រយៈពេលស្កេនឡើងវិញមិនត្រឹមត្រូវ៖ %s\n"
 
 #: src/fsearch_cli_config.c:765
 msgid ""
 "%s\tactive=%s monitor=%s one-file-system=%s scan-after-launch=%s rescan-"
 "after=%s\n"
-msgstr ""
+msgstr "%s សកម្ម=%s ម៉ូនីទ័រ=%s one-file-system=%s scan-after-launch=%s rescan-after=%s\n"
 
 #: src/fsearch_cli_config.c:844
 msgid "fsearch config excludes hidden: expected true or false\n"
-msgstr ""
+msgstr "fsearch config មិនរាប់បញ្ចូលការលាក់៖ រំពឹងថាពិតឬមិនពិត\n"
 
 #: src/fsearch_cli_config.c:850
 #, c-format
 msgid "exclude-hidden = %s\n"
-msgstr ""
+msgstr "exclude-hidden = %s\n"
 
 #: src/fsearch_cli_config.c:856
 #, c-format
 msgid "fsearch config excludes: unknown operation: %s\n"
-msgstr ""
+msgstr "fsearch config មិនរាប់បញ្ចូល៖ ប្រតិបត្តិការមិនស្គាល់៖ %s\n"
 
 #: src/fsearch_cli_config.c:877
 #, c-format
 msgid "fsearch config excludes: %s requires a value\n"
-msgstr ""
+msgstr "fsearch config មិនរាប់បញ្ចូល៖ %s ទាមទារតម្លៃ\n"
 
 #: src/fsearch_cli_config.c:909
 msgid "fsearch config excludes: missing PATTERN\n"
-msgstr ""
+msgstr "fsearch config មិនរាប់បញ្ចូល៖ បាត់ PATTERN\n"
 
 #: src/fsearch_cli_config.c:914
 #, c-format
 msgid "fsearch config excludes: invalid type: %s\n"
-msgstr ""
+msgstr "fsearch config មិនរាប់បញ្ចូល៖ ប្រភេទមិនត្រឹមត្រូវ៖ %s\n"
 
 #: src/fsearch_cli_config.c:919
 #, c-format
 msgid "fsearch config excludes: invalid scope: %s\n"
-msgstr ""
+msgstr "fsearch config មិនរាប់បញ្ចូល៖ វិសាលភាពមិនត្រឹមត្រូវ៖ %s\n"
 
 #: src/fsearch_cli_config.c:924
 #, c-format
 msgid "fsearch config excludes: invalid target: %s\n"
-msgstr ""
+msgstr "fsearch config មិនរាប់បញ្ចូល៖ គោលដៅមិនត្រឹមត្រូវ៖ %s\n"
 
 #: src/fsearch_cli_config.c:954
 #, c-format
 msgid "fsearch config excludes: exclusion not found: %s\n"
-msgstr ""
+msgstr "fsearch config excludes: exclusion not found: %s\n"
 
 #: src/fsearch_cli_config.c:1022
 msgid "filters reset\n"
-msgstr ""
+msgstr "កំណត់តម្រងឡើងវិញ\n"
 
 #: src/fsearch_cli_config.c:1029
 #, c-format
 msgid "fsearch config filters: unknown operation: %s\n"
-msgstr ""
+msgstr "តម្រងកំណត់រចនាសម្ព័ន្ធ fsearch៖ ប្រតិបត្តិការមិនស្គាល់៖ %s\n"
 
 #: src/fsearch_cli_config.c:1051
 #, c-format
 msgid "fsearch config filters: %s requires a value\n"
-msgstr ""
+msgstr "fsearch config filters៖ %s ទាមទារតម្លៃ\n"
 
 #: src/fsearch_cli_config.c:1094
 msgid "fsearch config filters: missing NAME\n"
-msgstr ""
+msgstr "fsearch config filters៖ បាត់ NAME\n"
 
 #: src/fsearch_cli_config.c:1100 src/fsearch_cli_config.c:1111
 #, c-format
 msgid "fsearch config filters: name not found: %s\n"
-msgstr ""
+msgstr "តម្រងកំណត់រចនាសម្ព័ន្ធ fsearch៖ រកមិនឃើញឈ្មោះ៖ %s\n"
 
 #: src/fsearch_cli_config.c:1107
 #, c-format
 msgid "fsearch config filters: name already exists: %s\n"
-msgstr ""
+msgstr "តម្រងកំណត់រចនាសម្ព័ន្ធ fsearch៖ ឈ្មោះមានរួចហើយ៖ %s\n"
 
 #: src/fsearch_cli_config.c:1145
 #, c-format
 msgid "%s\tmacro=%s query=%s\n"
-msgstr ""
+msgstr "%s ម៉ាក្រូ=%s សំណួរ=%s\n"
 
 #: src/fsearch_cli_config.c:1193
 msgid "fsearch config reset requires --yes\n"
-msgstr ""
+msgstr "fsearch config reset ទាមទារ --yes\n"
 
 #: src/fsearch_cli_config.c:1201
 msgid ""
 "fsearch config reset: --rescan requires roots, database, excludes, or all\n"
-msgstr ""
+msgstr "fsearch config reset: --rescan ទាមទារ root, database, exclude, or all\n"
 
 #: src/fsearch_cli_config.c:1241
 #, c-format
 msgid "fsearch config: unknown setting or section: %s\n"
-msgstr ""
+msgstr "fsearch config៖ មិនស្គាល់ការកំណត់ ឬផ្នែក៖ %s\n"
 
 #: src/fsearch_cli_config.c:1246
 #, c-format
 msgid "%s settings reset\n"
-msgstr ""
+msgstr "ការកំណត់ %s កំណត់ឡើងវិញ\n"
 
 #: src/fsearch_cli_config.c:1253
 msgid ""
 "configuration: missing; defaults active\n"
 "index: unknown\n"
 msgstr ""
+"ការកំណត់រចនាសម្ព័ន្ធ៖ បាត់; លំនាំដើមសកម្ម\n"
+"លិបិក្រម៖ មិនស្គាល់\n"
 
 #: src/fsearch_cli_config.c:1261
 msgid ""
 "configuration: ok\n"
 "index: missing or unreadable\n"
 msgstr ""
+"ការកំណត់រចនាសម្ព័ន្ធ៖ យល់ព្រម\n"
+"លិបិក្រម៖ បាត់ ឬមិនអាចអានបាន។\n"
 
 #: src/fsearch_cli_config.c:1266
 #, c-format
@@ -768,121 +903,125 @@ msgid ""
 "configuration: ok\n"
 "index: %s\n"
 msgstr ""
+"ការកំណត់រចនាសម្ព័ន្ធ៖ យល់ព្រម\n"
+"សន្ទស្សន៍៖ %s\n"
 
 #: src/fsearch_cli_config.c:1266
 msgid "current"
-msgstr ""
+msgstr "បច្ចុប្បន្ន"
 
 #: src/fsearch_cli_config.c:1266
 msgid "stale"
-msgstr ""
+msgstr "ចាស់"
 
 #: src/fsearch_cli_config.c:1278
 msgid ""
 "Usage: fsearch config path\n"
 "Print the active FSearch configuration file path.\n"
 msgstr ""
+"ការប្រើប្រាស់៖ fsearch config path\n"
+"បោះពុម្ពផ្លូវឯកសារកំណត់រចនាសម្ព័ន្ធ FSearch សកម្ម។\n"
 
 #: src/fsearch_cli_config.c:1321
 #, c-format
 msgid "fsearch config: unknown command: %s\n"
-msgstr ""
+msgstr "fsearch config៖ មិនស្គាល់ពាក្យបញ្ជា៖ %s\n"
 
 #: src/fsearch_database.c:795
 msgid "Index rescan: applying changes…"
-msgstr ""
+msgstr "លិបិក្រមស្កេនឡើងវិញ៖ កំពុងអនុវត្តការផ្លាស់ប្តូរ…"
 
 #: src/fsearch_database_file.c:1343
 msgid "Loading folders…"
-msgstr ""
+msgstr "កំពុង​ផ្ទុក​ថត..."
 
 #: src/fsearch_database_file.c:1359
 msgid "Loading files…"
-msgstr ""
+msgstr "កំពុងផ្ទុកឯកសារ..."
 
 #: src/fsearch_database_index_store.c:925 src/fsearch_statusbar.c:73
 #: src/fsearch_statusbar.ui:90
 msgid "Sorting…"
-msgstr ""
+msgstr "កំពុង​តម្រៀប..."
 
 #: src/fsearch_database_preferences_widget.c:162
 #: src/fsearch_database_preferences_widget.c:176
 msgid "Select folder"
-msgstr ""
+msgstr "ជ្រើសរើសថត"
 
 #: src/fsearch_database_preferences_widget.c:165
 #: src/fsearch_database_preferences_widget.c:180
 #: src/fsearch_filter_editor.c:104 src/fsearch_preferences_dialog.c:331
 msgid "_Cancel"
-msgstr ""
+msgstr "_បោះបង់"
 
 #: src/fsearch_database_preferences_widget.c:167
 #: src/fsearch_database_preferences_widget.c:179
 msgid "_Select"
-msgstr ""
+msgstr "_ ជ្រើសរើស"
 
 #: src/fsearch_database_preferences_widget.c:389
 msgid "Literal"
-msgstr ""
+msgstr "ព្យញ្ជនៈ"
 
 #: src/fsearch_database_preferences_widget.c:391
 msgid "Wildcard"
-msgstr ""
+msgstr "អក្សរជំនួស"
 
 #: src/fsearch_database_preferences_widget.c:393
 msgid "Regex"
-msgstr ""
+msgstr "Regex"
 
 #: src/fsearch_database_preferences_widget.c:414
 msgid "Full Path"
-msgstr ""
+msgstr "ផ្លូវពេញ"
 
 #: src/fsearch_database_preferences_widget.c:416
 msgid "Basename"
-msgstr ""
+msgstr "ឈ្មោះមូលដ្ឋាន"
 
 #: src/fsearch_database_preferences_widget.c:434
 msgid "Files & Folders"
-msgstr ""
+msgstr "ឯកសារ និងថតឯកសារ"
 
 #: src/fsearch_database_preferences_widget.c:436 src/fsearch_filter.c:114
 msgid "Files"
-msgstr ""
+msgstr "ឯកសារ"
 
 #: src/fsearch_database_preferences_widget.c:438 src/fsearch_filter.c:113
 msgid "Folders"
-msgstr ""
+msgstr "ថតឯកសារ"
 
 #: src/fsearch_database_preferences_widget.c:635
 #: src/fsearch_database_preferences_widget.c:860
 msgid "Active"
-msgstr ""
+msgstr "សកម្ម"
 
 #: src/fsearch_database_preferences_widget.c:640
 msgid "Pattern"
-msgstr ""
+msgstr "លំនាំ"
 
 #: src/fsearch_database_preferences_widget.c:694 src/fsearch_window.c:756
 #: src/menus.ui:275
 msgid "Type"
-msgstr ""
+msgstr "ប្រភេទ"
 
 #: src/fsearch_database_preferences_widget.c:700
 msgid "Match"
-msgstr ""
+msgstr "ការប្រកួត"
 
 #: src/fsearch_database_preferences_widget.c:706
 msgid "Applies To"
-msgstr ""
+msgstr "អនុវត្តទៅ"
 
 #: src/fsearch_database_preferences_widget.c:864 src/fsearch_window.c:742
 #: src/menus.ui:219 src/menus.ui:267
 msgid "Path"
-msgstr ""
+msgstr "ផ្លូវ"
 
 #: src/fsearch_database_preferences_widget.ui:78
 msgid "Enter path…"
-msgstr ""
+msgstr "ចូល​ផ្លូវ…"
 
 #: src/fsearch_database_preferences_widget.ui:97
 #: src/fsearch_database_preferences_widget.ui:372
@@ -891,191 +1030,195 @@ msgid ""
 "                                            database\n"
 "                                        "
 msgstr ""
+"បន្ថែមផ្លូវដែលត្រូវរួមបញ្ចូល\n"
+"                                            មូលដ្ឋានទិន្នន័យ"
 
 #: src/fsearch_database_preferences_widget.ui:176
 msgid "Attempt to monitor"
-msgstr ""
+msgstr "ព្យាយាមតាមដាន"
 
 #: src/fsearch_database_preferences_widget.ui:191
 msgid "Scan after launch"
-msgstr ""
+msgstr "ស្កេនបន្ទាប់ពីការបើកដំណើរការ"
 
 #: src/fsearch_database_preferences_widget.ui:206
 msgid "Stay on one file system"
-msgstr ""
+msgstr "ស្ថិតនៅលើប្រព័ន្ធឯកសារតែមួយ"
 
 #: src/fsearch_database_preferences_widget.ui:221
 msgid "Rescan every"
-msgstr ""
+msgstr "ស្កេនឡើងវិញរាល់"
 
 #: src/fsearch_database_preferences_widget.ui:254
 msgid "Hours:"
-msgstr ""
+msgstr "ម៉ោង៖"
 
 #: src/fsearch_database_preferences_widget.ui:298
 msgid "Minutes:"
-msgstr ""
+msgstr "នាទី៖"
 
 #: src/fsearch_database_preferences_widget.ui:310
 msgid "30"
-msgstr ""
+msgstr "៣០"
 
 #: src/fsearch_database_preferences_widget.ui:391
 msgid "Remove selected path"
-msgstr ""
+msgstr "លុបផ្លូវដែលបានជ្រើសរើស"
 
 #: src/fsearch_database_preferences_widget.ui:418
 msgid "Include"
-msgstr ""
+msgstr "រួមបញ្ចូល"
 
 #: src/fsearch_database_preferences_widget.ui:477
 msgid ""
 "Add exclude rule\n"
 "                                                "
 msgstr ""
+"បន្ថែមច្បាប់លើកលែង"
 
 #: src/fsearch_database_preferences_widget.ui:495
 msgid ""
 "Remove selected path\n"
 "                                                "
 msgstr ""
+"លុបផ្លូវដែលបានជ្រើសរើស"
 
 #: src/fsearch_database_preferences_widget.ui:512
 msgid "Restore default exclude list"
-msgstr ""
+msgstr "ស្តារបញ្ជីមិនរាប់បញ្ចូលលំនាំដើម"
 
 #: src/fsearch_database_preferences_widget.ui:541
 msgid "Exclude hidden files and folders"
-msgstr ""
+msgstr "មិនរាប់បញ្ចូលឯកសារ និងថតដែលលាក់"
 
 #: src/fsearch_database_preferences_widget.ui:563
 msgid "Exclude"
-msgstr ""
+msgstr "មិនរាប់បញ្ចូល"
 
 #: src/fsearch_file_utils.c:161
 msgctxt "Will be followed by the path of the file."
 msgid "Error when removing file"
-msgstr ""
+msgstr "កំហុសនៅពេលលុបឯកសារ"
 
 #: src/fsearch_file_utils.c:163
 msgid "Failed to get path"
-msgstr ""
+msgstr "បរាជ័យក្នុងការទទួលបានផ្លូវ"
 
 #: src/fsearch_file_utils.c:277
 msgctxt "Will be followed by the file path."
 msgid "Error when getting information from file"
-msgstr ""
+msgstr "កំហុសនៅពេលទទួលបានព័ត៌មានពីឯកសារ"
 
 #: src/fsearch_file_utils.c:279
 msgid "Failed to get application information"
-msgstr ""
+msgstr "បរាជ័យក្នុងការទទួលបានព័ត៌មានកម្មវិធី"
 
 #: src/fsearch_file_utils.c:294
 msgctxt "Will be followed by the content type string."
 msgid "Error when getting information for content type"
-msgstr ""
+msgstr "កំហុសនៅពេលទទួលបានព័ត៌មានសម្រាប់ប្រភេទមាតិកា"
 
 #: src/fsearch_file_utils.c:296
 msgid "No default application registered"
-msgstr ""
+msgstr "គ្មានកម្មវិធីលំនាំដើមបានចុះឈ្មោះទេ។"
 
 #: src/fsearch_file_utils.c:524
 msgctxt "Will be followed by the path of the folder."
 msgid "Error when opening parent folder"
-msgstr ""
+msgstr "កំហុសនៅពេលបើកថតមេ"
 
 #: src/fsearch_file_utils.c:526
 msgid "Failed to get parent path"
-msgstr ""
+msgstr "បរាជ័យក្នុងការទទួលបានផ្លូវមេ"
 
 #: src/fsearch_file_utils.c:530
 msgctxt "Will be followed by the path of the folder."
 msgid "Error while opening folder"
-msgstr ""
+msgstr "កំហុសពេលបើកថត"
 
 #: src/fsearch_file_utils.c:533
 msgid "Failed to build open command"
-msgstr ""
+msgstr "បានបរាជ័យក្នុងការបង្កើតពាក្យបញ្ជាបើក"
 
 #: src/fsearch_file_utils.c:589
 msgid "Folder"
-msgstr ""
+msgstr "ថតឯកសារ"
 
 #: src/fsearch_file_utils.c:595
 msgid "Unknown Type"
-msgstr ""
+msgstr "ប្រភេទមិនស្គាល់"
 
 #: src/fsearch_filter.c:112
 msgid "All"
-msgstr ""
+msgstr "ទាំងអស់។"
 
 #: src/fsearch_filter.c:115
 msgid "Applications"
-msgstr ""
+msgstr "កម្មវិធី"
 
 #: src/fsearch_filter.c:116
 msgid "Archives"
-msgstr ""
+msgstr "បណ្ណសារ"
 
 #: src/fsearch_filter.c:117
 msgid "Audio"
-msgstr ""
+msgstr "អូឌីយ៉ូ"
 
 #: src/fsearch_filter.c:118
 msgid "Documents"
-msgstr ""
+msgstr "ឯកសារ"
 
 #: src/fsearch_filter.c:119
 msgid "Pictures"
-msgstr ""
+msgstr "រូបភាព"
 
 #: src/fsearch_filter.c:120
 msgid "Videos"
-msgstr ""
+msgstr "វីដេអូ"
 
 #: src/fsearch_filter_editor.c:79
 msgid "Macro names must not contain `:` characters."
-msgstr ""
+msgstr "ឈ្មោះម៉ាក្រូមិនត្រូវមានតួអក្សរ `:` ទេ។"
 
 #: src/fsearch_filter_editor.c:105 src/fsearch_preferences_dialog.c:332
 msgid "_OK"
-msgstr ""
+msgstr "_យល់ព្រម"
 
 #: src/fsearch_filter_editor.ui:10 src/fsearch_filter_preferences_widget.c:156
 msgid "Edit filter"
-msgstr ""
+msgstr "កែសម្រួលតម្រង"
 
 #: src/fsearch_filter_editor.ui:50
 msgid "Name:"
-msgstr ""
+msgstr "ឈ្មោះ៖"
 
 #: src/fsearch_filter_editor.ui:61
 msgid "The unique name of this filter"
-msgstr ""
+msgstr "ឈ្មោះតែមួយគត់នៃតម្រងនេះ។"
 
 #: src/fsearch_filter_editor.ui:64
 msgid "Unique filter name"
-msgstr ""
+msgstr "ឈ្មោះតម្រងតែមួយគត់"
 
 #: src/fsearch_filter_editor.ui:73
 msgid "Search in path"
-msgstr ""
+msgstr "ស្វែងរកក្នុងផ្លូវ"
 
 #: src/fsearch_filter_editor.ui:87
 msgid "Enable regular expressions"
-msgstr ""
+msgstr "បើកកន្សោមធម្មតា។"
 
 #: src/fsearch_filter_editor.ui:101
 msgid "Match case"
-msgstr ""
+msgstr "ករណីផ្គូផ្គង"
 
 #: src/fsearch_filter_editor.ui:146
 msgid "Query:"
-msgstr ""
+msgstr "សំណួរ៖"
 
 #: src/fsearch_filter_editor.ui:160
 msgid "Macro:"
-msgstr ""
+msgstr "ម៉ាក្រូ៖"
 
 #: src/fsearch_filter_editor.ui:171
 msgid ""
@@ -1083,227 +1226,228 @@ msgid ""
 "search entry by typing its text followed by ':'\n"
 "                "
 msgstr ""
+"ម៉ាក្រូសម្រាប់តម្រងនេះ។ ម៉ាក្រូអនុញ្ញាតឱ្យអ្នកចូលប្រើតម្រងនេះពីធាតុស្វែងរកដោយវាយអត្ថបទរបស់វាតាមដោយ ':'"
 
 #: src/fsearch_filter_preferences_widget.c:133
 msgid "Add filter"
-msgstr ""
+msgstr "បន្ថែមតម្រង"
 
 #: src/fsearch_filter_preferences_widget.c:315 src/fsearch_window.c:735
 #: src/menus.ui:215 src/menus.ui:263
 msgid "Name"
-msgstr ""
+msgstr "ឈ្មោះ"
 
 #: src/fsearch_filter_preferences_widget.c:316
 msgid "Macro"
-msgstr ""
+msgstr "ម៉ាក្រូ"
 
 #: src/fsearch_filter_preferences_widget.c:317
 msgid "Query"
-msgstr ""
+msgstr "សំណួរ"
 
 #: src/fsearch_filter_preferences_widget.ui:77
 msgid "Add new filter"
-msgstr ""
+msgstr "បន្ថែមតម្រងថ្មី។"
 
 #: src/fsearch_filter_preferences_widget.ui:95
 msgid "Remove selected filter"
-msgstr ""
+msgstr "លុបតម្រងដែលបានជ្រើសរើស"
 
 #: src/fsearch_filter_preferences_widget.ui:113
 msgid "Edit selected filter"
-msgstr ""
+msgstr "កែសម្រួលតម្រងដែលបានជ្រើសរើស"
 
 #: src/fsearch_filter_preferences_widget.ui:129
 msgid "Restore default filters"
-msgstr ""
+msgstr "ស្តារតម្រងលំនាំដើម"
 
 #: src/fsearch_listview_popup.c:36
 msgid "Properties…"
-msgstr ""
+msgstr "ទ្រព្យសម្បត្តិ…"
 
 #: src/fsearch_listview_popup.c:163
 msgid "Other Application…"
-msgstr ""
+msgstr "កម្មវិធីផ្សេងទៀត…"
 
 #: src/fsearch_overlay.ui:44
 msgid "Empty Database"
-msgstr ""
+msgstr "មូលដ្ឋានទិន្នន័យទទេ"
 
 #: src/fsearch_overlay.ui:60
 msgid "Add folders"
-msgstr ""
+msgstr "បន្ថែមថតឯកសារ"
 
 #: src/fsearch_overlay.ui:108
 msgid "Loading Database…"
-msgstr ""
+msgstr "កំពុងផ្ទុកមូលដ្ឋានទិន្នន័យ..."
 
 #: src/fsearch_overlay.ui:123
 msgid "This won't take long."
-msgstr ""
+msgstr "វានឹងមិនចំណាយពេលយូរទេ។"
 
 #: src/fsearch_overlay.ui:171 src/fsearch_statusbar.ui:312
 msgid "Updating Database…"
-msgstr ""
+msgstr "កំពុងអាប់ដេតមូលដ្ឋានទិន្នន័យ..."
 
 #: src/fsearch_overlay.ui:186 src/fsearch_overlay.ui:383
 msgid "This may take a while."
-msgstr ""
+msgstr "វាអាចចំណាយពេលបន្តិច។"
 
 #: src/fsearch_overlay.ui:241
 msgid "Empty Query"
-msgstr ""
+msgstr "សំណួរទទេ"
 
 #: src/fsearch_overlay.ui:256
 msgid "Press <b>Ctrl + F</b> and start typing."
-msgstr ""
+msgstr "ចុច <b>Ctrl + F</b> ហើយចាប់ផ្តើមវាយ។"
 
 #: src/fsearch_overlay.ui:304
 msgid "No Results Found"
-msgstr ""
+msgstr "រកមិនឃើញលទ្ធផលទេ។"
 
 #: src/fsearch_overlay.ui:319
 msgid "Try a different search"
-msgstr ""
+msgstr "សាកល្បងការស្វែងរកផ្សេង"
 
 #: src/fsearch_overlay.ui:368
 msgid "Sorting results…"
-msgstr ""
+msgstr "កំពុង​តម្រៀប​លទ្ធផល..."
 
 #: src/fsearch_preferences.ui:7 src/fsearch_window.ui:251 src/menus.ui:84
 msgid "Preferences"
-msgstr ""
+msgstr "ចំណូលចិត្ត"
 
 #: src/fsearch_preferences.ui:76
 msgid "Enable dark theme"
-msgstr ""
+msgstr "បើកដំណើរការរចនាប័ទ្មងងឹត"
 
 #: src/fsearch_preferences.ui:97
 msgid "Enable client-side decorations (requires restart)"
-msgstr ""
+msgstr "បើក​ការ​តុបតែង​ខាង​អតិថិជន (តម្រូវ​ឱ្យ​ចាប់​ផ្តើម​ឡើង​វិញ)"
 
 #: src/fsearch_preferences.ui:117
 msgid "Use binary units instead of decimal units"
-msgstr ""
+msgstr "ប្រើឯកតាគោលពីរជំនួសឱ្យឯកតាទសភាគ"
 
 #: src/fsearch_preferences.ui:138
 msgid "Remember window size"
-msgstr ""
+msgstr "ចងចាំទំហំបង្អួច"
 
 #: src/fsearch_preferences.ui:159
 msgid "Exit on Escape"
-msgstr ""
+msgstr "ចេញនៅលើ Escape"
 
 #: src/fsearch_preferences.ui:202
 msgid "with keyboard shortcuts or menu entries"
-msgstr ""
+msgstr "ជាមួយផ្លូវកាត់ក្តារចុច ឬធាតុម៉ឺនុយ"
 
 #: src/fsearch_preferences.ui:223
 msgid "with double click"
-msgstr ""
+msgstr "ដោយចុចពីរដង"
 
 #: src/fsearch_preferences.ui:257
 msgid "Behaviour after successfully opening a file:"
-msgstr ""
+msgstr "ឥរិយាបថបន្ទាប់ពីបើកឯកសារដោយជោគជ័យ៖"
 
 #: src/fsearch_preferences.ui:273
 msgid "Nothing"
-msgstr ""
+msgstr "គ្មានអ្វីទេ។"
 
 #: src/fsearch_preferences.ui:274
 msgid "Minimize"
-msgstr ""
+msgstr "បង្រួមអប្បបរមា"
 
 #: src/fsearch_preferences.ui:275
 msgid "Close"
-msgstr ""
+msgstr "បិទ"
 
 #: src/fsearch_preferences.ui:309
 msgid "General:"
-msgstr ""
+msgstr "ទូទៅ៖"
 
 #: src/fsearch_preferences.ui:344
 msgid "Show highlighted search terms"
-msgstr ""
+msgstr "បង្ហាញពាក្យស្វែងរកដែលបានបន្លិច"
 
 #: src/fsearch_preferences.ui:366
 msgid "Show tooltips"
-msgstr ""
+msgstr "បង្ហាញព័ត៌មានជំនួយ"
 
 #: src/fsearch_preferences.ui:387
 msgid "Show icons in name column"
-msgstr ""
+msgstr "បង្ហាញរូបតំណាងនៅក្នុងជួរឈ្មោះ"
 
 #: src/fsearch_preferences.ui:408
 msgid "Remember column configuration"
-msgstr ""
+msgstr "ចងចាំការកំណត់រចនាសម្ព័ន្ធជួរឈរ"
 
 #: src/fsearch_preferences.ui:429
 msgid "Remember sort order"
-msgstr ""
+msgstr "ចងចាំលំដាប់"
 
 #: src/fsearch_preferences.ui:450
 msgid "Open path with double click in path column"
-msgstr ""
+msgstr "បើកផ្លូវដោយចុចពីរដងក្នុងជួរឈរផ្លូវ"
 
 #: src/fsearch_preferences.ui:471
 msgid "Single click to open"
-msgstr ""
+msgstr "ចុចមួយដងដើម្បីបើក"
 
 #: src/fsearch_preferences.ui:492
 msgid "Launch desktop files"
-msgstr ""
+msgstr "បើកដំណើរការឯកសារផ្ទៃតុ"
 
 #: src/fsearch_preferences.ui:519
 msgid "Results:"
-msgstr ""
+msgstr "លទ្ធផល៖"
 
 #: src/fsearch_preferences.ui:560
 msgid "Show database indexing status"
-msgstr ""
+msgstr "បង្ហាញស្ថានភាពលិបិក្រមមូលដ្ឋានទិន្នន័យ"
 
 #: src/fsearch_preferences.ui:587
 msgid "Statusbar:"
-msgstr ""
+msgstr "របារស្ថានភាព៖"
 
 #: src/fsearch_preferences.ui:628
 msgid "Show warning dialogs when:"
-msgstr ""
+msgstr "បង្ហាញប្រអប់ព្រមាននៅពេល៖"
 
 #: src/fsearch_preferences.ui:638
 msgid "file / folder failed to open"
-msgstr ""
+msgstr "ឯកសារ / ថតបានបរាជ័យក្នុងការបើក"
 
 #: src/fsearch_preferences.ui:667
 msgid "Dialogs:"
-msgstr ""
+msgstr "ប្រអប់៖"
 
 #: src/fsearch_preferences.ui:692
 msgid "Interface"
-msgstr ""
+msgstr "ចំណុចប្រទាក់"
 
 #: src/fsearch_preferences.ui:711
 msgid "Search in path when query contains path separators"
-msgstr ""
+msgstr "ស្វែងរកក្នុងផ្លូវ នៅពេលសំណួរមានឧបករណ៍បំបែកផ្លូវ"
 
 #: src/fsearch_preferences.ui:730
 msgid "Search as you type"
-msgstr ""
+msgstr "ស្វែងរកនៅពេលអ្នកវាយ"
 
 #: src/fsearch_preferences.ui:750
 msgid "Hide results when search is empty"
-msgstr ""
+msgstr "លាក់លទ្ធផលនៅពេលការស្វែងរកទទេ"
 
 #: src/fsearch_preferences.ui:769
 msgid "Match case when query contains at least one upper case character"
-msgstr ""
+msgstr "ផ្គូផ្គងករណីនៅពេលដែលសំណួរមានតួអក្សរអក្សរធំយ៉ាងហោចណាស់មួយ។"
 
 #: src/fsearch_preferences.ui:801
 msgid "Filter:"
-msgstr ""
+msgstr "តម្រង៖"
 
 #: src/fsearch_preferences.ui:822 src/fsearch_window.ui:639
 msgid "Search"
-msgstr ""
+msgstr "ស្វែងរក"
 
 #: src/fsearch_preferences.ui:855
 msgid ""
@@ -1315,6 +1459,11 @@ msgid ""
 "Note that not all system themes provide such a darker variant, therefore "
 "enabling this setting might not have an effect."
 msgstr ""
+"<b>បើកដំណើរការរចនាប័ទ្មងងឹត៖</b>\n"
+"\n"
+"ប្រសិនបើបានបើក ស្បែកប្រព័ន្ធត្រូវបានសួរឱ្យប្រើរចនាប័ទ្មងងឹតសម្រាប់កម្មវិធី <i>(ឧ. ធាតុ UI ងងឹតនៅលើអត្ថបទភ្លឺ)</i> ។\n"
+"\n"
+"សូមចំណាំថា មិនមែនស្បែកប្រព័ន្ធទាំងអស់ផ្តល់នូវវ៉ារ្យ៉ង់ងងឹតបែបនេះទេ ដូច្នេះការបើកការកំណត់នេះប្រហែលជាមិនមានផលប៉ះពាល់ទេ។"
 
 #: src/fsearch_preferences.ui:873
 msgid ""
@@ -1328,6 +1477,12 @@ msgid ""
 "This resembles a more traditional UI layout and takes a little bit more "
 "space."
 msgstr ""
+"<b>បើកការតុបតែងផ្នែកខាងអតិថិជន៖</b>\n"
+"\n"
+"ប្រសិនបើបើកដំណើរការ ធាតុស្វែងរក និងម៉ឺនុយមេត្រូវបានបង្ហាញនៅក្នុងរបារចំណងជើងបង្អួច។\n"
+"\n"
+"ប្រសិនបើបិទ ម៉ឺនុយមេត្រូវបានបង្ហាញជារបារម៉ឺនុយដែលមានធាតុស្វែងរកខាងក្រោមវា។\n"
+"នេះប្រហាក់ប្រហែលនឹងប្លង់ UI បែបប្រពៃណីជាង ហើយត្រូវការកន្លែងបន្ថែមបន្តិច។"
 
 #: src/fsearch_preferences.ui:893
 msgid ""
@@ -1340,6 +1495,12 @@ msgid ""
 "\t• <b>Decimal  units:</b> This refers to decimal SI prefixes <i>(e.g. 1 kB "
 "= 1000 bytes)</i>"
 msgstr ""
+"<b>ប្រើឯកតាគោលពីរជំនួសឱ្យឯកតាទសភាគ៖</b>\n"
+"\n"
+"ការកំណត់នេះគ្រប់គ្រងរបៀបដែលទំហំឯកសារត្រូវបានបង្ហាញ។\n"
+"\n"
+"\t• <b>ឯកតាគោលពីរ៖</b> នេះសំដៅលើបុព្វបទ IEC គោលពីរ <i>(ឧ. 1 KiB = 1024 bytes)</i>\n"
+"\t• <b>ឯកតាទសភាគ៖</b> នេះសំដៅលើបុព្វបទ SI ទសភាគ <i>(ឧ. 1 kB = 1000 bytes)</i>"
 
 #: src/fsearch_preferences.ui:913
 msgid ""
@@ -1351,6 +1512,11 @@ msgid ""
 "Note that some window managers ignore this request and force the window to "
 "have a different size."
 msgstr ""
+"<b>ចងចាំទំហំបង្អួច៖</b>\n"
+"\n"
+"ប្រសិនបើបើកដំណើរការ ទំហំបង្អួចពីសម័យមុននឹងត្រូវបានស្ដារឡើងវិញ នៅពេលអ្នកបើកបង្អួច FSearch។\n"
+"\n"
+"ចំណាំថាអ្នកគ្រប់គ្រងបង្អួចមួយចំនួនមិនអើពើនឹងសំណើនេះ ហើយបង្ខំឱ្យបង្អួចមានទំហំខុសគ្នា។"
 
 #: src/fsearch_preferences.ui:932
 msgid ""
@@ -1368,6 +1534,16 @@ msgid ""
 "\t• <b>keyboard shortcuts or menu entries</b> and/or\n"
 "\t• <b>mouse click</b>"
 msgstr ""
+"<b>ឥរិយាបថបន្ទាប់ពីបើកឯកសារដោយជោគជ័យ៖</b>\n"
+"\n"
+"នៅពេលដែលឯកសារ/ថតឯកសារត្រូវបានបើកដោយជោគជ័យ សកម្មភាពមួយក្នុងចំណោមសកម្មភាពខាងក្រោមអាចត្រូវបានអនុវត្ត៖\n"
+"\t• <b>គ្មានអ្វី៖</b> គ្មានអ្វីកើតឡើងទេ។\n"
+"                        • <b>បង្រួមអប្បបរមា៖</b> បង្អួច FSearch ដែលបានជ្រើសរើសបច្ចុប្បន្នត្រូវបានបង្រួមអប្បបរមា។\n"
+"\t• <b>បិទ៖</b> ចេញពី FSearch។\n"
+"\n"
+"អ្នកអាចកំណត់រចនាសម្ព័ន្ធប្រសិនបើសកម្មភាពទាំងនោះគួរតែត្រូវបានកេះនៅពេលដែលឯកសារត្រូវបានបើកជាមួយ\n"
+"\t• <b>ផ្លូវកាត់ក្តារចុច ឬធាតុម៉ឺនុយ</b> និង/ឬ\n"
+"\t• <b>ចុចកណ្ដុរ</b>"
 
 #: src/fsearch_preferences.ui:956
 msgid ""
@@ -1383,6 +1559,14 @@ msgid ""
 "This also works for regular expressions and wildcard expressions starting or "
 "ending with an asterisk. "
 msgstr ""
+"<b>បង្ហាញពាក្យស្វែងរកដែលបានរំលេច៖</b>\n"
+"\n"
+"ប្រសិនបើបានបើក ពាក្យស្វែងរកនឹងត្រូវបានបន្លិចនៅក្នុងទិដ្ឋភាពលទ្ធផល។ ឧទាហរណ៍ នៅពេលអ្នកស្វែងរក \\\"foo\\\" រូបរាងទាំងអស់របស់ <i>foo</i> នៅក្នុងឈ្មោះឯកសារ/ថតនឹងត្រូវបានបន្លិចដោយតួអក្សរដិត៖\n"
+"\n"
+"\t<b>foo</b>bar.txt\n"
+"\tឯកសារ។<b>foo</b>\n"
+"\n"
+"នេះក៏ដំណើរការសម្រាប់កន្សោមធម្មតា និងកន្សោមជំនួសដោយចាប់ផ្តើម ឬបញ្ចប់ដោយសញ្ញាផ្កាយ។"
 
 #: src/fsearch_preferences.ui:978
 msgid ""
@@ -1391,6 +1575,9 @@ msgid ""
 "If enabled, the results view will show the full path of the focused file/"
 "folder in a small tooltip window."
 msgstr ""
+"<b>បង្ហាញព័ត៌មានជំនួយ៖</b>\n"
+"\n"
+"ប្រសិនបើបើកដំណើរការ ទិដ្ឋភាពលទ្ធផលនឹងបង្ហាញផ្លូវពេញលេញនៃឯកសារ/ថតឯកសារដែលបានផ្តោតនៅក្នុងបង្អួចព័ត៌មានជំនួយតូចមួយ។"
 
 #: src/fsearch_preferences.ui:995
 msgid ""
@@ -1398,6 +1585,9 @@ msgid ""
 "\n"
 "If enabled, file/folder icons will be shown in the name column."
 msgstr ""
+"<b>បង្ហាញរូបតំណាងក្នុងជួរឈ្មោះ៖</b>\n"
+"\n"
+"ប្រសិនបើបើកដំណើរការ រូបតំណាងឯកសារ/ថតនឹងត្រូវបានបង្ហាញក្នុងជួរឈ្មោះ។"
 
 #: src/fsearch_preferences.ui:1012
 msgid ""
@@ -1407,6 +1597,9 @@ msgid ""
 "session will be restored when you open an FSearch window. This includes the "
 "size and visibility of all columns."
 msgstr ""
+"<b>ចងចាំការកំណត់រចនាសម្ព័ន្ធជួរឈរ៖</b>\n"
+"\n"
+"ប្រសិនបើបានបើក ការកំណត់រចនាសម្ព័ន្ធជួរឈរនៃទិដ្ឋភាពលទ្ធផលពីវគ្គមុននឹងត្រូវបានស្ដារឡើងវិញ នៅពេលអ្នកបើកបង្អួច FSearch ។ នេះរាប់បញ្ចូលទាំងទំហំ និងភាពមើលឃើញនៃជួរឈរទាំងអស់។"
 
 #: src/fsearch_preferences.ui:1029
 msgid ""
@@ -1415,6 +1608,9 @@ msgid ""
 "If enabled, the sort order of the results view from the previous session "
 "will be restored when you open an FSearch window."
 msgstr ""
+"<b>ចងចាំលំដាប់តម្រៀប៖</b>\n"
+"\n"
+"ប្រសិនបើបើកដំណើរការ លំដាប់តម្រៀបនៃទិដ្ឋភាពលទ្ធផលពីវគ្គមុននឹងត្រូវបានស្ដារឡើងវិញ នៅពេលអ្នកបើកបង្អួច FSSearch ។"
 
 #: src/fsearch_preferences.ui:1046
 msgid ""
@@ -1422,6 +1618,9 @@ msgid ""
 "\n"
 "If enabled, double clicking in the path column will open the selected path."
 msgstr ""
+"<b>បើកផ្លូវដោយចុចពីរដងក្នុងជួរឈរផ្លូវ៖</b>\n"
+"\n"
+"ប្រសិនបើបានបើក ការចុចពីរដងក្នុងជួរឈរផ្លូវនឹងបើកផ្លូវដែលបានជ្រើសរើស។"
 
 #: src/fsearch_preferences.ui:1063
 msgid ""
@@ -1431,6 +1630,9 @@ msgid ""
 "want to select a file/folder while this setting is active, you need to hold "
 "<i>Ctrl</i> at the same time while clicking the file/folder."
 msgstr ""
+"<b>ចុចមួយដងដើម្បីបើក៖</b>\n"
+"\n"
+"ប្រសិនបើបានបើក ការចុចតែមួយនឹងបើកឯកសារ/ថតដែលបានជ្រើសរើស។ ប្រសិន​បើ​អ្នក​គ្រាន់​តែ​ចង់​ជ្រើស​ឯកសារ/ថត ខណៈ​ពេល​ដែល​ការ​កំណត់​នេះ​សកម្ម អ្នក​ត្រូវ​សង្កត់ <i>Ctrl</i> នៅ​ពេល​តែ​មួយ​ខណៈ​ពេល​ចុច​ឯកសារ/ថត។"
 
 #: src/fsearch_preferences.ui:1080
 msgid ""
@@ -1439,6 +1641,9 @@ msgid ""
 "If enabled, the path that is currently being indexed is displayed in the "
 "statusbar."
 msgstr ""
+"<b>បង្ហាញស្ថានភាពលិបិក្រមមូលដ្ឋានទិន្នន័យ៖</b>\n"
+"\n"
+"ប្រសិនបើបានបើក ផ្លូវដែលបច្ចុប្បន្នកំពុងត្រូវបានធ្វើលិបិក្រមត្រូវបានបង្ហាញនៅក្នុងរបារស្ថានភាព។"
 
 #: src/fsearch_preferences.ui:1097
 msgid ""
@@ -1447,6 +1652,9 @@ msgid ""
 "If enabled, a warning dialog is displayed when a file or folder failed to "
 "open."
 msgstr ""
+"<b>បង្ហាញប្រអប់ព្រមាន៖</b>\n"
+"\n"
+"ប្រសិនបើបានបើក ប្រអប់ព្រមានត្រូវបានបង្ហាញ នៅពេលដែលឯកសារ ឬថតឯកសារបរាជ័យក្នុងការបើក។"
 
 #: src/fsearch_preferences.ui:1114
 msgid ""
@@ -1455,6 +1663,9 @@ msgid ""
 "If enabled, search terms containing path separators (i.e. \"/\") will be "
 "automatically matched against the full path of a file or folder."
 msgstr ""
+"<b>ស្វែងរកក្នុងផ្លូវ នៅពេលដែលសំណួរមានឧបករណ៍បំបែកផ្លូវ៖</b>\n"
+"\n"
+"ប្រសិនបើបើកដំណើរការ ពាក្យស្វែងរកដែលមានឧបករណ៍បំបែកផ្លូវ (ឧ. \\\"/\\\") នឹងត្រូវបានផ្គូផ្គងដោយស្វ័យប្រវត្តិប្រឆាំងនឹងផ្លូវពេញលេញនៃឯកសារ ឬថតឯកសារ។"
 
 #: src/fsearch_preferences.ui:1131
 msgid ""
@@ -1464,6 +1675,9 @@ msgid ""
 "trigger a case-sensitive search. This means a search term like <i>Foo</i> "
 "will match <i>FooBar.txt</i> but not <i>foobar.txt</i>."
 msgstr ""
+"<b>ការផ្គូផ្គងករណីនៅពេលដែលសំណួរមានយ៉ាងហោចណាស់តួអក្សរធំមួយ៖</b>\n"
+"\n"
+"ប្រសិនបើបានបើក នោះពាក្យស្វែងរកដែលមានយ៉ាងហោចណាស់តួអក្សរធំមួយនឹងចាប់ផ្តើមការស្វែងរកដែលប្រកាន់អក្សរតូចធំ។ នេះមានន័យថាពាក្យស្វែងរកដូចជា <i>Foo</i> នឹងផ្គូផ្គង <i>FooBar.txt</i> ប៉ុន្តែមិនមែន <i>foobar.txt</i> ទេ។"
 
 #: src/fsearch_preferences.ui:1148
 msgid ""
@@ -1474,6 +1688,11 @@ msgid ""
 "If disabled, all files and folders will be displayed when the search entry "
 "is empty."
 msgstr ""
+"<b>លាក់លទ្ធផលនៅពេលការស្វែងរកទទេ៖</b>\n"
+"\n"
+"ប្រសិនបើបានបើក នោះគ្មានលទ្ធផលស្វែងរកត្រូវបានបង្ហាញទេ នៅពេលដែលធាតុស្វែងរកគឺទទេ។\n"
+"\n"
+"ប្រសិនបើត្រូវបានបិទ ឯកសារ និងថតទាំងអស់នឹងត្រូវបានបង្ហាញនៅពេលដែលធាតុស្វែងរកគឺទទេ។"
 
 #: src/fsearch_preferences.ui:1167
 msgid ""
@@ -1484,6 +1703,11 @@ msgid ""
 "If disabled, the search is only updated when you hit <i>Enter</i> or press "
 "the search button. "
 msgstr ""
+"<b>ស្វែងរកនៅពេលអ្នកវាយបញ្ចូល៖</b>\n"
+"\n"
+"ប្រសិនបើបានបើក ការស្វែងរកត្រូវបានធ្វើបច្ចុប្បន្នភាពដោយស្វ័យប្រវត្តិជាមួយនឹងរាល់ការចុចគ្រាប់ចុច។\n"
+"\n"
+"ប្រសិនបើត្រូវបានបិទ ការស្វែងរកត្រូវបានធ្វើបច្ចុប្បន្នភាពតែនៅពេលដែលអ្នកចុច <i>Enter</i> ឬចុចប៊ូតុងស្វែងរកប៉ុណ្ណោះ។"
 
 #: src/fsearch_preferences.ui:1186
 msgid ""
@@ -1492,6 +1716,9 @@ msgid ""
 "If enabled, the database will be updated automatically in the background "
 "when you start FSearch."
 msgstr ""
+"<b>ធ្វើបច្ចុប្បន្នភាពមូលដ្ឋានទិន្នន័យនៅពេលចាប់ផ្តើម៖</b>\n"
+"\n"
+"ប្រសិនបើបើកដំណើរការ មូលដ្ឋានទិន្នន័យនឹងត្រូវបានអាប់ដេតដោយស្វ័យប្រវត្តិក្នុងផ្ទៃខាងក្រោយ នៅពេលអ្នកចាប់ផ្តើម FSearch។"
 
 #: src/fsearch_preferences.ui:1203
 msgid ""
@@ -1505,6 +1732,13 @@ msgid ""
 "\t• <b>One Filesystem:</b> If enabled, FSearch won't cross filesystem "
 "boundaries for this folder"
 msgstr ""
+"<b>ថតរួមបញ្ចូល៖</b>\n"
+"\n"
+"បញ្ជីនេះមានថតទាំងអស់ដែលអ្នកចង់បញ្ចូលក្នុងមូលដ្ឋានទិន្នន័យ។\n"
+"\n"
+"\t• <b>សកម្ម៖</b> ប្រសិនបើបើកដំណើរការ ផ្លូវនឹងរួមបញ្ចូលក្នុងមូលដ្ឋានទិន្នន័យដែលត្រូវស្វែងរក។\n"
+"\t• <b>ផ្លូវ៖</b> ផ្លូវពេញលេញដែលត្រូវរួមបញ្ចូល។\n"
+"\t• <b>ប្រព័ន្ធឯកសារមួយ៖</b> ប្រសិនបើបើកដំណើរការ FSearch នឹងមិនឆ្លងកាត់ព្រំដែនប្រព័ន្ធឯកសារសម្រាប់ថតឯកសារនេះទេ"
 
 #: src/fsearch_preferences.ui:1224
 msgid ""
@@ -1513,6 +1747,9 @@ msgid ""
 "This button opens a dialog where you can select a folder you want to include "
 "in the database for searching."
 msgstr ""
+"<b>បន្ថែមថតឯកសារទៅមូលដ្ឋានទិន្នន័យ៖</b>\n"
+"\n"
+"ប៊ូតុងនេះបើកប្រអប់ដែលអ្នកអាចជ្រើសរើសថតដែលអ្នកចង់បញ្ចូលក្នុងមូលដ្ឋានទិន្នន័យសម្រាប់ការស្វែងរក។"
 
 #: src/fsearch_preferences.ui:1241
 msgid ""
@@ -1522,6 +1759,9 @@ msgid ""
 "include that folder in the database. This is useful for adding a path "
 "directly without browsing for it."
 msgstr ""
+"<b>បន្ថែមផ្លូវជាក់លាក់មួយ៖</b>\n"
+"\n"
+"វាយបញ្ចូលផ្លូវពេញលេញនៃថតនៅទីនេះ ហើយចុចប៊ូតុងនៅជាប់វា ដើម្បីបញ្ចូលថតនោះក្នុងមូលដ្ឋានទិន្នន័យ។ វាមានប្រយោជន៍សម្រាប់ការបន្ថែមផ្លូវដោយផ្ទាល់ដោយមិនចាំបាច់ស្វែងរកវា។"
 
 #: src/fsearch_preferences.ui:1258
 msgid ""
@@ -1529,6 +1769,9 @@ msgid ""
 "\n"
 "This removes the selected folder from the list of included folders."
 msgstr ""
+"<b>លុបជួរដែលបានជ្រើសរើសចេញ៖</b>\n"
+"\n"
+"វាលុបថតដែលបានជ្រើសរើសចេញពីបញ្ជីថតដែលបានរួមបញ្ចូល។"
 
 #: src/fsearch_preferences.ui:1275
 msgid ""
@@ -1541,6 +1784,11 @@ msgid ""
 "system resources per watched folder. For large directory trees with many "
 "files the system may run out of resources to watch them all."
 msgstr ""
+"<b>ព្យាយាមតាមដាន៖</b>\n"
+"\n"
+"ប្រសិនបើបើកដំណើរការ FSearch មើលថតនេះសម្រាប់ការផ្លាស់ប្តូរ និងរក្សាមូលដ្ឋានទិន្នន័យឱ្យទាន់សម័យដោយស្វ័យប្រវត្តិ ដូច្នេះអ្នកមិនចាំបាច់ស្កេនឡើងវិញដោយដៃទេ។\n"
+"\n"
+"ការត្រួតពិនិត្យមិនត្រូវបានគាំទ្រលើគ្រប់ប្រព័ន្ធឯកសារទេ ហើយប្រើប្រាស់ធនធានប្រព័ន្ធមួយចំនួនតូចក្នុងមួយថតដែលបានមើល។ សម្រាប់មែកធាងថតធំដែលមានឯកសារជាច្រើន ប្រព័ន្ធអាចនឹងអស់ធនធានដើម្បីមើលពួកវាទាំងអស់។"
 
 #: src/fsearch_preferences.ui:1294
 msgid ""
@@ -1549,6 +1797,9 @@ msgid ""
 "If enabled, this folder is rescanned every time FSearch starts, so the "
 "database reflects any changes made while FSearch wasn't running."
 msgstr ""
+"<b>ស្កេនបន្ទាប់ពីការបើកដំណើរការ៖</b>\n"
+"\n"
+"ប្រសិនបើបានបើកដំណើរការ ថតនេះត្រូវបានស្កេនឡើងវិញរាល់ពេលដែល FSearch ចាប់ផ្តើម ដូច្នេះមូលដ្ឋានទិន្នន័យឆ្លុះបញ្ចាំងពីការផ្លាស់ប្ដូរណាមួយដែលបានធ្វើឡើងខណៈពេលដែល FSearch មិនដំណើរការ។"
 
 #: src/fsearch_preferences.ui:1311
 msgid ""
@@ -1558,6 +1809,9 @@ msgid ""
 "folder. Mounted file systems below it (e.g. external drives or network "
 "shares) are skipped."
 msgstr ""
+"<b>ស្ថិតនៅលើប្រព័ន្ធឯកសារតែមួយ៖</b>\n"
+"\n"
+"ប្រសិនបើបើកដំណើរការ FSearch នឹងមិនឆ្លងកាត់ព្រំដែនប្រព័ន្ធឯកសារទេ ខណៈពេលកំពុងស្កេនថតឯកសារនេះ។ ប្រព័ន្ធឯកសារដែលបានម៉ោននៅខាងក្រោមវា (ឧ. ដ្រាយខាងក្រៅ ឬការចែករំលែកបណ្តាញ) ត្រូវបានរំលង។"
 
 #: src/fsearch_preferences.ui:1328
 msgid ""
@@ -1569,6 +1823,11 @@ msgid ""
 "This is useful for folders on file systems that can't be monitored for "
 "changes."
 msgstr ""
+"<b>ស្កេនឡើងវិញរាល់៖</b>\n"
+"\n"
+"ប្រសិនបើបើកដំណើរការ ថតនេះត្រូវបានស្កេនឡើងវិញដោយស្វ័យប្រវត្តិនៅចន្លោះពេលដែលបានផ្តល់ឱ្យ។ ប្រើប្រអប់ម៉ោង និងនាទីដើម្បីកំណត់ថាតើការស្កេនឡើងវិញកើតឡើងញឹកញាប់ប៉ុណ្ណា។\n"
+"\n"
+"វាមានប្រយោជន៍សម្រាប់ថតឯកសារនៅលើប្រព័ន្ធឯកសារដែលមិនអាចត្រូវបានត្រួតពិនិត្យសម្រាប់ការផ្លាស់ប្តូរ។"
 
 #: src/fsearch_preferences.ui:1347
 msgid ""
@@ -1589,6 +1848,15 @@ msgid ""
 "\t• <b>Applies To:</b> Whether the rule affects <i>Files</i>, <i>Folders</i> "
 "or both."
 msgstr ""
+"<b>មិនរាប់បញ្ចូលច្បាប់៖</b>\n"
+"\n"
+"បញ្ជីនេះមានច្បាប់សម្រាប់ឯកសារ និងថតដែលអ្នកចង់ដកចេញពីមូលដ្ឋានទិន្នន័យ។\n"
+"\n"
+"\t• <b>សកម្ម៖</b> ប្រសិនបើបានបើក ច្បាប់ត្រូវបានអនុវត្ត ហើយធាតុដែលត្រូវគ្នានឹងមិនត្រូវបានរាប់បញ្ចូល។\n"
+"\t• <b>លំនាំ៖</b> អត្ថបទត្រូវគ្នានឹងធាតុនីមួយៗ បកស្រាយតាមប្រភេទ។\n"
+"\t• <b>ប្រភេទ៖</b> របៀបដែលលំនាំត្រូវបានបកស្រាយ — <i>ព្យញ្ជនៈ</i> (អត្ថបទពិតប្រាកដ), <i>Wildcard</i> (ដោយប្រើ * និង ?) ឬ <i>Regex</i> (កន្សោមធម្មតា)។\n"
+"\t• <b>ការផ្គូផ្គង៖</b> ថាតើលំនាំត្រូវបានផ្គូផ្គងនឹង <i>ផ្លូវពេញ</i> របស់ធាតុ ឬមានតែ <i>ឈ្មោះមូលដ្ឋាន</i> របស់វា (ឈ្មោះដោយគ្មានផ្លូវ)។\n"
+"\t• <b>អនុវត្តចំពោះ៖</b> ថាតើច្បាប់ប៉ះពាល់ដល់ <i>ឯកសារ</i> <i>ថតឯកសារ</i> ឬទាំងពីរ។"
 
 #: src/fsearch_preferences.ui:1370
 msgid ""
@@ -1597,6 +1865,9 @@ msgid ""
 "This adds a new, empty rule to the list. Edit its Pattern, Type, Match and "
 "Applies To columns to control what gets excluded from the database."
 msgstr ""
+"<b>បន្ថែមច្បាប់លើកលែង៖</b>\n"
+"\n"
+"វាបន្ថែមច្បាប់ទទេថ្មីទៅក្នុងបញ្ជី។ កែសម្រួលលំនាំ ប្រភេទ ផ្គូផ្គង និងអនុវត្តចំពោះជួរឈរ ដើម្បីគ្រប់គ្រងអ្វីដែលត្រូវបានដកចេញពីមូលដ្ឋានទិន្នន័យ។"
 
 #: src/fsearch_preferences.ui:1387
 msgid ""
@@ -1604,6 +1875,9 @@ msgid ""
 "\n"
 "This removes the selected rule from the list of exclude rules."
 msgstr ""
+"<b>លុបជួរដែលបានជ្រើសរើសចេញ៖</b>\n"
+"\n"
+"វាដកច្បាប់ដែលបានជ្រើសរើសចេញពីបញ្ជីច្បាប់មិនរាប់បញ្ចូល។"
 
 #: src/fsearch_preferences.ui:1404
 msgid ""
@@ -1613,6 +1887,11 @@ msgid ""
 "\n"
 "⚠ All rules which were created or edited by the user will be lost! ⚠"
 msgstr ""
+"<b>ស្តារច្បាប់មិនរាប់បញ្ចូលលំនាំដើមឡើងវិញ៖</b>\n"
+"\n"
+"ប៊ូតុងនេះស្ដារសំណុំលំនាំដើមនៃច្បាប់មិនរាប់បញ្ចូល។\n"
+"\n"
+"⚠ ច្បាប់ទាំងអស់ដែលត្រូវបានបង្កើត ឬកែសម្រួលដោយអ្នកប្រើប្រាស់នឹងត្រូវបាត់បង់! ⚠"
 
 #: src/fsearch_preferences.ui:1423
 msgid ""
@@ -1623,6 +1902,9 @@ msgid ""
 "all files or folders which are called either <i>.git</i> or <i>.cache</i> or "
 "end with <i>.swp</i>."
 msgstr ""
+"<b>មិនរាប់បញ្ចូលឯកសារ និងថតឯកសារពីមូលដ្ឋានទិន្នន័យ៖</b>\n"
+"\n"
+"នេះ​ជា​បញ្ជី​ដែល​បំបែក​ដោយ​ពាក់កណ្តាល​សញ្ញា​នៃ​ឯកសារ (ឬ​ថត) ដែល​អ្នក​ចង់​ដក​ចេញ​ពី​មូលដ្ឋាន​ទិន្នន័យ។ ឧទាហរណ៍ <i>.git;.cache;*.swp</i> នឹងដកឯកសារ ឬថតទាំងអស់ដែលត្រូវបានគេហៅថា <i>.git</i> ឬ <i>.cache</i> ឬបញ្ចប់ដោយ <i>.swp</i>។"
 
 #: src/fsearch_preferences.ui:1440
 msgid ""
@@ -1631,10 +1913,13 @@ msgid ""
 "If enabled, hidden files and folders will be excluded from the database "
 "<i>(i.e. all files or folders which start with a dot character)</i>."
 msgstr ""
+"<b>មិនរាប់បញ្ចូលឯកសារ និងថតដែលលាក់៖</b>\n"
+"\n"
+"ប្រសិនបើបើកដំណើរការ ឯកសារ និងថតដែលលាក់នឹងត្រូវបានដកចេញពីមូលដ្ឋានទិន្នន័យ <i>(ឧ. ឯកសារ ឬថតទាំងអស់ដែលចាប់ផ្តើមដោយតួអក្សរចំនុច)</i>។"
 
 #: src/fsearch_preferences.ui:1457
 msgid "Focus a setting to get a detailed description of what it does."
-msgstr ""
+msgstr "ផ្តោតលើការកំណត់ដើម្បីទទួលបានការពិពណ៌នាលម្អិតអំពីអ្វីដែលវាធ្វើ។"
 
 #: src/fsearch_preferences.ui:1470
 msgid ""
@@ -1649,6 +1934,13 @@ msgid ""
 "\n"
 "<i><tt>fsearch --update-database</tt></i>"
 msgstr ""
+"<b>ធ្វើបច្ចុប្បន្នភាពមូលដ្ឋានទិន្នន័យតាមកាលកំណត់នៅចន្លោះពេលជាក់លាក់មួយ៖</b>\n"
+"\n"
+"ប្រសិនបើបានបើកដំណើរការ ហើយដរាបណា FSearch កំពុងដំណើរការ នោះមូលដ្ឋានទិន្នន័យនឹងត្រូវបានអាប់ដេតជាទៀងទាត់ជាមួយនឹងចន្លោះពេលដែលបានផ្តល់ឱ្យ។\n"
+"\n"
+"ប្រសិនបើអ្នកចង់ធ្វើបច្ចុប្បន្នភាពមូលដ្ឋានទិន្នន័យក្នុងផ្ទៃខាងក្រោយ សូម្បីតែនៅពេល FSearch មិនដំណើរការក៏ដោយ អ្នកគួរតែប្រើឧបករណ៍ដូចជា cron ឬកម្មវិធីកំណត់ម៉ោងប្រព័ន្ធ ដើម្បីចាប់ផ្តើមការអាប់ដេតជាទៀងទាត់ជាមួយ៖\n"
+"\n"
+"<i><tt>fsearch --update-database</tt></i>"
 
 #: src/fsearch_preferences.ui:1491
 msgid ""
@@ -1659,6 +1951,9 @@ msgid ""
 "launcher. Otherwise the <i>.desktop</i> file will be opened with the default "
 "handler for this type of files, which is usually a text editor."
 msgstr ""
+"<b>បើកដំណើរការឯកសារកុំព្យូទ័រ៖</b>\n"
+"\n"
+"ប្រសិនបើបើកដំណើរការ ការធ្វើឱ្យឯកសារ <i>.desktop</i> សកម្មនឹងដំណើរការកម្មវិធីដែលបានកំណត់នៅក្នុងឯកសារនោះ។ វិធីនេះ FSearch អាចធ្វើសកម្មភាពដូចជាកម្មវិធីបើកដំណើរការកម្មវិធី។ បើមិនដូច្នេះទេ ឯកសារ <i>.desktop</i> នឹងត្រូវបានបើកជាមួយនឹងកម្មវិធីដោះស្រាយលំនាំដើមសម្រាប់ឯកសារប្រភេទនេះ ដែលជាធម្មតាជាកម្មវិធីនិពន្ធអត្ថបទ។"
 
 #: src/fsearch_preferences.ui:1508
 msgid ""
@@ -1671,6 +1966,13 @@ msgid ""
 "the filter on demand\n"
 "\t• <b>Query:</b> The search term by which the database should be filtered"
 msgstr ""
+"<b>តម្រង៖</b>\n"
+"\n"
+"នេះគឺជាបញ្ជីនៃតម្រងដែលមានទាំងអស់។ តម្រងគឺជាការស្វែងរកដែលបានកំណត់ជាមុន។\n"
+"\n"
+"\t• <b>ឈ្មោះ៖</b> ឧបករណ៍កំណត់អត្តសញ្ញាណពិសេស និងពណ៌នាសម្រាប់តម្រង\n"
+"\t• <b>ម៉ាក្រូ៖</b> ដោយវាយអត្ថបទម៉ាក្រូតាមពីក្រោយដោយ ':' អ្នកអាចបើកតម្រងតាមតម្រូវការ\n"
+"\t• <b>សំណួរ៖</b> ពាក្យស្វែងរកដែលមូលដ្ឋានទិន្នន័យគួរតែត្រូវបានត្រង"
 
 #: src/fsearch_preferences.ui:1529
 msgid ""
@@ -1678,6 +1980,9 @@ msgid ""
 "\n"
 "This button opens a dialog where you can edit a new filter."
 msgstr ""
+"<b>បន្ថែមតម្រងថ្មី៖</b>\n"
+"\n"
+"ប៊ូតុងនេះបើកប្រអប់ដែលអ្នកអាចកែសម្រួលតម្រងថ្មី។"
 
 #: src/fsearch_preferences.ui:1546
 msgid ""
@@ -1685,6 +1990,9 @@ msgid ""
 "\n"
 "This button removes the currently selected filter."
 msgstr ""
+"<b>លុបតម្រងដែលបានជ្រើសរើសចេញ៖</b>\n"
+"\n"
+"ប៊ូតុងនេះដកតម្រងដែលបានជ្រើសរើសបច្ចុប្បន្នចេញ។"
 
 #: src/fsearch_preferences.ui:1563
 msgid ""
@@ -1692,6 +2000,9 @@ msgid ""
 "\n"
 "This button opens a dialog where you can edit the selected filter."
 msgstr ""
+"<b>កែសម្រួលតម្រងដែលបានជ្រើសរើស៖</b>\n"
+"\n"
+"ប៊ូតុងនេះបើកប្រអប់ដែលអ្នកអាចកែសម្រួលតម្រងដែលបានជ្រើសរើស។"
 
 #: src/fsearch_preferences.ui:1580
 msgid ""
@@ -1701,6 +2012,11 @@ msgid ""
 "\n"
 "⚠ All filters which were created or edited by the user will be lost! ⚠"
 msgstr ""
+"<b>ស្តារតម្រងលំនាំដើម៖</b>\n"
+"\n"
+"ប៊ូតុងនេះស្ដារការកំណត់រចនាសម្ព័ន្ធតម្រងលំនាំដើម។\n"
+"\n"
+"⚠ តម្រងទាំងអស់ដែលត្រូវបានបង្កើត ឬកែសម្រួលដោយអ្នកប្រើប្រាស់នឹងត្រូវបាត់បង់! ⚠"
 
 #: src/fsearch_preferences.ui:1599
 msgid ""
@@ -1709,128 +2025,137 @@ msgid ""
 "If enabled, FSearch exits when the Escape key is pressed instead of the "
 "window being minimized."
 msgstr ""
+"<b>ចេញ​ពី Escape៖</b>\n"
+"\n"
+"ប្រសិនបើបានបើកដំណើរការ FSearch ចេញនៅពេលដែលចុច Escape ជំនួសឱ្យ Window ត្រូវបានបង្រួមអប្បបរមា។"
 
 #: src/fsearch_preferences.ui:1618 src/fsearch_window.ui:290
 #: src/fsearch_window.ui:415 src/menus.ui:150 src/menus.ui:156
 msgid "Help"
-msgstr ""
+msgstr "ជំនួយ"
 
 #: src/fsearch_preferences_dialog.c:238
 msgid "Database"
-msgstr ""
+msgstr "មូលដ្ឋានទិន្នន័យ"
 
 #: src/fsearch_result_view.c:381
 msgid "Invalid row data"
-msgstr ""
+msgstr "ទិន្នន័យជួរដេកមិនត្រឹមត្រូវ"
 
 #: src/fsearch_statusbar.c:58
 #, c-format
 msgid "%'d Item"
-msgstr ""
+msgstr "%'d ធាតុ"
 
 #: src/fsearch_statusbar.c:58 src/fsearch_statusbar.c:186
 #, c-format
 msgid "%'d Items"
-msgstr ""
+msgstr "%'d ធាតុ"
 
 #: src/fsearch_statusbar.c:80
 msgid "Querying…"
-msgstr ""
+msgstr "កំពុងសួរ…"
 
 #: src/fsearch_statusbar.c:175
 msgid "Loading…"
-msgstr ""
+msgstr "កំពុង​ផ្ទុក..."
 
 #: src/fsearch_statusbar.c:180
 msgid "Scanning…"
-msgstr ""
+msgstr "កំពុងស្កេន…"
 
 #: src/fsearch_statusbar.ui:52
 msgid "Number of Search Results"
-msgstr ""
+msgstr "ចំនួនលទ្ធផលស្វែងរក"
 
 #: src/fsearch_statusbar.ui:53
 msgid "0 Items"
-msgstr ""
+msgstr "0 ធាតុ"
 
 #: src/fsearch_statusbar.ui:106
 msgid "Cancel"
-msgstr ""
+msgstr "បោះបង់"
 
 #: src/fsearch_statusbar.ui:153
 msgid "Index:"
-msgstr ""
+msgstr "សន្ទស្សន៍៖"
 
 #: src/fsearch_statusbar.ui:228
 msgid "Number of selected folders"
-msgstr ""
+msgstr "ចំនួនថតដែលបានជ្រើសរើស"
 
 #: src/fsearch_statusbar.ui:229 src/fsearch_statusbar.ui:254
 msgid "0/0"
-msgstr ""
+msgstr "0/0"
 
 #: src/fsearch_statusbar.ui:253
 msgid "Number of selected files"
-msgstr ""
+msgstr "ចំនួនឯកសារដែលបានជ្រើសរើស"
 
 #: src/fsearch_statusbar.ui:328 src/fsearch_window.ui:103
 msgid "Cancel database update"
-msgstr ""
+msgstr "បោះបង់ការធ្វើបច្ចុប្បន្នភាពមូលដ្ឋានទិន្នន័យ"
 
 #: src/fsearch_statusbar.ui:369
 msgid "Number of database items"
-msgstr ""
+msgstr "ចំនួនធាតុមូលដ្ឋានទិន្នន័យ"
 
 #: src/fsearch_statusbar.ui:370
 msgid "(empty)"
-msgstr ""
+msgstr "(ទទេ)"
 
 #: src/fsearch_statusbar.ui:407
 msgid ""
 "Search term contains upper case characters.\n"
 "<b>Match Case</b> was temporarily activated for this term."
 msgstr ""
+"ពាក្យស្វែងរកមានអក្សរធំ។\n"
+"<b>ករណីផ្គូផ្គង</b> ត្រូវបានធ្វើឱ្យសកម្មជាបណ្តោះអាសន្នសម្រាប់ពាក្យនេះ។"
 
 #: src/fsearch_statusbar.ui:438 src/fsearch_statusbar.ui:491
 msgid "CASE"
-msgstr ""
+msgstr "ករណី"
 
 #: src/fsearch_statusbar.ui:514
 msgid ""
 "Search term contains path separators.\n"
 "<b>Search in Path</b> was temporarily activated for this term."
 msgstr ""
+"ពាក្យស្វែងរកមានឧបករណ៍បំបែកផ្លូវ។\n"
+"<b>ស្វែងរកក្នុងផ្លូវ</b> ត្រូវបានដំណើរការជាបណ្តោះអាសន្នសម្រាប់ពាក្យនេះ។"
 
 #: src/fsearch_statusbar.ui:545 src/fsearch_statusbar.ui:598
 msgid "PATH"
-msgstr ""
+msgstr "ផ្លូវ"
 
 #: src/fsearch_statusbar.ui:651
 msgid "REGEX"
-msgstr ""
+msgstr "REGEX"
 
 #: src/fsearch_statusbar.ui:726
 msgid ""
 "The search was cancelled before it finished.\n"
 "<b>These results are incomplete.</b>"
 msgstr ""
+"ការស្វែងរកត្រូវបានលុបចោលមុនពេលវាបញ្ចប់។\n"
+"<b>លទ្ធផលទាំងនេះមិនពេញលេញទេ។</b>"
 
 #: src/fsearch_statusbar.ui:756
 msgid "PARTIAL"
-msgstr ""
+msgstr "ផ្នែក"
 
 #: src/fsearch_welcome_dialog.ui:26
 msgid "What's New in FSearch"
-msgstr ""
+msgstr "តើមានអ្វីថ្មីនៅក្នុង FSSearch"
 
 #: src/fsearch_welcome_dialog.ui:79
 msgid ""
 "<span size=\"xx-large\" weight=\"bold\">What's New in FSearch 0.3</span>"
-msgstr ""
+msgstr "<span size=\\\"xx-large\\\" weight=\\\"bold\\\">តើមានអ្វីថ្មីនៅក្នុង FSearch 0.3</span>"
 
 #: src/fsearch_welcome_dialog.ui:149
 msgid "<big><b>File System Monitoring</b></big>"
-msgstr ""
+msgstr "<big><b>ការត្រួតពិនិត្យប្រព័ន្ធឯកសារ</b></big>"
 
 #: src/fsearch_welcome_dialog.ui:163
 msgid ""
@@ -1844,20 +2169,26 @@ msgid ""
 "<a href=\"URL\">https://github.com/cboxdoerfer/fsearch/wiki/Database-update</"
 "a>"
 msgstr ""
+"ឥឡូវនេះ អ្នកអាចមើលថតនីមួយៗយ៉ាងសកម្ម ដើម្បីលុបបំបាត់ការស្កេនឡើងវិញញឹកញាប់។ បន្ទាប់មកការផ្លាស់ប្តូរឯកសារនឹងបង្ហាញនៅក្នុងលទ្ធផលស្វែងរករបស់អ្នកភ្លាមៗ។\n"
+"\n"
+"ដើម្បីបើកមុខងារនេះ សូមចូលទៅកាន់ផ្នែកមូលដ្ឋានទិន្នន័យនៃប្រអប់ចំណូលចិត្ត។\n"
+"\n"
+"សូមមើលឯកសារអនឡាញសម្រាប់ព័ត៌មានបន្ថែម៖\n"
+"<a href=\\\"URL\\\">https://github.com/cboxdoerfer/fsearch/wiki/Database-update</a>"
 
 #: src/fsearch_welcome_dialog.ui:232
 msgid "<big><b>Folder-Specific Rescan Schedules</b></big>"
-msgstr ""
+msgstr "<big><b>កាលវិភាគ​ស្កេន​ឡើងវិញ​ជាក់លាក់​របស់​ថត</b></big>"
 
 #: src/fsearch_welcome_dialog.ui:246
 msgid ""
 "You can now configure automatic update intervals for individual folders "
 "independently and tailored to each distinct location."
-msgstr ""
+msgstr "ឥឡូវ​នេះ អ្នក​អាច​កំណត់​រចនាសម្ព័ន្ធ​ចន្លោះ​ពេល​ធ្វើ​បច្ចុប្បន្នភាព​ដោយ​ស្វ័យ​ប្រវត្តិ​សម្រាប់​ថត​នីមួយៗ​ដោយ​ឯករាជ្យ និង​ត្រូវ​បាន​សម្រប​តាម​ទីតាំង​ខុស​គ្នា​នីមួយៗ។"
 
 #: src/fsearch_welcome_dialog.ui:309
 msgid "<big><b>Improved Exclude Rules</b></big>"
-msgstr ""
+msgstr "<big><b>ច្បាប់​លើកលែង​ដែល​បាន​កែលម្អ</b></big>"
 
 #: src/fsearch_welcome_dialog.ui:323
 msgid ""
@@ -1866,18 +2197,20 @@ msgid ""
 "Rules can be targeted specifically at files, folders, or both, and can be "
 "configured to match against either the basename or the full absolute path."
 msgstr ""
+"ឥឡូវនេះ អ្នកអាចប្រើអក្សរជំនួស និងកន្សោមធម្មតា ដើម្បីកំណត់ច្បាប់មិនរាប់បញ្ចូលដែលមានអនុភាពជាងមុន។ \n"
+"ច្បាប់អាចត្រូវបានកំណត់គោលដៅជាពិសេសនៅឯកសារ ថតឯកសារ ឬទាំងពីរ ហើយអាចត្រូវបានកំណត់រចនាសម្ព័ន្ធឱ្យត្រូវគ្នានឹងឈ្មោះមូលដ្ឋាន ឬផ្លូវពេញលេញពេញលេញ។"
 
 #: src/fsearch_window.c:749 src/menus.ui:279
 msgid "Size"
-msgstr ""
+msgstr "ទំហំ"
 
 #: src/fsearch_window.c:763 src/menus.ui:271
 msgid "Extension"
-msgstr ""
+msgstr "ផ្នែកបន្ថែម"
 
 #: src/fsearch_window.c:770 src/menus.ui:283
 msgid "Date Modified"
-msgstr ""
+msgstr "កាលបរិច្ឆេទកែប្រែ"
 
 #: src/fsearch_window.c:784
 msgid ""
@@ -1886,198 +2219,205 @@ msgid ""
 "This sort order is not persistent, it will be reset when the search term "
 "changes."
 msgstr ""
+"ការតម្រៀបតាម <b>ប្រភេទ</b> អាចចំណាយពេលពីរបីវិនាទីជាមួយនឹងលទ្ធផលជាច្រើន។\n"
+"\n"
+"លំដាប់តម្រៀបនេះមិនស្ថិតស្ថេរទេ វានឹងត្រូវបានកំណត់ឡើងវិញនៅពេលដែលពាក្យស្វែងរកផ្លាស់ប្តូរ។"
 
 #: src/fsearch_window.ui:68
 msgid "New window"
-msgstr ""
+msgstr "បង្អួចថ្មី។"
 
 #: src/fsearch_window.ui:89
 msgid "Update database"
-msgstr ""
+msgstr "ធ្វើបច្ចុប្បន្នភាពមូលដ្ឋានទិន្នន័យ"
 
 #: src/fsearch_window.ui:144 src/menus.ui:112
 msgid "Search in Path"
-msgstr ""
+msgstr "ស្វែងរកក្នុងផ្លូវ"
 
 #: src/fsearch_window.ui:158 src/menus.ui:116
 msgid "Match Case"
-msgstr ""
+msgstr "ករណីផ្គូផ្គង"
 
 #: src/fsearch_window.ui:172 src/menus.ui:120
 msgid "Enable RegEx"
-msgstr ""
+msgstr "បើកដំណើរការ RegEx"
 
 #: src/fsearch_window.ui:197 src/menus.ui:95
 msgid "Show Statusbar"
-msgstr ""
+msgstr "បង្ហាញរបារស្ថានភាព"
 
 #: src/fsearch_window.ui:211 src/menus.ui:99
 msgid "Show Filter"
-msgstr ""
+msgstr "បង្ហាញតម្រង"
 
 #: src/fsearch_window.ui:225 src/menus.ui:103
 msgid "Show Search Button"
-msgstr ""
+msgstr "បង្ហាញប៊ូតុងស្វែងរក"
 
 #: src/fsearch_window.ui:275 src/fsearch_window.ui:356 src/menus.ui:129
 msgid "FSearch Online"
-msgstr ""
+msgstr "FSearch តាមអ៊ីនធឺណិត"
 
 #: src/fsearch_window.ui:304 src/menus.ui:161
 msgid "About"
-msgstr ""
+msgstr "អំពី"
 
 #: src/fsearch_window.ui:329 src/menus.ui:47
 msgid "Quit"
-msgstr ""
+msgstr "ឈប់"
 
 #: src/fsearch_window.ui:372 src/fsearch_window.ui:443 src/menus.ui:131
 msgid "Donate"
-msgstr ""
+msgstr "បរិច្ចាគ"
 
 #: src/fsearch_window.ui:387 src/menus.ui:142
 msgid "Forum"
-msgstr ""
+msgstr "វេទិកា"
 
 #: src/fsearch_window.ui:401 src/menus.ui:146
 msgid "Bug Reports and Feature Requests"
-msgstr ""
+msgstr "របាយការណ៍កំហុស និងសំណើមុខងារ"
 
 #: src/fsearch_window.ui:460 src/menus.ui:133
 msgid "GitHub Sponsors"
-msgstr ""
+msgstr "អ្នកឧបត្ថម្ភ GitHub"
 
 #: src/fsearch_window.ui:474 src/menus.ui:137
 msgid "PayPal"
-msgstr ""
+msgstr "PayPal"
 
 #: src/fsearch_window.ui:586
 msgid "Search…"
-msgstr ""
+msgstr "ស្វែងរក..."
 
 #: src/fsearch_window.ui:608
 msgid "Select a Filter"
-msgstr ""
+msgstr "ជ្រើសរើសតម្រង"
 
 #: src/fsearch_window_actions.c:110
 #, c-format
 msgid "Do you really want to open %'d file?"
 msgid_plural "Do you really want to open %'d files?"
-msgstr[0] ""
+msgstr[0] "តើអ្នកពិតជាចង់បើកឯកសារ %'d មែនទេ?"
+msgstr[1] "តើអ្នកពិតជាចង់បើកឯកសារ %'d មែនទេ?"
 
 #: src/fsearch_window_actions.c:115
 msgid "Opening Files…"
-msgstr ""
+msgstr "កំពុងបើកឯកសារ..."
 
 #: src/fsearch_window_actions.c:198
 #, c-format
 msgid "Do you really want to remove %'d file?"
 msgid_plural "Do you really want to remove %'d files?"
-msgstr[0] ""
+msgstr[0] "តើអ្នកពិតជាចង់យកឯកសារ %'d ចេញមែនទេ?"
+msgstr[1] "តើអ្នកពិតជាចង់យកឯកសារ %'d ចេញមែនទេ?"
 
 #: src/fsearch_window_actions.c:205
 msgid "Deleting files…"
-msgstr ""
+msgstr "កំពុងលុបឯកសារ..."
 
 #: src/fsearch_window_actions.c:205
 msgid "Moving files to trash…"
-msgstr ""
+msgstr "កំពុងផ្លាស់ទីឯកសារទៅធុងសំរាម..."
 
 #: src/fsearch_window_actions.c:238 src/fsearch_window_actions.c:533
 #: src/fsearch_window_actions.c:580
 msgid "Something went wrong."
-msgstr ""
+msgstr "មានអ្វីមួយខុសប្រក្រតី។"
 
 #: src/fsearch_window_actions.c:263
 #, c-format
 msgid "Do you really want to open %'d file property window?"
 msgid_plural "Do you really want to open %'d file property windows?"
-msgstr[0] ""
+msgstr[0] "តើ​អ្នក​ពិត​ជា​ចង់​បើក​បង្អួច​លក្ខណសម្បត្តិ​ឯកសារ %'d មែនទេ?"
+msgstr[1] "តើ​អ្នក​ពិត​ជា​ចង់​បើក %'d file property windows?"
 
 #: src/fsearch_window_actions.c:270
 msgid "Opening file properties…"
-msgstr ""
+msgstr "កំពុងបើកលក្ខណសម្បត្តិឯកសារ..."
 
 #: src/menus.ui:6
 msgid "_File"
-msgstr ""
+msgstr "_ឯកសារ"
 
 #: src/menus.ui:9
 msgid "New Window"
-msgstr ""
+msgstr "បង្អួចថ្មី។"
 
 #: src/menus.ui:16 src/menus.ui:171
 msgid "_Open"
-msgstr ""
+msgstr "_បើក"
 
 #: src/menus.ui:21
 msgid "Open Folder"
-msgstr ""
+msgstr "បើកថត"
 
 #: src/menus.ui:29
 msgid "Update Database"
-msgstr ""
+msgstr "ធ្វើបច្ចុប្បន្នភាពមូលដ្ឋានទិន្នន័យ"
 
 #: src/menus.ui:35
 msgid "Cancel Update"
-msgstr ""
+msgstr "បោះបង់ការធ្វើបច្ចុប្បន្នភាព"
 
 #: src/menus.ui:42
 msgid "Close Window"
-msgstr ""
+msgstr "បិទបង្អួច"
 
 #: src/menus.ui:54
 msgid "_Edit"
-msgstr ""
+msgstr "_កែសម្រួល"
 
 #: src/menus.ui:57 src/menus.ui:207
 msgid "_Copy"
-msgstr ""
+msgstr "_ចម្លង"
 
 #: src/menus.ui:62 src/menus.ui:228
 msgid "Cu_t"
-msgstr ""
+msgstr "Cu_t"
 
 #: src/menus.ui:69
 msgid "Select All"
-msgstr ""
+msgstr "ជ្រើសរើសទាំងអស់។"
 
 #: src/menus.ui:74
 msgid "Deselect All"
-msgstr ""
+msgstr "ដកការជ្រើសរើសទាំងអស់។"
 
 #: src/menus.ui:78
 msgid "Invert Selection"
-msgstr ""
+msgstr "ការជ្រើសរើសបញ្ច្រាស"
 
 #: src/menus.ui:92
 msgid "_View"
-msgstr ""
+msgstr "_មើល"
 
 #: src/menus.ui:109
 msgid "_Search"
-msgstr ""
+msgstr "_ ស្វែងរក"
 
 #: src/menus.ui:126
 msgid "_Help"
-msgstr ""
+msgstr "_ជំនួយ"
 
 #: src/menus.ui:177
 msgid "Open _With"
-msgstr ""
+msgstr "បើក _ ជាមួយ"
 
 #: src/menus.ui:191
 msgid "_Open Folder"
-msgstr ""
+msgstr "_បើក Folder"
 
 #: src/menus.ui:213
 msgid "Copy as Text"
-msgstr ""
+msgstr "ចម្លងជាអត្ថបទ"
 
 #: src/menus.ui:223
 msgid "Path + Name"
-msgstr ""
+msgstr "ផ្លូវ + ឈ្មោះ"
 
 #: src/menus.ui:236
 msgid "Move to _Trash"
-msgstr ""
+msgstr "ផ្លាស់ទីទៅ _ ធុងសំរាម"
+
