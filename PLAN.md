@@ -1,5 +1,8 @@
 # Plan
 
+- [x] Repair the Nix GTK runtime wrapper so native file choosers can discover their GSettings schema, and lock it with a release-wrapper regression. Completed 2026-07-18 01:56 EDT.
+  `wrapGAppsHook3` now packages GTK schemas, GIO modules, and pixbuf data into the release launcher while preserving `LOCALE_ARCHIVE`; the exact Nix check validates the installed wrapper in its isolated sandbox.
+
 - [x] Establish a pinned Nix build, test, and run environment. Completed 2026-07-09 20:44 EDT.
   Verified the sandboxed flake package runs all existing Meson tests.
 - [x] Add top-level `build`, `test`, and `bm` commands and record benchmark results. Completed 2026-07-09 21:01 EDT.

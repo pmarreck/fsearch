@@ -1,0 +1,41 @@
+#!/usr/bin/env bash
+
+set -u
+
+binary=${1:?usage: test_gsettings_runtime /path/to/fsearch}
+failures=0
+
+fail() {
+	printf 'FAIL: %s\n' "$1" >&2
+	failures=$((failures + 1))
+}
+
+wrapped_binary=$(grep -aoE '/nix/store/[^[:space:]]+/bin/\.fsearch-wrapped' "$binary" | head -n 1)
+if [ -z "$wrapped_binary" ] || [ ! -x "$wrapped_binary" ]; then
+	fail 'release wrapper did not identify its wrapped executable'
+	exit "$failures"
+fi
+
+gtk_library=$(ldd "$wrapped_binary" | awk '$1 == "libgtk-3.so.0" { print $3; exit }')
+if [ -z "$gtk_library" ]; then
+	fail 'wrapped executable did not resolve libgtk-3.so.0'
+	exit "$failures"
+fi
+
+gtk_prefix=${gtk_library%/lib/libgtk-3.so.0}
+schema_dir=$(find "$gtk_prefix/share/gsettings-schemas" -type f -name gschemas.compiled -printf '%h\n' -quit)
+if [ -z "$schema_dir" ]; then
+	fail 'GTK runtime did not provide compiled GSettings schemas'
+	exit "$failures"
+fi
+
+schema_root=$(dirname "$(dirname "$schema_dir")")
+
+# wrapGAppsHook3 emits a compiled launcher, so assert its embedded environment contract.
+if ! grep -aqF 'XDG_DATA_DIRS' "$binary"; then
+	fail 'release wrapper omitted the XDG_DATA_DIRS environment setup'
+elif ! grep -aqF "$schema_root" "$binary"; then
+	fail "release wrapper omitted GTK GSettings schema root: $schema_root"
+fi
+
+exit "$failures"

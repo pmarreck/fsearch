@@ -25,6 +25,7 @@
               ninja
               pkg-config
               cppcheck
+              wrapGAppsHook3
             ];
 
             buildInputs = with pkgs; [
@@ -36,9 +37,10 @@
 
             mesonFlags = [ "--buildtype=release" ];
             mesonBuildDir = "builddir";
-            postFixup = pkgs.lib.optionalString pkgs.stdenv.hostPlatform.isLinux ''
-              wrapProgram $out/bin/fsearch \
+            preFixup = pkgs.lib.optionalString pkgs.stdenv.hostPlatform.isLinux ''
+              gappsWrapperArgs+=(
                 --set-default LOCALE_ARCHIVE ${pkgs.glibcLocales}/lib/locale/locale-archive
+              )
             '';
             doCheck = true;
             checkPhase = ''
@@ -65,10 +67,22 @@
           checks = {
             build = fsearch;
             test = pkgs.runCommand "fsearch-test" {
-              nativeBuildInputs = [ pkgs.bash pkgs.coreutils pkgs.gettext pkgs.jq ];
+              nativeBuildInputs = [
+                pkgs.bash
+                pkgs.coreutils
+                pkgs.findutils
+                pkgs.gawk
+                pkgs.gettext
+                pkgs.gnugrep
+                pkgs.jq
+                pkgs.ripgrep
+              ] ++ pkgs.lib.optionals pkgs.stdenv.hostPlatform.isLinux [ pkgs.glibc.bin ];
             } ''
               bash ${self}/tests/i18n/test_required_locales ${self}/tools/check-required-locales
               bash ${self}/tools/check-required-locales ${self} --warn
+              ${pkgs.lib.optionalString pkgs.stdenv.hostPlatform.isLinux ''
+                bash ${self}/tests/package/test_gsettings_runtime ${fsearch}/bin/fsearch
+              ''}
               bash ${self}/tests/cli/test_cli ${fsearch}/bin/fsearch
               touch $out
             '';

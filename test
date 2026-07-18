@@ -51,6 +51,7 @@ if run_suite 'Meson setup' nix develop -c meson setup builddir --reconfigure; th
 fi
 
 if run_suite 'release build and Meson checks' nix build .#default; then
+	run_suite 'release GTK GSettings runtime wrapper' nix develop -c bash tests/package/test_gsettings_runtime result/bin/fsearch
 	run_suite 'release CLI tests' nix develop -c bash tests/cli/test_cli result/bin/fsearch
 fi
 
