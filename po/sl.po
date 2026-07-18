@@ -19,337 +19,339 @@ msgstr ""
 
 #: data/io.github.cboxdoerfer.FSearch.desktop.in.in:4 src/main.c:36
 msgid "FSearch"
-msgstr ""
+msgstr "FSearch"
 
 #: data/io.github.cboxdoerfer.FSearch.desktop.in.in:5
 msgid "A file search application focusing on performance and advanced features"
-msgstr ""
+msgstr "Aplikacija za iskanje datotek, ki se osredotoča na zmogljivost in napredne funkcije"
 
 #: data/io.github.cboxdoerfer.FSearch.desktop.in.in:10
 msgid "search;fsearch;files;folders;music;video;documents;find;tool;everything;"
-msgstr ""
+msgstr "iskanje;fsearch;datoteke;mape;glasba;video;dokumenti;najti;orodje;vse;"
 
 #: data/io.github.cboxdoerfer.FSearch.desktop.in.in:12
 msgid "File Search Utility"
-msgstr ""
+msgstr "Pripomoček za iskanje datotek"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:8
 msgid "A graphical file search application"
-msgstr ""
+msgstr "Grafična aplikacija za iskanje datotek"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:10
 msgid ""
 "FSearch helps you to find files and folders as easy and fast as possible. "
 "Just type a few letters and search results will appear almost instantly."
-msgstr ""
+msgstr "FSearch vam pomaga najti datoteke in mape kar se da enostavno in hitro. Samo vnesite nekaj črk in rezultati iskanja se bodo prikazali skoraj takoj."
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:14
 msgid ""
 "There are a lot of features which make searching as efficient and powerful "
 "as possible. Such as:"
-msgstr ""
+msgstr "Obstaja veliko funkcij, ki naredijo iskanje kar se da učinkovito in zmogljivo. kot so:"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:19
 msgid ""
 "Ignore case (e.g. searching for \"<code>fsearch</code>\" will match "
 "\"FSearch\" as well)"
-msgstr ""
+msgstr "Prezri velike in male črke (npr. iskanje \\\"<code>fsearch</code>\\\" se bo ujemalo tudi z \\\"FSearch\\\")"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:20
 msgid "Regular expressions"
-msgstr ""
+msgstr "Regularni izrazi"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:21
 msgid "Wildcard support"
-msgstr ""
+msgstr "Podpora za nadomestne znake"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:22
 msgid "Filter support (e.g. only search for audio files)"
-msgstr ""
+msgstr "Podpora za filtre (npr. iskanje samo zvočnih datotek)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:23
 msgid "Exclude certain files and folders"
-msgstr ""
+msgstr "Izključite določene datoteke in mape"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:24
 msgid "Fast sort by name, path, size, modification time and extension"
-msgstr ""
+msgstr "Hitro razvrščanje po imenu, poti, velikosti, času spreminjanja in razširitvi"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:26
 msgid ""
 "<em>Note:</em> Due to Flatpak's sandboxing, FSearch can't find every file on "
 "your system."
-msgstr ""
+msgstr "<em>Opomba:</em> Zaradi peskovnika Flatpak FSearch ne more najti vsake datoteke v vašem sistemu."
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:35
 msgid "The default UI layout"
-msgstr ""
+msgstr "Privzeta postavitev uporabniškega vmesnika"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:41
 msgid "A layout more closely following GNOME HIGs"
-msgstr ""
+msgstr "Postavitev, ki bolj sledi GNOME HIG"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:49
 msgid "search"
-msgstr ""
+msgstr "iskanje"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:50
 msgid "fsearch"
-msgstr ""
+msgstr "fsearch"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:51
 msgid "files"
-msgstr ""
+msgstr "datoteke"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:52
 msgid "folders"
-msgstr ""
+msgstr "mape"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:53
 msgid "music"
-msgstr ""
+msgstr "glasba"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:54
 msgid "video"
-msgstr ""
+msgstr "video"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:55
 msgid "documents"
-msgstr ""
+msgstr "dokumenti"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:56
 msgid "find"
-msgstr ""
+msgstr "najti"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:57
 msgid "tool"
-msgstr ""
+msgstr "orodje"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:58
 msgid "everything"
-msgstr ""
+msgstr "vse"
 
 #. Kept for appstreamcli < 1.0 (e.g. Ubuntu 20.04/22.04 PPA builds), which doesn't know <developer>.
 #. Translators: please do NOT translate this.
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:77
 msgid "Christian Boxdörfer"
-msgstr ""
+msgstr "Christian Boxdörfer"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:89
 msgid "DB rewrite"
-msgstr ""
+msgstr "Prepis DB"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:90
 msgid "DB: Add support for filesystem monitoring"
-msgstr ""
+msgstr "DB: Dodajte podporo za spremljanje datotečnega sistema"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:91
 msgid ""
 "DB: Allow files and folders to be excluded based on fixed patterns, "
 "wildcards or regular expressions"
-msgstr ""
+msgstr "DB: Dovoli izključitev datotek in map na podlagi fiksnih vzorcev, nadomestnih znakov ali regularnih izrazov"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:92
 msgid ""
 "DB: Allow included folders to be scheduled and scanned after launch "
 "independently"
-msgstr ""
+msgstr "DB: Dovoli, da se vključene mape po zagonu samostojno načrtujejo in pregledajo"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:93
 msgid "DB: Make rescanning more efficient"
-msgstr ""
+msgstr "DB: Poskrbite za učinkovitejše ponovno skeniranje"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:94
 msgid "DB: Store database config in DB file"
-msgstr ""
+msgstr "DB: Shranite konfiguracijo baze podatkov v datoteko DB"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:95
 msgid "DB: Add checksum to DB file"
-msgstr ""
+msgstr "DB: Dodajte kontrolno vsoto v datoteko DB"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:96
 msgid "Make icon and file info gathering asynchronous (no UI blocking)"
-msgstr ""
+msgstr "Naj bo zbiranje informacij o ikonah in datotekah asinhrono (brez blokiranja uporabniškega vmesnika)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:97
 msgid "Reduce memory usage"
-msgstr ""
+msgstr "Zmanjšajte porabo pomnilnika"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:98
 msgid "Add contextual help for all preferences"
-msgstr ""
+msgstr "Dodajte kontekstualno pomoč za vse nastavitve"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:99
 msgid "Numerous bug fixes and stability and performance improvements"
-msgstr ""
+msgstr "Številni popravki napak ter izboljšave stabilnosti in zmogljivosti"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:106
 msgid "New search engine"
-msgstr ""
+msgstr "Nov iskalnik"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:107
 msgid "Greatly improved highlighting of search terms"
-msgstr ""
+msgstr "Močno izboljšano označevanje iskalnih izrazov"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:108
 msgid "Custom filters"
-msgstr ""
+msgstr "Filtri po meri"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:109
 msgid "Improved sort performance"
-msgstr ""
+msgstr "Izboljšana zmogljivost razvrščanja"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:110
 msgid "Improved scroll performance"
-msgstr ""
+msgstr "Izboljšana zmogljivost drsenja"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:111
 msgid "Remember file selection after a database update"
-msgstr ""
+msgstr "Zapomni si izbiro datoteke po posodobitvi baze podatkov"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:112
 msgid "Automatically scroll the result list in rubberband selection mode"
-msgstr ""
+msgstr "Samodejno pomikanje po seznamu rezultatov v načinu izbire gumijastega traku"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:113
 msgid "Invert selection with rubber band when 'Ctrl' is pressed"
-msgstr ""
+msgstr "Obrnite izbor z gumijastim trakom, ko pritisnete »Ctrl«."
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:114
 msgid "Focus search entry when the main window gets activated"
-msgstr ""
+msgstr "Osredotočite iskalni vnos, ko se aktivira glavno okno"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:115
 msgid "Add filter for applications (i.e. .desktop files)"
-msgstr ""
+msgstr "Dodajte filter za aplikacije (tj. datoteke .desktop)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:116
 msgid ""
 "Add option to launch applications directly instead of opening the .desktop "
 "files"
-msgstr ""
+msgstr "Dodajte možnost za zagon aplikacij neposredno namesto odpiranja datotek .desktop"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:117
 msgid "Show application icons for .desktop files"
-msgstr ""
+msgstr "Pokaži ikone aplikacij za datoteke .desktop"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:118
 msgid "Add .odp and .ods files to document filter"
-msgstr ""
+msgstr "V filter dokumentov dodajte datoteke .odp in .ods"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:119
 msgid ""
 "'Open with' menu now only shows applications which can handle the selected "
 "files"
-msgstr ""
+msgstr "Meni 'Odpri z' zdaj prikazuje samo aplikacije, ki lahko obravnavajo izbrane datoteke"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:120
 msgid ""
 "Improved opening of multiple files with the same type (they get now passed "
 "as a list to applications, instead of one by one)"
-msgstr ""
+msgstr "Izboljšano odpiranje več datotek z isto vrsto (zdaj se posredujejo kot seznam aplikacijam, namesto ena za drugo)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:121
 msgid "Better support for opening files in sandboxed mode"
-msgstr ""
+msgstr "Boljša podpora za odpiranje datotek v načinu peskovnika"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:122
 msgid ""
 "Add menu items with links to the issue tracker, forum and donation pages"
-msgstr ""
+msgstr "Dodajte elemente menija s povezavami do strani za sledenje težav, foruma in donacij"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:123
 msgid "Improve support for non-Linux systems"
-msgstr ""
+msgstr "Izboljšajte podporo za sisteme, ki niso Linux"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:124
 msgid ""
 "Add option to exit FSearch when Escape is pressed instead of minimizing the "
 "window"
-msgstr ""
+msgstr "Dodajte možnost za izhod iz FSearch, ko pritisnete Escape, namesto minimiziranja okna"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:125
 msgid "Exclude '/proc' and '/sys' by default"
-msgstr ""
+msgstr "Privzeto izključite '/proc' in '/sys'"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:126
 msgid "Open context menu when 'Menu' key or 'Shift + F10' are pressed"
-msgstr ""
+msgstr "Odpre kontekstni meni, ko pritisnete tipko 'Menu' ali 'Shift + F10'"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:127
 msgid "and tons of bug fixes, translation updates and smaller improvements"
-msgstr ""
+msgstr "in ogromno popravkov napak, posodobitev prevodov in manjših izboljšav"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:133
 msgid "Initial release."
-msgstr ""
+msgstr "Začetna izdaja."
 
 #: src/fsearch.c:181
 msgid "translator-credits"
-msgstr ""
+msgstr "prevajalski krediti"
 
 #: src/fsearch.c:183
 msgid "A search utility focusing on performance and advanced features"
-msgstr ""
+msgstr "Iskalni pripomoček, ki se osredotoča na zmogljivost in napredne funkcije"
 
 #: src/fsearch.c:330
 msgid "Saving database and config…"
-msgstr ""
+msgstr "Shranjevanje baze podatkov in konfiguracije ..."
 
 #: src/fsearch.c:786
 msgid "Open a new application window"
-msgstr ""
+msgstr "Odprite novo okno aplikacije"
 
 #: src/fsearch.c:787
 msgid "Minimize the application window"
-msgstr ""
+msgstr "Pomanjšajte okno aplikacije"
 
 #: src/fsearch.c:788
 msgid "Show the application preferences"
-msgstr ""
+msgstr "Pokažite nastavitve aplikacije"
 
 #: src/fsearch.c:789
 msgid "Set the search pattern"
-msgstr ""
+msgstr "Nastavite iskalni vzorec"
 
 #: src/fsearch.c:790
 msgid "Update the database and exit"
-msgstr ""
+msgstr "Posodobite bazo podatkov in zaprite"
 
 #: src/fsearch.c:791
 msgid "Print version information and exit"
-msgstr ""
+msgstr "Natisnite informacije o različici in zapustite"
 
 #: src/fsearch.c:883
 msgid ""
 "For command-line search help, run: fsearch --cli --help\n"
 "For shared configuration help, run: fsearch config --help"
 msgstr ""
+"Za pomoč pri iskanju v ukazni vrstici zaženite: fsearch --cli --help\n"
+"Za pomoč pri skupni konfiguraciji zaženite: fsearch config --help"
 
 #: src/fsearch_cli.c:125
 #, c-format
 msgid ""
 "Results capped at %u. Use --unlimit or --unlimited to get them all, or "
 "provide a custom --limit, or set FSEARCH_RESULT_LIMIT."
-msgstr ""
+msgstr "Rezultati so omejeni na %u. Uporabite --unlimit ali --unlimited, da dobite vse, ali zagotovite --limit po meri ali nastavite FSEARCH_RESULT_LIMIT."
 
 #: src/fsearch_cli.c:134
 #, c-format
 msgid "%u match."
 msgid_plural "%u matches."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "%u ujemanje."
+msgstr[1] "%u se ujema."
+msgstr[2] "%u se ujema."
+msgstr[3] "%u se ujema."
 
 #: src/fsearch_cli.c:142
 msgid "Updating FSearch index before searching..."
-msgstr ""
+msgstr "Posodabljanje indeksa FSearch pred iskanjem ..."
 
 #: src/fsearch_cli.c:149
 #, c-format
 msgid "Indexing: %s"
-msgstr ""
+msgstr "Indeksiranje: %s"
 
 #: src/fsearch_cli.c:181
 msgid ""
@@ -395,40 +397,76 @@ msgid ""
 "{png,jpg} selects alternatives; {01..12} is an inclusive numeric range; \\* "
 "matches a literal *.\n"
 msgstr ""
+"Uporaba: fsearch --cli [OPTIONS]\n"
+"\n"
+"Preiščite obstoječi indeks FSearch in natisnite ustrezne poti.\n"
+"\n"
+"  -s, --search PATTERN       Iskanje s sintakso poizvedbe FSearch\n"
+"      --path DIRECTORY        Išči rekurzivno pod IMENIKOM (privzeto: trenutni imenik)\n"
+"      --global                Preiščite vsako indeksirano lokacijo\n"
+"      --limit COUNT          Natisnite največ COUNT rezultatov\n"
+"      --unlimit, --unlimited Natisnite vsak rezultat\n"
+"  -u, --update-database      Ponovno skenirajte konfigurirani indeks in zaprite\n"
+"      --about                Natisnite informacije o zgradbi v eni vrstici\n"
+"  -h, --help                 Pokaži to pomoč\n"
+"\n"
+"Konfiguracija: fsearch config --help\n"
+"\n"
+"Primeri:\n"
+"  fsearch --cli --search invoice              # eolaire reatha\n"
+"  fsearch --cli --path ~/Documents --search invoice\n"
+"  fsearch --cli --global --search invoice\n"
+"  fsearch --cli --search 'file:size:>20mb'\n"
+"  fsearch --cli --search 'ext:jpg;png'\n"
+"  fsearch --cli --search 'path:projects report'\n"
+"  fsearch --cli --search 'report AND ext:pdf'\n"
+"  fsearch --cli --search '(draft OR final) !archive'\n"
+"  fsearch --cli --search 'file:regex:\".+\\.pdf$\"'\n"
+"  fsearch --cli --search 'case:AGENTS'        # cás-íogair\n"
+"  fsearch --cli --search 'case:regex:\"^AGENTS\\.md$\"'\n"
+"  fsearch --cli --search 'glob:**/*.png'\n"
+"  fsearch --cli --search 'path:glob:**/AGENTS.md'\n"
+"  fsearch --cli --search 'case:glob:AGENTS.md' # glob cás-íogair\n"
+"\n"
+"Primeri uporabljajo presledek kot IN. Poskusite file:, folder:, path:, ext:, size:, dm:, case:, regex: in glob:.\n"
+"Logična sintaksa: IN ali &&; ALI ali ||; NE ali!. Izrazi skupine v oklepajih.\n"
+"Glob sintaksa: * izključuje /; ** obsega imenike; ? ujema z enim znakom; [a-c] je obseg;\n"
+"Glob privzeto išče poti; uporabite **/ za poljubno globino; file:glob: išče imena datotek.\n"
+"{png,jpg} izbere alternative; {01..12} je vključujoč številski obseg; \\* se ujema z dobesednim *.\n"
 
 #: src/fsearch_cli.c:238
 #, c-format
 msgid "FSearch %s - indexed file search for %s %s\n"
-msgstr ""
+msgstr "FSearch %s - iskanje indeksirane datoteke za %s %s\n"
 
 #: src/fsearch_cli.c:301
 msgid "fsearch: interrupted\n"
-msgstr ""
+msgstr "fsearch: prekinjeno\n"
 
 #: src/fsearch_cli.c:315
 msgid "fsearch: search could not run because the index is unavailable\n"
-msgstr ""
+msgstr "fsearch: iskanja ni bilo mogoče izvesti, ker indeks ni na voljo\n"
 
 #: src/fsearch_cli.c:352 src/fsearch_cli.c:381 src/fsearch_cli_config.c:774
 #: src/fsearch_cli_config.c:961 src/fsearch_cli_config.c:1147
 #, c-format
 msgid "%s\n"
-msgstr ""
+msgstr "%s\n"
 
 #: src/fsearch_cli.c:400
 #, c-format
 msgid "%s"
-msgstr ""
+msgstr "%s"
 
 #: src/fsearch_cli.c:473
 #, c-format
 msgid "fsearch: unknown CLI option: %s\n"
-msgstr ""
+msgstr "fsearch: neznana možnost CLI: %s\n"
 
 #: src/fsearch_cli.c:495
 #, c-format
 msgid "fsearch: failed to create data directory: %s\n"
-msgstr ""
+msgstr "fsearch: ni uspelo ustvariti podatkovnega imenika: %s\n"
 
 #: src/fsearch_cli_config.c:111
 msgid ""
@@ -470,30 +508,73 @@ msgid ""
 "  fsearch config filters add Documents --query 'ext:pdf' --macro docs\n"
 "  fsearch config reset search --yes\n"
 msgstr ""
+"Uporaba: fsearch config COMMAND [OPTIONS]\n"
+"\n"
+"Ogled in spreminjanje konfiguracije GUI in CLI v skupni rabi FSearch.\n"
+"\n"
+"Konfiguracijski ukazi:\n"
+"  path                         Natisnite pot konfiguracijske datoteke\n"
+"  show [SECTION] [--json]      Pokaži nastavitve\n"
+"  get KEY [--json]             Natisnite eno skalarno nastavitev\n"
+"  set KEY VALUE                Nastavite eno skalarno nastavitev\n"
+"  unset KEY                    Obnovi eno privzeto skalarno nastavitev\n"
+"  reset [KEY|SECTION] --yes [--rescan]\n"
+"                               Obnovi privzete nastavitve\n"
+"  doctor                       Preverite konfiguracijo in doslednost indeksa\n"
+"  roots list|add|set|remove    Upravljanje indeksiranih korenin\n"
+"  excludes list|add|remove|hidden\n"
+"                               Upravljanje izključitev indeksa\n"
+"  filters list|add|set|remove|reset\n"
+"                               Upravljanje shranjenih iskalnih filtrov\n"
+"\n"
+"Skalarne vrednosti uporabljajo true/false, decimalna cela števila ali nize.\n"
+"Zaženite 'fsearch config show' za seznam vseh skalarnih ključev in trenutnih vrednosti.\n"
+"Skalarni odseki: search, application, window, ui, columns, sort, dialogs.\n"
+"Za družinske možnosti uporabite 'fsearch config roots|excludes|filters --help'.\n"
+"Zaprite FSearch GUI, preden spremenite skupne nastavitve.\n"
+"Spremembe indeksa postanejo iskane ob naslednjem iskanju CLI ali takoj z --rescan.\n"
+"Uporabite --json z ukazi show, get in seznam zbirk.\n"
+"\n"
+"Primeri:\n"
+"  fsearch config show search --json\n"
+"  fsearch config get search.match-case\n"
+"  fsearch config set search.match-case true\n"
+"  fsearch config roots add ~/Code --monitor --one-file-system --rescan\n"
+"  fsearch config excludes add '*.tmp' --type wildcard --scope basename --target files\n"
+"  fsearch config filters add Documents --query 'ext:pdf' --macro docs\n"
+"  fsearch config reset search --yes\n"
 
 #: src/fsearch_cli_config.c:152
 msgid ""
 "Usage: fsearch config show [SECTION] [--json]\n"
 "Show all scalar settings or one dotted section.\n"
 msgstr ""
+"Uporaba: fsearch config show [SECTION] [--json]\n"
+"Pokaži vse skalarne nastavitve ali en pikčast odsek.\n"
 
 #: src/fsearch_cli_config.c:154
 msgid ""
 "Usage: fsearch config get KEY [--json]\n"
 "Print one typed scalar value. Discover keys with 'fsearch config show'.\n"
 msgstr ""
+"Uporaba: fsearch config get KEY [--json]\n"
+"Natisnite eno vtipkano skalarno vrednost. Odkrijte ključe z 'fsearch config show'.\n"
 
 #: src/fsearch_cli_config.c:157
 msgid ""
 "Usage: fsearch config set KEY VALUE\n"
 "Set a boolean, integer, string, or enumerated scalar value.\n"
 msgstr ""
+"Uporaba: fsearch config set KEY VALUE\n"
+"Nastavite logično vrednost, celo število, niz ali oštevilčeno skalarno vrednost.\n"
 
 #: src/fsearch_cli_config.c:159
 msgid ""
 "Usage: fsearch config unset KEY\n"
 "Restore one scalar setting to its built-in default.\n"
 msgstr ""
+"Uporaba: fsearch config unset KEY\n"
+"Obnovi eno skalarno nastavitev na vgrajeno privzeto vrednost.\n"
 
 #: src/fsearch_cli_config.c:161
 msgid ""
@@ -501,6 +582,8 @@ msgid ""
 "Reset is destructive and requires --yes. --rescan applies to roots, "
 "database, excludes, or all.\n"
 msgstr ""
+"Uporaba: fsearch config reset [KEY|SECTION] --yes [--rescan]\n"
+"Ponastavitev je destruktivna in zahteva --yes. --rescan velja za korenine, bazo podatkov, izključitve ali vse.\n"
 
 #: src/fsearch_cli_config.c:164
 msgid ""
@@ -508,6 +591,8 @@ msgid ""
 "Check configuration readability and whether the saved index uses the same "
 "roots and exclusions.\n"
 msgstr ""
+"Uporaba: fsearch config doctor\n"
+"Preverite berljivost konfiguracije in ali shranjeni indeks uporablja iste korene in izključitve.\n"
 
 #: src/fsearch_cli_config.c:170
 msgid ""
@@ -527,6 +612,21 @@ msgid ""
 "  --rescan-every SECONDS        Set periodic rescan interval; 0 disables it\n"
 "  --rescan                      Rebuild the index immediately after saving\n"
 msgstr ""
+"Uporaba: fsearch config roots COMMAND [PATH] [OPTIONS]\n"
+"\n"
+"Ukazi:\n"
+"  list [--json]                Seznam indeksiranih korenov\n"
+"  add PATH [OPTIONS]           Dodajte korenski imenik\n"
+"  set PATH [OPTIONS]           Spremenite obstoječi koren\n"
+"  remove PATH [--rescan]       Odstranite obstoječi koren\n"
+"\n"
+"Možnosti za dodajanje in nastavitev:\n"
+"  --active, --inactive\n"
+"  --monitor, --no-monitor\n"
+"  --one-file-system, --no-one-file-system\n"
+"  --scan-after-launch, --no-scan-after-launch\n"
+"  --rescan-every SECONDS        Nastavite periodični interval ponovnega skeniranja; 0 ga onemogoči\n"
+"  --rescan                      Znova sestavite kazalo takoj po shranjevanju\n"
 
 #: src/fsearch_cli_config.c:187
 msgid ""
@@ -546,6 +646,21 @@ msgid ""
 "  --active, --inactive          Add state or removal selector\n"
 "  --rescan                      Rebuild the index immediately after saving\n"
 msgstr ""
+"Uporaba: fsearch config excludes COMMAND [PATTERN|VALUE] [OPTIONS]\n"
+"\n"
+"Ukazi:\n"
+"  list [--json]                 Seznam izključitev\n"
+"  add PATTERN [OPTIONS]         Dodajte izključitev\n"
+"  remove PATTERN [OPTIONS]      Odstranite ustrezno izključitev\n"
+"  hidden [true|false] [--rescan]\n"
+"                                Oglejte si ali spremenite izključitev skritih datotek\n"
+"\n"
+"Možnosti za dodajanje in odstranjevanje:\n"
+"  --type fixed|wildcard|regex   Privzeto: fiksno\n"
+"  --scope full-path|basename    Privzeto: polna pot\n"
+"  --target both|files|folders   Privzeto: oboje\n"
+"  --active, --inactive          Dodajanje izbirnika stanja ali odstranitve\n"
+"  --rescan                      Znova sestavite kazalo takoj po shranjevanju\n"
 
 #: src/fsearch_cli_config.c:204
 msgid ""
@@ -565,205 +680,224 @@ msgid ""
 "  --path, --no-path             Search full paths\n"
 "  --regex, --no-regex           Treat query as a regular expression\n"
 msgstr ""
+"Uporaba: fsearch config filters COMMAND [NAME] [OPTIONS]\n"
+"\n"
+"Ukazi:\n"
+"  list [--json]                 Seznam shranjenih filtrov\n"
+"  add NAME [OPTIONS]            Dodajte filter z imenom\n"
+"  set NAME [OPTIONS]            Spremenite imenovani filter\n"
+"  remove NAME                   Odstranite imenovani filter\n"
+"  reset                         Obnovi vgrajene filtre\n"
+"\n"
+"Možnosti za dodajanje in nastavitev:\n"
+"  --query QUERY                 Shranjena poizvedba FSearch\n"
+"  --macro MACRO                 Ime makra poizvedbe\n"
+"  --case, --no-case             Primer vžigalice\n"
+"  --path, --no-path             Iskanje po celih poteh\n"
+"  --regex, --no-regex           Poizvedbo obravnavajte kot regularni izraz\n"
 
 #: src/fsearch_cli_config.c:265
 msgid ""
 "fsearch config: close the running FSearch GUI before changing shared "
 "settings\n"
-msgstr ""
+msgstr "fsearch config: zaprite tekoči GUI FSearch, preden spremenite skupne nastavitve\n"
 
 #: src/fsearch_cli_config.c:269
 msgid "fsearch config: failed to save configuration\n"
-msgstr ""
+msgstr "fsearch config: ni uspelo shraniti konfiguracije\n"
 
 #: src/fsearch_cli_config.c:280
 msgid "Index configuration changed; the next CLI search will rebuild it.\n"
-msgstr ""
+msgstr "Konfiguracija indeksa spremenjena; naslednje iskanje CLI ga bo obnovilo.\n"
 
 #: src/fsearch_cli_config.c:416
 #, c-format
 msgid "fsearch config %s: unknown option: %s\n"
-msgstr ""
+msgstr "fsearch konfiguracija %s: neznana možnost: %s\n"
 
 #: src/fsearch_cli_config.c:422
 #, c-format
 msgid "fsearch config %s: unexpected argument: %s\n"
-msgstr ""
+msgstr "fsearch config %s: nepričakovan argument: %s\n"
 
 #: src/fsearch_cli_config.c:449
 msgid "Usage: fsearch config get KEY [--json]\n"
-msgstr ""
+msgstr "Uporaba: fsearch config get KEY [--json]\n"
 
 #: src/fsearch_cli_config.c:454 src/fsearch_cli_config.c:555
 #, c-format
 msgid "fsearch config: unknown setting: %s\n"
-msgstr ""
+msgstr "konfiguracija fsearch: neznana nastavitev: %s\n"
 
 #: src/fsearch_cli_config.c:502
 #, c-format
 msgid "fsearch config show: unknown section: %s\n"
-msgstr ""
+msgstr "fsearch config show: neznan razdelek: %s\n"
 
 #: src/fsearch_cli_config.c:550
 #, c-format
 msgid "Usage: fsearch config %s KEY%s\n"
-msgstr ""
+msgstr "Uporaba: fsearch config %s KEY%s\n"
 
 #: src/fsearch_cli_config.c:566
 #, c-format
 msgid "fsearch config: invalid value for %s: %s\n"
-msgstr ""
+msgstr "fsearch config: neveljavna vrednost za %s: %s\n"
 
 #: src/fsearch_cli_config.c:572
 #, c-format
 msgid "%s = %s\n"
-msgstr ""
+msgstr "%s = %s\n"
 
 #: src/fsearch_cli_config.c:637
 #, c-format
 msgid "fsearch config roots: unknown operation: %s\n"
-msgstr ""
+msgstr "koreni konfiguracije fsearch: neznana operacija: %s\n"
 
 #: src/fsearch_cli_config.c:691
 msgid "fsearch config roots: --rescan-every requires SECONDS\n"
-msgstr ""
+msgstr "korenine konfiguracije fsearch: --rescan-every zahteva SEKUND\n"
 
 #: src/fsearch_cli_config.c:710
 msgid "fsearch config roots: missing PATH\n"
-msgstr ""
+msgstr "fsearch config roots: manjka PATH\n"
 
 #: src/fsearch_cli_config.c:717 src/fsearch_cli_config.c:732
 #, c-format
 msgid "fsearch config roots: path not found: %s\n"
-msgstr ""
+msgstr "korenine konfiguracije fsearch: pot ni najdena: %s\n"
 
 #: src/fsearch_cli_config.c:724
 #, c-format
 msgid "fsearch config roots: not a directory: %s\n"
-msgstr ""
+msgstr "koreni konfiguracije fsearch: ni imenik: %s\n"
 
 #: src/fsearch_cli_config.c:728
 #, c-format
 msgid "fsearch config roots: path already exists: %s\n"
-msgstr ""
+msgstr "korenine konfiguracije fsearch: pot že obstaja: %s\n"
 
 #: src/fsearch_cli_config.c:752
 #, c-format
 msgid "fsearch config roots: invalid rescan duration: %s\n"
-msgstr ""
+msgstr "korenine konfiguracije fsearch: neveljavno trajanje ponovnega skeniranja: %s\n"
 
 #: src/fsearch_cli_config.c:765
 msgid ""
 "%s\tactive=%s monitor=%s one-file-system=%s scan-after-launch=%s rescan-"
 "after=%s\n"
-msgstr ""
+msgstr "%s active=%s monitor=%s one-file-system=%s scan-after-launch=%s rescan-after=%s\n"
 
 #: src/fsearch_cli_config.c:844
 msgid "fsearch config excludes hidden: expected true or false\n"
-msgstr ""
+msgstr "fsearch config izključuje skrito: pričakovano true ali false\n"
 
 #: src/fsearch_cli_config.c:850
 #, c-format
 msgid "exclude-hidden = %s\n"
-msgstr ""
+msgstr "izključi-skrito = %s\n"
 
 #: src/fsearch_cli_config.c:856
 #, c-format
 msgid "fsearch config excludes: unknown operation: %s\n"
-msgstr ""
+msgstr "konfiguracija fsearch izključuje: neznana operacija: %s\n"
 
 #: src/fsearch_cli_config.c:877
 #, c-format
 msgid "fsearch config excludes: %s requires a value\n"
-msgstr ""
+msgstr "fsearch config izključuje: %s zahteva vrednost\n"
 
 #: src/fsearch_cli_config.c:909
 msgid "fsearch config excludes: missing PATTERN\n"
-msgstr ""
+msgstr "fsearch config izključuje: manjka PATTERN\n"
 
 #: src/fsearch_cli_config.c:914
 #, c-format
 msgid "fsearch config excludes: invalid type: %s\n"
-msgstr ""
+msgstr "konfiguracija fsearch izključuje: neveljaven tip: %s\n"
 
 #: src/fsearch_cli_config.c:919
 #, c-format
 msgid "fsearch config excludes: invalid scope: %s\n"
-msgstr ""
+msgstr "konfiguracija fsearch izključuje: neveljaven obseg: %s\n"
 
 #: src/fsearch_cli_config.c:924
 #, c-format
 msgid "fsearch config excludes: invalid target: %s\n"
-msgstr ""
+msgstr "fsearch config izključuje: neveljaven cilj: %s\n"
 
 #: src/fsearch_cli_config.c:954
 #, c-format
 msgid "fsearch config excludes: exclusion not found: %s\n"
-msgstr ""
+msgstr "fsearch config izključuje: izključitve ni bilo mogoče najti: %s\n"
 
 #: src/fsearch_cli_config.c:1022
 msgid "filters reset\n"
-msgstr ""
+msgstr "ponastavitev filtrov\n"
 
 #: src/fsearch_cli_config.c:1029
 #, c-format
 msgid "fsearch config filters: unknown operation: %s\n"
-msgstr ""
+msgstr "konfiguracijski filtri fsearch: neznana operacija: %s\n"
 
 #: src/fsearch_cli_config.c:1051
 #, c-format
 msgid "fsearch config filters: %s requires a value\n"
-msgstr ""
+msgstr "fsearch config filters: %s zahteva vrednost\n"
 
 #: src/fsearch_cli_config.c:1094
 msgid "fsearch config filters: missing NAME\n"
-msgstr ""
+msgstr "fsearch config filters: manjka NAME\n"
 
 #: src/fsearch_cli_config.c:1100 src/fsearch_cli_config.c:1111
 #, c-format
 msgid "fsearch config filters: name not found: %s\n"
-msgstr ""
+msgstr "fsearch konfiguracijski filtri: ime ni bilo najdeno: %s\n"
 
 #: src/fsearch_cli_config.c:1107
 #, c-format
 msgid "fsearch config filters: name already exists: %s\n"
-msgstr ""
+msgstr "fsearch config filters: ime že obstaja: %s\n"
 
 #: src/fsearch_cli_config.c:1145
 #, c-format
 msgid "%s\tmacro=%s query=%s\n"
-msgstr ""
+msgstr "%s makro=%s poizvedba=%s\n"
 
 #: src/fsearch_cli_config.c:1193
 msgid "fsearch config reset requires --yes\n"
-msgstr ""
+msgstr "Ponastavitev konfiguracije fsearch zahteva --yes\n"
 
 #: src/fsearch_cli_config.c:1201
 msgid ""
 "fsearch config reset: --rescan requires roots, database, excludes, or all\n"
-msgstr ""
+msgstr "fsearch config reset: --rescan zahteva korenine, bazo podatkov, izključuje ali vse\n"
 
 #: src/fsearch_cli_config.c:1241
 #, c-format
 msgid "fsearch config: unknown setting or section: %s\n"
-msgstr ""
+msgstr "fsearch config: neznana nastavitev ali razdelek: %s\n"
 
 #: src/fsearch_cli_config.c:1246
 #, c-format
 msgid "%s settings reset\n"
-msgstr ""
+msgstr "Ponastavitev nastavitev za %s\n"
 
 #: src/fsearch_cli_config.c:1253
 msgid ""
 "configuration: missing; defaults active\n"
 "index: unknown\n"
 msgstr ""
+"konfiguracija: manjka; privzete vrednosti aktivne\n"
+"kazalo: neznano\n"
 
 #: src/fsearch_cli_config.c:1261
 msgid ""
 "configuration: ok\n"
 "index: missing or unreadable\n"
 msgstr ""
+"konfiguracija: ok\n"
+"indeks: manjka ali neberljiv\n"
 
 #: src/fsearch_cli_config.c:1266
 #, c-format
@@ -771,121 +905,125 @@ msgid ""
 "configuration: ok\n"
 "index: %s\n"
 msgstr ""
+"konfiguracija: ok\n"
+"indeks: %s\n"
 
 #: src/fsearch_cli_config.c:1266
 msgid "current"
-msgstr ""
+msgstr "trenutno"
 
 #: src/fsearch_cli_config.c:1266
 msgid "stale"
-msgstr ""
+msgstr "zastarel"
 
 #: src/fsearch_cli_config.c:1278
 msgid ""
 "Usage: fsearch config path\n"
 "Print the active FSearch configuration file path.\n"
 msgstr ""
+"Uporaba: fsearch config path\n"
+"Natisnite aktivno pot konfiguracijske datoteke FSearch.\n"
 
 #: src/fsearch_cli_config.c:1321
 #, c-format
 msgid "fsearch config: unknown command: %s\n"
-msgstr ""
+msgstr "fsearch config: neznan ukaz: %s\n"
 
 #: src/fsearch_database.c:795
 msgid "Index rescan: applying changes…"
-msgstr ""
+msgstr "Ponovno skeniranje indeksa: uveljavljanje sprememb ..."
 
 #: src/fsearch_database_file.c:1343
 msgid "Loading folders…"
-msgstr ""
+msgstr "Nalaganje map ..."
 
 #: src/fsearch_database_file.c:1359
 msgid "Loading files…"
-msgstr ""
+msgstr "Nalaganje datotek …"
 
 #: src/fsearch_database_index_store.c:925 src/fsearch_statusbar.c:73
 #: src/fsearch_statusbar.ui:90
 msgid "Sorting…"
-msgstr ""
+msgstr "Razvrščanje ..."
 
 #: src/fsearch_database_preferences_widget.c:162
 #: src/fsearch_database_preferences_widget.c:176
 msgid "Select folder"
-msgstr ""
+msgstr "Izberite mapo"
 
 #: src/fsearch_database_preferences_widget.c:165
 #: src/fsearch_database_preferences_widget.c:180
 #: src/fsearch_filter_editor.c:104 src/fsearch_preferences_dialog.c:331
 msgid "_Cancel"
-msgstr ""
+msgstr "_Prekliči"
 
 #: src/fsearch_database_preferences_widget.c:167
 #: src/fsearch_database_preferences_widget.c:179
 msgid "_Select"
-msgstr ""
+msgstr "_Izberi"
 
 #: src/fsearch_database_preferences_widget.c:389
 msgid "Literal"
-msgstr ""
+msgstr "Dobesedno"
 
 #: src/fsearch_database_preferences_widget.c:391
 msgid "Wildcard"
-msgstr ""
+msgstr "Nadomestni znak"
 
 #: src/fsearch_database_preferences_widget.c:393
 msgid "Regex"
-msgstr ""
+msgstr "Regex"
 
 #: src/fsearch_database_preferences_widget.c:414
 msgid "Full Path"
-msgstr ""
+msgstr "Polna pot"
 
 #: src/fsearch_database_preferences_widget.c:416
 msgid "Basename"
-msgstr ""
+msgstr "Osnovno ime"
 
 #: src/fsearch_database_preferences_widget.c:434
 msgid "Files & Folders"
-msgstr ""
+msgstr "Datoteke in mape"
 
 #: src/fsearch_database_preferences_widget.c:436 src/fsearch_filter.c:114
 msgid "Files"
-msgstr ""
+msgstr "Datoteke"
 
 #: src/fsearch_database_preferences_widget.c:438 src/fsearch_filter.c:113
 msgid "Folders"
-msgstr ""
+msgstr "Mape"
 
 #: src/fsearch_database_preferences_widget.c:635
 #: src/fsearch_database_preferences_widget.c:860
 msgid "Active"
-msgstr ""
+msgstr "Aktiven"
 
 #: src/fsearch_database_preferences_widget.c:640
 msgid "Pattern"
-msgstr ""
+msgstr "Vzorec"
 
 #: src/fsearch_database_preferences_widget.c:694 src/fsearch_window.c:756
 #: src/menus.ui:275
 msgid "Type"
-msgstr ""
+msgstr "Vrsta"
 
 #: src/fsearch_database_preferences_widget.c:700
 msgid "Match"
-msgstr ""
+msgstr "Ujemanje"
 
 #: src/fsearch_database_preferences_widget.c:706
 msgid "Applies To"
-msgstr ""
+msgstr "Velja za"
 
 #: src/fsearch_database_preferences_widget.c:864 src/fsearch_window.c:742
 #: src/menus.ui:219 src/menus.ui:267
 msgid "Path"
-msgstr ""
+msgstr "Pot"
 
 #: src/fsearch_database_preferences_widget.ui:78
 msgid "Enter path…"
-msgstr ""
+msgstr "Vnesite pot …"
 
 #: src/fsearch_database_preferences_widget.ui:97
 #: src/fsearch_database_preferences_widget.ui:372
@@ -894,191 +1032,195 @@ msgid ""
 "                                            database\n"
 "                                        "
 msgstr ""
+"Dodajte pot, v katero želite biti vključeni\n"
+"                                            zbirka podatkov"
 
 #: src/fsearch_database_preferences_widget.ui:176
 msgid "Attempt to monitor"
-msgstr ""
+msgstr "Poskus spremljanja"
 
 #: src/fsearch_database_preferences_widget.ui:191
 msgid "Scan after launch"
-msgstr ""
+msgstr "Skeniraj po zagonu"
 
 #: src/fsearch_database_preferences_widget.ui:206
 msgid "Stay on one file system"
-msgstr ""
+msgstr "Ostanite na enem datotečnem sistemu"
 
 #: src/fsearch_database_preferences_widget.ui:221
 msgid "Rescan every"
-msgstr ""
+msgstr "Ponovno skeniraj vsak"
 
 #: src/fsearch_database_preferences_widget.ui:254
 msgid "Hours:"
-msgstr ""
+msgstr "ure:"
 
 #: src/fsearch_database_preferences_widget.ui:298
 msgid "Minutes:"
-msgstr ""
+msgstr "minute:"
 
 #: src/fsearch_database_preferences_widget.ui:310
 msgid "30"
-msgstr ""
+msgstr "30"
 
 #: src/fsearch_database_preferences_widget.ui:391
 msgid "Remove selected path"
-msgstr ""
+msgstr "Odstrani izbrano pot"
 
 #: src/fsearch_database_preferences_widget.ui:418
 msgid "Include"
-msgstr ""
+msgstr "Vključi"
 
 #: src/fsearch_database_preferences_widget.ui:477
 msgid ""
 "Add exclude rule\n"
 "                                                "
 msgstr ""
+"Dodajte pravilo za izključitev"
 
 #: src/fsearch_database_preferences_widget.ui:495
 msgid ""
 "Remove selected path\n"
 "                                                "
 msgstr ""
+"Odstrani izbrano pot"
 
 #: src/fsearch_database_preferences_widget.ui:512
 msgid "Restore default exclude list"
-msgstr ""
+msgstr "Obnovi privzeti seznam izključitev"
 
 #: src/fsearch_database_preferences_widget.ui:541
 msgid "Exclude hidden files and folders"
-msgstr ""
+msgstr "Izključite skrite datoteke in mape"
 
 #: src/fsearch_database_preferences_widget.ui:563
 msgid "Exclude"
-msgstr ""
+msgstr "Izključi"
 
 #: src/fsearch_file_utils.c:161
 msgctxt "Will be followed by the path of the file."
 msgid "Error when removing file"
-msgstr ""
+msgstr "Napaka pri odstranjevanju datoteke"
 
 #: src/fsearch_file_utils.c:163
 msgid "Failed to get path"
-msgstr ""
+msgstr "Poti ni bilo mogoče pridobiti"
 
 #: src/fsearch_file_utils.c:277
 msgctxt "Will be followed by the file path."
 msgid "Error when getting information from file"
-msgstr ""
+msgstr "Napaka pri pridobivanju informacij iz datoteke"
 
 #: src/fsearch_file_utils.c:279
 msgid "Failed to get application information"
-msgstr ""
+msgstr "Podatkov o aplikaciji ni bilo mogoče pridobiti"
 
 #: src/fsearch_file_utils.c:294
 msgctxt "Will be followed by the content type string."
 msgid "Error when getting information for content type"
-msgstr ""
+msgstr "Napaka pri pridobivanju informacij za vrsto vsebine"
 
 #: src/fsearch_file_utils.c:296
 msgid "No default application registered"
-msgstr ""
+msgstr "Privzeta aplikacija ni registrirana"
 
 #: src/fsearch_file_utils.c:524
 msgctxt "Will be followed by the path of the folder."
 msgid "Error when opening parent folder"
-msgstr ""
+msgstr "Napaka pri odpiranju nadrejene mape"
 
 #: src/fsearch_file_utils.c:526
 msgid "Failed to get parent path"
-msgstr ""
+msgstr "Nadrejene poti ni bilo mogoče pridobiti"
 
 #: src/fsearch_file_utils.c:530
 msgctxt "Will be followed by the path of the folder."
 msgid "Error while opening folder"
-msgstr ""
+msgstr "Napaka pri odpiranju mape"
 
 #: src/fsearch_file_utils.c:533
 msgid "Failed to build open command"
-msgstr ""
+msgstr "Ukaza za odpiranje ni bilo mogoče zgraditi"
 
 #: src/fsearch_file_utils.c:589
 msgid "Folder"
-msgstr ""
+msgstr "Mapa"
 
 #: src/fsearch_file_utils.c:595
 msgid "Unknown Type"
-msgstr ""
+msgstr "Neznana vrsta"
 
 #: src/fsearch_filter.c:112
 msgid "All"
-msgstr ""
+msgstr "Vse"
 
 #: src/fsearch_filter.c:115
 msgid "Applications"
-msgstr ""
+msgstr "Aplikacije"
 
 #: src/fsearch_filter.c:116
 msgid "Archives"
-msgstr ""
+msgstr "Arhivi"
 
 #: src/fsearch_filter.c:117
 msgid "Audio"
-msgstr ""
+msgstr "Avdio"
 
 #: src/fsearch_filter.c:118
 msgid "Documents"
-msgstr ""
+msgstr "Dokumenti"
 
 #: src/fsearch_filter.c:119
 msgid "Pictures"
-msgstr ""
+msgstr "Slike"
 
 #: src/fsearch_filter.c:120
 msgid "Videos"
-msgstr ""
+msgstr "Videoposnetki"
 
 #: src/fsearch_filter_editor.c:79
 msgid "Macro names must not contain `:` characters."
-msgstr ""
+msgstr "Imena makrov ne smejo vsebovati znakov `:`."
 
 #: src/fsearch_filter_editor.c:105 src/fsearch_preferences_dialog.c:332
 msgid "_OK"
-msgstr ""
+msgstr "_V redu"
 
 #: src/fsearch_filter_editor.ui:10 src/fsearch_filter_preferences_widget.c:156
 msgid "Edit filter"
-msgstr ""
+msgstr "Uredi filter"
 
 #: src/fsearch_filter_editor.ui:50
 msgid "Name:"
-msgstr ""
+msgstr "ime:"
 
 #: src/fsearch_filter_editor.ui:61
 msgid "The unique name of this filter"
-msgstr ""
+msgstr "Edinstveno ime tega filtra"
 
 #: src/fsearch_filter_editor.ui:64
 msgid "Unique filter name"
-msgstr ""
+msgstr "Edinstveno ime filtra"
 
 #: src/fsearch_filter_editor.ui:73
 msgid "Search in path"
-msgstr ""
+msgstr "Išči po poti"
 
 #: src/fsearch_filter_editor.ui:87
 msgid "Enable regular expressions"
-msgstr ""
+msgstr "Omogoči regularne izraze"
 
 #: src/fsearch_filter_editor.ui:101
 msgid "Match case"
-msgstr ""
+msgstr "Primer vžigalice"
 
 #: src/fsearch_filter_editor.ui:146
 msgid "Query:"
-msgstr ""
+msgstr "poizvedba:"
 
 #: src/fsearch_filter_editor.ui:160
 msgid "Macro:"
-msgstr ""
+msgstr "Makro:"
 
 #: src/fsearch_filter_editor.ui:171
 msgid ""
@@ -1086,227 +1228,228 @@ msgid ""
 "search entry by typing its text followed by ':'\n"
 "                "
 msgstr ""
+"Makro za ta filter. Makro vam omogoča dostop do tega filtra iz iskalnega vnosa tako, da vnesete njegovo besedilo, ki mu sledi ':'"
 
 #: src/fsearch_filter_preferences_widget.c:133
 msgid "Add filter"
-msgstr ""
+msgstr "Dodajte filter"
 
 #: src/fsearch_filter_preferences_widget.c:315 src/fsearch_window.c:735
 #: src/menus.ui:215 src/menus.ui:263
 msgid "Name"
-msgstr ""
+msgstr "Ime"
 
 #: src/fsearch_filter_preferences_widget.c:316
 msgid "Macro"
-msgstr ""
+msgstr "Makro"
 
 #: src/fsearch_filter_preferences_widget.c:317
 msgid "Query"
-msgstr ""
+msgstr "Poizvedba"
 
 #: src/fsearch_filter_preferences_widget.ui:77
 msgid "Add new filter"
-msgstr ""
+msgstr "Dodaj nov filter"
 
 #: src/fsearch_filter_preferences_widget.ui:95
 msgid "Remove selected filter"
-msgstr ""
+msgstr "Odstrani izbrani filter"
 
 #: src/fsearch_filter_preferences_widget.ui:113
 msgid "Edit selected filter"
-msgstr ""
+msgstr "Uredi izbrani filter"
 
 #: src/fsearch_filter_preferences_widget.ui:129
 msgid "Restore default filters"
-msgstr ""
+msgstr "Obnovi privzete filtre"
 
 #: src/fsearch_listview_popup.c:36
 msgid "Properties…"
-msgstr ""
+msgstr "Lastnosti…"
 
 #: src/fsearch_listview_popup.c:163
 msgid "Other Application…"
-msgstr ""
+msgstr "Druga aplikacija…"
 
 #: src/fsearch_overlay.ui:44
 msgid "Empty Database"
-msgstr ""
+msgstr "Prazna zbirka podatkov"
 
 #: src/fsearch_overlay.ui:60
 msgid "Add folders"
-msgstr ""
+msgstr "Dodajte mape"
 
 #: src/fsearch_overlay.ui:108
 msgid "Loading Database…"
-msgstr ""
+msgstr "Nalaganje zbirke podatkov …"
 
 #: src/fsearch_overlay.ui:123
 msgid "This won't take long."
-msgstr ""
+msgstr "To ne bo trajalo dolgo."
 
 #: src/fsearch_overlay.ui:171 src/fsearch_statusbar.ui:312
 msgid "Updating Database…"
-msgstr ""
+msgstr "Posodabljanje zbirke podatkov …"
 
 #: src/fsearch_overlay.ui:186 src/fsearch_overlay.ui:383
 msgid "This may take a while."
-msgstr ""
+msgstr "To lahko traja nekaj časa."
 
 #: src/fsearch_overlay.ui:241
 msgid "Empty Query"
-msgstr ""
+msgstr "Prazna poizvedba"
 
 #: src/fsearch_overlay.ui:256
 msgid "Press <b>Ctrl + F</b> and start typing."
-msgstr ""
+msgstr "Pritisnite <b>Ctrl + F</b> in začnite tipkati."
 
 #: src/fsearch_overlay.ui:304
 msgid "No Results Found"
-msgstr ""
+msgstr "Ni rezultatov"
 
 #: src/fsearch_overlay.ui:319
 msgid "Try a different search"
-msgstr ""
+msgstr "Poskusite z drugačnim iskanjem"
 
 #: src/fsearch_overlay.ui:368
 msgid "Sorting results…"
-msgstr ""
+msgstr "Razvrščanje rezultatov ..."
 
 #: src/fsearch_preferences.ui:7 src/fsearch_window.ui:251 src/menus.ui:84
 msgid "Preferences"
-msgstr ""
+msgstr "Nastavitve"
 
 #: src/fsearch_preferences.ui:76
 msgid "Enable dark theme"
-msgstr ""
+msgstr "Omogoči temno temo"
 
 #: src/fsearch_preferences.ui:97
 msgid "Enable client-side decorations (requires restart)"
-msgstr ""
+msgstr "Omogoči okraske na strani odjemalca (zahteva ponovni zagon)"
 
 #: src/fsearch_preferences.ui:117
 msgid "Use binary units instead of decimal units"
-msgstr ""
+msgstr "Namesto decimalnih enot uporabite binarne enote"
 
 #: src/fsearch_preferences.ui:138
 msgid "Remember window size"
-msgstr ""
+msgstr "Zapomni si velikost okna"
 
 #: src/fsearch_preferences.ui:159
 msgid "Exit on Escape"
-msgstr ""
+msgstr "Izhod na Escape"
 
 #: src/fsearch_preferences.ui:202
 msgid "with keyboard shortcuts or menu entries"
-msgstr ""
+msgstr "z bližnjičnimi tipkami ali vnosi v menije"
 
 #: src/fsearch_preferences.ui:223
 msgid "with double click"
-msgstr ""
+msgstr "z dvojnim klikom"
 
 #: src/fsearch_preferences.ui:257
 msgid "Behaviour after successfully opening a file:"
-msgstr ""
+msgstr "Vedenje po uspešnem odprtju datoteke:"
 
 #: src/fsearch_preferences.ui:273
 msgid "Nothing"
-msgstr ""
+msgstr "nič"
 
 #: src/fsearch_preferences.ui:274
 msgid "Minimize"
-msgstr ""
+msgstr "Zmanjšaj"
 
 #: src/fsearch_preferences.ui:275
 msgid "Close"
-msgstr ""
+msgstr "Zapri"
 
 #: src/fsearch_preferences.ui:309
 msgid "General:"
-msgstr ""
+msgstr "Splošno:"
 
 #: src/fsearch_preferences.ui:344
 msgid "Show highlighted search terms"
-msgstr ""
+msgstr "Pokaži označene iskalne izraze"
 
 #: src/fsearch_preferences.ui:366
 msgid "Show tooltips"
-msgstr ""
+msgstr "Pokaži nasvete orodij"
 
 #: src/fsearch_preferences.ui:387
 msgid "Show icons in name column"
-msgstr ""
+msgstr "Pokaži ikone v stolpcu z imenom"
 
 #: src/fsearch_preferences.ui:408
 msgid "Remember column configuration"
-msgstr ""
+msgstr "Zapomni si konfiguracijo stolpca"
 
 #: src/fsearch_preferences.ui:429
 msgid "Remember sort order"
-msgstr ""
+msgstr "Zapomni si vrstni red"
 
 #: src/fsearch_preferences.ui:450
 msgid "Open path with double click in path column"
-msgstr ""
+msgstr "Odprite pot z dvoklikom v stolpcu poti"
 
 #: src/fsearch_preferences.ui:471
 msgid "Single click to open"
-msgstr ""
+msgstr "En klik za odpiranje"
 
 #: src/fsearch_preferences.ui:492
 msgid "Launch desktop files"
-msgstr ""
+msgstr "Zagon namiznih datotek"
 
 #: src/fsearch_preferences.ui:519
 msgid "Results:"
-msgstr ""
+msgstr "Rezultati:"
 
 #: src/fsearch_preferences.ui:560
 msgid "Show database indexing status"
-msgstr ""
+msgstr "Prikaži stanje indeksiranja zbirke podatkov"
 
 #: src/fsearch_preferences.ui:587
 msgid "Statusbar:"
-msgstr ""
+msgstr "Vrstica stanja:"
 
 #: src/fsearch_preferences.ui:628
 msgid "Show warning dialogs when:"
-msgstr ""
+msgstr "Pokaži opozorilna pogovorna okna, ko:"
 
 #: src/fsearch_preferences.ui:638
 msgid "file / folder failed to open"
-msgstr ""
+msgstr "datoteke/mape ni bilo mogoče odpreti"
 
 #: src/fsearch_preferences.ui:667
 msgid "Dialogs:"
-msgstr ""
+msgstr "Pogovorna okna:"
 
 #: src/fsearch_preferences.ui:692
 msgid "Interface"
-msgstr ""
+msgstr "Vmesnik"
 
 #: src/fsearch_preferences.ui:711
 msgid "Search in path when query contains path separators"
-msgstr ""
+msgstr "Išči po poti, ko poizvedba vsebuje ločila poti"
 
 #: src/fsearch_preferences.ui:730
 msgid "Search as you type"
-msgstr ""
+msgstr "Iščite med tipkanjem"
 
 #: src/fsearch_preferences.ui:750
 msgid "Hide results when search is empty"
-msgstr ""
+msgstr "Skrij rezultate, ko je iskanje prazno"
 
 #: src/fsearch_preferences.ui:769
 msgid "Match case when query contains at least one upper case character"
-msgstr ""
+msgstr "Ujemanje velikih črk, ko poizvedba vsebuje vsaj eno veliko črko"
 
 #: src/fsearch_preferences.ui:801
 msgid "Filter:"
-msgstr ""
+msgstr "Filter:"
 
 #: src/fsearch_preferences.ui:822 src/fsearch_window.ui:639
 msgid "Search"
-msgstr ""
+msgstr "Iskanje"
 
 #: src/fsearch_preferences.ui:855
 msgid ""
@@ -1318,6 +1461,11 @@ msgid ""
 "Note that not all system themes provide such a darker variant, therefore "
 "enabling this setting might not have an effect."
 msgstr ""
+"<b>Omogoči temno temo:</b>\n"
+"\n"
+"Če je omogočeno, mora sistemska tema uporabiti temnejši slog za aplikacijo <i>(tj. temni elementi uporabniškega vmesnika na svetlem besedilu)</i>.\n"
+"\n"
+"Upoštevajte, da vse sistemske teme ne ponujajo tako temnejše različice, zato omogočanje te nastavitve morda ne bo imelo učinka."
 
 #: src/fsearch_preferences.ui:873
 msgid ""
@@ -1331,6 +1479,12 @@ msgid ""
 "This resembles a more traditional UI layout and takes a little bit more "
 "space."
 msgstr ""
+"<b>Omogoči okraske na strani odjemalca:</b>\n"
+"\n"
+"Če je omogočeno, sta iskalni vnos in glavni meni prikazana v naslovni vrstici okna.\n"
+"\n"
+"Če je onemogočen, je glavni meni prikazan kot menijska vrstica z iskalnim vnosom pod njim.\n"
+"To spominja na bolj tradicionalno postavitev uporabniškega vmesnika in zavzame malo več prostora."
 
 #: src/fsearch_preferences.ui:893
 msgid ""
@@ -1343,6 +1497,12 @@ msgid ""
 "\t• <b>Decimal  units:</b> This refers to decimal SI prefixes <i>(e.g. 1 kB "
 "= 1000 bytes)</i>"
 msgstr ""
+"<b>Uporabite binarne enote namesto decimalnih enot:</b>\n"
+"\n"
+"Ta nastavitev nadzira, kako so prikazane velikosti datotek.\n"
+"\n"
+"\t• <b>Binarne enote:</b> To se nanaša na binarne predpone IEC <i>(npr. 1 KiB = 1024 bajtov)</i>\n"
+"\t• <b>Decimalne enote:</b> To se nanaša na decimalne predpone SI <i>(npr. 1 kB = 1000 bajtov)</i>"
 
 #: src/fsearch_preferences.ui:913
 msgid ""
@@ -1354,6 +1514,11 @@ msgid ""
 "Note that some window managers ignore this request and force the window to "
 "have a different size."
 msgstr ""
+"<b>Zapomni si velikost okna:</b>\n"
+"\n"
+"Če je omogočeno, bo velikost okna iz prejšnje seje obnovljena, ko odprete okno FSearch.\n"
+"\n"
+"Upoštevajte, da nekateri upravitelji oken ignorirajo to zahtevo in vsilijo, da ima okno drugačno velikost."
 
 #: src/fsearch_preferences.ui:932
 msgid ""
@@ -1371,6 +1536,16 @@ msgid ""
 "\t• <b>keyboard shortcuts or menu entries</b> and/or\n"
 "\t• <b>mouse click</b>"
 msgstr ""
+"<b>Vedenje po uspešnem odprtju datoteke:</b>\n"
+"\n"
+"Ko je bila datoteka/mapa uspešno odprta, je mogoče izvesti eno od naslednjih dejanj:\n"
+"\t• <b>Nič:</b> Nič se ne zgodi.\n"
+"                        • <b>Pomanjšaj:</b> Trenutno izbrano okno FSearch postane pomanjšano.\n"
+"\t• <b>Zapri:</b> Zapustite FSearch.\n"
+"\n"
+"Konfigurirate lahko, ali naj se ta dejanja sprožijo, ko je bila datoteka odprta z\n"
+"\t• <b>bližnjice na tipkovnici ali vnosi v meni</b> in/ali\n"
+"\t• <b>klik z miško</b>"
 
 #: src/fsearch_preferences.ui:956
 msgid ""
@@ -1386,6 +1561,14 @@ msgid ""
 "This also works for regular expressions and wildcard expressions starting or "
 "ending with an asterisk. "
 msgstr ""
+"<b>Pokaži označene iskalne izraze:</b>\n"
+"\n"
+"Če je omogočeno, bodo iskalni izrazi označeni v pogledu rezultatov. Ko na primer iščete \\\"foo\\\", bodo vsi pojavi <i>foo</i> v imenih datotek/map označeni s krepkimi znaki:\n"
+"\n"
+"\t<b>foo</b>bar.txt\n"
+"\tdatoteka.<b>foo</b>\n"
+"\n"
+"To deluje tudi za regularne izraze in izraze z nadomestnimi znaki, ki se začnejo ali končajo z zvezdico."
 
 #: src/fsearch_preferences.ui:978
 msgid ""
@@ -1394,6 +1577,9 @@ msgid ""
 "If enabled, the results view will show the full path of the focused file/"
 "folder in a small tooltip window."
 msgstr ""
+"<b>Pokaži nasvete orodij:</b>\n"
+"\n"
+"Če je omogočeno, bo pogled rezultatov prikazal celotno pot izbrane datoteke/mape v majhnem oknu z opisom orodja."
 
 #: src/fsearch_preferences.ui:995
 msgid ""
@@ -1401,6 +1587,9 @@ msgid ""
 "\n"
 "If enabled, file/folder icons will be shown in the name column."
 msgstr ""
+"<b>Pokaži ikone v stolpcu imena:</b>\n"
+"\n"
+"Če je omogočeno, bodo ikone datotek/map prikazane v stolpcu z imenom."
 
 #: src/fsearch_preferences.ui:1012
 msgid ""
@@ -1410,6 +1599,9 @@ msgid ""
 "session will be restored when you open an FSearch window. This includes the "
 "size and visibility of all columns."
 msgstr ""
+"<b>Zapomni si konfiguracijo stolpcev:</b>\n"
+"\n"
+"Če je omogočeno, bo konfiguracija stolpcev pogleda rezultatov iz prejšnje seje obnovljena, ko odprete okno FSearch. To vključuje velikost in vidnost vseh stolpcev."
 
 #: src/fsearch_preferences.ui:1029
 msgid ""
@@ -1418,6 +1610,9 @@ msgid ""
 "If enabled, the sort order of the results view from the previous session "
 "will be restored when you open an FSearch window."
 msgstr ""
+"<b>Zapomni si vrstni red razvrščanja:</b>\n"
+"\n"
+"Če je omogočeno, bo vrstni red pogleda rezultatov iz prejšnje seje obnovljen, ko odprete okno FSearch."
 
 #: src/fsearch_preferences.ui:1046
 msgid ""
@@ -1425,6 +1620,9 @@ msgid ""
 "\n"
 "If enabled, double clicking in the path column will open the selected path."
 msgstr ""
+"<b>Odprite pot z dvoklikom v stolpcu poti:</b>\n"
+"\n"
+"Če je omogočeno, bo dvojni klik v stolpcu poti odprl izbrano pot."
 
 #: src/fsearch_preferences.ui:1063
 msgid ""
@@ -1434,6 +1632,9 @@ msgid ""
 "want to select a file/folder while this setting is active, you need to hold "
 "<i>Ctrl</i> at the same time while clicking the file/folder."
 msgstr ""
+"<b>En klik za odpiranje:</b>\n"
+"\n"
+"Če je omogočeno, bo izbrana datoteka/mapa odprta z enim klikom. Če želite izbrati samo datoteko/mapo, medtem ko je ta nastavitev aktivna, morate istočasno držati <i>Ctrl</i>, medtem ko kliknete datoteko/mapo."
 
 #: src/fsearch_preferences.ui:1080
 msgid ""
@@ -1442,6 +1643,9 @@ msgid ""
 "If enabled, the path that is currently being indexed is displayed in the "
 "statusbar."
 msgstr ""
+"<b>Pokaži stanje indeksiranja zbirke podatkov:</b>\n"
+"\n"
+"Če je omogočeno, je pot, ki se trenutno indeksira, prikazana v vrstici stanja."
 
 #: src/fsearch_preferences.ui:1097
 msgid ""
@@ -1450,6 +1654,9 @@ msgid ""
 "If enabled, a warning dialog is displayed when a file or folder failed to "
 "open."
 msgstr ""
+"<b>Pokaži opozorilna pogovorna okna:</b>\n"
+"\n"
+"Če je omogočeno, se prikaže opozorilno pogovorno okno, ko se datoteka ali mapa ne odpre."
 
 #: src/fsearch_preferences.ui:1114
 msgid ""
@@ -1458,6 +1665,9 @@ msgid ""
 "If enabled, search terms containing path separators (i.e. \"/\") will be "
 "automatically matched against the full path of a file or folder."
 msgstr ""
+"<b>Išči po poti, ko poizvedba vsebuje ločila poti:</b>\n"
+"\n"
+"Če je omogočeno, bodo iskalni izrazi, ki vsebujejo ločila poti (tj. \\\"/\\\"), samodejno primerjani s celotno potjo datoteke ali mape."
 
 #: src/fsearch_preferences.ui:1131
 msgid ""
@@ -1467,6 +1677,9 @@ msgid ""
 "trigger a case-sensitive search. This means a search term like <i>Foo</i> "
 "will match <i>FooBar.txt</i> but not <i>foobar.txt</i>."
 msgstr ""
+"<b>Ujemanje velikih črk, ko poizvedba vsebuje vsaj eno veliko črko:</b>\n"
+"\n"
+"Če je omogočeno, bodo iskalni izrazi, ki vsebujejo vsaj eno veliko črko, sprožili iskanje, ki razlikuje med velikimi in malimi črkami. To pomeni, da se bo iskalni izraz, kot je <i>Foo</i>, ujemal z <i>FooBar.txt</i>, ne pa tudi z <i>foobar.txt</i>."
 
 #: src/fsearch_preferences.ui:1148
 msgid ""
@@ -1477,6 +1690,11 @@ msgid ""
 "If disabled, all files and folders will be displayed when the search entry "
 "is empty."
 msgstr ""
+"<b>Skrij rezultate, ko je iskanje prazno:</b>\n"
+"\n"
+"Če je omogočeno, rezultati iskanja niso prikazani, ko je iskalni vnos prazen.\n"
+"\n"
+"Če je onemogočeno, bodo vse datoteke in mape prikazane, ko bo iskalni vnos prazen."
 
 #: src/fsearch_preferences.ui:1167
 msgid ""
@@ -1487,6 +1705,11 @@ msgid ""
 "If disabled, the search is only updated when you hit <i>Enter</i> or press "
 "the search button. "
 msgstr ""
+"<b>Išči med tipkanjem:</b>\n"
+"\n"
+"Če je omogočeno, se iskanje samodejno posodobi z vsakim pritiskom na tipko.\n"
+"\n"
+"Če je onemogočeno, se iskanje posodobi šele, ko pritisnete <i>Enter</i> ali pritisnete gumb za iskanje."
 
 #: src/fsearch_preferences.ui:1186
 msgid ""
@@ -1495,6 +1718,9 @@ msgid ""
 "If enabled, the database will be updated automatically in the background "
 "when you start FSearch."
 msgstr ""
+"<b>Posodobi bazo podatkov ob začetku:</b>\n"
+"\n"
+"Če je omogočeno, se baza podatkov samodejno posodobi v ozadju, ko zaženete FSearch."
 
 #: src/fsearch_preferences.ui:1203
 msgid ""
@@ -1508,6 +1734,13 @@ msgid ""
 "\t• <b>One Filesystem:</b> If enabled, FSearch won't cross filesystem "
 "boundaries for this folder"
 msgstr ""
+"<b>Vključene mape:</b>\n"
+"\n"
+"Ta seznam vsebuje vse mape, ki jih želite vključiti v bazo podatkov.\n"
+"\n"
+"\t• <b>Aktivno:</b> Če je omogočeno, bo pot vključena v zbirko podatkov, v kateri se bo iskalo.\n"
+"\t• <b>Pot:</b> Celotna pot, ki bo vključena.\n"
+"\t• <b>En datotečni sistem:</b> če je omogočen, FSearch ne bo prestopil meja datotečnega sistema za to mapo"
 
 #: src/fsearch_preferences.ui:1224
 msgid ""
@@ -1516,6 +1749,9 @@ msgid ""
 "This button opens a dialog where you can select a folder you want to include "
 "in the database for searching."
 msgstr ""
+"<b>Dodaj mapo v bazo podatkov:</b>\n"
+"\n"
+"Ta gumb odpre pogovorno okno, kjer lahko izberete mapo, ki jo želite vključiti v zbirko podatkov za iskanje."
 
 #: src/fsearch_preferences.ui:1241
 msgid ""
@@ -1525,6 +1761,9 @@ msgid ""
 "include that folder in the database. This is useful for adding a path "
 "directly without browsing for it."
 msgstr ""
+"<b>Dodajte določeno pot:</b>\n"
+"\n"
+"Tukaj vnesite celotno pot do mape in kliknite gumb poleg nje, da to mapo vključite v bazo podatkov. To je uporabno za neposredno dodajanje poti brez brskanja po njej."
 
 #: src/fsearch_preferences.ui:1258
 msgid ""
@@ -1532,6 +1771,9 @@ msgid ""
 "\n"
 "This removes the selected folder from the list of included folders."
 msgstr ""
+"<b>Odstrani izbrano vrstico:</b>\n"
+"\n"
+"S tem odstranite izbrano mapo s seznama vključenih map."
 
 #: src/fsearch_preferences.ui:1275
 msgid ""
@@ -1544,6 +1786,11 @@ msgid ""
 "system resources per watched folder. For large directory trees with many "
 "files the system may run out of resources to watch them all."
 msgstr ""
+"<b>Poskusi nadzora:</b>\n"
+"\n"
+"Če je omogočeno, FSearch opazuje to mapo za spremembe in samodejno posodablja zbirko podatkov, tako da vam ni treba znova ročno skenirati.\n"
+"\n"
+"Spremljanje ni podprto v vseh datotečnih sistemih in uporablja majhno količino sistemskih virov na opazovano mapo. Pri velikih imeniških drevesih z veliko datotekami lahko sistemu zmanjka sredstev za ogled vseh."
 
 #: src/fsearch_preferences.ui:1294
 msgid ""
@@ -1552,6 +1799,9 @@ msgid ""
 "If enabled, this folder is rescanned every time FSearch starts, so the "
 "database reflects any changes made while FSearch wasn't running."
 msgstr ""
+"<b>Skeniraj po zagonu:</b>\n"
+"\n"
+"Če je omogočeno, se ta mapa znova pregleda vsakič, ko se FSearch zažene, tako da zbirka podatkov odraža vse spremembe, ki so bile narejene, ko FSearch ni deloval."
 
 #: src/fsearch_preferences.ui:1311
 msgid ""
@@ -1561,6 +1811,9 @@ msgid ""
 "folder. Mounted file systems below it (e.g. external drives or network "
 "shares) are skipped."
 msgstr ""
+"<b>Ostanite na enem datotečnem sistemu:</b>\n"
+"\n"
+"Če je omogočeno, FSearch med skeniranjem te mape ne bo prestopil meja datotečnega sistema. Nameščeni datotečni sistemi pod njim (npr. zunanji diski ali omrežni deli) so preskočeni."
 
 #: src/fsearch_preferences.ui:1328
 msgid ""
@@ -1572,6 +1825,11 @@ msgid ""
 "This is useful for folders on file systems that can't be monitored for "
 "changes."
 msgstr ""
+"<b>Ponovno skeniraj vsak:</b>\n"
+"\n"
+"Če je omogočeno, se ta mapa samodejno ponovno pregleda v danem intervalu. Uporabite polja za ure in minute, da nastavite, kako pogosto se ponovi pregled.\n"
+"\n"
+"To je uporabno za mape v datotečnih sistemih, ki jih ni mogoče spremljati glede sprememb."
 
 #: src/fsearch_preferences.ui:1347
 msgid ""
@@ -1592,6 +1850,15 @@ msgid ""
 "\t• <b>Applies To:</b> Whether the rule affects <i>Files</i>, <i>Folders</i> "
 "or both."
 msgstr ""
+"<b>Izključi pravila:</b>\n"
+"\n"
+"Ta seznam vsebuje pravila za datoteke in mape, ki jih želite izključiti iz zbirke podatkov.\n"
+"\n"
+"\t• <b>Aktivno:</b> Če je omogočeno, se pravilo uporabi in ujemajoči se elementi so izključeni.\n"
+"\t• <b>Vzorec:</b> Besedilo se ujema z vsakim elementom, interpretirano glede na vrsto.\n"
+"\t• <b>Tip:</b> Kako se vzorec interpretira — <i>Literal</i> (natančno besedilo), <i>Nadomestni znak</i> (z * in?) ali <i>Regex</i> (regularni izraz).\n"
+"\t• <b>Ujemanje:</b> ali se vzorec ujema s <i>celotno potjo</i> predmeta ali samo z njegovim <i>osnovnim imenom</i> (ime brez poti).\n"
+"\t• <b>Velja za:</b> Ali pravilo vpliva na <i>Datoteke</i>, <i>Mape</i> ali oboje."
 
 #: src/fsearch_preferences.ui:1370
 msgid ""
@@ -1600,6 +1867,9 @@ msgid ""
 "This adds a new, empty rule to the list. Edit its Pattern, Type, Match and "
 "Applies To columns to control what gets excluded from the database."
 msgstr ""
+"<b>Dodaj pravilo za izključitev:</b>\n"
+"\n"
+"To na seznam doda novo, prazno pravilo. Uredite njegove stolpce Vzorec, Vrsta, Ujemanje in Velja za, da nadzirate, kaj bo izključeno iz zbirke podatkov."
 
 #: src/fsearch_preferences.ui:1387
 msgid ""
@@ -1607,6 +1877,9 @@ msgid ""
 "\n"
 "This removes the selected rule from the list of exclude rules."
 msgstr ""
+"<b>Odstrani izbrano vrstico:</b>\n"
+"\n"
+"S tem odstranite izbrano pravilo s seznama izključenih pravil."
 
 #: src/fsearch_preferences.ui:1404
 msgid ""
@@ -1616,6 +1889,11 @@ msgid ""
 "\n"
 "⚠ All rules which were created or edited by the user will be lost! ⚠"
 msgstr ""
+"<b>Obnovi privzeta pravila za izključitev:</b>\n"
+"\n"
+"Ta gumb obnovi privzeti nabor pravil za izključitev.\n"
+"\n"
+"⚠ Vsa pravila, ki jih je ustvaril ali uredil uporabnik, bodo izgubljena! ⚠"
 
 #: src/fsearch_preferences.ui:1423
 msgid ""
@@ -1626,6 +1904,9 @@ msgid ""
 "all files or folders which are called either <i>.git</i> or <i>.cache</i> or "
 "end with <i>.swp</i>."
 msgstr ""
+"<b>Izključi datoteke in mape iz zbirke podatkov:</b>\n"
+"\n"
+"To je s podpičjem ločen seznam datotek (ali map), ki jih želite izključiti iz zbirke podatkov. Na primer <i>.git;.cache;*.swp</i> bo izključil vse datoteke ali mape, ki se imenujejo <i>.git</i> ali <i>.cache</i> ali se končajo z <i>.swp</i>."
 
 #: src/fsearch_preferences.ui:1440
 msgid ""
@@ -1634,10 +1915,13 @@ msgid ""
 "If enabled, hidden files and folders will be excluded from the database "
 "<i>(i.e. all files or folders which start with a dot character)</i>."
 msgstr ""
+"<b>Izključi skrite datoteke in mape:</b>\n"
+"\n"
+"Če je omogočeno, bodo skrite datoteke in mape izključene iz zbirke podatkov <i>(tj. vse datoteke ali mape, ki se začnejo s piko)</i>."
 
 #: src/fsearch_preferences.ui:1457
 msgid "Focus a setting to get a detailed description of what it does."
-msgstr ""
+msgstr "Osredotočite se na nastavitev, da dobite podroben opis, kaj počne."
 
 #: src/fsearch_preferences.ui:1470
 msgid ""
@@ -1652,6 +1936,13 @@ msgid ""
 "\n"
 "<i><tt>fsearch --update-database</tt></i>"
 msgstr ""
+"<b>Občasno posodabljajte bazo podatkov v določenem časovnem intervalu:</b>\n"
+"\n"
+"Če je omogočeno in dokler FSearch deluje, se bo zbirka podatkov redno posodabljala v danem časovnem intervalu.\n"
+"\n"
+"Če želite bazo podatkov posodobiti v ozadju, tudi ko FSearch ni zagnan, uporabite orodja, kot sta časovniki cron ali systemd, da občasno sprožite posodobitev z:\n"
+"\n"
+"<i><tt>fsearch --update-database</tt></i>"
 
 #: src/fsearch_preferences.ui:1491
 msgid ""
@@ -1662,6 +1953,9 @@ msgid ""
 "launcher. Otherwise the <i>.desktop</i> file will be opened with the default "
 "handler for this type of files, which is usually a text editor."
 msgstr ""
+"<b>Zagon namiznih datotek:</b>\n"
+"\n"
+"Če je omogočeno, bo aktiviranje datoteke <i>.desktop</i> zagnalo aplikacijo, definirano v tej datoteki. Tako lahko FSearch deluje kot zaganjalnik aplikacij. V nasprotnem primeru bo datoteka <i>.desktop</i> odprta s privzetim upravljalnikom za to vrsto datotek, ki je običajno urejevalnik besedil."
 
 #: src/fsearch_preferences.ui:1508
 msgid ""
@@ -1674,6 +1968,13 @@ msgid ""
 "the filter on demand\n"
 "\t• <b>Query:</b> The search term by which the database should be filtered"
 msgstr ""
+"<b>Filtri:</b>\n"
+"\n"
+"To je seznam vseh razpoložljivih filtrov. Filter je vnaprej določeno iskanje.\n"
+"\n"
+"\t• <b>Ime:</b> edinstven in opisni identifikator filtra\n"
+"\t• <b>Makro:</b> Če vnesete besedilo makra, ki mu sledi ':', lahko omogočite filter na zahtevo\n"
+"\t• <b>Poizvedba:</b> Iskalni izraz, po katerem naj bo podatkovna baza filtrirana"
 
 #: src/fsearch_preferences.ui:1529
 msgid ""
@@ -1681,6 +1982,9 @@ msgid ""
 "\n"
 "This button opens a dialog where you can edit a new filter."
 msgstr ""
+"<b>Dodajte nov filter:</b>\n"
+"\n"
+"Ta gumb odpre pogovorno okno, kjer lahko uredite nov filter."
 
 #: src/fsearch_preferences.ui:1546
 msgid ""
@@ -1688,6 +1992,9 @@ msgid ""
 "\n"
 "This button removes the currently selected filter."
 msgstr ""
+"<b>Odstrani izbrani filter:</b>\n"
+"\n"
+"Ta gumb odstrani trenutno izbrani filter."
 
 #: src/fsearch_preferences.ui:1563
 msgid ""
@@ -1695,6 +2002,9 @@ msgid ""
 "\n"
 "This button opens a dialog where you can edit the selected filter."
 msgstr ""
+"<b>Urejanje izbranega filtra:</b>\n"
+"\n"
+"Ta gumb odpre pogovorno okno, kjer lahko uredite izbrani filter."
 
 #: src/fsearch_preferences.ui:1580
 msgid ""
@@ -1704,6 +2014,11 @@ msgid ""
 "\n"
 "⚠ All filters which were created or edited by the user will be lost! ⚠"
 msgstr ""
+"<b>Obnovi privzete filtre:</b>\n"
+"\n"
+"Ta gumb obnovi privzeto konfiguracijo filtra.\n"
+"\n"
+"⚠ Vsi filtri, ki jih je ustvaril ali uredil uporabnik, bodo izgubljeni! ⚠"
 
 #: src/fsearch_preferences.ui:1599
 msgid ""
@@ -1712,128 +2027,137 @@ msgid ""
 "If enabled, FSearch exits when the Escape key is pressed instead of the "
 "window being minimized."
 msgstr ""
+"<b>Izhod na Escape:</b>\n"
+"\n"
+"Če je omogočeno, se FSearch zapre, ko pritisnete tipko Escape, namesto da se okno pomanjša."
 
 #: src/fsearch_preferences.ui:1618 src/fsearch_window.ui:290
 #: src/fsearch_window.ui:415 src/menus.ui:150 src/menus.ui:156
 msgid "Help"
-msgstr ""
+msgstr "pomoč"
 
 #: src/fsearch_preferences_dialog.c:238
 msgid "Database"
-msgstr ""
+msgstr "Baza podatkov"
 
 #: src/fsearch_result_view.c:381
 msgid "Invalid row data"
-msgstr ""
+msgstr "Neveljavni podatki vrstice"
 
 #: src/fsearch_statusbar.c:58
 #, c-format
 msgid "%'d Item"
-msgstr ""
+msgstr "%'d element"
 
 #: src/fsearch_statusbar.c:58 src/fsearch_statusbar.c:186
 #, c-format
 msgid "%'d Items"
-msgstr ""
+msgstr "%'d predmetov"
 
 #: src/fsearch_statusbar.c:80
 msgid "Querying…"
-msgstr ""
+msgstr "Poizvedovanje ..."
 
 #: src/fsearch_statusbar.c:175
 msgid "Loading…"
-msgstr ""
+msgstr "Nalaganje ..."
 
 #: src/fsearch_statusbar.c:180
 msgid "Scanning…"
-msgstr ""
+msgstr "skeniranje ..."
 
 #: src/fsearch_statusbar.ui:52
 msgid "Number of Search Results"
-msgstr ""
+msgstr "Število rezultatov iskanja"
 
 #: src/fsearch_statusbar.ui:53
 msgid "0 Items"
-msgstr ""
+msgstr "0 predmetov"
 
 #: src/fsearch_statusbar.ui:106
 msgid "Cancel"
-msgstr ""
+msgstr "Prekliči"
 
 #: src/fsearch_statusbar.ui:153
 msgid "Index:"
-msgstr ""
+msgstr "Indeks:"
 
 #: src/fsearch_statusbar.ui:228
 msgid "Number of selected folders"
-msgstr ""
+msgstr "Število izbranih map"
 
 #: src/fsearch_statusbar.ui:229 src/fsearch_statusbar.ui:254
 msgid "0/0"
-msgstr ""
+msgstr "0/0"
 
 #: src/fsearch_statusbar.ui:253
 msgid "Number of selected files"
-msgstr ""
+msgstr "Število izbranih datotek"
 
 #: src/fsearch_statusbar.ui:328 src/fsearch_window.ui:103
 msgid "Cancel database update"
-msgstr ""
+msgstr "Prekliči posodobitev baze podatkov"
 
 #: src/fsearch_statusbar.ui:369
 msgid "Number of database items"
-msgstr ""
+msgstr "Število elementov baze podatkov"
 
 #: src/fsearch_statusbar.ui:370
 msgid "(empty)"
-msgstr ""
+msgstr "(prazno)"
 
 #: src/fsearch_statusbar.ui:407
 msgid ""
 "Search term contains upper case characters.\n"
 "<b>Match Case</b> was temporarily activated for this term."
 msgstr ""
+"Iskalni izraz vsebuje velike črke.\n"
+"<b>Match Case</b> je bil začasno aktiviran za ta izraz."
 
 #: src/fsearch_statusbar.ui:438 src/fsearch_statusbar.ui:491
 msgid "CASE"
-msgstr ""
+msgstr "PRIMER"
 
 #: src/fsearch_statusbar.ui:514
 msgid ""
 "Search term contains path separators.\n"
 "<b>Search in Path</b> was temporarily activated for this term."
 msgstr ""
+"Iskalni izraz vsebuje ločila poti.\n"
+"<b>Iskanje po poti</b> je bilo začasno aktivirano za ta izraz."
 
 #: src/fsearch_statusbar.ui:545 src/fsearch_statusbar.ui:598
 msgid "PATH"
-msgstr ""
+msgstr "POT"
 
 #: src/fsearch_statusbar.ui:651
 msgid "REGEX"
-msgstr ""
+msgstr "REGEX"
 
 #: src/fsearch_statusbar.ui:726
 msgid ""
 "The search was cancelled before it finished.\n"
 "<b>These results are incomplete.</b>"
 msgstr ""
+"Iskanje je bilo preklicano, preden se je končalo.\n"
+"<b>Ti rezultati so nepopolni.</b>"
 
 #: src/fsearch_statusbar.ui:756
 msgid "PARTIAL"
-msgstr ""
+msgstr "DELNO"
 
 #: src/fsearch_welcome_dialog.ui:26
 msgid "What's New in FSearch"
-msgstr ""
+msgstr "Kaj je novega v FSearch"
 
 #: src/fsearch_welcome_dialog.ui:79
 msgid ""
 "<span size=\"xx-large\" weight=\"bold\">What's New in FSearch 0.3</span>"
-msgstr ""
+msgstr "<span size=\\\"xx-large\\\" weight=\\\"bold\\\">Kaj je novega v FSearch 0.3</span>"
 
 #: src/fsearch_welcome_dialog.ui:149
 msgid "<big><b>File System Monitoring</b></big>"
-msgstr ""
+msgstr "<big><b>Spremljanje datotečnega sistema</b></big>"
 
 #: src/fsearch_welcome_dialog.ui:163
 msgid ""
@@ -1847,20 +2171,26 @@ msgid ""
 "<a href=\"URL\">https://github.com/cboxdoerfer/fsearch/wiki/Database-update</"
 "a>"
 msgstr ""
+"Zdaj lahko aktivno spremljate posamezne mape, da se izognete pogostemu ponovnemu pregledovanju. Spremembe datotek se nato takoj prikažejo v rezultatih iskanja.\n"
+"\n"
+"Če želite omogočiti to funkcijo, pojdite v razdelek Database v pogovornem oknu Preferences.\n"
+"\n"
+"Za več informacij si oglejte spletno dokumentacijo:\n"
+"<a href=\\\"URL\\\">https://github.com/cboxdoerfer/fsearch/wiki/Database-update</a>"
 
 #: src/fsearch_welcome_dialog.ui:232
 msgid "<big><b>Folder-Specific Rescan Schedules</b></big>"
-msgstr ""
+msgstr "<big><b>Razporedi ponovnega skeniranja, specifični za mape</b></big>"
 
 #: src/fsearch_welcome_dialog.ui:246
 msgid ""
 "You can now configure automatic update intervals for individual folders "
 "independently and tailored to each distinct location."
-msgstr ""
+msgstr "Zdaj lahko konfigurirate samodejne intervale posodabljanja za posamezne mape neodvisno in jih prilagodite vsaki posamezni lokaciji."
 
 #: src/fsearch_welcome_dialog.ui:309
 msgid "<big><b>Improved Exclude Rules</b></big>"
-msgstr ""
+msgstr "<big><b>Izboljšana pravila za izključitev</b></big>"
 
 #: src/fsearch_welcome_dialog.ui:323
 msgid ""
@@ -1869,18 +2199,20 @@ msgid ""
 "Rules can be targeted specifically at files, folders, or both, and can be "
 "configured to match against either the basename or the full absolute path."
 msgstr ""
+"Zdaj lahko uporabite nadomestne znake in regularne izraze za definiranje zmogljivejših izključitvenih pravil. \n"
+"Pravila je mogoče ciljati posebej na datoteke, mape ali oboje in jih je mogoče konfigurirati tako, da se ujemajo z osnovnim imenom ali celotno absolutno potjo."
 
 #: src/fsearch_window.c:749 src/menus.ui:279
 msgid "Size"
-msgstr ""
+msgstr "Velikost"
 
 #: src/fsearch_window.c:763 src/menus.ui:271
 msgid "Extension"
-msgstr ""
+msgstr "Razširitev"
 
 #: src/fsearch_window.c:770 src/menus.ui:283
 msgid "Date Modified"
-msgstr ""
+msgstr "Datum spremembe"
 
 #: src/fsearch_window.c:784
 msgid ""
@@ -1889,207 +2221,211 @@ msgid ""
 "This sort order is not persistent, it will be reset when the search term "
 "changes."
 msgstr ""
+"Razvrščanje po <b>vrsti</b> lahko pri številnih rezultatih traja nekaj sekund.\n"
+"\n"
+"Ta vrstni red ni obstojen, ponastavljen bo, ko se spremeni iskalni izraz."
 
 #: src/fsearch_window.ui:68
 msgid "New window"
-msgstr ""
+msgstr "Novo okno"
 
 #: src/fsearch_window.ui:89
 msgid "Update database"
-msgstr ""
+msgstr "Posodobite bazo podatkov"
 
 #: src/fsearch_window.ui:144 src/menus.ui:112
 msgid "Search in Path"
-msgstr ""
+msgstr "Iskanje v poti"
 
 #: src/fsearch_window.ui:158 src/menus.ui:116
 msgid "Match Case"
-msgstr ""
+msgstr "Match Case"
 
 #: src/fsearch_window.ui:172 src/menus.ui:120
 msgid "Enable RegEx"
-msgstr ""
+msgstr "Omogoči RegEx"
 
 #: src/fsearch_window.ui:197 src/menus.ui:95
 msgid "Show Statusbar"
-msgstr ""
+msgstr "Prikaži vrstico stanja"
 
 #: src/fsearch_window.ui:211 src/menus.ui:99
 msgid "Show Filter"
-msgstr ""
+msgstr "Prikaži filter"
 
 #: src/fsearch_window.ui:225 src/menus.ui:103
 msgid "Show Search Button"
-msgstr ""
+msgstr "Prikaži gumb za iskanje"
 
 #: src/fsearch_window.ui:275 src/fsearch_window.ui:356 src/menus.ui:129
 msgid "FSearch Online"
-msgstr ""
+msgstr "FSearch Online"
 
 #: src/fsearch_window.ui:304 src/menus.ui:161
 msgid "About"
-msgstr ""
+msgstr "O tem"
 
 #: src/fsearch_window.ui:329 src/menus.ui:47
 msgid "Quit"
-msgstr ""
+msgstr "Končaj"
 
 #: src/fsearch_window.ui:372 src/fsearch_window.ui:443 src/menus.ui:131
 msgid "Donate"
-msgstr ""
+msgstr "Donirajte"
 
 #: src/fsearch_window.ui:387 src/menus.ui:142
 msgid "Forum"
-msgstr ""
+msgstr "Forum"
 
 #: src/fsearch_window.ui:401 src/menus.ui:146
 msgid "Bug Reports and Feature Requests"
-msgstr ""
+msgstr "Poročila o napakah in zahteve za funkcije"
 
 #: src/fsearch_window.ui:460 src/menus.ui:133
 msgid "GitHub Sponsors"
-msgstr ""
+msgstr "Sponzorji GitHub"
 
 #: src/fsearch_window.ui:474 src/menus.ui:137
 msgid "PayPal"
-msgstr ""
+msgstr "PayPal"
 
 #: src/fsearch_window.ui:586
 msgid "Search…"
-msgstr ""
+msgstr "Iskanje ..."
 
 #: src/fsearch_window.ui:608
 msgid "Select a Filter"
-msgstr ""
+msgstr "Izberite filter"
 
 #: src/fsearch_window_actions.c:110
 #, c-format
 msgid "Do you really want to open %'d file?"
 msgid_plural "Do you really want to open %'d files?"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "Ali res želite odpreti datoteko %'d?"
+msgstr[1] "Ali res želite odpreti %'d datotek?"
+msgstr[2] "Ali res želite odpreti %'d datotek?"
+msgstr[3] "Ali res želite odpreti %'d datotek?"
 
 #: src/fsearch_window_actions.c:115
 msgid "Opening Files…"
-msgstr ""
+msgstr "Odpiranje datotek …"
 
 #: src/fsearch_window_actions.c:198
 #, c-format
 msgid "Do you really want to remove %'d file?"
 msgid_plural "Do you really want to remove %'d files?"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "Ali res želite odstraniti %'d datoteko?"
+msgstr[1] "Ali res želite odstraniti %'d datotek?"
+msgstr[2] "Ali res želite odstraniti %'d datotek?"
+msgstr[3] "Ali res želite odstraniti %'d datotek?"
 
 #: src/fsearch_window_actions.c:205
 msgid "Deleting files…"
-msgstr ""
+msgstr "Brisanje datotek …"
 
 #: src/fsearch_window_actions.c:205
 msgid "Moving files to trash…"
-msgstr ""
+msgstr "Premikanje datotek v koš ..."
 
 #: src/fsearch_window_actions.c:238 src/fsearch_window_actions.c:533
 #: src/fsearch_window_actions.c:580
 msgid "Something went wrong."
-msgstr ""
+msgstr "Nekaj ​​je šlo narobe."
 
 #: src/fsearch_window_actions.c:263
 #, c-format
 msgid "Do you really want to open %'d file property window?"
 msgid_plural "Do you really want to open %'d file property windows?"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "Ali res želite odpreti okno lastnosti datoteke %'d?"
+msgstr[1] "Ali res želite odpreti okna lastnosti datoteke %'d?"
+msgstr[2] "Ali res želite odpreti okna lastnosti datoteke %'d?"
+msgstr[3] "Ali res želite odpreti okna lastnosti datoteke %'d?"
 
 #: src/fsearch_window_actions.c:270
 msgid "Opening file properties…"
-msgstr ""
+msgstr "Odpiranje lastnosti datoteke …"
 
 #: src/menus.ui:6
 msgid "_File"
-msgstr ""
+msgstr "_Datoteka"
 
 #: src/menus.ui:9
 msgid "New Window"
-msgstr ""
+msgstr "Novo okno"
 
 #: src/menus.ui:16 src/menus.ui:171
 msgid "_Open"
-msgstr ""
+msgstr "_Odprto"
 
 #: src/menus.ui:21
 msgid "Open Folder"
-msgstr ""
+msgstr "Odprite mapo"
 
 #: src/menus.ui:29
 msgid "Update Database"
-msgstr ""
+msgstr "Posodobi zbirko podatkov"
 
 #: src/menus.ui:35
 msgid "Cancel Update"
-msgstr ""
+msgstr "Prekliči posodobitev"
 
 #: src/menus.ui:42
 msgid "Close Window"
-msgstr ""
+msgstr "Zapri okno"
 
 #: src/menus.ui:54
 msgid "_Edit"
-msgstr ""
+msgstr "_Uredi"
 
 #: src/menus.ui:57 src/menus.ui:207
 msgid "_Copy"
-msgstr ""
+msgstr "_Kopiraj"
 
 #: src/menus.ui:62 src/menus.ui:228
 msgid "Cu_t"
-msgstr ""
+msgstr "Cu_t"
 
 #: src/menus.ui:69
 msgid "Select All"
-msgstr ""
+msgstr "Izberite Vse"
 
 #: src/menus.ui:74
 msgid "Deselect All"
-msgstr ""
+msgstr "Prekliči izbiro vseh"
 
 #: src/menus.ui:78
 msgid "Invert Selection"
-msgstr ""
+msgstr "Obrni izbor"
 
 #: src/menus.ui:92
 msgid "_View"
-msgstr ""
+msgstr "_Ogled"
 
 #: src/menus.ui:109
 msgid "_Search"
-msgstr ""
+msgstr "_Išči"
 
 #: src/menus.ui:126
 msgid "_Help"
-msgstr ""
+msgstr "_Pomoč"
 
 #: src/menus.ui:177
 msgid "Open _With"
-msgstr ""
+msgstr "Odprite _With"
 
 #: src/menus.ui:191
 msgid "_Open Folder"
-msgstr ""
+msgstr "_Odpri mapo"
 
 #: src/menus.ui:213
 msgid "Copy as Text"
-msgstr ""
+msgstr "Kopiraj kot besedilo"
 
 #: src/menus.ui:223
 msgid "Path + Name"
-msgstr ""
+msgstr "Pot + ime"
 
 #: src/menus.ui:236
 msgid "Move to _Trash"
-msgstr ""
+msgstr "Premakni v _Trash"
+
