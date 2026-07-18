@@ -340,7 +340,6 @@ msgstr "លទ្ធផលបានកំណត់នៅ %u ។ ប្រើ --u
 msgid "%u match."
 msgid_plural "%u matches."
 msgstr[0] "%u ត្រូវគ្នា។"
-msgstr[1] "%u ត្រូវគ្នា។"
 
 #: src/fsearch_cli.c:142
 msgid "Updating FSearch index before searching..."
@@ -2300,7 +2299,6 @@ msgstr "ជ្រើសរើសតម្រង"
 msgid "Do you really want to open %'d file?"
 msgid_plural "Do you really want to open %'d files?"
 msgstr[0] "តើអ្នកពិតជាចង់បើកឯកសារ %'d មែនទេ?"
-msgstr[1] "តើអ្នកពិតជាចង់បើកឯកសារ %'d មែនទេ?"
 
 #: src/fsearch_window_actions.c:115
 msgid "Opening Files…"
@@ -2311,7 +2309,6 @@ msgstr "កំពុងបើកឯកសារ..."
 msgid "Do you really want to remove %'d file?"
 msgid_plural "Do you really want to remove %'d files?"
 msgstr[0] "តើអ្នកពិតជាចង់យកឯកសារ %'d ចេញមែនទេ?"
-msgstr[1] "តើអ្នកពិតជាចង់យកឯកសារ %'d ចេញមែនទេ?"
 
 #: src/fsearch_window_actions.c:205
 msgid "Deleting files…"
@@ -2331,7 +2328,6 @@ msgstr "មានអ្វីមួយខុសប្រក្រតី។"
 msgid "Do you really want to open %'d file property window?"
 msgid_plural "Do you really want to open %'d file property windows?"
 msgstr[0] "តើ​អ្នក​ពិត​ជា​ចង់​បើក​បង្អួច​លក្ខណសម្បត្តិ​ឯកសារ %'d មែនទេ?"
-msgstr[1] "តើ​អ្នក​ពិត​ជា​ចង់​បើក %'d file property windows?"
 
 #: src/fsearch_window_actions.c:270
 msgid "Opening file properties…"
