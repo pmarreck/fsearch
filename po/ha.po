@@ -19,335 +19,337 @@ msgstr ""
 
 #: data/io.github.cboxdoerfer.FSearch.desktop.in.in:4 src/main.c:36
 msgid "FSearch"
-msgstr ""
+msgstr "FSearch"
 
 #: data/io.github.cboxdoerfer.FSearch.desktop.in.in:5
 msgid "A file search application focusing on performance and advanced features"
-msgstr ""
+msgstr "Aikace-aikacen neman fayil yana mai da hankali kan aiki da abubuwan ci-gaba"
 
 #: data/io.github.cboxdoerfer.FSearch.desktop.in.in:10
 msgid "search;fsearch;files;folders;music;video;documents;find;tool;everything;"
-msgstr ""
+msgstr "bincika;fsearch;fayiloli;manyan fayiloli;kiɗa;bidiyo;takardu;samu;kayan aiki;komai;"
 
 #: data/io.github.cboxdoerfer.FSearch.desktop.in.in:12
 msgid "File Search Utility"
-msgstr ""
+msgstr "Abubuwan Neman Fayil"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:8
 msgid "A graphical file search application"
-msgstr ""
+msgstr "Aikace-aikacen neman fayil mai hoto"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:10
 msgid ""
 "FSearch helps you to find files and folders as easy and fast as possible. "
 "Just type a few letters and search results will appear almost instantly."
-msgstr ""
+msgstr "FSearch yana taimaka muku nemo fayiloli da manyan fayiloli cikin sauƙi da sauri. Kawai rubuta ƴan haruffa kuma sakamakon bincike zai bayyana kusan nan take."
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:14
 msgid ""
 "There are a lot of features which make searching as efficient and powerful "
 "as possible. Such as:"
-msgstr ""
+msgstr "Akwai fasali da yawa waɗanda ke sa bincike ya zama mai inganci da ƙarfi gwargwadon yiwuwa. Kamar:"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:19
 msgid ""
 "Ignore case (e.g. searching for \"<code>fsearch</code>\" will match "
 "\"FSearch\" as well)"
-msgstr ""
+msgstr "Yi watsi da harka (misali neman \\\"<code>fsearch</code>\\\" zai dace da \"FSearch\" kuma)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:20
 msgid "Regular expressions"
-msgstr ""
+msgstr "Kalamai na yau da kullun"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:21
 msgid "Wildcard support"
-msgstr ""
+msgstr "Taimakon kati"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:22
 msgid "Filter support (e.g. only search for audio files)"
-msgstr ""
+msgstr "Tallafin tacewa (misali bincika fayilolin odiyo kawai)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:23
 msgid "Exclude certain files and folders"
-msgstr ""
+msgstr "Kere wasu fayiloli da manyan fayiloli"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:24
 msgid "Fast sort by name, path, size, modification time and extension"
-msgstr ""
+msgstr "Saurin warware suna, hanya, girman, lokacin gyarawa da tsawo"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:26
 msgid ""
 "<em>Note:</em> Due to Flatpak's sandboxing, FSearch can't find every file on "
 "your system."
-msgstr ""
+msgstr "<em>Lura:</em> Saboda Sandboxing na Flatpak, FSearch ba zai iya samun kowane fayil akan tsarin ku ba."
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:35
 msgid "The default UI layout"
-msgstr ""
+msgstr "Tsarin UI na asali"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:41
 msgid "A layout more closely following GNOME HIGs"
-msgstr ""
+msgstr "Tsarin shimfidawa kusa da bin GNOME HIGs"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:49
 msgid "search"
-msgstr ""
+msgstr "bincika"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:50
 msgid "fsearch"
-msgstr ""
+msgstr "bincike"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:51
 msgid "files"
-msgstr ""
+msgstr "fayiloli"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:52
 msgid "folders"
-msgstr ""
+msgstr "manyan fayiloli"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:53
 msgid "music"
-msgstr ""
+msgstr "kiɗa"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:54
 msgid "video"
-msgstr ""
+msgstr "bidiyo"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:55
 msgid "documents"
-msgstr ""
+msgstr "takardu"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:56
 msgid "find"
-msgstr ""
+msgstr "samu"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:57
 msgid "tool"
-msgstr ""
+msgstr "kayan aiki"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:58
 msgid "everything"
-msgstr ""
+msgstr "komai"
 
 #. Kept for appstreamcli < 1.0 (e.g. Ubuntu 20.04/22.04 PPA builds), which doesn't know <developer>.
 #. Translators: please do NOT translate this.
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:77
 msgid "Christian Boxdörfer"
-msgstr ""
+msgstr "Kirista Boxdörfer"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:89
 msgid "DB rewrite"
-msgstr ""
+msgstr "DB sake rubutawa"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:90
 msgid "DB: Add support for filesystem monitoring"
-msgstr ""
+msgstr "DB: Ƙara tallafi don saka idanu akan tsarin fayil"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:91
 msgid ""
 "DB: Allow files and folders to be excluded based on fixed patterns, "
 "wildcards or regular expressions"
-msgstr ""
+msgstr "DB: Ba da izinin cire fayiloli da manyan fayiloli bisa ƙayyadaddun alamu, ƙayyadaddun kalmomi ko maganganu na yau da kullun"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:92
 msgid ""
 "DB: Allow included folders to be scheduled and scanned after launch "
 "independently"
-msgstr ""
+msgstr "DB: Bada damar haɗa manyan fayilolin da aka tsara da kuma bincika su bayan ƙaddamar da kansu"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:93
 msgid "DB: Make rescanning more efficient"
-msgstr ""
+msgstr "DB: Sa sake dubawa ya fi dacewa"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:94
 msgid "DB: Store database config in DB file"
-msgstr ""
+msgstr "DB: Ajiye tsarin bayanai a cikin fayil ɗin DB"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:95
 msgid "DB: Add checksum to DB file"
-msgstr ""
+msgstr "DB: Ƙara checksum zuwa fayil DB"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:96
 msgid "Make icon and file info gathering asynchronous (no UI blocking)"
-msgstr ""
+msgstr "Yi gumaka da tattara bayanan fayil asynchronous (babu toshewar UI)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:97
 msgid "Reduce memory usage"
-msgstr ""
+msgstr "Rage amfani da ƙwaƙwalwar ajiya"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:98
 msgid "Add contextual help for all preferences"
-msgstr ""
+msgstr "Ƙara taimakon mahallin don duk abubuwan da aka zaɓa"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:99
 msgid "Numerous bug fixes and stability and performance improvements"
-msgstr ""
+msgstr "gyare-gyaren kwaro da yawa da kwanciyar hankali da haɓaka aiki"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:106
 msgid "New search engine"
-msgstr ""
+msgstr "Sabon injin bincike"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:107
 msgid "Greatly improved highlighting of search terms"
-msgstr ""
+msgstr "Ingantattun fitattun kalmomin bincike"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:108
 msgid "Custom filters"
-msgstr ""
+msgstr "Abubuwan tacewa"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:109
 msgid "Improved sort performance"
-msgstr ""
+msgstr "Inganta aikin nau'in"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:110
 msgid "Improved scroll performance"
-msgstr ""
+msgstr "Inganta aikin gungurawa"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:111
 msgid "Remember file selection after a database update"
-msgstr ""
+msgstr "Tuna zaɓin fayil bayan sabunta bayanai"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:112
 msgid "Automatically scroll the result list in rubberband selection mode"
-msgstr ""
+msgstr "Gungura lissafin sakamako ta atomatik a yanayin zaɓi na roba"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:113
 msgid "Invert selection with rubber band when 'Ctrl' is pressed"
-msgstr ""
+msgstr "Juya zaɓi tare da bandejin roba lokacin da aka danna 'Ctrl'"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:114
 msgid "Focus search entry when the main window gets activated"
-msgstr ""
+msgstr "Mayar da hankali shigarwar bincike lokacin da babban taga ya kunna"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:115
 msgid "Add filter for applications (i.e. .desktop files)"
-msgstr ""
+msgstr "Ƙara tacewa don aikace-aikace (watau fayilolin tebur)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:116
 msgid ""
 "Add option to launch applications directly instead of opening the .desktop "
 "files"
-msgstr ""
+msgstr "Ƙara zaɓi don ƙaddamar da aikace-aikace kai tsaye maimakon buɗe fayilolin .desktop"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:117
 msgid "Show application icons for .desktop files"
-msgstr ""
+msgstr "Nuna gumakan aikace-aikace don fayilolin tebur"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:118
 msgid "Add .odp and .ods files to document filter"
-msgstr ""
+msgstr "Ƙara fayilolin .odp da .ods don tacewa"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:119
 msgid ""
 "'Open with' menu now only shows applications which can handle the selected "
 "files"
-msgstr ""
+msgstr "Menu na 'Buɗe tare da' yanzu yana nuna aikace-aikacen da za su iya sarrafa fayilolin da aka zaɓa"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:120
 msgid ""
 "Improved opening of multiple files with the same type (they get now passed "
 "as a list to applications, instead of one by one)"
-msgstr ""
+msgstr "Ingantattun buɗaɗɗen fayiloli da yawa tare da nau'in iri ɗaya (an sami wucewa yanzu azaman jeri zuwa aikace-aikace, maimakon ɗaya bayan ɗaya)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:121
 msgid "Better support for opening files in sandboxed mode"
-msgstr ""
+msgstr "Ingantacciyar tallafi don buɗe fayiloli a cikin yanayin sandboxed"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:122
 msgid ""
 "Add menu items with links to the issue tracker, forum and donation pages"
-msgstr ""
+msgstr "Ƙara abubuwan menu tare da hanyoyin haɗin kai zuwa mai bin diddigin lamarin, dandalin tattaunawa da shafukan bayar da gudummawa"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:123
 msgid "Improve support for non-Linux systems"
-msgstr ""
+msgstr "Inganta tallafi don tsarin da ba Linux ba"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:124
 msgid ""
 "Add option to exit FSearch when Escape is pressed instead of minimizing the "
 "window"
-msgstr ""
+msgstr "Ƙara zaɓi don fita FSearch lokacin da aka danna Escape maimakon rage girman taga"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:125
 msgid "Exclude '/proc' and '/sys' by default"
-msgstr ""
+msgstr "Ware '/proc' da '/sys' ta tsohuwa"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:126
 msgid "Open context menu when 'Menu' key or 'Shift + F10' are pressed"
-msgstr ""
+msgstr "Buɗe menu na mahallin lokacin da aka danna maɓallin 'Menu' ko 'Shift + F10'"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:127
 msgid "and tons of bug fixes, translation updates and smaller improvements"
-msgstr ""
+msgstr "da tarin gyare-gyaren kwaro, sabuntawar fassarar da ƙananan haɓakawa"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:133
 msgid "Initial release."
-msgstr ""
+msgstr "Sakin farko."
 
 #: src/fsearch.c:181
 msgid "translator-credits"
-msgstr ""
+msgstr "mai fassara-bashi"
 
 #: src/fsearch.c:183
 msgid "A search utility focusing on performance and advanced features"
-msgstr ""
+msgstr "Kayan aikin bincike da ke mai da hankali kan aiki da abubuwan ci-gaba"
 
 #: src/fsearch.c:330
 msgid "Saving database and config…"
-msgstr ""
+msgstr "Ajiye bayanan bayanai da daidaitawa…"
 
 #: src/fsearch.c:786
 msgid "Open a new application window"
-msgstr ""
+msgstr "Bude sabon taga aikace-aikace"
 
 #: src/fsearch.c:787
 msgid "Minimize the application window"
-msgstr ""
+msgstr "Rage girman taga aikace-aikacen"
 
 #: src/fsearch.c:788
 msgid "Show the application preferences"
-msgstr ""
+msgstr "Nuna abubuwan da ake so"
 
 #: src/fsearch.c:789
 msgid "Set the search pattern"
-msgstr ""
+msgstr "Saita tsarin bincike"
 
 #: src/fsearch.c:790
 msgid "Update the database and exit"
-msgstr ""
+msgstr "Sabunta bayanan bayanai kuma fita"
 
 #: src/fsearch.c:791
 msgid "Print version information and exit"
-msgstr ""
+msgstr "Buga bayanin sigar kuma fita"
 
 #: src/fsearch.c:883
 msgid ""
 "For command-line search help, run: fsearch --cli --help\n"
 "For shared configuration help, run: fsearch config --help"
 msgstr ""
+"Don taimakon neman layin umarni, gudu: fsearch --cli --help\n"
+"Don taimakon haɗin kai, gudu: fsearch config --help"
 
 #: src/fsearch_cli.c:125
 #, c-format
 msgid ""
 "Results capped at %u. Use --unlimit or --unlimited to get them all, or "
 "provide a custom --limit, or set FSEARCH_RESULT_LIMIT."
-msgstr ""
+msgstr "Sakamako ya cika a %u. Yi amfani da --unlimit ko --unlimited don samun su duka, ko samar da al'ada --limit, ko saita FSEARCH_RESULT_LIMIT."
 
 #: src/fsearch_cli.c:134
 #, c-format
 msgid "%u match."
 msgid_plural "%u matches."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%u wasa."
+msgstr[1] "%u matches."
 
 #: src/fsearch_cli.c:142
 msgid "Updating FSearch index before searching..."
-msgstr ""
+msgstr "Ana sabunta fihirisar FSearch kafin bincike..."
 
 #: src/fsearch_cli.c:149
 #, c-format
 msgid "Indexing: %s"
-msgstr ""
+msgstr "Fihirisa: %s"
 
 #: src/fsearch_cli.c:181
 msgid ""
@@ -393,40 +395,76 @@ msgid ""
 "{png,jpg} selects alternatives; {01..12} is an inclusive numeric range; \\* "
 "matches a literal *.\n"
 msgstr ""
+"Amfani: fsearch --cli [OPTIONS]\n"
+"\n"
+"Bincika fihirisar FSearch da ke akwai kuma buga hanyoyin da suka dace.\n"
+"\n"
+"  -s, --search PATTERN       Bincika tare da daidaitawar tambayar FSearch\n"
+"      --path DIRECTORY        Bincika akai-akai a ƙasa DIRECTORY (tsoho: kundin adireshi na yanzu)\n"
+"      --global                Bincika kowane wuri mai maƙasudi\n"
+"      --limit COUNT          Buga a mafi yawan sakamako COUNT\n"
+"      --unlimit, --unlimited Buga kowane sakamako\n"
+"  -u, --update-database      Sake bincika fihirisar da aka saita kuma fita\n"
+"      --about                Buga bayanin ginin layi ɗaya\n"
+"  -h, --help                 Nuna wannan taimako\n"
+"\n"
+"Tsari: fsearch config --help\n"
+"\n"
+"Misalai:\n"
+"  fsearch --cli --search invoice              # eolaire reatha\n"
+"  fsearch --cli --path ~/Documents --search invoice\n"
+"  fsearch --cli --global --search invoice\n"
+"  fsearch --cli --search 'file:size:>20mb'\n"
+"  fsearch --cli --search 'ext:jpg;png'\n"
+"  fsearch --cli --search 'path:projects report'\n"
+"  fsearch --cli --search 'report AND ext:pdf'\n"
+"  fsearch --cli --search '(draft OR final) !archive'\n"
+"  fsearch --cli --search 'file:regex:\".+\\.pdf$\"'\n"
+"  fsearch --cli --search 'case:AGENTS'        # cás-íogair\n"
+"  fsearch --cli --search 'case:regex:\"^AGENTS\\.md$\"'\n"
+"  fsearch --cli --search 'glob:**/*.png'\n"
+"  fsearch --cli --search 'path:glob:**/AGENTS.md'\n"
+"  fsearch --cli --search 'case:glob:AGENTS.md' # glob cás-íogair\n"
+"\n"
+"Misalai suna amfani da sarari azaman AND. Gwada fayil:, babban fayil:, hanya:, ext:, girman:, dm:, case:, regex:, da glob:.\n"
+"Boolean syntax: AND ko &&; KO ko ||; BA ko!. Kalmomin rukuni.\n"
+"Glob syntax: * ban da /; ** yana ɗaukar kundayen adireshi; ? yayi daidai da hali ɗaya; [a-c] kewayo ne;\n"
+"Glob yana bincika hanyoyi ta tsohuwa; amfani ** / don kowane zurfin; file:glob: bincika sunayen fayil.\n"
+"{png,jpg} yana zaɓar madadin; {01..12} kewayon lambobi ne mai haɗaka; \\* yayi daidai da zahiri *.\n"
 
 #: src/fsearch_cli.c:238
 #, c-format
 msgid "FSearch %s - indexed file search for %s %s\n"
-msgstr ""
+msgstr "FSearch %s - binciken fayil mai ma'ana don %s %s\n"
 
 #: src/fsearch_cli.c:301
 msgid "fsearch: interrupted\n"
-msgstr ""
+msgstr "fsearch: katsewa\n"
 
 #: src/fsearch_cli.c:315
 msgid "fsearch: search could not run because the index is unavailable\n"
-msgstr ""
+msgstr "fsearch: bincike ba zai iya gudana ba saboda babu alamar\n"
 
 #: src/fsearch_cli.c:352 src/fsearch_cli.c:381 src/fsearch_cli_config.c:774
 #: src/fsearch_cli_config.c:961 src/fsearch_cli_config.c:1147
 #, c-format
 msgid "%s\n"
-msgstr ""
+msgstr "%s\n"
 
 #: src/fsearch_cli.c:400
 #, c-format
 msgid "%s"
-msgstr ""
+msgstr "%s"
 
 #: src/fsearch_cli.c:473
 #, c-format
 msgid "fsearch: unknown CLI option: %s\n"
-msgstr ""
+msgstr "fsearch: ba a sani ba zaɓi na CLI: %s\n"
 
 #: src/fsearch_cli.c:495
 #, c-format
 msgid "fsearch: failed to create data directory: %s\n"
-msgstr ""
+msgstr "fsearch: ya kasa ƙirƙirar kundin bayanai: %s\n"
 
 #: src/fsearch_cli_config.c:111
 msgid ""
@@ -468,30 +506,73 @@ msgid ""
 "  fsearch config filters add Documents --query 'ext:pdf' --macro docs\n"
 "  fsearch config reset search --yes\n"
 msgstr ""
+"Amfani: fsearch config COMMAND [OPTIONS]\n"
+"\n"
+"Duba ku gyara tsarin FSearch GUI da CLI da aka raba.\n"
+"\n"
+"Umurnin daidaitawa:\n"
+"  path                         Buga hanyar fayil ɗin sanyi\n"
+"  show [SECTION] [--json]      Nuna saituna\n"
+"  get KEY [--json]             Buga saitin sikeli ɗaya\n"
+"  set KEY VALUE                Saita saitin sikeli ɗaya\n"
+"  unset KEY                    Mayar da tsoho saitin sikeli ɗaya\n"
+"  reset [KEY|SECTION] --yes [--rescan]\n"
+"                               Mayar da abubuwan da ba a so\n"
+"  doctor                       Bincika sanyi da daidaiton fihirisa\n"
+"  roots list|add|set|remove    Sarrafa tushen fihirisa\n"
+"  excludes list|add|remove|hidden\n"
+"                               Sarrafa abubuwan keɓancewa\n"
+"  filters list|add|set|remove|reset\n"
+"                               Sarrafa ajiyayyun tacewa\n"
+"\n"
+"Ƙididdiga masu ƙima suna amfani da gaskiya/ƙarya, adadin ƙima, ko kirtani.\n"
+"Gudun 'fsearch config show' don lissafta kowane maɓalli na scalar da ƙimar halin yanzu.\n"
+"Sassan Scalar: search, application, window, ui, columns, sort, dialogs.\n"
+"Yi amfani da 'fsearch config roots| ban da | filtata --help' don zaɓin iyali.\n"
+"Rufe FSearch GUI kafin canza saitunan da aka raba.\n"
+"Canje-canjen fihirisa sun zama abin nema akan bincike na CLI na gaba, ko nan da nan tare da --rescan.\n"
+"Yi amfani da --json tare da nuni, samu, da umarnin lissafin tarin.\n"
+"\n"
+"Misalai:\n"
+"  fsearch config show search --json\n"
+"  fsearch config get search.match-case\n"
+"  fsearch config set search.match-case true\n"
+"  fsearch config roots add ~/Code --monitor --one-file-system --rescan\n"
+"  fsearch config excludes add '*.tmp' --type wildcard --scope basename --target files\n"
+"  fsearch config filters add Documents --query 'ext:pdf' --macro docs\n"
+"  fsearch config reset search --yes\n"
 
 #: src/fsearch_cli_config.c:152
 msgid ""
 "Usage: fsearch config show [SECTION] [--json]\n"
 "Show all scalar settings or one dotted section.\n"
 msgstr ""
+"Amfani: fsearch config show [SECTION] [--json]\n"
+"Nuna duk saitunan sikeli ko sashe mai digo ɗaya.\n"
 
 #: src/fsearch_cli_config.c:154
 msgid ""
 "Usage: fsearch config get KEY [--json]\n"
 "Print one typed scalar value. Discover keys with 'fsearch config show'.\n"
 msgstr ""
+"Amfani: fsearch config get KEY [--json]\n"
+"Buga ƙima mai nau'in sikeli ɗaya. Gano maɓallan tare da 'fsearch config show'.\n"
 
 #: src/fsearch_cli_config.c:157
 msgid ""
 "Usage: fsearch config set KEY VALUE\n"
 "Set a boolean, integer, string, or enumerated scalar value.\n"
 msgstr ""
+"Amfani: fsearch config set KEY VALUE\n"
+"Saita boolean, lamba, kirtani, ko ƙididdige ƙimar sikeli.\n"
 
 #: src/fsearch_cli_config.c:159
 msgid ""
 "Usage: fsearch config unset KEY\n"
 "Restore one scalar setting to its built-in default.\n"
 msgstr ""
+"Amfani: fsearch config unset KEY\n"
+"Mayar da saitin sikeli ɗaya zuwa tsohuwar ginanniyar sa.\n"
 
 #: src/fsearch_cli_config.c:161
 msgid ""
@@ -499,6 +580,8 @@ msgid ""
 "Reset is destructive and requires --yes. --rescan applies to roots, "
 "database, excludes, or all.\n"
 msgstr ""
+"Amfani: fsearch config reset [KEY|SECTION] --yes [--rescan]\n"
+"Sake saitin yana lalata kuma yana buƙatar --e. --rescan ya shafi tushen, bayanan bayanai, keɓe, ko duka.\n"
 
 #: src/fsearch_cli_config.c:164
 msgid ""
@@ -506,6 +589,8 @@ msgid ""
 "Check configuration readability and whether the saved index uses the same "
 "roots and exclusions.\n"
 msgstr ""
+"Amfani: fsearch config doctor\n"
+"Bincika iya karantawa da kuma ko bayanan da aka adana yana amfani da tushen iri ɗaya da keɓancewa.\n"
 
 #: src/fsearch_cli_config.c:170
 msgid ""
@@ -525,6 +610,21 @@ msgid ""
 "  --rescan-every SECONDS        Set periodic rescan interval; 0 disables it\n"
 "  --rescan                      Rebuild the index immediately after saving\n"
 msgstr ""
+"Amfani: fsearch config roots COMMAND [PATH] [OPTIONS]\n"
+"\n"
+"Umarni:\n"
+"  list [--json]                Jerin tushen tushen\n"
+"  add PATH [OPTIONS]           Ƙara tushen adireshin\n"
+"  set PATH [OPTIONS]           Canja tushen da ke akwai\n"
+"  remove PATH [--rescan]       Cire tushen da ke akwai\n"
+"\n"
+"Zaɓuɓɓuka don ƙarawa da saitawa:\n"
+"  --active, --inactive\n"
+"  --monitor, --no-monitor\n"
+"  --one-file-system, --no-one-file-system\n"
+"  --scan-after-launch, --no-scan-after-launch\n"
+"  --rescan-every SECONDS        Saita tazarar sake dubawa na lokaci-lokaci; 0 yana kashe shi\n"
+"  --rescan                      Sake gina fihirisar nan da nan bayan adanawa\n"
 
 #: src/fsearch_cli_config.c:187
 msgid ""
@@ -544,6 +644,21 @@ msgid ""
 "  --active, --inactive          Add state or removal selector\n"
 "  --rescan                      Rebuild the index immediately after saving\n"
 msgstr ""
+"Amfani: fsearch config excludes COMMAND [PATTERN|VALUE] [OPTIONS]\n"
+"\n"
+"Umarni:\n"
+"  list [--json]                 Jerin abubuwan keɓancewa\n"
+"  add PATTERN [OPTIONS]         Ƙara wariya\n"
+"  remove PATTERN [OPTIONS]      Cire wariyar da ta dace\n"
+"  hidden [true|false] [--rescan]\n"
+"                                Duba ko canza ɓoye-fayil ɗin ɓoye\n"
+"\n"
+"Zaɓuɓɓuka don ƙarawa da cirewa:\n"
+"  --type fixed|wildcard|regex   Default: gyarawa\n"
+"  --scope full-path|basename    Default: cikakken hanya\n"
+"  --target both|files|folders   Default: duka biyu\n"
+"  --active, --inactive          Ƙara jiha ko mai zaɓin cirewa\n"
+"  --rescan                      Sake gina fihirisar nan da nan bayan adanawa\n"
 
 #: src/fsearch_cli_config.c:204
 msgid ""
@@ -563,205 +678,224 @@ msgid ""
 "  --path, --no-path             Search full paths\n"
 "  --regex, --no-regex           Treat query as a regular expression\n"
 msgstr ""
+"Amfani: fsearch config filters COMMAND [NAME] [OPTIONS]\n"
+"\n"
+"Umarni:\n"
+"  list [--json]                 Jerin abubuwan tacewa\n"
+"  add NAME [OPTIONS]            Ƙara tace mai suna\n"
+"  set NAME [OPTIONS]            Canza tace mai suna\n"
+"  remove NAME                   Cire tace mai suna\n"
+"  reset                         Maido da ginanniyar tacewa\n"
+"\n"
+"Zaɓuɓɓuka don ƙarawa da saitawa:\n"
+"  --query QUERY                 Ajiye tambayar FSearch\n"
+"  --macro MACRO                 Tambayar sunan macro\n"
+"  --case, --no-case             Harka ta daidaita\n"
+"  --path, --no-path             Bincika cikakkun hanyoyi\n"
+"  --regex, --no-regex           Bi da tambaya azaman magana ta yau da kullun\n"
 
 #: src/fsearch_cli_config.c:265
 msgid ""
 "fsearch config: close the running FSearch GUI before changing shared "
 "settings\n"
-msgstr ""
+msgstr "fsearch config: rufe FSearch GUI mai gudana kafin canza saitunan da aka raba\n"
 
 #: src/fsearch_cli_config.c:269
 msgid "fsearch config: failed to save configuration\n"
-msgstr ""
+msgstr "fsearch config: ya kasa ajiye sanyi\n"
 
 #: src/fsearch_cli_config.c:280
 msgid "Index configuration changed; the next CLI search will rebuild it.\n"
-msgstr ""
+msgstr "An canza tsarin ƙididdiga; binciken CLI na gaba zai sake gina shi.\n"
 
 #: src/fsearch_cli_config.c:416
 #, c-format
 msgid "fsearch config %s: unknown option: %s\n"
-msgstr ""
+msgstr "Tsarin fsearch %s: zaɓi wanda ba a sani ba: %s\n"
 
 #: src/fsearch_cli_config.c:422
 #, c-format
 msgid "fsearch config %s: unexpected argument: %s\n"
-msgstr ""
+msgstr "daidaita fsearch %s: hujjar da ba a zata ba: %s\n"
 
 #: src/fsearch_cli_config.c:449
 msgid "Usage: fsearch config get KEY [--json]\n"
-msgstr ""
+msgstr "Amfani: fsearch config samun KEY [-json]\n"
 
 #: src/fsearch_cli_config.c:454 src/fsearch_cli_config.c:555
 #, c-format
 msgid "fsearch config: unknown setting: %s\n"
-msgstr ""
+msgstr "Tsarin fsearch: saitin da ba a sani ba: %s\n"
 
 #: src/fsearch_cli_config.c:502
 #, c-format
 msgid "fsearch config show: unknown section: %s\n"
-msgstr ""
+msgstr "fsearch config show: wanda ba a sani ba: %s\n"
 
 #: src/fsearch_cli_config.c:550
 #, c-format
 msgid "Usage: fsearch config %s KEY%s\n"
-msgstr ""
+msgstr "Amfani: daidaitawar fsearch %s KEY%s\n"
 
 #: src/fsearch_cli_config.c:566
 #, c-format
 msgid "fsearch config: invalid value for %s: %s\n"
-msgstr ""
+msgstr "Tsarin fsearch: ƙimar mara inganci don %s: %s\n"
 
 #: src/fsearch_cli_config.c:572
 #, c-format
 msgid "%s = %s\n"
-msgstr ""
+msgstr "%s = %s\n"
 
 #: src/fsearch_cli_config.c:637
 #, c-format
 msgid "fsearch config roots: unknown operation: %s\n"
-msgstr ""
+msgstr "tushen tsarin fsearch: aikin da ba a san shi ba: %s\n"
 
 #: src/fsearch_cli_config.c:691
 msgid "fsearch config roots: --rescan-every requires SECONDS\n"
-msgstr ""
+msgstr "tushen tsarin fsearch: --rescan-kowa yana buƙatar SECONDS\n"
 
 #: src/fsearch_cli_config.c:710
 msgid "fsearch config roots: missing PATH\n"
-msgstr ""
+msgstr "tushen tsarin fsearch: bacewar PATH\n"
 
 #: src/fsearch_cli_config.c:717 src/fsearch_cli_config.c:732
 #, c-format
 msgid "fsearch config roots: path not found: %s\n"
-msgstr ""
+msgstr "tushen tsarin fsearch: ba a samo hanyar ba: %s\n"
 
 #: src/fsearch_cli_config.c:724
 #, c-format
 msgid "fsearch config roots: not a directory: %s\n"
-msgstr ""
+msgstr "tushen tsarin fsearch: ba directory: %s\n"
 
 #: src/fsearch_cli_config.c:728
 #, c-format
 msgid "fsearch config roots: path already exists: %s\n"
-msgstr ""
+msgstr "tushen tsarin fsearch: ta riga ta wanzu: %s\n"
 
 #: src/fsearch_cli_config.c:752
 #, c-format
 msgid "fsearch config roots: invalid rescan duration: %s\n"
-msgstr ""
+msgstr "Tushen tsarin fsearch: lokacin sake dubawa mara inganci: %s\n"
 
 #: src/fsearch_cli_config.c:765
 msgid ""
 "%s\tactive=%s monitor=%s one-file-system=%s scan-after-launch=%s rescan-"
 "after=%s\n"
-msgstr ""
+msgstr "%s aiki=%s Monitor=%s one-file-system=%s scan-after-launch=%s rescan-after=%s\n"
 
 #: src/fsearch_cli_config.c:844
 msgid "fsearch config excludes hidden: expected true or false\n"
-msgstr ""
+msgstr "Tsarin fsearch ya keɓance ɓoye: gaskiya ko ƙarya da ake tsammani\n"
 
 #: src/fsearch_cli_config.c:850
 #, c-format
 msgid "exclude-hidden = %s\n"
-msgstr ""
+msgstr "ware-boye = %s\n"
 
 #: src/fsearch_cli_config.c:856
 #, c-format
 msgid "fsearch config excludes: unknown operation: %s\n"
-msgstr ""
+msgstr "Tsarin fsearch ya ware: aikin da ba a san shi ba: %s\n"
 
 #: src/fsearch_cli_config.c:877
 #, c-format
 msgid "fsearch config excludes: %s requires a value\n"
-msgstr ""
+msgstr "saitin fsearch ya ware: %s yana buƙatar ƙima\n"
 
 #: src/fsearch_cli_config.c:909
 msgid "fsearch config excludes: missing PATTERN\n"
-msgstr ""
+msgstr "fsearch config ya ware: bacewar PATTERN\n"
 
 #: src/fsearch_cli_config.c:914
 #, c-format
 msgid "fsearch config excludes: invalid type: %s\n"
-msgstr ""
+msgstr "Tsarin fsearch ya ware: nau'in mara inganci: %s\n"
 
 #: src/fsearch_cli_config.c:919
 #, c-format
 msgid "fsearch config excludes: invalid scope: %s\n"
-msgstr ""
+msgstr "Tsarin fsearch ya ware: iyaka mara inganci: %s\n"
 
 #: src/fsearch_cli_config.c:924
 #, c-format
 msgid "fsearch config excludes: invalid target: %s\n"
-msgstr ""
+msgstr "Tsarin fsearch ya ware: manufa mara inganci: %s\n"
 
 #: src/fsearch_cli_config.c:954
 #, c-format
 msgid "fsearch config excludes: exclusion not found: %s\n"
-msgstr ""
+msgstr "saitin fsearch ya ware: ba a sami keɓancewa ba: %s\n"
 
 #: src/fsearch_cli_config.c:1022
 msgid "filters reset\n"
-msgstr ""
+msgstr "tace saitin\n"
 
 #: src/fsearch_cli_config.c:1029
 #, c-format
 msgid "fsearch config filters: unknown operation: %s\n"
-msgstr ""
+msgstr "tace fsearch config: aikin da ba a san shi ba: %s\n"
 
 #: src/fsearch_cli_config.c:1051
 #, c-format
 msgid "fsearch config filters: %s requires a value\n"
-msgstr ""
+msgstr "tace fsearch config: %s yana buƙatar ƙima\n"
 
 #: src/fsearch_cli_config.c:1094
 msgid "fsearch config filters: missing NAME\n"
-msgstr ""
+msgstr "fsearch config filters: rasa NAME\n"
 
 #: src/fsearch_cli_config.c:1100 src/fsearch_cli_config.c:1111
 #, c-format
 msgid "fsearch config filters: name not found: %s\n"
-msgstr ""
+msgstr "tace fsearch config: sunan ba a samo ba: %s\n"
 
 #: src/fsearch_cli_config.c:1107
 #, c-format
 msgid "fsearch config filters: name already exists: %s\n"
-msgstr ""
+msgstr "tace fsearch config: sunan ya riga ya wanzu: %s\n"
 
 #: src/fsearch_cli_config.c:1145
 #, c-format
 msgid "%s\tmacro=%s query=%s\n"
-msgstr ""
+msgstr "%s macro=%s tambaya=%s\n"
 
 #: src/fsearch_cli_config.c:1193
 msgid "fsearch config reset requires --yes\n"
-msgstr ""
+msgstr "sake saitin saitin fsearch yana buƙatar --e\n"
 
 #: src/fsearch_cli_config.c:1201
 msgid ""
 "fsearch config reset: --rescan requires roots, database, excludes, or all\n"
-msgstr ""
+msgstr "fsearch config reset: --rescan yana buƙatar tushen, bayanan bayanai, keɓancewa, ko duka\n"
 
 #: src/fsearch_cli_config.c:1241
 #, c-format
 msgid "fsearch config: unknown setting or section: %s\n"
-msgstr ""
+msgstr "Tsarin fsearch: saitin da ba a sani ba ko sashe: %s\n"
 
 #: src/fsearch_cli_config.c:1246
 #, c-format
 msgid "%s settings reset\n"
-msgstr ""
+msgstr "%s saitin saitin\n"
 
 #: src/fsearch_cli_config.c:1253
 msgid ""
 "configuration: missing; defaults active\n"
 "index: unknown\n"
 msgstr ""
+"daidaitawa: bace; gazawar aiki\n"
+"index: unknown\n"
 
 #: src/fsearch_cli_config.c:1261
 msgid ""
 "configuration: ok\n"
 "index: missing or unreadable\n"
 msgstr ""
+"daidaitawa: ok\n"
+"index: bace ko rashin karantawa\n"
 
 #: src/fsearch_cli_config.c:1266
 #, c-format
@@ -769,121 +903,125 @@ msgid ""
 "configuration: ok\n"
 "index: %s\n"
 msgstr ""
+"daidaitawa: ok\n"
+"index: %s\n"
 
 #: src/fsearch_cli_config.c:1266
 msgid "current"
-msgstr ""
+msgstr "halin yanzu"
 
 #: src/fsearch_cli_config.c:1266
 msgid "stale"
-msgstr ""
+msgstr "tsayayye"
 
 #: src/fsearch_cli_config.c:1278
 msgid ""
 "Usage: fsearch config path\n"
 "Print the active FSearch configuration file path.\n"
 msgstr ""
+"Amfani: fsearch config path\n"
+"Buga hanyar tsarin fayil na FSearch mai aiki.\n"
 
 #: src/fsearch_cli_config.c:1321
 #, c-format
 msgid "fsearch config: unknown command: %s\n"
-msgstr ""
+msgstr "Tsarin fsearch: umarnin da ba a sani ba: %s\n"
 
 #: src/fsearch_database.c:795
 msgid "Index rescan: applying changes…"
-msgstr ""
+msgstr "Rescan Fihirisar: ana amfani da canje-canje…"
 
 #: src/fsearch_database_file.c:1343
 msgid "Loading folders…"
-msgstr ""
+msgstr "Ana loda manyan fayiloli…"
 
 #: src/fsearch_database_file.c:1359
 msgid "Loading files…"
-msgstr ""
+msgstr "Ana loda fayiloli…"
 
 #: src/fsearch_database_index_store.c:925 src/fsearch_statusbar.c:73
 #: src/fsearch_statusbar.ui:90
 msgid "Sorting…"
-msgstr ""
+msgstr "Ana jera…"
 
 #: src/fsearch_database_preferences_widget.c:162
 #: src/fsearch_database_preferences_widget.c:176
 msgid "Select folder"
-msgstr ""
+msgstr "Zaɓi babban fayil"
 
 #: src/fsearch_database_preferences_widget.c:165
 #: src/fsearch_database_preferences_widget.c:180
 #: src/fsearch_filter_editor.c:104 src/fsearch_preferences_dialog.c:331
 msgid "_Cancel"
-msgstr ""
+msgstr "_Soke"
 
 #: src/fsearch_database_preferences_widget.c:167
 #: src/fsearch_database_preferences_widget.c:179
 msgid "_Select"
-msgstr ""
+msgstr "_Zaba"
 
 #: src/fsearch_database_preferences_widget.c:389
 msgid "Literal"
-msgstr ""
+msgstr "Na zahiri"
 
 #: src/fsearch_database_preferences_widget.c:391
 msgid "Wildcard"
-msgstr ""
+msgstr "Katin daji"
 
 #: src/fsearch_database_preferences_widget.c:393
 msgid "Regex"
-msgstr ""
+msgstr "Regex"
 
 #: src/fsearch_database_preferences_widget.c:414
 msgid "Full Path"
-msgstr ""
+msgstr "Cikakken Hanya"
 
 #: src/fsearch_database_preferences_widget.c:416
 msgid "Basename"
-msgstr ""
+msgstr "Basename"
 
 #: src/fsearch_database_preferences_widget.c:434
 msgid "Files & Folders"
-msgstr ""
+msgstr "Fayiloli & Jakunkuna"
 
 #: src/fsearch_database_preferences_widget.c:436 src/fsearch_filter.c:114
 msgid "Files"
-msgstr ""
+msgstr "Fayiloli"
 
 #: src/fsearch_database_preferences_widget.c:438 src/fsearch_filter.c:113
 msgid "Folders"
-msgstr ""
+msgstr "Jakunkuna"
 
 #: src/fsearch_database_preferences_widget.c:635
 #: src/fsearch_database_preferences_widget.c:860
 msgid "Active"
-msgstr ""
+msgstr "Mai aiki"
 
 #: src/fsearch_database_preferences_widget.c:640
 msgid "Pattern"
-msgstr ""
+msgstr "Tsarin"
 
 #: src/fsearch_database_preferences_widget.c:694 src/fsearch_window.c:756
 #: src/menus.ui:275
 msgid "Type"
-msgstr ""
+msgstr "Nau'in"
 
 #: src/fsearch_database_preferences_widget.c:700
 msgid "Match"
-msgstr ""
+msgstr "Daidaita"
 
 #: src/fsearch_database_preferences_widget.c:706
 msgid "Applies To"
-msgstr ""
+msgstr "Ya shafi Zuwa"
 
 #: src/fsearch_database_preferences_widget.c:864 src/fsearch_window.c:742
 #: src/menus.ui:219 src/menus.ui:267
 msgid "Path"
-msgstr ""
+msgstr "Hanya"
 
 #: src/fsearch_database_preferences_widget.ui:78
 msgid "Enter path…"
-msgstr ""
+msgstr "Shiga hanya…"
 
 #: src/fsearch_database_preferences_widget.ui:97
 #: src/fsearch_database_preferences_widget.ui:372
@@ -892,191 +1030,195 @@ msgid ""
 "                                            database\n"
 "                                        "
 msgstr ""
+"Ƙara hanyar da za a haɗa a ciki\n"
+"                                            database"
 
 #: src/fsearch_database_preferences_widget.ui:176
 msgid "Attempt to monitor"
-msgstr ""
+msgstr "Ƙoƙarin saka idanu"
 
 #: src/fsearch_database_preferences_widget.ui:191
 msgid "Scan after launch"
-msgstr ""
+msgstr "Duba bayan ƙaddamarwa"
 
 #: src/fsearch_database_preferences_widget.ui:206
 msgid "Stay on one file system"
-msgstr ""
+msgstr "Tsaya akan tsarin fayil ɗaya"
 
 #: src/fsearch_database_preferences_widget.ui:221
 msgid "Rescan every"
-msgstr ""
+msgstr "Rescan kowane"
 
 #: src/fsearch_database_preferences_widget.ui:254
 msgid "Hours:"
-msgstr ""
+msgstr "Awanni:"
 
 #: src/fsearch_database_preferences_widget.ui:298
 msgid "Minutes:"
-msgstr ""
+msgstr "Mintuna:"
 
 #: src/fsearch_database_preferences_widget.ui:310
 msgid "30"
-msgstr ""
+msgstr "30"
 
 #: src/fsearch_database_preferences_widget.ui:391
 msgid "Remove selected path"
-msgstr ""
+msgstr "Cire hanyar da aka zaɓa"
 
 #: src/fsearch_database_preferences_widget.ui:418
 msgid "Include"
-msgstr ""
+msgstr "Hada"
 
 #: src/fsearch_database_preferences_widget.ui:477
 msgid ""
 "Add exclude rule\n"
 "                                                "
 msgstr ""
+"Ƙara ƙa'idar cirewa"
 
 #: src/fsearch_database_preferences_widget.ui:495
 msgid ""
 "Remove selected path\n"
 "                                                "
 msgstr ""
+"Cire hanyar da aka zaɓa"
 
 #: src/fsearch_database_preferences_widget.ui:512
 msgid "Restore default exclude list"
-msgstr ""
+msgstr "Mayar da tsoho jerin keɓe"
 
 #: src/fsearch_database_preferences_widget.ui:541
 msgid "Exclude hidden files and folders"
-msgstr ""
+msgstr "Ware ɓoyayyun fayiloli da manyan fayiloli"
 
 #: src/fsearch_database_preferences_widget.ui:563
 msgid "Exclude"
-msgstr ""
+msgstr "Banda"
 
 #: src/fsearch_file_utils.c:161
 msgctxt "Will be followed by the path of the file."
 msgid "Error when removing file"
-msgstr ""
+msgstr "Kuskure lokacin cire fayil"
 
 #: src/fsearch_file_utils.c:163
 msgid "Failed to get path"
-msgstr ""
+msgstr "An kasa samun hanya"
 
 #: src/fsearch_file_utils.c:277
 msgctxt "Will be followed by the file path."
 msgid "Error when getting information from file"
-msgstr ""
+msgstr "Kuskure lokacin samun bayanai daga fayil"
 
 #: src/fsearch_file_utils.c:279
 msgid "Failed to get application information"
-msgstr ""
+msgstr "An kasa samun bayanin aikace-aikacen"
 
 #: src/fsearch_file_utils.c:294
 msgctxt "Will be followed by the content type string."
 msgid "Error when getting information for content type"
-msgstr ""
+msgstr "Kuskure lokacin samun bayanai don nau'in abun ciki"
 
 #: src/fsearch_file_utils.c:296
 msgid "No default application registered"
-msgstr ""
+msgstr "Babu tsohon aikace-aikacen da aka yiwa rajista"
 
 #: src/fsearch_file_utils.c:524
 msgctxt "Will be followed by the path of the folder."
 msgid "Error when opening parent folder"
-msgstr ""
+msgstr "Kuskure lokacin buɗe babban fayil na iyaye"
 
 #: src/fsearch_file_utils.c:526
 msgid "Failed to get parent path"
-msgstr ""
+msgstr "An kasa samun hanyar iyaye"
 
 #: src/fsearch_file_utils.c:530
 msgctxt "Will be followed by the path of the folder."
 msgid "Error while opening folder"
-msgstr ""
+msgstr "Kuskure yayin buɗe babban fayil"
 
 #: src/fsearch_file_utils.c:533
 msgid "Failed to build open command"
-msgstr ""
+msgstr "An kasa gina buɗaɗɗen umarni"
 
 #: src/fsearch_file_utils.c:589
 msgid "Folder"
-msgstr ""
+msgstr "Jaka"
 
 #: src/fsearch_file_utils.c:595
 msgid "Unknown Type"
-msgstr ""
+msgstr "Nau'in da ba a sani ba"
 
 #: src/fsearch_filter.c:112
 msgid "All"
-msgstr ""
+msgstr "Duka"
 
 #: src/fsearch_filter.c:115
 msgid "Applications"
-msgstr ""
+msgstr "Aikace-aikace"
 
 #: src/fsearch_filter.c:116
 msgid "Archives"
-msgstr ""
+msgstr "Taskoki"
 
 #: src/fsearch_filter.c:117
 msgid "Audio"
-msgstr ""
+msgstr "Audio"
 
 #: src/fsearch_filter.c:118
 msgid "Documents"
-msgstr ""
+msgstr "Takardu"
 
 #: src/fsearch_filter.c:119
 msgid "Pictures"
-msgstr ""
+msgstr "Hotuna"
 
 #: src/fsearch_filter.c:120
 msgid "Videos"
-msgstr ""
+msgstr "Bidiyo"
 
 #: src/fsearch_filter_editor.c:79
 msgid "Macro names must not contain `:` characters."
-msgstr ""
+msgstr "Dole ne sunayen macro su ƙunshi haruffa `:`."
 
 #: src/fsearch_filter_editor.c:105 src/fsearch_preferences_dialog.c:332
 msgid "_OK"
-msgstr ""
+msgstr "_KO"
 
 #: src/fsearch_filter_editor.ui:10 src/fsearch_filter_preferences_widget.c:156
 msgid "Edit filter"
-msgstr ""
+msgstr "Tace tace"
 
 #: src/fsearch_filter_editor.ui:50
 msgid "Name:"
-msgstr ""
+msgstr "Suna:"
 
 #: src/fsearch_filter_editor.ui:61
 msgid "The unique name of this filter"
-msgstr ""
+msgstr "Sunan musamman na wannan tace"
 
 #: src/fsearch_filter_editor.ui:64
 msgid "Unique filter name"
-msgstr ""
+msgstr "Sunan tacewa na musamman"
 
 #: src/fsearch_filter_editor.ui:73
 msgid "Search in path"
-msgstr ""
+msgstr "Bincika a hanya"
 
 #: src/fsearch_filter_editor.ui:87
 msgid "Enable regular expressions"
-msgstr ""
+msgstr "Kunna maganganun yau da kullun"
 
 #: src/fsearch_filter_editor.ui:101
 msgid "Match case"
-msgstr ""
+msgstr "Harka ta daidaita"
 
 #: src/fsearch_filter_editor.ui:146
 msgid "Query:"
-msgstr ""
+msgstr "Tambaya:"
 
 #: src/fsearch_filter_editor.ui:160
 msgid "Macro:"
-msgstr ""
+msgstr "Macro:"
 
 #: src/fsearch_filter_editor.ui:171
 msgid ""
@@ -1084,227 +1226,228 @@ msgid ""
 "search entry by typing its text followed by ':'\n"
 "                "
 msgstr ""
+"Macro na wannan tace. Macro yana ba ka damar samun damar wannan tacewa daga shigarwar bincike ta hanyar buga rubutun sa sannan ':'"
 
 #: src/fsearch_filter_preferences_widget.c:133
 msgid "Add filter"
-msgstr ""
+msgstr "Ƙara tace"
 
 #: src/fsearch_filter_preferences_widget.c:315 src/fsearch_window.c:735
 #: src/menus.ui:215 src/menus.ui:263
 msgid "Name"
-msgstr ""
+msgstr "Suna"
 
 #: src/fsearch_filter_preferences_widget.c:316
 msgid "Macro"
-msgstr ""
+msgstr "Macro"
 
 #: src/fsearch_filter_preferences_widget.c:317
 msgid "Query"
-msgstr ""
+msgstr "Tambaya"
 
 #: src/fsearch_filter_preferences_widget.ui:77
 msgid "Add new filter"
-msgstr ""
+msgstr "Ƙara sabon tace"
 
 #: src/fsearch_filter_preferences_widget.ui:95
 msgid "Remove selected filter"
-msgstr ""
+msgstr "Cire zaɓaɓɓen tace"
 
 #: src/fsearch_filter_preferences_widget.ui:113
 msgid "Edit selected filter"
-msgstr ""
+msgstr "Gyara zaɓaɓɓen tace"
 
 #: src/fsearch_filter_preferences_widget.ui:129
 msgid "Restore default filters"
-msgstr ""
+msgstr "Maida tsoho tacewa"
 
 #: src/fsearch_listview_popup.c:36
 msgid "Properties…"
-msgstr ""
+msgstr "Kaddarori…"
 
 #: src/fsearch_listview_popup.c:163
 msgid "Other Application…"
-msgstr ""
+msgstr "Wani Application…"
 
 #: src/fsearch_overlay.ui:44
 msgid "Empty Database"
-msgstr ""
+msgstr "Database mara komai"
 
 #: src/fsearch_overlay.ui:60
 msgid "Add folders"
-msgstr ""
+msgstr "Ƙara manyan fayiloli"
 
 #: src/fsearch_overlay.ui:108
 msgid "Loading Database…"
-msgstr ""
+msgstr "Ana Loda Database…"
 
 #: src/fsearch_overlay.ui:123
 msgid "This won't take long."
-msgstr ""
+msgstr "Wannan ba zai dauki lokaci mai tsawo ba."
 
 #: src/fsearch_overlay.ui:171 src/fsearch_statusbar.ui:312
 msgid "Updating Database…"
-msgstr ""
+msgstr "Ana ɗaukaka Database…"
 
 #: src/fsearch_overlay.ui:186 src/fsearch_overlay.ui:383
 msgid "This may take a while."
-msgstr ""
+msgstr "Wannan na iya ɗaukar ɗan lokaci."
 
 #: src/fsearch_overlay.ui:241
 msgid "Empty Query"
-msgstr ""
+msgstr "Tambaya mara komai"
 
 #: src/fsearch_overlay.ui:256
 msgid "Press <b>Ctrl + F</b> and start typing."
-msgstr ""
+msgstr "Danna <b>Ctrl + F</b> sannan ka fara bugawa."
 
 #: src/fsearch_overlay.ui:304
 msgid "No Results Found"
-msgstr ""
+msgstr "Ba a Samu Sakamako ba"
 
 #: src/fsearch_overlay.ui:319
 msgid "Try a different search"
-msgstr ""
+msgstr "Gwada wani bincike na daban"
 
 #: src/fsearch_overlay.ui:368
 msgid "Sorting results…"
-msgstr ""
+msgstr "Ana tantance sakamakon…"
 
 #: src/fsearch_preferences.ui:7 src/fsearch_window.ui:251 src/menus.ui:84
 msgid "Preferences"
-msgstr ""
+msgstr "Abubuwan da ake so"
 
 #: src/fsearch_preferences.ui:76
 msgid "Enable dark theme"
-msgstr ""
+msgstr "Kunna jigon duhu"
 
 #: src/fsearch_preferences.ui:97
 msgid "Enable client-side decorations (requires restart)"
-msgstr ""
+msgstr "Kunna kayan ado na gefen abokin ciniki (yana buƙatar sake farawa)"
 
 #: src/fsearch_preferences.ui:117
 msgid "Use binary units instead of decimal units"
-msgstr ""
+msgstr "Yi amfani da raka'o'in binary maimakon raka'a goma sha ɗaya"
 
 #: src/fsearch_preferences.ui:138
 msgid "Remember window size"
-msgstr ""
+msgstr "Tuna girman taga"
 
 #: src/fsearch_preferences.ui:159
 msgid "Exit on Escape"
-msgstr ""
+msgstr "Fita akan Gudu"
 
 #: src/fsearch_preferences.ui:202
 msgid "with keyboard shortcuts or menu entries"
-msgstr ""
+msgstr "tare da gajerun hanyoyin keyboard ko shigarwar menu"
 
 #: src/fsearch_preferences.ui:223
 msgid "with double click"
-msgstr ""
+msgstr "tare da danna sau biyu"
 
 #: src/fsearch_preferences.ui:257
 msgid "Behaviour after successfully opening a file:"
-msgstr ""
+msgstr "Hali bayan nasarar buɗe fayil:"
 
 #: src/fsearch_preferences.ui:273
 msgid "Nothing"
-msgstr ""
+msgstr "Babu komai"
 
 #: src/fsearch_preferences.ui:274
 msgid "Minimize"
-msgstr ""
+msgstr "Rage girman"
 
 #: src/fsearch_preferences.ui:275
 msgid "Close"
-msgstr ""
+msgstr "Kusa"
 
 #: src/fsearch_preferences.ui:309
 msgid "General:"
-msgstr ""
+msgstr "Gabaɗaya:"
 
 #: src/fsearch_preferences.ui:344
 msgid "Show highlighted search terms"
-msgstr ""
+msgstr "Nuna fitattun sharuddan nema"
 
 #: src/fsearch_preferences.ui:366
 msgid "Show tooltips"
-msgstr ""
+msgstr "Nuna shawarwarin kayan aiki"
 
 #: src/fsearch_preferences.ui:387
 msgid "Show icons in name column"
-msgstr ""
+msgstr "Nuna gumaka a ginshiƙin suna"
 
 #: src/fsearch_preferences.ui:408
 msgid "Remember column configuration"
-msgstr ""
+msgstr "Tuna daidaitawar shafi"
 
 #: src/fsearch_preferences.ui:429
 msgid "Remember sort order"
-msgstr ""
+msgstr "Tuna jera tsari"
 
 #: src/fsearch_preferences.ui:450
 msgid "Open path with double click in path column"
-msgstr ""
+msgstr "Buɗe hanya tare da danna sau biyu a ginshiƙin hanya"
 
 #: src/fsearch_preferences.ui:471
 msgid "Single click to open"
-msgstr ""
+msgstr "Danna sau ɗaya don buɗewa"
 
 #: src/fsearch_preferences.ui:492
 msgid "Launch desktop files"
-msgstr ""
+msgstr "Kaddamar da fayilolin tebur"
 
 #: src/fsearch_preferences.ui:519
 msgid "Results:"
-msgstr ""
+msgstr "Sakamako:"
 
 #: src/fsearch_preferences.ui:560
 msgid "Show database indexing status"
-msgstr ""
+msgstr "Nuna matsayin bayanan bayanai"
 
 #: src/fsearch_preferences.ui:587
 msgid "Statusbar:"
-msgstr ""
+msgstr "Matsayi:"
 
 #: src/fsearch_preferences.ui:628
 msgid "Show warning dialogs when:"
-msgstr ""
+msgstr "Nuna maganganun faɗakarwa lokacin da:"
 
 #: src/fsearch_preferences.ui:638
 msgid "file / folder failed to open"
-msgstr ""
+msgstr "fayil / babban fayil ya kasa buɗewa"
 
 #: src/fsearch_preferences.ui:667
 msgid "Dialogs:"
-msgstr ""
+msgstr "maganganu:"
 
 #: src/fsearch_preferences.ui:692
 msgid "Interface"
-msgstr ""
+msgstr "Interface"
 
 #: src/fsearch_preferences.ui:711
 msgid "Search in path when query contains path separators"
-msgstr ""
+msgstr "Bincika a hanya lokacin da tambaya ta ƙunshi masu raba hanya"
 
 #: src/fsearch_preferences.ui:730
 msgid "Search as you type"
-msgstr ""
+msgstr "Bincika yayin da kake bugawa"
 
 #: src/fsearch_preferences.ui:750
 msgid "Hide results when search is empty"
-msgstr ""
+msgstr "Ɓoye sakamakon idan babu komai"
 
 #: src/fsearch_preferences.ui:769
 msgid "Match case when query contains at least one upper case character"
-msgstr ""
+msgstr "Halin daidaitawa lokacin da tambaya ta ƙunshi aƙalla babban harafi ɗaya"
 
 #: src/fsearch_preferences.ui:801
 msgid "Filter:"
-msgstr ""
+msgstr "Tace:"
 
 #: src/fsearch_preferences.ui:822 src/fsearch_window.ui:639
 msgid "Search"
-msgstr ""
+msgstr "Bincika"
 
 #: src/fsearch_preferences.ui:855
 msgid ""
@@ -1316,6 +1459,11 @@ msgid ""
 "Note that not all system themes provide such a darker variant, therefore "
 "enabling this setting might not have an effect."
 msgstr ""
+"<b>Ku kunna jigon duhu:</b>\n"
+"\n"
+"Idan an kunna, ana buƙatar jigon tsarin don amfani da salo mai duhu don aikace-aikacen <i>(watau abubuwan UI masu duhu akan rubutu mai haske)</i>.\n"
+"\n"
+"Lura cewa ba duk jigogin tsarin ke ba da irin wannan bambance-bambancen duhu ba, don haka kunna wannan saitin bazai yi tasiri ba."
 
 #: src/fsearch_preferences.ui:873
 msgid ""
@@ -1329,6 +1477,12 @@ msgid ""
 "This resembles a more traditional UI layout and takes a little bit more "
 "space."
 msgstr ""
+"<b>Ku kunna kayan ado na gefen abokin ciniki:</b>\n"
+"\n"
+"Idan an kunna, ana nuna shigarwar bincike da babban menu a mashigin taken taga.\n"
+"\n"
+"Idan an kashe, ana nuna babban menu azaman mashaya menu tare da shigarwar binciken ƙasa.\n"
+"Wannan yayi kama da shimfidar UI na gargajiya kuma yana ɗaukar ɗan sarari kaɗan."
 
 #: src/fsearch_preferences.ui:893
 msgid ""
@@ -1341,6 +1495,12 @@ msgid ""
 "\t• <b>Decimal  units:</b> This refers to decimal SI prefixes <i>(e.g. 1 kB "
 "= 1000 bytes)</i>"
 msgstr ""
+"<b>Ayi amfani da raka'o'in binary maimakon raka'a goma:</b>\n"
+"\n"
+"Wannan saitin yana sarrafa yadda ake nuna girman fayil.\n"
+"\n"
+"\t• <b>Raka'a binary:</b> Wannan yana nufin binaryar IEC prefixes <i>(misali 1 KiB = 1024 bytes)</i>\n"
+"\t• <b>Raka'a Decimal:</b> Wannan yana nufin prefixes SI decimal <i>(misali 1 kB = 1000 bytes)</i>"
 
 #: src/fsearch_preferences.ui:913
 msgid ""
@@ -1352,6 +1512,11 @@ msgid ""
 "Note that some window managers ignore this request and force the window to "
 "have a different size."
 msgstr ""
+"<b>Tuna girman taga:</b>\n"
+"\n"
+"Idan an kunna, za a dawo da girman taga daga zaman da ya gabata lokacin da ka buɗe taga FSearch.\n"
+"\n"
+"Lura cewa wasu manajan taga sunyi watsi da wannan buƙatar kuma suna tilasta taga ta sami girman daban."
 
 #: src/fsearch_preferences.ui:932
 msgid ""
@@ -1369,6 +1534,16 @@ msgid ""
 "\t• <b>keyboard shortcuts or menu entries</b> and/or\n"
 "\t• <b>mouse click</b>"
 msgstr ""
+"<b>Halayyar bayan nasarar buɗe fayil:</b>\n"
+"\n"
+"Lokacin da aka yi nasarar buɗe fayil/fayil ɗin cikin nasara ana iya aiwatar da ɗayan ayyuka masu zuwa:\n"
+"\t• <b>Babu:</b> Babu wani abu da zai faru.\n"
+"                        • <b>Rage:</b> Tagan FSearch da aka zaɓa a halin yanzu yana zama raguwa.\n"
+"\t• <b>Rufe:</b> Bar FSearch.\n"
+"\n"
+"Kuna iya saita idan waɗannan ayyukan ya kamata a jawo lokacin da aka buɗe fayil ɗin tare da\n"
+"\t• <b>Gajerun hanyoyin allo ko shigarwar menu</b> da/ko\n"
+"\t• <b>latsa linzamin kwamfuta</b>"
 
 #: src/fsearch_preferences.ui:956
 msgid ""
@@ -1384,6 +1559,14 @@ msgid ""
 "This also works for regular expressions and wildcard expressions starting or "
 "ending with an asterisk. "
 msgstr ""
+"<b>Nuna fitattun sharuddan nema:</b>\n"
+"\n"
+"Idan an kunna, za a haskaka sharuɗɗan bincike a cikin sakamakon binciken. Misali idan ka nemo \\\"foo\\\" duk bayyanar <i>foo</i> a cikin fayil/fayil sunaye za a haskaka su da haruffa masu ƙarfin gaske:\n"
+"\n"
+"\t<b>foo</b>bar.txt\n"
+"\tfayil.<b>foo</b>\n"
+"\n"
+"Wannan kuma yana aiki don maganganu na yau da kullun da kalamai masu ban sha'awa waɗanda farawa ko ƙarewa tare da alamar alama."
 
 #: src/fsearch_preferences.ui:978
 msgid ""
@@ -1392,6 +1575,9 @@ msgid ""
 "If enabled, the results view will show the full path of the focused file/"
 "folder in a small tooltip window."
 msgstr ""
+"<b>Nuna kayan aiki:</b>\n"
+"\n"
+"Idan an kunna, kallon sakamakon zai nuna cikakken hanyar fayil/fayil da aka mayar da hankali a cikin ƙaramin taga kayan aiki."
 
 #: src/fsearch_preferences.ui:995
 msgid ""
@@ -1399,6 +1585,9 @@ msgid ""
 "\n"
 "If enabled, file/folder icons will be shown in the name column."
 msgstr ""
+"<b>Nuna gumaka a ginshiƙin suna:</b>\n"
+"\n"
+"Idan an kunna, za a nuna gumakan fayil/fayil a cikin ginshiƙin suna."
 
 #: src/fsearch_preferences.ui:1012
 msgid ""
@@ -1408,6 +1597,9 @@ msgid ""
 "session will be restored when you open an FSearch window. This includes the "
 "size and visibility of all columns."
 msgstr ""
+"<b>Tuna daidaitawar shafi:</b>\n"
+"\n"
+"Idan an kunna, za a dawo da tsarin ginshiƙi na ra'ayin sakamakon daga zaman da ya gabata lokacin da ka buɗe taga FSearch. Wannan ya haɗa da girma da ganuwa na duk ginshiƙai."
 
 #: src/fsearch_preferences.ui:1029
 msgid ""
@@ -1416,6 +1608,9 @@ msgid ""
 "If enabled, the sort order of the results view from the previous session "
 "will be restored when you open an FSearch window."
 msgstr ""
+"<b>Ka tuna da tsari:</b>\n"
+"\n"
+"Idan an kunna, za a dawo da nau'in tsari na kallon sakamakon da aka samu daga zaman da ya gabata lokacin da ka buɗe taga FSearch."
 
 #: src/fsearch_preferences.ui:1046
 msgid ""
@@ -1423,6 +1618,9 @@ msgid ""
 "\n"
 "If enabled, double clicking in the path column will open the selected path."
 msgstr ""
+"<b>Bude hanya tare da danna sau biyu a ginshiƙin hanya:</b>\n"
+"\n"
+"Idan an kunna, danna sau biyu a cikin ginshiƙin hanya zai buɗe hanyar da aka zaɓa."
 
 #: src/fsearch_preferences.ui:1063
 msgid ""
@@ -1432,6 +1630,9 @@ msgid ""
 "want to select a file/folder while this setting is active, you need to hold "
 "<i>Ctrl</i> at the same time while clicking the file/folder."
 msgstr ""
+"<b>Latsa guda don buɗewa:</b>\n"
+"\n"
+"Idan an kunna, dannawa ɗaya zai buɗe fayil/fayil ɗin da aka zaɓa. Idan kawai kuna son zaɓar fayil / babban fayil yayin wannan saitin yana aiki, kuna buƙatar riƙe <i>Ctrl</i> a lokaci guda yayin danna fayil / babban fayil."
 
 #: src/fsearch_preferences.ui:1080
 msgid ""
@@ -1440,6 +1641,9 @@ msgid ""
 "If enabled, the path that is currently being indexed is displayed in the "
 "statusbar."
 msgstr ""
+"<b>Nuna matsayin bayanan bayanai:</b>\n"
+"\n"
+"Idan an kunna, hanyar da a halin yanzu ake ƙididdigewa tana nunawa a ma'aunin matsayi."
 
 #: src/fsearch_preferences.ui:1097
 msgid ""
@@ -1448,6 +1652,9 @@ msgid ""
 "If enabled, a warning dialog is displayed when a file or folder failed to "
 "open."
 msgstr ""
+"<b>Nuna maganganun faɗakarwa:</b>\n"
+"\n"
+"Idan an kunna, ana nuna maganganun faɗakarwa lokacin da fayil ko babban fayil ya kasa buɗewa."
 
 #: src/fsearch_preferences.ui:1114
 msgid ""
@@ -1456,6 +1663,9 @@ msgid ""
 "If enabled, search terms containing path separators (i.e. \"/\") will be "
 "automatically matched against the full path of a file or folder."
 msgstr ""
+"<b>Bincika a hanya lokacin da tambaya ta ƙunshi masu raba hanya:</b>\n"
+"\n"
+"Idan an kunna, kalmomin bincike masu ɗauke da masu raba hanya (watau \\\"/\\\") za a daidaita su ta atomatik da cikakken hanyar fayil ko babban fayil."
 
 #: src/fsearch_preferences.ui:1131
 msgid ""
@@ -1465,6 +1675,9 @@ msgid ""
 "trigger a case-sensitive search. This means a search term like <i>Foo</i> "
 "will match <i>FooBar.txt</i> but not <i>foobar.txt</i>."
 msgstr ""
+"<b>Harkokin daidaitawa lokacin da tambaya ta ƙunshi aƙalla harafi guda ɗaya:</b>\n"
+"\n"
+"Idan an kunna, sharuɗɗan bincike mai ƙunshe da aƙalla babban harafi ɗaya zai haifar da bincike mai ma'ana. Wannan yana nufin kalmar nema kamar <i>Foo</i> zata dace da <i>FooBar.txt</i> amma ba <i>foobar.txt</i> ba."
 
 #: src/fsearch_preferences.ui:1148
 msgid ""
@@ -1475,6 +1688,11 @@ msgid ""
 "If disabled, all files and folders will be displayed when the search entry "
 "is empty."
 msgstr ""
+"<b>Boye sakamakon idan babu komai:</b>\n"
+"\n"
+"Idan an kunna, ba za a nuna sakamakon bincike ba lokacin da shigarwar binciken ba ta da komai.\n"
+"\n"
+"Idan an kashe, duk fayiloli da manyan fayiloli za a nuna su lokacin da shigarwar binciken ya zama fanko."
 
 #: src/fsearch_preferences.ui:1167
 msgid ""
@@ -1485,6 +1703,11 @@ msgid ""
 "If disabled, the search is only updated when you hit <i>Enter</i> or press "
 "the search button. "
 msgstr ""
+"<b>Bincika yayin da kuke bugawa:</b>\n"
+"\n"
+"Idan an kunna, ana sabunta binciken ta atomatik tare da kowane maɓalli.\n"
+"\n"
+"Idan an kashe, ana sabunta binciken ne kawai lokacin da ka buga <i>Enter</i> ko danna maɓallin nema."
 
 #: src/fsearch_preferences.ui:1186
 msgid ""
@@ -1493,6 +1716,9 @@ msgid ""
 "If enabled, the database will be updated automatically in the background "
 "when you start FSearch."
 msgstr ""
+"<b>Sabunta bayanai tun farko:</b>\n"
+"\n"
+"Idan an kunna, za a sabunta bayanan bayanan ta atomatik a bango lokacin da kuka fara FSearch."
 
 #: src/fsearch_preferences.ui:1203
 msgid ""
@@ -1506,6 +1732,13 @@ msgid ""
 "\t• <b>One Filesystem:</b> If enabled, FSearch won't cross filesystem "
 "boundaries for this folder"
 msgstr ""
+"<b>Hade manyan manyan fayiloli:</b>\n"
+"\n"
+"Wannan jeri ya ƙunshi duk manyan fayiloli da kuke son haɗawa a cikin bayanan.\n"
+"\n"
+"\t• <b>Active:</b> Idan an kunna hanyar, za a haɗa hanyar a cikin bayanan da za a bincika a ciki.\n"
+"\t• <b>Hanya:</b> Cikakken hanyar da za a haɗa.\n"
+"\t• <b>Tsarin Fayil guda ɗaya:</b> Idan an kunna, FSearch ba zai ketare iyakokin tsarin fayil na wannan babban fayil ɗin ba."
 
 #: src/fsearch_preferences.ui:1224
 msgid ""
@@ -1514,6 +1747,9 @@ msgid ""
 "This button opens a dialog where you can select a folder you want to include "
 "in the database for searching."
 msgstr ""
+"<b>Ƙara babban fayil zuwa bayanan bayanai:</b>\n"
+"\n"
+"Wannan maballin yana buɗe zance inda zaku iya zaɓar babban fayil ɗin da kuke son sakawa a cikin ma'ajin bayanai don bincike."
 
 #: src/fsearch_preferences.ui:1241
 msgid ""
@@ -1523,6 +1759,9 @@ msgid ""
 "include that folder in the database. This is useful for adding a path "
 "directly without browsing for it."
 msgstr ""
+"<b>Ƙara takamaiman hanya:</b>\n"
+"\n"
+"Buga cikakken hanyar babban fayil anan kuma danna maballin kusa da shi don haɗa wannan babban fayil ɗin a cikin bayanan. Wannan yana da amfani don ƙara hanya kai tsaye ba tare da bincika ta ba."
 
 #: src/fsearch_preferences.ui:1258
 msgid ""
@@ -1530,6 +1769,9 @@ msgid ""
 "\n"
 "This removes the selected folder from the list of included folders."
 msgstr ""
+"<b>Cire zaɓaɓɓen jere:</b>\n"
+"\n"
+"Wannan yana cire babban fayil ɗin da aka zaɓa daga jerin manyan fayilolin da aka haɗa."
 
 #: src/fsearch_preferences.ui:1275
 msgid ""
@@ -1542,6 +1784,11 @@ msgid ""
 "system resources per watched folder. For large directory trees with many "
 "files the system may run out of resources to watch them all."
 msgstr ""
+"<b>Yi ƙoƙarin saka idanu:</b>\n"
+"\n"
+"Idan an kunna, FSearch yana kallon wannan babban fayil don canje-canje kuma yana adana bayanan da aka sabunta ta atomatik, don haka ba lallai ne ku sake bincika da hannu ba.\n"
+"\n"
+"Ba a tallafawa sa ido akan kowane tsarin fayil kuma yana amfani da ƙaramin adadin albarkatun tsarin kowace babban fayil da ake kallo. Don manyan bishiyoyin adireshi masu fayiloli da yawa tsarin na iya ƙarewa da albarkatun don kallon su duka."
 
 #: src/fsearch_preferences.ui:1294
 msgid ""
@@ -1550,6 +1797,9 @@ msgid ""
 "If enabled, this folder is rescanned every time FSearch starts, so the "
 "database reflects any changes made while FSearch wasn't running."
 msgstr ""
+"<b>Duba bayan ƙaddamarwa:</b>\n"
+"\n"
+"Idan an kunna, wannan babban fayil ana sake dubawa duk lokacin da FSearch ya fara, don haka ma'aunin bayanai yana nuna duk wani canje-canje da aka yi yayin FSearch baya aiki."
 
 #: src/fsearch_preferences.ui:1311
 msgid ""
@@ -1559,6 +1809,9 @@ msgid ""
 "folder. Mounted file systems below it (e.g. external drives or network "
 "shares) are skipped."
 msgstr ""
+"<b>Zama akan tsarin fayil ɗaya:</b>\n"
+"\n"
+"Idan an kunna, FSearch ba zai ketare iyakokin tsarin fayil ba yayin bincika wannan babban fayil ɗin. An tsallake tsarin fayilolin da aka ɗora a ƙarƙashinsa (misali fayafai na waje ko hannun jari na cibiyar sadarwa)."
 
 #: src/fsearch_preferences.ui:1328
 msgid ""
@@ -1570,6 +1823,11 @@ msgid ""
 "This is useful for folders on file systems that can't be monitored for "
 "changes."
 msgstr ""
+"<b>Sake dubawa kowane:</b>\n"
+"\n"
+"Idan an kunna wannan babban fayil ɗin ana sake duba ta ta atomatik a lokacin da aka bayar. Yi amfani da sa'o'i da filayen mintuna don saita sau nawa sake dubawa ya faru.\n"
+"\n"
+"Wannan yana da amfani ga manyan fayiloli akan tsarin fayil waɗanda ba za a iya sa ido ba don canje-canje."
 
 #: src/fsearch_preferences.ui:1347
 msgid ""
@@ -1590,6 +1848,15 @@ msgid ""
 "\t• <b>Applies To:</b> Whether the rule affects <i>Files</i>, <i>Folders</i> "
 "or both."
 msgstr ""
+"<b>Ba da dokoki:</b>\n"
+"\n"
+"Wannan jeri ya ƙunshi dokoki don fayiloli da manyan fayilolin da kuke son cirewa daga ma'ajin bayanai.\n"
+"\n"
+"\t• <b>Active:</b> Idan an kunna, ana amfani da ƙa'idar kuma an cire abubuwan da suka dace.\n"
+"\t• <b>Tsarin:</b> Rubutun ya yi daidai da kowane abu, an fassara shi gwargwadon Nau'in.\n"
+"\t• <b>Nau'i:</b> Yadda ake fassara tsarin - <i>Literal</i> (ainihin rubutu), <i>Wildcard</i> (amfani da * da ?) ko <i>Regex</i> (kalmomi na yau da kullun).\n"
+"\t• <b>Match:</b> Ko tsarin ya yi daidai da abin <i>Cikakken Hanya</i> ko kuma kawai <i>Basename</i> (sunan ba tare da hanya ba).\n"
+"\t• <b>Ya shafi:</b> Ko ka'idar ta shafi <i>Fayloli</i>, <i>Fayloli</i> ko duka biyun."
 
 #: src/fsearch_preferences.ui:1370
 msgid ""
@@ -1598,6 +1865,9 @@ msgid ""
 "This adds a new, empty rule to the list. Edit its Pattern, Type, Match and "
 "Applies To columns to control what gets excluded from the database."
 msgstr ""
+"<b>Ƙara ƙa'idar cirewa:</b>\n"
+"\n"
+"Wannan yana ƙara sabuwar doka mara komai a lissafin. Shirya Tsarin sa, Nau'insa, Daidaita da Aiwatar da su zuwa ginshiƙai don sarrafa abin da aka cire daga bayanan."
 
 #: src/fsearch_preferences.ui:1387
 msgid ""
@@ -1605,6 +1875,9 @@ msgid ""
 "\n"
 "This removes the selected rule from the list of exclude rules."
 msgstr ""
+"<b>Cire zaɓaɓɓen jere:</b>\n"
+"\n"
+"Wannan yana cire ƙa'idar da aka zaɓa daga jerin ƙa'idodin keɓe."
 
 #: src/fsearch_preferences.ui:1404
 msgid ""
@@ -1614,6 +1887,11 @@ msgid ""
 "\n"
 "⚠ All rules which were created or edited by the user will be lost! ⚠"
 msgstr ""
+"<b>Mayar da tsoffin ƙa'idodi:</b>\n"
+"\n"
+"Wannan maballin yana dawo da tsoffin saitin ƙa'idodin ware.\n"
+"\n"
+"⚠ Duk ƙa'idodin da mai amfani ya ƙirƙira ko ya gyara za su ɓace! ⚠"
 
 #: src/fsearch_preferences.ui:1423
 msgid ""
@@ -1624,6 +1902,9 @@ msgid ""
 "all files or folders which are called either <i>.git</i> or <i>.cache</i> or "
 "end with <i>.swp</i>."
 msgstr ""
+"<b>Cire fayiloli da manyan fayiloli daga bayanan bayanai:</b>\n"
+"\n"
+"Wannan jerin manyan fayiloli ne (ko manyan fayiloli) da kuke son cirewa daga bayanan bayanai. Misali <i>.git;.cache;*.swp</i> zai ware duk fayiloli ko manyan fayiloli da ake kira <i>.git</i> ko <i>.cache</i> ko kuma su ƙare da <i>.swp</i>."
 
 #: src/fsearch_preferences.ui:1440
 msgid ""
@@ -1632,10 +1913,13 @@ msgid ""
 "If enabled, hidden files and folders will be excluded from the database "
 "<i>(i.e. all files or folders which start with a dot character)</i>."
 msgstr ""
+"<b>Baya ɓoye fayiloli da manyan fayiloli:</b>\n"
+"\n"
+"Idan an kunna, za a cire ɓoye fayiloli da manyan fayiloli daga rumbun adana bayanai <i>(watau duk fayiloli ko manyan fayiloli waɗanda suka fara da alamar digo)</i>."
 
 #: src/fsearch_preferences.ui:1457
 msgid "Focus a setting to get a detailed description of what it does."
-msgstr ""
+msgstr "Mayar da hankali wuri don samun cikakken bayanin abin da yake yi."
 
 #: src/fsearch_preferences.ui:1470
 msgid ""
@@ -1650,6 +1934,13 @@ msgid ""
 "\n"
 "<i><tt>fsearch --update-database</tt></i>"
 msgstr ""
+"<b>Lokaci sabunta bayanan bayanai a wani tazara na musamman:</b>\n"
+"\n"
+"Idan an kunna kuma muddin FSearch yana gudana, za a sabunta bayanan lokaci-lokaci tare da tazarar lokacin da aka ba.\n"
+"\n"
+"Idan kuna son sabunta bayanan bayanan a bango, koda lokacin FSearch baya gudana, yakamata kuyi amfani da kayan aikin kamar cron ko masu ƙidayar lokaci don kunna sabuntawa lokaci-lokaci tare da:\n"
+"\n"
+"<i><tt>fsearch --update-database</tt></i>"
 
 #: src/fsearch_preferences.ui:1491
 msgid ""
@@ -1660,6 +1951,9 @@ msgid ""
 "launcher. Otherwise the <i>.desktop</i> file will be opened with the default "
 "handler for this type of files, which is usually a text editor."
 msgstr ""
+"<b>Kaddamar da fayilolin tebur:</b>\n"
+"\n"
+"Idan an kunna, kunna fayil na <i>.desktop</i> zai ƙaddamar da aikace-aikacen da aka ayyana cikin wannan fayil ɗin. Ta wannan hanyar FSearch na iya aiki kamar mai ƙaddamar da aikace-aikacen. In ba haka ba za a buɗe fayil ɗin <i>.desktop</i> tare da tsoho mai kula da irin wannan nau'in fayiloli, wanda galibi editan rubutu ne."
 
 #: src/fsearch_preferences.ui:1508
 msgid ""
@@ -1672,6 +1966,13 @@ msgid ""
 "the filter on demand\n"
 "\t• <b>Query:</b> The search term by which the database should be filtered"
 msgstr ""
+"<b>Tace:</b>\n"
+"\n"
+"Wannan jerin duk abubuwan tacewa. Tace bincike ne da aka riga aka kayyade.\n"
+"\n"
+"\t• <b>Sunan:</b> Mahimmanci na musamman da siffantawa don tacewa\n"
+"\t• <b>Macro:</b> Ta hanyar buga macro rubutu da ':' za ku iya kunna tacewa akan buƙata.\n"
+"\t• <b>Tambaya:</b> Kalmomin bincike da ya kamata a tace bayanan"
 
 #: src/fsearch_preferences.ui:1529
 msgid ""
@@ -1679,6 +1980,9 @@ msgid ""
 "\n"
 "This button opens a dialog where you can edit a new filter."
 msgstr ""
+"<b>Ƙara sabon tacewa:</b>\n"
+"\n"
+"Wannan maɓallin yana buɗe maganganu inda za ku iya gyara sabon tacewa."
 
 #: src/fsearch_preferences.ui:1546
 msgid ""
@@ -1686,6 +1990,9 @@ msgid ""
 "\n"
 "This button removes the currently selected filter."
 msgstr ""
+"<b>Cire zaɓaɓɓen tacewa:</b>\n"
+"\n"
+"Wannan maɓallin yana cire tacewa a halin yanzu da aka zaɓa."
 
 #: src/fsearch_preferences.ui:1563
 msgid ""
@@ -1693,6 +2000,9 @@ msgid ""
 "\n"
 "This button opens a dialog where you can edit the selected filter."
 msgstr ""
+"<b>A gyara zaɓaɓɓen tacewa:</b>\n"
+"\n"
+"Wannan maɓallin yana buɗe maganganu inda za ku iya gyara zaɓaɓɓen tacewa."
 
 #: src/fsearch_preferences.ui:1580
 msgid ""
@@ -1702,6 +2012,11 @@ msgid ""
 "\n"
 "⚠ All filters which were created or edited by the user will be lost! ⚠"
 msgstr ""
+"<b>Mayar da tsoffin tacewa:</b>\n"
+"\n"
+"Wannan maballin yana dawo da saitunan tace tsoho.\n"
+"\n"
+"⚠ Duk matattarar da mai amfani ya ƙirƙira ko gyara za su ɓace! ⚠"
 
 #: src/fsearch_preferences.ui:1599
 msgid ""
@@ -1710,128 +2025,137 @@ msgid ""
 "If enabled, FSearch exits when the Escape key is pressed instead of the "
 "window being minimized."
 msgstr ""
+"<b>Fita akan Gudu:</b>\n"
+"\n"
+"Idan an kunna, FSearch yana fita lokacin da aka danna maɓallin Tserewa maimakon rage girman taga."
 
 #: src/fsearch_preferences.ui:1618 src/fsearch_window.ui:290
 #: src/fsearch_window.ui:415 src/menus.ui:150 src/menus.ui:156
 msgid "Help"
-msgstr ""
+msgstr "Taimako"
 
 #: src/fsearch_preferences_dialog.c:238
 msgid "Database"
-msgstr ""
+msgstr "Database"
 
 #: src/fsearch_result_view.c:381
 msgid "Invalid row data"
-msgstr ""
+msgstr "Bayanan jere mara inganci"
 
 #: src/fsearch_statusbar.c:58
 #, c-format
 msgid "%'d Item"
-msgstr ""
+msgstr "%'d Abu"
 
 #: src/fsearch_statusbar.c:58 src/fsearch_statusbar.c:186
 #, c-format
 msgid "%'d Items"
-msgstr ""
+msgstr "%'d Abubuwa"
 
 #: src/fsearch_statusbar.c:80
 msgid "Querying…"
-msgstr ""
+msgstr "Tambaya…"
 
 #: src/fsearch_statusbar.c:175
 msgid "Loading…"
-msgstr ""
+msgstr "Ana lodawa…"
 
 #: src/fsearch_statusbar.c:180
 msgid "Scanning…"
-msgstr ""
+msgstr "Ana dubawa…"
 
 #: src/fsearch_statusbar.ui:52
 msgid "Number of Search Results"
-msgstr ""
+msgstr "Yawan Sakamakon Bincike"
 
 #: src/fsearch_statusbar.ui:53
 msgid "0 Items"
-msgstr ""
+msgstr "0 Abubuwa"
 
 #: src/fsearch_statusbar.ui:106
 msgid "Cancel"
-msgstr ""
+msgstr "Soke"
 
 #: src/fsearch_statusbar.ui:153
 msgid "Index:"
-msgstr ""
+msgstr "Fihirisa:"
 
 #: src/fsearch_statusbar.ui:228
 msgid "Number of selected folders"
-msgstr ""
+msgstr "Adadin manyan fayilolin da aka zaɓa"
 
 #: src/fsearch_statusbar.ui:229 src/fsearch_statusbar.ui:254
 msgid "0/0"
-msgstr ""
+msgstr "0/0"
 
 #: src/fsearch_statusbar.ui:253
 msgid "Number of selected files"
-msgstr ""
+msgstr "Adadin fayilolin da aka zaɓa"
 
 #: src/fsearch_statusbar.ui:328 src/fsearch_window.ui:103
 msgid "Cancel database update"
-msgstr ""
+msgstr "Soke sabunta bayanai"
 
 #: src/fsearch_statusbar.ui:369
 msgid "Number of database items"
-msgstr ""
+msgstr "Yawan abubuwan bayanai"
 
 #: src/fsearch_statusbar.ui:370
 msgid "(empty)"
-msgstr ""
+msgstr "(Ba komai)"
 
 #: src/fsearch_statusbar.ui:407
 msgid ""
 "Search term contains upper case characters.\n"
 "<b>Match Case</b> was temporarily activated for this term."
 msgstr ""
+"Kalmar bincike ta ƙunshi manyan haruffa.\n"
+"An kunna <b>Match Case</b> na ɗan lokaci don wannan lokacin."
 
 #: src/fsearch_statusbar.ui:438 src/fsearch_statusbar.ui:491
 msgid "CASE"
-msgstr ""
+msgstr "KASA"
 
 #: src/fsearch_statusbar.ui:514
 msgid ""
 "Search term contains path separators.\n"
 "<b>Search in Path</b> was temporarily activated for this term."
 msgstr ""
+"Kalmar nema ta ƙunshi masu raba hanya.\n"
+"An kunna <b>Bincike a Hanya</b> na ɗan lokaci don wannan lokacin."
 
 #: src/fsearch_statusbar.ui:545 src/fsearch_statusbar.ui:598
 msgid "PATH"
-msgstr ""
+msgstr "HANYA"
 
 #: src/fsearch_statusbar.ui:651
 msgid "REGEX"
-msgstr ""
+msgstr "REGEX"
 
 #: src/fsearch_statusbar.ui:726
 msgid ""
 "The search was cancelled before it finished.\n"
 "<b>These results are incomplete.</b>"
 msgstr ""
+"An soke binciken kafin a gama.\n"
+"<b>Waɗannan sakamakon ba su cika ba.</b>"
 
 #: src/fsearch_statusbar.ui:756
 msgid "PARTIAL"
-msgstr ""
+msgstr "BAYANI"
 
 #: src/fsearch_welcome_dialog.ui:26
 msgid "What's New in FSearch"
-msgstr ""
+msgstr "Menene Sabo a FSearch"
 
 #: src/fsearch_welcome_dialog.ui:79
 msgid ""
 "<span size=\"xx-large\" weight=\"bold\">What's New in FSearch 0.3</span>"
-msgstr ""
+msgstr "<span size=\\\"xx-large\\\" nauyi=\\\"m\\\">Mene ne Sabo a FSearch 0.3</span>"
 
 #: src/fsearch_welcome_dialog.ui:149
 msgid "<big><b>File System Monitoring</b></big>"
-msgstr ""
+msgstr "<big><b>Sabbin Tsarin Fayil</b></big>"
 
 #: src/fsearch_welcome_dialog.ui:163
 msgid ""
@@ -1845,20 +2169,26 @@ msgid ""
 "<a href=\"URL\">https://github.com/cboxdoerfer/fsearch/wiki/Database-update</"
 "a>"
 msgstr ""
+"Yanzu zaku iya kallon manyan fayiloli guda ɗaya don kawar da sake dubawa akai-akai. Canje-canjen fayil sannan suna bayyana a cikin sakamakon bincikenku nan da nan.\n"
+"\n"
+"Don kunna wannan fasalin je zuwa sashin Database na maganganun Preferences.\n"
+"\n"
+"Duba takaddun kan layi don ƙarin bayani:\n"
+"<a href=\\\"URL\\\">https://github.com/cboxdoerfer/fsearch/wiki/Database-update</a>"
 
 #: src/fsearch_welcome_dialog.ui:232
 msgid "<big><b>Folder-Specific Rescan Schedules</b></big>"
-msgstr ""
+msgstr "<big><b>Takamaiman Jadawalin Sake Duba Jaka</b></big>"
 
 #: src/fsearch_welcome_dialog.ui:246
 msgid ""
 "You can now configure automatic update intervals for individual folders "
 "independently and tailored to each distinct location."
-msgstr ""
+msgstr "Yanzu zaku iya saita tazarar sabuntawa ta atomatik don manyan fayiloli guda ɗaya da kansu kuma waɗanda aka keɓance da kowane wuri na musamman."
 
 #: src/fsearch_welcome_dialog.ui:309
 msgid "<big><b>Improved Exclude Rules</b></big>"
-msgstr ""
+msgstr "<big><b>Ingantattun Dokokin Ware </b></big>"
 
 #: src/fsearch_welcome_dialog.ui:323
 msgid ""
@@ -1867,18 +2197,20 @@ msgid ""
 "Rules can be targeted specifically at files, folders, or both, and can be "
 "configured to match against either the basename or the full absolute path."
 msgstr ""
+"Yanzu zaku iya amfani da katunan daji da maganganu na yau da kullun don ayyana ƙarin ƙaƙƙarfan ƙa'idodin keɓe. \n"
+"Ana iya yin niyya ga ƙa'idodi musamman a fayiloli, manyan fayiloli, ko duka biyun, kuma ana iya saita su don dacewa da ko dai sunan tushe ko cikakkiyar cikakkiyar hanya."
 
 #: src/fsearch_window.c:749 src/menus.ui:279
 msgid "Size"
-msgstr ""
+msgstr "Girman"
 
 #: src/fsearch_window.c:763 src/menus.ui:271
 msgid "Extension"
-msgstr ""
+msgstr "Tsawaitawa"
 
 #: src/fsearch_window.c:770 src/menus.ui:283
 msgid "Date Modified"
-msgstr ""
+msgstr "Kwanan da aka gyara"
 
 #: src/fsearch_window.c:784
 msgid ""
@@ -1887,201 +2219,205 @@ msgid ""
 "This sort order is not persistent, it will be reset when the search term "
 "changes."
 msgstr ""
+"Rarraba ta <b>Nau'i</b> na iya ɗaukar ƴan daƙiƙa kaɗan tare da sakamako masu yawa.\n"
+"\n"
+"Wannan nau'in tsari ba ya dawwama, za a sake saita shi lokacin da kalmar nema ta canza."
 
 #: src/fsearch_window.ui:68
 msgid "New window"
-msgstr ""
+msgstr "Sabuwar taga"
 
 #: src/fsearch_window.ui:89
 msgid "Update database"
-msgstr ""
+msgstr "Sabunta bayanai"
 
 #: src/fsearch_window.ui:144 src/menus.ui:112
 msgid "Search in Path"
-msgstr ""
+msgstr "Bincika a Hanya"
 
 #: src/fsearch_window.ui:158 src/menus.ui:116
 msgid "Match Case"
-msgstr ""
+msgstr "Match Case"
 
 #: src/fsearch_window.ui:172 src/menus.ui:120
 msgid "Enable RegEx"
-msgstr ""
+msgstr "Kunna RegEx"
 
 #: src/fsearch_window.ui:197 src/menus.ui:95
 msgid "Show Statusbar"
-msgstr ""
+msgstr "Nuna Statusbar"
 
 #: src/fsearch_window.ui:211 src/menus.ui:99
 msgid "Show Filter"
-msgstr ""
+msgstr "Nuna Tace"
 
 #: src/fsearch_window.ui:225 src/menus.ui:103
 msgid "Show Search Button"
-msgstr ""
+msgstr "Nuna Maballin Bincike"
 
 #: src/fsearch_window.ui:275 src/fsearch_window.ui:356 src/menus.ui:129
 msgid "FSearch Online"
-msgstr ""
+msgstr "FSearch Kan layi"
 
 #: src/fsearch_window.ui:304 src/menus.ui:161
 msgid "About"
-msgstr ""
+msgstr "Game da"
 
 #: src/fsearch_window.ui:329 src/menus.ui:47
 msgid "Quit"
-msgstr ""
+msgstr "Dakata"
 
 #: src/fsearch_window.ui:372 src/fsearch_window.ui:443 src/menus.ui:131
 msgid "Donate"
-msgstr ""
+msgstr "Ba da gudummawa"
 
 #: src/fsearch_window.ui:387 src/menus.ui:142
 msgid "Forum"
-msgstr ""
+msgstr "Dandalin"
 
 #: src/fsearch_window.ui:401 src/menus.ui:146
 msgid "Bug Reports and Feature Requests"
-msgstr ""
+msgstr "Rahoton Bug da Buƙatun fasali"
 
 #: src/fsearch_window.ui:460 src/menus.ui:133
 msgid "GitHub Sponsors"
-msgstr ""
+msgstr "GitHub Masu Tallafawa"
 
 #: src/fsearch_window.ui:474 src/menus.ui:137
 msgid "PayPal"
-msgstr ""
+msgstr "PayPal"
 
 #: src/fsearch_window.ui:586
 msgid "Search…"
-msgstr ""
+msgstr "Bincika…"
 
 #: src/fsearch_window.ui:608
 msgid "Select a Filter"
-msgstr ""
+msgstr "Zaɓi Tace"
 
 #: src/fsearch_window_actions.c:110
 #, c-format
 msgid "Do you really want to open %'d file?"
 msgid_plural "Do you really want to open %'d files?"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Shin kuna son buɗe fayil ɗin %'d da gaske?"
+msgstr[1] "Shin kuna son buɗe fayilolin %'d da gaske?"
 
 #: src/fsearch_window_actions.c:115
 msgid "Opening Files…"
-msgstr ""
+msgstr "Buɗe Fayiloli…"
 
 #: src/fsearch_window_actions.c:198
 #, c-format
 msgid "Do you really want to remove %'d file?"
 msgid_plural "Do you really want to remove %'d files?"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Shin kuna son cire fayil ɗin %'d da gaske?"
+msgstr[1] "Kuna son cire fayilolin %'d da gaske?"
 
 #: src/fsearch_window_actions.c:205
 msgid "Deleting files…"
-msgstr ""
+msgstr "Ana share fayiloli…"
 
 #: src/fsearch_window_actions.c:205
 msgid "Moving files to trash…"
-msgstr ""
+msgstr "Ana matsar da fayiloli zuwa sharar…"
 
 #: src/fsearch_window_actions.c:238 src/fsearch_window_actions.c:533
 #: src/fsearch_window_actions.c:580
 msgid "Something went wrong."
-msgstr ""
+msgstr "Wani abu ya faru."
 
 #: src/fsearch_window_actions.c:263
 #, c-format
 msgid "Do you really want to open %'d file property window?"
 msgid_plural "Do you really want to open %'d file property windows?"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Shin kuna son buɗe taga dukiyar fayil ɗin %'d da gaske?"
+msgstr[1] "Shin kuna son buɗe manyan windows na fayil ɗin %'d?"
 
 #: src/fsearch_window_actions.c:270
 msgid "Opening file properties…"
-msgstr ""
+msgstr "Buɗe kaddarorin fayil…"
 
 #: src/menus.ui:6
 msgid "_File"
-msgstr ""
+msgstr "_Fayil"
 
 #: src/menus.ui:9
 msgid "New Window"
-msgstr ""
+msgstr "Sabuwar Taga"
 
 #: src/menus.ui:16 src/menus.ui:171
 msgid "_Open"
-msgstr ""
+msgstr "_Bude"
 
 #: src/menus.ui:21
 msgid "Open Folder"
-msgstr ""
+msgstr "Buɗe Jaka"
 
 #: src/menus.ui:29
 msgid "Update Database"
-msgstr ""
+msgstr "Sabunta Database"
 
 #: src/menus.ui:35
 msgid "Cancel Update"
-msgstr ""
+msgstr "Soke Sabuntawa"
 
 #: src/menus.ui:42
 msgid "Close Window"
-msgstr ""
+msgstr "Rufe taga"
 
 #: src/menus.ui:54
 msgid "_Edit"
-msgstr ""
+msgstr "_A gyara"
 
 #: src/menus.ui:57 src/menus.ui:207
 msgid "_Copy"
-msgstr ""
+msgstr "_Kwafi"
 
 #: src/menus.ui:62 src/menus.ui:228
 msgid "Cu_t"
-msgstr ""
+msgstr "Ku_t"
 
 #: src/menus.ui:69
 msgid "Select All"
-msgstr ""
+msgstr "Zaɓi Duk"
 
 #: src/menus.ui:74
 msgid "Deselect All"
-msgstr ""
+msgstr "Cire Zaɓi Duk"
 
 #: src/menus.ui:78
 msgid "Invert Selection"
-msgstr ""
+msgstr "Zaɓin Juya"
 
 #: src/menus.ui:92
 msgid "_View"
-msgstr ""
+msgstr "_Duba"
 
 #: src/menus.ui:109
 msgid "_Search"
-msgstr ""
+msgstr "_Bincika"
 
 #: src/menus.ui:126
 msgid "_Help"
-msgstr ""
+msgstr "_Taimako"
 
 #: src/menus.ui:177
 msgid "Open _With"
-msgstr ""
+msgstr "Bude _Da"
 
 #: src/menus.ui:191
 msgid "_Open Folder"
-msgstr ""
+msgstr "_Bude Jaka"
 
 #: src/menus.ui:213
 msgid "Copy as Text"
-msgstr ""
+msgstr "Kwafi azaman Rubutu"
 
 #: src/menus.ui:223
 msgid "Path + Name"
-msgstr ""
+msgstr "Hanya + Suna"
 
 #: src/menus.ui:236
 msgid "Move to _Trash"
-msgstr ""
+msgstr "Matsar zuwa _Shara"
+
