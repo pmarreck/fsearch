@@ -2093,4 +2093,3 @@ msgstr ""
 #: src/menus.ui:236
 msgid "Move to _Trash"
 msgstr ""
-

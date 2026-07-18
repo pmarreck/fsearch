@@ -126,11 +126,11 @@
 # 64-Catalog I18n Enforcement (2026-07-15)
 
 - [x] Phase 1: add the 64-locale required-list control file, blessed-hash sentinel, and WARN-only full-catalog completeness check to `./test` and Nix CI. (2026-07-15 10:43 EDT)
-  The gate protects the exact list with a committed SHA-256 control value, validates catalog existence, template keys, gettext format correctness, fuzzy entries, and untranslated entries. Peter authorized excluding Interlingue (`ie`) and Igbo (`ig`) because neither available translation model clears their semantic-quality floor; the retained Interlingue catalog remains unenforced. It now reports three inherited catalogs plus 23 not-yet-created catalogs as 26 explicit warnings while exiting successfully. Curiosity poke: the check must enumerate every missing, stale, fuzzy, or untranslated locale without allowing a future edit to silently shrink the required set.
+  The gate protects the exact list with a committed SHA-256 control value, validates catalog existence, template keys, gettext format correctness, fuzzy entries, and untranslated entries. Peter authorized excluding Interlingue (`ie`) and Igbo (`ig`) because neither available translation model clears their semantic-quality floor; the retained Interlingue catalog remains unenforced. It now reports three inherited catalogs plus 23 present-but-untranslated catalogs as 26 explicit warnings while exiting successfully. Curiosity poke: the check must enumerate every missing, stale, fuzzy, or untranslated locale without allowing a future edit to silently shrink the required set.
 - [x] Narrow the protected translation-completeness target from 66 to 64 locales. (2026-07-16 09:49 EDT)
   The two excluded locales are covered by a red-green integration assertion that also requires the corresponding 26-locale WARN report. This is an explicit Peter-authorized control-list and checksum update, not an unreviewed list drift.
-- [ ] Create and complete the 23 missing canonical i18n catalogs with gettext-derived plural headers.
-  Curiosity poke: under-resourced and RTL locales require the same structural and semantic review gates as well-resourced ones.
+- [x] Scaffold the 23 missing canonical i18n catalogs with gettext-derived plural headers. Completed 2026-07-17 21:11 EDT.
+  All 64 required locales now have a deterministic 388-entry catalog and are listed in `LINGUAS`; the remaining 26 catalogs stay WARN-incomplete until translated. Curiosity poke: under-resourced and RTL locales require the same structural and semantic review gates as well-resourced ones.
 - [ ] Scrub Weblate provenance only from the 17 AI-majority PO headers after all four required inherited catalogs complete.
   Curiosity poke: compare headers and bodies independently so the 25 Weblate-majority catalogs remain byte-identical.
 - [ ] Phase 2: flip the same 64-locale completeness gate from WARN to hard failure after independent verification finds all catalogs complete.
