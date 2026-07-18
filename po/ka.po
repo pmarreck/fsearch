@@ -19,335 +19,337 @@ msgstr ""
 
 #: data/io.github.cboxdoerfer.FSearch.desktop.in.in:4 src/main.c:36
 msgid "FSearch"
-msgstr ""
+msgstr "FSearch"
 
 #: data/io.github.cboxdoerfer.FSearch.desktop.in.in:5
 msgid "A file search application focusing on performance and advanced features"
-msgstr ""
+msgstr "ფაილის საძიებო აპლიკაცია, რომელიც ფოკუსირებულია შესრულებასა და გაფართოებულ ფუნქციებზე"
 
 #: data/io.github.cboxdoerfer.FSearch.desktop.in.in:10
 msgid "search;fsearch;files;folders;music;video;documents;find;tool;everything;"
-msgstr ""
+msgstr "ძებნა;fsearch;ფაილები;საქაღალდეები;მუსიკა;ვიდეო;დოკუმენტები;იპოვნე;ინსტრუმენტი;ყველაფერი;"
 
 #: data/io.github.cboxdoerfer.FSearch.desktop.in.in:12
 msgid "File Search Utility"
-msgstr ""
+msgstr "ფაილების საძიებო პროგრამა"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:8
 msgid "A graphical file search application"
-msgstr ""
+msgstr "გრაფიკული ფაილების საძიებო აპლიკაცია"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:10
 msgid ""
 "FSearch helps you to find files and folders as easy and fast as possible. "
 "Just type a few letters and search results will appear almost instantly."
-msgstr ""
+msgstr "FSearch დაგეხმარებათ იპოვოთ ფაილები და საქაღალდეები რაც შეიძლება მარტივად და სწრაფად. უბრალოდ აკრიფეთ რამდენიმე ასო და ძიების შედეგები თითქმის მყისიერად გამოჩნდება."
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:14
 msgid ""
 "There are a lot of features which make searching as efficient and powerful "
 "as possible. Such as:"
-msgstr ""
+msgstr "არსებობს უამრავი ფუნქცია, რომელიც ძიებას რაც შეიძლება ეფექტურს და ძლიერს ხდის. როგორიცაა:"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:19
 msgid ""
 "Ignore case (e.g. searching for \"<code>fsearch</code>\" will match "
 "\"FSearch\" as well)"
-msgstr ""
+msgstr "იგნორირება (მაგ. \\\"<code>fsearch</code>\\\" ძიება დაემთხვევა \\\"FSearch\\\"საც)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:20
 msgid "Regular expressions"
-msgstr ""
+msgstr "რეგულარული გამონათქვამები"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:21
 msgid "Wildcard support"
-msgstr ""
+msgstr "Wildcard მხარდაჭერა"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:22
 msgid "Filter support (e.g. only search for audio files)"
-msgstr ""
+msgstr "ფილტრის მხარდაჭერა (მაგ. მხოლოდ აუდიო ფაილების ძიება)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:23
 msgid "Exclude certain files and folders"
-msgstr ""
+msgstr "გამორიცხეთ გარკვეული ფაილები და საქაღალდეები"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:24
 msgid "Fast sort by name, path, size, modification time and extension"
-msgstr ""
+msgstr "სწრაფი დალაგება სახელის, ბილიკის, ზომის, მოდიფიკაციის დროისა და გაფართოების მიხედვით"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:26
 msgid ""
 "<em>Note:</em> Due to Flatpak's sandboxing, FSearch can't find every file on "
 "your system."
-msgstr ""
+msgstr "<em>შენიშვნა:</em> Flatpak-ის sandboxing-ის გამო, FSearch ვერ პოულობს ყველა ფაილს თქვენს სისტემაში."
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:35
 msgid "The default UI layout"
-msgstr ""
+msgstr "UI-ის ნაგულისხმევი განლაგება"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:41
 msgid "A layout more closely following GNOME HIGs"
-msgstr ""
+msgstr "განლაგება უფრო მჭიდროდ მიჰყვება GNOME HIG-ს"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:49
 msgid "search"
-msgstr ""
+msgstr "ძებნა"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:50
 msgid "fsearch"
-msgstr ""
+msgstr "ძიება"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:51
 msgid "files"
-msgstr ""
+msgstr "ფაილები"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:52
 msgid "folders"
-msgstr ""
+msgstr "საქაღალდეები"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:53
 msgid "music"
-msgstr ""
+msgstr "მუსიკა"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:54
 msgid "video"
-msgstr ""
+msgstr "ვიდეო"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:55
 msgid "documents"
-msgstr ""
+msgstr "დოკუმენტები"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:56
 msgid "find"
-msgstr ""
+msgstr "იპოვე"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:57
 msgid "tool"
-msgstr ""
+msgstr "ხელსაწყო"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:58
 msgid "everything"
-msgstr ""
+msgstr "ყველაფერი"
 
 #. Kept for appstreamcli < 1.0 (e.g. Ubuntu 20.04/22.04 PPA builds), which doesn't know <developer>.
 #. Translators: please do NOT translate this.
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:77
 msgid "Christian Boxdörfer"
-msgstr ""
+msgstr "კრისტიან ბოქსდორფერი"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:89
 msgid "DB rewrite"
-msgstr ""
+msgstr "DB გადაწერა"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:90
 msgid "DB: Add support for filesystem monitoring"
-msgstr ""
+msgstr "DB: დაამატეთ ფაილური სისტემის მონიტორინგის მხარდაჭერა"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:91
 msgid ""
 "DB: Allow files and folders to be excluded based on fixed patterns, "
 "wildcards or regular expressions"
-msgstr ""
+msgstr "DB: დაუშვით ფაილების და საქაღალდეების გამორიცხვა ფიქსირებული შაბლონების, ველური ბარათების ან რეგულარული გამონათქვამების საფუძველზე"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:92
 msgid ""
 "DB: Allow included folders to be scheduled and scanned after launch "
 "independently"
-msgstr ""
+msgstr "DB: მიეცით საშუალება ჩართული საქაღალდეების დაგეგმვას და სკანირებას დამოუკიდებლად გაშვების შემდეგ"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:93
 msgid "DB: Make rescanning more efficient"
-msgstr ""
+msgstr "DB: გახადეთ ხელახალი სკანირება უფრო ეფექტური"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:94
 msgid "DB: Store database config in DB file"
-msgstr ""
+msgstr "DB: შეინახეთ მონაცემთა ბაზის კონფიგურაცია DB ფაილში"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:95
 msgid "DB: Add checksum to DB file"
-msgstr ""
+msgstr "DB: დაამატეთ საკონტროლო ჯამი DB ფაილში"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:96
 msgid "Make icon and file info gathering asynchronous (no UI blocking)"
-msgstr ""
+msgstr "გახადეთ ხატისა და ფაილის ინფორმაციის შეგროვება ასინქრონულად (UI დაბლოკვის გარეშე)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:97
 msgid "Reduce memory usage"
-msgstr ""
+msgstr "შეამცირეთ მეხსიერების გამოყენება"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:98
 msgid "Add contextual help for all preferences"
-msgstr ""
+msgstr "დაამატეთ კონტექსტური დახმარება ყველა პრეფერენციისთვის"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:99
 msgid "Numerous bug fixes and stability and performance improvements"
-msgstr ""
+msgstr "მრავალი შეცდომის გამოსწორება და სტაბილურობისა და მუშაობის გაუმჯობესება"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:106
 msgid "New search engine"
-msgstr ""
+msgstr "ახალი საძიებო სისტემა"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:107
 msgid "Greatly improved highlighting of search terms"
-msgstr ""
+msgstr "მნიშვნელოვნად გაუმჯობესდა საძიებო ტერმინების ხაზგასმა"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:108
 msgid "Custom filters"
-msgstr ""
+msgstr "მორგებული ფილტრები"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:109
 msgid "Improved sort performance"
-msgstr ""
+msgstr "გაუმჯობესებული დალაგების შესრულება"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:110
 msgid "Improved scroll performance"
-msgstr ""
+msgstr "გაუმჯობესებული გადახვევის შესრულება"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:111
 msgid "Remember file selection after a database update"
-msgstr ""
+msgstr "დაიმახსოვრე ფაილის შერჩევა მონაცემთა ბაზის განახლების შემდეგ"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:112
 msgid "Automatically scroll the result list in rubberband selection mode"
-msgstr ""
+msgstr "ავტომატურად გადაახვიეთ შედეგების სიაში რეზინის შერჩევის რეჟიმში"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:113
 msgid "Invert selection with rubber band when 'Ctrl' is pressed"
-msgstr ""
+msgstr "შეცვალეთ არჩევანი რეზინის ზოლით, როდესაც დააჭირეთ \"Ctrl\"."
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:114
 msgid "Focus search entry when the main window gets activated"
-msgstr ""
+msgstr "საძიებო ჩანაწერის ფოკუსირება, როდესაც მთავარი ფანჯარა გააქტიურდება"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:115
 msgid "Add filter for applications (i.e. .desktop files)"
-msgstr ""
+msgstr "დაამატეთ ფილტრები აპლიკაციებისთვის (მაგ. დესკტოპის ფაილები)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:116
 msgid ""
 "Add option to launch applications directly instead of opening the .desktop "
 "files"
-msgstr ""
+msgstr ".დესკტოპის ფაილების გახსნის ნაცვლად აპლიკაციების პირდაპირ გაშვების ოფციის დამატება"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:117
 msgid "Show application icons for .desktop files"
-msgstr ""
+msgstr "აპლიკაციის ხატების ჩვენება .desktop ფაილებისთვის"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:118
 msgid "Add .odp and .ods files to document filter"
-msgstr ""
+msgstr "დაამატეთ .odp და .ods ფაილები დოკუმენტის ფილტრში"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:119
 msgid ""
 "'Open with' menu now only shows applications which can handle the selected "
 "files"
-msgstr ""
+msgstr "მენიუ „გახსნა“ ახლა აჩვენებს მხოლოდ აპლიკაციებს, რომლებსაც შეუძლიათ არჩეული ფაილების მართვა"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:120
 msgid ""
 "Improved opening of multiple files with the same type (they get now passed "
 "as a list to applications, instead of one by one)"
-msgstr ""
+msgstr "ერთი და იგივე ტიპის მრავალი ფაილის გაუმჯობესებული გახსნა (ისინი ახლა გადაეცემა აპლიკაციების სიას, ნაცვლად სათითაოდ)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:121
 msgid "Better support for opening files in sandboxed mode"
-msgstr ""
+msgstr "უკეთესი მხარდაჭერა ფაილების გასახსნელად sandboxed რეჟიმში"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:122
 msgid ""
 "Add menu items with links to the issue tracker, forum and donation pages"
-msgstr ""
+msgstr "დაამატეთ მენიუს ელემენტები პრობლემის ტრეკერის, ფორუმის და შემოწირულობის გვერდების ბმულებით"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:123
 msgid "Improve support for non-Linux systems"
-msgstr ""
+msgstr "გააუმჯობესეთ მხარდაჭერა არა-Linux სისტემებისთვის"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:124
 msgid ""
 "Add option to exit FSearch when Escape is pressed instead of minimizing the "
 "window"
-msgstr ""
+msgstr "დაამატეთ ოფცია FSearch-დან გასასვლელად, როდესაც დააჭირეთ Escape-ს, ფანჯრის მინიმიზაციის ნაცვლად"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:125
 msgid "Exclude '/proc' and '/sys' by default"
-msgstr ""
+msgstr "ნაგულისხმევად გამორიცხეთ '/proc' და '/sys'"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:126
 msgid "Open context menu when 'Menu' key or 'Shift + F10' are pressed"
-msgstr ""
+msgstr "გახსენით კონტექსტური მენიუ, როდესაც დააჭირეთ ღილაკს \"მენიუ\" ან \"Shift + F10\"."
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:127
 msgid "and tons of bug fixes, translation updates and smaller improvements"
-msgstr ""
+msgstr "და უამრავი შეცდომების გამოსწორება, თარგმანის განახლებები და მცირე გაუმჯობესება"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:133
 msgid "Initial release."
-msgstr ""
+msgstr "თავდაპირველი გამოშვება."
 
 #: src/fsearch.c:181
 msgid "translator-credits"
-msgstr ""
+msgstr "თარჯიმანი-კრედიტები"
 
 #: src/fsearch.c:183
 msgid "A search utility focusing on performance and advanced features"
-msgstr ""
+msgstr "საძიებო პროგრამა, რომელიც ფოკუსირებულია შესრულებასა და გაფართოებულ ფუნქციებზე"
 
 #: src/fsearch.c:330
 msgid "Saving database and config…"
-msgstr ""
+msgstr "მიმდინარეობს მონაცემთა ბაზის და კონფიგურაციის შენახვა…"
 
 #: src/fsearch.c:786
 msgid "Open a new application window"
-msgstr ""
+msgstr "გახსენით ახალი აპლიკაციის ფანჯარა"
 
 #: src/fsearch.c:787
 msgid "Minimize the application window"
-msgstr ""
+msgstr "აპლიკაციის ფანჯრის მინიმიზაცია"
 
 #: src/fsearch.c:788
 msgid "Show the application preferences"
-msgstr ""
+msgstr "აჩვენეთ განაცხადის პარამეტრები"
 
 #: src/fsearch.c:789
 msgid "Set the search pattern"
-msgstr ""
+msgstr "დააყენეთ საძიებო ნიმუში"
 
 #: src/fsearch.c:790
 msgid "Update the database and exit"
-msgstr ""
+msgstr "განაახლეთ მონაცემთა ბაზა და გადით"
 
 #: src/fsearch.c:791
 msgid "Print version information and exit"
-msgstr ""
+msgstr "დაბეჭდეთ ვერსიის ინფორმაცია და გადით"
 
 #: src/fsearch.c:883
 msgid ""
 "For command-line search help, run: fsearch --cli --help\n"
 "For shared configuration help, run: fsearch config --help"
 msgstr ""
+"ბრძანების ხაზის საძიებო დახმარებისთვის, გაუშვით: fsearch --cli --help\n"
+"გაზიარებული კონფიგურაციის დახმარებისთვის გაუშვით: fsearch config --help"
 
 #: src/fsearch_cli.c:125
 #, c-format
 msgid ""
 "Results capped at %u. Use --unlimit or --unlimited to get them all, or "
 "provide a custom --limit, or set FSEARCH_RESULT_LIMIT."
-msgstr ""
+msgstr "შედეგები შეზღუდულია %u-ზე. გამოიყენეთ --unlimit ან --unlimited ყველა მისაღებად, ან მიაწოდეთ მორგებული --Limit, ან დააყენეთ FSEARCH_RESULT_LIMIT."
 
 #: src/fsearch_cli.c:134
 #, c-format
 msgid "%u match."
 msgid_plural "%u matches."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%u ემთხვევა."
+msgstr[1] "%u ემთხვევა."
 
 #: src/fsearch_cli.c:142
 msgid "Updating FSearch index before searching..."
-msgstr ""
+msgstr "FSearch ინდექსის განახლება ძიებამდე..."
 
 #: src/fsearch_cli.c:149
 #, c-format
 msgid "Indexing: %s"
-msgstr ""
+msgstr "ინდექსირება: %s"
 
 #: src/fsearch_cli.c:181
 msgid ""
@@ -393,40 +395,76 @@ msgid ""
 "{png,jpg} selects alternatives; {01..12} is an inclusive numeric range; \\* "
 "matches a literal *.\n"
 msgstr ""
+"გამოყენება: fsearch --cli [OPTIONS]\n"
+"\n"
+"მოძებნეთ არსებული FSearch ინდექსი და დაბეჭდეთ შესაბამისი ბილიკები.\n"
+"\n"
+"  -s, --search PATTERN       ძიება FSearch შეკითხვის სინტაქსით\n"
+"      --path DIRECTORY        მოძებნეთ რეკურსიულად DIRECTORY ქვემოთ (ნაგულისხმევი: მიმდინარე დირექტორია)\n"
+"      --global                მოძებნეთ ყველა ინდექსირებული ადგილი\n"
+"      --limit COUNT          დაბეჭდეთ მაქსიმუმ COUNT შედეგი\n"
+"      --unlimit, --unlimited დაბეჭდეთ ყველა შედეგი\n"
+"  -u, --update-database      გადახედეთ კონფიგურირებული ინდექსის და გადით\n"
+"      --about                დაბეჭდეთ ერთი ხაზის აგების ინფორმაცია\n"
+"  -h, --help                 აჩვენე ეს დახმარება\n"
+"\n"
+"კონფიგურაცია: fsearch config --help\n"
+"\n"
+"მაგალითები:\n"
+"  fsearch --cli --search invoice              # eolaire reatha\n"
+"  fsearch --cli --path ~/Documents --search invoice\n"
+"  fsearch --cli --global --search invoice\n"
+"  fsearch --cli --search 'file:size:>20mb'\n"
+"  fsearch --cli --search 'ext:jpg;png'\n"
+"  fsearch --cli --search 'path:projects report'\n"
+"  fsearch --cli --search 'report AND ext:pdf'\n"
+"  fsearch --cli --search '(draft OR final) !archive'\n"
+"  fsearch --cli --search 'file:regex:\".+\\.pdf$\"'\n"
+"  fsearch --cli --search 'case:AGENTS'        # cás-íogair\n"
+"  fsearch --cli --search 'case:regex:\"^AGENTS\\.md$\"'\n"
+"  fsearch --cli --search 'glob:**/*.png'\n"
+"  fsearch --cli --search 'path:glob:**/AGENTS.md'\n"
+"  fsearch --cli --search 'case:glob:AGENTS.md' # glob cás-íogair\n"
+"\n"
+"მაგალითები იყენებენ სივრცეს, როგორც AND. სცადეთ ფაილი:, საქაღალდე:, გზა:, ext:, ზომა:, dm:, ქეისი:, regex: და glob:.\n"
+"ლოგიკური სინტაქსი: AND ან &&; OR ან ||; არა ან!. ფრჩხილებში ჯგუფის ტერმინები.\n"
+"გლობალური სინტაქსი: * გამორიცხავს /; ** მოიცავს დირექტორიებს; ? შეესაბამება ერთ სიმბოლოს; [a-c] არის დიაპაზონი;\n"
+"Glob ეძებს ბილიკებს ნაგულისხმევად; გამოიყენეთ **/ ნებისმიერი სიღრმისთვის; file:glob: ეძებს ფაილების სახელებს.\n"
+"{png,jpg} ირჩევს ალტერნატივებს; {01..12} არის ინკლუზიური რიცხვითი დიაპაზონი; \\* შეესაბამება სიტყვასიტყვით *.\n"
 
 #: src/fsearch_cli.c:238
 #, c-format
 msgid "FSearch %s - indexed file search for %s %s\n"
-msgstr ""
+msgstr "FSearch %s - ინდექსირებული ფაილის ძიება %s %s-ისთვის\n"
 
 #: src/fsearch_cli.c:301
 msgid "fsearch: interrupted\n"
-msgstr ""
+msgstr "fsearch: შეწყდა\n"
 
 #: src/fsearch_cli.c:315
 msgid "fsearch: search could not run because the index is unavailable\n"
-msgstr ""
+msgstr "fsearch: ძიების განხორციელება ვერ მოხერხდა, რადგან ინდექსი მიუწვდომელია\n"
 
 #: src/fsearch_cli.c:352 src/fsearch_cli.c:381 src/fsearch_cli_config.c:774
 #: src/fsearch_cli_config.c:961 src/fsearch_cli_config.c:1147
 #, c-format
 msgid "%s\n"
-msgstr ""
+msgstr "%s\n"
 
 #: src/fsearch_cli.c:400
 #, c-format
 msgid "%s"
-msgstr ""
+msgstr "%s"
 
 #: src/fsearch_cli.c:473
 #, c-format
 msgid "fsearch: unknown CLI option: %s\n"
-msgstr ""
+msgstr "fsearch: უცნობია CLI ვარიანტი: %s\n"
 
 #: src/fsearch_cli.c:495
 #, c-format
 msgid "fsearch: failed to create data directory: %s\n"
-msgstr ""
+msgstr "fsearch: ვერ შეიქმნა მონაცემთა დირექტორია: %s\n"
 
 #: src/fsearch_cli_config.c:111
 msgid ""
@@ -468,30 +506,73 @@ msgid ""
 "  fsearch config filters add Documents --query 'ext:pdf' --macro docs\n"
 "  fsearch config reset search --yes\n"
 msgstr ""
+"გამოყენება: fsearch config COMMAND [OPTIONS]\n"
+"\n"
+"ნახეთ და შეცვალეთ გაზიარებული FSearch GUI და CLI კონფიგურაცია.\n"
+"\n"
+"კონფიგურაციის ბრძანებები:\n"
+"  path                         დაბეჭდეთ კონფიგურაციის ფაილის გზა\n"
+"  show [SECTION] [--json]      პარამეტრების ჩვენება\n"
+"  get KEY [--json]             დაბეჭდეთ ერთი სკალარული პარამეტრი\n"
+"  set KEY VALUE                დააყენეთ ერთი სკალარული პარამეტრი\n"
+"  unset KEY                    აღადგინეთ ნაგულისხმევი სკალარული პარამეტრი\n"
+"  reset [KEY|SECTION] --yes [--rescan]\n"
+"                               ნაგულისხმევი პარამეტრების აღდგენა\n"
+"  doctor                       შეამოწმეთ კონფიგურაცია და ინდექსის თანმიმდევრულობა\n"
+"  roots list|add|set|remove    ინდექსირებული ფესვების მართვა\n"
+"  excludes list|add|remove|hidden\n"
+"                               ინდექსის გამორიცხვების მართვა\n"
+"  filters list|add|set|remove|reset\n"
+"                               შენახული საძიებო ფილტრების მართვა\n"
+"\n"
+"სკალარული მნიშვნელობები იყენებს true/false, ათობითი მთელ რიცხვებს ან სტრიქონებს.\n"
+"გაუშვით 'fsearch config show' ყველა სკალარული კლავიშისა და მიმდინარე მნიშვნელობის სიაში.\n"
+"სკალარული სექციები: search, application, window, ui, columns, sort, dialogs.\n"
+"ოჯახის ვარიანტებისთვის გამოიყენეთ 'fsearch config roots| გამორიცხავს|ფილტრები --help'.\n"
+"დახურეთ FSearch GUI გაზიარებული პარამეტრების შეცვლამდე.\n"
+"ინდექსის ცვლილებები საძიებო ხდება შემდეგი CLI ძიებისას, ან დაუყოვნებლივ --rescan-ით.\n"
+"გამოიყენეთ --json show, get და collect list ბრძანებებით.\n"
+"\n"
+"მაგალითები:\n"
+"  fsearch config show search --json\n"
+"  fsearch config get search.match-case\n"
+"  fsearch config set search.match-case true\n"
+"  fsearch config roots add ~/Code --monitor --one-file-system --rescan\n"
+"  fsearch config excludes add '*.tmp' --type wildcard --scope basename --target files\n"
+"  fsearch config filters add Documents --query 'ext:pdf' --macro docs\n"
+"  fsearch config reset search --yes\n"
 
 #: src/fsearch_cli_config.c:152
 msgid ""
 "Usage: fsearch config show [SECTION] [--json]\n"
 "Show all scalar settings or one dotted section.\n"
 msgstr ""
+"გამოყენება: fsearch config show [SECTION] [--json]\n"
+"აჩვენეთ ყველა სკალარული პარამეტრი ან ერთი წერტილიანი განყოფილება.\n"
 
 #: src/fsearch_cli_config.c:154
 msgid ""
 "Usage: fsearch config get KEY [--json]\n"
 "Print one typed scalar value. Discover keys with 'fsearch config show'.\n"
 msgstr ""
+"გამოყენება: fsearch config get KEY [--json]\n"
+"დაბეჭდეთ ერთი აკრეფილი სკალარული მნიშვნელობა. აღმოაჩინეთ გასაღებები 'fsearch config show'-ით.\n"
 
 #: src/fsearch_cli_config.c:157
 msgid ""
 "Usage: fsearch config set KEY VALUE\n"
 "Set a boolean, integer, string, or enumerated scalar value.\n"
 msgstr ""
+"გამოყენება: fsearch config set KEY VALUE\n"
+"დააყენეთ ლოგიკური, მთელი რიცხვი, სტრიქონი ან ჩამოთვლილი სკალარული მნიშვნელობა.\n"
 
 #: src/fsearch_cli_config.c:159
 msgid ""
 "Usage: fsearch config unset KEY\n"
 "Restore one scalar setting to its built-in default.\n"
 msgstr ""
+"გამოყენება: fsearch config unset KEY\n"
+"აღადგინეთ ერთი სკალარული პარამეტრი ჩაშენებულ ნაგულისხმევად.\n"
 
 #: src/fsearch_cli_config.c:161
 msgid ""
@@ -499,6 +580,8 @@ msgid ""
 "Reset is destructive and requires --yes. --rescan applies to roots, "
 "database, excludes, or all.\n"
 msgstr ""
+"გამოყენება: fsearch config reset [KEY|SECTION] --yes [--rescan]\n"
+"გადატვირთვა დამღუპველია და მოითხოვს -- დიახ. -- ხელახლა სკანირება ეხება root-ებს, მონაცემთა ბაზას, გამორიცხავს ან ყველა.\n"
 
 #: src/fsearch_cli_config.c:164
 msgid ""
@@ -506,6 +589,8 @@ msgid ""
 "Check configuration readability and whether the saved index uses the same "
 "roots and exclusions.\n"
 msgstr ""
+"გამოყენება: fsearch config doctor\n"
+"შეამოწმეთ კონფიგურაციის კითხვადობა და იყენებს თუ არა შენახული ინდექსი იგივე ფესვებს და გამონაკლისებს.\n"
 
 #: src/fsearch_cli_config.c:170
 msgid ""
@@ -525,6 +610,21 @@ msgid ""
 "  --rescan-every SECONDS        Set periodic rescan interval; 0 disables it\n"
 "  --rescan                      Rebuild the index immediately after saving\n"
 msgstr ""
+"გამოყენება: fsearch config roots COMMAND [PATH] [OPTIONS]\n"
+"\n"
+"ბრძანებები:\n"
+"  list [--json]                ჩამოთვალეთ ინდექსირებული ფესვები\n"
+"  add PATH [OPTIONS]           დაამატეთ root დირექტორია\n"
+"  set PATH [OPTIONS]           შეცვალეთ არსებული ფესვი\n"
+"  remove PATH [--rescan]       წაშალეთ არსებული ფესვი\n"
+"\n"
+"დამატებისა და დაყენების ვარიანტები:\n"
+"  --active, --inactive\n"
+"  --monitor, --no-monitor\n"
+"  --one-file-system, --no-one-file-system\n"
+"  --scan-after-launch, --no-scan-after-launch\n"
+"  --rescan-every SECONDS        პერიოდული ხელახალი სკანირების ინტერვალის დაყენება; 0 გამორთავს მას\n"
+"  --rescan                      აღადგინეთ ინდექსი შენახვისთანავე\n"
 
 #: src/fsearch_cli_config.c:187
 msgid ""
@@ -544,6 +644,21 @@ msgid ""
 "  --active, --inactive          Add state or removal selector\n"
 "  --rescan                      Rebuild the index immediately after saving\n"
 msgstr ""
+"გამოყენება: fsearch config excludes COMMAND [PATTERN|VALUE] [OPTIONS]\n"
+"\n"
+"ბრძანებები:\n"
+"  list [--json]                 ჩამოთვალეთ გამონაკლისები\n"
+"  add PATTERN [OPTIONS]         დაამატეთ გამონაკლისი\n"
+"  remove PATTERN [OPTIONS]      წაშალეთ შესაბამისი გამონაკლისი\n"
+"  hidden [true|false] [--rescan]\n"
+"                                იხილეთ ან შეცვალეთ დამალული ფაილის გამორიცხვა\n"
+"\n"
+"დამატებისა და წაშლის ვარიანტები:\n"
+"  --type fixed|wildcard|regex   ნაგულისხმევი: დაფიქსირებული\n"
+"  --scope full-path|basename    ნაგულისხმევი: სრული გზა\n"
+"  --target both|files|folders   ნაგულისხმევი: ორივე\n"
+"  --active, --inactive          დაამატეთ მდგომარეობის ან ამოღების ამომრჩეველი\n"
+"  --rescan                      აღადგინეთ ინდექსი შენახვისთანავე\n"
 
 #: src/fsearch_cli_config.c:204
 msgid ""
@@ -563,205 +678,224 @@ msgid ""
 "  --path, --no-path             Search full paths\n"
 "  --regex, --no-regex           Treat query as a regular expression\n"
 msgstr ""
+"გამოყენება: fsearch config filters COMMAND [NAME] [OPTIONS]\n"
+"\n"
+"ბრძანებები:\n"
+"  list [--json]                 შენახული ფილტრების სია\n"
+"  add NAME [OPTIONS]            დაამატეთ დასახელებული ფილტრი\n"
+"  set NAME [OPTIONS]            შეცვალეთ დასახელებული ფილტრი\n"
+"  remove NAME                   ამოიღეთ დასახელებული ფილტრი\n"
+"  reset                         ჩაშენებული ფილტრების აღდგენა\n"
+"\n"
+"დამატებისა და დაყენების ვარიანტები:\n"
+"  --query QUERY                 შენახული FSearch მოთხოვნა\n"
+"  --macro MACRO                 მოითხოვეთ მაკრო სახელი\n"
+"  --case, --no-case             მატჩის საქმე\n"
+"  --path, --no-path             მოძებნეთ სრული ბილიკები\n"
+"  --regex, --no-regex           განიხილეთ შეკითხვა, როგორც რეგულარულ გამოხატულებას\n"
 
 #: src/fsearch_cli_config.c:265
 msgid ""
 "fsearch config: close the running FSearch GUI before changing shared "
 "settings\n"
-msgstr ""
+msgstr "fsearch config: დახურეთ გაშვებული FSearch GUI გაზიარებული პარამეტრების შეცვლამდე\n"
 
 #: src/fsearch_cli_config.c:269
 msgid "fsearch config: failed to save configuration\n"
-msgstr ""
+msgstr "fsearch config: კონფიგურაციის შენახვა ვერ მოხერხდა\n"
 
 #: src/fsearch_cli_config.c:280
 msgid "Index configuration changed; the next CLI search will rebuild it.\n"
-msgstr ""
+msgstr "შეიცვალა ინდექსის კონფიგურაცია; შემდეგი CLI ძიება აღადგენს მას.\n"
 
 #: src/fsearch_cli_config.c:416
 #, c-format
 msgid "fsearch config %s: unknown option: %s\n"
-msgstr ""
+msgstr "fsearch config %s: უცნობი ვარიანტი: %s\n"
 
 #: src/fsearch_cli_config.c:422
 #, c-format
 msgid "fsearch config %s: unexpected argument: %s\n"
-msgstr ""
+msgstr "fsearch კონფიგურაცია %s: მოულოდნელი არგუმენტი: %s\n"
 
 #: src/fsearch_cli_config.c:449
 msgid "Usage: fsearch config get KEY [--json]\n"
-msgstr ""
+msgstr "გამოყენება: fsearch კონფიგურაციის მისაღებად KEY [--json]\n"
 
 #: src/fsearch_cli_config.c:454 src/fsearch_cli_config.c:555
 #, c-format
 msgid "fsearch config: unknown setting: %s\n"
-msgstr ""
+msgstr "fsearch კონფიგურაცია: უცნობი პარამეტრი: %s\n"
 
 #: src/fsearch_cli_config.c:502
 #, c-format
 msgid "fsearch config show: unknown section: %s\n"
-msgstr ""
+msgstr "fsearch config ჩვენება: უცნობი სექცია: %s\n"
 
 #: src/fsearch_cli_config.c:550
 #, c-format
 msgid "Usage: fsearch config %s KEY%s\n"
-msgstr ""
+msgstr "გამოყენება: fsearch config %s KEY%s\n"
 
 #: src/fsearch_cli_config.c:566
 #, c-format
 msgid "fsearch config: invalid value for %s: %s\n"
-msgstr ""
+msgstr "fsearch config: არასწორი მნიშვნელობა %s-ისთვის: %s\n"
 
 #: src/fsearch_cli_config.c:572
 #, c-format
 msgid "%s = %s\n"
-msgstr ""
+msgstr "%s = %s\n"
 
 #: src/fsearch_cli_config.c:637
 #, c-format
 msgid "fsearch config roots: unknown operation: %s\n"
-msgstr ""
+msgstr "fsearch კონფიგურაციის ფესვები: უცნობი ოპერაცია: %s\n"
 
 #: src/fsearch_cli_config.c:691
 msgid "fsearch config roots: --rescan-every requires SECONDS\n"
-msgstr ""
+msgstr "fsearch კონფიგურაციის ფესვები: --rescan-ყველას სჭირდება SECONDS\n"
 
 #: src/fsearch_cli_config.c:710
 msgid "fsearch config roots: missing PATH\n"
-msgstr ""
+msgstr "fsearch კონფიგურაციის ფესვები: აკლია PATH\n"
 
 #: src/fsearch_cli_config.c:717 src/fsearch_cli_config.c:732
 #, c-format
 msgid "fsearch config roots: path not found: %s\n"
-msgstr ""
+msgstr "fsearch კონფიგურაციის ფესვები: გზა ვერ მოიძებნა: %s\n"
 
 #: src/fsearch_cli_config.c:724
 #, c-format
 msgid "fsearch config roots: not a directory: %s\n"
-msgstr ""
+msgstr "fsearch კონფიგურაციის ფესვები: არა დირექტორია: %s\n"
 
 #: src/fsearch_cli_config.c:728
 #, c-format
 msgid "fsearch config roots: path already exists: %s\n"
-msgstr ""
+msgstr "fsearch კონფიგურაციის ფესვები: გზა უკვე არსებობს: %s\n"
 
 #: src/fsearch_cli_config.c:752
 #, c-format
 msgid "fsearch config roots: invalid rescan duration: %s\n"
-msgstr ""
+msgstr "fsearch კონფიგურაციის ფესვები: არასწორი ხელახალი სკანირების ხანგრძლივობა: %s\n"
 
 #: src/fsearch_cli_config.c:765
 msgid ""
 "%s\tactive=%s monitor=%s one-file-system=%s scan-after-launch=%s rescan-"
 "after=%s\n"
-msgstr ""
+msgstr "%s აქტიური=%s მონიტორი=%s ერთი ფაილური სისტემა=%s scan-after-launch=%s rescan-after=%s\n"
 
 #: src/fsearch_cli_config.c:844
 msgid "fsearch config excludes hidden: expected true or false\n"
-msgstr ""
+msgstr "fsearch კონფიგურაცია გამორიცხავს დამალულს: მოსალოდნელია ჭეშმარიტი ან მცდარი\n"
 
 #: src/fsearch_cli_config.c:850
 #, c-format
 msgid "exclude-hidden = %s\n"
-msgstr ""
+msgstr "exclude-hidden = %s\n"
 
 #: src/fsearch_cli_config.c:856
 #, c-format
 msgid "fsearch config excludes: unknown operation: %s\n"
-msgstr ""
+msgstr "fsearch config გამორიცხავს: უცნობი ოპერაცია: %s\n"
 
 #: src/fsearch_cli_config.c:877
 #, c-format
 msgid "fsearch config excludes: %s requires a value\n"
-msgstr ""
+msgstr "fsearch კონფიგურაცია გამორიცხავს: %s საჭიროებს მნიშვნელობას\n"
 
 #: src/fsearch_cli_config.c:909
 msgid "fsearch config excludes: missing PATTERN\n"
-msgstr ""
+msgstr "fsearch კონფიგურაცია გამორიცხავს: აკლია PATTERN\n"
 
 #: src/fsearch_cli_config.c:914
 #, c-format
 msgid "fsearch config excludes: invalid type: %s\n"
-msgstr ""
+msgstr "fsearch კონფიგურაცია გამორიცხავს: არასწორი ტიპი: %s\n"
 
 #: src/fsearch_cli_config.c:919
 #, c-format
 msgid "fsearch config excludes: invalid scope: %s\n"
-msgstr ""
+msgstr "fsearch config გამორიცხავს: არასწორი ფარგლები: %s\n"
 
 #: src/fsearch_cli_config.c:924
 #, c-format
 msgid "fsearch config excludes: invalid target: %s\n"
-msgstr ""
+msgstr "fsearch კონფიგურაცია გამორიცხავს: არასწორი სამიზნე: %s\n"
 
 #: src/fsearch_cli_config.c:954
 #, c-format
 msgid "fsearch config excludes: exclusion not found: %s\n"
-msgstr ""
+msgstr "fsearch config გამორიცხავს: გამორიცხვა ვერ მოიძებნა: %s\n"
 
 #: src/fsearch_cli_config.c:1022
 msgid "filters reset\n"
-msgstr ""
+msgstr "ფილტრების გადატვირთვა\n"
 
 #: src/fsearch_cli_config.c:1029
 #, c-format
 msgid "fsearch config filters: unknown operation: %s\n"
-msgstr ""
+msgstr "fsearch კონფიგურაციის ფილტრები: უცნობი ოპერაცია: %s\n"
 
 #: src/fsearch_cli_config.c:1051
 #, c-format
 msgid "fsearch config filters: %s requires a value\n"
-msgstr ""
+msgstr "fsearch კონფიგურაციის ფილტრები: %s საჭიროებს მნიშვნელობას\n"
 
 #: src/fsearch_cli_config.c:1094
 msgid "fsearch config filters: missing NAME\n"
-msgstr ""
+msgstr "fsearch კონფიგურაციის ფილტრები: აკლია NAME\n"
 
 #: src/fsearch_cli_config.c:1100 src/fsearch_cli_config.c:1111
 #, c-format
 msgid "fsearch config filters: name not found: %s\n"
-msgstr ""
+msgstr "fsearch კონფიგურაციის ფილტრები: სახელი ვერ მოიძებნა: %s\n"
 
 #: src/fsearch_cli_config.c:1107
 #, c-format
 msgid "fsearch config filters: name already exists: %s\n"
-msgstr ""
+msgstr "fsearch კონფიგურაციის ფილტრები: სახელი უკვე არსებობს: %s\n"
 
 #: src/fsearch_cli_config.c:1145
 #, c-format
 msgid "%s\tmacro=%s query=%s\n"
-msgstr ""
+msgstr "%s მაკრო=%s მოთხოვნა=%s\n"
 
 #: src/fsearch_cli_config.c:1193
 msgid "fsearch config reset requires --yes\n"
-msgstr ""
+msgstr "fsearch კონფიგურაციის გადატვირთვა მოითხოვს -- დიახ\n"
 
 #: src/fsearch_cli_config.c:1201
 msgid ""
 "fsearch config reset: --rescan requires roots, database, excludes, or all\n"
-msgstr ""
+msgstr "fsearch კონფიგურაციის გადატვირთვა: -- ხელახლა სკანირება მოითხოვს ფესვებს, მონაცემთა ბაზას, გამორიცხავს ან ყველაფერს\n"
 
 #: src/fsearch_cli_config.c:1241
 #, c-format
 msgid "fsearch config: unknown setting or section: %s\n"
-msgstr ""
+msgstr "fsearch კონფიგურაცია: უცნობი პარამეტრი ან სექცია: %s\n"
 
 #: src/fsearch_cli_config.c:1246
 #, c-format
 msgid "%s settings reset\n"
-msgstr ""
+msgstr "%s პარამეტრების გადაყენება\n"
 
 #: src/fsearch_cli_config.c:1253
 msgid ""
 "configuration: missing; defaults active\n"
 "index: unknown\n"
 msgstr ""
+"კონფიგურაცია: აკლია; ნაგულისხმევი აქტიური\n"
+"ინდექსი: უცნობია\n"
 
 #: src/fsearch_cli_config.c:1261
 msgid ""
 "configuration: ok\n"
 "index: missing or unreadable\n"
 msgstr ""
+"კონფიგურაცია: კარგი\n"
+"ინდექსი: აკლია ან წაუკითხავი\n"
 
 #: src/fsearch_cli_config.c:1266
 #, c-format
@@ -769,121 +903,125 @@ msgid ""
 "configuration: ok\n"
 "index: %s\n"
 msgstr ""
+"კონფიგურაცია: კარგი\n"
+"ინდექსი: %s\n"
 
 #: src/fsearch_cli_config.c:1266
 msgid "current"
-msgstr ""
+msgstr "მიმდინარე"
 
 #: src/fsearch_cli_config.c:1266
 msgid "stale"
-msgstr ""
+msgstr "შემორჩენილი"
 
 #: src/fsearch_cli_config.c:1278
 msgid ""
 "Usage: fsearch config path\n"
 "Print the active FSearch configuration file path.\n"
 msgstr ""
+"გამოყენება: fsearch config path\n"
+"ამობეჭდეთ აქტიური FSearch კონფიგურაციის ფაილის გზა.\n"
 
 #: src/fsearch_cli_config.c:1321
 #, c-format
 msgid "fsearch config: unknown command: %s\n"
-msgstr ""
+msgstr "fsearch config: უცნობი ბრძანება: %s\n"
 
 #: src/fsearch_database.c:795
 msgid "Index rescan: applying changes…"
-msgstr ""
+msgstr "ინდექსის ხელახალი სკანირება: ცვლილებების გამოყენება…"
 
 #: src/fsearch_database_file.c:1343
 msgid "Loading folders…"
-msgstr ""
+msgstr "საქაღალდეების ჩატვირთვა…"
 
 #: src/fsearch_database_file.c:1359
 msgid "Loading files…"
-msgstr ""
+msgstr "ფაილების ჩატვირთვა…"
 
 #: src/fsearch_database_index_store.c:925 src/fsearch_statusbar.c:73
 #: src/fsearch_statusbar.ui:90
 msgid "Sorting…"
-msgstr ""
+msgstr "დახარისხება…"
 
 #: src/fsearch_database_preferences_widget.c:162
 #: src/fsearch_database_preferences_widget.c:176
 msgid "Select folder"
-msgstr ""
+msgstr "აირჩიეთ საქაღალდე"
 
 #: src/fsearch_database_preferences_widget.c:165
 #: src/fsearch_database_preferences_widget.c:180
 #: src/fsearch_filter_editor.c:104 src/fsearch_preferences_dialog.c:331
 msgid "_Cancel"
-msgstr ""
+msgstr "_ გააუქმე"
 
 #: src/fsearch_database_preferences_widget.c:167
 #: src/fsearch_database_preferences_widget.c:179
 msgid "_Select"
-msgstr ""
+msgstr "_ აირჩიე"
 
 #: src/fsearch_database_preferences_widget.c:389
 msgid "Literal"
-msgstr ""
+msgstr "ლიტერატურული"
 
 #: src/fsearch_database_preferences_widget.c:391
 msgid "Wildcard"
-msgstr ""
+msgstr "Wildcard"
 
 #: src/fsearch_database_preferences_widget.c:393
 msgid "Regex"
-msgstr ""
+msgstr "რეგექსი"
 
 #: src/fsearch_database_preferences_widget.c:414
 msgid "Full Path"
-msgstr ""
+msgstr "სრული გზა"
 
 #: src/fsearch_database_preferences_widget.c:416
 msgid "Basename"
-msgstr ""
+msgstr "საბაზისო სახელი"
 
 #: src/fsearch_database_preferences_widget.c:434
 msgid "Files & Folders"
-msgstr ""
+msgstr "ფაილები და საქაღალდეები"
 
 #: src/fsearch_database_preferences_widget.c:436 src/fsearch_filter.c:114
 msgid "Files"
-msgstr ""
+msgstr "ფაილები"
 
 #: src/fsearch_database_preferences_widget.c:438 src/fsearch_filter.c:113
 msgid "Folders"
-msgstr ""
+msgstr "საქაღალდეები"
 
 #: src/fsearch_database_preferences_widget.c:635
 #: src/fsearch_database_preferences_widget.c:860
 msgid "Active"
-msgstr ""
+msgstr "აქტიური"
 
 #: src/fsearch_database_preferences_widget.c:640
 msgid "Pattern"
-msgstr ""
+msgstr "ნიმუში"
 
 #: src/fsearch_database_preferences_widget.c:694 src/fsearch_window.c:756
 #: src/menus.ui:275
 msgid "Type"
-msgstr ""
+msgstr "ტიპი"
 
 #: src/fsearch_database_preferences_widget.c:700
 msgid "Match"
-msgstr ""
+msgstr "მატჩი"
 
 #: src/fsearch_database_preferences_widget.c:706
 msgid "Applies To"
-msgstr ""
+msgstr "ვრცელდება"
 
 #: src/fsearch_database_preferences_widget.c:864 src/fsearch_window.c:742
 #: src/menus.ui:219 src/menus.ui:267
 msgid "Path"
-msgstr ""
+msgstr "ბილიკი"
 
 #: src/fsearch_database_preferences_widget.ui:78
 msgid "Enter path…"
-msgstr ""
+msgstr "შეიყვანეთ გზა…"
 
 #: src/fsearch_database_preferences_widget.ui:97
 #: src/fsearch_database_preferences_widget.ui:372
@@ -892,191 +1030,198 @@ msgid ""
 "                                            database\n"
 "                                        "
 msgstr ""
+"დაამატეთ გასასვლელი ბილიკი\n"
+"                                            მონაცემთა ბაზა\n"
+"                                        "
 
 #: src/fsearch_database_preferences_widget.ui:176
 msgid "Attempt to monitor"
-msgstr ""
+msgstr "მონიტორინგის მცდელობა"
 
 #: src/fsearch_database_preferences_widget.ui:191
 msgid "Scan after launch"
-msgstr ""
+msgstr "სკანირება გაშვების შემდეგ"
 
 #: src/fsearch_database_preferences_widget.ui:206
 msgid "Stay on one file system"
-msgstr ""
+msgstr "დარჩით ერთ ფაილურ სისტემაზე"
 
 #: src/fsearch_database_preferences_widget.ui:221
 msgid "Rescan every"
-msgstr ""
+msgstr "ხელახლა სკანირება"
 
 #: src/fsearch_database_preferences_widget.ui:254
 msgid "Hours:"
-msgstr ""
+msgstr "საათები:"
 
 #: src/fsearch_database_preferences_widget.ui:298
 msgid "Minutes:"
-msgstr ""
+msgstr "წუთები:"
 
 #: src/fsearch_database_preferences_widget.ui:310
 msgid "30"
-msgstr ""
+msgstr "30"
 
 #: src/fsearch_database_preferences_widget.ui:391
 msgid "Remove selected path"
-msgstr ""
+msgstr "არჩეული ბილიკის წაშლა"
 
 #: src/fsearch_database_preferences_widget.ui:418
 msgid "Include"
-msgstr ""
+msgstr "ჩართეთ"
 
 #: src/fsearch_database_preferences_widget.ui:477
 msgid ""
 "Add exclude rule\n"
 "                                                "
 msgstr ""
+"დაამატეთ გამორიცხვის წესი\n"
+"                                                "
 
 #: src/fsearch_database_preferences_widget.ui:495
 msgid ""
 "Remove selected path\n"
 "                                                "
 msgstr ""
+"არჩეული ბილიკის წაშლა\n"
+"                                                "
 
 #: src/fsearch_database_preferences_widget.ui:512
 msgid "Restore default exclude list"
-msgstr ""
+msgstr "ნაგულისხმევი გამორიცხვის სიის აღდგენა"
 
 #: src/fsearch_database_preferences_widget.ui:541
 msgid "Exclude hidden files and folders"
-msgstr ""
+msgstr "გამორიცხეთ ფარული ფაილები და საქაღალდეები"
 
 #: src/fsearch_database_preferences_widget.ui:563
 msgid "Exclude"
-msgstr ""
+msgstr "გამორიცხეთ"
 
 #: src/fsearch_file_utils.c:161
 msgctxt "Will be followed by the path of the file."
 msgid "Error when removing file"
-msgstr ""
+msgstr "შეცდომა ფაილის წაშლისას"
 
 #: src/fsearch_file_utils.c:163
 msgid "Failed to get path"
-msgstr ""
+msgstr "გზის მიღება ვერ მოხერხდა"
 
 #: src/fsearch_file_utils.c:277
 msgctxt "Will be followed by the file path."
 msgid "Error when getting information from file"
-msgstr ""
+msgstr "შეცდომა ფაილიდან ინფორმაციის მიღებისას"
 
 #: src/fsearch_file_utils.c:279
 msgid "Failed to get application information"
-msgstr ""
+msgstr "განაცხადის ინფორმაციის მიღება ვერ მოხერხდა"
 
 #: src/fsearch_file_utils.c:294
 msgctxt "Will be followed by the content type string."
 msgid "Error when getting information for content type"
-msgstr ""
+msgstr "შეცდომა კონტენტის ტიპის შესახებ ინფორმაციის მიღებისას"
 
 #: src/fsearch_file_utils.c:296
 msgid "No default application registered"
-msgstr ""
+msgstr "არ არის რეგისტრირებული ნაგულისხმევი აპლიკაცია"
 
 #: src/fsearch_file_utils.c:524
 msgctxt "Will be followed by the path of the folder."
 msgid "Error when opening parent folder"
-msgstr ""
+msgstr "შეცდომა მშობელი საქაღალდის გახსნისას"
 
 #: src/fsearch_file_utils.c:526
 msgid "Failed to get parent path"
-msgstr ""
+msgstr "მშობლის გზის მიღება ვერ მოხერხდა"
 
 #: src/fsearch_file_utils.c:530
 msgctxt "Will be followed by the path of the folder."
 msgid "Error while opening folder"
-msgstr ""
+msgstr "შეცდომა საქაღალდის გახსნისას"
 
 #: src/fsearch_file_utils.c:533
 msgid "Failed to build open command"
-msgstr ""
+msgstr "ღია ბრძანების შექმნა ვერ მოხერხდა"
 
 #: src/fsearch_file_utils.c:589
 msgid "Folder"
-msgstr ""
+msgstr "საქაღალდე"
 
 #: src/fsearch_file_utils.c:595
 msgid "Unknown Type"
-msgstr ""
+msgstr "უცნობი ტიპი"
 
 #: src/fsearch_filter.c:112
 msgid "All"
-msgstr ""
+msgstr "ყველა"
 
 #: src/fsearch_filter.c:115
 msgid "Applications"
-msgstr ""
+msgstr "აპლიკაციები"
 
 #: src/fsearch_filter.c:116
 msgid "Archives"
-msgstr ""
+msgstr "არქივები"
 
 #: src/fsearch_filter.c:117
 msgid "Audio"
-msgstr ""
+msgstr "აუდიო"
 
 #: src/fsearch_filter.c:118
 msgid "Documents"
-msgstr ""
+msgstr "დოკუმენტები"
 
 #: src/fsearch_filter.c:119
 msgid "Pictures"
-msgstr ""
+msgstr "სურათები"
 
 #: src/fsearch_filter.c:120
 msgid "Videos"
-msgstr ""
+msgstr "ვიდეოები"
 
 #: src/fsearch_filter_editor.c:79
 msgid "Macro names must not contain `:` characters."
-msgstr ""
+msgstr "მაკრო სახელები არ უნდა შეიცავდეს `:` სიმბოლოებს."
 
 #: src/fsearch_filter_editor.c:105 src/fsearch_preferences_dialog.c:332
 msgid "_OK"
-msgstr ""
+msgstr "_ კარგი"
 
 #: src/fsearch_filter_editor.ui:10 src/fsearch_filter_preferences_widget.c:156
 msgid "Edit filter"
-msgstr ""
+msgstr "ფილტრის რედაქტირება"
 
 #: src/fsearch_filter_editor.ui:50
 msgid "Name:"
-msgstr ""
+msgstr "სახელი:"
 
 #: src/fsearch_filter_editor.ui:61
 msgid "The unique name of this filter"
-msgstr ""
+msgstr "ამ ფილტრის უნიკალური სახელი"
 
 #: src/fsearch_filter_editor.ui:64
 msgid "Unique filter name"
-msgstr ""
+msgstr "უნიკალური ფილტრის სახელი"
 
 #: src/fsearch_filter_editor.ui:73
 msgid "Search in path"
-msgstr ""
+msgstr "ძიება გზაზე"
 
 #: src/fsearch_filter_editor.ui:87
 msgid "Enable regular expressions"
-msgstr ""
+msgstr "რეგულარული გამონათქვამების ჩართვა"
 
 #: src/fsearch_filter_editor.ui:101
 msgid "Match case"
-msgstr ""
+msgstr "მატჩის საქმე"
 
 #: src/fsearch_filter_editor.ui:146
 msgid "Query:"
-msgstr ""
+msgstr "შეკითხვა:"
 
 #: src/fsearch_filter_editor.ui:160
 msgid "Macro:"
-msgstr ""
+msgstr "მაკრო:"
 
 #: src/fsearch_filter_editor.ui:171
 msgid ""
@@ -1084,227 +1229,229 @@ msgid ""
 "search entry by typing its text followed by ':'\n"
 "                "
 msgstr ""
+"მაკრო ამ ფილტრისთვის. მაკრო საშუალებას გაძლევთ შეხვიდეთ ამ ფილტრზე საძიებო ჩანაწერიდან მისი ტექსტის აკრეფით, რასაც მოჰყვება ':'\n"
+"                "
 
 #: src/fsearch_filter_preferences_widget.c:133
 msgid "Add filter"
-msgstr ""
+msgstr "ფილტრის დამატება"
 
 #: src/fsearch_filter_preferences_widget.c:315 src/fsearch_window.c:735
 #: src/menus.ui:215 src/menus.ui:263
 msgid "Name"
-msgstr ""
+msgstr "სახელი"
 
 #: src/fsearch_filter_preferences_widget.c:316
 msgid "Macro"
-msgstr ""
+msgstr "მაკრო"
 
 #: src/fsearch_filter_preferences_widget.c:317
 msgid "Query"
-msgstr ""
+msgstr "შეკითხვა"
 
 #: src/fsearch_filter_preferences_widget.ui:77
 msgid "Add new filter"
-msgstr ""
+msgstr "დაამატეთ ახალი ფილტრი"
 
 #: src/fsearch_filter_preferences_widget.ui:95
 msgid "Remove selected filter"
-msgstr ""
+msgstr "ამოიღეთ არჩეული ფილტრი"
 
 #: src/fsearch_filter_preferences_widget.ui:113
 msgid "Edit selected filter"
-msgstr ""
+msgstr "არჩეული ფილტრის რედაქტირება"
 
 #: src/fsearch_filter_preferences_widget.ui:129
 msgid "Restore default filters"
-msgstr ""
+msgstr "ნაგულისხმევი ფილტრების აღდგენა"
 
 #: src/fsearch_listview_popup.c:36
 msgid "Properties…"
-msgstr ""
+msgstr "თვისებები…"
 
 #: src/fsearch_listview_popup.c:163
 msgid "Other Application…"
-msgstr ""
+msgstr "სხვა აპლიკაცია…"
 
 #: src/fsearch_overlay.ui:44
 msgid "Empty Database"
-msgstr ""
+msgstr "ცარიელი მონაცემთა ბაზა"
 
 #: src/fsearch_overlay.ui:60
 msgid "Add folders"
-msgstr ""
+msgstr "საქაღალდეების დამატება"
 
 #: src/fsearch_overlay.ui:108
 msgid "Loading Database…"
-msgstr ""
+msgstr "მონაცემთა ბაზის ჩატვირთვა…"
 
 #: src/fsearch_overlay.ui:123
 msgid "This won't take long."
-msgstr ""
+msgstr "ამას დიდი დრო არ დასჭირდება."
 
 #: src/fsearch_overlay.ui:171 src/fsearch_statusbar.ui:312
 msgid "Updating Database…"
-msgstr ""
+msgstr "მიმდინარეობს მონაცემთა ბაზის განახლება…"
 
 #: src/fsearch_overlay.ui:186 src/fsearch_overlay.ui:383
 msgid "This may take a while."
-msgstr ""
+msgstr "ამას შეიძლება გარკვეული დრო დასჭირდეს."
 
 #: src/fsearch_overlay.ui:241
 msgid "Empty Query"
-msgstr ""
+msgstr "ცარიელი შეკითხვა"
 
 #: src/fsearch_overlay.ui:256
 msgid "Press <b>Ctrl + F</b> and start typing."
-msgstr ""
+msgstr "დააჭირეთ <b>Ctrl + F</b> და დაიწყეთ აკრეფა."
 
 #: src/fsearch_overlay.ui:304
 msgid "No Results Found"
-msgstr ""
+msgstr "შედეგი ვერ მოიძებნა"
 
 #: src/fsearch_overlay.ui:319
 msgid "Try a different search"
-msgstr ""
+msgstr "სცადეთ სხვა ძიება"
 
 #: src/fsearch_overlay.ui:368
 msgid "Sorting results…"
-msgstr ""
+msgstr "შედეგების დახარისხება…"
 
 #: src/fsearch_preferences.ui:7 src/fsearch_window.ui:251 src/menus.ui:84
 msgid "Preferences"
-msgstr ""
+msgstr "პრეფერენციები"
 
 #: src/fsearch_preferences.ui:76
 msgid "Enable dark theme"
-msgstr ""
+msgstr "მუქი თემის ჩართვა"
 
 #: src/fsearch_preferences.ui:97
 msgid "Enable client-side decorations (requires restart)"
-msgstr ""
+msgstr "კლიენტის მხრიდან დეკორაციების ჩართვა (საჭიროებს გადატვირთვას)"
 
 #: src/fsearch_preferences.ui:117
 msgid "Use binary units instead of decimal units"
-msgstr ""
+msgstr "გამოიყენეთ ორობითი ერთეულები ათობითი ერთეულების ნაცვლად"
 
 #: src/fsearch_preferences.ui:138
 msgid "Remember window size"
-msgstr ""
+msgstr "გახსოვდეთ ფანჯრის ზომა"
 
 #: src/fsearch_preferences.ui:159
 msgid "Exit on Escape"
-msgstr ""
+msgstr "გასვლა Escape-ზე"
 
 #: src/fsearch_preferences.ui:202
 msgid "with keyboard shortcuts or menu entries"
-msgstr ""
+msgstr "კლავიატურის მალსახმობებით ან მენიუს ჩანაწერებით"
 
 #: src/fsearch_preferences.ui:223
 msgid "with double click"
-msgstr ""
+msgstr "ორმაგი დაწკაპუნებით"
 
 #: src/fsearch_preferences.ui:257
 msgid "Behaviour after successfully opening a file:"
-msgstr ""
+msgstr "ქცევა ფაილის წარმატებით გახსნის შემდეგ:"
 
 #: src/fsearch_preferences.ui:273
 msgid "Nothing"
-msgstr ""
+msgstr "არაფერი"
 
 #: src/fsearch_preferences.ui:274
 msgid "Minimize"
-msgstr ""
+msgstr "მინიმიზაცია"
 
 #: src/fsearch_preferences.ui:275
 msgid "Close"
-msgstr ""
+msgstr "დახურვა"
 
 #: src/fsearch_preferences.ui:309
 msgid "General:"
-msgstr ""
+msgstr "ზოგადი:"
 
 #: src/fsearch_preferences.ui:344
 msgid "Show highlighted search terms"
-msgstr ""
+msgstr "მონიშნული საძიებო ტერმინების ჩვენება"
 
 #: src/fsearch_preferences.ui:366
 msgid "Show tooltips"
-msgstr ""
+msgstr "ინსტრუმენტების რჩევების ჩვენება"
 
 #: src/fsearch_preferences.ui:387
 msgid "Show icons in name column"
-msgstr ""
+msgstr "აჩვენეთ ხატები სახელის სვეტში"
 
 #: src/fsearch_preferences.ui:408
 msgid "Remember column configuration"
-msgstr ""
+msgstr "დაიმახსოვრე სვეტის კონფიგურაცია"
 
 #: src/fsearch_preferences.ui:429
 msgid "Remember sort order"
-msgstr ""
+msgstr "დაიმახსოვრეთ დალაგების თანმიმდევრობა"
 
 #: src/fsearch_preferences.ui:450
 msgid "Open path with double click in path column"
-msgstr ""
+msgstr "გახსენით ბილიკი ორმაგი დაწკაპუნებით ბილიკის სვეტში"
 
 #: src/fsearch_preferences.ui:471
 msgid "Single click to open"
-msgstr ""
+msgstr "გასახსნელად ერთი დაწკაპუნებით"
 
 #: src/fsearch_preferences.ui:492
 msgid "Launch desktop files"
-msgstr ""
+msgstr "დესკტოპის ფაილების გაშვება"
 
 #: src/fsearch_preferences.ui:519
 msgid "Results:"
-msgstr ""
+msgstr "შედეგები:"
 
 #: src/fsearch_preferences.ui:560
 msgid "Show database indexing status"
-msgstr ""
+msgstr "მონაცემთა ბაზის ინდექსირების სტატუსის ჩვენება"
 
 #: src/fsearch_preferences.ui:587
 msgid "Statusbar:"
-msgstr ""
+msgstr "სტატუსის ზოლი:"
 
 #: src/fsearch_preferences.ui:628
 msgid "Show warning dialogs when:"
-msgstr ""
+msgstr "გაფრთხილების დიალოგების ჩვენება, როდესაც:"
 
 #: src/fsearch_preferences.ui:638
 msgid "file / folder failed to open"
-msgstr ""
+msgstr "ფაილი/საქაღალდე ვერ გაიხსნა"
 
 #: src/fsearch_preferences.ui:667
 msgid "Dialogs:"
-msgstr ""
+msgstr "დიალოგები:"
 
 #: src/fsearch_preferences.ui:692
 msgid "Interface"
-msgstr ""
+msgstr "ინტერფეისი"
 
 #: src/fsearch_preferences.ui:711
 msgid "Search in path when query contains path separators"
-msgstr ""
+msgstr "ძიება გზაზე, როდესაც მოთხოვნა შეიცავს ბილიკების გამყოფებს"
 
 #: src/fsearch_preferences.ui:730
 msgid "Search as you type"
-msgstr ""
+msgstr "მოძებნეთ აკრეფისას"
 
 #: src/fsearch_preferences.ui:750
 msgid "Hide results when search is empty"
-msgstr ""
+msgstr "შედეგების დამალვა, როდესაც ძიება ცარიელია"
 
 #: src/fsearch_preferences.ui:769
 msgid "Match case when query contains at least one upper case character"
-msgstr ""
+msgstr "შეესაბამეთ შემთხვევას, როდესაც მოთხოვნა შეიცავს მინიმუმ ერთ დიდ ასოს"
 
 #: src/fsearch_preferences.ui:801
 msgid "Filter:"
-msgstr ""
+msgstr "ფილტრი:"
 
 #: src/fsearch_preferences.ui:822 src/fsearch_window.ui:639
 msgid "Search"
-msgstr ""
+msgstr "ძიება"
 
 #: src/fsearch_preferences.ui:855
 msgid ""
@@ -1316,6 +1463,11 @@ msgid ""
 "Note that not all system themes provide such a darker variant, therefore "
 "enabling this setting might not have an effect."
 msgstr ""
+"<b>მუქი თემის ჩართვა:</b>\n"
+"\n"
+"თუ ჩართულია, სისტემის თემას მოეთხოვება უფრო მუქი სტილის გამოყენება აპლიკაციისთვის <i>(ანუ მუქი ინტერფეისის ელემენტები ნათელ ტექსტზე)</i>.\n"
+"\n"
+"გაითვალისწინეთ, რომ ყველა სისტემის თემა არ იძლევა ასეთ უფრო მუქ ვარიანტს, ამიტომ ამ პარამეტრის ჩართვას შეიძლება არ ჰქონდეს ეფექტი."
 
 #: src/fsearch_preferences.ui:873
 msgid ""
@@ -1329,6 +1481,12 @@ msgid ""
 "This resembles a more traditional UI layout and takes a little bit more "
 "space."
 msgstr ""
+"<b>ჩართეთ კლიენტის მხარის დეკორაციები:</b>\n"
+"\n"
+"თუ ჩართულია, საძიებო ჩანაწერი და მთავარი მენიუ გამოჩნდება ფანჯრის სათაურის ზოლში.\n"
+"\n"
+"თუ გამორთულია, მთავარი მენიუ გამოჩნდება მენიუს ზოლის სახით საძიებო ჩანაწერით მის ქვემოთ.\n"
+"ეს უფრო ტრადიციული ინტერფეისის განლაგებას წააგავს და ცოტა მეტ ადგილს იკავებს."
 
 #: src/fsearch_preferences.ui:893
 msgid ""
@@ -1341,6 +1499,12 @@ msgid ""
 "\t• <b>Decimal  units:</b> This refers to decimal SI prefixes <i>(e.g. 1 kB "
 "= 1000 bytes)</i>"
 msgstr ""
+"<b>გამოიყენეთ ორობითი ერთეულები ათობითი ერთეულების ნაცვლად:</b>\n"
+"\n"
+"ეს პარამეტრი აკონტროლებს ფაილის ზომის ჩვენებას.\n"
+"\n"
+"\t• <b>ორობითი ერთეულები:</b> ეს ეხება ორობით IEC პრეფიქსებს <i>(მაგ. 1 KiB = 1024 ბაიტი)</i>\n"
+"\t• <b>ათწილადი ერთეულები:</b> ეს ეხება ათობითი SI პრეფიქსებს <i>(მაგ. 1 კბ = 1000 ბაიტი)</i>"
 
 #: src/fsearch_preferences.ui:913
 msgid ""
@@ -1352,6 +1516,11 @@ msgid ""
 "Note that some window managers ignore this request and force the window to "
 "have a different size."
 msgstr ""
+"<b>გახსოვდეთ ფანჯრის ზომა:</b>\n"
+"\n"
+"თუ ჩართულია, წინა სესიის ფანჯრის ზომა აღდგება FSearch ფანჯრის გახსნისას.\n"
+"\n"
+"გაითვალისწინეთ, რომ ზოგიერთი ფანჯრის მენეჯერი უგულებელყოფს ამ მოთხოვნას და აიძულებს ფანჯარას ჰქონდეს განსხვავებული ზომა."
 
 #: src/fsearch_preferences.ui:932
 msgid ""
@@ -1369,6 +1538,16 @@ msgid ""
 "\t• <b>keyboard shortcuts or menu entries</b> and/or\n"
 "\t• <b>mouse click</b>"
 msgstr ""
+"<b>ქცევა ფაილის წარმატებით გახსნის შემდეგ:</b>\n"
+"\n"
+"როდესაც ფაილი/საქაღალდე წარმატებით გაიხსნა, შეიძლება შესრულდეს ერთ-ერთი შემდეგი მოქმედება:\n"
+"\t• <b>არაფერი:</b> არაფერი ხდება.\n"
+"                        • <b>მინიმიზაცია:</b> ამჟამად არჩეული FSearch ფანჯარა მინიმიზდება.\n"
+"\t• <b>დახურვა:</b> FSearch-ის დატოვება.\n"
+"\n"
+"თქვენ შეგიძლიათ დააკონფიგურიროთ, უნდა მოხდეს თუ არა ეს მოქმედებები ფაილის გახსნისას\n"
+"\t• <b>კლავიატურის მალსახმობები ან მენიუს ჩანაწერები</b> და/ან\n"
+"\t• <b>მაუსის დაწკაპუნება</b>"
 
 #: src/fsearch_preferences.ui:956
 msgid ""
@@ -1384,6 +1563,14 @@ msgid ""
 "This also works for regular expressions and wildcard expressions starting or "
 "ending with an asterisk. "
 msgstr ""
+"<b>მონიშნული საძიებო ტერმინების ჩვენება:</b>\n"
+"\n"
+"თუ ჩართულია, საძიებო ტერმინები მონიშნული იქნება შედეგების ხედში. მაგალითად, როდესაც თქვენ ეძებთ \\\"foo\\\", <i>foo</i>-ის ყველა გამოჩენა ფაილის/საქაღალდის სახელებში მონიშნული იქნება თამამი სიმბოლოებით:\n"
+"\n"
+"\t<b>foo</b>bar.txt\n"
+"\tფაილი.<b>foo</b>\n"
+"\n"
+"ეს ასევე მუშაობს რეგულარულ გამონათქვამებზე და ვარსკვლავით დაწყებული ან დამთავრებული სიმბოლოების გამონათქვამებისთვის."
 
 #: src/fsearch_preferences.ui:978
 msgid ""
@@ -1392,6 +1579,9 @@ msgid ""
 "If enabled, the results view will show the full path of the focused file/"
 "folder in a small tooltip window."
 msgstr ""
+"<b>ინსტრუმენტების რჩევების ჩვენება:</b>\n"
+"\n"
+"თუ ჩართულია, შედეგების ხედი აჩვენებს ფოკუსირებული ფაილის/საქაღალდის სრულ გზას ინსტრუმენტების მინიშნების პატარა ფანჯარაში."
 
 #: src/fsearch_preferences.ui:995
 msgid ""
@@ -1399,6 +1589,9 @@ msgid ""
 "\n"
 "If enabled, file/folder icons will be shown in the name column."
 msgstr ""
+"<b>აჩვენეთ ხატები სახელის სვეტში:</b>\n"
+"\n"
+"თუ ჩართულია, ფაილის/საქაღალდის ხატები გამოჩნდება სახელის სვეტში."
 
 #: src/fsearch_preferences.ui:1012
 msgid ""
@@ -1408,6 +1601,9 @@ msgid ""
 "session will be restored when you open an FSearch window. This includes the "
 "size and visibility of all columns."
 msgstr ""
+"<b>გახსოვდეთ სვეტის კონფიგურაცია:</b>\n"
+"\n"
+"თუ ჩართულია, წინა სესიის შედეგების ხედის სვეტის კონფიგურაცია აღდგება FSearch ფანჯრის გახსნისას. ეს მოიცავს ყველა სვეტის ზომას და ხილვადობას."
 
 #: src/fsearch_preferences.ui:1029
 msgid ""
@@ -1416,6 +1612,9 @@ msgid ""
 "If enabled, the sort order of the results view from the previous session "
 "will be restored when you open an FSearch window."
 msgstr ""
+"<b>გახსოვდეთ დალაგების თანმიმდევრობა:</b>\n"
+"\n"
+"თუ ჩართულია, წინა სესიის შედეგების ხედის დალაგების თანმიმდევრობა აღდგება FSearch ფანჯრის გახსნისას."
 
 #: src/fsearch_preferences.ui:1046
 msgid ""
@@ -1423,6 +1622,9 @@ msgid ""
 "\n"
 "If enabled, double clicking in the path column will open the selected path."
 msgstr ""
+"<b>გახსენით ბილიკი ორმაგი დაწკაპუნებით ბილიკის სვეტში:</b>\n"
+"\n"
+"თუ ჩართულია, ბილიკის სვეტზე ორჯერ დაწკაპუნებით გაიხსნება არჩეული გზა."
 
 #: src/fsearch_preferences.ui:1063
 msgid ""
@@ -1432,6 +1634,9 @@ msgid ""
 "want to select a file/folder while this setting is active, you need to hold "
 "<i>Ctrl</i> at the same time while clicking the file/folder."
 msgstr ""
+"<b>გასახსნელად ერთი დაწკაპუნებით:</b>\n"
+"\n"
+"თუ ჩართულია, ერთი დაწკაპუნებით გაიხსნება არჩეული ფაილი/საქაღალდე. თუ გსურთ მხოლოდ ფაილის/საქაღალდის არჩევა, სანამ ეს პარამეტრი აქტიურია, თქვენ უნდა გეჭიროთ <i>Ctrl</i> ამავე დროს ფაილზე/საქაღალდეზე დაწკაპუნებისას."
 
 #: src/fsearch_preferences.ui:1080
 msgid ""
@@ -1440,6 +1645,9 @@ msgid ""
 "If enabled, the path that is currently being indexed is displayed in the "
 "statusbar."
 msgstr ""
+"<b> მონაცემთა ბაზის ინდექსირების სტატუსის ჩვენება:</b>\n"
+"\n"
+"თუ ჩართულია, გზა, რომელიც ამჟამად ინდექსირებულია, გამოჩნდება სტატუსის ზოლში."
 
 #: src/fsearch_preferences.ui:1097
 msgid ""
@@ -1448,6 +1656,9 @@ msgid ""
 "If enabled, a warning dialog is displayed when a file or folder failed to "
 "open."
 msgstr ""
+"<b>გაფრთხილების დიალოგების ჩვენება:</b>\n"
+"\n"
+"თუ ჩართულია, გამოჩნდება გამაფრთხილებელი დიალოგი, როდესაც ფაილი ან საქაღალდე ვერ გაიხსნა."
 
 #: src/fsearch_preferences.ui:1114
 msgid ""
@@ -1456,6 +1667,9 @@ msgid ""
 "If enabled, search terms containing path separators (i.e. \"/\") will be "
 "automatically matched against the full path of a file or folder."
 msgstr ""
+"<b>მოძებნეთ გზაზე, როდესაც მოთხოვნა შეიცავს ბილიკების გამყოფებს:</b>\n"
+"\n"
+"თუ ჩართულია, საძიებო ტერმინები, რომლებიც შეიცავს ბილიკების გამყოფებს (მაგ. \\\"/\\\") ავტომატურად დაემთხვევა ფაილის ან საქაღალდის სრულ გზას."
 
 #: src/fsearch_preferences.ui:1131
 msgid ""
@@ -1465,6 +1679,9 @@ msgid ""
 "trigger a case-sensitive search. This means a search term like <i>Foo</i> "
 "will match <i>FooBar.txt</i> but not <i>foobar.txt</i>."
 msgstr ""
+"<b>შემთხვევა, როდესაც მოთხოვნა შეიცავს მინიმუმ ერთ დიდ ასოს:</b>\n"
+"\n"
+"თუ ჩართულია, საძიებო ტერმინები, რომლებიც შეიცავს მინიმუმ ერთ დიდ ასოს სიმბოლოს, გამოიწვევს ძიებას. ეს ნიშნავს, რომ საძიებო სიტყვა, როგორიცაა <i>Foo</i>, ემთხვევა <i>FooBar.txt</i>, მაგრამ არა <i>foobar.txt</i>."
 
 #: src/fsearch_preferences.ui:1148
 msgid ""
@@ -1475,6 +1692,11 @@ msgid ""
 "If disabled, all files and folders will be displayed when the search entry "
 "is empty."
 msgstr ""
+"<b>დამალეთ შედეგები, როდესაც ძიება ცარიელია:</b>\n"
+"\n"
+"თუ ჩართულია, ძიების შედეგები არ გამოჩნდება, როდესაც ძიების ჩანაწერი ცარიელია.\n"
+"\n"
+"თუ გამორთულია, ყველა ფაილი და საქაღალდე გამოჩნდება, როდესაც საძიებო ჩანაწერი ცარიელია."
 
 #: src/fsearch_preferences.ui:1167
 msgid ""
@@ -1485,6 +1707,11 @@ msgid ""
 "If disabled, the search is only updated when you hit <i>Enter</i> or press "
 "the search button. "
 msgstr ""
+"<b>მოძებნეთ აკრეფისას:</b>\n"
+"\n"
+"თუ ჩართულია, ძიება ავტომატურად განახლდება ყოველი დაჭერით.\n"
+"\n"
+"თუ გამორთულია, ძიება განახლდება მხოლოდ მაშინ, როდესაც დააჭერთ <i>Enter</i>-ს ან დააჭირეთ ძებნის ღილაკს."
 
 #: src/fsearch_preferences.ui:1186
 msgid ""
@@ -1493,6 +1720,9 @@ msgid ""
 "If enabled, the database will be updated automatically in the background "
 "when you start FSearch."
 msgstr ""
+"<b>დაწყებისას განაახლეთ მონაცემთა ბაზა:</b>\n"
+"\n"
+"თუ ჩართულია, მონაცემთა ბაზა ავტომატურად განახლდება ფონზე FSearch-ის დაწყებისას."
 
 #: src/fsearch_preferences.ui:1203
 msgid ""
@@ -1506,6 +1736,13 @@ msgid ""
 "\t• <b>One Filesystem:</b> If enabled, FSearch won't cross filesystem "
 "boundaries for this folder"
 msgstr ""
+"<b>ჩართული საქაღალდეები:</b>\n"
+"\n"
+"ეს სია შეიცავს ყველა საქაღალდეს, რომელიც გსურთ შეიტანოთ მონაცემთა ბაზაში.\n"
+"\n"
+"\t• <b>აქტიური:</b> თუ ჩართულია, ბილიკი ჩაირთვება მონაცემთა ბაზაში საძიებლად.\n"
+"\t• <b>გზა:</b> ჩართული სრული გზა.\n"
+"\t• <b>ერთი ფაილური სისტემა:</b> თუ ჩართულია, FSearch არ გადალახავს ამ საქაღალდის ფაილური სისტემის საზღვრებს"
 
 #: src/fsearch_preferences.ui:1224
 msgid ""
@@ -1514,6 +1751,9 @@ msgid ""
 "This button opens a dialog where you can select a folder you want to include "
 "in the database for searching."
 msgstr ""
+"<b>დაამატე საქაღალდე მონაცემთა ბაზაში:</b>\n"
+"\n"
+"ეს ღილაკი ხსნის დიალოგს, სადაც შეგიძლიათ აირჩიოთ საქაღალდე, რომელიც გსურთ შეიტანოთ მონაცემთა ბაზაში საძიებლად."
 
 #: src/fsearch_preferences.ui:1241
 msgid ""
@@ -1523,6 +1763,9 @@ msgid ""
 "include that folder in the database. This is useful for adding a path "
 "directly without browsing for it."
 msgstr ""
+"<b>დაამატე კონკრეტული გზა:</b>\n"
+"\n"
+"აქ ჩაწერეთ საქაღალდის სრული გზა და დააწკაპუნეთ მის გვერდით ღილაკზე, რომ ეს საქაღალდე მონაცემთა ბაზაში შეიტანოთ. ეს სასარგებლოა ბილიკის პირდაპირ დასამატებლად მისი დათვალიერების გარეშე."
 
 #: src/fsearch_preferences.ui:1258
 msgid ""
@@ -1530,6 +1773,9 @@ msgid ""
 "\n"
 "This removes the selected folder from the list of included folders."
 msgstr ""
+"<b>არჩეული მწკრივის წაშლა:</b>\n"
+"\n"
+"ეს შლის არჩეულ საქაღალდეს შეყვანილი საქაღალდეების სიიდან."
 
 #: src/fsearch_preferences.ui:1275
 msgid ""
@@ -1542,6 +1788,11 @@ msgid ""
 "system resources per watched folder. For large directory trees with many "
 "files the system may run out of resources to watch them all."
 msgstr ""
+"<b>მონიტორინგის მცდელობა:</b>\n"
+"\n"
+"თუ ჩართულია, FSearch უყურებს ამ საქაღალდეს ცვლილებებს და ავტომატურად განაახლებს მონაცემთა ბაზას, ასე რომ თქვენ არ დაგჭირდებათ ხელახლა სკანირება ხელით.\n"
+"\n"
+"მონიტორინგი არ არის მხარდაჭერილი ყველა ფაილურ სისტემაზე და იყენებს სისტემის რესურსების მცირე რაოდენობას თითო ნანახ საქაღალდეზე. დიდი კატალოგის ხეებისთვის, რომლებსაც აქვთ მრავალი ფაილი, სისტემას შეიძლება ამოეწუროს რესურსები ყველა მათგანის საყურებლად."
 
 #: src/fsearch_preferences.ui:1294
 msgid ""
@@ -1550,6 +1801,9 @@ msgid ""
 "If enabled, this folder is rescanned every time FSearch starts, so the "
 "database reflects any changes made while FSearch wasn't running."
 msgstr ""
+"<b>სკანირება გაშვების შემდეგ:</b>\n"
+"\n"
+"თუ ჩართულია, ეს საქაღალდე ხელახლა სკანირდება FSearch-ის ყოველ ჯერზე დაწყებისას, ასე რომ მონაცემთა ბაზა ასახავს ნებისმიერ ცვლილებას, რაც მოხდა FSearch არ მუშაობდა."
 
 #: src/fsearch_preferences.ui:1311
 msgid ""
@@ -1559,6 +1813,9 @@ msgid ""
 "folder. Mounted file systems below it (e.g. external drives or network "
 "shares) are skipped."
 msgstr ""
+"<b>დარჩით ერთ ფაილურ სისტემაზე:</b>\n"
+"\n"
+"თუ ჩართულია, FSearch არ გადალახავს ფაილური სისტემის საზღვრებს ამ საქაღალდის სკანირებისას. მის ქვემოთ დამონტაჟებული ფაილური სისტემები (მაგ. გარე დისკები ან ქსელის გაზიარებები) გამოტოვებულია."
 
 #: src/fsearch_preferences.ui:1328
 msgid ""
@@ -1570,6 +1827,11 @@ msgid ""
 "This is useful for folders on file systems that can't be monitored for "
 "changes."
 msgstr ""
+"<b>ხელახლა სკანირება:</b>\n"
+"\n"
+"თუ ჩართულია, ეს საქაღალდე ავტომატურად სკანირდება მოცემულ ინტერვალში. გამოიყენეთ საათებისა და წუთების ველები, რათა დააყენოთ რამდენად ხშირად მოხდება ხელახალი სკანირება.\n"
+"\n"
+"ეს სასარგებლოა ფაილური სისტემების საქაღალდეებისთვის, რომელთა მონიტორინგი შეუძლებელია ცვლილებებისთვის."
 
 #: src/fsearch_preferences.ui:1347
 msgid ""
@@ -1590,6 +1852,15 @@ msgid ""
 "\t• <b>Applies To:</b> Whether the rule affects <i>Files</i>, <i>Folders</i> "
 "or both."
 msgstr ""
+"<b>წესების გამორიცხვა:</b>\n"
+"\n"
+"ეს სია შეიცავს წესებს ფაილებისა და საქაღალდეებისთვის, რომლებიც გსურთ გამორიცხოთ მონაცემთა ბაზიდან.\n"
+"\n"
+"\t• <b>აქტიური:</b> თუ ჩართულია, წესი გამოიყენება და შესატყვისი ელემენტები გამოირიცხება.\n"
+"\t• <b>ნიმუში:</b> ტექსტი ემთხვევა თითოეულ პუნქტს, ინტერპრეტაცია ტიპის მიხედვით.\n"
+"\t• <b>ტიპი:</b> როგორ ხდება ნიმუშის ინტერპრეტაცია — <i>Literal</i> (ზუსტი ტექსტი), <i>Wildcard</i> (გამოყენებით * და ?) ან <i>Regex</i> (რეგულარული გამოხატულება).\n"
+"\t• <b>შესაბამისი:</b> შეესაბამება თუ არა ნიმუში ერთეულის <i>სრულ გზას</i> თუ მხოლოდ მის <i>ბაზის სახელს</i> (სახელი ბილიკის გარეშე).\n"
+"\t• <b>ვრცელდება:</b> გავლენას ახდენს თუ არა ეს წესი <i>ფაილებზე</i>, <i>საქაღალდეებზე</i> თუ ორივეზე."
 
 #: src/fsearch_preferences.ui:1370
 msgid ""
@@ -1598,6 +1869,9 @@ msgid ""
 "This adds a new, empty rule to the list. Edit its Pattern, Type, Match and "
 "Applies To columns to control what gets excluded from the database."
 msgstr ""
+"<b>გამორიცხვის წესის დამატება:</b>\n"
+"\n"
+"ეს ამატებს სიას ახალ, ცარიელ წესს. შეცვალეთ მისი ნიმუში, ტიპი, შესატყვისი და ვრცელდება სვეტებზე, რათა აკონტროლოთ რა გამოირიცხება მონაცემთა ბაზიდან."
 
 #: src/fsearch_preferences.ui:1387
 msgid ""
@@ -1605,6 +1879,9 @@ msgid ""
 "\n"
 "This removes the selected rule from the list of exclude rules."
 msgstr ""
+"<b>არჩეული მწკრივის წაშლა:</b>\n"
+"\n"
+"ეს ამოიღებს არჩეულ წესს გამორიცხვის წესების სიიდან."
 
 #: src/fsearch_preferences.ui:1404
 msgid ""
@@ -1614,6 +1891,11 @@ msgid ""
 "\n"
 "⚠ All rules which were created or edited by the user will be lost! ⚠"
 msgstr ""
+"<b>აღდგენა ნაგულისხმევი გამორიცხვის წესები:</b>\n"
+"\n"
+"ეს ღილაკი აღადგენს გამორიცხვის წესების ნაგულისხმევ კომპლექტს.\n"
+"\n"
+"⚠ მომხმარებლის მიერ შექმნილი ან რედაქტირებული ყველა წესი დაიკარგება! ⚠"
 
 #: src/fsearch_preferences.ui:1423
 msgid ""
@@ -1624,6 +1906,9 @@ msgid ""
 "all files or folders which are called either <i>.git</i> or <i>.cache</i> or "
 "end with <i>.swp</i>."
 msgstr ""
+"<b>ფაილების და საქაღალდეების გამორიცხვა მონაცემთა ბაზიდან:</b>\n"
+"\n"
+"ეს არის ნახევრად წერტილებით გამოყოფილი ფაილების (ან საქაღალდეების) სია, რომელთა გამორიცხვა გსურთ მონაცემთა ბაზიდან. მაგალითად <i>.git;.cache;*.swp</i> გამორიცხავს ყველა ფაილს ან საქაღალდეს, რომელსაც ეწოდება <i>.git</i> ან <i>.cache</i> ან მთავრდება <i>.swp</i>-ით."
 
 #: src/fsearch_preferences.ui:1440
 msgid ""
@@ -1632,10 +1917,13 @@ msgid ""
 "If enabled, hidden files and folders will be excluded from the database "
 "<i>(i.e. all files or folders which start with a dot character)</i>."
 msgstr ""
+"<b>გამორიცხეთ ფარული ფაილები და საქაღალდეები:</b>\n"
+"\n"
+"თუ ჩართულია, დამალული ფაილები და საქაღალდეები გამოირიცხება მონაცემთა ბაზიდან <i>(ანუ ყველა ფაილი ან საქაღალდე, რომელიც იწყება წერტილის სიმბოლოთი)</i>."
 
 #: src/fsearch_preferences.ui:1457
 msgid "Focus a setting to get a detailed description of what it does."
-msgstr ""
+msgstr "ფოკუსირება მოახდინეთ პარამეტრზე, რომ მიიღოთ დეტალური აღწერა, თუ რას აკეთებს იგი."
 
 #: src/fsearch_preferences.ui:1470
 msgid ""
@@ -1650,6 +1938,13 @@ msgid ""
 "\n"
 "<i><tt>fsearch --update-database</tt></i>"
 msgstr ""
+"<b>პერიოდულად განაახლეთ მონაცემთა ბაზა გარკვეული დროის ინტერვალით:</b>\n"
+"\n"
+"თუ ჩართულია და სანამ FSearch მუშაობს, მონაცემთა ბაზა პერიოდულად განახლდება მოცემული დროის ინტერვალით.\n"
+"\n"
+"თუ გსურთ მონაცემთა ბაზის განახლება ფონზე, მაშინაც კი, როდესაც FSearch არ არის გაშვებული, უნდა გამოიყენოთ ინსტრუმენტები, როგორიცაა cron ან systemd ტაიმერი, რათა პერიოდულად ჩართოთ განახლება:\n"
+"\n"
+"<i><tt>fsearch --განახლება-მონაცემთა ბაზა</tt></i>"
 
 #: src/fsearch_preferences.ui:1491
 msgid ""
@@ -1660,6 +1955,9 @@ msgid ""
 "launcher. Otherwise the <i>.desktop</i> file will be opened with the default "
 "handler for this type of files, which is usually a text editor."
 msgstr ""
+"<b>გაუშვით დესკტოპის ფაილები:</b>\n"
+"\n"
+"თუ ჩართულია, <i>.desktop</i> ფაილის გააქტიურება დაიწყებს ამ ფაილში განსაზღვრულ აპლიკაციას. ამ გზით FSearch-ს შეუძლია იმოქმედოს როგორც აპლიკაციის გამშვები. წინააღმდეგ შემთხვევაში <i>.desktop</i> ფაილი გაიხსნება ამ ტიპის ფაილების ნაგულისხმევი დამმუშავებლით, რომელიც ჩვეულებრივ ტექსტური რედაქტორია."
 
 #: src/fsearch_preferences.ui:1508
 msgid ""
@@ -1672,6 +1970,13 @@ msgid ""
 "the filter on demand\n"
 "\t• <b>Query:</b> The search term by which the database should be filtered"
 msgstr ""
+"<b>ფილტრები:</b>\n"
+"\n"
+"ეს არის ყველა ხელმისაწვდომი ფილტრის სია. ფილტრი არის წინასწარ განსაზღვრული ძებნა.\n"
+"\n"
+"\t• <b>სახელი:</b> ფილტრის უნიკალური და აღწერითი იდენტიფიკატორი\n"
+"\t• <b>მაკრო:</b> მაკრო ტექსტის აკრეფით, რასაც მოჰყვება ':', შეგიძლიათ ჩართოთ ფილტრი მოთხოვნისამებრ\n"
+"\t• <b>შეკითხვა:</b> საძიებო სიტყვა, რომლითაც უნდა მოხდეს მონაცემთა ბაზის გაფილტვრა"
 
 #: src/fsearch_preferences.ui:1529
 msgid ""
@@ -1679,6 +1984,9 @@ msgid ""
 "\n"
 "This button opens a dialog where you can edit a new filter."
 msgstr ""
+"<b>ახალი ფილტრის დამატება:</b>\n"
+"\n"
+"ეს ღილაკი ხსნის დიალოგს, სადაც შეგიძლიათ შეცვალოთ ახალი ფილტრი."
 
 #: src/fsearch_preferences.ui:1546
 msgid ""
@@ -1686,6 +1994,9 @@ msgid ""
 "\n"
 "This button removes the currently selected filter."
 msgstr ""
+"<b>არჩეული ფილტრის წაშლა:</b>\n"
+"\n"
+"ეს ღილაკი შლის ამჟამად არჩეულ ფილტრს."
 
 #: src/fsearch_preferences.ui:1563
 msgid ""
@@ -1693,6 +2004,9 @@ msgid ""
 "\n"
 "This button opens a dialog where you can edit the selected filter."
 msgstr ""
+"<b>არჩეული ფილტრის რედაქტირება:</b>\n"
+"\n"
+"ეს ღილაკი ხსნის დიალოგს, სადაც შეგიძლიათ შეცვალოთ არჩეული ფილტრი."
 
 #: src/fsearch_preferences.ui:1580
 msgid ""
@@ -1702,6 +2016,11 @@ msgid ""
 "\n"
 "⚠ All filters which were created or edited by the user will be lost! ⚠"
 msgstr ""
+"<b>ნაგულისხმევი ფილტრების აღდგენა:</b>\n"
+"\n"
+"ეს ღილაკი აღადგენს ნაგულისხმევი ფილტრის კონფიგურაციას.\n"
+"\n"
+"⚠ მომხმარებლის მიერ შექმნილი ან რედაქტირებული ყველა ფილტრი დაიკარგება! ⚠"
 
 #: src/fsearch_preferences.ui:1599
 msgid ""
@@ -1710,128 +2029,137 @@ msgid ""
 "If enabled, FSearch exits when the Escape key is pressed instead of the "
 "window being minimized."
 msgstr ""
+"<b>გამოსვლა Escape-ზე:</b>\n"
+"\n"
+"თუ ჩართულია, FSearch გადის, როდესაც დაჭერით Escape კლავიშს, ნაცვლად ფანჯრის მინიმიზაციისა."
 
 #: src/fsearch_preferences.ui:1618 src/fsearch_window.ui:290
 #: src/fsearch_window.ui:415 src/menus.ui:150 src/menus.ui:156
 msgid "Help"
-msgstr ""
+msgstr "დახმარება"
 
 #: src/fsearch_preferences_dialog.c:238
 msgid "Database"
-msgstr ""
+msgstr "მონაცემთა ბაზა"
 
 #: src/fsearch_result_view.c:381
 msgid "Invalid row data"
-msgstr ""
+msgstr "მწკრივის არასწორი მონაცემები"
 
 #: src/fsearch_statusbar.c:58
 #, c-format
 msgid "%'d Item"
-msgstr ""
+msgstr "%'d ელემენტი"
 
 #: src/fsearch_statusbar.c:58 src/fsearch_statusbar.c:186
 #, c-format
 msgid "%'d Items"
-msgstr ""
+msgstr "%'d ელემენტი"
 
 #: src/fsearch_statusbar.c:80
 msgid "Querying…"
-msgstr ""
+msgstr "მოთხოვნა…"
 
 #: src/fsearch_statusbar.c:175
 msgid "Loading…"
-msgstr ""
+msgstr "იტვირთება…"
 
 #: src/fsearch_statusbar.c:180
 msgid "Scanning…"
-msgstr ""
+msgstr "მიმდინარეობს სკანირება…"
 
 #: src/fsearch_statusbar.ui:52
 msgid "Number of Search Results"
-msgstr ""
+msgstr "ძიების შედეგების რაოდენობა"
 
 #: src/fsearch_statusbar.ui:53
 msgid "0 Items"
-msgstr ""
+msgstr "0 ელემენტი"
 
 #: src/fsearch_statusbar.ui:106
 msgid "Cancel"
-msgstr ""
+msgstr "გაუქმება"
 
 #: src/fsearch_statusbar.ui:153
 msgid "Index:"
-msgstr ""
+msgstr "ინდექსი:"
 
 #: src/fsearch_statusbar.ui:228
 msgid "Number of selected folders"
-msgstr ""
+msgstr "შერჩეული საქაღალდეების რაოდენობა"
 
 #: src/fsearch_statusbar.ui:229 src/fsearch_statusbar.ui:254
 msgid "0/0"
-msgstr ""
+msgstr "0/0"
 
 #: src/fsearch_statusbar.ui:253
 msgid "Number of selected files"
-msgstr ""
+msgstr "შერჩეული ფაილების რაოდენობა"
 
 #: src/fsearch_statusbar.ui:328 src/fsearch_window.ui:103
 msgid "Cancel database update"
-msgstr ""
+msgstr "ბაზის განახლების გაუქმება"
 
 #: src/fsearch_statusbar.ui:369
 msgid "Number of database items"
-msgstr ""
+msgstr "მონაცემთა ბაზის ელემენტების რაოდენობა"
 
 #: src/fsearch_statusbar.ui:370
 msgid "(empty)"
-msgstr ""
+msgstr "(ცარიელი)"
 
 #: src/fsearch_statusbar.ui:407
 msgid ""
 "Search term contains upper case characters.\n"
 "<b>Match Case</b> was temporarily activated for this term."
 msgstr ""
+"საძიებო სიტყვა შეიცავს დიდ ასოებს.\n"
+"<b>Match Case</b> დროებით გააქტიურდა ამ ვადით."
 
 #: src/fsearch_statusbar.ui:438 src/fsearch_statusbar.ui:491
 msgid "CASE"
-msgstr ""
+msgstr "საქმე"
 
 #: src/fsearch_statusbar.ui:514
 msgid ""
 "Search term contains path separators.\n"
 "<b>Search in Path</b> was temporarily activated for this term."
 msgstr ""
+"საძიებო სიტყვა შეიცავს ბილიკების გამყოფებს.\n"
+"<b>ძიება გზაზე</b> ამ ტერმინისთვის დროებით გააქტიურდა."
 
 #: src/fsearch_statusbar.ui:545 src/fsearch_statusbar.ui:598
 msgid "PATH"
-msgstr ""
+msgstr "ბილიკი"
 
 #: src/fsearch_statusbar.ui:651
 msgid "REGEX"
-msgstr ""
+msgstr "REGEX"
 
 #: src/fsearch_statusbar.ui:726
 msgid ""
 "The search was cancelled before it finished.\n"
 "<b>These results are incomplete.</b>"
 msgstr ""
+"ძებნა გაუქმდა მის დასრულებამდე.\n"
+"<b>ეს შედეგები არასრულია.</b>"
 
 #: src/fsearch_statusbar.ui:756
 msgid "PARTIAL"
-msgstr ""
+msgstr "ნაწილობრივი"
 
 #: src/fsearch_welcome_dialog.ui:26
 msgid "What's New in FSearch"
-msgstr ""
+msgstr "რა არის ახალი FSearch-ში"
 
 #: src/fsearch_welcome_dialog.ui:79
 msgid ""
 "<span size=\"xx-large\" weight=\"bold\">What's New in FSearch 0.3</span>"
-msgstr ""
+msgstr "<span size=\\\"xx-large\\\" weight=\\\"bold\\\">რა არის ახალი FSearch 0.3-ში</span>"
 
 #: src/fsearch_welcome_dialog.ui:149
 msgid "<big><b>File System Monitoring</b></big>"
-msgstr ""
+msgstr "<big><b>ფაილის სისტემის მონიტორინგი</b></big>"
 
 #: src/fsearch_welcome_dialog.ui:163
 msgid ""
@@ -1845,20 +2173,26 @@ msgid ""
 "<a href=\"URL\">https://github.com/cboxdoerfer/fsearch/wiki/Database-update</"
 "a>"
 msgstr ""
+"ახლა შეგიძლიათ აქტიურად უყუროთ ცალკეულ საქაღალდეებს ხშირი ხელახალი სკანირების აღმოსაფხვრელად. ფაილის ცვლილებები მაშინვე გამოჩნდება თქვენი ძიების შედეგებში.\n"
+"\n"
+"ამ ფუნქციის გასააქტიურებლად გადადით პარამეტრების დიალოგის მონაცემთა ბაზის განყოფილებაში.\n"
+"\n"
+"დამატებითი ინფორმაციისთვის იხილეთ ონლაინ დოკუმენტაცია:\n"
+"<a href=\\\"URL\\\">https://github.com/cboxdoerfer/fsearch/wiki/Database-update</a>"
 
 #: src/fsearch_welcome_dialog.ui:232
 msgid "<big><b>Folder-Specific Rescan Schedules</b></big>"
-msgstr ""
+msgstr "<big><b>სპეციფიკური საქაღალდის ხელახალი სკანირების განრიგი</b></big>"
 
 #: src/fsearch_welcome_dialog.ui:246
 msgid ""
 "You can now configure automatic update intervals for individual folders "
 "independently and tailored to each distinct location."
-msgstr ""
+msgstr "ახლა შეგიძლიათ დააკონფიგურიროთ ავტომატური განახლების ინტერვალები ცალკეული საქაღალდეებისთვის დამოუკიდებლად და თითოეულ განსხვავებულ მდებარეობაზე მორგებული."
 
 #: src/fsearch_welcome_dialog.ui:309
 msgid "<big><b>Improved Exclude Rules</b></big>"
-msgstr ""
+msgstr "<big><b>გაუმჯობესებული გამორიცხვის წესები</b></big>"
 
 #: src/fsearch_welcome_dialog.ui:323
 msgid ""
@@ -1867,18 +2201,20 @@ msgid ""
 "Rules can be targeted specifically at files, folders, or both, and can be "
 "configured to match against either the basename or the full absolute path."
 msgstr ""
+"ახლა შეგიძლიათ გამოიყენოთ wildcards და რეგულარული გამონათქვამები უფრო ძლიერი გამორიცხვის წესების დასადგენად. \n"
+"წესები შეიძლება გამიზნული იყოს კონკრეტულად ფაილებზე, საქაღალდეებზე ან ორივეზე და მათი კონფიგურაცია შეიძლება ემთხვეოდეს საბაზისო სახელს ან სრულ აბსოლუტურ გზას."
 
 #: src/fsearch_window.c:749 src/menus.ui:279
 msgid "Size"
-msgstr ""
+msgstr "ზომა"
 
 #: src/fsearch_window.c:763 src/menus.ui:271
 msgid "Extension"
-msgstr ""
+msgstr "გაფართოება"
 
 #: src/fsearch_window.c:770 src/menus.ui:283
 msgid "Date Modified"
-msgstr ""
+msgstr "ცვლილების თარიღი"
 
 #: src/fsearch_window.c:784
 msgid ""
@@ -1887,201 +2223,205 @@ msgid ""
 "This sort order is not persistent, it will be reset when the search term "
 "changes."
 msgstr ""
+"დახარისხებას <b>ტიპის მიხედვით</b> შეიძლება რამდენიმე წამი დასჭირდეს მრავალი შედეგით.\n"
+"\n"
+"დალაგების ეს თანმიმდევრობა არ არის მუდმივი, ის აღდგება, როდესაც საძიებო სიტყვა შეიცვლება."
 
 #: src/fsearch_window.ui:68
 msgid "New window"
-msgstr ""
+msgstr "ახალი ფანჯარა"
 
 #: src/fsearch_window.ui:89
 msgid "Update database"
-msgstr ""
+msgstr "მონაცემთა ბაზის განახლება"
 
 #: src/fsearch_window.ui:144 src/menus.ui:112
 msgid "Search in Path"
-msgstr ""
+msgstr "ძიება გზაზე"
 
 #: src/fsearch_window.ui:158 src/menus.ui:116
 msgid "Match Case"
-msgstr ""
+msgstr "მატჩის საქმე"
 
 #: src/fsearch_window.ui:172 src/menus.ui:120
 msgid "Enable RegEx"
-msgstr ""
+msgstr "ჩართეთ RegEx"
 
 #: src/fsearch_window.ui:197 src/menus.ui:95
 msgid "Show Statusbar"
-msgstr ""
+msgstr "სტატუსის ზოლის ჩვენება"
 
 #: src/fsearch_window.ui:211 src/menus.ui:99
 msgid "Show Filter"
-msgstr ""
+msgstr "ფილტრის ჩვენება"
 
 #: src/fsearch_window.ui:225 src/menus.ui:103
 msgid "Show Search Button"
-msgstr ""
+msgstr "ძიების ღილაკის ჩვენება"
 
 #: src/fsearch_window.ui:275 src/fsearch_window.ui:356 src/menus.ui:129
 msgid "FSearch Online"
-msgstr ""
+msgstr "FSearch ონლაინ"
 
 #: src/fsearch_window.ui:304 src/menus.ui:161
 msgid "About"
-msgstr ""
+msgstr "შესახებ"
 
 #: src/fsearch_window.ui:329 src/menus.ui:47
 msgid "Quit"
-msgstr ""
+msgstr "თავი დაანებე"
 
 #: src/fsearch_window.ui:372 src/fsearch_window.ui:443 src/menus.ui:131
 msgid "Donate"
-msgstr ""
+msgstr "შემოწირულობა"
 
 #: src/fsearch_window.ui:387 src/menus.ui:142
 msgid "Forum"
-msgstr ""
+msgstr "ფორუმი"
 
 #: src/fsearch_window.ui:401 src/menus.ui:146
 msgid "Bug Reports and Feature Requests"
-msgstr ""
+msgstr "შეცდომების მოხსენებები და ფუნქციების მოთხოვნები"
 
 #: src/fsearch_window.ui:460 src/menus.ui:133
 msgid "GitHub Sponsors"
-msgstr ""
+msgstr "GitHub სპონსორები"
 
 #: src/fsearch_window.ui:474 src/menus.ui:137
 msgid "PayPal"
-msgstr ""
+msgstr "PayPal"
 
 #: src/fsearch_window.ui:586
 msgid "Search…"
-msgstr ""
+msgstr "ძიება…"
 
 #: src/fsearch_window.ui:608
 msgid "Select a Filter"
-msgstr ""
+msgstr "აირჩიეთ ფილტრი"
 
 #: src/fsearch_window_actions.c:110
 #, c-format
 msgid "Do you really want to open %'d file?"
 msgid_plural "Do you really want to open %'d files?"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "ნამდვილად გსურთ %'d ფაილის გახსნა?"
+msgstr[1] "ნამდვილად გსურთ %'d ფაილის გახსნა?"
 
 #: src/fsearch_window_actions.c:115
 msgid "Opening Files…"
-msgstr ""
+msgstr "ფაილების გახსნა…"
 
 #: src/fsearch_window_actions.c:198
 #, c-format
 msgid "Do you really want to remove %'d file?"
 msgid_plural "Do you really want to remove %'d files?"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "ნამდვილად გსურთ %'d ფაილის წაშლა?"
+msgstr[1] "ნამდვილად გსურთ %'d ფაილის წაშლა?"
 
 #: src/fsearch_window_actions.c:205
 msgid "Deleting files…"
-msgstr ""
+msgstr "მიმდინარეობს ფაილების წაშლა…"
 
 #: src/fsearch_window_actions.c:205
 msgid "Moving files to trash…"
-msgstr ""
+msgstr "ფაილების გადატანა წაშლილებში…"
 
 #: src/fsearch_window_actions.c:238 src/fsearch_window_actions.c:533
 #: src/fsearch_window_actions.c:580
 msgid "Something went wrong."
-msgstr ""
+msgstr "რაღაც შეფერხდა."
 
 #: src/fsearch_window_actions.c:263
 #, c-format
 msgid "Do you really want to open %'d file property window?"
 msgid_plural "Do you really want to open %'d file property windows?"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "ნამდვილად გსურთ %'d ფაილის საკუთრების ფანჯრის გახსნა?"
+msgstr[1] "ნამდვილად გსურთ %'d ფაილის თვისებების ფანჯრების გახსნა?"
 
 #: src/fsearch_window_actions.c:270
 msgid "Opening file properties…"
-msgstr ""
+msgstr "ფაილის თვისებების გახსნა…"
 
 #: src/menus.ui:6
 msgid "_File"
-msgstr ""
+msgstr "_ფაილი"
 
 #: src/menus.ui:9
 msgid "New Window"
-msgstr ""
+msgstr "ახალი ფანჯარა"
 
 #: src/menus.ui:16 src/menus.ui:171
 msgid "_Open"
-msgstr ""
+msgstr "_გახსენი"
 
 #: src/menus.ui:21
 msgid "Open Folder"
-msgstr ""
+msgstr "გახსენით საქაღალდე"
 
 #: src/menus.ui:29
 msgid "Update Database"
-msgstr ""
+msgstr "მონაცემთა ბაზის განახლება"
 
 #: src/menus.ui:35
 msgid "Cancel Update"
-msgstr ""
+msgstr "გააუქმეთ განახლება"
 
 #: src/menus.ui:42
 msgid "Close Window"
-msgstr ""
+msgstr "ფანჯრის დახურვა"
 
 #: src/menus.ui:54
 msgid "_Edit"
-msgstr ""
+msgstr "_ რედაქტირება"
 
 #: src/menus.ui:57 src/menus.ui:207
 msgid "_Copy"
-msgstr ""
+msgstr "_ დააკოპირეთ"
 
 #: src/menus.ui:62 src/menus.ui:228
 msgid "Cu_t"
-msgstr ""
+msgstr "Cu_t"
 
 #: src/menus.ui:69
 msgid "Select All"
-msgstr ""
+msgstr "აირჩიეთ ყველა"
 
 #: src/menus.ui:74
 msgid "Deselect All"
-msgstr ""
+msgstr "გააუქმეთ ყველა"
 
 #: src/menus.ui:78
 msgid "Invert Selection"
-msgstr ""
+msgstr "შებრუნებული შერჩევა"
 
 #: src/menus.ui:92
 msgid "_View"
-msgstr ""
+msgstr "_ნახვა"
 
 #: src/menus.ui:109
 msgid "_Search"
-msgstr ""
+msgstr "_ ძებნა"
 
 #: src/menus.ui:126
 msgid "_Help"
-msgstr ""
+msgstr "_დამეხმარე"
 
 #: src/menus.ui:177
 msgid "Open _With"
-msgstr ""
+msgstr "გახსენი _ თან"
 
 #: src/menus.ui:191
 msgid "_Open Folder"
-msgstr ""
+msgstr "_გახსენი საქაღალდე"
 
 #: src/menus.ui:213
 msgid "Copy as Text"
-msgstr ""
+msgstr "დააკოპირეთ როგორც ტექსტი"
 
 #: src/menus.ui:223
 msgid "Path + Name"
-msgstr ""
+msgstr "გზა + სახელი"
 
 #: src/menus.ui:236
 msgid "Move to _Trash"
-msgstr ""
+msgstr "გადატანა _Trash-ში"
+
