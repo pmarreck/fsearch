@@ -19,335 +19,337 @@ msgstr ""
 
 #: data/io.github.cboxdoerfer.FSearch.desktop.in.in:4 src/main.c:36
 msgid "FSearch"
-msgstr ""
+msgstr "FSearch"
 
 #: data/io.github.cboxdoerfer.FSearch.desktop.in.in:5
 msgid "A file search application focusing on performance and advanced features"
-msgstr ""
+msgstr "Programu ya utafutaji wa faili inayozingatia utendaji na vipengele vya juu"
 
 #: data/io.github.cboxdoerfer.FSearch.desktop.in.in:10
 msgid "search;fsearch;files;folders;music;video;documents;find;tool;everything;"
-msgstr ""
+msgstr "tafuta;tafuta;faili;folda;muziki;video;nyaraka;tafuta;zana;kila kitu;"
 
 #: data/io.github.cboxdoerfer.FSearch.desktop.in.in:12
 msgid "File Search Utility"
-msgstr ""
+msgstr "Huduma ya Kutafuta Faili"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:8
 msgid "A graphical file search application"
-msgstr ""
+msgstr "Programu ya kutafuta faili ya picha"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:10
 msgid ""
 "FSearch helps you to find files and folders as easy and fast as possible. "
 "Just type a few letters and search results will appear almost instantly."
-msgstr ""
+msgstr "FSearch hukusaidia kupata faili na folda kwa urahisi na haraka iwezekanavyo. Andika tu herufi chache na matokeo ya utafutaji yataonekana mara moja."
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:14
 msgid ""
 "There are a lot of features which make searching as efficient and powerful "
 "as possible. Such as:"
-msgstr ""
+msgstr "Kuna vipengele vingi vinavyofanya utafutaji kuwa mzuri na wenye nguvu iwezekanavyo. Kama vile:"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:19
 msgid ""
 "Ignore case (e.g. searching for \"<code>fsearch</code>\" will match "
 "\"FSearch\" as well)"
-msgstr ""
+msgstr "Puuza kesi (k.m. kutafuta \\\"<code>fsearch</code>\\\" kutalingana na \\\"FSearch\\\" pia)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:20
 msgid "Regular expressions"
-msgstr ""
+msgstr "Maneno ya kawaida"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:21
 msgid "Wildcard support"
-msgstr ""
+msgstr "Usaidizi wa kadi ya mwitu"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:22
 msgid "Filter support (e.g. only search for audio files)"
-msgstr ""
+msgstr "Usaidizi wa kichujio (k.m. tafuta faili za sauti pekee)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:23
 msgid "Exclude certain files and folders"
-msgstr ""
+msgstr "Usijumuishe faili na folda fulani"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:24
 msgid "Fast sort by name, path, size, modification time and extension"
-msgstr ""
+msgstr "Panga haraka kwa jina, njia, saizi, wakati wa kurekebisha na kiendelezi"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:26
 msgid ""
 "<em>Note:</em> Due to Flatpak's sandboxing, FSearch can't find every file on "
 "your system."
-msgstr ""
+msgstr "<em>Kumbuka:</em> Kwa sababu ya Sandboxing ya Flatpak, FSearch haiwezi kupata kila faili kwenye mfumo wako."
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:35
 msgid "The default UI layout"
-msgstr ""
+msgstr "Mpangilio chaguomsingi wa UI"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:41
 msgid "A layout more closely following GNOME HIGs"
-msgstr ""
+msgstr "Mpangilio unaofuata kwa karibu zaidi GNOME HIGs"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:49
 msgid "search"
-msgstr ""
+msgstr "tafuta"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:50
 msgid "fsearch"
-msgstr ""
+msgstr "tafuta"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:51
 msgid "files"
-msgstr ""
+msgstr "faili"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:52
 msgid "folders"
-msgstr ""
+msgstr "folda"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:53
 msgid "music"
-msgstr ""
+msgstr "muziki"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:54
 msgid "video"
-msgstr ""
+msgstr "video"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:55
 msgid "documents"
-msgstr ""
+msgstr "hati"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:56
 msgid "find"
-msgstr ""
+msgstr "tafuta"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:57
 msgid "tool"
-msgstr ""
+msgstr "chombo"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:58
 msgid "everything"
-msgstr ""
+msgstr "kila kitu"
 
 #. Kept for appstreamcli < 1.0 (e.g. Ubuntu 20.04/22.04 PPA builds), which doesn't know <developer>.
 #. Translators: please do NOT translate this.
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:77
 msgid "Christian Boxdörfer"
-msgstr ""
+msgstr "Christian Boxdörfer"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:89
 msgid "DB rewrite"
-msgstr ""
+msgstr "DB kuandika upya"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:90
 msgid "DB: Add support for filesystem monitoring"
-msgstr ""
+msgstr "DB: Ongeza usaidizi kwa ufuatiliaji wa mfumo wa faili"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:91
 msgid ""
 "DB: Allow files and folders to be excluded based on fixed patterns, "
 "wildcards or regular expressions"
-msgstr ""
+msgstr "DB: Ruhusu faili na folda zitengwe kulingana na ruwaza zisizobadilika, kadi-mwitu au maneno ya kawaida"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:92
 msgid ""
 "DB: Allow included folders to be scheduled and scanned after launch "
 "independently"
-msgstr ""
+msgstr "DB: Ruhusu folda zilizojumuishwa kuratibiwa na kuchanganuliwa baada ya kuzinduliwa kwa kujitegemea"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:93
 msgid "DB: Make rescanning more efficient"
-msgstr ""
+msgstr "DB: Fanya uchanganuzi upya ufanisi zaidi"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:94
 msgid "DB: Store database config in DB file"
-msgstr ""
+msgstr "DB: Hifadhi usanidi wa hifadhidata katika faili ya DB"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:95
 msgid "DB: Add checksum to DB file"
-msgstr ""
+msgstr "DB: Ongeza hundi kwenye faili ya DB"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:96
 msgid "Make icon and file info gathering asynchronous (no UI blocking)"
-msgstr ""
+msgstr "Fanya ikoni na maelezo ya faili kusanye kuwa sawa (hakuna kizuizi cha UI)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:97
 msgid "Reduce memory usage"
-msgstr ""
+msgstr "Punguza matumizi ya kumbukumbu"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:98
 msgid "Add contextual help for all preferences"
-msgstr ""
+msgstr "Ongeza usaidizi wa muktadha kwa mapendeleo yote"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:99
 msgid "Numerous bug fixes and stability and performance improvements"
-msgstr ""
+msgstr "Marekebisho mengi ya hitilafu na uthabiti na utendakazi kuboreshwa"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:106
 msgid "New search engine"
-msgstr ""
+msgstr "Injini mpya ya utafutaji"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:107
 msgid "Greatly improved highlighting of search terms"
-msgstr ""
+msgstr "Uangaziaji ulioboreshwa zaidi wa hoja za utafutaji"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:108
 msgid "Custom filters"
-msgstr ""
+msgstr "Vichungi maalum"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:109
 msgid "Improved sort performance"
-msgstr ""
+msgstr "Utendaji wa upangaji ulioboreshwa"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:110
 msgid "Improved scroll performance"
-msgstr ""
+msgstr "Utendaji bora wa kusogeza"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:111
 msgid "Remember file selection after a database update"
-msgstr ""
+msgstr "Kumbuka uteuzi wa faili baada ya sasisho la hifadhidata"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:112
 msgid "Automatically scroll the result list in rubberband selection mode"
-msgstr ""
+msgstr "Sogeza orodha ya matokeo kiotomatiki katika hali ya uteuzi wa rubberband"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:113
 msgid "Invert selection with rubber band when 'Ctrl' is pressed"
-msgstr ""
+msgstr "Geuza uteuzi kwa ukanda wa mpira wakati 'Ctrl' inapobonyezwa"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:114
 msgid "Focus search entry when the main window gets activated"
-msgstr ""
+msgstr "Lenga ingizo la utafutaji wakati dirisha kuu linapowezeshwa"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:115
 msgid "Add filter for applications (i.e. .desktop files)"
-msgstr ""
+msgstr "Ongeza kichujio cha programu (yaani .faili za mezani)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:116
 msgid ""
 "Add option to launch applications directly instead of opening the .desktop "
 "files"
-msgstr ""
+msgstr "Ongeza chaguo kuzindua programu moja kwa moja badala ya kufungua faili za .desktop"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:117
 msgid "Show application icons for .desktop files"
-msgstr ""
+msgstr "Onyesha aikoni za programu za faili za .desktop"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:118
 msgid "Add .odp and .ods files to document filter"
-msgstr ""
+msgstr "Ongeza faili za .odp na .ods kwenye kichujio cha hati"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:119
 msgid ""
 "'Open with' menu now only shows applications which can handle the selected "
 "files"
-msgstr ""
+msgstr "Menyu ya 'Fungua na' sasa inaonyesha programu tumizi zinazoweza kushughulikia faili zilizochaguliwa"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:120
 msgid ""
 "Improved opening of multiple files with the same type (they get now passed "
 "as a list to applications, instead of one by one)"
-msgstr ""
+msgstr "Ufunguaji ulioboreshwa wa faili nyingi zilizo na aina moja (sasa zinapitishwa kama orodha ya programu, badala ya moja baada ya nyingine)"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:121
 msgid "Better support for opening files in sandboxed mode"
-msgstr ""
+msgstr "Usaidizi bora wa kufungua faili katika hali ya sandboxed"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:122
 msgid ""
 "Add menu items with links to the issue tracker, forum and donation pages"
-msgstr ""
+msgstr "Ongeza vipengee vya menyu vilivyo na viungo vya kufuatilia toleo, mijadala na kurasa za michango"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:123
 msgid "Improve support for non-Linux systems"
-msgstr ""
+msgstr "Boresha usaidizi kwa mifumo isiyo ya Linux"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:124
 msgid ""
 "Add option to exit FSearch when Escape is pressed instead of minimizing the "
 "window"
-msgstr ""
+msgstr "Ongeza chaguo ili kuondoka kwenye Utafutaji wakati Escape imebonyezwa badala ya kupunguza dirisha"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:125
 msgid "Exclude '/proc' and '/sys' by default"
-msgstr ""
+msgstr "Ondoa '/proc' na '/sys' kwa chaguo-msingi"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:126
 msgid "Open context menu when 'Menu' key or 'Shift + F10' are pressed"
-msgstr ""
+msgstr "Fungua menyu ya muktadha wakati kitufe cha 'Menyu' au 'Shift + F10' kimebonyezwa"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:127
 msgid "and tons of bug fixes, translation updates and smaller improvements"
-msgstr ""
+msgstr "na marekebisho mengi ya hitilafu, masasisho ya tafsiri na maboresho madogo"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:133
 msgid "Initial release."
-msgstr ""
+msgstr "Kutolewa kwa awali."
 
 #: src/fsearch.c:181
 msgid "translator-credits"
-msgstr ""
+msgstr "mtafsiri-mikopo"
 
 #: src/fsearch.c:183
 msgid "A search utility focusing on performance and advanced features"
-msgstr ""
+msgstr "Huduma ya utafutaji inayozingatia utendaji na vipengele vya juu"
 
 #: src/fsearch.c:330
 msgid "Saving database and config…"
-msgstr ""
+msgstr "Inahifadhi hifadhidata na usanidi..."
 
 #: src/fsearch.c:786
 msgid "Open a new application window"
-msgstr ""
+msgstr "Fungua dirisha jipya la programu"
 
 #: src/fsearch.c:787
 msgid "Minimize the application window"
-msgstr ""
+msgstr "Punguza dirisha la programu"
 
 #: src/fsearch.c:788
 msgid "Show the application preferences"
-msgstr ""
+msgstr "Onyesha mapendeleo ya programu"
 
 #: src/fsearch.c:789
 msgid "Set the search pattern"
-msgstr ""
+msgstr "Weka muundo wa utafutaji"
 
 #: src/fsearch.c:790
 msgid "Update the database and exit"
-msgstr ""
+msgstr "Sasisha hifadhidata na uondoke"
 
 #: src/fsearch.c:791
 msgid "Print version information and exit"
-msgstr ""
+msgstr "Chapisha maelezo ya toleo na uondoke"
 
 #: src/fsearch.c:883
 msgid ""
 "For command-line search help, run: fsearch --cli --help\n"
 "For shared configuration help, run: fsearch config --help"
 msgstr ""
+"Kwa usaidizi wa utafutaji wa mstari wa amri, endesha: fsearch --cli --help\n"
+"Kwa usaidizi wa usanidi ulioshirikiwa, endesha: fsearch config --help"
 
 #: src/fsearch_cli.c:125
 #, c-format
 msgid ""
 "Results capped at %u. Use --unlimit or --unlimited to get them all, or "
 "provide a custom --limit, or set FSEARCH_RESULT_LIMIT."
-msgstr ""
+msgstr "Matokeo yamefikia %u. Tumia --bila kikomo au --bila kikomo kupata zote, au toa --kikomo maalum, au weka FSEARCH_RESULT_LIMIT."
 
 #: src/fsearch_cli.c:134
 #, c-format
 msgid "%u match."
 msgid_plural "%u matches."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%u inalingana."
+msgstr[1] "%u inalingana."
 
 #: src/fsearch_cli.c:142
 msgid "Updating FSearch index before searching..."
-msgstr ""
+msgstr "Inasasisha faharasa ya FSearch kabla ya kutafuta..."
 
 #: src/fsearch_cli.c:149
 #, c-format
 msgid "Indexing: %s"
-msgstr ""
+msgstr "Kuweka faharasa: %s"
 
 #: src/fsearch_cli.c:181
 msgid ""
@@ -393,40 +395,76 @@ msgid ""
 "{png,jpg} selects alternatives; {01..12} is an inclusive numeric range; \\* "
 "matches a literal *.\n"
 msgstr ""
+"Matumizi: fsearch --cli [OPTIONS]\n"
+"\n"
+"Tafuta faharasa iliyopo ya FSearch na uchapishe njia zinazolingana.\n"
+"\n"
+"  -s, --search PATTERN       Tafuta ukitumia syntax ya hoja ya FSearch\n"
+"      --path DIRECTORY        Tafuta kwa kujirudia chini ya DIRECTORY (chaguo-msingi: saraka ya sasa)\n"
+"      --global                Tafuta kila eneo lililoorodheshwa\n"
+"      --limit COUNT          Chapisha isizidi matokeo COUNT\n"
+"      --unlimit, --unlimited Chapisha kila matokeo\n"
+"  -u, --update-database      Changanua tena faharasa iliyosanidiwa na uondoke\n"
+"      --about                Chapisha maelezo ya muundo wa mstari mmoja\n"
+"  -h, --help                 Onyesha usaidizi huu\n"
+"\n"
+"Usanidi: fsearch config --help\n"
+"\n"
+"Mifano:\n"
+"  fsearch --cli --search invoice              # eolaire reatha\n"
+"  fsearch --cli --path ~/Documents --search invoice\n"
+"  fsearch --cli --global --search invoice\n"
+"  fsearch --cli --search 'file:size:>20mb'\n"
+"  fsearch --cli --search 'ext:jpg;png'\n"
+"  fsearch --cli --search 'path:projects report'\n"
+"  fsearch --cli --search 'report AND ext:pdf'\n"
+"  fsearch --cli --search '(draft OR final) !archive'\n"
+"  fsearch --cli --search 'file:regex:\".+\\.pdf$\"'\n"
+"  fsearch --cli --search 'case:AGENTS'        # cás-íogair\n"
+"  fsearch --cli --search 'case:regex:\"^AGENTS\\.md$\"'\n"
+"  fsearch --cli --search 'glob:**/*.png'\n"
+"  fsearch --cli --search 'path:glob:**/AGENTS.md'\n"
+"  fsearch --cli --search 'case:glob:AGENTS.md' # glob cás-íogair\n"
+"\n"
+"Mifano hutumia nafasi kama NA. Jaribu faili:, folda:, njia:, ext:, saizi:, dm:, kesi:, regex:, na glob:.\n"
+"Sintaksia ya Boolean: NA au &&; AU au || SI au!. Masharti ya kikundi.\n"
+"Syntax ya Glob: * haijumuishi /; ** spans saraka; ? inalingana na mhusika mmoja; [a-c] ni safu;\n"
+"Glob hutafuta njia kwa chaguo-msingi; tumia **/ kwa kina chochote; faili:glob: hutafuta majina ya faili.\n"
+"{png,jpg} huchagua njia mbadala; {01..12} ni safu ya nambari inayojumuisha; \\* inalingana na * halisi.\n"
 
 #: src/fsearch_cli.c:238
 #, c-format
 msgid "FSearch %s - indexed file search for %s %s\n"
-msgstr ""
+msgstr "FSearch %s - utafutaji wa faili wenye faharasa wa %s %s\n"
 
 #: src/fsearch_cli.c:301
 msgid "fsearch: interrupted\n"
-msgstr ""
+msgstr "fsearch: imekatizwa\n"
 
 #: src/fsearch_cli.c:315
 msgid "fsearch: search could not run because the index is unavailable\n"
-msgstr ""
+msgstr "fsearch: utafutaji haukuweza kuendeshwa kwa sababu faharasa haipatikani\n"
 
 #: src/fsearch_cli.c:352 src/fsearch_cli.c:381 src/fsearch_cli_config.c:774
 #: src/fsearch_cli_config.c:961 src/fsearch_cli_config.c:1147
 #, c-format
 msgid "%s\n"
-msgstr ""
+msgstr "%s\n"
 
 #: src/fsearch_cli.c:400
 #, c-format
 msgid "%s"
-msgstr ""
+msgstr "%s"
 
 #: src/fsearch_cli.c:473
 #, c-format
 msgid "fsearch: unknown CLI option: %s\n"
-msgstr ""
+msgstr "fsearch: chaguo lisilojulikana la CLI: %s\n"
 
 #: src/fsearch_cli.c:495
 #, c-format
 msgid "fsearch: failed to create data directory: %s\n"
-msgstr ""
+msgstr "fsearch: imeshindwa kuunda saraka ya data: %s\n"
 
 #: src/fsearch_cli_config.c:111
 msgid ""
@@ -468,30 +506,73 @@ msgid ""
 "  fsearch config filters add Documents --query 'ext:pdf' --macro docs\n"
 "  fsearch config reset search --yes\n"
 msgstr ""
+"Matumizi: fsearch config COMMAND [OPTIONS]\n"
+"\n"
+"Tazama na urekebishe FSearch GUI na usanidi wa CLI ulioshirikiwa.\n"
+"\n"
+"Amri za usanidi:\n"
+"  path                         Chapisha njia ya faili ya usanidi\n"
+"  show [SECTION] [--json]      Onyesha mipangilio\n"
+"  get KEY [--json]             Chapisha mpangilio mmoja wa scalar\n"
+"  set KEY VALUE                Weka mpangilio mmoja wa scalar\n"
+"  unset KEY                    Rejesha chaguo-msingi la mpangilio wa scalar\n"
+"  reset [KEY|SECTION] --yes [--rescan]\n"
+"                               Rejesha chaguomsingi\n"
+"  doctor                       Angalia usanidi na uwiano wa index\n"
+"  roots list|add|set|remove    Dhibiti mizizi iliyoorodheshwa\n"
+"  excludes list|add|remove|hidden\n"
+"                               Dhibiti uondoaji wa faharasa\n"
+"  filters list|add|set|remove|reset\n"
+"                               Dhibiti vichujio vya utafutaji vilivyohifadhiwa\n"
+"\n"
+"Nambari za scalar hutumia kweli/sivyo, nambari kamili za desimali, au mifuatano.\n"
+"Endesha 'fsearch config show' ili kuorodhesha kila ufunguo wa scalar na thamani ya sasa.\n"
+"Sehemu za Scalar: search, application, window, ui, columns, sort, dialogs.\n"
+"Tumia 'fsearch config roots|excludes|filters --help' kwa chaguo za familia.\n"
+"Funga FSearch GUI kabla ya kubadilisha mipangilio iliyoshirikiwa.\n"
+"Mabadiliko ya kielezo yanaweza kutafutwa kwenye utafutaji unaofuata wa CLI, au mara moja kwa --rescan.\n"
+"Tumia --json na onyesho, pata, na maagizo ya orodha ya mkusanyiko.\n"
+"\n"
+"Mifano:\n"
+"  fsearch config show search --json\n"
+"  fsearch config get search.match-case\n"
+"  fsearch config set search.match-case true\n"
+"  fsearch config roots add ~/Code --monitor --one-file-system --rescan\n"
+"  fsearch config excludes add '*.tmp' --type wildcard --scope basename --target files\n"
+"  fsearch config filters add Documents --query 'ext:pdf' --macro docs\n"
+"  fsearch config reset search --yes\n"
 
 #: src/fsearch_cli_config.c:152
 msgid ""
 "Usage: fsearch config show [SECTION] [--json]\n"
 "Show all scalar settings or one dotted section.\n"
 msgstr ""
+"Matumizi: fsearch config show [SECTION] [--json]\n"
+"Onyesha mipangilio yote ya scalar au sehemu moja yenye vitone.\n"
 
 #: src/fsearch_cli_config.c:154
 msgid ""
 "Usage: fsearch config get KEY [--json]\n"
 "Print one typed scalar value. Discover keys with 'fsearch config show'.\n"
 msgstr ""
+"Matumizi: fsearch config get KEY [--json]\n"
+"Chapisha thamani iliyochapwa ya scalar. Gundua vitufe kwa 'fsearch config show'.\n"
 
 #: src/fsearch_cli_config.c:157
 msgid ""
 "Usage: fsearch config set KEY VALUE\n"
 "Set a boolean, integer, string, or enumerated scalar value.\n"
 msgstr ""
+"Matumizi: fsearch config set KEY VALUE\n"
+"Weka nambari ya boolean, nambari kamili, mfuatano, au thamani iliyoorodheshwa.\n"
 
 #: src/fsearch_cli_config.c:159
 msgid ""
 "Usage: fsearch config unset KEY\n"
 "Restore one scalar setting to its built-in default.\n"
 msgstr ""
+"Matumizi: fsearch config unset KEY\n"
+"Rejesha mpangilio mmoja wa scalar kwa chaguomsingi iliyojengewa ndani.\n"
 
 #: src/fsearch_cli_config.c:161
 msgid ""
@@ -499,6 +580,8 @@ msgid ""
 "Reset is destructive and requires --yes. --rescan applies to roots, "
 "database, excludes, or all.\n"
 msgstr ""
+"Matumizi: fsearch config reset [KEY|SECTION] --yes [--rescan]\n"
+"Kuweka upya kunaharibu na kunahitaji --ndiyo. --rescan inatumika kwa mizizi, hifadhidata, haijumuishi, au zote.\n"
 
 #: src/fsearch_cli_config.c:164
 msgid ""
@@ -506,6 +589,8 @@ msgid ""
 "Check configuration readability and whether the saved index uses the same "
 "roots and exclusions.\n"
 msgstr ""
+"Matumizi: fsearch config doctor\n"
+"Angalia usomaji wa usanidi na ikiwa faharasa iliyohifadhiwa inatumia mizizi na vizuizi sawa.\n"
 
 #: src/fsearch_cli_config.c:170
 msgid ""
@@ -525,6 +610,21 @@ msgid ""
 "  --rescan-every SECONDS        Set periodic rescan interval; 0 disables it\n"
 "  --rescan                      Rebuild the index immediately after saving\n"
 msgstr ""
+"Matumizi: fsearch config roots COMMAND [PATH] [OPTIONS]\n"
+"\n"
+"Amri:\n"
+"  list [--json]                Orodhesha mizizi iliyoorodheshwa\n"
+"  add PATH [OPTIONS]           Ongeza saraka ya mizizi\n"
+"  set PATH [OPTIONS]           Badilisha mzizi uliopo\n"
+"  remove PATH [--rescan]       Ondoa mzizi uliopo\n"
+"\n"
+"Chaguzi za kuongeza na kuweka:\n"
+"  --active, --inactive\n"
+"  --monitor, --no-monitor\n"
+"  --one-file-system, --no-one-file-system\n"
+"  --scan-after-launch, --no-scan-after-launch\n"
+"  --rescan-every SECONDS        Weka muda wa rescan mara kwa mara; 0 huizima\n"
+"  --rescan                      Jenga upya faharasa mara baada ya kuhifadhi\n"
 
 #: src/fsearch_cli_config.c:187
 msgid ""
@@ -544,6 +644,21 @@ msgid ""
 "  --active, --inactive          Add state or removal selector\n"
 "  --rescan                      Rebuild the index immediately after saving\n"
 msgstr ""
+"Matumizi: fsearch config excludes COMMAND [PATTERN|VALUE] [OPTIONS]\n"
+"\n"
+"Amri:\n"
+"  list [--json]                 Orodha zisizojumuishwa\n"
+"  add PATTERN [OPTIONS]         Ongeza kutengwa\n"
+"  remove PATTERN [OPTIONS]      Ondoa utengaji unaolingana\n"
+"  hidden [true|false] [--rescan]\n"
+"                                Tazama au ubadilishe kutengwa kwa faili-fiche\n"
+"\n"
+"Chaguzi za kuongeza na kuondoa:\n"
+"  --type fixed|wildcard|regex   Chaguomsingi: imerekebishwa\n"
+"  --scope full-path|basename    Chaguomsingi: njia kamili\n"
+"  --target both|files|folders   Chaguomsingi: zote mbili\n"
+"  --active, --inactive          Ongeza kiteuzi cha hali au uondoaji\n"
+"  --rescan                      Jenga upya faharasa mara baada ya kuhifadhi\n"
 
 #: src/fsearch_cli_config.c:204
 msgid ""
@@ -563,205 +678,224 @@ msgid ""
 "  --path, --no-path             Search full paths\n"
 "  --regex, --no-regex           Treat query as a regular expression\n"
 msgstr ""
+"Matumizi: fsearch config filters COMMAND [NAME] [OPTIONS]\n"
+"\n"
+"Amri:\n"
+"  list [--json]                 Orodhesha vichujio vilivyohifadhiwa\n"
+"  add NAME [OPTIONS]            Ongeza kichujio kilichopewa jina\n"
+"  set NAME [OPTIONS]            Badilisha kichujio kilichopewa jina\n"
+"  remove NAME                   Ondoa kichujio kilichopewa jina\n"
+"  reset                         Rejesha vichujio vilivyojengwa ndani\n"
+"\n"
+"Chaguzi za kuongeza na kuweka:\n"
+"  --query QUERY                 Hoja ya Utafutaji iliyohifadhiwa\n"
+"  --macro MACRO                 Hoji jina la jumla\n"
+"  --case, --no-case             Kesi ya mechi\n"
+"  --path, --no-path             Tafuta njia kamili\n"
+"  --regex, --no-regex           Chukulia hoja kama usemi wa kawaida\n"
 
 #: src/fsearch_cli_config.c:265
 msgid ""
 "fsearch config: close the running FSearch GUI before changing shared "
 "settings\n"
-msgstr ""
+msgstr "fsearch config: funga FSearch GUI inayoendesha kabla ya kubadilisha mipangilio iliyoshirikiwa\n"
 
 #: src/fsearch_cli_config.c:269
 msgid "fsearch config: failed to save configuration\n"
-msgstr ""
+msgstr "fsearch usanidi: imeshindwa kuhifadhi usanidi\n"
 
 #: src/fsearch_cli_config.c:280
 msgid "Index configuration changed; the next CLI search will rebuild it.\n"
-msgstr ""
+msgstr "Usanidi wa index umebadilishwa; utaftaji unaofuata wa CLI utaijenga tena.\n"
 
 #: src/fsearch_cli_config.c:416
 #, c-format
 msgid "fsearch config %s: unknown option: %s\n"
-msgstr ""
+msgstr "fsearch usanidi %s: chaguo lisilojulikana: %s\n"
 
 #: src/fsearch_cli_config.c:422
 #, c-format
 msgid "fsearch config %s: unexpected argument: %s\n"
-msgstr ""
+msgstr "fsearch usanidi %s: hoja isiyotarajiwa: %s\n"
 
 #: src/fsearch_cli_config.c:449
 msgid "Usage: fsearch config get KEY [--json]\n"
-msgstr ""
+msgstr "Matumizi: fsearch config pata KEY [--json]\n"
 
 #: src/fsearch_cli_config.c:454 src/fsearch_cli_config.c:555
 #, c-format
 msgid "fsearch config: unknown setting: %s\n"
-msgstr ""
+msgstr "fsearch usanidi: mpangilio usiojulikana: %s\n"
 
 #: src/fsearch_cli_config.c:502
 #, c-format
 msgid "fsearch config show: unknown section: %s\n"
-msgstr ""
+msgstr "fsearch onyesha usanidi: sehemu isiyojulikana: %s\n"
 
 #: src/fsearch_cli_config.c:550
 #, c-format
 msgid "Usage: fsearch config %s KEY%s\n"
-msgstr ""
+msgstr "Matumizi: fsearch config %s KEY%s\n"
 
 #: src/fsearch_cli_config.c:566
 #, c-format
 msgid "fsearch config: invalid value for %s: %s\n"
-msgstr ""
+msgstr "fsearch usanidi: thamani batili ya %s: %s\n"
 
 #: src/fsearch_cli_config.c:572
 #, c-format
 msgid "%s = %s\n"
-msgstr ""
+msgstr "%s = %s\n"
 
 #: src/fsearch_cli_config.c:637
 #, c-format
 msgid "fsearch config roots: unknown operation: %s\n"
-msgstr ""
+msgstr "fsearch usanidi wa mizizi: operesheni isiyojulikana: %s\n"
 
 #: src/fsearch_cli_config.c:691
 msgid "fsearch config roots: --rescan-every requires SECONDS\n"
-msgstr ""
+msgstr "fsearch config roots: --rescan-every inahitaji SECONDS\n"
 
 #: src/fsearch_cli_config.c:710
 msgid "fsearch config roots: missing PATH\n"
-msgstr ""
+msgstr "fsearch config roots: kukosa PATH\n"
 
 #: src/fsearch_cli_config.c:717 src/fsearch_cli_config.c:732
 #, c-format
 msgid "fsearch config roots: path not found: %s\n"
-msgstr ""
+msgstr "fsearch usanidi wa mizizi: njia haijapatikana: %s\n"
 
 #: src/fsearch_cli_config.c:724
 #, c-format
 msgid "fsearch config roots: not a directory: %s\n"
-msgstr ""
+msgstr "fsearch config roots: sio saraka: %s\n"
 
 #: src/fsearch_cli_config.c:728
 #, c-format
 msgid "fsearch config roots: path already exists: %s\n"
-msgstr ""
+msgstr "fsearch config roots: njia tayari ipo: %s\n"
 
 #: src/fsearch_cli_config.c:752
 #, c-format
 msgid "fsearch config roots: invalid rescan duration: %s\n"
-msgstr ""
+msgstr "mizizi ya usanidi wa fsearch: muda wa kuchambua upya batili: %s\n"
 
 #: src/fsearch_cli_config.c:765
 msgid ""
 "%s\tactive=%s monitor=%s one-file-system=%s scan-after-launch=%s rescan-"
 "after=%s\n"
-msgstr ""
+msgstr "%s active=%s monitor=%s mfumo wa faili-moja=%s scan-after-launch=%s rescan-after=%s\n"
 
 #: src/fsearch_cli_config.c:844
 msgid "fsearch config excludes hidden: expected true or false\n"
-msgstr ""
+msgstr "fsearch usanidi haujumuishi siri: inayotarajiwa kuwa kweli au si kweli\n"
 
 #: src/fsearch_cli_config.c:850
 #, c-format
 msgid "exclude-hidden = %s\n"
-msgstr ""
+msgstr "tenga-iliyofichwa = %s\n"
 
 #: src/fsearch_cli_config.c:856
 #, c-format
 msgid "fsearch config excludes: unknown operation: %s\n"
-msgstr ""
+msgstr "fsearch usanidi haujumuishi: operesheni isiyojulikana: %s\n"
 
 #: src/fsearch_cli_config.c:877
 #, c-format
 msgid "fsearch config excludes: %s requires a value\n"
-msgstr ""
+msgstr "fsearch usanidi haujumuishi: %s inahitaji thamani\n"
 
 #: src/fsearch_cli_config.c:909
 msgid "fsearch config excludes: missing PATTERN\n"
-msgstr ""
+msgstr "fsearch usanidi haujumuishi: kukosa PATTERN\n"
 
 #: src/fsearch_cli_config.c:914
 #, c-format
 msgid "fsearch config excludes: invalid type: %s\n"
-msgstr ""
+msgstr "fsearch usanidi haujumuishi: aina batili: %s\n"
 
 #: src/fsearch_cli_config.c:919
 #, c-format
 msgid "fsearch config excludes: invalid scope: %s\n"
-msgstr ""
+msgstr "fsearch usanidi haujumuishi: wigo batili: %s\n"
 
 #: src/fsearch_cli_config.c:924
 #, c-format
 msgid "fsearch config excludes: invalid target: %s\n"
-msgstr ""
+msgstr "fsearch usanidi haujumuishi: lengo batili: %s\n"
 
 #: src/fsearch_cli_config.c:954
 #, c-format
 msgid "fsearch config excludes: exclusion not found: %s\n"
-msgstr ""
+msgstr "fsearch usanidi haujumuishi: kutengwa hakupatikani: %s\n"
 
 #: src/fsearch_cli_config.c:1022
 msgid "filters reset\n"
-msgstr ""
+msgstr "vichujio upya\n"
 
 #: src/fsearch_cli_config.c:1029
 #, c-format
 msgid "fsearch config filters: unknown operation: %s\n"
-msgstr ""
+msgstr "fsearch vichujio vya usanidi: operesheni isiyojulikana: %s\n"
 
 #: src/fsearch_cli_config.c:1051
 #, c-format
 msgid "fsearch config filters: %s requires a value\n"
-msgstr ""
+msgstr "fsearch vichujio vya usanidi: %s inahitaji thamani\n"
 
 #: src/fsearch_cli_config.c:1094
 msgid "fsearch config filters: missing NAME\n"
-msgstr ""
+msgstr "fsearch vichujio vya usanidi: inakosa NAME\n"
 
 #: src/fsearch_cli_config.c:1100 src/fsearch_cli_config.c:1111
 #, c-format
 msgid "fsearch config filters: name not found: %s\n"
-msgstr ""
+msgstr "fsearch vichujio vya usanidi: jina halijapatikana: %s\n"
 
 #: src/fsearch_cli_config.c:1107
 #, c-format
 msgid "fsearch config filters: name already exists: %s\n"
-msgstr ""
+msgstr "fsearch vichujio vya usanidi: jina tayari lipo: %s\n"
 
 #: src/fsearch_cli_config.c:1145
 #, c-format
 msgid "%s\tmacro=%s query=%s\n"
-msgstr ""
+msgstr "%s macro=%s query=%s\n"
 
 #: src/fsearch_cli_config.c:1193
 msgid "fsearch config reset requires --yes\n"
-msgstr ""
+msgstr "fsearch kuweka upya usanidi kunahitaji --yes\n"
 
 #: src/fsearch_cli_config.c:1201
 msgid ""
 "fsearch config reset: --rescan requires roots, database, excludes, or all\n"
-msgstr ""
+msgstr "fsearch config upya: --rescan inahitaji mizizi, hifadhidata, haijumuishi, au yote\n"
 
 #: src/fsearch_cli_config.c:1241
 #, c-format
 msgid "fsearch config: unknown setting or section: %s\n"
-msgstr ""
+msgstr "fsearch usanidi: mpangilio au sehemu isiyojulikana: %s\n"
 
 #: src/fsearch_cli_config.c:1246
 #, c-format
 msgid "%s settings reset\n"
-msgstr ""
+msgstr "%s mipangilio upya\n"
 
 #: src/fsearch_cli_config.c:1253
 msgid ""
 "configuration: missing; defaults active\n"
 "index: unknown\n"
 msgstr ""
+"usanidi: kukosa; chaguo-msingi amilifu\n"
+"index: haijulikani\n"
 
 #: src/fsearch_cli_config.c:1261
 msgid ""
 "configuration: ok\n"
 "index: missing or unreadable\n"
 msgstr ""
+"usanidi: sawa\n"
+"index: kukosa au kusomeka\n"
 
 #: src/fsearch_cli_config.c:1266
 #, c-format
@@ -769,121 +903,125 @@ msgid ""
 "configuration: ok\n"
 "index: %s\n"
 msgstr ""
+"usanidi: sawa\n"
+"index: %s\n"
 
 #: src/fsearch_cli_config.c:1266
 msgid "current"
-msgstr ""
+msgstr "ya sasa"
 
 #: src/fsearch_cli_config.c:1266
 msgid "stale"
-msgstr ""
+msgstr "stale"
 
 #: src/fsearch_cli_config.c:1278
 msgid ""
 "Usage: fsearch config path\n"
 "Print the active FSearch configuration file path.\n"
 msgstr ""
+"Matumizi: fsearch config path\n"
+"Chapisha njia inayotumika ya usanidi wa FSearch.\n"
 
 #: src/fsearch_cli_config.c:1321
 #, c-format
 msgid "fsearch config: unknown command: %s\n"
-msgstr ""
+msgstr "fsearch usanidi: amri isiyojulikana: %s\n"
 
 #: src/fsearch_database.c:795
 msgid "Index rescan: applying changes…"
-msgstr ""
+msgstr "Kuchanganua upya kwa kielezo: kutumia mabadiliko..."
 
 #: src/fsearch_database_file.c:1343
 msgid "Loading folders…"
-msgstr ""
+msgstr "Inapakia folda..."
 
 #: src/fsearch_database_file.c:1359
 msgid "Loading files…"
-msgstr ""
+msgstr "Inapakia faili..."
 
 #: src/fsearch_database_index_store.c:925 src/fsearch_statusbar.c:73
 #: src/fsearch_statusbar.ui:90
 msgid "Sorting…"
-msgstr ""
+msgstr "Inapanga..."
 
 #: src/fsearch_database_preferences_widget.c:162
 #: src/fsearch_database_preferences_widget.c:176
 msgid "Select folder"
-msgstr ""
+msgstr "Chagua folda"
 
 #: src/fsearch_database_preferences_widget.c:165
 #: src/fsearch_database_preferences_widget.c:180
 #: src/fsearch_filter_editor.c:104 src/fsearch_preferences_dialog.c:331
 msgid "_Cancel"
-msgstr ""
+msgstr "_Ghairi"
 
 #: src/fsearch_database_preferences_widget.c:167
 #: src/fsearch_database_preferences_widget.c:179
 msgid "_Select"
-msgstr ""
+msgstr "_Chagua"
 
 #: src/fsearch_database_preferences_widget.c:389
 msgid "Literal"
-msgstr ""
+msgstr "halisi"
 
 #: src/fsearch_database_preferences_widget.c:391
 msgid "Wildcard"
-msgstr ""
+msgstr "Wildcard"
 
 #: src/fsearch_database_preferences_widget.c:393
 msgid "Regex"
-msgstr ""
+msgstr "Regex"
 
 #: src/fsearch_database_preferences_widget.c:414
 msgid "Full Path"
-msgstr ""
+msgstr "Njia Kamili"
 
 #: src/fsearch_database_preferences_widget.c:416
 msgid "Basename"
-msgstr ""
+msgstr "Jina la msingi"
 
 #: src/fsearch_database_preferences_widget.c:434
 msgid "Files & Folders"
-msgstr ""
+msgstr "Faili na Folda"
 
 #: src/fsearch_database_preferences_widget.c:436 src/fsearch_filter.c:114
 msgid "Files"
-msgstr ""
+msgstr "Faili"
 
 #: src/fsearch_database_preferences_widget.c:438 src/fsearch_filter.c:113
 msgid "Folders"
-msgstr ""
+msgstr "Folda"
 
 #: src/fsearch_database_preferences_widget.c:635
 #: src/fsearch_database_preferences_widget.c:860
 msgid "Active"
-msgstr ""
+msgstr "Inayotumika"
 
 #: src/fsearch_database_preferences_widget.c:640
 msgid "Pattern"
-msgstr ""
+msgstr "Muundo"
 
 #: src/fsearch_database_preferences_widget.c:694 src/fsearch_window.c:756
 #: src/menus.ui:275
 msgid "Type"
-msgstr ""
+msgstr "Aina"
 
 #: src/fsearch_database_preferences_widget.c:700
 msgid "Match"
-msgstr ""
+msgstr "Mechi"
 
 #: src/fsearch_database_preferences_widget.c:706
 msgid "Applies To"
-msgstr ""
+msgstr "Inatumika Kwa"
 
 #: src/fsearch_database_preferences_widget.c:864 src/fsearch_window.c:742
 #: src/menus.ui:219 src/menus.ui:267
 msgid "Path"
-msgstr ""
+msgstr "Njia"
 
 #: src/fsearch_database_preferences_widget.ui:78
 msgid "Enter path…"
-msgstr ""
+msgstr "Ingiza njia..."
 
 #: src/fsearch_database_preferences_widget.ui:97
 #: src/fsearch_database_preferences_widget.ui:372
@@ -892,191 +1030,195 @@ msgid ""
 "                                            database\n"
 "                                        "
 msgstr ""
+"Ongeza njia ya kujumuishwa\n"
+"                                            hifadhidata"
 
 #: src/fsearch_database_preferences_widget.ui:176
 msgid "Attempt to monitor"
-msgstr ""
+msgstr "Jaribio la kufuatilia"
 
 #: src/fsearch_database_preferences_widget.ui:191
 msgid "Scan after launch"
-msgstr ""
+msgstr "Changanua baada ya uzinduzi"
 
 #: src/fsearch_database_preferences_widget.ui:206
 msgid "Stay on one file system"
-msgstr ""
+msgstr "Kaa kwenye mfumo mmoja wa faili"
 
 #: src/fsearch_database_preferences_widget.ui:221
 msgid "Rescan every"
-msgstr ""
+msgstr "Changanua upya kila"
 
 #: src/fsearch_database_preferences_widget.ui:254
 msgid "Hours:"
-msgstr ""
+msgstr "Saa:"
 
 #: src/fsearch_database_preferences_widget.ui:298
 msgid "Minutes:"
-msgstr ""
+msgstr "Dakika:"
 
 #: src/fsearch_database_preferences_widget.ui:310
 msgid "30"
-msgstr ""
+msgstr "30"
 
 #: src/fsearch_database_preferences_widget.ui:391
 msgid "Remove selected path"
-msgstr ""
+msgstr "Ondoa njia iliyochaguliwa"
 
 #: src/fsearch_database_preferences_widget.ui:418
 msgid "Include"
-msgstr ""
+msgstr "Jumuisha"
 
 #: src/fsearch_database_preferences_widget.ui:477
 msgid ""
 "Add exclude rule\n"
 "                                                "
 msgstr ""
+"Ongeza kanuni ya kutenga"
 
 #: src/fsearch_database_preferences_widget.ui:495
 msgid ""
 "Remove selected path\n"
 "                                                "
 msgstr ""
+"Ondoa njia iliyochaguliwa"
 
 #: src/fsearch_database_preferences_widget.ui:512
 msgid "Restore default exclude list"
-msgstr ""
+msgstr "Rejesha chaguomsingi tenga orodha"
 
 #: src/fsearch_database_preferences_widget.ui:541
 msgid "Exclude hidden files and folders"
-msgstr ""
+msgstr "Usijumuishe faili na folda zilizofichwa"
 
 #: src/fsearch_database_preferences_widget.ui:563
 msgid "Exclude"
-msgstr ""
+msgstr "Ondoa"
 
 #: src/fsearch_file_utils.c:161
 msgctxt "Will be followed by the path of the file."
 msgid "Error when removing file"
-msgstr ""
+msgstr "Hitilafu wakati wa kuondoa faili"
 
 #: src/fsearch_file_utils.c:163
 msgid "Failed to get path"
-msgstr ""
+msgstr "Imeshindwa kupata njia"
 
 #: src/fsearch_file_utils.c:277
 msgctxt "Will be followed by the file path."
 msgid "Error when getting information from file"
-msgstr ""
+msgstr "Hitilafu wakati wa kupata taarifa kutoka kwa faili"
 
 #: src/fsearch_file_utils.c:279
 msgid "Failed to get application information"
-msgstr ""
+msgstr "Imeshindwa kupata maelezo ya programu"
 
 #: src/fsearch_file_utils.c:294
 msgctxt "Will be followed by the content type string."
 msgid "Error when getting information for content type"
-msgstr ""
+msgstr "Hitilafu wakati wa kupata maelezo ya aina ya maudhui"
 
 #: src/fsearch_file_utils.c:296
 msgid "No default application registered"
-msgstr ""
+msgstr "Hakuna programu chaguomsingi iliyosajiliwa"
 
 #: src/fsearch_file_utils.c:524
 msgctxt "Will be followed by the path of the folder."
 msgid "Error when opening parent folder"
-msgstr ""
+msgstr "Hitilafu wakati wa kufungua folda kuu"
 
 #: src/fsearch_file_utils.c:526
 msgid "Failed to get parent path"
-msgstr ""
+msgstr "Imeshindwa kupata njia ya mzazi"
 
 #: src/fsearch_file_utils.c:530
 msgctxt "Will be followed by the path of the folder."
 msgid "Error while opening folder"
-msgstr ""
+msgstr "Hitilafu wakati wa kufungua folda"
 
 #: src/fsearch_file_utils.c:533
 msgid "Failed to build open command"
-msgstr ""
+msgstr "Imeshindwa kuunda amri wazi"
 
 #: src/fsearch_file_utils.c:589
 msgid "Folder"
-msgstr ""
+msgstr "Folda"
 
 #: src/fsearch_file_utils.c:595
 msgid "Unknown Type"
-msgstr ""
+msgstr "Aina Isiyojulikana"
 
 #: src/fsearch_filter.c:112
 msgid "All"
-msgstr ""
+msgstr "Wote"
 
 #: src/fsearch_filter.c:115
 msgid "Applications"
-msgstr ""
+msgstr "Maombi"
 
 #: src/fsearch_filter.c:116
 msgid "Archives"
-msgstr ""
+msgstr "Kumbukumbu"
 
 #: src/fsearch_filter.c:117
 msgid "Audio"
-msgstr ""
+msgstr "Sauti"
 
 #: src/fsearch_filter.c:118
 msgid "Documents"
-msgstr ""
+msgstr "Nyaraka"
 
 #: src/fsearch_filter.c:119
 msgid "Pictures"
-msgstr ""
+msgstr "Picha"
 
 #: src/fsearch_filter.c:120
 msgid "Videos"
-msgstr ""
+msgstr "Video"
 
 #: src/fsearch_filter_editor.c:79
 msgid "Macro names must not contain `:` characters."
-msgstr ""
+msgstr "Majina makubwa lazima yasiwe na vibambo `:`."
 
 #: src/fsearch_filter_editor.c:105 src/fsearch_preferences_dialog.c:332
 msgid "_OK"
-msgstr ""
+msgstr "_Sawa"
 
 #: src/fsearch_filter_editor.ui:10 src/fsearch_filter_preferences_widget.c:156
 msgid "Edit filter"
-msgstr ""
+msgstr "Badilisha kichujio"
 
 #: src/fsearch_filter_editor.ui:50
 msgid "Name:"
-msgstr ""
+msgstr "Jina:"
 
 #: src/fsearch_filter_editor.ui:61
 msgid "The unique name of this filter"
-msgstr ""
+msgstr "Jina la kipekee la kichujio hiki"
 
 #: src/fsearch_filter_editor.ui:64
 msgid "Unique filter name"
-msgstr ""
+msgstr "Jina la kichujio cha kipekee"
 
 #: src/fsearch_filter_editor.ui:73
 msgid "Search in path"
-msgstr ""
+msgstr "Tafuta kwenye njia"
 
 #: src/fsearch_filter_editor.ui:87
 msgid "Enable regular expressions"
-msgstr ""
+msgstr "Washa misemo ya kawaida"
 
 #: src/fsearch_filter_editor.ui:101
 msgid "Match case"
-msgstr ""
+msgstr "Kesi ya mechi"
 
 #: src/fsearch_filter_editor.ui:146
 msgid "Query:"
-msgstr ""
+msgstr "Hoja:"
 
 #: src/fsearch_filter_editor.ui:160
 msgid "Macro:"
-msgstr ""
+msgstr "Jumla:"
 
 #: src/fsearch_filter_editor.ui:171
 msgid ""
@@ -1084,227 +1226,228 @@ msgid ""
 "search entry by typing its text followed by ':'\n"
 "                "
 msgstr ""
+"Jumla ya kichujio hiki. Jumla hukuruhusu kufikia kichujio hiki kutoka kwa ingizo la utafutaji kwa kuandika maandishi yake na kufuatiwa na ':'"
 
 #: src/fsearch_filter_preferences_widget.c:133
 msgid "Add filter"
-msgstr ""
+msgstr "Ongeza kichujio"
 
 #: src/fsearch_filter_preferences_widget.c:315 src/fsearch_window.c:735
 #: src/menus.ui:215 src/menus.ui:263
 msgid "Name"
-msgstr ""
+msgstr "Jina"
 
 #: src/fsearch_filter_preferences_widget.c:316
 msgid "Macro"
-msgstr ""
+msgstr "Jumla"
 
 #: src/fsearch_filter_preferences_widget.c:317
 msgid "Query"
-msgstr ""
+msgstr "Hoja"
 
 #: src/fsearch_filter_preferences_widget.ui:77
 msgid "Add new filter"
-msgstr ""
+msgstr "Ongeza kichujio kipya"
 
 #: src/fsearch_filter_preferences_widget.ui:95
 msgid "Remove selected filter"
-msgstr ""
+msgstr "Ondoa kichujio kilichochaguliwa"
 
 #: src/fsearch_filter_preferences_widget.ui:113
 msgid "Edit selected filter"
-msgstr ""
+msgstr "Badilisha kichujio kilichochaguliwa"
 
 #: src/fsearch_filter_preferences_widget.ui:129
 msgid "Restore default filters"
-msgstr ""
+msgstr "Rejesha vichujio chaguo-msingi"
 
 #: src/fsearch_listview_popup.c:36
 msgid "Properties…"
-msgstr ""
+msgstr "Sifa..."
 
 #: src/fsearch_listview_popup.c:163
 msgid "Other Application…"
-msgstr ""
+msgstr "Programu Nyingine..."
 
 #: src/fsearch_overlay.ui:44
 msgid "Empty Database"
-msgstr ""
+msgstr "Hifadhidata tupu"
 
 #: src/fsearch_overlay.ui:60
 msgid "Add folders"
-msgstr ""
+msgstr "Ongeza folda"
 
 #: src/fsearch_overlay.ui:108
 msgid "Loading Database…"
-msgstr ""
+msgstr "Inapakia Hifadhidata..."
 
 #: src/fsearch_overlay.ui:123
 msgid "This won't take long."
-msgstr ""
+msgstr "Hii haitachukua muda mrefu."
 
 #: src/fsearch_overlay.ui:171 src/fsearch_statusbar.ui:312
 msgid "Updating Database…"
-msgstr ""
+msgstr "Inasasisha Hifadhidata..."
 
 #: src/fsearch_overlay.ui:186 src/fsearch_overlay.ui:383
 msgid "This may take a while."
-msgstr ""
+msgstr "Hii inaweza kuchukua muda."
 
 #: src/fsearch_overlay.ui:241
 msgid "Empty Query"
-msgstr ""
+msgstr "Swali Tupu"
 
 #: src/fsearch_overlay.ui:256
 msgid "Press <b>Ctrl + F</b> and start typing."
-msgstr ""
+msgstr "Bonyeza <b>Ctrl + F</b> na uanze kuandika."
 
 #: src/fsearch_overlay.ui:304
 msgid "No Results Found"
-msgstr ""
+msgstr "Hakuna Matokeo Yaliyopatikana"
 
 #: src/fsearch_overlay.ui:319
 msgid "Try a different search"
-msgstr ""
+msgstr "Jaribu utafutaji tofauti"
 
 #: src/fsearch_overlay.ui:368
 msgid "Sorting results…"
-msgstr ""
+msgstr "Inapanga matokeo..."
 
 #: src/fsearch_preferences.ui:7 src/fsearch_window.ui:251 src/menus.ui:84
 msgid "Preferences"
-msgstr ""
+msgstr "Mapendeleo"
 
 #: src/fsearch_preferences.ui:76
 msgid "Enable dark theme"
-msgstr ""
+msgstr "Washa mandhari meusi"
 
 #: src/fsearch_preferences.ui:97
 msgid "Enable client-side decorations (requires restart)"
-msgstr ""
+msgstr "Washa mapambo ya upande wa mteja (inahitaji kuanzishwa upya)"
 
 #: src/fsearch_preferences.ui:117
 msgid "Use binary units instead of decimal units"
-msgstr ""
+msgstr "Tumia vitengo vya binary badala ya vitengo vya desimali"
 
 #: src/fsearch_preferences.ui:138
 msgid "Remember window size"
-msgstr ""
+msgstr "Kumbuka ukubwa wa dirisha"
 
 #: src/fsearch_preferences.ui:159
 msgid "Exit on Escape"
-msgstr ""
+msgstr "Ondoka kwenye Escape"
 
 #: src/fsearch_preferences.ui:202
 msgid "with keyboard shortcuts or menu entries"
-msgstr ""
+msgstr "na njia za mkato za kibodi au maingizo ya menyu"
 
 #: src/fsearch_preferences.ui:223
 msgid "with double click"
-msgstr ""
+msgstr "kwa kubofya mara mbili"
 
 #: src/fsearch_preferences.ui:257
 msgid "Behaviour after successfully opening a file:"
-msgstr ""
+msgstr "Tabia baada ya kufungua faili kwa mafanikio:"
 
 #: src/fsearch_preferences.ui:273
 msgid "Nothing"
-msgstr ""
+msgstr "Hakuna kitu"
 
 #: src/fsearch_preferences.ui:274
 msgid "Minimize"
-msgstr ""
+msgstr "Punguza"
 
 #: src/fsearch_preferences.ui:275
 msgid "Close"
-msgstr ""
+msgstr "Funga"
 
 #: src/fsearch_preferences.ui:309
 msgid "General:"
-msgstr ""
+msgstr "Jumla:"
 
 #: src/fsearch_preferences.ui:344
 msgid "Show highlighted search terms"
-msgstr ""
+msgstr "Onyesha hoja za utafutaji zilizoangaziwa"
 
 #: src/fsearch_preferences.ui:366
 msgid "Show tooltips"
-msgstr ""
+msgstr "Onyesha vidokezo vya zana"
 
 #: src/fsearch_preferences.ui:387
 msgid "Show icons in name column"
-msgstr ""
+msgstr "Onyesha aikoni kwenye safu wima ya jina"
 
 #: src/fsearch_preferences.ui:408
 msgid "Remember column configuration"
-msgstr ""
+msgstr "Kumbuka usanidi wa safu"
 
 #: src/fsearch_preferences.ui:429
 msgid "Remember sort order"
-msgstr ""
+msgstr "Kumbuka mpangilio wa mpangilio"
 
 #: src/fsearch_preferences.ui:450
 msgid "Open path with double click in path column"
-msgstr ""
+msgstr "Fungua njia kwa kubonyeza mara mbili kwenye safu ya njia"
 
 #: src/fsearch_preferences.ui:471
 msgid "Single click to open"
-msgstr ""
+msgstr "Bofya mara moja ili kufungua"
 
 #: src/fsearch_preferences.ui:492
 msgid "Launch desktop files"
-msgstr ""
+msgstr "Zindua faili za eneo-kazi"
 
 #: src/fsearch_preferences.ui:519
 msgid "Results:"
-msgstr ""
+msgstr "Matokeo:"
 
 #: src/fsearch_preferences.ui:560
 msgid "Show database indexing status"
-msgstr ""
+msgstr "Onyesha hali ya kuorodhesha hifadhidata"
 
 #: src/fsearch_preferences.ui:587
 msgid "Statusbar:"
-msgstr ""
+msgstr "Upau wa hali:"
 
 #: src/fsearch_preferences.ui:628
 msgid "Show warning dialogs when:"
-msgstr ""
+msgstr "Onyesha vidadisi vya onyo wakati:"
 
 #: src/fsearch_preferences.ui:638
 msgid "file / folder failed to open"
-msgstr ""
+msgstr "faili/folda imeshindwa kufunguliwa"
 
 #: src/fsearch_preferences.ui:667
 msgid "Dialogs:"
-msgstr ""
+msgstr "Maongezi:"
 
 #: src/fsearch_preferences.ui:692
 msgid "Interface"
-msgstr ""
+msgstr "Kiolesura"
 
 #: src/fsearch_preferences.ui:711
 msgid "Search in path when query contains path separators"
-msgstr ""
+msgstr "Tafuta kwenye njia wakati hoja ina vitenganishi vya njia"
 
 #: src/fsearch_preferences.ui:730
 msgid "Search as you type"
-msgstr ""
+msgstr "Tafuta unapoandika"
 
 #: src/fsearch_preferences.ui:750
 msgid "Hide results when search is empty"
-msgstr ""
+msgstr "Ficha matokeo wakati utafutaji hauna chochote"
 
 #: src/fsearch_preferences.ui:769
 msgid "Match case when query contains at least one upper case character"
-msgstr ""
+msgstr "Kesi ya kulinganisha wakati hoja ina angalau herufi kubwa moja"
 
 #: src/fsearch_preferences.ui:801
 msgid "Filter:"
-msgstr ""
+msgstr "Chuja:"
 
 #: src/fsearch_preferences.ui:822 src/fsearch_window.ui:639
 msgid "Search"
-msgstr ""
+msgstr "Tafuta"
 
 #: src/fsearch_preferences.ui:855
 msgid ""
@@ -1316,6 +1459,11 @@ msgid ""
 "Note that not all system themes provide such a darker variant, therefore "
 "enabling this setting might not have an effect."
 msgstr ""
+"<b>Washa mandhari meusi:</b>\n"
+"\n"
+"Ikiwashwa, mandhari ya mfumo yanaombwa kutumia mtindo mweusi zaidi kwa programu <i>(yaani vipengele vyeusi vya UI kwenye maandishi angavu)</i>.\n"
+"\n"
+"Kumbuka kuwa sio mandhari yote ya mfumo hutoa lahaja nyeusi zaidi, kwa hivyo kuwasha mpangilio huu kunaweza kusiwe na athari."
 
 #: src/fsearch_preferences.ui:873
 msgid ""
@@ -1329,6 +1477,12 @@ msgid ""
 "This resembles a more traditional UI layout and takes a little bit more "
 "space."
 msgstr ""
+"<b>Washa mapambo ya upande wa mteja:</b>\n"
+"\n"
+"Ikiwashwa, ingizo la utafutaji na menyu kuu huonyeshwa kwenye upau wa kichwa cha dirisha.\n"
+"\n"
+"Ikiwa imezimwa, menyu kuu itaonyeshwa kama upau wa menyu na ingizo la utafutaji chini yake.\n"
+"Hii inafanana na mpangilio wa kawaida wa UI na inachukua nafasi kidogo zaidi."
 
 #: src/fsearch_preferences.ui:893
 msgid ""
@@ -1341,6 +1495,12 @@ msgid ""
 "\t• <b>Decimal  units:</b> This refers to decimal SI prefixes <i>(e.g. 1 kB "
 "= 1000 bytes)</i>"
 msgstr ""
+"<b>Tumia vitengo vya jozi badala ya vitengo vya desimali:</b>\n"
+"\n"
+"Mipangilio hii inadhibiti jinsi ukubwa wa faili unavyoonyeshwa.\n"
+"\n"
+"\t• <b>Vizio-mbili:</b> Hii inarejelea viambishi awali vya IEC vya jozi <i>(k.m. 1 KiB = baiti 1024)</i>\n"
+"\t• <b>Vizio vya decimal:</b> Hii inarejelea viambishi awali vya desimali vya SI <i>(k.m. 1 kB = baiti 1000)</i>"
 
 #: src/fsearch_preferences.ui:913
 msgid ""
@@ -1352,6 +1512,11 @@ msgid ""
 "Note that some window managers ignore this request and force the window to "
 "have a different size."
 msgstr ""
+"<b>Kumbuka ukubwa wa dirisha:</b>\n"
+"\n"
+"Ikiwashwa, saizi ya dirisha kutoka kwa kipindi cha awali itarejeshwa utakapofungua dirisha la FSearch.\n"
+"\n"
+"Kumbuka kuwa baadhi ya wasimamizi wa dirisha hupuuza ombi hili na kulazimisha dirisha kuwa na saizi tofauti."
 
 #: src/fsearch_preferences.ui:932
 msgid ""
@@ -1369,6 +1534,16 @@ msgid ""
 "\t• <b>keyboard shortcuts or menu entries</b> and/or\n"
 "\t• <b>mouse click</b>"
 msgstr ""
+"<b>Tabia baada ya kufungua faili kwa ufanisi:</b>\n"
+"\n"
+"Wakati faili/folda ilifunguliwa kwa ufanisi moja ya vitendo vifuatavyo vinaweza kufanywa:\n"
+"\t• <b>Hakuna:</b> Hakuna kinachotokea.\n"
+"                        • <b>Punguza:</b> Dirisha la FSearch lililochaguliwa kwa sasa linapunguzwa.\n"
+"\t• <b>Funga:</b> Acha FSearch.\n"
+"\n"
+"Unaweza kusanidi ikiwa vitendo hivyo vinapaswa kuanzishwa wakati faili ilifunguliwa na\n"
+"\t• <b>njia za mkato za kibodi au maingizo ya menyu</b> na/au\n"
+"\t• <b>bofya kipanya</b>"
 
 #: src/fsearch_preferences.ui:956
 msgid ""
@@ -1384,6 +1559,14 @@ msgid ""
 "This also works for regular expressions and wildcard expressions starting or "
 "ending with an asterisk. "
 msgstr ""
+"<b>Onyesha hoja za utafutaji zilizoangaziwa:</b>\n"
+"\n"
+"Ikiwashwa, hoja za utafutaji zitaangaziwa katika mwonekano wa matokeo. Kwa mfano unapotafuta \\\"foo\\\" mionekano yote ya <i>foo</i> katika majina ya faili/folda itaangaziwa kwa herufi nzito:\n"
+"\n"
+"\t<b>foo</b>bar.txt\n"
+"\tfaili.<b>foo</b>\n"
+"\n"
+"Hii pia inafanya kazi kwa misemo ya kawaida na usemi wa kadi-mwitu kuanzia au kumalizia na nyota."
 
 #: src/fsearch_preferences.ui:978
 msgid ""
@@ -1392,6 +1575,9 @@ msgid ""
 "If enabled, the results view will show the full path of the focused file/"
 "folder in a small tooltip window."
 msgstr ""
+"<b>Onyesha vidokezo vya zana:</b>\n"
+"\n"
+"Ikiwashwa, mwonekano wa matokeo utaonyesha njia kamili ya faili/folda iliyolengwa katika kidirisha kidogo cha kidokezo."
 
 #: src/fsearch_preferences.ui:995
 msgid ""
@@ -1399,6 +1585,9 @@ msgid ""
 "\n"
 "If enabled, file/folder icons will be shown in the name column."
 msgstr ""
+"<b>Onyesha aikoni katika safu wima ya jina:</b>\n"
+"\n"
+"Ikiwashwa, aikoni za faili/folda zitaonyeshwa kwenye safu wima ya jina."
 
 #: src/fsearch_preferences.ui:1012
 msgid ""
@@ -1408,6 +1597,9 @@ msgid ""
 "session will be restored when you open an FSearch window. This includes the "
 "size and visibility of all columns."
 msgstr ""
+"<b>Kumbuka usanidi wa safu wima:</b>\n"
+"\n"
+"Ikiwashwa, usanidi wa safu wima ya mwonekano wa matokeo kutoka kwa kipindi cha awali utarejeshwa utakapofungua dirisha la FSearch. Hii inajumuisha ukubwa na mwonekano wa safu wima zote."
 
 #: src/fsearch_preferences.ui:1029
 msgid ""
@@ -1416,6 +1608,9 @@ msgid ""
 "If enabled, the sort order of the results view from the previous session "
 "will be restored when you open an FSearch window."
 msgstr ""
+"<b>Kumbuka mpangilio wa kupanga:</b>\n"
+"\n"
+"Ikiwashwa, mpangilio wa mpangilio wa matokeo kutoka kwa kipindi kilichotangulia utarejeshwa utakapofungua dirisha la Utafutaji."
 
 #: src/fsearch_preferences.ui:1046
 msgid ""
@@ -1423,6 +1618,9 @@ msgid ""
 "\n"
 "If enabled, double clicking in the path column will open the selected path."
 msgstr ""
+"<b>Fungua njia kwa kubofya mara mbili kwenye safu wima ya njia:</b>\n"
+"\n"
+"Ikiwashwa, kubofya mara mbili kwenye safu wima ya njia kutafungua njia iliyochaguliwa."
 
 #: src/fsearch_preferences.ui:1063
 msgid ""
@@ -1432,6 +1630,9 @@ msgid ""
 "want to select a file/folder while this setting is active, you need to hold "
 "<i>Ctrl</i> at the same time while clicking the file/folder."
 msgstr ""
+"<b>Mbofyo mmoja ili kufungua:</b>\n"
+"\n"
+"Ikiwashwa, kubofya mara moja kutafungua faili/folda iliyochaguliwa. Ikiwa unataka tu kuchagua faili/folda wakati mpangilio huu unatumika, unahitaji kushikilia <i>Ctrl</i> kwa wakati mmoja huku ukibofya faili/folda."
 
 #: src/fsearch_preferences.ui:1080
 msgid ""
@@ -1440,6 +1641,9 @@ msgid ""
 "If enabled, the path that is currently being indexed is displayed in the "
 "statusbar."
 msgstr ""
+"<b>Onyesha hali ya kuorodhesha hifadhidata:</b>\n"
+"\n"
+"Ikiwashwa, njia ambayo inaorodheshwa kwa sasa inaonyeshwa kwenye upau wa hali."
 
 #: src/fsearch_preferences.ui:1097
 msgid ""
@@ -1448,6 +1652,9 @@ msgid ""
 "If enabled, a warning dialog is displayed when a file or folder failed to "
 "open."
 msgstr ""
+"<b>Onyesha vidadisi vya onyo:</b>\n"
+"\n"
+"Ikiwashwa, kidirisha cha onyo huonyeshwa faili au folda iliposhindwa kufunguliwa."
 
 #: src/fsearch_preferences.ui:1114
 msgid ""
@@ -1456,6 +1663,9 @@ msgid ""
 "If enabled, search terms containing path separators (i.e. \"/\") will be "
 "automatically matched against the full path of a file or folder."
 msgstr ""
+"<b>Tafuta kwenye njia wakati hoja ina vitenganishi vya njia:</b>\n"
+"\n"
+"Ikiwashwa, maneno ya utafutaji yaliyo na vitenganishi vya njia (yaani \\\"/\\\") yatalinganishwa kiotomatiki dhidi ya njia kamili ya faili au folda."
 
 #: src/fsearch_preferences.ui:1131
 msgid ""
@@ -1465,6 +1675,9 @@ msgid ""
 "trigger a case-sensitive search. This means a search term like <i>Foo</i> "
 "will match <i>FooBar.txt</i> but not <i>foobar.txt</i>."
 msgstr ""
+"<b>Kesi inayolingana wakati hoja ina angalau herufi moja kubwa:</b>\n"
+"\n"
+"Ikiwezeshwa, hoja za utafutaji zilizo na angalau herufi moja kubwa zitaanzisha utafutaji nyeti sana. Hii inamaanisha kuwa neno la utafutaji kama <i>Foo</i> litalingana na <i>FooBar.txt</i> lakini si <i>foobar.txt</i>."
 
 #: src/fsearch_preferences.ui:1148
 msgid ""
@@ -1475,6 +1688,11 @@ msgid ""
 "If disabled, all files and folders will be displayed when the search entry "
 "is empty."
 msgstr ""
+"<b>Ficha matokeo wakati utafutaji hauna:</b>\n"
+"\n"
+"Ikiwashwa, hakuna matokeo ya utafutaji yanayoonyeshwa wakati ingizo la utafutaji liko tupu.\n"
+"\n"
+"Ikiwa imezimwa, faili na folda zote zitaonyeshwa wakati ingizo la utafutaji litakuwa tupu."
 
 #: src/fsearch_preferences.ui:1167
 msgid ""
@@ -1485,6 +1703,11 @@ msgid ""
 "If disabled, the search is only updated when you hit <i>Enter</i> or press "
 "the search button. "
 msgstr ""
+"<b>Tafuta unapoandika:</b>\n"
+"\n"
+"Ikiwashwa, utafutaji unasasishwa kiotomatiki kwa kila mibogoyo.\n"
+"\n"
+"Ikiwa imezimwa, utafutaji unasasishwa tu unapogonga <i>Enter</i> au bonyeza kitufe cha kutafuta."
 
 #: src/fsearch_preferences.ui:1186
 msgid ""
@@ -1493,6 +1716,9 @@ msgid ""
 "If enabled, the database will be updated automatically in the background "
 "when you start FSearch."
 msgstr ""
+"<b>Sasisha hifadhidata unapoanza:</b>\n"
+"\n"
+"Ikiwashwa, hifadhidata itasasishwa kiotomatiki chinichini unapoanzisha Utafutaji wa FSearch."
 
 #: src/fsearch_preferences.ui:1203
 msgid ""
@@ -1506,6 +1732,13 @@ msgid ""
 "\t• <b>One Filesystem:</b> If enabled, FSearch won't cross filesystem "
 "boundaries for this folder"
 msgstr ""
+"<b>Folda zilizojumuishwa:</b>\n"
+"\n"
+"Orodha hii ina folda zote unazotaka kujumuisha kwenye hifadhidata.\n"
+"\n"
+"\t• <b>Inatumika:</b> Ikiwashwa, njia itajumuishwa kwenye hifadhidata itakayotafutwa.\n"
+"\t• <b>Njia:</b> Njia kamili ya kujumuishwa.\n"
+"\t• <b>Mfumo Mmoja wa Faili:</b> Ikiwashwa, FSearch haitavuka mipaka ya mfumo wa faili kwa folda hii."
 
 #: src/fsearch_preferences.ui:1224
 msgid ""
@@ -1514,6 +1747,9 @@ msgid ""
 "This button opens a dialog where you can select a folder you want to include "
 "in the database for searching."
 msgstr ""
+"<b>Ongeza folda kwenye hifadhidata:</b>\n"
+"\n"
+"Kitufe hiki hufungua mazungumzo ambapo unaweza kuchagua folda unayotaka kujumuisha kwenye hifadhidata kwa ajili ya kutafuta."
 
 #: src/fsearch_preferences.ui:1241
 msgid ""
@@ -1523,6 +1759,9 @@ msgid ""
 "include that folder in the database. This is useful for adding a path "
 "directly without browsing for it."
 msgstr ""
+"<b>Ongeza njia mahususi:</b>\n"
+"\n"
+"Andika njia kamili ya folda hapa na ubofye kitufe kilicho karibu nayo ili kujumuisha folda hiyo kwenye hifadhidata. Hii ni muhimu kwa kuongeza njia moja kwa moja bila kuvinjari kwa hiyo."
 
 #: src/fsearch_preferences.ui:1258
 msgid ""
@@ -1530,6 +1769,9 @@ msgid ""
 "\n"
 "This removes the selected folder from the list of included folders."
 msgstr ""
+"<b>Ondoa safu mlalo iliyochaguliwa:</b>\n"
+"\n"
+"Hii huondoa folda iliyochaguliwa kutoka kwa orodha ya folda zilizojumuishwa."
 
 #: src/fsearch_preferences.ui:1275
 msgid ""
@@ -1542,6 +1784,11 @@ msgid ""
 "system resources per watched folder. For large directory trees with many "
 "files the system may run out of resources to watch them all."
 msgstr ""
+"<b>Jaribio la kufuatilia:</b>\n"
+"\n"
+"Ikiwashwa, FSearch hutazama folda hii kwa mabadiliko na husasisha hifadhidata kiotomatiki, kwa hivyo huhitaji kuchanganua tena wewe mwenyewe.\n"
+"\n"
+"Ufuatiliaji hautumiki kwenye kila mfumo wa faili na hutumia kiasi kidogo cha rasilimali za mfumo kwa kila folda inayotazamwa. Kwa miti mikubwa ya saraka iliyo na faili nyingi mfumo unaweza kukosa rasilimali za kuzitazama zote."
 
 #: src/fsearch_preferences.ui:1294
 msgid ""
@@ -1550,6 +1797,9 @@ msgid ""
 "If enabled, this folder is rescanned every time FSearch starts, so the "
 "database reflects any changes made while FSearch wasn't running."
 msgstr ""
+"<b>Changanua baada ya uzinduzi:</b>\n"
+"\n"
+"Ikiwashwa, folda hii huchanganuliwa upya kila mara FSearch inapoanza, kwa hivyo hifadhidata huakisi mabadiliko yoyote yaliyofanywa wakati FSearch haikufanya kazi."
 
 #: src/fsearch_preferences.ui:1311
 msgid ""
@@ -1559,6 +1809,9 @@ msgid ""
 "folder. Mounted file systems below it (e.g. external drives or network "
 "shares) are skipped."
 msgstr ""
+"<b>Kaa kwenye mfumo mmoja wa faili:</b>\n"
+"\n"
+"Ikiwashwa, FSearch haitavuka mipaka ya mfumo wa faili wakati wa kuchanganua folda hii. Mifumo ya faili iliyowekwa chini yake (k.m. hifadhi za nje au ushiriki wa mtandao) imerukwa."
 
 #: src/fsearch_preferences.ui:1328
 msgid ""
@@ -1570,6 +1823,11 @@ msgid ""
 "This is useful for folders on file systems that can't be monitored for "
 "changes."
 msgstr ""
+"<b>Changanua upya kila:</b>\n"
+"\n"
+"Ikiwashwa, folda hii inachanganuliwa upya kiotomatiki kwa muda uliotolewa. Tumia sehemu za saa na dakika kuweka ni mara ngapi kuchanganua hufanyika.\n"
+"\n"
+"Hii ni muhimu kwa folda kwenye mifumo ya faili ambayo haiwezi kufuatiliwa kwa mabadiliko."
 
 #: src/fsearch_preferences.ui:1347
 msgid ""
@@ -1590,6 +1848,15 @@ msgid ""
 "\t• <b>Applies To:</b> Whether the rule affects <i>Files</i>, <i>Folders</i> "
 "or both."
 msgstr ""
+"<b>Toa sheria:</b>\n"
+"\n"
+"Orodha hii ina sheria za faili na folda unazotaka kuziondoa kwenye hifadhidata.\n"
+"\n"
+"\t• <b>Inatumika:</b> Ikiwashwa, sheria itatumika na vipengee vinavyolingana havijajumuishwa.\n"
+"\t• <b>Muundo:</b> Maandishi yanalingana dhidi ya kila kipengee, yamefasiriwa kulingana na Aina.\n"
+"\t• <b>Aina:</b> Jinsi mchoro unavyofasiriwa — <i>Literal</i> (maandishi kamili), <i>Wildcard</i> (kwa kutumia * na ?) au <i>Regex</i> (maneno ya kawaida).\n"
+"\t• <b>Inalingana:</b> Iwapo mchoro unalingana na <i>Njia Kamili</i> ya bidhaa au <i>Jina lake la Msingi pekee</i> (jina lisilo na njia).\n"
+"\t• <b>Inatumika Kwa:</b> Iwapo sheria inaathiri <i>Faili</i>, <i>Folda</i> au zote mbili."
 
 #: src/fsearch_preferences.ui:1370
 msgid ""
@@ -1598,6 +1865,9 @@ msgid ""
 "This adds a new, empty rule to the list. Edit its Pattern, Type, Match and "
 "Applies To columns to control what gets excluded from the database."
 msgstr ""
+"<b>Ongeza kutenga sheria:</b>\n"
+"\n"
+"Hii inaongeza sheria mpya, tupu kwenye orodha. Hariri Mchoro wake, Aina, Mechi na Hutumika kwa safu wima ili kudhibiti kile ambacho hakijumuishwi kwenye hifadhidata."
 
 #: src/fsearch_preferences.ui:1387
 msgid ""
@@ -1605,6 +1875,9 @@ msgid ""
 "\n"
 "This removes the selected rule from the list of exclude rules."
 msgstr ""
+"<b>Ondoa safu mlalo iliyochaguliwa:</b>\n"
+"\n"
+"Hii huondoa sheria iliyochaguliwa kutoka kwa orodha ya kutojumuisha sheria."
 
 #: src/fsearch_preferences.ui:1404
 msgid ""
@@ -1614,6 +1887,11 @@ msgid ""
 "\n"
 "⚠ All rules which were created or edited by the user will be lost! ⚠"
 msgstr ""
+"<b>Rejesha chaguomsingi tenga sheria:</b>\n"
+"\n"
+"Kitufe hiki kinarejesha seti chaguo-msingi ya kutojumuisha sheria.\n"
+"\n"
+"⚠ Sheria zote ambazo ziliundwa au kuhaririwa na mtumiaji zitapotea! ⚠"
 
 #: src/fsearch_preferences.ui:1423
 msgid ""
@@ -1624,6 +1902,9 @@ msgid ""
 "all files or folders which are called either <i>.git</i> or <i>.cache</i> or "
 "end with <i>.swp</i>."
 msgstr ""
+"<b>Ondoa faili na folda kutoka kwa hifadhidata:</b>\n"
+"\n"
+"Hii ni orodha iliyotenganishwa ya nusu koloni ya faili (au folda) unazotaka kuziondoa kwenye hifadhidata. Kwa mfano <i>.git;.cache;*.swp</i> haitajumuisha faili au folda zote zinazoitwa ama <i>.git</i> au <i>.cache</i> au kuishia na <i>.swp</i>."
 
 #: src/fsearch_preferences.ui:1440
 msgid ""
@@ -1632,10 +1913,13 @@ msgid ""
 "If enabled, hidden files and folders will be excluded from the database "
 "<i>(i.e. all files or folders which start with a dot character)</i>."
 msgstr ""
+"<b>Tenga faili na folda zilizofichwa:</b>\n"
+"\n"
+"Ikiwashwa, faili na folda zilizofichwa zitatengwa kwenye hifadhidata <i>(yaani faili zote au folda zinazoanza na herufi ya nukta)</i>."
 
 #: src/fsearch_preferences.ui:1457
 msgid "Focus a setting to get a detailed description of what it does."
-msgstr ""
+msgstr "Lenga mpangilio ili kupata maelezo ya kina ya kile kinachofanya."
 
 #: src/fsearch_preferences.ui:1470
 msgid ""
@@ -1650,6 +1934,13 @@ msgid ""
 "\n"
 "<i><tt>fsearch --update-database</tt></i>"
 msgstr ""
+"<b>Sasisha hifadhidata mara kwa mara kwa muda maalum:</b>\n"
+"\n"
+"Ikiwashwa na mradi FSearch inaendeshwa, hifadhidata itasasishwa mara kwa mara kwa muda uliotolewa.\n"
+"\n"
+"Ikiwa unataka kusasisha hifadhidata chinichini, hata wakati FSearch haifanyiki, unapaswa kutumia zana kama cron au vipima saa vya mfumo ili kuanzisha sasisho mara kwa mara na:\n"
+"\n"
+"<i><tt>fsearch --update-database</tt></i>"
 
 #: src/fsearch_preferences.ui:1491
 msgid ""
@@ -1660,6 +1951,9 @@ msgid ""
 "launcher. Otherwise the <i>.desktop</i> file will be opened with the default "
 "handler for this type of files, which is usually a text editor."
 msgstr ""
+"<b>Zindua faili za eneo-kazi:</b>\n"
+"\n"
+"Ikiwashwa, kuwezesha faili ya <i>.desktop</i> kutazindua programu iliyofafanuliwa ndani ya faili hiyo. Kwa njia hii FSearch inaweza kutenda kama kizindua programu. Vinginevyo faili ya <i>.desktop</i> itafunguliwa kwa kidhibiti chaguo-msingi cha aina hii ya faili, ambayo kwa kawaida ni kihariri cha maandishi."
 
 #: src/fsearch_preferences.ui:1508
 msgid ""
@@ -1672,6 +1966,13 @@ msgid ""
 "the filter on demand\n"
 "\t• <b>Query:</b> The search term by which the database should be filtered"
 msgstr ""
+"<b>Vichujio:</b>\n"
+"\n"
+"Hii ni orodha ya vichujio vyote vinavyopatikana. Kichujio ni utafutaji uliofafanuliwa awali.\n"
+"\n"
+"\t• <b>Jina:</b> Kitambulishi cha kipekee na cha maelezo kwa kichujio\n"
+"\t• <b>Makro:</b> Kwa kuandika maandishi makubwa yakifuatiwa na ':' unaweza kuwezesha kichujio unapohitaji.\n"
+"\t• <b>Hoja:</b> Neno la utafutaji ambalo hifadhidata inapaswa kuchujwa"
 
 #: src/fsearch_preferences.ui:1529
 msgid ""
@@ -1679,6 +1980,9 @@ msgid ""
 "\n"
 "This button opens a dialog where you can edit a new filter."
 msgstr ""
+"<b>Ongeza kichujio kipya:</b>\n"
+"\n"
+"Kitufe hiki hufungua kidirisha ambapo unaweza kuhariri kichujio kipya."
 
 #: src/fsearch_preferences.ui:1546
 msgid ""
@@ -1686,6 +1990,9 @@ msgid ""
 "\n"
 "This button removes the currently selected filter."
 msgstr ""
+"<b>Ondoa kichujio ulichochagua:</b>\n"
+"\n"
+"Kitufe hiki huondoa kichujio kilichochaguliwa kwa sasa."
 
 #: src/fsearch_preferences.ui:1563
 msgid ""
@@ -1693,6 +2000,9 @@ msgid ""
 "\n"
 "This button opens a dialog where you can edit the selected filter."
 msgstr ""
+"<b>Hariri kichujio kilichochaguliwa:</b>\n"
+"\n"
+"Kitufe hiki hufungua kidirisha ambapo unaweza kuhariri kichujio kilichochaguliwa."
 
 #: src/fsearch_preferences.ui:1580
 msgid ""
@@ -1702,6 +2012,11 @@ msgid ""
 "\n"
 "⚠ All filters which were created or edited by the user will be lost! ⚠"
 msgstr ""
+"<b>Rejesha vichujio chaguomsingi:</b>\n"
+"\n"
+"Kitufe hiki kinarejesha usanidi chaguo-msingi wa kichujio.\n"
+"\n"
+"⚠ Vichungi vyote vilivyoundwa au kuhaririwa na mtumiaji vitapotea! ⚠"
 
 #: src/fsearch_preferences.ui:1599
 msgid ""
@@ -1710,128 +2025,137 @@ msgid ""
 "If enabled, FSearch exits when the Escape key is pressed instead of the "
 "window being minimized."
 msgstr ""
+"<b>Toka kwenye Escape:</b>\n"
+"\n"
+"Ikiwashwa, Utafutaji wa FSearch huondoka wakati kitufe cha Escape kimebonyezwa badala ya dirisha kupunguzwa."
 
 #: src/fsearch_preferences.ui:1618 src/fsearch_window.ui:290
 #: src/fsearch_window.ui:415 src/menus.ui:150 src/menus.ui:156
 msgid "Help"
-msgstr ""
+msgstr "Msaada"
 
 #: src/fsearch_preferences_dialog.c:238
 msgid "Database"
-msgstr ""
+msgstr "Hifadhidata"
 
 #: src/fsearch_result_view.c:381
 msgid "Invalid row data"
-msgstr ""
+msgstr "Data ya safu mlalo si sahihi"
 
 #: src/fsearch_statusbar.c:58
 #, c-format
 msgid "%'d Item"
-msgstr ""
+msgstr "Kipengee %'d"
 
 #: src/fsearch_statusbar.c:58 src/fsearch_statusbar.c:186
 #, c-format
 msgid "%'d Items"
-msgstr ""
+msgstr "Vipengee %'d"
 
 #: src/fsearch_statusbar.c:80
 msgid "Querying…"
-msgstr ""
+msgstr "Inauliza..."
 
 #: src/fsearch_statusbar.c:175
 msgid "Loading…"
-msgstr ""
+msgstr "Inapakia..."
 
 #: src/fsearch_statusbar.c:180
 msgid "Scanning…"
-msgstr ""
+msgstr "Inachanganua..."
 
 #: src/fsearch_statusbar.ui:52
 msgid "Number of Search Results"
-msgstr ""
+msgstr "Idadi ya Matokeo ya Utafutaji"
 
 #: src/fsearch_statusbar.ui:53
 msgid "0 Items"
-msgstr ""
+msgstr "Vipengee 0"
 
 #: src/fsearch_statusbar.ui:106
 msgid "Cancel"
-msgstr ""
+msgstr "Ghairi"
 
 #: src/fsearch_statusbar.ui:153
 msgid "Index:"
-msgstr ""
+msgstr "Kielezo:"
 
 #: src/fsearch_statusbar.ui:228
 msgid "Number of selected folders"
-msgstr ""
+msgstr "Idadi ya folda zilizochaguliwa"
 
 #: src/fsearch_statusbar.ui:229 src/fsearch_statusbar.ui:254
 msgid "0/0"
-msgstr ""
+msgstr "0/0"
 
 #: src/fsearch_statusbar.ui:253
 msgid "Number of selected files"
-msgstr ""
+msgstr "Idadi ya faili zilizochaguliwa"
 
 #: src/fsearch_statusbar.ui:328 src/fsearch_window.ui:103
 msgid "Cancel database update"
-msgstr ""
+msgstr "Ghairi sasisho la hifadhidata"
 
 #: src/fsearch_statusbar.ui:369
 msgid "Number of database items"
-msgstr ""
+msgstr "Idadi ya vitu vya hifadhidata"
 
 #: src/fsearch_statusbar.ui:370
 msgid "(empty)"
-msgstr ""
+msgstr "(tupu)"
 
 #: src/fsearch_statusbar.ui:407
 msgid ""
 "Search term contains upper case characters.\n"
 "<b>Match Case</b> was temporarily activated for this term."
 msgstr ""
+"Neno la utafutaji lina herufi kubwa.\n"
+"<b>Kesi inayolingana</b> iliamilishwa kwa muda huu."
 
 #: src/fsearch_statusbar.ui:438 src/fsearch_statusbar.ui:491
 msgid "CASE"
-msgstr ""
+msgstr "KESI"
 
 #: src/fsearch_statusbar.ui:514
 msgid ""
 "Search term contains path separators.\n"
 "<b>Search in Path</b> was temporarily activated for this term."
 msgstr ""
+"Neno la utafutaji lina vitenganishi vya njia.\n"
+"<b>Utafutaji katika Njia</b> uliamilishwa kwa muda huu."
 
 #: src/fsearch_statusbar.ui:545 src/fsearch_statusbar.ui:598
 msgid "PATH"
-msgstr ""
+msgstr "NJIA"
 
 #: src/fsearch_statusbar.ui:651
 msgid "REGEX"
-msgstr ""
+msgstr "REGEX"
 
 #: src/fsearch_statusbar.ui:726
 msgid ""
 "The search was cancelled before it finished.\n"
 "<b>These results are incomplete.</b>"
 msgstr ""
+"Utafutaji ulighairiwa kabla haujakamilika.\n"
+"<b>Matokeo haya hayajakamilika.</b>"
 
 #: src/fsearch_statusbar.ui:756
 msgid "PARTIAL"
-msgstr ""
+msgstr "SEHEMU"
 
 #: src/fsearch_welcome_dialog.ui:26
 msgid "What's New in FSearch"
-msgstr ""
+msgstr "Nini Kipya katika FSearch"
 
 #: src/fsearch_welcome_dialog.ui:79
 msgid ""
 "<span size=\"xx-large\" weight=\"bold\">What's New in FSearch 0.3</span>"
-msgstr ""
+msgstr "<span size=\\\"xx-large\\\" weight=\\\"bold\\\">Nini Mapya katika FSearch 0.3</span>"
 
 #: src/fsearch_welcome_dialog.ui:149
 msgid "<big><b>File System Monitoring</b></big>"
-msgstr ""
+msgstr "<big><b>Ufuatiliaji wa Mfumo wa Faili</b></big>"
 
 #: src/fsearch_welcome_dialog.ui:163
 msgid ""
@@ -1845,20 +2169,26 @@ msgid ""
 "<a href=\"URL\">https://github.com/cboxdoerfer/fsearch/wiki/Database-update</"
 "a>"
 msgstr ""
+"Sasa unaweza kutazama folda za kibinafsi kwa bidii ili kuondoa uhakiki wa mara kwa mara. Mabadiliko ya faili kisha yataonekana katika matokeo yako ya utafutaji mara moja.\n"
+"\n"
+"Ili kuwezesha kipengele hiki nenda kwenye sehemu ya Hifadhidata ya kidirisha cha Mapendeleo.\n"
+"\n"
+"Tazama nyaraka za mtandaoni kwa habari zaidi:\n"
+"<a href=\\\"URL\\\">https://github.com/cboxdoerfer/fsearch/wiki/Database-update</a>"
 
 #: src/fsearch_welcome_dialog.ui:232
 msgid "<big><b>Folder-Specific Rescan Schedules</b></big>"
-msgstr ""
+msgstr "<big><b>Ratiba za Kuchanganua tena Folda Maalum</b></big>"
 
 #: src/fsearch_welcome_dialog.ui:246
 msgid ""
 "You can now configure automatic update intervals for individual folders "
 "independently and tailored to each distinct location."
-msgstr ""
+msgstr "Sasa unaweza kusanidi vipindi vya kusasisha kiotomatiki kwa folda mahususi kwa kujitegemea na kulenga kila eneo mahususi."
 
 #: src/fsearch_welcome_dialog.ui:309
 msgid "<big><b>Improved Exclude Rules</b></big>"
-msgstr ""
+msgstr "<big><b>Zilizoboreshwa Usijumuishe Sheria</b></big>"
 
 #: src/fsearch_welcome_dialog.ui:323
 msgid ""
@@ -1867,18 +2197,20 @@ msgid ""
 "Rules can be targeted specifically at files, folders, or both, and can be "
 "configured to match against either the basename or the full absolute path."
 msgstr ""
+"Sasa unaweza kutumia kadi-mwitu na maneno ya kawaida ili kufafanua kuwatenga sheria zenye nguvu zaidi. \n"
+"Sheria zinaweza kulenga faili, folda, au zote mbili, na zinaweza kusanidiwa ili zilingane na jina la msingi au njia kamili kabisa."
 
 #: src/fsearch_window.c:749 src/menus.ui:279
 msgid "Size"
-msgstr ""
+msgstr "Ukubwa"
 
 #: src/fsearch_window.c:763 src/menus.ui:271
 msgid "Extension"
-msgstr ""
+msgstr "Ugani"
 
 #: src/fsearch_window.c:770 src/menus.ui:283
 msgid "Date Modified"
-msgstr ""
+msgstr "Tarehe Iliyorekebishwa"
 
 #: src/fsearch_window.c:784
 msgid ""
@@ -1887,201 +2219,205 @@ msgid ""
 "This sort order is not persistent, it will be reset when the search term "
 "changes."
 msgstr ""
+"Kupanga kwa <b>Aina</b> kunaweza kuchukua sekunde chache na matokeo mengi.\n"
+"\n"
+"Agizo hili la kupanga haliendelei, litawekwa upya neno la utafutaji linapobadilika."
 
 #: src/fsearch_window.ui:68
 msgid "New window"
-msgstr ""
+msgstr "Dirisha jipya"
 
 #: src/fsearch_window.ui:89
 msgid "Update database"
-msgstr ""
+msgstr "Sasisha hifadhidata"
 
 #: src/fsearch_window.ui:144 src/menus.ui:112
 msgid "Search in Path"
-msgstr ""
+msgstr "Tafuta katika Njia"
 
 #: src/fsearch_window.ui:158 src/menus.ui:116
 msgid "Match Case"
-msgstr ""
+msgstr "Kesi ya Kulinganisha"
 
 #: src/fsearch_window.ui:172 src/menus.ui:120
 msgid "Enable RegEx"
-msgstr ""
+msgstr "Washa RegEx"
 
 #: src/fsearch_window.ui:197 src/menus.ui:95
 msgid "Show Statusbar"
-msgstr ""
+msgstr "Onyesha Upau wa Hali"
 
 #: src/fsearch_window.ui:211 src/menus.ui:99
 msgid "Show Filter"
-msgstr ""
+msgstr "Onyesha Kichujio"
 
 #: src/fsearch_window.ui:225 src/menus.ui:103
 msgid "Show Search Button"
-msgstr ""
+msgstr "Onyesha Kitufe cha Kutafuta"
 
 #: src/fsearch_window.ui:275 src/fsearch_window.ui:356 src/menus.ui:129
 msgid "FSearch Online"
-msgstr ""
+msgstr "FSearch Mtandaoni"
 
 #: src/fsearch_window.ui:304 src/menus.ui:161
 msgid "About"
-msgstr ""
+msgstr "Kuhusu"
 
 #: src/fsearch_window.ui:329 src/menus.ui:47
 msgid "Quit"
-msgstr ""
+msgstr "Acha"
 
 #: src/fsearch_window.ui:372 src/fsearch_window.ui:443 src/menus.ui:131
 msgid "Donate"
-msgstr ""
+msgstr "Changia"
 
 #: src/fsearch_window.ui:387 src/menus.ui:142
 msgid "Forum"
-msgstr ""
+msgstr "Jukwaa"
 
 #: src/fsearch_window.ui:401 src/menus.ui:146
 msgid "Bug Reports and Feature Requests"
-msgstr ""
+msgstr "Ripoti za Mdudu na Maombi ya Kipengele"
 
 #: src/fsearch_window.ui:460 src/menus.ui:133
 msgid "GitHub Sponsors"
-msgstr ""
+msgstr "Wafadhili wa GitHub"
 
 #: src/fsearch_window.ui:474 src/menus.ui:137
 msgid "PayPal"
-msgstr ""
+msgstr "PayPal"
 
 #: src/fsearch_window.ui:586
 msgid "Search…"
-msgstr ""
+msgstr "Tafuta..."
 
 #: src/fsearch_window.ui:608
 msgid "Select a Filter"
-msgstr ""
+msgstr "Chagua Kichujio"
 
 #: src/fsearch_window_actions.c:110
 #, c-format
 msgid "Do you really want to open %'d file?"
 msgid_plural "Do you really want to open %'d files?"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Je, kweli unataka kufungua faili %'d?"
+msgstr[1] "Je, kweli unataka kufungua faili %'d?"
 
 #: src/fsearch_window_actions.c:115
 msgid "Opening Files…"
-msgstr ""
+msgstr "Inafungua Faili..."
 
 #: src/fsearch_window_actions.c:198
 #, c-format
 msgid "Do you really want to remove %'d file?"
 msgid_plural "Do you really want to remove %'d files?"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Je, kweli unataka kuondoa faili %'d?"
+msgstr[1] "Je, kweli unataka kuondoa faili %'d?"
 
 #: src/fsearch_window_actions.c:205
 msgid "Deleting files…"
-msgstr ""
+msgstr "Inafuta faili..."
 
 #: src/fsearch_window_actions.c:205
 msgid "Moving files to trash…"
-msgstr ""
+msgstr "Inahamisha faili hadi kwenye tupio..."
 
 #: src/fsearch_window_actions.c:238 src/fsearch_window_actions.c:533
 #: src/fsearch_window_actions.c:580
 msgid "Something went wrong."
-msgstr ""
+msgstr "Hitilafu fulani imetokea."
 
 #: src/fsearch_window_actions.c:263
 #, c-format
 msgid "Do you really want to open %'d file property window?"
 msgid_plural "Do you really want to open %'d file property windows?"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Je, kweli unataka kufungua dirisha la mali ya faili %'d?"
+msgstr[1] "Je, kweli unataka kufungua madirisha ya mali ya faili %'d?"
 
 #: src/fsearch_window_actions.c:270
 msgid "Opening file properties…"
-msgstr ""
+msgstr "Inafungua sifa za faili..."
 
 #: src/menus.ui:6
 msgid "_File"
-msgstr ""
+msgstr "_Faili"
 
 #: src/menus.ui:9
 msgid "New Window"
-msgstr ""
+msgstr "Dirisha Jipya"
 
 #: src/menus.ui:16 src/menus.ui:171
 msgid "_Open"
-msgstr ""
+msgstr "_Fungua"
 
 #: src/menus.ui:21
 msgid "Open Folder"
-msgstr ""
+msgstr "Fungua Folda"
 
 #: src/menus.ui:29
 msgid "Update Database"
-msgstr ""
+msgstr "Sasisha Hifadhidata"
 
 #: src/menus.ui:35
 msgid "Cancel Update"
-msgstr ""
+msgstr "Ghairi Usasishaji"
 
 #: src/menus.ui:42
 msgid "Close Window"
-msgstr ""
+msgstr "Funga Dirisha"
 
 #: src/menus.ui:54
 msgid "_Edit"
-msgstr ""
+msgstr "_Hariri"
 
 #: src/menus.ui:57 src/menus.ui:207
 msgid "_Copy"
-msgstr ""
+msgstr "_Nakili"
 
 #: src/menus.ui:62 src/menus.ui:228
 msgid "Cu_t"
-msgstr ""
+msgstr "Cu_t"
 
 #: src/menus.ui:69
 msgid "Select All"
-msgstr ""
+msgstr "Chagua Zote"
 
 #: src/menus.ui:74
 msgid "Deselect All"
-msgstr ""
+msgstr "Usichague Zote"
 
 #: src/menus.ui:78
 msgid "Invert Selection"
-msgstr ""
+msgstr "Geuza Uteuzi"
 
 #: src/menus.ui:92
 msgid "_View"
-msgstr ""
+msgstr "_Tazama"
 
 #: src/menus.ui:109
 msgid "_Search"
-msgstr ""
+msgstr "_Tafuta"
 
 #: src/menus.ui:126
 msgid "_Help"
-msgstr ""
+msgstr "_Msaada"
 
 #: src/menus.ui:177
 msgid "Open _With"
-msgstr ""
+msgstr "Fungua _Na"
 
 #: src/menus.ui:191
 msgid "_Open Folder"
-msgstr ""
+msgstr "_Fungua Folda"
 
 #: src/menus.ui:213
 msgid "Copy as Text"
-msgstr ""
+msgstr "Nakili kama Maandishi"
 
 #: src/menus.ui:223
 msgid "Path + Name"
-msgstr ""
+msgstr "Njia + Jina"
 
 #: src/menus.ui:236
 msgid "Move to _Trash"
-msgstr ""
+msgstr "Hamisha hadi _Tupio"
+
