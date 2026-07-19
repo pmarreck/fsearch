@@ -147,6 +147,26 @@ while IFS= read -r catalog; do
 	if ! msgcmp --use-fuzzy --use-untranslated "$catalog" "$pot_file" >/dev/null 2>&1; then
 		fail "stale catalog template: ${catalog#"$source_root/"}"
 	fi
+
+	# Data-quality regression: MT catalogs must not carry cross-language contamination
+	# that gettext validation cannot see. (1) The Gaelic CLI-help example comments
+	# "# eolaire reatha"/"# cás-íogair" once fell back from ga's phrase table into other
+	# languages; they are legitimate ONLY in po/ga.po. (2) The product name must stay the
+	# literal "FSearch" (an MT run introduced "FSSearch"/"FSarch").
+	if [ "$(basename "$catalog")" != ga.po ]; then
+		for irish_fragment in 'eolaire reatha' 'cás-íogair'; do
+			if grep -qF "$irish_fragment" "$catalog"; then
+				fail "Irish string \"$irish_fragment\" leaked into ${catalog#"$source_root/"} (use the target language or the English source comment, never Gaelic)"
+			fi
+		done
+	fi
+	if grep -qE 'FSSearch|FSarch' "$catalog"; then
+		fail "misspelled product name in ${catalog#"$source_root/"}: must be the literal \"FSearch\""
+	fi
+	if ! grep -qF 'FSearch' "$catalog"; then
+		fail "product name \"FSearch\" missing from ${catalog#"$source_root/"}"
+	fi
+
 	if awk '/^msgid_plural / { found = 1 } END { exit !found }' "$catalog" \
 		&& ! has_concrete_plural_forms "$catalog"; then
 		fail "catalog with plural entries lacks concrete Plural-Forms: ${catalog#"$source_root/"}"
