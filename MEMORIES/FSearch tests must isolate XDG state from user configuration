@@ -1,0 +1,18 @@
+FSearch resolves its persistent configuration and index through GLib's user
+config and data directories. Any test that enters the application with the
+caller's ordinary environment can therefore overwrite the live
+`~/.config/fsearch/fsearch.conf` or database even when the test body appears
+to use temporary paths.
+
+Contain the entire test process with a private `FSEARCH_TEST_ROOT`, `HOME`,
+and XDG config/data/cache/state/runtime directories. The top-level `./test`
+runner must source its `capture` helper using the real home first, then pass
+the private environment *after* `nix develop -c` so Nix retains its normal
+client cache while the command under test is isolated. Direct Meson tests need
+their own Meson `environment()` object, and both Nix check phases must export
+the same complete XDG set. Create `XDG_RUNTIME_DIR` with mode 0700.
+
+Keep two regression controls: a C Meson test checks the direct-Meson values,
+and a shell test checks the top-level and Nix paths. The standalone CLI test
+also self-isolates so invoking it directly remains safe. The red state is an
+unset `FSEARCH_TEST_ROOT`; do not weaken this into a best-effort convention.

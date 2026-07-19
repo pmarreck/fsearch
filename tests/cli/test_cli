@@ -4,6 +4,16 @@ set -u
 
 binary=${1:?usage: test_cli /path/to/fsearch}
 failures=0
+test_root=$(mktemp -d "${TMPDIR:-/tmp}/fsearch-cli-test-state.XXXXXX")
+mkdir -p "$test_root/home" "$test_root/config" "$test_root/data" "$test_root/cache" "$test_root/state" "$test_root/runtime"
+chmod 700 "$test_root/runtime"
+export FSEARCH_TEST_ROOT="$test_root"
+export HOME="$test_root/home"
+export XDG_CONFIG_HOME="$test_root/config"
+export XDG_DATA_HOME="$test_root/data"
+export XDG_CACHE_HOME="$test_root/cache"
+export XDG_STATE_HOME="$test_root/state"
+export XDG_RUNTIME_DIR="$test_root/runtime"
 
 fail() {
 	printf 'FAIL: %s\n' "$1" >&2
@@ -170,7 +180,5 @@ assert_success_contains 'config filters remove' 'My PDFs' "${config_env[@]}" "$b
 assert_success_not_contains 'config filter removal persists' 'My PDFs' "${config_env[@]}" "$binary" config filters list
 assert_success_contains 'config filters reset' 'filters reset' "${config_env[@]}" "$binary" config filters reset
 assert_success_contains 'config default filters restored' 'Documents' "${config_env[@]}" "$binary" config filters list
-
-rm -rf "$config_tmp"
 
 exit "$failures"

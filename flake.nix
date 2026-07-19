@@ -9,6 +9,17 @@
       perSystem = system:
         let
           pkgs = import nixpkgs { inherit system; };
+          testEnvironment = ''
+            export FSEARCH_TEST_ROOT="$TMPDIR/fsearch-test-state"
+            export HOME="$FSEARCH_TEST_ROOT/home"
+            export XDG_CONFIG_HOME="$FSEARCH_TEST_ROOT/config"
+            export XDG_DATA_HOME="$FSEARCH_TEST_ROOT/data"
+            export XDG_CACHE_HOME="$FSEARCH_TEST_ROOT/cache"
+            export XDG_STATE_HOME="$FSEARCH_TEST_ROOT/state"
+            export XDG_RUNTIME_DIR="$FSEARCH_TEST_ROOT/runtime"
+            mkdir -p "$HOME" "$XDG_CONFIG_HOME" "$XDG_DATA_HOME" "$XDG_CACHE_HOME" "$XDG_STATE_HOME" "$XDG_RUNTIME_DIR"
+            chmod 700 "$XDG_RUNTIME_DIR"
+          '';
           fsearch = pkgs.stdenv.mkDerivation {
             pname = "fsearch";
             version = "0.3-beta2";
@@ -45,6 +56,8 @@
             doCheck = true;
             checkPhase = ''
               runHook preCheck
+              ${testEnvironment}
+              bash $src/tests/isolation/test_environment
               meson test --print-errorlogs
               bash $src/tests/static-analysis .. .
               bash $src/tests/i18n/test_translate_po $src/tools/translate-po
@@ -78,6 +91,8 @@
                 pkgs.ripgrep
               ] ++ pkgs.lib.optionals pkgs.stdenv.hostPlatform.isLinux [ pkgs.glibc.bin ];
             } ''
+              ${testEnvironment}
+              bash ${self}/tests/isolation/test_environment
               bash ${self}/tests/i18n/test_required_locales ${self}/tools/check-required-locales
               bash ${self}/tools/check-required-locales ${self} --warn
               ${pkgs.lib.optionalString pkgs.stdenv.hostPlatform.isLinux ''

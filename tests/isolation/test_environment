@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+
+set -u
+
+failures=0
+
+fail() {
+	printf 'test environment: %s\n' "$*" >&2
+	failures=$((failures + 1))
+}
+
+root=${FSEARCH_TEST_ROOT-}
+if [ -z "$root" ]; then
+	fail 'FSEARCH_TEST_ROOT is unset'
+fi
+
+while IFS=: read -r variable suffix; do
+	value=${!variable-}
+	expected="$root/$suffix"
+	if [ "$value" != "$expected" ]; then
+		fail "$variable is '$value', expected '$expected'"
+	fi
+done <<'PATHS'
+HOME:home
+XDG_CONFIG_HOME:config
+XDG_DATA_HOME:data
+XDG_CACHE_HOME:cache
+XDG_STATE_HOME:state
+XDG_RUNTIME_DIR:runtime
+PATHS
+
+exit "$failures"

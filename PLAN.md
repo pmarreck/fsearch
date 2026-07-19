@@ -1,5 +1,10 @@
 # Plan
 
+- [ ] Independently review and merge the completed 64-locale translation branch, then change the required-locale gate from WARN-only to blocking.
+  Curiosity poke: structural gettext checks can prove catalog integrity but not low-resource language meaning, so retain a representative maker-independent semantic spot-check and document residual native-review risk.
+- [x] Isolate every test execution path from the caller's FSearch configuration and data directories. Completed 2026-07-19 09:09 EDT.
+  Red tests first required a private `FSEARCH_TEST_ROOT`; the top-level runner, direct Meson registration, standalone CLI suite, package check phase, and Nix test derivation now set isolated HOME/XDG config/data/cache/state/runtime paths. `./test` and `nix build .#checks.x86_64-linux.test` passed, and Peter's live configuration remained unchanged at its `/home` root with no temporary test path.
+
 - [x] Repair the Nix GTK runtime wrapper so native file choosers can discover their GSettings schema, and lock it with a release-wrapper regression. Completed 2026-07-18 01:56 EDT.
   `wrapGAppsHook3` now packages GTK schemas, GIO modules, and pixbuf data into the release launcher while preserving `LOCALE_ARCHIVE`; the exact Nix check validates the installed wrapper in its isolated sandbox.
 
