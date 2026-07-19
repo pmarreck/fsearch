@@ -2420,4 +2420,3 @@ msgstr "Shtegu + Emri"
 #: src/menus.ui:236
 msgid "Move to _Trash"
 msgstr "Kalo te _Trash"
-

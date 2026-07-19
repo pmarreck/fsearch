@@ -2416,4 +2416,3 @@ msgstr "ផ្លូវ + ឈ្មោះ"
 #: src/menus.ui:236
 msgid "Move to _Trash"
 msgstr "ផ្លាស់ទីទៅ _ ធុងសំរាម"
-

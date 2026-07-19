@@ -2420,4 +2420,3 @@ msgstr "መንገድ + ስም"
 #: src/menus.ui:236
 msgid "Move to _Trash"
 msgstr "ወደ _መጣያ ውሰድ"
-

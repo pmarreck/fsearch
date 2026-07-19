@@ -2420,4 +2420,3 @@ msgstr "Slóð + nafn"
 #: src/menus.ui:236
 msgid "Move to _Trash"
 msgstr "Færa í _ruslið"
-

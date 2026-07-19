@@ -2420,4 +2420,3 @@ msgstr "مسیر + نام"
 #: src/menus.ui:236
 msgid "Move to _Trash"
 msgstr "به _Trash بروید"
-

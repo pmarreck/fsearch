@@ -2420,4 +2420,3 @@ msgstr "পথ + নাম"
 #: src/menus.ui:236
 msgid "Move to _Trash"
 msgstr "_ট্র্যাশে সরান"
-

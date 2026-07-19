@@ -2420,4 +2420,3 @@ msgstr "Njia + Jina"
 #: src/menus.ui:236
 msgid "Move to _Trash"
 msgstr "Hamisha hadi _Tupio"
-

@@ -2420,4 +2420,3 @@ msgstr "பாதை + பெயர்"
 #: src/menus.ui:236
 msgid "Move to _Trash"
 msgstr "_குப்பைக்கு நகர்த்தவும்"
-

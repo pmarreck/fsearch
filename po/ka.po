@@ -2424,4 +2424,3 @@ msgstr "გზა + სახელი"
 #: src/menus.ui:236
 msgid "Move to _Trash"
 msgstr "გადატანა _Trash-ში"
-

@@ -2416,4 +2416,3 @@ msgstr "Đường dẫn + Tên"
 #: src/menus.ui:236
 msgid "Move to _Trash"
 msgstr "Di chuyển đến _Thùng rác"
-

@@ -2420,4 +2420,3 @@ msgstr "ਮਾਰਗ+ਨਾਮ"
 #: src/menus.ui:236
 msgid "Move to _Trash"
 msgstr "_ਰੱਦੀ ਵਿੱਚ ਭੇਜੋ"
-

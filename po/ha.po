@@ -2420,4 +2420,3 @@ msgstr "Hanya + Suna"
 #: src/menus.ui:236
 msgid "Move to _Trash"
 msgstr "Matsar zuwa _Shara"
-
