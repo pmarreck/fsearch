@@ -1,7 +1,7 @@
 # Plan
 
 - [ ] Independently review and merge the completed 64-locale translation branch, then change the required-locale gate from WARN-only to blocking.
-  Curiosity poke: structural gettext checks can prove catalog integrity but not low-resource language meaning, so retain a representative maker-independent semantic spot-check and document residual native-review risk.
+  Independent review on 2026-07-19 accepted the branch's strict gettext/key/format checks but rejected semantic defects in 22 target-language CLI-help entries (copied Irish example comments) and a Khmer `FSSearch` typo. The correction request is in `../fsearch-i18n/inbox/2026-07-19-independent-review-semantic-blockers.md`; re-review its focused regression before merging. Curiosity poke: structural gettext checks can prove catalog integrity but not low-resource language meaning, so retain a representative maker-independent semantic spot-check and document residual native-review risk.
 - [x] Isolate every test execution path from the caller's FSearch configuration and data directories. Completed 2026-07-19 09:09 EDT.
   Red tests first required a private `FSEARCH_TEST_ROOT`; the top-level runner, direct Meson registration, standalone CLI suite, package check phase, and Nix test derivation now set isolated HOME/XDG config/data/cache/state/runtime paths. `./test` and `nix build .#checks.x86_64-linux.test` passed, and Peter's live configuration remained unchanged at its `/home` root with no temporary test path.
 
