@@ -99,6 +99,20 @@ has_portable_root_output_format() {
 	' "$1"
 }
 
+assert_ai_owned_header_provenance() {
+	local locale catalog header
+	for locale in ar ca et frc ga gl hu ie ka mr prs sk sv te tzm ur zgh; do
+		catalog="$po_dir/$locale.po"
+		header=$(sed -n '1,/^$/p' "$catalog")
+		if [[ "$header" == *'hosted.weblate.org'* ]]; then
+			fail "AI-majority catalog retains hosted Weblate provenance: po/$locale.po"
+		fi
+		if [[ "$header" != *'"X-Generator: tools/translate-po\n"'* ]]; then
+			fail "AI-majority catalog lacks tools/translate-po provenance: po/$locale.po"
+		fi
+	done
+}
+
 for source in src/fsearch_cli.c src/fsearch_cli_config.c; do
 	if ! contains_line "$source" "$potfiles_file"; then
 		fail "missing CLI source from POTFILES.in: $source"
@@ -134,6 +148,8 @@ fi
 if ! has_portable_root_output_format "$cli_pot"; then
 	fail 'CLI root output format is not portable gettext text with six string placeholders'
 fi
+
+assert_ai_owned_header_provenance
 
 while IFS= read -r catalog; do
 	case "$catalog" in

@@ -1,7 +1,7 @@
 # Plan
 
-- [ ] Independently review and merge the completed 64-locale translation branch, then change the required-locale gate from WARN-only to blocking.
-  Independent review on 2026-07-19 accepted the branch's strict gettext/key/format checks but rejected semantic defects in 22 target-language CLI-help entries (copied Irish example comments) and a Khmer `FSSearch` typo. The correction request is in `../fsearch-i18n/inbox/2026-07-19-independent-review-semantic-blockers.md`; re-review its focused regression before merging. Curiosity poke: structural gettext checks can prove catalog integrity but not low-resource language meaning, so retain a representative maker-independent semantic spot-check and document residual native-review risk.
+- [x] Independently review and merge the completed 64-locale translation branch, then change the required-locale gate from WARN-only to blocking. Completed 2026-07-19 11:52 EDT.
+  Independent review rejected copied Irish CLI-help comments and a Khmer `FSSearch` typo; the corrected branch added focused semantic regressions, passed mutation checks, and fast-forwarded cleanly. The production gate and both Nix check paths now use `--strict`; all 64 required catalogs pass with no diagnostics. Curiosity poke: structural gettext checks can prove catalog integrity but not low-resource language meaning, so retain maker-independent sampling and welcome later native-speaker review.
 - [x] Isolate every test execution path from the caller's FSearch configuration and data directories. Completed 2026-07-19 09:09 EDT.
   Red tests first required a private `FSEARCH_TEST_ROOT`; the top-level runner, direct Meson registration, standalone CLI suite, package check phase, and Nix test derivation now set isolated HOME/XDG config/data/cache/state/runtime paths. `./test` and `nix build .#checks.x86_64-linux.test` passed, and Peter's live configuration remained unchanged at its `/home` root with no temporary test path.
 
@@ -67,8 +67,8 @@
   Curiosity poke: nested configuration help remains the canonical detail source, so the README must be thorough without silently inventing aliases.
 - [x] Finish the live Mechatron Prime deployment, verify the public badge endpoint, and add the fork-owned build badge. Completed 2026-07-14 19:21 EDT.
   The exact `master` push `32cc35a8` reached GitHub's FSearch-only webhook with HTTP 200 and the public `badges/fsearch.json` endpoint reported `PASSING` for the declared package, build, and test targets.
-- [ ] Replace the upstream translation badge only with an honest fork-owned completeness claim and gate.
-  The README now has an interim `10/42` checkpoint badge. Update it to a complete-coverage claim only after the strict gate covers every shipped catalog, including newly added CLI/config strings, fuzzy entries, plural forms, and RTL catalogs.
+- [x] Replace the upstream translation badge only with an honest fork-owned completeness claim and gate. Completed 2026-07-19 11:52 EDT.
+  The README reports `64/64 required` only because the protected required-locale list, gettext-format/template checks, fuzzy and untranslated checks, and strict CI wiring all pass. Interlingue remains in-tree but intentionally unenforced; Igbo is not shipped.
 - [x] Merge the 31 upstream commits added since the fork point without rewriting published history, then rerun `./test`. Completed 2026-07-14 16:32 EDT.
   The three database conflicts preserve upstream scan cancellation/race fixes plus the fork's CLI cancellation and unavailable-root invariants; version assertions now track the upstream 0.3 release.
 
@@ -78,8 +78,8 @@
   The default gate verifies syntax and current extraction on every catalog; `--complete` adds the final zero-fuzzy and zero-untranslated requirement so incremental translation checkpoints can remain buildable.
 - [x] Extract all human-facing CLI and shared-configuration strings into gettext without translating machine-readable output, query syntax, setting keys, or JSON fields. Completed 2026-07-14 18:07 EDT.
   Curiosity poke: preserve printf/GLib format placeholders exactly across translations.
-- [ ] Complete and validate translations for every shipped catalog, then make the translation badge reflect the independently checked result.
-  The current checkpoint completes `bg`, `de`, `es`, `eu`, `id`, `it`, `ja`, `nb_NO`, `pt`, `ru`, and `tr`. Curiosity poke: RTL catalogs and new strings must pass the same gate rather than inheriting an optimistic upstream percentage.
+- [x] Complete and validate translations for every required shipped catalog, then make the translation badge reflect the independently checked result. Completed 2026-07-19 11:52 EDT.
+  All 64 protected catalogs pass strict gettext, template-key, plural, fuzzy, untranslated, and exact-placeholder checks. Curiosity poke: RTL catalogs and new strings must pass the same gate rather than inheriting an optimistic upstream percentage.
 
 # Translation Reliability (2026-07-14)
 
@@ -94,10 +94,10 @@
 
 # Full Catalog Translation (2026-07-15)
 
-- [ ] Complete the four remaining required inherited catalogs: Irish (`ga`), Georgian (`ka`), Dari (`prs`), and Urdu (`ur`).
-  Run no more than two disjoint catalogs concurrently from canonical `master`, validate and commit small checkpoints, and preserve atomic per-catalog updates. Curiosity poke: rate-limit or stream failure must leave that catalog unchanged and stop the affected checkpoint.
-- [ ] Obtain an independent read-only review of each pushed translation checkpoint from `fsearch-i18n`.
-  Curiosity poke: the reviewer must validate the committed artifacts rather than trusting the producer's helper or summaries.
+- [x] Complete the four remaining required inherited catalogs: Irish (`ga`), Georgian (`ka`), Dari (`prs`), and Urdu (`ur`). Completed 2026-07-19 11:52 EDT.
+  The final branch was independently reviewed, corrected, and validated atomically through the same strict catalog controls. Curiosity poke: a rate-limit or stream failure must leave that catalog unchanged and stop the affected checkpoint.
+- [x] Obtain an independent read-only review of each pushed translation checkpoint from `fsearch-i18n`. Completed 2026-07-19 11:52 EDT.
+  The final review validated committed artifacts and correction regressions rather than trusting producer summaries.
 - [x] Checkpoint 1: complete French (`fr`) and Dutch (`nl`) through seven streamed batches each. (2026-07-15 01:16 EDT)
   Both catalogs passed strict gettext checks with zero fuzzy and untranslated entries before commit.
 - [x] Checkpoint 2: complete Polish (`pl`) and Ukrainian (`uk`) through seven streamed batches each. (2026-07-15 01:30 EDT)
@@ -139,10 +139,10 @@
   The two excluded locales are covered by a red-green integration assertion that also requires the corresponding 26-locale WARN report. This is an explicit Peter-authorized control-list and checksum update, not an unreviewed list drift.
 - [x] Scaffold the 23 missing canonical i18n catalogs with gettext-derived plural headers. Completed 2026-07-17 21:11 EDT.
   All 64 required locales now have a deterministic 388-entry catalog and are listed in `LINGUAS`; the remaining 26 catalogs stay WARN-incomplete until translated. Curiosity poke: under-resourced and RTL locales require the same structural and semantic review gates as well-resourced ones.
-- [ ] Scrub Weblate provenance only from the 17 AI-majority PO headers after all four required inherited catalogs complete.
-  Curiosity poke: compare headers and bodies independently so the 25 Weblate-majority catalogs remain byte-identical.
-- [ ] Phase 2: flip the same 64-locale completeness gate from WARN to hard failure after independent verification finds all catalogs complete.
-  Curiosity poke: mutation of a catalog or the strictness switch must make CI fail.
+- [x] Scrub Weblate provenance only from the 17 AI-majority PO headers after all four required inherited catalogs complete. Completed 2026-07-19 11:52 EDT.
+  Only the specified headers changed: hosted-Weblate language-team URLs were removed and `X-Generator` identifies `tools/translate-po`; a catalog regression checks this exact boundary so Weblate-majority catalogs remain untouched.
+- [x] Phase 2: flip the same 64-locale completeness gate from WARN to hard failure after independent verification finds all catalogs complete. Completed 2026-07-19 11:52 EDT.
+  The top-level runner and both flake check paths call `check-required-locales --strict`; regression coverage makes an absent strict path, an unblessed list mutation, or an incomplete catalog fail.
 
 # Locale Selection (2026-07-16)
 
@@ -179,5 +179,5 @@
   Independent review found Gemma had left six CLI diagnostics and Cu_t entirely English in the completed French (Canada) catalog. The fake Ollama request contract now requires explicit examples that distinguish preserved commands/options/metavariables from translatable prose and preserve one accelerator underscore. The ten FRC findings use the independently established standard-French translations. Curiosity poke: nonempty English msgstr values evade gettext completeness, so retain semantic review of local-model checkpoints.
 - [x] Send every translation backend a checked target-language name plus locale code. (2026-07-16 09:48 EDT)
   po/LOCALE_NAMES names every protected locale; requests say, for example, Irish (ga) rather than only ga, and the required-locale gate rejects a missing, malformed, duplicate, or drifted mapping. Curiosity poke: language names improve model context but cannot establish semantic quality, so local-model output still needs an independent review.
-- [ ] Translate and independently review the four required inherited catalogs, then the 23 gettext-initialized canonical catalogs, using the validated local backend.
-  Curiosity poke: under-resourced and RTL locales require structural gates plus later semantic spot-checks rather than a blind mass commit.
+- [x] Translate and independently review the four required inherited catalogs, then the 23 gettext-initialized canonical catalogs, using the validated local backend. Completed 2026-07-19 11:52 EDT.
+  All 64 required locales completed through the backend appropriate to their language capability, then passed independent structural and targeted semantic review. Curiosity poke: under-resourced and RTL locales require structural gates plus later semantic spot-checks rather than a blind mass commit.

@@ -63,7 +63,7 @@
               bash $src/tests/i18n/test_translate_po $src/tools/translate-po
               bash $src/tests/i18n/test_catalogs $src
               bash $src/tests/i18n/test_required_locales $src/tools/check-required-locales
-              bash $src/tools/check-required-locales $src --warn
+              bash $src/tools/check-required-locales $src --strict
               runHook postCheck
             '';
           };
@@ -94,7 +94,7 @@
               ${testEnvironment}
               bash ${self}/tests/isolation/test_environment
               bash ${self}/tests/i18n/test_required_locales ${self}/tools/check-required-locales
-              bash ${self}/tools/check-required-locales ${self} --warn
+              bash ${self}/tools/check-required-locales ${self} --strict
               ${pkgs.lib.optionalString pkgs.stdenv.hostPlatform.isLinux ''
                 bash ${self}/tests/package/test_gsettings_runtime ${fsearch}/bin/fsearch
               ''}

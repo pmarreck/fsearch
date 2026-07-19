@@ -1,5 +1,5 @@
 [![🤖 Mechatron Prime](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Fthelio-nixos.tail66c90.ts.net%2Fbadges%2Ffsearch.json)](https://thelio-nixos.tail66c90.ts.net/mechatron-prime/)
-[![Localized catalogs](https://img.shields.io/badge/localized%20catalogs-37%2F42-informational?style=for-the-badge)](#localization)
+[![Localized catalogs](https://img.shields.io/badge/localized%20catalogs-64%2F64%20required-brightgreen?style=for-the-badge)](#localization)
 
 FSearch is a fast file search utility, inspired by Everything Search Engine. It's written in C and based on GTK3.
 This fork also provides a non-interactive command-line interface over the same index, query engine, and configuration as
@@ -316,24 +316,28 @@ This fork localizes FSearch with AI-assisted machine translation, applied direct
 
 > Upstream project uses a slow, human-gated Weblate translation service that has taken years to add just a handful of translations when AI does high quality translation in a single afternoon. One of these things is the correct thing to be offended by.
 
-The current CLI/config localization checkpoint is complete for 37 of the 42 shipped catalogs: Arabic (`ar`), Basque
-(`eu`), Brazilian Portuguese (`pt_BR`), Bulgarian (`bg`), Catalan (`ca`), Central Atlas Tamazight (`tzm`), Dutch
-(`nl`), English (United Kingdom) (`en_GB`), Estonian (`et`), Finnish (`fi`), French (`fr`), French (Canada) (`frc`),
-Galician (`gl`), German (`de`), Greek (`el`), Hebrew (`he`), Hungarian (`hu`), Indonesian (`id`), Italian (`it`),
-Japanese (`ja`), Korean (`ko`), Lithuanian (`lt`), Marathi (`mr`), Norwegian Bokmal (`nb_NO`), Polish (`pl`),
-Portuguese (`pt`), Romanian (`ro`), Russian (`ru`), Simplified Chinese (`zh_CN`), Slovak (`sk`), Spanish (`es`),
-Standard Moroccan Tamazight (`zgh`), Swedish (`sv`), Telugu (`te`), Traditional Chinese (`zh_Hant`), Turkish (`tr`),
-and Ukrainian (`uk`). Four required inherited catalogs remain in progress. Interlingue (`ie`) and Igbo (`ig`) are
-excluded from this fork's completion claim because no available translation model met their quality floor; the upstream
-Interlingue catalog is retained but unenforced. This is not yet a complete translation-coverage claim.
+All 64 required catalogs are complete and enforced: Amharic (`am`), Arabic (`ar`), Azerbaijani (`az`), Basque (`eu`),
+Bengali (`bn`), Bosnian (`bs`), Brazilian Portuguese (`pt_BR`), Bulgarian (`bg`), Catalan (`ca`), Central Atlas
+Tamazight (`tzm`), Croatian (`hr`), Danish (`da`), Dari (`prs`), Dutch (`nl`), English (United Kingdom) (`en_GB`),
+Estonian (`et`), Filipino (`fil`), Finnish (`fi`), French (`fr`), French (Canada) (`frc`), Galician (`gl`), Georgian
+(`ka`), German (`de`), Greek (`el`), Hausa (`ha`), Hebrew (`he`), Hindi (`hi`), Hungarian (`hu`), Icelandic (`is`),
+Indonesian (`id`), Irish (`ga`), Italian (`it`), Japanese (`ja`), Khmer (`km`), Korean (`ko`), Lithuanian (`lt`),
+Macedonian (`mk`), Marathi (`mr`), Norwegian Bokmal (`nb_NO`), Pashto (`ps`), Persian (`fa`), Polish (`pl`), Portuguese
+(`pt`), Punjabi (`pa`), Romanian (`ro`), Russian (`ru`), Simplified Chinese (`zh_CN`), Slovak (`sk`), Slovenian (`sl`),
+Spanish (`es`), Standard Moroccan Tamazight (`zgh`), Swahili (`sw`), Swedish (`sv`), Tamil (`ta`), Telugu (`te`), Thai
+(`th`), Traditional Chinese (`zh_Hant`), Turkish (`tr`), Ukrainian (`uk`), Urdu (`ur`), Vietnamese (`vi`), and Yoruba
+(`yo`). Interlingue (`ie`) remains an upstream catalog but is deliberately unenforced because the available translation
+sources did not meet its semantic-quality floor; Igbo (`ig`) is not shipped as a catalog for the same reason.
 
-For maintainers, `./test` verifies every shipped catalog parses correctly, is current with the extracted template, and
-includes the human-facing CLI and configuration text. The stricter command below also requires every catalog to have no
-fuzzy or untranslated strings; it is the required gate before claiming complete translation coverage:
+`./test` and `nix flake check` block on the required-catalog gate. It verifies the exact blessed 64-locale set,
+catalog presence, template keys, gettext and printf correctness, and zero fuzzy or untranslated entries:
 
 ```bash
-nix develop -c bash tests/i18n/test_catalogs . --complete
+nix develop -c bash tools/check-required-locales . --strict
 ```
+
+`tests/i18n/test_catalogs . --complete` intentionally checks every PO file, including the retained incomplete
+Interlingue catalog, so it is not the release-completeness command for this fork.
 
 `tools/translate-po --dry-run po/LANGUAGE.po` reports the outstanding strings in one catalog without changing it.
 `tools/translate-po --apply po/LANGUAGE.po` uses the OpenAI backend by default. The local Ollama backend needs no

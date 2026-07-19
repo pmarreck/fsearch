@@ -19,6 +19,15 @@ fail() {
 	failures=$((failures + 1))
 }
 
+assert_file_contains() {
+	local path=$1
+	local expected=$2
+
+	if ! grep -Fq -- "$expected" "$path"; then
+		fail "missing strict required-locale gate in $path: $expected"
+	fi
+}
+
 write_header() {
 	printf '%s\n' \
 		'msgid ""' \
@@ -152,12 +161,16 @@ for excluded_locale in ie ig; do
 		fail "enforced locale list still contains excluded locale: $excluded_locale"
 	fi
 done
-output=$(bash "$checker" "$repository_root" --warn 2>&1)
+output=$(bash "$checker" "$repository_root" --strict 2>&1)
 rc=$?
 if [ "$rc" -ne 0 ]; then
-	fail "WARN mode rejected the authorized 64-locale set: $output"
-elif [[ "$output" != *'WARN: i18n incomplete: ka prs ur am az bn bs da fa fil ha hi hr is km mk pa ps sl sq sr sw ta th vi yo (26)'* ]]; then
-	fail "WARN mode did not report the authorized 26-locale set: $output"
+\tfail "strict mode rejected the authorized complete 64-locale set: $output"
+elif [ -n "$output" ]; then
+\tfail "strict mode leaked diagnostics for the authorized complete 64-locale set: $output"
 fi
+
+assert_file_contains "$repository_root/test" 'bash tools/check-required-locales . --strict'
+assert_file_contains "$repository_root/flake.nix" 'bash $src/tools/check-required-locales $src --strict'
+assert_file_contains "$repository_root/flake.nix" 'bash ${self}/tools/check-required-locales ${self} --strict'
 
 exit "$failures"
