@@ -1,5 +1,8 @@
 # Plan
 
+- [x] Refresh the pinned nixpkgs input so FSearch's GTK/Fontconfig closure understands the host's current Fontconfig configuration. Completed 2026-07-21 20:00 EDT.
+  The pin advanced from 2026-07-05 to 2026-07-19; the rebuilt GTK closure now links Fontconfig 2.18.1, which understands the host's `genericfamily` and `xsi:nil` configuration. `./build` and the complete `./test` suite passed. Curiosity poke: keep Nixpkgs reasonably current when host-wide Fontconfig configuration adopts new schema features.
+
 - [x] Independently review and merge the completed 64-locale translation branch, then change the required-locale gate from WARN-only to blocking. Completed 2026-07-19 11:52 EDT.
   Independent review rejected copied Irish CLI-help comments and a Khmer `FSSearch` typo; the corrected branch added focused semantic regressions, passed mutation checks, and fast-forwarded cleanly. The production gate and both Nix check paths now use `--strict`; all 64 required catalogs pass with no diagnostics. Curiosity poke: structural gettext checks can prove catalog integrity but not low-resource language meaning, so retain maker-independent sampling and welcome later native-speaker review.
 - [x] Isolate every test execution path from the caller's FSearch configuration and data directories. Completed 2026-07-19 09:09 EDT.
