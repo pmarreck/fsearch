@@ -22,11 +22,11 @@ msgstr ""
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:97
 msgid "Reduce memory usage"
-msgstr "Сокращено использование памяти"
+msgstr "Снижено использование памяти"
 
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:98
 msgid "Add contextual help for all preferences"
-msgstr "Добавлена контекстная справка для всех параметров"
+msgstr "Добавлена контекстная справка для всех настроек"
 
 #: src/fsearch.c:883
 msgid ""
@@ -670,7 +670,7 @@ msgstr "fsearch config: неизвестная команда: %s\n"
 #: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:99
 msgid "Numerous bug fixes and stability and performance improvements"
 msgstr ""
-"Многочисленные исправления ошибок и улучшения стабильности и "
+"Многочисленные исправления ошибок, а также улучшения стабильности и "
 "производительности"
 
 #: src/fsearch.c:330

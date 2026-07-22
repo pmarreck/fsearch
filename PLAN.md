@@ -1,5 +1,8 @@
 # Plan
 
+- [x] Rebase the fork onto `cboxdoerfer/fsearch:master` and reconcile the upstream catalog updates. Completed 2026-07-22 14:27 EDT.
+  The rebase incorporates 34 upstream commits. Upstream’s human Weblate edits were reviewed message-by-message rather than accepted wholesale: four clear German/Russian corrections were retained, while completed fork translations prevailed over blank, misspelled, or semantically incorrect upstream entries. The Nix derivation metadata and CLI version assertions now consistently report upstream release `0.3`. Curiosity poke: future upstream catalog updates need the same three-way, quality-aware review because structural gettext checks cannot detect degraded wording.
+
 - [x] Refresh the pinned nixpkgs input so FSearch's GTK/Fontconfig closure understands the host's current Fontconfig configuration. Completed 2026-07-21 20:00 EDT.
   The pin advanced from 2026-07-05 to 2026-07-19; the rebuilt GTK closure now links Fontconfig 2.18.1, which understands the host's `genericfamily` and `xsi:nil` configuration. `./build` and the complete `./test` suite passed. Curiosity poke: keep Nixpkgs reasonably current when host-wide Fontconfig configuration adopts new schema features.
 

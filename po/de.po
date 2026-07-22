@@ -1184,7 +1184,7 @@ msgstr "Fehler beim Entfernen der Datei"
 
 #: src/fsearch_file_utils.c:163
 msgid "Failed to get path"
-msgstr "Fehler beim Erstellen des Pfads"
+msgstr "Fehler beim Abrufen des Pfades"
 
 #: src/fsearch_file_utils.c:277
 msgctxt "Will be followed by the file path."

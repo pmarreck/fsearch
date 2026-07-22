@@ -22,7 +22,7 @@
           '';
           fsearch = pkgs.stdenv.mkDerivation {
             pname = "fsearch";
-            version = "0.3-beta2";
+            version = "0.3";
             src = self;
 
             nativeBuildInputs = with pkgs; [

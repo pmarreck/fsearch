@@ -106,9 +106,9 @@ assert_success_contains 'config exclusions help types' 'fixed|wildcard|regex' "$
 assert_success_contains 'config filters help' 'Usage: fsearch config filters' "$binary" config filters --help
 assert_success_contains 'config filters help inverse flags' '--regex, --no-regex' "$binary" config filters --help
 assert_success_contains 'CLI about' 'indexed file search for' "$binary" --cli --about
-assert_success_contains 'CLI version compatibility' 'FSearch 0.3-beta2' "$binary" --cli --version
+assert_success_contains 'CLI version compatibility' 'FSearch 0.3' "$binary" --cli --version
 assert_success_contains 'environment-selected CLI help' '--unlimit' env FSEARCH_UI=CLI "$binary" --help
-assert_success_contains 'explicit GUI overrides CLI environment' 'FSearch 0.3-beta2' env FSEARCH_UI=CLI "$binary" --gui --version
+assert_success_contains 'explicit GUI overrides CLI environment' 'FSearch 0.3' env FSEARCH_UI=CLI "$binary" --gui --version
 assert_success_contains 'CLI --lang selects French in C locale' 'Utilisation : fsearch --cli' env LC_ALL=C.utf8 "$binary" --cli --lang fr --help
 assert_success_contains 'FSEARCH_LANG selects French in C locale' 'Utilisation : fsearch --cli' env LC_ALL=C.utf8 FSEARCH_LANG=fr "$binary" --cli --help
 assert_success_contains 'CLI --lang overrides FSEARCH_LANG' 'Verwendung: fsearch --cli' env LC_ALL=C.utf8 FSEARCH_LANG=fr "$binary" --cli --lang de --help
