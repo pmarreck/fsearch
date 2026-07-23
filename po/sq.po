@@ -2420,3 +2420,42 @@ msgstr "Shtegu + Emri"
 #: src/menus.ui:236
 msgid "Move to _Trash"
 msgstr "Kalo te _Trash"
+
+#: src/fsearch_cli.c:169
+msgid "Using stale FSearch index; automatic reindexing is disabled."
+msgstr ""
+"Po përdoret një indeks FSearch i vjetër; riridërtimi automatik është i çuar "
+"jashtë."
+
+#: src/fsearch_cli.c:239
+msgid ""
+"\n"
+"Index refresh options:\n"
+"  --refresh, --refresh-index    Rescan before searching\n"
+"  --no-reindex                  Use the existing index without rescanning\n"
+"  --reindex-interval SECONDS    Refresh when the index is this old\n"
+msgstr ""
+"\n"
+"Opsionet e rifreskimit të indeksit:\n"
+"  --refresh, --refresh-index    Rifresko para kërkimesës\n"
+"  --no-reindex                  Përdor indeksin ekzistues pa rifreskim\n"
+"  --reindex-interval SECONDS    Rifresko kur indeksi është këtë i vjetër\n"
+
+#: src/fsearch_cli.c:526
+msgid "fsearch: --reindex-interval requires a non-negative number of seconds\n"
+msgstr "fsearch: --reindex-interval kërkon një numër sekondashh të papozitiv\n"
+
+#: src/fsearch_cli.c:577
+msgid "fsearch: index is unavailable and automatic reindexing is disabled\n"
+msgstr ""
+"fsearch: indeksi nuk është i disponueshëm dhe riridërtimi automatik është i "
+"çuar jashtë\n"
+
+#: src/fsearch_cli_config.c:145
+msgid "Additional scalar section: database.\n"
+msgstr "Seksioni shtesë skalari: database.\n"
+
+#: src/fsearch_file_utils.c:384 src/fsearch_file_utils.c:515
+msgctxt "Will be followed by the file path."
+msgid "Error when opening file"
+msgstr "Gabim gjatë hapjes së dosjes"

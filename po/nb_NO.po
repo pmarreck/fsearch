@@ -2935,3 +2935,41 @@ msgstr "Flytt til _papirkurv"
 
 #~ msgid "C_ut"
 #~ msgstr "Klipp _ut"
+
+#: src/fsearch_cli.c:169
+msgid "Using stale FSearch index; automatic reindexing is disabled."
+msgstr ""
+"Bruker utdatert FSearch-indeks; automatisk gjenindeksering er deaktivert."
+
+#: src/fsearch_cli.c:239
+msgid ""
+"\n"
+"Index refresh options:\n"
+"  --refresh, --refresh-index    Rescan before searching\n"
+"  --no-reindex                  Use the existing index without rescanning\n"
+"  --reindex-interval SECONDS    Refresh when the index is this old\n"
+msgstr ""
+"\n"
+"Alternativer for oppdatering av indeks:\n"
+"  --refresh, --refresh-index    Skann på nytt før søk\n"
+"  --no-reindex                  Bruk eksisterende indeks uten ny skanning\n"
+"  --reindex-interval SECONDS    Oppdater når indeksen er så gammel\n"
+
+#: src/fsearch_cli.c:526
+msgid "fsearch: --reindex-interval requires a non-negative number of seconds\n"
+msgstr "fsearch: --reindex-interval krever et ikke-negativt antall sekunder\n"
+
+#: src/fsearch_cli.c:577
+msgid "fsearch: index is unavailable and automatic reindexing is disabled\n"
+msgstr ""
+"fsearch: indeksen er utilgjengelig og automatisk gjenindeksering er "
+"deaktivert\n"
+
+#: src/fsearch_cli_config.c:145
+msgid "Additional scalar section: database.\n"
+msgstr "Tilleggsseksjon for skalarer: database.\n"
+
+#: src/fsearch_file_utils.c:384 src/fsearch_file_utils.c:515
+msgctxt "Will be followed by the file path."
+msgid "Error when opening file"
+msgstr "Feil ved åpning av fil"

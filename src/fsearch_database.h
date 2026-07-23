@@ -54,4 +54,11 @@ fsearch_database_new(GFile *file,
                      FsearchDatabaseIncludeManager *include_manager,
                      FsearchDatabaseExcludeManager *exclude_manager);
 
+// Configures the next database load before work is queued. This lets a deliberate stale-index
+// policy bypass configuration comparison and suppresses loader-triggered background scans.
+void
+fsearch_database_set_load_policy(FsearchDatabase *self,
+                                 gboolean allow_stale_configuration,
+                                 gboolean allow_startup_scans);
+
 G_END_DECLS

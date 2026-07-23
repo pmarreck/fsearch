@@ -59,6 +59,13 @@ on_search_finished(FsearchDatabase *db, guint id, FsearchDatabaseSearchInfo *inf
 }
 
 static void
+on_load_finished(FsearchDatabase *db, FsearchDatabaseInfo *info, gpointer user_data) {
+    WaitCtx *ctx = user_data;
+    ctx->got_signal = TRUE;
+    g_main_loop_quit(ctx->loop);
+}
+
+static void
 on_item_info_ready(FsearchDatabase *db, guint id, guint idx, FsearchDatabaseEntryInfo *info, gpointer user_data) {
     WaitCtx *ctx = user_data;
     ctx->got_signal = TRUE;
@@ -234,6 +241,78 @@ test_rescan_with_unavailable_root_keeps_database_searchable(void) {
     g_rmdir(tmp_dir);
 }
 
+static void
+test_load_policy_can_use_stale_index_after_configuration_change(void) {
+    g_autofree char *tmp_dir = g_dir_make_tmp("fsearch-test-database-stale-XXXXXX", NULL);
+    g_assert_nonnull(tmp_dir);
+    g_autofree char *indexed_file = g_build_filename(tmp_dir, "indexed.txt", NULL);
+    g_assert_true(g_file_set_contents(indexed_file, "", 0, NULL));
+    g_autofree char *db_path = g_build_filename(tmp_dir, "fsearch-test.db", NULL);
+
+    g_autoptr(FsearchDatabaseIncludeManager) original_includes = fsearch_database_include_manager_new();
+    g_autoptr(FsearchDatabaseInclude) original_include =
+        fsearch_database_include_new(tmp_dir, TRUE, FALSE, FALSE, FALSE, 0);
+    fsearch_database_include_manager_add(original_includes, original_include);
+    g_autoptr(FsearchDatabaseExcludeManager) excludes = fsearch_database_exclude_manager_new();
+    g_autoptr(GFile) original_file = g_file_new_for_path(db_path);
+    FsearchDatabase *original = fsearch_database_new(g_steal_pointer(&original_file), original_includes, excludes);
+    g_assert_cmpint(fsearch_database_rescan_blocking(original), ==, FSEARCH_RESULT_SUCCESS);
+    g_object_unref(original);
+
+    g_autoptr(FsearchDatabaseIncludeManager) changed_includes = fsearch_database_include_manager_new();
+    g_autoptr(FsearchDatabaseInclude) changed_include =
+        fsearch_database_include_new("/intentionally/different", TRUE, FALSE, FALSE, FALSE, 0);
+    fsearch_database_include_manager_add(changed_includes, changed_include);
+    g_autoptr(GFile) stale_file = g_file_new_for_path(db_path);
+    FsearchDatabase *stale = fsearch_database_new(g_steal_pointer(&stale_file), changed_includes, excludes);
+    fsearch_database_set_load_policy(stale, TRUE, FALSE);
+
+    WaitCtx ctx = {};
+    gulong load_finished_handler = g_signal_connect(stale, "load-finished", G_CALLBACK(on_load_finished), &ctx);
+    g_autoptr(FsearchDatabaseWork) load_work = fsearch_database_work_new_load();
+    fsearch_database_queue_work(stale, load_work);
+    wait_for_signal(&ctx);
+    g_signal_handler_disconnect(stale, load_finished_handler);
+
+    g_autoptr(FsearchDatabaseInfo) info = NULL;
+    g_assert_cmpint(fsearch_database_try_get_database_info(stale, &info), ==, FSEARCH_RESULT_SUCCESS);
+    g_autoptr(FsearchDatabaseIncludeManager) loaded_includes = fsearch_database_info_get_include_manager(info);
+    GPtrArray *loaded_roots = fsearch_database_include_manager_get_includes(loaded_includes);
+    g_assert_cmpuint(loaded_roots->len, ==, 1);
+    FsearchDatabaseInclude *loaded_root = g_ptr_array_index(loaded_roots, 0);
+    g_assert_cmpstr(fsearch_database_include_get_path(loaded_root), ==, tmp_dir);
+
+    g_object_unref(stale);
+    g_unlink(db_path);
+    g_unlink(indexed_file);
+    g_rmdir(tmp_dir);
+}
+
+static void
+test_dispose_persists_current_index(void) {
+    g_autofree char *tmp_dir = g_dir_make_tmp("fsearch-test-database-dispose-XXXXXX", NULL);
+    g_assert_nonnull(tmp_dir);
+    g_autofree char *indexed_file = g_build_filename(tmp_dir, "indexed.txt", NULL);
+    g_assert_true(g_file_set_contents(indexed_file, "", 0, NULL));
+    g_autofree char *db_path = g_build_filename(tmp_dir, "fsearch-test.db", NULL);
+
+    g_autoptr(FsearchDatabaseIncludeManager) includes = fsearch_database_include_manager_new();
+    g_autoptr(FsearchDatabaseInclude) include = fsearch_database_include_new(tmp_dir, TRUE, FALSE, FALSE, FALSE, 0);
+    fsearch_database_include_manager_add(includes, include);
+    g_autoptr(FsearchDatabaseExcludeManager) excludes = fsearch_database_exclude_manager_new();
+    g_autoptr(GFile) db_file = g_file_new_for_path(db_path);
+    FsearchDatabase *db = fsearch_database_new(g_steal_pointer(&db_file), includes, excludes);
+    g_assert_cmpint(fsearch_database_rescan_blocking(db), ==, FSEARCH_RESULT_SUCCESS);
+    g_assert_cmpint(g_unlink(db_path), ==, 0);
+
+    g_object_unref(db);
+    g_assert_true(g_file_test(db_path, G_FILE_TEST_IS_REGULAR));
+
+    g_unlink(db_path);
+    g_unlink(indexed_file);
+    g_rmdir(tmp_dir);
+}
+
 int
 main(int argc, char **argv) {
     g_test_init(&argc, &argv, NULL);
@@ -242,6 +321,9 @@ main(int argc, char **argv) {
                     test_get_item_info_for_stale_index_still_signals);
     g_test_add_func("/FSearch/database/rescan_with_unavailable_root_keeps_database_searchable",
                     test_rescan_with_unavailable_root_keeps_database_searchable);
+    g_test_add_func("/FSearch/database/load_policy_can_use_stale_index_after_configuration_change",
+                    test_load_policy_can_use_stale_index_after_configuration_change);
+    g_test_add_func("/FSearch/database/dispose_persists_current_index", test_dispose_persists_current_index);
 
     return g_test_run();
 }

@@ -7,6 +7,7 @@ failures=0
 tmp_dir=$(mktemp -d)
 trap 'rm -rf "$tmp_dir"' EXIT
 catalog="$tmp_dir/catalog.po"
+header_locale_catalog="$tmp_dir/zgh.po"
 ollama_catalog="$tmp_dir/ollama-catalog.po"
 ollama_env_catalog="$tmp_dir/ollama-env-catalog.po"
 ollama_error_catalog="$tmp_dir/ollama-error-catalog.po"
@@ -25,6 +26,8 @@ ollama_slots_grouped_catalog="$tmp_dir/ollama-slots-grouped-catalog.po"
 ollama_slots_grouped_response="$tmp_dir/ollama-slots-grouped-response.json"
 ollama_slots_newline_catalog="$tmp_dir/ollama-slots-newline-catalog.po"
 ollama_slots_newline_response="$tmp_dir/ollama-slots-newline-response.json"
+ollama_slots_leading_newline_catalog="$tmp_dir/ollama-slots-leading-newline-catalog.po"
+ollama_slots_leading_newline_response="$tmp_dir/ollama-slots-leading-newline-response.json"
 ollama_batch_catalog="$tmp_dir/ollama-batch-catalog.po"
 ollama_batch_one="$tmp_dir/ollama-batch-one.po"
 ollama_batch_two="$tmp_dir/ollama-batch-two.po"
@@ -58,7 +61,9 @@ fake_bin="$tmp_dir/bin"
 locale_names="$tmp_dir/LOCALE_NAMES"
 mkdir -p "$fake_bin"
 
-printf 'xx\tTest language\n' >"$locale_names"
+printf '%s\n' \
+	$'xx\tTest language' \
+	$'zgh\tStandard Moroccan Tamazight' >"$locale_names"
 
 fail() {
 	printf 'i18n translate-po: %s\n' "$*" >&2
@@ -101,6 +106,16 @@ printf '%s\n' \
 	'#: source-two' \
 	'msgid "two"' \
 	'msgstr ""' >"$catalog"
+
+sed 's/"Language: xx\\n"/"Language: ber\\n"/' "$catalog" >"$header_locale_catalog"
+
+output=$(run_translator --dry-run "$header_locale_catalog" 2>&1)
+rc=$?
+if [ "$rc" -ne 0 ]; then
+	fail "did not resolve a catalog filename when its Language header uses an alias: $output"
+elif [[ "$output" != *'locale ber'* ]]; then
+	fail "changed the catalog header locale while resolving its filename alias: $output"
+fi
 
 cp "$catalog" "$ollama_catalog"
 cp "$catalog" "$ollama_env_catalog"
@@ -212,6 +227,17 @@ printf '%s\n' \
 	'msgid "Literal source \\n"' \
 	'msgstr ""' >"$ollama_slots_newline_catalog"
 printf '%s\n' '{"translations":["Ligne source unique","Une ligne source","Plusieurs lignes source","Source litterale"]}' >"$ollama_slots_newline_response"
+
+printf '%s\n' \
+	'msgid ""' \
+	'msgstr ""' \
+	'"Language: xx\n"' \
+	'"Content-Type: text/plain; charset=UTF-8\n"' \
+	'"Content-Transfer-Encoding: 8bit\n"' \
+	'' \
+	'msgid "\nIndex refresh options\n"' \
+	'msgstr ""' >"$ollama_slots_leading_newline_catalog"
+printf '%s\n' '{"translations":["\n\nOptions de rafraîchissement"]}' >"$ollama_slots_leading_newline_response"
 
 header "$format_catalog" >"$syntax_bad"
 printf '%s\n' \
@@ -548,6 +574,30 @@ elif ! grep -Fqx 'msgstr "Ligne source unique\n"' "$ollama_slots_newline_catalog
 	|| ! grep -Fqx 'msgstr[1] "Plusieurs lignes source\n"' "$ollama_slots_newline_catalog" \
 	|| ! grep -Fqx 'msgstr "Source litterale"' "$ollama_slots_newline_catalog"; then
 	fail 'translation-slot rendering did not preserve source terminal newlines'
+fi
+
+output=$(env -u OPENAI_API_KEY FAKE_OLLAMA_URL=http://127.0.0.1:11434 \
+	FAKE_OLLAMA_RESPONSE_PATH="$ollama_slots_leading_newline_response" PATH="$fake_ollama_bin:$PATH" \
+	bash "$translator" --apply --backend ollama "$ollama_slots_leading_newline_catalog" 2>&1)
+rc=$?
+if [ "$rc" -ne 0 ]; then
+	fail "did not preserve source leading newlines in Ollama translation slots: $output"
+elif ! awk '
+	$0 == "msgid \"\"" {
+		getline source_first_line
+		getline source_second_line
+		source = source_first_line == "\"\\n\"" && source_second_line == "\"Index refresh options\\n\""
+		next
+	}
+	source && $0 == "msgstr \"\"" {
+		getline first_line
+		getline second_line
+		if (first_line == "\"\\n\"" && second_line == "\"Options de rafraîchissement\\n\"")
+			found = 1
+	}
+	END { exit !found }
+' "$ollama_slots_leading_newline_catalog"; then
+	fail 'translation-slot rendering did not normalize source leading newlines'
 fi
 
 cp "$ollama_env_catalog" "$ollama_slots_invalid_catalog"

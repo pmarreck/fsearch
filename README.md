@@ -164,10 +164,30 @@ fsearch --cli --global --search 'ext:pdf' --unlimit 2>/dev/null
 
 ### Index loading, updates, and interruption
 
-CLI mode reuses the GUI's persisted index; it does not walk the filesystem for every query. If the index is missing or
-its configured roots or exclusions have changed, the CLI rebuilds it before completing the search. The update notice
-goes to stderr. On an interactive terminal, an indeterminate status line reports the observed entry count, scan rate,
-and current path without inventing a completion percentage.
+CLI mode and the GUI use the same persisted index and the same refresh policy; neither walks the filesystem for every
+query. The default `auto` policy rebuilds when the index is missing or unreadable, its configured roots or exclusions
+changed, or an active root's last scan is at least two hours old. The update notice goes to stderr. On an interactive
+terminal, an indeterminate status line reports the observed entry count, scan rate, and current path without inventing
+a completion percentage.
+
+Override one invocation without changing the saved configuration:
+
+```bash
+fsearch --cli --global --refresh --search invoice
+fsearch --cli --global --refresh-index --search invoice
+fsearch --cli --global --no-reindex --search invoice
+fsearch --cli --global --reindex-interval 1800 --search invoice
+```
+
+`--refresh` and `--refresh-index` are synonyms and always rescan before searching. `--no-reindex` never scans: it can
+search a readable stale index and reports that choice on stderr, but fails clearly if no readable index exists.
+`--reindex-interval SECONDS` changes only the age threshold for that invocation; `0` disables age-based rebuilding but
+does not suppress a rebuild required by a missing index or changed configuration. When refresh options conflict, the
+later command-line option wins.
+
+The same defaults can be set for one process with `FSEARCH_REFRESH_MODE=auto|always|never` and
+`FSEARCH_REFRESH_INTERVAL=SECONDS`. Environment values override the saved configuration; CLI refresh options override
+both. Neither environment variables nor CLI options write configuration files.
 
 To rescan the configured index without searching:
 
@@ -198,7 +218,7 @@ General configuration commands:
 | `fsearch config doctor` | Check whether configuration and index state agree |
 
 Run `fsearch config show` to discover every scalar key and its current value. The available sections are `search`,
-`application`, `window`, `ui`, `columns`, `sort`, and `dialogs`.
+`database`, `application`, `window`, `ui`, `columns`, `sort`, and `dialogs`.
 
 ```bash
 fsearch config show search
@@ -206,9 +226,15 @@ fsearch config show search --json
 fsearch config get search.match-case
 fsearch config set search.match-case true
 fsearch config unset search.match-case
+fsearch config get database.refresh-mode
+fsearch config set database.refresh-interval 7200
 fsearch config reset search --yes
 fsearch config doctor
 ```
+
+`database.refresh-mode` accepts `auto`, `always`, or `never`; `database.refresh-interval` is a non-negative number of
+seconds and defaults to `7200`. These are shared application settings, so they apply consistently to GUI launches and
+CLI searches. A value of `0` disables only automatic age-based refreshes.
 
 #### Indexed roots
 
@@ -253,9 +279,9 @@ fsearch config filters reset
 `filters add` and `filters set` accept `--query QUERY`, `--macro MACRO`, `--case`/`--no-case`,
 `--path`/`--no-path`, and `--regex`/`--no-regex`. Paired switches and other conflicting options use the later value.
 
-Root and exclusion changes mark the existing index stale. The next CLI search rebuilds it automatically, or `--rescan`
-can apply the change immediately. `show`, `get`, and collection `list` commands support `--json` for scripts. Use the
-nested help pages for the canonical syntax:
+Root and exclusion changes mark the existing index stale. The next CLI or GUI startup rebuilds it under the default
+`auto` refresh policy, or `--rescan` can apply the change immediately. `show`, `get`, and collection `list` commands
+support `--json` for scripts. Use the nested help pages for the canonical syntax:
 
 ```bash
 fsearch config roots --help

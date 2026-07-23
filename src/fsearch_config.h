@@ -24,6 +24,7 @@
 
 #include "fsearch_database_exclude_manager.h"
 #include "fsearch_database_include_manager.h"
+#include "fsearch_database_refresh_policy.h"
 #include "fsearch_filter_manager.h"
 #include "fsearch_query_flags.h"
 
@@ -116,6 +117,9 @@ struct _FsearchConfig {
 
     FsearchDatabaseIncludeManager *includes;
     FsearchDatabaseExcludeManager *excludes;
+
+    FsearchDatabaseRefreshMode database_refresh_mode;
+    int64_t database_refresh_interval;
 };
 
 bool

@@ -2843,3 +2843,38 @@ msgstr "Eraman _zakarrontzira"
 
 #~ msgid "Do you want to keep the window open?"
 #~ msgstr "Leihoa zabalik mantendu nahi duzu?"
+
+#: src/fsearch_cli.c:169
+msgid "Using stale FSearch index; automatic reindexing is disabled."
+msgstr "FSearch indize zaharkitua erabiltzen; berrindexatze automatikoa desgaituta dago."
+
+#: src/fsearch_cli.c:239
+msgid ""
+"\n"
+"Index refresh options:\n"
+"  --refresh, --refresh-index    Rescan before searching\n"
+"  --no-reindex                  Use the existing index without rescanning\n"
+"  --reindex-interval SECONDS    Refresh when the index is this old\n"
+msgstr ""
+"\n"
+"Indizea berritzeko aukerak:\n"
+"  --refresh, --refresh-index    Berreskaneatu bilatu aurretik\n"
+"  --no-reindex                  Erabili lehendik dagoen indizea berreskaneatu gabe\n"
+"  --reindex-interval SECONDS    Berritu indizea hain zaharra denean\n"
+
+#: src/fsearch_cli.c:526
+msgid "fsearch: --reindex-interval requires a non-negative number of seconds\n"
+msgstr "fsearch: --reindex-interval aukerak segundo kopuru ez-negatibo bat behar du\n"
+
+#: src/fsearch_cli.c:577
+msgid "fsearch: index is unavailable and automatic reindexing is disabled\n"
+msgstr "fsearch: indizea ez dago erabilgarri eta berrindexatze automatikoa desgaituta dago\n"
+
+#: src/fsearch_cli_config.c:145
+msgid "Additional scalar section: database.\n"
+msgstr "Atal eskalar gehigarria: database.\n"
+
+#: src/fsearch_file_utils.c:384 src/fsearch_file_utils.c:515
+msgctxt "Will be followed by the file path."
+msgid "Error when opening file"
+msgstr "Errorea fitxategia irekitzean"

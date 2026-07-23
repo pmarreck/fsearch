@@ -1,5 +1,8 @@
 # Plan
 
+- [x] Add one shared GUI/CLI database-refresh policy with auto, always, and never modes; a two-hour default interval; persistent configuration; environment defaults; and CLI-only overrides. Completed 2026-07-22 22:00 EDT.
+  The pure policy module gives both frontends identical missing, stale, and age-expired decisions; config, environment, and later CLI flags resolve in documented precedence. CLI refreshes now explicitly save the completed index before search, and database disposal preserves the last complete store instead of cancelling its queued save. Curiosity poke: `never` must neither hide a configuration mismatch nor make a readable old index unusable; it reports stale use clearly and fails only when no readable index exists.
+
 - [x] Rebase the fork onto `cboxdoerfer/fsearch:master` and reconcile the upstream catalog updates. Completed 2026-07-22 14:27 EDT.
   The rebase incorporates 34 upstream commits. Upstream’s human Weblate edits were reviewed message-by-message rather than accepted wholesale: four clear German/Russian corrections were retained, while completed fork translations prevailed over blank, misspelled, or semantically incorrect upstream entries. The Nix derivation metadata and CLI version assertions now consistently report upstream release `0.3`. Curiosity poke: future upstream catalog updates need the same three-way, quality-aware review because structural gettext checks cannot detect degraded wording.
 

@@ -2622,3 +2622,41 @@ msgstr "Databas"
 
 #~ msgid "0"
 #~ msgstr "0"
+
+#: src/fsearch_cli.c:169
+msgid "Using stale FSearch index; automatic reindexing is disabled."
+msgstr ""
+"Använder föråldrad FSearch-index; automatisk omindexering är avaktiverad."
+
+#: src/fsearch_cli.c:239
+msgid ""
+"\n"
+"Index refresh options:\n"
+"  --refresh, --refresh-index    Rescan before searching\n"
+"  --no-reindex                  Use the existing index without rescanning\n"
+"  --reindex-interval SECONDS    Refresh when the index is this old\n"
+msgstr ""
+"\n"
+"Alternativ för indexuppdatering:\n"
+"  --refresh, --refresh-index    Skanna av igen före sökning\n"
+"  --no-reindex                  Använd befintligt index utan att skanna av\n"
+"  --reindex-interval SECONDS    Uppdatera när indexet är denna gamla\n"
+
+#: src/fsearch_cli.c:526
+msgid "fsearch: --reindex-interval requires a non-negative number of seconds\n"
+msgstr "fsearch: --reindex-interval kräver ett icke-negativt antal sekunder\n"
+
+#: src/fsearch_cli.c:577
+msgid "fsearch: index is unavailable and automatic reindexing is disabled\n"
+msgstr ""
+"fsearch: index är ej tillgängligt och automatisk omindexering är "
+"avaktiverad\n"
+
+#: src/fsearch_cli_config.c:145
+msgid "Additional scalar section: database.\n"
+msgstr "Ytterligare skalär sektion: database.\n"
+
+#: src/fsearch_file_utils.c:384 src/fsearch_file_utils.c:515
+msgctxt "Will be followed by the file path."
+msgid "Error when opening file"
+msgstr "Fel när filen öppnades"

@@ -41,7 +41,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-typedef enum { SCALAR_BOOL, SCALAR_INT, SCALAR_UINT, SCALAR_STRING, SCALAR_OPEN_ACTION } ScalarType;
+typedef enum { SCALAR_BOOL, SCALAR_INT, SCALAR_INT64, SCALAR_UINT, SCALAR_STRING, SCALAR_OPEN_ACTION, SCALAR_REFRESH_MODE } ScalarType;
 
 typedef struct {
     const char *key;
@@ -51,6 +51,7 @@ typedef struct {
 
 #define BOOL_SETTING(key, member) {key, SCALAR_BOOL, offsetof(FsearchConfig, member)}
 #define INT_SETTING(key, member) {key, SCALAR_INT, offsetof(FsearchConfig, member)}
+#define INT64_SETTING(key, member) {key, SCALAR_INT64, offsetof(FsearchConfig, member)}
 #define UINT_SETTING(key, member) {key, SCALAR_UINT, offsetof(FsearchConfig, member)}
 #define STRING_SETTING(key, member) {key, SCALAR_STRING, offsetof(FsearchConfig, member)}
 
@@ -62,6 +63,8 @@ static const ScalarSetting scalar_settings[] = {
     BOOL_SETTING("search.auto-path", auto_search_in_path),
     BOOL_SETTING("search.auto-case", auto_match_case),
     BOOL_SETTING("search.as-you-type", search_as_you_type),
+    {"database.refresh-mode", SCALAR_REFRESH_MODE, offsetof(FsearchConfig, database_refresh_mode)},
+    INT64_SETTING("database.refresh-interval", database_refresh_interval),
     STRING_SETTING("application.folder-open-command", folder_open_cmd),
     BOOL_SETTING("window.restore-size", restore_window_size),
     INT_SETTING("window.width", window_width),
@@ -139,6 +142,7 @@ print_help(void) {
             "  fsearch config excludes add '*.tmp' --type wildcard --scope basename --target files\n"
             "  fsearch config filters add Documents --query 'ext:pdf' --macro docs\n"
             "  fsearch config reset search --yes\n"));
+    g_print("%s", _("Additional scalar section: database.\n"));
 }
 
 static gboolean
@@ -304,12 +308,16 @@ scalar_value(const ScalarSetting *setting, const FsearchConfig *config) {
         return g_strdup(*(const bool *)ptr ? "true" : "false");
     case SCALAR_INT:
         return g_strdup_printf("%d", *(const int32_t *)ptr);
+    case SCALAR_INT64:
+        return g_strdup_printf("%" G_GINT64_FORMAT, *(const int64_t *)ptr);
     case SCALAR_UINT:
         return g_strdup_printf("%u", *(const uint32_t *)ptr);
     case SCALAR_STRING:
         return g_strdup(*(char *const *)ptr ? *(char *const *)ptr : "");
     case SCALAR_OPEN_ACTION:
         return g_strdup(action_name(*(const FsearchConfigActionAfterOpen *)ptr));
+    case SCALAR_REFRESH_MODE:
+        return g_strdup(fsearch_database_refresh_mode_to_string(*(const FsearchDatabaseRefreshMode *)ptr));
     }
     return NULL;
 }
@@ -341,6 +349,13 @@ set_scalar_value(const ScalarSetting *setting, FsearchConfig *config, const char
         *(int32_t *)ptr = (int32_t)parsed;
         return TRUE;
     }
+    case SCALAR_INT64: {
+        const gint64 parsed = g_ascii_strtoll(value, &end, 10);
+        if (!end || *end || parsed < 0)
+            return FALSE;
+        *(int64_t *)ptr = parsed;
+        return TRUE;
+    }
     case SCALAR_UINT: {
         const guint64 parsed = g_ascii_strtoull(value, &end, 10);
         if (!end || *end || parsed > G_MAXUINT32)
@@ -362,6 +377,8 @@ set_scalar_value(const ScalarSetting *setting, FsearchConfig *config, const char
         else
             return FALSE;
         return TRUE;
+    case SCALAR_REFRESH_MODE:
+        return fsearch_database_refresh_mode_from_string(value, ptr);
     }
     return FALSE;
 }
@@ -377,6 +394,9 @@ copy_scalar_value(const ScalarSetting *setting, FsearchConfig *dest, const Fsear
     case SCALAR_INT:
         *(int32_t *)dest_ptr = *(const int32_t *)source_ptr;
         break;
+    case SCALAR_INT64:
+        *(int64_t *)dest_ptr = *(const int64_t *)source_ptr;
+        break;
     case SCALAR_UINT:
         *(uint32_t *)dest_ptr = *(const uint32_t *)source_ptr;
         break;
@@ -386,6 +406,9 @@ copy_scalar_value(const ScalarSetting *setting, FsearchConfig *dest, const Fsear
         break;
     case SCALAR_OPEN_ACTION:
         *(FsearchConfigActionAfterOpen *)dest_ptr = *(const FsearchConfigActionAfterOpen *)source_ptr;
+        break;
+    case SCALAR_REFRESH_MODE:
+        *(FsearchDatabaseRefreshMode *)dest_ptr = *(const FsearchDatabaseRefreshMode *)source_ptr;
         break;
     }
 }
@@ -457,7 +480,7 @@ run_get(FsearchConfig *config, int argc, char *argv[]) {
     g_autofree char *value = scalar_value(setting, config);
     if (json) {
         g_autofree char *quoted = setting->type == SCALAR_BOOL || setting->type == SCALAR_INT
-                                       || setting->type == SCALAR_UINT
+                                       || setting->type == SCALAR_INT64 || setting->type == SCALAR_UINT
                                     ? g_strdup(value)
                                     : json_quote(value);
         g_print("{\"%s\":%s}\n", setting->key, quoted);
@@ -513,7 +536,7 @@ run_show(FsearchConfig *config, int argc, char *argv[]) {
         g_autofree char *value = scalar_value(setting, config);
         if (json) {
             g_autofree char *encoded = setting->type == SCALAR_BOOL || setting->type == SCALAR_INT
-                                            || setting->type == SCALAR_UINT
+                                            || setting->type == SCALAR_INT64 || setting->type == SCALAR_UINT
                                          ? g_strdup(value)
                                          : json_quote(value);
             g_print("%s\"%s\":%s", first ? "" : ",", setting->key, encoded);

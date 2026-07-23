@@ -56,6 +56,8 @@ struct _FsearchDatabase {
     FsearchDatabaseIndexStore *store;
     FsearchDatabaseIndexStore *pending_store;
     FsearchDatabaseRescanManager *rescan_manager;
+    gboolean allow_stale_configuration;
+    gboolean allow_startup_scans;
 
     GMutex mutex;
 
@@ -897,8 +899,8 @@ database_load(FsearchDatabase *self) {
     const bool res = fsearch_database_file_load(file_path,
                                                 NULL,
                                                 &store,
-                                                include_manager,
-                                                exclude_manager,
+                                                self->allow_stale_configuration ? NULL : include_manager,
+                                                self->allow_stale_configuration ? NULL : exclude_manager,
                                                 index_store_event_cb,
                                                 self);
 
@@ -914,7 +916,7 @@ database_load(FsearchDatabase *self) {
     database_set_store(self, store);
     g_clear_pointer(&self->pending_store, fsearch_database_index_store_unref);
 
-    if (self->rescan_manager) {
+    if (self->rescan_manager && self->allow_startup_scans) {
         if (!res) {
             fsearch_database_rescan_manager_request_full_scan(self->rescan_manager);
         }
@@ -1066,8 +1068,8 @@ fsearch_database_dispose(GObject *object) {
     }
     self->disposed = true;
 
-    // Cancel ongoing work
-    g_cancellable_cancel(self->cancellable);
+    // Cancel an in-flight filesystem walk, but keep the worker alive long enough for its queued
+    // quit work to serialize the last complete store.
     fsearch_database_cancel_scan(self);
 
     // Notify worker  thread to exit itself
@@ -1336,6 +1338,7 @@ fsearch_database_init(FsearchDatabase *self) {
     self->worker_ctx = g_main_context_new();
     self->worker_loop = g_main_loop_new(self->worker_ctx, FALSE);
     self->worker_thread = g_thread_new("FsearchDatabaseWorker", database_worker_thread, self);
+    self->allow_startup_scans = TRUE;
 
     self->rescan_manager = fsearch_database_rescan_manager_new(NULL,
                                                                on_index_scan_requested,
@@ -1356,6 +1359,16 @@ fsearch_database_new(GFile *file,
                         "exclude_manager",
                         exclude_manager,
                         NULL);
+}
+
+void
+fsearch_database_set_load_policy(FsearchDatabase *self,
+                                 gboolean allow_stale_configuration,
+                                 gboolean allow_startup_scans) {
+    g_return_if_fail(FSEARCH_IS_DATABASE(self));
+
+    self->allow_stale_configuration = allow_stale_configuration;
+    self->allow_startup_scans = allow_startup_scans;
 }
 
 // endregion

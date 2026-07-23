@@ -2781,3 +2781,38 @@ msgstr "_చెత్తబుట్ట లో వేయుము"
 
 #~ msgid "Show Menubar"
 #~ msgstr "మెన్యూ బార్ ని చూపుము"
+
+#: src/fsearch_cli.c:169
+msgid "Using stale FSearch index; automatic reindexing is disabled."
+msgstr "పాత FSearch ఇండెక్స్‌ను ఉపయోగిస్తున్నారు; ఆటోమేటిక్ రీఇండెక్సింగ్ నిలిపివేయబడింది."
+
+#: src/fsearch_cli.c:239
+msgid ""
+"\n"
+"Index refresh options:\n"
+"  --refresh, --refresh-index    Rescan before searching\n"
+"  --no-reindex                  Use the existing index without rescanning\n"
+"  --reindex-interval SECONDS    Refresh when the index is this old\n"
+msgstr ""
+"\n"
+"ఇండెక్స్ రిఫ్రెష్ ఆప్షన్లు:\n"
+"  --refresh, --refresh-index    వెతకడానికి ముందు తిరిగి స్కాన్ చేయండి\n"
+"  --no-reindex                  రీస్కాన్ చేయకుండా ఉన్న ఇండెక్స్‌ను ఉపయోగించండి\n"
+"  --reindex-interval SECONDS    ఇండెక్స్ ఇంత పాతదైనప్పుడు రిఫ్రెష్ చేయండి\n"
+
+#: src/fsearch_cli.c:526
+msgid "fsearch: --reindex-interval requires a non-negative number of seconds\n"
+msgstr "fsearch: --reindex-interval అనేది సున్నా కంటే ఎక్కువ సెకన్లను కోరుకుంటుంది\n"
+
+#: src/fsearch_cli.c:577
+msgid "fsearch: index is unavailable and automatic reindexing is disabled\n"
+msgstr "fsearch: ఇండెక్స్ అందుబాటులో లేదు మరియు ఆటోమేటిక్ రీఇండెక్సింగ్ నిలిపివేయబడింది\n"
+
+#: src/fsearch_cli_config.c:145
+msgid "Additional scalar section: database.\n"
+msgstr "అదనపు స్కేలార్ విభాగం: డేటాబేస్.\n"
+
+#: src/fsearch_file_utils.c:384 src/fsearch_file_utils.c:515
+msgctxt "Will be followed by the file path."
+msgid "Error when opening file"
+msgstr "ఫైల్‌ను తెరచినప్పుడు దోషం"

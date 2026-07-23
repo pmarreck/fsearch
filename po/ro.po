@@ -2666,3 +2666,43 @@ msgstr "Baza de date"
 
 #~ msgid "0"
 #~ msgstr "0"
+
+#: src/fsearch_cli.c:169
+msgid "Using stale FSearch index; automatic reindexing is disabled."
+msgstr ""
+"Utilizarea unui index FSearch învechit; reindexarea automată este "
+"dezactivată."
+
+#: src/fsearch_cli.c:239
+msgid ""
+"\n"
+"Index refresh options:\n"
+"  --refresh, --refresh-index    Rescan before searching\n"
+"  --no-reindex                  Use the existing index without rescanning\n"
+"  --reindex-interval SECONDS    Refresh when the index is this old\n"
+msgstr ""
+"\n"
+"Opțiuni de actualizare a indexului:\n"
+"  --refresh, --refresh-index    Rescan înainte de căutare\n"
+"  --no-reindex                  Folosește indexul existent fără rescanning\n"
+"  --reindex-interval SECONDS    Actualizează când indexul are această "
+"vechime\n"
+
+#: src/fsearch_cli.c:526
+msgid "fsearch: --reindex-interval requires a non-negative number of seconds\n"
+msgstr "fsearch: --reindex-interval necesită un număr non-negativ de secunde\n"
+
+#: src/fsearch_cli.c:577
+msgid "fsearch: index is unavailable and automatic reindexing is disabled\n"
+msgstr ""
+"fsearch: indexul nu este disponibil și reindexarea automată este "
+"dezactivată\n"
+
+#: src/fsearch_cli_config.c:145
+msgid "Additional scalar section: database.\n"
+msgstr "Secțiune scalar suplimentară: database.\n"
+
+#: src/fsearch_file_utils.c:384 src/fsearch_file_utils.c:515
+msgctxt "Will be followed by the file path."
+msgid "Error when opening file"
+msgstr "Eroare la deschiderea fișierului"

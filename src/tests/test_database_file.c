@@ -28,6 +28,7 @@
 #include "fsearch_database_include_manager.h"
 #include "fsearch_database_index_properties.h"
 #include "fsearch_database_index_store.h"
+#include "fsearch_database_refresh_policy.h"
 
 #include <glib.h>
 #include <glib/gstdio.h>
@@ -106,6 +107,28 @@ test_save_load_roundtrip_preserves_hierarchy_and_sort_orders(void) {
 
     g_autofree char *db_path = g_build_filename(tmp_dir, "test.db", NULL);
     g_assert_true(fsearch_database_file_save(store, db_path));
+
+    const FsearchDatabaseRefreshIndexState current_state = fsearch_database_refresh_index_state_inspect(db_path,
+                                                                                                            include_manager,
+                                                                                                            exclude_manager);
+    g_assert_true(current_state.readable);
+    g_assert_true(current_state.configuration_matches);
+    g_assert_cmpint(current_state.oldest_scan_time, ==, fsearch_database_include_get_last_scan_time(include));
+
+    g_autoptr(FsearchDatabaseIncludeManager) changed_includes = fsearch_database_include_manager_new();
+    g_autoptr(FsearchDatabaseInclude) changed_include =
+        fsearch_database_include_new(subdir, TRUE, FALSE, FALSE, FALSE, 0);
+    fsearch_database_include_manager_add(changed_includes, changed_include);
+    const FsearchDatabaseRefreshIndexState mismatched_state = fsearch_database_refresh_index_state_inspect(db_path,
+                                                                                                               changed_includes,
+                                                                                                               exclude_manager);
+    g_assert_true(mismatched_state.readable);
+    g_assert_false(mismatched_state.configuration_matches);
+
+    const FsearchDatabaseRefreshIndexState missing_state = fsearch_database_refresh_index_state_inspect("/missing/fsearch.db",
+                                                                                                            include_manager,
+                                                                                                            exclude_manager);
+    g_assert_false(missing_state.readable);
 
     // The live store's entries must be untouched from the caller's perspective: same parents as
     // before the save.

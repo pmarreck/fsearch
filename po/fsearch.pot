@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fsearch\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-14 17:04-0400\n"
+"POT-Creation-Date: 2026-07-22 20:55-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: data/io.github.cboxdoerfer.FSearch.desktop.in.in:4 src/main.c:36
+#: data/io.github.cboxdoerfer.FSearch.desktop.in.in:4 src/main.c:53
 msgid "FSearch"
 msgstr ""
 
@@ -132,225 +132,229 @@ msgstr ""
 
 #. Kept for appstreamcli < 1.0 (e.g. Ubuntu 20.04/22.04 PPA builds), which doesn't know <developer>.
 #. Translators: please do NOT translate this.
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:77
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:76
 msgid "Christian Boxdörfer"
 msgstr ""
 
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:89
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:88
 msgid "DB rewrite"
 msgstr ""
 
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:90
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:89
 msgid "DB: Add support for filesystem monitoring"
 msgstr ""
 
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:91
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:90
 msgid ""
 "DB: Allow files and folders to be excluded based on fixed patterns, "
 "wildcards or regular expressions"
 msgstr ""
 
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:92
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:91
 msgid ""
 "DB: Allow included folders to be scheduled and scanned after launch "
 "independently"
 msgstr ""
 
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:93
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:92
 msgid "DB: Make rescanning more efficient"
 msgstr ""
 
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:94
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:93
 msgid "DB: Store database config in DB file"
 msgstr ""
 
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:95
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:94
 msgid "DB: Add checksum to DB file"
 msgstr ""
 
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:96
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:95
 msgid "Make icon and file info gathering asynchronous (no UI blocking)"
 msgstr ""
 
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:97
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:96
 msgid "Reduce memory usage"
 msgstr ""
 
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:98
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:97
 msgid "Add contextual help for all preferences"
 msgstr ""
 
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:99
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:98
 msgid "Numerous bug fixes and stability and performance improvements"
 msgstr ""
 
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:106
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:105
 msgid "New search engine"
 msgstr ""
 
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:107
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:106
 msgid "Greatly improved highlighting of search terms"
 msgstr ""
 
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:108
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:107
 msgid "Custom filters"
 msgstr ""
 
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:109
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:108
 msgid "Improved sort performance"
 msgstr ""
 
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:110
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:109
 msgid "Improved scroll performance"
 msgstr ""
 
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:111
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:110
 msgid "Remember file selection after a database update"
 msgstr ""
 
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:112
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:111
 msgid "Automatically scroll the result list in rubberband selection mode"
 msgstr ""
 
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:113
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:112
 msgid "Invert selection with rubber band when 'Ctrl' is pressed"
 msgstr ""
 
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:114
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:113
 msgid "Focus search entry when the main window gets activated"
 msgstr ""
 
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:115
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:114
 msgid "Add filter for applications (i.e. .desktop files)"
 msgstr ""
 
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:116
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:115
 msgid ""
 "Add option to launch applications directly instead of opening the .desktop "
 "files"
 msgstr ""
 
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:117
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:116
 msgid "Show application icons for .desktop files"
 msgstr ""
 
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:118
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:117
 msgid "Add .odp and .ods files to document filter"
 msgstr ""
 
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:119
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:118
 msgid ""
 "'Open with' menu now only shows applications which can handle the selected "
 "files"
 msgstr ""
 
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:120
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:119
 msgid ""
 "Improved opening of multiple files with the same type (they get now passed "
 "as a list to applications, instead of one by one)"
 msgstr ""
 
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:121
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:120
 msgid "Better support for opening files in sandboxed mode"
 msgstr ""
 
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:122
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:121
 msgid ""
 "Add menu items with links to the issue tracker, forum and donation pages"
 msgstr ""
 
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:123
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:122
 msgid "Improve support for non-Linux systems"
 msgstr ""
 
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:124
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:123
 msgid ""
 "Add option to exit FSearch when Escape is pressed instead of minimizing the "
 "window"
 msgstr ""
 
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:125
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:124
 msgid "Exclude '/proc' and '/sys' by default"
 msgstr ""
 
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:126
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:125
 msgid "Open context menu when 'Menu' key or 'Shift + F10' are pressed"
 msgstr ""
 
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:127
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:126
 msgid "and tons of bug fixes, translation updates and smaller improvements"
 msgstr ""
 
-#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:133
+#: data/io.github.cboxdoerfer.FSearch.metainfo.xml.in:132
 msgid "Initial release."
 msgstr ""
 
-#: src/fsearch.c:181
+#: src/fsearch.c:182
 msgid "translator-credits"
 msgstr ""
 
-#: src/fsearch.c:183
+#: src/fsearch.c:184
 msgid "A search utility focusing on performance and advanced features"
 msgstr ""
 
-#: src/fsearch.c:330
+#: src/fsearch.c:331
 msgid "Saving database and config…"
 msgstr ""
 
-#: src/fsearch.c:786
+#: src/fsearch.c:818
 msgid "Open a new application window"
 msgstr ""
 
-#: src/fsearch.c:787
+#: src/fsearch.c:819
 msgid "Minimize the application window"
 msgstr ""
 
-#: src/fsearch.c:788
+#: src/fsearch.c:820
 msgid "Show the application preferences"
 msgstr ""
 
-#: src/fsearch.c:789
+#: src/fsearch.c:821
 msgid "Set the search pattern"
 msgstr ""
 
-#: src/fsearch.c:790
+#: src/fsearch.c:822
 msgid "Update the database and exit"
 msgstr ""
 
-#: src/fsearch.c:791
+#: src/fsearch.c:823
 msgid "Print version information and exit"
 msgstr ""
 
-#: src/fsearch.c:883
+#: src/fsearch.c:915
 msgid ""
 "For command-line search help, run: fsearch --cli --help\n"
 "For shared configuration help, run: fsearch config --help"
 msgstr ""
 
-#: src/fsearch_cli.c:125
+#: src/fsearch_cli.c:145
 #, c-format
 msgid ""
 "Results capped at %u. Use --unlimit or --unlimited to get them all, or "
 "provide a custom --limit, or set FSEARCH_RESULT_LIMIT."
 msgstr ""
 
-#: src/fsearch_cli.c:134
+#: src/fsearch_cli.c:154
 #, c-format
 msgid "%u match."
 msgid_plural "%u matches."
 msgstr[0] ""
 msgstr[1] ""
 
-#: src/fsearch_cli.c:142
+#: src/fsearch_cli.c:162
 msgid "Updating FSearch index before searching..."
 msgstr ""
 
-#: src/fsearch_cli.c:149
+#: src/fsearch_cli.c:169
+msgid "Using stale FSearch index; automatic reindexing is disabled."
+msgstr ""
+
+#: src/fsearch_cli.c:176
 #, c-format
 msgid "Indexing: %s"
 msgstr ""
 
-#: src/fsearch_cli.c:181
+#: src/fsearch_cli.c:208
 msgid ""
 "Usage: fsearch --cli [OPTIONS]\n"
 "\n"
@@ -395,41 +399,59 @@ msgid ""
 "matches a literal *.\n"
 msgstr ""
 
-#: src/fsearch_cli.c:238
+#: src/fsearch_cli.c:239
+msgid ""
+"\n"
+"Index refresh options:\n"
+"  --refresh, --refresh-index    Rescan before searching\n"
+"  --no-reindex                  Use the existing index without rescanning\n"
+"  --reindex-interval SECONDS    Refresh when the index is this old\n"
+msgstr ""
+
+#: src/fsearch_cli.c:269
 #, c-format
 msgid "FSearch %s - indexed file search for %s %s\n"
 msgstr ""
 
-#: src/fsearch_cli.c:301
+#: src/fsearch_cli.c:330
 msgid "fsearch: interrupted\n"
 msgstr ""
 
-#: src/fsearch_cli.c:315
+#: src/fsearch_cli.c:344
 msgid "fsearch: search could not run because the index is unavailable\n"
 msgstr ""
 
-#: src/fsearch_cli.c:352 src/fsearch_cli.c:381 src/fsearch_cli_config.c:774
-#: src/fsearch_cli_config.c:961 src/fsearch_cli_config.c:1147
+#: src/fsearch_cli.c:381 src/fsearch_cli.c:401 src/fsearch_cli.c:416
+#: src/fsearch_cli_config.c:800 src/fsearch_cli_config.c:987
+#: src/fsearch_cli_config.c:1173
 #, c-format
 msgid "%s\n"
 msgstr ""
 
-#: src/fsearch_cli.c:400
+#: src/fsearch_cli.c:445
 #, c-format
 msgid "%s"
 msgstr ""
 
-#: src/fsearch_cli.c:473
+#: src/fsearch_cli.c:526
+msgid "fsearch: --reindex-interval requires a non-negative number of seconds\n"
+msgstr ""
+
+#: src/fsearch_cli.c:538
 #, c-format
 msgid "fsearch: unknown CLI option: %s\n"
 msgstr ""
 
-#: src/fsearch_cli.c:495
+#: src/fsearch_cli.c:577
+msgid "fsearch: index is unavailable and automatic reindexing is disabled\n"
+msgstr ""
+
+#: src/fsearch_cli.c:585
 #, c-format
 msgid "fsearch: failed to create data directory: %s\n"
 msgstr ""
 
-#: src/fsearch_cli_config.c:111
+#: src/fsearch_cli_config.c:114
 msgid ""
 "Usage: fsearch config COMMAND [OPTIONS]\n"
 "\n"
@@ -470,45 +492,49 @@ msgid ""
 "  fsearch config reset search --yes\n"
 msgstr ""
 
-#: src/fsearch_cli_config.c:152
+#: src/fsearch_cli_config.c:145
+msgid "Additional scalar section: database.\n"
+msgstr ""
+
+#: src/fsearch_cli_config.c:156
 msgid ""
 "Usage: fsearch config show [SECTION] [--json]\n"
 "Show all scalar settings or one dotted section.\n"
 msgstr ""
 
-#: src/fsearch_cli_config.c:154
+#: src/fsearch_cli_config.c:158
 msgid ""
 "Usage: fsearch config get KEY [--json]\n"
 "Print one typed scalar value. Discover keys with 'fsearch config show'.\n"
 msgstr ""
 
-#: src/fsearch_cli_config.c:157
+#: src/fsearch_cli_config.c:161
 msgid ""
 "Usage: fsearch config set KEY VALUE\n"
 "Set a boolean, integer, string, or enumerated scalar value.\n"
 msgstr ""
 
-#: src/fsearch_cli_config.c:159
+#: src/fsearch_cli_config.c:163
 msgid ""
 "Usage: fsearch config unset KEY\n"
 "Restore one scalar setting to its built-in default.\n"
 msgstr ""
 
-#: src/fsearch_cli_config.c:161
+#: src/fsearch_cli_config.c:165
 msgid ""
 "Usage: fsearch config reset [KEY|SECTION] --yes [--rescan]\n"
 "Reset is destructive and requires --yes. --rescan applies to roots, "
 "database, excludes, or all.\n"
 msgstr ""
 
-#: src/fsearch_cli_config.c:164
+#: src/fsearch_cli_config.c:168
 msgid ""
 "Usage: fsearch config doctor\n"
 "Check configuration readability and whether the saved index uses the same "
 "roots and exclusions.\n"
 msgstr ""
 
-#: src/fsearch_cli_config.c:170
+#: src/fsearch_cli_config.c:174
 msgid ""
 "Usage: fsearch config roots COMMAND [PATH] [OPTIONS]\n"
 "\n"
@@ -527,7 +553,7 @@ msgid ""
 "  --rescan                      Rebuild the index immediately after saving\n"
 msgstr ""
 
-#: src/fsearch_cli_config.c:187
+#: src/fsearch_cli_config.c:191
 msgid ""
 "Usage: fsearch config excludes COMMAND [PATTERN|VALUE] [OPTIONS]\n"
 "\n"
@@ -546,7 +572,7 @@ msgid ""
 "  --rescan                      Rebuild the index immediately after saving\n"
 msgstr ""
 
-#: src/fsearch_cli_config.c:204
+#: src/fsearch_cli_config.c:208
 msgid ""
 "Usage: fsearch config filters COMMAND [NAME] [OPTIONS]\n"
 "\n"
@@ -565,232 +591,233 @@ msgid ""
 "  --regex, --no-regex           Treat query as a regular expression\n"
 msgstr ""
 
-#: src/fsearch_cli_config.c:265
+#: src/fsearch_cli_config.c:269
 msgid ""
 "fsearch config: close the running FSearch GUI before changing shared "
 "settings\n"
 msgstr ""
 
-#: src/fsearch_cli_config.c:269
+#: src/fsearch_cli_config.c:273
 msgid "fsearch config: failed to save configuration\n"
 msgstr ""
 
-#: src/fsearch_cli_config.c:280
+#: src/fsearch_cli_config.c:284
 msgid "Index configuration changed; the next CLI search will rebuild it.\n"
 msgstr ""
 
-#: src/fsearch_cli_config.c:416
+#: src/fsearch_cli_config.c:439
 #, c-format
 msgid "fsearch config %s: unknown option: %s\n"
 msgstr ""
 
-#: src/fsearch_cli_config.c:422
+#: src/fsearch_cli_config.c:445
 #, c-format
 msgid "fsearch config %s: unexpected argument: %s\n"
 msgstr ""
 
-#: src/fsearch_cli_config.c:449
+#: src/fsearch_cli_config.c:472
 msgid "Usage: fsearch config get KEY [--json]\n"
 msgstr ""
 
-#: src/fsearch_cli_config.c:454 src/fsearch_cli_config.c:555
+#: src/fsearch_cli_config.c:477 src/fsearch_cli_config.c:578
 #, c-format
 msgid "fsearch config: unknown setting: %s\n"
 msgstr ""
 
-#: src/fsearch_cli_config.c:502
+#: src/fsearch_cli_config.c:525
 #, c-format
 msgid "fsearch config show: unknown section: %s\n"
 msgstr ""
 
-#: src/fsearch_cli_config.c:550
+#: src/fsearch_cli_config.c:573
 #, c-format
 msgid "Usage: fsearch config %s KEY%s\n"
 msgstr ""
 
-#: src/fsearch_cli_config.c:566
+#: src/fsearch_cli_config.c:589
 #, c-format
 msgid "fsearch config: invalid value for %s: %s\n"
 msgstr ""
 
-#: src/fsearch_cli_config.c:572
+#: src/fsearch_cli_config.c:595
 #, c-format
 msgid "%s = %s\n"
 msgstr ""
 
-#: src/fsearch_cli_config.c:637
+#: src/fsearch_cli_config.c:662
 #, c-format
 msgid "fsearch config roots: unknown operation: %s\n"
 msgstr ""
 
-#: src/fsearch_cli_config.c:691
+#: src/fsearch_cli_config.c:716
 msgid "fsearch config roots: --rescan-every requires SECONDS\n"
 msgstr ""
 
-#: src/fsearch_cli_config.c:710
+#: src/fsearch_cli_config.c:735
 msgid "fsearch config roots: missing PATH\n"
 msgstr ""
 
-#: src/fsearch_cli_config.c:717 src/fsearch_cli_config.c:732
+#: src/fsearch_cli_config.c:742 src/fsearch_cli_config.c:757
 #, c-format
 msgid "fsearch config roots: path not found: %s\n"
 msgstr ""
 
-#: src/fsearch_cli_config.c:724
+#: src/fsearch_cli_config.c:749
 #, c-format
 msgid "fsearch config roots: not a directory: %s\n"
 msgstr ""
 
-#: src/fsearch_cli_config.c:728
+#: src/fsearch_cli_config.c:753
 #, c-format
 msgid "fsearch config roots: path already exists: %s\n"
 msgstr ""
 
-#: src/fsearch_cli_config.c:752
+#: src/fsearch_cli_config.c:777
 #, c-format
 msgid "fsearch config roots: invalid rescan duration: %s\n"
 msgstr ""
 
-#: src/fsearch_cli_config.c:765
+#: src/fsearch_cli_config.c:791
+#, c-format
 msgid ""
 "%s\tactive=%s monitor=%s one-file-system=%s scan-after-launch=%s rescan-"
 "after=%s\n"
 msgstr ""
 
-#: src/fsearch_cli_config.c:844
+#: src/fsearch_cli_config.c:870
 msgid "fsearch config excludes hidden: expected true or false\n"
 msgstr ""
 
-#: src/fsearch_cli_config.c:850
+#: src/fsearch_cli_config.c:876
 #, c-format
 msgid "exclude-hidden = %s\n"
 msgstr ""
 
-#: src/fsearch_cli_config.c:856
+#: src/fsearch_cli_config.c:882
 #, c-format
 msgid "fsearch config excludes: unknown operation: %s\n"
 msgstr ""
 
-#: src/fsearch_cli_config.c:877
+#: src/fsearch_cli_config.c:903
 #, c-format
 msgid "fsearch config excludes: %s requires a value\n"
 msgstr ""
 
-#: src/fsearch_cli_config.c:909
+#: src/fsearch_cli_config.c:935
 msgid "fsearch config excludes: missing PATTERN\n"
 msgstr ""
 
-#: src/fsearch_cli_config.c:914
+#: src/fsearch_cli_config.c:940
 #, c-format
 msgid "fsearch config excludes: invalid type: %s\n"
 msgstr ""
 
-#: src/fsearch_cli_config.c:919
+#: src/fsearch_cli_config.c:945
 #, c-format
 msgid "fsearch config excludes: invalid scope: %s\n"
 msgstr ""
 
-#: src/fsearch_cli_config.c:924
+#: src/fsearch_cli_config.c:950
 #, c-format
 msgid "fsearch config excludes: invalid target: %s\n"
 msgstr ""
 
-#: src/fsearch_cli_config.c:954
+#: src/fsearch_cli_config.c:980
 #, c-format
 msgid "fsearch config excludes: exclusion not found: %s\n"
 msgstr ""
 
-#: src/fsearch_cli_config.c:1022
+#: src/fsearch_cli_config.c:1048
 msgid "filters reset\n"
 msgstr ""
 
-#: src/fsearch_cli_config.c:1029
+#: src/fsearch_cli_config.c:1055
 #, c-format
 msgid "fsearch config filters: unknown operation: %s\n"
 msgstr ""
 
-#: src/fsearch_cli_config.c:1051
+#: src/fsearch_cli_config.c:1077
 #, c-format
 msgid "fsearch config filters: %s requires a value\n"
 msgstr ""
 
-#: src/fsearch_cli_config.c:1094
+#: src/fsearch_cli_config.c:1120
 msgid "fsearch config filters: missing NAME\n"
 msgstr ""
 
-#: src/fsearch_cli_config.c:1100 src/fsearch_cli_config.c:1111
+#: src/fsearch_cli_config.c:1126 src/fsearch_cli_config.c:1137
 #, c-format
 msgid "fsearch config filters: name not found: %s\n"
 msgstr ""
 
-#: src/fsearch_cli_config.c:1107
+#: src/fsearch_cli_config.c:1133
 #, c-format
 msgid "fsearch config filters: name already exists: %s\n"
 msgstr ""
 
-#: src/fsearch_cli_config.c:1145
+#: src/fsearch_cli_config.c:1171
 #, c-format
 msgid "%s\tmacro=%s query=%s\n"
 msgstr ""
 
-#: src/fsearch_cli_config.c:1193
+#: src/fsearch_cli_config.c:1219
 msgid "fsearch config reset requires --yes\n"
 msgstr ""
 
-#: src/fsearch_cli_config.c:1201
+#: src/fsearch_cli_config.c:1227
 msgid ""
 "fsearch config reset: --rescan requires roots, database, excludes, or all\n"
 msgstr ""
 
-#: src/fsearch_cli_config.c:1241
+#: src/fsearch_cli_config.c:1267
 #, c-format
 msgid "fsearch config: unknown setting or section: %s\n"
 msgstr ""
 
-#: src/fsearch_cli_config.c:1246
+#: src/fsearch_cli_config.c:1272
 #, c-format
 msgid "%s settings reset\n"
 msgstr ""
 
-#: src/fsearch_cli_config.c:1253
+#: src/fsearch_cli_config.c:1279
 msgid ""
 "configuration: missing; defaults active\n"
 "index: unknown\n"
 msgstr ""
 
-#: src/fsearch_cli_config.c:1261
+#: src/fsearch_cli_config.c:1287
 msgid ""
 "configuration: ok\n"
 "index: missing or unreadable\n"
 msgstr ""
 
-#: src/fsearch_cli_config.c:1266
+#: src/fsearch_cli_config.c:1292
 #, c-format
 msgid ""
 "configuration: ok\n"
 "index: %s\n"
 msgstr ""
 
-#: src/fsearch_cli_config.c:1266
+#: src/fsearch_cli_config.c:1292
 msgid "current"
 msgstr ""
 
-#: src/fsearch_cli_config.c:1266
+#: src/fsearch_cli_config.c:1292
 msgid "stale"
 msgstr ""
 
-#: src/fsearch_cli_config.c:1278
+#: src/fsearch_cli_config.c:1304
 msgid ""
 "Usage: fsearch config path\n"
 "Print the active FSearch configuration file path.\n"
 msgstr ""
 
-#: src/fsearch_cli_config.c:1321
+#: src/fsearch_cli_config.c:1347
 #, c-format
 msgid "fsearch config: unknown command: %s\n"
 msgstr ""
 
-#: src/fsearch_database.c:795
+#: src/fsearch_database.c:797
 msgid "Index rescan: applying changes…"
 msgstr ""
 
@@ -954,56 +981,56 @@ msgstr ""
 msgid "Exclude"
 msgstr ""
 
-#: src/fsearch_file_utils.c:161
+#: src/fsearch_file_utils.c:163
 msgctxt "Will be followed by the path of the file."
 msgid "Error when removing file"
 msgstr ""
 
-#: src/fsearch_file_utils.c:163
+#: src/fsearch_file_utils.c:165
 msgid "Failed to get path"
 msgstr ""
 
-#: src/fsearch_file_utils.c:277
+#: src/fsearch_file_utils.c:269
 msgctxt "Will be followed by the file path."
 msgid "Error when getting information from file"
 msgstr ""
 
-#: src/fsearch_file_utils.c:279
+#: src/fsearch_file_utils.c:271
 msgid "Failed to get application information"
 msgstr ""
 
-#: src/fsearch_file_utils.c:294
-msgctxt "Will be followed by the content type string."
-msgid "Error when getting information for content type"
+#: src/fsearch_file_utils.c:384 src/fsearch_file_utils.c:515
+msgctxt "Will be followed by the file path."
+msgid "Error when opening file"
 msgstr ""
 
-#: src/fsearch_file_utils.c:296
+#: src/fsearch_file_utils.c:386 src/fsearch_file_utils.c:517
 msgid "No default application registered"
 msgstr ""
 
-#: src/fsearch_file_utils.c:524
+#: src/fsearch_file_utils.c:536
 msgctxt "Will be followed by the path of the folder."
 msgid "Error when opening parent folder"
 msgstr ""
 
-#: src/fsearch_file_utils.c:526
+#: src/fsearch_file_utils.c:538
 msgid "Failed to get parent path"
 msgstr ""
 
-#: src/fsearch_file_utils.c:530
+#: src/fsearch_file_utils.c:542
 msgctxt "Will be followed by the path of the folder."
 msgid "Error while opening folder"
 msgstr ""
 
-#: src/fsearch_file_utils.c:533
+#: src/fsearch_file_utils.c:545
 msgid "Failed to build open command"
 msgstr ""
 
-#: src/fsearch_file_utils.c:589
+#: src/fsearch_file_utils.c:601
 msgid "Folder"
 msgstr ""
 
-#: src/fsearch_file_utils.c:595
+#: src/fsearch_file_utils.c:607
 msgid "Unknown Type"
 msgstr ""
 
@@ -1721,7 +1748,7 @@ msgstr ""
 msgid "Database"
 msgstr ""
 
-#: src/fsearch_result_view.c:381
+#: src/fsearch_result_view.c:483
 msgid "Invalid row data"
 msgstr ""
 

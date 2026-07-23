@@ -2898,3 +2898,42 @@ msgstr "ゴミ箱に移動(_T)"
 
 #~ msgid "Selected Folder and Files"
 #~ msgstr "選択されたフォルダとファイル"
+
+#: src/fsearch_cli.c:169
+msgid "Using stale FSearch index; automatic reindexing is disabled."
+msgstr ""
+"古いFSearchインデックスを使用しています。自動再インデックスは無効になっていま"
+"す。"
+
+#: src/fsearch_cli.c:239
+msgid ""
+"\n"
+"Index refresh options:\n"
+"  --refresh, --refresh-index    Rescan before searching\n"
+"  --no-reindex                  Use the existing index without rescanning\n"
+"  --reindex-interval SECONDS    Refresh when the index is this old\n"
+msgstr ""
+"\n"
+"インデックス更新オプション:\n"
+"  --refresh, --refresh-index    検索前に再スキャンする\n"
+"  --no-reindex                  再スキャンせずに既存のインデックスを使用す"
+"る\n"
+"  --reindex-interval SECONDS    インデックスがこの期間経過した際に更新する\n"
+
+#: src/fsearch_cli.c:526
+msgid "fsearch: --reindex-interval requires a non-negative number of seconds\n"
+msgstr "fsearch: --reindex-interval は非負の秒数を必要とします\n"
+
+#: src/fsearch_cli.c:577
+msgid "fsearch: index is unavailable and automatic reindexing is disabled\n"
+msgstr ""
+"fsearch: インデックスが利用できず、自動再インデックスが無効になっています\n"
+
+#: src/fsearch_cli_config.c:145
+msgid "Additional scalar section: database.\n"
+msgstr "追加のスカラーセクション: database。\n"
+
+#: src/fsearch_file_utils.c:384 src/fsearch_file_utils.c:515
+msgctxt "Will be followed by the file path."
+msgid "Error when opening file"
+msgstr "ファイルを開く際のエラー"

@@ -2318,3 +2318,38 @@ msgstr "Conair + Ainm"
 #: src/menus.ui:236
 msgid "Move to _Trash"
 msgstr "Bogadh go dtí an _Bruscar"
+
+#: src/fsearch_cli.c:169
+msgid "Using stale FSearch index; automatic reindexing is disabled."
+msgstr "Innéacs FSearch as dáta á úsáid; tá athinnéacsú uathoibríoch díchumasaithe."
+
+#: src/fsearch_cli.c:239
+msgid ""
+"\n"
+"Index refresh options:\n"
+"  --refresh, --refresh-index    Rescan before searching\n"
+"  --no-reindex                  Use the existing index without rescanning\n"
+"  --reindex-interval SECONDS    Refresh when the index is this old\n"
+msgstr ""
+"\n"
+"Roghanna athnuachana innéacs:\n"
+"  --refresh, --refresh-index    Athscan roimh chuardach\n"
+"  --no-reindex                  Úsáid an t-innéacs atá ann gan athscanadh\n"
+"  --reindex-interval SECONDS    Athnuaigh nuair atá an t-innéacs chomh sean seo\n"
+
+#: src/fsearch_cli.c:526
+msgid "fsearch: --reindex-interval requires a non-negative number of seconds\n"
+msgstr "fsearch: éilíonn --reindex-interval líon neamhdhiúltach soicindí\n"
+
+#: src/fsearch_cli.c:577
+msgid "fsearch: index is unavailable and automatic reindexing is disabled\n"
+msgstr "fsearch: níl an t-innéacs ar fáil agus tá athinnéacsú uathoibríoch díchumasaithe\n"
+
+#: src/fsearch_cli_config.c:145
+msgid "Additional scalar section: database.\n"
+msgstr "Rannán scálach breise: database.\n"
+
+#: src/fsearch_file_utils.c:384 src/fsearch_file_utils.c:515
+msgctxt "Will be followed by the file path."
+msgid "Error when opening file"
+msgstr "Earráid agus comhad á oscailt"

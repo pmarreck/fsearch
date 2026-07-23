@@ -3082,3 +3082,45 @@ msgstr "Enviar a la _papelera"
 
 #~ msgid "Selected Folder and Files"
 #~ msgstr "Seleccionar carpetas y archivos"
+
+#: src/fsearch_cli.c:169
+msgid "Using stale FSearch index; automatic reindexing is disabled."
+msgstr ""
+"Utilizando un índice de FSearch obsoleto; el reindexado automático está "
+"desactivado."
+
+#: src/fsearch_cli.c:239
+msgid ""
+"\n"
+"Index refresh options:\n"
+"  --refresh, --refresh-index    Rescan before searching\n"
+"  --no-reindex                  Use the existing index without rescanning\n"
+"  --reindex-interval SECONDS    Refresh when the index is this old\n"
+msgstr ""
+"\n"
+"Opciones de actualización del índice:\n"
+"  --refresh, --refresh-index    Volver a escanear antes de buscar\n"
+"  --no-reindex                  Usar el índice existente sin volver a "
+"escanear\n"
+"  --reindex-interval SECONDS    Actualizar cuando el índice tenga esta "
+"antigüedad\n"
+
+#: src/fsearch_cli.c:526
+msgid "fsearch: --reindex-interval requires a non-negative number of seconds\n"
+msgstr ""
+"fsearch: --reindex-interval requiere un número no negativo de segundos\n"
+
+#: src/fsearch_cli.c:577
+msgid "fsearch: index is unavailable and automatic reindexing is disabled\n"
+msgstr ""
+"fsearch: el índice no está disponible y el reindexado automático está "
+"desactivado\n"
+
+#: src/fsearch_cli_config.c:145
+msgid "Additional scalar section: database.\n"
+msgstr "Sección escalar adicional: database.\n"
+
+#: src/fsearch_file_utils.c:384 src/fsearch_file_utils.c:515
+msgctxt "Will be followed by the file path."
+msgid "Error when opening file"
+msgstr "Error al abrir el archivo"

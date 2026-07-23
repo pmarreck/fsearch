@@ -2691,3 +2691,41 @@ msgstr "Presunúť do koša"
 
 #~ msgid "Selected Folder and Files"
 #~ msgstr "Vybraté súbory a priečinky"
+
+#: src/fsearch_cli.c:169
+msgid "Using stale FSearch index; automatic reindexing is disabled."
+msgstr ""
+"Používa sa zastarý index FSearch; automatické preindexovanie je vypnuté."
+
+#: src/fsearch_cli.c:239
+msgid ""
+"\n"
+"Index refresh options:\n"
+"  --refresh, --refresh-index    Rescan before searching\n"
+"  --no-reindex                  Use the existing index without rescanning\n"
+"  --reindex-interval SECONDS    Refresh when the index is this old\n"
+msgstr ""
+"\n"
+"Možnosti obnovy indexu:\n"
+"  --refresh, --refresh-index    Opätovné skenovanie pred vyhľadávaním\n"
+"  --no-reindex                  Použitie existujúceho indexu bez opätovného "
+"skenovania\n"
+"  --reindex-interval SECONDS    Obnovenie, keď je index tento vek\n"
+
+#: src/fsearch_cli.c:526
+msgid "fsearch: --reindex-interval requires a non-negative number of seconds\n"
+msgstr "fsearch: --reindex-interval vyžaduje nezáporné číslo sekund\n"
+
+#: src/fsearch_cli.c:577
+msgid "fsearch: index is unavailable and automatic reindexing is disabled\n"
+msgstr ""
+"fsearch: index nie je k dispozícii a automatické preindexovanie je vypnuté\n"
+
+#: src/fsearch_cli_config.c:145
+msgid "Additional scalar section: database.\n"
+msgstr "Dodatková skalárna sekcia: databáza.\n"
+
+#: src/fsearch_file_utils.c:384 src/fsearch_file_utils.c:515
+msgctxt "Will be followed by the file path."
+msgid "Error when opening file"
+msgstr "Chyba pri otváraní súboru"

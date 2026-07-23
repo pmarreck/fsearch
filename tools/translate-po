@@ -152,9 +152,24 @@ render_translation_slots() {
 			return suffix
 		}
 
-		function preserve_terminal_newlines(encoded, source_value,    encoded_value, source_suffix, encoded_suffix) {
+		function leading_escaped_newlines(value,    prefix) {
+			if (substr(value, 1, 1) == "\"")
+				value = substr(value, 2)
+			prefix = ""
+			while (substr(value, 1, 2) == "\\n") {
+				prefix = prefix "\\n"
+				value = substr(value, 3)
+			}
+			return prefix
+		}
+
+		function preserve_boundary_newlines(encoded, source_value,    encoded_value, source_prefix, encoded_prefix, source_suffix, encoded_suffix) {
 			encoded_value = encoded
 			sub(/"$/, "", encoded_value)
+			source_prefix = leading_escaped_newlines(source_value)
+			encoded_prefix = leading_escaped_newlines(encoded_value)
+			encoded_value = "\"" substr(encoded_value, 2 + length(encoded_prefix))
+			encoded_value = "\"" source_prefix substr(encoded_value, 2)
 			source_suffix = trailing_escaped_newlines(source_value)
 			encoded_suffix = trailing_escaped_newlines(encoded_value)
 			if (encoded_suffix != "")
@@ -223,7 +238,7 @@ render_translation_slots() {
 			else
 				source_value = source_msgid
 			encoded = restore_grouped_decimal_flag(encoded, source_value)
-			encoded = preserve_terminal_newlines(encoded, source_value)
+			encoded = preserve_boundary_newlines(encoded, source_value)
 			print substr($0, 1, quote - 1) encoded
 			skip_translation_continuations = 1
 			next
@@ -259,6 +274,8 @@ locale_display_name() {
 	local locale=$2
 	local names_file
 	local display_name
+	local catalog_locale
+	local resolved_locale=$locale
 
 	names_file="$(dirname "$catalog")/LOCALE_NAMES"
 	if [ ! -f "$names_file" ]; then
@@ -268,11 +285,18 @@ locale_display_name() {
 
 	display_name=$(awk -F '\t' -v locale="$locale" '$1 == locale { print $2; exit }' "$names_file")
 	if [ -z "$display_name" ]; then
+		catalog_locale=$(basename "$catalog" .po)
+		display_name=$(awk -F '\t' -v locale="$catalog_locale" '$1 == locale { print $2; exit }' "$names_file")
+		if [ -n "$display_name" ]; then
+			resolved_locale=$catalog_locale
+		fi
+	fi
+	if [ -z "$display_name" ]; then
 		printf 'translate-po: locale %s has no display name in %s\n' "$locale" "$names_file" >&2
 		return 1
 	fi
 
-	printf '%s (%s)' "$display_name" "$locale"
+	printf '%s (%s)' "$display_name" "$resolved_locale"
 }
 
 count_translation_slots() {

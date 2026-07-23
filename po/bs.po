@@ -2424,3 +2424,43 @@ msgstr "Putanja + Ime"
 #: src/menus.ui:236
 msgid "Move to _Trash"
 msgstr "Premjesti u _Trash"
+
+#: src/fsearch_cli.c:169
+msgid "Using stale FSearch index; automatic reindexing is disabled."
+msgstr ""
+"Koristi se zastarjeli FSearch indeks; automatsko ponovno indeksiranje je "
+"onemogućeno."
+
+#: src/fsearch_cli.c:239
+msgid ""
+"\n"
+"Index refresh options:\n"
+"  --refresh, --refresh-index    Rescan before searching\n"
+"  --no-reindex                  Use the existing index without rescanning\n"
+"  --reindex-interval SECONDS    Refresh when the index is this old\n"
+msgstr ""
+"\n"
+"Opcije osvježavanja indeksa:\n"
+"  --refresh, --refresh-index    Ponovno skeniraj prije pretraživanja\n"
+"  --no-reindex                  Koristi postojeći indeks bez ponovnog "
+"skeniranja\n"
+"  --reindex-interval SECONDS    Osvježi kada je indeks star toliko sekundi\n"
+
+#: src/fsearch_cli.c:526
+msgid "fsearch: --reindex-interval requires a non-negative number of seconds\n"
+msgstr "fsearch: --reindex-interval zahtijeva nekonativni broj sekundi\n"
+
+#: src/fsearch_cli.c:577
+msgid "fsearch: index is unavailable and automatic reindexing is disabled\n"
+msgstr ""
+"fsearch: indeks nije dostupan i automatsko ponovno indeksiranje je "
+"onemogućeno\n"
+
+#: src/fsearch_cli_config.c:145
+msgid "Additional scalar section: database.\n"
+msgstr "Dodatni skalarni odsek: baza podataka.\n"
+
+#: src/fsearch_file_utils.c:384 src/fsearch_file_utils.c:515
+msgctxt "Will be followed by the file path."
+msgid "Error when opening file"
+msgstr "Greška pri otvaranju datoteke"

@@ -1,6 +1,7 @@
 #include "fsearch_cli.h"
 #include "fsearch_cli_config.h"
 #include "fsearch_config.h"
+#include "fsearch_database_refresh_policy.h"
 #include "fsearch_database_include.h"
 #include "fsearch_database_include_manager.h"
 #include "fsearch_locale.h"
@@ -245,6 +246,123 @@ test_result_limit_precedence(void) {
 }
 
 static void
+test_database_refresh_policy(void) {
+    const gint64 now = 10 * FSEARCH_DATABASE_REFRESH_DEFAULT_INTERVAL_SECONDS;
+    const FsearchDatabaseRefreshIndexState fresh = {
+        .readable = TRUE,
+        .configuration_matches = TRUE,
+        .oldest_scan_time = now - FSEARCH_DATABASE_REFRESH_DEFAULT_INTERVAL_SECONDS + 1,
+    };
+    const FsearchDatabaseRefreshIndexState expired = {
+        .readable = TRUE,
+        .configuration_matches = TRUE,
+        .oldest_scan_time = now - FSEARCH_DATABASE_REFRESH_DEFAULT_INTERVAL_SECONDS,
+    };
+    const FsearchDatabaseRefreshIndexState mismatched = {
+        .readable = TRUE,
+        .configuration_matches = FALSE,
+        .oldest_scan_time = now,
+    };
+    const FsearchDatabaseRefreshIndexState unreadable = {
+        .readable = FALSE,
+        .configuration_matches = FALSE,
+        .oldest_scan_time = 0,
+    };
+
+    g_assert_cmpint(fsearch_database_refresh_policy_decide(FSEARCH_DATABASE_REFRESH_MODE_AUTO,
+                                                            FSEARCH_DATABASE_REFRESH_DEFAULT_INTERVAL_SECONDS,
+                                                            &fresh,
+                                                            now),
+                    ==,
+                    FSEARCH_DATABASE_REFRESH_ACTION_NONE);
+    g_assert_cmpint(fsearch_database_refresh_policy_decide(FSEARCH_DATABASE_REFRESH_MODE_AUTO,
+                                                            FSEARCH_DATABASE_REFRESH_DEFAULT_INTERVAL_SECONDS,
+                                                            &expired,
+                                                            now),
+                    ==,
+                    FSEARCH_DATABASE_REFRESH_ACTION_REFRESH);
+    g_assert_cmpint(fsearch_database_refresh_policy_decide(FSEARCH_DATABASE_REFRESH_MODE_AUTO,
+                                                            FSEARCH_DATABASE_REFRESH_DEFAULT_INTERVAL_SECONDS,
+                                                            &mismatched,
+                                                            now),
+                    ==,
+                    FSEARCH_DATABASE_REFRESH_ACTION_REFRESH);
+    g_assert_cmpint(fsearch_database_refresh_policy_decide(FSEARCH_DATABASE_REFRESH_MODE_AUTO,
+                                                            FSEARCH_DATABASE_REFRESH_DEFAULT_INTERVAL_SECONDS,
+                                                            &unreadable,
+                                                            now),
+                    ==,
+                    FSEARCH_DATABASE_REFRESH_ACTION_REFRESH);
+    g_assert_cmpint(fsearch_database_refresh_policy_decide(FSEARCH_DATABASE_REFRESH_MODE_ALWAYS,
+                                                            FSEARCH_DATABASE_REFRESH_DEFAULT_INTERVAL_SECONDS,
+                                                            &fresh,
+                                                            now),
+                    ==,
+                    FSEARCH_DATABASE_REFRESH_ACTION_REFRESH);
+    g_assert_cmpint(fsearch_database_refresh_policy_decide(FSEARCH_DATABASE_REFRESH_MODE_NEVER,
+                                                            FSEARCH_DATABASE_REFRESH_DEFAULT_INTERVAL_SECONDS,
+                                                            &expired,
+                                                            now),
+                    ==,
+                    FSEARCH_DATABASE_REFRESH_ACTION_USE_STALE);
+    g_assert_cmpint(fsearch_database_refresh_policy_decide(FSEARCH_DATABASE_REFRESH_MODE_NEVER,
+                                                            FSEARCH_DATABASE_REFRESH_DEFAULT_INTERVAL_SECONDS,
+                                                            &mismatched,
+                                                            now),
+                    ==,
+                    FSEARCH_DATABASE_REFRESH_ACTION_USE_STALE);
+    g_assert_cmpint(fsearch_database_refresh_policy_decide(FSEARCH_DATABASE_REFRESH_MODE_NEVER,
+                                                            FSEARCH_DATABASE_REFRESH_DEFAULT_INTERVAL_SECONDS,
+                                                            &unreadable,
+                                                            now),
+                    ==,
+                    FSEARCH_DATABASE_REFRESH_ACTION_FAIL);
+}
+
+static void
+test_database_refresh_mode_serialization(void) {
+    FsearchDatabaseRefreshMode mode = FSEARCH_DATABASE_REFRESH_MODE_NEVER;
+    g_assert_true(fsearch_database_refresh_mode_from_string("auto", &mode));
+    g_assert_cmpint(mode, ==, FSEARCH_DATABASE_REFRESH_MODE_AUTO);
+    g_assert_cmpstr(fsearch_database_refresh_mode_to_string(mode), ==, "auto");
+    g_assert_true(fsearch_database_refresh_mode_from_string("always", &mode));
+    g_assert_cmpint(mode, ==, FSEARCH_DATABASE_REFRESH_MODE_ALWAYS);
+    g_assert_true(fsearch_database_refresh_mode_from_string("never", &mode));
+    g_assert_cmpint(mode, ==, FSEARCH_DATABASE_REFRESH_MODE_NEVER);
+    g_assert_false(fsearch_database_refresh_mode_from_string("sometimes", &mode));
+}
+
+static void
+test_database_refresh_policy_precedence(void) {
+    const FsearchDatabaseRefreshPolicy configured = {
+        .mode = FSEARCH_DATABASE_REFRESH_MODE_AUTO,
+        .interval_seconds = FSEARCH_DATABASE_REFRESH_DEFAULT_INTERVAL_SECONDS,
+    };
+    const FsearchDatabaseRefreshOverride arguments = {
+        .mode_is_set = TRUE,
+        .mode = FSEARCH_DATABASE_REFRESH_MODE_NEVER,
+        .interval_is_set = TRUE,
+        .interval_seconds = 0,
+    };
+
+    FsearchDatabaseRefreshPolicy resolved = fsearch_database_refresh_policy_resolve(configured, NULL, NULL, NULL);
+    g_assert_cmpint(resolved.mode, ==, FSEARCH_DATABASE_REFRESH_MODE_AUTO);
+    g_assert_cmpint(resolved.interval_seconds, ==, FSEARCH_DATABASE_REFRESH_DEFAULT_INTERVAL_SECONDS);
+
+    resolved = fsearch_database_refresh_policy_resolve(configured, "always", "3600", NULL);
+    g_assert_cmpint(resolved.mode, ==, FSEARCH_DATABASE_REFRESH_MODE_ALWAYS);
+    g_assert_cmpint(resolved.interval_seconds, ==, 3600);
+
+    resolved = fsearch_database_refresh_policy_resolve(configured, "always", "3600", &arguments);
+    g_assert_cmpint(resolved.mode, ==, FSEARCH_DATABASE_REFRESH_MODE_NEVER);
+    g_assert_cmpint(resolved.interval_seconds, ==, 0);
+
+    resolved = fsearch_database_refresh_policy_resolve(configured, "sometimes", "-1", NULL);
+    g_assert_cmpint(resolved.mode, ==, FSEARCH_DATABASE_REFRESH_MODE_AUTO);
+    g_assert_cmpint(resolved.interval_seconds, ==, FSEARCH_DATABASE_REFRESH_DEFAULT_INTERVAL_SECONDS);
+}
+
+static void
 test_cap_notice(void) {
     g_autofree char *notice = fsearch_cli_format_cap_notice(100);
     g_assert_cmpstr(notice,
@@ -263,6 +381,11 @@ test_result_and_index_progress_notices(void) {
 
     g_autofree char *progress = fsearch_cli_format_index_progress("18402 entries, 7150/s  /work/current/src");
     g_assert_cmpstr(progress, ==, "\r\x1b[2K\x1b[3;37mIndexing: 18402 entries, 7150/s  /work/current/src\x1b[0m");
+
+    g_autofree char *stale_index = fsearch_cli_format_stale_index_notice();
+    g_assert_cmpstr(stale_index,
+                    ==,
+                    "\x1b[3;37mUsing stale FSearch index; automatic reindexing is disabled.\x1b[0m");
 }
 
 static void
@@ -331,6 +454,12 @@ test_sigint_cancels_cli_run(void) {
 
 static void
 test_search_rebuilds_missing_index_before_printing_results(void) {
+    if (!g_test_subprocess()) {
+        g_test_trap_subprocess(NULL, 0, G_TEST_SUBPROCESS_DEFAULT);
+        g_test_trap_assert_passed();
+        return;
+    }
+
     g_autofree char *tmp_dir = g_dir_make_tmp("fsearch-test-cli-XXXXXX", NULL);
     g_assert_nonnull(tmp_dir);
     g_autofree char *config_dir = g_build_filename(tmp_dir, "config", NULL);
@@ -377,6 +506,20 @@ test_search_rebuilds_missing_index_before_printing_results(void) {
     g_string_free(g_steal_pointer(&captured_stderr), TRUE);
 
     g_autofree char *database_path = g_build_filename(database_dir, "fsearch.db", NULL);
+    g_assert_true(g_file_test(database_path, G_FILE_TEST_IS_REGULAR));
+
+    captured_stdout = g_string_new(NULL);
+    captured_stderr = g_string_new(NULL);
+    old_stdout_handler = g_set_print_handler(capture_stdout);
+    old_stderr_handler = g_set_printerr_handler(capture_stderr);
+    g_assert_cmpint(fsearch_cli_run(5, argv), ==, EXIT_SUCCESS);
+    g_set_print_handler(old_stdout_handler);
+    g_set_printerr_handler(old_stderr_handler);
+    g_assert_cmpstr(captured_stdout->str, ==, expected_stdout);
+    g_assert_cmpstr(captured_stderr->str, ==, "\x1b[3;37m1 match.\x1b[0m\n");
+    g_string_free(g_steal_pointer(&captured_stdout), TRUE);
+    g_string_free(g_steal_pointer(&captured_stderr), TRUE);
+
     g_unlink(database_path);
     g_rmdir(database_dir);
     g_unlink(indexed_file);
@@ -390,7 +533,167 @@ test_search_rebuilds_missing_index_before_printing_results(void) {
 }
 
 static void
+test_search_refuses_missing_index_when_reindex_disabled(void) {
+    if (!g_test_subprocess()) {
+        g_test_trap_subprocess(NULL, 0, G_TEST_SUBPROCESS_DEFAULT);
+        g_test_trap_assert_passed();
+        return;
+    }
+
+    g_autofree char *tmp_dir = g_dir_make_tmp("fsearch-test-cli-no-reindex-XXXXXX", NULL);
+    g_assert_nonnull(tmp_dir);
+    g_autofree char *config_dir = g_build_filename(tmp_dir, "config", NULL);
+    g_autofree char *data_dir = g_build_filename(tmp_dir, "data", NULL);
+    g_assert_true(g_mkdir_with_parents(config_dir, 0700) == 0);
+    g_assert_true(g_mkdir_with_parents(data_dir, 0700) == 0);
+
+    g_autofree char *old_config_home = g_strdup(g_getenv("XDG_CONFIG_HOME"));
+    g_autofree char *old_data_home = g_strdup(g_getenv("XDG_DATA_HOME"));
+    g_setenv("XDG_CONFIG_HOME", config_dir, TRUE);
+    g_setenv("XDG_DATA_HOME", data_dir, TRUE);
+
+    captured_stdout = g_string_new(NULL);
+    captured_stderr = g_string_new(NULL);
+    GPrintFunc old_stdout_handler = g_set_print_handler(capture_stdout);
+    GPrintFunc old_stderr_handler = g_set_printerr_handler(capture_stderr);
+
+    char *argv[] = {"fsearch", "--cli", "--global", "--no-reindex", "--search", "needle", NULL};
+    g_assert_cmpint(fsearch_cli_run(6, argv), ==, EXIT_FAILURE);
+
+    g_set_print_handler(old_stdout_handler);
+    g_set_printerr_handler(old_stderr_handler);
+    g_assert_cmpstr(captured_stdout->str, ==, "");
+    g_assert_nonnull(g_strstr_len(captured_stderr->str,
+                                  -1,
+                                  "index is unavailable and automatic reindexing is disabled"));
+    g_string_free(g_steal_pointer(&captured_stdout), TRUE);
+    g_string_free(g_steal_pointer(&captured_stderr), TRUE);
+
+    if (old_config_home) {
+        g_setenv("XDG_CONFIG_HOME", old_config_home, TRUE);
+    }
+    else {
+        g_unsetenv("XDG_CONFIG_HOME");
+    }
+    if (old_data_home) {
+        g_setenv("XDG_DATA_HOME", old_data_home, TRUE);
+    }
+    else {
+        g_unsetenv("XDG_DATA_HOME");
+    }
+
+    g_rmdir(data_dir);
+    g_rmdir(config_dir);
+    g_rmdir(tmp_dir);
+}
+
+static void
+test_search_uses_stale_index_when_reindex_disabled(void) {
+    if (!g_test_subprocess()) {
+        g_test_trap_subprocess(NULL, 0, G_TEST_SUBPROCESS_DEFAULT);
+        g_test_trap_assert_passed();
+        return;
+    }
+
+    g_autofree char *tmp_dir = g_dir_make_tmp("fsearch-test-cli-stale-XXXXXX", NULL);
+    g_assert_nonnull(tmp_dir);
+    g_autofree char *config_dir = g_build_filename(tmp_dir, "config", NULL);
+    g_autofree char *data_dir = g_build_filename(tmp_dir, "data", NULL);
+    g_autofree char *indexed_file = g_build_filename(tmp_dir, "needle.txt", NULL);
+    g_assert_true(g_file_set_contents(indexed_file, "", 0, NULL));
+    g_assert_true(g_mkdir_with_parents(config_dir, 0700) == 0);
+    g_assert_true(g_mkdir_with_parents(data_dir, 0700) == 0);
+
+    g_autofree char *old_config_home = g_strdup(g_getenv("XDG_CONFIG_HOME"));
+    g_autofree char *old_data_home = g_strdup(g_getenv("XDG_DATA_HOME"));
+    g_setenv("XDG_CONFIG_HOME", config_dir, TRUE);
+    g_setenv("XDG_DATA_HOME", data_dir, TRUE);
+
+    FsearchConfig *config = g_new0(FsearchConfig, 1);
+    g_assert_true(config_load_default(config));
+    g_clear_object(&config->includes);
+    config->includes = fsearch_database_include_manager_new();
+    g_autoptr(FsearchDatabaseInclude) include = fsearch_database_include_new(tmp_dir, TRUE, FALSE, FALSE, FALSE, 0);
+    fsearch_database_include_manager_add(config->includes, include);
+    g_assert_true(config_make_dir());
+    g_assert_true(config_save(config));
+    config->sort_by = NULL;
+    config_free(config);
+
+    captured_stdout = g_string_new(NULL);
+    captured_stderr = g_string_new(NULL);
+    GPrintFunc old_stdout_handler = g_set_print_handler(capture_stdout);
+    GPrintFunc old_stderr_handler = g_set_printerr_handler(capture_stderr);
+    char *build_argv[] = {"fsearch", "--cli", "--global", "--search", "needle", NULL};
+    g_assert_cmpint(fsearch_cli_run(5, build_argv), ==, EXIT_SUCCESS);
+    g_set_print_handler(old_stdout_handler);
+    g_set_printerr_handler(old_stderr_handler);
+    g_string_free(g_steal_pointer(&captured_stdout), TRUE);
+    g_string_free(g_steal_pointer(&captured_stderr), TRUE);
+
+    config = g_new0(FsearchConfig, 1);
+    g_assert_true(config_load(config));
+    g_clear_object(&config->includes);
+    config->includes = fsearch_database_include_manager_new();
+    g_autoptr(FsearchDatabaseInclude) changed_include =
+        fsearch_database_include_new("/intentionally/different", TRUE, FALSE, FALSE, FALSE, 0);
+    fsearch_database_include_manager_add(config->includes, changed_include);
+    g_assert_true(config_save(config));
+    config_free(config);
+
+    captured_stdout = g_string_new(NULL);
+    captured_stderr = g_string_new(NULL);
+    old_stdout_handler = g_set_print_handler(capture_stdout);
+    old_stderr_handler = g_set_printerr_handler(capture_stderr);
+    char *stale_argv[] = {"fsearch", "--cli", "--global", "--no-reindex", "--search", "needle", NULL};
+    g_assert_cmpint(fsearch_cli_run(6, stale_argv), ==, EXIT_SUCCESS);
+    g_set_print_handler(old_stdout_handler);
+    g_set_printerr_handler(old_stderr_handler);
+
+    g_autofree char *expected_stdout = g_strdup_printf("%s\n", indexed_file);
+    g_assert_cmpstr(captured_stdout->str, ==, expected_stdout);
+    g_assert_nonnull(g_strstr_len(captured_stderr->str,
+                                  -1,
+                                  "Using stale FSearch index; automatic reindexing is disabled"));
+    g_assert_null(g_strstr_len(captured_stderr->str, -1, "Updating FSearch index before searching"));
+    g_string_free(g_steal_pointer(&captured_stdout), TRUE);
+    g_string_free(g_steal_pointer(&captured_stderr), TRUE);
+
+    if (old_config_home) {
+        g_setenv("XDG_CONFIG_HOME", old_config_home, TRUE);
+    }
+    else {
+        g_unsetenv("XDG_CONFIG_HOME");
+    }
+    if (old_data_home) {
+        g_setenv("XDG_DATA_HOME", old_data_home, TRUE);
+    }
+    else {
+        g_unsetenv("XDG_DATA_HOME");
+    }
+
+    g_autofree char *database_path = g_build_filename(data_dir, "fsearch", "fsearch.db", NULL);
+    g_autofree char *database_dir = g_build_filename(data_dir, "fsearch", NULL);
+    g_unlink(database_path);
+    g_rmdir(database_dir);
+    g_unlink(indexed_file);
+    g_autofree char *saved_config_dir = g_build_filename(config_dir, "fsearch", NULL);
+    g_autofree char *saved_config_path = g_build_filename(saved_config_dir, "fsearch.conf", NULL);
+    g_unlink(saved_config_path);
+    g_rmdir(saved_config_dir);
+    g_rmdir(data_dir);
+    g_rmdir(config_dir);
+    g_rmdir(tmp_dir);
+}
+
+static void
 test_search_uses_shared_match_case_setting(void) {
+    if (!g_test_subprocess()) {
+        g_test_trap_subprocess(NULL, 0, G_TEST_SUBPROCESS_DEFAULT);
+        g_test_trap_assert_passed();
+        return;
+    }
+
     g_autofree char *tmp_dir = g_dir_make_tmp("fsearch-test-cli-shared-flags-XXXXXX", NULL);
     g_assert_nonnull(tmp_dir);
     g_autofree char *config_dir = g_build_filename(tmp_dir, "config", NULL);
@@ -458,6 +761,9 @@ main(int argc, char **argv) {
     g_test_add_func("/FSearch/cli/locale_argument_rejection", test_locale_argument_rejection);
     g_test_add_func("/FSearch/cli/config_detects_running_gui", test_config_detects_running_gui);
     g_test_add_func("/FSearch/cli/result_limit_precedence", test_result_limit_precedence);
+    g_test_add_func("/FSearch/cli/database_refresh_policy", test_database_refresh_policy);
+    g_test_add_func("/FSearch/cli/database_refresh_mode_serialization", test_database_refresh_mode_serialization);
+    g_test_add_func("/FSearch/cli/database_refresh_policy_precedence", test_database_refresh_policy_precedence);
     g_test_add_func("/FSearch/cli/cap_notice", test_cap_notice);
     g_test_add_func("/FSearch/cli/result_and_index_progress_notices", test_result_and_index_progress_notices);
     g_test_add_func("/FSearch/cli/scoped_query", test_scoped_query);
@@ -466,6 +772,10 @@ main(int argc, char **argv) {
 #endif
     g_test_add_func("/FSearch/cli/search_rebuilds_missing_index_before_printing_results",
                     test_search_rebuilds_missing_index_before_printing_results);
+    g_test_add_func("/FSearch/cli/search_refuses_missing_index_when_reindex_disabled",
+                    test_search_refuses_missing_index_when_reindex_disabled);
+    g_test_add_func("/FSearch/cli/search_uses_stale_index_when_reindex_disabled",
+                    test_search_uses_stale_index_when_reindex_disabled);
     g_test_add_func("/FSearch/cli/search_uses_shared_match_case_setting", test_search_uses_shared_match_case_setting);
 
     return g_test_run();

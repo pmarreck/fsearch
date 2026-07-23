@@ -147,6 +147,11 @@ static const FsearchKeyData DIALOG_SECTION[] = {
     CONF_BOOL(show_dialog_failed_opening, true),
 };
 
+static const FsearchKeyData DATABASE_SECTION[] = {
+    CONF_INT(database_refresh_mode, FSEARCH_DATABASE_REFRESH_MODE_AUTO),
+    CONF_INT64(database_refresh_interval, FSEARCH_DATABASE_REFRESH_DEFAULT_INTERVAL_SECONDS),
+};
+
 typedef struct {
     char *name;
     char *query;
@@ -640,6 +645,9 @@ config_load(FsearchConfig *config) {
         // Search
         CONFIG_LOAD_SECTION(key_file, "Search", SEARCH_SECTION, config);
 
+        // Database
+        CONFIG_LOAD_SECTION(key_file, "Database", DATABASE_SECTION, config);
+
         // Includes
         if (config_has_legacy_includes(key_file)) {
             config->includes = config_load_legacy_includes(key_file);
@@ -681,6 +689,7 @@ config_load_default(FsearchConfig *config) {
     CONFIG_DEFAULT_SECTION(DIALOG_SECTION, config);
     CONFIG_DEFAULT_SECTION(APPLICATIONS_SECTION, config);
     CONFIG_DEFAULT_SECTION(SEARCH_SECTION, config);
+    CONFIG_DEFAULT_SECTION(DATABASE_SECTION, config);
 
     config->filters = fsearch_filter_manager_new_with_defaults();
     config->includes = fsearch_database_include_manager_new_with_defaults();
@@ -790,6 +799,9 @@ config_save(FsearchConfig *config) {
 
     // Search
     CONFIG_SAVE_SECTION(key_file, "Search", SEARCH_SECTION, config);
+
+    // Database
+    CONFIG_SAVE_SECTION(key_file, "Database", DATABASE_SECTION, config);
 
     // Filters
     config_save_filters(key_file, config->filters);

@@ -2792,3 +2792,40 @@ msgstr "휴지통으로 이동(_T)"
 
 #~ msgid "Selected Folder and Files"
 #~ msgstr "선택된 파일 및 폴더"
+
+#: src/fsearch_cli.c:169
+msgid "Using stale FSearch index; automatic reindexing is disabled."
+msgstr ""
+"오래된 FSearch 인덱스를 사용 중입니다. 자동 재인덱싱이 비활성화되었습니다."
+
+#: src/fsearch_cli.c:239
+msgid ""
+"\n"
+"Index refresh options:\n"
+"  --refresh, --refresh-index    Rescan before searching\n"
+"  --no-reindex                  Use the existing index without rescanning\n"
+"  --reindex-interval SECONDS    Refresh when the index is this old\n"
+msgstr ""
+"\n"
+"인덱스 새로고침 옵션:\n"
+"  --refresh, --refresh-index    검색 전 다시 스캔\n"
+"  --no-reindex                  다시 스캔 없이 기존 인덱스 사용\n"
+"  --reindex-interval SECONDS    인덱스가 이만큼 오래되었을 때 새로고침\n"
+
+#: src/fsearch_cli.c:526
+msgid "fsearch: --reindex-interval requires a non-negative number of seconds\n"
+msgstr "fsearch: --reindex-interval은 0 이상의 초 단위 숫자가 필요합니다\n"
+
+#: src/fsearch_cli.c:577
+msgid "fsearch: index is unavailable and automatic reindexing is disabled\n"
+msgstr ""
+"fsearch: 인덱스를 사용할 수 없으며 자동 재인덱싱이 비활성화되어 있습니다\n"
+
+#: src/fsearch_cli_config.c:145
+msgid "Additional scalar section: database.\n"
+msgstr "추가 스칼라 섹션: database.\n"
+
+#: src/fsearch_file_utils.c:384 src/fsearch_file_utils.c:515
+msgctxt "Will be followed by the file path."
+msgid "Error when opening file"
+msgstr "파일을 열 때 오류가 발생했습니다"

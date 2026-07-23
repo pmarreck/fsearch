@@ -2420,3 +2420,44 @@ msgstr "பாதை + பெயர்"
 #: src/menus.ui:236
 msgid "Move to _Trash"
 msgstr "_குப்பைக்கு நகர்த்தவும்"
+
+#: src/fsearch_cli.c:169
+msgid "Using stale FSearch index; automatic reindexing is disabled."
+msgstr ""
+"பழைய FSearch குறியீட்டைப் பயன்படுத்துகிறது; தானியங்கி மறு-குறியிடுதல் (reindexing) "
+"முடக்கப்பட்டுள்ளது."
+
+#: src/fsearch_cli.c:239
+msgid ""
+"\n"
+"Index refresh options:\n"
+"  --refresh, --refresh-index    Rescan before searching\n"
+"  --no-reindex                  Use the existing index without rescanning\n"
+"  --reindex-interval SECONDS    Refresh when the index is this old\n"
+msgstr ""
+"\n"
+"குறியீடு புதுப்பிக்கும் விருப்பங்கள்:\n"
+"  --refresh, --refresh-index    தேடுவதற்கு முன் மீண்டும் ஸ்கேன் செய்யவும்\n"
+"  --no-reindex                  மீண்டும் ஸ்கேன் செய்யாமல் ஏற்கனவே உள்ள குறியீட்டைப் "
+"பயன்படுத்தவும்\n"
+"  --reindex-interval SECONDS    குறியீடு இந்த அளவுக்கு பழையதாக இருக்கும்போது "
+"புதுப்பிக்கவும்\n"
+
+#: src/fsearch_cli.c:526
+msgid "fsearch: --reindex-interval requires a non-negative number of seconds\n"
+msgstr ""
+"fsearch: --reindex-interval என்பது எதிர்மறையற்ற வினாடிகளின் எண்ணிக்கையை கோருகிறது\n"
+
+#: src/fsearch_cli.c:577
+msgid "fsearch: index is unavailable and automatic reindexing is disabled\n"
+msgstr ""
+"fsearch: குறியீடு கிடைக்கவில்லை மற்றும் தானியங்கி மறு-குறியிடுதல் முடக்கப்பட்டுள்ளது\n"
+
+#: src/fsearch_cli_config.c:145
+msgid "Additional scalar section: database.\n"
+msgstr "கூடுதல் ஸ்கேலர் பகுதி: database.\n"
+
+#: src/fsearch_file_utils.c:384 src/fsearch_file_utils.c:515
+msgctxt "Will be followed by the file path."
+msgid "Error when opening file"
+msgstr "கோப்புறையைத் திறக்கும்போது பிழை"

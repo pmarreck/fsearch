@@ -45,6 +45,50 @@ Print version information and exit
 .BI "\-\^\-display=" DISPLAY
 X display to use
 .
+.SH COMMAND-LINE SEARCH
+Use
+.B \-\-cli
+or set
+.B FSEARCH_UI=CLI
+to search the persisted FSearch index and print one path per line. Use
+.B \-\-gui
+to override the environment and launch the graphical interface. Run
+.B fsearch \-\-cli \-\-help
+for query syntax and examples.
+.
+.SH INDEX REFRESH POLICY
+The graphical and command-line interfaces share one index and one persisted refresh policy. The default
+.B auto
+policy rebuilds when the index is missing or unreadable, its configured roots or exclusions changed, or an active root
+was last scanned at least two hours ago.
+.TP
+.BR \-\-refresh ", " \-\-refresh\-index
+Rescan before this command-line search. The two spellings are synonyms.
+.TP
+.B \-\-no\-reindex
+Do not scan. A readable stale index remains searchable with a diagnostic on standard error; an unavailable index causes
+the command to fail.
+.TP
+.BI \-\-reindex\-interval " SECONDS"
+Override the automatic age threshold for this command-line search. A value of zero disables only age-based refreshes;
+it does not suppress rebuilding a missing index or changed configuration.
+.PP
+Later conflicting command-line options win. The persistent keys
+.B database.refresh-mode
+(
+.BR auto ,
+.BR always ,
+or
+.BR never ) and
+.B database.refresh-interval
+(a non-negative number of seconds) are available through
+.B fsearch config
+and apply to both interfaces. Environment defaults
+.B FSEARCH_REFRESH_MODE
+and
+.B FSEARCH_REFRESH_INTERVAL
+override saved values for one process; command-line refresh options override both and never modify the configuration.
+.
 .SH CONFIGURATION COMMANDS
 The
 .B config

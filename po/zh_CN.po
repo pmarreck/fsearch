@@ -2928,3 +2928,38 @@ msgstr "移动到回收站(_T)"
 
 #~ msgid "C_ut"
 #~ msgstr "C_ut"
+
+#: src/fsearch_cli.c:169
+msgid "Using stale FSearch index; automatic reindexing is disabled."
+msgstr "正在使用过时的 FSearch 索引；已禁用自动重新索引。"
+
+#: src/fsearch_cli.c:239
+msgid ""
+"\n"
+"Index refresh options:\n"
+"  --refresh, --refresh-index    Rescan before searching\n"
+"  --no-reindex                  Use the existing index without rescanning\n"
+"  --reindex-interval SECONDS    Refresh when the index is this old\n"
+msgstr ""
+"\n"
+"索引刷新选项：\n"
+"  --refresh, --refresh-index    在搜索前重新扫描\n"
+"  --no-reindex                  不进行重新扫描，使用现有索引\n"
+"  --reindex-interval SECONDS    当索引达到此久远程度时进行刷新\n"
+
+#: src/fsearch_cli.c:526
+msgid "fsearch: --reindex-interval requires a non-negative number of seconds\n"
+msgstr "fsearch: --reindex-interval 需要一个非负的秒数\n"
+
+#: src/fsearch_cli.c:577
+msgid "fsearch: index is unavailable and automatic reindexing is disabled\n"
+msgstr "fsearch: 索引不可用且已禁用自动重新索引\n"
+
+#: src/fsearch_cli_config.c:145
+msgid "Additional scalar section: database.\n"
+msgstr "额外的标量部分：database。\n"
+
+#: src/fsearch_file_utils.c:384 src/fsearch_file_utils.c:515
+msgctxt "Will be followed by the file path."
+msgid "Error when opening file"
+msgstr "打开文件时出错"

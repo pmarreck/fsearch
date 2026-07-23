@@ -89,8 +89,13 @@ assert_success_contains 'CLI help glob path default' 'Glob searches paths by def
 assert_success_contains 'CLI help glob escaping' '\* matches a literal *' "$binary" --cli --help
 assert_success_contains 'CLI help explicit boolean syntax' 'Boolean syntax: AND or &&; OR or ||; NOT or !.' "$binary" --cli --help
 assert_success_contains 'CLI help unlimited alias' '--unlimit, --unlimited' "$binary" --cli --help
+assert_success_contains 'CLI help refresh override' '--refresh, --refresh-index' "$binary" --cli --help
+assert_success_contains 'CLI help no-reindex override' '--no-reindex' "$binary" --cli --help
+assert_success_contains 'CLI help refresh interval override' '--reindex-interval SECONDS' "$binary" --cli --help
 assert_success_contains 'CLI help config command' 'fsearch config --help' "$binary" --cli --help
 assert_success_contains 'CLI unlimited alias parses' '--unlimit, --unlimited' "$binary" --cli --unlimited --help
+assert_failure_contains 'CLI rejects invalid refresh interval' 'requires a non-negative number of seconds' "$binary" --cli --reindex-interval -1
+assert_failure_contains 'later no-reindex overrides refresh' 'index is unavailable and automatic reindexing is disabled' "$binary" --cli --global --refresh --no-reindex --search needle
 assert_success_contains 'config help' 'Configuration commands:' "$binary" config --help
 assert_success_contains 'config help roots' 'roots list|add|set|remove' "$binary" config --help
 assert_success_contains 'config help exclusions' 'excludes list|add|remove|hidden' "$binary" config --help
@@ -137,6 +142,11 @@ assert_success_contains 'config set unsigned integer' 'columns.name.width = 320'
 assert_failure_contains 'config rejects invalid integer' 'invalid value' "${config_env[@]}" "$binary" config set window.width wide
 assert_success_contains 'config set enum' 'ui.after-open = minimize' "${config_env[@]}" "$binary" config set ui.after-open minimize
 assert_failure_contains 'config rejects invalid enum' 'invalid value' "${config_env[@]}" "$binary" config set ui.after-open disappear
+assert_success_contains 'config set shared refresh mode' 'database.refresh-mode = never' "${config_env[@]}" "$binary" config set database.refresh-mode never
+assert_success_contains 'config get shared refresh mode' 'never' "${config_env[@]}" "$binary" config get database.refresh-mode
+assert_success_contains 'config set shared refresh interval' 'database.refresh-interval = 3600' "${config_env[@]}" "$binary" config set database.refresh-interval 3600
+assert_success_contains 'config get shared refresh interval' '3600' "${config_env[@]}" "$binary" config get database.refresh-interval
+assert_failure_contains 'config rejects invalid refresh mode' 'invalid value' "${config_env[@]}" "$binary" config set database.refresh-mode sometimes
 folder_command='open "quoted"\folder'
 assert_success_contains 'config set string with escapes' "$folder_command" "${config_env[@]}" "$binary" config set application.folder-open-command "$folder_command"
 assert_success_contains 'config roots add path with spaces' "$root_with_spaces" "${config_env[@]}" "$binary" config roots add --monitor --rescan-every 4294967296 "$root_with_spaces"

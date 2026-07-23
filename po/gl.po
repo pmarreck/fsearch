@@ -2865,3 +2865,43 @@ msgstr "Mover ao _lixo"
 
 #~ msgid "C_ut"
 #~ msgstr "C_ortar"
+
+#: src/fsearch_cli.c:169
+msgid "Using stale FSearch index; automatic reindexing is disabled."
+msgstr ""
+"Uso de índice de FSearch obsoleto; a reindexación automática está "
+"deshabilitada."
+
+#: src/fsearch_cli.c:239
+msgid ""
+"\n"
+"Index refresh options:\n"
+"  --refresh, --refresh-index    Rescan before searching\n"
+"  --no-reindex                  Use the existing index without rescanning\n"
+"  --reindex-interval SECONDS    Refresh when the index is this old\n"
+msgstr ""
+"\n"
+"Opcións de actualización do índice:\n"
+"  --refresh, --refresh-index    Escanear antes de buscar\n"
+"  --no-reindex                  Usar o índice existente sen escanear\n"
+"  --reindex-interval SECONDS    Actualizar cando o índice teña esta idade\n"
+
+#: src/fsearch_cli.c:526
+msgid "fsearch: --reindex-interval requires a non-negative number of seconds\n"
+msgstr ""
+"fsearch: --reindex-interval require un número non negativo de segundos\n"
+
+#: src/fsearch_cli.c:577
+msgid "fsearch: index is unavailable and automatic reindexing is disabled\n"
+msgstr ""
+"fsearch: o índice non está dispoñible e a reindexación automática está "
+"deshabilitada\n"
+
+#: src/fsearch_cli_config.c:145
+msgid "Additional scalar section: database.\n"
+msgstr "Sección escalar adicional: database.\n"
+
+#: src/fsearch_file_utils.c:384 src/fsearch_file_utils.c:515
+msgctxt "Will be followed by the file path."
+msgid "Error when opening file"
+msgstr "Erro ao abrir o ficheiro"

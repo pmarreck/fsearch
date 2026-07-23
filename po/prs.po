@@ -2542,3 +2542,39 @@ msgstr "مسیر + نام"
 #: src/menus.ui:236
 msgid "Move to _Trash"
 msgstr "به زباله‌دان انتقال بده"
+
+#: src/fsearch_cli.c:169
+msgid "Using stale FSearch index; automatic reindexing is disabled."
+msgstr "استفاده از شاخص قدیمی FSearch؛ بازسازی خودکار غیرفعال است."
+
+#: src/fsearch_cli.c:239
+msgid ""
+"\n"
+"Index refresh options:\n"
+"  --refresh, --refresh-index    Rescan before searching\n"
+"  --no-reindex                  Use the existing index without rescanning\n"
+"  --reindex-interval SECONDS    Refresh when the index is this old\n"
+msgstr ""
+"\n"
+"گزینه‌های بروزرسانی شاخص:\n"
+"  --refresh, --refresh-index    بازخوانی قبل از جستجو\n"
+"  --no-reindex                  استفاده از شاخص موجود بدون بازخوانی\n"
+"  --reindex-interval SECONDS    بروزرسانی زمانی که شاخص به این سن (ثانیه) "
+"برسد\n"
+
+#: src/fsearch_cli.c:526
+msgid "fsearch: --reindex-interval requires a non-negative number of seconds\n"
+msgstr "fsearch: --reindex-interval نیازمند تعداد ثانیه‌ای غیرمنفی است\n"
+
+#: src/fsearch_cli.c:577
+msgid "fsearch: index is unavailable and automatic reindexing is disabled\n"
+msgstr "fsearch: شاخص در دسترس نیست و بازسازی خودکار غیرفعال است\n"
+
+#: src/fsearch_cli_config.c:145
+msgid "Additional scalar section: database.\n"
+msgstr "بخش مقادیر اسکلر اضافی: database.\n"
+
+#: src/fsearch_file_utils.c:384 src/fsearch_file_utils.c:515
+msgctxt "Will be followed by the file path."
+msgid "Error when opening file"
+msgstr "خطا هنگام باز کردن فایل"

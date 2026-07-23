@@ -2561,3 +2561,39 @@ msgstr "راستہ + نام"
 #: src/menus.ui:236
 msgid "Move to _Trash"
 msgstr "کچرے کے ڈبے میں منتقل کریں"
+
+#: src/fsearch_cli.c:169
+msgid "Using stale FSearch index; automatic reindexing is disabled."
+msgstr "پرانا FSearch انڈیکس استعمال ہو رہا ہے؛ خودکار دوبارہ انڈیکسنگ بند ہے۔"
+
+#: src/fsearch_cli.c:239
+msgid ""
+"\n"
+"Index refresh options:\n"
+"  --refresh, --refresh-index    Rescan before searching\n"
+"  --no-reindex                  Use the existing index without rescanning\n"
+"  --reindex-interval SECONDS    Refresh when the index is this old\n"
+msgstr ""
+"\n"
+"انڈیکس ریفریش کے اختیارات:\n"
+"  --refresh, --refresh-index    تلاش سے پہلے دوبارہ اسکین کریں\n"
+"  --no-reindex                  بغیر دوبارہ اسکن کیے موجودہ انڈیکس استعمال "
+"کریں\n"
+"  --reindex-interval SECONDS    جب انڈیکس اس عمر کا ہو جائے تو ریفریش کریں\n"
+
+#: src/fsearch_cli.c:526
+msgid "fsearch: --reindex-interval requires a non-negative number of seconds\n"
+msgstr "fsearch: --reindex-interval کے لیے سیکنڈز کی غیر منفی تعداد درکار ہے\n"
+
+#: src/fsearch_cli.c:577
+msgid "fsearch: index is unavailable and automatic reindexing is disabled\n"
+msgstr "fsearch: انڈیکس دستیاب نہیں ہے اور خودکار دوبارہ انڈیکسنگ بند ہے\n"
+
+#: src/fsearch_cli_config.c:145
+msgid "Additional scalar section: database.\n"
+msgstr "اضافی اسکیلر سیکشن: ڈیٹا بیس۔\n"
+
+#: src/fsearch_file_utils.c:384 src/fsearch_file_utils.c:515
+msgctxt "Will be followed by the file path."
+msgid "Error when opening file"
+msgstr "فائل کھولنے میں خرابی"

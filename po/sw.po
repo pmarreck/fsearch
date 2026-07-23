@@ -2420,3 +2420,40 @@ msgstr "Njia + Jina"
 #: src/menus.ui:236
 msgid "Move to _Trash"
 msgstr "Hamisha hadi _Tupio"
+
+#: src/fsearch_cli.c:169
+msgid "Using stale FSearch index; automatic reindexing is disabled."
+msgstr ""
+"Inatumia kumbukumbu ya FSearch iliyopitwa na wakati; upakuzi wa kiotomatiki "
+"umezimwa."
+
+#: src/fsearch_cli.c:239
+msgid ""
+"\n"
+"Index refresh options:\n"
+"  --refresh, --refresh-index    Rescan before searching\n"
+"  --no-reindex                  Use the existing index without rescanning\n"
+"  --reindex-interval SECONDS    Refresh when the index is this old\n"
+msgstr ""
+"\n"
+"Chaguzi za kuhuisha kumbukumbu:\n"
+"  --refresh, --refresh-index    Scan tena kabla ya kutafuta\n"
+"  --no-reindex                  Tumia kumbukumbu iliyopo bila kuscan tena\n"
+"  --reindex-interval SECONDS    Huu upakue wakati kumbukumbu ina umri huu\n"
+
+#: src/fsearch_cli.c:526
+msgid "fsearch: --reindex-interval requires a non-negative number of seconds\n"
+msgstr "fsearch: --reindex-interval inahitaji idadi isiyo ya hasi ya sekunde\n"
+
+#: src/fsearch_cli.c:577
+msgid "fsearch: index is unavailable and automatic reindexing is disabled\n"
+msgstr "fsearch: kumbukumbu haipatikani na upakuzi wa kiotomatiki umezimwa\n"
+
+#: src/fsearch_cli_config.c:145
+msgid "Additional scalar section: database.\n"
+msgstr "Sehemu ya ziada ya scalar: database.\n"
+
+#: src/fsearch_file_utils.c:384 src/fsearch_file_utils.c:515
+msgctxt "Will be followed by the file path."
+msgid "Error when opening file"
+msgstr "Hitilafu wakati wa kufungua faili"

@@ -3055,3 +3055,41 @@ msgstr "_Çöp Kutusuna Taşı"
 
 #~ msgid "C_ut"
 #~ msgstr "_Kes"
+
+#: src/fsearch_cli.c:169
+msgid "Using stale FSearch index; automatic reindexing is disabled."
+msgstr ""
+"Eski FSearch dizini kullanılıyor; otomatik yeniden indeksleme devre dışı."
+
+#: src/fsearch_cli.c:239
+msgid ""
+"\n"
+"Index refresh options:\n"
+"  --refresh, --refresh-index    Rescan before searching\n"
+"  --no-reindex                  Use the existing index without rescanning\n"
+"  --reindex-interval SECONDS    Refresh when the index is this old\n"
+msgstr ""
+"\n"
+"Dizin yenileme seçenekleri:\n"
+"  --refresh, --refresh-index    Arama yapmadan önce yeniden tara\n"
+"  --no-reindex                  Yeniden taramadan mevcut dizini kullan\n"
+"  --reindex-interval SECONDS    Dizin bu kadar eski olduğunda yenile\n"
+
+#: src/fsearch_cli.c:526
+msgid "fsearch: --reindex-interval requires a non-negative number of seconds\n"
+msgstr ""
+"fsearch: --reindex-interval negatif olmayan bir saniye sayısı gerektirir\n"
+
+#: src/fsearch_cli.c:577
+msgid "fsearch: index is unavailable and automatic reindexing is disabled\n"
+msgstr ""
+"fsearch: dizin kullanılamıyor ve otomatik yeniden indeksleme devre dışı\n"
+
+#: src/fsearch_cli_config.c:145
+msgid "Additional scalar section: database.\n"
+msgstr "Ek skaler bölümü: database.\n"
+
+#: src/fsearch_file_utils.c:384 src/fsearch_file_utils.c:515
+msgctxt "Will be followed by the file path."
+msgid "Error when opening file"
+msgstr "Dosya açılırken hata oluştu"

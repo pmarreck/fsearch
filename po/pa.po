@@ -2420,3 +2420,39 @@ msgstr "ਮਾਰਗ+ਨਾਮ"
 #: src/menus.ui:236
 msgid "Move to _Trash"
 msgstr "_ਰੱਦੀ ਵਿੱਚ ਭੇਜੋ"
+
+#: src/fsearch_cli.c:169
+msgid "Using stale FSearch index; automatic reindexing is disabled."
+msgstr ""
+"ਪੁਰਾਣੀ FSearch ਇੰਡੈਕਸ ਦੀ ਵਰਤੋਂ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ; ਆਪਣੇ ਆਪ ਦੁਬਾਰਾ ਇੰਡੈਕਸਿੰਗ ਅਲੱਗ ਕੀਤਾ ਗਿਆ ਹੈ।"
+
+#: src/fsearch_cli.c:239
+msgid ""
+"\n"
+"Index refresh options:\n"
+"  --refresh, --refresh-index    Rescan before searching\n"
+"  --no-reindex                  Use the existing index without rescanning\n"
+"  --reindex-interval SECONDS    Refresh when the index is this old\n"
+msgstr ""
+"\n"
+"ਇੰਡੈਕਸ ਰਿਫਰੈਸ਼ ਵਿਕਲਪ:\n"
+"  --refresh, --refresh-index    ਖੋਜਣ ਤੋਂ ਪਹਿਲਾਂ ਦੁਬਾਰਾ ਸਕੈਨ ਕਰੋ\n"
+"  --no-reindex                  ਦੁਬਾਰਾ ਸਕੈਨ ਕੀਤੇ ਬਿਨਾਂ ਮੌਜੂਦਾ ਇੰਡੈਕਸ ਦੀ ਵਰਤੋਂ ਕਰੋ\n"
+"  --reindex-interval SECONDS    ਜਦੋਂ ਇੰਡੈਕਸ ਇਸ ਉਮਰ ਦਾ ਹੋਵੇ ਤਾਂ ਰਿਫਰੈਸ਼ ਕਰੋ\n"
+
+#: src/fsearch_cli.c:526
+msgid "fsearch: --reindex-interval requires a non-negative number of seconds\n"
+msgstr "fsearch: --reindex-interval ਨੂੰ ਸਕਿੰਟਾਂ ਦੀ ਇੱਕ ਗੈਰ-ਨਕਾਰਾਤਮਕ ਸੰਖਿਆ ਦੀ ਲੋੜ ਹੈ\n"
+
+#: src/fsearch_cli.c:577
+msgid "fsearch: index is unavailable and automatic reindexing is disabled\n"
+msgstr "fsearch: ਇੰਡੈਕਸ ਉਪਲਬਧ ਨਹੀਂ ਹੈ ਅਤੇ ਆਪਣੇ ਆਪ ਦੁਬਾਰਾ ਇੰਡੈਕਸਿੰਗ ਅਲੱਗ ਕੀਤਾ ਗਿਆ ਹੈ\n"
+
+#: src/fsearch_cli_config.c:145
+msgid "Additional scalar section: database.\n"
+msgstr "ਵਾਧੂ ਸਕਾਲਰ ਭਾਗ: ਡੇਟਾਬੇਸ।\n"
+
+#: src/fsearch_file_utils.c:384 src/fsearch_file_utils.c:515
+msgctxt "Will be followed by the file path."
+msgid "Error when opening file"
+msgstr "ਫਾਈਲ ਖੋਲ੍ਹਣ ਵੇਲੇ ਗਲਤੀ"

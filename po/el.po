@@ -2962,3 +2962,45 @@ msgstr "Μετακίνηση στα απορρίματα"
 
 #~ msgid "Selected Folder and Files"
 #~ msgstr "Επιλεγμένοι φάκελοι και αρχεία"
+
+#: src/fsearch_cli.c:169
+msgid "Using stale FSearch index; automatic reindexing is disabled."
+msgstr ""
+"Χρήση παλιού δείκτη FSearch· η αυτόματη επανυπολογισμός είναι "
+"απενεργοποιημένη."
+
+#: src/fsearch_cli.c:239
+msgid ""
+"\n"
+"Index refresh options:\n"
+"  --refresh, --refresh-index    Rescan before searching\n"
+"  --no-reindex                  Use the existing index without rescanning\n"
+"  --reindex-interval SECONDS    Refresh when the index is this old\n"
+msgstr ""
+"\n"
+"Επιλογές ανανέωσης δείκτη:\n"
+"  --refresh, --refresh-index    Επανασάρωση πριν από την αναζήτηση\n"
+"  --no-reindex                  Χρήση του υπάρχοντος δείκτη χωρίς "
+"επανασάρωση\n"
+"  --reindex-interval SECONDS    Ανανέωση όταν ο δείκτης είναι αυτής της "
+"ηλικίας\n"
+
+#: src/fsearch_cli.c:526
+msgid "fsearch: --reindex-interval requires a non-negative number of seconds\n"
+msgstr ""
+"fsearch: --reindex-interval απαιτεί έναν μη αρνητικό αριθμό δευτερολέπτων\n"
+
+#: src/fsearch_cli.c:577
+msgid "fsearch: index is unavailable and automatic reindexing is disabled\n"
+msgstr ""
+"fsearch: ο δείκτης δεν είναι διαθέσιμος και η αυτόματη επανυπολογισμός είναι "
+"απενεργοποιημένη\n"
+
+#: src/fsearch_cli_config.c:145
+msgid "Additional scalar section: database.\n"
+msgstr "Πρόσθετο τμήμα κλιμακωτής: database.\n"
+
+#: src/fsearch_file_utils.c:384 src/fsearch_file_utils.c:515
+msgctxt "Will be followed by the file path."
+msgid "Error when opening file"
+msgstr "Σφάλμα κατά το άνοιγμα του αρχείου"

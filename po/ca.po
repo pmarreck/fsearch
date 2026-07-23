@@ -2865,3 +2865,43 @@ msgstr "Envia a la _paperera"
 
 #~ msgid "C_ut"
 #~ msgstr "_Retalla"
+
+#: src/fsearch_cli.c:169
+msgid "Using stale FSearch index; automatic reindexing is disabled."
+msgstr ""
+"S'està utilitzant un índex de FSearch desactualitzat; la reindexació "
+"automàtica està desactivada."
+
+#: src/fsearch_cli.c:239
+msgid ""
+"\n"
+"Index refresh options:\n"
+"  --refresh, --refresh-index    Rescan before searching\n"
+"  --no-reindex                  Use the existing index without rescanning\n"
+"  --reindex-interval SECONDS    Refresh when the index is this old\n"
+msgstr ""
+"\n"
+"Opcions de refresca d'índex:\n"
+"  --refresh, --refresh-index    Escanejar novament abans de cercar\n"
+"  --no-reindex                  Utilitzar l'índex existent sense escanegar "
+"novament\n"
+"  --reindex-interval SECONDS    Refrescar quan l'índex té aquesta edat\n"
+
+#: src/fsearch_cli.c:526
+msgid "fsearch: --reindex-interval requires a non-negative number of seconds\n"
+msgstr "fsearch: --reindex-interval requereix un nombre de segons no negatiu\n"
+
+#: src/fsearch_cli.c:577
+msgid "fsearch: index is unavailable and automatic reindexing is disabled\n"
+msgstr ""
+"fsearch: l'índex no està disponible i la reindexació automàtica està "
+"desactivada\n"
+
+#: src/fsearch_cli_config.c:145
+msgid "Additional scalar section: database.\n"
+msgstr "Secció escalar addicional: database.\n"
+
+#: src/fsearch_file_utils.c:384 src/fsearch_file_utils.c:515
+msgctxt "Will be followed by the file path."
+msgid "Error when opening file"
+msgstr "Error en obrir el fitxer"

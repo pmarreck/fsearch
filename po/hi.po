@@ -2420,3 +2420,38 @@ msgstr "पथ + नाम"
 #: src/menus.ui:236
 msgid "Move to _Trash"
 msgstr "ट्रैश में ले जाएं"
+
+#: src/fsearch_cli.c:169
+msgid "Using stale FSearch index; automatic reindexing is disabled."
+msgstr "पुराना FSearch इंडेक्स उपयोग किया जा रहा है; स्वचालित रीइंडेक्सिंग अक्षम है।"
+
+#: src/fsearch_cli.c:239
+msgid ""
+"\n"
+"Index refresh options:\n"
+"  --refresh, --refresh-index    Rescan before searching\n"
+"  --no-reindex                  Use the existing index without rescanning\n"
+"  --reindex-interval SECONDS    Refresh when the index is this old\n"
+msgstr ""
+"\n"
+"इंडेक्स रिफ्रेश विकल्प:\n"
+"  --refresh, --refresh-index    खोजने से पहले फिर से स्कैन करें\n"
+"  --no-reindex                  बिना पुन: स्कैन किए मौजूदा इंडेक्स का उपयोग करें\n"
+"  --reindex-interval SECONDS    जब इंडेक्स इतना पुराना हो जाए तब रिफ्रेश करें\n"
+
+#: src/fsearch_cli.c:526
+msgid "fsearch: --reindex-interval requires a non-negative number of seconds\n"
+msgstr "fsearch: --reindex-interval के लिए गैर-नकारात्मक सेकंड की संख्या आवश्यक है\n"
+
+#: src/fsearch_cli.c:577
+msgid "fsearch: index is unavailable and automatic reindexing is disabled\n"
+msgstr "fsearch: इंडेक्स उपलब्ध नहीं है और स्वचालित रीइंडेक्सिंग अक्षम है\n"
+
+#: src/fsearch_cli_config.c:145
+msgid "Additional scalar section: database.\n"
+msgstr "अतिरिक्त स्केलर अनुभाग: डेटाबेस।\n"
+
+#: src/fsearch_file_utils.c:384 src/fsearch_file_utils.c:515
+msgctxt "Will be followed by the file path."
+msgid "Error when opening file"
+msgstr "फ़ाइल खोलने में त्रुटि"

@@ -2420,3 +2420,42 @@ msgstr "Slóð + nafn"
 #: src/menus.ui:236
 msgid "Move to _Trash"
 msgstr "Færa í _ruslið"
+
+#: src/fsearch_cli.c:169
+msgid "Using stale FSearch index; automatic reindexing is disabled."
+msgstr ""
+"Notenda gamalt FSearch vísitalist; sjálfvirk endurvísitalagning er útilögð."
+
+#: src/fsearch_cli.c:239
+msgid ""
+"\n"
+"Index refresh options:\n"
+"  --refresh, --refresh-index    Rescan before searching\n"
+"  --no-reindex                  Use the existing index without rescanning\n"
+"  --reindex-interval SECONDS    Refresh when the index is this old\n"
+msgstr ""
+"\n"
+"Valmöguleikar á endurnýjun vísitalists:\n"
+"  --refresh, --refresh-index    Endurskoða áður en leit er gerð\n"
+"  --no-reindex                  Nota núverandi vísitalist án endurskoðunar\n"
+"  --reindex-interval SECONDS    Endurnýja þegar vísitalistið er þetta "
+"gamalt\n"
+
+#: src/fsearch_cli.c:526
+msgid "fsearch: --reindex-interval requires a non-negative number of seconds\n"
+msgstr "fsearch: --reindex-interval krefst neikvans tala á sekúndum\n"
+
+#: src/fsearch_cli.c:577
+msgid "fsearch: index is unavailable and automatic reindexing is disabled\n"
+msgstr ""
+"fsearch: vísitalist er ekki í notanu og sjálfvirk endurvísitalagning er "
+"útilögð\n"
+
+#: src/fsearch_cli_config.c:145
+msgid "Additional scalar section: database.\n"
+msgstr "Aukinn skalartengdur hlutur: database.\n"
+
+#: src/fsearch_file_utils.c:384 src/fsearch_file_utils.c:515
+msgctxt "Will be followed by the file path."
+msgid "Error when opening file"
+msgstr "Villa við að opna skrá"

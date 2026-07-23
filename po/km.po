@@ -2416,3 +2416,38 @@ msgstr "ផ្លូវ + ឈ្មោះ"
 #: src/menus.ui:236
 msgid "Move to _Trash"
 msgstr "ផ្លាស់ទីទៅ _ ធុងសំរាម"
+
+#: src/fsearch_cli.c:169
+msgid "Using stale FSearch index; automatic reindexing is disabled."
+msgstr "កំពុងប្រើប្រាស់បញ្ជី FSearch ចាស់; ការបង្កើតបញ្ជីឡើងវិញដោយស្វ័យប្រវត្តិត្រូវបានបិទ។"
+
+#: src/fsearch_cli.c:239
+msgid ""
+"\n"
+"Index refresh options:\n"
+"  --refresh, --refresh-index    Rescan before searching\n"
+"  --no-reindex                  Use the existing index without rescanning\n"
+"  --reindex-interval SECONDS    Refresh when the index is this old\n"
+msgstr ""
+"\n"
+"ជម្រើសនៃការធ្វើឱ្យបញ្ជីថ្មី:\n"
+"  --refresh, --refresh-index    ស្កេនឡើងវិញមុនពេលស្វែងរក\n"
+"  --no-reindex                  ប្រើបញ្ជីដែលមានស្រាប់ដោយមិនចាំបាច់ស្កេនឡើងវិញ\n"
+"  --reindex-interval SECONDS    ធ្វើឱ្យថ្មីនៅពេលបញ្ជីមានអាយុកាលកំណត់នេះ\n"
+
+#: src/fsearch_cli.c:526
+msgid "fsearch: --reindex-interval requires a non-negative number of seconds\n"
+msgstr "fsearch: --reindex-interval តម្រូវឱ្យមានចំនួនវិនាទីមិនមែនជាចំនួនអវិជ្ជមាន\n"
+
+#: src/fsearch_cli.c:577
+msgid "fsearch: index is unavailable and automatic reindexing is disabled\n"
+msgstr "fsearch: បញ្ជីមិនអាចប្រើប្រាស់បានទេ ហើយការបង្កើតបញ្ជីឡើងវិញដោយស្វ័យប្រវត្តិត្រូវបានបិទ\n"
+
+#: src/fsearch_cli_config.c:145
+msgid "Additional scalar section: database.\n"
+msgstr "ផ្នែក scalar បន្ថែម៖ database។\n"
+
+#: src/fsearch_file_utils.c:384 src/fsearch_file_utils.c:515
+msgctxt "Will be followed by the file path."
+msgid "Error when opening file"
+msgstr "កំហុសពេលបើកថត"

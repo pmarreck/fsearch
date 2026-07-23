@@ -2463,3 +2463,38 @@ msgstr[0] "確定要移除 %'d 個檔案嗎？"
 msgid "Do you really want to open %'d file property window?"
 msgid_plural "Do you really want to open %'d file property windows?"
 msgstr[0] "確定要開啟 %'d 個檔案屬性視窗嗎？"
+
+#: src/fsearch_cli.c:169
+msgid "Using stale FSearch index; automatic reindexing is disabled."
+msgstr "正在使用過時的 FSearch 索引；已停用自動重新編制。"
+
+#: src/fsearch_cli.c:239
+msgid ""
+"\n"
+"Index refresh options:\n"
+"  --refresh, --refresh-index    Rescan before searching\n"
+"  --no-reindex                  Use the existing index without rescanning\n"
+"  --reindex-interval SECONDS    Refresh when the index is this old\n"
+msgstr ""
+"\n"
+"索引更新選項：\n"
+"  --refresh, --refresh-index    搜尋前重新掃描\n"
+"  --no-reindex                  不進行重新掃描，使用現有索引\n"
+"  --reindex-interval SECONDS    當索引達到此時長時進行更新\n"
+
+#: src/fsearch_cli.c:526
+msgid "fsearch: --reindex-interval requires a non-negative number of seconds\n"
+msgstr "fsearch: --reindex-interval 需要一個非負的秒數\n"
+
+#: src/fsearch_cli.c:577
+msgid "fsearch: index is unavailable and automatic reindexing is disabled\n"
+msgstr "fsearch: 索引不可用且已停用自動重新編制\n"
+
+#: src/fsearch_cli_config.c:145
+msgid "Additional scalar section: database.\n"
+msgstr "額外的標量區段：database。\n"
+
+#: src/fsearch_file_utils.c:384 src/fsearch_file_utils.c:515
+msgctxt "Will be followed by the file path."
+msgid "Error when opening file"
+msgstr "開啟檔案時發生錯誤"

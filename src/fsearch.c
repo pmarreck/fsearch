@@ -61,6 +61,7 @@ struct _FsearchApplication {
     bool has_file_manager_on_bus;
 
     FsearchDatabaseState db_state;
+    FsearchDatabaseRefreshAction startup_refresh_action;
 
     uint32_t num_files;
     uint32_t num_folders;
@@ -418,18 +419,10 @@ on_database_load_finished(FsearchDatabase *db, FsearchDatabaseInfo *info, gpoint
 
     on_database_update_finished(db, info, user_data);
 
-    g_autoptr(FsearchDatabaseIncludeManager) db_includes = fsearch_database_info_get_include_manager(info);
-    g_autoptr(FsearchDatabaseExcludeManager) db_excludes = fsearch_database_info_get_exclude_manager(info);
-
-    const bool includes_changed = !fsearch_database_include_manager_equal(db_includes, self->config->includes);
-    const bool excludes_changed = !fsearch_database_exclude_manager_equal(db_excludes, self->config->excludes);
-
-    if (includes_changed || excludes_changed) {
-        g_debug("[app] database config differs from config file, triggering rescan");
+    if (self->startup_refresh_action == FSEARCH_DATABASE_REFRESH_ACTION_REFRESH) {
+        g_debug("[app] shared database refresh policy requested a startup rescan");
         fsearch_database_cancel_scan(self->db);
-        g_autoptr(FsearchDatabaseWork) work = fsearch_database_work_new_scan(self->config->includes,
-                                                                             self->config->excludes,
-                                                                             DATABASE_INDEX_PROPERTY_FLAG_DEFAULT);
+        g_autoptr(FsearchDatabaseWork) work = fsearch_database_work_new_rescan();
         fsearch_database_queue_work(self->db, work);
     }
 }
@@ -454,8 +447,26 @@ fsearch_application_startup(GApplication *app) {
     }
 
     g_autofree char *db_file_path = g_build_filename(g_get_user_data_dir(), "fsearch", "fsearch.db", NULL);
+    const FsearchDatabaseRefreshPolicy configured_refresh_policy = {
+        .mode = self->config->database_refresh_mode,
+        .interval_seconds = self->config->database_refresh_interval,
+    };
+    const FsearchDatabaseRefreshPolicy refresh_policy = fsearch_database_refresh_policy_resolve(configured_refresh_policy,
+                                                                                                  g_getenv("FSEARCH_REFRESH_MODE"),
+                                                                                                  g_getenv("FSEARCH_REFRESH_INTERVAL"),
+                                                                                                  NULL);
+    const FsearchDatabaseRefreshIndexState index_state = fsearch_database_refresh_index_state_inspect(db_file_path,
+                                                                                                         self->config->includes,
+                                                                                                         self->config->excludes);
+    self->startup_refresh_action = fsearch_database_refresh_policy_decide(refresh_policy.mode,
+                                                                           refresh_policy.interval_seconds,
+                                                                           &index_state,
+                                                                           g_get_real_time() / G_USEC_PER_SEC);
     g_autoptr(GFile) db_file = g_file_new_for_path(db_file_path);
     self->db = fsearch_database_new(g_steal_pointer(&db_file), self->config->includes, self->config->excludes);
+    fsearch_database_set_load_policy(self->db,
+                                     self->startup_refresh_action == FSEARCH_DATABASE_REFRESH_ACTION_USE_STALE,
+                                     FALSE);
     self->db_state = FSEARCH_DATABASE_STATE_IDLE;
 
     g_signal_connect_object(self->db, "load-started", G_CALLBACK(on_database_load_started), self, G_CONNECT_AFTER);

@@ -2420,3 +2420,42 @@ msgstr "Yol + Ad"
 #: src/menus.ui:236
 msgid "Move to _Trash"
 msgstr "_Zibil qutusuna köçürün"
+
+#: src/fsearch_cli.c:169
+msgid "Using stale FSearch index; automatic reindexing is disabled."
+msgstr ""
+"Köhnəlmiş FSearch indeksindən istifadə olunur; avtomatik yenidən indeksləmə "
+"deaktivdir."
+
+#: src/fsearch_cli.c:239
+msgid ""
+"\n"
+"Index refresh options:\n"
+"  --refresh, --refresh-index    Rescan before searching\n"
+"  --no-reindex                  Use the existing index without rescanning\n"
+"  --reindex-interval SECONDS    Refresh when the index is this old\n"
+msgstr ""
+"\n"
+"İndeksin yenilənməsi seçimləri:\n"
+"  --refresh, --refresh-index    Axtarmazdan əvvəl yenidən skan et\n"
+"  --no-reindex                  Yenidən skan etmədən mövcud indeksdən "
+"istifadə et\n"
+"  --reindex-interval SECONDS    İndeks bu qədər köhnə olanda yenilə\n"
+
+#: src/fsearch_cli.c:526
+msgid "fsearch: --reindex-interval requires a non-negative number of seconds\n"
+msgstr "fsearch: --reindex-interval mənfi olmayan saniyə sayı tələb edir\n"
+
+#: src/fsearch_cli.c:577
+msgid "fsearch: index is unavailable and automatic reindexing is disabled\n"
+msgstr ""
+"fsearch: indeks əlçatan deyil və avtomatik yenidən indeksləmə deaktivdir\n"
+
+#: src/fsearch_cli_config.c:145
+msgid "Additional scalar section: database.\n"
+msgstr "Əlavə skalyar bölmə: verilənlər bazası.\n"
+
+#: src/fsearch_file_utils.c:384 src/fsearch_file_utils.c:515
+msgctxt "Will be followed by the file path."
+msgid "Error when opening file"
+msgstr "Qovluğu açarkən xəta baş verdi"

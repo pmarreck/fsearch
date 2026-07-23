@@ -25,6 +25,9 @@ char *
 fsearch_cli_format_index_update_notice(void);
 
 char *
+fsearch_cli_format_stale_index_notice(void);
+
+char *
 fsearch_cli_format_index_progress(const char *status);
 
 char *

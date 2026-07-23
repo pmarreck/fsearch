@@ -10,6 +10,7 @@
 #include "fsearch_database_entry_info.h"
 #include "fsearch_database_file.h"
 #include "fsearch_database_index_properties.h"
+#include "fsearch_database_refresh_policy.h"
 #include "fsearch_database_search_info.h"
 #include "fsearch_database_work.h"
 #include "fsearch_query.h"
@@ -49,6 +50,8 @@ typedef struct {
     guint limit;
     gboolean update_database;
     gboolean wait_for_index_update;
+    FsearchDatabaseRefreshAction refresh_action;
+    gboolean saving_index;
     gboolean search_queued;
     gboolean index_update_notice_printed;
     gboolean index_progress_visible;
@@ -80,6 +83,23 @@ parse_result_limit(const char *value, guint *limit_out) {
     }
 
     *limit_out = (guint)parsed;
+    return TRUE;
+}
+
+static gboolean
+parse_refresh_interval(const char *value, gint64 *interval_out) {
+    if (!value || *value == '\0') {
+        return FALSE;
+    }
+
+    errno = 0;
+    char *end = NULL;
+    const gint64 interval = g_ascii_strtoll(value, &end, 10);
+    if (errno != 0 || end == value || *end != '\0' || interval < 0) {
+        return FALSE;
+    }
+
+    *interval_out = interval;
     return TRUE;
 }
 
@@ -140,6 +160,13 @@ char *
 fsearch_cli_format_index_update_notice(void) {
     return g_strdup_printf(FSEARCH_CLI_ITALIC_LIGHT_GREY "%s" FSEARCH_CLI_ANSI_RESET,
                            _("Updating FSearch index before searching..."));
+}
+
+/// Renders the explicit stale-index status without mixing a warning into searchable path output.
+char *
+fsearch_cli_format_stale_index_notice(void) {
+    return g_strdup_printf(FSEARCH_CLI_ITALIC_LIGHT_GREY "%s" FSEARCH_CLI_ANSI_RESET,
+                           _("Using stale FSearch index; automatic reindexing is disabled."));
 }
 
 /// Renders an in-place, indeterminate scan status using observed entries rather than a fabricated percentage.
@@ -209,6 +236,10 @@ print_help(void) {
             "Glob syntax: * excludes /; ** spans directories; ? matches one character; [a-c] is a range;\n"
             "Glob searches paths by default; use **/ for any depth; file:glob: searches file names.\n"
             "{png,jpg} selects alternatives; {01..12} is an inclusive numeric range; \\* matches a literal *.\n"));
+    g_print("%s", _("\nIndex refresh options:\n"
+                    "  --refresh, --refresh-index    Rescan before searching\n"
+                    "  --no-reindex                  Use the existing index without rescanning\n"
+                    "  --reindex-interval SECONDS    Refresh when the index is this old\n"));
 }
 
 static const char *
@@ -249,20 +280,6 @@ stderr_is_terminal(void) {
     return fsearch_cli_isatty(fsearch_cli_fileno(stderr)) != 0;
 }
 
-static gboolean
-database_requires_index_update(const char *database_path, FsearchConfig *config) {
-    g_autoptr(FsearchDatabaseIncludeManager) indexed_includes = NULL;
-    g_autoptr(FsearchDatabaseExcludeManager) indexed_excludes = NULL;
-    FsearchDatabaseIndexPropertyFlags flags = DATABASE_INDEX_PROPERTY_FLAG_NONE;
-
-    if (!fsearch_database_file_load_config(database_path, &indexed_includes, &indexed_excludes, &flags)) {
-        return TRUE;
-    }
-
-    return !fsearch_database_include_manager_equal(indexed_includes, config->includes)
-        || !fsearch_database_exclude_manager_equal(indexed_excludes, config->excludes);
-}
-
 static void
 queue_search(FsearchCliRun *run) {
     if (run->search_queued) {
@@ -282,6 +299,18 @@ queue_search(FsearchCliRun *run) {
     g_clear_pointer(&run->search_work, fsearch_database_work_unref);
     run->search_work = fsearch_database_work_ref(search_work);
     fsearch_database_queue_work(run->database, search_work);
+}
+
+static void
+queue_refresh(FsearchCliRun *run) {
+    g_autoptr(FsearchDatabaseWork) refresh_work = fsearch_database_work_new_rescan();
+    fsearch_database_queue_work(run->database, refresh_work);
+}
+
+static void
+queue_index_save(FsearchCliRun *run) {
+    g_autoptr(FsearchDatabaseWork) save_work = fsearch_database_work_new_save();
+    fsearch_database_queue_work(run->database, save_work);
 }
 
 #ifndef G_OS_WIN32
@@ -363,9 +392,15 @@ on_database_loaded(FsearchDatabase *database, FsearchDatabaseInfo *info, gpointe
         return;
     }
 
-    if (!run->wait_for_index_update) {
-        queue_search(run);
+    if (run->refresh_action == FSEARCH_DATABASE_REFRESH_ACTION_REFRESH) {
+        queue_refresh(run);
+        return;
     }
+    if (run->refresh_action == FSEARCH_DATABASE_REFRESH_ACTION_USE_STALE) {
+        g_autofree char *notice = fsearch_cli_format_stale_index_notice();
+        fsearch_cli_printerr("%s\n", notice);
+    }
+    queue_search(run);
 }
 
 static void
@@ -385,6 +420,16 @@ static void
 on_database_scan_finished(FsearchDatabase *database, FsearchDatabaseInfo *info, gpointer user_data) {
     FsearchCliRun *run = user_data;
     if (!run->update_database && run->wait_for_index_update) {
+        run->saving_index = TRUE;
+        queue_index_save(run);
+    }
+}
+
+static void
+on_database_save_finished(FsearchDatabase *database, gpointer user_data) {
+    FsearchCliRun *run = user_data;
+    if (!run->update_database && run->saving_index) {
+        run->saving_index = FALSE;
         queue_search(run);
     }
 }
@@ -424,6 +469,7 @@ fsearch_cli_run(int argc, char *argv[]) {
     gboolean unlimit = FALSE;
     gboolean global = FALSE;
     gboolean update_database = FALSE;
+    FsearchDatabaseRefreshOverride refresh_override = {0};
 
     for (int i = 1; i < argc; i++) {
         if (g_strcmp0(argv[i], "--cli") == 0) {
@@ -465,6 +511,25 @@ fsearch_cli_run(int argc, char *argv[]) {
             global = TRUE;
             continue;
         }
+        if (g_strcmp0(argv[i], "--refresh") == 0 || g_strcmp0(argv[i], "--refresh-index") == 0) {
+            refresh_override.mode_is_set = TRUE;
+            refresh_override.mode = FSEARCH_DATABASE_REFRESH_MODE_ALWAYS;
+            continue;
+        }
+        if (g_strcmp0(argv[i], "--no-reindex") == 0) {
+            refresh_override.mode_is_set = TRUE;
+            refresh_override.mode = FSEARCH_DATABASE_REFRESH_MODE_NEVER;
+            continue;
+        }
+        if (g_strcmp0(argv[i], "--reindex-interval") == 0) {
+            if (i + 1 >= argc || !parse_refresh_interval(argv[i + 1], &refresh_override.interval_seconds)) {
+                fsearch_cli_printerr("fsearch: --reindex-interval requires a non-negative number of seconds\n");
+                return EXIT_FAILURE;
+            }
+            refresh_override.interval_is_set = TRUE;
+            i++;
+            continue;
+        }
         if (g_strcmp0(argv[i], "--update-database") == 0 || g_strcmp0(argv[i], "-u") == 0) {
             update_database = TRUE;
             continue;
@@ -491,19 +556,46 @@ fsearch_cli_run(int argc, char *argv[]) {
     }
 
     g_autofree char *database_dir = g_build_filename(g_get_user_data_dir(), "fsearch", NULL);
+    g_autofree char *database_path = g_build_filename(database_dir, "fsearch.db", NULL);
+    const FsearchDatabaseRefreshPolicy configured_refresh_policy = {
+        .mode = run.config->database_refresh_mode,
+        .interval_seconds = run.config->database_refresh_interval,
+    };
+    const FsearchDatabaseRefreshPolicy refresh_policy = fsearch_database_refresh_policy_resolve(configured_refresh_policy,
+                                                                                                  g_getenv("FSEARCH_REFRESH_MODE"),
+                                                                                                  g_getenv("FSEARCH_REFRESH_INTERVAL"),
+                                                                                                  &refresh_override);
+    const FsearchDatabaseRefreshIndexState index_state = fsearch_database_refresh_index_state_inspect(database_path,
+                                                                                                         run.config->includes,
+                                                                                                         run.config->excludes);
+    run.refresh_action = update_database ? FSEARCH_DATABASE_REFRESH_ACTION_REFRESH
+                                         : fsearch_database_refresh_policy_decide(refresh_policy.mode,
+                                                                                  refresh_policy.interval_seconds,
+                                                                                  &index_state,
+                                                                                  g_get_real_time() / G_USEC_PER_SEC);
+    if (run.refresh_action == FSEARCH_DATABASE_REFRESH_ACTION_FAIL) {
+        fsearch_cli_printerr("fsearch: index is unavailable and automatic reindexing is disabled\n");
+        config_free(run.config);
+        g_main_loop_unref(run.loop);
+        return EXIT_FAILURE;
+    }
+    run.wait_for_index_update = run.refresh_action == FSEARCH_DATABASE_REFRESH_ACTION_REFRESH;
+
     if (g_mkdir_with_parents(database_dir, 0700) != 0) {
         fsearch_cli_printerr("fsearch: failed to create data directory: %s\n", database_dir);
         config_free(run.config);
         g_main_loop_unref(run.loop);
         return EXIT_FAILURE;
     }
-    g_autofree char *database_path = g_build_filename(database_dir, "fsearch.db", NULL);
     g_autoptr(GFile) database_file = g_file_new_for_path(database_path);
     run.database = fsearch_database_new(g_steal_pointer(&database_file), run.config->includes, run.config->excludes);
-    run.wait_for_index_update = database_requires_index_update(database_path, run.config);
+    fsearch_database_set_load_policy(run.database,
+                                     run.refresh_action == FSEARCH_DATABASE_REFRESH_ACTION_USE_STALE,
+                                     FALSE);
     g_signal_connect(run.database, "load-finished", G_CALLBACK(on_database_loaded), &run);
     g_signal_connect(run.database, "scan-started", G_CALLBACK(on_database_scan_started), &run);
     g_signal_connect(run.database, "scan-finished", G_CALLBACK(on_database_scan_finished), &run);
+    g_signal_connect(run.database, "save-finished", G_CALLBACK(on_database_save_finished), &run);
     g_signal_connect(run.database, "database-progress", G_CALLBACK(on_database_progress), &run);
     g_signal_connect(run.database, "search-finished", G_CALLBACK(on_search_finished), &run);
 

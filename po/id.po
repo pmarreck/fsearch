@@ -2733,3 +2733,44 @@ msgstr "Pindahkan ke Sampah"
 #~| msgid "Loading Database…"
 #~ msgid "Loading Database..."
 #~ msgstr "Memuat database…"
+
+#: src/fsearch_cli.c:169
+msgid "Using stale FSearch index; automatic reindexing is disabled."
+msgstr ""
+"Menggunakan indeks FSearch yang usang; pengindeksan ulang otomatis "
+"dinonaktifkan."
+
+#: src/fsearch_cli.c:239
+msgid ""
+"\n"
+"Index refresh options:\n"
+"  --refresh, --refresh-index    Rescan before searching\n"
+"  --no-reindex                  Use the existing index without rescanning\n"
+"  --reindex-interval SECONDS    Refresh when the index is this old\n"
+msgstr ""
+"\n"
+"Opsi pembaruan indeks:\n"
+"  --refresh, --refresh-index    Memindai ulang sebelum mencari\n"
+"  --no-reindex                  Gunakan indeks yang ada tanpa memindai "
+"ulang\n"
+"  --reindex-interval SECONDS    Perbarui saat indeks sudah berumur sekian "
+"lama\n"
+
+#: src/fsearch_cli.c:526
+msgid "fsearch: --reindex-interval requires a non-negative number of seconds\n"
+msgstr "fsearch: --reindex-interval memerlukan jumlah detik non-negatif\n"
+
+#: src/fsearch_cli.c:577
+msgid "fsearch: index is unavailable and automatic reindexing is disabled\n"
+msgstr ""
+"fsearch: indeks tidak tersedia dan pengindeksan ulang otomatis "
+"dinonaktifkan\n"
+
+#: src/fsearch_cli_config.c:145
+msgid "Additional scalar section: database.\n"
+msgstr "Bagian skalar tambahan: database.\n"
+
+#: src/fsearch_file_utils.c:384 src/fsearch_file_utils.c:515
+msgctxt "Will be followed by the file path."
+msgid "Error when opening file"
+msgstr "Kesalahan saat membuka file"
