@@ -1,3 +1,8 @@
+---
+description: "Local model translation must distinguish CLI syntax from user prose."
+datetime: 2026-07-15T20:09:56-04:00 # America/New_York (EDT)
+tags: [model, translation, i18n, l10n, localization, distinguish, cli, syntax, user, prose]
+---
 Gettext structural checks accept a nonempty English msgstr, so a local model
 can leave complete CLI usage or diagnostic strings untranslated while every PO,
 placeholder, and completeness gate passes. Gemma over-applied the instruction

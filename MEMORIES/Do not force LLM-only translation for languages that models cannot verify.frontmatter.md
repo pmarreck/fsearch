@@ -1,3 +1,8 @@
+---
+description: "Do not force LLM only translation for languages that models cannot verify."
+datetime: 2026-07-16T09:50:15-04:00 # America/New_York (EDT)
+tags: [force, llm, ai, language-model, translation, i18n, l10n, localization, languages, models, verify]
+---
 Gemma and Qwen fabricated plausible but false Irish, and Claude independently
 identified the same low-confidence failure mode for Interlingue and Igbo.
 Gettext syntax, exact placeholders, and non-English keyword checks establish

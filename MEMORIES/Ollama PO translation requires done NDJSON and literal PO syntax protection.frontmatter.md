@@ -1,3 +1,8 @@
+---
+description: "Ollama PO translation requires done NDJSON and literal PO syntax protection."
+datetime: 2026-07-15T11:10:58-04:00 # America/New_York (EDT)
+tags: [ollama, llm, ai, language-model, translation, i18n, l10n, localization, ndjson, literal, syntax, protection]
+---
 The native Ollama `/api/chat` stream is NDJSON rather than OpenAI SSE. A
 translation batch must therefore accumulate `message.content` chunks and
 require an explicit `done: true` event before parsing its JSON-schema result;

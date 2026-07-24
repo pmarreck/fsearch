@@ -1,3 +1,8 @@
+---
+description: "OpenAI PO translation requires streams bounded batches and exact printf checks."
+datetime: 2026-07-14T23:04:42-04:00 # America/New_York (EDT)
+tags: [openai, llm, ai, language-model, translation, i18n, l10n, localization, streams, bounded, batches, exact, printf, checks]
+---
 The Basque catalog took 198.5 seconds to generate and returned no body from
 the previous non-streamed Responses request before its 180-second timeout.
 `tools/translate-po` therefore sends at most 20 PO entries per streamed

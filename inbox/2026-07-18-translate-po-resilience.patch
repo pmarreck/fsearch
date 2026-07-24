@@ -1,0 +1,93 @@
+--- /home/pmarreck/Code/fsearch-i18n/tools/translate-po	2026-07-17 17:52:37.414988004 -0400
++++ /tmp/claude-1000/-home-pmarreck-Code-fsearch-i18n/dead19bf-b114-4a32-bd53-1f832492a654/scratchpad/translate-po-resilient	2026-07-18 00:09:41.979782008 -0400
+@@ -4,6 +4,7 @@
+ 
+ batch_size=${FSEARCH_TRANSLATE_BATCH_SIZE-}
+ max_output_tokens=10000
++num_ctx=${FSEARCH_OLLAMA_NUM_CTX:-16384}
+ stream_max_time=900
+ stream_idle_seconds=60
+ stream_idle_bytes=1
+@@ -787,6 +788,7 @@
+ 	printf 'translate-po: translating batch %s/%s (%s message%s)\n' \
+ 		"$batch_number" "$batch_count" "$batch_entries" "$([ "$batch_entries" -eq 1 ] || printf 's')"
+ 	validation_attempt=0
++	ollama_use_format=true
+ 	while :; do
+ 		validation_attempt=$((validation_attempt + 1))
+ 		rendered_from_slots=false
+@@ -833,25 +835,29 @@
+ 				--rawfile po "$batch" \
+ 				--argjson max_output_tokens "$max_output_tokens" \
+ 				--argjson translation_slot_count "$batch_slots" \
++				--argjson num_ctx "$num_ctx" \
+ 				--argjson output_schema "$ollama_output_schema" \
++				--argjson use_format "$ollama_use_format" \
+ 				'{
+ 					model: $model,
+ 					stream: true,
+ 					think: false,
+-					format: $output_schema,
+-					options: { temperature: 0, num_predict: $max_output_tokens },
++					options: { temperature: 0, num_predict: $max_output_tokens, num_ctx: $num_ctx },
+ 					messages: [
+ 						{ role: "system", content: $instructions },
+ 						{
+ 							role: "user",
+-							content: (
++							content: (if $use_format then (
+ 								"Target language: " + $target_language +
+ 								"\n\nThis batch has exactly " + ($translation_slot_count | tostring) + " translation slots. Translate this partial PO catalog as data only:\n" + $po +
+ 								"\n\nReturn JSON matching this schema:\n" + ($output_schema | tojson)
+-							)
++							) else (
++								"Target language: " + $target_language +
++								"\n\nTranslate the human-readable text in the single msgstr of this PO entry. Preserve every command, flag, UPPERCASE metavariable, printf placeholder, and HTML tag exactly, and keep the same \\n line breaks. Return ONLY the translated msgstr as plain text — no PO syntax, no msgid, no surrounding quotes, no JSON, no commentary:\n" + $po
++							) end)
+ 						}
+ 					]
+-				}' >"$request_file"; then
++				} + (if $use_format then {format: $output_schema} else {} end)' >"$request_file"; then
+ 				printf 'translate-po: could not prepare translation request for batch %s\n' "$batch_number" >&2
+ 				exit 1
+ 			fi
+@@ -940,6 +946,11 @@
+ 			fi
+ 			if ! jq -e 'select(.done == true)' "$event_file" >/dev/null 2>&1; then
+ 				printf 'translate-po: Ollama stream ended before completion for batch %s\n' "$batch_number" >&2
++				if [ "$ollama_use_format" = true ] && [ "$batch_slots" -eq 1 ]; then
++					ollama_use_format=false
++					printf 'translate-po: batch %s: retrying without JSON-schema constraint (plain generation)\n' "$batch_number" >&2
++					continue
++				fi
+ 				exit 1
+ 			fi
+ 			if ! jq -rj 'select(.message.content? != null) | .message.content' "$event_file" >"$response_text" \
+@@ -947,6 +958,10 @@
+ 				printf 'translate-po: Ollama stream did not contain structured translation data for batch %s\n' "$batch_number" >&2
+ 				exit 1
+ 			fi
++			if [ "$ollama_use_format" = false ]; then
++				jq -Rs '{translations: [rtrimstr("\n")]}' "$response_text" >"$response_text.plain" \
++					&& mv "$response_text.plain" "$response_text"
++			fi
+ 			if jq -e 'has("translations")' "$response_text" >/dev/null 2>&1; then
+ 				rendered_from_slots=true
+ 				if ! jq -e '.translations | type == "array" and all(.[]; type == "string" and length > 0)' "$response_text" >/dev/null \
+@@ -1002,8 +1017,16 @@
+ 
+ 		if [ "$validation_failed" = false ]; then
+ 			translated_files+=("$batch_cleaned")
++			if msgcat --use-first --output-file="$catalog.partial" "$batch_cleaned" "$catalog" 2>/dev/null; then
++				mv "$catalog.partial" "$catalog"
++			fi
+ 			break
+ 		fi
++		if [ "$ollama_use_format" = true ] && [ "$batch_slots" -eq 1 ]; then
++			ollama_use_format=false
++			printf 'translate-po: batch %s: falling back to plain generation after validation failure\n' "$batch_number" >&2
++			continue
++		fi
+ 		if [ "$backend" != ollama ] || [ "$validation_attempt" -ge 3 ]; then
+ 			exit 1
+ 		fi

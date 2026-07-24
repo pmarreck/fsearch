@@ -1,3 +1,8 @@
+---
+description: "FSearch tests must isolate XDG state from user configuration."
+datetime: 2026-07-19T09:10:38-04:00 # America/New_York (EDT)
+tags: [fsearch, tests, test, testing, isolate, xdg, state, user, configuration]
+---
 FSearch resolves its persistent configuration and index through GLib's user
 config and data directories. Any test that enters the application with the
 caller's ordinary environment can therefore overwrite the live
