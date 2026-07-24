@@ -2113,3 +2113,9 @@ msgstr ""
 #: src/menus.ui:236
 msgid "Move to _Trash"
 msgstr ""
+
+#: src/fsearch.c:918
+msgid ""
+"Interface selection: set FSEARCH_UI=CLI to default to CLI or FSEARCH_UI=GUI "
+"to default to GUI. Use --cli or --gui to override it for one invocation."
+msgstr ""

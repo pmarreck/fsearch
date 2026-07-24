@@ -2928,3 +2928,12 @@ msgstr "قسم قياسي إضافي: database.\n"
 msgctxt "Will be followed by the file path."
 msgid "Error when opening file"
 msgstr "خطأ عند فتح الملف"
+
+#: src/fsearch.c:918
+msgid ""
+"Interface selection: set FSEARCH_UI=CLI to default to CLI or FSEARCH_UI=GUI "
+"to default to GUI. Use --cli or --gui to override it for one invocation."
+msgstr ""
+"اختيار الواجهة: اضبط FSEARCH_UI=CLI للتعيين الافتراضي إلى CLI أو "
+"FSEARCH_UI=GUI للتعيين الافتراضي إلى GUI. استخدم --cli أو --gui لتجاوزه "
+"لاستدعاء واحد."

@@ -2542,3 +2542,11 @@ msgstr "अतिरिक्त स्केलर विभाग: डेट�
 msgctxt "Will be followed by the file path."
 msgid "Error when opening file"
 msgstr "फाईल उघडताना त्रुटी"
+
+#: src/fsearch.c:918
+msgid ""
+"Interface selection: set FSEARCH_UI=CLI to default to CLI or FSEARCH_UI=GUI "
+"to default to GUI. Use --cli or --gui to override it for one invocation."
+msgstr ""
+"इंटरफेस निवड: डीफॉल्ट म्हणून CLI साठी FSEARCH_UI=CLI किंवा GUI साठी FSEARCH_UI=GUI "
+"सेट करा. एका वापरासाठी ते ओव्हरराइड करण्यासाठी --cli किंवा --gui वापरा."

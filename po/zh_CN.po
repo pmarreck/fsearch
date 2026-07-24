@@ -2963,3 +2963,11 @@ msgstr "额外的标量部分：database。\n"
 msgctxt "Will be followed by the file path."
 msgid "Error when opening file"
 msgstr "打开文件时出错"
+
+#: src/fsearch.c:918
+msgid ""
+"Interface selection: set FSEARCH_UI=CLI to default to CLI or FSEARCH_UI=GUI "
+"to default to GUI. Use --cli or --gui to override it for one invocation."
+msgstr ""
+"界面选择：设置 FSEARCH_UI=CLI 以默认使用 CLI，或设置 FSEARCH_UI=GUI 以默认使"
+"用 GUI。使用 --cli 或 --gui 可在单次调用中覆盖此设置。"

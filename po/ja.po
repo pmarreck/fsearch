@@ -2937,3 +2937,12 @@ msgstr "追加のスカラーセクション: database。\n"
 msgctxt "Will be followed by the file path."
 msgid "Error when opening file"
 msgstr "ファイルを開く際のエラー"
+
+#: src/fsearch.c:918
+msgid ""
+"Interface selection: set FSEARCH_UI=CLI to default to CLI or FSEARCH_UI=GUI "
+"to default to GUI. Use --cli or --gui to override it for one invocation."
+msgstr ""
+"インターフェースの選択: FSEARCH_UI=CLI を設定すると CLI が、FSEARCH_UI=GUI を"
+"設定すると GUI がデフォルトになります。1回の実行時のみ上書きする場合は --cli "
+"または --gui を使用してください。"

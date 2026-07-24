@@ -2911,3 +2911,13 @@ msgstr "További skaláris szakasz: database.\n"
 msgctxt "Will be followed by the file path."
 msgid "Error when opening file"
 msgstr "Hiba a fájl megnyitásakor"
+
+#: src/fsearch.c:918
+msgid ""
+"Interface selection: set FSEARCH_UI=CLI to default to CLI or FSEARCH_UI=GUI "
+"to default to GUI. Use --cli or --gui to override it for one invocation."
+msgstr ""
+"Felület kiválasztása: állítsa be az FSEARCH_UI=CLI opciót a CLI alapértékű "
+"használatáhhoz, vagy az FSEARCH_UI=GUI opciót a GUI alapértékű "
+"használatáhuz. Egyedi meghívás esetén használja --cli vagy --gui "
+"paramétereket az átlépéshez."

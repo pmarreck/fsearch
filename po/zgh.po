@@ -2819,3 +2819,12 @@ msgstr "Tasekt n tura: database.\n"
 msgctxt "Will be followed by the file path."
 msgid "Error when opening file"
 msgstr "Tawit deg ulday n ukaram"
+
+#: src/fsearch.c:918
+msgid ""
+"Interface selection: set FSEARCH_UI=CLI to default to CLI or FSEARCH_UI=GUI "
+"to default to GUI. Use --cli or --gui to override it for one invocation."
+msgstr ""
+"Tawinaw n l'interface: sset FSEARCH_UI=CLI illi yit-t d CLI aw "
+"FSEARCH_UI=GUI illi yit-t d GUI. Sɣiɣ --cli aw --gui illi yit-t tazzuwin "
+"iwwan."

@@ -2353,3 +2353,12 @@ msgstr "Rannán scálach breise: database.\n"
 msgctxt "Will be followed by the file path."
 msgid "Error when opening file"
 msgstr "Earráid agus comhad á oscailt"
+
+#: src/fsearch.c:918
+msgid ""
+"Interface selection: set FSEARCH_UI=CLI to default to CLI or FSEARCH_UI=GUI "
+"to default to GUI. Use --cli or --gui to override it for one invocation."
+msgstr ""
+"Roghnú comhéadain: socraigh FSEARCH_UI=CLI chun CLI a úsáid mar réamhshocrú "
+"nó FSEARCH_UI=GUI chun GUI a úsáid mar réamhshocrú. Bain úsáid as --cli nó "
+"--gui chun é a shárú d'aon agairt amháin."

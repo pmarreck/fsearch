@@ -3115,3 +3115,12 @@ msgstr "Zusätzlicher Skalarbereich: database.\n"
 msgctxt "Will be followed by the file path."
 msgid "Error when opening file"
 msgstr "Fehler beim Öffnen der Datei"
+
+#: src/fsearch.c:918
+msgid ""
+"Interface selection: set FSEARCH_UI=CLI to default to CLI or FSEARCH_UI=GUI "
+"to default to GUI. Use --cli or --gui to override it for one invocation."
+msgstr ""
+"Oberflächenauswahl: Setzen Sie FSEARCH_UI=CLI, um CLI als Standard zu "
+"verwenden, oder FSEARCH_UI=GUI, um GUI als Standard zu verwenden. Verwenden "
+"Sie --cli oder --gui, um dies für einen einzelnen Aufruf zu überschreiben."

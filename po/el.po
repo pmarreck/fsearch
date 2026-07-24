@@ -3004,3 +3004,12 @@ msgstr "Πρόσθετο τμήμα κλιμακωτής: database.\n"
 msgctxt "Will be followed by the file path."
 msgid "Error when opening file"
 msgstr "Σφάλμα κατά το άνοιγμα του αρχείου"
+
+#: src/fsearch.c:918
+msgid ""
+"Interface selection: set FSEARCH_UI=CLI to default to CLI or FSEARCH_UI=GUI "
+"to default to GUI. Use --cli or --gui to override it for one invocation."
+msgstr ""
+"Επιλογή διεπαφής: οριστός FSEARCH_UI=CLI για προεπιλογή CLI ή FSEARCH_UI=GUI "
+"για προεπιλογή GUI. Χρησιμοποιήστε --cli ή --gui για την παράκαμψη της "
+"επιλογής για μία κλήση."

@@ -1,5 +1,11 @@
 # Plan
 
+- [x] Document `FSEARCH_UI=CLI` and `--gui`/`--cli` frontend selection in the live command-line help. Completed 2026-07-24 13:00 EDT.
+  Default `fsearch --help` now documents `FSEARCH_UI=CLI`, `FSEARCH_UI=GUI`, and the one-invocation `--cli`/`--gui` override; CLI tests cover both environment selectors. Required catalogs received a single translated entry apiece, with stronger-model corrections for Irish, Arabic, and Pashto. Curiosity poke: help must distinguish the environment default from a one-invocation selector and preserve the later-argument-wins rule.
+
+- [x] Prevent exported caller shell functions from crossing the isolated-test boundary. Completed 2026-07-24 13:00 EDT.
+  The top-level test runner now strips every inherited `BASH_FUNC_*` variable before entering its isolated HOME/XDG environment. A red-green isolation regression covers the leak, restoring translation-helper and GTK GSettings wrapper tests without weakening their checks. Curiosity poke: the runner must retain its Nix-provided executables while rejecting all `BASH_FUNC_*` imports, not merely Peter's current `find` wrapper.
+
 - [x] Add one shared GUI/CLI database-refresh policy with auto, always, and never modes; a two-hour default interval; persistent configuration; environment defaults; and CLI-only overrides. Completed 2026-07-22 22:00 EDT.
   The pure policy module gives both frontends identical missing, stale, and age-expired decisions; config, environment, and later CLI flags resolve in documented precedence. CLI refreshes now explicitly save the completed index before search, and database disposal preserves the last complete store instead of cancelling its queued save. Curiosity poke: `never` must neither hide a configuration mismatch nor make a readable old index unusable; it reports stale use clearly and fails only when no readable index exists.
 

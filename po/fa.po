@@ -2456,3 +2456,12 @@ msgstr "بخش مقادیر اسکالر اضافی: database.\n"
 msgctxt "Will be followed by the file path."
 msgid "Error when opening file"
 msgstr "خطا هنگام باز کردن فایل"
+
+#: src/fsearch.c:918
+msgid ""
+"Interface selection: set FSEARCH_UI=CLI to default to CLI or FSEARCH_UI=GUI "
+"to default to GUI. Use --cli or --gui to override it for one invocation."
+msgstr ""
+"انتخاب رابط کاربری: مقدار FSEARCH_UI=CLI را تنظیم کنید تا به صورت پیش‌فرض از "
+"CLI استفاده شود یا FSEARCH_UI=GUI را برای استفاده از GUI. از --cli یا --gui "
+"برای بازنویسی آن در یک فراخوانی استفاده کنید."

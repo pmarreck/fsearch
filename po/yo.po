@@ -2455,3 +2455,12 @@ msgstr "Abala scalar àfikún: database.\n"
 msgctxt "Will be followed by the file path."
 msgid "Error when opening file"
 msgstr "Àṣìṣe nígbà tí à ń ṣí fáìlì"
+
+#: src/fsearch.c:918
+msgid ""
+"Interface selection: set FSEARCH_UI=CLI to default to CLI or FSEARCH_UI=GUI "
+"to default to GUI. Use --cli or --gui to override it for one invocation."
+msgstr ""
+"Ìyànjú ìfihàn: ṣètẹ̀ sí FSEARCH_UI=CLI láti lo CLI gẹ́gẹ́ bí ìyàtọ̀, tàbí "
+"FSEARCH_UI=GUI láti lo GUI gẹ́gẹ́ bí ìyàtọ̀. Lo --cli tàbí --gui láti yí iṣẹ́ rẹ̀ "
+"padà fún ìpè kan."

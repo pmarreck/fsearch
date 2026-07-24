@@ -2461,3 +2461,12 @@ msgstr "கூடுதல் ஸ்கேலர் பகுதி: database.\n
 msgctxt "Will be followed by the file path."
 msgid "Error when opening file"
 msgstr "கோப்புறையைத் திறக்கும்போது பிழை"
+
+#: src/fsearch.c:918
+msgid ""
+"Interface selection: set FSEARCH_UI=CLI to default to CLI or FSEARCH_UI=GUI "
+"to default to GUI. Use --cli or --gui to override it for one invocation."
+msgstr ""
+"இடைமுகத் தெரிவு: CLI-க்கு மாற்றியமைக்க FSEARCH_UI=CLI அல்லது GUI-க்கு மாற்றியமைக்க "
+"FSEARCH_UI=GUI என அமைக்கவும். ஒருமுறை இயக்கப்படும்போது அதை மாற்றியமைக்க --cli அல்லது "
+"--gui ஐப் பயன்படுத்தவும்."

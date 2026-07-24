@@ -2454,3 +2454,12 @@ msgstr "Phần vô hướng bổ sung: database.\n"
 msgctxt "Will be followed by the file path."
 msgid "Error when opening file"
 msgstr "Lỗi khi mở tệp"
+
+#: src/fsearch.c:918
+msgid ""
+"Interface selection: set FSEARCH_UI=CLI to default to CLI or FSEARCH_UI=GUI "
+"to default to GUI. Use --cli or --gui to override it for one invocation."
+msgstr ""
+"Lựa chọn giao diện: đặt FSEARCH_UI=CLI để mặc định là CLI hoặc "
+"FSEARCH_UI=GUI để mặc định là GUI. Sử dụng --cli hoặc --gui để ghi đè cho "
+"một lần thực thi."

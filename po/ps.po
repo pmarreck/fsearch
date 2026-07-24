@@ -2458,3 +2458,12 @@ msgstr "اضافي اسکیلر برخه: ډیټابېیس.\n"
 msgctxt "Will be followed by the file path."
 msgid "Error when opening file"
 msgstr "د فایل پر خلاصولو پر مهال تېروتنه"
+
+#: src/fsearch.c:918
+msgid ""
+"Interface selection: set FSEARCH_UI=CLI to default to CLI or FSEARCH_UI=GUI "
+"to default to GUI. Use --cli or --gui to override it for one invocation."
+msgstr ""
+"د انٹرفیس غوراوی: FSEARCH_UI=CLI وټاکئ چې په تلواله توګه CLI وکارول شي یا "
+"FSEARCH_UI=GUI وټاکئ چې په تلواله توګه GUI وکارول شي. د یوې چلونې لپاره د دې "
+"د لغوه کولو په موخه --cli یا --gui وکاروئ."

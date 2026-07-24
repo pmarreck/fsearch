@@ -2459,3 +2459,12 @@ msgstr "Əlavə skalyar bölmə: verilənlər bazası.\n"
 msgctxt "Will be followed by the file path."
 msgid "Error when opening file"
 msgstr "Qovluğu açarkən xəta baş verdi"
+
+#: src/fsearch.c:918
+msgid ""
+"Interface selection: set FSEARCH_UI=CLI to default to CLI or FSEARCH_UI=GUI "
+"to default to GUI. Use --cli or --gui to override it for one invocation."
+msgstr ""
+"İnterfeys seçimi: standart olaraq CLI üçün FSEARCH_UI=CLI, GUI üçün "
+"FSEARCH_UI=GUI təyin edin. Bir dəfəlik çağırışda bunu əvəz etmək üçün --cli "
+"və ya --gui istifadə edin."

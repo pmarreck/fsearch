@@ -2463,3 +2463,12 @@ msgstr "Karagdagang scalar na seksyon: database.\n"
 msgctxt "Will be followed by the file path."
 msgid "Error when opening file"
 msgstr "Error habang binubuksan ang file"
+
+#: src/fsearch.c:918
+msgid ""
+"Interface selection: set FSEARCH_UI=CLI to default to CLI or FSEARCH_UI=GUI "
+"to default to GUI. Use --cli or --gui to override it for one invocation."
+msgstr ""
+"Pagpili ng interface: i-set ang FSEARCH_UI=CLI para sa default na CLI o "
+"FSEARCH_UI=GUI para sa default na GUI. Gamitin ang --cli o --gui upang "
+"palitan ito para sa isang pagtawag."

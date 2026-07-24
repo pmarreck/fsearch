@@ -2810,3 +2810,12 @@ msgstr "סקציית סקלר נוספת: database.\n"
 msgctxt "Will be followed by the file path."
 msgid "Error when opening file"
 msgstr "שגיייה בפתיחת הקובץ"
+
+#: src/fsearch.c:918
+msgid ""
+"Interface selection: set FSEARCH_UI=CLI to default to CLI or FSEARCH_UI=GUI "
+"to default to GUI. Use --cli or --gui to override it for one invocation."
+msgstr ""
+"בחירת ממשק: הגדר FSEARCH_UI=CLI כדי להשתמש ב-CLI כברירת מחדל או "
+"FSEARCH_UI=GUI כדי להשתמש ב-GUI כברירת מחדל. השתמש ב--cli או --gui כדי לדרוס "
+"את הבחירה עבור קריאה אחת."

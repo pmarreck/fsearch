@@ -3148,3 +3148,12 @@ msgstr "Seção escalar adicional: database.\n"
 msgctxt "Will be followed by the file path."
 msgid "Error when opening file"
 msgstr "Erro ao abrir arquivo"
+
+#: src/fsearch.c:918
+msgid ""
+"Interface selection: set FSEARCH_UI=CLI to default to CLI or FSEARCH_UI=GUI "
+"to default to GUI. Use --cli or --gui to override it for one invocation."
+msgstr ""
+"Seleção de interface: defina FSEARCH_UI=CLI para o padrão CLI ou "
+"FSEARCH_UI=GUI para o padrão GUI. Use --cli ou --gui para substituí-lo em "
+"uma única execução."

@@ -176,6 +176,9 @@ while IFS= read -r catalog; do
 			fi
 		done
 	fi
+	if [ "$(basename "$catalog")" != th.po ] && rg -q -P '[\x{0E00}-\x{0E7F}]' "$catalog"; then
+		fail "Thai-script text leaked into ${catalog#"$source_root/"}: only po/th.po may contain Thai"
+	fi
 	if grep -qE 'FSSearch|FSarch' "$catalog"; then
 		fail "misspelled product name in ${catalog#"$source_root/"}: must be the literal \"FSearch\""
 	fi

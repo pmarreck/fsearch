@@ -2455,3 +2455,12 @@ msgstr "Ƙarin sashen scalar: database.\n"
 msgctxt "Will be followed by the file path."
 msgid "Error when opening file"
 msgstr "Kuskure yayin buɗe fayil"
+
+#: src/fsearch.c:918
+msgid ""
+"Interface selection: set FSEARCH_UI=CLI to default to CLI or FSEARCH_UI=GUI "
+"to default to GUI. Use --cli or --gui to override it for one invocation."
+msgstr ""
+"Zabbini naitace: saita FSEARCH_UI=CLI don zama da CLI a matsayin asali ko "
+"FSEARCH_UI=GUI don zama da GUI a matsayin asali. Yi amfani da --cli ko --gui "
+"don canza shi don lokaci daya."

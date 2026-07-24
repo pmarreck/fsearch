@@ -2829,3 +2829,12 @@ msgstr "추가 스칼라 섹션: database.\n"
 msgctxt "Will be followed by the file path."
 msgid "Error when opening file"
 msgstr "파일을 열 때 오류가 발생했습니다"
+
+#: src/fsearch.c:918
+msgid ""
+"Interface selection: set FSEARCH_UI=CLI to default to CLI or FSEARCH_UI=GUI "
+"to default to GUI. Use --cli or --gui to override it for one invocation."
+msgstr ""
+"인터페이스 선택: FSEARCH_UI=CLI를 설정하여 CLI를 기본값으로 하거나, "
+"FSEARCH_UI=GUI를 설정하여 GUI를 기본값으로 합니다. 단일 실행 시에는 --cli 또"
+"는 --gui를 사용하여 이를 재정의할 수 있습니다."

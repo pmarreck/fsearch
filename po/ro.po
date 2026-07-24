@@ -2706,3 +2706,12 @@ msgstr "Secțiune scalar suplimentară: database.\n"
 msgctxt "Will be followed by the file path."
 msgid "Error when opening file"
 msgstr "Eroare la deschiderea fișierului"
+
+#: src/fsearch.c:918
+msgid ""
+"Interface selection: set FSEARCH_UI=CLI to default to CLI or FSEARCH_UI=GUI "
+"to default to GUI. Use --cli or --gui to override it for one invocation."
+msgstr ""
+"Selectarea interfeței: setați FSEARCH_UI=CLI pentru a folosi în mod implicit "
+"CLI sau FSEARCH_UI=GUI pentru a folosi în mod implicit GUI. Utilizați --cli "
+"sau --gui pentru a o suprascrie pentru o singură apelare."

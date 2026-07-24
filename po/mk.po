@@ -2626,3 +2626,12 @@ msgstr "Дополнителен скаларен дел: база на пода
 msgctxt "Will be followed by the file path."
 msgid "Error when opening file"
 msgstr "Грешка при отворање на датокот"
+
+#: src/fsearch.c:918
+msgid ""
+"Interface selection: set FSEARCH_UI=CLI to default to CLI or FSEARCH_UI=GUI "
+"to default to GUI. Use --cli or --gui to override it for one invocation."
+msgstr ""
+"Избор на интерфејс: поставете FSEARCH_UI=CLI за да користите CLI како "
+"стандард или FSEARCH_UI=GUI за да користите GUI како стандард. Користете --"
+"cli или --gui за да го прекинете изборот за едно повикување."

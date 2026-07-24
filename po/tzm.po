@@ -2747,3 +2747,11 @@ msgstr "Taqqimtin n usayen n lixas: database.\n"
 msgctxt "Will be followed by the file path."
 msgid "Error when opening file"
 msgstr "Deg ulday n ukaram"
+
+#: src/fsearch.c:918
+msgid ""
+"Interface selection: set FSEARCH_UI=CLI to default to CLI or FSEARCH_UI=GUI "
+"to default to GUI. Use --cli or --gui to override it for one invocation."
+msgstr ""
+"Tawit n l'interface: sset FSEARCH_UI=CLI illi tazzig n CLI neɣ "
+"FSEARCH_UI=GUI illi tazzig n GUI. Ssed --cli neɣ --gui illi tazzig nni dagi."

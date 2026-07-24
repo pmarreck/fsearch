@@ -3008,3 +3008,12 @@ msgstr "Lisää skaalaariosio: database.\n"
 msgctxt "Will be followed by the file path."
 msgid "Error when opening file"
 msgstr "Virhe tiedoston avaamisessa"
+
+#: src/fsearch.c:918
+msgid ""
+"Interface selection: set FSEARCH_UI=CLI to default to CLI or FSEARCH_UI=GUI "
+"to default to GUI. Use --cli or --gui to override it for one invocation."
+msgstr ""
+"Käyttöliittymän valinta: aseta FSEARCH_UI=CLI oletusarvoksi CLI tai "
+"FSEARCH_UI=GUI oletusarvoksi GUI. Käytä --cli tai --gui ylikirjoittaaksesi "
+"sen yhden suorituksen ajaksi."

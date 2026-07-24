@@ -2459,3 +2459,12 @@ msgstr "Aukinn skalartengdur hlutur: database.\n"
 msgctxt "Will be followed by the file path."
 msgid "Error when opening file"
 msgstr "Villa við að opna skrá"
+
+#: src/fsearch.c:918
+msgid ""
+"Interface selection: set FSEARCH_UI=CLI to default to CLI or FSEARCH_UI=GUI "
+"to default to GUI. Use --cli or --gui to override it for one invocation."
+msgstr ""
+"Val á notkunarvenju: setja FSEARCH_UI=CLI til að nota CLI sjálfvirkt eða "
+"FSEARCH_UI=GUI til að nota GUI sjálfvirkt. Notaðu --cli eða --gui til að "
+"breyta þessu fyrir einu kynntun."

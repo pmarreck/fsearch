@@ -914,5 +914,9 @@ fsearch_application_new(void) {
     g_application_set_option_context_summary(G_APPLICATION(self),
                                              _("For command-line search help, run: fsearch --cli --help\n"
                                                "For shared configuration help, run: fsearch config --help"));
+    g_application_set_option_context_description(G_APPLICATION(self),
+                                                 _("Interface selection: set FSEARCH_UI=CLI to default to CLI or "
+                                                   "FSEARCH_UI=GUI to default to GUI. Use --cli or --gui to override it "
+                                                   "for one invocation."));
     return self;
 }

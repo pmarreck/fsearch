@@ -2878,3 +2878,12 @@ msgstr "Atal eskalar gehigarria: database.\n"
 msgctxt "Will be followed by the file path."
 msgid "Error when opening file"
 msgstr "Errorea fitxategia irekitzean"
+
+#: src/fsearch.c:918
+msgid ""
+"Interface selection: set FSEARCH_UI=CLI to default to CLI or FSEARCH_UI=GUI "
+"to default to GUI. Use --cli or --gui to override it for one invocation."
+msgstr ""
+"Interfeitza aukeratu: FSEARCH_UI=CLI ezarri CLIa erabiltzeko edo "
+"FSEARCH_UI=GUI GUIa erabiltzeko. --cli edo --gui erabili kutsura bakar "
+"batean desberatzko gero."

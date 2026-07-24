@@ -2459,3 +2459,12 @@ msgstr "Seksioni shtesë skalari: database.\n"
 msgctxt "Will be followed by the file path."
 msgid "Error when opening file"
 msgstr "Gabim gjatë hapjes së dosjes"
+
+#: src/fsearch.c:918
+msgid ""
+"Interface selection: set FSEARCH_UI=CLI to default to CLI or FSEARCH_UI=GUI "
+"to default to GUI. Use --cli or --gui to override it for one invocation."
+msgstr ""
+"Zgjidhja e ndërfaqes: vendosni FSEARCH_UI=CLI për të përzgjedhur CLI si të "
+"parëndajtur ose FSEARCH_UI=GUI për të përzgjedhur GUI. Përdorni --cli ose --"
+"gui për ta mbylë atë për një thirrje të vetme."

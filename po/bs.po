@@ -2464,3 +2464,12 @@ msgstr "Dodatni skalarni odsek: baza podataka.\n"
 msgctxt "Will be followed by the file path."
 msgid "Error when opening file"
 msgstr "Greška pri otvaranju datoteke"
+
+#: src/fsearch.c:918
+msgid ""
+"Interface selection: set FSEARCH_UI=CLI to default to CLI or FSEARCH_UI=GUI "
+"to default to GUI. Use --cli or --gui to override it for one invocation."
+msgstr ""
+"Odabir interfejsa: postavite FSEARCH_UI=CLI da bi se podrazumijevao CLI ili "
+"FSEARCH_UI=GUI da bi se podrazumijevao GUI. Koristite --cli ili --gui da "
+"biste ga pregazili za jedno pozivanje."

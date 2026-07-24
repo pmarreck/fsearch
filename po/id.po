@@ -2774,3 +2774,12 @@ msgstr "Bagian skalar tambahan: database.\n"
 msgctxt "Will be followed by the file path."
 msgid "Error when opening file"
 msgstr "Kesalahan saat membuka file"
+
+#: src/fsearch.c:918
+msgid ""
+"Interface selection: set FSEARCH_UI=CLI to default to CLI or FSEARCH_UI=GUI "
+"to default to GUI. Use --cli or --gui to override it for one invocation."
+msgstr ""
+"Pemilihan antarmuka: atur FSEARCH_UI=CLI untuk menggunakan CLI secara "
+"default atau FSEARCH_UI=GUI untuk menggunakan GUI secara default. Gunakan --"
+"cli atau --gui untuk mengabaikannya pada satu pemanggilan."

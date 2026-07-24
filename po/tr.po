@@ -3093,3 +3093,12 @@ msgstr "Ek skaler bölümü: database.\n"
 msgctxt "Will be followed by the file path."
 msgid "Error when opening file"
 msgstr "Dosya açılırken hata oluştu"
+
+#: src/fsearch.c:918
+msgid ""
+"Interface selection: set FSEARCH_UI=CLI to default to CLI or FSEARCH_UI=GUI "
+"to default to GUI. Use --cli or --gui to override it for one invocation."
+msgstr ""
+"Arayüz seçimi: varsayılan olarak CLI için FSEARCH_UI=CLI veya varsayılan "
+"olarak GUI için FSEARCH_UI=GUI ayarını kullanın. Tek bir çalıştırma için --"
+"cli veya --gui ile bunu geçersiz kılın."

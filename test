@@ -8,8 +8,11 @@ failures=0
 test_root=$(mktemp -d "${TMPDIR:-/tmp}/fsearch-test-state.XXXXXX")
 mkdir -p "$test_root/home" "$test_root/config" "$test_root/data" "$test_root/cache" "$test_root/state" "$test_root/runtime" "$test_root/tmp"
 chmod 700 "$test_root/runtime"
-test_environment=(
-	env
+test_environment=(env)
+while IFS= read -r exported_function; do
+	test_environment+=(-u "$exported_function")
+done < <(env | sed -n 's/^\(BASH_FUNC_[^=]*%%\)=.*/\1/p')
+test_environment+=(
 	"FSEARCH_TEST_ROOT=$test_root"
 	"HOME=$test_root/home"
 	"XDG_CONFIG_HOME=$test_root/config"

@@ -2451,3 +2451,11 @@ msgstr "ផ្នែក scalar បន្ថែម៖ database។\n"
 msgctxt "Will be followed by the file path."
 msgid "Error when opening file"
 msgstr "កំហុសពេលបើកថត"
+
+#: src/fsearch.c:918
+msgid ""
+"Interface selection: set FSEARCH_UI=CLI to default to CLI or FSEARCH_UI=GUI "
+"to default to GUI. Use --cli or --gui to override it for one invocation."
+msgstr ""
+"ការជ្រើសរើសចំណុចប្រទាក់៖ កំណត់ FSEARCH_UI=CLI ដើម្បីកំណត់ជាគំរូ CLI ឬ FSEARCH_UI=GUI "
+"ដើម្បីកំណត់ជាគំរូ GUI។ ប្រើ --cli ឬ --gui ដើម្បីជំនួសវាសម្រាប់ការហៅចេញម្តង។"

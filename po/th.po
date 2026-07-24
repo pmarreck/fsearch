@@ -2451,3 +2451,12 @@ msgstr "ส่วนข้อมูลสเกลาร์เพิ่มเต
 msgctxt "Will be followed by the file path."
 msgid "Error when opening file"
 msgstr "เกิดข้อผิดพลาดขณะเปิดไฟล์"
+
+#: src/fsearch.c:918
+msgid ""
+"Interface selection: set FSEARCH_UI=CLI to default to CLI or FSEARCH_UI=GUI "
+"to default to GUI. Use --cli or --gui to override it for one invocation."
+msgstr ""
+"การเลือกอินเทอร์เฟซ: ตั้งค่า FSEARCH_UI=CLI เพื่อใช้ CLI เป็นค่าเริ่มต้น หรือ "
+"FSEARCH_UI=GUI เพื่อใช้ GUI เป็นค่าเริ่มต้น ใช้ --cli หรือ --gui "
+"เพื่อข้ามการตั้งค่าสำหรับการเรียกใช้งานเพียงครั้งเดียว"

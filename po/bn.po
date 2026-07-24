@@ -2459,3 +2459,12 @@ msgstr "অতিরিক্ত স্কেলার বিভাগ: database
 msgctxt "Will be followed by the file path."
 msgid "Error when opening file"
 msgstr "ফাইল খোলার সময় ত্রুটি"
+
+#: src/fsearch.c:918
+msgid ""
+"Interface selection: set FSEARCH_UI=CLI to default to CLI or FSEARCH_UI=GUI "
+"to default to GUI. Use --cli or --gui to override it for one invocation."
+msgstr ""
+"ইন্টারফেস নির্বাচন: ডিফল্ট হিসেবে CLI ব্যবহার করতে FSEARCH_UI=CLI সেট করুন অথবা "
+"GUI ব্যবহার করতে FSEARCH_UI=GUI সেট করুন। একটি নির্দিষ্ট বার ব্যবহারের জন্য --cli "
+"বা --gui ব্যবহার করে এটি ওভাররাইড করুন।"

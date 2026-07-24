@@ -2456,3 +2456,11 @@ msgstr "ਵਾਧੂ ਸਕਾਲਰ ਭਾਗ: ਡੇਟਾਬੇਸ।\n"
 msgctxt "Will be followed by the file path."
 msgid "Error when opening file"
 msgstr "ਫਾਈਲ ਖੋਲ੍ਹਣ ਵੇਲੇ ਗਲਤੀ"
+
+#: src/fsearch.c:918
+msgid ""
+"Interface selection: set FSEARCH_UI=CLI to default to CLI or FSEARCH_UI=GUI "
+"to default to GUI. Use --cli or --gui to override it for one invocation."
+msgstr ""
+"ਇੰਟਰਫੇਸ ਚੋਣ: CLI 'ਤੇ ਡਿਫੌਲਟ ਕਰਨ ਲਈ FSEARCH_UI=CLI ਸੈੱਟ ਕਰੋ ਜਾਂ GUI 'ਤੇ ਡਿਫੌਲਟ ਕਰਨ ਲਈ "
+"FSEARCH_UI=GUI। ਇੱਕ ਵਾਰ ਦੀ ਵਰਤੋਂ ਲਈ ਇਸਨੂੰ ਅਲੱਗ ਕਰਨ ਲਈ --cli ਜਾਂ --gui ਦੀ ਵਰਤੋਂ ਕਰੋ।"

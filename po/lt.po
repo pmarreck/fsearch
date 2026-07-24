@@ -3076,3 +3076,12 @@ msgstr "Papildomas skaliarinis skyrius: database.\n"
 msgctxt "Will be followed by the file path."
 msgid "Error when opening file"
 msgstr "Klaida atidarant failą"
+
+#: src/fsearch.c:918
+msgid ""
+"Interface selection: set FSEARCH_UI=CLI to default to CLI or FSEARCH_UI=GUI "
+"to default to GUI. Use --cli or --gui to override it for one invocation."
+msgstr ""
+"Interfeiso pasirinkimas: nustykite FSEARCH_UI=CLI, kad nustatytumėte CLI "
+"kaip numatytą, arba FSEARCH_UI=GUI, kad nustatytumėte GUI. Naudokite --cli "
+"arba --gui, kad pakeistumėte parinkimą vienam išvykdymui."

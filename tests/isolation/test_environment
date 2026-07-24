@@ -14,6 +14,10 @@ if [ -z "$root" ]; then
 	fail 'FSEARCH_TEST_ROOT is unset'
 fi
 
+if env | grep -q '^BASH_FUNC_'; then
+	fail 'inherited one or more exported caller shell functions'
+fi
+
 while IFS=: read -r variable suffix; do
 	value=${!variable-}
 	expected="$root/$suffix"

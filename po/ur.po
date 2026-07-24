@@ -2597,3 +2597,12 @@ msgstr "اضافی اسکیلر سیکشن: ڈیٹا بیس۔\n"
 msgctxt "Will be followed by the file path."
 msgid "Error when opening file"
 msgstr "فائل کھولنے میں خرابی"
+
+#: src/fsearch.c:918
+msgid ""
+"Interface selection: set FSEARCH_UI=CLI to default to CLI or FSEARCH_UI=GUI "
+"to default to GUI. Use --cli or --gui to override it for one invocation."
+msgstr ""
+"انٹرفیس کا انتخاب: ڈیفالٹ کے طور پر CLI کے لیے FSEARCH_UI=CLI سیٹ کریں یا "
+"GUI کے لیے FSEARCH_UI=GUI۔ ایک بار کے استعمال کے لیے اسے اووررائڈ کرنے کے "
+"لیے --cli یا --gui استعمال کریں۔"
