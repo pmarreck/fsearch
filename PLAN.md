@@ -6,6 +6,7 @@
 
 ## Recent Completed
 
+- [x] Retire the handled historical CI receipt from the tracked inbox. Completed 2026-10-14 14:55 EDT.
 - [x] Add the exact-commit Mechatron Prime CI target manifest and prove each declared flake target locally. Completed 2026-10-14 14:47 EDT.
 - [x] Document `FSEARCH_UI=CLI` and `--gui`/`--cli` frontend selection in the live command-line help. Completed 2026-07-24 13:00 EDT.
 - [x] Prevent exported caller shell functions from crossing the isolated-test boundary. Completed 2026-07-24 13:00 EDT.
