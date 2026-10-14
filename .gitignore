@@ -161,3 +161,6 @@ po/stamp-it
 /data/io.github.cboxdoerfer.FSearch.appdata.xml
 
 /sanitizer-logs/
+
+# Session handoff documents
+HANDOFF*
